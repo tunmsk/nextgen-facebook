@@ -408,8 +408,11 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 * **Bugfixes**
 	* Updated the "Google Structured Data Testing Tool" URL.
+	* Changed to WPSEO_Frontend::get_instance() instead of using the $wpseo_front global (Pro version).
 * **Improvements**
-	* *None*
+	* Integrated the WordPress SEO and WooCommerce modules to use the WordPress SEO meta description for the shop page (Pro version).
+	* Added a filter for the WooCommerce module to report the post ID of the shop page (Pro version).
+	* Changed to Ngfb::get_instance() instead of using the $ngfb global for functions and widgets.
 * **New Features**
 	* *None*
 

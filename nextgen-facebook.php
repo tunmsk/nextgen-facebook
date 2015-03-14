@@ -329,8 +329,8 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		}
 	}
 
-        global $ngfb;
-	$ngfb = Ngfb::get_instance();
+	global $ngfb;
+	$ngfb =& Ngfb::get_instance();
 }
 
 if ( ! class_exists( 'NgfbNoDebug' ) ) {

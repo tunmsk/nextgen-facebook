@@ -16,7 +16,7 @@ if ( ! function_exists( 'ngfb_get_social_buttons' ) ) {
 
 if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 	function ngfb_get_sharing_buttons( $ids = array(), $atts = array() ) {
-		global $ngfb;
+		$ngfb =& Ngfb::get_instance();
 		if ( $ngfb->is_avail['ssb'] ) {
 			if ( $ngfb->is_avail['cache']['transient'] ) {
 				$cache_salt = __METHOD__.'(lang:'.SucomUtil::get_locale().'_url:'.$ngfb->util->get_sharing_url().
