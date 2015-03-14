@@ -1,0 +1,73 @@
+/* Save an empty style text box to reload the default example styles.
+ * These styles are provided as examples only - modifications may be 
+ * necessary to customize the layout for your website. Social sharing
+ * buttons can be aligned vertically, horizontally, floated, etc.
+ */
+
+/* make sure the Facebook flyout does not get clipped */
+#page { overflow:visible; }
+
+/* The .ngfb-buttons class is common to all other button classes
+ * (excerpt, content, shortcode, widget). Any change made to this
+ * class will affect all other button layouts.
+ */
+.ngfb-buttons img { border:none; }
+.ngfb-buttons img:hover { border:none; }
+
+/* fix the Facebook "like" flyout on 2012 based themes */
+.ngfb-buttons iframe { max-width:none; }
+
+.ngfb-buttons > div,		/* default uses small buttons */
+.ngfb-preset-small_share_count .ngfb-buttons > div { 
+	display:inline-block;
+	vertical-align:bottom;
+	text-align:left;
+	line-height:20px;
+	padding:0;
+	margin:5px;
+	width:100px;
+	height:20px;
+}
+
+.ngfb-preset-large_share_vertical .ngfb-buttons > div,
+.ngfb-preset-large_share_vertical .ngfb-buttons > div[class*="-button"] { 
+	line-height:65px;
+	width:60px;
+	height:65px;
+}
+
+.ngfb-buttons div.facebook-button,
+.ngfb-preset-small_share_count .ngfb-buttons div.facebook-button { width:139px; }
+
+.ngfb-buttons div.gplus-button,
+.ngfb-preset-small_share_count .ngfb-buttons div.gplus-button { width:99px; }
+
+.ngfb-buttons div.gplusone-button,
+.ngfb-preset-small_share_count .ngfb-buttons div.gplusone-button { width:75px; }
+
+.ngfb-buttons div.twitter-button,
+.ngfb-preset-small_share_count .ngfb-buttons div.twitter-button { width:89px; }
+
+.ngfb-buttons div.linkedin-button,
+.ngfb-preset-small_share_count .ngfb-buttons div.linkedin-button { width:110px; }
+
+.ngfb-buttons div.pinterest-button,
+.ngfb-preset-small_share_count .ngfb-buttons div.pinterest-button { width:78px; }
+.ngfb-preset-large_share_vertical .ngfb-buttons div.pinterest-button { height:40px; margin-top:42px; }
+
+.ngfb-buttons div.reddit-button,
+.ngfb-preset-small_share_count .ngfb-buttons div.reddit-button { width:130px; }
+.ngfb-preset-large_share_vertical .ngfb-buttons div.reddit-button { margin-bottom:10px; }
+
+.ngfb-buttons div.stumbleupon-button,
+.ngfb-preset-small_share_count .ngfb-buttons div.stumbleupon-button { width:84px; }
+.ngfb-preset-large_share_vertical .ngfb-buttons div.stumbleupon-button { height:60px; line-height:60px; }
+
+.ngfb-buttons div.tumblr-button,
+.ngfb-preset-small_share_count .ngfb-buttons div.tumblr-button { width:85px; }
+.ngfb-preset-large_share_vertical .ngfb-buttons div.tumblr-button { height:20px; line-height:20px; }
+
+.ngfb-buttons div.fb-share-button,
+.ngfb-buttons div.fb-share-button span { display:block !important; vertical-align:middle !important; }
+.ngfb-preset-small_share_count .ngfb-buttons div.fb-share-button { width:105px; }
+
