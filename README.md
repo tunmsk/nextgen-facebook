@@ -7,7 +7,7 @@
 <strong>License URI</strong>: http://www.gnu.org/licenses/gpl.txt<br/>
 <strong>Requires At Least</strong>: 3.0<br/>
 <strong>Tested Up To</strong>: 4.1.1<br/>
-<strong>Stable Tag</strong>: 7.8.3<br/>
+<strong>Stable Tag</strong>: 7.8.3.1<br/>
 </blockquote>
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
