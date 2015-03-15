@@ -500,6 +500,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 <h3>Upgrade Notice</h3>
 
+<h4>7.8.3.1</h4>
+
+Updated "Google Structured Data Testing Tool" URL, added support for WooCommerce shop page (Pro version), fixed WordPress SEO integration (Pro version).
+
 <h4>7.8.3</h4>
 
 Fixed the Social Settings input counters, moved "Show Basic / All Options" setting to an individual user preference.
