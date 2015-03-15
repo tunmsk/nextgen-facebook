@@ -1,6 +1,6 @@
 # nextgen-facebook
 
-<h2> NextGEN Facebook - Advanced Social SEO for Facebook, Google+, Pinterest, Twitter & More </h3>
+<h2> NextGEN Facebook - Advanced Social SEO for Facebook, Google+, Pinterest, Twitter & More </h2>
 <strong>Contributors</strong>: jsmoriss<br/>
 <strong>Donate Link</strong>: https://surniaulula.com/extend/plugins/nextgen-facebook/<br/>
 <strong>Tags</strong>: nextgen gallery, featured, attached, open graph, meta tags, buttons, like, share, facebook, google, google+, g+, twitter, linkedin, social, seo, pinterest, rich pins, tumblr, stumbleupon, widget, multilingual, shortcode, object cache, transient cache, wp_cache, nggalbum, nggallery, singlepic, imagebrowser, gallery, twitter cards, photo card, gallery card, player card, summary card, easy digital downloads, woocommerce, marketpress, e-commerce, multisite, hashtags, bbpress, buddypress, jetpack, photon, slideshare, vimeo, wistia, youtube, polylang, schema, json-ld<br/>
