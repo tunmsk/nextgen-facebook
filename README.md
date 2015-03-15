@@ -12,7 +12,7 @@ Stable Tag: 7.8.3
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
-== Description ==
+<h3>1</h3>
 
 <p><img src="https://ps.w.org/nextgen-facebook/assets/icon-256x256.png?rev=" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Make sure social websites present your content in the best possible way, no matter <em>how</em> your webpage is shared</strong> &mdash; from sharing buttons on the webpage, browser add-ons and extensions, or URLs shared directly in social timeline posts and <em>private messages</em>.</p>
 
@@ -22,7 +22,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 <p>You can download the <a href="https://wordpress.org/plugins/nextgen-facebook/">Free version of NGFB on wordpress.org</a> and <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/">purchase Pro license(s) on surniaulula.com</a> (includes a <strong>No Risk 30 Day Refund Policy</strong>).</p>
 
-= Quick List of Features =
+<h4>1</h4>
 
 **Free / Basic Version**
 
@@ -115,7 +115,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 		* Wistia Videos
 		* Youtube Videos and Playlists
 
-= 3rd Party Integration =
+<h4>1</h4>
 
 Aside from the additional support for Twitter Cards, the main difference between the NGFB Free and Pro versions is the integration of 3rd party plugins and services.
 
@@ -155,7 +155,7 @@ NGFB comes with several sharing buttons, that you can optionally include on Post
 
 The Facebook, Google+ and Twitter sharing buttons support *multiple languages*. A default language can be chosen in the NGFB settings, and the [Pro version](http://surniaulula.com/extend/plugins/nextgen-facebook/) switches the sharing button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Open Graph (Facebook) and Pinterest Rich Pin descriptions, Tweet text, and other social captions.
 
-= User Profile Social Contacts =
+<h4>1</h4>
 
 NGFB (Pro version) allows you to customize the field names, label, and add / remove the following contacts from the user profile page:
 
@@ -176,7 +176,7 @@ NGFB (Pro version) allows you to customize the field names, label, and add / rem
 
 NGFB provides <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles markup in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em></a>. The author (Person) markup includes the author's website URL, their profile social sharing image, and all listed contact URLs from their user profile. The publisher (Organization) markup includes the website URL, a corporate logo, a default image, and the publisher Facebook, Google+, LinkedIn, Pinterest, and Twitter business pages.
 
-= Complete Social Meta Tags =
+<h4>1</h4>
 
 NGFB adds [Open Graph](http://ogp.me/) (Facebook), [Pinterest Rich Pins](http://developers.pinterest.com/rich_pins/), [Twitter Cards](https://dev.twitter.com/docs/cards), and [Search Engine Optimization](http://en.wikipedia.org/wiki/Search_engine_optimization) meta tags to the head section of webpages. These meta tags are used by Google Search and most social websites to describe and display your content correctly (title, description, hashtags, images, videos, product, author profile / authorship, publisher, etc.). NGFB is a complete social sharing solution that uses the *existing* content of your webpages to build HTML meta tags &mdash; There's no need to manually enter / configure any additional values or settings (although many settings and options *are* available). <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/screenshots/">See examples from Google Search, Google+, Facebook, Twitter, Pinterest, StumbleUpon, Tumblr, etc.</a> &mdash; along with screenshots of the NGFB settings pages.
 
@@ -243,23 +243,23 @@ NGFB (Pro version) provides the [Summary](https://dev.twitter.com/docs/cards/typ
 	* twitter:site
 	* twitter:title
 
-= Proven Performance =
+<h4>1</h4>
 
 NGFB is *fast and coded for performance*, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NGFB loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features.
 
-= Clean Uninstall =
+<h4>1</h4>
 
 Try the NGFB plugin with complete confidence &mdash; when uninstalled, NGFB removes *all* traces of itself from the database (options, site options, user and post meta, transients, etc.).
 
-= Great Support =
+<h4>1</h4>
 
 NGFB support and development is on-going. You can review the [FAQ](http://faq.ngfb.surniaulula.com/) and [Notes](http://notes.ngfb.surniaulula.com/) pages for additional setup information. If you have any suggestions or comments, post them to the [WordPress support forum](https://wordpress.org/support/plugin/nextgen-facebook) or the [Pro version support website](http://support.ngfb.surniaulula.com/).
 
 **Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=author), [Facebook](https://www.facebook.com/SurniaUlulaCom), [Twitter](https://twitter.com/surniaululacom), and [YouTube](http://www.youtube.com/user/SurniaUlulaCom)**.
 
-== Installation ==
+<h3>1</h3>
 
-= Install and Uninstall =
+<h4>1</h4>
 
 <ul>
 	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/developer-special-buy-one-get-one-free/">Developer Special – Buy one, Get one Free</a></li>
@@ -272,15 +272,15 @@ NGFB support and development is on-going. You can review the [FAQ](http://faq.ng
 	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/uninstall-the-plugin/">Uninstall the Plugin</a></li>
 </ul>
 
-= Plugin Setup =
+<h4>1</h4>
 
 <ul>
 	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/a-setup-guide/">A Setup Guide for NGFB</a></li>
 </ul>
 
-== Frequently Asked Questions ==
+<h3>1</h3>
 
-= Frequently Asked Questions =
+<h4>1</h4>
 
 <ul>
 	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/can-i-use-the-pro-version-on-multiple-websites/">Can I use the Pro version on multiple websites?</a></li>
@@ -322,9 +322,9 @@ NGFB support and development is on-going. You can review the [FAQ](http://faq.ng
 	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-is-the-page-blank-or-its-components-misaligned/">Why is the page blank or its components misaligned?</a></li>
 </ul>
 
-== Other Notes ==
+<h3>1</h3>
 
-= Additional Documentation =
+<h4>1</h4>
 
 <ul>
 	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/">About Pro Modules</a>
@@ -371,7 +371,7 @@ NGFB support and development is on-going. You can review the [FAQ](http://faq.ng
 	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/working-with-image-attachments/">Working with Image Attachments</a></li>
 </ul>
 
-== Screenshots ==
+<h3>1</h3>
 
 01. NGFB General Settings Page &mdash; Includes options for Open Graph (All Publishers) site information, titles, descriptions, images, videos, and authors. There is also a Publisher Specific section for Facebook, Google (G+ and Search), LinkedIn, Pinterest Rich Pins, and Twitter Cards.
 02. NGFB Advanced Settings Page &mdash; Allows you to fine-tune some advanced plugin settings, the use of various content filters, custom post meta fields, caching techniques, user profile contacts, and enable / disable a long list of meta tags.
@@ -397,7 +397,7 @@ NGFB support and development is on-going. You can review the [FAQ](http://faq.ng
 22. Example Showing All Social Sharing Buttons Enabled
 23. Example Social Profiles in Google Search &mdash; NGFB includes author (Person) and publisher (Organization) social profiles markup in schema.org JSON-LD format for Google Search and their Knowledge Graph.
 
-== Changelog ==
+<h3>1</h3>
 
 <blockquote>
 <p>New versions of the plugin are released approximately every week (more or less). 
@@ -406,7 +406,7 @@ When minor bugs fixes and/or code improvements are applied, new versions are als
 This release schedule keeps the code stable and reliable, at the cost of more frequent updates.</p>
 </blockquote>
 
-= Version 7.8.3.1 =
+<h4>1</h4>
 
 * **Bugfixes**
 	* Updated the "Google Structured Data Testing Tool" URL.
@@ -418,7 +418,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **New Features**
 	* *None*
 
-= Version 7.8.3 =
+<h4>1</h4>
 
 * **Bugfixes**
 	* Fixed the Social Settings jQuery / CSS input counters that were not showing.
@@ -432,7 +432,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added a new NgfbUser::save_pref() and NgfbUser::get_pref() method to manage user preferences.
 	* Added a new NGFB_PREF_NAME constant (default value is "_ngfb_pref") to save user preferences.
 
-= Version 7.8.2.2 =
+<h4>1</h4>
 
 * **Bugfixes**
 	* *None*
@@ -441,7 +441,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **New Features**
 	* *None*
 
-= Version 7.8.2.1 =
+<h4>1</h4>
 
 * **Bugfixes**
 	* *None*
@@ -451,7 +451,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **New Features**
 	* *None*
 
-= Version 7.8.2 =
+<h4>1</h4>
 
 * **Bugfixes**
 	* Fixed Rich Pin Image Dimensions setting in Free version by inheriting the Open Graph values.
@@ -461,7 +461,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **New Features**
 	* *None*
 
-= Version 7.8.1 =
+<h4>1</h4>
 
 * **Bugfixes**
 	* *None*
@@ -470,7 +470,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **New Features**
 	* *None*
 
-= Version 7.8 =
+<h4>1</h4>
 
 * **Bugfixes**
 	* *None*
@@ -490,9 +490,9 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added the "Schema Website / Business Logo URL", "Add Schema Publisher Social JSON", and "Add Schema Author Social JSON" options under to the Google (G+ and Search) publisher settings tab (Pro version).
 	* Added author (Person) and publisher (Organization) <a href="https://developers.google.com/structured-data/customize/social-profiles">social profiles markup in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em></a>.
 
-== Upgrade Notice ==
+<h3>1</h3>
 
-= 7.8.3 =
+<h4>1</h4>
 
 Fixed the Social Settings input counters, moved "Show Basic / All Options" setting to an individual user preference.
 
