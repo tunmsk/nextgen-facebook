@@ -14,7 +14,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 <h3>Description</h3>
 
-<p><img src="https://ps.w.org/nextgen-facebook/assets/icon-256x256.png?rev=" /></p>
+<p align="center"><img src="https://ps.w.org/nextgen-facebook/assets/icon-256x256.png?rev=" /></p>
 <p><strong>Make sure social websites present your content in the best possible way, no matter <em>how</em> your webpage is shared</strong> &mdash; from sharing buttons on the webpage, browser add-ons and extensions, or URLs shared directly in social timeline posts and <em>private messages</em>.</p>
 
 <p>NextGEN Facebook (NGFB) <strong>gives you total control over the information social website crawlers need</strong>, improving Google Search ranking, social engagement, and click-through-rates on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
@@ -138,7 +138,7 @@ NGFB (Pro version) also supports [Easy Digital Downloads](https://wordpress.org/
 
 NGFB (Pro version) supports [bbPress](https://wordpress.org/plugins/bbpress/) and [BuddyPress](https://wordpress.org/plugins/buddypress/) (see the [BuddyPress Integration Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/)), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, etc. Social sharing buttons can also be added to [bbPress](https://wordpress.org/plugins/bbpress/) single template pages and [BuddyPress](https://wordpress.org/plugins/buddypress/) activities.
 
-<p><img src="https://ps.w.org/nextgen-facebook/assets/screenshot-22.png?rev=" /></p>
+<p align="center"><img src="https://ps.w.org/nextgen-facebook/assets/screenshot-22.png?rev=" /></p>
 
 <h4>Social Sharing Buttons</h4>
 
@@ -173,7 +173,7 @@ NGFB (Pro version) allows you to customize the field names, label, and add / rem
 * Yahoo IM
 * YouTube Channel URL
 
-<p><img src="https://ps.w.org/nextgen-facebook/assets/screenshot-23.png?rev=" /></p>
+<p align="center"><img src="https://ps.w.org/nextgen-facebook/assets/screenshot-23.png?rev=" /></p>
 
 <h4>Social Profiles for Google Search</h4>
 
