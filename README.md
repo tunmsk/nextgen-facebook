@@ -424,7 +424,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added a filter for the WooCommerce module to report the post ID of the shop page (Pro version).
 	* Changed to Ngfb::get_instance() instead of using the $ngfb global for functions and widgets.
 * **New Features**
-	* *None*
+	* Added a GitHub repository for NGFB at https://github.com/SurniaUlula/nextgen-facebook.
 
 <h4>Version 7.8.3</h4>
 
