@@ -503,13 +503,17 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					<td class="side_version">'.$latest_version.'</td></tr>';
 				echo '<tr><td colspan="2" id="latest_notice"><p>'.$latest_notice.'</p>'.
 					'<p><a href="'.$changelog_url.'" target="_blank">'.
-						sprintf( __( 'View the %s changelog...', NGFB_TEXTDOM ), $info['short'] ).'</a></p></td></tr>';
+						sprintf( __( 'View %s changelog...', NGFB_TEXTDOM ), $info['short'] ).'</a></p></td></tr>';
 			}
 			echo '</table>';
 		}
 
 		public function show_metabox_status_gpl() {
 			$metabox = 'status';
+			$plugin_count = 0;
+			foreach ( $this->p->cf['plugin'] as $lca => $info )
+				if ( isset( $info['lib']['gpl'] ) )
+					$plugin_count++;
 			echo '<table class="sucom-setting" style="margin-bottom:10px;">';
 			/*
 			 * GPL version features
@@ -517,7 +521,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			foreach ( $this->p->cf['plugin'] as $lca => $info ) {
 				if ( ! isset( $info['lib']['gpl'] ) )
 					continue;
-				if ( $lca === $this->p->cf['lca'] )
+				if ( $lca === $this->p->cf['lca'] )	// features for this plugin
 					$features = array(
 						'Debug Messages' => array( 'classname' => 'SucomDebug' ),
 						'Non-Persistant Cache' => array( 'status' => $this->p->is_avail['cache']['object'] ? 'on' : 'rec' ),
@@ -528,7 +532,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				else $features = array();
 				$features = apply_filters( $lca.'_'.$metabox.'_gpl_features', $features, $lca, $info );
 				if ( ! empty( $features ) ) {
-					if ( count( $this->p->cf['plugin'] ) > 1 )
+					if ( $plugin_count > 1 )
 						echo '<tr><td><h4>'.$this->p->cf['plugin'][$lca]['short'].'</h4></td></tr>';
 					$this->show_plugin_status( $features );
 				}
@@ -538,6 +542,10 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 		public function show_metabox_status_pro() {
 			$metabox = 'status';
+			$plugin_count = 0;
+			foreach ( $this->p->cf['plugin'] as $lca => $info )
+				if ( isset( $info['lib']['pro'] ) )
+					$plugin_count++;
 			echo '<table class="sucom-setting" style="margin-bottom:10px;">';
 			/*
 			 * Pro version features
@@ -561,7 +569,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				}
 				$features = apply_filters( $lca.'_'.$metabox.'_pro_features', $features, $lca, $info );
 				if ( ! empty( $features ) ) {
-					if ( count( $this->p->cf['plugin'] ) > 1 )
+					if ( $plugin_count > 1 )
 						echo '<tr><td><h4>'.$this->p->cf['plugin'][$lca]['short'].'</h4></td></tr>';
 					$this->show_plugin_status( $features );
 				}
