@@ -120,7 +120,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 		protected function add_menu_page( $menu_slug ) {
 			global $wp_version;
 			$short_aop = $this->p->cf['plugin'][$this->p->cf['lca']]['short'].
-				( $this->p->check->aop( $this->p->cf['lca'] ) ? ' Pro' : '' );
+				( $this->p->check->aop( $this->p->cf['lca'] ) ? ' Pro' : ' Free' );
 
 			// add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function, $icon_url, $position );
 			$this->pagehook = add_menu_page( 
@@ -137,7 +137,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 		protected function add_submenu_page( $parent_slug, $menu_id = '', $menu_name = '' ) {
 			$short_aop = $this->p->cf['plugin'][$this->p->cf['lca']]['short'].
-				( $this->p->check->aop( $this->p->cf['lca'] ) ? ' Pro' : '' );
+				( $this->p->check->aop( $this->p->cf['lca'] ) ? ' Pro' : ' Free' );
 
 			if ( strpos ( $menu_id, 'separator' ) !== false ) {
 				$menu_title = '<div style="z-index:999;
@@ -355,7 +355,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 		public function show_form_page() {
 			$short_aop = $this->p->cf['plugin'][$this->p->cf['lca']]['short'].
-				( $this->p->check->aop( $this->p->cf['lca'] ) ? ' Pro' : '' );
+				( $this->p->check->aop( $this->p->cf['lca'] ) ? ' Pro' : ' Free' );
 
 			if ( $this->menu_id !== 'contact' )		// the "settings" page displays its own error messages
 				settings_errors( NGFB_OPTIONS_NAME );	// display "error" and "updated" messages
@@ -494,7 +494,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				//	SucomUpdate::get_option( $lca ) : false;
 	
 				echo '<tr><td colspan="2"><h4>'.$info['short'].
-					( $this->p->check->aop( $lca ) ? ' Pro' : '' ).'</h4></td></tr>';
+					( $this->p->check->aop( $lca ) ? ' Pro' : ' Free' ).'</h4></td></tr>';
 				echo '<tr><th class="side">'.__( 'Installed', NGFB_TEXTDOM ).':</th>
 					<td class="side_version" '.$installed_style.'>'.$installed_version.'</td></tr>';
 				echo '<tr><th class="side">'.__( 'Stable', NGFB_TEXTDOM ).':</th>
@@ -528,7 +528,8 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				else $features = array();
 				$features = apply_filters( $lca.'_'.$metabox.'_gpl_features', $features, $lca, $info );
 				if ( ! empty( $features ) ) {
-					echo '<tr><td><h4>'.$this->p->cf['plugin'][$lca]['short'].'</h4></td></tr>';
+					if ( count( $this->p->cf['plugin'] ) > 1 )
+						echo '<tr><td><h4>'.$this->p->cf['plugin'][$lca]['short'].'</h4></td></tr>';
 					$this->show_plugin_status( $features );
 				}
 			}
@@ -553,15 +554,15 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 						$off = $this->p->is_avail[$sub][$id] ? 'rec' : 'off';
 						$features[$name] = array( 
 							'status' => class_exists( $lca.'pro'.$sub.$id ) ? ( $aop ? 'on' : $off ) : $off,
-							'tooltip' => 'If the '.$name.' plugin is detected, '.$this->p->cf['plugin'][$lca]['short'].' Pro '.
-								'will load an integration modules to provide additional support and features for '.$name.'.',
+							'tooltip' => 'If the '.$name.' plugin is detected, '.$this->p->cf['plugin'][$lca]['short'].' Pro will load an integration modules to provide additional support and features for '.$name.'.',
 							'td_class' => $aop ? '' : 'blank',
 						);
 					}
 				}
 				$features = apply_filters( $lca.'_'.$metabox.'_pro_features', $features, $lca, $info );
 				if ( ! empty( $features ) ) {
-					echo '<tr><td><h4>'.$this->p->cf['plugin'][$lca]['short'].' Pro</h4></td></tr>';
+					if ( count( $this->p->cf['plugin'] ) > 1 )
+						echo '<tr><td><h4>'.$this->p->cf['plugin'][$lca]['short'].'</h4></td></tr>';
 					$this->show_plugin_status( $features );
 				}
 			}
@@ -618,7 +619,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				if ( empty( $info['version'] ) )	// filter out extensions that are not installed
 					continue;
 				echo '<p><strong>Need Help with '.$info['short'].
-					( $this->p->check->aop( $lca ) ? ' Pro' : '' ).'?</strong></p>';
+					( $this->p->check->aop( $lca ) ? ' Pro' : ' Free' ).'?</strong></p>';
 				echo '<ul>';
 				if ( ! empty( $info['url']['faq'] ) ) {
 					echo '<li>Review <a href="'.$info['url']['faq'].'" target="_blank">FAQs</a>';
