@@ -1,5 +1,3 @@
-# nextgen-facebook
-
 <h2> NextGEN Facebook - Advanced Social SEO for Facebook, Google+, Pinterest, Twitter & More </h2>
 <strong>Contributors</strong>: jsmoriss<br/>
 <strong>Donate Link</strong>: https://surniaulula.com/extend/plugins/nextgen-facebook/<br/>
