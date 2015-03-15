@@ -1,14 +1,14 @@
 # nextgen-facebook
 
-=== NextGEN Facebook - Advanced Social SEO for Facebook, Google+, Pinterest, Twitter & More ===
-Contributors: jsmoriss
-Donate Link: https://surniaulula.com/extend/plugins/nextgen-facebook/
-Tags: nextgen gallery, featured, attached, open graph, meta tags, buttons, like, share, facebook, google, google+, g+, twitter, linkedin, social, seo, pinterest, rich pins, tumblr, stumbleupon, widget, multilingual, shortcode, object cache, transient cache, wp_cache, nggalbum, nggallery, singlepic, imagebrowser, gallery, twitter cards, photo card, gallery card, player card, summary card, easy digital downloads, woocommerce, marketpress, e-commerce, multisite, hashtags, bbpress, buddypress, jetpack, photon, slideshare, vimeo, wistia, youtube, polylang, schema, json-ld
-License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl.txt
-Requires At Least: 3.0
-Tested Up To: 4.1.1
-Stable Tag: 7.8.3
+<h2> NextGEN Facebook - Advanced Social SEO for Facebook, Google+, Pinterest, Twitter & More </h3>
+<strong>Contributors</strong>: jsmoriss<br/>
+<strong>Donate Link</strong>: https://surniaulula.com/extend/plugins/nextgen-facebook/<br/>
+<strong>Tags</strong>: nextgen gallery, featured, attached, open graph, meta tags, buttons, like, share, facebook, google, google+, g+, twitter, linkedin, social, seo, pinterest, rich pins, tumblr, stumbleupon, widget, multilingual, shortcode, object cache, transient cache, wp_cache, nggalbum, nggallery, singlepic, imagebrowser, gallery, twitter cards, photo card, gallery card, player card, summary card, easy digital downloads, woocommerce, marketpress, e-commerce, multisite, hashtags, bbpress, buddypress, jetpack, photon, slideshare, vimeo, wistia, youtube, polylang, schema, json-ld<br/>
+<strong>License</strong>: GPLv3<br/>
+<strong>License URI</strong>: http://www.gnu.org/licenses/gpl.txt<br/>
+<strong>Requires At Least</strong>: 3.0<br/>
+<strong>Tested Up To</strong>: 4.1.1<br/>
+<strong>Stable Tag</strong>: 7.8.3<br/>
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
