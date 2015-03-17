@@ -414,6 +414,16 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * GitHub: https://github.com/SurniaUlula/nextgen-facebook
 * WordPress.org: https://wordpress.org/plugins/nextgen-facebook/developers/
 
+<h4>Version 7.8.3.2</h4>
+
+* **Bugfixes**
+	* Fixed the user contact field sanitation check by using the defined field names.
+	* Updated the SucomUtil::limit_text_length() method to use the mb_strlen() and mb_substr() multibyte functions.
+* **Improvements**
+	* Removed a check for the 'mb_decode_numericentity' function (replaced by a minimum PHP version check instead).
+* **New Features**
+	* *None*
+
 <h4>Version 7.8.3.1</h4>
 
 * **Bugfixes**
@@ -423,8 +433,9 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Integrated the WordPress SEO and WooCommerce modules to use the WordPress SEO meta description for the shop page (Pro version).
 	* Added a filter for the WooCommerce module to report the post ID of the shop page (Pro version).
 	* Changed to Ngfb::get_instance() instead of using the $ngfb global for functions and widgets.
-* **New Features**
 	* Added a GitHub repository for NGFB at https://github.com/SurniaUlula/nextgen-facebook.
+* **New Features**
+	* *None*
 
 <h4>Version 7.8.3</h4>
 
@@ -499,6 +510,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added author (Person) and publisher (Organization) <a href="https://developers.google.com/structured-data/customize/social-profiles">social profiles markup in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em></a>.
 
 <h3>Upgrade Notice</h3>
+
+<h4>7.8.3.2</h4>
+
+Fixed a user contact field sanitation check, updated SucomUtil::limit_text_length() to use PHP multibyte functions, addeda minimum PHP version check.
 
 <h4>7.8.3.1</h4>
 
