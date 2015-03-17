@@ -413,9 +413,9 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 * **Bugfixes**
 	* Fixed the user contact field sanitation check by using the defined field names.
+	* Updated the SucomUtil::limit_text_length() method to use the mb_strlen() and mb_substr() multibyte functions.
 * **Improvements**
 	* Removed a check for the 'mb_decode_numericentity' function (replaced by a minimum PHP version check instead).
-	* Updated the SucomUtil::limit_text_length() method to use the mb_strlen() and mb_substr() multibyte functions.
 * **New Features**
 	* *None*
 
@@ -505,6 +505,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added author (Person) and publisher (Organization) <a href="https://developers.google.com/structured-data/customize/social-profiles">social profiles markup in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em></a>.
 
 == Upgrade Notice ==
+
+= 7.8.3.2 =
+
+Fixed a user contact field sanitation check, updated SucomUtil::limit_text_length() to use PHP multibyte functions, addeda minimum PHP version check.
 
 = 7.8.3.1 =
 
