@@ -518,6 +518,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 == Upgrade Notice ==
 
+= 7.8.4 =
+
+Added support for low/high resolution banners in Plugin Details window, added an extra check for object / post ID in WooCommerce module (Pro version).
+
 = 7.8.3.2 =
 
 Fixed user contact field sanitation check, updated SucomUtil::limit_text_length() for PHP multibyte functions, added a minimum PHP version check.
