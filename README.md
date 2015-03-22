@@ -414,7 +414,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * GitHub: https://github.com/SurniaUlula/nextgen-facebook
 * WordPress.org: https://wordpress.org/plugins/nextgen-facebook/developers/
 
-<h4>Version 7.8.4</h4>
+<h4>Version 7.8.4 (2015/03/22)</h4>
 
 * **Bugfixes**
 	* *None*
