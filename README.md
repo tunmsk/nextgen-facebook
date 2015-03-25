@@ -258,7 +258,7 @@ Try the NGFB plugin with complete confidence &mdash; when uninstalled, NGFB remo
 
 NGFB support and development is on-going. You can review the [FAQ](http://faq.ngfb.surniaulula.com/) and [Notes](http://notes.ngfb.surniaulula.com/) pages for additional setup information. If you have any suggestions or comments, post them to the [WordPress support forum](https://wordpress.org/support/plugin/nextgen-facebook) or the [Pro version support website](http://support.ngfb.surniaulula.com/).
 
-**We do not ask for WordPress admin access to support the NGFB plugin** &mdash; All support is provided from the front-end using HTML debugging information within the webpage (see the *Add Hidden Debug Messages* option on the NGFB Advanced settings page).
+**We do not require WordPress admin access to support the plugin** &mdash; All support is provided from the front-end using HTML debugging information within the webpage (see the *Add Hidden Debug Messages* option on the NGFB Advanced settings page).
 
 Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=author), [Facebook](https://www.facebook.com/SurniaUlulaCom), [Twitter](https://twitter.com/surniaululacom), and [YouTube](http://www.youtube.com/user/SurniaUlulaCom).
 
