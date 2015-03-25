@@ -411,6 +411,20 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * GitHub: https://github.com/SurniaUlula/nextgen-facebook
 * WordPress.org: https://wordpress.org/plugins/nextgen-facebook/developers/
 
+= Version 7.8.5 =
+
+* **Bugfixes**
+	* Added a check for `$_SERVER['HTTP_USER_AGENT']` before using its value in the SucomUtil::crawler_name() method.
+* **Improvements**
+	* The 'Add Hidden Debug Messages' option now disables only the transient cache, instead of both the transient and WP object caches.
+	* The `SucomDebug::mark()` method now adds the microtime to its debug log entries.
+	* Slight performance improvement by checking status of debug system before calling its logging methods (avoiding unnecessary method calls).
+	* Removed the `NgfbUtil::add_img_sizes_from_opts()` deprecated method.
+	* Added a new `SucomUtil::active_plugins()` method to fetch and cache the active plugins list.
+	* Added a check to remove a WordPress SEO false conflict warning.
+* **New Features**
+	* *None*
+
 = Version 7.8.4 (2015/03/22) =
 
 * **Bugfixes**
