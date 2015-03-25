@@ -416,14 +416,14 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * GitHub: https://github.com/SurniaUlula/nextgen-facebook
 * WordPress.org: https://wordpress.org/plugins/nextgen-facebook/developers/
 
-<h4>Version 7.8.5</h4>
+<h4>Version 7.8.5 (2015/03/26)</h4>
 
 * **Bugfixes**
 	* Added a check for `$_SERVER['HTTP_USER_AGENT']` before using its value in the SucomUtil::crawler_name() method.
 * **Improvements**
 	* The 'Add Hidden Debug Messages' option now disables only the transient cache, instead of both the transient and WP object caches.
 	* The `SucomDebug::mark()` method now adds the microtime to its debug log entries.
-	* Slight performance improvement by checking status of debug system before calling its logging methods (avoiding unnecessary method calls).
+	* Small performance improvement by checking status of debug system before calling its logging methods (avoiding unnecessary method calls).
 	* Removed the `NgfbUtil::add_img_sizes_from_opts()` deprecated method.
 	* Added a new `SucomUtil::active_plugins()` method to fetch and cache the active plugins list.
 	* Added a check to remove a WordPress SEO false conflict warning.
@@ -539,6 +539,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added author (Person) and publisher (Organization) <a href="https://developers.google.com/structured-data/customize/social-profiles">social profiles markup in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em></a>.
 
 <h3>Upgrade Notice</h3>
+
+<h4>7.8.5</h4>
+
+Small performance improvement in non-debug mode, fixed a user-agent string check error, added feature to remove false conflict warning from WordPress SEO.
 
 <h4>7.8.4</h4>
 
