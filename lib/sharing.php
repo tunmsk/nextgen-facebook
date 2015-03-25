@@ -133,12 +133,13 @@ jQuery("#ngfb-sidebar").click( function(){
 
 		public function __construct( &$plugin, $plugin_filepath = NGFB_FILEPATH ) {
 			$this->p =& $plugin;
+			$debug_enabled = $this->p->debug->is_on();	// optimize debug logging
+			if ( $debug_enabled )
+				$this->p->debug->mark( 'action / filter setup' );
 			$this->plugin_filepath = $plugin_filepath;
-
 			$sharing_css_name = 'sharing-styles-'.get_current_blog_id().'.min.css';
 			$this->sharing_css_file = NGFB_CACHEDIR.$sharing_css_name;
 			$this->sharing_css_url = NGFB_CACHEURL.$sharing_css_name;
-
 			$this->set_objects();
 
 			add_action( 'wp_enqueue_scripts', array( &$this, 'wp_enqueue_styles' ) );
@@ -170,6 +171,8 @@ jQuery("#ngfb-sidebar").click( function(){
 					'status_pro_features' => 3,	// include social file cache status
 				), 10, 'ngfb' );			// hook into the extension name instead
 			}
+			if ( $debug_enabled )
+				$this->p->debug->mark( 'action / filter setup' );
 		}
 
 		private function set_objects() {
@@ -181,6 +184,7 @@ jQuery("#ngfb-sidebar").click( function(){
 		}
 
 		public function filter_get_defaults( $opts_def ) {
+			$debug_enabled = $this->p->debug->is_on();	// optimize debug logging
 			$opts_def = array_merge( $opts_def, self::$cf['opt']['defaults'] );
 			$opts_def = $this->p->util->push_add_to_options( $opts_def, array( 'buttons' => 'frontend' ) );
 			$plugin_dir = trailingslashit( plugin_dir_path( $this->plugin_filepath ) );
@@ -196,7 +200,8 @@ jQuery("#ngfb-sidebar").click( function(){
 					else {
 						$css_data = fread( $fh, filesize( $css_file ) );
 						fclose( $fh );
-						$this->p->debug->log( 'read css from file '.$css_file );
+						if ( $debug_enabled )
+							$this->p->debug->log( 'read css from file '.$css_file );
 						foreach ( array( 'URLPATH' => $url_path ) as $macro => $value )
 							$css_data = preg_replace( '/{{'.$macro.'}}/', $value, $css_data );
 						$opts_def['buttons_css_'.$id] = $css_data;
@@ -420,17 +425,21 @@ jQuery("#ngfb-sidebar").click( function(){
 		}
 
 		public function wp_enqueue_styles() {
+			$debug_enabled = $this->p->debug->is_on();	// optimize debug logging
+
 			// only include sharing styles if option is checked
 			if ( ! empty( $this->p->options['buttons_use_social_css'] ) ) {
 
 				// create the css file if it does not exist
 				if ( ! file_exists( $this->sharing_css_file ) ) {
-					$this->p->debug->log( 'updating '.$this->sharing_css_file );
+					if ( $debug_enabled )
+						$this->p->debug->log( 'updating '.$this->sharing_css_file );
 					$this->update_sharing_css( $this->p->options );
 				}
 
 				if ( ! empty( $this->p->options['buttons_enqueue_social_css'] ) ) {
-					$this->p->debug->log( 'wp_enqueue_style = '.$this->p->cf['lca'].'_sharing_buttons' );
+					if ( $debug_enabled )
+						$this->p->debug->log( 'wp_enqueue_style = '.$this->p->cf['lca'].'_sharing_buttons' );
 					wp_register_style( 
 						$this->p->cf['lca'].'_sharing_buttons', 
 						$this->sharing_css_url, 
@@ -442,7 +451,8 @@ jQuery("#ngfb-sidebar").click( function(){
 					if ( ! is_readable( $this->sharing_css_file ) ) {
 						if ( is_admin() )
 							$this->p->notice->err( $this->sharing_css_file.' is not readable.', true );
-						$this->p->debug->log( $this->sharing_css_file.' is not readable' );
+						if ( $debug_enabled )
+							$this->p->debug->log( $this->sharing_css_file.' is not readable' );
 					} else {
 						echo '<style type="text/css">';
 						if ( ( $fsize = @filesize( $this->sharing_css_file ) ) > 0 &&
@@ -453,7 +463,8 @@ jQuery("#ngfb-sidebar").click( function(){
 						echo '</style>',"\n";
 					}
 				}
-			} else $this->p->debug->log( 'social css option is disabled' );
+			} elseif ( $debug_enabled )
+				$this->p->debug->log( 'social css option is disabled' );
 		}
 
 		public function update_sharing_css( &$opts ) {
@@ -609,32 +620,39 @@ jQuery("#ngfb-sidebar").click( function(){
 		}
 
 		public function get_buttons( &$text, $type = 'content', $use_post = true, $buttons_pos = '' ) {
+			$debug_enabled = $this->p->debug->is_on();	// optimize debug logging
 
 			// should we skip the sharing buttons for this content type or webpage?
 			if ( is_admin() ) {
 				if ( strpos( $type, 'admin_' ) !== 0 ) {
-					$this->p->debug->log( $type.' filter skipped: '.$type.' ignored with is_admin()'  );
+					if ( $debug_enabled )
+						$this->p->debug->log( $type.' filter skipped: '.$type.' ignored with is_admin()'  );
 					return $text;
 				}
 			} elseif ( is_feed() ) {
-				$this->p->debug->log( $type.' filter skipped: no buttons allowed in rss feeds'  );
+				if ( $debug_enabled )
+					$this->p->debug->log( $type.' filter skipped: no buttons allowed in rss feeds'  );
 				return $text;
 			} else {
 				if ( ! is_singular() && empty( $this->p->options['buttons_on_index'] ) ) {
-					$this->p->debug->log( $type.' filter skipped: index page without buttons_on_index enabled' );
+					if ( $debug_enabled )
+						$this->p->debug->log( $type.' filter skipped: index page without buttons_on_index enabled' );
 					return $text;
 				} elseif ( is_front_page() && empty( $this->p->options['buttons_on_front'] ) ) {
-					$this->p->debug->log( $type.' filter skipped: front page without buttons_on_front enabled' );
+					if ( $debug_enabled )
+						$this->p->debug->log( $type.' filter skipped: front page without buttons_on_front enabled' );
 					return $text;
 				}
 				if ( $this->is_post_buttons_disabled() ) {
-					$this->p->debug->log( $type.' filter skipped: sharing buttons disabled' );
+					if ( $debug_enabled )
+						$this->p->debug->log( $type.' filter skipped: sharing buttons disabled' );
 					return $text;
 				}
 			}
 
 			if ( ! $this->have_buttons( $type ) ) {
-				$this->p->debug->log( $type.' filter exiting early: no sharing buttons enabled' );
+				if ( $debug_enabled )
+					$this->p->debug->log( $type.' filter exiting early: no sharing buttons enabled' );
 				return $text;
 			}
 
@@ -651,12 +669,14 @@ jQuery("#ngfb-sidebar").click( function(){
 						( empty( $post_id ) ? '_url:'.$this->p->util->get_sharing_url( $use_post, true, $source_id ) : '' ), $type, $use_post ).')';
 				$cache_id = $lca.'_'.md5( $cache_salt );
 				$cache_type = 'object cache';
-				$this->p->debug->log( $cache_type.': transient salt '.$cache_salt );
+				if ( $debug_enabled )
+					$this->p->debug->log( $cache_type.': transient salt '.$cache_salt );
 				$html = get_transient( $cache_id );
 			}
 
 			if ( $html !== false ) {
-				$this->p->debug->log( $cache_type.': '.$type.' html retrieved from transient '.$cache_id );
+				if ( $debug_enabled )
+					$this->p->debug->log( $cache_type.': '.$type.' html retrieved from transient '.$cache_id );
 			} else {
 				// sort enabled sharing buttons by their preferred order
 				$sorted_ids = array();
@@ -681,7 +701,8 @@ jQuery("#ngfb-sidebar").click( function(){
 
 					if ( $this->p->is_avail['cache']['transient'] ) {
 						set_transient( $cache_id, $html, $this->p->cache->object_expire );
-						$this->p->debug->log( $cache_type.': '.$type.' html saved to transient '.
+						if ( $debug_enabled )
+							$this->p->debug->log( $cache_type.': '.$type.' html saved to transient '.
 							$cache_id.' ('.$this->p->cache->object_expire.' seconds)' );
 					}
 				}
@@ -703,11 +724,12 @@ jQuery("#ngfb-sidebar").click( function(){
 					$text = $html.$text.$html; 
 					break;
 			}
-			return $text.$this->p->debug->get_html();
+			return $text.( $debug_enabled ? $this->p->debug->get_html() : '' );
 		}
 
 		// get_html() is called by the widget, shortcode, function, and perhaps some filter hooks
 		public function get_html( &$ids = array(), &$atts = array() ) {
+			$debug_enabled = $this->p->debug->is_on();	// optimize debug logging
 
 			$preset_id = empty( $atts['preset_id'] ) ? '' : 
 				preg_replace( '/[^a-z0-9\-_]/', '', $atts['preset_id'] );
@@ -724,14 +746,17 @@ jQuery("#ngfb-sidebar").click( function(){
 			if ( ! empty( $preset_id ) && ! empty( self::$cf['opt']['preset'] ) ) {
 				if ( array_key_exists( $preset_id, self::$cf['opt']['preset'] ) &&
 					is_array( self::$cf['opt']['preset'][$preset_id] ) ) {
-					$this->p->debug->log( 'applying preset_id '.$preset_id.' to options' );
+					if ( $debug_enabled )
+						$this->p->debug->log( 'applying preset_id '.$preset_id.' to options' );
 					$custom_opts = array_merge( $custom_opts, self::$cf['opt']['preset'][$preset_id] );
-				} else $this->p->debug->log( $preset_id.' preset_id missing or not array'  );
+				} elseif ( $debug_enabled )
+					$this->p->debug->log( $preset_id.' preset_id missing or not array'  );
 			} 
 
 			$filter_name = $this->p->cf['lca'].'_sharing_html_'.$filter_id.'_options';
 			if ( ! empty( $filter_id ) && has_filter( $filter_name ) ) {
-				$this->p->debug->log( 'applying filter_id '.$filter_id.' to options ('.$filter_name.')' );
+				if ( $debug_enabled )
+					$this->p->debug->log( 'applying filter_id '.$filter_id.' to options ('.$filter_name.')' );
 				$custom_opts = apply_filters( $filter_name, $custom_opts );
 			}
 
@@ -869,12 +894,15 @@ jQuery("#ngfb-sidebar").click( function(){
 			$ret = false;
 
 			if ( ! empty( $post ) ) {
+				$debug_enabled = $this->p->debug->is_on();	// optimize debug logging
 				$post_type = $post->post_type;
 				if ( $this->p->mods['util']['postmeta']->get_options( $post->ID, 'buttons_disabled' ) ) {
-					$this->p->debug->log( 'post '.$post->ID.': sharing buttons disabled by custom meta option' );
+					if ( $debug_enabled )
+						$this->p->debug->log( 'post '.$post->ID.': sharing buttons disabled by custom meta option' );
 					$ret = true;
 				} elseif ( ! empty( $post_type ) && empty( $this->p->options['buttons_add_to_'.$post_type] ) ) {
-					$this->p->debug->log( 'post '.$post->ID.': sharing buttons not enabled for post type '.$post_type );
+					if ( $debug_enabled )
+						$this->p->debug->log( 'post '.$post->ID.': sharing buttons not enabled for post type '.$post_type );
 					$ret = true;
 				}
 			}

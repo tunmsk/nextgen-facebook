@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'update_check_hours' => 24,
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '7.8.4',		// plugin version
+					'version' => '7.8.5',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -529,13 +529,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			define( 'NGFB_NONCE', md5( NGFB_PLUGINDIR.'-'.$version.
 				( defined( 'NONCE_SALT' ) ? NONCE_SALT : '' ) ) );
 
-			/*
-			 * Allow some constants to be pre-defined in wp-config.php
-			 */
-
 			if ( defined( 'NGFB_DEBUG' ) && 
 				! defined( 'NGFB_HTML_DEBUG' ) )
 					define( 'NGFB_HTML_DEBUG', NGFB_DEBUG );
+
+			if ( ! defined( 'NGFB_DEBUG_FILE_EXP' ) )
+				define( 'NGFB_DEBUG_FILE_EXP', 300 );
 
 			if ( ! defined( 'NGFB_CACHEDIR' ) )
 				define( 'NGFB_CACHEDIR', NGFB_PLUGINDIR.'cache/' );
@@ -543,18 +542,29 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			if ( ! defined( 'NGFB_CACHEURL' ) )
 				define( 'NGFB_CACHEURL', NGFB_URLPATH.'cache/' );
 
+			if ( ! defined( 'NGFB_TOPICS_LIST' ) )
+				define( 'NGFB_TOPICS_LIST', NGFB_PLUGINDIR.'share/topics.txt' );
+
+			if ( ! defined( 'NGFB_SHARING_SHORTCODE' ) )
+				define( 'NGFB_SHARING_SHORTCODE', $cf['lca'] );
+			/*
+			 * NGFB option and meta array names
+			 */
 			if ( ! defined( 'NGFB_OPTIONS_NAME' ) )
-				define( 'NGFB_OPTIONS_NAME', $cf['lca'].'_options' );
+				define( 'NGFB_OPTIONS_NAME', 'ngfb_options' );
 
 			if ( ! defined( 'NGFB_SITE_OPTIONS_NAME' ) )
-				define( 'NGFB_SITE_OPTIONS_NAME', $cf['lca'].'_site_options' );
+				define( 'NGFB_SITE_OPTIONS_NAME', 'ngfb_site_options' );
 
 			if ( ! defined( 'NGFB_META_NAME' ) )
-				define( 'NGFB_META_NAME', '_'.$cf['lca'].'_meta' );
+				define( 'NGFB_META_NAME', '_ngfb_meta' );
 
 			if ( ! defined( 'NGFB_PREF_NAME' ) )
-				define( 'NGFB_PREF_NAME', '_'.$cf['lca'].'_pref' );
+				define( 'NGFB_PREF_NAME', '_ngfb_pref' );
 
+			/*
+			 * NGFB hook priorities
+			 */
 			if ( ! defined( 'NGFB_META_SAVE_PRIORITY' ) )
 				define( 'NGFB_META_SAVE_PRIORITY', 6 );
 
@@ -576,20 +586,14 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			if ( ! defined( 'NGFB_FOOTER_PRIORITY' ) )
 				define( 'NGFB_FOOTER_PRIORITY', 100 );
 			
-			if ( ! defined( 'NGFB_DEBUG_FILE_EXP' ) )
-				define( 'NGFB_DEBUG_FILE_EXP', 300 );
-
+			/*
+			 * NGFB curl settings
+			 */
 			if ( ! defined( 'NGFB_CURL_USERAGENT' ) )
 				define( 'NGFB_CURL_USERAGENT', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36' );
 
 			if ( ! defined( 'NGFB_CURL_CAINFO' ) )
 				define( 'NGFB_CURL_CAINFO', NGFB_PLUGINDIR.'share/curl/cacert.pem' );
-
-			if ( ! defined( 'NGFB_TOPICS_LIST' ) )
-				define( 'NGFB_TOPICS_LIST', NGFB_PLUGINDIR.'share/topics.txt' );
-
-			if ( ! defined( 'NGFB_SHARING_SHORTCODE' ) )
-				define( 'NGFB_SHARING_SHORTCODE', $cf['lca'] );
 		}
 
 		public static function require_libs( $plugin_filepath ) {
