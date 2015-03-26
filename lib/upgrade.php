@@ -196,8 +196,9 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 				}
 
 				if ( version_compare( $opts['options_version'], 296, '<=' ) ) {
-					if ( $opts['plugin_min_shorten'] < 22 ) 
-						$opts['plugin_min_shorten'] = 22;
+					if ( empty( opts['plugin_min_shorten'] ) || 
+						$opts['plugin_min_shorten'] < 22 ) 
+							$opts['plugin_min_shorten'] = 22;
 				}
 			}
 

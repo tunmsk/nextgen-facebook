@@ -31,18 +31,20 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'icon-medium' => 'https://ps.w.org/nextgen-facebook/assets/icon-256x256.png?rev=',
 					),
 					'url' => array(
+						// wordpress
 						'download' => 'https://wordpress.org/plugins/nextgen-facebook/',
-						'update' => 'http://surniaulula.com/extend/plugins/nextgen-facebook/update/',
-						'purchase' => 'http://surniaulula.com/extend/plugins/nextgen-facebook/',
 						'review' => 'https://wordpress.org/support/view/plugin-reviews/nextgen-facebook#postform',
 						'readme' => 'https://plugins.svn.wordpress.org/nextgen-facebook/trunk/readme.txt',
 						'setup' => 'https://plugins.svn.wordpress.org/nextgen-facebook/trunk/setup.html',
+						'wp_support' => 'https://wordpress.org/support/plugin/nextgen-facebook',
+						// surniaulula
+						'update' => 'http://surniaulula.com/extend/plugins/nextgen-facebook/update/',
+						'purchase' => 'http://surniaulula.com/extend/plugins/nextgen-facebook/',
 						'changelog' => 'http://surniaulula.com/extend/plugins/nextgen-facebook/changelog/',
 						'codex' => 'http://surniaulula.com/codex/plugins/nextgen-facebook/',
 						'faq' => 'http://surniaulula.com/codex/plugins/nextgen-facebook/faq/',
 						'notes' => 'http://surniaulula.com/codex/plugins/nextgen-facebook/notes/',
 						'feed' => 'http://surniaulula.com/category/application/wordpress/wp-plugins/ngfb/feed/',
-						'wp_support' => 'https://wordpress.org/support/plugin/nextgen-facebook',
 						'pro_support' => 'http://support.ngfb.surniaulula.com/',
 						'pro_ticket' => 'http://ticket.ngfb.surniaulula.com/',
 					),
