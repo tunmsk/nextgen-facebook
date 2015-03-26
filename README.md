@@ -427,6 +427,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Removed the `NgfbUtil::add_img_sizes_from_opts()` deprecated method.
 	* Added a new `SucomUtil::active_plugins()` method to fetch and cache the active plugins list.
 	* Added a check to remove a WordPress SEO false conflict warning.
+	* Changed the default Twitter Card image sizes from 200x200 cropped to 300x300 cropped for the Summary Card, and from 300x300 un-cropped to 800x800 un-cropped for the Large Image Summary Card.
 * **New Features**
 	* *None*
 
