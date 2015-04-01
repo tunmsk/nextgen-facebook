@@ -655,7 +655,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			
 			$cf = self::get_config();
 
-			require_once( NGFB_PLUGINDIR.'lib/com/update.php' );
+			if ( file_exists( NGFB_PLUGINDIR.'lib/pro/' ) )
+				require_once( NGFB_PLUGINDIR.'lib/com/update.php' );
+
 			require_once( NGFB_PLUGINDIR.'lib/com/util.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/cache.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/notice.php' );

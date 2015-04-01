@@ -243,8 +243,10 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			 * to end-users on the license settings page as well).
 			 */
 			if ( ! empty( $this->options['plugin_ngfb_tid'] ) ) {
-
 				$this->util->add_plugin_filters( $this, array( 'installed_version' => 1, 'ua_plugin' => 1 ) );
+
+				if ( ! class_exists( 'SucomUpdate' ) )
+					require_once( NGFB_PLUGINDIR.'lib/com/update.php' );
 				$this->update = new SucomUpdate( $this, $this->cf['plugin'], $this->cf['update_check_hours'] );
 
 				if ( is_admin() ) {

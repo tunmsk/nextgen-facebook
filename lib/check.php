@@ -73,7 +73,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 				case 'aop':
 					return ( ! defined( 'NGFB_PRO_MODULE_DISABLE' ) ||
 					( defined( 'NGFB_PRO_MODULE_DISABLE' ) && ! NGFB_PRO_MODULE_DISABLE ) ) &&
-					file_exists( NGFB_PLUGINDIR.'lib/pro/head/twittercard.php' ) ? true : false;
+					file_exists( NGFB_PLUGINDIR.'lib/pro/' ) ? true : false;
 					break;
 				case 'mt':
 				case 'metatags':
