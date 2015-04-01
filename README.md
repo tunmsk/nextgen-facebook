@@ -7,7 +7,7 @@
 <strong>License URI</strong>: http://www.gnu.org/licenses/gpl.txt<br/>
 <strong>Requires At Least</strong>: 3.0<br/>
 <strong>Tested Up To</strong>: 4.1.1<br/>
-<strong>Stable Tag</strong>: 7.8.5<br/>
+<strong>Stable Tag</strong>: 7.9<br/>
 </blockquote>
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
@@ -415,6 +415,21 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 * GitHub: https://github.com/SurniaUlula/nextgen-facebook
 * WordPress.org: https://wordpress.org/plugins/nextgen-facebook/developers/
+
+<h4>Version 7.9 (2015/04/02)</h4>
+
+* **Bugfixes**
+	* Fixed the saving of NGFB option pages under the WordPress "Settings" menu item.
+* **Improvements**
+	* Further performance improvements for non-debug mode by centralizing debug mode checks.
+	* Removed the "LinkedIn" tab on the NGFB General settings page, and added an "Others" tab (which includes LinkedIn, Instagram, and MySpace business URLs).
+	* Refactored the NGFB settings tab layout to allow excess tabs to continue onto a second line.
+	* When checking for duplicate meta tags in posts / pages, constants are defined to disable caching plugins for that webpage request.
+* **New Features**
+	* Added an "NGFB" separator to clearly identify NGFB setting pages in the WordPress Settings list.
+	* Added a new "Image Dimensions" settings page under the WordPress Settings menu item.
+	* Added a new "Website / Business Social Accounts" settings page under the WordPress Settings menu item.
+	* Added MySpace to the list of social contact methods added to user profile pages.
 
 <h4>Version 7.8.5 (2015/03/26)</h4>
 
