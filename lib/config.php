@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'update_check_hours' => 24,
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '7.8.5',		// plugin version
+					'version' => '7.9',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -50,7 +50,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					),
 					'lib' => array(			// libraries
 						'setting' => array (
-							'contact-fields' => 'Contact Fields',
+							'ngfb-separator-0' => 'NGFB',
+							'image-dimensions' => 'Image Dimensions',
+							'contact-fields' => 'Profile Contact Fields',
+							'social-accounts' => 'Website / Business Social Accounts',
+							'ngfb-separator-1' => '',
 						),
 						'submenu' => array (
 							'general' => 'General',
@@ -91,9 +95,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'admin' => array(
 								'general' => 'General Settings',
 								'advanced' => 'Advanced Settings',
+								'image-dimensions' => 'Image Dimensions',
+								'apikeys' => 'API Key Settings',
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
-								'apikeys' => 'API Key Settings',
 								'postmeta' => 'Post Social Settings',
 								'user' => 'User Social Settings',
 							),
@@ -115,9 +120,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'admin' => array(
 								'general' => 'General Settings',
 								'advanced' => 'Advanced Settings',
+								'image-dimensions' => 'Image Dimensions',
+								'apikeys' => 'API Key Settings',
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
-								'apikeys' => 'API Key Settings',
 								'postmeta' => 'Post Social Settings',
 								'user' => 'User Social Settings',
 							),
@@ -143,7 +149,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'slideshare' => 'Slideshare API',
 								'vimeo' => 'Vimeo Video API',
 								'wistia' => 'Wistia Video API',
-								'youtube' => 'YouTube Video and Playlist API',
+								'youtube' => 'YouTube Video / Playlist API',
 							),
 							'seo' => array(
 								'aioseop' => 'All in One SEO Pack',
@@ -164,7 +170,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(				// options
-				'version' => 326,		// increment when changing default options
+				'version' => 328,		// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'options_version' => '',
@@ -183,7 +189,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'fb_admins' => '',
 					'fb_app_id' => '',
 					'fb_lang' => 'en_US',
+					'instgram_publisher_url' => '',
 					'linkedin_publisher_url' => '',
+					'myspace_publisher_url' => '',
 					'og_site_name' => '',
 					'og_site_description' => '',
 					'og_art_section' => 'none',
@@ -319,7 +327,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_name_twitter:label4' => 1,
 					'add_meta_name_generator' => 1,
 					'add_meta_name_author' => 1,
-					'add_meta_name_description' => 0,
+					'add_meta_name_description' => 1,
 					'add_meta_itemprop_description' => 1,
 					'add_meta_itemprop_url' => 1,
 					'add_meta_itemprop_image' => 1,
@@ -362,24 +370,30 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_cm_gp_name' => 'gplus', 
 					'plugin_cm_gp_label' => 'Google+ URL', 
 					'plugin_cm_gp_enabled' => 1,
+					'plugin_cm_instgram_name' => 'instagram', 
+					'plugin_cm_instgram_label' => 'Instagram URL', 
+					'plugin_cm_instgram_enabled' => 1,
 					'plugin_cm_linkedin_name' => 'linkedin', 
 					'plugin_cm_linkedin_label' => 'LinkedIn URL', 
-					'plugin_cm_linkedin_enabled' => 0,
+					'plugin_cm_linkedin_enabled' => 1,
+					'plugin_cm_myspace_name' => 'myspace', 
+					'plugin_cm_myspace_label' => 'MySpace URL', 
+					'plugin_cm_myspace_enabled' => 1,
 					'plugin_cm_pin_name' => 'pinterest', 
 					'plugin_cm_pin_label' => 'Pinterest URL', 
-					'plugin_cm_pin_enabled' => 0,
+					'plugin_cm_pin_enabled' => 1,
 					'plugin_cm_tumblr_name' => 'tumblr', 
 					'plugin_cm_tumblr_label' => 'Tumblr URL', 
-					'plugin_cm_tumblr_enabled' => 0,
+					'plugin_cm_tumblr_enabled' => 1,
 					'plugin_cm_twitter_name' => 'twitter', 
 					'plugin_cm_twitter_label' => 'Twitter @username', 
 					'plugin_cm_twitter_enabled' => 1,
 					'plugin_cm_yt_name' => 'youtube', 
 					'plugin_cm_yt_label' => 'YouTube Channel URL', 
-					'plugin_cm_yt_enabled' => 0,
+					'plugin_cm_yt_enabled' => 1,
 					'plugin_cm_skype_name' => 'skype', 
 					'plugin_cm_skype_label' => 'Skype Username', 
-					'plugin_cm_skype_enabled' => 0,
+					'plugin_cm_skype_enabled' => 1,
 					'wp_cm_aim_name' => 'aim', 
 					'wp_cm_aim_label' => 'AIM', 
 					'wp_cm_aim_enabled' => 1,
@@ -407,7 +421,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'facebook' => 'fb', 
 					'gplus' => 'gp',
 					'twitter' => 'twitter',
+					'instagram' => 'instgram',
 					'linkedin' => 'linkedin',
+					'myspace' => 'myspace',
 					'pinterest' => 'pin',
 					'buffer' => 'buffer',
 					'reddit' => 'reddit',
@@ -549,6 +565,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 			if ( ! defined( 'NGFB_SHARING_SHORTCODE' ) )
 				define( 'NGFB_SHARING_SHORTCODE', $cf['lca'] );
+
+			if ( ! defined( 'NGFB_MENU_ORDER' ) )
+				define( 'NGFB_MENU_ORDER', '99.11' );
+
 			/*
 			 * NGFB option and meta array names
 			 */
@@ -565,16 +585,34 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				define( 'NGFB_PREF_NAME', '_ngfb_pref' );
 
 			/*
+			 * NGFB option and meta array alternate / fallback names
+			 */
+			if ( ! defined( 'NGFB_OPTIONS_NAME_ALT' ) )
+				define( 'NGFB_OPTIONS_NAME_ALT', 'wpsso_options' );
+
+			if ( ! defined( 'NGFB_SITE_OPTIONS_NAME_ALT' ) )
+				define( 'NGFB_SITE_OPTIONS_NAME_ALT', 'wpsso_site_options' );
+
+			if ( ! defined( 'NGFB_META_NAME_ALT' ) )
+				define( 'NGFB_META_NAME_ALT', '_wpsso_meta' );
+
+			if ( ! defined( 'NGFB_PREF_NAME_ALT' ) )
+				define( 'NGFB_PREF_NAME_ALT', '_wpsso_pref' );
+
+			/*
 			 * NGFB hook priorities
 			 */
+			if ( ! defined( 'NGFB_ADD_MENU_PRIORITY' ) )
+				define( 'NGFB_ADD_MENU_PRIORITY', -20 );
+
+			if ( ! defined( 'NGFB_ADD_SETTINGS_PRIORITY' ) )
+				define( 'NGFB_ADD_SETTINGS_PRIORITY', -10 );
+
 			if ( ! defined( 'NGFB_META_SAVE_PRIORITY' ) )
 				define( 'NGFB_META_SAVE_PRIORITY', 6 );
 
 			if ( ! defined( 'NGFB_META_CACHE_PRIORITY' ) )
 				define( 'NGFB_META_CACHE_PRIORITY', 9 );
-
-			if ( ! defined( 'NGFB_MENU_PRIORITY' ) )
-				define( 'NGFB_MENU_PRIORITY', '99.11' );
 
 			if ( ! defined( 'NGFB_INIT_PRIORITY' ) )
 				define( 'NGFB_INIT_PRIORITY', 14 );
@@ -596,6 +634,21 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 			if ( ! defined( 'NGFB_CURL_CAINFO' ) )
 				define( 'NGFB_CURL_CAINFO', NGFB_PLUGINDIR.'share/curl/cacert.pem' );
+
+			/*
+			 * Disable caching plugins for the duplicate meta tag check feature
+			 */
+			if ( ! empty( $_GET['NGFB_META_TAGS_DISABLE'] ) ) {
+
+				if ( ! defined( 'DONOTCACHEPAGE' ) )
+					define( 'DONOTCACHEPAGE', true );	// wp super cache
+
+				if ( ! defined( 'QUICK_CACHE_ALLOWED' ) )
+					define( 'QUICK_CACHE_ALLOWED', false );	// quick cache
+
+				if ( ! defined( 'ZENCACHE_ALLOWED' ) )
+					define( 'ZENCACHE_ALLOWED', false );	// quick cache
+			}
 		}
 
 		public static function require_libs( $plugin_filepath ) {

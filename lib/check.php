@@ -202,6 +202,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 							break;
 						case 'admin-general':
 						case 'admin-advanced':
+						case 'admin-image-dimensions':
 						case 'admin-postmeta':
 						case 'admin-user':
 						case 'util-postmeta':

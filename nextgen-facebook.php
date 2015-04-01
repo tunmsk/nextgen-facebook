@@ -9,7 +9,7 @@
  * Description: Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.0
  * Tested Up To: 4.1
- * Version: 7.8.5
+ * Version: 7.9
  * 
  * Copyright 2012-2014 - Jean-Sebastien Morisset - http://surniaulula.com/
  */
@@ -32,7 +32,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public $media;			// NgfbMedia (images, videos, etc.)
 		public $msgs;			// NgfbMessages (admin tooltip messages)
 		public $notice;			// SucomNotice
-		public $og;			// NgfbOpengraph (extends SucomOpengraph)
+		public $og;			// NgfbOpengraph
 		public $opt;			// NgfbOptions
 		public $reg;			// NgfbRegister
 		public $script;			// SucomScript (admin jquery tooltips)
@@ -50,6 +50,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public $options = array();	// individual blog/site options
 		public $site_options = array();	// multisite options
 		public $mods = array();		// pro and gpl modules
+		public $debug_enabled = null;
 
 		protected static $instance = null;
 
@@ -109,18 +110,21 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 			$this->set_objects();				// define the class object variables
 
-			if ( $this->debug->is_on() === true )
-				foreach ( array( 'wp_head', 'wp_footer', 'admin_head', 'admin_footer' ) as $action )
+			if ( $this->debug_enabled ) {
+				foreach ( array( 'wp_head', 'wp_footer', 'admin_head', 'admin_footer' ) as $action ) {
 					foreach ( array( -9999, 9999 ) as $prio ) {
 						add_action( $action, create_function( '', 'echo "<!-- ngfb '.
 							$action.' action hook priority '.$prio.' mark -->\n";' ), $prio );
 						add_action( $action, array( &$this, 'show_debug_html' ), $prio );
 					}
+				}
+			}
 			do_action( 'ngfb_init_plugin' );
 		}
 
 		public function show_debug_html() { 
-			$this->debug->show_html();
+			if ( $this->debug_enabled )
+				$this->debug->show_html();
 		}
 
 		// called by activate_plugin() as well
@@ -141,6 +145,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				( $classname = NgfbConfig::load_lib( false, 'com/debug', 'SucomDebug' ) ) !== false )
 					$this->debug = new $classname( $this, array( 'html' => $html_debug, 'wp' => $wp_debug ) );
 			else $this->debug = new NgfbNoDebug();			// fallback to dummy debug class
+			$this->debug_enabled = $this->debug->is_on();
 
 			$this->notice = new SucomNotice( $this );
 			$this->util = new NgfbUtil( $this );
@@ -178,7 +183,8 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				! empty( $_GET['action'] ) && $_GET['action'] == 'activate-plugin' &&
 				! empty( $_GET['plugin'] ) && $_GET['plugin'] == NGFB_PLUGINBASE ) ) {
 
-				$this->debug->log( 'plugin activation detected' );
+				if ( $this->debug_enabled )
+					$this->debug->log( 'plugin activation detected' );
 
 				if ( ! is_array( $this->options ) || empty( $this->options ) ||
 					( defined( 'NGFB_RESET_ON_ACTIVATE' ) && NGFB_RESET_ON_ACTIVATE ) ) {
@@ -186,13 +192,15 @@ if ( ! class_exists( 'Ngfb' ) ) {
 					$this->options = $this->opt->get_defaults();
 					delete_option( NGFB_OPTIONS_NAME );
 					add_option( NGFB_OPTIONS_NAME, $this->options, null, 'yes' );
-					$this->debug->log( 'default options have been added to the database' );
+					if ( $this->debug_enabled )
+						$this->debug->log( 'default options have been added to the database' );
 
 					if ( defined( 'NGFB_RESET_ON_ACTIVATE' ) && NGFB_RESET_ON_ACTIVATE )
 						$this->notice->inf( 'NGFB_RESET_ON_ACTIVATE constant is true &ndash;
 							plugin options have been reset to their default values.', true );
 				}
-				$this->debug->log( 'exiting early: init_plugin() to follow' );
+				if ( $this->debug_enabled )
+					$this->debug->log( 'exiting early: init_plugin() to follow' );
 				return;	// no need to continue, init_plugin() will handle the rest
 			}
 
@@ -222,9 +230,10 @@ if ( ! class_exists( 'Ngfb' ) ) {
 						! constant( $constant_name ) ) ? true : false;
 				}
 				$cache_status = 'transient cache use '.( $this->is_avail['cache']['transient'] ? 'could not be' : 'is' ).' disabled';
-				$this->debug->log( 'html debug mode is active: '.$cache_status );
-				$this->notice->inf( 'HTML debug mode is active &ndash; '.$cache_status.' '.
-					__( 'and informational messages are being added as hidden HTML comments.', NGFB_TEXTDOM ) );
+				if ( $this->debug_enabled )
+					$this->debug->log( 'html debug mode is active: '.$cache_status );
+				$this->notice->inf( 'HTML debug mode is active &ndash; '.$cache_status.
+					' and informational messages are being added as hidden HTML comments.' );
 			}
 
 			if ( ! empty( $this->options['plugin_ngfb_tid'] ) ) {

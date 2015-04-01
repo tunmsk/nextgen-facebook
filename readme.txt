@@ -411,6 +411,15 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * GitHub: https://github.com/SurniaUlula/nextgen-facebook
 * WordPress.org: https://wordpress.org/plugins/nextgen-facebook/developers/
 
+= Version 7.9 (2015/04/02) =
+
+* **Bugfixes**
+	* Fixed the saving of NGFB option pages under the WordPress "Settings" menu item.
+* **Improvements**
+	* *None*
+* **New Features**
+	* *None*
+
 = Version 7.8.5 (2015/03/26) =
 
 * **Bugfixes**

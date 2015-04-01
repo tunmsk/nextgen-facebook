@@ -8,9 +8,9 @@ Copyright 2012-2014 - Jean-Sebastien Morisset - http://surniaulula.com/
 if ( ! defined( 'ABSPATH' ) ) 
 	die( 'These aren\'t the droids you\'re looking for...' );
 
-if ( ! class_exists( 'NgfbSettingContactFields' ) && class_exists( 'NgfbSubmenuAdvanced' ) ) {
+if ( ! class_exists( 'NgfbSettingContactfields' ) && class_exists( 'NgfbSubmenuAdvanced' ) ) {
 
-	class NgfbSettingContactFields extends NgfbSubmenuAdvanced {
+	class NgfbSettingContactfields extends NgfbSubmenuAdvanced {
 
 		public function __construct( &$plugin, $id, $name ) {
 			$this->p =& $plugin;
