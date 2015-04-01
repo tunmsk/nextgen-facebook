@@ -556,6 +556,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 <h3>Upgrade Notice</h3>
 
+<h4>7.9</h4>
+
+Fixed saving of NGFB options under the WordPress "Settings" menu, added new "Image Dimensions" and "Website / Business Social Accounts" settings pages.
+
 <h4>7.8.5</h4>
 
 Small performance improvement in non-debug mode, fixed a user-agent string check error, added feature to remove false conflict warning from WordPress SEO.
