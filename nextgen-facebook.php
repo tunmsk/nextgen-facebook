@@ -238,7 +238,10 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 			if ( ! empty( $this->options['plugin_ngfb_tid'] ) ) {
 				$this->util->add_plugin_filters( $this, array( 'installed_version' => 1, 'ua_plugin' => 1 ) );
+
+				require_once( NGFB_PLUGINDIR.'lib/com/update.php' );
 				$this->update = new SucomUpdate( $this, $this->cf['plugin'], $this->cf['update_check_hours'] );
+
 				if ( is_admin() ) {
 					if ( $this->is_avail['aop'] === false ) {
 						$shortname = $this->cf['plugin']['ngfb']['short'];
