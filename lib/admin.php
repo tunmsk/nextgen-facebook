@@ -667,15 +667,14 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 		protected function get_submit_buttons( $submit_text = '', $class = 'submit-buttons' ) {
 			if ( empty( $submit_text ) ) 
 				$submit_text = __( 'Save All Changes', NGFB_TEXTDOM );
-			$action_buttons = '<input type="submit" class="button-primary" value="'.$submit_text.'" />';
 
 			$show_opts_next = SucomUtil::next_key( NgfbUser::show_opts(), $this->p->cf['form']['show_options'] );
 			$show_opts_text = 'Show '.$this->p->cf['form']['show_options'][$show_opts_next];
 			$show_opts_url = $this->p->util->get_admin_url( '?action=change_show_options&show_opts='.$show_opts_next );
 
-			$action_buttons .= $this->form->get_button( $show_opts_text, 
-				'button-secondary', null, wp_nonce_url( $show_opts_url,
-					$this->get_nonce(), NGFB_NONCE ) );
+			$action_buttons = '<input type="submit" class="button-primary" value="'.$submit_text.'" />'.
+				$this->form->get_button( $show_opts_text, 'button-secondary button-highlight', null, 
+					wp_nonce_url( $show_opts_url, $this->get_nonce(), NGFB_NONCE ) ).'<br/>';
 
 			if ( empty( $this->p->cf['*']['lib']['sitesubmenu'][$this->menu_id] ) )	// don't show on the network admin pages
 				$action_buttons .= $this->form->get_button( __( 'Clear All Cache(s)', NGFB_TEXTDOM ), 
