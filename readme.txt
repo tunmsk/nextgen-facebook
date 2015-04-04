@@ -12,7 +12,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 == Description ==
 
-<p><img src="https://ps.w.org/nextgen-facebook/assets/icon-256x256.png?rev=" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Make sure social websites present your content in the best possible way, no matter <em>how</em> your webpage is shared</strong> &mdash; from sharing buttons on the webpage, browser add-ons and extensions, or URLs shared directly in social timeline posts and <em>private messages</em>.</p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png?rev=" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Make sure social websites present your content in the best possible way, no matter <em>how</em> your webpage is shared</strong> &mdash; from sharing buttons on the webpage, browser add-ons and extensions, or URLs shared directly in social timeline posts and <em>private messages</em>.</p>
 
 <p>NextGEN Facebook (NGFB) <strong>gives you total control over the information social website crawlers need</strong>, improving Google Search ranking, social engagement, and click-through-rates on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
 
@@ -135,7 +135,7 @@ NGFB (Pro version) also supports [Easy Digital Downloads](https://wordpress.org/
 
 NGFB (Pro version) supports [bbPress](https://wordpress.org/plugins/bbpress/) and [BuddyPress](https://wordpress.org/plugins/buddypress/) (see the [BuddyPress Integration Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/)), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, etc. Social sharing buttons can also be added to [bbPress](https://wordpress.org/plugins/bbpress/) single template pages and [BuddyPress](https://wordpress.org/plugins/buddypress/) activities.
 
-<img src="https://ps.w.org/nextgen-facebook/assets/screenshot-22.png?rev=" style="width:50%;min-width:300px;max-width:1024px;float:right;margin:0 0 20px 40px;" />
+<img src="https://surniaulula.github.io/nextgen-facebook/assets/screenshot-22.png?rev=" style="width:50%;min-width:300px;max-width:1024px;float:right;margin:0 0 20px 40px;" />
 <h4>Social Sharing Buttons</h4>
 
 NGFB comes with several sharing buttons, that you can optionally include on Post / Page editing pages, above / below your content or excerpt, [bbPress](https://wordpress.org/plugins/bbpress/) single pages, [BuddyPress](https://wordpress.org/plugins/buddypress/) activity entries, as a sidebar, widget, shortcode, or even call a function from your theme template(s). Each of the following sharing buttons can be enabled, configured, and styled individually:
@@ -169,7 +169,7 @@ NGFB (Pro version) allows you to customize the field names, label, and add / rem
 * Yahoo IM
 * YouTube Channel URL
 
-<img src="https://ps.w.org/nextgen-facebook/assets/screenshot-23.png?rev=" style="width:50%;min-width:300px;max-width:1024px;float:right;margin:0 0 20px 40px;" />
+<img src="https://surniaulula.github.io/nextgen-facebook/assets/screenshot-23.png?rev=" style="width:50%;min-width:300px;max-width:1024px;float:right;margin:0 0 20px 40px;" />
 <h4>Social Profiles for Google Search</h4>
 
 NGFB provides <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles markup in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em></a>. The author (Person) markup includes the author's website URL, their profile social sharing image, and all listed contact URLs from their user profile. The publisher (Organization) markup includes the website URL, a corporate logo, a default image, and the publisher Facebook, Google+, LinkedIn, Pinterest, and Twitter business pages.
