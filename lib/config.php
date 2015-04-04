@@ -2,7 +2,7 @@
 /*
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
-Copyright 2012-2014 - Jean-Sebastien Morisset - http://surniaulula.com/
+Copyright 2012-2015 - Jean-Sebastien Morisset - http://surniaulula.com/
 */
 
 if ( ! defined( 'ABSPATH' ) ) 
@@ -20,15 +20,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'update_check_hours' => 24,
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '7.9',		// plugin version
+					'version' => '8.0dev1',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
 					'slug' => 'nextgen-facebook',
 					'base' => 'nextgen-facebook/nextgen-facebook.php',
 					'img' => array(
-						'icon-small' => 'https://ps.w.org/nextgen-facebook/assets/icon-128x128.png?rev=',
-						'icon-medium' => 'https://ps.w.org/nextgen-facebook/assets/icon-256x256.png?rev=',
+						'icon-small' => 'images/icon-128x128.png',
+						'icon-medium' => 'images/icon-256x256.png',
 					),
 					'url' => array(
 						// wordpress
@@ -61,13 +61,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'advanced' => 'Advanced',
 							'sharing' => 'Sharing Buttons',
 							'style' => 'Sharing Styles',
-							'licenses' => 'Pro Licenses',
+							'licenses' => 'Extension Plugins and Licenses',
 							'readme' => 'Read Me',
 							'setup' => 'Setup Guide',
 						),
 						'sitesubmenu' => array(
 							'siteadvanced' => 'Advanced',
-							'sitelicenses' => 'Pro Licenses',
+							'sitelicenses' => 'Extension Plugins and Licenses',
 							'sitereadme' => 'Read Me',
 							'sitesetup' => 'Setup Guide',
 						),
@@ -166,6 +166,20 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'user' => 'User Social Settings',
 							),
 						),
+					),
+				),
+				'ngfbum' => array(
+					'short' => 'NGFB UM',
+					'name' => 'NextGEN Facebook (NGFB) Pro Update Manager',
+					'desc' => 'Update Manager for the NextGEN Facebook (NGFB) Pro plugin and its extensions.',
+					'slug' => 'nextgen-facebook-um',
+					'base' => 'nextgen-facebook-um/nextgen-facebook-um.php',
+					'img' => array(
+						'icon-small' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/icon-128x128.png',
+						'icon-medium' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/icon-256x256.png',
+					),
+					'url' => array(
+						'download' => 'http://surniaulula.com/extend/plugins/nextgen-facebook-um/',
 					),
 				),
 			),
@@ -490,22 +504,21 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 				// remove the sharing libs if social sharing features are disabled
 				if ( defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) && NGFB_SOCIAL_SHARING_DISABLE ) {
-					foreach ( self::$cf['plugin'] as $lca => $info ) {
+					foreach ( array_keys( self::$cf['plugin'] ) as $lca ) {
 						unset (
-							$info['lib']['website'],
-							$info['lib']['submenu']['sharing'],
-							$info['lib']['submenu']['style'],
-							$info['lib']['shortcode']['sharing'],
-							$info['lib']['widget']['sharing'],
-							$info['lib']['gpl']['admin']['sharing'],
-							$info['lib']['gpl']['admin']['style'],
-							$info['lib']['gpl']['admin']['apikeys'],
-							$info['lib']['pro']['admin']['sharing'],
-							$info['lib']['pro']['admin']['style'],
-							$info['lib']['pro']['admin']['apikeys'],
-							$info['lib']['pro']['util']['shorten']
+							self::$cf['plugin'][$lca]['lib']['website'],
+							self::$cf['plugin'][$lca]['lib']['submenu']['sharing'],
+							self::$cf['plugin'][$lca]['lib']['submenu']['style'],
+							self::$cf['plugin'][$lca]['lib']['shortcode']['sharing'],
+							self::$cf['plugin'][$lca]['lib']['widget']['sharing'],
+							self::$cf['plugin'][$lca]['lib']['gpl']['admin']['sharing'],
+							self::$cf['plugin'][$lca]['lib']['gpl']['admin']['style'],
+							self::$cf['plugin'][$lca]['lib']['gpl']['admin']['apikeys'],
+							self::$cf['plugin'][$lca]['lib']['pro']['admin']['sharing'],
+							self::$cf['plugin'][$lca]['lib']['pro']['admin']['style'],
+							self::$cf['plugin'][$lca]['lib']['pro']['admin']['apikeys'],
+							self::$cf['plugin'][$lca]['lib']['pro']['util']['shorten']
 						);
-						self::$cf['plugin'][$lca] = $info;
 					}
 				}
 
@@ -524,6 +537,21 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					}
 					self::$cf['*']['version'] = trim( self::$cf['*']['version'], '-' );
 				}
+
+				// complete relative paths in the image array
+				foreach ( self::$cf['plugin'] as $lca => $info ) {
+					if ( ! isset( $info['base'] ) )
+						continue;
+					$base = self::$cf['plugin'][$lca]['base'];
+					foreach ( array( 'img' ) as $sub ) {
+						if ( ! isset( $info[$sub] ) )
+							continue;
+						foreach ( (array) $info[$sub] as $id => $url ) {
+							if ( ! empty( $url ) && strpos( $url, '//' ) === false )
+								self::$cf['plugin'][$lca][$sub][$id] = trailingslashit( plugins_url( '', $base ) ).$url;
+						}
+					}
+				}
 			}
 
 			if ( $idx !== false ) {
@@ -532,6 +560,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				else return false;
 			} else return self::$cf;
 		}
+
+
+
+
+
 
 		public static function set_constants( $plugin_filepath ) { 
 
@@ -653,11 +686,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 			
-			$cf = self::get_config();
-
-			if ( file_exists( NGFB_PLUGINDIR.'lib/pro/' ) )
-				require_once( NGFB_PLUGINDIR.'lib/com/update.php' );
-
 			require_once( NGFB_PLUGINDIR.'lib/com/util.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/cache.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/notice.php' );
