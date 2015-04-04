@@ -61,15 +61,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'advanced' => 'Advanced',
 							'sharing' => 'Sharing Buttons',
 							'style' => 'Sharing Styles',
-							'licenses' => 'Extension Plugins and Licenses',
 							'readme' => 'Read Me',
 							'setup' => 'Setup Guide',
+							'licenses' => 'Extension Plugins and Licenses',
 						),
 						'sitesubmenu' => array(
 							'siteadvanced' => 'Advanced',
-							'sitelicenses' => 'Extension Plugins and Licenses',
 							'sitereadme' => 'Read Me',
 							'sitesetup' => 'Setup Guide',
+							'sitelicenses' => 'Extension Plugins and Licenses',
 						),
 						'website' => array(
 							'facebook' => 'Facebook', 
