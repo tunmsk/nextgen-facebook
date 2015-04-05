@@ -1,4 +1,4 @@
-<h1>NextGEN Facebook</h1><h3>Advanced Social SEO for Facebook, Google+, Pinterest, Twitter & More</h3>
+=== NextGEN Facebook - Advanced Social SEO for Facebook, Google+, Pinterest, Twitter & More ===
 <blockquote>
 <strong>Contributors</strong>: jsmoriss<br/>
 <strong>Donate Link</strong>: https://surniaulula.com/extend/plugins/nextgen-facebook/<br/>
@@ -10,7 +10,11 @@
 <strong>Stable Tag</strong>: 7.9<br/>
 </blockquote>
 
+<p>
+
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
+
+</p>
 
 <h3>Description</h3>
 
