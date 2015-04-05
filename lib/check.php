@@ -1,9 +1,9 @@
 <?php
 /*
-License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl.txt
-Copyright 2012-2015 - Jean-Sebastien Morisset - http://surniaulula.com/
-*/
+ * License: GPLv3
+ * License URI: http://www.gnu.org/licenses/gpl.txt
+ * Copyright 2012-2015 - Jean-Sebastien Morisset - http://surniaulula.com/
+ */
 
 if ( ! defined( 'ABSPATH' ) ) 
 	die( 'These aren\'t the droids you\'re looking for...' );
@@ -18,6 +18,9 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 		private static $extend_checks = array(
 			'seo' => array(
 				'seou' => 'SEO Ultimate',
+			),
+			'util' => array(
+				'um' => 'Update Manager',
 			),
 		);
 
@@ -214,6 +217,10 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 							break;
 						case 'util-shorten':
 							$chk['optval'] = 'twitter_shortener';
+							break;
+						case 'util-um':
+							$chk['class'] = 'NgfbUm';
+							$chk['plugin'] = 'nextgen-facebook-um/nextgen-facebook-um.php';
 							break;
 					}
 					if ( ( ! empty( $chk['function'] ) && function_exists( $chk['function'] ) ) || 

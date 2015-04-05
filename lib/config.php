@@ -27,8 +27,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'slug' => 'nextgen-facebook',
 					'base' => 'nextgen-facebook/nextgen-facebook.php',
 					'img' => array(
-						'icon-small' => 'images/icon-128x128.png',
-						'icon-medium' => 'images/icon-256x256.png',
+						'icon_small' => 'images/icon-128x128.png',
+						'icon_medium' => 'images/icon-256x256.png',
+						'background' => 'images/background.jpg',
 					),
 					'url' => array(
 						// wordpress
@@ -63,13 +64,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'style' => 'Sharing Styles',
 							'readme' => 'Read Me',
 							'setup' => 'Setup Guide',
-							'licenses' => 'Extension Plugins and Licenses',
+							'licenses' => 'Extension Plugins and Pro Licenses',
 						),
 						'sitesubmenu' => array(
 							'siteadvanced' => 'Advanced',
 							'sitereadme' => 'Read Me',
 							'sitesetup' => 'Setup Guide',
-							'sitelicenses' => 'Extension Plugins and Licenses',
+							'sitelicenses' => 'Extension Plugins and Pro Licenses',
 						),
 						'website' => array(
 							'facebook' => 'Facebook', 
@@ -175,11 +176,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'slug' => 'nextgen-facebook-um',
 					'base' => 'nextgen-facebook-um/nextgen-facebook-um.php',
 					'img' => array(
-						'icon-small' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/icon-128x128.png',
-						'icon-medium' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/icon-256x256.png',
+						'icon_small' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/icon-128x128.png',
+						'icon_medium' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/icon-256x256.png',
 					),
 					'url' => array(
 						'download' => 'http://surniaulula.com/extend/plugins/nextgen-facebook-um/',
+						'latest_zip' => 'http://surniaulula.com/extend/plugins/nextgen-facebook-um/latest/',
 					),
 				),
 			),
