@@ -304,7 +304,7 @@ jQuery("#ngfb-sidebar").click( function(){
 					'td_class' => $aop ? '' : 'blank',
 				);
 				$features['Sharing Styles Editor'] = array( 
-					'status' => NgfbUser::show_opts( 'all' ) ? ( $aop ? 'on' : 'rec' ) : 'off',
+					'status' => $aop ? 'on' : 'rec',
 					'td_class' => $aop ? '' : 'blank',
 				);
 			}

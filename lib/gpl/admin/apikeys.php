@@ -27,15 +27,14 @@ if ( ! class_exists( 'NgfbGplAdminApikeys' ) ) {
 
 		public function filter_plugin_apikeys_rows( $rows, $form ) {
 
-			$rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'ngfb' ) ).'</td>';
+			$rows[] = '<td colspan="2" align="center">'.
+				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'ngfb' ) ).'</td>';
 
-			if ( NgfbUser::show_opts( 'all' ) ) {
-
-				if ( ! isset( $rows['plugin_min_shorten'] ) )
-					$rows['plugin_min_shorten'] = $this->p->util->th( 'Minimum URL Length to Shorten', null, 'plugin_min_shorten' ). 
-					'<td class="blank">'.$form->get_hidden( 'plugin_min_shorten' ).
-						$this->p->options['plugin_min_shorten'].' characters</td>';
-			}
+			if ( ! isset( $rows['plugin_min_shorten'] ) )
+				$rows['plugin_min_shorten'] = '<tr class="hide_in_basic">'.
+				$this->p->util->th( 'Minimum URL Length to Shorten', null, 'plugin_min_shorten' ). 
+				'<td class="blank">'.$form->get_hidden( 'plugin_min_shorten' ).
+					$this->p->options['plugin_min_shorten'].' characters</td>';
 
 			if ( ! isset( $rows['plugin_bitly_login'] ) )
 				$rows['plugin_bitly_login'] = $this->p->util->th( 'Bit.ly Username', null, 'plugin_bitly_login' ).
@@ -54,8 +53,7 @@ if ( ! class_exists( 'NgfbGplAdminApikeys' ) ) {
 
 			if ( ! isset( $rows['plugin_google_shorten'] ) )
 				$rows['plugin_google_shorten'] = $this->p->util->th( 'Google URL Shortener API is ON', null, 'plugin_google_shorten' ).
-				'<td class="blank">'.$form->get_no_radio( 'plugin_google_shorten', 
-					$this->p->cf['form']['yes_no'], null, null, true ).'</td>';
+				'<td class="blank">'.$this->p->cf['form']['yes_no'][$this->p->options['plugin_google_shorten']].'</td>';
 
 			return $rows;
 		}

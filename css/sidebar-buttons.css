@@ -84,17 +84,24 @@
 }
 
 #ngfb-sidebar .ngfb-buttons div.pinterest-button,
-#ngfb-sidebar .ngfb-preset-large_share_vertical .ngfb-buttons div.pinterest-button { height:40px; margin-top:42px; }
-#ngfb-sidebar .ngfb-preset-small_share_count .ngfb-buttons div.pinterest-button { height:20px; margin-top:10px; }
+#ngfb-sidebar .ngfb-preset-large_share_vertical
+	.ngfb-buttons div.pinterest-button { height:40px; margin-top:42px; }
+#ngfb-sidebar .ngfb-preset-small_share_count
+	.ngfb-buttons div.pinterest-button { height:20px; margin-top:10px; }
 
 #ngfb-sidebar .ngfb-buttons div.stumbleupon-button,
-#ngfb-sidebar .ngfb-preset-large_share_vertical .ngfb-buttons div.stumbleupon-button { height:60px; line-height:60px; }
-#ngfb-sidebar .ngfb-preset-small_share_count .ngfb-buttons div.stumbleupon-button { height:20px; line-height:20px; }
+#ngfb-sidebar .ngfb-preset-large_share_vertical
+	.ngfb-buttons div.stumbleupon-button { height:60px; line-height:60px; }
+#ngfb-sidebar .ngfb-preset-small_share_count
+	.ngfb-buttons div.stumbleupon-button { height:20px; line-height:20px; }
 
 #ngfb-sidebar .ngfb-buttons div.tumblr-button,
-#ngfb-sidebar .ngfb-preset-large_share_vertical .ngfb-buttons div.tumblr-button { height:20px; line-height:20px; }
+#ngfb-sidebar .ngfb-preset-large_share_vertical
+	.ngfb-buttons div.tumblr-button { height:20px; line-height:20px; }
 
 #ngfb-sidebar .ngfb-buttons div.reddit-button,
-#ngfb-sidebar .ngfb-preset-large_share_vertical .ngfb-buttons div.reddit-button { margin-bottom:15px; }
-#ngfb-sidebar .ngfb-preset-small_share_count .ngfb-buttons div.reddit-button { margin-bottom:10px; }
+#ngfb-sidebar .ngfb-preset-large_share_vertical
+	.ngfb-buttons div.reddit-button { margin-bottom:15px; }
+#ngfb-sidebar .ngfb-preset-small_share_count
+	.ngfb-buttons div.reddit-button { margin-bottom:10px; }
 

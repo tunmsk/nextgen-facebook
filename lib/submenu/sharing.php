@@ -51,9 +51,6 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 						case 'tooltip-buttons_add_to':
 							$text = 'Enabled social sharing buttons are added to the Post, Page, Media and Product custom post types by default. If your theme (or another plugin) supports additional custom post types, and you would like to include social sharing buttons on these webpages, check the appropriate option(s) here.';
 							break;
-						/*
-						 * Other settings
-						 */
 						default:
 							$text = apply_filters( $this->p->cf['lca'].'_tooltip_buttons', $text, $idx );
 							break;
@@ -129,11 +126,9 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 			$metabox = 'sharing';
 			$tabs = array(
 				'include' => 'Include Buttons',
-				'position' => 'Buttons Position' 
+				'position' => 'Buttons Position',
+				'preset' => 'Preset Options',
 			);
-
-			if ( NgfbUser::show_opts( 'all' ) )
-				$tabs['preset'] = 'Preset Options';
 
 			$tabs = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_tabs', $tabs );
 			$rows = array();
@@ -153,7 +148,9 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 		protected function get_rows( $metabox, $key ) {
 			$rows = array();
 			switch ( $metabox.'-'.$key ) {
+
 				case 'sharing-position':
+
 					$rows[] = $this->p->util->th( 'Position in Content Text', null, 'buttons_pos_content' ).
 					'<td>'.$this->form->get_select( 'buttons_pos_content',
 						array( 'top' => 'Top', 'bottom' => 'Bottom', 'both' => 'Both Top and Bottom' ) ).'</td>';
@@ -164,6 +161,7 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 					break;
 
 				case 'sharing-include':
+
 					$rows[] = '<tr><td colspan="2">'.$this->p->msgs->get( 'info-'.$metabox.'-'.$key ).'</td></tr>';
 
 					$rows[] = $this->p->util->th( 'Include on Index Webpages', null, 'buttons_on_index' ).
