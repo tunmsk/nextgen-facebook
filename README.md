@@ -1,4 +1,5 @@
-=== NextGEN Facebook - Advanced Social SEO for Facebook, Google+, Pinterest, Twitter & More ===
+<h1>NextGEN Facebook</h1><h3>Advanced Social SEO for Facebook, Google+, Pinterest, Twitter & More</h3>
+
 <blockquote>
 <strong>Contributors</strong>: jsmoriss<br/>
 <strong>Donate Link</strong>: https://surniaulula.com/extend/plugins/nextgen-facebook/<br/>
