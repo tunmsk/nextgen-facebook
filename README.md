@@ -40,8 +40,9 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 * Validates image dimensions to provide accurate media for social websites.
 * Auto-regeneration of inaccurate / missing WordPress image sizes.
 * Fully renders content (including shortcodes) for accurate description texts.
-* Configurable title separator character (hyphen by default).
 * Support of WordPress and/or SEO titles for Posts and Pages.
+* Configurable title separator character (hyphen by default).
+* Configurable title and description lengths for different contexts (Open Graph, Twitter Card, SEO).
 * Includes author and publisher profile URLs for Facebook and Google Search.
 * Includes hashtags from Post / Page WordPress Tags.
 * Includes the author's name for Pinterest Rich Pins.
@@ -87,11 +88,10 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 	* *Large Image Summary Card* &mdash; An image from the custom Social Settings, Featured, Attached, or NextGEN Gallery singlepic.
 	* *Summary Card* &mdash; All other webpages.
 * Customizable image dimensions for each Twitter Card type.
-* Configurable title and description lengths for different contexts (Open Graph, Twitter Card, SEO).
 * Additional profile contact fields with configurable label and field names.
 * Custom settings and meta tag values for each Post, Page, and custom post type.
 * Options to exclude specific Google / SEO, Open Graph, and Twitter Card meta tags.
-* Support for embedded videos (iframe and object HTML tags).
+* Support for embedded videos in content text (iframe and object HTML tags).
 * File caching for social sharing button images and JavaScript, maximizing performance on VPS and dedicated hardware hosting platforms.
 * A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).
 * Dynamic button language switching based on the current WordPress locale.
