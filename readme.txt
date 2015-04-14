@@ -411,6 +411,15 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * GitHub: https://github.com/SurniaUlula/nextgen-facebook
 * WordPress.org: https://wordpress.org/plugins/nextgen-facebook/developers/
 
+= Version 8.0.2 (2015/04/14) =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Improved the duplicate meta tags check by adding extra "comment" meta tags to better detect the NGFB meta tag block to be removed / ignored.
+* **Bugfixes**
+	* Fixed an unecessary warning to install the Pro version when an extension has an Authentication ID but is deactivated.
+
 = Version 8.0.1 (2015/04/13) =
 
 * **New Features**
@@ -577,6 +586,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* *None*
 
 == Upgrade Notice ==
+
+= 8.0.2 =
+
+Improved the duplicate meta tags check, fixed an unecessary warning when a plugin extension has an Authentication ID but is deactivated.
 
 = 8.0.1 =
 
