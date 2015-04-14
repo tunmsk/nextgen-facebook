@@ -406,7 +406,7 @@ When minor bugs fixes and/or code improvements are applied, new versions are als
 This release schedule keeps the code stable and reliable, at the cost of more frequent updates.</p>
 </blockquote>
 
-= Repositories =
+= Free / Basic Version Repository =
 
 * GitHub: https://github.com/SurniaUlula/nextgen-facebook
 * WordPress.org: https://wordpress.org/plugins/nextgen-facebook/developers/
