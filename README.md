@@ -418,8 +418,8 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 <h4>Free / Basic Version Repository</h4>
 
-* GitHub: https://github.com/SurniaUlula/nextgen-facebook
-* WordPress.org: https://wordpress.org/plugins/nextgen-facebook/developers/
+* [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
+* [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
 <h4>Version 8.0.3 (2015/04/15)</h4>
 
