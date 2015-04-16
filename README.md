@@ -421,6 +421,15 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * GitHub: https://github.com/SurniaUlula/nextgen-facebook
 * WordPress.org: https://wordpress.org/plugins/nextgen-facebook/developers/
 
+<h4>Version 8.0.3</h4>
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Changed 'sanitize_title' to 'sanitize_title_with_dashes' to sanitize for WordPress tags in order to keep accents. 
+* **Bugfixes**
+	* *None*
+
 <h4>Version 8.0.2 (2015/04/14)</h4>
 
 * **New Features**
