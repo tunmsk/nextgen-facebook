@@ -421,7 +421,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * GitHub: https://github.com/SurniaUlula/nextgen-facebook
 * WordPress.org: https://wordpress.org/plugins/nextgen-facebook/developers/
 
-<h4>Version 8.0.3</h4>
+<h4>Version 8.0.3 (2015/04/15)</h4>
 
 * **New Features**
 	* Added a new Pinterest "Website Verification ID" option on the NGFB General settings page.
@@ -605,6 +605,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* *None*
 
 <h3>Upgrade Notice</h3>
+
+<h4>8.0.3</h4>
+
+When Twitter Cards are disabled, exclude from duplicate meta tag checks. Added new Pinterest "Website Verification ID" option. Changed tag sanitation to keep keep accents. 
 
 <h4>8.0.2</h4>
 
