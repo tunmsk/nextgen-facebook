@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_expire' => 24,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.0.2',		// plugin version
+					'version' => '8.0.3',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -188,7 +188,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(				// options
-				'version' => 329,		// increment when changing default options
+				'version' => 331,		// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'options_version' => '',
@@ -253,6 +253,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'rp_img_crop' => 0,
 					'rp_img_crop_x' => 'center',
 					'rp_img_crop_y' => 'center',
+					'rp_dom_verify' => '',
 					'tc_enable' => 1,
 					'tc_site' => '',
 					'tc_desc_len' => 200,
@@ -319,6 +320,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_property_product:price:amount' => 1,
 					'add_meta_property_product:price:currency' => 1,
 					'add_meta_property_product:availability' => 1,
+					'add_meta_name_author' => 1,
+					'add_meta_name_description' => 1,
+					'add_meta_name_generator' => 1,
+					'add_meta_name_p:domain_verify' => 1,
 					'add_meta_name_twitter:card' => 1,
 					'add_meta_name_twitter:creator' => 1,
 					'add_meta_name_twitter:domain' => 1,
@@ -343,9 +348,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_name_twitter:label3' => 1,
 					'add_meta_name_twitter:data4' => 1,
 					'add_meta_name_twitter:label4' => 1,
-					'add_meta_name_generator' => 1,
-					'add_meta_name_author' => 1,
-					'add_meta_name_description' => 1,
 					'add_meta_itemprop_description' => 1,
 					'add_meta_itemprop_url' => 1,
 					'add_meta_itemprop_image' => 1,
@@ -484,7 +486,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'caption_types' => array( 'none' => '[none]', 'title' => 'Title Only', 'excerpt' => 'Excerpt Only', 'both' => 'Title and Excerpt' ),
 				'user_name_fields' => array( 'none' => '[none]', 'fullname' => 'First and Last Names', 'display_name' => 'Display Name', 'nickname' => 'Nickname' ),
 				'show_options' => array( 'basic' => 'Basic Options', 'all' => 'All Options' ),
-				'site_option_use' => array( 'default' => 'Default Site Value', 'empty' => 'If Value is Empty', 'force' => 'Force This Value' ),
+				'site_option_use' => array( 'default' => 'Default value', 'empty' => 'If value is empty', 'force' => 'Force this value' ),
 				'position_crop_x' => array( 'left' => 'Left', 'center' => 'Center', 'right' => 'Right' ),
 				'position_crop_y' => array( 'top' => 'Top', 'center' => 'Center', 'bottom' => 'Bottom' ),
 				'shorteners' => array( 'none' => '[none]', 'bitly' => 'Bit.ly', 'googl' => 'Goo.gl' ),
