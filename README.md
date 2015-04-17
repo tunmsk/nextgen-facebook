@@ -608,7 +608,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 <h4>8.0.3</h4>
 
-When Twitter Cards are disabled, exclude from duplicate meta tag checks. Added new Pinterest "Website Verification ID" option. Changed tag sanitation to keep keep accents. 
+When Twitter Cards are disabled, exclude from duplicate meta tag checks. Added new Pinterest "Website Verification ID" option. Changed tag sanitation to keep accents. 
 
 <h4>8.0.2</h4>
 
