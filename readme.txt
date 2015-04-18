@@ -411,6 +411,15 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.0.4 (2015/04/18) =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Moved Gravatar and video related options to the Pro version (greyed out in the Free version), since these features (aka modules) are only available in the Pro version package anyway.
+* **Bugfixes**
+	* Fixed variable name returned by the WooCommerce module for exceptions (Pro version).
+
 = Version 8.0.3 (2015/04/15) =
 
 * **New Features**
@@ -595,6 +604,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* *None*
 
 == Upgrade Notice ==
+
+= 8.0.4 =
+
+Fixed variable name returned by the WooCommerce module for exceptions (Pro version), greyed out some options for features not available in the Free version.
 
 = 8.0.3 =
 
