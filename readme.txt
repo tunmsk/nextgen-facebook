@@ -411,6 +411,15 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.0.6 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Refactored (improved) code for the SucomNotice class.
+* **Bugfixes**
+	* *None*
+
 = Version 8.0.5 (2015/04/20) =
 
 * **New Features**
