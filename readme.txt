@@ -213,6 +213,7 @@ NGFB (Pro version) provides the [Summary](https://dev.twitter.com/docs/cards/typ
 	* product:price:currency
 	* product:availability
 * **Schema Meta Tags**
+	* name
 	* description
 	* image
 	* url
