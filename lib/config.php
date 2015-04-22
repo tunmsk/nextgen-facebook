@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_expire' => 24,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.0.5',		// plugin version
+					'version' => '8.1',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -188,7 +188,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(				// options
-				'version' => 331,		// increment when changing default options
+				'version' => 333,		// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'options_version' => '',
@@ -702,6 +702,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			require_once( NGFB_PLUGINDIR.'lib/com/style.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/webpage.php' );
 
+			require_once( NGFB_PLUGINDIR.'lib/register.php' );
 			require_once( NGFB_PLUGINDIR.'lib/check.php' );
 			require_once( NGFB_PLUGINDIR.'lib/util.php' );
 			require_once( NGFB_PLUGINDIR.'lib/options.php' );

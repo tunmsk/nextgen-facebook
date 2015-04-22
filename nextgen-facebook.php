@@ -9,7 +9,7 @@
  * Description: Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.0
  * Tested Up To: 4.2
- * Version: 8.0.5
+ * Version: 8.1
  * 
  * Copyright 2012-2015 - Jean-Sebastien Morisset - http://surniaulula.com/
  */
@@ -64,14 +64,11 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public function __construct() {
 
 			require_once( dirname( __FILE__ ).'/lib/config.php' );
-			require_once( dirname( __FILE__ ).'/lib/register.php' );
-
-			$this->cf = NgfbConfig::get_config();			// unfiltered - $cf['*'] array is not available
+			$this->cf = NgfbConfig::get_config();			// unfiltered - $cf['*'] array is not available yet
 			NgfbConfig::set_constants( __FILE__ );
-			NgfbConfig::require_libs( __FILE__ );
+			NgfbConfig::require_libs( __FILE__ );			// includes the register.php class library
 
-			$classname = __CLASS__.'Register';
-			$this->reg = new $classname( $this );			// activate, deactivate, uninstall hooks
+			$this->reg = new NgfbRegister( $this );			// activate, deactivate, uninstall hooks
 
 			add_action( 'init', array( &$this, 'set_config' ), -1 );
 			add_action( 'init', array( &$this, 'init_plugin' ), NGFB_INIT_PRIORITY );
