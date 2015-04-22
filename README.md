@@ -421,14 +421,15 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-<h4>Version 8.0.6</h4>
+<h4>Version 8.1</h4>
 
 * **New Features**
-	* *None*
+	* Added a new "Share Single Image" option for the Pinterest button.
+	* Added new 'ngfb_js_url_{sitename}' filter hooks for social website javascript URLs.
 * **Improvements**
-	* Refactored (improved) the SucomNotice class.
+	* Refactored some methods in the SucomNotice class.
 	* Improved the setup guide and some status / help messages.
-	* Moved the update option table cleanup on deactivate to the NGFB UM plugin.
+	* Moved the cleanup of update options on deactivate to the NGFB UM plugin.
 * **Bugfixes**
 	* *None*
 
