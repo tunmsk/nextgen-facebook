@@ -491,6 +491,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 == Upgrade Notice ==
 
+= 8.1 =
+
+Added new "Share Single Image" option for Pinterest button, added 'wpsso_js_url_{sitename}' filter hooks, improved setup guide and some status / help messages, added html_entity_decode() to caption text (when required), fixed reliance on deprecated YouTube / Google v2 API (Pro version).
+
 = 8.0.5 =
 
 Minor CSS improvements for settings pages and metaboxes, fixed image dimension notices (when saving posts/pages).
