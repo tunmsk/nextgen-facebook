@@ -255,6 +255,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				if ( defined( 'NGFB_OPTIONS_NAME_ALT' ) && NGFB_OPTIONS_NAME_ALT ) {
 					$this->options = get_option( NGFB_OPTIONS_NAME_ALT );
 					if ( is_array( $this->options ) ) {
+						// auto-creates options with autoload = yes
 						update_option( NGFB_OPTIONS_NAME, $this->options );
 						delete_option( NGFB_OPTIONS_NAME_ALT );
 					}
