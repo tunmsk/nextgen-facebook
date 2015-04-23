@@ -412,7 +412,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.1 =
+= Version 8.1 (2015/04/24) =
 
 * **New Features**
 	* Added a new "Share Single Image" option for the Pinterest button.
