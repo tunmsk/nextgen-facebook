@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Nextgen-facebook by SurniaUlula</title>
+    <title>NGFB by SurniaUlula</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,7 +15,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Nextgen-facebook</h1>
+        <h1>NGFB</h1>
         <p>NextGEN Facebook (NGFB)</p>
 
         <p class="view"><a href="https://github.com/SurniaUlula/nextgen-facebook">View the Project on GitHub <small>SurniaUlula/nextgen-facebook</small></a></p>
@@ -39,16 +39,20 @@
 <strong>License</strong>: GPLv3<br>
 <strong>License URI</strong>: http://www.gnu.org/licenses/gpl.txt<br>
 <strong>Requires At Least</strong>: 3.0<br>
-<strong>Tested Up To</strong>: 4.1.1<br>
-<strong>Stable Tag</strong>: 7.9<br>
+<strong>Tested Up To</strong>: 4.2<br>
+<strong>Stable Tag</strong>: 8.1<br>
 </blockquote>
 
-<p>Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!</p>
+<p>
+
+Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
+
+</p>
 
 <h3>
 <a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h3>
 
-<p align="center"><img src="https://ps.w.org/nextgen-facebook/assets/icon-256x256.png?rev="></p>
+<p align="center"><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png"></p>
 
 <p><strong>Make sure social websites present your content in the best possible way, no matter <em>how</em> your webpage is shared</strong> — from sharing buttons on the webpage, browser add-ons and extensions, or URLs shared directly in social timeline posts and <em>private messages</em>.</p>
 
@@ -72,8 +76,9 @@
 <li>Validates image dimensions to provide accurate media for social websites.</li>
 <li>Auto-regeneration of inaccurate / missing WordPress image sizes.</li>
 <li>Fully renders content (including shortcodes) for accurate description texts.</li>
-<li>Configurable title separator character (hyphen by default).</li>
 <li>Support of WordPress and/or SEO titles for Posts and Pages.</li>
+<li>Configurable title separator character (hyphen by default).</li>
+<li>Configurable title and description lengths for different contexts (Open Graph, Twitter Card, SEO).</li>
 <li>Includes author and publisher profile URLs for Facebook and Google Search.</li>
 <li>Includes hashtags from Post / Page WordPress Tags.</li>
 <li>Includes the author's name for Pinterest Rich Pins.</li>
@@ -136,11 +141,10 @@
 </ul>
 </li>
 <li>Customizable image dimensions for each Twitter Card type.</li>
-<li>Configurable title and description lengths for different contexts (Open Graph, Twitter Card, SEO).</li>
 <li>Additional profile contact fields with configurable label and field names.</li>
 <li>Custom settings and meta tag values for each Post, Page, and custom post type.</li>
 <li>Options to exclude specific Google / SEO, Open Graph, and Twitter Card meta tags.</li>
-<li>Support for embedded videos (iframe and object HTML tags).</li>
+<li>Support for embedded videos in content text (iframe and object HTML tags).</li>
 <li>File caching for social sharing button images and JavaScript, maximizing performance on VPS and dedicated hardware hosting platforms.</li>
 <li>A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).</li>
 <li>Dynamic button language switching based on the current WordPress locale.</li>
@@ -207,7 +211,7 @@
 
 <p>NGFB (Pro version) supports <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> and <a href="https://wordpress.org/plugins/buddypress/">BuddyPress</a> (see the <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/">BuddyPress Integration Notes</a>), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, etc. Social sharing buttons can also be added to <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> single template pages and <a href="https://wordpress.org/plugins/buddypress/">BuddyPress</a> activities.</p>
 
-<p align="center"><img src="https://ps.w.org/nextgen-facebook/assets/screenshot-22.png?rev="></p>
+<p align="center"><img src="https://surniaulula.github.io/nextgen-facebook/assets/screenshot-22.png"></p>
 
 <h4>
 <a id="social-sharing-buttons" class="anchor" href="#social-sharing-buttons" aria-hidden="true"><span class="octicon octicon-link"></span></a>Social Sharing Buttons</h4>
@@ -251,7 +255,7 @@
 <li>YouTube Channel URL</li>
 </ul>
 
-<p align="center"><img src="https://ps.w.org/nextgen-facebook/assets/screenshot-23.png?rev="></p>
+<p align="center"><img src="https://surniaulula.github.io/nextgen-facebook/assets/screenshot-23.png"></p>
 
 <h4>
 <a id="social-profiles-for-google-search" class="anchor" href="#social-profiles-for-google-search" aria-hidden="true"><span class="octicon octicon-link"></span></a>Social Profiles for Google Search</h4>
@@ -317,6 +321,7 @@
 <strong>Schema Meta Tags</strong>
 
 <ul>
+<li>name</li>
 <li>description</li>
 <li>image</li>
 <li>url</li>
@@ -547,87 +552,51 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 </blockquote>
 
 <h4>
-<a id="repositories" class="anchor" href="#repositories" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repositories</h4>
+<a id="free--basic-version-repository" class="anchor" href="#free--basic-version-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>Free / Basic Version Repository</h4>
 
 <ul>
-<li>GitHub: <a href="https://github.com/SurniaUlula/nextgen-facebook">https://github.com/SurniaUlula/nextgen-facebook</a>
-</li>
-<li>WordPress.org: <a href="https://wordpress.org/plugins/nextgen-facebook/developers/">https://wordpress.org/plugins/nextgen-facebook/developers/</a>
-</li>
+<li><a href="https://github.com/SurniaUlula/nextgen-facebook">GitHub</a></li>
+<li><a href="https://wordpress.org/plugins/nextgen-facebook/developers/">WordPress.org</a></li>
 </ul>
 
 <h4>
-<a id="version-79-20150402" class="anchor" href="#version-79-20150402" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 7.9 (2015/04/02)</h4>
+<a id="version-81-20150424" class="anchor" href="#version-81-20150424" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 8.1 (2015/04/24)</h4>
 
 <ul>
 <li>
-<strong>Bugfixes</strong>
+<strong>New Features</strong>
 
 <ul>
-<li>Fixed the saving of NGFB option pages under the WordPress "Settings" menu item.</li>
+<li>Added a new "Share Single Image" option for the Pinterest button.</li>
+<li>Added new 'ngfb_js_url_{sitename}' filter hooks for social website javascript URLs.</li>
 </ul>
 </li>
 <li>
 <strong>Improvements</strong>
 
 <ul>
-<li>Further performance improvements for non-debug mode by centralizing debug mode checks.</li>
-<li>Removed the "LinkedIn" tab on the NGFB General settings page, and added an "Others" tab (which includes LinkedIn, Instagram, and MySpace business URLs).</li>
-<li>Refactored the NGFB settings tab layout to allow excess tabs to continue onto a second line.</li>
-<li>When checking for duplicate meta tags in posts / pages, constants are defined to disable caching plugins for that webpage request.</li>
+<li>Refactored some methods in the SucomNotice class.</li>
+<li>Improved the setup guide and some status / help messages.</li>
+<li>Moved the cleanup of update options on deactivate to the NGFB UM plugin.</li>
+<li>Added html_entity_decode() on the caption text when SucomWebpage::get_caption() is called with $encode = false.</li>
+<li>Added an additional $ext array argument to the SucomUtil::replace_inline_vars() method.</li>
 </ul>
 </li>
 <li>
-<strong>New Features</strong>
+<strong>Bugfixes</strong>
 
 <ul>
-<li>Added an "NGFB" separator to clearly identify NGFB setting pages in the WordPress Settings list.</li>
-<li>Added a new "Image Dimensions" settings page under the WordPress Settings menu item.</li>
-<li>Added a new "Website / Business Social Accounts" settings page under the WordPress Settings menu item.</li>
-<li>Added MySpace to the list of social contact methods added to user profile pages.</li>
+<li>Fixed reliance on the deprecated YouTube / Google v2 API for embedded video details (Pro version).</li>
 </ul>
 </li>
 </ul>
 
 <h4>
-<a id="version-785-20150326" class="anchor" href="#version-785-20150326" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 7.8.5 (2015/03/26)</h4>
+<a id="version-805-20150420" class="anchor" href="#version-805-20150420" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 8.0.5 (2015/04/20)</h4>
 
 <ul>
-<li>
-<strong>Bugfixes</strong>
-
-<ul>
-<li>Added a check for <code>$_SERVER['HTTP_USER_AGENT']</code> before using its value in the SucomUtil::crawler_name() method.</li>
-</ul>
-</li>
-<li>
-<strong>Improvements</strong>
-
-<ul>
-<li>The 'Add Hidden Debug Messages' option now disables only the transient cache, instead of both the transient and WP object caches.</li>
-<li>The <code>SucomDebug::mark()</code> method now adds the microtime to its debug log entries.</li>
-<li>Small performance improvement by checking status of debug system before calling its logging methods (avoiding unnecessary method calls).</li>
-<li>Removed the <code>NgfbUtil::add_img_sizes_from_opts()</code> deprecated method.</li>
-<li>Added a new <code>SucomUtil::active_plugins()</code> method to fetch and cache the active plugins list.</li>
-<li>Added a check to remove a WordPress SEO false conflict warning.</li>
-<li>Changed the default Twitter Card image sizes from 200x200 cropped to 300x300 cropped for the Summary Card, and from 300x300 un-cropped to 800x800 un-cropped for the Large Image Summary Card.</li>
-</ul>
-</li>
 <li>
 <strong>New Features</strong>
-
-<ul>
-<li><em>None</em></li>
-</ul>
-</li>
-</ul>
-
-<h4>
-<a id="version-784-20150322" class="anchor" href="#version-784-20150322" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 7.8.4 (2015/03/22)</h4>
-
-<ul>
-<li>
-<strong>Bugfixes</strong>
 
 <ul>
 <li><em>None</em></li>
@@ -637,119 +606,24 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 <strong>Improvements</strong>
 
 <ul>
-<li>Added support for low/high resolution banners in the Plugin Details thickbox window.</li>
-<li>Added the 'plugin-install' JavaScript to Pro Licenses settings pages to improve thickbox styling.</li>
-<li>Added an extra check to require an object / post ID in the WooCommerce module (Pro version).</li>
-<li>Refactored the WooCommerce module for custom taxonomies (Pro version)</li>
+<li>Minor CSS improvements for settings pages and metaboxes.</li>
 </ul>
 </li>
 <li>
-<strong>New Features</strong>
+<strong>Bugfixes</strong>
 
 <ul>
-<li><em>None</em></li>
+<li>Fixed image dimension notices (when saving posts/pages) by calling the meta tag check from 'admin_head' instead of the 'save_post' hook.</li>
 </ul>
 </li>
 </ul>
 
 <h4>
-<a id="version-7832-20150317" class="anchor" href="#version-7832-20150317" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 7.8.3.2 (2015/03/17)</h4>
+<a id="version-804-20150418" class="anchor" href="#version-804-20150418" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 8.0.4 (2015/04/18)</h4>
 
 <ul>
-<li>
-<strong>Bugfixes</strong>
-
-<ul>
-<li>Fixed the user contact field sanitation check by using the defined field names.</li>
-<li>Updated the SucomUtil::limit_text_length() method to use the mb_strlen() and mb_substr() multibyte functions.</li>
-<li>Added a check for WPSEO_Frontend::get_instance() before using it, and if missing, fallback to global $wpseo_front.</li>
-</ul>
-</li>
-<li>
-<strong>Improvements</strong>
-
-<ul>
-<li>Removed a check for the 'mb_decode_numericentity' function (replaced by a minimum PHP version check instead).</li>
-</ul>
-</li>
 <li>
 <strong>New Features</strong>
-
-<ul>
-<li><em>None</em></li>
-</ul>
-</li>
-</ul>
-
-<h4>
-<a id="version-7831" class="anchor" href="#version-7831" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 7.8.3.1</h4>
-
-<ul>
-<li>
-<strong>Bugfixes</strong>
-
-<ul>
-<li>Updated the "Google Structured Data Testing Tool" URL.</li>
-<li>Changed to WPSEO_Frontend::get_instance() instead of using the $wpseo_front global (Pro version).</li>
-</ul>
-</li>
-<li>
-<strong>Improvements</strong>
-
-<ul>
-<li>Integrated the WordPress SEO and WooCommerce modules to use the WordPress SEO meta description for the shop page (Pro version).</li>
-<li>Added a filter for the WooCommerce module to report the post ID of the shop page (Pro version).</li>
-<li>Changed to Ngfb::get_instance() instead of using the $ngfb global for functions and widgets.</li>
-<li>Added a GitHub repository for NGFB at <a href="https://github.com/SurniaUlula/nextgen-facebook">https://github.com/SurniaUlula/nextgen-facebook</a>.</li>
-</ul>
-</li>
-<li>
-<strong>New Features</strong>
-
-<ul>
-<li><em>None</em></li>
-</ul>
-</li>
-</ul>
-
-<h4>
-<a id="version-783" class="anchor" href="#version-783" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 7.8.3</h4>
-
-<ul>
-<li>
-<strong>Bugfixes</strong>
-
-<ul>
-<li>Fixed the Social Settings jQuery / CSS input counters that were not showing.</li>
-</ul>
-</li>
-<li>
-<strong>Improvements</strong>
-
-<ul>
-<li>Renamed all metabox tab CSS ids to allow better parsing of metabox and tab names.</li>
-<li>Replaced the "Show Basic / All Options" setting to one which is individual to each user's preference.</li>
-<li>Renamed the jquery-postmeta.min.js script file to jquery-metabox.min.js and refactored code.</li>
-</ul>
-</li>
-<li>
-<strong>New Features</strong>
-
-<ul>
-<li>Added a new Ngfb::get_instance() method to return the Ngfb class object reference.</li>
-<li>Added a new NgfbUser::show_opts() method to return and/or text the users preference for displaying options.</li>
-<li>Added a new NgfbUser::save_pref() and NgfbUser::get_pref() method to manage user preferences.</li>
-<li>Added a new NGFB_PREF_NAME constant (default value is "_ngfb_pref") to save user preferences.</li>
-</ul>
-</li>
-</ul>
-
-<h4>
-<a id="version-7822" class="anchor" href="#version-7822" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 7.8.2.2</h4>
-
-<ul>
-<li>
-<strong>Bugfixes</strong>
 
 <ul>
 <li><em>None</em></li>
@@ -759,24 +633,51 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 <strong>Improvements</strong>
 
 <ul>
-<li>Slight performance improvement by disabled the loading of meta tags for media upload pages.</li>
+<li>Moved Gravatar and video related options to the Pro version (greyed out in the Free version), since these features (aka modules) are only available in the Pro version package anyway.</li>
 </ul>
 </li>
 <li>
-<strong>New Features</strong>
+<strong>Bugfixes</strong>
 
 <ul>
-<li><em>None</em></li>
+<li>Fixed variable name returned by the WooCommerce module for exceptions (Pro version).</li>
 </ul>
 </li>
 </ul>
 
 <h4>
-<a id="version-7821" class="anchor" href="#version-7821" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 7.8.2.1</h4>
+<a id="version-803-20150415" class="anchor" href="#version-803-20150415" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 8.0.3 (2015/04/15)</h4>
 
 <ul>
 <li>
+<strong>New Features</strong>
+
+<ul>
+<li>Added a new Pinterest "Website Verification ID" option on the NGFB General settings page.</li>
+</ul>
+</li>
+<li>
+<strong>Improvements</strong>
+
+<ul>
+<li>Changed 'sanitize_title' to 'sanitize_title_with_dashes' when sanitizing WordPress tags in order to keep accents. </li>
+</ul>
+</li>
+<li>
 <strong>Bugfixes</strong>
+
+<ul>
+<li>When the Twitter Card feature is disabled, exclude Twitter Card meta tags from the duplicate meta tag checks.</li>
+</ul>
+</li>
+</ul>
+
+<h4>
+<a id="version-802-20150414" class="anchor" href="#version-802-20150414" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 8.0.2 (2015/04/14)</h4>
+
+<ul>
+<li>
+<strong>New Features</strong>
 
 <ul>
 <li><em>None</em></li>
@@ -786,53 +687,24 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 <strong>Improvements</strong>
 
 <ul>
-<li>Slight performance improvement by preventing default settings from being read (unless necessary) when defining the plugin image sizes.</li>
-<li>Moved the "Display Basic Options" and "Display All Options" links to a single button at the bottom of NGFB settings pages.</li>
+<li>Improved the duplicate meta tags check by adding extra "comment" meta tags to better detect the NGFB meta tag block to be removed / ignored.</li>
 </ul>
 </li>
 <li>
-<strong>New Features</strong>
+<strong>Bugfixes</strong>
 
 <ul>
-<li><em>None</em></li>
+<li>Fixed an unecessary warning to install the Pro version when an extension has an Authentication ID but is deactivated.</li>
 </ul>
 </li>
 </ul>
 
 <h4>
-<a id="version-782" class="anchor" href="#version-782" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 7.8.2</h4>
+<a id="version-801-20150413" class="anchor" href="#version-801-20150413" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 8.0.1 (2015/04/13)</h4>
 
 <ul>
-<li>
-<strong>Bugfixes</strong>
-
-<ul>
-<li>Fixed Rich Pin Image Dimensions setting in Free version by inheriting the Open Graph values.</li>
-<li>Added a <code>NgfbUser::get_user_id_contact_methods()</code> static method to provide <code>wp_get_user_contact_methods()</code> for older WordPress versions.</li>
-</ul>
-</li>
-<li>
-<strong>Improvements</strong>
-
-<ul>
-<li>Added a 'View Plugin Details' link on the Pro Licenses settings page and updated its layout.</li>
-</ul>
-</li>
 <li>
 <strong>New Features</strong>
-
-<ul>
-<li><em>None</em></li>
-</ul>
-</li>
-</ul>
-
-<h4>
-<a id="version-781" class="anchor" href="#version-781" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 7.8.1</h4>
-
-<ul>
-<li>
-<strong>Bugfixes</strong>
 
 <ul>
 <li><em>None</em></li>
@@ -842,52 +714,51 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 <strong>Improvements</strong>
 
 <ul>
-<li>Added a new 'ngfb_init_objects' action for NGFB extension plugins.</li>
+<li><em>None</em></li>
 </ul>
 </li>
 <li>
-<strong>New Features</strong>
+<strong>Bugfixes</strong>
 
 <ul>
-<li><em>None</em></li>
+<li>Fixed an optional parameter to preg_match_all in SucomUtil for older (pre 5.4) PHP versions.</li>
 </ul>
 </li>
 </ul>
 
 <h4>
-<a id="version-78" class="anchor" href="#version-78" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 7.8</h4>
+<a id="version-80-20150412" class="anchor" href="#version-80-20150412" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 8.0 (2015/04/12)</h4>
 
 <ul>
 <li>
-<strong>Bugfixes</strong>
+<strong>New Features</strong>
 
 <ul>
-<li><em>None</em></li>
+<li>Removed the 'Free to Pro version' self-update feature from the Free version code base, and moved it to a new <em>Free</em> extension called "NextGEN Facebook (NGFB) Pro Update Manager".</li>
+<li>
+<strong>Added 36 options from the Pro version General settings page back into the Free version</strong> (except for the Twitter Card options, which remains a Pro version feature).</li>
+<li>Added a new "Video Embed HTML" and "Video URL" fields to the user Social Settings metabox (Pro version).</li>
+<li>When viewing plugin settings using the "Basic Options View", a new link is now available bellow each settings metabox to unhide / show all options.</li>
+<li>Added a new NGFB_DOCTYPE_PRIORITY constant to manage the 'language_attributes' hook priority.</li>
 </ul>
 </li>
 <li>
 <strong>Improvements</strong>
 
 <ul>
-<li>Added a new NGFB_META_CACHE_PRIORITY contant with a default value of 9.</li>
-<li>Changed the NGFB_META_SAVE_PRIORITY constant default value from 20 to 6.</li>
-<li>Changed the update post cache maintenance hook priority from 100 to 9 (using the new NGFB_META_CACHE_PRIORITY contant).</li>
-<li>Moved the update user profile cache maintenance to an action hook (uses the NGFB_META_CACHE_PRIORITY contant as well).</li>
-<li>Added support for Quick Cache in the "Clear All Cache" feature.</li>
-<li>Renamed the 'og_publisher_url' settings option to 'fb_publisher_url'.</li>
-<li>Renamed the 'link_publisher_url' settings option to 'seo_publisher_url'.</li>
-<li>Moved the Open Graph "Article Publisher Page URL" option down to the Facebook publisher settings.</li>
+<li>Additional performance improvements for non-debug mode by further centralizing debug mode checks.</li>
+<li>The Social Styles CSS is now displayed within a textarea box for easier viewing in the Free version.</li>
+<li>Renamed the 'Pro Licenses' settings page to 'Extension Plugins and Pro Licenses'.</li>
+<li>Added the "NextGEN Facebook (NGFB) Pro Update Manager" <em>Free</em> extension plugin to the 'Extension Plugins and Pro Licenses' settings page.</li>
+<li>Changed <em>default</em> image widths from 800px to 600px (lowest recommended value for Facebook).</li>
+<li>Added new <code>get_og_video()</code>, <code>get_og_image()</code>, and <code>reset_options()</code> methods to the WpssoUser class.</li>
 </ul>
 </li>
 <li>
-<strong>New Features</strong>
+<strong>Bugfixes</strong>
 
 <ul>
-<li>Added a "Publisher Business Page URL" option to the Pinterest publisher settings tab (Pro version).</li>
-<li>Added a LinkedIn tab to the publisher settings with a new "Publisher Company Page URL" option (Pro version).</li>
-<li>Moved all schema related code (meta tags, json scripts, doctype itemscope) from NgfbHead to a new NgfbSchema class.</li>
-<li>Added the "Schema Website / Business Logo URL", "Add Schema Publisher Social JSON", and "Add Schema Author Social JSON" options under to the Google (G+ and Search) publisher settings tab (Pro version).</li>
-<li>Added author (Person) and publisher (Organization) <a href="https://developers.google.com/structured-data/customize/social-profiles">social profiles markup in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em></a>.</li>
+<li>Fixed the use of custom images from the user / profile Social Settings metabox.</li>
 </ul>
 </li>
 </ul>
@@ -896,34 +767,39 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 <a id="upgrade-notice" class="anchor" href="#upgrade-notice" aria-hidden="true"><span class="octicon octicon-link"></span></a>Upgrade Notice</h3>
 
 <h4>
-<a id="79" class="anchor" href="#79" aria-hidden="true"><span class="octicon octicon-link"></span></a>7.9</h4>
+<a id="81" class="anchor" href="#81" aria-hidden="true"><span class="octicon octicon-link"></span></a>8.1</h4>
 
-<p>Fixed saving of NGFB options under the WordPress "Settings" menu, added new "Image Dimensions" and "Website / Business Social Accounts" settings pages.</p>
-
-<h4>
-<a id="785" class="anchor" href="#785" aria-hidden="true"><span class="octicon octicon-link"></span></a>7.8.5</h4>
-
-<p>Small performance improvement in non-debug mode, fixed a user-agent string check error, added feature to remove false conflict warning from WordPress SEO.</p>
+<p>Added new "Share Single Image" option for Pinterest button, added 'wpsso_js_url_{sitename}' filter hooks, improved setup guide and some status / help messages, added html_entity_decode() to caption text (when required), fixed reliance on deprecated YouTube / Google v2 API (Pro version).</p>
 
 <h4>
-<a id="784" class="anchor" href="#784" aria-hidden="true"><span class="octicon octicon-link"></span></a>7.8.4</h4>
+<a id="805" class="anchor" href="#805" aria-hidden="true"><span class="octicon octicon-link"></span></a>8.0.5</h4>
 
-<p>Added support for low/high resolution banners in Plugin Details window, added an extra check for object / post ID in WooCommerce module (Pro version).</p>
-
-<h4>
-<a id="7832" class="anchor" href="#7832" aria-hidden="true"><span class="octicon octicon-link"></span></a>7.8.3.2</h4>
-
-<p>Fixed user contact field sanitation check, updated SucomUtil::limit_text_length() for PHP multibyte functions, added a minimum PHP version check.</p>
+<p>Minor CSS improvements for settings pages and metaboxes, fixed image dimension notices (when saving posts/pages).</p>
 
 <h4>
-<a id="7831" class="anchor" href="#7831" aria-hidden="true"><span class="octicon octicon-link"></span></a>7.8.3.1</h4>
+<a id="804" class="anchor" href="#804" aria-hidden="true"><span class="octicon octicon-link"></span></a>8.0.4</h4>
 
-<p>Updated "Google Structured Data Testing Tool" URL, added support for WooCommerce shop page (Pro version), fixed WordPress SEO integration (Pro version).</p>
+<p>Fixed variable name returned by the WooCommerce module for exceptions (Pro version), greyed out some options for features not available in the Free version.</p>
 
 <h4>
-<a id="783" class="anchor" href="#783" aria-hidden="true"><span class="octicon octicon-link"></span></a>7.8.3</h4>
+<a id="803" class="anchor" href="#803" aria-hidden="true"><span class="octicon octicon-link"></span></a>8.0.3</h4>
 
-<p>Fixed the Social Settings input counters, moved "Show Basic / All Options" setting to an individual user preference.</p>
+<p>When Twitter Cards are disabled, exclude from duplicate meta tag checks. Added new Pinterest "Website Verification ID" option. Changed tag sanitation to keep accents. </p>
+
+<h4>
+<a id="802" class="anchor" href="#802" aria-hidden="true"><span class="octicon octicon-link"></span></a>8.0.2</h4>
+
+<p>Improved the duplicate meta tags check, fixed an unecessary warning when a plugin extension has an Authentication ID but is deactivated.</p>
+
+<h4>
+<a id="801" class="anchor" href="#801" aria-hidden="true"><span class="octicon octicon-link"></span></a>8.0.1</h4>
+
+<p>Fixed an optional parameter to preg_match_all in SucomUtil for older (pre 5.4) PHP versions.</p>
+
+<h4>
+<a id="80" class="anchor" href="#80" aria-hidden="true"><span class="octicon octicon-link"></span></a>8.0</h4>
+
+<p>Added 36 options from the Pro version General settings page back into the Free version, new "unhide / show all options" link in metaboxes, replaced the 'Free to Pro version' self-update feature by a new "NextGEN Facebook (NGFB) Pro Update Manager" Free extension plugin.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/SurniaUlula">SurniaUlula</a></p>
