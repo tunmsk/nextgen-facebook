@@ -194,7 +194,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 						$this->notice->inf( 'NGFB_RESET_ON_ACTIVATE constant is true &ndash;
 							plugin options have been reset to their default values.', true );
 				}
-				$this->p->util->clear_all_cache();
+				//$this->p->util->clear_all_cache();
 
 				if ( $this->debug->enabled )
 					$this->debug->log( 'exiting early: init_plugin() to follow' );
