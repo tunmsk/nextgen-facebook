@@ -28,6 +28,17 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 <p>You can download the <a href="https://wordpress.org/plugins/nextgen-facebook/">Free version of NGFB on wordpress.org</a> and <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/">purchase Pro license(s) on surniaulula.com</a> (includes a <strong>No Risk 30 Day Refund Policy</strong>).</p>
 
+<blockquote>
+<p><strong>Already have sharing buttons?</strong></p>
+
+<p>Have a look at the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin &mdash; a fork (aka child) of NextGEN Facebook (NGFB). They have the same author, many of the same excellent features, but <em>WPSSO is distributed without the sharing buttons and their related features</em>. As a result, WPSSO is 25% smaller and is often preferred for websites that already have (or don't need) a set of sharing buttons. Additional extension plugins are also available for WPSSO, including:
+<ul>
+<li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO App Meta</a></li>
+<li><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO Place and Location Meta</a></li>
+<li><a href="https://wordpress.org/plugins/wpsso-ssb/">WPSSO Social Sharing Buttons</a></li>
+</ul></p>
+</blockquote>
+
 <h4>Quick List of Features</h4>
 
 **Free / Basic Version**
@@ -65,17 +76,6 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 	* StumbleUpon
 	* Tumblr
 	* Twitter
-
-<blockquote>
-<p><strong>Already have sharing buttons?</strong></p>
-
-<p>Have a look at the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin &mdash; a fork (aka child) of NextGEN Facebook (NGFB). They have the same author, many of the same excellent features, but <em>WPSSO is distributed without the sharing buttons and their related features</em>. As a result, WPSSO is 25% smaller and is often preferred for websites that already have (or don't need) a set of sharing buttons. Additional extension plugins are also available for WPSSO, including:
-<ul>
-<li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO App Meta</a></li>
-<li><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO Place and Location Meta</a></li>
-<li><a href="https://wordpress.org/plugins/wpsso-ssb/">WPSSO Social Sharing Buttons</a></li>
-</ul></p>
-</blockquote>
 
 <strong>Pro / Power-User Version</strong>
 
