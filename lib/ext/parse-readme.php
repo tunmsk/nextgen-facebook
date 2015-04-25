@@ -77,9 +77,9 @@ class SuextParseReadme {
 			$license_uri = esc_url( $_license_uri[1] );
 		else $license_uri = null;
 
-		if ( preg_match( '|Slug:(.*)|i', $file_contents, $_slug ) )
-			$slug = $this->sanitize_text( $_slug[1] );
-		else $slug = null;
+		if ( preg_match( '|Plugin Slug:(.*)|i', $file_contents, $_plugin_slug ) )
+			$plugin_slug = $this->sanitize_text( $_plugin_slug[1] );
+		else $plugin_slug = null;
 
 		foreach ( array(
 			'tags',
@@ -90,7 +90,7 @@ class SuextParseReadme {
 			'donate_link',
 			'license',
 			'license_uri',
-			'slug'
+			'plugin_slug'
 		) as $chop ) {
 			if ( $$chop ) {
 				$_chop = '_'.$chop;
@@ -175,7 +175,7 @@ class SuextParseReadme {
 
 		$r = array(
 			'name' => $name,
-			'slug' => $slug,
+			'plugin_slug' => $plugin_slug,
 			'tags' => $tags,
 			'requires_at_least' => $requires_at_least,
 			'tested_up_to' => $tested_up_to,
