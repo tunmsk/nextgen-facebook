@@ -249,7 +249,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$def_opts = $this->p->opt->get_defaults();
 			$opts = SucomUtil::restore_checkboxes( $opts );
 			$opts = array_merge( $this->p->options, $opts );
-			$this->p->notice->trunc();				// flush all messages before sanitation checks
+			$this->p->notice->trunc();				// clear all messages before sanitation checks
 			$opts = $this->p->opt->sanitize( $opts, $def_opts );
 			$opts = apply_filters( $this->p->cf['lca'].'_save_options', $opts, NGFB_OPTIONS_NAME );
 			$this->p->notice->inf( __( 'Plugin settings have been updated.', NGFB_TEXTDOM ).' '.sprintf( __( 'Wait %d seconds for cache objects to expire (default) or use the \'Clear All Cache(s)\' button.', NGFB_TEXTDOM ), $this->p->options['plugin_object_cache_exp'] ), true );
@@ -279,7 +279,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$opts = empty( $_POST[NGFB_SITE_OPTIONS_NAME] ) ? $def_opts : 
 				SucomUtil::restore_checkboxes( $_POST[NGFB_SITE_OPTIONS_NAME] );
 			$opts = array_merge( $this->p->site_options, $opts );
-			$this->p->notice->trunc();				// flush all messages before sanitation checks
+			$this->p->notice->trunc();				// clear all messages before sanitation checks
 			$opts = $this->p->opt->sanitize( $opts, $def_opts );	// cleanup excess options and sanitize
 			$opts = apply_filters( $this->p->cf['lca'].'_save_site_options', $opts );
 			update_site_option( NGFB_SITE_OPTIONS_NAME, $opts );
