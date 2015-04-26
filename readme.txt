@@ -1,4 +1,5 @@
 === NextGEN Facebook - Advanced Social SEO for Facebook, Google+, Pinterest, Twitter & More ===
+Plugin Name: NextGEN Facebook (NGFB)
 Plugin Slug: nextgen-facebook
 Contributors: jsmoriss
 Donate Link: https://surniaulula.com/extend/plugins/nextgen-facebook/
