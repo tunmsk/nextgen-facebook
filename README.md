@@ -1,9 +1,8 @@
 <h1>NextGEN Facebook</h1><h3>Advanced Social SEO for Facebook, Google+, Pinterest, Twitter &amp; More</h3>
 
-<p><strong><em>Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!</em></strong></p>
-
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>NextGEN Facebook (NGFB)</td></tr>
+<tr><th align="right" valign="top" nowrap>Description</th><td>Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>8.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.2</td></tr>
@@ -12,8 +11,6 @@
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="http://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
 <tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>nextgen gallery, featured, attached, open graph, meta tags, buttons, like, share, facebook, google, google+, g+, twitter, linkedin, social, seo, pinterest, rich pins, tumblr, stumbleupon, widget, multilingual, shortcode, object cache, transient cache, wp_cache, nggalbum, nggallery, singlepic, imagebrowser, gallery, twitter cards, photo card, gallery card, player card, summary card, easy digital downloads, woocommerce, marketpress, e-commerce, multisite, hashtags, bbpress, buddypress, jetpack, photon, slideshare, vimeo, wistia, youtube, polylang, schema, json-ld</td></tr>
 </table>
-
-<h3>Description</h3>
 
 <p align="center"><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" /></p><p><strong>Make sure social websites present your content in the best possible way, no matter <em>how</em> your webpage is shared</strong> &mdash; from sharing buttons on the webpage, browser add-ons and extensions, or URLs shared directly in social timeline posts and <em>private messages</em>.</p>
 
