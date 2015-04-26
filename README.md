@@ -5,12 +5,12 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>NextGEN Facebook (NGFB)</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>8.1</td></tr>
-<tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
-<tr><th align="right" valign="top" nowrap>Donate / Purchase</th><td><a href="https://surniaulula.com/extend/plugins/nextgen-facebook/">https://surniaulula.com/extend/plugins/nextgen-facebook/</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>nextgen gallery, featured, attached, open graph, meta tags, buttons, like, share, facebook, google, google+, g+, twitter, linkedin, social, seo, pinterest, rich pins, tumblr, stumbleupon, widget, multilingual, shortcode, object cache, transient cache, wp_cache, nggalbum, nggallery, singlepic, imagebrowser, gallery, twitter cards, photo card, gallery card, player card, summary card, easy digital downloads, woocommerce, marketpress, e-commerce, multisite, hashtags, bbpress, buddypress, jetpack, photon, slideshare, vimeo, wistia, youtube, polylang, schema, json-ld</td></tr>
-<tr><th align="right" valign="top" nowrap>License</th><td><a href="http://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.2</td></tr>
+<tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
+<tr><th align="right" valign="top" nowrap>Website URL</th><td><a href="https://surniaulula.com/extend/plugins/nextgen-facebook/">https://surniaulula.com/extend/plugins/nextgen-facebook/</a></td></tr>
+<tr><th align="right" valign="top" nowrap>License</th><td><a href="http://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>nextgen gallery, featured, attached, open graph, meta tags, buttons, like, share, facebook, google, google+, g+, twitter, linkedin, social, seo, pinterest, rich pins, tumblr, stumbleupon, widget, multilingual, shortcode, object cache, transient cache, wp_cache, nggalbum, nggallery, singlepic, imagebrowser, gallery, twitter cards, photo card, gallery card, player card, summary card, easy digital downloads, woocommerce, marketpress, e-commerce, multisite, hashtags, bbpress, buddypress, jetpack, photon, slideshare, vimeo, wistia, youtube, polylang, schema, json-ld</td></tr>
 </table>
 
 <h3>Description</h3>
