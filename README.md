@@ -1,5 +1,7 @@
 <h1>NextGEN Facebook</h1><h3>Advanced Social SEO for Facebook, Google+, Pinterest, Twitter &amp; More</h3>
 
+<p><strong><em>Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!</em></strong></p>
+
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>NextGEN Facebook (NGFB)</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>8.1</td></tr>
@@ -10,8 +12,6 @@
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.2</td></tr>
 </table>
-
-<p>Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!</p>
 
 <h3>Description</h3>
 
