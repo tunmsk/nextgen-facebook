@@ -52,7 +52,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 * Includes hashtags from Post / Page WordPress Tags.
 * Includes the author's name for Pinterest Rich Pins.
 * Includes a Google / SEO description meta tag if a known SEO plugin is not detected.
-* Includes <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite Site Name</a> markup in schema.org JSON-LD format for Google Search <em>Knowledge Graph</em>.
+* Includes <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite Site Name</a> in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em>.
 * Provides Facebook, Google+ and Twitter URL user profile contact fields.
 * Validation tools and special meta tag preview tabs on admin edit pages.
 * Customizable *multilingual* Site Title and Site Description texts.
@@ -174,7 +174,7 @@ NGFB (Pro version) allows you to customize the field names, label, and add / rem
 <img src="https://surniaulula.github.io/nextgen-facebook/assets/screenshot-23.png" style="width:50%;min-width:300px;max-width:1024px;float:right;margin:0 0 20px 40px;" />
 <h4>Social Profiles for Google Search</h4>
 
-NGFB provides <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles markup in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em></a>. The author (Person) markup includes the author's website URL, their profile social sharing image, and all listed contact URLs from their user profile. The publisher (Organization) markup includes the website URL, a corporate logo, a default image, and the publisher Facebook, Google+, LinkedIn, Pinterest, and Twitter business pages.
+NGFB provides <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite Site Name</a> markup in schema.org JSON-LD format for Google Search <em>Knowledge Graph</em>. The author (Person) markup includes the author's website URL, their profile social sharing image, and all listed contact URLs from their user profile. The publisher (Organization) markup includes the website URL, a corporate logo, a default image, and the publisher Facebook, Google+, LinkedIn, Pinterest, and Twitter business pages.
 
 = Complete Social Meta Tags =
 
@@ -398,7 +398,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 20. Example Twitter 'Gallery' Card
 21. Example Twitter 'Product' Card
 22. Example Showing All Social Sharing Buttons Enabled
-23. Example Social Profiles in Google Search &mdash; NGFB includes author (Person) and publisher (Organization) social profiles markup in schema.org JSON-LD format for Google Search and their Knowledge Graph.
+23. Example Social Profiles in Google Search &mdash; NGFB includes author (Person) and publisher (Organization) social profiles in schema.org JSON-LD format for Google Search and their Knowledge Graph.
 
 == Changelog ==
 
