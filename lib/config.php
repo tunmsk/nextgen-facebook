@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_expire' => 24,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.1',		// plugin version
+					'version' => '8.2',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -53,9 +53,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'lib' => array(			// libraries
 						'setting' => array (
 							'ngfb-separator-0' => 'NGFB',
-							'image-dimensions' => 'Image Dimensions',
-							'contact-fields' => 'Profile Contact Fields',
+							'image-dimensions' => 'Social Image Dimensions',
 							'social-accounts' => 'Website / Business Social Accounts',
+							'contact-fields' => 'User Profile Contact Methods',
 							'ngfb-separator-1' => '',
 						),
 						'submenu' => array (
@@ -97,7 +97,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'admin' => array(
 								'general' => 'General Settings',
 								'advanced' => 'Advanced Settings',
-								'image-dimensions' => 'Image Dimensions',
+								'image-dimensions' => 'Social Image Dimensions',
 								'apikeys' => 'API Key Settings',
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
@@ -122,7 +122,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'admin' => array(
 								'general' => 'General Settings',
 								'advanced' => 'Advanced Settings',
-								'image-dimensions' => 'Image Dimensions',
+								'image-dimensions' => 'Social Image Dimensions',
 								'apikeys' => 'API Key Settings',
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
@@ -188,11 +188,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(				// options
-				'version' => 334,		// increment when changing default options
+				'version' => 335,		// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'options_version' => '',
 					'schema_desc_len' => 300,		// meta itemprop="description" maximum text length
+					'schema_website_json' => 1,
 					'schema_publisher_json' => 1,
 					'schema_author_json' => 1,
 					'schema_logo_url' => '',
