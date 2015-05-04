@@ -52,7 +52,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 * Includes hashtags from Post / Page WordPress Tags.
 * Includes the author's name for Pinterest Rich Pins.
 * Includes a Google / SEO description meta tag if a known SEO plugin is not detected.
-* Includes <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles markup in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em></a>.
+* Includes <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite Site Name</a> markup in schema.org JSON-LD format for Google Search <em>Knowledge Graph</em>.
 * Provides Facebook, Google+ and Twitter URL user profile contact fields.
 * Validation tools and special meta tag preview tabs on admin edit pages.
 * Customizable *multilingual* Site Title and Site Description texts.
