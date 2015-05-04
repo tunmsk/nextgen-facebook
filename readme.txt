@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.2
-Stable Tag: 8.1
+Stable Tag: 8.2
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -414,7 +414,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.2 =
+= Version 8.2 (2015/05/04) =
 
 * **New Features**
 	* Added a new "Add Schema WebSite JSON-LD" option on the NGFB General settings page, under the Google / Schema tab.
@@ -503,6 +503,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Fixed the use of custom images from the user / profile Social Settings metabox.
 
 == Upgrade Notice ==
+
+= 8.2 =
+
+Added a new "Add Schema WebSite JSON-LD" option. Added Buffer, Pinterest, and Tumblr sharing button Image Dimensions to the Social Image Dimensions settings page.
 
 = 8.1 =
 
