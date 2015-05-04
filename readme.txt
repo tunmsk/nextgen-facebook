@@ -414,6 +414,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.2 =
+
+* **New Features**
+	* Added a new "Add Schema WebSite JSON-LD" option on the NGFB General settings page, under the Google / Schema tab.
+* **Improvements**
+	* Modified the NgfbSchema::get_json_array() arguments, added support for WebSite JSON-LD, moved the Organization JSON-LD code to its own method.
+	* Added a new NgfbOpengraph::get_site_name() method (returns the localized value).
+	* Added the Buffer, Pinterest, and Tumblr sharing button Image Dimensions to the Social Image Dimensions settings page.
+* **Bugfixes**
+	* *None*
+
 = Version 8.1 (2015/04/24) =
 
 * **New Features**
