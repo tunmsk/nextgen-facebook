@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Plugin Name: NextGEN Facebook (NGFB)
  * Plugin URI: http://surniaulula.com/extend/plugins/nextgen-facebook/
  * Author: Jean-Sebastien Morisset
@@ -8,7 +8,7 @@
  * License URI: http://www.gnu.org/licenses/gpl.txt
  * Description: Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.0
- * Tested Up To: 4.2
+ * Tested Up To: 4.2.2
  * Version: 8.2
  * 
  * Copyright 2012-2015 - Jean-Sebastien Morisset - http://surniaulula.com/
