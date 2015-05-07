@@ -5,7 +5,7 @@
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>8.2</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.0</td></tr>
-<tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.2</td></tr>
+<tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.2.2</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>Website URL</th><td><a href="https://surniaulula.com/extend/plugins/nextgen-facebook/">https://surniaulula.com/extend/plugins/nextgen-facebook/</a></td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="http://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
