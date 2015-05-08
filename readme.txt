@@ -508,31 +508,3 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 Added a new "Add Schema WebSite JSON-LD" option. Added Buffer, Pinterest, and Tumblr sharing button Image Dimensions to the Social Image Dimensions settings page.
 
-= 8.1 =
-
-Added new "Share Single Image" option for Pinterest button, added 'wpsso_js_url_{sitename}' filter hooks, improved setup guide and some status / help messages, added html_entity_decode() to caption text (when required), fixed reliance on deprecated YouTube / Google v2 API (Pro version).
-
-= 8.0.5 =
-
-Minor CSS improvements for settings pages and metaboxes, fixed image dimension notices (when saving posts/pages).
-
-= 8.0.4 =
-
-Fixed variable name returned by the WooCommerce module for exceptions (Pro version), greyed out some options for features not available in the Free version.
-
-= 8.0.3 =
-
-When Twitter Cards are disabled, exclude from duplicate meta tag checks. Added new Pinterest "Website Verification ID" option. Changed tag sanitation to keep accents. 
-
-= 8.0.2 =
-
-Improved the duplicate meta tags check, fixed an unecessary warning when a plugin extension has an Authentication ID but is deactivated.
-
-= 8.0.1 =
-
-Fixed an optional parameter to preg_match_all in SucomUtil for older (pre 5.4) PHP versions.
-
-= 8.0 =
-
-Added 36 options from the Pro version General settings page back into the Free version, new "unhide / show all options" link in metaboxes, replaced the 'Free to Pro version' self-update feature by a new "NextGEN Facebook (NGFB) Pro Update Manager" Free extension plugin.
-
