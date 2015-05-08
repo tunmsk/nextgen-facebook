@@ -187,8 +187,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					),
 				),
 			),
-			'opt' => array(				// options
-				'version' => 335,		// increment when changing default options
+			'opt' => array(						// options
+				'version' => 'ngfb335',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'options_version' => '',

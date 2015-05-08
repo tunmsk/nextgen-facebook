@@ -132,13 +132,14 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 
 		// def_opts accepts output from functions, so don't force reference
 		public function options( $options_name, &$opts = array(), $def_opts = array() ) {
-			$opts = SucomUtil::rename_keys( $opts, $this->renamed_keys );
 
+			// retrieve the first numeric string
 			$opts_version = empty( $opts['options_version'] ) ? 0 :
-				preg_replace( '/[^0-9].*$/', '', $opts['options_version'] );
+				preg_replace( '/^[^0-9]*([0-9]*).*$/', '$1', $opts['options_version'] );
 
-			// custom value changes for regular options
-			if ( $options_name == constant( $this->p->cf['uca'].'_OPTIONS_NAME' ) ) {
+			if ( $options_name === constant( 'NGFB_OPTIONS_NAME' ) ) {
+
+				$opts = SucomUtil::rename_keys( $opts, $this->renamed_keys );
 
 				if ( version_compare( $opts_version, 28, '<=' ) ) {
 					// upgrade the old og_img_size name into width / height / crop values
@@ -203,7 +204,10 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 						$opts['plugin_min_shorten'] < 22 ) 
 							$opts['plugin_min_shorten'] = 22;
 				}
-			}
+
+			} elseif ( $options_name === constant( 'NGFB_SITE_OPTIONS_NAME' ) )
+				$opts = SucomUtil::rename_keys( $opts, $this->renamed_site_keys );
+
 			return $this->sanitize( $opts, $def_opts );	// cleanup options and sanitize
 		}
 	}
