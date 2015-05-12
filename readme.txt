@@ -419,6 +419,15 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.2.1 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Refactored the buttons enabled/disabled checks and loading of their filters.
+* **Bugfixes**
+	* *None*
+
 = Version 8.2 (2015/05/04) =
 
 * **New Features**
