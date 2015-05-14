@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_expire' => 24,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.2',		// plugin version
+					'version' => '8.2.1',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -605,7 +605,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				define( 'NGFB_TOPICS_LIST', NGFB_PLUGINDIR.'share/topics.txt' );
 
 			if ( ! defined( 'NGFB_SHARING_SHORTCODE' ) )
-				define( 'NGFB_SHARING_SHORTCODE', $cf['lca'] );
+				define( 'NGFB_SHARING_SHORTCODE', 'ngfb' );
 
 			if ( ! defined( 'NGFB_MENU_ORDER' ) )
 				define( 'NGFB_MENU_ORDER', '99.11' );
