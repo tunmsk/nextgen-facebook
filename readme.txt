@@ -419,12 +419,13 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.2.1 (2015/05/14) =
+= Version 8.2.2 (2015/05/14) =
 
 * **New Features**
 	* *None*
 * **Improvements**
 	* Refactored checks using NgfbSharing::is_post_buttons_disabled() and loading of filters using NgfbSharing::have_buttons_for_type().
+	* Fixed possible non-unique CSS ids for sharing buttons.
 * **Bugfixes**
 	* *None*
 
@@ -518,11 +519,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 == Upgrade Notice ==
 
-= 8.2.1 =
+= 8.2.2 =
 
 Refactored checks using is_post_buttons_disabled() and have_buttons_for_type() in the NgfbSharing class.
-
-= 8.2 =
-
-Added a new "Add Schema WebSite JSON-LD" option. Added Buffer, Pinterest, and Tumblr sharing button Image Dimensions to the Social Image Dimensions settings page.
 
