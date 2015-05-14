@@ -419,12 +419,12 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.2.1 =
+= Version 8.2.1 (2015/05/14) =
 
 * **New Features**
 	* *None*
 * **Improvements**
-	* Refactored the buttons enabled/disabled checks and loading of their filters.
+	* Refactored checks using NgfbSharing::is_post_buttons_disabled() and loading of filters using NgfbSharing::have_buttons_for_type().
 * **Bugfixes**
 	* *None*
 
@@ -517,6 +517,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Fixed the use of custom images from the user / profile Social Settings metabox.
 
 == Upgrade Notice ==
+
+= 8.2.1 =
+
+Refactored checks using is_post_buttons_disabled() and have_buttons_for_type() in the NgfbSharing class.
 
 = 8.2 =
 
