@@ -875,7 +875,7 @@ jQuery("#ngfb-sidebar").click( function(){
 			$css_id = $css_name.'-'.( empty( $atts['css_id'] ) ? 
 				'button' : $atts['css_id'] );
 
-			if ( is_singular() && ! empty( $post->ID ) ) 
+			if ( ! empty( $post->ID ) ) 
 				$css_id .= '-post-'.$post->ID;
 
 			if ( ! empty( $css_class_extra ) ) 
