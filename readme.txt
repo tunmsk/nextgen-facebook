@@ -425,7 +425,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* *None*
 * **Improvements**
 	* Refactored checks using NgfbSharing::is_post_buttons_disabled() and loading of filters using NgfbSharing::have_buttons_for_type().
-	* Fixed possible non-unique CSS ids for sharing buttons.
+	* Refactored NgfbSharing::get_css() and fixed non-unique CSS ids for sharing buttons in the loop.
 * **Bugfixes**
 	* *None*
 
@@ -521,5 +521,5 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = 8.2.2 =
 
-Refactored checks using is_post_buttons_disabled() and have_buttons_for_type() in the NgfbSharing class.
+Refactored checks using is_post_buttons_disabled(), have_buttons_for_type(), and get_css() in the NgfbSharing class.
 
