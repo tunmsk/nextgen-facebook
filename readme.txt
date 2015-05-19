@@ -18,11 +18,11 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 = Why Choose the NextGEN Facebook Plugin? =
 
-<p>NextGEN Facebook (NGFB) <strong>gives you total control over the information <a href="https://developers.facebook.com/docs/sharing/webmasters/crawler" target="_blank">social website crawlers</a> need</strong>, improving Google Search ranking, social engagement, and click-through-rates on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
+<p>NextGEN Facebook (NGFB) gives you total control over the information <a href="https://developers.facebook.com/docs/sharing/webmasters/crawler" target="_blank">social website crawlers</a> need, <em>improving Google Search ranking, social engagement, and click-through-rates</em> on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
 
-<p><strong>Extend or replace your current SEO solution</strong> &mdash; Google Search reads social meta tags and <em>Knowledge Graph</em> markup, so many users are choosing to extend or even replace their outdated SEO solution with NGFB.</p>
+<p>Extends or replaces your outdated SEO plugin &mdash; Google Search reads all the social meta tags and <em>knowledge graph</em> markup that NGFB offers, so many users are choosing to extend or even replace their current SEO solution(s) with NGFB.</p>
 
-<p><strong>Thourough <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/">documentation for users and developers</a>, integrated upgrades using the native WordPress update system, actively developed with new features and prompt bug fixes.</p>
+<p><strong>Thourough <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/">documentation for users and developers</a>, integrated Pro version upgrades using the native WordPress update system, professionally supported, actively developed with new features and prompt bug fixes.</p>
 
 <p>You can download the <a href="https://wordpress.org/plugins/nextgen-facebook/">Free version of NGFB on wordpress.org</a> and <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/">purchase Pro license(s) on surniaulula.com</a> (includes a <strong>No Risk 30 Day Refund Policy</strong>).</p>
 
