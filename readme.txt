@@ -20,11 +20,11 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 <p>NextGEN Facebook (NGFB) gives you total control over the information <a href="https://developers.facebook.com/docs/sharing/webmasters/crawler" target="_blank">social website crawlers</a> need, <em>improving Google Search ranking, social engagement, and click-through-rates</em> on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
 
-<p>Extends or replaces your outdated SEO plugin &mdash; Google Search reads all the social meta tags and <em>knowledge graph</em> markup that NGFB offers, so many users are choosing to extend or even replace their current SEO solution(s) with NGFB.</p>
+<p>Google Search reads all the social meta tags and structured data (<em>Knowledge Graph</em>) markup that NGFB offers, so many users are choosing to extend or even replace traditional SEO solutions with NGFB.</p>
 
 <p>Thourough <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/">documentation for users and developers</a>, integrated Pro version upgrades using the native WordPress update system, professionally supported, actively developed with new features and prompt bug fixes.</p>
 
-<p>You can download the <a href="https://wordpress.org/plugins/nextgen-facebook/">Free version of NGFB on wordpress.org</a> and <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/">purchase Pro license(s) on surniaulula.com</a> (includes a <strong>No Risk 30 Day Refund Policy</strong>).</p>
+<p>Download the <a href="https://wordpress.org/plugins/nextgen-facebook/">Free version of NGFB on wordpress.org</a> and <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/">purchase Pro license(s) on surniaulula.com</a> (includes a <strong>No Risk 30 Day Refund Policy</strong>).</p>
 
 <blockquote>
 
