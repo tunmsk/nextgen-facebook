@@ -22,7 +22,7 @@
 
 <p>Google Search reads all the social meta tags and structured data (<em>Knowledge Graph</em>) markup that NGFB offers, so many users are choosing to extend or even replace traditional SEO solutions with NGFB.</p>
 
-<p>Thourough <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/">documentation for users and developers</a>, integrated Pro version upgrades using the native WordPress update system, professionally supported, actively developed with new features and prompt bug fixes.</p>
+<p>Thouroughly <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/">documented for both users and developers</a>, integrated Pro version upgrades using the native WordPress update system, professionally supported, actively developed with new features and prompt bug fixes.</p>
 
 <p>Download the <a href="https://wordpress.org/plugins/nextgen-facebook/">Free version of NGFB on wordpress.org</a> and <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/">purchase Pro license(s) on surniaulula.com</a> (includes a <strong>No Risk 30 Day Refund Policy</strong>).</p>
 
