@@ -16,13 +16,18 @@
 
 <p align="center"><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" /></p><p><strong>Make sure social websites present your content in the best possible way, no matter <em>how</em> your webpage is shared</strong> &mdash; from sharing buttons on the webpage, browser add-ons and extensions, or URLs shared directly in social timeline posts and <em>private messages</em>.</p>
 
-<p>NextGEN Facebook (NGFB) <strong>gives you total control over the information social website crawlers need</strong>, improving Google Search ranking, social engagement, and click-through-rates on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
+<h4>Why Choose the NextGEN Facebook Plugin?</h4>
 
-<p><strong>Extend or replace your current SEO solution</strong> &mdash; Google Search reads social meta tags and <em>Knowledge Graph</em> markup, so many users are choosing to extend or even replace their current SEO solution with NGFB.</p>
+<p>NextGEN Facebook (NGFB) <strong>gives you total control over the information <a href="https://developers.facebook.com/docs/sharing/webmasters/crawler" target="_blank">social website crawlers</a> need</strong>, improving Google Search ranking, social engagement, and click-through-rates on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
+
+<p><strong>Extend or replace your current SEO solution</strong> &mdash; Google Search reads social meta tags and <em>Knowledge Graph</em> markup, so many users are choosing to extend or even replace their outdated SEO solution with NGFB.</p>
+
+<p><strong>Thourough <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/">documentation for users and developers</a>, integrated upgrades using the native WordPress update system, actively developed with new features and prompt bug fixes.</p>
 
 <p>You can download the <a href="https://wordpress.org/plugins/nextgen-facebook/">Free version of NGFB on wordpress.org</a> and <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/">purchase Pro license(s) on surniaulula.com</a> (includes a <strong>No Risk 30 Day Refund Policy</strong>).</p>
 
 <blockquote>
+
 <p><strong>Already have sharing buttons?</strong></p>
 
 <p>Have a look at the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin &mdash; a fork (aka child) of NextGEN Facebook (NGFB). They have the same author, many of the same excellent features, but <em>WPSSO is distributed without the sharing buttons and their related features</em>. As a result, WPSSO is 25% smaller and is often preferred for websites that already have (or don't need) a set of sharing buttons. Additional extension plugins are also available for WPSSO, including:
@@ -31,6 +36,7 @@
 <li><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO Place and Location Meta</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-ssb/">WPSSO Social Sharing Buttons</a></li>
 </ul></p>
+
 </blockquote>
 
 <h4>Quick List of Features</h4>
