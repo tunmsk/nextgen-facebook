@@ -16,7 +16,7 @@
 
 <p align="center"><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" /></p><p><strong>Make sure social websites present your content in the best possible way, no matter <em>how</em> your webpage is shared</strong> &mdash; from sharing buttons on the webpage, browser add-ons and extensions, or URLs shared directly in social timeline posts and private messages (PM).</p>
 
-<h4>Why Choose the NextGEN Facebook Plugin?</h4>
+<h4>Why Choose NextGEN Facebook?</h4>
 
 <p>NextGEN Facebook (NGFB) gives you total control over the information <a href="https://developers.facebook.com/docs/sharing/webmasters/crawler" target="_blank">social website crawlers</a> need, <em>improving Google Search ranking, social engagement, and click-through-rates</em> on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
 
