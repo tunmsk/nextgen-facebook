@@ -425,6 +425,35 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.3 =
+
+* **New Features**
+	* Added the custom Social Settings metabox to category and tag editing pages.
+* **Improvements**
+	* Added a link to the Social Image Dimensions settings page in all image dimension warning messages. 
+* **Bugfixes**
+	* Fixed the logic determining if a specific image should be shared with the Pinterest sharing button.
+* **Developers**
+	* Renamed the 'postmeta' library file, gpl/pro module references, and message index names to 'post'.
+	* Renamed the post meta options filters to improve uniformity with the user and taxonomy filter names.
+		* Renamed the `ngfb_get_meta_defaults` filter to `ngfb_get_post_defaults`
+		* Renamed the `ngfb_get_meta_options` filter to `ngfb_get_post_options`
+		* Renamed the `ngfb_save_meta_options` filter to `ngfb_save_post_options`
+	* Added a new lib/meta.php library file (extended by the various post, user, and taxonomy util classes).
+	* Added five new taxonomy library files:
+		* lib/taxonomy.php
+		* lib/gpl/admin/taxonomy.php
+		* lib/gpl/util/taxonomy.php
+		* lib/pro/admin/taxonomy.php
+		* lib/pro/util/taxonomy.php
+	* Added new SucomUtil methods:
+		* is_author_page()
+		* is_term_page()
+		* is_category_page()
+		* get_author_object()
+		* get_term_object()
+	* Added a new NgfbUtil::get_util_mod_options() method to get custom meta option values from the post, user, and taxonomy modules.
+
 = Version 8.2.2 (2015/05/14) =
 
 * **New Features**
