@@ -14,7 +14,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 == Description ==
 
-<p><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Make sure social websites present your content in the best possible way, no matter <em>how</em> your webpage is shared</strong> &mdash; <em>from sharing buttons on the webpage, browser add-on and extension buttons, or URLs shared directly on social timelines and private messages (PM)</em> &mdash; the NextGEN Facebook (NGFB) plugin has you covered.</p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Make sure social websites present your content in the best possible way, no matter <em>how</em> your webpage is shared</strong> &mdash; from sharing buttons on the webpage, browser add-on and extension buttons, or URLs shared directly on social timelines and private messages (PM) &mdash; the NextGEN Facebook (NGFB) plugin has you covered.</p>
 
 = Why Choose NGFB? =
 
