@@ -450,7 +450,6 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 		* is_category_page()
 		* get_author_object()
 		* get_term_object()
-	* Added a new NgfbUtil::get_util_mod_options() method to get custom meta option values from the post, user, and taxonomy modules.
 
 = Version 8.2.2 (2015/05/14) =
 
