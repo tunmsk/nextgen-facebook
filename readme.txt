@@ -432,8 +432,8 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Bugfixes**
 	* Fixed the logic determining if a specific image should be shared with the Pinterest sharing button.
 * **Developers**
-	* Renamed the 'postmeta' library file, gpl/pro module references, and message index names to 'post'.
-	* Renamed the post meta options filters to improve uniformity with the user and taxonomy filter names.
+	* **Renamed the 'postmeta' library file, gpl/pro module references, and message index names to 'post'**.
+	* **Renamed the post meta options filters to improve uniformity with the user and taxonomy filter names**.
 		* Renamed the `ngfb_get_meta_defaults` filter to `ngfb_get_post_defaults`
 		* Renamed the `ngfb_get_meta_options` filter to `ngfb_get_post_options`
 		* Renamed the `ngfb_save_meta_options` filter to `ngfb_save_post_options`
@@ -450,6 +450,11 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 		* is_category_page()
 		* get_author_object()
 		* get_term_object()
+	* Added new filters for each head meta tag value:
+		* apply_filters( 'ngfb_link_rel_'.$name.'_content', $value, $use_post );
+		* apply_filters( 'ngfb_meta_itemprop_'.$name.'_content', $value, $use_post );
+		* apply_filters( 'ngfb_meta_name_'.$name.'_content', $value, $use_post );
+		* apply_filters( 'ngfb_meta_property_'.$name.'_content', $value, $use_post );
 
 = Version 8.2.2 (2015/05/14) =
 
