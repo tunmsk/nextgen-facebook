@@ -87,8 +87,8 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 	* *Summary Card* &mdash; All other webpages.
 * Customizable image dimensions for each Twitter Card type.
 * Additional profile contact fields with configurable label and field names.
-* Custom settings and meta tag values for each Post, Page, and custom post type.
-* Options to exclude specific Google / SEO, Open Graph, and Twitter Card meta tags.
+* A custom Social Setings metabox for each Post, Page, custom post type, user profile, and taxonomy (category and tag) pages.
+* Options to include / exclude specific Google / SEO, Open Graph, and Twitter Card meta tags.
 * Support for embedded videos in content text (iframe and object HTML tags).
 * File caching for social sharing button images and JavaScript, maximizing performance on VPS and dedicated hardware hosting platforms.
 * A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).
@@ -429,6 +429,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added the custom Social Settings metabox to category and tag editing pages.
 * **Improvements**
 	* Added a link to the Social Image Dimensions settings page in all image dimension warning messages. 
+	* Added Facebook / Open Graph and Pinterest Image Dimensions to the custom Social Settings metabox on user and profile pages.
 * **Bugfixes**
 	* Fixed the logic determining if a specific image should be shared with the Pinterest sharing button.
 * **Developers**
