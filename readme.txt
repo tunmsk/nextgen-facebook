@@ -432,8 +432,8 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Bugfixes**
 	* Fixed the logic determining if a specific image should be shared with the Pinterest sharing button.
 * **Developers**
-	* **Renamed the 'postmeta' library file, gpl/pro module references, and message index names to 'post'**.
-	* **Renamed the post meta options filters to improve uniformity with the user and taxonomy filter names**.
+	* ***Renamed the 'postmeta' library file, gpl/pro module references, and message index names to 'post'***.
+	* ***Renamed the post meta options filters to improve uniformity with the user and taxonomy filter names***.
 		* Renamed the `ngfb_get_meta_defaults` filter to `ngfb_get_post_defaults`
 		* Renamed the `ngfb_get_meta_options` filter to `ngfb_get_post_options`
 		* Renamed the `ngfb_save_meta_options` filter to `ngfb_save_post_options`
