@@ -131,7 +131,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 		}
 
 		// def_opts accepts output from functions, so don't force reference
-		public function options( $options_name, &$opts = array(), $def_opts = array() ) {
+		public function options( $options_name, &$opts = array(), $def_opts = array(), $network = false ) {
 
 			// retrieve the first numeric string
 			$opts_version = empty( $opts['options_version'] ) ? 0 :
@@ -208,7 +208,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			} elseif ( $options_name === constant( 'NGFB_SITE_OPTIONS_NAME' ) )
 				$opts = SucomUtil::rename_keys( $opts, $this->renamed_site_keys );
 
-			return $this->sanitize( $opts, $def_opts );	// cleanup options and sanitize
+			return $this->sanitize( $opts, $def_opts, $network );	// cleanup options and sanitize
 		}
 	}
 }

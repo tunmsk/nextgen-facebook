@@ -9,7 +9,7 @@
  * Description: Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.0
  * Tested Up To: 4.2.2
- * Version: 8.2.2
+ * Version: 8.3
  * 
  * Copyright 2012-2015 - Jean-Sebastien Morisset - http://surniaulula.com/
  */
@@ -207,7 +207,8 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			 */
 			$this->options = $this->opt->check_options( NGFB_OPTIONS_NAME, $this->options );
 			if ( is_multisite() )
-				$this->site_options = $this->opt->check_options( NGFB_SITE_OPTIONS_NAME, $this->site_options );
+				$this->site_options = $this->opt->check_options( NGFB_SITE_OPTIONS_NAME, 
+					$this->site_options, true );
 
 			/*
 			 * configure class properties based on plugin settings

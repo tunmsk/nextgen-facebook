@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_expire' => 24,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.2.2',		// plugin version
+					'version' => '8.3',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -47,8 +47,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'faq' => 'http://surniaulula.com/codex/plugins/nextgen-facebook/faq/',
 						'notes' => 'http://surniaulula.com/codex/plugins/nextgen-facebook/notes/',
 						'feed' => 'http://surniaulula.com/category/application/wordpress/wp-plugins/ngfb/feed/',
-						'pro_support' => 'http://support.ngfb.surniaulula.com/',
-						'pro_ticket' => 'http://ticket.ngfb.surniaulula.com/',
+						'pro_support' => 'http://nextgen-facebook.support.surniaulula.com/',
 					),
 					'lib' => array(			// libraries
 						'setting' => array (
@@ -101,7 +100,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'apikeys' => 'API Key Settings',
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
-								'postmeta' => 'Post Social Settings',
+								'post' => 'Post Social Settings',
+								'taxonomy' => 'Taxonomy Social Settings',
 								'user' => 'User Social Settings',
 							),
 							'ecom' => array(
@@ -114,7 +114,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'buddypress' => 'BuddyPress',
 							),
 							'util' => array(
-								'postmeta' => 'Post Social Settings',
+								'post' => 'Post Social Settings',
+								'taxonomy' => 'Taxonomy Social Settings',
 								'user' => 'User Social Settings',
 							),
 						),
@@ -126,7 +127,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'apikeys' => 'API Key Settings',
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
-								'postmeta' => 'Post Social Settings',
+								'post' => 'Post Social Settings',
+								'taxonomy' => 'Taxonomy Social Settings',
 								'user' => 'User Social Settings',
 							),
 							'ecom' => array(
@@ -164,7 +166,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'util' => array(
 								'language' => 'Publisher Language',
 								'shorten' => 'URL Shortener',
-								'postmeta' => 'Post Social Settings',
+								'post' => 'Post Social Settings',
+								'taxonomy' => 'Taxonomy Social Settings',
 								'user' => 'User Social Settings',
 							),
 						),
@@ -188,7 +191,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb335',				// increment when changing default options
+				'version' => 'ngfb339',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'options_version' => '',
@@ -248,7 +251,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'og_desc_strip' => 0,
 					'og_desc_alt' => 1,
 					'rp_publisher_url' => '',
-					'rp_author_name' => 'display_name',     // rich-pin specific article:author
+					'rp_author_name' => 'display_name',	// rich-pin specific article:author
 					'rp_img_width' => 600,
 					'rp_img_height' => 600,
 					'rp_img_crop' => 0,
@@ -322,6 +325,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_property_product:price:currency' => 1,
 					'add_meta_property_product:availability' => 1,
 					'add_meta_name_author' => 1,
+					'add_meta_name_canonical' => 0,
 					'add_meta_name_description' => 1,
 					'add_meta_name_generator' => 1,
 					'add_meta_name_p:domain_verify' => 1,
@@ -376,12 +380,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_vimeo_api' => 1,
 					'plugin_wistia_api' => 1,
 					'plugin_youtube_api' => 1,
-					'plugin_cf_img_url' => '_image_url',
-					'plugin_cf_vid_url' => '_video_url',
-					'plugin_cf_vid_embed' => '_video_embed',
-					'plugin_add_to_user' => 1,
+					'plugin_cf_img_url' => '_format_image_url',
+					'plugin_cf_vid_url' => '_format_video_url',
+					'plugin_cf_vid_embed' => '_format_video_embed',
 					'plugin_add_to_post' => 1,
 					'plugin_add_to_page' => 1,
+					'plugin_add_to_taxonomy' => 1,
+					'plugin_add_to_user' => 1,
 					'plugin_add_to_attachment' => 1,
 					'plugin_object_cache_exp' => 86400,	// 24 hours
 					'plugin_file_cache_hrs' => 0,
@@ -432,7 +437,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_version' => '',
 					'plugin_ngfb_tid' => '',
 					'plugin_ngfb_tid:use' => 'default',
-					'plugin_object_cache_exp' => 21600,	// 6 hours
+					'plugin_preserve' => 0,
+					'plugin_preserve:use' => 'default',
+					'plugin_debug' => 0,
+					'plugin_debug:use' => 'default',
+					'plugin_object_cache_exp' => 86400,	// 24 hours
 					'plugin_object_cache_exp:use' => 'default',
 					'plugin_file_cache_hrs' => 0,
 					'plugin_file_cache_hrs:use' => 'default',
@@ -548,15 +557,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 				// complete relative paths in the image array
 				foreach ( self::$cf['plugin'] as $lca => $info ) {
-					if ( ! isset( $info['base'] ) )
-						continue;
-					$base = self::$cf['plugin'][$lca]['base'];
-					foreach ( array( 'img' ) as $sub ) {
-						if ( ! isset( $info[$sub] ) )
-							continue;
-						foreach ( (array) $info[$sub] as $id => $url ) {
-							if ( ! empty( $url ) && strpos( $url, '//' ) === false )
-								self::$cf['plugin'][$lca][$sub][$id] = trailingslashit( plugins_url( '', $base ) ).$url;
+					if ( isset( $info['base'] ) ) {
+						$base = self::$cf['plugin'][$lca]['base'];	// nextgen-facebook/nextgen-facebook.php
+						foreach ( array( 'img' ) as $sub ) {
+							if ( isset( $info[$sub] ) && is_array( $info[$sub] ) ) {
+								foreach ( $info[$sub] as $id => $url ) {
+									if ( ! empty( $url ) && strpos( $url, '//' ) === false )
+										self::$cf['plugin'][$lca][$sub][$id] = trailingslashit( plugins_url( '', $base ) ).$url;
+								}
+							}
 						}
 					}
 				}
@@ -708,8 +717,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			require_once( NGFB_PLUGINDIR.'lib/check.php' );
 			require_once( NGFB_PLUGINDIR.'lib/util.php' );
 			require_once( NGFB_PLUGINDIR.'lib/options.php' );
-			require_once( NGFB_PLUGINDIR.'lib/postmeta.php' );
-			require_once( NGFB_PLUGINDIR.'lib/user.php' );
+			require_once( NGFB_PLUGINDIR.'lib/meta.php' );
+			require_once( NGFB_PLUGINDIR.'lib/post.php' );		// extends meta.php
+			require_once( NGFB_PLUGINDIR.'lib/taxonomy.php' );	// extends meta.php
+			require_once( NGFB_PLUGINDIR.'lib/user.php' );		// extends meta.php
 			require_once( NGFB_PLUGINDIR.'lib/media.php' );
 			require_once( NGFB_PLUGINDIR.'lib/head.php' );
 			require_once( NGFB_PLUGINDIR.'lib/opengraph.php' );

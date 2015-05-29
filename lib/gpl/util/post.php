@@ -8,13 +8,14 @@
 if ( ! defined( 'ABSPATH' ) ) 
 	die( 'These aren\'t the droids you\'re looking for...' );
 
-if ( ! class_exists( 'NgfbGplUtilPostmeta' ) && class_exists( 'NgfbPostmeta' ) ) {
+if ( ! class_exists( 'NgfbGplUtilPost' ) && class_exists( 'NgfbPost' ) ) {
 
-	class NgfbGplUtilPostmeta extends NgfbPostmeta {
+	class NgfbGplUtilPost extends NgfbPost {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->debug->mark();
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 			$this->add_actions();
 		}
 	}

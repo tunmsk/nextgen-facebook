@@ -114,7 +114,6 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 		}
 
 		private static function uninstall_plugin() {
-			global $wpdb;
 			$cf = NgfbConfig::get_config();
 
 			if ( ! defined( 'NGFB_OPTIONS_NAME' ) )
@@ -138,9 +137,12 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 						NgfbUser::delete_metabox_prefs( $user->ID );
 					}
 				}
+				foreach ( NgfbTaxonomy::get_public_terms() as $term_id )
+					NgfbTaxonomy::delete_term_meta( $term_id, NGFB_META_NAME );
 			}
 
 			// delete transients
+			global $wpdb;
 			$dbquery = 'SELECT option_name FROM '.$wpdb->options.' WHERE option_name LIKE \'_transient_timeout_'.$cf['lca'].'_%\';';
 			$expired = $wpdb->get_col( $dbquery ); 
 			foreach( $expired as $transient ) { 
