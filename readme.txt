@@ -557,7 +557,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 == Upgrade Notice ==
 
-= 8.2.2 =
+= 8.3 =
 
-Refactored checks using is_post_buttons_disabled(), have_buttons_for_type(), and get_css() in the NgfbSharing class.
+Added the custom Social Settings metabox to category and tag editing pages, renamed the 'postmeta' filters, and many new filters for developers.
 
