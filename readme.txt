@@ -3,7 +3,7 @@ Plugin Name: NextGEN Facebook (NGFB)
 Plugin Slug: nextgen-facebook
 Contributors: jsmoriss
 Donate Link: https://surniaulula.com/extend/plugins/nextgen-facebook/
-Tags: ngfb, nextgen gallery, featured, attached, open graph, meta tags, buttons, like, share, facebook, google, google+, g+, twitter, linkedin, social, seo, pinterest, rich pins, tumblr, stumbleupon, widget, multilingual, shortcode, object cache, transient cache, wp_cache, nggalbum, nggallery, singlepic, imagebrowser, gallery, twitter cards, photo card, gallery card, player card, summary card, easy digital downloads, edd, woocommerce, marketpress, e-commerce, multisite, hashtags, bbpress, buddypress, jetpack, photon, slideshare, vimeo, wistia, youtube, polylang, schema, json-ld, knowledge graph
+Tags: attached, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd, Facebook, featured, g+, gallery, gallery card, google, google plus, hashtags, imagebrowser, jetpack, JSON-LD, knowledge graph, Like, linkedin, marketpress, meta-tags, multilingual, multisite, nextgen gallery, nggalbum, nggallery, object cache, open graph, photo card, photon, pinterest, player card, polylang, rich pins, schema, seo, Share, shortcode, singlepic, slideshare, social, stumbleupon, Summary Card, transient cache, tumblr, twitter, twitter cards, vimeo, widget, wistia, woocommerce, wp_cache, youtube
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
@@ -20,7 +20,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 <p>NextGEN Facebook (NGFB) gives you total control over the information <a href="https://developers.facebook.com/docs/sharing/webmasters/crawler" target="_blank">social website crawlers</a> need, improving Google Search ranking, social engagement, and click-through-rates on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
 
-<p>NGFB is professionally and securely supported (<em>admin access is never required</em>), <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/">offers extensive documentation for users <em>and</em> developers</a>, Pro version upgrades are available using the native WordPress update system, development is current with the latest social standards, and fixes / updates are available promptly.</p>
+<p>NGFB is professionally and securely supported (<em>admin access is never required</em>), <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/">offers extensive documentation for users <em>and</em> developers</a>, Pro version upgrades are available using the native WordPress update system, development is always current with the latest social standards, and plugin fixes / updates are available promptly.</p>
 
 <blockquote>
 
