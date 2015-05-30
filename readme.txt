@@ -423,6 +423,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.3.1 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* Fixed a 'private' method that should have been 'protected' in the NgfbMeta() class for the Free version.
+* **Developer Notes**
+	* *None*
+
 = Version 8.3 =
 
 * **New Features**
