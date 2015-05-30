@@ -35,7 +35,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 </blockquote>
 
-<p>Download the <a href="https://wordpress.org/plugins/nextgen-facebook/">Free version of NGFB on WordPress.org</a> and <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/">purchase Pro license(s) on SurniaUlula.com</a> (includes a <strong>No Risk 30 Day Refund Policy</strong>).</p>
+<p>Download the Free version of NGFB from <a href="http://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>, and <a href="http://wpsso.com/extend/plugins/wpsso/">purchase the Pro version on SurniaUlula.com</a> (includes a <strong>No Risk 30 Day Refund Policy</strong>).</p>
 
 = Quick List of Features =
 
