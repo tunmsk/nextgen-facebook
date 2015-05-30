@@ -432,7 +432,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added Facebook / Open Graph and Pinterest Image Dimensions to the custom Social Settings metabox on user and profile pages.
 * **Bugfixes**
 	* Fixed the logic determining if a specific image should be shared with the Pinterest sharing button.
-* **Developers**
+* **Developer Notes**
 	* ***Renamed the 'postmeta' library file, gpl/pro module references, and message index names to 'post'***.
 	* ***Renamed the post meta options filters to improve uniformity with the user and taxonomy filter names***.
 		* Renamed the `ngfb_get_meta_defaults` filter to `ngfb_get_post_defaults`
