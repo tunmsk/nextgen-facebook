@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.2.2
-Stable Tag: 8.3
+Stable Tag: 8.3.1
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -567,6 +567,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Fixed the use of custom images from the user / profile Social Settings metabox.
 
 == Upgrade Notice ==
+
+= 8.3.1 =
+
+Fixed a 'private' method that should have been 'protected' in the NgfbMeta() class for the Free version.
 
 = 8.3 =
 
