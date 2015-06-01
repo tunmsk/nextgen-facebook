@@ -35,11 +35,11 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 </blockquote>
 
-<p>Download the Free version of NGFB from <a href="http://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>, and <a href="http://wpsso.com/extend/plugins/wpsso/">purchase the Pro version on SurniaUlula.com</a> (includes a <strong>No Risk 30 Day Refund Policy</strong>).</p>
-
 = Quick List of Features =
 
 **Free / Basic Version**
+
+<p>Download the Free version from <a href="http://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>.</p>
 
 * Adds Open Graph / Rich Pin meta tags (Facebook, Google+, Pinterest, LinkedIn, etc.).
 * Configurable image sizes for Open Graph (Facebook, LinkedIn, etc.) and Pinterest.
@@ -77,7 +77,8 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 <strong>Pro / Power-User Version</strong>
 
-* **No Risk 30 Day Refund Policy**
+<p><a href="http://wpsso.com/extend/plugins/wpsso/">Purchase the Pro version on SurniaUlula.com</a> (includes a <strong>No Risk 30 Day Refund Policy</strong>).</p>
+
 * Twitter Card meta tags:
 	* *Product Card* &mdash; Product information from an e-commerce plugin.
 	* *Player Card* &mdash; An embedded video in the Post / Page content.
