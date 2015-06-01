@@ -23,7 +23,6 @@
 <p>NGFB is professionally and securely supported (<em>admin access is never required</em>), <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/">offers extensive documentation for users <em>and</em> developers</a>, Pro version upgrades are available using the native WordPress update system, development is always current with the latest social standards, and plugin fixes / updates are available promptly.</p>
 
 <blockquote>
-
 <p><strong>Already have sharing buttons?</strong></p>
 
 <p>Have a look at the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin &mdash; a fork (aka child) of NextGEN Facebook (NGFB). They have the same author, many of the same excellent features, but <em>WPSSO is distributed without the sharing buttons and their related features</em>. As a result, WPSSO is 25% smaller and is often preferred for websites that already have (or don't need) a set of sharing buttons. Additional extension plugins are also available for WPSSO, including:
@@ -32,14 +31,15 @@
 <li><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO Place and Location Meta</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-ssb/">WPSSO Social Sharing Buttons</a></li>
 </ul></p>
-
 </blockquote>
 
 <h4>Quick List of Features</h4>
 
 <p><strong>Free / Basic Version</strong></p>
 
+<blockquote>
 <p>Download the Free version from <a href="http://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>.</p>
+</blockquote>
 
 <ul>
 <li>Adds Open Graph / Rich Pin meta tags (Facebook, Google+, Pinterest, LinkedIn, etc.).</li>
@@ -82,7 +82,9 @@
 
 <p><strong>Pro / Power-User Version</strong></p>
 
+<blockquote>
 <p><a href="http://wpsso.com/extend/plugins/wpsso/">Purchase the Pro version on SurniaUlula.com</a> (includes a <strong>No Risk 30 Day Refund Policy</strong>).</p>
+</blockquote>
 
 <ul>
 <li>Twitter Card meta tags:
