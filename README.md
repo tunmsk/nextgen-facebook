@@ -37,10 +37,6 @@
 
 <p><strong>Free / Basic Version</strong></p>
 
-<blockquote>
-<p>Download the Free version from <a href="http://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>.</p>
-</blockquote>
-
 <ul>
 <li>Adds Open Graph / Rich Pin meta tags (Facebook, Google+, Pinterest, LinkedIn, etc.).</li>
 <li>Configurable image sizes for Open Graph (Facebook, LinkedIn, etc.) and Pinterest.</li>
@@ -80,11 +76,13 @@
 </ul></li>
 </ul>
 
-<p><strong>Pro / Power-User Version</strong></p>
-
 <blockquote>
-<p><a href="http://wpsso.com/extend/plugins/wpsso/">Purchase the Pro version on SurniaUlula.com</a> (includes a <strong>No Risk 30 Day Refund Policy</strong>).</p>
+<p>Download the Free version from <a href="http://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>.</p>
 </blockquote>
+
+<div style="clear:both;"></div>
+
+<p><strong>Pro / Power-User Version</strong></p>
 
 <ul>
 <li>Twitter Card meta tags:
@@ -140,6 +138,12 @@
 </ul></li>
 </ul></li>
 </ul>
+
+<blockquote>
+<p><a href="http://wpsso.com/extend/plugins/wpsso/">Purchase the Pro version on SurniaUlula.com</a> (includes a No Risk 30 Day Refund Policy).</p>
+</blockquote>
+
+<div style="clear:both;"></div>
 
 <h4>3rd Party Integration</h4>
 
