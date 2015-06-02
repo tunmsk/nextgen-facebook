@@ -33,7 +33,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 </ul></p>
 </blockquote>
 
-= Quick List of Features =
+<h4>Quick List of Features</h4>
 
 <strong>Free / Basic Version</strong>
 
@@ -166,7 +166,9 @@ NGFB comes with several sharing buttons, that you can optionally include on Post
 
 The Facebook, Google+ and Twitter sharing buttons support *multiple languages*. A default language can be chosen in the NGFB settings, and the [Pro version](http://surniaulula.com/extend/plugins/nextgen-facebook/) switches the sharing button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Open Graph (Facebook) and Pinterest Rich Pin descriptions, Tweet text, and other social captions.
 
-= User Profile Social Contacts =
+<div style="clear:both;"></div>
+
+<h4>User Profile Social Contacts</h4>
 
 NGFB (Pro version) allows you to customize the field names, label, and add / remove the following contacts from the user profile page:
 
@@ -187,7 +189,9 @@ NGFB (Pro version) allows you to customize the field names, label, and add / rem
 
 NGFB provides <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite Site Name</a> in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em>. The author (Person) markup includes the author's website URL, their profile social sharing image, and all listed contact URLs from their user profile. The publisher (Organization) markup includes the website URL, a corporate logo, a default image, and the publisher Facebook, Google+, LinkedIn, Pinterest, and Twitter business pages.
 
-= Complete Social Meta Tags =
+<div style="clear:both;"></div>
+
+<h4>Complete Social Meta Tags</h4>
 
 NGFB adds [Open Graph](http://ogp.me/) (Facebook), [Pinterest Rich Pins](http://developers.pinterest.com/rich_pins/), [Twitter Cards](https://dev.twitter.com/docs/cards), and [Search Engine Optimization](http://en.wikipedia.org/wiki/Search_engine_optimization) meta tags to the head section of webpages. These meta tags are used by Google Search and all social websites to describe and display your content correctly (title, description, hashtags, images, videos, product, author profile / authorship, publisher, etc.). NGFB is a complete social sharing solution that uses the *existing* content of your webpages to build HTML meta tags &mdash; There's no need to manually enter / configure any additional values or settings (although many settings and options *are* available). <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/screenshots/">See examples from Google Search, Google+, Facebook, Twitter, Pinterest, StumbleUpon, Tumblr, etc.</a> &mdash; along with screenshots of the NGFB settings pages.
 
@@ -255,19 +259,17 @@ NGFB (Pro version) provides the [Summary](https://dev.twitter.com/docs/cards/typ
 	* twitter:site
 	* twitter:title
 
-= Proven Performance =
+<h4>Proven Performance</h4>
 
 NGFB is *fast and coded for performance*, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NGFB loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features.
 
-= Clean Uninstall =
+<h4>Clean Uninstall</h4>
 
 Try the NGFB plugin with complete confidence &mdash; when uninstalled, NGFB removes *all* traces of itself from the database (options, site options, user and post meta, transients, etc.).
 
-= Professional Support =
+<h4>Professional Support</h4>
 
-NGFB support and development is on-going. You can review the [FAQ](http://faq.ngfb.surniaulula.com/) and [Notes](http://notes.ngfb.surniaulula.com/) pages for additional setup information. If you have any suggestions or comments, post them to the [WordPress support forum](https://wordpress.org/support/plugin/nextgen-facebook) or the [Pro version support website](http://support.ngfb.surniaulula.com/).
-
-**We do not require WordPress admin access to support the plugin** &mdash; All support is provided from the front-end using HTML debugging information within the webpage (see the *Add Hidden Debug Messages* option on the NGFB Advanced settings page).
+NGFB support and development is on-going. You can review the [FAQ](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/) and [Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/) pages for additional setup information. If you have any suggestions or comments, post them to the [WordPress support forum](https://wordpress.org/support/plugin/nextgen-facebook) or the [Pro version support website](http://nextgen-facebook.support.surniaulula.com/).
 
 Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=author), [Facebook](https://www.facebook.com/SurniaUlulaCom), [Twitter](https://twitter.com/surniaululacom), and [YouTube](http://www.youtube.com/user/SurniaUlulaCom).
 
