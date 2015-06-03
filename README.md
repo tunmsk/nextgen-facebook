@@ -211,7 +211,7 @@
 </ul>
 
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/assets/screenshot-23.png"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png"/></p>
 </div>
 
 <h4>Social Profiles for Google Search</h4>

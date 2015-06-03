@@ -188,7 +188,7 @@ NGFB (Pro version) allows you to customize the field names, label, and add / rem
 * YouTube Channel URL
 
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 60px 80px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/assets/screenshot-23.png"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png"/></p>
 </div>
 
 <h4>Social Profiles for Google Search</h4>
