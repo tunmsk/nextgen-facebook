@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.2.2
-Stable Tag: 8.3.1
+Stable Tag: 8.3.2
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -438,7 +438,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.3.2 =
+= Version 8.3.2 (2015/06/05) =
 
 * **New Features**
 	* *None*
@@ -459,7 +459,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 		* `NgfbProEcomWoocommerce::is_product_category()`
 		* `NgfbProEcomWoocommerce::is_product_tag()`
 
-= Version 8.3.1 (2015/04/31) =
+= Version 8.3.1 (2015/05/31) =
 
 * **New Features**
 	* *None*
@@ -470,7 +470,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Developer Notes**
 	* *None*
 
-= Version 8.3 (2015/04/30) =
+= Version 8.3 (2015/05/30) =
 
 * **New Features**
 	* Added the custom Social Settings metabox to category and tag editing pages.
