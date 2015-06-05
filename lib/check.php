@@ -348,7 +348,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 			// JetPack Photon
 			if ( $this->p->is_avail['media']['photon'] === true && ! $this->aop() ) {
 				$this->p->debug->log( $log_pre.'jetpack photon is enabled' );
-				$this->p->notice->err( $err_pre.'<strong>'. __( 'JetPack Photon cripples the WordPress image size functions.', NGFB_TEXTDOM ).'</strong> '.sprintf( __( 'Please <a href="%s">disable JetPack Photon</a> or disable the %s Free version plugin.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=jetpack' ), $short ).' '.sprintf( __( 'You may also upgrade to the <a href="%s">%s version</a>, which includes a <a href="%s">module for JetPack Photon</a>.', NGFB_TEXTDOM ), $purchase_url, $short_pro, 'http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/jetpack-photon/' ) );
+				$this->p->notice->err( $err_pre.__( 'JetPack Photon cripples the WordPress image size functions as part of its feature.', NGFB_TEXTDOM ).' '.sprintf( __( 'Please <a href="%s">disable JetPack Photon</a> or disable the %s Free version plugin.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=jetpack' ), $short ).' '.sprintf( __( 'You may also upgrade to the <a href="%s">%s version</a> that includes an <a href="%s">integration module specifically for JetPack Photon</a>.', NGFB_TEXTDOM ), $purchase_url, $short_pro, 'http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/jetpack-photon/' ) );
 			}
 
 			/*
@@ -358,7 +358,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 			// WooCommerce
 			if ( class_exists( 'Woocommerce' ) && ! $this->aop() && ! empty( $this->p->options['plugin_filter_content'] ) ) {
 				$this->p->debug->log( $log_pre.'woocommerce shortcode support not available in the admin interface' );
-				$this->p->notice->err( $err_pre.'<strong>'.__( 'WooCommerce does not include shortcode support in the admin interface.', NGFB_TEXTDOM ).'</strong> '.sprintf( __( 'Please uncheck the \'<em>Apply WordPress Content Filters</em>\' option on the <a href="%s">%s Advanced settings page</a>.', NGFB_TEXTDOM ), $this->p->util->get_admin_url( 'advanced' ), $this->p->cf['menu'] ).' '.sprintf( __( 'You may also upgrade to the <a href="%s">%s version</a>, which includes a <a href="%s">module for WooCommerce</a>.', NGFB_TEXTDOM ), $purchase_url, $short_pro, 'http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/' ) );
+				$this->p->notice->err( $err_pre.__( 'WooCommerce does not include shortcode support in the admin interface (required by the WordPress content filters).', NGFB_TEXTDOM ).' '.sprintf( __( 'Please uncheck the \'<em>Apply WordPress Content Filters</em>\' option on the <a href="%s">%s Advanced settings page</a>.', NGFB_TEXTDOM ), $this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_content' ), $this->p->cf['menu'] ).' '.sprintf( __( 'You may also upgrade to the <a href="%s">%s version</a> that includes an <a href="%s">integration module specifically for WooCommerce</a> (shortcodes, products, categories, tags, images, etc.).', NGFB_TEXTDOM ), $purchase_url, $short_pro, 'http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/' ) );
 			}
 
 			// WooCommerce ShareYourCart Extension
