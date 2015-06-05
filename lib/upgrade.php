@@ -121,6 +121,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'og_publisher_url' => 'fb_publisher_url',
 			'link_author_field' => 'seo_author_field',
 			'link_publisher_url' => 'seo_publisher_url',
+			'add_meta_property_og:video' => 'add_meta_property_og:video:url',
 		);
 
 		protected $p;
