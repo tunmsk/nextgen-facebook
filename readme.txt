@@ -227,7 +227,7 @@ NGFB (Pro version) provides the [Summary](https://dev.twitter.com/docs/cards/typ
 	* og:title
 	* og:type
 	* og:url
-	* og:video
+	* og:video:url
 	* og:video:secure_url
 	* og:video:width
 	* og:video:height
@@ -438,7 +438,23 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.3.1 =
+= Version 8.3.2 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Added extra Open Graph meta tags for embedded video URLs with an 'og:video:type' of 'text/html'.
+* **Bugfixes**
+	* Fixed a CSS class name in the admin stylesheet for the taxonomy Social Settings metabox.
+	* Added support for the custom Social Settings metabox on WooCommerce taxonomy pages (Pro version).
+* **Developer Notes**
+	* **Renamed the 'og:video' meta tag to 'og:video:url'**.
+	* Added three new methods in the WooCommerce module to check for product, category, and tag pages (Pro version). Unlike the original functions provided by WooCommerce, these methods work on both the admin *and* front-end sides.
+		* NgfbProEcomWoocommerce::is_product() 
+		* NgfbProEcomWoocommerce::is_product_category() 
+		* NgfbProEcomWoocommerce::is_product_tag() 
+
+= Version 8.3.1 (2015/04/31) =
 
 * **New Features**
 	* *None*
@@ -449,7 +465,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Developer Notes**
 	* *None*
 
-= Version 8.3 =
+= Version 8.3 (2015/04/30) =
 
 * **New Features**
 	* Added the custom Social Settings metabox to category and tag editing pages.
