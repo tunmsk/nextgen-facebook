@@ -80,8 +80,6 @@
 <p>Download the Free version from <a href="http://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>.</p>
 </blockquote>
 
-<div style="clear:both;"></div>
-
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png"/></p>
 </div>
@@ -147,13 +145,9 @@
 <p><a href="http://wpsso.com/extend/plugins/wpsso/">Purchase the Pro version on SurniaUlula.com</a> (includes a No Risk 30 Day Refund Policy).</p>
 </blockquote>
 
-<div style="clear:both;"></div>
-
 <h4>3rd Party Integration</h4>
 
 <p>Aside from the additional support for Twitter Cards, the main difference between the NGFB Free and Pro versions is the integration of 3rd party plugins and services.</p>
-
-<div style="clear:both;"></div>
 
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-tiled-gallery-ngfb.png"/></p>
@@ -169,8 +163,6 @@
 
 <p>NGFB (Pro version) integrates with <a href="https://wordpress.org/plugins/wordpress-seo/">WordPress SEO by Yoast</a>, <a href="https://wordpress.org/plugins/all-in-one-seo-pack/">All in One SEO Pack</a>, and <a href="https://wordpress.org/plugins/headspace2/">HeadSpace2 SEO</a> &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, and Twitter Card meta tags.</p>
 
-<div style="clear:both;"></div>
-
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-product-ngfb-single.png"/></p>
 </div>
@@ -182,8 +174,6 @@
 <p><strong>Forums and Social</strong></p>
 
 <p>NGFB (Pro version) supports <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> and <a href="https://wordpress.org/plugins/buddypress/">BuddyPress</a> (see the <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/">BuddyPress Integration Notes</a>), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, etc. Social sharing buttons can also be added to <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> single template pages and <a href="https://wordpress.org/plugins/buddypress/">BuddyPress</a> activities.</p>
-
-<div style="clear:both;"></div>
 
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png" /></p>
@@ -208,8 +198,6 @@
 
 <p>The Facebook, Google+ and Twitter sharing buttons support <em>multiple languages</em>. A default language can be chosen in the NGFB settings, and the <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/">Pro version</a> switches the sharing button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Open Graph (Facebook) and Pinterest Rich Pin descriptions, Tweet text, and other social captions.</p>
 
-<div style="clear:both;"></div>
-
 <h4>User Profile Social Contacts</h4>
 
 <p>NGFB (Pro version) allows you to customize the field names, label, and add / remove the following contacts from the user profile page:</p>
@@ -228,8 +216,6 @@
 <li>YouTube Channel URL</li>
 </ul>
 
-<div style="clear:both;"></div>
-
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png"/></p>
 </div>
@@ -237,8 +223,6 @@
 <h4>Social Profiles for Google Search</h4>
 
 <p>NGFB provides <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite Site Name</a> in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em>. The author (Person) markup includes the author's website URL, their profile social sharing image, and all listed contact URLs from their user profile. The publisher (Organization) markup includes the website URL, a corporate logo, a default image, and the publisher Facebook, Google+, LinkedIn, Pinterest, and Twitter business pages.</p>
-
-<div style="clear:both;"></div>
 
 <h4>Complete Social Meta Tags</h4>
 
