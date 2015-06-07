@@ -76,6 +76,9 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 </blockquote>
 
 <div style="clear:both;"></div>
+<div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 60px 80px;">
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png"/></p>
+</div>
 
 <strong>Pro / Power-User Version</strong>
 
@@ -130,8 +133,9 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 Aside from the additional support for Twitter Cards, the main difference between the NGFB Free and Pro versions is the integration of 3rd party plugins and services.
 
+<div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 60px 80px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card.png"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-tiled-gallery-ngfb.png"/></p>
 </div>
 
 <strong>Images and Videos</strong>
@@ -144,6 +148,11 @@ NGFB (Pro version) also includes support for [JetPack Photon](http://jetpack.me/
 
 NGFB (Pro version) integrates with [WordPress SEO by Yoast](https://wordpress.org/plugins/wordpress-seo/), [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/), and [HeadSpace2 SEO](https://wordpress.org/plugins/headspace2/) &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, and Twitter Card meta tags.
 
+<div style="clear:both;"></div>
+<div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 60px 80px;">
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-product-ngfb-single.png"/></p>
+</div>
+
 <strong>eCommerce Products</strong>
 
 NGFB (Pro version) also supports [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/), [MarketPress - WordPress eCommerce](https://wordpress.org/plugins/wordpress-ecommerce/), [WooCommerce v1.x and v2.x](https://wordpress.org/plugins/woocommerce/), and [WP e-Commerce](https://wordpress.org/plugins/wp-e-commerce/) product pages, creating appropriate meta tags for [Facebook Products](https://developers.facebook.com/docs/payments/product/), [Twitter Product Cards](https://dev.twitter.com/docs/cards/types/product-card) and [Pinterest Rich Pins](http://developers.pinterest.com/rich_pins/), including variations and additional / custom images.
@@ -152,6 +161,7 @@ NGFB (Pro version) also supports [Easy Digital Downloads](https://wordpress.org/
 
 NGFB (Pro version) supports [bbPress](https://wordpress.org/plugins/bbpress/) and [BuddyPress](https://wordpress.org/plugins/buddypress/) (see the [BuddyPress Integration Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/)), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, etc. Social sharing buttons can also be added to [bbPress](https://wordpress.org/plugins/bbpress/) single template pages and [BuddyPress](https://wordpress.org/plugins/buddypress/) activities.
 
+<div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 60px 80px;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png" /></p>
 </div>
@@ -191,6 +201,7 @@ NGFB (Pro version) allows you to customize the field names, label, and add / rem
 * Yahoo IM
 * YouTube Channel URL
 
+<div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 60px 80px;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png"/></p>
 </div>
