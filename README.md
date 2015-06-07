@@ -80,6 +80,8 @@
 <p>Download the Free version from <a href="http://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>.</p>
 </blockquote>
 
+<div style="clear:both;"></div>
+
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png"/></p>
 </div>
@@ -149,6 +151,8 @@
 
 <p>Aside from the additional support for Twitter Cards, the main difference between the NGFB Free and Pro versions is the integration of 3rd party plugins and services.</p>
 
+<div style="clear:both;"></div>
+
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-tiled-gallery-ngfb.png"/></p>
 </div>
@@ -163,6 +167,8 @@
 
 <p>NGFB (Pro version) integrates with <a href="https://wordpress.org/plugins/wordpress-seo/">WordPress SEO by Yoast</a>, <a href="https://wordpress.org/plugins/all-in-one-seo-pack/">All in One SEO Pack</a>, and <a href="https://wordpress.org/plugins/headspace2/">HeadSpace2 SEO</a> &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, and Twitter Card meta tags.</p>
 
+<div style="clear:both;"></div>
+
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-product-ngfb-single.png"/></p>
 </div>
@@ -174,6 +180,8 @@
 <p><strong>Forums and Social</strong></p>
 
 <p>NGFB (Pro version) supports <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> and <a href="https://wordpress.org/plugins/buddypress/">BuddyPress</a> (see the <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/">BuddyPress Integration Notes</a>), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, etc. Social sharing buttons can also be added to <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> single template pages and <a href="https://wordpress.org/plugins/buddypress/">BuddyPress</a> activities.</p>
+
+<div style="clear:both;"></div>
 
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png" /></p>
@@ -215,6 +223,8 @@
 <li>Yahoo IM</li>
 <li>YouTube Channel URL</li>
 </ul>
+
+<div style="clear:both;"></div>
 
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png"/></p>
