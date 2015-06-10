@@ -606,11 +606,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 == Upgrade Notice ==
 
-= 8.3.1 =
+= 8.3.2 =
 
-Fixed a 'private' method that should have been 'protected' in the NgfbMeta() class for the Free version.
-
-= 8.3 =
-
-Added the custom Social Settings metabox to category and tag editing pages, renamed the 'postmeta' filters, and many new filters for developers.
+Added support for Social Settings metabox on WooCommerce taxonomy pages (Pro version), added meta tags for embedded videos with an OG type of "text/html", <strong>Renamed the "og:video" meta tag to "og:video:url"</strong>.
 
