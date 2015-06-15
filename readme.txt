@@ -440,17 +440,25 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.4dev1 =
+= Version 8.4 =
 
 * **New Features**
-	* Added a "OG Img" column to the post / page editing lists (including custom post types, like WooCommerce products) with a thumbnail of the first Open Graph image.
+	* Added a "Social Img" column to the post / page, user, category and tag editing lists (including WooCommerce products, categories, and tags) with a thumbnail of the first Facebook / Open Graph image.
 * **Improvements**
-	* Refactored the WooCommerce module by removing the Open Graph image meta tags and hooking the 'ngfb_attached_image_ids' filter instead (Pro version).
+	* Refactored the WooCommerce module by removing the Open Graph image meta tags and hooking into a new 'ngfb_attached_image_ids' filter instead (Pro version).
 * **Bugfixes**
 	* Fixed a false warning on admin editing pages for a missing Open Graph image meta tag from video preview images.
 * **Developer Notes**
-	* Added a new `SucomUtil::og_image_sorted()` method to pre-define a sorted Open Graph image array for the PHP `list()` construct (which assigns array elements from right to left).
+	* Added new `NgfbUtil::force_default_image()` and `NgfbUtil::force_default_author()` methods to check if the default image/author is being forced on index /archive webpages.
+	* Added a new `SucomUtil::is_post_page()` method to complement the existing `SucomUtil::is_term_page()` and `SucomUtil::is_author_page()` methods.
+	* Added a new `SucomUtil::meta_image_tags()` method to pre-define a sorted image array for the PHP `list()` construct (which assigns array elements from right to left).
 	* Refactored the `NgfbHead::extract_head_info()` method and flattened the returned `$head_info` array.
+	* Renamed the `$head_info['id']` array key to `$head_info['post_id']`.
+	* Added new filters:
+		* apply_filters( 'ngfb_taxonomy_cache_transients', $transients, $term_id, $lang, $sharing_url );
+		* apply_filters( 'ngfb_og_image_post_column_content', $value, $column_name, $post_id );
+		* apply_filters( 'ngfb_og_image_taxonomy_column_content', $value, $column_name, $term_id );
+		* apply_filters( 'ngfb_og_image_user_column_content', $value, $column_name, $user_id );
 
 = Version 8.3.2 (2015/06/05) =
 
