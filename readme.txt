@@ -441,6 +441,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.4.2 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Moved the Free and Pro 'Service Api Keys' Advanced options to the NGFB core plugin.
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* *None*
+
 = Version 8.4.1 =
 
 * **New Features**
