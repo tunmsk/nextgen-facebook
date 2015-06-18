@@ -452,7 +452,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Developer Notes**
 	* *None*
 
-= Version 8.4.1 =
+= Version 8.4.1 (2014/06/18) =
 
 * **New Features**
 	* *None*
@@ -463,7 +463,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Developer Notes**
 	* *None*
 
-= Version 8.4 =
+= Version 8.4 (2014/06/16) =
 
 * **New Features**
 	* Added a "Social Image" column to post / page, user, category and tag editing lists (including WooCommerce products, categories, and tags) with a thumbnail showing the first Facebook / Open Graph image.
