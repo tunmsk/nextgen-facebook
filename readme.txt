@@ -446,7 +446,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **New Features**
 	* *None*
 * **Improvements**
-	* Moved the Free and Pro 'Service Api Keys' Advanced options to the NGFB core plugin.
+	* Moved the Free and Pro 'Service Api Keys' Advanced options into the NGFB core plugin.
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
