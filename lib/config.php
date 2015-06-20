@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_expire' => 24,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.4.1',		// plugin version
+					'version' => '8.4.2',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -97,7 +97,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'general' => 'General Settings',
 								'advanced' => 'Advanced Settings',
 								'image-dimensions' => 'Social Image Dimensions',
-								'apikeys' => 'API Key Settings',
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
 								'post' => 'Post Social Settings',
@@ -124,7 +123,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'general' => 'General Settings',
 								'advanced' => 'Advanced Settings',
 								'image-dimensions' => 'Social Image Dimensions',
-								'apikeys' => 'API Key Settings',
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
 								'post' => 'Post Social Settings',
@@ -165,7 +163,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							),
 							'util' => array(
 								'language' => 'Publisher Language',
-								'shorten' => 'URL Shortener',
+								'shorten' => 'URL Shortening',
 								'post' => 'Post Social Settings',
 								'taxonomy' => 'Taxonomy Social Settings',
 								'user' => 'User Social Settings',
@@ -191,7 +189,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb340',				// increment when changing default options
+				'version' => 'ngfb342',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'options_version' => '',
@@ -224,8 +222,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'og_img_crop_y' => 'center',
 					'og_img_max' => 1,
 					'og_vid_max' => 1,
-					'og_vid_prev_img' => 1,
 					'og_vid_https' => 1,
+					'og_vid_prev_img' => 1,
+					'og_vid_html_type' => 1,
 					'og_def_img_id_pre' => 'wp',
 					'og_def_img_id' => '',
 					'og_def_img_url' => '',
@@ -391,6 +390,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_object_cache_exp' => 86400,	// 24 hours
 					'plugin_file_cache_hrs' => 0,
 					'plugin_verify_certs' => 0,
+					'plugin_min_shorten' => 22,
+					'plugin_bitly_login' => '',
+					'plugin_bitly_api_key' => '',
+					'plugin_google_api_key' => '',
+					'plugin_google_shorten' => 0,
 					'plugin_cm_fb_name' => 'facebook', 
 					'plugin_cm_fb_label' => 'Facebook URL', 
 					'plugin_cm_fb_enabled' => 1,
@@ -447,6 +451,16 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_file_cache_hrs:use' => 'default',
 					'plugin_verify_certs' => 0,
 					'plugin_verify_certs:use' => 'default',
+					'plugin_min_shorten' => 22,
+					'plugin_min_shorten:use' => 'default',
+					'plugin_bitly_login' => '',
+					'plugin_bitly_login:use' => 'default',
+					'plugin_bitly_api_key' => '',
+					'plugin_bitly_api_key:use' => 'default',
+					'plugin_google_api_key' => '',
+					'plugin_google_api_key:use' => 'default',
+					'plugin_google_shorten' => 0,
+					'plugin_google_shorten:use' => 'default',
 				),
 				'pre' => array(
 					'facebook' => 'fb', 
@@ -580,10 +594,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							self::$cf['plugin'][$lca]['lib']['widget']['sharing'],
 							self::$cf['plugin'][$lca]['lib']['gpl']['admin']['sharing'],
 							self::$cf['plugin'][$lca]['lib']['gpl']['admin']['style'],
-							self::$cf['plugin'][$lca]['lib']['gpl']['admin']['apikeys'],
 							self::$cf['plugin'][$lca]['lib']['pro']['admin']['sharing'],
 							self::$cf['plugin'][$lca]['lib']['pro']['admin']['style'],
-							self::$cf['plugin'][$lca]['lib']['pro']['admin']['apikeys'],
 							self::$cf['plugin'][$lca]['lib']['pro']['util']['shorten']
 						);
 					}
