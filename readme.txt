@@ -441,14 +441,14 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.4.2 =
+= Version 8.4.2 (2015/06/20) =
 
 * **New Features**
-	* *None*
+	* Added a new "Include Embed text/html Type" option to enable/disable the text/html video meta tags.
 * **Improvements**
-	* Moved the Free and Pro 'Service Api Keys' Advanced options into the NGFB core plugin.
+	* Moved the Free and Pro 'Service Api Keys' Advanced options tab into the NGFB core plugin.
 * **Bugfixes**
-	* *None*
+	* Fixed a Wistia video issue when posting to Facebook by listing the 'application/x-shockwave-flash' video before the 'text/html' video type.
 * **Developer Notes**
 	* *None*
 
@@ -649,6 +649,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Fixed the use of custom images from the user / profile Social Settings metabox.
 
 == Upgrade Notice ==
+
+= 8.4.2 =
+
+Fixed a Wistia video issue when posting to Facebook by listing the 'application/x-shockwave-flash' video before the 'text/html' video type.
 
 = 8.4.1 =
 
