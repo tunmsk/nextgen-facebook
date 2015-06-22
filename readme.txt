@@ -441,6 +441,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.4.3 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Added support for WordPress SEO title and description in taxonomy and user admin pages (Pro version).
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* Added an `add_plugin_actions()` method in the NgfbUtil class to complement the existing `add_plugin_filters()` method -- both methods are wrappers to a new `add_plugin_hooks()` method.
+	* Renamed the 'show_all' and 'show_basic' metabox CSS class name to 'sucom-show_all' and 'sucom-show_basic' to avoid any possible comflicts with custom admin CSS.
+	* Replaced the sharing buttons website metabox display code by a new 'ngfb_form_content_metaboxes_sharing' action hook in the NgfbSubmenuSharing class.
+
 = Version 8.4.2 (2015/06/20) =
 
 * **New Features**
