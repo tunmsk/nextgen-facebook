@@ -1,4 +1,4 @@
-=== NextGEN Facebook - Advanced Social SEO for Facebook, Google+, Pinterest, Twitter & More ===
+=== NextGEN Facebook - Advanced Meta Tags for Facebook, Google+, Pinterest, Twitter & More ===
 Plugin Name: NextGEN Facebook (NGFB)
 Plugin Slug: nextgen-facebook
 Contributors: jsmoriss
@@ -10,7 +10,7 @@ Requires At Least: 3.0
 Tested Up To: 4.2.2
 Stable Tag: 8.4.3
 
-Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
+Improves shared content and social SEO on Facebook, Google+, Twitter, Pinterest, LinkedIn etc. - no matter how your webpage is shared!
 
 == Description ==
 
