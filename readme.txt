@@ -122,7 +122,7 @@ Improve your shared content and social SEO / SMO on Facebook, Google+, Twitter, 
 		* Youtube Videos and Playlists
 
 <blockquote>
-<p><a href="http://wpsso.com/extend/plugins/wpsso/">Purchase the Pro version on SurniaUlula.com</a> (includes a No Risk 30 Day Refund Policy).</p>
+<p><a href="http://wpsso.com/extend/plugins/wpsso/">Purchase the Pro version on SurniaUlula.com</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 </blockquote>
 
 <h4>3rd Party Integration</h4>
