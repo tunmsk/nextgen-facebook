@@ -75,7 +75,7 @@ Improve your shared content and social SEO / SMO on Facebook, Google+, Twitter, 
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png" width="100%" height="100%"/></p>
 </div>
 
 <strong>Pro / Power-User Version</strong>
@@ -131,7 +131,7 @@ Aside from the additional support for Twitter Cards, the main difference between
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-tiled-gallery-ngfb.png"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-tiled-gallery-ngfb.png" width="100%" height="100%"/></p>
 </div>
 
 <strong>Images and Videos</strong>
@@ -146,7 +146,7 @@ NGFB (Pro version) integrates with [WordPress SEO by Yoast](https://wordpress.or
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-product-ngfb-single.png"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-product-ngfb-single.png" width="100%" height="100%"/></p>
 </div>
 
 <strong>eCommerce Products</strong>
@@ -159,7 +159,7 @@ NGFB (Pro version) supports [bbPress](https://wordpress.org/plugins/bbpress/) an
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png" /></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png" width="100%" height="100%"/></p>
 </div>
 
 <h4>Social Sharing Buttons</h4>
@@ -197,7 +197,7 @@ NGFB (Pro version) allows you to customize the field names, label, and add / rem
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png" width="100%" height="100%"/></p>
 </div>
 
 <h4>Social Profiles for Google Search</h4>
