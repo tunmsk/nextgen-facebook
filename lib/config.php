@@ -676,6 +676,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			if ( ! defined( 'NGFB_MENU_ORDER' ) )
 				define( 'NGFB_MENU_ORDER', '99.11' );
 
+			if ( ! defined( 'NGFB_MENU_ICON_HIGHLIGHT' ) )
+				define( 'NGFB_MENU_ICON_HIGHLIGHT', true );
+
 			/*
 			 * NGFB option and meta array names
 			 */
@@ -757,7 +760,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					define( 'QUICK_CACHE_ALLOWED', false );	// quick cache
 
 				if ( ! defined( 'ZENCACHE_ALLOWED' ) )
-					define( 'ZENCACHE_ALLOWED', false );	// quick cache
+					define( 'ZENCACHE_ALLOWED', false );	// zencache
 			}
 		}
 
