@@ -37,8 +37,9 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 				'<!-- '.$ngfb->cf['lca'].' sharing buttons end -->';
 	
 			if ( $ngfb->is_avail['cache']['transient'] ) {
-				set_transient( $cache_id, $html, $ngfb->cache->object_expire );
-				$ngfb->debug->log( $cache_type.': html saved to transient '.$cache_id.' ('.$ngfb->cache->object_expire.' seconds)');
+				set_transient( $cache_id, $html, $ngfb->options['plugin_object_cache_exp'] );
+				$ngfb->debug->log( $cache_type.': html saved to transient '.
+					$cache_id.' ('.$ngfb->options['plugin_object_cache_exp'].' seconds)');
 			}
 		} else $html = '<!-- '.$ngfb->cf['lca'].' sharing sharing buttons disabled -->';
 		return $ngfb->debug->get_html().$html;

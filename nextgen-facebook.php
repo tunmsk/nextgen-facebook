@@ -9,7 +9,7 @@
  * Description: Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.0
  * Tested Up To: 4.2.2
- * Version: 8.4.3
+ * Version: 8.5
  * 
  * Copyright 2012-2015 - Jean-Sebastien Morisset - http://surniaulula.com/
  */
@@ -213,13 +213,11 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			/*
 			 * configure class properties based on plugin settings
 			 */
-			$this->cache->object_expire = $this->options['plugin_object_cache_exp'];
-			if ( ! empty( $this->options['plugin_file_cache_hrs'] ) && $this->check->aop() ) {
-				if ( $this->debug->is_enabled( 'wp' ) === true )
-					$this->cache->file_expire = NGFB_DEBUG_FILE_EXP;	// reduce to 300 seconds
-				else $this->cache->file_expire = $this->options['plugin_file_cache_hrs'] * 60 * 60;
-			} else $this->cache->file_expire = 0;	// just in case
-			$this->is_avail['cache']['file'] = $this->cache->file_expire > 0 ? true : false;
+			$this->cache->default_object_expire = $this->options['plugin_object_cache_exp'];
+			$this->cache->default_file_expire = ( $this->check->aop() ? 
+				( $this->debug->is_enabled( 'wp' ) ? 
+					NGFB_DEBUG_FILE_EXP : $this->options['plugin_file_cache_exp'] ) : 0 );
+			$this->is_avail['cache']['file'] = $this->cache->default_file_expire > 0 ? true : false;
 
 			// disable the transient cache if html debug mode is on
 			if ( $this->debug->is_enabled( 'html' ) === true ) {

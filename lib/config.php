@@ -17,10 +17,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'uca' => 'NGFB',		// uppercase acronym
 			'menu' => 'NGFB',		// menu item label
 			'color' => 'f60',		// menu item color - dark orange
-			'feed_cache_expire' => 24,	// 24 hours
+			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.4.3',		// plugin version
+					'version' => '8.5',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -189,7 +189,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb342',				// increment when changing default options
+				'version' => 'ngfb343',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'options_version' => '',
@@ -388,7 +388,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_add_to_user' => 1,
 					'plugin_add_to_attachment' => 1,
 					'plugin_object_cache_exp' => 86400,	// 24 hours
-					'plugin_file_cache_hrs' => 0,
+					'plugin_file_cache_exp' => 0,
 					'plugin_verify_certs' => 0,
 					'plugin_min_shorten' => 22,
 					'plugin_bitly_login' => '',
@@ -447,8 +447,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_debug:use' => 'default',
 					'plugin_object_cache_exp' => 86400,	// 24 hours
 					'plugin_object_cache_exp:use' => 'default',
-					'plugin_file_cache_hrs' => 0,
-					'plugin_file_cache_hrs:use' => 'default',
+					'plugin_file_cache_exp' => 0,
+					'plugin_file_cache_exp:use' => 'default',
 					'plugin_verify_certs' => 0,
 					'plugin_verify_certs:use' => 'default',
 					'plugin_min_shorten' => 22,
@@ -502,8 +502,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'form' => array(
-				'img_col_width' => '70px',
-				'img_col_height' => '37px',
+				'og_image_col_width' => '70px',
+				'og_image_col_height' => '37px',
 				'tooltip_class' => 'sucom_tooltip',
 				'max_desc_hashtags' => 10,
 				'max_media_items' => 20,
@@ -512,17 +512,17 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'0' => 'No',
 				),
 				'file_cache_hrs' => array(
-					0,
-					1,
-					3,
-					6,
-					9,
-					12,
-					24,
-					36,
-					48,
-					72,
-					168,
+					0 => 0,
+					3600 => 1,
+					7200 => 3,
+					21600 => 6,
+					32400 => 9,
+					43200 => 12,
+					86400 => 24,
+					129600 => 36,
+					172800 => 48,
+					259200 => 72,
+					604800 => 168,
 				),
 				'js_locations' => array(
 					'none' => '[none]',
@@ -572,7 +572,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'min_desc_len' => 156,
 			),
 			'cache' => array(
-				'file' => true,
+				'file' => false,
 				'object' => true,
 				'transient' => true,
 			),
