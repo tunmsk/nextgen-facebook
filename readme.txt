@@ -444,11 +444,13 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **New Features**
 	* Added a "Social Desc" column to post / page, user, category and tag editing lists (including WooCommerce products, categories, and tags) with the Facebook / Open Graph description.
 * **Improvements**
-	* *None*
+	* Renamed the "Ignore Thumbnails in Content" option to "Check Image Dimensions".
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
-	* *None*
+	* Renamed the SucomCache 'object_expire' and 'file_expire' attributes to 'default_object_expire' and 'default_file_expire'.
+	* Renamed the 'plugin_file_cache_hrs' option key to 'plugin_file_cache_exp' and changed its value from hours to seconds.
+	* Renamed the NgfbUtil `get_cache_url()` method to `get_cache_file_url()`.
 
 = Version 8.4.3 (2015/06/23) =
 
