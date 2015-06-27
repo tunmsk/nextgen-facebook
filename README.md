@@ -1,4 +1,4 @@
-<h1>NextGEN Facebook</h1><h3>Advanced Meta Tags for Facebook, Google, Pinterest, Twitter &amp; More</h3>
+<h1>NextGEN Facebook</h1><h3>Complete Meta Tags for Facebook, Google, Pinterest, Twitter &amp; More</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>NextGEN Facebook (NGFB)</td></tr>
