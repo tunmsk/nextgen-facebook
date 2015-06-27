@@ -10,7 +10,7 @@ Requires At Least: 3.0
 Tested Up To: 4.2.2
 Stable Tag: 8.4.3
 
-Improve your shared content and social SEO / SMO on Facebook, Google+, Twitter, Pinterest, LinkedIn, etc - no matter how your site content is shared!
+Improves your shared content and social SEO / SMO on Facebook, Google+, Twitter, Pinterest, LinkedIn, etc - no matter how your site content is shared!
 
 == Description ==
 
