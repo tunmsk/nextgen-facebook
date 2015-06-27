@@ -674,6 +674,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 == Upgrade Notice ==
 
+= 8.5 =
+
+Added a "Social Desc" column to post / page, user, category and tag editing lists (including WooCommerce products, categories, and tags) with the Facebook / Open Graph description.
+
 = 8.4.3 =
 
 Added support for WordPress SEO title and description meta in taxonomy and user admin pages (Pro version).
