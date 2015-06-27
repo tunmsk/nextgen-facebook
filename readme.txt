@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.2.2
-Stable Tag: 8.4.3
+Stable Tag: 8.5
 
 Improves your shared content and social SEO / SMO on Facebook, Google+, Twitter, Pinterest, LinkedIn, etc - no matter how your site content is shared!
 
