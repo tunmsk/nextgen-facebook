@@ -10,7 +10,7 @@ Requires At Least: 3.0
 Tested Up To: 4.2.2
 Stable Tag: 8.5
 
-Need to improve your shared content and social SEO? Make sure your content looks good on all social websites - no matter how that content is shared!
+Need to improve your shared content and social SEO? Make sure your content looks good on ALL social websites - no matter how that content is shared!
 
 == Description ==
 
