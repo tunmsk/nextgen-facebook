@@ -10,7 +10,7 @@ Requires At Least: 3.0
 Tested Up To: 4.2.2
 Stable Tag: 8.5
 
-Improves your shared content and social SEO / SMO on Facebook, Google+, Twitter, Pinterest, LinkedIn, etc - no matter how your site content is shared!
+Need to improve your shared content and social SEO? Make sure your content looks good on all social websites - no matter how that content is shared!
 
 == Description ==
 
@@ -438,6 +438,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
+
+= Version 8.5.1 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Added a new 'ngfb-schema' image size, which inherits the 'ngfb-opengraph' image size values, to avoid any confusion in error messages, etc.
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* *None*
 
 = Version 8.5 (2015/06/27) =
 
