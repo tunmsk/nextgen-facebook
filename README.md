@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>NextGEN Facebook (NGFB)</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>Need to improve your shared content and social SEO? Make sure your content looks good on ALL social websites - no matter how that content is shared!</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>Looking to improve your shared content on social sites? Make sure your shares look great on all social sites - no matter how your content is shared!</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>8.5</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.2.2</td></tr>
