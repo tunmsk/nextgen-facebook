@@ -444,7 +444,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **New Features**
 	* *None*
 * **Improvements**
-	* Added a new 'ngfb-schema' image size, which inherits the 'ngfb-opengraph' image size values, to avoid any confusion in error messages, etc.
+	* Added a new 'ngfb-schema' image size, which inherits the 'ngfb-opengraph' image size values, to avoid any confusion with error messages, etc.
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
@@ -684,6 +684,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Fixed the use of custom images from the user / profile Social Settings metabox.
 
 == Upgrade Notice ==
+
+= 8.5.1 =
+
+Added a new 'ngfb-schema' image size, which inherits the 'ngfb-opengraph' image size values, to avoid any confusion with error messages, etc.
 
 = 8.5 =
 
