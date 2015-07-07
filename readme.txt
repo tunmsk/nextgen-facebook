@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.2.2
-Stable Tag: 8.5.1
+Stable Tag: 8.5.2
 
 Looking to improve your shared content on social sites? Make sure your shares look great on all social sites - no matter how your content is shared!
 
@@ -444,12 +444,12 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **New Features**
 	* *None*
 * **Improvements**
-	* Added a check_product_object() method to the WooCommerce module to make sure the global $product variable is an object and not a slug (Pro version).
+	* Added a `check_product_object()` method to the WooCommerce module to make sure the global $product variable is an object and not a slug (Pro version).
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
-	* Modified the SucomUtil::replace_inline_vars() arguments, inserting an $atts array before the $ext array argument.
-	* Added an $atts argument to the SucomUtil::get_inline_vals() method for the get_sharing_url() call.
+	* Modified the `SucomUtil::replace_inline_vars()` arguments, inserting an $atts array before the $ext array argument.
+	* Added an $atts argument to the `SucomUtil::get_inline_vals()` method for the `get_sharing_url()` call.
 
 = Version 8.5.1 (2015/07/03) =
 
@@ -696,6 +696,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Fixed the use of custom images from the user / profile Social Settings metabox.
 
 == Upgrade Notice ==
+
+= 8.5.2 =
+
+Added a check_product_object() method to the WooCommerce module to make sure the global $product variable is an object and not a slug (Pro version).
 
 = 8.5.1 =
 
