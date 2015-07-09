@@ -439,6 +439,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.5.3 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Added a NGFB_SEO_FILTERS_PRIORITY constant (with a default value of 100) to make sure SEO integration modules run last (Pro version).
+* **Bugfixes**
+	* Fixed the missing "Licenses Assigned" information text on the Extension Plugins settings page (Pro version).
+* **Developer Notes**
+	* *None*
+
 = Version 8.5.2 =
 
 * **New Features**
