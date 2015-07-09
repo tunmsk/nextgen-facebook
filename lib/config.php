@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.5.2',		// plugin version
+					'version' => '8.5.3',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -463,6 +463,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_google_shorten:use' => 'default',
 				),
 				'pre' => array(
+					'email' => 'email', 
 					'facebook' => 'fb', 
 					'gplus' => 'gp',
 					'twitter' => 'twitter',
@@ -738,6 +739,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			
 			if ( ! defined( 'NGFB_FOOTER_PRIORITY' ) )
 				define( 'NGFB_FOOTER_PRIORITY', 100 );
+			
+			if ( ! defined( 'NGFB_SEO_FILTERS_PRIORITY' ) )
+				define( 'NGFB_SEO_FILTERS_PRIORITY', 100 );
 			
 			/*
 			 * NGFB curl settings

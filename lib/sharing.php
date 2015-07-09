@@ -133,7 +133,7 @@ jQuery("#ngfb-sidebar").click( function(){
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark( 'action / filter setup' );
 			$this->plugin_filepath = $plugin_filepath;
-			$sharing_css_name = 'sharing-styles-'.get_current_blog_id().'.min.css';
+			$sharing_css_name = 'sharing-styles-id-'.get_current_blog_id().'.min.css';
 			$this->sharing_css_file = NGFB_CACHEDIR.$sharing_css_name;
 			$this->sharing_css_url = NGFB_CACHEURL.$sharing_css_name;
 			$this->set_objects();
@@ -658,10 +658,8 @@ jQuery("#ngfb-sidebar").click( function(){
 <!-- '.$lca.' '.$css_type.' begin -->
 <div class="'.( $css_preset ? $css_preset.' ' : '' ).
 	( $use_post ? $lca.'-'.$css_type.'">' : '" id="'.$lca.'-'.$css_type.'">' ).'
-'.$buttons_html.'
-</div><!-- .'.$lca.'-'.$css_type.' -->
-<!-- '.$lca.' '.$css_type.' end -->
-';
+'.$buttons_html.'</div><!-- .'.$lca.'-'.$css_type.' -->
+<!-- '.$lca.' '.$css_type.' end -->'."\n\n";
 
 					if ( $this->p->is_avail['cache']['transient'] ) {
 						set_transient( $cache_id, $html, $this->p->options['plugin_object_cache_exp'] );
@@ -695,13 +693,14 @@ jQuery("#ngfb-sidebar").click( function(){
 		// get_html() is called by the widget, shortcode, function, and perhaps some filter hooks
 		public function get_html( &$ids = array(), &$atts = array() ) {
 
+			$lca = $this->p->cf['lca'];
 			$preset_id = empty( $atts['preset_id'] ) ? '' : 
 				preg_replace( '/[^a-z0-9\-_]/', '', $atts['preset_id'] );
 
 			$filter_id = empty( $atts['filter_id'] ) ? '' : 
 				preg_replace( '/[^a-z0-9\-_]/', '', $atts['filter_id'] );
 
-			// important: possibly dereference the opts variable to prevent passing on changes
+			// possibly dereference the opts variable to prevent passing on changes
 			if ( empty( $preset_id ) && empty( $filter_id ) )
 				$custom_opts =& $this->p->options;
 			else $custom_opts = $this->p->options;
@@ -717,11 +716,14 @@ jQuery("#ngfb-sidebar").click( function(){
 					$this->p->debug->log( $preset_id.' preset_id missing or not array'  );
 			} 
 
-			$filter_name = $this->p->cf['lca'].'_sharing_html_'.$filter_id.'_options';
-			if ( ! empty( $filter_id ) && has_filter( $filter_name ) ) {
-				if ( $this->p->debug->enabled )
-					$this->p->debug->log( 'applying filter_id '.$filter_id.' to options ('.$filter_name.')' );
-				$custom_opts = apply_filters( $filter_name, $custom_opts );
+			if ( ! empty( $filter_id ) ) {
+				$filter_name = $lca.'_sharing_html_'.$filter_id.'_options';
+				if ( has_filter( $filter_name ) ) {
+					if ( $this->p->debug->enabled )
+						$this->p->debug->log( 'applying filter_id '.$filter_id.' to options ('.$filter_name.')' );
+					$custom_opts = apply_filters( $filter_name, $custom_opts );
+				} elseif ( $this->p->debug->enabled )
+					$this->p->debug->log( 'no filter(s) found for '.$filter_name );
 			}
 
 			$html = '';
@@ -729,10 +731,12 @@ jQuery("#ngfb-sidebar").click( function(){
 				$id = preg_replace( '/[^a-z]/', '', $id );	// sanitize the website object name
 				if ( isset( $this->website[$id] ) &&
 					method_exists( $this->website[$id], 'get_html' ) )
-						$html .= $this->website[$id]->get_html( $atts, $custom_opts );
+						$html .= $this->website[$id]->get_html( $atts, $custom_opts )."\n";
 			}
+
 			if ( ! empty( $html ) ) 
-				$html = '<div class="'.$this->p->cf['lca'].'-buttons">'."\n".$html.'</div>';
+				$html = "<div class=\"".$lca."-buttons\">\n".$html."</div><!-- .".$lca."-buttons -->\n";
+
 			return $html;
 		}
 
