@@ -713,7 +713,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 == Upgrade Notice ==
 
-= 8.5.2 =
+= 8.5.3 =
 
 Added a "Preferred URL Shortening Service" option, refactored the Pinterest, Tumblr, and Buffer modules, fixed missing "Licenses Assigned" text, fix for WooCommerce integration module.
 
