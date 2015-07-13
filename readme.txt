@@ -449,6 +449,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Refactored the Pinterest, Tumblr, and Buffer modules code to use the new WpssoOpengraph `get_the_media_urls()` method.
 * **Bugfixes**
 	* Fixed the missing "Licenses Assigned" information text on the Extension Plugins settings page (Pro version).
+	* Fixed a condition where the WooCommerce integration module would return an empty og:description value (Pro version).
 * **Developer Notes**
 	* Changed the NgfbSharing $sharing_css_* public variables to public static variables.
 	* Refactored the Twitter module code to use the new 'plugin_shortener' option.
