@@ -448,7 +448,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Bugfixes**
 	* Fixed the missing "Licenses Assigned" information text on the Extension Plugins settings page (Pro version).
 * **Developer Notes**
-	* *None*
+	* Changed the NgfbSharing $sharing_css_* public variables to public static variables.
 
 = Version 8.5.2 =
 
