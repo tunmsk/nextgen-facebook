@@ -444,11 +444,15 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **New Features**
 	* *None*
 * **Improvements**
+	* Added a new "Preferred URL Shortening Service" option on the NGFB Advanced settings page.
 	* Added a NGFB_SEO_FILTERS_PRIORITY constant (with a default value of 100) to make sure SEO integration modules run last (Pro version).
+	* Refactored the Pinterest, Tumblr, and Buffer modules code to use the new WpssoOpengraph `get_the_media_urls()` method.
 * **Bugfixes**
 	* Fixed the missing "Licenses Assigned" information text on the Extension Plugins settings page (Pro version).
 * **Developer Notes**
 	* Changed the NgfbSharing $sharing_css_* public variables to public static variables.
+	* Refactored the Twitter module code to use the new 'plugin_shortener' option.
+	* Refactored and moved the NgfbSharing `get_sharing_media()` method to NgfbOpengraph `get_the_media_urls()` (returns the first image and video URLs).
 
 = Version 8.5.2 =
 
