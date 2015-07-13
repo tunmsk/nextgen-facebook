@@ -439,7 +439,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.5.3 =
+= Version 8.5.3 (2015/07/13) =
 
 * **New Features**
 	* *None*
@@ -712,6 +712,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Fixed the use of custom images from the user / profile Social Settings metabox.
 
 == Upgrade Notice ==
+
+= 8.5.2 =
+
+Added a "Preferred URL Shortening Service" option, refactored the Pinterest, Tumblr, and Buffer modules, fixed missing "Licenses Assigned" text, fix for WooCommerce integration module.
 
 = 8.5.2 =
 
