@@ -189,7 +189,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb343',				// increment when changing default options
+				'version' => 'ngfb344',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'options_version' => '',
@@ -390,6 +390,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_object_cache_exp' => 86400,	// 24 hours
 					'plugin_file_cache_exp' => 0,
 					'plugin_verify_certs' => 0,
+					'plugin_shortener' => 'none',
 					'plugin_min_shorten' => 22,
 					'plugin_bitly_login' => '',
 					'plugin_bitly_api_key' => '',
@@ -451,6 +452,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_file_cache_exp:use' => 'default',
 					'plugin_verify_certs' => 0,
 					'plugin_verify_certs:use' => 'default',
+					'plugin_shortener' => 'none',
+					'plugin_shortener:use' => 'default',
 					'plugin_min_shorten' => 22,
 					'plugin_min_shorten:use' => 'default',
 					'plugin_bitly_login' => '',
@@ -471,6 +474,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'linkedin' => 'linkedin',
 					'myspace' => 'myspace',
 					'pinterest' => 'pin',
+					'pocket' => 'pocket',
 					'buffer' => 'buffer',
 					'reddit' => 'reddit',
 					'managewp' => 'managewp',
@@ -478,6 +482,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'tumblr' => 'tumblr',
 					'youtube' => 'yt',
 					'skype' => 'skype',
+					'vk' => 'vk',
 				),
 			),
 			'wp' => array(				// wordpress
@@ -596,8 +601,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							self::$cf['plugin'][$lca]['lib']['gpl']['admin']['sharing'],
 							self::$cf['plugin'][$lca]['lib']['gpl']['admin']['style'],
 							self::$cf['plugin'][$lca]['lib']['pro']['admin']['sharing'],
-							self::$cf['plugin'][$lca]['lib']['pro']['admin']['style'],
-							self::$cf['plugin'][$lca]['lib']['pro']['util']['shorten']
+							self::$cf['plugin'][$lca]['lib']['pro']['admin']['style']
 						);
 					}
 				}

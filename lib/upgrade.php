@@ -122,6 +122,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'link_author_field' => 'seo_author_field',
 			'link_publisher_url' => 'seo_publisher_url',
 			'add_meta_property_og:video' => 'add_meta_property_og:video:url',
+			'twitter_shortener' => 'plugin_shortener',
 		);
 
 		protected $p;
@@ -157,13 +158,6 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 					}
 				}
 
-				if ( version_compare( $opts_version, 247, '<=' ) ) {
-					if ( ! empty( $opts['twitter_shorten'] ) ) {
-						$opts['twitter_shortener'] = 'googl';
-						unset( $opts['twitter_shorten'] );
-					}
-				}
-	
 				if ( version_compare( $opts_version, 260, '<=' ) ) {
 					if ( $opts['og_img_width'] == 1200 &&
 						$opts['og_img_height'] == 630 &&

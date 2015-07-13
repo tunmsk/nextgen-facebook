@@ -132,8 +132,8 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 						case 'tooltip-buttons_use_social_css':
 							$text = 'Add the CSS from all style tabs to webpages (default is checked).
 							The CSS will be <strong>minimized</strong>, and saved to a single 
-							stylesheet with the URL of <a href="'.$this->p->sharing->sharing_css_url.'">'.
-							$this->p->sharing->sharing_css_url.'</a>. The minimized stylesheet can be 
+							stylesheet with the URL of <a href="'.NgfbSharing::$sharing_css_url.'">'.
+							NgfbSharing::$sharing_css_url.'</a>. The minimized stylesheet can be 
 							enqueued by WordPress, or included directly in the webpage header.';
 							break;
 		
@@ -161,8 +161,8 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 		public function show_metabox_style() {
 			$metabox = 'style';
 
-			if ( file_exists( $this->p->sharing->sharing_css_file ) &&
-				( $fsize = filesize( $this->p->sharing->sharing_css_file ) ) !== false )
+			if ( file_exists( NgfbSharing::$sharing_css_file ) &&
+				( $fsize = filesize( NgfbSharing::$sharing_css_file ) ) !== false )
 					$css_min_msg = ' css is '.$fsize.' bytes minimized';
 			else $css_min_msg = '';
 

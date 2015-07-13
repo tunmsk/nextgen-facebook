@@ -222,7 +222,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 							$chk['optval'] = 'plugin_filter_lang';
 							break;
 						case 'util-shorten':
-							$chk['optval'] = 'twitter_shortener';
+							$chk['optval'] = 'plugin_shortener';
 							break;
 						case 'util-um':
 							$chk['class'] = 'NgfbUm';
