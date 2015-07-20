@@ -246,6 +246,8 @@ NGFB (Pro version) provides the [Summary](https://dev.twitter.com/docs/cards/typ
 	* product:availability
 * **Schema Meta Tags**
 	* name
+	* headline
+	* datepublished
 	* description
 	* image
 	* url
@@ -438,6 +440,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
+
+= Version 8.5.4 =
+
+* **New Features**
+	* Added the Article "headline" and "datepublished" markup for Google's testing tool.
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* *None*
 
 = Version 8.5.3 (2015/07/13) =
 
