@@ -448,7 +448,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added thumbnails of shared images in the Social Settings metabox under the Sharing Buttons tab.
 	* Added the Article "headline" and "datepublished" markup for Google's testing tool.
 * **Improvements**
-	* Changed the "Apply WordPress Content Filters" default option value from checked to unchecked.
+	* *None*
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
