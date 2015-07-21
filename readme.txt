@@ -453,7 +453,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* *None*
 * **Developer Notes**
 	* Renamed the SucomUtil th() method to get_th().
-	* Refactored the Buffer, Pinterest, Tumblr, and Twitter sharing button code to use the new NgfbOpengraph get_the_media_urls() method.
+	* Refactored the Buffer, Pinterest, and Tumblr sharing button code to use the new NgfbOpengraph get_the_media_urls() method.
 
 = Version 8.5.3 (2015/07/13) =
 
