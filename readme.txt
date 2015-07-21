@@ -441,7 +441,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.6 =
+= Version 8.6 (2015/07/21) =
 
 * **New Features**
 	* Added a "Video Preview Image(s)" option in the Social Settings metabox under the Priority Media tab.
@@ -728,6 +728,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Fixed the use of custom images from the user / profile Social Settings metabox.
 
 == Upgrade Notice ==
+
+= 8.6 =
+
+Added a "Video Preview Image(s)" option and thumbnails of shared images in the Social Settings metabox. Added Article "headline" and "datepublished" markup.
 
 = 8.5.3 =
 
