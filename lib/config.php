@@ -368,7 +368,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_check_head' => 1,
 					'plugin_filter_title' => 0,
 					'plugin_filter_excerpt' => 0,
-					'plugin_filter_content' => 0,
+					'plugin_filter_content' => 1,
 					'plugin_filter_lang' => 1,
 					'plugin_shortcodes' => 1,
 					'plugin_widgets' => 1,
