@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.5.3',		// plugin version
+					'version' => '8.6',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -189,7 +189,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb344',				// increment when changing default options
+				'version' => 'ngfb345',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'options_version' => '',
@@ -223,7 +223,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'og_img_max' => 1,
 					'og_vid_max' => 1,
 					'og_vid_https' => 1,
-					'og_vid_prev_img' => 1,
+					'og_vid_prev_img' => 0,
 					'og_vid_html_type' => 1,
 					'og_def_img_id_pre' => 'wp',
 					'og_def_img_id' => '',
@@ -353,6 +353,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_name_twitter:data4' => 1,
 					'add_meta_name_twitter:label4' => 1,
 					'add_meta_itemprop_name' => 1,
+					'add_meta_itemprop_headline' => 1,
+					'add_meta_itemprop_datepublished' => 1,
 					'add_meta_itemprop_description' => 1,
 					'add_meta_itemprop_url' => 1,
 					'add_meta_itemprop_image' => 1,
@@ -364,9 +366,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_debug' => 0,
 					'plugin_cache_info' => 0,
 					'plugin_check_head' => 1,
-					'plugin_filter_title' => 1,
+					'plugin_filter_title' => 0,
 					'plugin_filter_excerpt' => 0,
-					'plugin_filter_content' => 1,
+					'plugin_filter_content' => 0,
 					'plugin_filter_lang' => 1,
 					'plugin_shortcodes' => 1,
 					'plugin_widgets' => 1,

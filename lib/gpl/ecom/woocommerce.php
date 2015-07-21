@@ -106,12 +106,9 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) && class_exists( 'NgfbSha
 
 		public function filter_sharing_position_rows( $rows, $form ) {
 			$pos = array( 'top' => 'Top', 'bottom' => 'Bottom', 'both' => 'Both Top and Bottom' );
-
 			$rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
-
-			$rows['buttons_pos_woo_short'] = $this->p->util->th( 'Position in Woo Short Text', null, 'buttons_pos_woo_short' ).
+			$rows['buttons_pos_woo_short'] = $this->p->util->get_th( 'Position in Woo Short Text', null, 'buttons_pos_woo_short' ).
 			'<td class="blank">'.$form->get_hidden( 'buttons_pos_woo_short' ).$pos[$this->p->options['buttons_pos_woo_short']].'</td>';
-
 			return $rows;
 		}
 	}
