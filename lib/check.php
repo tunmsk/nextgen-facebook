@@ -271,8 +271,8 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 
 			// PHP
 			if ( empty( $this->p->is_avail['curl'] ) ) {
-				if ( ! empty( $this->p->options['twitter_shortener'] ) && 
-					$this->p->options['twitter_shortener'] !== 'none' ) {
+				if ( ! empty( $this->p->options['plugin_shortener'] ) && 
+					$this->p->options['plugin_shortener'] !== 'none' ) {
 
 					$this->p->debug->log( 'url shortening is enabled but curl function is missing' );
 					$this->p->notice->err( sprintf( __( 'URL shortening has been enabled, but PHP\'s <a href="%s" target="_blank">Client URL Library</a> (cURL) is missing.', NGFB_TEXTDOM ), 'http://ca3.php.net/curl' ).' '.__( 'Please contact your hosting provider to have the missing library installed.', NGFB_TEXTDOM ) );
