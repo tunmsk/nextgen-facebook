@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.2.3
-Stable Tag: 8.6
+Stable Tag: 8.6.1
 
 Looking to improve your shared content on social sites? Make sure your shares look great on all social sites - no matter how your content is shared!
 
