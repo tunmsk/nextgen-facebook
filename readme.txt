@@ -450,7 +450,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added an informational message on activation about enabling the "Apply WordPress Content Filters" if using shortcodes.
 	* Added a check for an empty WooCommerce term description value before setting the Open Graph and Twitter description meta tag (Pro version).
 * **Bugfixes**
-	* *None*
+	* Fixed an incorrectly named variable when retrieving WooCommerce term descriptions (Pro version).
 * **Developer Notes**
 	* Moved additional plugin activation checks from the Ngfb to the NgfbRegister class.
 
@@ -741,6 +741,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Fixed the use of custom images from the user / profile Social Settings metabox.
 
 == Upgrade Notice ==
+
+= 8.6.1 =
+
+Added informational message about the "Apply WordPress Content Filters" option when using shortcodes (default value is now unchecked). Fixed incorrectly named variable for WooCommerce term descriptions (Pro version).
 
 = 8.6 =
 
