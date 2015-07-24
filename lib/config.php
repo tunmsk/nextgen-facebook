@@ -183,8 +183,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'icon_medium' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/icon-256x256.png',
 					),
 					'url' => array(
+						// surniaulula
 						'download' => 'http://surniaulula.com/extend/plugins/nextgen-facebook-um/',
 						'latest_zip' => 'http://surniaulula.com/extend/plugins/nextgen-facebook-um/latest/',
+						'update' => 'http://surniaulula.com/extend/plugins/nextgen-facebook-um/update/',
 					),
 				),
 			),
