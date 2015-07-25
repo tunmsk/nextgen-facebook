@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.2.3
-Stable Tag: 8.6.1
+Stable Tag: 8.6.2
 
 Looking to improve your shared content on social sites? Make sure your shares look great on all social sites - no matter how your content is shared!
 
@@ -441,7 +441,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.6.2 =
+= Version 8.6.2 (2015/07/25) =
 
 * **New Features**
 	* *None*
@@ -755,6 +755,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Fixed the use of custom images from the user / profile Social Settings metabox.
 
 == Upgrade Notice ==
+
+= 8.6.2 =
+
+Fixed two option variable names in the NgfbUtil get_cache_file_url() method.
 
 = 8.6.1 =
 
