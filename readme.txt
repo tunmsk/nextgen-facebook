@@ -441,6 +441,20 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.6.2 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* Fixed two option variable names in the NgfbUtil get_cache_file_url() method.
+* **Developer Notes**
+	* Moved the get_tweet_max_len() method from the SucomUtil class to the NgfbUtil class.
+	* Added a get_tweet_text() method in the NgfbUtil class (for future use by extensions, etc).
+	* Added $short_url and $service arguments to the NgfbUtil get_tweet_max_len() method.
+	* Added support for a %%short_url%% inline variable.
+
 = Version 8.6.1 (2015/07/23) =
 
 * **New Features**
