@@ -441,6 +441,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.6.2.1 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Added a check for missing DOMDocument PHP class in older PHP versions. 
+* **Bugfixes**
+	* Added a check for missing $screen->id attribute when creating new taxonomy terms.
+* **Developer Notes**
+	* *None*
+
 = Version 8.6.2 (2015/07/25) =
 
 * **New Features**
