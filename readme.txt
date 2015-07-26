@@ -10,7 +10,7 @@ Requires At Least: 3.0
 Tested Up To: 4.2.3
 Stable Tag: 8.6.2.1
 
-Looking to improve your shared content on social sites? Make sure your shares look great on all social sites - no matter how your content is shared!
+Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it's shared or re-shared!
 
 == Description ==
 
@@ -18,7 +18,7 @@ Looking to improve your shared content on social sites? Make sure your shares lo
 
 <p><strong>A solid social meta tag plugin is the foundation of any good social strategy</strong> &mdash; NextGEN Facebook (NGFB) gives you total control over all the information <a href="https://developers.facebook.com/docs/sharing/webmasters/crawler" target="_blank">social website crawlers</a> need, improving Google Search ranking, social engagement, and click-through-rates on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
 
-<p><strong>NGFB automatically retrieves and uses information from a wide range or sources</strong>, including All in One SEO Pack, bbPress, BuddyPress, Easy Digital Downloads, HeadSpace2 SEO, JetPack Photon, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, WordPress SEO by Yoast, WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, and YouTube.</p>
+<p><strong>NGFB automatically retrieves and uses information from a wide range or sources</strong>, including All in One SEO Pack, bbPress, BuddyPress, Easy Digital Downloads, HeadSpace2 SEO, JetPack Photon, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, WordPress SEO by Yoast, WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, and many more.</p>
 
 <blockquote>
 <p><strong>Already have sharing buttons?</strong></p>
