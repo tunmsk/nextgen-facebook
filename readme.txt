@@ -441,6 +441,18 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.6.3=
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* The "Use Filtered (SEO) Titles" option is now enabled by default.
+	* Thumbnails under the Sharing Buttons tab in the Social Settings metabox now support custom Image URLs as well.
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* The $add_hashtags method argument now supports integer values as well (not just true/false).
+
 = Version 8.6.2.1 (2015/07/25) =
 
 * **New Features**
