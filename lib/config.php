@@ -20,10 +20,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.6.2.1',		// plugin version
+					'version' => '8.6.3',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
-					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
+					'desc' => 'Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it\'s shared or re-shared!',
 					'slug' => 'nextgen-facebook',
 					'base' => 'nextgen-facebook/nextgen-facebook.php',
 					'update_auth' => 'tid',
@@ -368,7 +368,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_debug' => 0,
 					'plugin_cache_info' => 0,
 					'plugin_check_head' => 1,
-					'plugin_filter_title' => 0,
+					'plugin_filter_title' => 1,
 					'plugin_filter_content' => 0,
 					'plugin_filter_excerpt' => 0,
 					'plugin_filter_lang' => 1,
@@ -515,7 +515,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'og_image_col_width' => '70px',
 				'og_image_col_height' => '37px',
 				'tooltip_class' => 'sucom_tooltip',
-				'max_desc_hashtags' => 10,
+				'max_hashtags' => 10,
 				'max_media_items' => 20,
 				'yes_no' => array(
 					'1' => 'Yes',
