@@ -450,6 +450,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added a check in the various SEO Pro modules to skip SEO titles when "Use Filtered (SEO) Titles" is disabled.
 	* Thumbnails under the Sharing Buttons tab in the Social Settings metabox now support custom Image URLs as well.
 	* Added a fallback in the sharing buttons function to use the WordPress object cache if the transient cache is not available.
+	* Added an onMouseOut check for Social Settings input fields.
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
