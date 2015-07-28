@@ -447,7 +447,9 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* *None*
 * **Improvements**
 	* The "Use Filtered (SEO) Titles" option is now enabled by default.
+	* Added a check in the various SEO Pro modules to skip SEO titles when "Use Filtered (SEO) Titles" is disabled.
 	* Thumbnails under the Sharing Buttons tab in the Social Settings metabox now support custom Image URLs as well.
+	* Added a fallback in the sharing buttons function to use the WordPress object cache if the transient cache is not available.
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
