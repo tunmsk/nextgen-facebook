@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.2.3
-Stable Tag: 8.6.2.1
+Stable Tag: 8.6.3
 
 Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it's shared or re-shared!
 
@@ -441,14 +441,14 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.6.3 =
+= Version 8.6.3 (2015/07/28) =
 
 * **New Features**
 	* *None*
 * **Improvements**
 	* The "Use Filtered (SEO) Titles" option is now enabled by default.
-	* Added a check in the various SEO Pro modules to skip SEO titles when "Use Filtered (SEO) Titles" is disabled.
-	* Thumbnails under the Sharing Buttons tab in the Social Settings metabox now support custom Image URLs as well.
+	* Added a check in the various SEO Pro modules to skip SEO titles when "Use Filtered (SEO) Titles" is disabled (Pro version).
+	* Thumbnails in the Sharing Buttons tab in the Social Settings metabox now support custom Image URLs as well.
 	* Added a fallback in the sharing buttons function to use the WordPress object cache if the transient cache is not available.
 	* Added an onMouseOut check for Social Settings input fields.
 * **Bugfixes**
@@ -510,6 +510,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Refactored the Buffer, Pinterest, and Tumblr sharing button code to use the new NgfbOpengraph get_the_media_urls() method.
 
 == Upgrade Notice ==
+
+= 8.6.3 =
+
+Added a check in the various SEO Pro modules to skip SEO titles when "Use Filtered (SEO) Titles" is disabled. Thumbnails in the Sharing Buttons tab in the Social Settings metabox now support custom Image URLs as well.
 
 = 8.6.2.1 =
 
