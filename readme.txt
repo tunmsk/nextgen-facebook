@@ -451,7 +451,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Bugfixes**
 	* Added missing check for a default image URL in the NgfbUtil `force_default_media()` method.
 * **Developer Notes**
-	* Renamed the '*_js_loc' options to '*_script_loc' to avoid the location options being defined as containing javascript code.
+	* Renamed the '\*_js_loc' options to '\*_script_loc' to avoid the location options being defined as containing javascript code.
 	* Renamed the `get_js()` methods to `get_script()`.
 
 = Version 8.6.3 (2015/07/28) =
