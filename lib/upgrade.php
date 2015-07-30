@@ -123,6 +123,14 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'link_publisher_url' => 'seo_publisher_url',
 			'add_meta_property_og:video' => 'add_meta_property_og:video:url',
 			'twitter_shortener' => 'plugin_shortener',
+			'stumble_js_loc' => 'stumble_script_loc',
+			'pin_js_loc' => 'pin_script_loc',
+			'tumblr_js_loc' => 'tumblr_script_loc',
+			'gp_js_loc' => 'gp_script_loc',
+			'fb_js_loc' => 'fb_script_loc',
+			'twitter_js_loc' => 'twitter_script_loc',
+			'buffer_js_loc' => 'buffer_script_loc',
+			'linkedin_js_loc' => 'linkedin_script_loc',
 		);
 
 		protected $p;

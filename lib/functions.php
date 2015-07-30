@@ -42,9 +42,9 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 			}
 
 			$html = '<!-- '.$ngfb->cf['lca'].' sharing buttons begin -->' .
-				$ngfb->sharing->get_js( 'sharing-buttons-header', $ids ) .
+				$ngfb->sharing->get_script( 'sharing-buttons-header', $ids ) .
 				$ngfb->sharing->get_html( $ids, $atts ) .
-				$ngfb->sharing->get_js( 'sharing-buttons-footer', $ids ) .
+				$ngfb->sharing->get_script( 'sharing-buttons-footer', $ids ) .
 				'<!-- '.$ngfb->cf['lca'].' sharing buttons end -->';
 	
 			if ( $ngfb->is_avail['cache']['transient'] ||
