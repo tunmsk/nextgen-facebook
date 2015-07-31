@@ -64,13 +64,10 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) && class_exists( 'NgfbSha
 	margin:10px auto;
 	text-align:center;
 }';
-			// the default 'Show Button in' for 'Woo Short' is unchecked
 			foreach ( $this->p->cf['opt']['pre'] as $name => $prefix )
 				$opts_def[$prefix.'_on_woo_short'] = 0;
-
 			$opts_def['buttons_pos_woo_short'] = 'bottom';
 			$opts_def['buttons_preset_woo_short'] = '';
-
 			return $opts_def;
 		}
 
@@ -97,10 +94,8 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) && class_exists( 'NgfbSha
         .facebook-button { }</pre>
 			<p><strong>The social sharing button options for the '.$idx.' style are subject to preset values, selected on the '.$this->p->util->get_admin_url( 'sharing#sucom-tabset_sharing-tab_preset', 'Sharing Buttons settings page' ).', to modify their action (share vs like), size, and counter orientation.</strong> The width and height values in your CSS should reflect these presets (if any).</p>'.
 			'<p><strong>Selected preset:</strong> '.
-			( empty( $this->p->options['buttons_preset_'.$idx] ) ? '[none]' :
-				$this->p->options['buttons_preset_'.$idx] ).'</p>
-			</td><td class="blank tall code">'.$form->get_hidden( 'buttons_css_woo_short' ).
-				$this->p->options['buttons_css_woo_short'].'</td>';
+			( empty( $this->p->options['buttons_preset_'.$idx] ) ? '[none]' : $this->p->options['buttons_preset_'.$idx] ).'</p>
+			</td><td class="blank tall code">'.$form->get_hidden( 'buttons_css_woo_short' ).$this->p->options['buttons_css_woo_short'].'</td>';
 			return $rows;
 		}
 
