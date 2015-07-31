@@ -442,7 +442,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.6.3.1  =
+= Version 8.6.3.1 (2015/07/31) =
 
 * **New Features**
 	* *None*
@@ -450,6 +450,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* *None*
 * **Bugfixes**
 	* Added missing check for a default image URL in the NgfbUtil `force_default_media()` method.
+	* Fixed the post cache object variable name in the NgfbProUtilShorten class filter_post_cache_objects() method (Pro version).
 * **Developer Notes**
 	* Renamed the '\*_js_loc' options to '\*_script_loc' to avoid the location options being defined as containing javascript code.
 	* Renamed the `get_js()` methods to `get_script()`.
