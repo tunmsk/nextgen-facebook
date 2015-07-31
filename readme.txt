@@ -450,7 +450,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* *None*
 * **Bugfixes**
 	* Added missing check for a default image URL in the NgfbUtil `force_default_media()` method.
-	* Fixed the post cache object variable name in the NgfbProUtilShorten class filter_post_cache_objects() method (Pro version).
+	* Fixed the post cache object variable name in the NgfbProUtilShorten `filter_post_cache_objects()` method (Pro version).
 * **Developer Notes**
 	* Renamed the '\*_js_loc' options to '\*_script_loc' to avoid the location options being defined as containing javascript code.
 	* Renamed the `get_js()` methods to `get_script()`.
@@ -524,6 +524,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Refactored the Buffer, Pinterest, and Tumblr sharing button code to use the new NgfbOpengraph get_the_media_urls() method.
 
 == Upgrade Notice ==
+
+= 8.6.3.1 =
+
+Added missing check for a default image URL in force_default_media(), fixed post cache object variable name in filter_post_cache_objects() (Pro version).
 
 = 8.6.3 =
 
