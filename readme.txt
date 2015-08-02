@@ -536,6 +536,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 == Upgrade Notice ==
 
+= 8.6.4 =
+
+Added two new functions, refactored the update_sharing_css() method, fixed a problem writing minimized CSS file for paths containing symbolic links.
+
 = 8.6.3.1 =
 
 Added missing check for a default image URL in force_default_media(), fixed post cache object variable name in filter_post_cache_objects() (Pro version).
