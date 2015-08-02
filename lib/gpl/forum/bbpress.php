@@ -23,21 +23,21 @@ if ( ! class_exists( 'NgfbGplForumBbpress' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->debug->mark();
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 
-			if ( is_admin() || is_bbpress() ) {
-				// load sharing buttons code if sharing features exist and are enabled
-				if ( array_key_exists( 'ssb', $this->p->is_avail ) &&
-					$this->p->is_avail['ssb'] === true ) {
+			if ( class_exists( 'bbpress' ) ) {	// is_bbpress() is not available here
+				if ( ! empty( $this->p->is_avail['ssb'] ) ) {
 					$classname = __CLASS__.'Sharing';
-					$this->sharing = new $classname( $this->p );
+					if ( class_exists( $classname ) )
+						$this->sharing = new $classname( $this->p );
 				}
 			}
 		}
 	}
 }
 
-if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) && class_exists( 'NgfbSharing' ) ) {
+if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
 
 	class NgfbGplForumBbpressSharing {
 
@@ -45,7 +45,8 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) && class_exists( 'NgfbSharin
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->debug->mark();
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 
 			$this->p->util->add_plugin_filters( $this, array( 
 				'get_defaults' => 1,
@@ -53,9 +54,10 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) && class_exists( 'NgfbSharin
 
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_filters( $this, array( 
+					'sharing_show_on' => 2,
 					'style_tabs' => 1,
 					'style_bbp_single_rows' => 2,
-					'sharing_show_on' => 2,
+					'sharing_position_rows' => 2,
 				) );
 			}
 		}
@@ -76,12 +78,29 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) && class_exists( 'NgfbSharin
 			// the default 'Show Button in' for 'bbPress Single' is unchecked
 			foreach ( $this->p->cf['opt']['pre'] as $name => $prefix )
 				$opts_def[$prefix.'_on_bbp_single'] = 0;
+
+			$opts_def['buttons_pos_bbp_single'] = 'top';
+
 			return $opts_def;
+		}
+
+		/* Purpose: Include the 'bbPress Single' checkbox in the 'Show Button in' options */
+		public function filter_sharing_show_on( $show_on = array(), $prefix ) {
+			switch ( $prefix ) {
+				case 'pin':
+					break;
+				default:
+					$show_on['bbp_single'] = 'bbPress Single';
+					$this->p->options[$prefix.'_on_bbp_single:is'] = 'disabled';
+					break;
+			}
+			return $show_on;
 		}
 
 		/* Purpose: Add a 'bbPress Single' tab to the Style settings */
 		public function filter_style_tabs( $tabs ) {
 			$tabs['bbp_single'] = 'bbPress Single';
+			$this->p->options['buttons_css_bbp_single:is'] = 'disabled';
 			return $tabs;
 		}
 
@@ -101,17 +120,13 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) && class_exists( 'NgfbSharin
 			return $rows;
 		}
 
-		/* Purpose: Include the 'bbPress Single' checkbox in the 'Show Button in' options */
-		public function filter_sharing_show_on( $show_on = array(), $prefix ) {
-			switch ( $prefix ) {
-				case 'pin':
-					break;
-				default:
-					$show_on['bbp_single'] = 'bbPress Single';
-					$this->p->options[$prefix.'_on_bbp_single:is'] = 'disabled';
-					break;
-			}
-			return $show_on;
+		public function filter_sharing_position_rows( $rows, $form ) {
+			$pos = array( 'top' => 'Top', 'bottom' => 'Bottom', 'both' => 'Both Top and Bottom' );
+			$rows[] = '<td colspan="2" align="center">'.
+				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'ngfb' ) ).'</td>';
+			$rows['buttons_pos_bbp_single'] = $this->p->util->get_th( 'Position in bbPress Single', null, 'buttons_pos_bbp_single' ).
+			'<td class="blank">'.$form->get_hidden( 'buttons_pos_bbp_single' ).$pos[$this->p->options['buttons_pos_bbp_single']].'</td>';
+			return $rows;
 		}
 	}
 }

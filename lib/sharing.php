@@ -135,7 +135,7 @@ jQuery("#ngfb-sidebar").click( function(){
 				$this->p->debug->mark( 'action / filter setup' );
 			$this->plugin_filepath = $plugin_filepath;
 			self::$sharing_css_name = 'sharing-styles-id-'.get_current_blog_id().'.min.css';
-			self::$sharing_css_file = NGFB_CACHEDIR.self::$sharing_css_name;
+			self::$sharing_css_file = realpath( NGFB_CACHEDIR.self::$sharing_css_name );	// fwrite() needs the real path
 			self::$sharing_css_url = NGFB_CACHEURL.self::$sharing_css_name;
 			$this->set_objects();
 
@@ -205,7 +205,7 @@ jQuery("#ngfb-sidebar").click( function(){
 			$style_tabs = apply_filters( $this->p->cf['lca'].'_style_tabs', self::$cf['sharing']['style'] );
 
 			foreach ( $style_tabs as $id => $name ) {
-				$css_file = $plugin_dir.'css/'.$id.'-buttons.css';
+				$css_file = realpath( $plugin_dir.'css/'.$id.'-buttons.css' );
 
 				// css files are only loaded once (when variable is empty) into defaults to minimize disk i/o
 				if ( empty( $opts_def['buttons_css_'.$id] ) ) {
@@ -411,47 +411,46 @@ jQuery("#ngfb-sidebar").click( function(){
 
 		public function update_sharing_css( &$opts ) {
 			if ( ! empty( $opts['buttons_use_social_css'] ) ) {
-				if ( ! $fh = @fopen( self::$sharing_css_file, 'wb' ) ) {
-					if ( ! is_writable( NGFB_CACHEDIR ) ) {
-						if ( is_admin() )
-							$this->p->notice->err( NGFB_CACHEDIR.' is not writable.', true );
-						if ( $this->p->debug->enabled )
-							$this->p->debug->log( NGFB_CACHEDIR.' is not writable', true );
-					}
+				$css_data = '';
+				$style_tabs = apply_filters( $this->p->cf['lca'].'_style_tabs', self::$cf['sharing']['style'] );
+
+				foreach ( $style_tabs as $id => $name )
+					if ( isset( $opts['buttons_css_'.$id] ) )
+						$css_data .= $opts['buttons_css_'.$id];
+
+				$classname = apply_filters( $this->p->cf['lca'].'_load_lib', 
+					false, 'ext/compressor', 'SuextMinifyCssCompressor' );
+
+				if ( $classname !== false && class_exists( $classname ) )
+					$css_data = call_user_func( array( $classname, 'process' ), $css_data );
+				else {
 					if ( is_admin() )
-						$this->p->notice->err( 'Failed to open file '.self::$sharing_css_file.' for writing.', true );
+						$this->p->notice->err( 'Failed to load minify class SuextMinifyCssCompressor.', true );
 					if ( $this->p->debug->enabled )
-						$this->p->debug->log( 'failed opening '.self::$sharing_css_file.' for writing' );
-				} else {
-					$css_data = '';
-					$style_tabs = apply_filters( $this->p->cf['lca'].'_style_tabs', self::$cf['sharing']['style'] );
+						$this->p->debug->log( 'failed to load minify class SuextMinifyCssCompressor' );
+				}
 
-					foreach ( $style_tabs as $id => $name )
-						if ( array_key_exists( 'buttons_css_'.$id, $opts ) )
-							$css_data .= $opts['buttons_css_'.$id];
-
-					$classname = apply_filters( $this->p->cf['lca'].'_load_lib', 
-						false, 'ext/compressor', 'SuextMinifyCssCompressor' );
-
-					if ( $classname !== false && class_exists( $classname ) )
-						$css_data = call_user_func( array( $classname, 'process' ), $css_data );
-					else {
-						if ( is_admin() )
-							$this->p->notice->err( 'Failed to load minify class SuextMinifyCssCompressor.', true );
-						if ( $this->p->debug->enabled )
-							$this->p->debug->log( 'failed to load minify class SuextMinifyCssCompressor' );
-					}
-
-					if ( fwrite( $fh, $css_data ) === false ) {
+				if ( $fh = @fopen( self::$sharing_css_file, 'wb' ) ) {
+					if ( ( $written = fwrite( $fh, $css_data ) ) === false ) {
 						if ( is_admin() )
 							$this->p->notice->err( 'Failed writing to file '.self::$sharing_css_file.'.', true );
 						if ( $this->p->debug->enabled )
 							$this->p->debug->log( 'failed writing to '.self::$sharing_css_file );
 					} elseif ( $this->p->debug->enabled )
-						$this->p->debug->log( 'updated css file '.self::$sharing_css_file );
-
-					fclose( $fh );
+						$this->p->debug->log( 'updated css file '.self::$sharing_css_file.' ('.$written.' bytes written)' );
+				} else {
+					if ( ! is_writable( WPSSO_CACHEDIR ) ) {
+						if ( is_admin() )
+							$this->p->notice->err( WPSSO_CACHEDIR.' is not writable.', true );
+						if ( $this->p->debug->enabled )
+							$this->p->debug->log( WPSSO_CACHEDIR.' is not writable', true );
+					}
+					if ( is_admin() )
+						$this->p->notice->err( 'Failed to open file '.self::$sharing_css_file.' for writing.', true );
+					if ( $this->p->debug->enabled )
+						$this->p->debug->log( 'failed opening '.self::$sharing_css_file.' for writing' );
 				}
+				fclose( $fh );
 			} else $this->unlink_sharing_css();
 		}
 

@@ -17,18 +17,19 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerce' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->debug->mark();
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 
-			if ( isset( $this->p->is_avail['ssb'] ) &&
-				$this->p->is_avail['ssb'] === true ) {
+			if ( ! empty( $this->p->is_avail['ssb'] ) ) {
 				$classname = __CLASS__.'Sharing';
-				$this->sharing = new $classname( $this->p );
+				if ( class_exists( $classname ) )
+					$this->sharing = new $classname( $this->p );
 			}
 		}
 	}
 }
 
-if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) && class_exists( 'NgfbSharing' ) ) {
+if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 
 	class NgfbGplEcomWoocommerceSharing {
 
@@ -36,7 +37,8 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) && class_exists( 'NgfbSha
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->debug->mark();
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 			$this->p->util->add_plugin_filters( $this, array( 
 				'get_defaults' => 1,
 			) );
@@ -81,6 +83,7 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) && class_exists( 'NgfbSha
 		/* Purpose: Add a 'Woo Short' tab to the Style settings */
 		public function filter_style_tabs( $tabs ) {
 			$tabs['woo_short'] = 'Woo Short';
+			$this->p->options['buttons_css_woo_short:is'] = 'disabled';
 			return $tabs;
 		}
 
@@ -101,7 +104,7 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) && class_exists( 'NgfbSha
 
 		public function filter_sharing_position_rows( $rows, $form ) {
 			$pos = array( 'top' => 'Top', 'bottom' => 'Bottom', 'both' => 'Both Top and Bottom' );
-			$rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
+			$rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'ngfb' ) ).'</td>';
 			$rows['buttons_pos_woo_short'] = $this->p->util->get_th( 'Position in Woo Short Text', null, 'buttons_pos_woo_short' ).
 			'<td class="blank">'.$form->get_hidden( 'buttons_pos_woo_short' ).$pos[$this->p->options['buttons_pos_woo_short']].'</td>';
 			return $rows;

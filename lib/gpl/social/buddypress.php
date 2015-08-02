@@ -17,17 +17,17 @@ if ( ! class_exists( 'NgfbGplSocialBuddypress' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->debug->mark();
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 
 			if ( is_admin() || bp_current_component() ) {
 				$this->p->util->add_plugin_filters( $this, array( 
 					'post_types' => 3,
 				) );
-				// load sharing buttons code if sharing features exist and are enabled
-				if ( array_key_exists( 'ssb', $this->p->is_avail ) &&
-					$this->p->is_avail['ssb'] === true ) {
+				if ( ! empty( $this->p->is_avail['ssb'] ) ) {
 					$classname = __CLASS__.'Sharing';
-					$this->sharing = new $classname( $this->p );
+					if ( class_exists( $classname ) )
+						$this->sharing = new $classname( $this->p );
 				}
 			}
 		}
@@ -54,7 +54,7 @@ if ( ! class_exists( 'NgfbGplSocialBuddypress' ) ) {
 	}
 }
 
-if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) && class_exists( 'NgfbSharing' ) ) {
+if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
 
 	class NgfbGplSocialBuddypressSharing {
 
@@ -62,7 +62,8 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) && class_exists( 'NgfbSh
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->debug->mark();
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 
 			$this->p->util->add_plugin_filters( $this, array( 
 				'get_defaults' => 1,
@@ -70,9 +71,9 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) && class_exists( 'NgfbSh
 
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_filters( $this, array( 
+					'sharing_show_on' => 2,
 					'style_tabs' => 1,
 					'style_bp_activity_rows' => 2,
-					'sharing_show_on' => 2,
 				) );
 			}
 		}
@@ -109,13 +110,14 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) && class_exists( 'NgfbSh
 			}
 			return $show_on;
 		}
-		/* Purpose: Add a 'BuddyPress Activity' tab to the Style settings */
+		/* Purpose: Add a 'BP Activity' tab to the Style settings */
 		public function filter_style_tabs( $tabs ) {
-			$tabs['bp_activity'] = 'BuddyPress Activity';
+			$tabs['bp_activity'] = 'BP Activity';
+			$this->p->options['buttons_css_bp_activity:is'] = 'disabled';
 			return $tabs;
 		}
 
-		/* Purpose: Add css input textarea for the 'BuddyPress Activity' style tab */
+		/* Purpose: Add css input textarea for the 'BP Activity' style tab */
 		public function filter_style_bp_activity_rows( $rows, $form ) {
 			$rows[] = '<td class="textinfo">
 			<p>Social sharing buttons added to BuddyPress Activities are assigned the 
