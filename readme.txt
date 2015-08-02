@@ -442,6 +442,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.6.4 =
+
+* **New Features**
+	* Added new `ngfb_get_sharing_url()` and `ngfb_get_short_url()` functions.
+* **Improvements**
+	* Refactored the NgfbSharing `update_sharing_css()` method.
+* **Bugfixes**
+	* Fixed a problem writing minimized CSS file for paths containing symbolic links by getting the real file path.
+* **Developer Notes**
+	* *None*
+
 = Version 8.6.3.1 (2015/07/31) =
 
 * **New Features**
