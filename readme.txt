@@ -442,7 +442,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.6.4 =
+= Version 8.6.4 (2015/08/02) =
 
 * **New Features**
 	* Added new `ngfb_get_sharing_url()` and `ngfb_get_short_url()` functions.
