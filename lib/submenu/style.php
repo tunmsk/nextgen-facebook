@@ -163,7 +163,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 
 			if ( file_exists( NgfbSharing::$sharing_css_file ) &&
 				( $fsize = filesize( NgfbSharing::$sharing_css_file ) ) !== false )
-					$css_min_msg = ' css is '.$fsize.' bytes minimized';
+					$css_min_msg = ' <a href="'.NgfbSharing::$sharing_css_url.'">minimized css is '.$fsize.' bytes</a>';
 			else $css_min_msg = '';
 
 			$this->p->util->do_table_rows( array( 
