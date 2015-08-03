@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.2.3
-Stable Tag: 8.6.4
+Stable Tag: 8.6.4.1
 
 Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it's shared or re-shared!
 
@@ -442,7 +442,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.6.4.1 =
+= Version 8.6.4.1 (2015/08/03) =
 
 * **New Features**
 	* *None*
@@ -547,6 +547,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Refactored the Buffer, Pinterest, and Tumblr sharing button code to use the new NgfbOpengraph get_the_media_urls() method.
 
 == Upgrade Notice ==
+
+= 8.6.4.1 =
+
+Fixed a NGFB_CACHEDIR constant variable name, fixed WooCommerce and WPeCommerce term description code to use the 'ngfb_description_seed' filter (Pro version).
 
 = 8.6.4 =
 
