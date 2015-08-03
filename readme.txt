@@ -449,6 +449,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Improvements**
 	* *None*
 * **Bugfixes**
+	* Fixed the NGFB_CACHEDIR constant variable name when updating the minimized buttons css.
 	* Fixed the WooCommerce and WPeCommerce term description code to use the 'ngfb_description_seed' filter for compatibility with SEO integration modules (Pro version).
 * **Developer Notes**
 	* *None*
