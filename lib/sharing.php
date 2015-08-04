@@ -440,11 +440,11 @@ jQuery("#ngfb-sidebar").click( function(){
 						$this->p->debug->log( 'updated css file '.self::$sharing_css_file.' ('.$written.' bytes written)' );
 					fclose( $fh );
 				} else {
-					if ( ! is_writable( WPSSO_CACHEDIR ) ) {
+					if ( ! is_writable( NGFB_CACHEDIR ) ) {
 						if ( is_admin() )
-							$this->p->notice->err( WPSSO_CACHEDIR.' is not writable.', true );
+							$this->p->notice->err( NGFB_CACHEDIR.' is not writable.', true );
 						if ( $this->p->debug->enabled )
-							$this->p->debug->log( WPSSO_CACHEDIR.' is not writable', true );
+							$this->p->debug->log( NGFB_CACHEDIR.' is not writable', true );
 					}
 					if ( is_admin() )
 						$this->p->notice->err( 'Failed to open file '.self::$sharing_css_file.' for writing.', true );
