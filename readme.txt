@@ -7,7 +7,7 @@ Tags: attached, bbPress, buddypress, buttons, e-commerce, easy digital downloads
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
-Tested Up To: 4.2.3
+Tested Up To: 4.2.4
 Stable Tag: 8.6.4.1
 
 Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it's shared or re-shared!
@@ -442,6 +442,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.6.4.2 (2015/08/04) =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Confirmed WordPress v4.2.4 compatibility.
+* **Bugfixes**
+	* Fixed a possible error on failed CSS file writes by applying PHP realpath() to the NGFB_PLUGINDIR constant value.
+* **Developer Notes**
+	* *None*
+
 = Version 8.6.4.1 (2015/08/03) =
 
 * **New Features**
@@ -547,6 +558,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Refactored the Buffer, Pinterest, and Tumblr sharing button code to use the new NgfbOpengraph get_the_media_urls() method.
 
 == Upgrade Notice ==
+
+= 8.6.4.2 =
+
+Confirmed WordPress v4.2.4 compatibility. Fixed a possible error on failed CSS file writes by applying PHP realpath() to the NGFB_PLUGINDIR constant value.
 
 = 8.6.4.1 =
 
