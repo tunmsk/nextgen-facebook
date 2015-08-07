@@ -442,6 +442,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.6.4.3 (2015/08/07) =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Improved filtering for incorrect Yoast SEO error message(s).
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* *None*
+
 = Version 8.6.4.2 (2015/08/04) =
 
 * **New Features**
@@ -558,6 +569,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Refactored the Buffer, Pinterest, and Tumblr sharing button code to use the new NgfbOpengraph get_the_media_urls() method.
 
 == Upgrade Notice ==
+
+= 8.6.4.3 =
+
+Improved filtering for incorrect Yoast SEO error message(s).
 
 = 8.6.4.2 =
 
