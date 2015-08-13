@@ -442,6 +442,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.6.5 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Added a check for full size image dimensions vs the requested image size dimensions - if identical, the full size image URL will be used instead. This allows the plugin to use a (potentially) better quality image than the re-generated version provided by WordPress. 
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* *None*
+
 = Version 8.6.4.4 (2015/08/11) =
 
 * **New Features**
