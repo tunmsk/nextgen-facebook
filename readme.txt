@@ -450,7 +450,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Improvements**
 	* *None*
 * **Bugfixes**
-	* *None*
+	* Fixed an incorrectly named object expiration variable in the `ngfb_get_sharing_buttons()` function.
 * **Developer Notes**
 	* The NGFB WordPress REST API v2 module extends the returned /posts (including custom post types), /terms, and /users JSON with a new 'head' array field consisting of 'html' and 'parts' arrays.
 
