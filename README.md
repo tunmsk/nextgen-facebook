@@ -419,6 +419,7 @@
         <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/jetpack-photon/">Jetpack Photon</a></li>
         <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/videos-apis/">Slideshare, Vimeo, Wistia, Youtube APIs</a></li>
         <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/">WooCommerce</a></li>
+        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/wordpress-rest-api-v2/">WordPress REST API v2</a></li>
     </ul></li>
     <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/contact-information/">Contact Information and Feeds</a></li>
     <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/">Developer Resources</a>

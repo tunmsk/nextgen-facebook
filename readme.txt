@@ -370,6 +370,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/jetpack-photon/">Jetpack Photon</a></li>
 		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/videos-apis/">Slideshare, Vimeo, Wistia, Youtube APIs</a></li>
 		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/">WooCommerce</a></li>
+		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/wordpress-rest-api-v2/">WordPress REST API v2</a></li>
 	</ul></li>
 	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/contact-information/">Contact Information and Feeds</a></li>
 	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/">Developer Resources</a>
@@ -452,7 +453,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Bugfixes**
 	* Fixed an incorrectly named object expiration variable in the `ngfb_get_sharing_buttons()` function.
 * **Developer Notes**
-	* The NGFB WordPress REST API v2 module extends the returned /posts (including custom post types), /terms, and /users JSON with a new 'head' array field consisting of 'html' and 'parts' arrays.
+	* The NGFB WordPress REST API v2 module extends the returned /wp-json/wp/v2/posts (including custom post types), terms, and users JSON with a new 'head' array field consisting of 'html' and 'parts' arrays (Pro version).
 
 = Version 8.6.5 (2015/08/14) =
 
