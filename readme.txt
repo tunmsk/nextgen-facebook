@@ -18,7 +18,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 
 <p><strong>A solid social meta tag plugin is the foundation of any good social strategy</strong> &mdash; NextGEN Facebook (NGFB) gives you total control over all the information <a href="https://developers.facebook.com/docs/sharing/webmasters/crawler" target="_blank">social website crawlers</a> need, improving Google Search ranking, social engagement, and click-through-rates on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
 
-<p><strong>NGFB automatically retrieves and uses information from a wide range or sources</strong>, including All in One SEO Pack, bbPress, BuddyPress, Easy Digital Downloads, HeadSpace2 SEO, JetPack Photon, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, WordPress SEO by Yoast, WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, and many more.</p>
+<p><strong>NGFB automatically retrieves and uses information from a wide range or sources</strong>, including All in One SEO Pack, bbPress, BuddyPress, Easy Digital Downloads, HeadSpace2 SEO, JetPack Photon, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, WordPress SEO by Yoast, WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, extends the WordPress REST API v2, and much more.</p>
 
 <blockquote>
 <p><strong>Already have sharing buttons?</strong></p>
@@ -110,9 +110,10 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 		* NextGEN Gallery
 		* MarketPress - WordPress eCommerce
 		* Polylang
-		* WooCommerce v1.x and v2.x
+		* <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce v1 and v2</a>
 		* WordPress SEO by Yoast
 		* WP e-Commerce
+		* <a href="https://wordpress.org/plugins/rest-api/">WordPress REST API v2</a>
 	* Supported Service APIs
 		* Gravatar Images
 		* Bitly Shortener
@@ -152,7 +153,7 @@ NGFB (Pro version) integrates with [WordPress SEO by Yoast](https://wordpress.or
 
 <strong>eCommerce Products</strong>
 
-NGFB (Pro version) also supports [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/), [MarketPress - WordPress eCommerce](https://wordpress.org/plugins/wordpress-ecommerce/), [WooCommerce v1.x and v2.x](https://wordpress.org/plugins/woocommerce/), and [WP e-Commerce](https://wordpress.org/plugins/wp-e-commerce/) product pages, creating appropriate meta tags for [Facebook Products](https://developers.facebook.com/docs/payments/product/), [Twitter Product Cards](https://dev.twitter.com/docs/cards/types/product-card) and [Pinterest Rich Pins](http://developers.pinterest.com/rich_pins/), including variations and additional / custom images.
+NGFB (Pro version) also supports [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/), [MarketPress - WordPress eCommerce](https://wordpress.org/plugins/wordpress-ecommerce/), [WooCommerce v1 and v2](https://wordpress.org/plugins/woocommerce/), and [WP e-Commerce](https://wordpress.org/plugins/wp-e-commerce/) product pages, creating appropriate meta tags for [Facebook Products](https://developers.facebook.com/docs/payments/product/), [Twitter Product Cards](https://dev.twitter.com/docs/cards/types/product-card) and [Pinterest Rich Pins](http://developers.pinterest.com/rich_pins/), including variations and additional / custom images.
 
 <strong>Forums and Social</strong>
 
@@ -451,7 +452,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
-	* The NGFB WordPress REST API v2 module extends the returned post (including custom post types), term, and user JSON with a new 'head' array consisting of 'html' and 'parts' arrays.
+	* The NGFB WordPress REST API v2 module extends the returned post (including any custom post types), term, and user JSON with a new 'head' array field consisting of an 'html' string and 'parts' array.
 
 = Version 8.6.5 (2015/08/14) =
 
