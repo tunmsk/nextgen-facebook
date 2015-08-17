@@ -442,6 +442,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.7 =
+
+* **New Features**
+	* Added support for the <a href="https://wordpress.org/plugins/rest-api/">WordPress REST API (Version 2)</a> plugin (Pro version).
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* The NGFB WordPress REST API v2 module extends the returned post (including custom post types), term, and user JSON with a new 'head' array consisting of 'html' and 'parts' arrays.
+
 = Version 8.6.5 (2015/08/14) =
 
 * **New Features**
