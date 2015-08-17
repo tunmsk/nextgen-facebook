@@ -51,13 +51,13 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 				$ngfb->is_avail['cache']['object'] ) {
 
 				if ( $ngfb->is_avail['cache']['transient'] )
-					set_transient( $cache_id, $html, $ngfb->cache->object_expire );
+					set_transient( $cache_id, $html, $ngfb->options['plugin_object_cache_exp'] );
 				elseif ( $ngfb->is_avail['cache']['object'] )
-					wp_cache_set( $cache_id, $html, __METHOD__, $ngfb->cache->object_expire );
+					wp_cache_set( $cache_id, $html, __METHOD__, $ngfb->options['plugin_object_cache_exp'] );
 
 				if ( $ngfb->debug->enabled )
 					$ngfb->debug->log( $cache_type.': html saved to cache '.
-						$cache_id.' ('.$ngfb->cache->object_expire.' seconds)');
+						$cache_id.' ('.$ngfb->options['plugin_object_cache_exp'].' seconds)');
 			}
 		} else $html = '<!-- '.$ngfb->cf['lca'].' sharing sharing buttons disabled -->';
 
