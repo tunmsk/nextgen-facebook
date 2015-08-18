@@ -7,7 +7,7 @@ Tags: attached, bbPress, buddypress, buttons, e-commerce, easy digital downloads
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
-Tested Up To: 4.2.4
+Tested Up To: 4.3
 Stable Tag: 8.7
 
 Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it's shared or re-shared!
@@ -18,7 +18,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 
 <p><strong>A solid social meta tag plugin is the foundation of any good social strategy</strong> &mdash; NextGEN Facebook (NGFB) gives you total control over all the information <a href="https://developers.facebook.com/docs/sharing/webmasters/crawler" target="_blank">social website crawlers</a> need, improving Google Search ranking, social engagement, and click-through-rates on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
 
-<p><strong>NGFB automatically retrieves and uses information from a wide range or sources</strong>, including All in One SEO Pack, bbPress, BuddyPress, Easy Digital Downloads, HeadSpace2 SEO, JetPack Photon, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, WordPress SEO by Yoast, WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, extends the WordPress REST API v2, and much more.</p>
+<p><strong>NGFB automatically retrieves and uses information from a wide range or sources</strong>, including All in One SEO Pack, bbPress, BuddyPress, Easy Digital Downloads, HeadSpace2 SEO, JetPack Photon, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, Yoast SEO (aka WordPress SEO), WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, extends the WordPress REST API v2, and much more.</p>
 
 <blockquote>
 <p><strong>Already have sharing buttons?</strong></p>
@@ -111,7 +111,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 		* MarketPress - WordPress eCommerce
 		* Polylang
 		* <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce v1 and v2</a>
-		* WordPress SEO by Yoast
+		* Yoast SEO (aka WordPress SEO)
 		* WP e-Commerce
 		* <a href="https://wordpress.org/plugins/rest-api/">WordPress REST API v2</a>
 	* Supported Service APIs
@@ -144,7 +144,7 @@ NGFB (Pro version) also includes support for [JetPack Photon](http://jetpack.me/
 
 <strong>Enhanced SEO</strong>
 
-NGFB (Pro version) integrates with [WordPress SEO by Yoast](https://wordpress.org/plugins/wordpress-seo/), [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/), and [HeadSpace2 SEO](https://wordpress.org/plugins/headspace2/) &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, and Twitter Card meta tags.
+NGFB (Pro version) integrates with [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/), [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/), and [HeadSpace2 SEO](https://wordpress.org/plugins/headspace2/) &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, and Twitter Card meta tags.
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
