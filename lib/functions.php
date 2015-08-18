@@ -18,6 +18,10 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 	function ngfb_get_sharing_buttons( $ids = array(), $atts = array() ) {
 		$ngfb =& Ngfb::get_instance();
 		if ( $ngfb->is_avail['ssb'] ) {
+
+			if ( ! defined( 'NGFB_BUTTONS_CACHE_EXP' ) )
+				define( 'NGFB_BUTTONS_CACHE_EXP', $ngfb->options['plugin_object_cache_exp'] );
+
 			$cache_salt = __METHOD__.'(lang:'.SucomUtil::get_locale().
 				'_url:'.$ngfb->util->get_sharing_url().
 				'_ids:'.( implode( '_', $ids ) ).
@@ -25,14 +29,16 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 			$cache_id = $ngfb->cf['lca'].'_'.md5( $cache_salt );
 			$cache_type = 'object cache';
 
-			if ( $ngfb->is_avail['cache']['transient'] ) {
-				if ( $ngfb->debug->enabled )
-					$ngfb->debug->log( $cache_type.': transient salt '.$cache_salt );
-				$html = get_transient( $cache_id );
-			} elseif ( $ngfb->is_avail['cache']['object'] ) {
-				if ( $ngfb->debug->enabled )
-					$ngfb->debug->log( $cache_type.': wp_cache salt '.$cache_salt );
-				$html = wp_cache_get( $cache_id, __METHOD__ );
+			if ( ! isset( $atts['read_cache'] ) || ! empty( $atts['read_cache'] ) ) {
+				if ( $ngfb->is_avail['cache']['transient'] ) {
+					if ( $ngfb->debug->enabled )
+						$ngfb->debug->log( $cache_type.': transient salt '.$cache_salt );
+					$html = get_transient( $cache_id );
+				} elseif ( $ngfb->is_avail['cache']['object'] ) {
+					if ( $ngfb->debug->enabled )
+						$ngfb->debug->log( $cache_type.': wp_cache salt '.$cache_salt );
+					$html = wp_cache_get( $cache_id, __METHOD__ );
+				} else $html = false;
 			} else $html = false;
 
 			if ( $html !== false ) {
@@ -51,13 +57,13 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 				$ngfb->is_avail['cache']['object'] ) {
 
 				if ( $ngfb->is_avail['cache']['transient'] )
-					set_transient( $cache_id, $html, $ngfb->options['plugin_object_cache_exp'] );
+					set_transient( $cache_id, $html, NGFB_BUTTONS_CACHE_EXP );
 				elseif ( $ngfb->is_avail['cache']['object'] )
-					wp_cache_set( $cache_id, $html, __METHOD__, $ngfb->options['plugin_object_cache_exp'] );
+					wp_cache_set( $cache_id, $html, __METHOD__, NGFB_BUTTONS_CACHE_EXP );
 
 				if ( $ngfb->debug->enabled )
 					$ngfb->debug->log( $cache_type.': html saved to cache '.
-						$cache_id.' ('.$ngfb->options['plugin_object_cache_exp'].' seconds)');
+						$cache_id.' ('.NGFB_BUTTONS_CACHE_EXP.' seconds)');
 			}
 		} else $html = '<!-- '.$ngfb->cf['lca'].' sharing sharing buttons disabled -->';
 
