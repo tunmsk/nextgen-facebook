@@ -444,7 +444,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.7 =
+= Version 8.7 (2015/08/18) =
 
 * **New Features**
 	* Added support for the <a href="https://wordpress.org/plugins/rest-api/">WordPress REST API (Version 2)</a> plugin (Pro version).
@@ -605,6 +605,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Refactored the Buffer, Pinterest, and Tumblr sharing button code to use the new NgfbOpengraph get_the_media_urls() method.
 
 == Upgrade Notice ==
+
+= 8.7 =
+
+Added support for the WordPress REST API (Version 2) (Pro version). Fixed an incorrectly named object expiration variable in the ngfb_get_sharing_buttons() function.
 
 = 8.6.5 =
 
