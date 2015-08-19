@@ -1,4 +1,4 @@
-=== NextGEN Facebook - Complete Meta Tags for Facebook, Google, Pinterest, Twitter & More ===
+=== NextGEN Facebook - Complete Meta Tags for FB, Google, Pinterest, Twitter, LinkedIn & More ===
 Plugin Name: NextGEN Facebook (NGFB)
 Plugin Slug: nextgen-facebook
 Contributors: jsmoriss
