@@ -66,10 +66,13 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 	margin:10px auto;
 	text-align:center;
 }';
+			// the default 'Show Button in' for 'Woo Short' is unchecked
 			foreach ( $this->p->cf['opt']['pre'] as $name => $prefix )
 				$opts_def[$prefix.'_on_woo_short'] = 0;
+
 			$opts_def['buttons_pos_woo_short'] = 'bottom';
 			$opts_def['buttons_preset_woo_short'] = '';
+
 			return $opts_def;
 		}
 

@@ -71,6 +71,7 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
  */
 
 .ngfb-bbp_single-buttons { 
+	clear:both;
 	display:block;
 	margin:10px auto;
 	text-align:center;
