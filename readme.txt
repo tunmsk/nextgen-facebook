@@ -444,6 +444,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.7.1 (2015/08/21) =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* Fixed the duplicate meta tag pattern match by allowing for extra newline characters added by W3TC within meta tags.
+* **Developer Notes**
+	* *None*
+
 = Version 8.7 (2015/08/18) =
 
 * **New Features**
@@ -605,6 +616,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Refactored the Buffer, Pinterest, and Tumblr sharing button code to use the new NgfbOpengraph get_the_media_urls() method.
 
 == Upgrade Notice ==
+
+= 8.7.1 =
+
+Fixed the duplicate meta tag pattern match by allowing for extra newline characters added by W3TC within meta tags.
 
 = 8.7 =
 
