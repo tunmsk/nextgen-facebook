@@ -444,7 +444,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.7.2 =
+= Version 8.7.2 (2015/08/23) =
 
 * **New Features**
 	* *None*
@@ -455,6 +455,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Developer Notes**
 	* Refactored the SucomUtil class is_post_page(), is_term_page(), is_author_page() methods.
 	* Added the SucomUtil is_product_page(), is_product_category, and is_product_tag() methods for the WooCommerce module.
+	* Refactored the WooCommerce module to use the new SucomUtil product related methods (Pro version).
 
 = Version 8.7.1 (2015/08/21) =
 
@@ -628,6 +629,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Refactored the Buffer, Pinterest, and Tumblr sharing button code to use the new NgfbOpengraph get_the_media_urls() method.
 
 == Upgrade Notice ==
+
+= 8.7.2 =
+
+Fixed the '\R' regex escape sequence by '\n\r' instead ('\R' does not appear to be supported by all PHP versions).
 
 = 8.7.1 =
 
