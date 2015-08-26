@@ -444,7 +444,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.7.3 =
+= Version 8.7.3 (2015/08/26) =
 
 * **New Features**
 	* *None*
