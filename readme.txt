@@ -444,6 +444,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.7.4 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* Added new 'ngfb_attached_accept_img_size' and 'ngfb_content_accept_img_size' filters (see filters.txt for details).
+
 = Version 8.7.3 (2015/08/26) =
 
 * **New Features**
