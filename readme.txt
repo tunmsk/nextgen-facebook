@@ -453,7 +453,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
-	* Added new 'ngfb_attached_accept_img_size' and 'ngfb_content_accept_img_size' filters (see filters.txt for details).
+	* Added three new filters (see filters.txt for details).
+		* ngfb_attached_accept_img_size
+		* ngfb_content_accept_img_size
+		* ngfb_ngg_accept_img_size
 
 = Version 8.7.3 (2015/08/26) =
 
