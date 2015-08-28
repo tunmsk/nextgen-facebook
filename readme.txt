@@ -457,6 +457,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 		* ngfb_attached_accept_img_size
 		* ngfb_content_accept_img_size
 		* ngfb_ngg_accept_img_size
+	* Moved the Open Graph type list to an array under NgfbConfig::$cf['head']['og_type_ns'] and the Schema itemtype list to an array under NgfbConfig::$cf['head']['schema_type'].
 
 = Version 8.7.3 (2015/08/26) =
 
