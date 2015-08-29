@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.3
-Stable Tag: 8.7.3
+Stable Tag: 8.7.4
 
 Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it's shared or re-shared!
 
@@ -451,13 +451,13 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Improvements**
 	* *None*
 * **Bugfixes**
-	* Fixed a Facebook debugger error for 'fb:admins' with multiple comma-delimited values by creating multiple 'fb:admins' meta tags with a single value each.
+	* Fixed a Facebook debugger error for 'fb:admins' with multiple comma-delimited values by creating additional 'fb:admins' meta tags (with a single value each).
 * **Developer Notes**
-	* Added three new filters (see filters.txt for details).
+	* Moved the Open Graph type and Schema itemtype lists to arrays under NgfbConfig::$cf['head'].
+	* Added three new filters to accept under-sized images individually (see filters.txt for details).
 		* ngfb_attached_accept_img_size
 		* ngfb_content_accept_img_size
 		* ngfb_ngg_accept_img_size
-	* Moved the Open Graph type and Schema itemtype lists to arrays under NgfbConfig::$cf['head'].
 
 = Version 8.7.3 (2015/08/26) =
 
@@ -656,6 +656,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 == Upgrade Notice ==
 
+= 8.7.4 =
+
+Fixed a Facebook debugger error for 'fb:admins' with multiple comma-delimited values. Added three new filters to accept under-sized images individually.
+
 = 8.7.3 =
 
 Fixed incorrect warning message for empty Video Embed option value. Refactored / improved NgfbCheck->get_avail() method for a slight speed improvement.
@@ -671,52 +675,4 @@ Fixed / improved duplicate meta tag pattern matching by allowing extra newline c
 = 8.7 =
 
 Added support for the WordPress REST API (Version 2) (Pro version). Fixed an incorrectly named object expiration variable in the ngfb_get_sharing_buttons() function.
-
-= 8.6.5 =
-
-Added check for full size image dimensions, using it if requested dimensions match (for better quality image). Added check on activation for lower "Object Cache Expiry" values than default.
-
-= 8.6.4.4 =
-
-Fixed the custom post/taxonomy/user settings update process by removing the addition of default values (Pro version).
-
-= 8.6.4.3 =
-
-Improved filtering for incorrect Yoast SEO error message(s).
-
-= 8.6.4.2 =
-
-Confirmed WordPress v4.2.4 compatibility. Fixed a possible error on failed CSS file writes by applying PHP realpath() to the NGFB_PLUGINDIR constant value.
-
-= 8.6.4.1 =
-
-Fixed a NGFB_CACHEDIR constant variable name, fixed WooCommerce and WPeCommerce term description code to use the 'ngfb_description_seed' filter (Pro version).
-
-= 8.6.4 =
-
-Added two new functions, refactored the update_sharing_css() method, fixed a problem writing minimized CSS file for paths containing symbolic links.
-
-= 8.6.3.1 =
-
-Added missing check for a default image URL in force_default_media(), fixed post cache object variable name in filter_post_cache_objects() (Pro version).
-
-= 8.6.3 =
-
-Added a check in the various SEO Pro modules to skip SEO titles when "Use Filtered (SEO) Titles" is disabled. Thumbnails in the Sharing Buttons tab in the Social Settings metabox now support custom Image URLs as well.
-
-= 8.6.2.1 =
-
-Added a check for missing $screen->id attribute when creating new taxonomy terms. Updated the minimum PHP version requirement to v4.1.
-
-= 8.6.2 =
-
-Fixed two option variable names in the NgfbUtil get_cache_file_url() method.
-
-= 8.6.1 =
-
-Added informational message about the "Apply WordPress Content Filters" option when using shortcodes (default value is now unchecked). Fixed incorrectly named variable for WooCommerce term descriptions (Pro version).
-
-= 8.6 =
-
-Added a "Video Preview Image(s)" option and thumbnails of shared images in the Social Settings metabox. Added Article "headline" and "datepublished" markup.
 
