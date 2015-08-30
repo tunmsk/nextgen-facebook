@@ -47,20 +47,18 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 			self::do_multisite( $sitewide, array( &$this, 'deactivate_plugin' ) );
 		}
 
+		// can be called from network or single site
 		public static function network_uninstall() {
 			$sitewide = true;
-			$cf = NgfbConfig::get_config();
 
 			// uninstall from the individual blogs first
 			self::do_multisite( $sitewide, array( __CLASS__, 'uninstall_plugin' ) );
 
-			if ( ! defined( 'NGFB_SITE_OPTIONS_NAME' ) )
-				define( 'NGFB_SITE_OPTIONS_NAME', $cf['lca'].'_site_options' );
-
-			$opts = get_site_option( NGFB_SITE_OPTIONS_NAME );
+			$var_const = NgfbConfig::get_variable_constants();
+			$opts = get_site_option( $var_const['NGFB_SITE_OPTIONS_NAME'] );
 
 			if ( empty( $opts['plugin_preserve'] ) )
-				delete_site_option( NGFB_SITE_OPTIONS_NAME );
+				delete_site_option( $var_const['NGFB_SITE_OPTIONS_NAME'] );
 		}
 
 		private static function do_multisite( $sitewide, $method, $args = array() ) {
@@ -105,6 +103,11 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 				}
 			}
 
+			if ( ( $ts = get_option( NGFB_INSTALL_NAME ) ) === false )
+				update_option( NGFB_INSTALL_NAME, time() );
+
+			update_option( NGFB_ACTIVATE_NAME, time() );
+
 			set_transient( $lca.'_activation_redirect', true, 60 * 60 );
 
 			$this->p->set_config();
@@ -144,36 +147,29 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 		}
 
 		private static function uninstall_plugin() {
-			$cf = NgfbConfig::get_config();
+			$var_const = NgfbConfig::get_variable_constants();
+			$opts = get_option( $var_const['NGFB_OPTIONS_NAME'] );
 
-			if ( ! defined( 'NGFB_OPTIONS_NAME' ) )
-				define( 'NGFB_OPTIONS_NAME', $cf['lca'].'_options' );
-
-			if ( ! defined( 'NGFB_META_NAME' ) )
-				define( 'NGFB_META_NAME', '_'.$cf['lca'].'_meta' );
-
-			if ( ! defined( 'NGFB_PREF_NAME' ) )
-				define( 'NGFB_PREF_NAME', '_'.$cf['lca'].'_pref' );
-
-			$slug = $cf['plugin'][$cf['lca']]['slug'];
-			$opts = get_option( NGFB_OPTIONS_NAME );
+			delete_option( $var_const['NGFB_INSTALL_NAME'] );
+			delete_option( $var_const['NGFB_ACTIVATE_NAME'] );
+			delete_option( $var_const['NGFB_UPDATE_NAME'] );
 
 			if ( empty( $opts['plugin_preserve'] ) ) {
-				delete_option( NGFB_OPTIONS_NAME );
-				delete_post_meta_by_key( NGFB_META_NAME );
-				foreach ( array( NGFB_META_NAME, NGFB_PREF_NAME ) as $meta_key ) {
+				delete_option( $var_const['NGFB_OPTIONS_NAME'] );
+				delete_post_meta_by_key( $var_const['NGFB_META_NAME'] );
+				foreach ( array( $var_const['NGFB_META_NAME'], $var_const['NGFB_PREF_NAME'] ) as $meta_key ) {
 					foreach ( get_users( array( 'meta_key' => $meta_key ) ) as $user ) {
 						delete_user_option( $user->ID, $meta_key );
 						NgfbUser::delete_metabox_prefs( $user->ID );
 					}
 				}
 				foreach ( NgfbTaxonomy::get_public_terms() as $term_id )
-					NgfbTaxonomy::delete_term_meta( $term_id, NGFB_META_NAME );
+					NgfbTaxonomy::delete_term_meta( $term_id, $var_const['NGFB_META_NAME'] );
 			}
 
 			// delete transients
 			global $wpdb;
-			$dbquery = 'SELECT option_name FROM '.$wpdb->options.' WHERE option_name LIKE \'_transient_timeout_'.$cf['lca'].'_%\';';
+			$dbquery = 'SELECT option_name FROM '.$wpdb->options.' WHERE option_name LIKE \'_transient_timeout_ngfb_%\';';
 			$expired = $wpdb->get_col( $dbquery ); 
 			foreach( $expired as $transient ) { 
 				$key = str_replace('_transient_timeout_', '', $transient);

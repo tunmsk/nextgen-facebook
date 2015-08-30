@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.7.4',		// plugin version
+					'version' => '8.7.5',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it\'s shared or re-shared!',
@@ -192,7 +192,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb348',				// increment when changing default options
+				'version' => 'ngfb349',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'options_version' => '',
@@ -684,11 +684,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
-
 			$cf = self::get_config();
 			$slug = $cf['plugin'][$cf['lca']]['slug'];
 			$version = $cf['plugin'][$cf['lca']]['version'];
 
+			// constants that cannot be pre-defined
 			define( 'NGFB_FILEPATH', $plugin_filepath );						
 			define( 'NGFB_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
 			define( 'NGFB_PLUGINBASE', plugin_basename( $plugin_filepath ) );
@@ -697,117 +697,86 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			define( 'NGFB_NONCE', md5( NGFB_PLUGINDIR.'-'.$version.
 				( defined( 'NONCE_SALT' ) ? NONCE_SALT : '' ) ) );
 
-			if ( defined( 'NGFB_DEBUG' ) && 
-				! defined( 'NGFB_HTML_DEBUG' ) )
-					define( 'NGFB_HTML_DEBUG', NGFB_DEBUG );
+			self::set_variable_constants();
+		}
 
-			if ( ! defined( 'NGFB_DEBUG_FILE_EXP' ) )
-				define( 'NGFB_DEBUG_FILE_EXP', 300 );
+		public static function set_variable_constants() { 
+			foreach ( self::get_variable_constants() as $name => $value )
+				if ( ! defined( $name ) )
+					define( $name, $value );
+		}
 
-			if ( ! defined( 'NGFB_CACHEDIR' ) )
-				define( 'NGFB_CACHEDIR', NGFB_PLUGINDIR.'cache/' );
+		public static function get_variable_constants() { 
+			$var_const = array();
 
-			if ( ! defined( 'NGFB_CACHEURL' ) )
-				define( 'NGFB_CACHEURL', NGFB_URLPATH.'cache/' );
+			if ( defined( 'NGFB_DEBUG' ) )				// backwards compatibility
+				$var_const['NGFB_HTML_DEBUG'] = NGFB_DEBUG;
 
-			if ( ! defined( 'NGFB_TOPICS_LIST' ) )
-				define( 'NGFB_TOPICS_LIST', NGFB_PLUGINDIR.'share/topics.txt' );
+			if ( defined( 'NGFB_PLUGINDIR' ) ) {
+				$var_const['NGFB_CACHEDIR'] = NGFB_PLUGINDIR.'cache/';
+				$var_const['NGFB_TOPICS_LIST'] = NGFB_PLUGINDIR.'share/topics.txt';
+			}
 
-			if ( ! defined( 'NGFB_SHARING_SHORTCODE' ) )
-				define( 'NGFB_SHARING_SHORTCODE', 'ngfb' );
+			if ( defined( 'NGFB_URLPATH' ) )
+				$var_const['NGFB_CACHEURL'] = NGFB_URLPATH.'cache/';
 
-			if ( ! defined( 'NGFB_MENU_ORDER' ) )
-				define( 'NGFB_MENU_ORDER', '99.11' );
-
-			if ( ! defined( 'NGFB_MENU_ICON_HIGHLIGHT' ) )
-				define( 'NGFB_MENU_ICON_HIGHLIGHT', true );
+			$var_const['NGFB_DEBUG_FILE_EXP'] = 300;
+			$var_const['NGFB_MENU_ORDER'] = '99.11';
+			$var_const['NGFB_MENU_ICON_HIGHLIGHT'] = true;
+			$var_const['NGFB_SHARING_SHORTCODE'] = 'ngfb';		// used by social sharing features
 
 			/*
 			 * NGFB option and meta array names
 			 */
-			if ( ! defined( 'NGFB_OPTIONS_NAME' ) )
-				define( 'NGFB_OPTIONS_NAME', 'ngfb_options' );
-
-			if ( ! defined( 'NGFB_SITE_OPTIONS_NAME' ) )
-				define( 'NGFB_SITE_OPTIONS_NAME', 'ngfb_site_options' );
-
-			if ( ! defined( 'NGFB_META_NAME' ) )
-				define( 'NGFB_META_NAME', '_ngfb_meta' );
-
-			if ( ! defined( 'NGFB_PREF_NAME' ) )
-				define( 'NGFB_PREF_NAME', '_ngfb_pref' );
+			$var_const['NGFB_INSTALL_NAME'] = 'ngfb_install_ts';
+			$var_const['NGFB_ACTIVATE_NAME'] = 'ngfb_activate_ts';
+			$var_const['NGFB_UPDATE_NAME'] = 'ngfb_update_ts';
+			$var_const['NGFB_OPTIONS_NAME'] = 'ngfb_options';
+			$var_const['NGFB_SITE_OPTIONS_NAME'] = 'ngfb_site_options';
+			$var_const['NGFB_META_NAME'] = '_ngfb_meta';
+			$var_const['NGFB_PREF_NAME'] = '_ngfb_pref';
 
 			/*
-			 * NGFB option and meta array alternate / fallback names
+			 * NGFB option and meta array alternate names
 			 */
-			if ( ! defined( 'NGFB_OPTIONS_NAME_ALT' ) )
-				define( 'NGFB_OPTIONS_NAME_ALT', 'wpsso_options' );
-
-			if ( ! defined( 'NGFB_SITE_OPTIONS_NAME_ALT' ) )
-				define( 'NGFB_SITE_OPTIONS_NAME_ALT', 'wpsso_site_options' );
-
-			if ( ! defined( 'NGFB_META_NAME_ALT' ) )
-				define( 'NGFB_META_NAME_ALT', '_wpsso_meta' );
-
-			if ( ! defined( 'NGFB_PREF_NAME_ALT' ) )
-				define( 'NGFB_PREF_NAME_ALT', '_wpsso_pref' );
+			$var_const['NGFB_OPTIONS_NAME_ALT'] = 'wpsso_options';
+			$var_const['NGFB_SITE_OPTIONS_NAME_ALT'] = 'wpsso_site_options';
+			$var_const['NGFB_META_NAME_ALT'] = '_wpsso_meta';
+			$var_const['NGFB_PREF_NAME_ALT'] = '_wpsso_pref';
 
 			/*
 			 * NGFB hook priorities
 			 */
-			if ( ! defined( 'NGFB_ADD_MENU_PRIORITY' ) )
-				define( 'NGFB_ADD_MENU_PRIORITY', -20 );
+			$var_const['NGFB_ADD_MENU_PRIORITY'] = -20;
+			$var_const['NGFB_ADD_SETTINGS_PRIORITY'] = -10;
+			$var_const['NGFB_META_SAVE_PRIORITY'] = 6;
+			$var_const['NGFB_META_CACHE_PRIORITY'] = 9;
+			$var_const['NGFB_INIT_PRIORITY'] = 14;
+			$var_const['NGFB_DOCTYPE_PRIORITY'] = 100;
+			$var_const['NGFB_HEAD_PRIORITY'] = 10;
+			$var_const['NGFB_SOCIAL_PRIORITY'] = 100;		// used by social sharing features
+			$var_const['NGFB_FOOTER_PRIORITY'] = 100;		// used by social sharing features
+			$var_const['NGFB_SEO_FILTERS_PRIORITY'] = 100;
 
-			if ( ! defined( 'NGFB_ADD_SETTINGS_PRIORITY' ) )
-				define( 'NGFB_ADD_SETTINGS_PRIORITY', -10 );
-
-			if ( ! defined( 'NGFB_META_SAVE_PRIORITY' ) )
-				define( 'NGFB_META_SAVE_PRIORITY', 6 );
-
-			if ( ! defined( 'NGFB_META_CACHE_PRIORITY' ) )
-				define( 'NGFB_META_CACHE_PRIORITY', 9 );
-
-			if ( ! defined( 'NGFB_INIT_PRIORITY' ) )
-				define( 'NGFB_INIT_PRIORITY', 14 );
-
-			if ( ! defined( 'NGFB_DOCTYPE_PRIORITY' ) )
-				define( 'NGFB_DOCTYPE_PRIORITY', 100 );
-
-			if ( ! defined( 'NGFB_HEAD_PRIORITY' ) )
-				define( 'NGFB_HEAD_PRIORITY', 10 );
-
-			if ( ! defined( 'NGFB_SOCIAL_PRIORITY' ) )
-				define( 'NGFB_SOCIAL_PRIORITY', 100 );
-			
-			if ( ! defined( 'NGFB_FOOTER_PRIORITY' ) )
-				define( 'NGFB_FOOTER_PRIORITY', 100 );
-			
-			if ( ! defined( 'NGFB_SEO_FILTERS_PRIORITY' ) )
-				define( 'NGFB_SEO_FILTERS_PRIORITY', 100 );
-			
 			/*
 			 * NGFB curl settings
 			 */
-			if ( ! defined( 'NGFB_CURL_USERAGENT' ) )
-				define( 'NGFB_CURL_USERAGENT', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36' );
+			if ( defined( 'NGFB_PLUGINDIR' ) )
+				$var_const['NGFB_CURL_CAINFO'] = NGFB_PLUGINDIR.'share/curl/cacert.pem';
+			$var_const['NGFB_CURL_USERAGENT'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:40.0) Gecko/20100101 Firefox/40.0';
 
-			if ( ! defined( 'NGFB_CURL_CAINFO' ) )
-				define( 'NGFB_CURL_CAINFO', NGFB_PLUGINDIR.'share/curl/cacert.pem' );
-
-			/*
-			 * Disable caching plugins for the duplicate meta tag check feature
-			 */
+			// disable 3rd-party caching for duplicate meta tag checks
 			if ( ! empty( $_GET['NGFB_META_TAGS_DISABLE'] ) ) {
-
-				if ( ! defined( 'DONOTCACHEPAGE' ) )
-					define( 'DONOTCACHEPAGE', true );	// wp super cache
-
-				if ( ! defined( 'QUICK_CACHE_ALLOWED' ) )
-					define( 'QUICK_CACHE_ALLOWED', false );	// quick cache
-
-				if ( ! defined( 'ZENCACHE_ALLOWED' ) )
-					define( 'ZENCACHE_ALLOWED', false );	// zencache
+				$var_const['DONOTCACHEPAGE'] = true;		// wp super cache
+				$var_const['QUICK_CACHE_ALLOWED'] = false;	// quick cache
+				$var_const['ZENCACHE_ALLOWED'] = false;		// zencache
 			}
+
+			foreach ( $var_const as $name => $value )
+				if ( defined( $name ) )
+					$var_const[$name] = constant( $name );	// inherit existing values
+
+			return $var_const;
 		}
 
 		public static function require_libs( $plugin_filepath ) {

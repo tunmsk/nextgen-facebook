@@ -9,7 +9,7 @@
  * Description: Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.0
  * Tested Up To: 4.3
- * Version: 8.7.4
+ * Version: 8.7.5
  * 
  * Copyright 2012-2015 - Jean-Sebastien Morisset - http://surniaulula.com/
  */
@@ -219,24 +219,6 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				$this->notice->inf( 'HTML debug mode is active &ndash; '.$cache_status.
 					' and informational messages are being added as hidden HTML comments.' );
 			}
-
-			if ( ! empty( $this->options['plugin_ngfb_tid'] ) )
-				$this->util->add_plugin_filters( $this, array( 'installed_version' => 1, 'ua_plugin' => 1 ) );
-		}
-
-		public function filter_installed_version( $version ) {
-			if ( ! $this->is_avail['aop'] )
-				$version = '0.'.$version;
-			return $version;
-		}
-
-		public function filter_ua_plugin( $plugin ) {
-			if ( $this->check->aop( 'ngfb' ) )
-				$plugin .= 'L';
-			elseif ( $this->is_avail['aop'] )
-				$plugin .= 'U';
-			else $plugin .= 'G';
-			return $plugin;
 		}
 
 		public function set_options() {
