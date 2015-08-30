@@ -444,7 +444,22 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.7.4 =
+= Version 8.7.5 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* Moved the 'installed_version' and 'ua_plugin' filter methods from Ngfb to the NgfbUtil class.
+	* Added three new entries in the options table for installed, activated, and updated timestamps.
+	* Added a new NGFB_FILTER_SINGLE_TAGS constant to enable filtering of individual meta tags (disabled by default).
+	* Improved the setting of constants with new `set_variable_constants()` and `get_variable_constants()` methods in the NgfbConfig class.
+	* Refactored the `uninstall_plugin()` method in the NgfbRegister class to use the new `get_variable_constants()` method.
+
+= Version 8.7.4 (2015/08/29) =
 
 * **New Features**
 	* *None*
