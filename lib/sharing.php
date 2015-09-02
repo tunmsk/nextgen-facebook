@@ -166,8 +166,8 @@ jQuery("#ngfb-sidebar").click( function(){
 					'save_options' => 3,		// update the sharing css file
 					'option_type' => 4,		// identify option type for sanitation
 					'post_cache_transients' => 4,	// clear transients on post save
-					'tooltip_side' => 2,		// tooltip messages for side boxes
-					'tooltip_post' => 3,		// tooltip messages for post social settings
+					'messages_tooltip_side' => 3,	// tooltip messages for side boxes
+					'messages_tooltip_post' => 3,	// tooltip messages for post social settings
 				) );
 
 				$this->p->util->add_plugin_filters( $this, array( 
@@ -299,11 +299,11 @@ jQuery("#ngfb-sidebar").click( function(){
 			if ( ! empty( $info['lib']['submenu']['sharing'] ) )
 				$features['Sharing Buttons'] = array( 'classname' => $lca.'Sharing' );
 
-			if ( ! empty( $info['lib']['shortcode']['sharing'] ) )
-				$features['Sharing Shortcode'] = array( 'classname' => $lca.'ShortcodeSharing' );
-
 			if ( ! empty( $info['lib']['submenu']['style'] ) )
 				$features['Sharing Stylesheet'] = array( 'status' => $this->p->options['buttons_use_social_css'] ? 'on' : 'off' );
+
+			if ( ! empty( $info['lib']['shortcode']['sharing'] ) )
+				$features['Sharing Shortcode'] = array( 'classname' => $lca.'ShortcodeSharing' );
 
 			if ( ! empty( $info['lib']['widget']['sharing'] ) )
 				$features['Sharing Widget'] = array( 'classname' => $lca.'WidgetSharing' );
@@ -312,11 +312,13 @@ jQuery("#ngfb-sidebar").click( function(){
 		}
 
 		public function filter_status_pro_features( $features = array(), $lca = '', $info = array() ) {
-			if ( ! empty( $lca ) && ! empty( $info['lib']['submenu']['sharing'] ) ) {
+			if ( ! empty( $lca ) && 
+				! empty( $info['lib']['submenu']['sharing'] ) ) {
+
 				$aop = $this->p->check->aop( $lca );
 				$features['Social File Cache'] = array( 
-					'status' => ( empty( $this->options['plugin_file_cache_exp'] ) ?
-						( $aop ? 'on' : 'rec' ) : 'off' ),
+					'status' => empty( $this->options['plugin_file_cache_exp'] ) ? 
+						( $aop ? 'on' : 'rec' ) : 'off',
 					'td_class' => $aop ? '' : 'blank',
 				);
 				$features['Sharing Styles Editor'] = array( 
@@ -327,35 +329,33 @@ jQuery("#ngfb-sidebar").click( function(){
 			return $features;
 		}
 
-		public function filter_tooltip_side( $text, $idx ) {
-			$lca = $this->p->cf['lca'];
-			$short = $this->p->cf['plugin'][$lca]['short'];
-			$short_pro = $short.' Pro';
+		public function filter_messages_tooltip_side( $text, $idx, $atts ) {
 			switch ( $idx ) {
-				case 'tooltip-side-sharing-styles-editor':
-					$text = 'When showing <em>All Plugin Options</em>, the Sharing Styles settings page includes an editor for the various social sharing buttons.';
-					break;
 				case 'tooltip-side-sharing-buttons':
-					$text = 'Social sharing features include the '.$this->p->cf['menu'].' '.$this->p->util->get_admin_url( 'sharing', 'Buttons' ).' and '.$this->p->util->get_admin_url( 'style', 'Styles' ).' settings pages, the Social Settings -&gt; Sharing Buttons tab on Post or Page editing pages, along with the social sharing shortcode and widget. All social sharing features can be disabled using one of the available PHP <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/constants/" target="_blank">constants</a>.';
+					$text = 'Social sharing features include the '.$this->p->cf['menu'].' '.$this->p->util->get_admin_url( 'sharing', 'Sharing Buttons' ).' and '.$this->p->util->get_admin_url( 'style', 'Sharing Styles' ).' settings pages, the Social Settings -&gt; Sharing Buttons tab on editing pages, along with the social sharing shortcode and widget. All social sharing features can be disabled using one of the available PHP <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/constants/" target="_blank">constants</a>.';
+					break;
+				case 'tooltip-side-sharing-stylesheet':
+					$text = 'A stylesheet can be included on all webpages for the social sharing buttons. Enable or disable the addition of the stylesheet from the '.$this->p->util->get_admin_url( 'style', 'Sharing Styles' ).' settings page.';
 					break;
 				case 'tooltip-side-sharing-shortcode':
 					$text = 'Support for shortcode(s) can be enabled / disabled on the '.$this->p->util->get_admin_url( 'advanced', 'Advanced' ).' settings page. Shortcodes are disabled by default to optimize WordPress performance and content processing.';
 					break;
-				case 'tooltip-side-sharing-stylesheet':
-					$text = 'A stylesheet can be included on all webpages for the social sharing buttons. Enable or disable the addition of the stylesheet from the '.$this->p->util->get_admin_url( 'style', 'Styles' ).' settings page.';
-					break;
 				case 'tooltip-side-sharing-widget':
-					$text = 'The social sharing widget feature adds a \'Sharing Buttons\' widget in the WordPress Appearance - Widgets page. The widget can be used in any number of widget areas, to share the current webpage. The widget, along with all social sharing featured, can be disabled using an available <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/constants/" target="_blank">constant</a>.';
+					$text = 'The social sharing widget feature adds a "Sharing Buttons" widget in the WordPress Appearance -&gt; Widgets page. The widget can be used in any number of widget areas to share the current webpage URL. The widget, along with all social sharing features, can be disabled using an available <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/constants/" target="_blank">constant</a>.';
+					break;
+				case 'tooltip-side-sharing-styles-editor':
+					$text = 'NGFB Pro includes a CSS editor for the various social sharing button locations.';
 					break;
 				case 'tooltip-side-social-file-cache':
-					$text = $short_pro.' can save social sharing images and JavaScript to a cache folder, and provide URLs to these cached files instead of the originals. The current \'Social File Cache Expiry\' value, as defined on the '.$this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_cache', 'Advanced' ).' settings page, is '.$this->p->options['plugin_file_cache_exp'].' seconds (the default value of 0 disables the social file caching feature).';
+					$text = 'NGFB Pro can save social sharing images and JavaScript to a cache folder, and provide URLs to these cached files instead of the originals. The current \'Social File Cache Expiry\' value, as defined on the '.$this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_cache', 'Advanced' ).' settings page, is '.$this->p->options['plugin_file_cache_exp'].' seconds (the default value of 0 disables the social file caching feature).';
 					break;
 			}
 			return $text;
 		}
 
-		public function filter_tooltip_post( $text, $idx, $atts ) {
-			$ptn = empty( $atts['ptn'] ) ? 'Post' : $atts['ptn'];
+		public function filter_messages_tooltip_post( $text, $idx, $atts ) {
+			$ptn = empty( $atts['ptn'] ) ?
+				'Post' : $atts['ptn'];
 			switch ( $idx ) {
 				 case 'tooltip-post-pin_desc':
 					$text = 'A custom caption text, used by the Pinterest social sharing button, for the custom Image ID, attached or featured image.';

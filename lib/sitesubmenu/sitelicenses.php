@@ -40,7 +40,7 @@ if ( ! class_exists( 'NgfbSitesubmenuSitelicenses' ) && class_exists( 'NgfbAdmin
 		}
 
 		public function show_metabox_licenses() {
-			$this->licenses_metabox( true );	// $network = true
+			$this->licenses_metabox_content( true );	// $network = true
 		}
 	}
 }

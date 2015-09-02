@@ -54,6 +54,8 @@ if ( ! class_exists( 'NgfbUser' ) ) {
 				add_action( 'personal_options_update', array( &$this, 'sanitize_contact_methods' ), 5 ); 
 				add_action( 'personal_options_update', array( &$this, 'save_options' ), NGFB_META_SAVE_PRIORITY ); 
 				add_action( 'personal_options_update', array( &$this, 'clear_cache' ), NGFB_META_CACHE_PRIORITY ); 
+
+				$this->p->admin->timed_notices();
 			}
 		}
 

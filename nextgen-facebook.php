@@ -9,7 +9,7 @@
  * Description: Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.0
  * Tested Up To: 4.3
- * Version: 8.7.5
+ * Version: 8.8
  * 
  * Copyright 2012-2015 - Jean-Sebastien Morisset - http://surniaulula.com/
  */
@@ -216,8 +216,9 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				if ( $this->debug->enabled )
 					$this->debug->log( 'html debug mode is active: '.$cache_status );
 
-				$this->notice->inf( 'HTML debug mode is active &ndash; '.$cache_status.
-					' and informational messages are being added as hidden HTML comments.' );
+				if ( is_admin() )
+					$this->notice->inf( 'HTML debug mode is active &ndash; '.$cache_status.
+						' and informational messages are being added as hidden HTML comments.' );
 			}
 		}
 
@@ -284,6 +285,10 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 			if ( ! is_array( $this->site_options ) )
 				$this->site_options = array();
+
+			// just in case
+			unset( $this->options['options_filtered'],
+				$this->site_options['options_filtered'] );
 
 			$this->options = apply_filters( 'ngfb_get_options', $this->options );
 			$this->site_options = apply_filters( 'ngfb_get_site_options', $this->site_options );

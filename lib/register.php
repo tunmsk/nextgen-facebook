@@ -55,7 +55,7 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 			self::do_multisite( $sitewide, array( __CLASS__, 'uninstall_plugin' ) );
 
 			$var_const = NgfbConfig::get_variable_constants();
-			$opts = get_site_option( $var_const['NGFB_SITE_OPTIONS_NAME'] );
+			$opts = get_site_option( $var_const['NGFB_SITE_OPTIONS_NAME'], array() );
 
 			if ( empty( $opts['plugin_preserve'] ) )
 				delete_site_option( $var_const['NGFB_SITE_OPTIONS_NAME'] );
@@ -103,10 +103,8 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 				}
 			}
 
-			if ( ( $ts = get_option( NGFB_INSTALL_NAME ) ) === false )
-				update_option( NGFB_INSTALL_NAME, time() );
-
-			update_option( NGFB_ACTIVATE_NAME, time() );
+			SucomUtil::add_option_key( NGFB_TS_NAME, $lca.'_install', time() );	// does not update an existing key
+			SucomUtil::update_option_key( NGFB_TS_NAME, $lca.'_activate', time() );
 
 			set_transient( $lca.'_activation_redirect', true, 60 * 60 );
 
@@ -148,20 +146,25 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 
 		private static function uninstall_plugin() {
 			$var_const = NgfbConfig::get_variable_constants();
-			$opts = get_option( $var_const['NGFB_OPTIONS_NAME'] );
+			$opts = get_option( $var_const['NGFB_OPTIONS_NAME'], array() );
 
-			delete_option( $var_const['NGFB_INSTALL_NAME'] );
-			delete_option( $var_const['NGFB_ACTIVATE_NAME'] );
-			delete_option( $var_const['NGFB_UPDATE_NAME'] );
+			delete_option( $var_const['NGFB_TS_NAME'] );
+			delete_option( $var_const['NGFB_NOTICE_NAME'] );
 
 			if ( empty( $opts['plugin_preserve'] ) ) {
 				delete_option( $var_const['NGFB_OPTIONS_NAME'] );
 				delete_post_meta_by_key( $var_const['NGFB_META_NAME'] );
-				foreach ( array( $var_const['NGFB_META_NAME'], $var_const['NGFB_PREF_NAME'] ) as $meta_key ) {
-					foreach ( get_users( array( 'meta_key' => $meta_key ) ) as $user ) {
-						delete_user_option( $user->ID, $meta_key );
-						NgfbUser::delete_metabox_prefs( $user->ID );
-					}
+				foreach ( get_users() as $user ) {
+
+					// site specific user options
+					delete_user_option( $user->ID, $var_const['NGFB_NOTICE_NAME'] );
+					delete_user_option( $user->ID, $var_const['NGFB_DISMISS_NAME'] );
+
+					// global / network user options
+					delete_user_meta( $user->ID, $var_const['NGFB_META_NAME'] );
+					delete_user_meta( $user->ID, $var_const['NGFB_PREF_NAME'] );
+
+					NgfbUser::delete_metabox_prefs( $user->ID );
 				}
 				foreach ( NgfbTaxonomy::get_public_terms() as $term_id )
 					NgfbTaxonomy::delete_term_meta( $term_id, $var_const['NGFB_META_NAME'] );

@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.7.5',		// plugin version
+					'version' => '8.8',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it\'s shared or re-shared!',
@@ -35,7 +35,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'url' => array(
 						// wordpress
 						'download' => 'https://wordpress.org/plugins/nextgen-facebook/',
-						'review' => 'https://wordpress.org/support/view/plugin-reviews/nextgen-facebook#postform',
+						'review' => 'https://wordpress.org/support/view/plugin-reviews/nextgen-facebook?rate=5#postform',
 						'readme' => 'https://plugins.svn.wordpress.org/nextgen-facebook/trunk/readme.txt',
 						'setup' => 'https://plugins.svn.wordpress.org/nextgen-facebook/trunk/setup.html',
 						'wp_support' => 'https://wordpress.org/support/plugin/nextgen-facebook',
@@ -192,7 +192,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb349',				// increment when changing default options
+				'version' => 'ngfb350',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'options_version' => '',
@@ -373,7 +373,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_filter_content' => 0,
 					'plugin_filter_excerpt' => 0,
 					'plugin_filter_lang' => 1,
-					'plugin_shortcodes' => 1,
+					'plugin_shortcodes' => 0,
 					'plugin_widgets' => 1,
 					'plugin_auto_img_resize' => 1,
 					'plugin_ignore_small_img' => 1,
@@ -728,13 +728,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			/*
 			 * NGFB option and meta array names
 			 */
-			$var_const['NGFB_INSTALL_NAME'] = 'ngfb_install_ts';
-			$var_const['NGFB_ACTIVATE_NAME'] = 'ngfb_activate_ts';
-			$var_const['NGFB_UPDATE_NAME'] = 'ngfb_update_ts';
+			$var_const['NGFB_TS_NAME'] = 'ngfb_timestamps';
 			$var_const['NGFB_OPTIONS_NAME'] = 'ngfb_options';
 			$var_const['NGFB_SITE_OPTIONS_NAME'] = 'ngfb_site_options';
-			$var_const['NGFB_META_NAME'] = '_ngfb_meta';
-			$var_const['NGFB_PREF_NAME'] = '_ngfb_pref';
+			$var_const['NGFB_NOTICE_NAME'] = 'ngfb_notices';	// stored notices
+			$var_const['NGFB_DISMISS_NAME'] = 'ngfb_dismissed';	// dismissed notices
+			$var_const['NGFB_META_NAME'] = '_ngfb_meta';		// post meta
+			$var_const['NGFB_PREF_NAME'] = '_ngfb_pref';		// user meta
 
 			/*
 			 * NGFB option and meta array alternate names
