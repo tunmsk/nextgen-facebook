@@ -444,20 +444,26 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.7.5 =
+= Version 8.8 =
 
 * **New Features**
 	* *None*
 * **Improvements**
-	* *None*
+	* The "Pro Authentication ID" option field will is now included on the NGFB Pro Licenses settings page for all plugins / extensions with a Pro version available (and not only for active plugins / extensions).
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
 	* Moved the 'installed_version' and 'ua_plugin' filter methods from Ngfb to the NgfbUtil class.
 	* Added three new entries in the options table for installed, activated, and updated timestamps.
-	* Added a new NGFB_FILTER_SINGLE_TAGS constant to enable filtering of individual meta tags (disabled by default).
 	* Improved the setting of constants with new `set_variable_constants()` and `get_variable_constants()` methods in the NgfbConfig class.
 	* Refactored the `uninstall_plugin()` method in the NgfbRegister class to use the new `get_variable_constants()` method.
+	* Added a new NGFB_FILTER_SINGLE_TAGS constant to enable filtering of individual meta tags (disabled by default).
+	* Added new NGFB_TS_NAME, NGFB_NOTICE_NAME, and NGFB_DISMISS_NAME constants.
+	* Added new SucomUtil `add_option_key()` and `update_option_key()` static methods to update values within an option. 
+	* Refactored most of the SucomNotice class code. Notice messages are now saved as array keys (instead of array elements) with a payload array as their value. This allows notice messages to have a number of properties (message ID string, dismissible true/false, etc.). 
+	* Added a new SucomNotice `ajax_dismiss_notice()` method to handle dismissible notices.
+	* Added a new `$dismiss` argument to all SucomNotice logging methods.
+	* Added a new "Reset Hidden Notices" button on the NGFB settings pages.
 
 = Version 8.7.4 (2015/08/29) =
 
