@@ -212,7 +212,7 @@ jQuery("#ngfb-sidebar").click( function(){
 					if ( ! file_exists( $buttons_css_file ) )
 						continue;
 					elseif ( ! $fh = @fopen( $buttons_css_file, 'rb' ) )
-						$this->p->notice->err( 'Failed to open '.$buttons_css_file.' for reading.' );
+						$this->p->notice->err( 'Failed to open the '.$buttons_css_file.' file for reading.' );
 					else {
 						$css_data = fread( $fh, filesize( $buttons_css_file ) );
 						fclose( $fh );
@@ -391,10 +391,10 @@ jQuery("#ngfb-sidebar").click( function(){
 					wp_enqueue_style( $this->p->cf['lca'].'_sharing_buttons' );
 				} else {
 					if ( ! is_readable( self::$sharing_css_file ) ) {
-						if ( is_admin() )
-							$this->p->notice->err( self::$sharing_css_file.' is not readable.', true );
 						if ( $this->p->debug->enabled )
 							$this->p->debug->log( self::$sharing_css_file.' is not readable' );
+						if ( is_admin() )
+							$this->p->notice->err( 'The '.self::$sharing_css_file.' file is not readable.', true );
 					} else {
 						echo '<style type="text/css">';
 						if ( ( $fsize = @filesize( self::$sharing_css_file ) ) > 0 &&
@@ -424,18 +424,18 @@ jQuery("#ngfb-sidebar").click( function(){
 				if ( $classname !== false && class_exists( $classname ) )
 					$css_data = call_user_func( array( $classname, 'process' ), $css_data );
 				else {
-					if ( is_admin() )
-						$this->p->notice->err( 'Failed to load minify class SuextMinifyCssCompressor.', true );
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'failed to load minify class SuextMinifyCssCompressor' );
+					if ( is_admin() )
+						$this->p->notice->err( 'Failed to load the minify class SuextMinifyCssCompressor.', true );
 				}
 
 				if ( $fh = @fopen( self::$sharing_css_file, 'wb' ) ) {
 					if ( ( $written = fwrite( $fh, $css_data ) ) === false ) {
-						if ( is_admin() )
-							$this->p->notice->err( 'Failed writing to file '.self::$sharing_css_file.'.', true );
 						if ( $this->p->debug->enabled )
 							$this->p->debug->log( 'failed writing to '.self::$sharing_css_file );
+						if ( is_admin() )
+							$this->p->notice->err( 'Failed writing to the '.self::$sharing_css_file.' file.', true );
 					} elseif ( $this->p->debug->enabled ) {
 						if ( is_admin() )
 							$this->p->notice->inf( 'Updated CSS '.self::$sharing_css_file.' ('.$written.' bytes written)', true );
@@ -444,15 +444,15 @@ jQuery("#ngfb-sidebar").click( function(){
 					fclose( $fh );
 				} else {
 					if ( ! is_writable( NGFB_CACHEDIR ) ) {
-						if ( is_admin() )
-							$this->p->notice->err( NGFB_CACHEDIR.' is not writable.', true );
 						if ( $this->p->debug->enabled )
 							$this->p->debug->log( NGFB_CACHEDIR.' is not writable', true );
+						if ( is_admin() )
+							$this->p->notice->err( 'The '.NGFB_CACHEDIR.' folder is not writable.', true );
 					}
-					if ( is_admin() )
-						$this->p->notice->err( 'Failed to open file '.self::$sharing_css_file.' for writing.', true );
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'failed opening '.self::$sharing_css_file.' for writing' );
+					if ( is_admin() )
+						$this->p->notice->err( 'Failed to open file '.self::$sharing_css_file.' for writing.', true );
 				}
 			} else $this->unlink_sharing_css();
 		}
@@ -461,8 +461,7 @@ jQuery("#ngfb-sidebar").click( function(){
 			if ( file_exists( self::$sharing_css_file ) ) {
 				if ( ! @unlink( self::$sharing_css_file ) ) {
 					if ( is_admin() )
-						$this->p->notice->err( 'Error removing minimized stylesheet file'.
-							' &mdash; does the web server have sufficient privileges?', true );
+						$this->p->notice->err( 'Error removing the minimized stylesheet file &mdash; does the web server have sufficient privileges?', true );
 				}
 			}
 		}

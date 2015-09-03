@@ -372,37 +372,6 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 				$this->p->debug->log( $log_pre.'woocommerce shortcode support not available in the admin interface' );
 				$this->p->notice->err( $err_pre.__( '<strong>WooCommerce does not include shortcode support in the admin interface</strong> (required by WordPress for its content filters).', NGFB_TEXTDOM ).' '.sprintf( __( 'Please uncheck the \'<em>Apply WordPress Content Filters</em>\' option on the <a href="%s">%s Advanced settings page</a>.', NGFB_TEXTDOM ), $this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_content' ), $this->p->cf['menu'] ).' '.sprintf( __( 'You may also upgrade to the <a href="%s">%s version</a> that includes an <a href="%s">integration module specifically for WooCommerce</a> (shortcodes, products, categories, tags, images, etc.).', NGFB_TEXTDOM ), $purchase_url, $short_pro, 'http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/' ) );
 			}
-
-			// WooCommerce ShareYourCart Extension
-			if ( class_exists( 'ShareYourCartWooCommerce' ) ) {
-				$opts = get_option( 'woocommerce_shareyourcart_settings' );
-				if ( ! empty( $opts['enabled'] ) ) {
-					$this->p->debug->log( $log_pre.'woocommerce shareyourcart extension is enabled' );
-					$this->p->notice->err( $err_pre.__( 'The WooCommerce ShareYourCart Extension does not provide an option to turn off its Open Graph meta tags.', NGFB_TEXTDOM ).' '.sprintf( __( 'Please disable the extension on the <a href="%s">ShareYourCart Integration Tab</a>.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=woocommerce&tab=integration&section=shareyourcart' ) ) );
-				}
-			}
-
-			// Facebook
-  			if ( class_exists( 'Facebook_Loader' ) ) {
-                                $this->p->debug->log( $log_pre.'facebook plugin is active' );
-                                $this->p->notice->err( $err_pre.sprintf( __( 'Please <a href="%s">deactivate the Facebook plugin</a> to prevent duplicate Open Graph meta tags in your webpage headers.', NGFB_TEXTDOM ), get_admin_url( null, 'plugins.php?s=facebook/facebook.php' ) ) );
-                        }
-
-			// AddThis Social Bookmarking Widget
-			if ( defined( 'ADDTHIS_INIT' ) && ADDTHIS_INIT && 
-				( ! empty( $this->p->options['plugin_filter_content'] ) || ! empty( $this->p->options['plugin_filter_excerpt'] ) ) ) {
-				$this->p->debug->log( $log_pre.'addthis has broken excerpt / content filters' );
-				$this->p->notice->err( $err_pre.__( 'The AddThis Social Bookmarking Widget has incorrectly coded content and excerpt filters.', NGFB_TEXTDOM ).' '.sprintf( __( 'Please uncheck the \'<em>Apply WordPress Content / Excerpt Filters</em>\' options on the <a href="%s">%s Advanced settings page</a>.', NGFB_TEXTDOM ), $this->p->util->get_admin_url( 'advanced' ), $this->p->cf['menu'] ) ).' '.__( 'Disabling content filters will prevent shortcodes from being expanded, which may lead to incorrect / incomplete description meta tags.', NGFB_TEXTDOM );
-			}
-
-			// Slick Social Share Buttons
-			if ( class_exists( 'dc_jqslicksocial_buttons' ) ) {
-				$opts = get_option( 'dcssb_options' );
-				if ( empty( $opts['disable_opengraph'] ) ) {
-					$this->p->debug->log( $log_pre.'slick social share buttons opengraph is enabled' );
-					$this->p->notice->err( $err_pre.sprintf( __( 'Please check the \'<em>Disable Opengraph</em>\' option on the <a href="%s">Slick Social Share Buttons</a>.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=slick-social-share-buttons' ) ) );
-				}
-			}
 		}
 	}
 }
