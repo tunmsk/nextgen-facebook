@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.3
-Stable Tag: 8.7.4
+Stable Tag: 8.8
 
 Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it's shared or re-shared!
 
