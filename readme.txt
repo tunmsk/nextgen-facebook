@@ -465,7 +465,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added a new SucomNotice `ajax_dismiss_notice()` method to handle dismissible notices.
 	* Added a new `$dismiss` argument to all SucomNotice logging methods.
 	* Added a new "Reset Hidden Notices" button on the NGFB settings pages.
-	* Refactored the WpssoMessages->get() method a slight speed improvement. Please note that 'ngfb_tooltip_*' filters have been renamed to 'ngfb_messages_tooltip_*' (adjust your filter hooks accordingly).
+	* Refactored the WpssoMessages->get() method a slight speed improvement. Please note that 'ngfb_tooltip_\*' filters have been renamed to 'ngfb_messages_tooltip_\*' (adjust your filter hooks accordingly).
 
 = Version 8.7.4 (2015/08/29) =
 
