@@ -35,7 +35,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'url' => array(
 						// wordpress
 						'download' => 'https://wordpress.org/plugins/nextgen-facebook/',
-						'review' => 'https://wordpress.org/support/view/plugin-reviews/nextgen-facebook?rate=5#postform',
+						'review' => 'https://wordpress.org/support/view/plugin-reviews/nextgen-facebook?filter=5&rate=5#postform',
 						'readme' => 'https://plugins.svn.wordpress.org/nextgen-facebook/trunk/readme.txt',
 						'setup' => 'https://plugins.svn.wordpress.org/nextgen-facebook/trunk/setup.html',
 						'wp_support' => 'https://wordpress.org/support/plugin/nextgen-facebook',

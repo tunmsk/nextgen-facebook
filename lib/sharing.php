@@ -889,23 +889,27 @@ jQuery("#ngfb-sidebar").click( function(){
 		public function is_post_buttons_disabled() {
 			global $post;
 			$ret = false;
-			
+		
+			if ( ! isset( $post->ID ) )
+				return $ret;
+
 			if ( isset( $this->post_buttons_disabled[$post->ID] ) )
 				return $this->post_buttons_disabled[$post->ID];
 
 			if ( ! empty( $post ) ) {
-				$post_type = $post->post_type;
 				if ( $this->p->mods['util']['post']->get_options( $post->ID, 'buttons_disabled' ) ) {
 					if ( $this->p->debug->enabled )
-						$this->p->debug->log( 'post '.$post->ID.': sharing buttons disabled by custom meta option' );
+						$this->p->debug->log( 'post '.$post->ID.
+							': sharing buttons disabled by custom meta option' );
 					$ret = true;
-				} elseif ( ! empty( $post_type ) && empty( $this->p->options['buttons_add_to_'.$post_type] ) ) {
+				} elseif ( ! empty( $post->post_type ) && 
+					empty( $this->p->options['buttons_add_to_'.$post->post_type] ) ) {
 					if ( $this->p->debug->enabled )
-						$this->p->debug->log( 'post '.$post->ID.': sharing buttons not enabled for post type '.$post_type );
+						$this->p->debug->log( 'post '.$post->ID.
+							': sharing buttons not enabled for post type '.$post->post_type );
 					$ret = true;
 				}
 			}
-
 			return $this->post_buttons_disabled[$post->ID] = apply_filters( $this->p->cf['lca'].'_post_buttons_disabled', $ret, $post->ID );
 		}
 
