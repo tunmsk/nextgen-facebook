@@ -446,11 +446,9 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Version 8.8 (2015/09/03) =
 
-<blockquote>
 <p>This latest version include new dismissible warnings for rejected images (too small and/or extreme aspect ratios) when using WordPress v4.2+. When previously dismissed warnings are found, an additional notice will be shown to allow these warnings to be displayed again temporarily.</p>
 
 <p>This release also include code improvements for small performance gains on the admin side (tooltip and message lookups, for example). Developers should note that filtering of individual meta tags has been disabled by default, and can be re-enabled using the NGFB_FILTER_SINGLE_TAGS constant.</p>
-</blockquote>
 
 * **New Features**
 	* *None*
