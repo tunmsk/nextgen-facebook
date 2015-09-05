@@ -95,7 +95,8 @@ if ( ! class_exists( 'NgfbOptions' ) ) {
 				$update_options = ( empty( $opts['options_version'] ) || 
 					$opts['options_version'] !== $this->p->cf['opt']['version'] ) ? true : false;
 
-				if ( $update_version === true || $update_options === true ) {
+				if ( $update_version === true || 
+					$update_options === true ) {
 
 					if ( $update_version === true )
 						SucomUtil::update_option_key( NGFB_TS_NAME, $lca.'_update', time() );
