@@ -90,7 +90,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 	* *Summary Card* &mdash; All other webpages.
 * Customizable image dimensions for each Twitter Card type.
 * Additional profile contact fields with configurable label and field names.
-* A custom Social Setings metabox for each Post, Page, custom post type, user profile, and taxonomy (category and tag) pages.
+* A "Social Settings" metabox for Post, Page, custom post type, user profile, and taxonomy (category and tag) editing pages &mdash; the "Social Settings" metbox allows you to customize the article topic, the shared title, the Open Graph / Facebook / Rich Pin, Google Search, and Twitter Card descriptions, along with the shared image and/or video.
 * Options to include / exclude specific Google / SEO, Open Graph, and Twitter Card meta tags.
 * Support for embedded videos in content text (iframe and object HTML tags).
 * File caching for social sharing button images and JavaScript, maximizing performance on VPS and dedicated hardware hosting platforms.
