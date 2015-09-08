@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.8',		// plugin version
+					'version' => '8.9',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it\'s shared or re-shared!',
@@ -192,7 +192,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb350',				// increment when changing default options
+				'version' => 'ngfb355',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'options_version' => '',
@@ -392,6 +392,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_add_to_taxonomy' => 1,
 					'plugin_add_to_user' => 1,
 					'plugin_add_to_attachment' => 1,
+					'plugin_html_attr_filter_name' => 'language_attributes',
+					'plugin_html_attr_filter_prio' => 100,
+					'plugin_head_attr_filter_name' => 'language_attributes',
+					'plugin_head_attr_filter_prio' => 100,
 					'plugin_object_cache_exp' => 86400,	// 24 hours
 					'plugin_file_cache_exp' => 0,
 					'plugin_verify_certs' => 0,
@@ -612,9 +616,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'person' => 'http://schema.org/Person',
 					'place' => 'http://schema.org/Place',
 					'product' => 'http://schema.org/Product',
+					'recipe' => 'http://schema.org/Recipe',
 					'review' => 'http://schema.org/Review',
 					'other' => 'http://schema.org/Other',
 					'local.business' => 'http://schema.org/LocalBusiness',
+					'webpage' => 'http://schema.org/WebPage',
+					'website' => 'http://schema.org/WebSite',
 				),
 			),
 			'cache' => array(
@@ -758,7 +765,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			$var_const['NGFB_META_SAVE_PRIORITY'] = 6;
 			$var_const['NGFB_META_CACHE_PRIORITY'] = 9;
 			$var_const['NGFB_INIT_PRIORITY'] = 14;
-			$var_const['NGFB_DOCTYPE_PRIORITY'] = 100;
 			$var_const['NGFB_HEAD_PRIORITY'] = 10;
 			$var_const['NGFB_SOCIAL_PRIORITY'] = 100;		// used by social sharing features
 			$var_const['NGFB_FOOTER_PRIORITY'] = 100;		// used by social sharing features

@@ -269,7 +269,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 		public function aop( $lca = '', $li = true, $rv = true ) {
 			$lca = empty( $lca ) ? 
 				$this->p->cf['lca'] : $lca;
-			$kn = $lca.'_'.$li.'_'.$rv;
+			$kn = $lca.'-'.$li.'-'.$rv;
 			if ( isset( self::$c[$kn] ) )
 				return self::$c[$kn];
 			$on = 'plugin_'.$lca.'_tid';
