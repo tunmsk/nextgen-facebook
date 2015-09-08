@@ -444,6 +444,22 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.9 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Added a new "Theme Integration" tab on the Advanced settings page.
+	* Changed the default index schema type to "WebSite" instead of "Blog" (pseudo-standard SEO value).
+	* Changed the default post/page schema type to "WebPage" instead of "Article" (pseudo-standard SEO value).
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* Renamed the 'ngfb_doctype_prefix_ns' filter to 'ngfb_html_prefix_ns' (returns an array of namespace values).
+	* Renamed the 'ngfb_doctype_schema_type' filter to 'ngfb_schema_item_type' (returns an itemtype string value).
+	* Added a new `NgfbUtil::save_time()` method called by NGFB extensions when activated. 
+	* Added a new `SucomUtil::get_option_key()` method.
+
 = Version 8.8 (2015/09/03) =
 
 <p>This latest version include new dismissible warnings for rejected images (too small and/or extreme aspect ratios) when using WordPress v4.2+. When previously dismissed warnings are found, an additional notice will be shown to allow these warnings to be displayed again temporarily.</p>
