@@ -444,9 +444,9 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.9 =
+= Version 8.9 (2015/09/09) =
 
-<a href="http://surniaulula.com/2015/09/09/ngfb-wpsso-update-improved-schema-support/">Complete release notes for Version 8.9</a>.
+<p><a href="http://surniaulula.com/2015/09/09/ngfb-wpsso-update-improved-schema-support/">Complete release notes for NGFB Version 8.9</a>.</p>
 
 * **New Features**
 	* Added a new "Theme Integration" tab on the Advanced settings page.
