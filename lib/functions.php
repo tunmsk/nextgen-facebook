@@ -87,4 +87,11 @@ if ( ! function_exists( 'ngfb_get_short_url' ) ) {
 	}
 }
 
+if ( ! function_exists( 'ngfb_schema_attributes' ) ) {
+	function ngfb_schema_attributes( $attr = '' ) {
+		$ngfb =& Ngfb::get_instance();
+		echo $ngfb->schema->add_head_attr( $attr );
+	}
+}
+
 ?>
