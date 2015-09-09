@@ -690,7 +690,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			}
 
 			if ( $idx !== false ) {
-				if ( array_key_exists( $idx, self::$cf ) )
+				if ( isset( self::$cf[$idx] ) )
 					return self::$cf[$idx];
 				else return false;
 			} else return self::$cf;

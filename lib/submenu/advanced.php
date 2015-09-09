@@ -80,7 +80,7 @@ if ( ! class_exists( 'NgfbSubmenuAdvanced' ) && class_exists( 'NgfbAdmin' ) ) {
 			switch ( $metabox.'-'.$key ) {
 				case 'plugin-settings':
 
-					$rows[] = $this->p->util->get_th( 'Add Hidden Debug Messages', null, 'plugin_debug' ).
+					$rows['plugin_debug'] = $this->p->util->get_th( 'Add Hidden Debug Messages', null, 'plugin_debug' ).
 					'<td>'.( defined( 'NGFB_HTML_DEBUG' ) && NGFB_HTML_DEBUG ? 
 						$this->form->get_no_checkbox( 'plugin_debug' ).' NGFB_HTML_DEBUG constant enabled' :
 						$this->form->get_checkbox( 'plugin_debug' ) ).'</td>';
