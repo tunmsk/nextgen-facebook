@@ -455,8 +455,8 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
-	* Renamed the 'ngfb_doctype_prefix_ns' filter to 'ngfb_html_prefix_ns' (returns an array of namespace values).
-	* Renamed the 'ngfb_doctype_schema_type' filter to 'ngfb_schema_item_type' (returns an itemtype string value).
+	* Renamed the 'ngfb_doctype_prefix_ns' filter to 'ngfb_og_prefix_ns' (returns an array of Open Graph namespace URLs).
+	* Renamed the 'ngfb_doctype_schema_type' filter to 'ngfb_schema_item_type' (returns an itemtype URL string).
 	* Added a new `NgfbUtil::save_time()` method called by NGFB extensions when activated. 
 	* Added a new `SucomUtil::get_option_key()` method.
 
