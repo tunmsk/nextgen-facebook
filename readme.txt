@@ -464,6 +464,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added a new 'ngfb_schema_post_types' filter to return an associative array of post types and Schema URL values.
 	* Added a new `NgfbUtil::save_time()` method called by NGFB extensions when activated. 
 	* Added a new `SucomUtil::get_option_key()` method.
+	* Added a new `ngfb_schema_attributes()` function for optional use in the &lt;head&gt; element.
 
 = Version 8.8 (2015/09/03) =
 
