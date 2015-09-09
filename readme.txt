@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.3
-Stable Tag: 8.8
+Stable Tag: 8.9
 
 Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it's shared or re-shared!
 
@@ -446,7 +446,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Version 8.9 (2015/09/09) =
 
-<p><a href="http://surniaulula.com/2015/09/09/ngfb-wpsso-update-improved-schema-support/">Complete release notes for NGFB Version 8.9</a>.</p>
+<p><a href="http://surniaulula.com/2015/09/09/ngfb-wpsso-update-improved-schema-support/">Release notes for NGFB Version 8.9</a>.</p>
 
 * **New Features**
 	* Added a new "Theme Integration" tab on the Advanced settings page.
