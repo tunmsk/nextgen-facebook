@@ -131,6 +131,8 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'twitter_js_loc' => 'twitter_script_loc',
 			'buffer_js_loc' => 'buffer_script_loc',
 			'linkedin_js_loc' => 'linkedin_script_loc',
+			'og_desc_strip' => 'plugin_p_strip',
+			'og_desc_alt' => 'plugin_use_img_alt',
 		);
 
 		protected $p;
