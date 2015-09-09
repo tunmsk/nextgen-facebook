@@ -65,6 +65,7 @@ apply_filters( 'ngfb_save_options', $opts, $options_name );
 apply_filters( 'ngfb_save_site_options', $opts );
 apply_filters( 'ngfb_save_taxonomy_options', $opts );
 apply_filters( 'ngfb_save_user_options', $opts, $user_id );
+apply_filters( 'ngfb_schema_post_types', $schema_types );
 apply_filters( 'ngfb_schema_item_type', $item_type, $post_id, $obj );
 apply_filters( 'ngfb_section', $section );
 apply_filters( 'ngfb_sharing_show_on', $show_on, $prefix );

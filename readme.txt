@@ -447,16 +447,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 = Version 8.9 =
 
 * **New Features**
-	* *None*
-* **Improvements**
 	* Added a new "Theme Integration" tab on the Advanced settings page.
-	* Changed the default index schema type to "WebSite" instead of "Blog" (pseudo-standard SEO value).
-	* Changed the default post/page schema type to "WebPage" instead of "Article" (pseudo-standard SEO value).
+	* Added a new "Header <html> Attribute Filter" option on the Advanced settings page (Pro version).
+	* Added a new "Header <head> Attribute Filter" option on the Advanced settings page (Pro version).
+	* Added a new "WP Caption Paragraph Prefix" option on the Advanced settings page (Pro version).
+* **Improvements**
+	* Changed the default index schema type from "Blog" to "WebSite" (pseudo-standard SEO value).
+	* Changed the default post/page schema type from "Article" to "WebPage" (pseudo-standard SEO value).
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
 	* Renamed the 'ngfb_doctype_prefix_ns' filter to 'ngfb_og_prefix_ns' (returns an array of Open Graph namespace URLs).
 	* Renamed the 'ngfb_doctype_schema_type' filter to 'ngfb_schema_item_type' (returns an itemtype URL string).
+	* Added a new 'ngfb_schema_post_types' filter to return an associative array of post types and Schema URL values.
 	* Added a new `NgfbUtil::save_time()` method called by NGFB extensions when activated. 
 	* Added a new `SucomUtil::get_option_key()` method.
 
