@@ -444,6 +444,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.9.1 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Completed the Network NGFB Advanced settings page "Plugin Settings" tab with all available options (Pro version).
+* **Bugfixes**
+	* Fixed an incorrect "Include Preview Image(s)" default value in the Social Settings metabox (Pro version).
+* **Developer Notes**
+	* *None*
+
 = Version 8.9 (2015/09/09) =
 
 <p><a href="http://surniaulula.com/2015/09/09/ngfb-wpsso-update-improved-schema-support/">Release notes for NGFB Version 8.9</a>.</p>
