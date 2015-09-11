@@ -12,7 +12,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 	class NgfbConfig {
 
-		private static $cf = array(
+		public static $cf = array(
 			'lca' => 'ngfb',		// lowercase acronym
 			'uca' => 'NGFB',		// uppercase acronym
 			'menu' => 'NGFB',		// menu item label
@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.9',		// plugin version
+					'version' => '8.9.1',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it\'s shared or re-shared!',
@@ -636,7 +636,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 		// get_config is called very early, so don't apply filters unless instructed
 		public static function get_config( $idx = false, $filter = false ) { 
 
-			if ( ! isset( self::$cf['config_filtered'] ) || self::$cf['config_filtered'] !== true ) {
+			if ( ! isset( self::$cf['config_filtered'] ) || 
+				self::$cf['config_filtered'] !== true ) {
 
 				// remove the sharing libs if social sharing features are disabled
 				if ( defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) && NGFB_SOCIAL_SHARING_DISABLE ) {
