@@ -453,7 +453,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Bugfixes**
 	* Fixed an incorrect "Include Preview Image(s)" default value in the Social Settings metabox (Pro version).
 * **Developer Notes**
-	* *None*
+	* Moved the `conflict_warnings()` method from NgfbCheck to the NgfbAdmin class.
 
 = Version 8.9 (2015/09/09) =
 
