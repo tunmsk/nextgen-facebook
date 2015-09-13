@@ -736,9 +736,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 		public static function get_variable_constants() { 
 			$var_const = array();
 
-			if ( defined( 'NGFB_DEBUG' ) )				// backwards compatibility
-				$var_const['NGFB_HTML_DEBUG'] = NGFB_DEBUG;
-
 			if ( defined( 'NGFB_PLUGINDIR' ) ) {
 				$var_const['NGFB_CACHEDIR'] = NGFB_PLUGINDIR.'cache/';
 				$var_const['NGFB_TOPICS_LIST'] = NGFB_PLUGINDIR.'share/topics.txt';
