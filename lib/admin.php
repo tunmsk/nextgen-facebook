@@ -38,8 +38,8 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				add_action( 'admin_init', array( &$this, 'register_setting' ) );
 				add_action( 'admin_menu', array( &$this, 'add_admin_menus' ), NGFB_ADD_MENU_PRIORITY );
 				add_action( 'admin_menu', array( &$this, 'add_admin_settings' ), NGFB_ADD_SETTINGS_PRIORITY );
-				add_action( 'activated_plugin', array( &$this, 'um_activated_trunc_nag' ), 10, 2 );
-	
+				add_action( 'activated_plugin', array( &$this, 'check_activated_plugin' ), 10, 2 );
+
 				add_filter( 'current_screen', array( &$this, 'screen_notices' ) );
 				add_filter( 'plugin_action_links', array( &$this, 'add_plugin_action_links' ), 10, 2 );
 	
@@ -48,6 +48,9 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					add_action( 'network_admin_edit_'.NGFB_SITE_OPTIONS_NAME, array( &$this, 'save_site_options' ) );
 					add_filter( 'network_admin_plugin_action_links', array( &$this, 'add_plugin_action_links' ), 10, 2 );
 				}
+
+				add_filter( 'get_user_option_wpseo_dismissed_conflicts', 
+					array( &$this, 'dismiss_wpseo_notice' ), 10, 3 );
 			}
 
 		}
@@ -178,11 +181,14 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			}
 		}
 
-		public function um_activated_trunc_nag( $plugin = false, $sitewide = false ) {
-			$um_lca = $this->p->cf['lca'].'um';
-			$um_base = $this->p->cf['plugin'][$um_lca]['base'];
-			if ( $plugin === $um_base )
-				$this->p->notice->trunc( 'nag' );
+		public function check_activated_plugin( $plugin = false, $sitewide = false ) {
+			$lca = $this->p->cf['lca'];
+			$um_base = $this->p->cf['plugin'][$lca.'um']['base'];
+			switch ( $plugin ) {
+				case $um_base:
+					$this->p->notice->trunc( 'nag' );
+					break;
+			}
 		}
 
 		protected function set_form_property() {
@@ -1012,9 +1018,8 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$short = $this->p->cf['plugin'][$lca]['short'];
 			$short_pro = $short.' Pro';
 			$purchase_url = $this->p->cf['plugin'][$lca]['url']['purchase'];
-			$log_pre =  __( 'plugin conflict detected', WPSSO_TEXTDOM ) . ' - ';
-			$err_pre =  __( 'Plugin conflict detected', WPSSO_TEXTDOM ) . ' - ';
-			$user_id = get_current_user_id();
+			$log_pre =  __( 'plugin conflict detected', NGFB_TEXTDOM ) . ' - ';
+			$err_pre =  __( 'Plugin conflict detected', NGFB_TEXTDOM ) . ' - ';
 
 			// PHP
 			if ( empty( $this->p->is_avail['curl'] ) ) {
@@ -1023,11 +1028,11 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'url shortening is enabled but curl function is missing' );
-					$this->p->notice->err( sprintf( __( 'URL shortening has been enabled, but PHP\'s <a href="%s" target="_blank">Client URL Library</a> (cURL) is missing.', WPSSO_TEXTDOM ), 'http://ca3.php.net/curl' ).' '.__( 'Please contact your hosting provider to have the missing library installed.', WPSSO_TEXTDOM ) );
+					$this->p->notice->err( sprintf( __( 'URL shortening has been enabled, but PHP\'s <a href="%s" target="_blank">Client URL Library</a> (cURL) is missing.', NGFB_TEXTDOM ), 'http://ca3.php.net/curl' ).' '.__( 'Please contact your hosting provider to have the missing library installed.', NGFB_TEXTDOM ) );
 				} elseif ( ! empty( $this->p->options['plugin_file_cache_exp'] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'file caching is enabled but curl function is missing' );
-					$this->p->notice->err( sprintf( __( 'The file caching feature has been enabled but PHP\'s <a href="%s" target="_blank">Client URL Library</a> (cURL) is missing.', WPSSO_TEXTDOM ), 'http://ca3.php.net/curl' ).' '.__( 'Please contact your hosting provider to have the missing library installed.', WPSSO_TEXTDOM ) );
+					$this->p->notice->err( sprintf( __( 'The file caching feature has been enabled but PHP\'s <a href="%s" target="_blank">Client URL Library</a> (cURL) is missing.', NGFB_TEXTDOM ), 'http://ca3.php.net/curl' ).' '.__( 'Please contact your hosting provider to have the missing library installed.', NGFB_TEXTDOM ) );
 				}
 			}
 
@@ -1037,7 +1042,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				if ( ! empty( $opts['opengraph'] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $log_pre.'wpseo opengraph meta data option is enabled' );
-					$this->p->notice->err( $err_pre.sprintf( __( 'Please uncheck the \'<em>Add Open Graph meta data</em>\' Facebook option in the <a href="%s">Yoast SEO: Social</a> settings.', WPSSO_TEXTDOM ), get_admin_url( null, 'admin.php?page=wpseo_social#top#facebook' ) ) );
+					$this->p->notice->err( $err_pre.sprintf( __( 'Please uncheck the \'<em>Add Open Graph meta data</em>\' Facebook option in the <a href="%s">Yoast SEO: Social</a> settings.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=wpseo_social#top#facebook' ) ) );
 				}
 				if ( ! empty( $this->p->options['tc_enable'] ) && 
 					! empty( $opts['twitter'] ) &&
@@ -1045,26 +1050,18 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $log_pre.'wpseo twitter meta data option is enabled' );
-					$this->p->notice->err( $err_pre.sprintf( __( 'Please uncheck the \'<em>Add Twitter card meta data</em>\' Twitter option in the <a href="%s">Yoast SEO: Social</a> settings.', WPSSO_TEXTDOM ), get_admin_url( null, 'admin.php?page=wpseo_social#top#twitterbox' ) ) );
+					$this->p->notice->err( $err_pre.sprintf( __( 'Please uncheck the \'<em>Add Twitter card meta data</em>\' Twitter option in the <a href="%s">Yoast SEO: Social</a> settings.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=wpseo_social#top#twitterbox' ) ) );
 				}
 				if ( ! empty( $opts['googleplus'] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $log_pre.'wpseo googleplus meta data option is enabled' );
-					$this->p->notice->err( $err_pre.sprintf( __( 'Please uncheck the \'<em>Add Google+ specific post meta data</em>\' Google+ option in the <a href="%s">Yoast SEO: Social</a> settings.', WPSSO_TEXTDOM ), get_admin_url( null, 'admin.php?page=wpseo_social#top#google' ) ) );
+					$this->p->notice->err( $err_pre.sprintf( __( 'Please uncheck the \'<em>Add Google+ specific post meta data</em>\' Google+ option in the <a href="%s">Yoast SEO: Social</a> settings.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=wpseo_social#top#google' ) ) );
 				}
 				if ( ! empty( $opts['plus-publisher'] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $log_pre.'wpseo google plus publisher option is defined' );
-					$this->p->notice->err( $err_pre.sprintf( __( 'Please remove the \'<em>Google Publisher Page</em>\' value entered in the <a href="%s">Yoast SEO: Social</a> settings.', WPSSO_TEXTDOM ), get_admin_url( null, 'admin.php?page=wpseo_social#top#google' ) ) );
+					$this->p->notice->err( $err_pre.sprintf( __( 'Please remove the \'<em>Google Publisher Page</em>\' value entered in the <a href="%s">Yoast SEO: Social</a> settings.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=wpseo_social#top#google' ) ) );
 				}
-			}
-
-			// Yoast SEO Notifications (disable incorrect error)
-			$dismissed = get_user_option( 'wpseo_dismissed_conflicts', $user_id );
-			if ( ! is_array( $dismissed['open_graph'] ) ||
-				! in_array( $base, $dismissed['open_graph'] ) ) {
-				$dismissed['open_graph'][] = $base;
-				update_user_option( $user_id, 'wpseo_dismissed_conflicts', $dismissed );
 			}
 
 			// SEO Ultimate
@@ -1074,7 +1071,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					if ( array_key_exists( 'opengraph', $opts['modules'] ) && $opts['modules']['opengraph'] !== -10 ) {
 						if ( $this->p->debug->enabled )
 							$this->p->debug->log( $log_pre.'seo ultimate opengraph module is enabled' );
-						$this->p->notice->err( $err_pre.sprintf( __( 'Please disable the \'<em>Open Graph Integrator</em>\' module in the <a href="%s">SEO Ultimate plugin Module Manager</a>.', WPSSO_TEXTDOM ), get_admin_url( null, 'admin.php?page=seo' ) ) );
+						$this->p->notice->err( $err_pre.sprintf( __( 'Please disable the \'<em>Open Graph Integrator</em>\' module in the <a href="%s">SEO Ultimate plugin Module Manager</a>.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=seo' ) ) );
 					}
 				}
 			}
@@ -1085,12 +1082,12 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				if ( ! empty( $opts['modules']['aiosp_feature_manager_options']['aiosp_feature_manager_enable_opengraph'] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $log_pre.'aioseop social meta fetaure is enabled' );
-					$this->p->notice->err( $err_pre.sprintf( __( 'Please deactivate the \'<em>Social Meta</em>\' feature in the <a href="%s">All in One SEO Pack Feature Manager</a>.', WPSSO_TEXTDOM ), get_admin_url( null, 'admin.php?page=all-in-one-seo-pack/aioseop_feature_manager.php' ) ) );
+					$this->p->notice->err( $err_pre.sprintf( __( 'Please deactivate the \'<em>Social Meta</em>\' feature in the <a href="%s">All in One SEO Pack Feature Manager</a>.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=all-in-one-seo-pack/aioseop_feature_manager.php' ) ) );
 				}
 				if ( array_key_exists( 'aiosp_google_disable_profile', $opts ) && empty( $opts['aiosp_google_disable_profile'] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $log_pre.'aioseop google plus profile is enabled' );
-					$this->p->notice->err( $err_pre.sprintf( __( 'Please check the \'<em>Disable Google Plus Profile</em>\' option in the <a href="%s">All in One SEO Pack Plugin Options</a>.', WPSSO_TEXTDOM ), get_admin_url( null, 'admin.php?page=all-in-one-seo-pack/aioseop_class.php' ) ) );
+					$this->p->notice->err( $err_pre.sprintf( __( 'Please check the \'<em>Disable Google Plus Profile</em>\' option in the <a href="%s">All in One SEO Pack Plugin Options</a>.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=all-in-one-seo-pack/aioseop_class.php' ) ) );
 				}
 			}
 
@@ -1100,7 +1097,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 				if ( $this->p->debug->enabled )
 					$this->p->debug->log( $log_pre.'jetpack photon is enabled' );
-				$this->p->notice->err( $err_pre.__( '<strong>JetPack\'s Photon module cripples the WordPress image size functions on purpose</strong>.', WPSSO_TEXTDOM ).' '.sprintf( __( 'Please <a href="%s">deactivate the JetPack Photon module</a> or deactivate the %s Free plugin.', WPSSO_TEXTDOM ), get_admin_url( null, 'admin.php?page=jetpack' ), $short ).' '.sprintf( __( 'You may also upgrade to the <a href="%s">%s version</a> which includes an <a href="%s">integration module for JetPack Photon</a> to re-enable image size functions specifically for %s images.', WPSSO_TEXTDOM ), $purchase_url, $short_pro, 'http://wpsso.com/codex/plugins/wpsso/notes/modules/jetpack-photon/', $short ) );
+				$this->p->notice->err( $err_pre.__( '<strong>JetPack\'s Photon module cripples the WordPress image size functions on purpose</strong>.', NGFB_TEXTDOM ).' '.sprintf( __( 'Please <a href="%s">deactivate the JetPack Photon module</a> or deactivate the %s Free plugin.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=jetpack' ), $short ).' '.sprintf( __( 'You may also upgrade to the <a href="%s">%s version</a> which includes an <a href="%s">integration module for JetPack Photon</a> to re-enable image size functions specifically for %s images.', NGFB_TEXTDOM ), $purchase_url, $short_pro, 'http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/jetpack-photon/', $short ) );
 			}
 
 			// WooCommerce
@@ -1110,8 +1107,19 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 				if ( $this->p->debug->enabled )
 					$this->p->debug->log( $log_pre.'woocommerce shortcode support not available in the admin interface' );
-				$this->p->notice->err( $err_pre.__( '<strong>WooCommerce does not include shortcode support in the admin interface</strong> (required by WordPress for its content filters).', WPSSO_TEXTDOM ).' '.sprintf( __( 'Please uncheck the \'<em>Apply WordPress Content Filters</em>\' option on the <a href="%s">%s Advanced settings page</a>.', WPSSO_TEXTDOM ), $this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_content' ), $this->p->cf['menu'] ).' '.sprintf( __( 'You may also upgrade to the <a href="%s">%s version</a> that includes an <a href="%s">integration module specifically for WooCommerce</a> (shortcodes, products, categories, tags, images, etc.).', WPSSO_TEXTDOM ), $purchase_url, $short_pro, 'http://wpsso.com/codex/plugins/wpsso/notes/modules/woocommerce/' ) );
+				$this->p->notice->err( $err_pre.__( '<strong>WooCommerce does not include shortcode support in the admin interface</strong> (required by WordPress for its content filters).', NGFB_TEXTDOM ).' '.sprintf( __( 'Please uncheck the \'<em>Apply WordPress Content Filters</em>\' option on the <a href="%s">%s Advanced settings page</a>.', NGFB_TEXTDOM ), $this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_content' ), $this->p->cf['menu'] ).' '.sprintf( __( 'You may also upgrade to the <a href="%s">%s version</a> that includes an <a href="%s">integration module specifically for WooCommerce</a> (shortcodes, products, categories, tags, images, etc.).', NGFB_TEXTDOM ), $purchase_url, $short_pro, 'http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/' ) );
 			}
+		}
+
+		// Dismiss Incorrect Yoast SEO Notification
+		public function dismiss_wpseo_notice( $dismissed, $opt_name, $user_obj ) {
+			$lca = $this->p->cf['lca'];
+			$base = $this->p->cf['plugin'][$lca]['base'];
+			if ( ! is_array( $dismissed['open_graph'] ) ||
+				! in_array( $base, $dismissed['open_graph'] ) ) {
+				$dismissed['open_graph'][] = $base;
+			}
+			return $dismissed;
 		}
 	}
 }
