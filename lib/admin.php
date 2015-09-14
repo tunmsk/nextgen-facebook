@@ -31,9 +31,9 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				// nothing to do
 
 			} else {
-				$this->conflict_warnings();
 				$this->set_objects();
 				$this->pro_req_notices();
+				$this->conflict_warnings();
 
 				add_action( 'admin_init', array( &$this, 'register_setting' ) );
 				add_action( 'admin_menu', array( &$this, 'add_admin_menus' ), NGFB_ADD_MENU_PRIORITY );
@@ -1116,9 +1116,8 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$lca = $this->p->cf['lca'];
 			$base = $this->p->cf['plugin'][$lca]['base'];
 			if ( ! is_array( $dismissed['open_graph'] ) ||
-				! in_array( $base, $dismissed['open_graph'] ) ) {
-				$dismissed['open_graph'][] = $base;
-			}
+				! in_array( $base, $dismissed['open_graph'] ) )
+					$dismissed['open_graph'][] = $base;
 			return $dismissed;
 		}
 	}
