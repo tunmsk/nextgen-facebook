@@ -21,7 +21,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 <p><strong>NGFB automatically retrieves and uses information from a wide range or sources</strong>, including All in One SEO Pack, bbPress, BuddyPress, Easy Digital Downloads, HeadSpace2 SEO, JetPack Photon, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, Yoast SEO (aka WordPress SEO), WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, extends the WordPress REST API v2, and much more.</p>
 
 <blockquote>
-<p><strong>September 14, 2015 - NextGEN Facebook (NGFB) Replaced by WPSSO</strong></p>
+<p><strong>September 14, 2015 - WPSSO Replaced NextGEN Facebook (NGFB)</strong></p>
 <p>NextGEN Facebook (NGFB) is being replaced by the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin. WPSSO is a fork / child of NGFB &mdash; they have the same author, the same core features and code-base, but WPSSO is distributed without the sharing buttons and their related features (making WPSSO about 25% smaller than NGFB). Additional extension plugins are also available for WPSSO, including:
 <ul>
 <li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO App Meta</a></li>
