@@ -171,24 +171,6 @@
 
 <p>The Facebook, Google+ and Twitter sharing buttons support <em>multiple languages</em>. A default language can be chosen in the NGFB settings, and the <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/">Pro version</a> switches the sharing button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Open Graph (Facebook) and Pinterest Rich Pin descriptions, Tweet text, and other social captions.</p>
 
-<h4>User Profile Social Contacts</h4>
-
-<p>NGFB (Pro version) allows you to customize the field names, label, and add / remove the following contacts from the user profile page:</p>
-
-<ul>
-<li>AIM</li>
-<li>Facebook URL</li>
-<li>Google+ URL</li>
-<li>Jabber / Google Talk</li>
-<li>LinkedIn URL</li>
-<li>Pinterest URL</li>
-<li>Skype Username</li>
-<li>Tumblr URL</li>
-<li>Twitter @username</li>
-<li>Yahoo IM</li>
-<li>YouTube Channel URL</li>
-</ul>
-
 <div style="clear:both;"></div>
 
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
@@ -200,6 +182,26 @@
 <p>NGFB provides <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite Site Name</a> in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em>. The author (Person) markup includes the author's website URL, their profile social sharing image, and all listed contact URLs from their user profile. The publisher (Organization) markup includes the website URL, a corporate logo, a default image, and the publisher Facebook, Google+, LinkedIn, Pinterest, and Twitter business pages.</p>
 
 <div style="clear:both;"></div>
+
+<h4>User Profile Social Contacts</h4>
+
+<p>NGFB allows you to customize (Pro version) the field names, label, and add / remove the following contacts from the user profile page:</p>
+
+<ul>
+<li>AIM</li>
+<li>Facebook URL</li>
+<li>Google+ URL</li>
+<li>Instagram URL</li>
+<li>Jabber / Google Talk</li>
+<li>LinkedIn URL</li>
+<li>MySpace URL</li>
+<li>Pinterest URL</li>
+<li>Skype Username</li>
+<li>Tumblr URL</li>
+<li>Twitter @username</li>
+<li>Yahoo IM</li>
+<li>YouTube Channel URL</li>
+</ul>
 
 <h4>Complete Social Meta Tags</h4>
 
