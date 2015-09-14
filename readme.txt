@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.3
-Stable Tag: 8.9.1
+Stable Tag: 8.9.2
 
 Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it's shared or re-shared!
 
@@ -444,7 +444,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.9.1 (2015/09/13) =
+= Version 8.9.2 (2015/09/13) =
 
 * **New Features**
 	* *None*
@@ -569,7 +569,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 == Upgrade Notice ==
 
-= 8.9.1 =
+= 8.9.2 =
 
 Fixed incorrect "Include Preview Image(s)" default value in Social Settings metabox, and completed the Network Advanced settings page "Plugin Settings" tab (Pro version).
 

@@ -3,7 +3,7 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>NextGEN Facebook (NGFB)</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it&#039;s shared or re-shared!</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>8.9.1</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>8.9.2</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.3</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
