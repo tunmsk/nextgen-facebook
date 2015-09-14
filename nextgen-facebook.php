@@ -7,7 +7,7 @@
  * License: GPLv3
  * License URI: http://www.gnu.org/licenses/gpl.txt
  * Description: Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
- * Requires At Least: 3.0
+ * Requires At Least: 3.1
  * Tested Up To: 4.3
  * Version: 8.9.2
  * 
