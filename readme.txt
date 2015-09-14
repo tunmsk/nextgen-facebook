@@ -453,6 +453,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Fixed an incorrect "Include Preview Image(s)" default value in the Social Settings metabox (Pro version).
 * **Developer Notes**
 	* Moved the `conflict_warnings()` method from NgfbCheck to the NgfbAdmin class.
+	* Changed the minimum WordPress version from 3.0 to 3.1 to use NGFB (required to display admin notices).
 
 = Version 8.9 (2015/09/09) =
 
