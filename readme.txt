@@ -22,7 +22,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 
 <blockquote>
 <p><strong>September 14, 2015 - NextGEN Facebook (NGFB) Replaced by WPSSO</strong></p>
-<p>NextGEN Facebook (NGFB) is being replaced by the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin. WPSSO is a fork (aka child) of NGFB &mdash; they have the same author and the same core features, but WPSSO is distributed without the sharing buttons and their related features (making WPSSO about 25% smaller than NGFB). Additional extension plugins are also available for WPSSO, including:
+<p>NextGEN Facebook (NGFB) is being replaced by the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin. WPSSO is a fork / child of NGFB &mdash; they have the same author, the same core features and code-base, but WPSSO is distributed without the sharing buttons and their related features (making WPSSO about 25% smaller than NGFB). Additional extension plugins are also available for WPSSO, including:
 <ul>
 <li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO App Meta</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO Place and Location Meta</a></li>
@@ -33,7 +33,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 
 <h4>Quick List of Features</h4>
 
-<strong>Free / Basic Version</strong>
+<strong>NGFB Free / Basic Version</strong>
 
 * Adds Open Graph / Rich Pin meta tags (Facebook, Google+, Pinterest, LinkedIn, etc.).
 * Configurable image sizes for Open Graph (Facebook, LinkedIn, etc.) and Pinterest.
@@ -78,7 +78,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png" width="100%" height="100%"/></p>
 </div>
 
-<strong>Pro / Power-User Version</strong>
+<strong>NGFB Pro / Power-User Version</strong>
 
 * Twitter Card meta tags:
 	* *Product Card* &mdash; Product information from an e-commerce plugin.
