@@ -33,7 +33,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 
 <h4>Quick List of Features</h4>
 
-<strong>NGFB Free / Basic Version Features</strong>
+<strong>NGFB Free / Basic Features</strong>
 
 * Adds Open Graph / Rich Pin meta tags (Facebook, Google+, Pinterest, LinkedIn, etc.).
 * Configurable image sizes for Open Graph (Facebook, LinkedIn, etc.) and Pinterest.
@@ -78,7 +78,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png" width="100%" height="100%"/></p>
 </div>
 
-<strong>NGFB Pro / Power-User Version Features</strong>
+<strong>NGFB Pro / Power-User Features</strong>
 
 * Twitter Card meta tags:
 	* *Product Card* &mdash; Product information from an e-commerce plugin.
