@@ -126,6 +126,11 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 <p><a href="http://wpsso.com/extend/plugins/wpsso/">Purchase the Pro version on SurniaUlula.com</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 </blockquote>
 
+<div style="clear:both;"></div>
+<div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png" width="100%" height="100%"/></p>
+</div>
+
 <h4>Social Sharing Buttons</h4>
 
 NGFB comes with several sharing buttons, that you can optionally include on Post / Page editing pages, above / below your content or excerpt, [bbPress](https://wordpress.org/plugins/bbpress/) single pages, [BuddyPress](https://wordpress.org/plugins/buddypress/) activity entries, as a sidebar, widget, shortcode, or even call a function from your theme template(s). Each of the following sharing buttons can be enabled, configured, and styled individually:
@@ -271,11 +276,6 @@ NGFB (Pro version) also supports [Easy Digital Downloads](https://wordpress.org/
 <strong>Forums and Social</strong>
 
 NGFB (Pro version) supports [bbPress](https://wordpress.org/plugins/bbpress/) and [BuddyPress](https://wordpress.org/plugins/buddypress/) (see the [BuddyPress Integration Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/)), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, etc. Social sharing buttons can also be added to [bbPress](https://wordpress.org/plugins/bbpress/) single template pages and [BuddyPress](https://wordpress.org/plugins/buddypress/) activities.
-
-<div style="clear:both;"></div>
-<div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png" width="100%" height="100%"/></p>
-</div>
 
 <h4>Proven Performance</h4>
 
