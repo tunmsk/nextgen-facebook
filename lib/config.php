@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.9.2',		// plugin version
+					'version' => '8.10-dev1',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it\'s shared or re-shared!',
@@ -96,7 +96,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'admin' => array(
 								'general' => 'General Settings',
 								'advanced' => 'Advanced Settings',
-								'image-dimensions' => 'Social Image Dimensions',
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
 								'post' => 'Post Social Settings',
@@ -122,7 +121,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'admin' => array(
 								'general' => 'General Settings',
 								'advanced' => 'Advanced Settings',
-								'image-dimensions' => 'Social Image Dimensions',
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
 								'post' => 'Post Social Settings',
@@ -258,7 +256,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'rp_img_crop_x' => 'center',
 					'rp_img_crop_y' => 'center',
 					'rp_dom_verify' => '',
-					'tc_enable' => 1,
 					'tc_site' => '',
 					'tc_desc_len' => 200,
 					// summary card
@@ -273,28 +270,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'tc_lrgimg_crop' => 0,
 					'tc_lrgimg_crop_x' => 'center',
 					'tc_lrgimg_crop_y' => 'center',
-					// photo card
-					'tc_photo_width' => 600,
-					'tc_photo_height' => 600,
-					'tc_photo_crop' => 0,
-					'tc_photo_crop_x' => 'center',
-					'tc_photo_crop_y' => 'center',
-					// gallery card
-					'tc_gal_min' => 4,
-					'tc_gal_width' => 300,
-					'tc_gal_height' => 300,
-					'tc_gal_crop' => 0,
-					'tc_gal_crop_x' => 'center',
-					'tc_gal_crop_y' => 'center',
-					// product card
-					'tc_prod_width' => 300,
-					'tc_prod_height' => 300,
-					'tc_prod_crop' => 1,			// prefers square product images
-					'tc_prod_crop_x' => 'center',
-					'tc_prod_crop_y' => 'center',
-					'tc_prod_labels' => 2,
-					'tc_prod_def_label2' => 'Location',
-					'tc_prod_def_data2' => 'Unknown',
 					// enable/disable header html tags
 					'add_link_rel_author' => 1,
 					'add_link_rel_publisher' => 1,
@@ -822,6 +797,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			require_once( NGFB_PLUGINDIR.'lib/media.php' );
 			require_once( NGFB_PLUGINDIR.'lib/head.php' );
 			require_once( NGFB_PLUGINDIR.'lib/opengraph.php' );
+			require_once( NGFB_PLUGINDIR.'lib/twittercard.php' );
 			require_once( NGFB_PLUGINDIR.'lib/schema.php' );
 			require_once( NGFB_PLUGINDIR.'lib/functions.php' );
 
