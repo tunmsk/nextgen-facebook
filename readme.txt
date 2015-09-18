@@ -449,11 +449,12 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* *None*
 * **Improvements**
 	* Added Twitter Card features to Free version.
+	* Removed Photo and Gallery Card features.
+	* Removed Product Card from all e-Commerce integration modules (Pro version).
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
-	* Removed Product Card features from all e-Commerce modules (Pro version).
-	* Removed Photo and Gallery Card features.
+	* Removed the 'ngfb_tc_edd', 'ngfb_tc_marketpress', 'ngfb_tc_woocommerce', and 'ngfb_tc_wpecommerce' filters.
 
 = Version 8.9.2 (2015/09/13) =
 
