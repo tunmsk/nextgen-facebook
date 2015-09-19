@@ -80,7 +80,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 				case 'aop':
 					return ( ! defined( 'NGFB_PRO_MODULE_DISABLE' ) ||
 					( defined( 'NGFB_PRO_MODULE_DISABLE' ) && ! NGFB_PRO_MODULE_DISABLE ) ) &&
-					file_exists( NGFB_PLUGINDIR.'lib/pro/' ) ? true : false;
+					is_dir( NGFB_PLUGINDIR.'lib/pro/' ) ? true : false;
 					break;
 				case 'mt':
 				case 'metatags':
@@ -93,8 +93,10 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 					return ( ! defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) || 
 					( defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) && ! NGFB_SOCIAL_SHARING_DISABLE ) ) &&
 					empty( $_SERVER['NGFB_SOCIAL_SHARING_DISABLE'] ) &&
-					file_exists( NGFB_PLUGINDIR.'lib/sharing.php' ) &&
 					class_exists( $this->p->cf['lca'].'sharing' ) ? true : false;
+					break;
+				default:
+					return false;
 					break;
 			}
 		}
@@ -104,9 +106,8 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 
 			$ret['curl'] = function_exists( 'curl_init' ) ? true : false;
 			$ret['postthumb'] = function_exists( 'has_post_thumbnail' ) ? true : false;
-			$ret['metatags'] = $this->get_avail_check( 'mt' );
-			$ret['aop'] = $this->get_avail_check( 'aop' );
-			$ret['ssb'] = $this->get_avail_check( 'ssb' );
+			foreach ( array( 'aop', 'mt', 'ssb' ) as $key )
+				$ret[$key] = $this->get_avail_check( $key );
 
 			foreach ( $this->p->cf['cache'] as $name => $val ) {
 				$constant_name = 'NGFB_'.strtoupper( $name ).'_CACHE_DISABLE';
