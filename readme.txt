@@ -103,6 +103,8 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png" width="100%" height="100%"/></p>
 </div>
 
+<h4>Quick List of Features (Continued)</h4>
+
 <strong>NGFB Pro / Power-User Features</strong>
 
 * A "Social Settings" metabox for Post, Page, custom post type, user profile, and taxonomy (category and tag) editing pages &mdash; the "Social Settings" metbox allows you to customize the article topic, the shared title, the Open Graph / Facebook / Rich Pin, Google Search, and Twitter Card descriptions, along with the shared image and/or video.
