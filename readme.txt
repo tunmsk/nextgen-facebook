@@ -37,10 +37,10 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 
 * Adds Open Graph / Rich Pin meta tags (Facebook, Google+, Pinterest, LinkedIn, etc.).
 * Twitter Card meta tags:
-	* [App Card](https://dev.twitter.com/cards/types/app) &mdash; Apple Store iPhone / iPad or Google Play App (requires the [WPSSO](https://wordpress.org/plugins/wpsso/) plugin and [WPSSO App Meta](https://wordpress.org/plugins/wpsso-am/) extension).
-	* [Summary Card with Large Image](https://dev.twitter.com/cards/types/summary-large-image) &mdash; An image from the custom Social Settings, Featured, Attached, or NextGEN Gallery singlepic.
-	* [Summary Card](https://dev.twitter.com/cards/types/summary) &mdash; All other webpages.
-	* The [Photo Card](https://dev.twitter.com/cards/types/photo), [Gallery Card](https://dev.twitter.com/cards/types/gallery), and [Product Card](https://dev.twitter.com/cards/types/product) were deprecated by Twitter on July 3rd, 2015.
+	* [App Card](https://dev.twitter.com/cards/types/app) (requires the [WPSSO](https://wordpress.org/plugins/wpsso/) plugin and [WPSSO App Meta](https://wordpress.org/plugins/wpsso-am/) extension)
+	* [Summary Card with Large Image](https://dev.twitter.com/cards/types/summary-large-image)
+	* [Summary Card](https://dev.twitter.com/cards/types/summary)
+	* The [Photo Card](https://dev.twitter.com/cards/types/photo), [Gallery Card](https://dev.twitter.com/cards/types/gallery), and [Product Card](https://dev.twitter.com/cards/types/product) were deprecated by Twitter on July 3rd, 2015 and are no longer supported. The [Player Card](https://dev.twitter.com/cards/types/player) is available in the Pro version (as it requires video discovery modules available only in the Pro version).
 * Configurable image sizes for Open Graph (Facebook, LinkedIn, etc.) and Pinterest.
 * Customizable image dimensions for each Twitter Card type.
 * Optional fallback to a default image and video for index and search webpages.
@@ -107,10 +107,9 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 * A "Social Settings" metabox for Post, Page, custom post type, user profile, and taxonomy (category and tag) editing pages &mdash; the "Social Settings" metbox allows you to customize the article topic, the shared title, the Open Graph / Facebook / Rich Pin, Google Search, and Twitter Card descriptions, along with the shared image and/or video.
 * Support for embedded videos in content text ("iframe" and "object" HTML markup).
 * Additional Open Graph / Rich Pin meta tags for videos and e-commerce products.
-* Additional Twitter Card meta tags:
-	* [Player Card](https://dev.twitter.com/cards/types/player) &mdash; An embedded video from Slideshare, Vimeo, Wistia, and/or Youtube.
-* Configurable user profile contact field names and labels.
-* Include or exclude specific Google / SEO, Open Graph, Twitter Card, and Schema meta tags.
+* Twitter [Player Card](https://dev.twitter.com/cards/types/player) markup for embedded videos from Slideshare, Vimeo, Wistia, and/or Youtube.
+* Configurable user profile contact field names and labels for customized theme / SEO plugin integration.
+* Include or exclude individual Google / SEO, Open Graph, Twitter Card, and Schema meta tags from webpage headers.
 * File caching for social sharing button images and JavaScript, maximizing performance on VPS and dedicated hardware hosting platforms.
 * A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).
 * Dynamic button language switching based on the current WordPress locale.
