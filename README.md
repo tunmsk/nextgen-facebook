@@ -37,7 +37,15 @@
 
 <ul>
 <li>Adds Open Graph / Rich Pin meta tags (Facebook, Google+, Pinterest, LinkedIn, etc.).</li>
+<li>Twitter Card meta tags:
+
+<ul>
+<li><em>Player Card</em> &mdash; An embedded video in the Post / Page content.</li>
+<li><em>Large Image Summary Card</em> &mdash; An image from the custom Social Settings, Featured, Attached, or NextGEN Gallery singlepic.</li>
+<li><em>Summary Card</em> &mdash; All other webpages.</li>
+</ul></li>
 <li>Configurable image sizes for Open Graph (Facebook, LinkedIn, etc.) and Pinterest.</li>
+<li>Customizable image dimensions for each Twitter Card type.</li>
 <li>Optional fallback to a default image and video for index and search webpages.</li>
 <li>Supports featured, attached, gallery shortcode, and/or HTML image tags in content.</li>
 <li>Fallback to the image alt value if the content and except do not include any text.</li>
@@ -87,21 +95,10 @@
 <p><strong>NGFB Pro / Power-User Features</strong></p>
 
 <ul>
-<li>Twitter Card meta tags:
-
-<ul>
-<li><em>Product Card</em> &mdash; Product information from an e-commerce plugin.</li>
-<li><em>Player Card</em> &mdash; An embedded video in the Post / Page content.</li>
-<li><em>Gallery Card</em> &mdash; A Media Library gallery or NextGEN Gallery shortcode.</li>
-<li><em>Photo Card</em> &mdash; An Attachment page or NextGEN Gallery ImageBrowser webpage.</li>
-<li><em>Large Image Summary Card</em> &mdash; An image from the custom Social Settings, Featured, Attached, or NextGEN Gallery singlepic.</li>
-<li><em>Summary Card</em> &mdash; All other webpages.</li>
-</ul></li>
-<li>Customizable image dimensions for each Twitter Card type.</li>
-<li>Additional profile contact fields with configurable label and field names.</li>
 <li>A "Social Settings" metabox for Post, Page, custom post type, user profile, and taxonomy (category and tag) editing pages &mdash; the "Social Settings" metbox allows you to customize the article topic, the shared title, the Open Graph / Facebook / Rich Pin, Google Search, and Twitter Card descriptions, along with the shared image and/or video.</li>
-<li>Options to include / exclude specific Google / SEO, Open Graph, and Twitter Card meta tags.</li>
 <li>Support for embedded videos in content text (iframe and object HTML tags).</li>
+<li>Additional profile contact fields with configurable label and field names.</li>
+<li>Options to include / exclude specific Google / SEO, Open Graph, and Twitter Card meta tags.</li>
 <li>File caching for social sharing button images and JavaScript, maximizing performance on VPS and dedicated hardware hosting platforms.</li>
 <li>A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).</li>
 <li>Dynamic button language switching based on the current WordPress locale.</li>
