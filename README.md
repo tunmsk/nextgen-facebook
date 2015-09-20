@@ -40,7 +40,7 @@
 <li>Twitter Card meta tags:
 
 <ul>
-<li><a href="https://dev.twitter.com/cards/types/app">App Card</a> &mdash; Apple Store iPhone / iPad or Google Play App (requires the <a href="https://wordpress.org/plugins/wpsso-am/">WPSSO App Meta</a> extension).</li>
+<li><a href="https://dev.twitter.com/cards/types/app">App Card</a> &mdash; Apple Store iPhone / iPad or Google Play App (requires the <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin and <a href="https://wordpress.org/plugins/wpsso-am/">WPSSO App Meta</a> extension).</li>
 <li><a href="https://dev.twitter.com/cards/types/summary-large-image">Summary Card with Large Image</a> &mdash; An image from the custom Social Settings, Featured, Attached, or NextGEN Gallery singlepic.</li>
 <li><a href="https://dev.twitter.com/cards/types/summary">Summary Card</a> &mdash; All other webpages.</li>
 <li>The <a href="https://dev.twitter.com/cards/types/photo">Photo Card</a>, <a href="https://dev.twitter.com/cards/types/gallery">Gallery Card</a>, and <a href="https://dev.twitter.com/cards/types/product">Product Card</a> were deprecated by Twitter on July 3rd, 2015.</li>
@@ -48,9 +48,9 @@
 <li>Configurable image sizes for Open Graph (Facebook, LinkedIn, etc.) and Pinterest.</li>
 <li>Customizable image dimensions for each Twitter Card type.</li>
 <li>Optional fallback to a default image and video for index and search webpages.</li>
-<li>Supports featured, attached, gallery shortcode, and/or HTML image tags in content.</li>
-<li>Fallback to the image alt value if the content and except do not include any text.</li>
-<li>Validates image dimensions to provide accurate media for social websites.</li>
+<li>Support for featured, attached, gallery shortcode, and/or HTML image tags in content.</li>
+<li>Fallback to image alt values if the content and except do not include any text.</li>
+<li>Validates image dimensions and aspect ratios for reliable sharing results.</li>
 <li>Auto-regeneration of inaccurate / missing WordPress image sizes.</li>
 <li>Fully renders content (including shortcodes) for accurate description texts.</li>
 <li>Support of WordPress and/or SEO titles for Posts and Pages.</li>
@@ -61,7 +61,7 @@
 <li>Includes the author's name for Pinterest Rich Pins.</li>
 <li>Includes a Google / SEO description meta tag, if a known SEO plugin is not detected.</li>
 <li>Includes <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite Site Name</a> in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em>.</li>
-<li>Website / Business social account fields for JSON-LD markup:
+<li>Configurable website / business social accounts for JSON-LD markup:
 
 <ul>
 <li>Facebook Business Page URL</li>
@@ -72,7 +72,7 @@
 <li>LinkedIn Company Page URL</li>
 <li>MySpace Business (Brand) URL</li>
 </ul></li>
-<li>User profile contact fields:
+<li>User profile contact fields for Open Graph, Twitter Card, and JSON-LD markup:
 
 <ul>
 <li>Facebook URL</li>
@@ -86,7 +86,7 @@
 <li>Twitter @username</li>
 <li>YouTube Channel URL</li>
 </ul></li>
-<li>Validation tools, social preview, and meta tag list tabs on admin editing pages.</li>
+<li>Validation tools, social preview, and meta tag value tabs on admin editing pages.</li>
 <li>Customizable <em>multilingual</em> Site Title and Site Description texts.</li>
 <li>Contextual help for <em>every</em> plugin option and <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/">comprehensive online documentation</a>.</li>
 <li>Uses object and transient caches to provide incredibly fast execution speeds.</li>
@@ -235,7 +235,7 @@
 
 <p>NGFB adds <a href="http://ogp.me/">Open Graph</a> (Facebook), <a href="http://developers.pinterest.com/rich_pins/">Pinterest Rich Pins</a>, <a href="https://dev.twitter.com/docs/cards">Twitter Cards</a>, and <a href="http://en.wikipedia.org/wiki/Search_engine_optimization">Search Engine Optimization</a> meta tags to the head section of webpages. These meta tags are used by Google Search and all social websites to describe and display your content correctly (title, description, hashtags, images, videos, product, author profile / authorship, publisher, etc.). NGFB is a complete social sharing solution that uses the <em>existing</em> content of your webpages to build HTML meta tags &mdash; There's no need to manually enter / configure any additional values or settings (although many settings and options <em>are</em> available). <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/screenshots/">See examples from Google Search, Google+, Facebook, Twitter, Pinterest, StumbleUpon, Tumblr, etc.</a> &mdash; along with screenshots of the NGFB settings pages.</p>
 
-<p>NGFB (Pro version) provides the <a href="https://dev.twitter.com/cards/types/summary">Summary</a>, <a href="https://dev.twitter.com/cards/types/summary-large-image">Summary with Large Image</a>, and <a href="https://dev.twitter.com/cards/types/player">Player</a> Twitter Cards &mdash; <em>including configurable image sizes for each card type</em>. The <a href="https://dev.twitter.com/cards/types/photo">Photo</a>, <a href="https://dev.twitter.com/cards/types/gallery">Gallery</a>, and <a href="https://dev.twitter.com/cards/types/product">Product</a> Twitter Cards were deprecated by Twitter on July 3rd, 2015.</p>
+<p>NGFB provides the <a href="https://dev.twitter.com/cards/types/summary">Summary</a>, <a href="https://dev.twitter.com/cards/types/summary-large-image">Summary with Large Image</a>, and <a href="https://dev.twitter.com/cards/types/player">Player</a> Twitter Cards &mdash; <em>including configurable image sizes for each card type</em>. The <a href="https://dev.twitter.com/cards/types/photo">Photo</a>, <a href="https://dev.twitter.com/cards/types/gallery">Gallery</a>, and <a href="https://dev.twitter.com/cards/types/product">Product</a> Twitter Cards were deprecated by Twitter on July 3rd, 2015.</p>
 
 <ul>
 <li><strong>Google / SEO Link and Meta Tags</strong>
@@ -289,27 +289,15 @@
 <li>image</li>
 <li>url</li>
 </ul></li>
-<li><strong>Twitter Card Meta Tags</strong> (Pro version)
+<li><strong>Twitter Card Meta Tags</strong>
 
 <ul>
 <li>twitter:card (Summary, Summary with Large Image, App, and Player Cards)</li>
 <li>twitter:creator</li>
-<li>twitter:data1</li>
-<li>twitter:data2</li>
-<li>twitter:data3</li>
-<li>twitter:data4</li>
 <li>twitter:description</li>
 <li>twitter:image</li>
 <li>twitter:image:width</li>
 <li>twitter:image:height</li>
-<li>twitter:image0</li>
-<li>twitter:image1</li>
-<li>twitter:image2</li>
-<li>twitter:image3</li>
-<li>twitter:label1</li>
-<li>twitter:label2</li>
-<li>twitter:label3</li>
-<li>twitter:label4</li>
 <li>twitter:player</li>
 <li>twitter:player:width</li>
 <li>twitter:player:height</li>

@@ -37,16 +37,16 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 
 * Adds Open Graph / Rich Pin meta tags (Facebook, Google+, Pinterest, LinkedIn, etc.).
 * Twitter Card meta tags:
-	* [App Card](https://dev.twitter.com/cards/types/app) &mdash; Apple Store iPhone / iPad or Google Play App (requires the [WPSSO App Meta](https://wordpress.org/plugins/wpsso-am/) extension).
+	* [App Card](https://dev.twitter.com/cards/types/app) &mdash; Apple Store iPhone / iPad or Google Play App (requires the [WPSSO](https://wordpress.org/plugins/wpsso/) plugin and [WPSSO App Meta](https://wordpress.org/plugins/wpsso-am/) extension).
 	* [Summary Card with Large Image](https://dev.twitter.com/cards/types/summary-large-image) &mdash; An image from the custom Social Settings, Featured, Attached, or NextGEN Gallery singlepic.
 	* [Summary Card](https://dev.twitter.com/cards/types/summary) &mdash; All other webpages.
 	* The [Photo Card](https://dev.twitter.com/cards/types/photo), [Gallery Card](https://dev.twitter.com/cards/types/gallery), and [Product Card](https://dev.twitter.com/cards/types/product) were deprecated by Twitter on July 3rd, 2015.
 * Configurable image sizes for Open Graph (Facebook, LinkedIn, etc.) and Pinterest.
 * Customizable image dimensions for each Twitter Card type.
 * Optional fallback to a default image and video for index and search webpages.
-* Supports featured, attached, gallery shortcode, and/or HTML image tags in content.
-* Fallback to the image alt value if the content and except do not include any text.
-* Validates image dimensions to provide accurate media for social websites.
+* Support for featured, attached, gallery shortcode, and/or HTML image tags in content.
+* Fallback to image alt values if the content and except do not include any text.
+* Validates image dimensions and aspect ratios for reliable sharing results.
 * Auto-regeneration of inaccurate / missing WordPress image sizes.
 * Fully renders content (including shortcodes) for accurate description texts.
 * Support of WordPress and/or SEO titles for Posts and Pages.
@@ -57,7 +57,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 * Includes the author's name for Pinterest Rich Pins.
 * Includes a Google / SEO description meta tag, if a known SEO plugin is not detected.
 * Includes <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite Site Name</a> in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em>.
-* Website / Business social account fields for JSON-LD markup:
+* Configurable website / business social accounts for JSON-LD markup:
 	* Facebook Business Page URL
 	* Google+ Business Page URL
 	* Pinterest Company Page URL
@@ -65,7 +65,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 	* Instagram Business URL
 	* LinkedIn Company Page URL
 	* MySpace Business (Brand) URL
-* User profile contact fields:
+* User profile contact fields for Open Graph, Twitter Card, and JSON-LD markup:
 	* Facebook URL
 	* Google+ URL
 	* Instagram URL
@@ -76,7 +76,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 	* Tumblr URL
 	* Twitter @username
 	* YouTube Channel URL
-* Validation tools, social preview, and meta tag list tabs on admin editing pages.
+* Validation tools, social preview, and meta tag value tabs on admin editing pages.
 * Customizable *multilingual* Site Title and Site Description texts.
 * Contextual help for *every* plugin option and [comprehensive online documentation](http://surniaulula.com/codex/plugins/nextgen-facebook/).
 * Uses object and transient caches to provide incredibly fast execution speeds.
@@ -200,7 +200,7 @@ NGFB allows you to customize (Pro version) the field names, label, and add / rem
 
 NGFB adds [Open Graph](http://ogp.me/) (Facebook), [Pinterest Rich Pins](http://developers.pinterest.com/rich_pins/), [Twitter Cards](https://dev.twitter.com/docs/cards), and [Search Engine Optimization](http://en.wikipedia.org/wiki/Search_engine_optimization) meta tags to the head section of webpages. These meta tags are used by Google Search and all social websites to describe and display your content correctly (title, description, hashtags, images, videos, product, author profile / authorship, publisher, etc.). NGFB is a complete social sharing solution that uses the *existing* content of your webpages to build HTML meta tags &mdash; There's no need to manually enter / configure any additional values or settings (although many settings and options *are* available). <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/screenshots/">See examples from Google Search, Google+, Facebook, Twitter, Pinterest, StumbleUpon, Tumblr, etc.</a> &mdash; along with screenshots of the NGFB settings pages.
 
-NGFB (Pro version) provides the [Summary](https://dev.twitter.com/cards/types/summary), [Summary with Large Image](https://dev.twitter.com/cards/types/summary-large-image), and [Player](https://dev.twitter.com/cards/types/player) Twitter Cards &mdash; *including configurable image sizes for each card type*. The [Photo](https://dev.twitter.com/cards/types/photo), [Gallery](https://dev.twitter.com/cards/types/gallery), and [Product](https://dev.twitter.com/cards/types/product) Twitter Cards were deprecated by Twitter on July 3rd, 2015.
+NGFB provides the [Summary](https://dev.twitter.com/cards/types/summary), [Summary with Large Image](https://dev.twitter.com/cards/types/summary-large-image), and [Player](https://dev.twitter.com/cards/types/player) Twitter Cards &mdash; *including configurable image sizes for each card type*. The [Photo](https://dev.twitter.com/cards/types/photo), [Gallery](https://dev.twitter.com/cards/types/gallery), and [Product](https://dev.twitter.com/cards/types/product) Twitter Cards were deprecated by Twitter on July 3rd, 2015.
 
 * **Google / SEO Link and Meta Tags**
 	* author
@@ -241,25 +241,13 @@ NGFB (Pro version) provides the [Summary](https://dev.twitter.com/cards/types/su
 	* description
 	* image
 	* url
-* **Twitter Card Meta Tags** (Pro version)
+* **Twitter Card Meta Tags**
 	* twitter:card (Summary, Summary with Large Image, App, and Player Cards)
 	* twitter:creator
-	* twitter:data1
-	* twitter:data2
-	* twitter:data3
-	* twitter:data4
 	* twitter:description
 	* twitter:image
 	* twitter:image:width
 	* twitter:image:height
-	* twitter:image0
-	* twitter:image1
-	* twitter:image2
-	* twitter:image3
-	* twitter:label1
-	* twitter:label2
-	* twitter:label3
-	* twitter:label4
 	* twitter:player
 	* twitter:player:width
 	* twitter:player:height
