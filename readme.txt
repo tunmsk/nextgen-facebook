@@ -38,7 +38,6 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 * Adds Open Graph / Rich Pin meta tags (Facebook, Google+, Pinterest, LinkedIn, etc.).
 * Twitter Card meta tags:
 	* [App Card](https://dev.twitter.com/cards/types/app) &mdash; Apple Store iPhone / iPad or Google Play App (requires the [WPSSO App Meta](https://wordpress.org/plugins/wpsso-am/) extension).
-	* [Player Card](https://dev.twitter.com/cards/types/player) &mdash; An embedded video in the Post / Page content (Slideshare, Vimeo, Wistia, Youtube).
 	* [Summary Card with Large Image](https://dev.twitter.com/cards/types/summary-large-image) &mdash; An image from the custom Social Settings, Featured, Attached, or NextGEN Gallery singlepic.
 	* [Summary Card](https://dev.twitter.com/cards/types/summary) &mdash; All other webpages.
 	* The [Photo Card](https://dev.twitter.com/cards/types/photo), [Gallery Card](https://dev.twitter.com/cards/types/gallery), and [Product Card](https://dev.twitter.com/cards/types/product) were deprecated by Twitter on July 3rd, 2015.
@@ -53,13 +52,31 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 * Support of WordPress and/or SEO titles for Posts and Pages.
 * Configurable title separator character (hyphen by default).
 * Configurable title and description lengths for different contexts (Open Graph, Twitter Card, SEO).
-* Includes author and publisher profile URLs for Facebook and Google Search.
-* Includes hashtags from Post / Page WordPress Tags.
+* Includes author and publisher profile URLs and markup for Facebook and Google Search.
+* Includes hashtags from Post and Page WordPress tags.
 * Includes the author's name for Pinterest Rich Pins.
-* Includes a Google / SEO description meta tag if a known SEO plugin is not detected.
+* Includes a Google / SEO description meta tag, if a known SEO plugin is not detected.
 * Includes <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite Site Name</a> in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em>.
-* Provides Facebook, Google+ and Twitter URL user profile contact fields.
-* Validation tools and special meta tag preview tabs on admin edit pages.
+* Website / Business social account fields for JSON-LD markup:
+	* Facebook Business Page URL
+	* Google+ Business Page URL
+	* Pinterest Company Page URL
+	* Twitter Business @username
+	* Instagram Business URL
+	* LinkedIn Company Page URL
+	* MySpace Business (Brand) URL
+* User profile contact fields:
+	* Facebook URL
+	* Google+ URL
+	* Instagram URL
+	* LinkedIn URL
+	* MySpace URL
+	* Pinterest URL
+	* Skype Username
+	* Tumblr URL
+	* Twitter @username
+	* YouTube Channel URL
+* Validation tools, social preview, and meta tag list tabs on admin editing pages.
 * Customizable *multilingual* Site Title and Site Description texts.
 * Contextual help for *every* plugin option and [comprehensive online documentation](http://surniaulula.com/codex/plugins/nextgen-facebook/).
 * Uses object and transient caches to provide incredibly fast execution speeds.
@@ -88,9 +105,12 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 <strong>NGFB Pro / Power-User Features</strong>
 
 * A "Social Settings" metabox for Post, Page, custom post type, user profile, and taxonomy (category and tag) editing pages &mdash; the "Social Settings" metbox allows you to customize the article topic, the shared title, the Open Graph / Facebook / Rich Pin, Google Search, and Twitter Card descriptions, along with the shared image and/or video.
-* Support for embedded videos in content text (iframe and object HTML tags).
-* Additional profile contact fields with configurable label and field names.
-* Options to include / exclude specific Google / SEO, Open Graph, and Twitter Card meta tags.
+* Support for embedded videos in content text ("iframe" and "object" HTML markup).
+* Additional Open Graph / Rich Pin meta tags for videos and e-commerce products.
+* Additional Twitter Card meta tags:
+	* [Player Card](https://dev.twitter.com/cards/types/player) &mdash; An embedded video from Slideshare, Vimeo, Wistia, and/or Youtube.
+* Configurable user profile contact field names and labels.
+* Include or exclude specific Google / SEO, Open Graph, Twitter Card, and Schema meta tags.
 * File caching for social sharing button images and JavaScript, maximizing performance on VPS and dedicated hardware hosting platforms.
 * A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).
 * Dynamic button language switching based on the current WordPress locale.
