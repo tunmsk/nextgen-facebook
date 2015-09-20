@@ -70,10 +70,11 @@
 <li>Twitter Card meta tags:
 
 <ul>
-<li><em>Player Card</em> &mdash; An embedded video in the Post / Page content.</li>
-<li><em>Large Image Summary Card</em> &mdash; An image from the custom Social Settings, Featured, Attached, or NextGEN Gallery singlepic.</li>
-<li><em>App Card</em> &mdash; Apple Store iPhone / iPad or Google Play App (exclusive to the <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin and its <a href="https://wordpress.org/plugins/wpsso-am/">WPSSO App Meta</a> extension).</li>
-<li><em>Summary Card</em> &mdash; All other webpages.</li>
+<li><a href="https://dev.twitter.com/cards/types/app">App Card</a> &mdash; Apple Store iPhone / iPad or Google Play App (requires the <a href="https://wordpress.org/plugins/wpsso-am/">WPSSO App Meta</a> extension).</li>
+<li><a href="https://dev.twitter.com/cards/types/player">Player Card</a> &mdash; An embedded video in the Post / Page content (Slideshare, Vimeo, Wistia, Youtube).</li>
+<li><a href="https://dev.twitter.com/cards/types/summary-large-image">Summary Card with Large Image</a> &mdash; An image from the custom Social Settings, Featured, Attached, or NextGEN Gallery singlepic.</li>
+<li><a href="https://dev.twitter.com/cards/types/summary">Summary Card</a> &mdash; All other webpages.</li>
+<li>The <a href="https://dev.twitter.com/cards/types/photo">Photo Card</a>, <a href="https://dev.twitter.com/cards/types/gallery">Gallery Card</a>, and <a href="https://dev.twitter.com/cards/types/product">Product Card</a> were deprecated by Twitter on July 3rd, 2015.</li>
 </ul></li>
 <li>Configurable image sizes for Open Graph (Facebook, LinkedIn, etc.) and Pinterest.</li>
 <li>Customizable image dimensions for each Twitter Card type.</li>
@@ -194,7 +195,7 @@
 <li><strong>Reddit</strong></li>
 <li><strong>StumbleUpon</strong></li>
 <li><strong>Tumblr</strong> (Links, Quotes, Images, Videos)</li>
-<li><strong>Twitter</strong> (Summary, Large Image Summary, Photo, Gallery, Player and Product Cards)</li>
+<li><strong>Twitter</strong></li>
 </ul>
 
 <p>The Facebook, Google+ and Twitter sharing buttons support <em>multiple languages</em>. A default language can be chosen in the NGFB settings, and the <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/">Pro version</a> switches the sharing button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Open Graph (Facebook) and Pinterest Rich Pin descriptions, Tweet text, and other social captions.</p>
@@ -235,7 +236,7 @@
 
 <p>NGFB adds <a href="http://ogp.me/">Open Graph</a> (Facebook), <a href="http://developers.pinterest.com/rich_pins/">Pinterest Rich Pins</a>, <a href="https://dev.twitter.com/docs/cards">Twitter Cards</a>, and <a href="http://en.wikipedia.org/wiki/Search_engine_optimization">Search Engine Optimization</a> meta tags to the head section of webpages. These meta tags are used by Google Search and all social websites to describe and display your content correctly (title, description, hashtags, images, videos, product, author profile / authorship, publisher, etc.). NGFB is a complete social sharing solution that uses the <em>existing</em> content of your webpages to build HTML meta tags &mdash; There's no need to manually enter / configure any additional values or settings (although many settings and options <em>are</em> available). <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/screenshots/">See examples from Google Search, Google+, Facebook, Twitter, Pinterest, StumbleUpon, Tumblr, etc.</a> &mdash; along with screenshots of the NGFB settings pages.</p>
 
-<p>NGFB (Pro version) provides the <a href="https://dev.twitter.com/docs/cards/types/summary-card">Summary</a>, <a href="https://dev.twitter.com/docs/cards/large-image-summary-card">Large Image Summary</a>, <a href="https://dev.twitter.com/docs/cards/types/photo-card">Photo</a>, <a href="https://dev.twitter.com/docs/cards/types/gallery-card">Gallery</a>, <a href="https://dev.twitter.com/docs/cards/types/player-card">Player</a> and <a href="https://dev.twitter.com/docs/cards/types/product-card">Product</a> Twitter Cards &mdash; <em>including configurable image sizes for each card type</em>.</p>
+<p>NGFB (Pro version) provides the <a href="https://dev.twitter.com/cards/types/summary">Summary</a>, <a href="https://dev.twitter.com/cards/types/summary-large-image">Summary with Large Image</a>, and <a href="https://dev.twitter.com/cards/types/player">Player</a> Twitter Cards &mdash; <em>including configurable image sizes for each card type</em>. The <a href="https://dev.twitter.com/cards/types/photo">Photo</a>, <a href="https://dev.twitter.com/cards/types/gallery">Gallery</a>, and <a href="https://dev.twitter.com/cards/types/product">Product</a> Twitter Cards were deprecated by Twitter on July 3rd, 2015.</p>
 
 <ul>
 <li><strong>Google / SEO Link and Meta Tags</strong>
@@ -292,7 +293,7 @@
 <li><strong>Twitter Card Meta Tags</strong> (Pro version)
 
 <ul>
-<li>twitter:card (Summary, Large Image Summary, Photo, Gallery, Player and Product)</li>
+<li>twitter:card (Summary, Summary with Large Image, App, and Player Cards)</li>
 <li>twitter:creator</li>
 <li>twitter:data1</li>
 <li>twitter:data2</li>
