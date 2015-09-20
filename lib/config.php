@@ -642,10 +642,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					self::$cf = apply_filters( self::$cf['lca'].'_get_config', self::$cf );
 					self::$cf['config_filtered'] = true;
 					self::$cf['*'] = array( 
+						'base' => array(),
 						'lib' => array(),
 						'version' => '',
 					);
 					foreach ( self::$cf['plugin'] as $lca => $info ) {
+						if ( isset( $info['base'] ) )
+							self::$cf['*']['base'][$info['base']] = $lca;
 						if ( isset( $info['lib'] ) && is_array( $info['lib'] ) )
 							self::$cf['*']['lib'] = SucomUtil::array_merge_recursive_distinct( 
 								self::$cf['*']['lib'], 
@@ -659,17 +662,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 				// complete relative paths in the image array
 				foreach ( self::$cf['plugin'] as $lca => $info ) {
-					if ( isset( $info['base'] ) ) {
-						$base = self::$cf['plugin'][$lca]['base'];	// nextgen-facebook/nextgen-facebook.php
-						foreach ( array( 'img' ) as $sub ) {
-							if ( isset( $info[$sub] ) && is_array( $info[$sub] ) ) {
-								foreach ( $info[$sub] as $id => $url ) {
-									if ( ! empty( $url ) && strpos( $url, '//' ) === false )
-										self::$cf['plugin'][$lca][$sub][$id] = trailingslashit( plugins_url( '', $base ) ).$url;
-								}
-							}
-						}
-					}
+					if ( ! isset( $info['base'] ) )
+						continue;
+					$base = self::$cf['plugin'][$lca]['base'];	// nextgen-facebook/nextgen-facebook.php
+					foreach ( $info['img'] as $id => $url )
+						if ( ! empty( $url ) && strpos( $url, '//' ) === false )
+							self::$cf['plugin'][$lca]['img'][$id] = trailingslashit( plugins_url( '', $base ) ).$url;
 				}
 			}
 
