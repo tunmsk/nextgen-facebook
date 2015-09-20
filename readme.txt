@@ -39,6 +39,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 * Twitter Card meta tags:
 	* *Player Card* &mdash; An embedded video in the Post / Page content.
 	* *Large Image Summary Card* &mdash; An image from the custom Social Settings, Featured, Attached, or NextGEN Gallery singlepic.
+	* *App Card* &mdash; Apple Store iPhone / iPad or Google Play App (exclusive to the [WPSSO](https://wordpress.org/plugins/wpsso/) plugin and its [WPSSO App Meta](https://wordpress.org/plugins/wpsso-am/) extension).
 	* *Summary Card* &mdash; All other webpages.
 * Configurable image sizes for Open Graph (Facebook, LinkedIn, etc.) and Pinterest.
 * Customizable image dimensions for each Twitter Card type.

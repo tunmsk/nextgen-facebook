@@ -42,6 +42,7 @@
 <ul>
 <li><em>Player Card</em> &mdash; An embedded video in the Post / Page content.</li>
 <li><em>Large Image Summary Card</em> &mdash; An image from the custom Social Settings, Featured, Attached, or NextGEN Gallery singlepic.</li>
+<li><em>App Card</em> &mdash; Apple Store iPhone / iPad or Google Play App (exclusive to the <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin and its <a href="https://wordpress.org/plugins/wpsso-am/">WPSSO App Meta</a> extension).</li>
 <li><em>Summary Card</em> &mdash; All other webpages.</li>
 </ul></li>
 <li>Configurable image sizes for Open Graph (Facebook, LinkedIn, etc.) and Pinterest.</li>
