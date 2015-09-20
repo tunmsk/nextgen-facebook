@@ -182,7 +182,17 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						// surniaulula
 						'download' => 'http://surniaulula.com/extend/plugins/nextgen-facebook-um/',
 						'latest_zip' => 'http://surniaulula.com/extend/plugins/nextgen-facebook-um/latest/',
+						'review' => '',
+						'readme' => 'https://raw.githubusercontent.com/SurniaUlula/nextgen-facebook-um/master/readme.txt',
+						'wp_support' => '',
 						'update' => 'http://surniaulula.com/extend/plugins/nextgen-facebook-um/update/',
+						'purchase' => '',
+						'changelog' => 'http://surniaulula.com/extend/plugins/nextgen-facebook-um/changelog/',
+						'codex' => '',
+						'faq' => '',
+						'notes' => '',
+						'feed' => '',
+						'pro_support' => '',
 					),
 				),
 			),
@@ -671,19 +681,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
-			$cf = self::get_config();
-			$slug = $cf['plugin'][$cf['lca']]['slug'];
-			$version = $cf['plugin'][$cf['lca']]['version'];
-
-			// constants that cannot be pre-defined
 			define( 'NGFB_FILEPATH', $plugin_filepath );						
 			define( 'NGFB_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
-			define( 'NGFB_PLUGINBASE', plugin_basename( $plugin_filepath ) );
-			define( 'NGFB_TEXTDOM', $slug );
+			define( 'NGFB_PLUGINBASE', self::$cf['plugin']['ngfb']['base'] );		// nextgen-facebook/nextgen-facebook.php
+			define( 'NGFB_TEXTDOM', self::$cf['plugin']['ngfb']['slug'] );			// nextgen-facebook
 			define( 'NGFB_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
-			define( 'NGFB_NONCE', md5( NGFB_PLUGINDIR.'-'.$version.
+			define( 'NGFB_NONCE', md5( NGFB_PLUGINDIR.'-'.self::$cf['plugin']['ngfb']['version'].
 				( defined( 'NONCE_SALT' ) ? NONCE_SALT : '' ) ) );
-
 			self::set_variable_constants();
 		}
 
