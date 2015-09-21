@@ -450,6 +450,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.10.1 =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Added Free/Pro status to the admin menu / settings item name.
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* Added saving of all plugin extension versions to the options array.
+	* Removed all Photo, Gallery, and Product Twitter Card related options from the options array.
+	* Changed NgfbAdmin $readme_info to a static variable.
+
 = Version 8.10 (2015/09/20) =
 
 <p>The Photo Card, Gallery Card, and Product Card were deprecated by Twitter on July 3rd, 2015. NGFB continues to support all <a href="https://dev.twitter.com/cards/types">current Twitter Card formats</a>, including the Summary Card, Summary Card with Large Image, App Card (exclusive to WPSSO), and Player Card &mdash; in both the Free (New) and Pro versions.</p>
