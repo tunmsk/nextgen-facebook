@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.10',		// plugin version
+					'version' => '8.10.1-dev1',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it\'s shared or re-shared!',
@@ -197,10 +197,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb358',				// increment when changing default options
+				'version' => 'ngfb360',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
-					'options_version' => '',
 					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length
 					'schema_website_json' => 1,
 					'schema_publisher_json' => 1,
@@ -332,8 +331,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					/*
 					 * Advanced Settings
 					 */
-					'plugin_version' => '',
-					'plugin_ngfb_tid' => '',
 					// Plugin Settings Tab
 					'plugin_debug' => 0,				// Add Hidden Debug Messages
 					'plugin_preserve' => 0,				// Preserve Settings on Uninstall
@@ -381,6 +378,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_bitly_api_key' => '',
 					'plugin_google_api_key' => '',
 					'plugin_google_shorten' => 0,
+					// Contact Field Names and Labels
 					'plugin_cm_fb_name' => 'facebook', 
 					'plugin_cm_fb_label' => 'Facebook URL', 
 					'plugin_cm_fb_enabled' => 1,
@@ -420,16 +418,14 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'wp_cm_yim_name' => 'yim',
 					'wp_cm_yim_label' => 'Yahoo IM', 
 					'wp_cm_yim_enabled' => 1,
+					// Extension Plugins and Pro Licenses
+					'plugin_ngfb_tid' => '',
 				),
 				'site_defaults' => array(
 					'options_filtered' => false,
-					'options_version' => '',
 					/*
 					 * Advanced Settings
 					 */
-					'plugin_version' => '',
-					'plugin_ngfb_tid' => '',
-					'plugin_ngfb_tid:use' => 'default',
 					// Plugin Settings Tab
 					'plugin_debug' => 0,				// Add Hidden Debug Messages
 					'plugin_debug:use' => 'default',
@@ -456,6 +452,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_file_cache_exp:use' => 'default',
 					'plugin_verify_certs' => 0,			// Verify SSL Certificates
 					'plugin_verify_certs:use' => 'default',
+					// Extension Plugins and Pro Licenses
+					'plugin_ngfb_tid' => '',
+					'plugin_ngfb_tid:use' => 'default',
 				),
 				'pre' => array(
 					'email' => 'email', 
@@ -662,12 +661,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 				// complete relative paths in the image array
 				foreach ( self::$cf['plugin'] as $lca => $info ) {
-					if ( ! isset( $info['base'] ) )
-						continue;
-					$base = self::$cf['plugin'][$lca]['base'];	// nextgen-facebook/nextgen-facebook.php
 					foreach ( $info['img'] as $id => $url )
 						if ( ! empty( $url ) && strpos( $url, '//' ) === false )
-							self::$cf['plugin'][$lca]['img'][$id] = trailingslashit( plugins_url( '', $base ) ).$url;
+							self::$cf['plugin'][$lca]['img'][$id] = trailingslashit( plugins_url( '', $info['base'] ) ).$url;
 				}
 			}
 
