@@ -303,14 +303,14 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 = Install and Uninstall =
 
 <ul>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/developer-special-buy-one-get-one-free/">Developer Special – Buy one, Get one Free</a></li>
 	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/install-the-plugin/">Install the Plugin</a></li>
 	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/">Integration Notes</a>
 	<ul>
 		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/buddypress-integration/">BuddyPress Integration</a></li>
 	</ul></li>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/debugging-and-problem-solving/">Debugging and Problem Solving</a></li>
 	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/uninstall-the-plugin/">Uninstall the Plugin</a></li>
+	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/debugging-and-problem-solving/">Debugging and Problem Solving</a></li>
+	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/developer-special-buy-one-get-one-free/">Developer Special – Buy one, Get one Free</a></li>
 </ul>
 
 = Plugin Setup =
