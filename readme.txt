@@ -456,6 +456,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* *None*
 * **Improvements**
 	* Added Free/Pro status to the admin menu / settings item name.
+	* Slight performance improvement when reading the options array.
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
