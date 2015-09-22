@@ -459,7 +459,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added Free / Pro status text to the NGFB admin menu / settings item names.
 * **Bugfixes**
 	* Fixed the Open Graph default title and description values in the post Social Settings metabox.
-	* Fixed the use of a possibly missing NextGEN Gallery Pro version module in the Twitter Card class (Free version).
+	* Fixed use of a missing NextGEN Gallery Pro version module in the Twitter Card class (Free version).
 * **Developer Notes**
 	* Added saving of plugin extension version numbers to the options array when new versions are found.
 	* Removed all Photo, Gallery, and Product Twitter Card related option keys from the options array.
@@ -606,6 +606,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* The NGFB WordPress REST API v2 module extends the returned /wp-json/wp/v2/posts (including custom post types), terms, and users JSON with a new 'head' array field consisting of 'html' and 'parts' arrays (Pro version).
 
 == Upgrade Notice ==
+
+= 8.10.1 =
+
+2015/09/23 Fixed OG default title + description in Social Settings metabox. Fixed use of a missing NextGEN Gallery Pro version module in Free version. Slight performance improvement when reading the options array.
 
 = 8.10 =
 
