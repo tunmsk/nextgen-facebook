@@ -455,7 +455,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **New Features**
 	* *None*
 * **Improvements**
-	* *None*
+	* User and taxonomy "Priority Media" now takes precedence over forced default media.
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
