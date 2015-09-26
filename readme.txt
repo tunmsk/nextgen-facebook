@@ -455,9 +455,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **New Features**
 	* *None*
 * **Improvements**
-	* User and taxonomy "Priority Media" now takes precedence over forced default media.
+	* The user and taxonomy "Priority Media" options now takes precedence over any forced default media from the plugin settings.
+	* Added the 'Maximum Images', 'Maximum Videos', and 'Include Preview Image(s)' options to the user and taxonomy Social Settings metabox.
 * **Bugfixes**
-	* *None*
+	* Fixed the saving and checking / use of the 'Include Preview Image(s)' option in the Social Settings metabox.
 * **Developer Notes**
 	* Removed the unnecessary current/new options comparison before saving in the NgfbOptions `save_options()` method.
 	* Renamed a few variables and methods for improve readability:
@@ -496,6 +497,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
+	* Removed the 'ngfb_tc_edd', 'ngfb_tc_marketpress', 'ngfb_tc_woocommerce', and 'ngfb_tc_wpecommerce' filters.
 	* Removed the 'ngfb_tc_edd', 'ngfb_tc_marketpress', 'ngfb_tc_woocommerce', and 'ngfb_tc_wpecommerce' filters.
 	* Added a new NgfbUtil::save_all_times() method to save installation, activation, and update times.
 
