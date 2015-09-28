@@ -8,7 +8,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.3.1
-Stable Tag: 8.10.1
+Stable Tag: 8.10.2
 
 Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it's shared or re-shared!
 
@@ -458,9 +458,9 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* The user and taxonomy "Priority Media" options now takes precedence over any forced default media from the plugin settings.
 	* Added the 'Maximum Images', 'Maximum Videos', and 'Include Preview Image(s)' options to the user and taxonomy Social Settings metabox.
 * **Bugfixes**
-	* Fixed the saving and checking / use of the 'Include Preview Image(s)' option in the Social Settings metabox.
+	* Fixed the saving / checking / use of the 'Include Preview Image(s)' option in the Social Settings metabox.
 	* Fixed the default Open Graph title and description values in the Social Settings metabox (custom values were detected as defaults and being lost after saving a second time).
-	* Fixed detection of the `profile.php` page as an 'user page' for custom social settings.
+	* Fixed detection of the admin-side `profile.php` page as a 'user page' for custom social settings.
 * **Developer Notes**
 	* Removed unnecessary current/new options comparison in the NgfbOptions `save_options()` method (current options may have been incorrectly reported as new by some database caching solutions).
 	* Renamed a few variables and methods for improve readability:
@@ -628,6 +628,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* The NGFB WordPress REST API v2 module extends the returned /wp-json/wp/v2/posts (including custom post types), terms, and users JSON with a new 'head' array field consisting of 'html' and 'parts' arrays (Pro version).
 
 == Upgrade Notice ==
+
+= 8.10.2 =
+
+Fixed use of the 'Include Preview Image(s)' option in Social Settings metabox. Fixed default Open Graph title / description values in Social Settings metabox. Fixed detection of profile.php as a 'user page' for custom settings.
 
 = 8.10.1 =
 
