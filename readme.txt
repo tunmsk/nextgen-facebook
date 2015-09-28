@@ -450,7 +450,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.10.2 =
+= Version 8.10.2 2015/09/29 =
 
 * **New Features**
 	* *None*
@@ -471,7 +471,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 		* Renamed the NgfbSchema `add_head_attr()` public method to `add_head_attributes()`.
 		* Renamed the NgfbOpengraph `add_html_attr()` public method to `add_html_attributes()`.
 
-= Version 8.10.1 (2015/09/23) =
+= Version 8.10.1 2015/09/23 =
 
 * **New Features**
 	* *None*
@@ -486,7 +486,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Removed all Photo, Gallery, and Product Twitter Card related option keys from the options array.
 	* Changed the WpssoAdmin $readme_info property to a static variable.
 
-= Version 8.10 (2015/09/20) =
+= Version 8.10 2015/09/20 =
 
 <p>The Photo Card, Gallery Card, and Product Card were deprecated by Twitter on July 3rd, 2015. NGFB continues to support all <a href="https://dev.twitter.com/cards/types">current Twitter Card formats</a>, including the Summary Card, Summary Card with Large Image, App Card (exclusive to WPSSO), and Player Card &mdash; in both the Free (New) and Pro versions.</p>
 
@@ -503,7 +503,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Removed the 'ngfb_tc_edd', 'ngfb_tc_marketpress', 'ngfb_tc_woocommerce', and 'ngfb_tc_wpecommerce' filters.
 	* Added a new NgfbUtil::save_all_times() method to save installation, activation, and update times.
 
-= Version 8.9.2 (2015/09/13) =
+= Version 8.9.2 2015/09/13 =
 
 * **New Features**
 	* *None*
@@ -515,7 +515,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Moved the `conflict_warnings()` method from NgfbCheck to the NgfbAdmin class.
 	* Changed the minimum WordPress version from 3.0 to 3.1 (required to display admin notices).
 
-= Version 8.9 (2015/09/09) =
+= Version 8.9 2015/09/09 =
 
 <p><a href="http://surniaulula.com/2015/09/09/ngfb-wpsso-update-improved-schema-support/">Release notes for NGFB Version 8.9</a>.</p>
 
@@ -539,7 +539,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added a new `SucomUtil::get_option_key()` method.
 	* Added a new `ngfb_schema_attributes()` function for optional use in the &lt;head&gt; element.
 
-= Version 8.8 (2015/09/03) =
+= Version 8.8 2015/09/03 =
 
 <p>This latest version include new dismissible warnings for rejected images (too small and/or extreme aspect ratios) when using WordPress v4.2+. When previously dismissed warnings are found, an additional notice will be shown to allow these warnings to be displayed again temporarily.</p>
 
@@ -566,78 +566,9 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added a new "Reset Hidden Notices" button on the NGFB settings pages.
 	* Refactored the WpssoMessages->get() method a slight speed improvement. Please note that 'ngfb_tooltip_\*' filters have been renamed to 'ngfb_messages_tooltip_\*' (adjust your filter hooks accordingly).
 
-= Version 8.7.4 (2015/08/29) =
-
-* **New Features**
-	* *None*
-* **Improvements**
-	* *None*
-* **Bugfixes**
-	* Fixed a Facebook debugger error for 'fb:admins' with multiple comma-delimited values by creating additional 'fb:admins' meta tags (with a single value each).
-* **Developer Notes**
-	* Moved the Open Graph type and Schema itemtype lists to arrays under NgfbConfig::$cf['head'].
-	* Added three new filters to accept under-sized images individually (see filters.txt for details).
-		* ngfb_attached_accept_img_size
-		* ngfb_content_accept_img_size
-		* ngfb_ngg_accept_img_size
-
-= Version 8.7.3 (2015/08/26) =
-
-* **New Features**
-	* *None*
-* **Improvements**
-	* Refactored / improved the NgfbCheck->get_avail() method for a slight speed improvement when checking dependencies.
-* **Bugfixes**
-	* Fixed an incorrect warning message for an empty Video Embed option value in the Social Settings metabox.
-* **Developer Notes**
-	* *None*
-
-= Version 8.7.2 (2015/08/23) =
-
-* **New Features**
-	* *None*
-* **Improvements**
-	* *None*
-* **Bugfixes**
-	* Fixed a missing "R" issue in titles and descriptions by replacing the '\R' regex escape sequence by '\n\r' (the '\R' escape sequence does not appear to be supported by all PHP versions).
-* **Developer Notes**
-	* Refactored / improved the SucomUtil class is_post_page(), is_term_page(), is_author_page() methods.
-	* Added is_product_page(), is_product_category, and is_product_tag() methods in the SucomUtil class for the WooCommerce module.
-	* Refactored the WooCommerce module to use the new SucomUtil is_product methods for a slight performance improvement (Pro version).
-
-= Version 8.7.1 (2015/08/21) =
-
-* **New Features**
-	* *None*
-* **Improvements**
-	* *None*
-* **Bugfixes**
-	* Fixed / improved duplicate meta tag pattern matching by allowing extra newline characters added by W3TC.
-* **Developer Notes**
-	* *None*
-
-= Version 8.7 (2015/08/18) =
-
-* **New Features**
-	* Added support for the <a href="https://wordpress.org/plugins/rest-api/">WordPress REST API (Version 2)</a> plugin (Pro version).
-* **Improvements**
-	* *None*
-* **Bugfixes**
-	* Fixed an incorrectly named object expiration variable in the `ngfb_get_sharing_buttons()` function.
-* **Developer Notes**
-	* The NGFB WordPress REST API v2 module extends the returned /wp-json/wp/v2/posts (including custom post types), terms, and users JSON with a new 'head' array field consisting of 'html' and 'parts' arrays (Pro version).
-
 == Upgrade Notice ==
 
 = 8.10.2 =
 
-Fixed use of the 'Include Preview Image(s)' option in Social Settings metabox. Fixed default Open Graph title / description values in Social Settings metabox. Fixed detection of profile.php as a 'user page' for custom settings.
-
-= 8.10.1 =
-
-2015/09/23 Fixed OG default title + description in Social Settings metabox. Fixed use of a missing NextGEN Gallery Pro version module in Free version. Slight performance improvement when reading the options array.
-
-= 8.10 =
-
-2015/09/20 Added all Twitter Cards in the Free version. Removed the now deprecated Photo, Gallery, and Product Twitter Cards.
+2015/09/29 Fixed use of the 'Include Preview Image(s)' option in Social Settings metabox. Fixed default Open Graph title / description values in Social Settings metabox. Fixed detection of profile.php as a 'user page' for custom settings.
 
