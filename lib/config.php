@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.10.1',		// plugin version
+					'version' => '8.10.2',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it\'s shared or re-shared!',
@@ -236,11 +236,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'og_def_img_id' => '',
 					'og_def_img_url' => '',
 					'og_def_img_on_index' => 1,
-					'og_def_img_on_author' => 0,
 					'og_def_img_on_search' => 0,
 					'og_def_vid_url' => '',
 					'og_def_vid_on_index' => 1,
-					'og_def_vid_on_author' => 0,
 					'og_def_vid_on_search' => 0,
 					'og_def_author_id' => 0,
 					'og_def_author_on_index' => 0,

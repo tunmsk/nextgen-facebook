@@ -72,17 +72,17 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 }
 
 if ( ! function_exists( 'ngfb_get_sharing_url' ) ) {
-	function ngfb_get_sharing_url( $use_post = false, $add_page = true, $source_id = false ) {
+	function ngfb_get_sharing_url( $use_post = false, $add_page = true, $src_id = false ) {
 		$ngfb =& Ngfb::get_instance();
-		return $ngfb->util->get_sharing_url( $post_id, $add_page, $source_id );
+		return $ngfb->util->get_sharing_url( $post_id, $add_page, $src_id );
 	}
 }
 
 if ( ! function_exists( 'ngfb_get_short_url' ) ) {
-	function ngfb_get_short_url( $use_post = false, $add_page = true, $source_id = false ) {
+	function ngfb_get_short_url( $use_post = false, $add_page = true, $src_id = false ) {
 		$ngfb =& Ngfb::get_instance();
 		return apply_filters( 'ngfb_shorten_url', 
-			$ngfb->util->get_sharing_url( $post_id, $add_page, $source_id ),
+			$ngfb->util->get_sharing_url( $post_id, $add_page, $src_id ),
 			$ngfb->options['plugin_shortener'] );
 	}
 }
@@ -90,7 +90,7 @@ if ( ! function_exists( 'ngfb_get_short_url' ) ) {
 if ( ! function_exists( 'ngfb_schema_attributes' ) ) {
 	function ngfb_schema_attributes( $attr = '' ) {
 		$ngfb =& Ngfb::get_instance();
-		echo $ngfb->schema->add_head_attr( $attr );
+		echo $ngfb->schema->add_head_attributes( $attr );
 	}
 }
 
