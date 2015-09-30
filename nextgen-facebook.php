@@ -1,6 +1,9 @@
 <?php
 /*
  * Plugin Name: NextGEN Facebook (NGFB)
+ * Plugin Slug: nextgen-facebook
+ * Text Domain: nextgen-facebook
+ * Domain Path: /languages
  * Plugin URI: http://surniaulula.com/extend/plugins/nextgen-facebook/
  * Author: Jean-Sebastien Morisset
  * Author URI: http://surniaulula.com/
@@ -9,7 +12,7 @@
  * Description: Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.1
  * Tested Up To: 4.3.1
- * Version: 8.10.2
+ * Version: 8.10.3
  * 
  * Copyright 2012-2015 - Jean-Sebastien Morisset - http://surniaulula.com/
  */
@@ -100,8 +103,6 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public function init_plugin() {
 			if ( ! empty( $_SERVER['NGFB_DISABLE'] ) ) 
 				return;
-
-			load_plugin_textdomain( NGFB_TEXTDOM, false, dirname( NGFB_PLUGINBASE ).'/languages/' );
 
 			$this->set_objects();				// define the class object variables
 

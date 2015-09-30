@@ -33,6 +33,8 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				// nothing to do
 
 			} else {
+				load_plugin_textdomain( 'nextgen-facebook', false, dirname( NGFB_PLUGINBASE ).'/languages/' );
+
 				$this->set_objects();
 				$this->pro_req_notices();
 				$this->conflict_warnings();
@@ -317,31 +319,31 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 			if ( ! empty( $info['url']['faq'] ) )
 				$links[] = '<a href="'.$info['url']['faq'].'">'.
-					__( 'FAQ', NGFB_TEXTDOM ).'</a>';
+					__( 'FAQ', 'nextgen-facebook' ).'</a>';
 
 			if ( ! empty( $info['url']['notes'] ) )
 				$links[] = '<a href="'.$info['url']['notes'].'">'.
-					__( 'Notes', NGFB_TEXTDOM ).'</a>';
+					__( 'Notes', 'nextgen-facebook' ).'</a>';
 
 			if ( ! empty( $info['url']['latest_zip'] ) )
 				$links[] = '<a href="'.$info['url']['latest_zip'].'">'.
-					__( 'Download Latest', NGFB_TEXTDOM ).'</a>';
+					__( 'Download Latest', 'nextgen-facebook' ).'</a>';
 
 			if ( ! empty( $info['url']['pro_support'] ) &&
 				$this->p->check->aop( $lca, true, $this->p->is_avail['aop'] ) ) {
 					$links[] = '<a href="'.$info['url']['pro_support'].'">'.
-						__( 'Pro Support', NGFB_TEXTDOM ).'</a>';
+						__( 'Pro Support', 'nextgen-facebook' ).'</a>';
 			} else {
 				if ( ! empty( $info['url']['wp_support'] ) )
 					$links[] = '<a href="'.$info['url']['wp_support'].'">'.
-						__( 'Support Forum', NGFB_TEXTDOM ).'</a>';
+						__( 'Support Forum', 'nextgen-facebook' ).'</a>';
 
 				if ( ! empty( $info['url']['purchase'] ) ) {
 					if ( $this->p->check->aop( $lca, false, $this->p->is_avail['aop'] ) )
 						$links[] = '<a href="'.$info['url']['purchase'].'">'.
-							__( 'Purchase License', NGFB_TEXTDOM ).'</a>';
+							__( 'Purchase License', 'nextgen-facebook' ).'</a>';
 					else $links[] = '<a href="'.$info['url']['purchase'].'">'.
-						__( 'Purchase Pro', NGFB_TEXTDOM ).'</a>';
+						__( 'Purchase Pro', 'nextgen-facebook' ).'</a>';
 				}
 			}
 
@@ -354,7 +356,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$network = false;
 			if ( ! is_array( $opts ) ) {
 				add_settings_error( NGFB_OPTIONS_NAME, 'notarray', '<b>'.$this->p->cf['uca'].' Error</b> : '.
-					__( 'Submitted settings are not an array.', NGFB_TEXTDOM ), 'error' );
+					__( 'Submitted options are not an array.', 'nextgen-facebook' ), 'error' );
 				return $opts;
 			}
 			// get default values, including css from default stylesheets
@@ -365,11 +367,9 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$opts = $this->p->opt->sanitize( $opts, $def_opts, $network );
 			$opts = apply_filters( $this->p->cf['lca'].'_save_options', $opts, NGFB_OPTIONS_NAME, $network );
 			$clear_cache_link = wp_nonce_url( $this->p->util->get_admin_url( '?action=clear_all_cache' ), $this->get_nonce(), NGFB_NONCE );
-			$this->p->notice->inf( 
-				__( 'Plugin settings have been updated.', NGFB_TEXTDOM ).' '.
-				sprintf( __( 'Wait %d seconds for cache objects to expire (default) or %s now.', NGFB_TEXTDOM ),
-					$this->p->options['plugin_object_cache_exp'],
-					'<a href="'.$clear_cache_link.'">Clear All Cache(s)</a>' ), true );
+			$this->p->notice->inf( __( 'Plugin settings have been updated.', 'nextgen-facebook' ).' '.
+				sprintf( __( 'Wait %1$d seconds for cache objects to expire or <a href="%2$s">Clear All Cache(s)</a> now.',
+					'nextgen-facebook' ), $this->p->options['plugin_object_cache_exp'], $clear_cache_link ), true );
 			return $opts;
 		}
 
@@ -384,11 +384,11 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				wp_redirect( $this->p->util->get_admin_url( $page ) );
 				exit;
 			} elseif ( ! wp_verify_nonce( $_POST[ NGFB_NONCE ], $this->get_nonce() ) ) {
-				$this->p->notice->err( __( 'Nonce token validation failed for network options (update ignored).', NGFB_TEXTDOM ), true );
+				$this->p->notice->err( __( 'Nonce token validation failed for network options (update ignored).', 'nextgen-facebook' ), true );
 				wp_redirect( $this->p->util->get_admin_url( $page ) );
 				exit;
 			} elseif ( ! current_user_can( 'manage_network_options' ) ) {
-				$this->p->notice->err( __( 'Insufficient privileges to modify network options.', NGFB_TEXTDOM ), true );
+				$this->p->notice->err( __( 'Insufficient privileges to modify network options.', 'nextgen-facebook' ), true );
 				wp_redirect( $this->p->util->get_admin_url( $page ) );
 				exit;
 			}
@@ -401,7 +401,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$opts = $this->p->opt->sanitize( $opts, $def_opts, $network );
 			$opts = apply_filters( $this->p->cf['lca'].'_save_site_options', $opts, $def_opts, $network );
 			update_site_option( NGFB_SITE_OPTIONS_NAME, $opts );
-			$this->p->notice->inf( __( 'Plugin settings have been updated.', NGFB_TEXTDOM ), true );
+			$this->p->notice->inf( __( 'Plugin settings have been updated.', 'nextgen-facebook' ), true );
 			wp_redirect( $this->p->util->get_admin_url( $page ).'&settings-updated=true' );
 			exit;	// stop here
 		}
@@ -419,7 +419,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'nonce token validation query field missing' );
 				} elseif ( ! wp_verify_nonce( $_GET[ NGFB_NONCE ], $this->get_nonce() ) ) {
-					$this->p->notice->err( __( 'Nonce token validation failed for plugin action (action ignored).', NGFB_TEXTDOM ) );
+					$this->p->notice->err( __( 'Nonce token validation failed for plugin action (action ignored).', 'nextgen-facebook' ) );
 				} else {
 					switch ( $_GET['action'] ) {
 						case 'check_for_updates': 
@@ -430,7 +430,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 							} else {
 								$um_lca = $this->p->cf['lca'].'um';
 								$um_name = $this->p->cf['plugin'][$um_lca]['name'];
-								$this->p->notice->err( 'The <strong>'.$um_name.'</strong> extension plugin is required to check for plugin and extension updates.' );
+								$this->p->notice->err( sprintf( __( 'The <strong>%s</strong> extension is required to check for plugin and extension updates.', 'nextgen-facebook' ), $um_name ) );
 							}
 							break;
 
@@ -442,14 +442,14 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 							$user = get_userdata( get_current_user_id() );
 							$user_name = $user->first_name.' '.$user->last_name;
 							NgfbUser::delete_metabox_prefs( $user->ID );
-							$this->p->notice->inf( 'Metabox layout preferences for user "'.$user_name.' '.'" have been reset.' );
+							$this->p->notice->inf( sprintf( __( 'Metabox layout preferences for user "%s" have been reset.', 'nextgen-facebook' ), $user_name ) );
 							break;
 
 						case 'clear_hidden_notices': 
 							$user = get_userdata( get_current_user_id() );
 							$user_name = $user->first_name.' '.$user->last_name;
 							delete_user_option( $user->ID, NGFB_DISMISS_NAME );
-							$this->p->notice->inf( 'Hidden notices for user "'.$user_name.'" have been cleared.' );
+							$this->p->notice->inf( sprintf( __( 'Hidden notices for user "%s" have been cleared.', 'nextgen-facebook' ), $user_name ) );
 							break;
 
 						case 'change_show_options': 
@@ -469,7 +469,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			if ( empty( $this->p->options['plugin_'.$this->p->cf['lca'].'_tid'] ) || 
 				! $this->p->check->aop( $this->p->cf['lca'], true, $this->p->is_avail['aop'] ) ) {
 
-				add_meta_box( $this->pagehook.'_purchase', __( 'Pro Version', NGFB_TEXTDOM ), 
+				add_meta_box( $this->pagehook.'_purchase', __( 'Pro Version', 'nextgen-facebook' ), 
 					array( &$this, 'show_metabox_purchase' ), $this->pagehook, 'side' );
 				add_filter( 'postbox_classes_'.$this->pagehook.'_'.$this->pagehook.'_purchase', 
 					array( &$this, 'add_class_postbox_highlight_side' ) );
@@ -477,16 +477,16 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					array( 'purchase' ), null, 'side', true );
 			}
 
-			add_meta_box( $this->pagehook.'_info', __( 'Version Information', NGFB_TEXTDOM ), 
+			add_meta_box( $this->pagehook.'_info', __( 'Version Information', 'nextgen-facebook' ), 
 				array( &$this, 'show_metabox_info' ), $this->pagehook, 'side' );
 
-			add_meta_box( $this->pagehook.'_status_gpl', __( 'Basic / Common Features', NGFB_TEXTDOM ), 
+			add_meta_box( $this->pagehook.'_status_gpl', __( 'Basic / Common Features', 'nextgen-facebook' ), 
 				array( &$this, 'show_metabox_status_gpl' ), $this->pagehook, 'side' );
 
-			add_meta_box( $this->pagehook.'_status_pro', __( 'Pro Version Features', NGFB_TEXTDOM ), 
+			add_meta_box( $this->pagehook.'_status_pro', __( 'Pro Version Features', 'nextgen-facebook' ), 
 				array( &$this, 'show_metabox_status_pro' ), $this->pagehook, 'side' );
 
-			add_meta_box( $this->pagehook.'_help', __( 'Help and Support', NGFB_TEXTDOM ), 
+			add_meta_box( $this->pagehook.'_help', __( 'Help and Support', 'nextgen-facebook' ), 
 				array( &$this, 'show_metabox_help' ), $this->pagehook, 'side' );
 
 		}
@@ -618,8 +618,8 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				if ( empty( $info['version'] ) )	// filter out extensions that are not active
 					continue;
 
-				$stable_version = __( 'N/A', NGFB_TEXTDOM );
-				$latest_version = __( 'N/A', NGFB_TEXTDOM );
+				$stable_version = __( 'N/A', 'nextgen-facebook' );
+				$latest_version = __( 'N/A', 'nextgen-facebook' );
 				$installed_version = $info['version'];
 				$installed_style = '';
 				$latest_notice = '';
@@ -642,15 +642,15 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				echo '<tr><td colspan="2"><h4>'.$info['short'].
 					( $this->p->check->aop( $lca, true, 
 						$this->p->is_avail['aop'] ) ? ' Pro' : ' Free' ).'</h4></td></tr>';
-				echo '<tr><th class="side">'.__( 'Installed', NGFB_TEXTDOM ).':</th>
+				echo '<tr><th class="side">'.__( 'Installed', 'nextgen-facebook' ).':</th>
 					<td class="side_version" '.$installed_style.'>'.$installed_version.'</td></tr>';
-				echo '<tr><th class="side">'.__( 'Stable', NGFB_TEXTDOM ).':</th>
+				echo '<tr><th class="side">'.__( 'Stable', 'nextgen-facebook' ).':</th>
 					<td class="side_version">'.$stable_version.'</td></tr>';
-				echo '<tr><th class="side">'.__( 'Latest', NGFB_TEXTDOM ).':</th>
+				echo '<tr><th class="side">'.__( 'Latest', 'nextgen-facebook' ).':</th>
 					<td class="side_version">'.$latest_version.'</td></tr>';
 				echo '<tr><td colspan="2" id="latest_notice"><p>'.$latest_notice.'</p>'.
 					'<p><a href="'.$changelog_url.'" target="_blank">'.
-						sprintf( __( 'View %s changelog...', NGFB_TEXTDOM ), $info['short'] ).'</a></p></td></tr>';
+						sprintf( __( 'View %s changelog...', 'nextgen-facebook' ), $info['short'] ).'</a></p></td></tr>';
 			}
 			echo '</table>';
 		}
@@ -786,8 +786,8 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			echo '<p class="centered">';
 			echo $this->form->get_button( 
 				( $this->p->is_avail['aop'] ? 
-					__( 'Purchase Pro License(s)', NGFB_TEXTDOM ) :
-					__( 'Purchase Pro Version', NGFB_TEXTDOM ) ), 
+					__( 'Purchase Pro License(s)', 'nextgen-facebook' ) :
+					__( 'Purchase Pro Version', 'nextgen-facebook' ) ), 
 				'button-primary', null, $purchase_url, true );
 			echo '</p></td></tr></table>';
 		}
@@ -835,7 +835,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 		protected function get_submit_buttons( $submit_text = '', $class = 'submit-buttons' ) {
 			if ( empty( $submit_text ) ) 
-				$submit_text = __( 'Save All Plugin Settings', NGFB_TEXTDOM );
+				$submit_text = __( 'Save All Plugin Settings', 'nextgen-facebook' );
 
 			$show_opts_next = SucomUtil::next_key( NgfbUser::show_opts(), $this->p->cf['form']['show_options'] );
 			$show_opts_text = 'View '.$this->p->cf['form']['show_options'][$show_opts_next].' by Default';
@@ -846,22 +846,22 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					wp_nonce_url( $show_opts_url, $this->get_nonce(), NGFB_NONCE ) ).'<br/>';
 
 			if ( empty( $this->p->cf['*']['lib']['sitesubmenu'][$this->menu_id] ) )	// don't show on the network admin pages
-				$action_buttons .= $this->form->get_button( __( 'Clear All Cache(s)', NGFB_TEXTDOM ), 
+				$action_buttons .= $this->form->get_button( __( 'Clear All Cache(s)', 'nextgen-facebook' ), 
 					'button-secondary', null, wp_nonce_url( $this->p->util->get_admin_url( '?action=clear_all_cache' ),
 						$this->get_nonce(), NGFB_NONCE ) );
 
-			$action_buttons .= $this->form->get_button( __( 'Check for Update(s)', NGFB_TEXTDOM ), 'button-secondary', null,
+			$action_buttons .= $this->form->get_button( __( 'Check for Update(s)', 'nextgen-facebook' ), 'button-secondary', null,
 				wp_nonce_url( $this->p->util->get_admin_url( '?action=check_for_updates' ), $this->get_nonce(), NGFB_NONCE ),
 				false, ( $this->p->is_avail['util']['um'] ? false : true )	// disable button if update manager is not available
 			);
 
 			if ( empty( $this->p->cf['*']['lib']['sitesubmenu'][$this->menu_id] ) )	// don't show on the network admin pages
-				$action_buttons .= $this->form->get_button( __( 'Reset Metabox Layout', NGFB_TEXTDOM ), 
+				$action_buttons .= $this->form->get_button( __( 'Reset Metabox Layout', 'nextgen-facebook' ), 
 					'button-secondary', null, wp_nonce_url( $this->p->util->get_admin_url( '?action=clear_metabox_prefs' ),
 						$this->get_nonce(), NGFB_NONCE ) );
 
 			if ( empty( $this->p->cf['*']['lib']['sitesubmenu'][$this->menu_id] ) )	// don't show on the network admin pages
-				$action_buttons .= $this->form->get_button( __( 'Reset Hidden Notices', NGFB_TEXTDOM ), 
+				$action_buttons .= $this->form->get_button( __( 'Reset Hidden Notices', 'nextgen-facebook' ), 
 					'button-secondary', null, wp_nonce_url( $this->p->util->get_admin_url( '?action=clear_hidden_notices' ),
 						$this->get_nonce(), NGFB_NONCE ) );
 
@@ -1033,8 +1033,8 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$short = $this->p->cf['plugin'][$lca]['short'];
 			$short_pro = $short.' Pro';
 			$purchase_url = $this->p->cf['plugin'][$lca]['url']['purchase'];
-			$log_pre =  __( 'plugin conflict detected', NGFB_TEXTDOM ) . ' - ';
-			$err_pre =  __( 'Plugin conflict detected', NGFB_TEXTDOM ) . ' - ';
+			$err_pre =  __( 'Plugin conflict detected', 'nextgen-facebook' ) . ' - ';
+			$log_pre = 'plugin conflict detected - ';	// don't translate the debug 
 
 			// PHP
 			if ( empty( $this->p->is_avail['curl'] ) ) {
@@ -1043,11 +1043,11 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'url shortening is enabled but curl function is missing' );
-					$this->p->notice->err( sprintf( __( 'URL shortening has been enabled, but PHP\'s <a href="%s" target="_blank">Client URL Library</a> (cURL) is missing.', NGFB_TEXTDOM ), 'http://ca3.php.net/curl' ).' '.__( 'Please contact your hosting provider to have the missing library installed.', NGFB_TEXTDOM ) );
+					$this->p->notice->err( sprintf( __( 'URL shortening has been enabled, but PHP\'s <a href="%s" target="_blank">Client URL Library</a> (cURL) is missing.', 'nextgen-facebook' ), 'http://ca3.php.net/curl' ).' '.__( 'Please contact your hosting provider to have the missing cURL library files installed.', 'nextgen-facebook' ) );
 				} elseif ( ! empty( $this->p->options['plugin_file_cache_exp'] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'file caching is enabled but curl function is missing' );
-					$this->p->notice->err( sprintf( __( 'The file caching feature has been enabled but PHP\'s <a href="%s" target="_blank">Client URL Library</a> (cURL) is missing.', NGFB_TEXTDOM ), 'http://ca3.php.net/curl' ).' '.__( 'Please contact your hosting provider to have the missing library installed.', NGFB_TEXTDOM ) );
+					$this->p->notice->err( sprintf( __( 'The file caching feature has been enabled but PHP\'s <a href="%s" target="_blank">Client URL Library</a> (cURL) is missing.', 'nextgen-facebook' ), 'http://ca3.php.net/curl' ).' '.__( 'Please contact your hosting provider to have the missing cURL library files installed.', 'nextgen-facebook' ) );
 				}
 			}
 
@@ -1057,7 +1057,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				if ( ! empty( $opts['opengraph'] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $log_pre.'wpseo opengraph meta data option is enabled' );
-					$this->p->notice->err( $err_pre.sprintf( __( 'Please uncheck the \'<em>Add Open Graph meta data</em>\' Facebook option in the <a href="%s">Yoast SEO: Social</a> settings.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=wpseo_social#top#facebook' ) ) );
+					$this->p->notice->err( $err_pre.sprintf( __( 'Please uncheck the \'<em>Add Open Graph meta data</em>\' Facebook option in the <a href="%s">Yoast SEO: Social</a> settings.', 'nextgen-facebook' ), get_admin_url( null, 'admin.php?page=wpseo_social#top#facebook' ) ) );
 				}
 				if ( ! empty( $this->p->options['tc_enable'] ) && 
 					! empty( $opts['twitter'] ) &&
@@ -1065,17 +1065,17 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $log_pre.'wpseo twitter meta data option is enabled' );
-					$this->p->notice->err( $err_pre.sprintf( __( 'Please uncheck the \'<em>Add Twitter card meta data</em>\' Twitter option in the <a href="%s">Yoast SEO: Social</a> settings.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=wpseo_social#top#twitterbox' ) ) );
+					$this->p->notice->err( $err_pre.sprintf( __( 'Please uncheck the \'<em>Add Twitter card meta data</em>\' Twitter option in the <a href="%s">Yoast SEO: Social</a> settings.', 'nextgen-facebook' ), get_admin_url( null, 'admin.php?page=wpseo_social#top#twitterbox' ) ) );
 				}
 				if ( ! empty( $opts['googleplus'] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $log_pre.'wpseo googleplus meta data option is enabled' );
-					$this->p->notice->err( $err_pre.sprintf( __( 'Please uncheck the \'<em>Add Google+ specific post meta data</em>\' Google+ option in the <a href="%s">Yoast SEO: Social</a> settings.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=wpseo_social#top#google' ) ) );
+					$this->p->notice->err( $err_pre.sprintf( __( 'Please uncheck the \'<em>Add Google+ specific post meta data</em>\' Google+ option in the <a href="%s">Yoast SEO: Social</a> settings.', 'nextgen-facebook' ), get_admin_url( null, 'admin.php?page=wpseo_social#top#google' ) ) );
 				}
 				if ( ! empty( $opts['plus-publisher'] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $log_pre.'wpseo google plus publisher option is defined' );
-					$this->p->notice->err( $err_pre.sprintf( __( 'Please remove the \'<em>Google Publisher Page</em>\' value entered in the <a href="%s">Yoast SEO: Social</a> settings.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=wpseo_social#top#google' ) ) );
+					$this->p->notice->err( $err_pre.sprintf( __( 'Please remove the \'<em>Google Publisher Page</em>\' value entered in the <a href="%s">Yoast SEO: Social</a> settings.', 'nextgen-facebook' ), get_admin_url( null, 'admin.php?page=wpseo_social#top#google' ) ) );
 				}
 			}
 
@@ -1086,7 +1086,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					if ( array_key_exists( 'opengraph', $opts['modules'] ) && $opts['modules']['opengraph'] !== -10 ) {
 						if ( $this->p->debug->enabled )
 							$this->p->debug->log( $log_pre.'seo ultimate opengraph module is enabled' );
-						$this->p->notice->err( $err_pre.sprintf( __( 'Please disable the \'<em>Open Graph Integrator</em>\' module in the <a href="%s">SEO Ultimate plugin Module Manager</a>.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=seo' ) ) );
+						$this->p->notice->err( $err_pre.sprintf( __( 'Please disable the \'<em>Open Graph Integrator</em>\' module in the <a href="%s">SEO Ultimate plugin Module Manager</a>.', 'nextgen-facebook' ), get_admin_url( null, 'admin.php?page=seo' ) ) );
 					}
 				}
 			}
@@ -1097,12 +1097,12 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				if ( ! empty( $opts['modules']['aiosp_feature_manager_options']['aiosp_feature_manager_enable_opengraph'] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $log_pre.'aioseop social meta fetaure is enabled' );
-					$this->p->notice->err( $err_pre.sprintf( __( 'Please deactivate the \'<em>Social Meta</em>\' feature in the <a href="%s">All in One SEO Pack Feature Manager</a>.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=all-in-one-seo-pack/aioseop_feature_manager.php' ) ) );
+					$this->p->notice->err( $err_pre.sprintf( __( 'Please deactivate the \'<em>Social Meta</em>\' feature in the <a href="%s">All in One SEO Pack Feature Manager</a>.', 'nextgen-facebook' ), get_admin_url( null, 'admin.php?page=all-in-one-seo-pack/aioseop_feature_manager.php' ) ) );
 				}
 				if ( array_key_exists( 'aiosp_google_disable_profile', $opts ) && empty( $opts['aiosp_google_disable_profile'] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $log_pre.'aioseop google plus profile is enabled' );
-					$this->p->notice->err( $err_pre.sprintf( __( 'Please check the \'<em>Disable Google Plus Profile</em>\' option in the <a href="%s">All in One SEO Pack Plugin Options</a>.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=all-in-one-seo-pack/aioseop_class.php' ) ) );
+					$this->p->notice->err( $err_pre.sprintf( __( 'Please check the \'<em>Disable Google Plus Profile</em>\' option in the <a href="%s">All in One SEO Pack Plugin Options</a>.', 'nextgen-facebook' ), get_admin_url( null, 'admin.php?page=all-in-one-seo-pack/aioseop_class.php' ) ) );
 				}
 			}
 
@@ -1112,7 +1112,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 				if ( $this->p->debug->enabled )
 					$this->p->debug->log( $log_pre.'jetpack photon is enabled' );
-				$this->p->notice->err( $err_pre.__( '<strong>JetPack\'s Photon module cripples the WordPress image size functions on purpose</strong>.', NGFB_TEXTDOM ).' '.sprintf( __( 'Please <a href="%s">deactivate the JetPack Photon module</a> or deactivate the %s Free plugin.', NGFB_TEXTDOM ), get_admin_url( null, 'admin.php?page=jetpack' ), $short ).' '.sprintf( __( 'You may also upgrade to the <a href="%s">%s version</a> which includes an <a href="%s">integration module for JetPack Photon</a> to re-enable image size functions specifically for %s images.', NGFB_TEXTDOM ), $purchase_url, $short_pro, 'http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/jetpack-photon/', $short ) );
+				$this->p->notice->err( $err_pre.__( '<strong>JetPack\'s Photon module cripples the WordPress image size functions on purpose</strong>.', 'nextgen-facebook' ).' '.sprintf( __( 'Please <a href="%s">deactivate the JetPack Photon module</a> or deactivate the %s Free plugin.', 'nextgen-facebook' ), get_admin_url( null, 'admin.php?page=jetpack' ), $short ).' '.sprintf( __( 'You may also upgrade to the <a href="%1$s">%2$s version</a> which includes an <a href="%3$s">integration module for JetPack Photon</a> to re-enable image size functions specifically for %4$s images.', 'nextgen-facebook' ), $purchase_url, $short_pro, 'http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/jetpack-photon/', $short ) );
 			}
 
 			// WooCommerce
@@ -1122,7 +1122,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 				if ( $this->p->debug->enabled )
 					$this->p->debug->log( $log_pre.'woocommerce shortcode support not available in the admin interface' );
-				$this->p->notice->err( $err_pre.__( '<strong>WooCommerce does not include shortcode support in the admin interface</strong> (required by WordPress for its content filters).', NGFB_TEXTDOM ).' '.sprintf( __( 'Please uncheck the \'<em>Apply WordPress Content Filters</em>\' option on the <a href="%s">%s Advanced settings page</a>.', NGFB_TEXTDOM ), $this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_content' ), $this->p->cf['menu'] ).' '.sprintf( __( 'You may also upgrade to the <a href="%s">%s version</a> that includes an <a href="%s">integration module specifically for WooCommerce</a> (shortcodes, products, categories, tags, images, etc.).', NGFB_TEXTDOM ), $purchase_url, $short_pro, 'http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/' ) );
+				$this->p->notice->err( $err_pre.__( '<strong>WooCommerce does not include shortcode support in the admin interface</strong> (required by WordPress for its content filters).', 'nextgen-facebook' ).' '.sprintf( __( 'Please uncheck the \'<em>Apply WordPress Content Filters</em>\' option on the <a href="%s">%s Advanced settings page</a>.', 'nextgen-facebook' ), $this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_content' ), $this->p->cf['menu'] ).' '.sprintf( __( 'You may also upgrade to the <a href="%1$s">%2$s version</a> that includes an <a href="%3$s">integration module specifically for WooCommerce</a> (shortcodes, products, categories, tags, images, etc.).', 'nextgen-facebook' ), $purchase_url, $short_pro, 'http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/' ) );
 			}
 		}
 
