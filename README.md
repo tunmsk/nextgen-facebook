@@ -9,7 +9,7 @@
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>Website URL</th><td><a href="https://surniaulula.com/extend/plugins/nextgen-facebook/">https://surniaulula.com/extend/plugins/nextgen-facebook/</a></td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="http://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>attached, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd, Facebook, featured, g+, gallery, gallery card, google, google plus, hashtags, imagebrowser, jetpack, JSON-LD, knowledge graph, Like, linkedin, marketpress, meta-tags, multilingual, multisite, nextgen gallery, nggalbum, nggallery, object cache, open graph, photo card, photon, pinterest, player card, polylang, rich pins, schema, seo, Share, shortcode, singlepic, slideshare, social, stumbleupon, Summary Card, transient cache, tumblr, twitter, twitter cards, vimeo, widget, wistia, woocommerce, wp_cache, youtube</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>attached, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd, Facebook, featured, g+, gallery, google, google plus, hashtags, imagebrowser, jetpack, JSON-LD, knowledge graph, Like, linkedin, marketpress, meta-tags, multilingual, multisite, nextgen gallery, nggalbum, nggallery, object cache, open graph, photon, pinterest, player card, polylang, rich pins, schema, seo, Share, shortcode, singlepic, slideshare, social, stumbleupon, Summary Card, transient cache, tumblr, twitter, twitter cards, vimeo, widget, wistia, woocommerce, wp_cache, youtube</td></tr>
 </table>
 
 <h2>Description</h2>
@@ -312,7 +312,7 @@
 <div style="clear:both;"></div>
 
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-tiled-gallery-ngfb.png" width="100%" height="100%"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-large-image-summary-single.png" width="100%" height="100%"/></p>
 </div>
 
 <p><strong>Images and Videos</strong></p>

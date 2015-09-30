@@ -1,9 +1,10 @@
 === NextGEN Facebook - Complete Meta Tags for FB, Google, Pinterest, Twitter, LinkedIn & More ===
 Plugin Name: NextGEN Facebook (NGFB)
 Plugin Slug: nextgen-facebook
+Text Domain: nextgen-facebook
 Contributors: jsmoriss
 Donate Link: https://surniaulula.com/extend/plugins/nextgen-facebook/
-Tags: attached, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd, Facebook, featured, g+, gallery, gallery card, google, google plus, hashtags, imagebrowser, jetpack, JSON-LD, knowledge graph, Like, linkedin, marketpress, meta-tags, multilingual, multisite, nextgen gallery, nggalbum, nggallery, object cache, open graph, photo card, photon, pinterest, player card, polylang, rich pins, schema, seo, Share, shortcode, singlepic, slideshare, social, stumbleupon, Summary Card, transient cache, tumblr, twitter, twitter cards, vimeo, widget, wistia, woocommerce, wp_cache, youtube
+Tags: attached, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd, Facebook, featured, g+, gallery, google, google plus, hashtags, imagebrowser, jetpack, JSON-LD, knowledge graph, Like, linkedin, marketpress, meta-tags, multilingual, multisite, nextgen gallery, nggalbum, nggallery, object cache, open graph, photon, pinterest, player card, polylang, rich pins, schema, seo, Share, shortcode, singlepic, slideshare, social, stumbleupon, Summary Card, transient cache, tumblr, twitter, twitter cards, vimeo, widget, wistia, woocommerce, wp_cache, youtube
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
@@ -262,7 +263,7 @@ Aside from the additional support for Twitter Cards, the main difference between
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-tiled-gallery-ngfb.png" width="100%" height="100%"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-large-image-summary-single.png" width="100%" height="100%"/></p>
 </div>
 
 <strong>Images and Videos</strong>
