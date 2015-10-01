@@ -21,35 +21,12 @@ if ( ! class_exists( 'NgfbGplSocialBuddypress' ) ) {
 				$this->p->debug->mark();
 
 			if ( is_admin() || bp_current_component() ) {
-				$this->p->util->add_plugin_filters( $this, array( 
-					'post_types' => 3,
-				) );
 				if ( ! empty( $this->p->is_avail['ssb'] ) ) {
 					$classname = __CLASS__.'Sharing';
 					if ( class_exists( $classname ) )
 						$this->sharing = new $classname( $this->p );
 				}
 			}
-		}
-
-		/* Purpose: Provide custom post types for ngfb, without having to register them with WordPress */
-		public function filter_post_types( $pt, $prefix, $output = 'objects' ) {
-			if ( $prefix == 'buttons' ) {
-				if ( $output == 'objects' ) {
-					foreach ( array( 
-						'activity' => 'Activity',
-						'group' => 'Group',
-						'members' => 'Members',
-					) as $name => $desc ) {
-						$pt['bp_'.$name] = new stdClass();
-						$pt['bp_'.$name]->public = true;
-						$pt['bp_'.$name]->name = 'bp_'.$name;
-						$pt['bp_'.$name]->label = $desc;
-						$pt['bp_'.$name]->description = 'BuddyPress '.$desc;
-					}
-				}
-			}
-			return $pt;
 		}
 	}
 }

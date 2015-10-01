@@ -285,13 +285,12 @@ jQuery("#ngfb-sidebar").click( function(){
 		}
 
 		public function filter_post_cache_transients( $transients, $post_id, $lang = 'en_US', $sharing_url ) {
-			if ( ! empty( self::$cf['sharing']['show_on'] ) &&
-				is_array( self::$cf['sharing']['show_on'] ) ) {
+			$show_on = apply_filters( $this->p->cf['lca'].'_sharing_show_on', 
+				self::$cf['sharing']['show_on'], null );
 
-				$transients['NgfbSharing::get_buttons'] = array();
-				foreach( self::$cf['sharing']['show_on'] as $type_id => $type_name )
-					$transients['NgfbSharing::get_buttons'][$type_id] = 'lang:'.$lang.'_type:'.$type_id.'_post:'.$post_id;
-			}
+			foreach( $show_on as $type_id => $type_name )
+				$transients['NgfbSharing::get_buttons'][$type_id] = 'lang:'.$lang.'_type:'.$type_id.'_post:'.$post_id;
+
 			return $transients;
 		}
 
