@@ -206,58 +206,6 @@ NGFB adds [Open Graph](http://ogp.me/) (Facebook), [Pinterest Rich Pins](http://
 
 NGFB provides the [Summary](https://dev.twitter.com/cards/types/summary), [Summary with Large Image](https://dev.twitter.com/cards/types/summary-large-image), and [Player](https://dev.twitter.com/cards/types/player) Twitter Cards &mdash; *including configurable image sizes for each card type*. The [Photo](https://dev.twitter.com/cards/types/photo), [Gallery](https://dev.twitter.com/cards/types/gallery), and [Product](https://dev.twitter.com/cards/types/product) Twitter Cards were deprecated by Twitter on July 3rd, 2015.
 
-* **Google / SEO Link and Meta Tags**
-	* author
-	* description
-	* publisher
-* **Facebook Meta Tags**
-	* fb:admins
-	* fb:app_id
-* **Open Graph / Rich Pin Meta Tags**
-	* article:author
-	* article:publisher
-	* article:published_time
-	* article:modified_time
-	* article:section
-	* article:tag
-	* og:description
-	* og:image
-	* og:image:secure_url
-	* og:image:width
-	* og:image:height
-	* og:locale
-	* og:site_name
-	* og:title
-	* og:type
-	* og:url
-	* og:video:url
-	* og:video:secure_url
-	* og:video:width
-	* og:video:height
-	* og:video:type
-	* product:price:amount
-	* product:price:currency
-	* product:availability
-* **Schema Meta Tags**
-	* name
-	* headline
-	* datepublished
-	* description
-	* image
-	* url
-* **Twitter Card Meta Tags**
-	* twitter:card (Summary, Summary with Large Image, App, and Player Cards)
-	* twitter:creator
-	* twitter:description
-	* twitter:image
-	* twitter:image:width
-	* twitter:image:height
-	* twitter:player
-	* twitter:player:width
-	* twitter:player:height
-	* twitter:site
-	* twitter:title
-
 <h4>3rd Party Integration (Pro version)</h4>
 
 Aside from the additional support for Twitter Cards, the main difference between the NGFB Free and Pro versions is the integration of 3rd party plugins and services.
@@ -426,17 +374,17 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 02. NGFB Advanced Settings Page &mdash; Allows you to fine-tune some advanced plugin settings, the use of various content filters, custom post meta fields, caching techniques, user profile contacts, and enable / disable a long list of meta tags.
 03. NGFB Social Settings on Posts and Pages &mdash; The Social Settings metabox allows you to modify the default title, description, and image values, preview an example social share, preview all meta tags, and validate the current webpage with various online tools.
 04. NGFB "Social Image" and "Social Description" preview columns (available on posts, pages, tags, and custom taxonomy editing pages).
-05. Example Pinterest Product Pin (Zoomed)
-06. Example Facebook Link Share
-07. Example Facebook Video Share
-08. Example Twitter 'Summary' Card (Single Tweet View)
-09. Example Twitter 'Large Image Summary' Card (Single Tweet View)
-10. Example Twitter 'Photo' Card (Timeline View)
-11. Example Twitter 'Gallery' Card (Timeline View)
-12. Example Twitter 'Product' Card (Single Tweet View)
-13. Example Twitter 'Player' Card (Single Tweet View)
+05. Example Pinterest Product Pin (Zoomed).
+06. Example Facebook Link Share.
+07. Example Facebook Video Share.
+08. Example Twitter 'Summary' Card.
+09. Example Twitter 'Large Image Summary' Card.
+10. Example Twitter 'Photo' Card (The [Photo](https://dev.twitter.com/cards/types/photo) Card was deprecated by Twitter on July 3rd, 2015).
+11. Example Twitter 'Gallery' Card (The [Gallery](https://dev.twitter.com/cards/types/gallery) Card was deprecated by Twitter on July 3rd, 2015).
+12. Example Twitter 'Product' Card (The [Product](https://dev.twitter.com/cards/types/product) Card was deprecated by Twitter on July 3rd, 2015).
+13. Example Twitter 'Player' Card.
 14. Example Social Profiles in Google Search &mdash; NGFB includes author (Person) and publisher (Organization) social profiles in schema.org JSON-LD format for Google Search and their Knowledge Graph.
-15. Example Showing All Social Sharing Buttons Enabled
+15. Example Showing All Social Sharing Buttons Enabled.
 
 == Changelog ==
 
