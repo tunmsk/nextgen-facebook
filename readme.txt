@@ -410,7 +410,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
-	* *None*
+	* Added a POT (Portable Object Template) file with translation strings in nextgen-facebook/languages/nextgen-facebook.pot.
 
 = Version 8.10.2 2015/09/29 =
 
