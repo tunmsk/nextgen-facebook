@@ -146,7 +146,7 @@ Want to improve your shared content? NGFB makes sure your content looks its best
 		* Youtube Videos and Playlists
 
 <blockquote>
-<p><a href="http://wpsso.com/extend/plugins/wpsso/">Purchase the Pro version on SurniaUlula.com</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
+<p><a href="http://wpsso.com/extend/plugins/wpsso/">Purchase the Pro version</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 </blockquote>
 
 <div style="clear:both;"></div>
