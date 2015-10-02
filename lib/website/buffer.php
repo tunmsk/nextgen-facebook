@@ -30,7 +30,8 @@ if ( ! class_exists( 'NgfbSubmenuSharingBuffer' ) && class_exists( 'NgfbSubmenuS
 		// add an option to the WordPress -> Settings -> Image Dimensions page
 		public function filter_image_dimensions_general_rows( $rows, $form ) {
 
-			$rows[] = $this->p->util->get_th( 'Buffer <em>Sharing Button</em>', null, 'buffer_img_dimensions',
+			$rows[] = $this->p->util->get_th( __( 'Buffer <em>Sharing Button</em>',
+				'nextgen-facebook' ), null, 'buffer_img_dimensions',
 			'The image dimensions that the Buffer button will share (defaults is '.$this->p->opt->get_defaults( 'buffer_img_width' ).'x'.$this->p->opt->get_defaults( 'buffer_img_height' ).' '.( $this->p->opt->get_defaults( 'buffer_img_crop' ) == 0 ? 'un' : '' ).'cropped). Note that original images in the WordPress Media Library and/or NextGEN Gallery must be larger than your chosen image dimensions.' ).
 			'<td>'.$form->get_image_dimensions_input( 'buffer_img' ).'</td>';
 
@@ -40,34 +41,42 @@ if ( ! class_exists( 'NgfbSubmenuSharingBuffer' ) && class_exists( 'NgfbSubmenuS
 		protected function get_rows( $metabox, $key ) {
 			$rows = array();
 			
-			$rows[] = $this->p->util->get_th( 'Show Button in', 'short' ).'<td>'.
+			$rows[] = $this->p->util->get_th( __( 'Show Button in',
+				'nextgen-facebook' ), 'short' ).'<td>'.
 			( $this->show_on_checkboxes( 'buffer' ) ).'</td>';
 
-			$rows[] = $this->p->util->get_th( 'Preferred Order', 'short' ).'<td>'.
+			$rows[] = $this->p->util->get_th( __( 'Preferred Order',
+				'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'buffer_order', 
 				range( 1, count( $this->p->admin->submenu['sharing']->website ) ), 
 					'short' ).'</td>';
 
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( 'JavaScript in', 'short' ).'<td>'.
+			$this->p->util->get_th( __( 'JavaScript in',
+				'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'buffer_script_loc', $this->p->cf['form']['script_locations'] ).'</td>';
 
-			$rows[] = $this->p->util->get_th( 'Count Position', 'short' ).'<td>'.
+			$rows[] = $this->p->util->get_th( __( 'Count Position',
+				'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'buffer_count', array( 'none' => '', 
 			'horizontal' => 'Horizontal', 'vertical' => 'Vertical' ) ).'</td>';
 
-			$rows[] = $this->p->util->get_th( 'Image Dimensions', 'short' ).
+			$rows[] = $this->p->util->get_th( __( 'Image Dimensions',
+				'nextgen-facebook' ), 'short' ).
 			'<td>'.$this->form->get_image_dimensions_input( 'buffer_img', false, true ).'</td>';
 
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( 'Tweet Text Source', 'short' ).'<td>'.
+			$this->p->util->get_th( __( 'Tweet Text Source',
+				'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'buffer_caption', $this->p->cf['form']['caption_types'] ).'</td>';
 
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( 'Tweet Text Length', 'short' ).'<td>'.
+			$this->p->util->get_th( __( 'Tweet Text Length',
+				'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_input( 'buffer_cap_len', 'short' ).' characters or less</td>';
 
-			$rows[] = $this->p->util->get_th( 'Add via @username', 'short', null,
+			$rows[] = $this->p->util->get_th( __( 'Add via @username',
+				'nextgen-facebook' ), 'short', null,
 			'Append the website\'s @username to the tweet (see the '.$this->p->util->get_admin_url( 'general#sucom-tabset_pub-tab_twitter', 'Twitter options tab' ).' on the General settings page).' ).
 			( $this->p->check->aop() == true ? 
 				'<td>'.$this->form->get_checkbox( 'buffer_via' ).'</td>' :

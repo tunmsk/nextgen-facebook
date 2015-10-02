@@ -25,7 +25,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 
 		public function filter_plugin_cache_rows( $rows, $form, $network = false ) {
 
-			$rows['plugin_file_cache_exp'] = $this->p->util->get_th( 'Social File Cache Expiry', 'highlight', 'plugin_file_cache_exp' ).
+			$rows['plugin_file_cache_exp'] = $this->p->util->get_th( __( 'Social File Cache Expiry',
+				'nextgen-facebook' ), 'highlight', 'plugin_file_cache_exp' ).
 			'<td nowrap class="blank">'.$this->p->cf['form']['file_cache_hrs'][$form->options['plugin_file_cache_exp']].' hours</td>'.
 			$this->get_site_use( $form, $network, 'plugin_file_cache_exp' );
 
@@ -43,7 +44,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			$rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'ngfb' ) ).'</td>';
 
-			$rows['buttons_add_to'] = $this->p->util->get_th( 'Include on Post Types', null, 'buttons_add_to' ).
+			$rows['buttons_add_to'] = $this->p->util->get_th( __( 'Include on Post Types',
+				'nextgen-facebook' ), null, 'buttons_add_to' ).
 				'<td class="blank">'.$checkboxes.'</td>';
 
 			return $rows;
@@ -90,7 +92,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			list( $pid, $img_url ) = $this->p->og->get_the_media_urls( $lca.'-pinterest-button',
 				$head_info['post_id'], 'rp', array( 'pid', 'image' ) );
 
-			$th = $this->p->util->get_th( 'Pinterest Caption Text', 'medium', 'post-pin_desc' );
+			$th = $this->p->util->get_th( __( 'Pinterest Caption Text',
+				'nextgen-facebook' ), 'medium', 'post-pin_desc' );
 			if ( ! empty( $pid ) ) {
 				list(
 					$img_url,
@@ -110,7 +113,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			list( $pid, $img_url, $vid_url, $prev_url ) = $this->p->og->get_the_media_urls( $lca.'-tumblr-button', 
 				$head_info['post_id'], 'og', array( 'pid', 'image', 'video', 'preview' ) );
 
-			$th = $this->p->util->get_th( 'Tumblr Image Caption', 'medium', 'post-tumblr_img_desc' );
+			$th = $this->p->util->get_th( __( 'Tumblr Image Caption',
+				'nextgen-facebook' ), 'medium', 'post-tumblr_img_desc' );
 			if ( ! empty( $pid ) ) {
 				list(
 					$img_url,
@@ -126,7 +130,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 					style="max-width:'.$size_info['width'].'px;"></td>';
 			} else $rows['tumblr_img_desc'] = $th.'<td class="blank"><em>Caption disabled - no suitable image found for the Tumblr button.</em></td>';
 
-			$th = $this->p->util->get_th( 'Tumblr Video Caption', 'medium', 'post-tumblr_vid_desc' );
+			$th = $this->p->util->get_th( __( 'Tumblr Video Caption',
+				'nextgen-facebook' ), 'medium', 'post-tumblr_vid_desc' );
 			if ( ! empty( $vid_url ) ) {
 				$rows['tumblr_vid_desc'] = $th.'<td class="blank">'.
 				$this->p->webpage->get_caption( $this->p->options['tumblr_caption'], $this->p->options['tumblr_cap_len'] ).'</td>'.
@@ -138,19 +143,22 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			 * Twitter
 			 */
 			$twitter_cap_len = $this->p->util->get_tweet_max_len( get_permalink( $head_info['post_id'] ) );
-			$rows['twitter_desc'] = $this->p->util->get_th( 'Tweet Text', 'medium', 'post-twitter_desc' ). 
+			$rows['twitter_desc'] = $this->p->util->get_th( __( 'Tweet Text',
+				'nextgen-facebook' ), 'medium', 'post-twitter_desc' ). 
 			'<td class="blank">'.$this->p->webpage->get_caption( $this->p->options['twitter_caption'], $twitter_cap_len,
 				true, true, true ).'</td>';	// $use_post = true, $use_cache = true, $add_hashtags = true
 
 			$rows['buttons_disabled'] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( 'Disable Sharing Buttons', 'medium', 'post-buttons_disabled', $head_info ).
+			$this->p->util->get_th( __( 'Disable Sharing Buttons',
+				'nextgen-facebook' ), 'medium', 'post-buttons_disabled', $head_info ).
 			'<td class="blank">&nbsp;</td>';
 
 			return $rows;
 		}
 
 		protected function get_site_use( &$form, &$network, $opt ) {
-			return $network === false ? '' : $this->p->util->get_th( 'Site Use', 'site_use' ).
+			return $network === false ?
+				'' : $this->p->util->get_th( __( 'Site Use', 'nextgen-facebook' ), 'site_use' ).
 				'<td class="site_use blank">'.$form->get_select( $opt.':use', 
 					$this->p->cf['form']['site_option_use'], 'site_use', null, true, true ).'</td>';
 		}

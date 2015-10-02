@@ -46,25 +46,32 @@ if ( ! class_exists( 'NgfbSettingSocialAccounts' ) && class_exists( 'NgfbAdmin' 
 
 				case 'social-accounts-general':
 
-					$rows[] = $this->p->util->get_th( 'Facebook Business Page URL', null, 'fb_publisher_url' ).
+					$rows[] = $this->p->util->get_th( __( 'Facebook Business Page URL',
+						'nextgen-facebook' ), null, 'fb_publisher_url' ).
 					'<td>'.$this->form->get_input( 'fb_publisher_url', 'wide' ).'</td>';
 
-					$rows[] = $this->p->util->get_th( 'Google+ Business Page URL', null, 'google_publisher_url' ).
+					$rows[] = $this->p->util->get_th( __( 'Google+ Business Page URL',
+						'nextgen-facebook' ), null, 'google_publisher_url' ).
 					'<td>'.$this->form->get_input( 'seo_publisher_url', 'wide' ).'</td>';
 
-					$rows[] = $this->p->util->get_th( 'Pinterest Company Page URL', null, 'rp_publisher_url'  ).
+					$rows[] = $this->p->util->get_th( __( 'Pinterest Company Page URL',
+						'nextgen-facebook' ), null, 'rp_publisher_url'  ).
 					'<td>'.$this->form->get_input( 'rp_publisher_url', 'wide' ).'</td>';
 
-					$rows[] = $this->p->util->get_th( 'Twitter Business @username', null, 'tc_site' ).
+					$rows[] = $this->p->util->get_th( __( 'Twitter Business @username',
+						'nextgen-facebook' ), null, 'tc_site' ).
 					'<td>'.$this->form->get_input( 'tc_site' ).'</td>';
 
-					$rows[] = $this->p->util->get_th( 'Instagram Business URL', null, 'instgram_publisher_url' ).
+					$rows[] = $this->p->util->get_th( __( 'Instagram Business URL',
+						'nextgen-facebook' ), null, 'instgram_publisher_url' ).
 					'<td>'.$this->form->get_input( 'instgram_publisher_url', 'wide' ).'</td>';
 
-					$rows[] = $this->p->util->get_th( 'LinkedIn Company Page URL', null, 'linkedin_publisher_url'  ).
+					$rows[] = $this->p->util->get_th( __( 'LinkedIn Company Page URL',
+						'nextgen-facebook' ), null, 'linkedin_publisher_url'  ).
 					'<td>'.$this->form->get_input( 'linkedin_publisher_url', 'wide' ).'</td>';
 
-					$rows[] = $this->p->util->get_th( 'MySpace Business (Brand) URL', null, 'myspace_publisher_url'  ).
+					$rows[] = $this->p->util->get_th( __( 'MySpace Business (Brand) URL',
+						'nextgen-facebook' ), null, 'myspace_publisher_url'  ).
 					'<td>'.$this->form->get_input( 'myspace_publisher_url', 'wide' ).'</td>';
 
 					break;

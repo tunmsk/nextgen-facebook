@@ -27,15 +27,18 @@ if ( ! class_exists( 'NgfbSubmenuSharingReddit' ) && class_exists( 'NgfbSubmenuS
 		protected function get_rows( $metabox, $key ) {
 			$rows = array();
 
-			$rows[] = $this->p->util->get_th( 'Show Button in', 'short' ).'<td>'.
+			$rows[] = $this->p->util->get_th( __( 'Show Button in',
+				'nextgen-facebook' ), 'short' ).'<td>'.
 			( $this->show_on_checkboxes( 'reddit' ) ).'</td>';
 
-			$rows[] = $this->p->util->get_th( 'Preferred Order', 'short' ).'<td>'.
+			$rows[] = $this->p->util->get_th( __( 'Preferred Order',
+				'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'reddit_order', 
 				range( 1, count( $this->p->admin->submenu['sharing']->website ) ), 
 					'short' ).'</td>';
 
-			$rows[] = $this->p->util->get_th( 'Button Type', 'short' ).'<td>'.
+			$rows[] = $this->p->util->get_th( __( 'Button Type',
+				'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'reddit_type', 
 				array( 
 					'static-wide' => 'Interactive Wide',
