@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.10.3-dev4',		// plugin version
+					'version' => '8.10.3',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it\'s shared or re-shared!',
@@ -490,12 +490,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'follow' => array(
 				'size' => 32,
 				'src' => array(
-					'facebook.png' => 'https://www.facebook.com/SurniaUlulaCom',
-					'gplus.png' => 'https://plus.google.com/+SurniaUlula/',
-					'linkedin.png' => 'https://www.linkedin.com/in/jsmoriss',
-					'twitter.png' => 'https://twitter.com/surniaululacom',
-					'youtube.png' => 'https://www.youtube.com/user/SurniaUlulaCom',
-					'feed.png' => 'http://feed.surniaulula.com/category/application/wordpress/wp-plugins/ngfb/feed/',
+					'images/follow/Facebook.png' => 'https://www.facebook.com/SurniaUlulaCom',
+					'images/follow/GooglePlus.png' => 'https://plus.google.com/+SurniaUlula/',
+					'images/follow/Linkedin.png' => 'https://www.linkedin.com/in/jsmoriss',
+					'images/follow/Twitter.png' => 'https://twitter.com/surniaululacom',
+					'images/follow/Youtube.png' => 'https://www.youtube.com/user/SurniaUlulaCom',
+					'images/follow/Rss.png' => 'http://surniaulula.com/category/application/wordpress/wp-plugins/ngfb/feed/',
 				),
 			),
 			'form' => array(

@@ -12,7 +12,7 @@
  * Description: Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.1
  * Tested Up To: 4.3.1
- * Version: 8.10.3-dev4
+ * Version: 8.10.3
  * 
  * Copyright 2012-2015 - Jean-Sebastien Morisset - http://surniaulula.com/
  */
@@ -184,7 +184,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				! empty( $_GET['action'] ) && $_GET['action'] == 'activate-plugin' &&
 				! empty( $_GET['plugin'] ) && $_GET['plugin'] == NGFB_PLUGINBASE ) ) {
 				if ( $this->debug->enabled )
-					$this->debug->log( 'exiting early: init_plugin() hook will follow' );
+					$this->debug->log( 'exiting early: init_plugin hook will follow' );
 				return;
 			}
 
@@ -192,6 +192,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			 * check and upgrade options if necessary
 			 */
 			$this->options = $this->opt->check_options( NGFB_OPTIONS_NAME, $this->options );
+
 			if ( is_multisite() )
 				$this->site_options = $this->opt->check_options( NGFB_SITE_OPTIONS_NAME, 
 					$this->site_options, true );
@@ -200,9 +201,12 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			 * configure class properties based on plugin settings
 			 */
 			$this->cache->default_object_expire = $this->options['plugin_object_cache_exp'];
+
 			$this->cache->default_file_expire = ( $this->check->aop() ? 
 				( $this->debug->is_enabled( 'wp' ) ? 
-					NGFB_DEBUG_FILE_EXP : $this->options['plugin_file_cache_exp'] ) : 0 );
+					NGFB_DEBUG_FILE_EXP : 
+					$this->options['plugin_file_cache_exp'] ) : 0 );
+
 			$this->is_avail['cache']['file'] = $this->cache->default_file_expire > 0 ? true : false;
 
 			// disable the transient cache if html debug mode is on
@@ -211,16 +215,16 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				$this->is_avail['cache']['transient'] = defined( 'NGFB_TRANSIENT_CACHE_DISABLE' ) &&
 					! NGFB_TRANSIENT_CACHE_DISABLE ? true : false;
 
-				$cache_status = 'transient cache use '.
-					( $this->is_avail['cache']['transient'] ?
-						'could not be' : 'is' ).' disabled';
-
 				if ( $this->debug->enabled )
-					$this->debug->log( 'html debug mode is active: '.$cache_status );
+					$this->debug->log( 'html debug mode is active: transient cache use '.
+						( $this->is_avail['cache']['transient'] ? 'could not be' : 'is' ).' disabled' );
 
 				if ( is_admin() )
-					$this->notice->inf( 'HTML debug mode is active &ndash; '.$cache_status.
-						' and informational messages are being added as hidden HTML comments.' );
+					// text_domain is already loaded by the NgfbAdmin class construct
+					$this->notice->inf( ( $this->is_avail['cache']['transient'] ?
+						__( 'HTML debug mode is active (transient cache could NOT be disabled).', 'nextgen-facebook' ) :
+						__( 'HTML debug mode is active (transient cache use is disabled).', 'nextgen-facebook' ) ).' '.
+						__( 'Informational debug messages are being added as hidden HTML comments.', 'nextgen-facebook' ) );
 			}
 		}
 
