@@ -252,22 +252,16 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Install and Uninstall =
 
-<ul>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/install-the-plugin/">Install the Plugin</a></li>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/">Integration Notes</a>
-	<ul>
-		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/buddypress-integration/">BuddyPress Integration</a></li>
-	</ul></li>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/uninstall-the-plugin/">Uninstall the Plugin</a></li>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/debugging-and-problem-solving/">Debugging and Problem Solving</a></li>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/developer-special-buy-one-get-one-free/">Developer Special – Buy one, Get one Free</a></li>
-</ul>
+* [Install the Plugin](http://surniaulula.com/codex/plugins/nextgen-facebook/installation-to/install-the-plugin/)
+* [Integration Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/)
+	* [BuddyPress Integration](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/buddypress-integration/)
+* [Uninstall the Plugin](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/uninstall-the-plugin/)
+* [Debugging and Problem Solving](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/debugging-and-problem-solving/)
+* [Developer Special – Buy one, Get one Free](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/developer-special-buy-one-get-one-free/)
 
 = Plugin Setup =
 
-<ul>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/a-setup-guide/">A Setup Guide for NGFB</a></li>
-</ul>
+* [A Setup Guide for NGFB](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/a-setup-guide/)
 
 == Frequently Asked Questions ==
 
