@@ -155,7 +155,9 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		protected function add_meta_boxes() {
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-			add_meta_box( $this->pagehook.'_style', 'Social Sharing Styles', array( &$this, 'show_metabox_style' ), $this->pagehook, 'normal' );
+			add_meta_box( $this->pagehook.'_style', _x( 'Social Sharing Styles', 
+				'normal metabox title', 'nextgen-facebook' ),
+					array( &$this, 'show_metabox_style' ), $this->pagehook, 'normal' );
 		}
 
 		public function show_metabox_style() {
@@ -176,7 +178,8 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 				'<td>'.$this->form->get_checkbox( 'buttons_enqueue_social_css' ).'</td>',
 			) );
 
-			$tabs = apply_filters( $this->p->cf['lca'].'_style_tabs', NgfbSharing::$cf['sharing']['style'] );
+			$tabs = apply_filters( $this->p->cf['lca'].'_style_tabs', 
+				NgfbSharing::$cf['sharing']['style'] );
 			$rows = array();
 			foreach ( $tabs as $key => $title )
 				$rows[$key] = array_merge( $this->get_rows( $metabox, $key ), 

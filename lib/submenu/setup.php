@@ -21,7 +21,9 @@ if ( ! class_exists( 'NgfbSubmenuSetup' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		protected function add_meta_boxes() {
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-			add_meta_box( $this->pagehook.'_guide', 'Setup Guide', array( &$this, 'show_metabox_guide' ), $this->pagehook, 'normal' );
+			add_meta_box( $this->pagehook.'_guide', _x( 'Setup Guide',
+				'normal metabox title', 'nextgen-facebook' ),
+					array( &$this, 'show_metabox_guide' ), $this->pagehook, 'normal' );
 		}
 
 		public function show_metabox_guide() {

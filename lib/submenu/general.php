@@ -21,10 +21,13 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		protected function add_meta_boxes() {
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-			add_meta_box( $this->pagehook.'_opengraph', 'All Social Websites / Open Graph',
-				array( &$this, 'show_metabox_opengraph' ), $this->pagehook, 'normal' );
-			add_meta_box( $this->pagehook.'_publishers', 'Specific Websites and Publishers',
-				array( &$this, 'show_metabox_publishers' ), $this->pagehook, 'normal' );
+			add_meta_box( $this->pagehook.'_opengraph', _x( 'All Social Websites / Open Graph',
+				'normal metabox title', 'nextgen-facebook' ), 
+					array( &$this, 'show_metabox_opengraph' ), $this->pagehook, 'normal' );
+
+			add_meta_box( $this->pagehook.'_publishers', _x( 'Specific Websites and Publishers',
+				'normal metabox title', 'nextgen-facebook' ), 
+					array( &$this, 'show_metabox_publishers' ), $this->pagehook, 'normal' );
 
 			// issues a warning notice if the default image size is too small
 			$this->p->media->get_default_image( 1, $this->p->cf['lca'].'-opengraph' );
@@ -33,11 +36,11 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 		public function show_metabox_opengraph() {
 			$metabox = 'og';
 			$tabs = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_tabs', array( 
-				'general' => 'Site Information',
-				'content' => 'Title / Description',
-				'author' => 'Authorship',
-				'images' => 'Images',
-				'videos' => 'Videos',
+				'general' => _x( 'Site Information', 'normal metabox tab', 'nextgen-facebook' ),
+				'content' => _x( 'Title / Description', 'normal metabox tab', 'nextgen-facebook' ),
+				'author' => _x( 'Authorship', 'normal metabox tab', 'nextgen-facebook' ),
+				'images' => _x( 'Images', 'normal metabox tab', 'nextgen-facebook' ),
+				'videos' => _x( 'Videos', 'normal metabox tab', 'nextgen-facebook' ),
 			) );
 			$rows = array();
 			foreach ( $tabs as $key => $title )
@@ -49,11 +52,11 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 		public function show_metabox_publishers() {
 			$metabox = 'pub';
 			$tabs = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_tabs', array( 
-				'facebook' => 'Facebook',
-				'google' => 'Google / Schema',
-				'pinterest' => 'Pinterest',
-				'twitter' => 'Twitter',
-				'other' => 'Others',
+				'facebook' => _x( 'Facebook', 'normal metabox tab', 'nextgen-facebook' ),
+				'google' => _x( 'Google / Schema', 'normal metabox tab', 'nextgen-facebook' ),
+				'pinterest' => _x( 'Pinterest', 'normal metabox tab', 'nextgen-facebook' ),
+				'twitter' => _x( 'Twitter', 'normal metabox tab', 'nextgen-facebook' ),
+				'other' => _x( 'Others', 'normal metabox tab', 'nextgen-facebook' ),
 			) );
 			$rows = array();
 			foreach ( $tabs as $key => $title )
@@ -94,12 +97,12 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					'<td>'.$this->form->get_input( 'og_title_sep', 'short' ).'</td>';
 
 					$rows[] = '<tr class="hide_in_basic">'.
-					$this->p->util->get_th( __( 'Title Length',
+					$this->p->util->get_th( __( 'Maximum Title Length',
 						'nextgen-facebook' ), null, 'og_title_len' ).
 					'<td>'.$this->form->get_input( 'og_title_len', 'short' ).' characters or less</td>';
 
 					$rows[] = '<tr class="hide_in_basic">'.
-					$this->p->util->get_th( __( 'Description Length',
+					$this->p->util->get_th( __( 'Maximum Description Length',
 						'nextgen-facebook' ), null, 'og_desc_len' ).
 					'<td>'.$this->form->get_input( 'og_desc_len', 'short' ).' characters or less</td>';
 

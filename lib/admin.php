@@ -336,31 +336,31 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 			if ( ! empty( $info['url']['faq'] ) )
 				$links[] = '<a href="'.$info['url']['faq'].'">'.
-					__( 'FAQ', 'nextgen-facebook' ).'</a>';
+					_x( 'FAQ', 'plugin action link', 'nextgen-facebook' ).'</a>';
 
 			if ( ! empty( $info['url']['notes'] ) )
 				$links[] = '<a href="'.$info['url']['notes'].'">'.
-					__( 'Notes', 'nextgen-facebook' ).'</a>';
+					_x( 'Notes', 'plugin action link', 'nextgen-facebook' ).'</a>';
 
 			if ( ! empty( $info['url']['latest_zip'] ) )
 				$links[] = '<a href="'.$info['url']['latest_zip'].'">'.
-					__( 'Download Latest', 'nextgen-facebook' ).'</a>';
+					_x( 'Download Latest', 'plugin action link', 'nextgen-facebook' ).'</a>';
 
 			if ( ! empty( $info['url']['pro_support'] ) &&
 				$this->p->check->aop( $lca, true, $this->p->is_avail['aop'] ) ) {
 					$links[] = '<a href="'.$info['url']['pro_support'].'">'.
-						__( 'Pro Support', 'nextgen-facebook' ).'</a>';
+						_x( 'Pro Support', 'plugin action link', 'nextgen-facebook' ).'</a>';
 			} else {
 				if ( ! empty( $info['url']['wp_support'] ) )
 					$links[] = '<a href="'.$info['url']['wp_support'].'">'.
-						__( 'Support Forum', 'nextgen-facebook' ).'</a>';
+						_x( 'Support Forum', 'plugin action link', 'nextgen-facebook' ).'</a>';
 
 				if ( ! empty( $info['url']['purchase'] ) ) {
 					if ( $this->p->check->aop( $lca, false, $this->p->is_avail['aop'] ) )
 						$links[] = '<a href="'.$info['url']['purchase'].'">'.
-							__( 'Purchase License', 'nextgen-facebook' ).'</a>';
+							_x( 'Purchase Pro License(s)', 'plugin action link', 'nextgen-facebook' ).'</a>';
 					else $links[] = '<a href="'.$info['url']['purchase'].'">'.
-						__( 'Purchase Pro', 'nextgen-facebook' ).'</a>';
+						_x( 'Purchase Pro Version', 'plugin action link', 'nextgen-facebook' ).'</a>';
 				}
 			}
 
@@ -488,24 +488,31 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			if ( empty( $this->p->options['plugin_'.$this->p->cf['lca'].'_tid'] ) || 
 				! $this->p->check->aop( $this->p->cf['lca'], true, $this->p->is_avail['aop'] ) ) {
 
-				add_meta_box( $this->pagehook.'_purchase', __( 'Pro Version', 'nextgen-facebook' ), 
+				add_meta_box( $this->pagehook.'_purchase', _x( 'Pro / Power-User Version', 
+					'side metabox title', 'nextgen-facebook' ), 
 					array( &$this, 'show_metabox_purchase' ), $this->pagehook, 'side' );
+
 				add_filter( 'postbox_classes_'.$this->pagehook.'_'.$this->pagehook.'_purchase', 
 					array( &$this, 'add_class_postbox_highlight_side' ) );
+
 				$this->p->mods['util']['user']->reset_metabox_prefs( $this->pagehook, 
 					array( 'purchase' ), null, 'side', true );
 			}
 
-			add_meta_box( $this->pagehook.'_info', __( 'Version Information', 'nextgen-facebook' ), 
+			add_meta_box( $this->pagehook.'_info', _x( 'Version Information', 
+				'side metabox title', 'nextgen-facebook' ), 
 				array( &$this, 'show_metabox_info' ), $this->pagehook, 'side' );
 
-			add_meta_box( $this->pagehook.'_status_gpl', __( 'Basic / Common Features', 'nextgen-facebook' ), 
+			add_meta_box( $this->pagehook.'_status_gpl', _x( 'Free / Basic Features',
+				'side metabox title', 'nextgen-facebook' ), 
 				array( &$this, 'show_metabox_status_gpl' ), $this->pagehook, 'side' );
 
-			add_meta_box( $this->pagehook.'_status_pro', __( 'Pro Version Features', 'nextgen-facebook' ), 
+			add_meta_box( $this->pagehook.'_status_pro', _x( 'Pro Version Features',
+				'side metabox title', 'nextgen-facebook' ), 
 				array( &$this, 'show_metabox_status_pro' ), $this->pagehook, 'side' );
 
-			add_meta_box( $this->pagehook.'_help', __( 'Help and Support', 'nextgen-facebook' ), 
+			add_meta_box( $this->pagehook.'_help', _x( 'Help and Support',
+				'side metabox title', 'nextgen-facebook' ), 
 				array( &$this, 'show_metabox_help' ), $this->pagehook, 'side' );
 
 		}
@@ -961,7 +968,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				}
 
 				if ( ! empty( $info['url']['latest_zip'] ) )
-					$links .= ' | <a href="'.$info['url']['latest_zip'].'">'.__( 'Download the Latest Version',
+					$links .= ' | <a href="'.$info['url']['latest_zip'].'">'.__( 'Download Latest Version',
 						'nextgen-facebook' ).'</a> (ZIP)';
 
 				if ( ! empty( $info['url']['purchase'] ) ) {

@@ -78,8 +78,9 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 			$row = 0;
 
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-			add_meta_box( $this->pagehook.'_sharing', 'Social Sharing Buttons', 
-				array( &$this, 'show_metabox_sharing' ), $this->pagehook, 'normal' );
+			add_meta_box( $this->pagehook.'_sharing', _x( 'Social Sharing Buttons', 
+				'normal metabox title', 'nextgen-facebook' ),
+					array( &$this, 'show_metabox_sharing' ), $this->pagehook, 'normal' );
 
 			foreach ( $this->p->cf['*']['lib']['website'] as $id => $name ) {
 				$classname = __CLASS__.$id;
@@ -88,10 +89,13 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 					$row = $col == 1 ? $row + 1 : $row;
 					$pos_id = 'website-row-'.$row.'-col-'.$col;
 					$name = $name == 'GooglePlus' ? 'Google+' : $name;
+
 					add_meta_box( $this->pagehook.'_'.$id, $name, 
 						array( &$this->website[$id], 'show_metabox_website' ), $this->pagehook, $pos_id );
+
 					add_filter( 'postbox_classes_'.$this->pagehook.'_'.$this->pagehook.'_'.$id, 
 						array( &$this, 'add_class_postbox_website' ) );
+
 					$this->website[$id]->form = &$this->get_form_reference();
 				}
 			}
@@ -112,13 +116,11 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		public function show_metabox_sharing() {
 			$metabox = 'sharing';
-			$tabs = array(
-				'include' => 'Include Buttons',
-				'position' => 'Buttons Position',
-				'preset' => 'Preset Options',
-			);
-
-			$tabs = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_tabs', $tabs );
+			$tabs = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_tabs', array(
+				'include' => _x( 'Include Buttons', 'normal metabox tab', 'nextgen-facebook' ),
+				'position' => _x( 'Buttons Position', 'normal metabox tab', 'nextgen-facebook' ),
+				'preset' => _x( 'Preset Options', 'normal metabox tab', 'nextgen-facebook' ),
+			) );
 			$rows = array();
 			foreach ( $tabs as $key => $title )
 				$rows[$key] = array_merge( $this->get_rows( $metabox, $key ), 

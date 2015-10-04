@@ -21,8 +21,9 @@ if ( ! class_exists( 'NgfbSettingImagedimensions' ) && class_exists( 'NgfbAdmin'
 
 		protected function add_meta_boxes() {
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-			add_meta_box( $this->pagehook.'_image_dimensions', 'Social Image Dimensions', 
-				array( &$this, 'show_metabox_image_dimensions' ), $this->pagehook, 'normal' );
+			add_meta_box( $this->pagehook.'_image_dimensions', _x( 'Social Image Dimensions', 
+				'normal metabox title', 'nextgen-facebook' ), 
+					array( &$this, 'show_metabox_image_dimensions' ), $this->pagehook, 'normal' );
 		}
 
 		public function show_metabox_image_dimensions() {
