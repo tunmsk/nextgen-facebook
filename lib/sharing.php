@@ -296,17 +296,21 @@ jQuery("#ngfb-sidebar").click( function(){
 
 		public function filter_status_gpl_features( $features, $lca, $info ) {
 			if ( ! empty( $info['lib']['submenu']['sharing'] ) )
-				$features['Sharing Buttons'] = array( 'classname' => $lca.'Sharing' );
-
+				$features['Sharing Buttons'] = array(
+					'classname' => $lca.'Sharing',
+				);
 			if ( ! empty( $info['lib']['submenu']['style'] ) )
-				$features['Sharing Stylesheet'] = array( 'status' => $this->p->options['buttons_use_social_css'] ? 'on' : 'off' );
-
+				$features['Sharing Stylesheet'] = array(
+					'status' => $this->p->options['buttons_use_social_css'] ? 'on' : 'off',
+				);
 			if ( ! empty( $info['lib']['shortcode']['sharing'] ) )
-				$features['Sharing Shortcode'] = array( 'classname' => $lca.'ShortcodeSharing' );
-
+				$features['Sharing Shortcode'] = array(
+					'classname' => $lca.'ShortcodeSharing',
+				);
 			if ( ! empty( $info['lib']['widget']['sharing'] ) )
-				$features['Sharing Widget'] = array( 'classname' => $lca.'WidgetSharing' );
-
+				$features['Sharing Widget'] = array(
+					'classname' => $lca.'WidgetSharing'
+				);
 			return $features;
 		}
 
@@ -316,7 +320,7 @@ jQuery("#ngfb-sidebar").click( function(){
 
 				$aop = $this->p->check->aop( $lca );
 				$features['Social File Cache'] = array( 
-					'status' => empty( $this->options['plugin_file_cache_exp'] ) ? 
+					'status' => empty( $this->options['plugin_file_cache_exp'] ) ?
 						( $aop ? 'on' : 'rec' ) : 'off',
 					'td_class' => $aop ? '' : 'blank',
 				);

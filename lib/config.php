@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.10.3',		// plugin version
+					'version' => '8.11.0-dev1',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it\'s shared or re-shared!',
@@ -52,26 +52,28 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'pro_support' => 'http://nextgen-facebook.support.surniaulula.com/',
 					),
 					'lib' => array(			// libraries
-						'setting' => array (
+						'setting' => array (	// lib file descriptions will be translated
 							'ngfb-separator-0' => 'NGFB',
 							'image-dimensions' => 'Social Image Dimensions',
 							'social-accounts' => 'Website / Business Social Accounts',
 							'contact-fields' => 'User Profile Contact Methods',
 							'ngfb-separator-1' => '',
 						),
-						'submenu' => array (
+						'submenu' => array (	// lib file descriptions will be translated
 							'general' => 'General',
 							'advanced' => 'Advanced',
 							'sharing' => 'Sharing Buttons',
 							'style' => 'Sharing Styles',
 							'readme' => 'Read Me',
 							'setup' => 'Setup Guide',
+							// the first 2 words will be highlighted in menu
 							'licenses' => 'Extension Plugins and Pro Licenses',
 						),
-						'sitesubmenu' => array(
+						'sitesubmenu' => array(	// lib file descriptions will be translated
 							'siteadvanced' => 'Advanced',
 							'sitereadme' => 'Read Me',
 							'sitesetup' => 'Setup Guide',
+							// the first 2 words will be highlighted in menu
 							'sitelicenses' => 'Extension Plugins and Pro Licenses',
 						),
 						'website' => array(
@@ -89,10 +91,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'skype' => 'Skype',
 						),
 						'shortcode' => array(
-							'sharing' => 'Sharing',
+							'sharing' => 'Sharing Shortcode',
 						),
 						'widget' => array(
-							'sharing' => 'Sharing',
+							'sharing' => 'Sharing Widget',
 						),
 						'gpl' => array(
 							'admin' => array(
@@ -100,9 +102,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'advanced' => 'Advanced Settings',
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
-								'post' => 'Post Social Settings',
-								'taxonomy' => 'Taxonomy Social Settings',
-								'user' => 'User Social Settings',
+								'post' => 'Post Settings',
+								'taxonomy' => 'Taxonomy Settings',
+								'user' => 'User Settings',
 							),
 							'ecom' => array(
 								'woocommerce' => 'WooCommerce',
@@ -114,9 +116,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'buddypress' => 'BuddyPress',
 							),
 							'util' => array(
-								'post' => 'Post Social Settings',
-								'taxonomy' => 'Taxonomy Social Settings',
-								'user' => 'User Social Settings',
+								'post' => 'Post Settings',
+								'taxonomy' => 'Taxonomy Settings',
+								'user' => 'User Settings',
 							),
 						),
 						'pro' => array(
@@ -125,9 +127,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'advanced' => 'Advanced Settings',
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
-								'post' => 'Post Social Settings',
-								'taxonomy' => 'Taxonomy Social Settings',
-								'user' => 'User Social Settings',
+								'post' => 'Post Settings',
+								'taxonomy' => 'Taxonomy Settings',
+								'user' => 'User Settings',
 							),
 							'ecom' => array(
 								'edd' => 'Easy Digital Downloads',
@@ -161,10 +163,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'util' => array(
 								'language' => 'Publisher Language',
 								'shorten' => 'URL Shortening',
-								'post' => 'Post Social Settings',
+								'post' => 'Post Settings',
 								'restapi' => 'WP REST API v2',
-								'taxonomy' => 'Taxonomy Social Settings',
-								'user' => 'User Social Settings',
+								'taxonomy' => 'Taxonomy Settings',
+								'user' => 'User Settings',
 							),
 						),
 					),
