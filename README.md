@@ -309,43 +309,44 @@
 <h4>Frequently Asked Questions</h4>
 
 <ul>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/can-i-use-the-pro-version-on-multiple-websites/">Can I use the Pro version on multiple websites?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/does-linkedin-read-the-open-graph-meta-tags/">Does LinkedIn read the Open Graph meta tags?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/doesnt-an-seo-plugin-cover-that/">Doesn’t an SEO plugin cover that?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-exclude-certain-parts-of-the-content-text/">How can I exclude / ignore certain parts of the content text?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-fix-a-err_too_many_redirects-error/">How can I fix a ERR_TOO_MANY_REDIRECTS error?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-fix-an-http-error-when-uploading-images/">How can I fix an “HTTP error” when uploading images?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-have-smaller-dimensions-for-the-default-image/">How can I have smaller dimensions for the default image?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-see-what-facebook-sees/">How can I see what Facebook sees?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-share-a-single-nextgen-gallery-image/">How can I share a single NextGEN Gallery image?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-attach-an-image-without-showing-it-on-the-webpage/">How do I attach an image without showing it on the webpage?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-fix-my-themes-front-page-pagination/">How do I fix my theme’s front page pagination?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-install-the-pro-version/">How do I install the Pro version?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-does-ngfb-find-detect-select-images/">How does NGFB find / detect / select images?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/">Social Sharing Buttons</a>
-    <ul>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/can-i-share-a-single-image-on-a-webpage/">Can I share a single image on a webpage?</a></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/can-i-use-other-social-sharing-buttons/">Can I use other social sharing buttons?</a></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/how-do-i-turn-on-social-sharing-buttons-for-a-page/">How do I turn on Social Sharing Buttons for a page?</a></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-are-the-buttons-showing-the-wrong-language/">Why are the buttons showing the wrong language?</a></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-does-the-facebook-like-button-flyout-get-clipped/">Why does the Facebook “Like” button flyout get clipped?</a></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-doesnt-the-pinterest-button-show/">Why doesn’t the Pinterest button show?</a></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-doesnt-the-twitter-count-increase/">Why doesn’t the Twitter count increase?</a></li>
-    </ul></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/w3c-says-there-is-no-attribute-property/">W3C says “there is no attribute ‘property’”</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-about-google-search-and-google-plus/">What about Google Search and Google Plus?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-features-of-nextgen-gallery-are-supported/">What features of NextGEN Gallery are supported?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-is-the-difference-between-ngfb-and-wpsso/">What is the difference between NGFB and WPSSO?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-is-the-difference-between-the-free-and-pro-versions/">What is the difference between the Free and Pro versions?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-arent-pins-from-my-website-posting-rich/">Why aren’t Pins from my website posting Rich?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-do-my-facebook-shares-have-small-images/">Why do my Facebook shares have small images?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-play-videos-instead-of-linking-them/">Why does Facebook play videos instead of linking them?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-show-the-wrong-image-text/">Why does Facebook show the wrong image / text?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-google-structured-data-testing-tool-show-errors/">Why does Google Structured Data Testing Tool show errors?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-the-plugin-ignore-some-img-html-tags/">Why does the plugin ignore some &lt;img/&gt; HTML tags?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-dont-my-twitter-cards-show-on-twitter/">Why don’t my Twitter Cards show on Twitter?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-is-the-open-graph-title-the-same-for-every-webpage/">Why is the Open Graph title the same for every webpage?</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-is-the-page-blank-or-its-components-misaligned/">Why is the page blank or its components misaligned?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/can-i-use-the-pro-version-on-multiple-websites/">Can I use the Pro version on multiple websites?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/does-linkedin-read-the-open-graph-meta-tags/">Does LinkedIn read the Open Graph meta tags?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/doesnt-an-seo-plugin-cover-that/">Doesn’t an SEO plugin cover that?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-exclude-certain-parts-of-the-content-text/">How can I exclude / ignore certain parts of the content text?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-fix-a-err_too_many_redirects-error/">How can I fix a ERR_TOO_MANY_REDIRECTS error?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-fix-an-http-error-when-uploading-images/">How can I fix an “HTTP error” when uploading images?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-have-smaller-dimensions-for-the-default-image/">How can I have smaller dimensions for the default image?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-see-what-facebook-sees/">How can I see what Facebook sees?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-share-a-single-nextgen-gallery-image/">How can I share a single NextGEN Gallery image?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-attach-an-image-without-showing-it-on-the-webpage/">How do I attach an image without showing it on the webpage?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-fix-my-themes-front-page-pagination/">How do I fix my theme’s front page pagination?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-install-the-pro-version/">How do I install the Pro version?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-does-ngfb-find-detect-select-images/">How does NGFB find / detect / select images?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/">Social Sharing Buttons</a>
+
+<ul>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/can-i-share-a-single-image-on-a-webpage/">Can I share a single image on a webpage?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/can-i-use-other-social-sharing-buttons/">Can I use other social sharing buttons?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/how-do-i-turn-on-social-sharing-buttons-for-a-page/">How do I turn on Social Sharing Buttons for a page?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-are-the-buttons-showing-the-wrong-language/">Why are the buttons showing the wrong language?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-does-the-facebook-like-button-flyout-get-clipped/">Why does the Facebook “Like” button flyout get clipped?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-doesnt-the-pinterest-button-show/">Why doesn’t the Pinterest button show?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-doesnt-the-twitter-count-increase/">Why doesn’t the Twitter count increase?</a></li>
+</ul></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/w3c-says-there-is-no-attribute-property/">W3C says “there is no attribute ‘property’”</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-about-google-search-and-google-plus/">What about Google Search and Google Plus?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-features-of-nextgen-gallery-are-supported/">What features of NextGEN Gallery are supported?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-is-the-difference-between-ngfb-and-wpsso/">What is the difference between NGFB and WPSSO?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-is-the-difference-between-the-free-and-pro-versions/">What is the difference between the Free and Pro versions?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-arent-pins-from-my-website-posting-rich/">Why aren’t Pins from my website posting Rich?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-do-my-facebook-shares-have-small-images/">Why do my Facebook shares have small images?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-play-videos-instead-of-linking-them/">Why does Facebook play videos instead of linking them?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-show-the-wrong-image-text/">Why does Facebook show the wrong image / text?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-google-structured-data-testing-tool-show-errors/">Why does Google Structured Data Testing Tool show errors?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-the-plugin-ignore-some-img-html-tags/">Why does the plugin ignore some &lt;img/&gt; HTML tags?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-dont-my-twitter-cards-show-on-twitter/">Why don’t my Twitter Cards show on Twitter?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-is-the-open-graph-title-the-same-for-every-webpage/">Why is the Open Graph title the same for every webpage?</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-is-the-page-blank-or-its-components-misaligned/">Why is the page blank or its components misaligned?</a></li>
 </ul>
 
 
