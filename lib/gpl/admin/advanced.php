@@ -301,12 +301,12 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 
 			$rows[] = '<td></td>'.
-			$this->p->util->get_th( __( 'Show',
-				'nextgen-facebook' ), 'left checkbox' ).
-			$this->p->util->get_th( __( 'Contact Field Name',
-				'nextgen-facebook' ), 'left medium', 'custom-cm-field-name' ).
-			$this->p->util->get_th( __( 'Profile Contact Label',
-				'nextgen-facebook' ), 'left wide' );
+			$this->p->util->get_th( _x( 'Show',
+				'column title', 'nextgen-facebook' ), 'left checkbox' ).
+			$this->p->util->get_th( _x( 'Contact Field Name',
+				'column title', 'nextgen-facebook' ), 'left medium', 'custom-cm-field-name' ).
+			$this->p->util->get_th( _x( 'Profile Contact Label',
+				'column title', 'nextgen-facebook' ), 'left wide' );
 
 			$sorted_wp_cm = $this->p->cf['wp']['cm'];
 			ksort( $sorted_wp_cm );
