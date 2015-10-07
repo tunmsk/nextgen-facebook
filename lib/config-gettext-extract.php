@@ -1,0 +1,36 @@
+<?php die( 'These aren\'t the droids you\'re looking for...' );
+// an extract of translatable text strings from the static config array
+_x( 'Advanced', 'lib file description', 'nextgen-facebook' );
+_x( 'All Options', 'form option value', 'nextgen-facebook' );
+_x( 'Basic Options', 'form option value', 'nextgen-facebook' );
+_x( 'Bit.ly', 'form option value', 'nextgen-facebook' );
+_x( 'Bottom', 'form option value', 'nextgen-facebook' );
+_x( 'Center', 'form option value', 'nextgen-facebook' );
+_x( 'Default value', 'form option value', 'nextgen-facebook' );
+_x( 'Display Name', 'form option value', 'nextgen-facebook' );
+_x( 'Excerpt Only', 'form option value', 'nextgen-facebook' );
+_x( 'Extension Plugins and Pro Licenses', 'lib file description', 'nextgen-facebook' );
+_x( 'First and Last Names', 'form option value', 'nextgen-facebook' );
+_x( 'Footer', 'form option value', 'nextgen-facebook' );
+_x( 'Force this value', 'form option value', 'nextgen-facebook' );
+_x( 'General', 'lib file description', 'nextgen-facebook' );
+_x( 'Goo.gl', 'form option value', 'nextgen-facebook' );
+_x( 'Header', 'form option value', 'nextgen-facebook' );
+_x( 'If value is empty', 'form option value', 'nextgen-facebook' );
+_x( 'Left', 'form option value', 'nextgen-facebook' );
+_x( 'Nickname', 'form option value', 'nextgen-facebook' );
+_x( 'No', 'form option value', 'nextgen-facebook' );
+_x( '[none]', 'form option value', 'nextgen-facebook' );
+_x( 'Read Me', 'lib file description', 'nextgen-facebook' );
+_x( 'Right', 'form option value', 'nextgen-facebook' );
+_x( 'Setup Guide', 'lib file description', 'nextgen-facebook' );
+_x( 'Sharing Buttons', 'lib file description', 'nextgen-facebook' );
+_x( 'Sharing Styles', 'lib file description', 'nextgen-facebook' );
+_x( 'Social Image Dimensions', 'lib file description', 'nextgen-facebook' );
+_x( 'Title and Excerpt', 'form option value', 'nextgen-facebook' );
+_x( 'Title Only', 'form option value', 'nextgen-facebook' );
+_x( 'Top', 'form option value', 'nextgen-facebook' );
+_x( 'User Profile Contact Methods', 'lib file description', 'nextgen-facebook' );
+_x( 'Website / Business Social Accounts', 'lib file description', 'nextgen-facebook' );
+_x( 'Yes', 'form option value', 'nextgen-facebook' );
+?>
