@@ -27,18 +27,18 @@ if ( ! class_exists( 'NgfbSubmenuSharingManagewp' ) && class_exists( 'NgfbSubmen
 		protected function get_rows( $metabox, $key ) {
 			$rows = array();
 
-			$rows[] = $this->p->util->get_th( __( 'Show Button in',
-				'nextgen-facebook' ), 'short' ).'<td>'.
+			$rows[] = $this->p->util->get_th( _x( 'Show Button in',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 			( $this->show_on_checkboxes( 'managewp' ) ).'</td>';
 
-			$rows[] = $this->p->util->get_th( __( 'Preferred Order',
-				'nextgen-facebook' ), 'short' ).'<td>'.
+			$rows[] = $this->p->util->get_th( _x( 'Preferred Order',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'managewp_order', 
 				range( 1, count( $this->p->admin->submenu['sharing']->website ) ), 
 					'short' ).'</td>';
 
-			$rows[] = $this->p->util->get_th( __( 'Button Type',
-				'nextgen-facebook' ), 'short' ).'<td>'.
+			$rows[] = $this->p->util->get_th( _x( 'Button Type',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'managewp_type', 
 				array( 
 					'small' => 'Small',

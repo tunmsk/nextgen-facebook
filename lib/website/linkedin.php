@@ -31,23 +31,23 @@ if ( ! class_exists( 'NgfbSubmenuSharingLinkedin' ) && class_exists( 'NgfbSubmen
 		protected function get_rows( $metabox, $key ) {
 			$rows = array();
 
-			$rows[] = $this->p->util->get_th( __( 'Show Button in',
-				'nextgen-facebook' ), 'short' ).'<td>'.
+			$rows[] = $this->p->util->get_th( _x( 'Show Button in',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 			( $this->show_on_checkboxes( 'linkedin' ) ).'</td>';
 
-			$rows[] = $this->p->util->get_th( __( 'Preferred Order',
-				'nextgen-facebook' ), 'short' ).'<td>'.
+			$rows[] = $this->p->util->get_th( _x( 'Preferred Order',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'linkedin_order', 
 				range( 1, count( $this->p->admin->submenu['sharing']->website ) ), 
 					'short' ).'</td>';
 
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( __( 'JavaScript in',
-				'nextgen-facebook' ), 'short' ).'<td>'.
+			$this->p->util->get_th( _x( 'JavaScript in',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'linkedin_script_loc', $this->p->cf['form']['script_locations'] ).'</td>';
 
-			$rows[] = $this->p->util->get_th( __( 'Counter Mode',
-				'nextgen-facebook' ), 'short' ).'<td>'.
+			$rows[] = $this->p->util->get_th( _x( 'Counter Mode',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'linkedin_counter', 
 				array( 
 					'none' => '',
@@ -57,8 +57,8 @@ if ( ! class_exists( 'NgfbSubmenuSharingLinkedin' ) && class_exists( 'NgfbSubmen
 			).'</td>';
 
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( __( 'Zero in Counter',
-				'nextgen-facebook' ), 'short' ).'<td>'.
+			$this->p->util->get_th( _x( 'Zero in Counter',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_checkbox( 'linkedin_showzero' ).'</td>';
 
 			return $rows;

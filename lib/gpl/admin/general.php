@@ -25,8 +25,8 @@ if ( ! class_exists( 'NgfbGplAdminGeneral' ) ) {
 			$rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 		
-			$rows[] = $this->p->util->get_th( __( 'Include Author Gravatar Image',
-				'nextgen-facebook' ), null, 'og_author_gravatar' ).
+			$rows[] = $this->p->util->get_th( _x( 'Include Author Gravatar Image',
+				'option label', 'nextgen-facebook' ), null, 'og_author_gravatar' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" /></td>';
 
 			return $rows;
@@ -39,37 +39,38 @@ if ( ! class_exists( 'NgfbGplAdminGeneral' ) ) {
 					'nextgen-facebook' ).'</p>'.
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 		
-			$rows[] = $this->p->util->get_th( __( 'Maximum Videos to Include',
-				'nextgen-facebook' ), null, 'og_vid_max' ).
+			$rows[] = $this->p->util->get_th( _x( 'Maximum Videos to Include',
+				'option label', 'nextgen-facebook' ), null, 'og_vid_max' ).
 			'<td class="blank">'.$this->p->options['og_vid_max'].'</td>';
 	
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( __( 'Use HTTPS for Video API Calls',
-				'nextgen-facebook' ), null, 'og_vid_https' ).
+			$this->p->util->get_th( _x( 'Use HTTPS for Video API Calls',
+				'option label', 'nextgen-facebook' ), null, 'og_vid_https' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" /></td>';
 
-			$rows[] = $this->p->util->get_th( __( 'Include Video Preview Image(s)',
-				'nextgen-facebook' ), null, 'og_vid_prev_img' ).
+			$rows[] = $this->p->util->get_th( _x( 'Include Video Preview Image(s)',
+				'option label', 'nextgen-facebook' ), null, 'og_vid_prev_img' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" />'.
-			'&nbsp;&nbsp;video preview images (when available) are included first</td>';
+			' '._x( 'video preview images &ndash; when available &ndash; are included first',
+				'option comment', 'nextgen0facebook' ).'</td>';
 
-			$rows[] = $this->p->util->get_th( __( 'Include Embed text/html Type',
-				'nextgen-facebook' ), null, 'og_vid_html_type' ).
+			$rows[] = $this->p->util->get_th( _x( 'Include Embed text/html Type',
+				'option label', 'nextgen-facebook' ), null, 'og_vid_html_type' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" /></td>';
 
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( __( 'Default / Fallback Video URL',
-				'nextgen-facebook' ), null, 'og_def_vid_url' ).
+			$this->p->util->get_th( _x( 'Default / Fallback Video URL',
+				'option label', 'nextgen-facebook' ), null, 'og_def_vid_url' ).
 			'<td class="blank">'.$this->p->options['og_def_vid_url'].'</td>';
 	
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( __( 'Use Default Video on Indexes',
-				'nextgen-facebook' ), null, 'og_def_vid_on_index' ).
+			$this->p->util->get_th( _x( 'Use Default Video on Indexes',
+				'option label', 'nextgen-facebook' ), null, 'og_def_vid_on_index' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" /></td>';
 	
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( __( 'Use Default Video on Search Results',
-				'nextgen-facebook' ), null, 'og_def_vid_on_search' ).
+			$this->p->util->get_th( _x( 'Use Default Video on Search Results',
+				'option label', 'nextgen-facebook' ), null, 'og_def_vid_on_search' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" /></td>';
 
 			return $rows;

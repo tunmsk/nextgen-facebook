@@ -26,8 +26,8 @@ if ( ! class_exists( 'NgfbSitesubmenuSiteadvanced' ) && class_exists( 'NgfbAdmin
 
 		protected function add_meta_boxes() {
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-			add_meta_box( $this->pagehook.'_plugin', _x( 'Network Advanced Settings', 
-				'normal metabox title', 'nextgen-facebook' ), 
+			add_meta_box( $this->pagehook.'_plugin',
+				_x( 'Network Advanced Settings', 'metabox title', 'nextgen-facebook' ), 
 					array( &$this, 'show_metabox_plugin' ), $this->pagehook, 'normal' );
 
 			// add a class to set a minimum width for the network postboxes
@@ -58,17 +58,15 @@ if ( ! class_exists( 'NgfbSitesubmenuSiteadvanced' ) && class_exists( 'NgfbAdmin
 			switch ( $metabox.'-'.$key ) {
 				case 'plugin-settings':
 
-					$rows['plugin_debug'] = $this->p->util->get_th( __( 'Add Hidden Debug Messages',
-						'nextgen-facebook' ), null, 'plugin_debug' ).
+					$rows['plugin_debug'] = $this->p->util->get_th( _x( 'Add Hidden Debug Messages',
+						'option label', 'nextgen-facebook' ), null, 'plugin_debug' ).
 					'<td>'.$this->form->get_checkbox( 'plugin_debug' ).'</td>'.
-					$this->p->util->get_th( __( 'Site Use', 'nextgen-facebook' ), 'site_use' ).
-					'<td>'.$this->form->get_select( 'plugin_debug:use', $this->p->cf['form']['site_option_use'], 'site_use' ).'</td>';
+					$this->p->admin->get_site_use( $this->form, true, 'plugin_debug' );
 
-					$rows['plugin_preserve'] = $this->p->util->get_th( __( 'Preserve Settings on Uninstall',
-						'nextgen-facebook' ), 'highlight', 'plugin_preserve' ).
+					$rows['plugin_preserve'] = $this->p->util->get_th( _x( 'Preserve Settings on Uninstall',
+						'option label', 'nextgen-facebook' ), 'highlight', 'plugin_preserve' ).
 					'<td>'.$this->form->get_checkbox( 'plugin_preserve' ).'</td>'.
-					$this->p->util->get_th( __( 'Site Use', 'nextgen-facebook' ), 'site_use' ).
-					'<td>'.$this->form->get_select( 'plugin_preserve:use', $this->p->cf['form']['site_option_use'], 'site_use' ).'</td>';
+					$this->p->admin->get_site_use( $this->form, true, 'plugin_preserve' );
 
 					break;
 			}

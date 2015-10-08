@@ -30,8 +30,8 @@ if ( ! class_exists( 'NgfbSubmenuSharingTumblr' ) && class_exists( 'NgfbSubmenuS
 		// add an option to the WordPress -> Settings -> Image Dimensions page
 		public function filter_image_dimensions_general_rows( $rows, $form ) {
 
-			$rows[] = $this->p->util->get_th( __( 'Tumblr <em>Sharing Button</em>',
-				'nextgen-facebook' ), null, 'tumblr_img_dimensions',
+			$rows[] = $this->p->util->get_th( _x( 'Tumblr <em>Sharing Button</em>',
+				'option label', 'nextgen-facebook' ), null, 'tumblr_img_dimensions',
 			'The image dimensions that the Tumblr button will share (defaults is '.$this->p->opt->get_defaults( 'tumblr_img_width' ).'x'.$this->p->opt->get_defaults( 'tumblr_img_height' ).' '.( $this->p->opt->get_defaults( 'tumblr_img_crop' ) == 0 ? 'un' : '' ).'cropped). Note that original images in the WordPress Media Library and/or NextGEN Gallery must be larger than your chosen image dimensions.' ).
 			'<td>'.$form->get_image_dimensions_input( 'tumblr_img' ).'</td>';
 
@@ -59,43 +59,45 @@ if ( ! class_exists( 'NgfbSubmenuSharingTumblr' ) && class_exists( 'NgfbSubmenuS
 			}
 			$buttons_html .= '</div>';
 
-			$rows[] = $this->p->util->get_th( __( 'Show Button in',
-				'nextgen-facebook' ), 'short', null, 'The Tumblr button shares a custom Image ID (in the Social Settings metabox), a featured image, or an attached image, that is equal to or larger than the \'Image Dimensions\' you have chosen (when the <em>Use Attached Image</em> option is checked), embedded video, the content of <em>quote</em> custom Posts, or simply shares the webpage link.' ).'<td>'.
+			$rows[] = $this->p->util->get_th( _x( 'Show Button in',
+				'option label (short)', 'nextgen-facebook' ), 'short', null, 'The Tumblr button shares a custom Image ID (in the Social Settings metabox), a featured image, or an attached image, that is equal to or larger than the \'Image Dimensions\' you have chosen (when the <em>Use Attached Image</em> option is checked), embedded video, the content of <em>quote</em> custom Posts, or simply shares the webpage link.' ).'<td>'.
 			( $this->show_on_checkboxes( 'tumblr' ) ).'</td>';
 
-			$rows[] = $this->p->util->get_th( __( 'Preferred Order',
-				'nextgen-facebook' ), 'short' ).'<td>'.
+			$rows[] = $this->p->util->get_th( _x( 'Preferred Order',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'tumblr_order', 
 				range( 1, count( $this->p->admin->submenu['sharing']->website ) ), 
 					'short' ).'</td>';
 
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( __( 'JavaScript in',
-				'nextgen-facebook' ), 'short' ).'<td>'.
+			$this->p->util->get_th( _x( 'JavaScript in',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'tumblr_script_loc', $this->p->cf['form']['script_locations'] ).'</td>';
 
-			$rows[] = $this->p->util->get_th( __( 'Button Style',
-				'nextgen-facebook' ), 'short' ).
+			$rows[] = $this->p->util->get_th( _x( 'Button Style',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
 				'<td class="btn_wizard">'.$buttons_html.'</td>';
 
-			$rows[] = $this->p->util->get_th( __( 'Image Dimensions',
-				'nextgen-facebook' ), 'short' ).
+			$rows[] = $this->p->util->get_th( _x( 'Image Dimensions',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$this->form->get_image_dimensions_input( 'tumblr_img', false, true ).'</td>';
 
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( __( 'Media Caption',
-				'nextgen-facebook' ), 'short' ).'<td>'.
+			$this->p->util->get_th( _x( 'Media Caption',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 			$this->form->get_select( 'tumblr_caption', $this->p->cf['form']['caption_types'] ).'</td>';
 
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( __( 'Caption Length',
-				'nextgen-facebook' ), 'short' ).'<td>'.
-			$this->form->get_input( 'tumblr_cap_len', 'short' ).' characters or less</td>';
+			$this->p->util->get_th( _x( 'Caption Length',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
+			$this->form->get_input( 'tumblr_cap_len', 'short' ).' '.
+				_x( 'characters or less', 'option comment', 'nextgen-facebook' ).'</td>';
 	
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( __( 'Link Description',
-				'nextgen-facebook' ), 'short' ).'<td>'.
-			$this->form->get_input( 'tumblr_desc_len', 'short' ).' characters or less</td>';
+			$this->p->util->get_th( _x( 'Link Description',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
+			$this->form->get_input( 'tumblr_desc_len', 'short' ).' '.
+				_x( 'characters or less', 'option comment', 'nextgen-facebook' ).'</td>';
 
 			return $rows;
 		}

@@ -78,8 +78,8 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 			$row = 0;
 
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-			add_meta_box( $this->pagehook.'_sharing', _x( 'Social Sharing Buttons', 
-				'normal metabox title', 'nextgen-facebook' ),
+			add_meta_box( $this->pagehook.'_sharing',
+				_x( 'Social Sharing Buttons', 'metabox title', 'nextgen-facebook' ),
 					array( &$this, 'show_metabox_sharing' ), $this->pagehook, 'normal' );
 
 			foreach ( $this->p->cf['*']['lib']['website'] as $id => $name ) {
@@ -117,9 +117,9 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 		public function show_metabox_sharing() {
 			$metabox = 'sharing';
 			$tabs = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_tabs', array(
-				'include' => _x( 'Include Buttons', 'normal metabox tab', 'nextgen-facebook' ),
-				'position' => _x( 'Buttons Position', 'normal metabox tab', 'nextgen-facebook' ),
-				'preset' => _x( 'Preset Options', 'normal metabox tab', 'nextgen-facebook' ),
+				'include' => _x( 'Include Buttons', 'metabox tab', 'nextgen-facebook' ),
+				'position' => _x( 'Buttons Position', 'metabox tab', 'nextgen-facebook' ),
+				'preset' => _x( 'Preset Options', 'metabox tab', 'nextgen-facebook' ),
 			) );
 			$rows = array();
 			foreach ( $tabs as $key => $title )
@@ -144,25 +144,25 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					$rows[] = '<tr><td colspan="2">'.$this->p->msgs->get( 'info-'.$metabox.'-'.$key ).'</td></tr>';
 
-					$rows[] = $this->p->util->get_th( __( 'Include on Index Webpages',
-						'nextgen-facebook' ), null, 'buttons_on_index' ).
+					$rows[] = $this->p->util->get_th( _x( 'Include on Index Webpages',
+						'option label', 'nextgen-facebook' ), null, 'buttons_on_index' ).
 					'<td>'.$this->form->get_checkbox( 'buttons_on_index' ).'</td>';
 
-					$rows[] = $this->p->util->get_th( __( 'Include on Static Homepage',
-						'nextgen-facebook' ), null, 'buttons_on_front' ).
+					$rows[] = $this->p->util->get_th( _x( 'Include on Static Homepage',
+						'option label', 'nextgen-facebook' ), null, 'buttons_on_front' ).
 					'<td>'.$this->form->get_checkbox( 'buttons_on_front' ).'</td>';
 
 					break;
 
 				case 'sharing-position':
 
-					$rows[] = $this->p->util->get_th( __( 'Position in Content Text',
-						'nextgen-facebook' ), null, 'buttons_pos_content' ).
+					$rows[] = $this->p->util->get_th( _x( 'Position in Content Text',
+						'option label', 'nextgen-facebook' ), null, 'buttons_pos_content' ).
 					'<td>'.$this->form->get_select( 'buttons_pos_content',
 						array( 'top' => 'Top', 'bottom' => 'Bottom', 'both' => 'Both Top and Bottom' ) ).'</td>';
 
-					$rows[] = $this->p->util->get_th( __( 'Position in Excerpt Text',
-						'nextgen-facebook' ), null, 'buttons_pos_excerpt' ).
+					$rows[] = $this->p->util->get_th( _x( 'Position in Excerpt Text',
+						'option label', 'nextgen-facebook' ), null, 'buttons_pos_excerpt' ).
 					'<td>'.$this->form->get_select( 'buttons_pos_excerpt', 
 						array( 'top' => 'Top', 'bottom' => 'Bottom', 'both' => 'Both Top and Bottom' ) ).'</td>';
 

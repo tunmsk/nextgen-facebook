@@ -61,8 +61,8 @@ if ( ! class_exists( 'NgfbGplAdminStyle' ) ) {
 		public function filter_style_sidebar_rows( $rows, $form ) {
 			$rows = array_merge( $rows, $this->filter_style_common_rows( $rows, $form, 'sidebar' ) );
 			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( __( 'Sidebar Javascript',
-				'nextgen-facebook' ), null, 'buttons_js_sidebar' ).
+			$this->p->util->get_th( _x( 'Sidebar Javascript',
+				'option label', 'nextgen-facebook' ), null, 'buttons_js_sidebar' ).
 			'<td><textarea disabled="disabled" class="average code">'.
 			$this->p->options['buttons_js_sidebar'].'</textarea></td>';
 			return $rows;

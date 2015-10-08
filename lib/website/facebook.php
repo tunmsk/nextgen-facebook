@@ -43,34 +43,34 @@ if ( ! class_exists( 'NgfbSubmenuSharingFacebook' ) && class_exists( 'NgfbSubmen
 
 				case 'fb-all':
 
-					$rows[] = $this->p->util->get_th( __( 'Show Button in',
-						'nextgen-facebook' ), 'short' ).
+					$rows[] = $this->p->util->get_th( _x( 'Show Button in',
+						'option label (short)', 'nextgen-facebook' ), 'short' ).
 					'<td>'.( $this->show_on_checkboxes( 'fb' ) ).'</td>';
 
-					$rows[] = $this->p->util->get_th( __( 'Preferred Order',
-						'nextgen-facebook' ), 'short' ).
+					$rows[] = $this->p->util->get_th( _x( 'Preferred Order',
+						'option label (short)', 'nextgen-facebook' ), 'short' ).
 					'<td>'.$this->form->get_select( 'fb_order', 
 						range( 1, count( $this->p->admin->submenu['sharing']->website ) ), 'short' ).'</td>';
 	
 					$rows[] = '<tr class="hide_in_basic">'.
-					$this->p->util->get_th( __( 'JavaScript in',
-						'nextgen-facebook' ), 'short' ).
+					$this->p->util->get_th( _x( 'JavaScript in',
+						'option label (short)', 'nextgen-facebook' ), 'short' ).
 					'<td>'. $this->form->get_select( 'fb_script_loc', $this->p->cf['form']['script_locations'] ).'</td>';
 	
-					$rows[] = $this->p->util->get_th( __( 'Default Language',
-						'nextgen-facebook' ), 'short' ).
+					$rows[] = $this->p->util->get_th( _x( 'Default Language',
+						'option label (short)', 'nextgen-facebook' ), 'short' ).
 					'<td>'.$this->form->get_select( 'fb_lang', SucomUtil::get_pub_lang( 'facebook' ) ).'</td>';
 	
-					$rows[] = $this->p->util->get_th( __( 'Button Type',
-						'nextgen-facebook' ), 'short' ).
+					$rows[] = $this->p->util->get_th( _x( 'Button Type',
+						'option label (short)', 'nextgen-facebook' ), 'short' ).
 					'<td>'.$this->form->get_select( 'fb_button', array( 'like' => 'Like and Send', 'share' => 'Share' ) ).'</td>';
 
 					break;
 
 				case 'fb-like':
 
-					$rows[] = $this->p->util->get_th( __( 'Markup Language',
-						'nextgen-facebook' ), 'short' ).
+					$rows[] = $this->p->util->get_th( _x( 'Markup Language',
+						'option label (short)', 'nextgen-facebook' ), 'short' ).
 					'<td>'.$this->form->get_select( 'fb_markup', 
 						array( 
 							'html5' => 'HTML5', 
@@ -78,13 +78,13 @@ if ( ! class_exists( 'NgfbSubmenuSharingFacebook' ) && class_exists( 'NgfbSubmen
 						) 
 					).'</td>';
 	
-					$rows[] = $this->p->util->get_th( __( 'Include Send',
-						'nextgen-facebook' ), 'short', null, 
+					$rows[] = $this->p->util->get_th( _x( 'Include Send',
+						'option label (short)', 'nextgen-facebook' ), 'short', null, 
 					'The Send button is only available in combination with the XFBML <em>Markup Language</em>.' ).
 					'<td>'.$this->form->get_checkbox( 'fb_send' ).'</td>';
 	
-					$rows[] = $this->p->util->get_th( __( 'Layout',
-						'nextgen-facebook' ), 'short', null, 
+					$rows[] = $this->p->util->get_th( _x( 'Layout',
+						'option label (short)', 'nextgen-facebook' ), 'short', null, 
 					'The Standard layout displays social text to the right of the button, and friends\' profile photos below (if <em>Show Faces</em> is also checked). The Button Count layout displays the total number of likes to the right of the button, and the Box Count layout displays the total number of likes above the button.' ).
 					'<td>'.$this->form->get_select( 'fb_layout', 
 						array(
@@ -94,13 +94,13 @@ if ( ! class_exists( 'NgfbSubmenuSharingFacebook' ) && class_exists( 'NgfbSubmen
 						) 
 					).'</td>';
 	
-					$rows[] = $this->p->util->get_th( __( 'Show Faces',
-						'nextgen-facebook' ), 'short', null, 
+					$rows[] = $this->p->util->get_th( _x( 'Show Faces',
+						'option label (short)', 'nextgen-facebook' ), 'short', null, 
 					'Show profile photos below the Standard button (Standard button <em>Layout</em> only).' ).
 					'<td>'.$this->form->get_checkbox( 'fb_show_faces' ).'</td>';
 	
-					$rows[] = $this->p->util->get_th( __( 'Font',
-						'nextgen-facebook' ), 'short' ).'<td>'.
+					$rows[] = $this->p->util->get_th( _x( 'Font',
+						'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 					$this->form->get_select( 'fb_font', 
 						array( 
 							'arial' => 'Arial',
@@ -112,8 +112,8 @@ if ( ! class_exists( 'NgfbSubmenuSharingFacebook' ) && class_exists( 'NgfbSubmen
 						) 
 					).'</td>';
 	
-					$rows[] = $this->p->util->get_th( __( 'Color Scheme',
-						'nextgen-facebook' ), 'short' ).'<td>'.
+					$rows[] = $this->p->util->get_th( _x( 'Color Scheme',
+						'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 					$this->form->get_select( 'fb_colorscheme', 
 						array( 
 							'light' => 'Light',
@@ -121,8 +121,8 @@ if ( ! class_exists( 'NgfbSubmenuSharingFacebook' ) && class_exists( 'NgfbSubmen
 						)
 					).'</td>';
 	
-					$rows[] = $this->p->util->get_th( __( 'Action Name',
-						'nextgen-facebook' ), 'short' ).'<td>'.
+					$rows[] = $this->p->util->get_th( _x( 'Action Name',
+						'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 					$this->form->get_select( 'fb_action', 
 						array( 
 							'like' => 'Like',
@@ -134,8 +134,8 @@ if ( ! class_exists( 'NgfbSubmenuSharingFacebook' ) && class_exists( 'NgfbSubmen
 	
 				case 'fb-share':
 
-					$rows[] = $this->p->util->get_th( __( 'Layout',
-						'nextgen-facebook' ), 'short' ).'<td>'.
+					$rows[] = $this->p->util->get_th( _x( 'Layout',
+						'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 					$this->form->get_select( 'fb_type', 
 						array(
 							'button' => 'Button',

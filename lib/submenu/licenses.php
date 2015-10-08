@@ -21,8 +21,8 @@ if ( ! class_exists( 'NgfbSubmenuLicenses' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		protected function add_meta_boxes() {
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-			add_meta_box( $this->pagehook.'_licenses', _x( 'Extension Plugins and Pro Licenses', 
-				'normal metabox title', 'nextgen-facebook' ),
+			add_meta_box( $this->pagehook.'_licenses',
+				_x( 'Extension Plugins and Pro Licenses', 'metabox title', 'nextgen-facebook' ),
 					array( &$this, 'show_metabox_licenses' ), $this->pagehook, 'normal' );
 		}
 

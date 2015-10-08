@@ -155,8 +155,8 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		protected function add_meta_boxes() {
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-			add_meta_box( $this->pagehook.'_style', _x( 'Social Sharing Styles', 
-				'normal metabox title', 'nextgen-facebook' ),
+			add_meta_box( $this->pagehook.'_style',
+				_x( 'Social Sharing Styles', 'metabox title', 'nextgen-facebook' ),
 					array( &$this, 'show_metabox_style' ), $this->pagehook, 'normal' );
 		}
 
@@ -169,12 +169,12 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 			else $css_min_msg = '';
 
 			$this->p->util->do_table_rows( array( 
-				$this->p->util->get_th( __( 'Use the Social Stylesheet',
-					'nextgen-facebook' ), 'highlight', 'buttons_use_social_css' ).
+				$this->p->util->get_th( _x( 'Use the Social Stylesheet',
+					'option label', 'nextgen-facebook' ), 'highlight', 'buttons_use_social_css' ).
 				'<td>'.$this->form->get_checkbox( 'buttons_use_social_css' ).$css_min_msg.'</td>',
 
-				$this->p->util->get_th( __( 'Enqueue the Stylesheet',
-					'nextgen-facebook' ), null, 'buttons_enqueue_social_css' ).
+				$this->p->util->get_th( _x( 'Enqueue the Stylesheet',
+					'option label', 'nextgen-facebook' ), null, 'buttons_enqueue_social_css' ).
 				'<td>'.$this->form->get_checkbox( 'buttons_enqueue_social_css' ).'</td>',
 			) );
 

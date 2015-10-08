@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.11.0-dev4',		// plugin version
+					'version' => '8.11.0-dev5',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it\'s shared or re-shared!',
@@ -67,14 +67,14 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'readme' => 'Read Me',
 							'setup' => 'Setup Guide',
 							// the first 2 words will be highlighted in menu
-							'licenses' => 'Extension Plugins and Pro Licenses',
+							'licenses' => '<span>Extension Plugins</span> and Pro Licenses',
 						),
 						'sitesubmenu' => array(	// lib file descriptions will be translated
 							'siteadvanced' => 'Advanced',
 							'sitereadme' => 'Read Me',
 							'sitesetup' => 'Setup Guide',
 							// the first 2 words will be highlighted in menu
-							'sitelicenses' => 'Extension Plugins and Pro Licenses',
+							'sitelicenses' => '<span>Extension Plugins</span> and Pro Licenses',
 						),
 						'website' => array(
 							'facebook' => 'Facebook', 
@@ -174,7 +174,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'ngfbum' => array(
 					'short' => 'NGFB UM',
 					'name' => 'NextGEN Facebook (NGFB) Pro Update Manager',
-					'desc' => 'Update Manager for the NextGEN Facebook (NGFB) Pro plugin and its extensions.',
+					'desc' => 'Update Manager for the NextGEN Facebook (NGFB) Pro plugin and its Pro extensions.',
 					'slug' => 'nextgen-facebook-um',
 					'base' => 'nextgen-facebook-um/nextgen-facebook-um.php',
 					'update_auth' => '',

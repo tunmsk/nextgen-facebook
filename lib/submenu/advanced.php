@@ -21,28 +21,28 @@ if ( ! class_exists( 'NgfbSubmenuAdvanced' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		protected function add_meta_boxes() {
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-			add_meta_box( $this->pagehook.'_plugin', _x( 'Advanced Settings', 
-				'normal metabox title', 'nextgen-facebook' ), 
+			add_meta_box( $this->pagehook.'_plugin', 
+				_x( 'Advanced Settings', 'metabox title', 'nextgen-facebook' ), 
 					array( &$this, 'show_metabox_plugin' ), $this->pagehook, 'normal' );
 
-			add_meta_box( $this->pagehook.'_contact_fields', _x( 'Contact Field Names and Labels', 
-				'normal metabox title', 'nextgen-facebook' ), 
+			add_meta_box( $this->pagehook.'_contact_fields',
+				_x( 'Contact Field Names and Labels', 'metabox title', 'nextgen-facebook' ), 
 					array( &$this, 'show_metabox_contact_fields' ), $this->pagehook, 'normal' );
 
-			add_meta_box( $this->pagehook.'_taglist', _x( 'Header Tags List', 
-				'normal metabox title', 'nextgen-facebook' ), 
+			add_meta_box( $this->pagehook.'_taglist',
+				_x( 'Header Tags List', 'metabox title', 'nextgen-facebook' ), 
 					array( &$this, 'show_metabox_taglist' ), $this->pagehook, 'normal' );
 		}
 
 		public function show_metabox_plugin() {
 			$metabox = 'plugin';
 			$tabs = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_tabs', array( 
-				'settings' => _x( 'Plugin Settings', 'normal metabox tab', 'nextgen-facebook' ),
-				'content' => _x( 'Content and Filters', 'normal metabox tab', 'nextgen-facebook' ),
-				'social' => _x( 'Social Settings Metabox', 'normal metabox tab', 'nextgen-facebook' ),
-				'integration' => _x( 'Theme Integration', 'normal metabox tab', 'nextgen-facebook' ),
-				'cache' => _x( 'File and Object Cache', 'normal metabox tab', 'nextgen-facebook' ),
-				'apikeys' => _x( 'Service API Keys', 'normal metabox tab', 'nextgen-facebook' ),
+				'settings' => _x( 'Plugin Settings', 'metabox tab', 'nextgen-facebook' ),
+				'content' => _x( 'Content and Filters', 'metabox tab', 'nextgen-facebook' ),
+				'social' => _x( 'Social Settings Metabox', 'metabox tab', 'nextgen-facebook' ),
+				'integration' => _x( 'Theme Integration', 'metabox tab', 'nextgen-facebook' ),
+				'cache' => _x( 'File and Object Cache', 'metabox tab', 'nextgen-facebook' ),
+				'apikeys' => _x( 'Service API Keys', 'metabox tab', 'nextgen-facebook' ),
 			) );
 			$rows = array();
 			foreach ( $tabs as $key => $title )
@@ -55,18 +55,19 @@ if ( ! class_exists( 'NgfbSubmenuAdvanced' ) && class_exists( 'NgfbAdmin' ) ) {
 		public function show_metabox_contact_fields() {
 			$metabox = 'cm';
 			$tabs = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_tabs', array( 
-				'custom' => _x( 'Custom Contacts', 'normal metabox tab', 'nextgen-facebook' ),
-				'builtin' => _x( 'Built-In Contacts', 'normal metabox tab', 'nextgen-facebook' ),
+				'custom' => _x( 'Custom Contacts', 'metabox tab', 'nextgen-facebook' ),
+				'builtin' => _x( 'Built-In Contacts', 'metabox tab', 'nextgen-facebook' ),
 			) );
 			$rows = array();
+
 			foreach ( $tabs as $key => $title )
 				$rows[$key] = array_merge( $this->get_rows( $metabox, $key ), 
 					apply_filters( $this->p->cf['lca'].'_'.$metabox.'_'.$key.'_rows', 
 						array(), $this->form, false ) );	// $network = false
-			$this->p->util->do_table_rows( 
-				array( '<td>'.$this->p->msgs->get( 'info-'.$metabox ).'</td>' ),
-				'metabox-'.$metabox.'-info'
-			);
+
+			$this->p->util->do_table_rows( array( '<td>'.$this->p->msgs->get( 'info-'.$metabox ).'</td>' ),
+				'metabox-'.$metabox.'-info' );
+
 			$this->p->util->do_tabs( $metabox, $tabs, $rows );
 		}
 
@@ -87,14 +88,14 @@ if ( ! class_exists( 'NgfbSubmenuAdvanced' ) && class_exists( 'NgfbAdmin' ) ) {
 			switch ( $metabox.'-'.$key ) {
 				case 'plugin-settings':
 
-					$rows['plugin_debug'] = $this->p->util->get_th( __( 'Add Hidden Debug Messages', 
-						'nextgen-facebook' ), null, 'plugin_debug' ).
+					$rows['plugin_debug'] = $this->p->util->get_th( _x( 'Add Hidden Debug Messages', 
+						'option label', 'nextgen-facebook' ), null, 'plugin_debug' ).
 					'<td>'.( defined( 'NGFB_HTML_DEBUG' ) && NGFB_HTML_DEBUG ? 
 						$this->form->get_no_checkbox( 'plugin_debug' ).' NGFB_HTML_DEBUG constant enabled' :
 						$this->form->get_checkbox( 'plugin_debug' ) ).'</td>';
 
-					$rows['plugin_preserve'] = $this->p->util->get_th( __( 'Preserve Settings on Uninstall',
-						'nextgen-facebook' ), 'highlight', 'plugin_preserve' ).
+					$rows['plugin_preserve'] = $this->p->util->get_th( _x( 'Preserve Settings on Uninstall',
+						'option label', 'nextgen-facebook' ), 'highlight', 'plugin_preserve' ).
 					'<td>'.$this->form->get_checkbox( 'plugin_preserve' ).'</td>';
 
 					break;

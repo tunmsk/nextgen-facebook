@@ -125,8 +125,8 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
 			$pos = array( 'top' => 'Top', 'bottom' => 'Bottom', 'both' => 'Both Top and Bottom' );
 			$rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'ngfb' ) ).'</td>';
-			$rows['buttons_pos_bbp_single'] = $this->p->util->get_th( __( 'Position in bbPress Single',
-				'nextgen-facebook' ), null, 'buttons_pos_bbp_single' ).
+			$rows['buttons_pos_bbp_single'] = $this->p->util->get_th( _x( 'Position in bbPress Single',
+				'option label', 'nextgen-facebook' ), null, 'buttons_pos_bbp_single' ).
 			'<td class="blank">'.$form->get_hidden( 'buttons_pos_bbp_single' ).
 				$pos[$this->p->options['buttons_pos_bbp_single']].'</td>';
 			return $rows;
