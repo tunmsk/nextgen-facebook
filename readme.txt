@@ -12,7 +12,7 @@ Requires At Least: 3.1
 Tested Up To: 4.3.1
 Stable Tag: 8.10.3
 
-Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it's shared or re-shared!
+Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
 == Description ==
 
@@ -398,7 +398,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added a check for image IDs within class names to detect Media Library images in older content.
 * **Bugfixes**
 	* Updated checks for conflicting Yoast SEO 'wpseo_head' actions.
-	* Fixed a condition where updated options were not getting saved if the user did not have sufficient priviledges.
+	* Fixed a condition where updated options were not getting saved if the user did not have sufficient privileges.
 * **Developer Notes**
 	* Added context to all metabox titles and tab text strings.
 	* Added new filters to customize the image pattern matching in the content:
