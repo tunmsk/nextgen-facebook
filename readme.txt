@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.3.1
-Stable Tag: 8.10.3
+Stable Tag: 8.11.0
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -390,7 +390,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.11.0 =
+= Version 8.11.0 2015/10/09 =
 
 * **New Features**
 	* Added a French language (fr_FR) translation.
@@ -399,9 +399,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Bugfixes**
 	* Updated checks for conflicting Yoast SEO 'wpseo_head' actions.
 	* Fixed a condition where updated options were not getting saved if the user did not have sufficient privileges.
+	* Fixed the display of WooCommerce, bbPress, and BuddyPress stylesheets on the Sharing Styles settings page.
 * **Developer Notes**
-	* Added a check to load the notifications class only when when in the admin interface.
-	* Added context to all metabox titles and tab text strings.
+	* Added a check to load the notifications class only when when in the admin interface (shaving a few ms off load time).
+	* Added a translation context to all metabox titles and tab text strings.
 	* Added new filters to customize the image pattern matching in the content:
 		* apply_filters( 'ngfb_content_image_preg_html_tag', $default = 'img' );
 		* apply_filters( 'ngfb_content_image_preg_pid_attr', $default = 'data-[a-z]+-pid' );
@@ -536,6 +537,10 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Refactored the WpssoMessages->get() method a slight speed improvement. Please note that 'ngfb_tooltip_\*' filters have been renamed to 'ngfb_messages_tooltip_\*' (adjust your filter hooks accordingly).
 
 == Upgrade Notice ==
+
+= 8.11.0 =
+
+2015/10/09 Added a French language (fr_FR) translation. Added a check to detect image IDs within class names. Small fixes and a slight performance improvement.
 
 = 8.10.3 =
 
