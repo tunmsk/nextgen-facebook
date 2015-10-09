@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.11.0-dev6',		// plugin version
+					'version' => '8.11.0-dev7',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it\'s shared or re-shared!',
@@ -201,7 +201,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb361',				// increment when changing default options
+				'version' => 'ngfb362',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length
