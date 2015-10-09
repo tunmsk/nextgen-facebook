@@ -407,7 +407,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Fixed a condition where updated options were not getting saved if the user did not have sufficient privileges.
 	* Fixed the display of WooCommerce, bbPress, and BuddyPress stylesheets on the Sharing Styles settings page.
 * **Developer Notes**
-	* Added a check to load the notifications class only when when in the admin interface (shaving a few ms off load time).
+	* Added a check to load the notifications class only when in the admin interface (shaving a few ms off load time).
 	* Added a translation context to all metabox titles and tab text strings.
 	* Added new filters to customize the image pattern matching in the content:
 		* apply_filters( 'ngfb_content_image_preg_html_tag', $default = 'img' );
