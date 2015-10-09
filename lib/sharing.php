@@ -114,8 +114,8 @@ jQuery("#ngfb-sidebar").click( function(){
 				'show_on' => array( 
 					'content' => 'Content', 
 					'excerpt' => 'Excerpt', 
-					'sidebar' => 'Sidebar', 
-					'admin_edit' => 'Adm Edit',
+					'sidebar' => 'CSS Sidebar', 
+					'admin_edit' => 'Admin Edit Page',
 				),
 				'style' => array(
 					'sharing' => 'All Buttons',
@@ -483,8 +483,9 @@ jQuery("#ngfb-sidebar").click( function(){
 
 			if ( ! empty( $this->p->options[ 'buttons_add_to_'.$post_type->name ] ) ) {
 				// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-				add_meta_box( '_'.$this->p->cf['lca'].'_share', 'Sharing Buttons', 
-					array( &$this, 'show_admin_sharing' ), $post_type->name, 'side', 'high' );
+				add_meta_box( '_'.$this->p->cf['lca'].'_share',
+					_x( 'Sharing Buttons', 'metabox title', 'nextgen-facebook' ),
+						array( &$this, 'show_admin_sharing' ), $post_type->name, 'side', 'high' );
 			}
 		}
 

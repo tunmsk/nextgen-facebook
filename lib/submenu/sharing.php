@@ -119,7 +119,7 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 			$tabs = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_tabs', array(
 				'include' => _x( 'Include Buttons', 'metabox tab', 'nextgen-facebook' ),
 				'position' => _x( 'Buttons Position', 'metabox tab', 'nextgen-facebook' ),
-				'preset' => _x( 'Preset Options', 'metabox tab', 'nextgen-facebook' ),
+				'preset' => _x( 'Button Presets', 'metabox tab', 'nextgen-facebook' ),
 			) );
 			$rows = array();
 			foreach ( $tabs as $key => $title )
@@ -175,7 +175,7 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 		// Show Button in: Content, Excerpt, Admin Edit, etc.
 		protected function show_on_checkboxes( $prefix ) {
 			$col = 0;
-			$max = 3;
+			$max = 2;
 			$html = '<table>';
 			$show_on = apply_filters( $this->p->cf['lca'].'_sharing_show_on', 
 				NgfbSharing::$cf['sharing']['show_on'], $prefix );

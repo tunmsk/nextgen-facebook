@@ -107,17 +107,20 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
 
 		/* Purpose: Add css input textarea for the 'bbPress Single' style tab */
 		public function filter_style_bbp_single_rows( $rows, $form ) {
-			$rows[] = '<td class="textinfo">
-			<p>Social sharing buttons added at the top of bbPress Single Templates are assigned the 
-			\'ngfb-bbp_single-buttons\' class, which itself contains the 
-			\'ngfb-buttons\' class -- a common class for all the sharing buttons 
-			(see the All Buttons tab).</p> 
+
+			$rows[] = '<td colspan="2" align="center">'.
+				$this->p->msgs->get( 'pro-feature-msg', 
+					array( 'lca' => 'ngfb' ) ).'</td>';
+
+			$rows[] = '<th class="textinfo">
+			<p>Social sharing buttons added at the top of bbPress Single Templates are assigned the \'ngfb-bbp_single-buttons\' class, which itself contains the \'ngfb-buttons\' class -- a common class for all the sharing buttons (see the All Buttons tab).</p> 
+
 			<p>Example:</p><pre>
 .ngfb-bbp_single-buttons 
     .ngfb-buttons
-        .facebook-button { }</pre></td>'.
-			'<td class="blank tall code">'.$form->get_hidden( 'buttons_css_bbp_single' ).
-				$this->p->options['buttons_css_bbp_single'].'</td>';
+        .facebook-button { }</pre></th><td><textarea disabled="disabled" class="tall code">'.
+				$this->p->options['buttons_css_bbp_single'].'</textarea></td>';
+
 			return $rows;
 		}
 

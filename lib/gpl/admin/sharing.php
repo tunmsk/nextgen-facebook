@@ -17,7 +17,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			$this->p->util->add_plugin_filters( $this, array( 
 				'plugin_cache_rows' => 3,	// advanced 'File and Object Cache' options
 				'sharing_include_rows' => 2,	// social sharing 'Include Buttons' options
-				'sharing_preset_rows' => 2,	// social sharing 'Preset Options' options
+				'sharing_preset_rows' => 2,	// social sharing 'Button Presets' options
 				'post_tabs' => 1,		// post 'Sharing Buttons' tab
 				'post_sharing_rows' => 3,	// post 'Sharing Buttons' options
 			), 30 );
@@ -27,7 +27,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 
 			$rows['plugin_file_cache_exp'] = $this->p->util->get_th( _x( 'Social File Cache Expiry',
 				'option label', 'nextgen-facebook' ), 'highlight', 'plugin_file_cache_exp' ).
-			'<td nowrap class="blank">'.$this->p->cf['form']['file_cache_hrs'][$form->options['plugin_file_cache_exp']].' hours</td>'.
+			'<td nowrap class="blank">'.$this->p->cf['form']['file_cache_hrs'][$form->options['plugin_file_cache_exp']].' '.
+				_( 'hours', 'option comment', 'nextgen-facebook' ).'</td>'.
 			$this->p->admin->get_site_use( $form, $network, 'plugin_file_cache_exp' );
 
 			return $rows;
@@ -52,6 +53,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 		}
 
 		public function filter_sharing_preset_rows( $rows, $form ) {
+
 			$presets = array();
 			foreach ( SucomUtil::preg_grep_keys( '/^buttons_preset_/', $this->p->options, false, '' ) as $key => $val )
 				$presets[$key] = ucwords( preg_replace( '/_/', ' ', $key ) );
@@ -61,7 +63,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'ngfb' ) ).'</td>';
 
 			foreach( $presets as $filter_id => $filter_name )
-				$rows[] = $this->p->util->get_th( $filter_name.' Preset', null, 'sharing_preset' ).
+				$rows[] = $this->p->util->get_th( sprintf( _x( '%s Preset',
+					'option label', 'nextgen-facebook' ), $filter_name ), null, 'sharing_preset' ).
 				'<td class="blank">'.$this->p->options['buttons_preset_'.$filter_id].'</td>';
 
 			return $rows;
@@ -72,7 +75,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			foreach ( $tabs as $key => $val ) {
 				$new_tabs[$key] = $val;
 				if ( $key === 'media' )	// insert the social sharing tab after the media tab
-					$new_tabs['sharing'] = 'Sharing Buttons';
+					$new_tabs['sharing'] = _x( 'Sharing Buttons', 'metabox tab', 'nextgen-facebook' );
 			}
 			return $new_tabs;
 		}

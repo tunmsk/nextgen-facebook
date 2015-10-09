@@ -87,7 +87,7 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 				_x( 'No Open Graph Image Found', 'preview image error', 'nextgen-facebook' ).'</p></div>';
 
 			$rows[] = $this->p->util->get_th( _x( 'Open Graph Example',
-				'option label', 'nextgen-facebook' ), 'medium', 'post-social-preview' ).
+				'option label', 'nextgen-facebook' ), 'medium', 'meta-social-preview' ).
 			'<td style="background-color:#e9eaed;border:1px dotted #e0e0e0;">
 			<div class="preview_box" style="width:'.( $prev_width + 40 ).'px;">
 				<div class="preview_box" style="width:'.$prev_width.'px;">

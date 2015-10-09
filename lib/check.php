@@ -199,7 +199,6 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 						case 'media-youtube':
 							$chk['optval'] = 'plugin_youtube_api';
 							break;
-						case 'admin-apikeys':
 						case 'admin-sharing':
 						case 'admin-style':
 							if ( $ret['ssb'] === true )

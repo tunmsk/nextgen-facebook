@@ -252,7 +252,8 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 
 			$rows['plugin_google_shorten'] = $this->p->util->get_th( _x( 'Google URL Shortener API is ON',
 				'option label', 'nextgen-facebook' ), null, 'plugin_google_shorten' ).
-			'<td class="blank">'.$this->p->cf['form']['yes_no'][$this->p->options['plugin_google_shorten']].'</td>';
+			'<td class="blank">'._x( $this->p->cf['form']['yes_no'][$this->p->options['plugin_google_shorten']],
+				'form option value', 'nextgen-facebook' ).'</td>';
 
 			return $rows;
 		}

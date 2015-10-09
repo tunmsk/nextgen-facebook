@@ -297,7 +297,8 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					$rows[] = '<tr class="hide_in_basic">'.
 					$this->p->util->get_th( _x( 'Author Name Format',
 						'option label', 'nextgen-facebook' ), null, 'rp_author_name' ).
-					'<td>'.$this->form->get_select( 'rp_author_name', $this->p->cf['form']['user_name_fields'] ).'</td>';
+					'<td>'.$this->form->get_select( 'rp_author_name',
+						$this->p->cf['form']['user_name_fields'] ).'</td>';
 		
 					$rows[] = '<tr class="hide_in_basic">'.
 					$this->p->util->get_th( _x( 'Pinterest Website Verification ID',

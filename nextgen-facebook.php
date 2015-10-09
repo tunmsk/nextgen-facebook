@@ -12,7 +12,7 @@
  * Description: Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.1
  * Tested Up To: 4.3.1
- * Version: 8.11.0-dev7
+ * Version: 8.11.0
  * 
  * Copyright 2012-2015 - Jean-Sebastien Morisset - http://surniaulula.com/
  */
@@ -34,7 +34,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public $loader;			// NgfbLoader
 		public $media;			// NgfbMedia (images, videos, etc.)
 		public $msgs;			// NgfbMessages (admin tooltip messages)
-		public $notice;			// SucomNotice
+		public $notice;			// SucomNotice or NgfbNoNotice
 		public $og;			// NgfbOpengraph
 		public $tc;			// NgfbTwittercard
 		public $opt;			// NgfbOptions
@@ -137,15 +137,22 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				( defined( 'NGFB_HTML_DEBUG' ) && NGFB_HTML_DEBUG ) ? true : false;
 			$wp_debug = defined( 'NGFB_WP_DEBUG' ) && NGFB_WP_DEBUG ? true : false;
 
+			// only load the debug class if one or more debug options are enabled
 			if ( ( $html_debug || $wp_debug ) && 
-				( $classname = NgfbConfig::load_lib( false, 'com/debug', 'SucomDebug' ) ) !== false )
+				( $classname = NgfbConfig::load_lib( false, 'com/debug', 'SucomDebug' ) ) )
 					$this->debug = new $classname( $this, array( 'html' => $html_debug, 'wp' => $wp_debug ) );
-			else $this->debug = new NgfbNoDebug();			// fallback to dummy debug class
+			else $this->debug = new NgfbNoDebug();
 
-			if ( $this->debug->enabled && $activate === true )
-				$this->debug->log( 'method called for plugin activation' );
+			if ( $activate === true &&
+				$this->debug->enabled )
+					$this->debug->log( 'method called for plugin activation' );
 
-			$this->notice = new SucomNotice( $this );
+			// only load the notification class in the admin interface
+			if ( is_admin() &&
+				( $classname = NgfbConfig::load_lib( false, 'com/notice', 'SucomNotice' ) ) )
+					$this->notice = new $classname( $this );
+			else $this->notice = new NgfbNoNotice();
+
 			$this->util = new NgfbUtil( $this );
 			$this->opt = new NgfbOptions( $this );
 			$this->cache = new SucomCache( $this );			// object and file caching
@@ -166,7 +173,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			if ( $this->is_avail['ssb'] )
 				$this->sharing = new NgfbSharing( $this );	// wp_head and wp_footer js and buttons
 
-			$this->loader = new NgfbLoader( $this, $activate );
+			$this->loader = new NgfbLoader( $this, $activate );	// module loader
 
 			do_action( 'ngfb_init_objects', $activate );
 
@@ -315,6 +322,16 @@ if ( ! class_exists( 'NgfbNoDebug' ) ) {
 		public function show_html() { return; }
 		public function get_html() { return; }
 		public function is_enabled() { return false; }
+	}
+}
+
+if ( ! class_exists( 'NgfbNoNotice' ) ) {
+	class NgfbNoNotice {
+		public function nag() { return; }
+		public function inf() { return; }
+		public function err() { return; }
+		public function log() { return; }
+		public function trunc() { return; }
 	}
 }
 

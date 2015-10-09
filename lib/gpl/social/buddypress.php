@@ -96,17 +96,20 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
 
 		/* Purpose: Add css input textarea for the 'BP Activity' style tab */
 		public function filter_style_bp_activity_rows( $rows, $form ) {
-			$rows[] = '<td class="textinfo">
-			<p>Social sharing buttons added to BuddyPress Activities are assigned the 
-			\'ngfb-bp_activity-buttons\' class, which itself contains the 
-			\'ngfb-buttons\' class -- a common class for all the sharing buttons 
-			(see the All Buttons tab).</p> 
+			
+			$rows[] = '<td colspan="2" align="center">'.
+				$this->p->msgs->get( 'pro-feature-msg', 
+					array( 'lca' => 'ngfb' ) ).'</td>';
+
+			$rows[] = '<th class="textinfo">
+			<p>Social sharing buttons added to BuddyPress Activities are assigned the \'ngfb-bp_activity-buttons\' class, which itself contains the \'ngfb-buttons\' class -- a common class for all the sharing buttons (see the All Buttons tab).</p> 
+
 			<p>Example:</p><pre>
 .ngfb-bp_activity-buttons 
     .ngfb-buttons
-        .facebook-button { }</pre></td>'.
-			'<td class="blank tall code">'.$form->get_hidden( 'buttons_css_bp_activity' ).
-				$this->p->options['buttons_css_bp_activity'].'</td>';
+        .facebook-button { }</pre></th><td><textarea disabled="disabled" class="tall code">'.
+			$this->p->options['buttons_css_bp_activity'].'</textarea></td>';
+
 			return $rows;
 		}
 	}

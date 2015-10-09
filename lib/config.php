@@ -20,10 +20,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.11.0-dev7',		// plugin version
+					'version' => '8.11.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
-					'desc' => 'Want to improve your shared content? NGFB makes sure your content looks its best on all social websites - no matter how it\'s shared or re-shared!',
+					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
 					'slug' => 'nextgen-facebook',
 					'base' => 'nextgen-facebook/nextgen-facebook.php',
 					'update_auth' => 'tid',
@@ -201,7 +201,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb362',				// increment when changing default options
+				'version' => 'ngfb363',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length
@@ -531,6 +531,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					259200 => 72,
 					604800 => 168,
 				),
+				'qualifiers' => array(
+					'default' => '(default)',
+					'no_images' => '(no images)',
+					'no_videos' => '(no videos)',
+					'settings' => '(settings value)',
+					'disabled' => '(option disabled)',
+				),
 				'script_locations' => array(
 					'none' => '[none]',
 					'header' => 'Header',
@@ -767,7 +774,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			
 			require_once( NGFB_PLUGINDIR.'lib/com/util.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/cache.php' );
-			require_once( NGFB_PLUGINDIR.'lib/com/notice.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/script.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/style.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/webpage.php' );
