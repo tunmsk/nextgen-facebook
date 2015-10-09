@@ -22,6 +22,12 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 <p><strong>NGFB automatically retrieves and uses information from a wide range or sources</strong>, including All in One SEO Pack, bbPress, BuddyPress, Easy Digital Downloads, HeadSpace2 SEO, JetPack Photon, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, Yoast SEO (aka WordPress SEO), WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, extends the WordPress REST API v2, and much more.</p>
 
+<p><strong>Available in multiple languages:</strong></p>
+
+* English (US)
+* French (France)
+* More to come...
+
 <blockquote>
 <p><strong>September 14, 2015 - WPSSO Replaces NextGEN Facebook (NGFB)</strong></p>
 <p>NextGEN Facebook (NGFB) is being replaced by the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin. WPSSO is a fork / child of NGFB &mdash; they have the same author, the same core features and code-base, but WPSSO is distributed without the sharing buttons and their related features (making WPSSO about 25% smaller than NGFB). Additional extension plugins are also available for WPSSO, including:
