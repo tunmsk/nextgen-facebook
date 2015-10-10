@@ -150,9 +150,12 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 			$checkboxes = '';
 			foreach ( $this->p->util->get_post_types( 'backend' ) as $post_type )
 				$checkboxes .= '<p>'.$form->get_no_checkbox( 'plugin_add_to_'.$post_type->name ).' '.
-					$post_type->label.' '.( empty( $post_type->description ) ? '' : '('.$post_type->description.')' ).'</p>';
-			$checkboxes .= '<p>'.$form->get_no_checkbox( 'plugin_add_to_taxonomy' ).' Taxonomy (Categories and Tags)</p>';
-			$checkboxes .= '<p>'.$form->get_no_checkbox( 'plugin_add_to_user' ).' User Profile</p>';
+					$post_type->label.' '.( empty( $post_type->description ) ?
+						'' : '('.$post_type->description.')' ).'</p>';
+			$checkboxes .= '<p>'.$form->get_no_checkbox( 'plugin_add_to_taxonomy' ).
+				' '.__( 'Taxonomy (Categories and Tags)', 'nextgen-facebook' ).'</p>';
+			$checkboxes .= '<p>'.$form->get_no_checkbox( 'plugin_add_to_user' ).
+				' '.__( 'User Profile', 'nextgen-facebook' ).'</p>';
 
 			$rows[] = $this->p->util->get_th( _x( 'Show Social Settings Metabox on',
 				'option label', 'nextgen-facebook' ), null, 'plugin_add_to' ).
