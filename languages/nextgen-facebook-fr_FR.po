@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NextGEN Facebook (NGFB) 8.11.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2015-10-09 16:57-0400\n"
-"PO-Revision-Date: 2015-10-10 10:02-0400\n"
+"POT-Creation-Date: 2015-10-10 11:04-0400\n"
+"PO-Revision-Date: 2015-10-10 11:04-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -1941,7 +1941,15 @@ msgid "WordPress returned an unknown condition when reading %s from the options 
 msgstr ""
 "WordPress a retourné un état inconnu lors de la lecture de %s dans sa table options."
 
-#: lib/options.php:322
+#: lib/options.php:195
+msgid ""
+"The plugin settings have been returned to their default values &mdash; <a href=\"%s"
+"\">please review and save the new settings</a>."
+msgstr ""
+"Les réglages de l'extension ont été retournée à leurs valeurs par défaut, <a href=\"%s"
+"\">s'il vous plaît examiner et sauvegarder les nouveaux réglages</a>."
+
+#: lib/options.php:321
 msgid "Plugin settings (%s) have been upgraded and saved."
 msgstr "Les réglages (%s) ont été mis à jour et sauvegardés."
 

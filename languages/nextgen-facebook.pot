@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NextGEN Facebook (NGFB) 8.11.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2015-10-10 14:11:59+00:00\n"
+"POT-Creation-Date: 2015-10-10 15:12:11+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1737,7 +1737,13 @@ msgid ""
 "table."
 msgstr ""
 
-#: lib/options.php:322
+#: lib/options.php:195
+msgid ""
+"The plugin settings have been returned to their default values &mdash; <a "
+"href=\"%s\">please review and save the new settings</a>."
+msgstr ""
+
+#: lib/options.php:321
 msgid "Plugin settings (%s) have been upgraded and saved."
 msgstr ""
 
