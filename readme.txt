@@ -32,7 +32,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 <p><strong>September 14, 2015 - WPSSO Replaces NextGEN Facebook (NGFB)</strong></p>
 <p>NextGEN Facebook (NGFB) is being replaced by the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin. WPSSO is a fork / child of NGFB &mdash; they have the same author, the same core features and code-base, but WPSSO is distributed without the sharing buttons and their related features (making WPSSO about 25% smaller than NGFB). Additional extension plugins are also available for WPSSO, including:
 <ul>
-<li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO App Meta</a></li>
+<li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO Mobile App Meta</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO Place and Location Meta</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-rrssb/">WPSSO Ridiculously Responsive Social Sharing Buttons</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-ssb/">WPSSO Social Sharing Buttons</a></li>
@@ -45,7 +45,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 * Adds Open Graph / Rich Pin meta tags (Facebook, Google+, Pinterest, LinkedIn, etc.).
 * Twitter Card meta tags:
-	* [App Card](https://dev.twitter.com/cards/types/app) (requires the [WPSSO](https://wordpress.org/plugins/wpsso/) plugin and [WPSSO App Meta](https://wordpress.org/plugins/wpsso-am/) extension)
+	* [App Card](https://dev.twitter.com/cards/types/app) (requires the [WPSSO](https://wordpress.org/plugins/wpsso/) plugin and [WPSSO Mobile App Meta](https://wordpress.org/plugins/wpsso-am/) extension)
 	* [Summary Card with Large Image](https://dev.twitter.com/cards/types/summary-large-image)
 	* [Summary Card](https://dev.twitter.com/cards/types/summary)
 	* [Player Card](https://dev.twitter.com/cards/types/player) is provided with the Pro version (as it requires video discovery modules available only in the Pro version).

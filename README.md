@@ -32,7 +32,7 @@
 <p><strong>September 14, 2015 - WPSSO Replaces NextGEN Facebook (NGFB)</strong></p>
 <p>NextGEN Facebook (NGFB) is being replaced by the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin. WPSSO is a fork / child of NGFB &mdash; they have the same author, the same core features and code-base, but WPSSO is distributed without the sharing buttons and their related features (making WPSSO about 25% smaller than NGFB). Additional extension plugins are also available for WPSSO, including:
 <ul>
-<li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO App Meta</a></li>
+<li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO Mobile App Meta</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO Place and Location Meta</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-rrssb/">WPSSO Ridiculously Responsive Social Sharing Buttons</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-ssb/">WPSSO Social Sharing Buttons</a></li>
@@ -48,7 +48,7 @@
 <li>Twitter Card meta tags:
 
 <ul>
-<li><a href="https://dev.twitter.com/cards/types/app">App Card</a> (requires the <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin and <a href="https://wordpress.org/plugins/wpsso-am/">WPSSO App Meta</a> extension)</li>
+<li><a href="https://dev.twitter.com/cards/types/app">App Card</a> (requires the <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin and <a href="https://wordpress.org/plugins/wpsso-am/">WPSSO Mobile App Meta</a> extension)</li>
 <li><a href="https://dev.twitter.com/cards/types/summary-large-image">Summary Card with Large Image</a></li>
 <li><a href="https://dev.twitter.com/cards/types/summary">Summary Card</a></li>
 <li><a href="https://dev.twitter.com/cards/types/player">Player Card</a> is provided with the Pro version (as it requires video discovery modules available only in the Pro version).</li>
