@@ -313,56 +313,42 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Additional Documentation =
 
-<ul>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/">About Pro Modules</a>
-	<ul>
-		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/author-gravatar/">Author Gravatar</a></li>
-		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/easy-digital-downloads/">Easy Digital Downloads</a></li>
-		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/headspace2-seo/">HeadSpace2 SEO</a></li>
-		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/jetpack-photon/">Jetpack Photon</a></li>
-		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/videos-apis/">Slideshare, Vimeo, Wistia, Youtube APIs</a></li>
-		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/">WooCommerce</a></li>
-		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/wordpress-rest-api-v2/">WordPress REST API v2</a></li>
-	</ul></li>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/contact-information/">Contact Information and Feeds</a></li>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/">Developer Resources</a>
-	<ul>
-		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/">Constants</a>
-		<ul>
-			<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/disable-the-open-graph-meta-tags/">Disable the Open Graph Meta Tags</a></li>
-		</ul></li>
-		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/">Filters</a>
-		<ul>
-			<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/">Examples</a>
-			<ul>
-				<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/add-availability-to-product-card-for-woocommerce/">Add Availability to Product Card for WooCommerce</a></li>
-				<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/detect-youtube-url-links-as-videos/">Detect YouTube URL Links as Videos</a></li>
-				<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/force-wistia-videos-to-autoplay-on-facebook/">Force Wistia Videos to Autoplay on Facebook</a></li>
-				<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-shortcode-attributes-url/">Modify Shortcode Attributes (URL)</a></li>
-				<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-articletag-keywords-names/">Modify the article:tag Keywords / Names</a></li>
-				<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-default-topics-list/">Modify the Default Topics List</a></li>
-				<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-home-page-title-for-facebook-open-graph/">Modify the Home Page Title for Facebook / Open Graph</a></li>
-			</ul></li>
-			<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/">Filters by Category</a>
-			<ul>
-				<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/head/">Head Filters</a></li>
-				<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/media/">Media Filters</a></li>
-				<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/open-graph/">Open Graph Filters</a></li>
-				<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/twitter-card/">Twitter Card Filters</a></li>
-				<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/webpage/">Webpage Filters</a></li>
-			</ul></li>
-			<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-name/">Filters by Name</a></li>
-			<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/other/">Other Filters</a></li>
-		</ul></li>
-		<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/sharing-buttons-function/">Sharing Buttons Function</a></li>
-	</ul></li>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/inline-variables/">Inline Variables</a></li>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/multisite-network-support/">Multisite / Network Support</a></li>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/ngfb-shortcode/">NGFB Shortcode</a></li> 
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/performance-tuning/">Performance Tuning</a></li>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/styling-social-buttons/">Styling Social Buttons</a></li>
-	<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/working-with-image-attachments/">Working with Image Attachments</a></li>
-</ul>
+* [About Pro Modules](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/)
+	* [Author Gravatar](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/author-gravatar/)
+	* [Easy Digital Downloads](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/easy-digital-downloads/)
+	* [HeadSpace2 SEO](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/headspace2-seo/)
+	* [Jetpack Photon](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/jetpack-photon/)
+	* [Slideshare, Vimeo, Wistia, Youtube APIs](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/videos-apis/)
+	* [WooCommerce](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/)
+	* [WordPress REST API v2](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/wordpress-rest-api-v2/)
+* [Contact Information and Feeds](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/contact-information/)
+* [Developer Resources](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/)
+	* [Constants](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/)
+		* [Disable the Open Graph Meta Tags](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/disable-the-open-graph-meta-tags/)
+	* [Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/)
+		* [Examples](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/)
+			* [Add Availability to Product Card for WooCommerce](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/add-availability-to-product-card-for-woocommerce/)
+			* [Detect YouTube URL Links as Videos](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/detect-youtube-url-links-as-videos/)
+			* [Force Wistia Videos to Autoplay on Facebook](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/force-wistia-videos-to-autoplay-on-facebook/)
+			* [Modify Shortcode Attributes (URL)](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-shortcode-attributes-url/)
+			* [Modify the article:tag Keywords / Names](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-articletag-keywords-names/)
+			* [Modify the Default Topics List](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-default-topics-list/)
+			* [Modify the Home Page Title for Facebook / Open Graph](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-home-page-title-for-facebook-open-graph/)
+		* [Filters by Category](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/)
+			* [Head Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/head/)
+			* [Media Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/media/)
+			* [Open Graph Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/open-graph/)
+			* [Twitter Card Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/twitter-card/)
+			* [Webpage Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/webpage/)
+		* [Filters by Name](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-name/)
+		* [Other Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/other/)
+	* [Sharing Buttons Function](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/sharing-buttons-function/)
+* [Inline Variables](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/inline-variables/)
+* [Multisite / Network Support](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/multisite-network-support/)
+* [NGFB Shortcode](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/ngfb-shortcode/)
+* [Performance Tuning](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/performance-tuning/)
+* [Styling Social Buttons](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/styling-social-buttons/)
+* [Working with Image Attachments](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/working-with-image-attachments/)
 
 == Screenshots ==
 
@@ -396,7 +382,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.11.1 =
+= Version 8.11.1 2015/10/15 =
 
 * **New Features**
 	* *None*
@@ -475,7 +461,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Version 8.10 2015/09/20 =
 
-<p>The Photo Card, Gallery Card, and Product Card were deprecated by Twitter on July 3rd, 2015. NGFB continues to support all <a href="https://dev.twitter.com/cards/types">current Twitter Card formats</a>, including the Summary Card, Summary Card with Large Image, App Card (exclusive to WPSSO), and Player Card &mdash; in both the Free (New) and Pro versions.</p>
+The Photo Card, Gallery Card, and Product Card were deprecated by Twitter on July 3rd, 2015. NGFB continues to support all [current Twitter Card formats](https://dev.twitter.com/cards/types), including the Summary Card, Summary Card with Large Image, App Card (exclusive to WPSSO), and Player Card &mdash; in both the Free (New) and Pro versions.
 
 * **New Features**
 	* *None*
@@ -490,70 +476,11 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Removed the 'ngfb_tc_edd', 'ngfb_tc_marketpress', 'ngfb_tc_woocommerce', and 'ngfb_tc_wpecommerce' filters.
 	* Added a new NgfbUtil::save_all_times() method to save installation, activation, and update times.
 
-= Version 8.9.2 2015/09/13 =
-
-* **New Features**
-	* *None*
-* **Improvements**
-	* Completed the Network NGFB Advanced settings page "Plugin Settings" tab with all available options (Pro version).
-* **Bugfixes**
-	* Fixed an incorrect "Include Preview Image(s)" default value in the Social Settings metabox (Pro version).
-* **Developer Notes**
-	* Moved the `conflict_warnings()` method from NgfbCheck to the NgfbAdmin class.
-	* Changed the minimum WordPress version from 3.0 to 3.1 (required to display admin notices).
-
-= Version 8.9 2015/09/09 =
-
-<p><a href="http://surniaulula.com/2015/09/09/ngfb-wpsso-update-improved-schema-support/">Release notes for NGFB Version 8.9</a>.</p>
-
-* **New Features**
-	* Added a new "Theme Integration" tab on the Advanced settings page.
-	* Added a new "Header <html> Attribute Filter" option on the Advanced settings page (Pro version).
-	* Added a new "Header <head> Attribute Filter" option on the Advanced settings page (Pro version).
-	* Added a new "Image Alt Text Prefix" option on the Advanced settings page (Pro version).
-	* Added a new "WP Caption Paragraph Prefix" option on the Advanced settings page (Pro version).
-* **Improvements**
-	* Changed the default index schema type from "Blog" to "WebSite" (pseudo-standard SEO value).
-	* Changed the default post/page schema type from "Article" to "WebPage" (pseudo-standard SEO value).
-	* Updated the Easy Digital Downloads (EDD) module to add a "Product" schema item type for "download" post types (Pro version).
-* **Bugfixes**
-	* *None*
-* **Developer Notes**
-	* Renamed the 'ngfb_doctype_prefix_ns' filter to 'ngfb_og_prefix_ns' (returns an array of Open Graph namespace URLs).
-	* Renamed the 'ngfb_doctype_schema_type' filter to 'ngfb_schema_item_type' (returns an itemtype URL string).
-	* Added a new 'ngfb_schema_post_types' filter to return an associative array of post types and Schema URL values.
-	* Added a new `NgfbUtil::save_time()` method called by NGFB extensions when activated. 
-	* Added a new `SucomUtil::get_option_key()` method.
-	* Added a new `ngfb_schema_attributes()` function for optional use in the &lt;head&gt; element.
-
-= Version 8.8 2015/09/03 =
-
-<p>This latest version include new dismissible warnings for rejected images (too small and/or extreme aspect ratios) when using WordPress v4.2+. When previously dismissed warnings are found, an additional notice will be shown to allow these warnings to be displayed again temporarily.</p>
-
-<p>This release also include code improvements for small performance gains on the admin side (tooltip and message lookups, for example). Developers should note that filtering of individual meta tags has been disabled by default, and can be re-enabled using the NGFB_FILTER_SINGLE_TAGS constant.</p>
-
-* **New Features**
-	* *None*
-* **Improvements**
-	* Added the ability to dismiss image dimension warnings when using WordPress 4.2+.
-	* The "Pro Authentication ID" option is now included on the Pro Licenses settings page for all plugins / extensions with a Pro version available (and not only for active plugins / extensions).
-* **Bugfixes**
-	* *None*
-* **Developer Notes**
-	* Moved the 'installed_version' and 'ua_plugin' filter methods from Ngfb to the NgfbUtil class.
-	* Added a new entries in the options table (ngfb_timestamps) for installed, activated, and updated timestamps.
-	* Improved the setting of constants with new `set_variable_constants()` and `get_variable_constants()` methods in the NgfbConfig class.
-	* Refactored the `uninstall_plugin()` method in the NgfbRegister class to use the new `get_variable_constants()` method.
-	* Added a new NGFB_FILTER_SINGLE_TAGS constant to enable filtering of individual meta tags (disabled by default).
-	* Added new NGFB_TS_NAME, NGFB_NOTICE_NAME, and NGFB_DISMISS_NAME constants.
-	* Added new SucomUtil `add_option_key()` and `update_option_key()` static methods to update values within an option. 
-	* Refactored most of the SucomNotice class code. Notice messages are now saved as array keys (instead of array elements) with a payload array as their value. This allows notice messages to have a number of properties (message ID string, dismissible true/false, etc.). 
-	* Added a new SucomNotice `ajax_dismiss_notice()` method to handle dismissible notices.
-	* Added a new `$dismiss` argument to all SucomNotice logging methods.
-	* Added a new "Reset Hidden Notices" button on the NGFB settings pages.
-	* Refactored the WpssoMessages->get() method a slight speed improvement. Please note that 'ngfb_tooltip_\*' filters have been renamed to 'ngfb_messages_tooltip_\*' (adjust your filter hooks accordingly).
-
 == Upgrade Notice ==
+
+= 8.11.1 =
+
+2015/10/15 Additional French translations. Fixed an undefined index error for a WP SEO global variable.
 
 = 8.11.0 =
 

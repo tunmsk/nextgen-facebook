@@ -364,53 +364,59 @@
 <h4>Additional Documentation</h4>
 
 <ul>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/">About Pro Modules</a>
-    <ul>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/author-gravatar/">Author Gravatar</a></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/easy-digital-downloads/">Easy Digital Downloads</a></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/headspace2-seo/">HeadSpace2 SEO</a></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/jetpack-photon/">Jetpack Photon</a></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/videos-apis/">Slideshare, Vimeo, Wistia, Youtube APIs</a></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/">WooCommerce</a></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/wordpress-rest-api-v2/">WordPress REST API v2</a></li>
-    </ul></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/contact-information/">Contact Information and Feeds</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/">Developer Resources</a>
-    <ul>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/">Constants</a>
-        <ul>
-            <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/disable-the-open-graph-meta-tags/">Disable the Open Graph Meta Tags</a></li>
-        </ul></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/">Filters</a>
-        <ul>
-            <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/">Examples</a>
-            <ul>
-                <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/add-availability-to-product-card-for-woocommerce/">Add Availability to Product Card for WooCommerce</a></li>
-                <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/detect-youtube-url-links-as-videos/">Detect YouTube URL Links as Videos</a></li>
-                <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/force-wistia-videos-to-autoplay-on-facebook/">Force Wistia Videos to Autoplay on Facebook</a></li>
-                <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-shortcode-attributes-url/">Modify Shortcode Attributes (URL)</a></li>
-                <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-articletag-keywords-names/">Modify the article:tag Keywords / Names</a></li>
-                <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-default-topics-list/">Modify the Default Topics List</a></li>
-                <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-home-page-title-for-facebook-open-graph/">Modify the Home Page Title for Facebook / Open Graph</a></li>
-            </ul></li>
-            <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/">Filters by Category</a>
-            <ul>
-                <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/head/">Head Filters</a></li>
-                <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/media/">Media Filters</a></li>
-                <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/open-graph/">Open Graph Filters</a></li>
-                <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/twitter-card/">Twitter Card Filters</a></li>
-                <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/webpage/">Webpage Filters</a></li>
-            </ul></li>
-            <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-name/">Filters by Name</a></li>
-            <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/other/">Other Filters</a></li>
-        </ul></li>
-        <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/sharing-buttons-function/">Sharing Buttons Function</a></li>
-    </ul></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/inline-variables/">Inline Variables</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/multisite-network-support/">Multisite / Network Support</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/ngfb-shortcode/">NGFB Shortcode</a></li> 
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/performance-tuning/">Performance Tuning</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/styling-social-buttons/">Styling Social Buttons</a></li>
-    <li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/working-with-image-attachments/">Working with Image Attachments</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/">About Pro Modules</a>
+
+<ul>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/author-gravatar/">Author Gravatar</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/easy-digital-downloads/">Easy Digital Downloads</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/headspace2-seo/">HeadSpace2 SEO</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/jetpack-photon/">Jetpack Photon</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/videos-apis/">Slideshare, Vimeo, Wistia, Youtube APIs</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/">WooCommerce</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/wordpress-rest-api-v2/">WordPress REST API v2</a></li>
+</ul></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/contact-information/">Contact Information and Feeds</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/">Developer Resources</a>
+
+<ul>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/">Constants</a>
+
+<ul>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/disable-the-open-graph-meta-tags/">Disable the Open Graph Meta Tags</a></li>
+</ul></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/">Filters</a>
+
+<ul>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/">Examples</a>
+
+<ul>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/add-availability-to-product-card-for-woocommerce/">Add Availability to Product Card for WooCommerce</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/detect-youtube-url-links-as-videos/">Detect YouTube URL Links as Videos</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/force-wistia-videos-to-autoplay-on-facebook/">Force Wistia Videos to Autoplay on Facebook</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-shortcode-attributes-url/">Modify Shortcode Attributes (URL)</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-articletag-keywords-names/">Modify the article:tag Keywords / Names</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-default-topics-list/">Modify the Default Topics List</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-home-page-title-for-facebook-open-graph/">Modify the Home Page Title for Facebook / Open Graph</a></li>
+</ul></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/">Filters by Category</a>
+
+<ul>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/head/">Head Filters</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/media/">Media Filters</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/open-graph/">Open Graph Filters</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/twitter-card/">Twitter Card Filters</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/webpage/">Webpage Filters</a></li>
+</ul></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-name/">Filters by Name</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/other/">Other Filters</a></li>
+</ul></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/sharing-buttons-function/">Sharing Buttons Function</a></li>
+</ul></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/inline-variables/">Inline Variables</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/multisite-network-support/">Multisite / Network Support</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/ngfb-shortcode/">NGFB Shortcode</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/performance-tuning/">Performance Tuning</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/styling-social-buttons/">Styling Social Buttons</a></li>
+<li><a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/working-with-image-attachments/">Working with Image Attachments</a></li>
 </ul>
 
