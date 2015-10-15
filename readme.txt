@@ -327,7 +327,6 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 		* [Disable the Open Graph Meta Tags](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/disable-the-open-graph-meta-tags/)
 	* [Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/)
 		* [Examples](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/)
-			* [Add Availability to Product Card for WooCommerce](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/add-availability-to-product-card-for-woocommerce/)
 			* [Detect YouTube URL Links as Videos](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/detect-youtube-url-links-as-videos/)
 			* [Force Wistia Videos to Autoplay on Facebook](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/force-wistia-videos-to-autoplay-on-facebook/)
 			* [Modify Shortcode Attributes (URL)](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-shortcode-attributes-url/)
@@ -461,7 +460,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Version 8.10 2015/09/20 =
 
-The Photo Card, Gallery Card, and Product Card were deprecated by Twitter on July 3rd, 2015. NGFB continues to support all [current Twitter Card formats](https://dev.twitter.com/cards/types), including the Summary Card, Summary Card with Large Image, App Card (exclusive to WPSSO), and Player Card &mdash; in both the Free (New) and Pro versions.
+The Photo Card, Gallery Card, and Product Card were deprecated by Twitter on July 3rd, 2015. NGFB continues to support [all current Twitter Card formats](https://dev.twitter.com/cards/types), including the Summary Card, Summary Card with Large Image, App Card (exclusive to WPSSO), and Player Card &mdash; in both the Free (New) and Pro versions.
 
 * **New Features**
 	* *None*
