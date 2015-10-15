@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.3.1
-Stable Tag: 8.11.0
+Stable Tag: 8.11.1
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -460,7 +460,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Version 8.10 2015/09/20 =
 
-The Photo Card, Gallery Card, and Product Card were deprecated by Twitter on July 3rd, 2015. NGFB continues to support [all current Twitter Card formats](https://dev.twitter.com/cards/types), including the Summary Card, Summary Card with Large Image, App Card (exclusive to WPSSO), and Player Card &mdash; in both the Free (New) and Pro versions.
+The Photo, Gallery, and Product Cards were deprecated by Twitter on July 3rd, 2015. NGFB continues to support [all current Twitter Card formats](https://dev.twitter.com/cards/types), including the Summary, Summary with Large Image, App (exclusive to WPSSO), and Player Cards &mdash; in both the Free and Pro versions of NGFB.
 
 * **New Features**
 	* *None*
