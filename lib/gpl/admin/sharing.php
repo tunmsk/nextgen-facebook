@@ -28,7 +28,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			$rows['plugin_file_cache_exp'] = $this->p->util->get_th( _x( 'Social File Cache Expiry',
 				'option label', 'nextgen-facebook' ), 'highlight', 'plugin_file_cache_exp' ).
 			'<td nowrap class="blank">'.$this->p->cf['form']['file_cache_hrs'][$form->options['plugin_file_cache_exp']].' '.
-				_( 'hours', 'option comment', 'nextgen-facebook' ).'</td>'.
+				_x( 'hours', 'option comment', 'nextgen-facebook' ).'</td>'.
 			$this->p->admin->get_site_use( $form, $network, 'plugin_file_cache_exp' );
 
 			return $rows;
@@ -118,6 +118,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 
 			$th = $this->p->util->get_th( _x( 'Tumblr Image Caption',
 				'option label', 'nextgen-facebook' ), 'medium', 'post-tumblr_img_desc' );
+
 			if ( ! empty( $pid ) ) {
 				list(
 					$img_url,
@@ -126,12 +127,14 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 					$img_cropped
 				) = $this->p->media->get_attachment_image_src( $pid, 'thumbnail', false ); 
 			}
+
 			if ( ! empty( $img_url ) ) {
 				$rows['tumblr_img_desc'] = $th.'<td class="blank">'.
 				$this->p->webpage->get_caption( $this->p->options['tumblr_caption'], $this->p->options['tumblr_cap_len'] ).'</td>'.
 				'<td style="width:'.$size_info['width'].'px;"><img src="'.$img_url.'"
 					style="max-width:'.$size_info['width'].'px;"></td>';
-			} else $rows['tumblr_img_desc'] = $th.'<td class="blank"><em>Caption disabled - no suitable image found for the Tumblr button.</em></td>';
+			} else $rows['tumblr_img_desc'] = $th.'<td class="blank"><em>'.
+				sprintf( __( 'Caption disabled - no suitable image found for the %s button', 'nextgen-facebook' ), 'Tumblr' ).'</em></td>';
 
 			$th = $this->p->util->get_th( _x( 'Tumblr Video Caption',
 				'option label', 'nextgen-facebook' ), 'medium', 'post-tumblr_vid_desc' );
@@ -140,16 +143,24 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 				$this->p->webpage->get_caption( $this->p->options['tumblr_caption'], $this->p->options['tumblr_cap_len'] ).'</td>'.
 				'<td style="width:'.$size_info['width'].'px;"><img src="'.$prev_url.'" 
 					style="max-width:'.$size_info['width'].'px;"></td>';
-			} else $rows['tumblr_vid_desc'] = $th.'<td class="blank"><em>Caption disabled - no suitable video found for the Tumblr button.</em></td>';
+			} else $rows['tumblr_vid_desc'] = $th.'<td class="blank"><em>'.
+				sprintf( __( 'Caption disabled - no suitable video found for the %s button', 'nextgen-facebook' ), 'Tumblr' ).'</em></td>';
 
 			/*
 			 * Twitter
 			 */
-			$twitter_cap_len = $this->p->util->get_tweet_max_len( get_permalink( $head_info['post_id'] ) );
-			$rows['twitter_desc'] = $this->p->util->get_th( _x( 'Tweet Text',
-				'option label', 'nextgen-facebook' ), 'medium', 'post-twitter_desc' ). 
-			'<td class="blank">'.$this->p->webpage->get_caption( $this->p->options['twitter_caption'], $twitter_cap_len,
-				true, true, true ).'</td>';	// $use_post = true, $use_cache = true, $add_hashtags = true
+			if ( $post_status == 'auto-draft' ) {
+				$rows['twitter_desc'] = $this->p->util->get_th( _x( 'Tweet Text',
+					'option label', 'nextgen-facebook' ), 'medium', 'post-twitter_desc' ). 
+				'<td class="blank"><em>'.__( 'Save a draft version or publish to enable this field.',
+					'nextgen-facebook' ).'</em></td>';
+			} else {
+				$twitter_cap_len = $this->p->util->get_tweet_max_len( get_permalink( $head_info['post_id'] ) );
+				$rows['twitter_desc'] = $this->p->util->get_th( _x( 'Tweet Text',
+					'option label', 'nextgen-facebook' ), 'medium', 'post-twitter_desc' ). 
+				'<td class="blank">'.$this->p->webpage->get_caption( $this->p->options['twitter_caption'], $twitter_cap_len,
+					true, true, true ).'</td>';	// $use_post = true, $use_cache = true, $add_hashtags = true
+			}
 
 			$rows['buttons_disabled'] = '<tr class="hide_in_basic">'.
 			$this->p->util->get_th( _x( 'Disable Sharing Buttons',

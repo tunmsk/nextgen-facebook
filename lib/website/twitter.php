@@ -159,7 +159,8 @@ if ( ! class_exists( 'NgfbSharingTwitter' ) ) {
 
 			if ( ! array_key_exists( 'lang', $atts ) )
 				$atts['lang'] = empty( $opts['twitter_lang'] ) ? 'en' : $opts['twitter_lang'];
-			$atts['lang'] = apply_filters( $this->p->cf['lca'].'_lang', $atts['lang'], SucomUtil::get_pub_lang( 'twitter' ) );
+			$atts['lang'] = apply_filters( $this->p->cf['lca'].'_lang', 
+				$atts['lang'], SucomUtil::get_pub_lang( 'twitter' ) );
 
 			if ( array_key_exists( 'tweet', $atts ) )
 				$atts['caption'] = $atts['tweet'];

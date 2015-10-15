@@ -27,9 +27,9 @@ if ( ! class_exists( 'NgfbSubmenuSharingFacebook' ) && class_exists( 'NgfbSubmen
 		public function show_metabox_website() {
 			$metabox = 'fb';
 			$tabs = array( 
-				'all' => 'All Buttons',
-				'like' => 'Like and Send',
-				'share' => 'Share',
+				'all' => _x( 'All Buttons', 'metabox tab', 'nextgen-facebook' ),
+				'like' => _x( 'Like and Send', 'metabox tab', 'nextgen-facebook' ),
+				'share' => _x( 'Share', 'metabox tab', 'nextgen-facebook' ),
 			);
 			$rows = array();
 			foreach ( $tabs as $key => $title )

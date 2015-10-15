@@ -125,7 +125,11 @@ if ( ! class_exists( 'NgfbSharingBuffer' ) ) {
 		}
 
 		public function filter_plugin_image_sizes( $sizes ) {
-			$sizes['buffer_img'] = array( 'name' => 'buffer-button', 'label' => 'Buffer Sharing Button' );
+			$sizes['buffer_img'] = array(
+				'name' => 'buffer-button',
+				'label' => _x( 'Buffer Sharing Button',
+					'image size label', 'nextgen-facebook' ),
+			);
 			return $sizes;
 		}
 

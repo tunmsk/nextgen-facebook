@@ -52,7 +52,7 @@ if ( ! class_exists( 'NgfbGplAdminGeneral' ) ) {
 				'option label', 'nextgen-facebook' ), null, 'og_vid_prev_img' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" />'.
 			' '._x( 'video preview images &ndash; when available &ndash; are included first',
-				'option comment', 'nextgen0facebook' ).'</td>';
+				'option comment', 'nextgen-facebook' ).'</td>';
 
 			$rows[] = $this->p->util->get_th( _x( 'Include Embed text/html Type',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_html_type' ).

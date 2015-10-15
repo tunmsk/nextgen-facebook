@@ -152,7 +152,11 @@ if ( ! class_exists( 'NgfbSharingPinterest' ) ) {
 		}
 
 		public function filter_plugin_image_sizes( $sizes ) {
-			$sizes['pin_img'] = array( 'name' => 'pinterest-button', 'label' => 'Pinterest Sharing Button' );
+			$sizes['pin_img'] = array(
+				'name' => 'pinterest-button',
+				'label' => _x( 'Pinterest Sharing Button',
+					'image size label', 'nextgen-facebook' ),
+			);
 			return $sizes;
 		}
 

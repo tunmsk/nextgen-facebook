@@ -891,7 +891,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$show_opts_next = SucomUtil::next_key( NgfbUser::show_opts(), $this->p->cf['form']['show_options'] );
 			$show_opts_text = sprintf( _x( 'View %s by Default', 'submit button', 'nextgen-facebook' ),
 				_x( $this->p->cf['form']['show_options'][$show_opts_next],
-					'form option value', 'nextgen-facebook' ) );
+					'option value', 'nextgen-facebook' ) );
 			$show_opts_url = $this->p->util->get_admin_url( '?action=change_show_options&show_opts='.$show_opts_next );
 
 			$action_buttons = '<input type="submit" class="button-primary" value="'.$submit_text.'" />'.

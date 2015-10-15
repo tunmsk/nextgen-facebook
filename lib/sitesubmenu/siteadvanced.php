@@ -43,8 +43,9 @@ if ( ! class_exists( 'NgfbSitesubmenuSiteadvanced' ) && class_exists( 'NgfbAdmin
 		public function show_metabox_plugin() {
 			$metabox = 'plugin';
 			$tabs = apply_filters( $this->p->cf['lca'].'_network_'.$metabox.'_tabs', array( 
-				'settings' => 'Plugin Settings',
-				'cache' => 'File and Object Cache' ) );
+				'settings' => _x( 'Plugin Settings', 'metabox tab', 'nextgen-facebook' ),
+				'cache' => _x( 'File and Object Cache', 'metabox tab', 'nextgen-facebook' ),
+			) );
 			$rows = array();
 			foreach ( $tabs as $key => $title )
 				$rows[$key] = array_merge( $this->get_rows( $metabox, $key ),

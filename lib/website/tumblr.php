@@ -141,7 +141,11 @@ if ( ! class_exists( 'NgfbSharingTumblr' ) ) {
 		}
 
 		public function filter_plugin_image_sizes( $sizes ) {
-			$sizes['tumblr_img'] = array( 'name' => 'tumblr-button', 'label' => 'Tumblr Sharing Button' );
+			$sizes['tumblr_img'] = array(
+				'name' => 'tumblr-button',
+				'label' => _x( 'Tumblr Sharing Button',
+					'image size label', 'nextgen-facebook' ),
+			);
 			return $sizes;
 		}
 

@@ -274,6 +274,7 @@ if ( ! class_exists( 'NgfbHead' ) ) {
 					$this->p->debug->log( $cache_type.': header array saved to transient '.
 						$cache_id.' ('.$this->p->options['plugin_object_cache_exp'].' seconds)');
 			}
+
 			return $header_array;
 		}
 

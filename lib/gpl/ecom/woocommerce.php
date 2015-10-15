@@ -117,13 +117,11 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 		}
 
 		public function filter_sharing_position_rows( $rows, $form ) {
-			$pos = array( 'top' => 'Top', 'bottom' => 'Bottom', 'both' => 'Both Top and Bottom' );
 			$rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'ngfb' ) ).'</td>';
 			$rows['buttons_pos_woo_short'] = $this->p->util->get_th( _x( 'Position in Woo Short Text',
 				'option label', 'nextgen-facebook' ), null, 'buttons_pos_woo_short' ).
-			'<td class="blank">'.$form->get_hidden( 'buttons_pos_woo_short' ).
-				$pos[$this->p->options['buttons_pos_woo_short']].'</td>';
+			'<td class="blank">'.NgfbSharing::$cf['sharing']['position'][$this->p->options['buttons_pos_woo_short']].'</td>';
 			return $rows;
 		}
 	}
