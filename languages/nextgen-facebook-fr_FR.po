@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.11.0\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.11.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2015-10-15 14:45-0400\n"
-"PO-Revision-Date: 2015-10-15 14:49-0400\n"
+"POT-Creation-Date: 2015-10-17 11:58-0400\n"
+"PO-Revision-Date: 2015-10-17 11:59-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -397,7 +397,7 @@ msgstr ""
 "inclut un <a href=\"%3$s\">module d'intégration pour JetPack Photon</a> qui réactive "
 "les fonctions de taille d'image spécifiquement pour images de %4$s."
 
-#: lib/admin.php:1203
+#: lib/admin.php:1191
 msgctxt "option label (very short)"
 msgid "Site Use"
 msgstr "Util. par site"
@@ -456,7 +456,8 @@ msgstr "Avis %s"
 msgid "Use Image"
 msgstr "Utiliser l’image"
 
-#: lib/config-gettext-extract.php:3 lib/sharing.php:350 lib/sharing.php:359
+#: lib/config-gettext-extract.php:3 lib/sharing.php:354 lib/sharing.php:363
+#: lib/website/twitter.php:89
 msgctxt "lib file description"
 msgid "Advanced"
 msgstr "Avancés"
@@ -525,7 +526,7 @@ msgctxt "option value"
 msgid "Force this value"
 msgstr "Forcer cette valeur"
 
-#: lib/config-gettext-extract.php:17
+#: lib/config-gettext-extract.php:17 lib/website/twitter.php:76
 msgctxt "lib file description"
 msgid "General"
 msgstr "Général"
@@ -575,12 +576,13 @@ msgctxt "lib file description"
 msgid "Setup Guide"
 msgstr "Guide de Config"
 
-#: lib/config-gettext-extract.php:32 lib/sharing.php:344 lib/sharing.php:353
+#: lib/config-gettext-extract.php:32 lib/sharing.php:348 lib/sharing.php:357
 msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr "Boutons de Partage"
 
-#: lib/config-gettext-extract.php:33 lib/sharing.php:344 lib/sharing.php:347
+#: lib/config-gettext-extract.php:33 lib/sharing.php:348 lib/sharing.php:351
+#: lib/submenu/style.php:31
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr "Styles de Partage"
@@ -1046,7 +1048,7 @@ msgctxt "metabox title"
 msgid "Pinterest (Rich Pin)"
 msgstr "Pinterest (Rich Pin)"
 
-#: lib/gpl/admin/sharing.php:28 lib/pro/admin/sharing.php:34 lib/sharing.php:359
+#: lib/gpl/admin/sharing.php:28 lib/pro/admin/sharing.php:34 lib/sharing.php:363
 msgctxt "option label"
 msgid "Social File Cache Expiry"
 msgstr "Expiration cache des fichiers social"
@@ -1066,7 +1068,7 @@ msgctxt "option label"
 msgid "%s Preset"
 msgstr "Préréglage '%s'"
 
-#: lib/gpl/admin/sharing.php:78 lib/pro/admin/sharing.php:79 lib/sharing.php:344
+#: lib/gpl/admin/sharing.php:78 lib/pro/admin/sharing.php:79 lib/sharing.php:348
 msgctxt "metabox tab"
 msgid "Sharing Buttons"
 msgstr "Boutons de Partage"
@@ -1074,12 +1076,12 @@ msgstr "Boutons de Partage"
 #: lib/gpl/admin/sharing.php:98 lib/pro/admin/sharing.php:96
 msgctxt "option label"
 msgid "Pinterest Caption Text"
-msgstr "Texte de légende Pinterest"
+msgstr "Texte légende Pinterest"
 
 #: lib/gpl/admin/sharing.php:119 lib/pro/admin/sharing.php:119
 msgctxt "option label"
 msgid "Tumblr Image Caption"
-msgstr "Légende d'Image Tumblr"
+msgstr "Légende d'image Tumblr"
 
 #: lib/gpl/admin/sharing.php:137 lib/pro/admin/sharing.php:139
 msgid "Caption disabled - no suitable image found for the %s button"
@@ -1098,7 +1100,7 @@ msgstr "Légende désactivé - aucun vidéo appropriée trouvé pour le bouton %
 #: lib/pro/admin/sharing.php:157 lib/pro/admin/sharing.php:163
 msgctxt "option label"
 msgid "Tweet Text"
-msgstr "Texte de Tweet"
+msgstr "Texte du Tweet"
 
 #: lib/gpl/admin/sharing.php:155 lib/pro/admin/sharing.php:159
 msgid "Save a draft version or publish to enable this field."
@@ -2095,7 +2097,7 @@ msgstr ""
 msgid "Plugin settings (%s) have been upgraded and saved."
 msgstr "Les réglages (%s) ont été mis à jour et sauvegardés."
 
-#: lib/post.php:218 lib/sharing.php:344 lib/taxonomy.php:220 lib/user.php:156
+#: lib/post.php:218 lib/sharing.php:348 lib/taxonomy.php:220 lib/user.php:156
 msgctxt "metabox title"
 msgid "Social Settings"
 msgstr "Réglages Sociaux"
@@ -2214,7 +2216,7 @@ msgstr "URL de la page entreprise Pinterest"
 #: lib/setting/social-accounts.php:60 lib/submenu/general.php:315
 msgctxt "option label"
 msgid "Twitter Business @username"
-msgstr "Nom d’utilisateur d’affaires Twitter"
+msgstr "Le @nom d’affaires Twitter"
 
 #: lib/setting/social-accounts.php:64 lib/submenu/general.php:337
 msgctxt "option label"
@@ -2231,11 +2233,11 @@ msgctxt "option label"
 msgid "MySpace Business (Brand) URL"
 msgstr "URL de la page d’affaires MySpace"
 
-#: lib/sharing.php:220
+#: lib/sharing.php:224
 msgid "Failed to open the %s file for reading."
 msgstr "Impossible d'ouvrir le fichier %s pour la lecture."
 
-#: lib/sharing.php:344
+#: lib/sharing.php:348
 msgid ""
 "Social sharing features include the <a href=\"%1$s\">%2$s</a> and <a href=\"%3$s\">"
 "%4$s</a> settings pages, the <em>%5$s</em> tab in the <em>%6$s</em> metabox, along "
@@ -2245,7 +2247,7 @@ msgstr ""
 "%2$s</a> et <a href=\"%3$s\">%4$s</a>, l'onglet <em>%5$s</em> dans la metabox <em>"
 "%6$s</em>, ainsi que le shortcode et widget de partage social."
 
-#: lib/sharing.php:344
+#: lib/sharing.php:348
 msgid ""
 "All social sharing features can be disabled using a <a href=\"%s\" target=\"_blank"
 "\">PHP constant</a> in your wp-config.php file."
@@ -2253,7 +2255,7 @@ msgstr ""
 "Toutes les fonctionnalités de partage social peuvent être désactivés en utilisant une "
 "<a href=\"%s\" target=\"_blank\">constante PHP</a> dans votre fichier wp-config.php."
 
-#: lib/sharing.php:347
+#: lib/sharing.php:351
 msgid ""
 "A stylesheet for the social sharing buttons can be included in all webpages. You can "
 "enable or disable use of the stylesheet from the <a href=\"%1$s\">%2$s</a> settings "
@@ -2263,7 +2265,7 @@ msgstr ""
 "les pages Web. Vous pouvez activer ou désactiver l'utilisation de la feuille de style "
 "dans la page de réglage <a href=\"%1$s\">%2$s</a>."
 
-#: lib/sharing.php:350
+#: lib/sharing.php:354
 msgid ""
 "Support for shortcode(s) can be enabled and disabled on the <a href=\"%1$s\">%2$s</a> "
 "settings page. Shortcodes are disabled by default to optimize performance and content "
@@ -2273,7 +2275,7 @@ msgstr ""
 "href=\"%1$s\">%2$s</a>. Les shortcodes sont désactivés par défaut pour optimiser la "
 "performance et le traitement du contenu."
 
-#: lib/sharing.php:353
+#: lib/sharing.php:357
 msgid ""
 "The sharing widget feature adds a <em>%s</em> widget to the WordPress Widgets settings "
 "page. The sharing widget shares the URL for the current webpage (and not individual "
@@ -2284,7 +2286,7 @@ msgstr ""
 "la page Web actuelle (et non l'URL de chaque item sur une page Web d'index / archive, "
 "par exemple)."
 
-#: lib/sharing.php:356
+#: lib/sharing.php:360
 msgid ""
 "A stylesheet editor is available to edit the default CSS of social sharing buttons "
 "based on their intended location (content, except, etc.)."
@@ -2292,7 +2294,7 @@ msgstr ""
 "Un éditeur de feuille de style est disponible pour modifier le CSS par défaut des "
 "boutons de partage social, basé sur l'emplacement de boutons (contenu, sauf, etc..)."
 
-#: lib/sharing.php:359
+#: lib/sharing.php:363
 msgid ""
 "Social sharing button images and JavaScript can be saved to a local cache folder. When "
 "this feature is enabled, the image and JavaScript URLs provided are those of the "
@@ -2303,7 +2305,7 @@ msgstr ""
 "JavaScript fournies sont celles des fichiers du cache au lieux des URLs originaux (qui "
 "donne souvent une meilleure performance)."
 
-#: lib/sharing.php:359
+#: lib/sharing.php:363
 msgid ""
 "The current <em>%1$s</em> value defined on the <a href=\"%2$s\">%3$s</a> settings page "
 "is %4$s seconds (the default value of 0 disables social file caching)."
@@ -2312,7 +2314,7 @@ msgstr ""
 "\"%2$s\">%3$s</a> est %4$s secondes (la valeur par défaut de 0 désactive la mise en "
 "cache des fichiers sociaux)."
 
-#: lib/sharing.php:368 lib/sharing.php:371
+#: lib/sharing.php:372 lib/sharing.php:375
 msgid ""
 "A custom caption text used by the %s social sharing button for the custom Image ID, "
 "attached or featured image."
@@ -2320,7 +2322,7 @@ msgstr ""
 "Un texte de légende personnalisé utilisé par le bouton de partage social %s pour l'ID "
 "de l'Image personnalisée, attaché ou a la une."
 
-#: lib/sharing.php:374
+#: lib/sharing.php:378
 msgid ""
 "A custom caption text used by the %s social sharing button for the custom Video URL or "
 "embedded video."
@@ -2328,7 +2330,7 @@ msgstr ""
 "Un texte de légende personnalisé utilisé par le bouton de partage social %s pour l'URL "
 "d'un video personnalisé ou un video intégré."
 
-#: lib/sharing.php:377
+#: lib/sharing.php:381
 msgid ""
 "A custom Tweet text for the Twitter social sharing button. This text is different than "
 "the Twitter Card description."
@@ -2336,36 +2338,36 @@ msgstr ""
 "Un texte Tweet personnalisé pour le bouton Twitter de partage social. Ce texte est "
 "différent de la description de la carte Twitter."
 
-#: lib/sharing.php:380
+#: lib/sharing.php:384
 msgid "Disable all social sharing buttons (content, excerpt, widget, shortcode)."
 msgstr ""
 "Désactiver tous les boutons de partage social (contenu, extrait, widget, shortcode)."
 
-#: lib/sharing.php:404
+#: lib/sharing.php:408
 msgid "The %s file is not readable."
 msgstr "Le fichier %s n'est pas lisible."
 
-#: lib/sharing.php:438
+#: lib/sharing.php:442
 msgid "Failed to load the minify class SuextMinifyCssCompressor."
 msgstr "Impossible de charger la classe de rapetissement SuextMinifyCssCompressor."
 
-#: lib/sharing.php:447
+#: lib/sharing.php:451
 msgid "Failure while writing to the % file."
 msgstr "Échec lors de l'écriture dans le fichier %."
 
-#: lib/sharing.php:452
+#: lib/sharing.php:456
 msgid "Updated the %1$s stylesheet (%2$d bytes written)."
-msgstr "The feuille de style %1$s a été mise à jour (%2$s octets écrits)."
+msgstr "La feuille de style %1$s a été mise à jour (%2$s octets écrits)."
 
-#: lib/sharing.php:461
+#: lib/sharing.php:465
 msgid "The %s folder is not writable."
 msgstr "Le dossier %s n'est pas accessible en écriture."
 
-#: lib/sharing.php:467
+#: lib/sharing.php:471
 msgid "Failed to open file %s for writing."
 msgstr "Impossible d'ouvrir le fichier %s pour l'écriture."
 
-#: lib/sharing.php:477
+#: lib/sharing.php:481
 msgid ""
 "Error removing the minimized stylesheet &mdash; does the web server have sufficient "
 "privileges?"
@@ -2373,7 +2375,7 @@ msgstr ""
 "Erreur en retirant la feuille de style minimisé &mdash; le serveur Web a t'il les "
 "privilèges nécessaires?"
 
-#: lib/sharing.php:497
+#: lib/sharing.php:501
 msgctxt "metabox title"
 msgid "Sharing Buttons"
 msgstr "Boutons de Partage Social"
@@ -2437,10 +2439,10 @@ msgctxt "metabox tab"
 msgid "Theme Integration"
 msgstr "Intégration de Thème"
 
-#: lib/submenu/advanced.php:45
+#: lib/submenu/advanced.php:45 lib/website/twitter.php:89 lib/website/twitter.php:93
 msgctxt "metabox tab"
 msgid "Service API Keys"
-msgstr "Clés Service API"
+msgstr "Clés de Service API"
 
 #: lib/submenu/advanced.php:58
 msgctxt "metabox tab"
@@ -2799,17 +2801,45 @@ msgctxt "option label"
 msgid "Position in Excerpt Text"
 msgstr "Position dans le texte d'extrait"
 
-#: lib/submenu/style.php:131
+#: lib/submenu/style.php:31
+msgid ""
+"Add the CSS of all <em>%1$s</em> to webpages (default is checked). The CSS will be "
+"<strong>minimized</strong>, and saved to a single stylesheet with a URL of <a href="
+"\"%2$s\">%3$s</a>. The minimized stylesheet can be enqueued or added directly to the "
+"webpage HTML."
+msgstr ""
+"Ajouter le CSS de tous les <em>%1$s</em> au pages Web (cochée par défaut). Le CSS sera "
+"<strong>minimisé</strong> et sauvegardé dans une seule feuille de style avec l'URL <a "
+"href=\"%2$s\">%3$s</a>. La feuille de style peut être mis en queue ou ajouté "
+"directement au HTML des pages Web."
+
+#: lib/submenu/style.php:35
+msgid "JavaScript that is added to webpages for the social sharing sidebar."
+msgstr ""
+"JavaScript qui est ajouté au pages Web pour la barre latérale de partage sociale."
+
+#: lib/submenu/style.php:39
+msgid ""
+"Have WordPress enqueue the social stylesheet instead of adding the CSS to in the "
+"webpage HTML (default is unchecked). Enqueueing the stylesheet may be desirable if you "
+"use a plugin to concatenate all enqueued styles into a single stylesheet URL."
+msgstr ""
+"Demander a WordPress de mettre la feuille de style en queue au lieu d'ajouter le CSS "
+"au HTML des pages Web (décochée par défaut). Mettre la feuille de style en queue peut "
+"être souhaitable si vous utilisez une extension pour assembler tous le contenu des "
+"feuilles de styles dans un seul URL."
+
+#: lib/submenu/style.php:130
 msgctxt "metabox title"
 msgid "Social Sharing Styles"
 msgstr "Styles de Partage Social"
 
-#: lib/submenu/style.php:144
+#: lib/submenu/style.php:143
 msgctxt "option label"
 msgid "Use the Social Stylesheet"
 msgstr "Utiliser la feuille de style social"
 
-#: lib/submenu/style.php:148
+#: lib/submenu/style.php:147
 msgctxt "option label"
 msgid "Enqueue the Stylesheet"
 msgstr "Placer la feuille de style en queue"
@@ -2895,7 +2925,7 @@ msgctxt "option label (short)"
 msgid "Tweet Text Length"
 msgstr "Longueur du Tweet"
 
-#: lib/website/buffer.php:79 lib/website/twitter.php:74
+#: lib/website/buffer.php:79 lib/website/twitter.php:74 lib/website/twitter.php:82
 msgctxt "option label (short)"
 msgid "Add via @username"
 msgstr "Ajouter via @nom"
@@ -3066,15 +3096,75 @@ msgctxt "option label (short)"
 msgid "Do Not Track"
 msgstr "No pas suivre"
 
+#: lib/website/twitter.php:71
+msgid "Disable tracking for Twitter's tailored suggestions and ads feature."
+msgstr "Désactiver le suivi pour les annonces et suggestions adaptées de Twitter."
+
+#: lib/website/twitter.php:76
+msgid ""
+"Append the website's business @username to the tweet (see the <a href=\"%1$s"
+"\">Twitter</a> options tab on the %2$s settings page). The website's @username will be "
+"displayed and recommended after the webpage is shared."
+msgstr ""
+"Ajouter le @nom d'affaires du site Web au Tweet (voir l'onglet d'options <a href=\"%1$s"
+"\">Twitter</a> sur la page de réglages %2$s). Le @nom du site Web sera affichés et "
+"recommandé après que la page Web est été partagée."
+
 #: lib/website/twitter.php:80
 msgctxt "option label (short)"
 msgid "Recommend Author"
 msgstr "Recomm. l'auteur"
 
+#: lib/website/twitter.php:82
+msgid ""
+"Recommend following the author's Twitter @username (from their profile) after sharing "
+"a webpage. If the <em>%1$s</em> option is also checked, the website's @username is "
+"suggested first."
+msgstr ""
+"Conseiller de suivre le @nom Twitter de l'auteur (défini sur leur page de profil) "
+"après avoir partagé une page Web. Si l'option <em>%1$s</em> est également cochée, le "
+"@nom d'affaires Twitter du site Web est aussi recommandes."
+
 #: lib/website/twitter.php:87
 msgctxt "option label (short)"
 msgid "Shorten URLs with"
 msgstr "Raccourcir URLs"
+
+#: lib/website/twitter.php:89
+msgid ""
+"If you select a URL shortening service here, you must also enter its <a href=\"%1$s\">"
+"%2$s</a> on the %3$s settings page."
+msgstr ""
+"Si vous sélectionnez un service de raccourcissement d'URL, vous devez également entrer "
+"ses <a href=\"%1$s\">%2$s</a> dans la page de réglages %3$s."
+
+#: lib/website/twitter.php:93
+msgid "using these <a href=\"%1$s\">%2$s</a>"
+msgstr "utilisant ces <a href=\"%1$s\">%2$s</a>"
+
+#: lib/widget/sharing.php:30
+msgid "The %s social sharing buttons widget."
+msgstr "Les boutons de partage social du widget de %."
+
+#: lib/widget/sharing.php:115
+msgctxt "option value"
+msgid "Share It"
+msgstr "Partager"
+
+#: lib/widget/sharing.php:117
+msgctxt "option label"
+msgid "Widget Title (leave blank for no title)"
+msgstr "Titre du Widget (laisser vide pour aucun titre)"
+
+#: lib/widget/sharing.php:132
+msgctxt "option comment"
+msgid "(not added on indexes)"
+msgstr "(pas ajouté sur pages index)"
+
+#: lib/widget/sharing.php:135
+msgctxt "option comment"
+msgid "(shares link on indexes)"
+msgstr "(partage un lien sur pages index)"
 
 #: nextgen-facebook.php:232
 msgid "HTML debug mode is active (transient cache could NOT be disabled)."
