@@ -139,9 +139,11 @@ jQuery("#ngfb-sidebar").click( function(){
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark( 'action / filter setup' );
 			$this->plugin_filepath = $plugin_filepath;
+
 			self::$sharing_css_name = 'sharing-styles-id-'.get_current_blog_id().'.min.css';
 			self::$sharing_css_file = NGFB_CACHEDIR.self::$sharing_css_name;
 			self::$sharing_css_url = NGFB_CACHEURL.self::$sharing_css_name;
+
 			$this->set_objects();
 
 			add_action( 'wp_enqueue_scripts', array( &$this, 'wp_enqueue_styles' ) );
@@ -189,6 +191,8 @@ jQuery("#ngfb-sidebar").click( function(){
 				$classname = NgfbConfig::load_lib( false, 'website/'.$id, 'ngfbsharing'.$id );
 				if ( $classname !== false && class_exists( $classname ) )
 					$this->website[$id] = new $classname( $this->p );
+					if ( $this->p->debug->enabled )
+						$this->p->debug->log( $classname.' class loaded' );
 			}
 		}
 
@@ -510,20 +514,16 @@ jQuery("#ngfb-sidebar").click( function(){
 		public function show_header() {
 			echo $this->get_script_loader();
 			echo $this->get_script( 'header' );
-
 			if ( $this->p->debug->enabled )
 				$this->p->debug->show_html( null, 'Debug Log' );
 		}
 
 		public function show_footer() {
-
 			if ( $this->have_buttons_for_type( 'sidebar' ) )
 				echo $this->show_sidebar();
 			elseif ( $this->p->debug->enabled )
 				$this->p->debug->log( 'no buttons enabled for sidebar' );
-
 			echo $this->get_script( 'footer' );
-
 			if ( $this->p->debug->enabled )
 				$this->p->debug->show_html( null, 'Debug Log' );
 		}
@@ -579,7 +579,8 @@ jQuery("#ngfb-sidebar").click( function(){
 			if ( method_exists( $this, 'get_buttons_'.$type ) ) {
 				$ret = add_filter( $type, array( &$this, 'get_buttons_'.$type ), NGFB_SOCIAL_PRIORITY );
 				if ( $this->p->debug->enabled )
-					$this->p->debug->log( 'buttons filter '.$type.' added ('.( $ret  ? 'true' : 'false' ).')' );
+					$this->p->debug->log( 'buttons filter '.$type.
+						' added ('.( $ret  ? 'true' : 'false' ).')' );
 			} elseif ( $this->p->debug->enabled )
 				$this->p->debug->log( 'get_buttons_'.$type.' method is missing' );
 			return $ret;
@@ -590,7 +591,8 @@ jQuery("#ngfb-sidebar").click( function(){
 			if ( method_exists( $this, 'get_buttons_'.$type ) ) {
 				$ret = remove_filter( $type, array( &$this, 'get_buttons_'.$type ), NGFB_SOCIAL_PRIORITY );
 				if ( $this->p->debug->enabled )
-					$this->p->debug->log( 'buttons filter '.$type.' removed ('.( $ret  ? 'true' : 'false' ).')' );
+					$this->p->debug->log( 'buttons filter '.$type.
+						' removed ('.( $ret  ? 'true' : 'false' ).')' );
 			}
 			return $ret;
 		}
