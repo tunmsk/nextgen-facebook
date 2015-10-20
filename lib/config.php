@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.11.1',		// plugin version
+					'version' => '8.12.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -201,7 +201,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb363',				// increment when changing default options
+				'version' => 'ngfb366',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length
@@ -341,39 +341,46 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_filter_lang' => 1,			// Use WP Locale for Language
 					'plugin_auto_img_resize' => 1,			// Auto-Resize Media Images
 					'plugin_ignore_small_img' => 1,			// Check Image Dimensions
+					'plugin_shortcodes' => 1,			// Enable Plugin Shortcode(s)
+					'plugin_widgets' => 1,				// Enable Plugin Widget(s)
 					'plugin_page_excerpt' => 0,			// Enable WP Excerpt for Pages
 					'plugin_page_tags' => 0,			// Enable WP Tags for Pages
-					'plugin_check_head' => 1,
+					// Content and Filters Tab
 					'plugin_filter_title' => 1,
 					'plugin_filter_content' => 0,
 					'plugin_filter_excerpt' => 0,
 					'plugin_p_strip' => 0,
-					'plugin_p_cap_prefix' => 'Caption:',
 					'plugin_use_img_alt' => 1,
 					'plugin_img_alt_prefix' => 'Image:',
-					'plugin_shortcodes' => 1,
-					'plugin_widgets' => 1,
+					'plugin_p_cap_prefix' => 'Caption:',
 					'plugin_gravatar_api' => 1,
 					'plugin_slideshare_api' => 1,
 					'plugin_vimeo_api' => 1,
 					'plugin_wistia_api' => 1,
 					'plugin_youtube_api' => 1,
-					'plugin_cf_img_url' => '_format_image_url',
-					'plugin_cf_vid_url' => '_format_video_url',
-					'plugin_cf_vid_embed' => '_format_video_embed',
+					// Social Settings Tab
+					'plugin_columns_post' => 1,			// Show Social Columns for: Posts, Pages, and CPTs
+					'plugin_columns_taxonomy' => 1,			// Show Social Columns for: Taxonomies (Categories and Tags)
+					'plugin_columns_user' => 1,			// Show Social Columns for: Users
 					'plugin_add_to_post' => 1,
 					'plugin_add_to_page' => 1,
 					'plugin_add_to_taxonomy' => 1,
 					'plugin_add_to_user' => 1,
 					'plugin_add_to_attachment' => 1,
+					'plugin_cf_img_url' => '_format_image_url',
+					'plugin_cf_vid_url' => '_format_video_url',
+					'plugin_cf_vid_embed' => '_format_video_embed',
+					// Theme Integration Tab
+					'plugin_check_head' => 1,
 					'plugin_html_attr_filter_name' => 'language_attributes',
 					'plugin_html_attr_filter_prio' => 100,
 					'plugin_head_attr_filter_name' => 'language_attributes',
 					'plugin_head_attr_filter_prio' => 100,
 					// File and Object Cache Tab
 					'plugin_object_cache_exp' => 86400,		// Object Cache Expiry
-					'plugin_file_cache_exp' => 0,
+					'plugin_file_cache_exp' => 0,			// File Cache Expiry
 					'plugin_verify_certs' => 0,			// Verify SSL Certificates
+					// Service API Keys Tab
 					'plugin_shortener' => 'none',
 					'plugin_min_shorten' => 22,
 					'plugin_bitly_login' => '',
@@ -443,6 +450,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_auto_img_resize:use' => 'default',
 					'plugin_ignore_small_img' => 1,			// Check Image Dimensions
 					'plugin_ignore_small_img:use' => 'default',
+					'plugin_shortcodes' => 1,			// Enable Plugin Shortcode(s)
+					'plugin_shortcodes:use' => 'default',
+					'plugin_widgets' => 1,				// Enable Plugin Widget(s)
+					'plugin_widgets:use' => 'default',
 					'plugin_page_excerpt' => 0,			// Enable WP Excerpt for Pages
 					'plugin_page_excerpt:use' => 'default',
 					'plugin_page_tags' => 0,			// Enable WP Tags for Pages
@@ -450,7 +461,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					// File and Object Cache Tab
 					'plugin_object_cache_exp' => 86400,		// Object Cache Expiry
 					'plugin_object_cache_exp:use' => 'default',
-					'plugin_file_cache_exp' => 0,
+					'plugin_file_cache_exp' => 0,			// File Cache Expiry
 					'plugin_file_cache_exp:use' => 'default',
 					'plugin_verify_certs' => 0,			// Verify SSL Certificates
 					'plugin_verify_certs:use' => 'default',
@@ -800,11 +811,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				require_once( NGFB_PLUGINDIR.'lib/ext/parse-readme.php' );
 			}
 
-			if ( ( ! defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) || 
-				( defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) && ! NGFB_SOCIAL_SHARING_DISABLE ) ) &&
+			if ( ( ! defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) || ! NGFB_SOCIAL_SHARING_DISABLE ) &&
 				empty( $_SERVER['NGFB_SOCIAL_SHARING_DISABLE'] ) &&
-				file_exists( NGFB_PLUGINDIR.'lib/sharing.php' ) )
-					require_once( NGFB_PLUGINDIR.'lib/sharing.php' );
+					file_exists( NGFB_PLUGINDIR.'lib/sharing.php' ) )
+						require_once( NGFB_PLUGINDIR.'lib/sharing.php' );
 
 			if ( file_exists( NGFB_PLUGINDIR.'lib/loader.php' ) )
 				require_once( NGFB_PLUGINDIR.'lib/loader.php' );
