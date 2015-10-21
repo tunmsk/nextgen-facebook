@@ -198,17 +198,25 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 						case 'media-youtube':
 							$chk['optval'] = 'plugin_youtube_api';
 							break;
-						case 'admin-sharing':
-						case 'admin-style':
-							if ( $ret['ssb'] === true )
-								$ret[$sub]['*'] = $ret[$sub][$id] = true;
-							break;
 						case 'admin-general':
 						case 'admin-advanced':
-						case 'admin-image-dimensions':
+							// only load on the 'settings' (aka admin.php) pages
+							if ( is_admin() && 
+								basename( $_SERVER['PHP_SELF'] ) === 'admin.php' )
+									$ret[$sub]['*'] = $ret[$sub][$id] = true;
+							break;
 						case 'admin-post':
 						case 'admin-taxonomy':
 						case 'admin-user':
+							if ( is_admin() )
+								$ret[$sub]['*'] = $ret[$sub][$id] = true;
+							break;
+						case 'admin-sharing':
+						case 'admin-style':
+							if ( is_admin() &&
+								$ret['ssb'] === true )
+									$ret[$sub]['*'] = $ret[$sub][$id] = true;
+							break;
 						case 'util-post':
 						case 'util-taxonomy':
 						case 'util-user':
