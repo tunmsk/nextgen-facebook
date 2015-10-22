@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.3.1
-Stable Tag: 8.11.1
+Stable Tag: 8.12.0
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -384,7 +384,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 = Version 8.12.0 =
 
 * **New Features**
-	* Added a new Show Social Columns option for Posts, Pages, Taxonomy, and Users list pages (Pro version).
+	* Added a Show Social Columns option to manage displayed columns for Posts, Pages, Taxonomy, and Users list pages (Pro version).
 * **Improvements**
 	* Added a check for settings pages (aka admin.php) before loading the settings pages library files.
 	* Added a check for `is_admin()` before making admin library files available to the library loader.
@@ -490,6 +490,10 @@ The Photo, Gallery, and Product Cards were deprecated by Twitter on July 3rd, 20
 	* Added a new NgfbUtil::save_all_times() method to save installation, activation, and update times.
 
 == Upgrade Notice ==
+
+= 8.12.0 =
+
+Added a new Show Social Columns option to manage displayed columns (Pro version). Fixed NextGEN Gallery image ID detection (Pro version).
 
 = 8.11.1 =
 
