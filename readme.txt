@@ -381,7 +381,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.12.0 =
+= Version 8.12.0 2015/10/22 =
 
 * **New Features**
 	* Added a Show Social Columns option to manage displayed columns for Posts, Pages, Taxonomy, and Users list pages (Pro version).
@@ -493,7 +493,7 @@ The Photo, Gallery, and Product Cards were deprecated by Twitter on July 3rd, 20
 
 = 8.12.0 =
 
-Added a new Show Social Columns option to manage displayed columns (Pro version). Fixed NextGEN Gallery image ID detection (Pro version).
+2015/10/22 Added a new Show Social Columns option to manage displayed columns (Pro version). Fixed NextGEN Gallery image ID detection (Pro version).
 
 = 8.11.1 =
 
