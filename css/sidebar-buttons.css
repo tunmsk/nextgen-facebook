@@ -7,12 +7,12 @@
 /* hide the sidebar if screen width is less than 1000px 
  */
 @media (max-width:1000px) {
-	#wpsso-sidebar {
+	#ngfb-sidebar {
 		display:none;
 	}
 }
 
-#wpsso-sidebar { 
+#ngfb-sidebar { 
 	cursor:pointer;
 	text-align:center;
 	position:fixed;
@@ -36,7 +36,7 @@
  * using javascript, this header can be hovered/clicked to 
  * show/hide the sidebar
  *
-#wpsso-sidebar-header { 
+#ngfb-sidebar-header { 
 	width:72px;
 	height:72px;
 	background-image:url("%%plugin_url_path%%images/share-icon-2.png");
@@ -45,7 +45,7 @@
 }
  */
 
-#wpsso-sidebar-buttons { 
+#ngfb-sidebar-buttons { 
 	display:block;
 	width:auto;
 	height:auto;
@@ -53,7 +53,7 @@
 	border-style:solid;
 
 	/* hide the sidebar buttons by default
-	 * you must enable the #wpsso-sidebar-header 
+	 * you must enable the #ngfb-sidebar-header 
 	 * to show something that can be clicked
 	 *
 	width:0;		
@@ -71,8 +71,8 @@
 	border-color:rgb(255, 255, 255);
 }
 
-#wpsso-sidebar .wpsso-buttons > div,	/* default uses large buttons */
-#wpsso-sidebar .wpsso-preset-large_share_vertical .wpsso-buttons > div { 
+#ngfb-sidebar .ngfb-buttons > div,	/* default uses large buttons */
+#ngfb-sidebar .ngfb-preset-large_share_vertical .ngfb-buttons > div { 
 	display:block;
 	text-align:center;
 	width:70px;
@@ -80,8 +80,8 @@
 	margin:10px 5px;
 }
 
-#wpsso-sidebar .wpsso-preset-small_share_count .wpsso-buttons > div,
-#wpsso-sidebar .wpsso-preset-small_share_count .wpsso-buttons > div[class*="-button"] { 
+#ngfb-sidebar .ngfb-preset-small_share_count .ngfb-buttons > div,
+#ngfb-sidebar .ngfb-preset-small_share_count .ngfb-buttons > div[class*="-button"] { 
 	text-align:left;
 	line-height:20px;
 	width:120px;
@@ -89,29 +89,29 @@
 	margin:10px;
 }
 
-#wpsso-sidebar .wpsso-buttons div.gplus-button,
-#wpsso-sidebar .wpsso-preset-large_share_vertical
-	.wpsso-buttons div.gplus-button { height:60px; line-height:40px;}
+#ngfb-sidebar .ngfb-buttons div.gplus-button,
+#ngfb-sidebar .ngfb-preset-large_share_vertical
+	.ngfb-buttons div.gplus-button { height:60px; line-height:40px;}
 
-#wpsso-sidebar .wpsso-buttons div.pinterest-button,
-#wpsso-sidebar .wpsso-preset-large_share_vertical
-	.wpsso-buttons div.pinterest-button { height:40px; margin-top:42px; }
-#wpsso-sidebar .wpsso-preset-small_share_count
-	.wpsso-buttons div.pinterest-button { height:20px; margin-top:10px; }
+#ngfb-sidebar .ngfb-buttons div.pinterest-button,
+#ngfb-sidebar .ngfb-preset-large_share_vertical
+	.ngfb-buttons div.pinterest-button { height:40px; margin-top:42px; }
+#ngfb-sidebar .ngfb-preset-small_share_count
+	.ngfb-buttons div.pinterest-button { height:20px; margin-top:10px; }
 
-#wpsso-sidebar .wpsso-buttons div.stumbleupon-button,
-#wpsso-sidebar .wpsso-preset-large_share_vertical
-	.wpsso-buttons div.stumbleupon-button { height:60px; line-height:60px; }
-#wpsso-sidebar .wpsso-preset-small_share_count
-	.wpsso-buttons div.stumbleupon-button { height:20px; line-height:20px; }
+#ngfb-sidebar .ngfb-buttons div.stumbleupon-button,
+#ngfb-sidebar .ngfb-preset-large_share_vertical
+	.ngfb-buttons div.stumbleupon-button { height:60px; line-height:60px; }
+#ngfb-sidebar .ngfb-preset-small_share_count
+	.ngfb-buttons div.stumbleupon-button { height:20px; line-height:20px; }
 
-#wpsso-sidebar .wpsso-buttons div.tumblr-button,
-#wpsso-sidebar .wpsso-preset-large_share_vertical
-	.wpsso-buttons div.tumblr-button { height:20px; line-height:20px; }
+#ngfb-sidebar .ngfb-buttons div.tumblr-button,
+#ngfb-sidebar .ngfb-preset-large_share_vertical
+	.ngfb-buttons div.tumblr-button { height:20px; line-height:20px; }
 
-#wpsso-sidebar .wpsso-buttons div.reddit-button,
-#wpsso-sidebar .wpsso-preset-large_share_vertical
-	.wpsso-buttons div.reddit-button { margin:20px 5px 20px 5px; }
-#wpsso-sidebar .wpsso-preset-small_share_count
-	.wpsso-buttons div.reddit-button { margin-bottom:10px; }
+#ngfb-sidebar .ngfb-buttons div.reddit-button,
+#ngfb-sidebar .ngfb-preset-large_share_vertical
+	.ngfb-buttons div.reddit-button { margin:20px 5px 20px 5px; }
+#ngfb-sidebar .ngfb-preset-small_share_count
+	.ngfb-buttons div.reddit-button { margin-bottom:10px; }
 
