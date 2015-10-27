@@ -381,7 +381,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.13.0 (TBD) =
+= Version 8.13.0 (2015/10/27) =
 
 * **New Features**
 	* Added a new "Get Shortlink Button Gives Short URL" Advanced option to enable/disable the use of shortened URLs in the "Get Shortlink" button on post editing pages (Pro version).
@@ -504,6 +504,10 @@ The Photo, Gallery, and Product Cards were deprecated by Twitter on July 3rd, 20
 	* Added a new NgfbUtil::save_all_times() method to save installation, activation, and update times.
 
 == Upgrade Notice ==
+
+= 8.13.0 =
+
+2015/10/27 Added a new option to enable/disable the use of shortened URLs in the "Get Shortlink" button, and added the Ow.ly and TinyURL shortening services (Pro version).
 
 = 8.12.0 =
 
