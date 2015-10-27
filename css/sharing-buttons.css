@@ -12,6 +12,9 @@
  * (excerpt, content, shortcode, widget). Any change made to this
  * class will affect all other button layouts.
  */
+.ngfb-buttons { 
+	box-sizing:content-box;
+}
 .ngfb-buttons img { 
 	margin:none;
 	border:none;

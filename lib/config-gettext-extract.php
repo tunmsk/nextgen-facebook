@@ -25,6 +25,7 @@ _x( '[none]', 'option value', 'nextgen-facebook' );
 _x( 'No', 'option value', 'nextgen-facebook' );
 _x( '(no videos)', 'option value', 'nextgen-facebook' );
 _x( '(option disabled)', 'option value', 'nextgen-facebook' );
+_x( 'Ow.ly', 'option value', 'nextgen-facebook' );
 _x( 'Read Me', 'lib file description', 'nextgen-facebook' );
 _x( 'Right', 'option value', 'nextgen-facebook' );
 _x( '(settings value)', 'option value', 'nextgen-facebook' );

@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.12.0',		// plugin version
+					'version' => '8.13.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -201,7 +201,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb366',				// increment when changing default options
+				'version' => 'ngfb367',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length
@@ -382,9 +382,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_verify_certs' => 0,			// Verify SSL Certificates
 					// Service API Keys Tab
 					'plugin_shortener' => 'none',
+					'plugin_shortlink' => 1,
 					'plugin_min_shorten' => 22,
 					'plugin_bitly_login' => '',
 					'plugin_bitly_api_key' => '',
+					'plugin_owly_api_key' => '',
 					'plugin_google_api_key' => '',
 					'plugin_google_shorten' => 0,
 					// Contact Field Names and Labels
@@ -589,6 +591,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'none' => '[none]',
 					'bitly' => 'Bit.ly',
 					'googl' => 'Goo.gl',
+					'owly' => 'Ow.ly',
 				),
 			),
 			'head' => array(
