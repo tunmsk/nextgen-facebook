@@ -263,7 +263,7 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'ngfb' ) ).'</td>';
 
 			$rows['plugin_shortener'] = $this->p->util->get_th( _x( 'Preferred URL Shortening Service',
-				'option label', 'nextgen-facebook' ), null, 'plugin_shortener' ).
+				'option label', 'nextgen-facebook' ), 'highlight', 'plugin_shortener' ).
 			'<td class="blank">[none]</td>';
 
 			$rows['plugin_shortlink'] = $this->p->util->get_th( _x( '<em>Get Shortlink</em> Button Gives Short URL',

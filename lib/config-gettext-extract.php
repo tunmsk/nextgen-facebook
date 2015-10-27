@@ -3,7 +3,7 @@
 _x( 'Advanced', 'lib file description', 'nextgen-facebook' );
 _x( 'All Options', 'option value', 'nextgen-facebook' );
 _x( 'Basic Options', 'option value', 'nextgen-facebook' );
-_x( 'Bit.ly', 'option value', 'nextgen-facebook' );
+_x( 'Bit.ly (suggested)', 'option value', 'nextgen-facebook' );
 _x( 'Bottom', 'option value', 'nextgen-facebook' );
 _x( 'Center', 'option value', 'nextgen-facebook' );
 _x( '(default)', 'option value', 'nextgen-facebook' );
@@ -34,6 +34,7 @@ _x( 'Sharing Buttons', 'lib file description', 'nextgen-facebook' );
 _x( 'Sharing Styles', 'lib file description', 'nextgen-facebook' );
 _x( 'Social Image Dimensions', 'lib file description', 'nextgen-facebook' );
 _x( '<span>Extension Plugins</span> and Pro Licenses', 'lib file description', 'nextgen-facebook' );
+_x( 'TinyURL (slow)', 'option value', 'nextgen-facebook' );
 _x( 'Title and Excerpt', 'option value', 'nextgen-facebook' );
 _x( 'Title Only', 'option value', 'nextgen-facebook' );
 _x( 'Top', 'option value', 'nextgen-facebook' );
