@@ -381,6 +381,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.13.0 (TBD) =
+
+* **New Features**
+	* Added a new "Get Shortlink Button Gives Short URL" Advanced option to enable/disable the use of shortened URLs in the "Get Shortlink" button on post editing pages (Pro version).
+	* Added the Ow.ly URL shortening service with an "Ow.ly API Key" option on the Advanced settings page (Pro version).
+* **Improvements**
+	* The Google and Ow.ly API options are now hidden by default, leaving only Bit.ly, which is simpler to configure.
+	* Added "box-sizing:content-box;" to the .ngfb-buttons default CSS class to prevent inheritance from theme CSS.
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* *None*
+
 = Version 8.12.0 2015/10/22 =
 
 * **New Features**
@@ -494,8 +507,4 @@ The Photo, Gallery, and Product Cards were deprecated by Twitter on July 3rd, 20
 = 8.12.0 =
 
 2015/10/22 Added a new Show Social Columns option to manage displayed columns (Pro version). Fixed NextGEN Gallery image ID detection (Pro version).
-
-= 8.11.1 =
-
-2015/10/15 Additional French translations. Fixed an undefined index error for a WP SEO global variable.
 
