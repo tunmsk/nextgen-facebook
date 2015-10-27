@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.3.1
-Stable Tag: 8.12.0
+Stable Tag: 8.13.0
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -388,7 +388,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added the Ow.ly URL shortening service with an "Ow.ly API Key" option on the Advanced settings page (Pro version).
 	* Added support for the TinyURL shortening service (no API keys required) on the Advanced settings page (Pro version).
 * **Improvements**
-	* The Google and Ow.ly API credential options are now hidden in the basic options view, leaving only the Bit.ly API credentials, which are easier to configure.
+	* The Google and Ow.ly API credential options are now hidden in the basic options view, leaving only the Bit.ly API credentials, which are easier to setup.
 	* Added "box-sizing:content-box;" to the .ngfb-buttons default CSS class to prevent inheritance from theme CSS.
 * **Bugfixes**
 	* *None*
