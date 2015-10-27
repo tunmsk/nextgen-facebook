@@ -388,7 +388,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* Added the Ow.ly URL shortening service with an "Ow.ly API Key" option on the Advanced settings page (Pro version).
 	* Added support for the TinyURL shortening service (no API keys required) on the Advanced settings page (Pro version).
 * **Improvements**
-	* The Google and Ow.ly API options are now hidden by default, leaving only Bit.ly, which is simpler to configure.
+	* The Google and Ow.ly API credential options are now hidden in the basic options view, leaving only the Bit.ly API credentials, which are easier to configure.
 	* Added "box-sizing:content-box;" to the .ngfb-buttons default CSS class to prevent inheritance from theme CSS.
 * **Bugfixes**
 	* *None*
