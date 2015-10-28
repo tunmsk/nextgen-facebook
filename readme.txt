@@ -381,6 +381,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.13.1 (2015/10/28) =
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* Fixed the "Minimum URL Length to Shorten" option which appeared twice on the Advanced settings page (Pro version).
+* **Developer Notes**
+	* *None*
+
 = Version 8.13.0 (2015/10/27) =
 
 * **New Features**
@@ -505,11 +516,7 @@ The Photo, Gallery, and Product Cards were deprecated by Twitter on July 3rd, 20
 
 == Upgrade Notice ==
 
-= 8.13.0 =
+= 8.13.1 =
 
 2015/10/27 Added a new option to enable/disable the use of shortened URLs in the "Get Shortlink" button, and added the Ow.ly and TinyURL shortening services (Pro version).
-
-= 8.12.0 =
-
-2015/10/22 Added a new Show Social Columns option to manage displayed columns (Pro version). Fixed NextGEN Gallery image ID detection (Pro version).
 
