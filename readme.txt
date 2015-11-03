@@ -383,6 +383,8 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Version 8.14.0 (2015/11/03) =
 
+Official announcement: [NGFB / WPSSO Update — Pre-defined Meta Tags for CPTs](http://surniaulula.com/2015/11/03/ngfb-wpsso-update-pre-defined-meta-tags-for-cpts/)
+
 * **New Features**
 	* *None*
 * **Improvements**
@@ -406,6 +408,8 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Version 8.13.0 (2015/10/27) =
 
+Official announcement: N/A
+
 * **New Features**
 	* Added a new "Get Shortlink Button Gives Short URL" Advanced option to enable/disable the use of shortened URLs in the "Get Shortlink" button on post editing pages (Pro version).
 	* Added the Ow.ly URL shortening service with an "Ow.ly API Key" option on the Advanced settings page (Pro version).
@@ -419,6 +423,8 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* *None*
 
 = Version 8.12.0 2015/10/22 =
+
+Official announcement: [NGFB / WPSSO Update — Manage Social Columns](http://surniaulula.com/2015/10/25/ngfb-wpsso-update-manage-social-columns/)
 
 * **New Features**
 	* Added a Show Social Columns option to manage displayed columns for Posts, Pages, Taxonomy, and Users list pages (Pro version).
@@ -444,6 +450,8 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 	* *None*
 
 = Version 8.11.0 2015/10/09 =
+
+Official announcement: [NGFB / WPSSO Update — French Translation](http://surniaulula.com/2015/10/09/ngfb-wpsso-update-french-translation/)
 
 * **New Features**
 	* Added a French language (fr_FR) translation.
@@ -512,6 +520,8 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 = Version 8.10 2015/09/20 =
 
 The Photo, Gallery, and Product Cards were deprecated by Twitter on July 3rd, 2015. NGFB continues to support [all current Twitter Card formats](https://dev.twitter.com/cards/types), including the Summary, Summary with Large Image, App (exclusive to WPSSO), and Player Cards &mdash; in both the Free and Pro versions of NGFB.
+
+Official announcement: [NGFB / WPSSO Update — Twitter Card Updates](http://surniaulula.com/2015/09/20/ngfb-wpsso-update-twitter-card-updates/)
 
 * **New Features**
 	* *None*
