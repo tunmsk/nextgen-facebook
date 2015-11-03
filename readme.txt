@@ -381,7 +381,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.14.0 (TBD) =
+= Version 8.14.0 (2015/11/03) =
 
 * **New Features**
 	* *None*
@@ -390,7 +390,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
-	* Added 'og_type_mt' to the config array to add pre-defined Open Graph meta tag names for each type (article, product, etc.).
+	* Added 'og_type_mt' to the config array to add pre-defined Open Graph meta tag names for custom post types (article, book, music.album, product, etc.).
 	* Added a filter_single_mt() method to the NgfbHead class to optionally filter each meta tag value. The filter hooks ('ngfb_meta_property_article:tag_content' for example) can return a string or an array of values. The NGFB_FILTER_SINGLE_TAGS constant must be defined as true to enable filtering of individual meta tag values.
 
 = Version 8.13.1 (2015/10/28) =
@@ -527,6 +527,10 @@ The Photo, Gallery, and Product Cards were deprecated by Twitter on July 3rd, 20
 	* Added a new NgfbUtil::save_all_times() method to save installation, activation, and update times.
 
 == Upgrade Notice ==
+
+= 8.14.0 =
+
+2015/11/03 Added pre-defined Open Graph meta tags for custom post types (article, book, music.album, product, etc.). The pre-defined meta tags allow developers to easily hook single meta tag names to modify their values.
 
 = 8.13.1 =
 
