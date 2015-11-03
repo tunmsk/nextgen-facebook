@@ -397,6 +397,8 @@ Official announcement: [NGFB / WPSSO Update — Pre-defined Meta Tags for CPTs](
 
 = Version 8.13.1 (2015/10/28) =
 
+Official announcement: N/A
+
 * **New Features**
 	* *None*
 * **Improvements**
@@ -422,7 +424,7 @@ Official announcement: N/A
 * **Developer Notes**
 	* *None*
 
-= Version 8.12.0 2015/10/22 =
+= Version 8.12.0 (2015/10/22) =
 
 Official announcement: [NGFB / WPSSO Update — Manage Social Columns](http://surniaulula.com/2015/10/25/ngfb-wpsso-update-manage-social-columns/)
 
@@ -438,7 +440,9 @@ Official announcement: [NGFB / WPSSO Update — Manage Social Columns](http://su
 * **Developer Notes**
 	* *None*
 
-= Version 8.11.1 2015/10/15 =
+= Version 8.11.1 (2015/10/15) =
+
+Official announcement: N/A
 
 * **New Features**
 	* *None*
@@ -449,7 +453,7 @@ Official announcement: [NGFB / WPSSO Update — Manage Social Columns](http://su
 * **Developer Notes**
 	* *None*
 
-= Version 8.11.0 2015/10/09 =
+= Version 8.11.0 (2015/10/09) =
 
 Official announcement: [NGFB / WPSSO Update — French Translation](http://surniaulula.com/2015/10/09/ngfb-wpsso-update-french-translation/)
 
@@ -468,7 +472,9 @@ Official announcement: [NGFB / WPSSO Update — French Translation](http://surni
 		* apply_filters( 'ngfb_content_image_preg_html_tag', $default = 'img' );
 		* apply_filters( 'ngfb_content_image_preg_pid_attr', $default = 'data-[a-z]+-pid' );
 
-= Version 8.10.3 2015/10/04 =
+= Version 8.10.3 (2015/10/04) =
+
+Official announcement: N/A
 
 * **New Features**
 	* *None*
@@ -481,7 +487,9 @@ Official announcement: [NGFB / WPSSO Update — French Translation](http://surni
 * **Developer Notes**
 	* Added POT (Portable Object Template) file with translation strings in languages/nextgen-facebook.pot.
 
-= Version 8.10.2 2015/09/29 =
+= Version 8.10.2 (2015/09/29) =
+
+Official announcement: N/A
 
 * **New Features**
 	* *None*
@@ -502,7 +510,9 @@ Official announcement: [NGFB / WPSSO Update — French Translation](http://surni
 		* Renamed the NgfbSchema `add_head_attr()` public method to `add_head_attributes()`.
 		* Renamed the NgfbOpengraph `add_html_attr()` public method to `add_html_attributes()`.
 
-= Version 8.10.1 2015/09/23 =
+= Version 8.10.1 (2015/09/23) =
+
+Official announcement: N/A
 
 * **New Features**
 	* *None*
@@ -517,7 +527,7 @@ Official announcement: [NGFB / WPSSO Update — French Translation](http://surni
 	* Removed all Photo, Gallery, and Product Twitter Card related option keys from the options array.
 	* Changed the WpssoAdmin $readme_info property to a static variable.
 
-= Version 8.10 2015/09/20 =
+= Version 8.10 (2015/09/20) =
 
 The Photo, Gallery, and Product Cards were deprecated by Twitter on July 3rd, 2015. NGFB continues to support [all current Twitter Card formats](https://dev.twitter.com/cards/types), including the Summary, Summary with Large Image, App (exclusive to WPSSO), and Player Cards &mdash; in both the Free and Pro versions of NGFB.
 
