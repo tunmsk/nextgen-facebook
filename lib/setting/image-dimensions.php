@@ -52,9 +52,11 @@ if ( ! class_exists( 'NgfbSettingImagedimensions' ) && class_exists( 'NgfbAdmin'
 						'option label', 'nextgen-facebook' ), null, 'og_img_dimensions' ).
 					'<td>'.$this->form->get_image_dimensions_input( 'og_img', false, false ).'</td>';
 
-					$rows[] = $this->p->util->get_th( _x( 'Pinterest Rich Pin',
-						'option label', 'nextgen-facebook' ), null, 'rp_img_dimensions' ).
-					'<td>'.$this->form->get_image_dimensions_input( 'rp_img' ).'</td>';
+					if ( ! SucomUtil::get_const( 'NGFB_RICH_PIN_DISABLE' ) ) {
+						$rows[] = $this->p->util->get_th( _x( 'Pinterest Rich Pin',
+							'option label', 'nextgen-facebook' ), null, 'rp_img_dimensions' ).
+						'<td>'.$this->form->get_image_dimensions_input( 'rp_img' ).'</td>';
+					}
 	
 					$rows[] = $this->p->util->get_th( _x( 'Twitter <em>Summary</em> Card',
 						'option label', 'nextgen-facebook' ), null, 'tc_sum_dimensions' ).

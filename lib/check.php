@@ -77,19 +77,16 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 		private function get_avail_check( $key ) {
 			switch ( $key ) {
 				case 'aop':
-					$ret = ( ! defined( 'NGFB_PRO_MODULE_DISABLE' ) ||
-					( defined( 'NGFB_PRO_MODULE_DISABLE' ) && ! NGFB_PRO_MODULE_DISABLE ) ) &&
+					$ret = ! SucomUtil::get_const( 'NGFB_PRO_MODULE_DISABLE' ) &&
 					is_dir( NGFB_PLUGINDIR.'lib/pro/' ) ? true : false;
 					break;
 				case 'mt':
-					$ret = ( ! defined( 'NGFB_META_TAGS_DISABLE' ) || 
-					( defined( 'NGFB_META_TAGS_DISABLE' ) && ! NGFB_META_TAGS_DISABLE ) ) &&
+					$ret = ! SucomUtil::get_const( 'NGFB_META_TAGS_DISABLE' ) &&
 					empty( $_SERVER['NGFB_META_TAGS_DISABLE'] ) &&
 					empty( $_GET['NGFB_META_TAGS_DISABLE'] ) ? true : false;	// allow meta tags to be disabled with query argument
 					break;
 				case 'ssb':
-					$ret = ( ! defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) || 
-					( defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) && ! NGFB_SOCIAL_SHARING_DISABLE ) ) &&
+					$ret = ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
 					empty( $_SERVER['NGFB_SOCIAL_SHARING_DISABLE'] ) &&
 					class_exists( $this->p->cf['lca'].'sharing' ) ? true : false;
 					break;
