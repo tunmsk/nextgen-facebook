@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NextGEN Facebook (NGFB) 8.14.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2015-11-10 00:34:31+00:00\n"
+"POT-Creation-Date: 2015-11-11 13:39:24+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2729,11 +2729,11 @@ msgstr ""
 msgid "Jabber / Google Talk"
 msgstr ""
 
-#: lib/util.php:237
+#: lib/util.php:236
 msgid "%s has been cleared as well."
 msgstr ""
 
-#: lib/util.php:239
+#: lib/util.php:238
 msgid ""
 "%s cached files, transient cache, and the WordPress object cache have been "
 "cleared."
