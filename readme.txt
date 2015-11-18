@@ -344,7 +344,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 	* [Sharing Buttons Function](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/sharing-buttons-function/)
 * [Inline Variables](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/inline-variables/)
 * [Multisite / Network Support](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/multisite-network-support/)
-* [NGFB Shortcode](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/ngfb-shortcode/)
+* [NGFB Shortcode for Sharing Buttons](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/ngfb-shortcode/)
 * [Performance Tuning](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/performance-tuning/)
 * [Styling Social Buttons](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/styling-social-buttons/)
 * [Working with Image Attachments](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/working-with-image-attachments/)
