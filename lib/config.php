@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.14.2',		// plugin version
+					'version' => '8.15.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -136,6 +136,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'marketpress' => 'MarketPress',
 								'woocommerce' => 'WooCommerce',
 								'wpecommerce' => 'WP e-Commerce',
+								'wcyotpo' => 'Yotpo for WC',
 							),
 							'forum' => array(
 								'bbpress' => 'bbPress',
@@ -201,14 +202,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb369',				// increment when changing default options
+				'version' => 'ngfb373',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
-					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length
-					'schema_website_json' => 1,
-					'schema_publisher_json' => 1,
-					'schema_author_json' => 1,
 					'schema_logo_url' => '',
+					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length
+					'schema_author_json' => 1,
+					'schema_publisher_json' => 1,
+					'schema_website_json' => 1,
+					'schema_add_noscript' => 1,
 					'seo_desc_len' => 156,			// meta name="description" maximum text length
 					'seo_author_name' => 'none',		// meta name="author" format
 					'seo_def_author_id' => 0,
@@ -339,6 +341,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_property_product:price:amount' => 1,
 					'add_meta_property_product:price:currency' => 1,
 					'add_meta_property_product:availability' => 1,
+					'add_meta_property_product:rating:average' => 0,
+					'add_meta_property_product:rating:count' => 0,
+					'add_meta_property_product:rating:worst' => 0,
+					'add_meta_property_product:rating:best' => 0,
 					// profile
 					'add_meta_property_profile:first_name' => 1,
 					'add_meta_property_profile:last_name' => 1,
@@ -381,6 +387,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_itemprop_url' => 1,
 					'add_meta_itemprop_image' => 1,
 					'add_meta_itemprop_address' => 1,
+					'add_meta_itemprop_ratingvalue' => 1,
+					'add_meta_itemprop_ratingcount' => 1,
+					'add_meta_itemprop_worstrating' => 1,
+					'add_meta_itemprop_bestrating' => 1,
+					'add_meta_itemprop_reviewcount' => 1,
 					/*
 					 * Advanced Settings
 					 */
@@ -721,6 +732,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'product:price:amount',
 						'product:price:currency',
 						'product:availability',
+						'product:rating:average',
+						'product:rating:count',
+						'product:rating:worst',
+						'product:rating:best',
 					),
 					'profile' => array(
 						'profile:first_name',

@@ -151,7 +151,7 @@ if ( ! class_exists( 'NgfbGplAdminPost' ) ) {
 				$rows[] = '<tr class="hide_in_basic">'.
 				'<td colspan="2" class="subsection"><h4>'.
 					_x( 'Pinterest (Rich Pin)', 'metabox title', 'nextgen-facebook' ).'</h4></td>';
-	
+
 				$rows[] = '<tr class="hide_in_basic">'.
 				$this->p->util->get_th( _x( 'Image Dimensions',
 					'option label', 'nextgen-facebook' ), 'medium', 'rp_img_dimensions' ).
