@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NextGEN Facebook (NGFB) 8.15.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2015-11-19 00:25:53+00:00\n"
+"POT-Creation-Date: 2015-11-20 02:46:12+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1140,7 +1140,7 @@ msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr ""
 
-#: lib/gpl/ecom/woocommerce.php:122 lib/pro/ecom/woocommerce.php:337
+#: lib/gpl/ecom/woocommerce.php:122 lib/pro/ecom/woocommerce.php:339
 msgctxt "option label"
 msgid "Position in Woo Short Text"
 msgstr ""
