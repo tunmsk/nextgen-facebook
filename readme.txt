@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.3.1
-Stable Tag: 8.14.2
+Stable Tag: 8.15.0
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -382,7 +382,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.15.0 (TBD) =
+= Version 8.15.0 (2015/11/21) =
 
 Official announcement: N/A
 
@@ -590,6 +590,10 @@ Official announcement: [NGFB / WPSSO Update — Twitter Card Updates](http://sur
 	* Added a new NgfbUtil::save_all_times() method to save installation, activation, and update times.
 
 == Upgrade Notice ==
+
+= 8.15.0 =
+
+2015/11/21 Added a new "Use Meta Property Container(s)" option in the Google / Schema settings tab, added support for WooCommerce product ratings, added support for Yotpo Social Reviews for WooCommerce product ratings.
 
 = 8.14.2 =
 
