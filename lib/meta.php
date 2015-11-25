@@ -224,7 +224,7 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 				if ( $this->p->debug->enabled )
 					$this->p->debug->log( 'nonce token missing from submitted POST' );
 				return false;
-			} elseif ( ! wp_verify_nonce( $_POST[ NGFB_NONCE ], $this->get_nonce() ) ) {
+			} elseif ( ! wp_verify_nonce( $_POST[ NGFB_NONCE ], NgfbAdmin::get_nonce() ) ) {
 				if ( $this->p->debug->enabled )
 					$this->p->debug->log( 'nonce token validation failed' );
 				if ( is_admin() )
@@ -232,11 +232,6 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 						'nextgen-facebook' ), true );
 				return false;
 			} else return true;
-		}
-
-		protected function get_nonce() {
-			return ( defined( 'NONCE_KEY' ) ?
-				NONCE_KEY : '' ).md5( plugin_basename( __FILE__ ) );
 		}
 
 		protected function get_submit_opts( $id, $mod = false ) {

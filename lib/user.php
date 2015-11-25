@@ -174,7 +174,7 @@ if ( ! class_exists( 'NgfbUser' ) ) {
 			$this->head_info['post_id'] = false;
 
 			$this->form = new SucomForm( $this->p, NGFB_META_NAME, $opts, $def_opts );
-			wp_nonce_field( $this->get_nonce(), NGFB_NONCE );
+			wp_nonce_field( NgfbAdmin::get_nonce(), NGFB_NONCE );
 
 			$metabox = 'user';
 			$tabs = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_tabs',

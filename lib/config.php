@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.15.0',		// plugin version
+					'version' => '8.16.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -202,7 +202,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb373',				// increment when changing default options
+				'version' => 'ngfb375',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'schema_logo_url' => '',
@@ -436,7 +436,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_check_head' => 1,
 					'plugin_html_attr_filter_name' => 'language_attributes',
 					'plugin_html_attr_filter_prio' => 100,
-					'plugin_head_attr_filter_name' => 'language_attributes',
+					'plugin_head_attr_filter_name' => 'head_attributes',
 					'plugin_head_attr_filter_prio' => 100,
 					// File and Object Cache Tab
 					'plugin_object_cache_exp' => 86400,		// Object Cache Expiry

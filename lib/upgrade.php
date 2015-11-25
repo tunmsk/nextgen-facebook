@@ -237,6 +237,12 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 							$opts['plugin_min_shorten'] = 22;
 				}
 
+				if ( version_compare( $opts_version, 373, '<=' ) ) {
+					if ( ! empty( $opts['plugin_head_attr_filter_name'] ) &&
+						$opts['plugin_head_attr_filter_name'] === 'language_attributes' ) 
+							$opts['plugin_head_attr_filter_name'] = 'head_attributes';
+				}
+
 			} elseif ( $options_name === constant( 'NGFB_SITE_OPTIONS_NAME' ) )
 				$opts = SucomUtil::rename_keys( $opts, $this->renamed_site_keys );
 
