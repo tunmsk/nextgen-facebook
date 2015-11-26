@@ -434,6 +434,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				} elseif ( ! wp_verify_nonce( $_GET[ NGFB_NONCE ], self::get_nonce() ) ) {
 					$this->p->notice->err( __( 'Nonce token validation failed for plugin action (action ignored).', 'nextgen-facebook' ) );
 				} else {
+					$_SERVER['REQUEST_URI'] = remove_query_arg( array( 'action', NGFB_NONCE ) );
 					switch ( $_GET['action'] ) {
 						case 'check_for_updates': 
 							if ( $this->p->is_avail['util']['um'] ) {
@@ -597,17 +598,16 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			if ( $this->is_submenu( $this->menu_id ) ||
 				$this->is_setting( $this->menu_id ) ) {
 
-				echo '<form name="'.$this->p->cf['lca'].'" 
-					id="'.$this->p->cf['lca'].'_settings_form" 
-					action="options.php" method="post">';
+				echo '<form name="'.$this->p->cf['lca'].'" id="'.
+					$this->p->cf['lca'].'_settings_form" action="options.php" method="post">'."\n";
 
 				settings_fields( $this->p->cf['lca'].'_setting' ); 
 
 			} elseif ( $this->is_sitesubmenu( $this->menu_id ) ) {
 
-				echo '<form name="'.$this->p->cf['lca'].'" 
-					id="'.$this->p->cf['lca'].'_settings_form" 
-					action="edit.php?action='.NGFB_SITE_OPTIONS_NAME.'" method="post">';
+				echo '<form name="'.$this->p->cf['lca'].'" id="'.
+					$this->p->cf['lca'].'_settings_form" action="edit.php?action='.
+						NGFB_SITE_OPTIONS_NAME.'" method="post">'."\n";
 				echo '<input type="hidden" name="page" value="'.$this->menu_id.'">';
 			}
 
@@ -1190,7 +1190,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			// double check in case of reloads etc.
 			if ( ( $html = SucomUtil::get_stripped_php( $file ) ) === false ||
 				strpos( $html, '<head>' ) === false ) {
-				$this->p->notice->err( sprintf( __( 'No update possible: An standard / un-modified &lt;head&gt; element was not found in %s.', 'nextgen-facebook' ), $file ), true );
+				$this->p->notice->err( sprintf( __( 'No update possible - An standard / un-modified &lt;head&gt; element was not found in %s.', 'nextgen-facebook' ), $file ), true );
 				return;
 			}
 
@@ -1209,9 +1209,9 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			}
 			
 			if ( fwrite( $fh, $php ) ) {
-				$this->p->notice->trunc_id( 'notice-header-tmpl-default-head' );
-				$this->p->notice->inf( sprintf( __( 'The header.php theme template has been successfully updated and saved. A backup of your original header.php is available in %s.', 'nextgen-facebook' ), $backup ), true );
 				fclose( $fh );
+				$this->p->notice->trunc_id( 'notice-header-tmpl-default-head' );
+				$this->p->notice->inf( '<p><b>'.__( 'The header.php theme template has been successfully updated and saved.', 'nextgen-facebook' ).'</b></p><p>'.sprintf( __( 'A backup copy of your original header.php is available in %s.', 'nextgen-facebook' ), $backup ).'</p>', true );
 			}
 		}
 
