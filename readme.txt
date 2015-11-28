@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.3.1
-Stable Tag: 8.15.0
+Stable Tag: 8.16.0
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -382,7 +382,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.16.0 (2015/TBD) =
+= Version 8.16.0 (2015/11/27) =
 
 Official announcement: N/A
 
@@ -607,7 +607,7 @@ Official announcement: [NGFB / WPSSO Update — Twitter Card Updates](http://sur
 
 = 8.16.0 =
 
-2015/TBD Added a check for a standard &lt;head&gt; element in the header.php theme template, and provide a method to add a new "head_attributes" filter.
+2015/11/27 Added a check for a standard &lt;head&gt; element in the header.php theme template, and provide a method to add a new "head_attributes" filter.
 
 = 8.15.0 =
 
