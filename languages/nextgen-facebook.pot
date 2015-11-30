@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NextGEN Facebook (NGFB) 8.16.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2015-11-26 04:20:44+00:00\n"
+"POT-Creation-Date: 2015-11-30 02:43:06+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -419,19 +419,19 @@ msgctxt "option value"
 msgid "(default)"
 msgstr ""
 
-#: lib/com/notice.php:248
+#: lib/com/notice.php:249
 msgid ""
 "%1$d warning messages have been hidden &mdash; <a id=\"%2$s\">unhide these "
 "notices temporarily</a>."
 msgstr ""
 
-#: lib/com/notice.php:250
+#: lib/com/notice.php:251
 msgid ""
 "%1$d warning message has been hidden &mdash; <a id=\"%2$s\">unhide this "
 "notice temporarily</a>."
 msgstr ""
 
-#: lib/com/notice.php:320
+#: lib/com/notice.php:321
 msgid "%s Notice"
 msgstr ""
 
@@ -440,7 +440,7 @@ msgid "Use Image"
 msgstr ""
 
 #: lib/config-gettext-extract.php:3 lib/messages.php:77 lib/sharing.php:354
-#: lib/sharing.php:363 lib/website/twitter.php:89
+#: lib/sharing.php:363 lib/website/twitter.php:91
 msgctxt "lib file description"
 msgid "Advanced"
 msgstr ""
@@ -507,7 +507,7 @@ msgctxt "option value"
 msgid "Force this value"
 msgstr ""
 
-#: lib/config-gettext-extract.php:17 lib/website/twitter.php:76
+#: lib/config-gettext-extract.php:17 lib/website/twitter.php:78
 msgctxt "lib file description"
 msgid "General"
 msgstr ""
@@ -2377,8 +2377,8 @@ msgctxt "metabox tab"
 msgid "Theme Integration"
 msgstr ""
 
-#: lib/submenu/advanced.php:45 lib/website/twitter.php:89
-#: lib/website/twitter.php:93
+#: lib/submenu/advanced.php:45 lib/website/twitter.php:91
+#: lib/website/twitter.php:95
 msgctxt "metabox tab"
 msgid "Service API Keys"
 msgstr ""
@@ -2472,7 +2472,7 @@ msgstr ""
 #: lib/submenu/general.php:237 lib/submenu/general.php:269
 #: lib/submenu/general.php:334 lib/website/buffer.php:77
 #: lib/website/pinterest.php:107 lib/website/tumblr.php:94
-#: lib/website/tumblr.php:100 lib/website/twitter.php:66
+#: lib/website/tumblr.php:100 lib/website/twitter.php:68
 msgctxt "option comment"
 msgid "characters or less"
 msgstr ""
@@ -2831,7 +2831,7 @@ msgctxt "option label (short)"
 msgid "JavaScript in"
 msgstr ""
 
-#: lib/website/buffer.php:59 lib/website/twitter.php:48
+#: lib/website/buffer.php:59
 msgctxt "option label (short)"
 msgid "Count Position"
 msgstr ""
@@ -2842,18 +2842,18 @@ msgctxt "option label (short)"
 msgid "Image Dimensions"
 msgstr ""
 
-#: lib/website/buffer.php:69 lib/website/twitter.php:58
+#: lib/website/buffer.php:69 lib/website/twitter.php:60
 msgctxt "option label (short)"
 msgid "Tweet Text Source"
 msgstr ""
 
-#: lib/website/buffer.php:74 lib/website/twitter.php:63
+#: lib/website/buffer.php:74 lib/website/twitter.php:65
 msgctxt "option label (short)"
 msgid "Tweet Text Length"
 msgstr ""
 
-#: lib/website/buffer.php:79 lib/website/twitter.php:74
-#: lib/website/twitter.php:82
+#: lib/website/buffer.php:79 lib/website/twitter.php:76
+#: lib/website/twitter.php:84
 msgctxt "option label (short)"
 msgid "Add via @username"
 msgstr ""
@@ -2920,7 +2920,7 @@ msgctxt "option label (short)"
 msgid "Action Name"
 msgstr ""
 
-#: lib/website/gplus.php:56 lib/website/twitter.php:53
+#: lib/website/gplus.php:56 lib/website/twitter.php:55
 msgctxt "option label (short)"
 msgid "Button Size"
 msgstr ""
@@ -3020,46 +3020,46 @@ msgctxt "image size label"
 msgid "Tumblr Sharing Button"
 msgstr ""
 
-#: lib/website/twitter.php:69
+#: lib/website/twitter.php:71
 msgctxt "option label (short)"
 msgid "Do Not Track"
 msgstr ""
 
-#: lib/website/twitter.php:71
+#: lib/website/twitter.php:73
 msgid "Disable tracking for Twitter's tailored suggestions and ads feature."
 msgstr ""
 
-#: lib/website/twitter.php:76
+#: lib/website/twitter.php:78
 msgid ""
 "Append the website's business @username to the tweet (see the <a href=\"%1$s"
 "\">Twitter</a> options tab on the %2$s settings page). The website's "
 "@username will be displayed and recommended after the webpage is shared."
 msgstr ""
 
-#: lib/website/twitter.php:80
+#: lib/website/twitter.php:82
 msgctxt "option label (short)"
 msgid "Recommend Author"
 msgstr ""
 
-#: lib/website/twitter.php:82
+#: lib/website/twitter.php:84
 msgid ""
 "Recommend following the author's Twitter @username (from their profile) "
 "after sharing a webpage. If the <em>%1$s</em> option is also checked, the "
 "website's @username is suggested first."
 msgstr ""
 
-#: lib/website/twitter.php:87
+#: lib/website/twitter.php:89
 msgctxt "option label (short)"
 msgid "Shorten URLs with"
 msgstr ""
 
-#: lib/website/twitter.php:89
+#: lib/website/twitter.php:91
 msgid ""
 "If you select a URL shortening service here, you must also enter its <a href="
 "\"%1$s\">%2$s</a> on the %3$s settings page."
 msgstr ""
 
-#: lib/website/twitter.php:93
+#: lib/website/twitter.php:95
 msgid "using these <a href=\"%1$s\">%2$s</a>"
 msgstr ""
 
