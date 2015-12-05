@@ -139,15 +139,17 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 					$css_min_msg = ' <a href="'.NgfbSharing::$sharing_css_url.'">minimized css is '.$fsize.' bytes</a>';
 			else $css_min_msg = '';
 
-			$this->p->util->do_table_rows( array( 
-				$this->p->util->get_th( _x( 'Use the Social Stylesheet',
-					'option label', 'nextgen-facebook' ), 'highlight', 'buttons_use_social_css' ).
-				'<td>'.$this->form->get_checkbox( 'buttons_use_social_css' ).$css_min_msg.'</td>',
-
-				$this->p->util->get_th( _x( 'Enqueue the Stylesheet',
-					'option label', 'nextgen-facebook' ), null, 'buttons_enqueue_social_css' ).
-				'<td>'.$this->form->get_checkbox( 'buttons_enqueue_social_css' ).'</td>',
-			) );
+			$this->p->util->do_table_rows( 
+				array( 
+					$this->p->util->get_th( _x( 'Use the Social Stylesheet',
+						'option label', 'nextgen-facebook' ), 'highlight', 'buttons_use_social_css' ).
+					'<td>'.$this->form->get_checkbox( 'buttons_use_social_css' ).$css_min_msg.'</td>',
+	
+					$this->p->util->get_th( _x( 'Enqueue the Stylesheet',
+						'option label', 'nextgen-facebook' ), null, 'buttons_enqueue_social_css' ).
+					'<td>'.$this->form->get_checkbox( 'buttons_enqueue_social_css' ).'</td>',
+				)
+			);
 
 			$tabs = apply_filters( $this->p->cf['lca'].'_style_tabs', 
 				NgfbSharing::$cf['sharing']['style'] );

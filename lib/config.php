@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.16.0',		// plugin version
+					'version' => '8.17.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -202,7 +202,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb380',				// increment when changing default options
+				'version' => 'ngfb382',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'schema_logo_url' => '',
@@ -236,6 +236,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'og_img_max' => 1,
 					'og_vid_max' => 1,
 					'og_vid_https' => 1,
+					'og_vid_autoplay' => 1,
 					'og_vid_prev_img' => 0,
 					'og_vid_html_type' => 1,
 					'og_def_img_id_pre' => 'wp',
@@ -420,19 +421,22 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_vimeo_api' => 1,
 					'plugin_wistia_api' => 1,
 					'plugin_youtube_api' => 1,
-					// Social Settings Tab
-					'plugin_columns_post' => 1,			// Show Social Columns for: Posts, Pages, and CPTs
-					'plugin_columns_taxonomy' => 1,			// Show Social Columns for: Taxonomies (Categories and Tags)
-					'plugin_columns_user' => 1,			// Show Social Columns for: Users
+					// Social Settings Metabox Tab
+					'plugin_columns_post' => 1,
+					'plugin_columns_taxonomy' => 1,
+					'plugin_columns_user' => 1,
 					'plugin_add_to_post' => 1,
 					'plugin_add_to_page' => 1,
 					'plugin_add_to_taxonomy' => 1,
 					'plugin_add_to_user' => 1,
 					'plugin_add_to_attachment' => 1,
+					'plugin_add_tab_preview' => 1,
+					'plugin_add_tab_tags' => 1,
+					'plugin_add_tab_validate' => 1,
 					'plugin_cf_img_url' => '_format_image_url',
 					'plugin_cf_vid_url' => '_format_video_url',
 					'plugin_cf_vid_embed' => '_format_video_embed',
-					// Theme Integration Tab
+					// WP / Theme Integration Tab
 					'plugin_check_head' => 1,
 					'plugin_html_attr_filter_name' => 'language_attributes',
 					'plugin_html_attr_filter_prio' => 100,
@@ -998,7 +1002,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				if ( file_exists( $filepath ) ) {
 					require_once( $filepath );
 					if ( empty( $classname ) )
-						return 'ngfb'.str_replace( array( '/', '-' ), '', $filespec );
+						return SucomUtil::sanitize_classname( 'ngfb'.$filespec );
 					else return $classname;
 				}
 			}
