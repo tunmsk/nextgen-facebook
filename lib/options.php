@@ -321,8 +321,9 @@ if ( ! class_exists( 'NgfbOptions' ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'upgraded '.$options_name.' settings have been saved' );
 
-					$this->p->notice->inf( sprintf( __( 'Plugin settings (%s) have been upgraded and saved.',
-						'nextgen-facebook' ), $options_name ), true );
+					if ( is_admin() )
+						$this->p->notice->inf( sprintf( __( 'Plugin settings (%s) have been upgraded and saved.',
+							'nextgen-facebook' ), $options_name ), true );
 				}
 			} else {
 				if ( $this->p->debug->enabled )
