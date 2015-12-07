@@ -329,7 +329,6 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 	* [Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/)
 		* [Examples](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/)
 			* [Detect YouTube URL Links as Videos](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/detect-youtube-url-links-as-videos/)
-			* [Force Wistia Videos to Autoplay on Facebook](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/force-wistia-videos-to-autoplay-on-facebook/)
 			* [Modify Shortcode Attributes (URL)](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-shortcode-attributes-url/)
 			* [Modify the article:tag Keywords / Names](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-articletag-keywords-names/)
 			* [Modify the Default Topics List](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-default-topics-list/)
