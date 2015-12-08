@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.17.0',		// plugin version
+					'version' => '8.18.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -202,11 +202,28 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb385',				// increment when changing default options
+				'version' => 'ngfb390',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'schema_logo_url' => '',
 					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length
+					'schema_type_for_post' => 'article',
+					'schema_type_for_page' => 'article',
+					'schema_type_for_attachment' => 'webpage',
+					'schema_type_for_article' => 'article',
+					'schema_type_for_book' => 'book',
+					'schema_type_for_blog' => 'blog',
+					'schema_type_for_event' => 'event',
+					'schema_type_for_organization' => 'organization',
+					'schema_type_for_person' => 'person',
+					'schema_type_for_place' => 'place',
+					'schema_type_for_product' => 'product',
+					'schema_type_for_recipe' => 'recipe',
+					'schema_type_for_review' => 'review',
+					'schema_type_for_other' => 'other',
+					'schema_type_for_local.business' => 'local.business',
+					'schema_type_for_webpage' => 'webpage',
+					'schema_type_for_website' => 'website',
 					'schema_author_json' => 1,
 					'schema_publisher_json' => 1,
 					'schema_website_json' => 1,
@@ -427,9 +444,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_columns_user' => 1,
 					'plugin_add_to_post' => 1,
 					'plugin_add_to_page' => 1,
+					'plugin_add_to_attachment' => 1,
 					'plugin_add_to_taxonomy' => 1,
 					'plugin_add_to_user' => 1,
-					'plugin_add_to_attachment' => 1,
 					'plugin_add_tab_preview' => 1,
 					'plugin_add_tab_tags' => 1,
 					'plugin_add_tab_validate' => 1,
