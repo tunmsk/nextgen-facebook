@@ -22,9 +22,10 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 
 			$lca = $this->p->cf['lca'];
 			$short = $this->p->cf['plugin'][$lca]['short'];
+			$name = $this->p->cf['plugin'][$lca]['name'];
 
-			$widget_name = 'Sharing Buttons';
-			$widget_class = $this->p->cf['lca'].'-widget-buttons';
+			$widget_name = $short.' Sharing Buttons';
+			$widget_class = $lca.'-widget-buttons';
 			$widget_ops = array( 
 				'classname' => $widget_class,
 				'description' => sprintf( __( 'The %s social sharing buttons widget.', 'nextgen-facebook' ), $short ),
@@ -51,10 +52,11 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 			}
 			extract( $args );
 
+			$lca = $this->p->cf['lca'];
 			if ( $this->p->is_avail['cache']['transient'] ) {
 				$sharing_url = $this->p->util->get_sharing_url();
 				$cache_salt = __METHOD__.'(lang:'.SucomUtil::get_locale().'_widget:'.$this->id.'_url:'.$sharing_url.')';
-				$cache_id = $this->p->cf['lca'].'_'.md5( $cache_salt );
+				$cache_id = $lca.'_'.md5( $cache_salt );
 				$cache_type = 'object cache';
 				if ( $this->p->debug->enabled )
 					$this->p->debug->log( $cache_type.': transient salt '.$cache_salt );

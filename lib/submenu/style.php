@@ -32,7 +32,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 					break;
 	
 				case 'tooltip-buttons_js_sidebar':
-					$text = __( 'JavaScript that is added to webpages for the social sharing sidebar.' );
+					$text = __( 'JavaScript added to webpages for the social sharing sidebar.' );
 					break;
 
 				case 'tooltip-buttons_enqueue_social_css':
@@ -45,10 +45,8 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 		public function filter_messages_info( $text, $idx ) {
 			if ( strpos( $idx, 'info-style-' ) !== 0 )
 				return $text;
-
 			$lca =  $this->p->cf['lca'];
 			$short = $this->p->cf['plugin'][$lca]['short'];
-
 			switch ( $idx ) {
 
 				case 'info-style-sharing':
@@ -58,9 +56,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 					break;
 
 				case 'info-style-content':
-
-					$text = '<p>Social sharing buttons, enabled / added to the content text from the '.$this->p->util->get_admin_url( 'sharing', 'Buttons settings page' ).', are assigned the \''.$lca.'-content-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all the sharing buttons (see the All Buttons tab).</p> 
-					
+					$text = '<p>Social sharing buttons, enabled / added to the content text from the '.$this->p->util->get_admin_url( 'sharing', 'Sharing Buttons' ).' settings page, are assigned the \''.$lca.'-content-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
 					<p>Example:</p><pre>
 .'.$lca.'-content-buttons 
     .'.$lca.'-buttons
@@ -68,8 +64,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 					break;
 
 				case 'info-style-excerpt':
-					$text = '<p>Social sharing buttons, enabled / added to the excerpt text from the '.$this->p->util->get_admin_url( 'sharing', 'Buttons settings page' ).', are assigned the \''.$lca.'-excerpt-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all the sharing buttons (see the All Buttons tab).</p> 
-
+					$text = '<p>Social sharing buttons, enabled / added to the excerpt text from the '.$this->p->util->get_admin_url( 'sharing', 'Sharing Buttons' ).' settings page, are assigned the \''.$lca.'-excerpt-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
 					<p>Example:</p><pre>
 .'.$lca.'-excerpt-buttons 
     .'.$lca.'-buttons
@@ -77,7 +72,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 					break;
 
 				case 'info-style-sidebar':
-					$text = '<p>Social sharing buttons added to the sidebar are assigned the \'#'.$lca.'-sidebar\' CSS id, which itself contains \'#'.$lca.'-sidebar-header\', \'#'.$lca.'-sidebar-buttons\', and the \''.$lca.'-buttons\' class -- a common class for all the sharing buttons (see the All Buttons tab).</p>
+					$text = '<p>Social sharing buttons added to the sidebar are assigned the \'#'.$lca.'-sidebar\' CSS id, which itself contains \'#'.$lca.'-sidebar-header\', \'#'.$lca.'-sidebar-buttons\' and the \''.$lca.'-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p>
 					<p>Example:</p><pre>
 #'.$lca.'-sidebar
     #'.$lca.'-sidebar-header { }
@@ -89,7 +84,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 					break;
 
 				case 'info-style-shortcode':
-					$text = '<p>Social sharing buttons added from a shortcode are assigned the \''.$lca.'-shortcode-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all the sharing buttons (see the All Buttons tab).</p> 
+					$text = '<p>Social sharing buttons added from a shortcode are assigned the \''.$lca.'-shortcode-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
 					
 					<p>Example:</p><pre>
 .'.$lca.'-shortcode-buttons 
@@ -98,14 +93,12 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 					break;
 
 				case 'info-style-widget':
-					$text = '<p>Social sharing buttons within the '.$this->p->cf['menu'].' Sharing Buttons widget are assigned the \''.$lca.'-widget-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all the sharing buttons (see the All Buttons tab).</p> 
-					
+					$text = '<p>Social sharing buttons within the '.$this->p->cf['menu'].' Sharing Buttons widget are assigned the \''.$lca.'-widget-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
 					<p>Example:</p><pre>
 .'.$lca.'-widget-buttons 
     .'.$lca.'-buttons
         .facebook-button { }</pre>
 					<p>The '.$this->p->cf['menu'].' Sharing Buttons widget also has an id of \''.$lca.'-widget-buttons-<em>#</em>\', and the buttons have an id of \'<em>name</em>-'.$lca.'-widget-buttons-<em>#</em>\'.</p>
-
 					<p>Example:</p><pre>
 #'.$lca.'-widget-buttons-2
     .'.$lca.'-buttons
@@ -113,8 +106,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 					break;
 
 				case 'info-style-admin_edit':
-					$text = '<p>Social sharing buttons within the Admin Post / Page Edit metabox are assigned the \''.$lca.'-admin_edit-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all the sharing buttons (see the All Buttons tab).</p> 
-
+					$text = '<p>Social sharing buttons within the Admin Post / Page Edit metabox are assigned the \''.$lca.'-admin_edit-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
 					<p>Example:</p><pre>
 .'.$lca.'-admin_edit-buttons 
     .'.$lca.'-buttons

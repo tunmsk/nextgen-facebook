@@ -4,8 +4,7 @@
  * buttons can be aligned vertically, horizontally, floated, etc.
  */
 
-/* make sure the Facebook flyout does not get clipped
- */
+/* make sure the Facebook flyout does not get clipped */
 #page { overflow:visible; }
 
 /* The .ngfb-buttons class is common to all other button classes
@@ -71,7 +70,9 @@
 
 .ngfb-buttons div.twitter-button,
 .ngfb-preset-small_share_count 
-	.ngfb-buttons div.twitter-button { width:89px; }
+	.ngfb-buttons div.twitter-button { width:61px; }
+.ngfb-preset-large_share_vertical 
+	.ngfb-buttons div.twitter-button { height:20px; line-height:20px; }
 
 .ngfb-buttons div.linkedin-button,
 .ngfb-preset-small_share_count 

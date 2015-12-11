@@ -152,7 +152,7 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 						if ( empty( NgfbMeta::$head_meta_info['og:image'] ) )
 							$this->p->notice->err( $this->p->msgs->get( 'notice-missing-og-image' ) );
 
-						// check duplicates only when the post is published and we have a permalink
+						// check duplicates only when the post is available publicly and we have a valid permalink
 						if ( ! empty( $this->p->options['plugin_check_head'] ) )
 							$this->check_post_header( $post_id, $obj );
 					}
@@ -188,7 +188,7 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 				( $obj = $this->p->util->get_post_object( $post_id ) ) === false )
 					return $post_id;
 
-			// only check published posts, so we have a permalink to check
+			// only check publicly available posts
 			if ( ! isset( $obj->post_status ) || 
 				$obj->post_status !== 'publish' )
 					return $post_id;
@@ -234,7 +234,7 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 			$post_id = empty( $obj->ID ) ? 0 : $obj->ID;
 			$post_type = get_post_type_object( $obj->post_type );
 			$user_can_edit = false;		// deny by default
-			switch ( $post_type ) {
+			switch ( $post_type->name ) {
 				case 'page' :
 					if ( current_user_can( 'edit_page', $post_id ) )
 						$user_can_edit = true;
@@ -246,7 +246,7 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 			}
 			if ( $user_can_edit === false ) {
 				if ( $this->p->debug->enabled )
-					$this->p->debug->log( 'insufficient privileges to add metabox for '.$post_type.' ID '.$post_id );
+					$this->p->debug->log( 'insufficient privileges to add metabox for '.$post_type->name.' ID '.$post_id );
 				return;
 			}
 			$add_metabox = empty( $this->p->options[ 'plugin_add_to_'.$post_type->name ] ) ? false : true;
@@ -256,11 +256,14 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 		}
 
 		public function show_metabox_post( $post ) {
-			$opts = $this->get_options( $post->ID );	// sanitize when saving, not reading
+			$opts = $this->get_options( $post->ID );				// sanitized when saving
 			$def_opts = $this->get_defaults();
-			$post_type = get_post_type_object( $post->post_type );	// since 3.0
-			NgfbMeta::$head_meta_info['ptn'] = ucfirst( $post_type->name );
-			NgfbMeta::$head_meta_info['post_id'] = $post->ID;
+			$post_type = get_post_type_object( $post->post_type );			// since 3.0
+
+			// save additional info about the post
+			NgfbMeta::$head_meta_info['psn'] = get_post_status( $post->ID );	// post status name
+			NgfbMeta::$head_meta_info['ptn'] = ucfirst( $post_type->name );		// post type name
+			NgfbMeta::$head_meta_info['post_id'] = $post->ID;			// post id
 
 			$this->form = new SucomForm( $this->p, NGFB_META_NAME, $opts, $def_opts );
 			wp_nonce_field( NgfbAdmin::get_nonce(), NGFB_NONCE );
@@ -270,6 +273,18 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 				$this->get_default_tabs(), $post, $post_type );
 			if ( empty( $this->p->is_avail['mt'] ) )
 				unset( $tabs['tags'] );
+
+			/*
+			if ( NgfbMeta::$head_meta_info['psn'] !== 'auto-draft' &&
+				NgfbMeta::$head_meta_info['psn'] !== 'publish' &&
+				NgfbMeta::$head_meta_info['ptn'] !== 'Attachment' ) {
+
+				$this->p->util->do_table_rows( array(
+					'<td><blockquote class="status-info"><p class="centered">'.
+						sprintf( __( 'The %s must be published with public visibility in order for social crawlers to access its meta tags.', 'nextgen-facebook' ), NgfbMeta::$head_meta_info['ptn'] ).'</p></blockquote></td>'
+				), 'metabox-'.$metabox.'-info' );
+			}
+			*/
 
 			$rows = array();
 			foreach ( $tabs as $key => $title )
@@ -283,22 +298,28 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 			$rows = array();
 			switch ( $metabox.'-'.$key ) {
 				case 'post-preview':
-					if ( get_post_status( $head_info['post_id'] ) !== 'auto-draft' )
-						$rows = $this->get_rows_social_preview( $this->form, $head_info );
-					else $rows[] = '<td><p class="centered">'.sprintf( __( 'Save a draft version or publish the %s to display the open graph social preview.', 'nextgen-facebook' ), $head_info['ptn'] ).'</p></td>';
+					if ( $head_info['psn'] === 'auto-draft' )
+						$rows[] = '<td><blockquote class="status-info"><p class="centered">'.
+							sprintf( __( 'Save a draft version or publish the %s to display the open graph social preview.',
+								'nextgen-facebook' ), $head_info['ptn'] ).'</p></td>';
+					else $rows = $this->get_rows_social_preview( $this->form, $head_info );
 					break;
 
 				case 'post-tags':	
-					if ( get_post_status( $head_info['post_id'] ) !== 'auto-draft' ) {
-						$rows = $this->get_rows_head_tags();
-					} else $rows[] = '<td><p class="centered">'.sprintf( __( 'Save a draft version or publish the %s to display the head tags preview.', 'nextgen-facebook' ), $head_info['ptn'] ).'</p></td>';
+					if ( $head_info['psn'] === 'auto-draft' )
+						$rows[] = '<td><blockquote class="status-info"><p class="centered">'.
+							sprintf( __( 'Save a draft version or publish the %s to display the head tags preview.',
+								'nextgen-facebook' ), $head_info['ptn'] ).'</p></blockquote></td>';
+					else $rows = $this->get_rows_head_tags();
 					break; 
 
 				case 'post-validate':
-					if ( get_post_status( $head_info['post_id'] ) === 'publish' ||
-						get_post_type( $head_info['post_id'] ) === 'attachment' )
+					if ( $head_info['psn'] === 'publish' ||
+						$head_info['ptn'] === 'Attachment' )
 							$rows = $this->get_rows_validate( $this->form, $head_info );
-					else $rows[] = '<td><p class="centered">'.sprintf( __( 'The validation links will be available when the %s is published with public visibility.', 'nextgen-facebook' ), $head_info['ptn'] ).'</p></td>';
+					else $rows[] = '<td><blockquote class="status-info"><p class="centered">'.
+						sprintf( __( 'Social validation tools will be available when the %s is published with public visibility.',
+							'nextgen-facebook' ), $head_info['ptn'] ).'</p></blockquote></td>';
 					break; 
 			}
 			return $rows;

@@ -51,7 +51,7 @@ jQuery("#ngfb-sidebar").mouseenter( function(){
 		overflow:"visible",
 		"border-style":"solid",
 	}); } );
-jQuery("#ngfb-sidebar").click( function(){ 
+jQuery("#ngfb-sidebar-header").click( function(){ 
 	jQuery("#ngfb-sidebar-buttons").toggle(); } );',
 					'buttons_preset_content' => '',
 					'buttons_preset_excerpt' => '',
@@ -115,7 +115,7 @@ jQuery("#ngfb-sidebar").click( function(){
 					'content' => 'Content', 
 					'excerpt' => 'Excerpt', 
 					'sidebar' => 'CSS Sidebar', 
-					'admin_edit' => 'Admin Edit Page',
+					'admin_edit' => 'Admin Edit',
 				),
 				'style' => array(
 					'sharing' => 'All Buttons',
@@ -448,9 +448,9 @@ jQuery("#ngfb-sidebar").click( function(){
 				if ( $fh = @fopen( self::$sharing_css_file, 'wb' ) ) {
 					if ( ( $written = fwrite( $fh, $css_data ) ) === false ) {
 						if ( $this->p->debug->enabled )
-							$this->p->debug->log( 'failure while writing to '.self::$sharing_css_file );
+							$this->p->debug->log( 'failed writing to '.self::$sharing_css_file );
 						if ( is_admin() )
-							$this->p->notice->err( sprintf( __( 'Failure while writing to the % file.',
+							$this->p->notice->err( sprintf( __( 'Failed writing to the % file.',
 								'nextgen-facebook' ), self::$sharing_css_file ), true );
 					} elseif ( $this->p->debug->enabled ) {
 						$this->p->debug->log( 'updated css file '.self::$sharing_css_file.' ('.$written.' bytes written)' );
@@ -728,11 +728,12 @@ jQuery("#ngfb-sidebar").click( function(){
 
 		// get_html() is called by the widget, shortcode, function, and perhaps some filter hooks
 		public function get_html( &$ids = array(), &$atts = array() ) {
-
 			$lca = $this->p->cf['lca'];
+			$html_ret = '';
+			$html_begin = '<div class="'.$lca.'-buttons">'."\n";
+			$html_end = '</div><!-- .'.$lca.'-buttons -->'."\n";
 			$preset_id = empty( $atts['preset_id'] ) ? '' : 
 				preg_replace( '/[^a-z0-9\-_]/', '', $atts['preset_id'] );
-
 			$filter_id = empty( $atts['filter_id'] ) ? '' : 
 				preg_replace( '/[^a-z0-9\-_]/', '', $atts['filter_id'] );
 
@@ -762,18 +763,17 @@ jQuery("#ngfb-sidebar").click( function(){
 					$this->p->debug->log( 'no filter(s) found for '.$filter_name );
 			}
 
-			$html = '';
 			foreach ( $ids as $id ) {
 				$id = preg_replace( '/[^a-z]/', '', $id );	// sanitize the website object name
 				if ( isset( $this->website[$id] ) &&
 					method_exists( $this->website[$id], 'get_html' ) )
-						$html .= $this->website[$id]->get_html( $atts, $custom_opts )."\n";
+						$html_ret .= $this->website[$id]->get_html( $atts, $custom_opts )."\n";
 			}
 
-			if ( trim( $html ) !== '' ) 
-				$html = "<div class=\"".$lca."-buttons\">\n".$html."</div><!-- .".$lca."-buttons -->\n";
-
-			return $html;
+			$html_ret = trim( $html_ret );
+			if ( ! empty( $html_ret ) )
+				$html_ret = $html_begin.$html_ret.$html_end;
+			return $html_ret;
 		}
 
 		// add javascript for enabled buttons in content, widget, shortcode, etc.

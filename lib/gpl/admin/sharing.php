@@ -152,7 +152,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			if ( $post_status == 'auto-draft' ) {
 				$rows['twitter_desc'] = $this->p->util->get_th( _x( 'Tweet Text',
 					'option label', 'nextgen-facebook' ), 'medium', 'post-twitter_desc' ). 
-				'<td class="blank"><em>'.__( 'Save a draft version or publish to enable this field.',
+				'<td class="blank"><em>'.__( 'Save a draft version or publish to enable this option.',
 					'nextgen-facebook' ).'</em></td>';
 			} else {
 				$twitter_cap_len = $this->p->util->get_tweet_max_len( get_permalink( $head_info['post_id'] ) );

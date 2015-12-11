@@ -43,7 +43,7 @@ _x( 'User Profile Contact Methods', 'lib file description', 'nextgen-facebook' )
 _x( 'Website / Business Social Accounts', 'lib file description', 'nextgen-facebook' );
 _x( 'Yes', 'option value', 'nextgen-facebook' );
 _x( 'Admin Edit', 'metabox tab', 'nextgen-facebook' );
-_x( 'Admin Edit Page', 'option value', 'nextgen-facebook' );
+_x( 'Admin Edit', 'option value', 'nextgen-facebook' );
 _x( 'All Buttons', 'metabox tab', 'nextgen-facebook' );
 _x( 'Both Top and Bottom', 'option value', 'nextgen-facebook' );
 _x( 'Bottom', 'option value', 'nextgen-facebook' );

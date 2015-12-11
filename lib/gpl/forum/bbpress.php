@@ -14,12 +14,6 @@ if ( ! class_exists( 'NgfbGplForumBbpress' ) ) {
 
 		private $p;
 		private $sharing;
-		private $has_setup = false;
-		private $post_id;
-		private $post_type;
-		private $topic_type = 'topic';
-		private $forum_type = 'forum';
-		private $reply_type = 'reply';
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
@@ -62,7 +56,6 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
 			}
 		}
 
-		/* Purpose: Create default options for the sanitation process, so it doesn't strip-out non-existing options */
 		public function filter_get_defaults( $opts_def ) {
 			$opts_def['buttons_css_bbp_single'] = '/* Save an empty style text box to reload the default example styles.
  * These styles are provided as examples only - modifications may be 
@@ -76,16 +69,12 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
 	margin:10px auto;
 	text-align:center;
 }';
-			// the default 'Show Button in' for 'bbPress Single' is unchecked
 			foreach ( $this->p->cf['opt']['pre'] as $name => $prefix )
 				$opts_def[$prefix.'_on_bbp_single'] = 0;
-
 			$opts_def['buttons_pos_bbp_single'] = 'top';
-
 			return $opts_def;
 		}
 
-		/* Purpose: Include the 'bbPress Single' checkbox in the 'Show Button in' options */
 		public function filter_sharing_show_on( $show_on = array(), $prefix ) {
 			switch ( $prefix ) {
 				case 'pin':
@@ -98,29 +87,24 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
 			return $show_on;
 		}
 
-		/* Purpose: Add a 'bbPress Single' tab to the Style settings */
 		public function filter_style_tabs( $tabs ) {
 			$tabs['bbp_single'] = 'bbPress Single';
 			$this->p->options['buttons_css_bbp_single:is'] = 'disabled';
 			return $tabs;
 		}
 
-		/* Purpose: Add css input textarea for the 'bbPress Single' style tab */
 		public function filter_style_bbp_single_rows( $rows, $form ) {
-
 			$rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg', 
 					array( 'lca' => 'ngfb' ) ).'</td>';
-
 			$rows[] = '<th class="textinfo">
-			<p>Social sharing buttons added at the top of bbPress Single Templates are assigned the \'ngfb-bbp_single-buttons\' class, which itself contains the \'ngfb-buttons\' class -- a common class for all the sharing buttons (see the All Buttons tab).</p> 
+			<p>Social sharing buttons added at the top of bbPress Single Templates are assigned the \'ngfb-bbp_single-buttons\' class, which itself contains the \'ngfb-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
 
 			<p>Example:</p><pre>
 .ngfb-bbp_single-buttons 
     .ngfb-buttons
         .facebook-button { }</pre></th><td><textarea disabled="disabled" class="tall code">'.
-				$this->p->options['buttons_css_bbp_single'].'</textarea></td>';
-
+			$this->p->options['buttons_css_bbp_single'].'</textarea></td>';
 			return $rows;
 		}
 
