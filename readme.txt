@@ -381,6 +381,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.18.1 (2015/12/11) =
+
+Official announcement: N/A
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Enabled all fields in the Social Settings metabox when editing a non-auto-draft Post / Page (previously, some fields were only enabled for published Posts / Pages).
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* *None*
+
 = Version 8.18.0 (2015/12/09) =
 
 Official announcement: N/A
