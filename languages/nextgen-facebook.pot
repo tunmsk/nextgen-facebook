@@ -2793,7 +2793,7 @@ msgid "Buffer <em>Sharing Button</em>"
 msgstr ""
 
 #: lib/website/buffer.php:44 lib/website/facebook.php:46
-#: lib/website/gplus.php:30 lib/website/linkedin.php:34
+#: lib/website/gplus.php:30 lib/website/linkedin.php:30
 #: lib/website/managewp.php:30 lib/website/pinterest.php:44
 #: lib/website/reddit.php:30 lib/website/stumbleupon.php:69
 #: lib/website/tumblr.php:62 lib/website/twitter.php:30
@@ -2802,7 +2802,7 @@ msgid "Show Button in"
 msgstr ""
 
 #: lib/website/buffer.php:48 lib/website/facebook.php:50
-#: lib/website/gplus.php:34 lib/website/linkedin.php:38
+#: lib/website/gplus.php:34 lib/website/linkedin.php:34
 #: lib/website/managewp.php:34 lib/website/pinterest.php:48
 #: lib/website/reddit.php:34 lib/website/stumbleupon.php:73
 #: lib/website/tumblr.php:66 lib/website/twitter.php:34
@@ -2811,7 +2811,7 @@ msgid "Preferred Order"
 msgstr ""
 
 #: lib/website/buffer.php:55 lib/website/facebook.php:56
-#: lib/website/gplus.php:41 lib/website/linkedin.php:45
+#: lib/website/gplus.php:41 lib/website/linkedin.php:41
 #: lib/website/pinterest.php:54 lib/website/stumbleupon.php:80
 #: lib/website/tumblr.php:73 lib/website/twitter.php:40
 msgctxt "option label (short)"
@@ -2922,12 +2922,12 @@ msgctxt "option label (short)"
 msgid "Expand to"
 msgstr ""
 
-#: lib/website/linkedin.php:49
+#: lib/website/linkedin.php:45
 msgctxt "option label (short)"
 msgid "Counter Mode"
 msgstr ""
 
-#: lib/website/linkedin.php:60
+#: lib/website/linkedin.php:56
 msgctxt "option label (short)"
 msgid "Zero in Counter"
 msgstr ""

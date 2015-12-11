@@ -24,10 +24,6 @@ if ( ! class_exists( 'NgfbSubmenuSharingLinkedin' ) && class_exists( 'NgfbSubmen
 				$this->p->debug->mark();
 		}
 
-		public function filter_get_defaults( $opts_def ) {
-			return array_merge( $opts_def, self::$cf['opt']['defaults'] );
-		}
-
 		protected function get_rows( $metabox, $key ) {
 			$rows = array();
 
