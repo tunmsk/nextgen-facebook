@@ -37,6 +37,7 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 							add_action( 'get_shortlink', array( &$this, 'get_shortlink' ), 9000, 4 );
 
 				} elseif ( ! empty( $this->p->options['plugin_columns_post'] ) ) {
+
 					$ptns = $this->p->util->get_post_types( 'names' );
 					if ( is_array( $ptns ) ) {
 						foreach ( $ptns as $ptn ) {

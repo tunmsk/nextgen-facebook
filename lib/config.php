@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.18.1',		// plugin version
+					'version' => '8.19.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -202,13 +202,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb390',				// increment when changing default options
+				'version' => 'ngfb402',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'schema_logo_url' => '',
 					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length
-					'schema_type_for_post' => 'article',
-					'schema_type_for_page' => 'article',
+					'schema_type_for_post' => 'webpage',
+					'schema_type_for_page' => 'webpage',
 					'schema_type_for_attachment' => 'webpage',
 					'schema_type_for_article' => 'article',
 					'schema_type_for_book' => 'book',
@@ -224,6 +224,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'schema_type_for_local.business' => 'local.business',
 					'schema_type_for_webpage' => 'webpage',
 					'schema_type_for_website' => 'website',
+					'schema_author_name' => 'display_name',
 					'schema_author_json' => 1,
 					'schema_publisher_json' => 1,
 					'schema_website_json' => 1,
@@ -399,11 +400,16 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_name_twitter:player:height' => 1,
 					// schema
 					'add_meta_itemprop_name' => 1,
-					'add_meta_itemprop_headline' => 1,
 					'add_meta_itemprop_datepublished' => 1,
+					'add_meta_itemprop_datemodified' => 1,
 					'add_meta_itemprop_description' => 1,
 					'add_meta_itemprop_url' => 1,
 					'add_meta_itemprop_image' => 1,
+					'add_meta_itemprop_image.url' => 1,
+					'add_meta_itemprop_image.width' => 1,
+					'add_meta_itemprop_image.height' => 1,
+					'add_meta_itemprop_publisher.name' => 1,
+					'add_meta_itemprop_author.name' => 1,
 					'add_meta_itemprop_address' => 1,
 					'add_meta_itemprop_ratingvalue' => 1,
 					'add_meta_itemprop_ratingcount' => 1,
@@ -807,14 +813,14 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'book' => 'http://schema.org/Book',
 					'blog' => 'http://schema.org/Blog',
 					'event' => 'http://schema.org/Event',
+					'local.business' => 'http://schema.org/LocalBusiness',
 					'organization' => 'http://schema.org/Organization',
+					'other' => 'http://schema.org/Other',
 					'person' => 'http://schema.org/Person',
 					'place' => 'http://schema.org/Place',
 					'product' => 'http://schema.org/Product',
 					'recipe' => 'http://schema.org/Recipe',
 					'review' => 'http://schema.org/Review',
-					'other' => 'http://schema.org/Other',
-					'local.business' => 'http://schema.org/LocalBusiness',
 					'webpage' => 'http://schema.org/WebPage',
 					'website' => 'http://schema.org/WebSite',
 				),
