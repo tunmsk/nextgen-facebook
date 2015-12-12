@@ -381,6 +381,27 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.19.0 (TBD) =
+
+Official announcement: N/A
+
+* **New Features**
+	* Added a new "Author Name Format" option under the Google / Schema tab on the General settings page.
+	* Added schema ImageObject with URL, width, and height information for JSON and noscript meta tags.
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* Added new filters for the LD+JSON schema scripts:
+		* 'ngfb_json_http_schema_org_organization'
+		* 'ngfb_json_http_schema_org_person'
+		* 'ngfb_json_http_schema_org_website'
+		* 'ngfb_json_http_schema_org_{item_type}'
+	* Renamed the NgfbUser `get_article_author()` method to `get_author_profile_url()`.
+	* Refactored the NgfbSchema class and JSON related sections of the NgfbUser class.
+	* Added a call to `getimagesize()` when saving options to retrieve the image width and height of image URLs (default image URL, schema logo URL, etc.).
+
 = Version 8.18.1 (2015/12/11) =
 
 Official announcement: N/A
