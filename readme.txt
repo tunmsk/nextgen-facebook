@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4
-Stable Tag: 8.18.1
+Stable Tag: 8.19.0
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -30,7 +30,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 <blockquote>
 <p><strong>September 14, 2015 - WPSSO Replaces NextGEN Facebook (NGFB)</strong></p>
-<p>NextGEN Facebook (NGFB) is being replaced by the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin. WPSSO is a fork / child of NGFB &mdash; they have the same author, the same core features and code-base, but WPSSO is distributed without the sharing buttons and their related features (making WPSSO about 25% smaller than NGFB). Additional extension plugins are also available for WPSSO, including:
+<p>NextGEN Facebook (NGFB) is being replaced by the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin. WPSSO is a fork / child of NGFB &mdash; they have the same author, the same core features and code-base, but WPSSO is distributed without the sharing buttons and their related features (making WPSSO about 25% smaller than NGFB). Additional extension plugins are also available for WPSSO, including two different sharing button extensions:
 <ul>
 <li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO Mobile App Meta</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO Place and Location Meta</a></li>
@@ -381,7 +381,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.19.0 (TBD) =
+= Version 8.19.0 (2015/12/13) =
 
 Official announcement: N/A
 
@@ -393,7 +393,7 @@ Official announcement: N/A
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
-	* Added new filters for the LD+JSON schema scripts:
+	* Added new filter hooks for the LD+JSON schema scripts:
 		* 'ngfb_json_http_schema_org_organization'
 		* 'ngfb_json_http_schema_org_person'
 		* 'ngfb_json_http_schema_org_website'
@@ -470,11 +470,15 @@ Official announcement: http://surniaulula.com/2015/11/28/ngfb-wpsso-update-new-h
 
 == Upgrade Notice ==
 
+= 8.19.0 =
+
+2015/12/13 - Added a new Google / Schema "Author Name Format" option. Additional schema and JSON improvements, including new JSON filter hooks.
+
 = 8.18.1 =
 
-2015/12/11 Enabled all fields in the Social Settings metabox when editing a non-auto-draft Post / Page.
+2015/12/11 - Enabled all fields in the Social Settings metabox when editing a non-auto-draft Post / Page.
 
 = 8.18.0 =
 
-2015/12/09 Added a new "Schema Item Type by Post Type" option, improved head HTML element checks in theme templates, refactored the post, user, and taxonomy meta code.
+2015/12/09 - Added a new "Schema Item Type by Post Type" option, improved head HTML element checks in theme templates, refactored the post, user, and taxonomy meta code.
 
