@@ -387,7 +387,7 @@ Official announcement: N/A
 
 * **New Features**
 	* Added a new "Author Name Format" option under the Google / Schema tab on the General settings page.
-	* Added schema ImageObject with URL, width, and height information for JSON and noscript meta tags.
+	* Added a schema ImageObject with URL, width, and height information for JSON and noscript meta tags.
 * **Improvements**
 	* *None*
 * **Bugfixes**
@@ -400,7 +400,7 @@ Official announcement: N/A
 		* 'ngfb_json_http_schema_org_{item_type}'
 	* Renamed the NgfbUser `get_article_author()` method to `get_author_profile_url()`.
 	* Refactored the NgfbSchema class and JSON related sections of the NgfbUser class.
-	* Added a call to `getimagesize()` when saving options to retrieve the image width and height of image URLs (default image URL, schema logo URL, etc.).
+	* Added a call to `getimagesize()` when saving options to retrieve image dimensions from URLs (default image URL, schema logo URL, etc.).
 
 = Version 8.18.1 (2015/12/11) =
 
@@ -477,8 +477,4 @@ Official announcement: http://surniaulula.com/2015/11/28/ngfb-wpsso-update-new-h
 = 8.18.0 =
 
 2015/12/09 Added a new "Schema Item Type by Post Type" option, improved head HTML element checks in theme templates, refactored the post, user, and taxonomy meta code.
-
-= 8.17.0 =
-
-2015/12/06 Added new options to manage video autoplay, and include/exclude tabs in the Social Settings metabox. Refactored video integration modules and improved the Head Tags listing in the Social Settings metabox.
 
