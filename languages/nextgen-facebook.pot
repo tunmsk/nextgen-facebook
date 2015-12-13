@@ -1095,51 +1095,51 @@ msgctxt "option label"
 msgid "Include on Post Types"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:66 lib/pro/admin/sharing.php:66
+#: lib/gpl/admin/sharing.php:68 lib/pro/admin/sharing.php:69
 msgctxt "option label"
 msgid "%s Preset"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:78 lib/pro/admin/sharing.php:79
+#: lib/gpl/admin/sharing.php:80 lib/pro/admin/sharing.php:82
 #: lib/sharing.php:350
 msgctxt "metabox tab"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:98 lib/pro/admin/sharing.php:96
+#: lib/gpl/admin/sharing.php:100 lib/pro/admin/sharing.php:99
 msgctxt "option label"
 msgid "Pinterest Caption Text"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:119 lib/pro/admin/sharing.php:119
+#: lib/gpl/admin/sharing.php:121 lib/pro/admin/sharing.php:122
 msgctxt "option label"
 msgid "Tumblr Image Caption"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:137 lib/pro/admin/sharing.php:139
+#: lib/gpl/admin/sharing.php:139 lib/pro/admin/sharing.php:142
 msgid "Caption disabled - no suitable image found for the %s button"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:139 lib/pro/admin/sharing.php:141
+#: lib/gpl/admin/sharing.php:141 lib/pro/admin/sharing.php:144
 msgctxt "option label"
 msgid "Tumblr Video Caption"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:147 lib/pro/admin/sharing.php:151
+#: lib/gpl/admin/sharing.php:149 lib/pro/admin/sharing.php:154
 msgid "Caption disabled - no suitable video found for the %s button"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:153 lib/gpl/admin/sharing.php:159
-#: lib/pro/admin/sharing.php:157 lib/pro/admin/sharing.php:163
+#: lib/gpl/admin/sharing.php:155 lib/gpl/admin/sharing.php:161
+#: lib/pro/admin/sharing.php:160 lib/pro/admin/sharing.php:166
 msgctxt "option label"
 msgid "Tweet Text"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:155 lib/pro/admin/sharing.php:159
+#: lib/gpl/admin/sharing.php:157 lib/pro/admin/sharing.php:162
 msgid "Save a draft version or publish to enable this option."
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:166 lib/pro/admin/sharing.php:172
+#: lib/gpl/admin/sharing.php:168 lib/pro/admin/sharing.php:175
 msgctxt "option label"
 msgid "Disable Sharing Buttons"
 msgstr ""

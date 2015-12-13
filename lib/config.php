@@ -77,9 +77,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'sitelicenses' => '<span>Extension Plugins</span> and Pro Licenses',
 						),
 						'website' => array(
+							'twitter' => 'Twitter',
 							'facebook' => 'Facebook', 
 							'gplus' => 'GooglePlus',
-							'twitter' => 'Twitter',
 							'pinterest' => 'Pinterest',
 							'linkedin' => 'LinkedIn',
 							'buffer' => 'Buffer',
