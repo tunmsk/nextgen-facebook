@@ -381,6 +381,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.19.1 (2015/12/14) =
+
+Official announcement: N/A
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* Fixed an incorrect CSS class name for the shortcode buttons.
+* **Developer Notes**
+	* *None*
+
 = Version 8.19.0 (2015/12/13) =
 
 Official announcement: N/A
