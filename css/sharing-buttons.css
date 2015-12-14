@@ -62,17 +62,29 @@
 
 .ngfb-buttons div.gplus-button,
 .ngfb-preset-small_share_count 
-	.ngfb-buttons div.gplus-button { width:99px; }
+	.ngfb-buttons div.gplus-button { 
+	width:99px;
+	vertical-align:top;
+}
 
 .ngfb-buttons div.gplusone-button,
 .ngfb-preset-small_share_count 
-	.ngfb-buttons div.gplusone-button { width:75px; line-height:10px; }
+	.ngfb-buttons div.gplusone-button { 
+	width:75px; 
+	line-height:10px;
+	vertical-align:top;
+}
 
 .ngfb-buttons div.twitter-button,
 .ngfb-preset-small_share_count 
-	.ngfb-buttons div.twitter-button { width:61px; }
+	.ngfb-buttons div.twitter-button,
 .ngfb-preset-large_share_vertical 
-	.ngfb-buttons div.twitter-button { height:20px; line-height:20px; }
+	.ngfb-buttons div.twitter-button {
+	width:61px;
+	height:20px;
+	line-height:20px;
+	vertical-align:top;
+}
 
 .ngfb-buttons div.linkedin-button,
 .ngfb-preset-small_share_count 
