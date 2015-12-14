@@ -68,7 +68,7 @@ if ( ! class_exists( 'NgfbShortcodeSharing' ) ) {
 			$atts['url'] = empty( $atts['url'] ) ?
 				$this->p->util->get_sharing_url( true ) : $atts['url'];
 			$atts['css_class'] = empty( $atts['css_class'] ) ?
-				'shortcode-buttons' : $atts['css_class'];
+				'' : $atts['css_class'];
 			$atts['filter_id'] = empty( $atts['filter_id'] ) ?
 				'shortcode' : $atts['filter_id'];
 			$atts['preset_id'] = empty( $atts['preset_id'] ) ?
@@ -93,12 +93,12 @@ if ( ! class_exists( 'NgfbShortcodeSharing' ) ) {
 
 				$ids = array_map( 'trim', explode( ',', $atts['buttons'] ) );
 				unset ( $atts['buttons'] );
-				$html .= '<!-- '.$this->p->cf['lca'].' '.$atts['css_class'].' begin -->'.
+				$html .= '<!-- '.$this->p->cf['lca'].' shortcode-buttons begin -->'.
 					$this->p->sharing->get_script( 'shortcode-header', $ids ).
-					'<div class="'.$this->p->cf['lca'].'-'.$atts['css_class'].'">'.
+					'<div class="'.$this->p->cf['lca'].'-shortcode-buttons">'.
 					$this->p->sharing->get_html( $ids, $atts ).'</div>'.
 					$this->p->sharing->get_script( 'shortcode-footer', $ids ).
-					'<!-- '.$this->p->cf['lca'].' '.$atts['css_class'].' end -->';
+					'<!-- '.$this->p->cf['lca'].' shortcode-buttons end -->';
 
 				if ( $this->p->is_avail['cache']['transient'] ) {
 					set_transient( $cache_id, $html, $this->p->options['plugin_object_cache_exp'] );
