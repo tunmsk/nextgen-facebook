@@ -381,6 +381,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.19.2 (TBD) =
+
+Official announcement: N/A
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Added a new "Essential Settings" page to combine all essential / basic General and Advanced options on one page.
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* *None*
+
 = Version 8.19.1 (2015/12/14) =
 
 Official announcement: N/A
