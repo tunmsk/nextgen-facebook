@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.19.1',		// plugin version
+					'version' => '8.19.2',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -60,19 +60,20 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'ngfb-separator-1' => '',
 						),
 						'submenu' => array (	// lib file descriptions will be translated
-							'general' => 'General',
-							'advanced' => 'Advanced',
+							'essential' => 'Essential Settings',
+							'general' => 'General Settings',
+							'advanced' => 'Advanced Settings',
 							'sharing' => 'Sharing Buttons',
 							'style' => 'Sharing Styles',
-							'readme' => 'Read Me',
-							'setup' => 'Setup Guide',
+							'readme' => 'Plugin Read Me',
+							'setup' => 'Quick Setup Guide',
 							// the first 2 words will be highlighted in menu
 							'licenses' => '<span>Extension Plugins</span> and Pro Licenses',
 						),
 						'sitesubmenu' => array(	// lib file descriptions will be translated
-							'siteadvanced' => 'Advanced',
-							'sitereadme' => 'Read Me',
-							'sitesetup' => 'Setup Guide',
+							'siteadvanced' => 'Advanced Settings',
+							'sitereadme' => 'Plugin Read Me',
+							'sitesetup' => 'Quick Setup Guide',
 							// the first 2 words will be highlighted in menu
 							'sitelicenses' => '<span>Extension Plugins</span> and Pro Licenses',
 						),

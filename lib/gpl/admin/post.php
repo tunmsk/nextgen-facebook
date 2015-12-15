@@ -108,8 +108,9 @@ if ( ! class_exists( 'NgfbGplAdminPost' ) ) {
 			$rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 
-			$rows[] = '<td colspan="2" class="subsection"><h4 style="margin-top:0;">'.
-				_x( 'All Social Websites / Open Graph', 'metabox title', 'nextgen-facebook' ).'</h4></td>';
+			$rows[] = '<td></td><td class="subsection top"><h4>'.
+				_x( 'All Social Websites / Open Graph',
+					'metabox title', 'nextgen-facebook' ).'</h4></td>';
 
 			$rows[] = '<tr class="hide_in_basic">'.
 			$this->p->util->get_th( _x( 'Image Dimensions',
@@ -149,8 +150,9 @@ if ( ! class_exists( 'NgfbGplAdminPost' ) ) {
 			if ( ! SucomUtil::get_const( 'NGFB_RICH_PIN_DISABLE' ) ) {
 
 				$rows[] = '<tr class="hide_in_basic">'.
-				'<td colspan="2" class="subsection"><h4>'.
-					_x( 'Pinterest (Rich Pin)', 'metabox title', 'nextgen-facebook' ).'</h4></td>';
+				'<td></td><td class="subsection"><h4>'.
+					_x( 'Pinterest / Rich Pin',
+						'metabox title', 'nextgen-facebook' ).'</h4></td>';
 
 				$rows[] = '<tr class="hide_in_basic">'.
 				$this->p->util->get_th( _x( 'Image Dimensions',

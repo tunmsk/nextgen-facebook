@@ -78,7 +78,7 @@ if ( ! class_exists( 'NgfbSubmenuSharingBuffer' ) && class_exists( 'NgfbSubmenuS
 
 			$rows[] = $this->p->util->get_th( _x( 'Add via @username',
 				'option label (short)', 'nextgen-facebook' ), 'short', null,
-			'Append the website\'s @username to the tweet (see the '.$this->p->util->get_admin_url( 'general#sucom-tabset_pub-tab_twitter', 'Twitter options tab' ).' on the General settings page).' ).
+			'Append the website\'s @username to the tweet (see the '.$this->p->util->get_admin_url( 'general#sucom-tabset_pub-tab_twitter', 'Twitter options tab' ).' on the General Settings page).' ).
 			( $this->p->check->aop() == true ? 
 				'<td>'.$this->form->get_checkbox( 'buffer_via' ).'</td>' :
 				'<td class="blank">'.$this->form->get_no_checkbox( 'buffer_via' ).'</td>' );
