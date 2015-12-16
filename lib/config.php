@@ -66,7 +66,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'sharing' => 'Sharing Buttons',
 							'style' => 'Sharing Styles',
 							'readme' => 'Plugin Read Me',
-							'setup' => 'Quick Setup Guide',
+							'setup' => 'Setup Guide',
 							// the first 2 words will be highlighted in menu
 							'licenses' => '<span>Extension Plugins</span> and Pro Licenses',
 						),

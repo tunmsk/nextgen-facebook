@@ -31,6 +31,7 @@ _x( 'Plugin Read Me', 'lib file description', 'nextgen-facebook' );
 _x( 'Quick Setup Guide', 'lib file description', 'nextgen-facebook' );
 _x( 'Right', 'option value', 'nextgen-facebook' );
 _x( '(settings value)', 'option value', 'nextgen-facebook' );
+_x( 'Setup Guide', 'lib file description', 'nextgen-facebook' );
 _x( 'Sharing Buttons', 'lib file description', 'nextgen-facebook' );
 _x( 'Sharing Styles', 'lib file description', 'nextgen-facebook' );
 _x( 'Social Image Dimensions', 'lib file description', 'nextgen-facebook' );

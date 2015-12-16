@@ -425,7 +425,7 @@ msgctxt "option value"
 msgid "Bit.ly (suggested)"
 msgstr ""
 
-#: lib/config-gettext-extract.php:7 lib/config-gettext-extract.php:50
+#: lib/config-gettext-extract.php:7 lib/config-gettext-extract.php:51
 msgctxt "option value"
 msgid "Bottom"
 msgstr ""
@@ -532,125 +532,130 @@ msgctxt "option value"
 msgid "Right"
 msgstr ""
 
-#: lib/config-gettext-extract.php:34 lib/sharing.php:350 lib/sharing.php:359
+#: lib/config-gettext-extract.php:34
+msgctxt "lib file description"
+msgid "Setup Guide"
+msgstr ""
+
+#: lib/config-gettext-extract.php:35 lib/sharing.php:350 lib/sharing.php:359
 msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:35 lib/sharing.php:350 lib/sharing.php:353
+#: lib/config-gettext-extract.php:36 lib/sharing.php:350 lib/sharing.php:353
 #: lib/submenu/style.php:31
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr ""
 
-#: lib/config-gettext-extract.php:36
+#: lib/config-gettext-extract.php:37
 msgctxt "lib file description"
 msgid "Social Image Dimensions"
 msgstr ""
 
-#: lib/config-gettext-extract.php:37
+#: lib/config-gettext-extract.php:38
 msgctxt "lib file description"
 msgid "<span>Extension Plugins</span> and Pro Licenses"
 msgstr ""
 
-#: lib/config-gettext-extract.php:38
+#: lib/config-gettext-extract.php:39
 msgctxt "option value"
 msgid "TinyURL (slow)"
 msgstr ""
 
-#: lib/config-gettext-extract.php:39
+#: lib/config-gettext-extract.php:40
 msgctxt "option value"
 msgid "Title and Excerpt"
 msgstr ""
 
-#: lib/config-gettext-extract.php:40
+#: lib/config-gettext-extract.php:41
 msgctxt "option value"
 msgid "Title Only"
 msgstr ""
 
-#: lib/config-gettext-extract.php:41 lib/config-gettext-extract.php:58
+#: lib/config-gettext-extract.php:42 lib/config-gettext-extract.php:59
 msgctxt "option value"
 msgid "Top"
 msgstr ""
 
-#: lib/config-gettext-extract.php:42
+#: lib/config-gettext-extract.php:43
 msgctxt "plugin description"
 msgid ""
 "Update Manager for the NextGEN Facebook (NGFB) Pro plugin and its Pro "
 "extensions."
 msgstr ""
 
-#: lib/config-gettext-extract.php:43
+#: lib/config-gettext-extract.php:44
 msgctxt "lib file description"
 msgid "User Profile Contact Methods"
 msgstr ""
 
-#: lib/config-gettext-extract.php:44
+#: lib/config-gettext-extract.php:45
 msgctxt "lib file description"
 msgid "Website / Business Social Accounts"
 msgstr ""
 
-#: lib/config-gettext-extract.php:45
+#: lib/config-gettext-extract.php:46
 msgctxt "option value"
 msgid "Yes"
 msgstr ""
 
-#: lib/config-gettext-extract.php:46
+#: lib/config-gettext-extract.php:47
 msgctxt "metabox tab"
 msgid "Admin Edit"
 msgstr ""
 
-#: lib/config-gettext-extract.php:47
+#: lib/config-gettext-extract.php:48
 msgctxt "option value"
 msgid "Admin Edit"
 msgstr ""
 
-#: lib/config-gettext-extract.php:48 lib/website/facebook.php:30
+#: lib/config-gettext-extract.php:49 lib/website/facebook.php:30
 msgctxt "metabox tab"
 msgid "All Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:49
+#: lib/config-gettext-extract.php:50
 msgctxt "option value"
 msgid "Both Top and Bottom"
 msgstr ""
 
-#: lib/config-gettext-extract.php:51
-msgctxt "metabox tab"
-msgid "Content"
-msgstr ""
-
 #: lib/config-gettext-extract.php:52
-msgctxt "option value"
+msgctxt "metabox tab"
 msgid "Content"
 msgstr ""
 
 #: lib/config-gettext-extract.php:53
-msgctxt "metabox tab"
-msgid "CSS Sidebar"
+msgctxt "option value"
+msgid "Content"
 msgstr ""
 
 #: lib/config-gettext-extract.php:54
-msgctxt "option value"
+msgctxt "metabox tab"
 msgid "CSS Sidebar"
 msgstr ""
 
 #: lib/config-gettext-extract.php:55
-msgctxt "metabox tab"
-msgid "Excerpt"
+msgctxt "option value"
+msgid "CSS Sidebar"
 msgstr ""
 
 #: lib/config-gettext-extract.php:56
-msgctxt "option value"
+msgctxt "metabox tab"
 msgid "Excerpt"
 msgstr ""
 
 #: lib/config-gettext-extract.php:57
+msgctxt "option value"
+msgid "Excerpt"
+msgstr ""
+
+#: lib/config-gettext-extract.php:58
 msgctxt "metabox tab"
 msgid "Shortcode"
 msgstr ""
 
-#: lib/config-gettext-extract.php:59
+#: lib/config-gettext-extract.php:60
 msgctxt "metabox tab"
 msgid "Widget"
 msgstr ""
@@ -1538,16 +1543,15 @@ msgstr ""
 
 #: lib/messages.php:646
 msgid ""
-"If you appreciate the features, quality and support of this plugin, please "
-"<a href=\"%1$s\" target=\"_blank\">take a moment to rate the %2$s plugin on "
-"WordPress.org</a>."
+"How do you like the plugin? Please take a moment to <a href=\"%1$s\" target="
+"\"_blank\">rate the %2$s plugin on WordPress.org</a>."
 msgstr ""
 
 #: lib/messages.php:646
 msgid ""
-"Your rating will help other WordPress users find higher quality and well "
-"supported plugins &mdash; along with <strong>encouraging us to keep "
-"improving %s</strong> as well!"
+"Ratings help the WordPress community as a whole find higher-quality plugins "
+"&mdash; along with <strong>encouraging us to keep improving %s</strong> as "
+"well!"
 msgstr ""
 
 #: lib/messages.php:649
