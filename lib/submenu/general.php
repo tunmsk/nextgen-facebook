@@ -76,7 +76,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 				case 'og-general':
 
 					$rows[] = $this->p->util->get_th( _x( 'Default Article Topic',
-						'option label', 'nextgen-facebook' ), 'highlight', 'og_art_section' ).
+						'option label', 'nextgen-facebook' ), null, 'og_art_section' ).
 					'<td>'.$this->form->get_select( 'og_art_section', $this->p->util->get_topics() ).'</td>';
 
 					$rows[] = $this->p->util->get_th( _x( 'Site Name',
@@ -85,7 +85,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 						null, null, null, get_bloginfo( 'name', 'display' ) ).'</td>';
 
 					$rows[] = $this->p->util->get_th( _x( 'Site Description',
-						'option label', 'nextgen-facebook' ), 'highlight', 'og_site_description', array( 'is_locale' => true ) ).
+						'option label', 'nextgen-facebook' ), null, 'og_site_description', array( 'is_locale' => true ) ).
 					'<td>'.$this->form->get_textarea( SucomUtil::get_locale_key( 'og_site_description' ), 
 						null, null, null, get_bloginfo( 'description', 'display' ) ).'</td>';
 
@@ -166,11 +166,11 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 							'option comment', 'nextgen-facebook' ) ).'</td>';
 
 					$rows[] = $this->p->util->get_th( _x( 'Open Graph Image Dimensions',
-						'option label', 'nextgen-facebook' ), 'highlight', 'og_img_dimensions' ).
+						'option label', 'nextgen-facebook' ), null, 'og_img_dimensions' ).
 					'<td>'.$this->form->get_image_dimensions_input( 'og_img', false, false ).'</td>';
 
 					$rows[] = $this->p->util->get_th( _x( 'Default / Fallback Image ID',
-						'option label', 'nextgen-facebook' ), 'highlight', 'og_def_img_id' ).
+						'option label', 'nextgen-facebook' ), null, 'og_def_img_id' ).
 					'<td>'.$this->form->get_image_upload_input( 'og_def_img' ).'</td>';
 
 					$rows[] = $this->p->util->get_th( _x( 'or Default / Fallback Image URL',
@@ -203,11 +203,11 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 				case 'pub-facebook':
 
 					$rows[] = $this->p->util->get_th( _x( 'Facebook Business Page URL',
-						'option label', 'nextgen-facebook' ), 'highlight', 'fb_publisher_url' ).
+						'option label', 'nextgen-facebook' ), null, 'fb_publisher_url' ).
 					'<td>'.$this->form->get_input( 'fb_publisher_url', 'wide' ).'</td>';
 
 					$rows[] = $this->p->util->get_th( _x( 'Facebook Application ID',
-						'option label', 'nextgen-facebook' ), 'highlight', 'fb_app_id' ).
+						'option label', 'nextgen-facebook' ), null, 'fb_app_id' ).
 					'<td>'.$this->form->get_input( 'fb_app_id' ).'</td>';
 
 					$rows[] = $this->p->util->get_th( _x( 'or Facebook Admin Username(s)',
@@ -228,7 +228,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 				case 'pub-google':
 
 					$rows[] = $this->p->util->get_th( _x( 'Google+ Business Page URL',
-						'option label', 'nextgen-facebook' ), 'highlight', 'google_publisher_url' ).
+						'option label', 'nextgen-facebook' ), null, 'google_publisher_url' ).
 					'<td>'.$this->form->get_input( 'seo_publisher_url', 'wide' ).'</td>';
 
 					$rows[] = '<tr class="hide_in_basic">'.
@@ -322,7 +322,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					if ( ! SucomUtil::get_const( 'NGFB_RICH_PIN_DISABLE' ) ) {
 						$rows[] = $this->p->util->get_th( _x( 'Rich Pin Image Dimensions',
-							'option label', 'nextgen-facebook' ), 'highlight', 'rp_img_dimensions' ).
+							'option label', 'nextgen-facebook' ), null, 'rp_img_dimensions' ).
 						'<td>'.$this->form->get_image_dimensions_input( 'rp_img' ).'</td>';
 					}
 
@@ -345,7 +345,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 						$this->p->msgs->get( 'info-pub-twitter' ).'</td>';
 
 					$rows[] = $this->p->util->get_th( _x( 'Twitter Business @username',
-						'option label', 'nextgen-facebook' ), 'highlight', 'tc_site' ).
+						'option label', 'nextgen-facebook' ), null, 'tc_site' ).
 					'<td>'.$this->form->get_input( 'tc_site' ).'</td>';
 
 					$rows[] = '<tr class="hide_in_basic">'.

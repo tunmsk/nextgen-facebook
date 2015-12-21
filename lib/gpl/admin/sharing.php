@@ -26,7 +26,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 		public function filter_plugin_cache_rows( $rows, $form, $network = false ) {
 
 			$rows['plugin_file_cache_exp'] = $this->p->util->get_th( _x( 'Social File Cache Expiry',
-				'option label', 'nextgen-facebook' ), 'highlight', 'plugin_file_cache_exp' ).
+				'option label', 'nextgen-facebook' ), null, 'plugin_file_cache_exp' ).
 			'<td nowrap class="blank">'.$this->p->cf['form']['file_cache_hrs'][$form->options['plugin_file_cache_exp']].' '.
 				_x( 'hours', 'option comment', 'nextgen-facebook' ).'</td>'.
 			$this->p->admin->get_site_use( $form, $network, 'plugin_file_cache_exp' );

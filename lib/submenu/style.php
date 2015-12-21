@@ -134,7 +134,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 			$this->p->util->do_table_rows( 
 				array( 
 					$this->p->util->get_th( _x( 'Use the Social Stylesheet',
-						'option label', 'nextgen-facebook' ), 'highlight', 'buttons_use_social_css' ).
+						'option label', 'nextgen-facebook' ), null, 'buttons_use_social_css' ).
 					'<td>'.$this->form->get_checkbox( 'buttons_use_social_css' ).$css_min_msg.'</td>',
 	
 					$this->p->util->get_th( _x( 'Enqueue the Stylesheet',
