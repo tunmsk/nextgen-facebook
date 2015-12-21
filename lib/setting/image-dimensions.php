@@ -32,12 +32,11 @@ if ( ! class_exists( 'NgfbSettingImagedimensions' ) && class_exists( 'NgfbAdmin'
 			echo '<tr><td colspan="2">'.$this->p->msgs->get( 'info-'.$metabox ).'</td></tr>';
 
 			$rows = array_merge( $this->get_rows( $metabox, 'general' ), 
-				apply_filters( $this->p->cf['lca'].'_'.$metabox.'_general_rows', array(), $this->form ) );
+				apply_filters( $this->p->cf['lca'].'_'.$metabox.'_general_rows',
+					array(), $this->form ) );
 			natsort( $rows );
-
 			foreach ( $rows as $num => $row ) 
 				echo '<tr>'.$row.'</tr>'."\n";
-
 			echo '</table>';
 		}
 

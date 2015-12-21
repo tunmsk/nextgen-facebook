@@ -35,8 +35,8 @@ if ( ! class_exists( 'NgfbSubmenuEssential' ) && class_exists( 'NgfbAdmin' ) ) {
 		}
 
 		public function show_metabox_general() {
-			$metabox = 'general';
-			$key = 'essential';
+			$metabox = $this->menu_id;
+			$key = 'general';
 			$rows[$key] = array_merge( $this->get_rows( $metabox, $key ),
 				apply_filters( $this->p->cf['lca'].'_'.$metabox.'_'.$key.'_rows',
 					array(), $this->form, false ) );        // $network = false
@@ -44,8 +44,8 @@ if ( ! class_exists( 'NgfbSubmenuEssential' ) && class_exists( 'NgfbAdmin' ) ) {
 		}
 
 		public function show_metabox_advanced() {
-			$metabox = 'advanced';
-			$key = 'essential';
+			$metabox = $this->menu_id;
+			$key = 'advanced';
 			$rows[$key] = array_merge( $this->get_rows( $metabox, $key ),
 				apply_filters( $this->p->cf['lca'].'_'.$metabox.'_'.$key.'_rows',
 					array(), $this->form, false ) );        // $network = false
@@ -55,7 +55,7 @@ if ( ! class_exists( 'NgfbSubmenuEssential' ) && class_exists( 'NgfbAdmin' ) ) {
 		protected function get_rows( $metabox, $key ) {
 			$rows = array();
 			switch ( $metabox.'-'.$key ) {
-				case 'general-essential':
+				case 'essential-general':
 
 					$rows[] = '<td></td><td class="subsection top"><h4>'.
 						_x( 'Site Information', 'metabox title', 'nextgen-facebook' ).'</h4></td>';
@@ -138,11 +138,17 @@ if ( ! class_exists( 'NgfbSubmenuEssential' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					break;
 
-				case 'advanced-essential':
+				case 'essential-advanced':
 
 					$rows['plugin_preserve'] = $this->p->util->get_th( _x( 'Preserve Settings on Uninstall',
 						'option label', 'nextgen-facebook' ), null, 'plugin_preserve' ).
 					'<td>'.$this->form->get_checkbox( 'plugin_preserve' ).'</td>';
+
+					$rows['plugin_debug'] = $this->p->util->get_th( _x( 'Add Hidden Debug Messages', 
+						'option label', 'nextgen-facebook' ), null, 'plugin_debug' ).
+					'<td>'.( defined( 'NGFB_HTML_DEBUG' ) && NGFB_HTML_DEBUG ? 
+						$this->form->get_no_checkbox( 'plugin_debug' ).' NGFB_HTML_DEBUG constant enabled' :
+						$this->form->get_checkbox( 'plugin_debug' ) ).'</td>';
 
 					break;
 			}

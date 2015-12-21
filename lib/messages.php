@@ -708,10 +708,10 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 						break;
 					case 'notice-pro-tid-missing':
 						if ( ! is_multisite() )
-							$text = '<b>'.sprintf( __( 'The %1$s plugin %2$s option is empty.', 'nextgen-facebook' ), $atts['name'], _x( 'Pro Authentication ID', 'option label', 'nextgen-facebook' ) ).'</b> '.sprintf( __( 'To enable Pro version features and allow the plugin to authenticate itself for updates, please enter the unique Authentication ID you received by email on the <a href="%s">Pro Licenses settings page</a>.', 'nextgen-facebook' ), $this->p->util->get_admin_url( 'licenses' ) );
+							$text = '<p><b>'.sprintf( __( 'The %1$s plugin %2$s option is empty.', 'nextgen-facebook' ), $atts['name'], _x( 'Pro Authentication ID', 'option label', 'nextgen-facebook' ) ).'</b> '.sprintf( __( 'To enable Pro version features and allow the plugin to authenticate itself for updates, please enter the unique Authentication ID you received by email on the <a href="%s">Pro Licenses settings page</a>.', 'nextgen-facebook' ), $this->p->util->get_admin_url( 'licenses' ) ).'</p>';
 						break;
 					case 'notice-pro-not-installed':
-						$text = sprintf( __( 'An Authentication ID has been entered for %s, but the Pro version is not yet installed &ndash; don\'t forget to update this plugin to install the latest Pro version.', 'nextgen-facebook' ), $atts['name'] );
+						$text = sprintf( __( '<b>An Authentication ID has been entered for %s, but the Pro version is not yet installed</b> &ndash; don\'t forget to update this plugin to install the latest Pro version. ;-)', 'nextgen-facebook' ), $atts['name'] );
 						break;
 					case 'notice-um-extension-required':
 					case 'notice-um-activate-extension':
