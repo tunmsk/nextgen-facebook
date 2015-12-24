@@ -92,7 +92,7 @@ if ( ! class_exists( 'NgfbGplAdminPost' ) ) {
 				$rows[] = '<tr class="hide_in_basic">'.
 				$this->p->util->get_th( _x( 'Sharing URL',
 					'option label', 'nextgen-facebook' ), 'medium', 'meta-sharing_url', $head_info ).
-				'<td class="blank">'.$this->p->util->get_sharing_url( true ).'</td>';
+				'<td class="blank">'.$this->p->util->get_sharing_url( true ).'</td>';	// use_post = true
 			} else {
 				$rows[] = '<tr class="hide_in_basic">'.
 				$this->p->util->get_th( _x( 'Sharing URL',
