@@ -929,15 +929,15 @@ if ( ! class_exists( 'SucomUtil' ) ) {
 				else $menu_id = key( $this->p->cf['*']['lib']['submenu'] );	// default to first submenu
 			}
 
-			foreach ( $this->p->cf['*']['lib'] as $lib_name => $libs ) {
+			foreach ( $this->p->cf['*']['lib'] as $menu_lib => $libs ) {
 				if ( isset( $libs[$menu_id] ) ) {
-					$admin_page = $this->p->cf['wp']['admin_page'][$lib_name].'?page='.$lca.'-'.$menu_id;
-					switch ( $lib_name ) {
+					$parent_slug = $this->p->cf['wp']['admin'][$menu_lib]['page'].'?page='.$lca.'-'.$menu_id;
+					switch ( $menu_lib ) {
 						case 'sitesubmenu':
-							$admin_url = network_admin_url( $admin_page );
+							$admin_url = network_admin_url( $parent_slug );
 							break;
 						default:
-							$admin_url = admin_url( $admin_page );
+							$admin_url = admin_url( $parent_slug );
 							break;
 					}
 					break;
