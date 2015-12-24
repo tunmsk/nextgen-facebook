@@ -392,6 +392,7 @@ Official announcement: N/A
 	* Added disabled and internal meta tags to the "Head Tags" list in the Social Settings metabox (shown as gray on gray).
 * **Bugfixes**
 	* Fixed the Tweet button text with additional encoding for emoji characters.
+	* Fixed the 'article:published_time' and 'article:modified_time' values on editing pages.
 * **Developer Notes**
 	* Added a call to `wp_encode_emoji()` for all encoded string values.
 	* Added a `$this->menu_lib` property to all setting pages (value provided to their constructor).
