@@ -12,12 +12,12 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: lib/admin.php:70 lib/admin.php:682 lib/user.php:210
+#: lib/admin.php:70 lib/admin.php:682 lib/user.php:211
 msgctxt "package type"
 msgid "Pro"
 msgstr ""
 
-#: lib/admin.php:71 lib/admin.php:683 lib/user.php:211
+#: lib/admin.php:71 lib/admin.php:683 lib/user.php:212
 msgctxt "package type"
 msgid "Free"
 msgstr ""
@@ -1017,7 +1017,7 @@ msgid "Twitter Card Description"
 msgstr ""
 
 #: lib/gpl/admin/post.php:93 lib/gpl/admin/post.php:98
-#: lib/gpl/admin/taxonomy.php:53 lib/gpl/admin/user.php:54 lib/meta.php:105
+#: lib/gpl/admin/taxonomy.php:53 lib/gpl/admin/user.php:54 lib/meta.php:107
 #: lib/pro/admin/post.php:108 lib/pro/admin/post.php:114
 #: lib/pro/admin/taxonomy.php:67 lib/pro/admin/user.php:67
 msgctxt "option label"
@@ -1908,124 +1908,124 @@ msgctxt "metabox tab"
 msgid "Priority Media"
 msgstr ""
 
-#: lib/meta.php:80
+#: lib/meta.php:82
 msgctxt "preview image error"
 msgid "Image Dimensions Smaller<br/>than Suggested Minimum<br/>of %s"
 msgstr ""
 
-#: lib/meta.php:86
+#: lib/meta.php:88
 msgctxt "preview image error"
 msgid "Image Dimensions Unknown<br/>or Not Available"
 msgstr ""
 
-#: lib/meta.php:95
+#: lib/meta.php:97
 msgctxt "preview image error"
 msgid "No Open Graph Image Found"
 msgstr ""
 
-#: lib/meta.php:109
+#: lib/meta.php:111
 msgctxt "option label"
 msgid "Short URL"
 msgstr ""
 
-#: lib/meta.php:113
+#: lib/meta.php:115
 msgctxt "option label"
 msgid "Open Graph Example"
 msgstr ""
 
-#: lib/meta.php:169
+#: lib/meta.php:171
 msgctxt "option label"
 msgid "Facebook Debugger"
 msgstr ""
 
-#: lib/meta.php:169
+#: lib/meta.php:171
 msgid ""
 "Facebook, Pinterest, LinkedIn, Google+, and most social websites use Open "
 "Graph meta tags."
 msgstr ""
 
-#: lib/meta.php:169
+#: lib/meta.php:171
 msgid ""
 "The Facebook debugger allows you to refresh Facebook's cache, while also "
 "validating the Open Graph and Pinterest Rich Pin meta tags."
 msgstr ""
 
-#: lib/meta.php:169
+#: lib/meta.php:171
 msgid ""
 "The Facebook debugger remains the most stable and reliable method to verify "
 "Open Graph meta tags. <strong>You may have to click the \"Fetch new scrape "
 "information\" button several times to refresh Facebook's cache</strong>."
 msgstr ""
 
-#: lib/meta.php:169
+#: lib/meta.php:171
 msgctxt "submit button"
 msgid "Validate Open Graph"
 msgstr ""
 
-#: lib/meta.php:171
+#: lib/meta.php:173
 msgctxt "option label"
 msgid "Google Structured Data Testing Tool"
 msgstr ""
 
-#: lib/meta.php:171
+#: lib/meta.php:173
 msgid ""
 "Verify that Google can correctly parse your structured data markup (meta "
 "tags, Schema, Microdata, and social JSON-LD markup) for Google Search and "
 "Google+."
 msgstr ""
 
-#: lib/meta.php:171
+#: lib/meta.php:173
 msgctxt "submit button"
 msgid "Validate Data Markup"
 msgstr ""
 
-#: lib/meta.php:173
+#: lib/meta.php:175
 msgctxt "option label"
 msgid "Pinterest Rich Pin Validator"
 msgstr ""
 
-#: lib/meta.php:173
+#: lib/meta.php:175
 msgid ""
 "Validate the Open Graph / Rich Pin meta tags and apply to have them shown on "
 "Pinterest zoomed pins."
 msgstr ""
 
-#: lib/meta.php:173
+#: lib/meta.php:175
 msgctxt "submit button"
 msgid "Validate Rich Pins"
 msgstr ""
 
-#: lib/meta.php:175
+#: lib/meta.php:177
 msgctxt "option label"
 msgid "Twitter Card Validator"
 msgstr ""
 
-#: lib/meta.php:175
+#: lib/meta.php:177
 msgid ""
 "The Twitter Card Validator does not accept query arguments &ndash; copy-"
 "paste the following sharing URL into the validation input field."
 msgstr ""
 
-#: lib/meta.php:175
+#: lib/meta.php:177
 msgctxt "submit button"
 msgid "Validate Twitter Card"
 msgstr ""
 
-#: lib/meta.php:272
+#: lib/meta.php:274
 msgid "Nonce token validation failed for the submitted form (update ignored)."
 msgstr ""
 
-#: lib/meta.php:338
+#: lib/meta.php:340
 msgctxt "column title"
 msgid "Social Img"
 msgstr ""
 
-#: lib/meta.php:339
+#: lib/meta.php:341
 msgctxt "column title"
 msgid "Social Desc"
 msgstr ""
 
-#: lib/meta.php:355
+#: lib/meta.php:357
 msgid "Reload to View"
 msgstr ""
 
@@ -2076,7 +2076,7 @@ msgid "Plugin settings (%s) have been upgraded and saved."
 msgstr ""
 
 #: lib/post.php:258 lib/profile/social-settings.php:26 lib/sharing.php:351
-#: lib/taxonomy.php:251 lib/user.php:199
+#: lib/taxonomy.php:251 lib/user.php:200
 msgctxt "metabox title"
 msgid "Social Settings"
 msgstr ""
@@ -2859,15 +2859,15 @@ msgctxt "image size label"
 msgid "Twitter Large Image Card"
 msgstr ""
 
-#: lib/user.php:355
+#: lib/user.php:356
 msgid "AIM"
 msgstr ""
 
-#: lib/user.php:356
+#: lib/user.php:357
 msgid "Yahoo IM"
 msgstr ""
 
-#: lib/user.php:357
+#: lib/user.php:358
 msgid "Jabber / Google Talk"
 msgstr ""
 

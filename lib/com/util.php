@@ -370,10 +370,9 @@ if ( ! class_exists( 'SucomUtil' ) ) {
 				$ret = true;
 			elseif ( is_admin() ) {
 				$screen_id = self::get_screen_id();
-
 				// exclude post/page/media editing lists
-				if ( strpos( $screen_id, 'edit-' ) !== false || 
-					$screen_id === 'upload' )
+				if ( $screen_id === 'upload' ||
+					strpos( $screen_id, 'edit-' ) === 0 )
 						$ret = false;
 				elseif ( self::get_req_val( 'post_ID', 'POST' ) !== '' ||
 					self::get_req_val( 'post', 'GET' ) !== '' )
@@ -486,15 +485,23 @@ if ( ! class_exists( 'SucomUtil' ) ) {
 			if ( is_author() ) {
 				$ret = true;
 			} elseif ( is_admin() ) {
-				if ( ( $screen_id = self::get_screen_id() ) !== false &&
-					( $screen_id === 'user-edit' || 
-						$screen_id === 'profile' || 
-							strpos( $screen_id, 'users_page_' ) === 0 ) )
-								$ret = true;
-				elseif ( self::get_req_val( 'user_id' ) !== '' )
-					$ret = true;
-				elseif ( basename( $_SERVER['PHP_SELF'] ) === 'profile.php' )
-					$ret = true;
+				$screen_id = self::get_screen_id();
+				if ( $screen_id !== false ) {
+					switch ( $screen_id ) {
+						case 'profile':
+						case 'user-edit':
+						case ( strpos( $screen_id, 'profile_page_' ) === 0 ? true : false ):
+						case ( strpos( $screen_id, 'users_page_' ) === 0 ? true : false ):
+							$ret = true;
+							break;
+					}
+				}
+				if ( $ret === false ) {
+					if ( self::get_req_val( 'user_id' ) !== '' )
+						$ret = true;
+					elseif ( basename( $_SERVER['PHP_SELF'] ) === 'profile.php' )
+						$ret = true;
+				}
 			}
 			$ret = apply_filters( 'sucom_is_author_page', $ret );
 			if ( $cache )
