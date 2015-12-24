@@ -189,10 +189,11 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		private function set_objects() {
 			foreach ( $this->p->cf['plugin']['ngfb']['lib']['website'] as $id => $name ) {
 				$classname = NgfbConfig::load_lib( false, 'website/'.$id, 'ngfbsharing'.$id );
-				if ( $classname !== false && class_exists( $classname ) )
+				if ( $classname !== false && class_exists( $classname ) ) {
 					$this->website[$id] = new $classname( $this->p );
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $classname.' class loaded' );
+				}
 			}
 		}
 

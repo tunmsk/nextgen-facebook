@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.19.2',		// plugin version
+					'version' => '8.20.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -52,12 +52,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'pro_support' => 'http://nextgen-facebook.support.surniaulula.com/',
 					),
 					'lib' => array(			// libraries
+						'profile' => array (	// lib file descriptions will be translated
+							'social-settings' => 'Your Social Settings',
+						),
 						'setting' => array (	// lib file descriptions will be translated
-							'ngfb-separator-0' => 'NGFB',
 							'image-dimensions' => 'Social Image Dimensions',
 							'social-accounts' => 'Website / Business Social Accounts',
 							'contact-fields' => 'User Profile Contact Methods',
-							'ngfb-separator-1' => '',
 						),
 						'submenu' => array (	// lib file descriptions will be translated
 							'essential' => 'Essential Settings',
@@ -588,22 +589,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'jabber' => 'Google Talk',
 					'yim' => 'Yahoo IM',
 				),
+				'admin_page' => array(
+					'profile' => 'users.php',
+					'setting' => 'options-general.php',
+					'submenu' => 'admin.php',
+					'sitesubmenu' => 'admin.php',
+				),
 			),
 			'php' => array(				// php
 				'min_version' => '4.1.0',	// minimum php version
-			),
-			'follow' => array(
-				'size' => 24,
-				'src' => array(
-					'images/follow/Wordpress.png' => 'https://profiles.wordpress.org/jsmoriss/',
-					'images/follow/Github.png' => 'https://github.com/SurniaUlula',
-					'images/follow/Facebook.png' => 'https://www.facebook.com/SurniaUlulaCom',
-					'images/follow/GooglePlus.png' => 'https://plus.google.com/+SurniaUlula/',
-					//'images/follow/Linkedin.png' => 'https://www.linkedin.com/company/surnia-ulula-ltd',
-					'images/follow/Twitter.png' => 'https://twitter.com/surniaululacom',
-					//'images/follow/Youtube.png' => 'https://www.youtube.com/user/SurniaUlulaCom',
-					'images/follow/Rss.png' => 'http://surniaulula.com/category/application/wordpress/wp-plugins/ngfb/feed/',
-				),
 			),
 			'form' => array(
 				'og_image_col_width' => '70px',
@@ -831,6 +825,19 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'object' => true,
 				'transient' => true,
 			),
+			'follow' => array(
+				'size' => 24,
+				'src' => array(
+					'images/follow/Wordpress.png' => 'https://profiles.wordpress.org/jsmoriss/',
+					'images/follow/Github.png' => 'https://github.com/SurniaUlula',
+					'images/follow/Facebook.png' => 'https://www.facebook.com/SurniaUlulaCom',
+					'images/follow/GooglePlus.png' => 'https://plus.google.com/+SurniaUlula/',
+					//'images/follow/Linkedin.png' => 'https://www.linkedin.com/company/surnia-ulula-ltd',
+					'images/follow/Twitter.png' => 'https://twitter.com/surniaululacom',
+					//'images/follow/Youtube.png' => 'https://www.youtube.com/user/SurniaUlulaCom',
+					'images/follow/Rss.png' => 'http://surniaulula.com/category/application/wordpress/wp-plugins/ngfb/feed/',
+				),
+			),
 		);
 
 		// get_config is called very early, so don't apply filters unless instructed
@@ -949,7 +956,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			 * NGFB hook priorities
 			 */
 			$var_const['NGFB_ADD_MENU_PRIORITY'] = -20;
-			$var_const['NGFB_ADD_SETTINGS_PRIORITY'] = -10;
+			$var_const['NGFB_ADD_SUBMENU_PRIORITY'] = -10;
 			$var_const['NGFB_META_SAVE_PRIORITY'] = 6;
 			$var_const['NGFB_META_CACHE_PRIORITY'] = 9;
 			$var_const['NGFB_INIT_PRIORITY'] = 14;

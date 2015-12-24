@@ -44,6 +44,7 @@ _x( 'Update Manager for the NextGEN Facebook (NGFB) Pro plugin and its Pro exten
 _x( 'User Profile Contact Methods', 'lib file description', 'nextgen-facebook' );
 _x( 'Website / Business Social Accounts', 'lib file description', 'nextgen-facebook' );
 _x( 'Yes', 'option value', 'nextgen-facebook' );
+_x( 'Your Social Settings', 'lib file description', 'nextgen-facebook' );
 _x( 'Admin Edit', 'metabox tab', 'nextgen-facebook' );
 _x( 'Admin Edit', 'option value', 'nextgen-facebook' );
 _x( 'All Buttons', 'metabox tab', 'nextgen-facebook' );

@@ -14,10 +14,14 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		public $website = array();
 
-		public function __construct( &$plugin, $id, $name ) {
+		protected $website_id = '';
+		protected $website_name = '';
+
+		public function __construct( &$plugin, $id, $name, $lib ) {
 			$this->p =& $plugin;
 			$this->menu_id = $id;
 			$this->menu_name = $name;
+			$this->menu_lib = $lib;
 			$this->set_objects();
 			$this->p->util->add_plugin_actions( $this, array(
 				'form_content_metaboxes_sharing' => 1,
@@ -129,9 +133,14 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 		}
 
 		public function show_metabox_website() {
-			$this->p->util->do_table_rows(
-				$this->get_rows( null, null ),
-				( empty( $this->id ) ? '' : 'metabox-website-'.$this->id ),
+			$metabox = 'website';
+			$key = $this->website_id;
+			$this->p->util->do_table_rows( 
+				array_merge( 
+					$this->get_rows( $metabox, $key ),
+					apply_filters( $this->p->cf['lca'].'_'.$metabox.'_'.$key.'_rows', array(), $this->form )
+				),
+				'metabox-'.$metabox.'-'.$key,
 				'metabox-website'
 			);
 		}
