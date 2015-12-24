@@ -381,6 +381,26 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.20.2 (TBD) =
+
+Official announcement: N/A
+
+* **New Features**
+	* Added a new "Your Social Settings" menu page with the user profile Social Settings metabox (and removed it from the "Your Profile" page).
+* **Improvements**
+	* Cleaned-up the side metaboxes on settings pages by selectively adding them certain pages and simplifying their content.
+	* Added disabled and internal meta tags to the "Head Tags" list in the Social Settings metabox (shown as gray on gray).
+* **Bugfixes**
+	* Fixed the Tweet button text with additional encoding for emoji characters.
+* **Developer Notes**
+	* Added a call to `wp_encode_emoji()` for all encoded string values.
+	* Added a `$this->menu_lib` property to all setting pages (value provided to their constructor).
+	* Renamed the `NGFB_ADD_SUBMENU_PRIORITY` constant to `NGFB_ADD_SETTINGS_PRIORITY`.
+	* Renamed the website class `$id` and `$name` properties to `$website_id` and `$website_name`.
+	* Moved image size definitions from the 'admin_init' hook to 'current_screen'.
+	* Moved `load_meta_page()` methods from the 'admin_head' hook to 'current_screen'.
+	* Refactored the `add_plugin_image_sizes()` method to handle a variety of WP object classes.
+
 = Version 8.19.2 (2015/12/16) =
 
 Official announcement: N/A
