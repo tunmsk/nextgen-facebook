@@ -590,6 +590,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'yim' => 'Yahoo IM',
 				),
 				'admin' => array(
+					'users' => array(
+						'page' => 'users.php',
+						'cap' => 'list_users',
+					),
 					'profile' => array(
 						'page' => 'profile.php',
 						'cap' => 'edit_posts',
