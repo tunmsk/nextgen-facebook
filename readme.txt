@@ -532,11 +532,11 @@ Official announcement: http://surniaulula.com/2015/11/28/ngfb-wpsso-update-new-h
 
 == Upgrade Notice ==
 
+= 8.20.1 =
+
+2015/12/27 - Added a "Copy to clipboard" icon for sharing and short URLs under the Social Preview tab, added an information notice when checking for duplicate meta tags.
+
 = 8.20.0 =
 
 2015/12/24 - Added a new "Your Social Settings" menu page, fixed 'article:published_time' and 'article:modified_time' values on post editing pages, added a call to wp_encode_emoji() for all encoded strings.
-
-= 8.19.2 =
-
-2015/12/16 - Added a new "Essential Settings" page. Added encoding of special / foreign characters in URL meta tag values.
 
