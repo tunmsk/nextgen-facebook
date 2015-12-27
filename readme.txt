@@ -381,6 +381,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.20.1 (2015/12/27) =
+
+Official announcement: N/A
+
+* **New Features**
+	* Added a "Copy to clipboard" icon for the sharing and short URLs under the Social Preview tab in the Social Settings metabox.
+* **Improvements**
+	* Added an information notice when checking the post/page for duplicate meta tags.
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* *None*
+
 = Version 8.20.0 (2015/12/24) =
 
 Official announcement: N/A
