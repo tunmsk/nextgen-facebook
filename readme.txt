@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4
-Stable Tag: 8.20.1
+Stable Tag: 8.20.1.1
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -381,7 +381,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.20.1 (2015/12/27) =
+= Version 8.20.1.1 (2015/12/27) =
 
 Official announcement: N/A
 
@@ -390,7 +390,7 @@ Official announcement: N/A
 * **Improvements**
 	* Added an information notice when checking the post/page for duplicate meta tags.
 * **Bugfixes**
-	* *None*
+	* Fixed the `get_admin_url()` method, which returned empty URLs, when only hash / query fragments were passed as arguments.
 * **Developer Notes**
 	* Moved `NgfbSharing::$cf['sharing']` to `NgfbConfig::$cf['sharing']`.
 	* Moved `NgfbSharing::$cf['opt']['preset']` to `NgfbConfig::$cf['opt']['preset']`.
@@ -533,9 +533,9 @@ Official announcement: http://surniaulula.com/2015/11/28/ngfb-wpsso-update-new-h
 
 == Upgrade Notice ==
 
-= 8.20.1 =
+= 8.20.1.1 =
 
-2015/12/27 - Added a "Copy to clipboard" icon for sharing and short URLs under the Social Preview tab, added an information notice when checking for duplicate meta tags.
+2015/12/27 - Added a "Copy to clipboard" icon for sharing and short URLs under the Social Preview tab, added an information notice when checking for duplicate meta tags. Fixed action button URLs on NGFB settings pages.
 
 = 8.20.0 =
 
