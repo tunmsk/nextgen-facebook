@@ -392,7 +392,8 @@ Official announcement: N/A
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
-	* *None*
+	* Moved `NgfbSharing::$cf['sharing']` to `NgfbConfig::$cf['sharing']`.
+	* Moved `NgfbSharing::$cf['opt']['preset']` to `NgfbConfig::$cf['opt']['preset']`.
 
 = Version 8.20.0 (2015/12/24) =
 
