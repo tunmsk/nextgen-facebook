@@ -145,7 +145,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 			);
 
 			$tabs = apply_filters( $this->p->cf['lca'].'_style_tabs', 
-				NgfbSharing::$cf['sharing']['style'] );
+				$this->p->cf['sharing']['style'] );
 			$rows = array();
 			foreach ( $tabs as $key => $title ) {
 				$tabs[$key] = _x( $title, 'metabox tab', 'nextgen-facebook' );	// translate the tab title

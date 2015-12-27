@@ -349,7 +349,7 @@ msgstr ""
 msgid "Error copying %1$s to %2$s."
 msgstr ""
 
-#: lib/admin.php:1216 lib/sharing.php:474
+#: lib/admin.php:1216 lib/sharing.php:454
 msgid "Failed to open file %s for writing."
 msgstr ""
 
@@ -364,32 +364,32 @@ msgctxt "option label (very short)"
 msgid "Site Use"
 msgstr ""
 
-#: lib/com/form.php:82 lib/config-gettext-extract.php:28
+#: lib/com/form.php:82 lib/config-gettext-extract.php:38
 msgctxt "option value"
 msgid "(option disabled)"
 msgstr ""
 
-#: lib/com/form.php:176 lib/com/form.php:236 lib/config-gettext-extract.php:33
+#: lib/com/form.php:176 lib/com/form.php:236 lib/config-gettext-extract.php:43
 msgctxt "option value"
 msgid "(settings value)"
 msgstr ""
 
-#: lib/com/form.php:184 lib/config-gettext-extract.php:24
+#: lib/com/form.php:184 lib/config-gettext-extract.php:34
 msgctxt "option value"
 msgid "(no images)"
 msgstr ""
 
-#: lib/com/form.php:188 lib/config-gettext-extract.php:27
+#: lib/com/form.php:188 lib/config-gettext-extract.php:37
 msgctxt "option value"
 msgid "(no videos)"
 msgstr ""
 
-#: lib/com/form.php:192 lib/config-gettext-extract.php:25
+#: lib/com/form.php:192 lib/config-gettext-extract.php:35
 msgctxt "option value"
 msgid "[none]"
 msgstr ""
 
-#: lib/com/form.php:197 lib/com/form.php:283 lib/config-gettext-extract.php:9
+#: lib/com/form.php:197 lib/com/form.php:283 lib/config-gettext-extract.php:17
 msgctxt "option value"
 msgid "(default)"
 msgstr ""
@@ -415,263 +415,263 @@ msgid "Use Image"
 msgstr ""
 
 #: lib/config-gettext-extract.php:3
-msgctxt "lib file description"
-msgid "Advanced Settings"
+msgctxt "metabox tab"
+msgid "Admin Edit"
 msgstr ""
 
 #: lib/config-gettext-extract.php:4
 msgctxt "option value"
-msgid "All Options"
+msgid "Admin Edit"
 msgstr ""
 
 #: lib/config-gettext-extract.php:5
-msgctxt "option value"
-msgid "Basic Options"
+msgctxt "lib file description"
+msgid "Advanced Settings"
 msgstr ""
 
-#: lib/config-gettext-extract.php:6
-msgctxt "option value"
-msgid "Bit.ly (suggested)"
+#: lib/config-gettext-extract.php:6 lib/website/facebook.php:26
+msgctxt "metabox tab"
+msgid "All Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:7 lib/config-gettext-extract.php:52
+#: lib/config-gettext-extract.php:7
 msgctxt "option value"
-msgid "Bottom"
+msgid "All Options"
 msgstr ""
 
 #: lib/config-gettext-extract.php:8
 msgctxt "option value"
-msgid "Center"
+msgid "Basic Options"
+msgstr ""
+
+#: lib/config-gettext-extract.php:9
+msgctxt "option value"
+msgid "Bit.ly (suggested)"
 msgstr ""
 
 #: lib/config-gettext-extract.php:10
 msgctxt "option value"
-msgid "Default value"
+msgid "Both Top and Bottom"
 msgstr ""
 
 #: lib/config-gettext-extract.php:11
 msgctxt "option value"
-msgid "Display Name"
+msgid "Bottom"
 msgstr ""
 
 #: lib/config-gettext-extract.php:12
+msgctxt "option value"
+msgid "Center"
+msgstr ""
+
+#: lib/config-gettext-extract.php:13
+msgctxt "metabox tab"
+msgid "Content"
+msgstr ""
+
+#: lib/config-gettext-extract.php:14
+msgctxt "option value"
+msgid "Content"
+msgstr ""
+
+#: lib/config-gettext-extract.php:15
+msgctxt "metabox tab"
+msgid "CSS Sidebar"
+msgstr ""
+
+#: lib/config-gettext-extract.php:16
+msgctxt "option value"
+msgid "CSS Sidebar"
+msgstr ""
+
+#: lib/config-gettext-extract.php:18
+msgctxt "option value"
+msgid "Default value"
+msgstr ""
+
+#: lib/config-gettext-extract.php:19
+msgctxt "option value"
+msgid "Display Name"
+msgstr ""
+
+#: lib/config-gettext-extract.php:20
 msgctxt "plugin description"
 msgid ""
 "Display your content in the best possible way on Facebook, Google+, Twitter, "
 "Pinterest, etc. - no matter how your webpage is shared!"
 msgstr ""
 
-#: lib/config-gettext-extract.php:13
+#: lib/config-gettext-extract.php:21
 msgctxt "lib file description"
 msgid "Essential Settings"
 msgstr ""
 
-#: lib/config-gettext-extract.php:14
-msgctxt "option value"
-msgid "Excerpt Only"
-msgstr ""
-
-#: lib/config-gettext-extract.php:15
-msgctxt "option value"
-msgid "First and Last Names"
-msgstr ""
-
-#: lib/config-gettext-extract.php:16
-msgctxt "option value"
-msgid "Footer"
-msgstr ""
-
-#: lib/config-gettext-extract.php:17
-msgctxt "option value"
-msgid "Force this value"
-msgstr ""
-
-#: lib/config-gettext-extract.php:18
-msgctxt "lib file description"
-msgid "General Settings"
-msgstr ""
-
-#: lib/config-gettext-extract.php:19
-msgctxt "option value"
-msgid "Goo.gl"
-msgstr ""
-
-#: lib/config-gettext-extract.php:20
-msgctxt "option value"
-msgid "Header"
-msgstr ""
-
-#: lib/config-gettext-extract.php:21
-msgctxt "option value"
-msgid "If value is empty"
-msgstr ""
-
 #: lib/config-gettext-extract.php:22
-msgctxt "option value"
-msgid "Left"
+msgctxt "metabox tab"
+msgid "Excerpt"
 msgstr ""
 
 #: lib/config-gettext-extract.php:23
 msgctxt "option value"
-msgid "Nickname"
+msgid "Excerpt Only"
+msgstr ""
+
+#: lib/config-gettext-extract.php:24
+msgctxt "option value"
+msgid "Excerpt"
+msgstr ""
+
+#: lib/config-gettext-extract.php:25
+msgctxt "option value"
+msgid "First and Last Names"
 msgstr ""
 
 #: lib/config-gettext-extract.php:26
 msgctxt "option value"
-msgid "No"
+msgid "Footer"
+msgstr ""
+
+#: lib/config-gettext-extract.php:27
+msgctxt "option value"
+msgid "Force this value"
+msgstr ""
+
+#: lib/config-gettext-extract.php:28
+msgctxt "lib file description"
+msgid "General Settings"
 msgstr ""
 
 #: lib/config-gettext-extract.php:29
 msgctxt "option value"
-msgid "Ow.ly"
+msgid "Goo.gl"
 msgstr ""
 
 #: lib/config-gettext-extract.php:30
-msgctxt "lib file description"
-msgid "Plugin Read Me"
+msgctxt "option value"
+msgid "Header"
 msgstr ""
 
 #: lib/config-gettext-extract.php:31
-msgctxt "lib file description"
-msgid "Quick Setup Guide"
+msgctxt "option value"
+msgid "If value is empty"
 msgstr ""
 
 #: lib/config-gettext-extract.php:32
 msgctxt "option value"
+msgid "Left"
+msgstr ""
+
+#: lib/config-gettext-extract.php:33
+msgctxt "option value"
+msgid "Nickname"
+msgstr ""
+
+#: lib/config-gettext-extract.php:36
+msgctxt "option value"
+msgid "No"
+msgstr ""
+
+#: lib/config-gettext-extract.php:39
+msgctxt "option value"
+msgid "Ow.ly"
+msgstr ""
+
+#: lib/config-gettext-extract.php:40
+msgctxt "lib file description"
+msgid "Plugin Read Me"
+msgstr ""
+
+#: lib/config-gettext-extract.php:41
+msgctxt "lib file description"
+msgid "Quick Setup Guide"
+msgstr ""
+
+#: lib/config-gettext-extract.php:42
+msgctxt "option value"
 msgid "Right"
 msgstr ""
 
-#: lib/config-gettext-extract.php:34
+#: lib/config-gettext-extract.php:44
 msgctxt "lib file description"
 msgid "Setup Guide"
 msgstr ""
 
-#: lib/config-gettext-extract.php:35 lib/sharing.php:351 lib/sharing.php:360
+#: lib/config-gettext-extract.php:45 lib/sharing.php:330 lib/sharing.php:339
 msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:36 lib/sharing.php:351 lib/sharing.php:354
+#: lib/config-gettext-extract.php:46 lib/sharing.php:330 lib/sharing.php:333
 #: lib/submenu/style.php:32
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr ""
 
-#: lib/config-gettext-extract.php:37
+#: lib/config-gettext-extract.php:47
+msgctxt "metabox tab"
+msgid "Shortcode"
+msgstr ""
+
+#: lib/config-gettext-extract.php:48
 msgctxt "lib file description"
 msgid "Social Image Dimensions"
 msgstr ""
 
-#: lib/config-gettext-extract.php:38
+#: lib/config-gettext-extract.php:49
 msgctxt "lib file description"
 msgid "<span>Extension Plugins</span> and Pro Licenses"
 msgstr ""
 
-#: lib/config-gettext-extract.php:39
+#: lib/config-gettext-extract.php:50
 msgctxt "option value"
 msgid "TinyURL (slow)"
 msgstr ""
 
-#: lib/config-gettext-extract.php:40
+#: lib/config-gettext-extract.php:51
 msgctxt "option value"
 msgid "Title and Excerpt"
 msgstr ""
 
-#: lib/config-gettext-extract.php:41
+#: lib/config-gettext-extract.php:52
 msgctxt "option value"
 msgid "Title Only"
 msgstr ""
 
-#: lib/config-gettext-extract.php:42 lib/config-gettext-extract.php:60
+#: lib/config-gettext-extract.php:53
 msgctxt "option value"
 msgid "Top"
 msgstr ""
 
-#: lib/config-gettext-extract.php:43
+#: lib/config-gettext-extract.php:54
 msgctxt "plugin description"
 msgid ""
 "Update Manager for the NextGEN Facebook (NGFB) Pro plugin and its Pro "
 "extensions."
 msgstr ""
 
-#: lib/config-gettext-extract.php:44
+#: lib/config-gettext-extract.php:55
 msgctxt "lib file description"
 msgid "User Profile Contact Methods"
 msgstr ""
 
-#: lib/config-gettext-extract.php:45
+#: lib/config-gettext-extract.php:56
 msgctxt "lib file description"
 msgid "Website / Business Social Accounts"
 msgstr ""
 
-#: lib/config-gettext-extract.php:46
-msgctxt "option value"
-msgid "Yes"
-msgstr ""
-
-#: lib/config-gettext-extract.php:47
-msgctxt "lib file description"
-msgid "Your Social Settings"
-msgstr ""
-
-#: lib/config-gettext-extract.php:48
-msgctxt "metabox tab"
-msgid "Admin Edit"
-msgstr ""
-
-#: lib/config-gettext-extract.php:49
-msgctxt "option value"
-msgid "Admin Edit"
-msgstr ""
-
-#: lib/config-gettext-extract.php:50 lib/website/facebook.php:26
-msgctxt "metabox tab"
-msgid "All Buttons"
-msgstr ""
-
-#: lib/config-gettext-extract.php:51
-msgctxt "option value"
-msgid "Both Top and Bottom"
-msgstr ""
-
-#: lib/config-gettext-extract.php:53
-msgctxt "metabox tab"
-msgid "Content"
-msgstr ""
-
-#: lib/config-gettext-extract.php:54
-msgctxt "option value"
-msgid "Content"
-msgstr ""
-
-#: lib/config-gettext-extract.php:55
-msgctxt "metabox tab"
-msgid "CSS Sidebar"
-msgstr ""
-
-#: lib/config-gettext-extract.php:56
-msgctxt "option value"
-msgid "CSS Sidebar"
-msgstr ""
-
 #: lib/config-gettext-extract.php:57
 msgctxt "metabox tab"
-msgid "Excerpt"
+msgid "Widget"
 msgstr ""
 
 #: lib/config-gettext-extract.php:58
 msgctxt "option value"
-msgid "Excerpt"
+msgid "Yes"
 msgstr ""
 
 #: lib/config-gettext-extract.php:59
-msgctxt "metabox tab"
-msgid "Shortcode"
-msgstr ""
-
-#: lib/config-gettext-extract.php:61
-msgctxt "metabox tab"
-msgid "Widget"
+msgctxt "lib file description"
+msgid "Your Social Settings"
 msgstr ""
 
 #: lib/gpl/admin/advanced.php:34 lib/pro/admin/advanced.php:37
@@ -1105,7 +1105,7 @@ msgid "Pinterest / Rich Pin"
 msgstr ""
 
 #: lib/gpl/admin/sharing.php:28 lib/pro/admin/sharing.php:34
-#: lib/sharing.php:366
+#: lib/sharing.php:345
 msgctxt "option label"
 msgid "Social File Cache Expiry"
 msgstr ""
@@ -1126,7 +1126,7 @@ msgid "%s Preset"
 msgstr ""
 
 #: lib/gpl/admin/sharing.php:80 lib/pro/admin/sharing.php:82
-#: lib/sharing.php:351
+#: lib/sharing.php:330
 msgctxt "metabox tab"
 msgid "Sharing Buttons"
 msgstr ""
@@ -1284,7 +1284,7 @@ msgid ""
 "\" target=\"_blank\">constants</a>."
 msgstr ""
 
-#: lib/messages.php:77 lib/sharing.php:357 lib/sharing.php:366
+#: lib/messages.php:77 lib/sharing.php:336 lib/sharing.php:345
 #: lib/website/twitter.php:87
 msgctxt "lib file description"
 msgid "Advanced"
@@ -2083,7 +2083,7 @@ msgstr ""
 msgid "Checking %1$s webpage header for duplicate meta tags"
 msgstr ""
 
-#: lib/post.php:269 lib/profile/social-settings.php:26 lib/sharing.php:351
+#: lib/post.php:269 lib/profile/social-settings.php:26 lib/sharing.php:330
 #: lib/taxonomy.php:251 lib/user.php:200
 msgctxt "metabox title"
 msgid "Social Settings"
@@ -2248,38 +2248,38 @@ msgctxt "option label"
 msgid "MySpace Business (Brand) URL"
 msgstr ""
 
-#: lib/sharing.php:225
+#: lib/sharing.php:204
 msgid "Failed to open the %s file for reading."
 msgstr ""
 
-#: lib/sharing.php:351
+#: lib/sharing.php:330
 msgid ""
 "Social sharing features include the <a href=\"%1$s\">%2$s</a> and <a href=\"%"
 "3$s\">%4$s</a> settings pages, the <em>%5$s</em> tab in the <em>%6$s</em> "
 "metabox, along with the social sharing shortcode and widget."
 msgstr ""
 
-#: lib/sharing.php:351
+#: lib/sharing.php:330
 msgid ""
 "All social sharing features can be disabled using a <a href=\"%s\" target="
 "\"_blank\">PHP constant</a> in your wp-config.php file."
 msgstr ""
 
-#: lib/sharing.php:354
+#: lib/sharing.php:333
 msgid ""
 "A stylesheet for the social sharing buttons can be included in all webpages. "
 "You can enable or disable use of the stylesheet from the <a href=\"%1$s\">%2"
 "$s</a> settings page."
 msgstr ""
 
-#: lib/sharing.php:357
+#: lib/sharing.php:336
 msgid ""
 "Support for shortcode(s) can be enabled and disabled on the <a href=\"%1$s\">"
 "%2$s</a> settings page. Shortcodes are disabled by default to optimize "
 "performance and content processing."
 msgstr ""
 
-#: lib/sharing.php:360
+#: lib/sharing.php:339
 msgid ""
 "The sharing widget feature adds a <em>%s</em> widget to the WordPress "
 "Widgets settings page. The sharing widget shares the URL for the current "
@@ -2287,13 +2287,13 @@ msgid ""
 "example)."
 msgstr ""
 
-#: lib/sharing.php:363
+#: lib/sharing.php:342
 msgid ""
 "A stylesheet editor is available to edit the default CSS of social sharing "
 "buttons based on their intended location (content, except, etc.)."
 msgstr ""
 
-#: lib/sharing.php:366
+#: lib/sharing.php:345
 msgid ""
 "Social sharing button images and JavaScript can be saved to a local cache "
 "folder. When this feature is enabled, the image and JavaScript URLs provided "
@@ -2301,68 +2301,68 @@ msgid ""
 "better performance)."
 msgstr ""
 
-#: lib/sharing.php:366
+#: lib/sharing.php:345
 msgid ""
 "The current <em>%1$s</em> value defined on the <a href=\"%2$s\">%3$s</a> "
 "settings page is %4$s seconds (the default value of 0 disables social file "
 "caching)."
 msgstr ""
 
-#: lib/sharing.php:375 lib/sharing.php:378
+#: lib/sharing.php:354 lib/sharing.php:357
 msgid ""
 "A custom caption text used by the %s social sharing button for the custom "
 "Image ID, attached or featured image."
 msgstr ""
 
-#: lib/sharing.php:381
+#: lib/sharing.php:360
 msgid ""
 "A custom caption text used by the %s social sharing button for the custom "
 "Video URL or embedded video."
 msgstr ""
 
-#: lib/sharing.php:384
+#: lib/sharing.php:363
 msgid ""
 "A custom Tweet text for the Twitter social sharing button. This text is "
 "different than the Twitter Card description."
 msgstr ""
 
-#: lib/sharing.php:387
+#: lib/sharing.php:366
 msgid ""
 "Disable all social sharing buttons (content, excerpt, widget, shortcode)."
 msgstr ""
 
-#: lib/sharing.php:411
+#: lib/sharing.php:390
 msgid "The %s file is not readable."
 msgstr ""
 
-#: lib/sharing.php:445
+#: lib/sharing.php:425
 msgid "Failed to load the minify class SuextMinifyCssCompressor."
 msgstr ""
 
-#: lib/sharing.php:454
+#: lib/sharing.php:434
 msgid "Failed writing to the % file."
 msgstr ""
 
-#: lib/sharing.php:459
+#: lib/sharing.php:439
 msgid "Updated the %1$s stylesheet (%2$d bytes written)."
 msgstr ""
 
-#: lib/sharing.php:468
+#: lib/sharing.php:448
 msgid "The %s folder is not writable."
 msgstr ""
 
-#: lib/sharing.php:484
+#: lib/sharing.php:464
 msgid ""
 "Error removing the minimized stylesheet &mdash; does the web server have "
 "sufficient privileges?"
 msgstr ""
 
-#: lib/sharing.php:504
+#: lib/sharing.php:484
 msgctxt "metabox title"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/sharing.php:575
+#: lib/sharing.php:556
 msgid "%s must be published<br/>before it can be shared."
 msgstr ""
 

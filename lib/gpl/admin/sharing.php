@@ -56,7 +56,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 
 			$presets = array( 'shortcode' => 'Shortcode', 'widget' => 'Widget' );
 			$show_on = apply_filters( $this->p->cf['lca'].'_sharing_show_on', 
-				NgfbSharing::$cf['sharing']['show_on'], '' );
+				$this->p->cf['sharing']['show_on'], '' );
 			foreach ( $show_on as $type => $label )
 				$presets[$type] = $label;
 			asort( $presets );

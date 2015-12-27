@@ -110,28 +110,6 @@ jQuery("#ngfb-sidebar-header").click( function(){
 					),
 				),
 			),
-			'sharing' => array(
-				'show_on' => array( 
-					'content' => 'Content', 
-					'excerpt' => 'Excerpt', 
-					'sidebar' => 'CSS Sidebar', 
-					'admin_edit' => 'Admin Edit',
-				),
-				'style' => array(
-					'sharing' => 'All Buttons',
-					'content' => 'Content',
-					'excerpt' => 'Excerpt',
-					'sidebar' => 'CSS Sidebar',
-					'admin_edit' => 'Admin Edit',
-					'shortcode' => 'Shortcode',
-					'widget' => 'Widget',
-				),
-				'position' => array(
-					'top' => 'Top',
-					'bottom' => 'Bottom',
-					'both' => 'Both Top and Bottom',
-				),
-			),
 		);
 
 		public function __construct( &$plugin, $plugin_filepath = NGFB_FILEPATH ) {
@@ -212,7 +190,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			$opts_def = $this->p->util->add_ptns_to_opts( $opts_def, 'buttons_add_to' );
 			$plugin_dir = trailingslashit( realpath( dirname( $this->plugin_filepath ) ) );
 			$url_path = parse_url( trailingslashit( plugins_url( '', $this->plugin_filepath ) ), PHP_URL_PATH );	// relative URL
-			$style_tabs = apply_filters( $this->p->cf['lca'].'_style_tabs', self::$cf['sharing']['style'] );
+			$style_tabs = apply_filters( $this->p->cf['lca'].'_style_tabs',
+				$this->p->cf['sharing']['style'] );
 
 			foreach ( $style_tabs as $id => $name ) {
 				$buttons_css_file = $plugin_dir.'css/'.$id.'-buttons.css';
@@ -297,7 +276,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 		public function filter_post_cache_transients( $transients, $post_id, $lang = 'en_US', $sharing_url ) {
 			$show_on = apply_filters( $this->p->cf['lca'].'_sharing_show_on', 
-				self::$cf['sharing']['show_on'], null );
+				$this->p->cf['sharing']['show_on'], null );
 
 			foreach( $show_on as $type_id => $type_name ) {
 				$transients['NgfbSharing::get_buttons'][] = 'lang:'.$lang.'_type:'.$type_id.'_post:'.$post_id;
@@ -427,7 +406,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		public function update_sharing_css( &$opts ) {
 			if ( ! empty( $opts['buttons_use_social_css'] ) ) {
 				$css_data = '';
-				$style_tabs = apply_filters( $this->p->cf['lca'].'_style_tabs', self::$cf['sharing']['style'] );
+				$style_tabs = apply_filters( $this->p->cf['lca'].'_style_tabs', 
+					$this->p->cf['sharing']['style'] );
 
 				foreach ( $style_tabs as $id => $name )
 					if ( isset( $opts['buttons_css_'.$id] ) )
@@ -533,7 +513,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 		public function show_sidebar() {
 			$lca = $this->p->cf['lca'];
-			$js = trim( preg_replace( '/\/\*.*\*\//', '', $this->p->options['buttons_js_sidebar'] ) );
+			$js = trim( preg_replace( '/\/\*.*\*\//', '', 
+				$this->p->options['buttons_js_sidebar'] ) );
 			$text = '';	// variable must be passed by reference
 			$text = $this->get_buttons( $text, 'sidebar', false );	// use_post = false
 			if ( ! empty( $text ) ) {

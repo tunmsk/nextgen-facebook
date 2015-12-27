@@ -854,6 +854,28 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'images/follow/Rss.png' => 'http://surniaulula.com/category/application/wordpress/wp-plugins/ngfb/feed/',
 				),
 			),
+			'sharing' => array(
+				'show_on' => array( 
+					'content' => 'Content', 
+					'excerpt' => 'Excerpt', 
+					'sidebar' => 'CSS Sidebar', 
+					'admin_edit' => 'Admin Edit',
+				),
+				'style' => array(
+					'sharing' => 'All Buttons',
+					'content' => 'Content',
+					'excerpt' => 'Excerpt',
+					'sidebar' => 'CSS Sidebar',
+					'admin_edit' => 'Admin Edit',
+					'shortcode' => 'Shortcode',
+					'widget' => 'Widget',
+				),
+				'position' => array(
+					'top' => 'Top',
+					'bottom' => 'Bottom',
+					'both' => 'Both Top and Bottom',
+				),
+			),
 		);
 
 		// get_config is called very early, so don't apply filters unless instructed
