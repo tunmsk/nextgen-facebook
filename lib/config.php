@@ -991,6 +991,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 		public static function set_constants( $plugin_filepath ) { 
 			define( 'NGFB_FILEPATH', $plugin_filepath );						
 			define( 'NGFB_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
+			define( 'NGFB_PLUGINSLUG', self::$cf['plugin']['ngfb']['slug'] );		// nextgen-facebook
 			define( 'NGFB_PLUGINBASE', self::$cf['plugin']['ngfb']['base'] );		// nextgen-facebook/nextgen-facebook.php
 			define( 'NGFB_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
 			define( 'NGFB_NONCE', md5( NGFB_PLUGINDIR.'-'.self::$cf['plugin']['ngfb']['version'].
@@ -1056,7 +1057,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			 * NGFB curl settings
 			 */
 			if ( defined( 'NGFB_PLUGINDIR' ) )
-				$var_const['NGFB_CURL_CAINFO'] = NGFB_PLUGINDIR.'share/curl/cacert.pem';
+				$var_const['NGFB_CURL_CAINFO'] = NGFB_PLUGINDIR.'share/curl/ca-bundle.crt';
 			$var_const['NGFB_CURL_USERAGENT'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:40.0) Gecko/20100101 Firefox/40.0';
 
 			// disable 3rd-party caching for duplicate meta tag checks

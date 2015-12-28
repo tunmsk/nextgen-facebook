@@ -46,7 +46,8 @@ if ( ! class_exists( 'NgfbGplAdminGeneral' ) ) {
 			$rows[] = '<tr class="hide_in_basic">'.
 			$this->p->util->get_th( _x( 'Use HTTPS for Video API Calls',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_https' ).
-			'<td class="blank"><input type="checkbox" disabled="disabled" /></td>';
+			'<td class="blank"><input type="checkbox" disabled="disabled" />'.
+				' uses '.( str_replace( NGFB_PLUGINDIR, NGFB_PLUGINSLUG.'/', NGFB_CURL_CAINFO ) ).'</td>';
 
 			$rows[] = $this->p->util->get_th( _x( 'Include Video Preview Image(s)',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_prev_img' ).
