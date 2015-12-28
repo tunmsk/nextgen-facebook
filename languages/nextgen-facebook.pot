@@ -937,7 +937,7 @@ msgstr ""
 
 #: lib/gpl/admin/general.php:50 lib/pro/admin/general.php:49
 msgctxt "option comment"
-msgid " uses %s"
+msgid "uses %s"
 msgstr ""
 
 #: lib/gpl/admin/general.php:53 lib/pro/admin/general.php:52
