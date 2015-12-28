@@ -392,8 +392,9 @@ Official announcement: N/A
 * **Bugfixes**
 	* Fixed the `get_admin_url()` method, which returned empty URLs, when only hash / query fragments were passed as arguments.
 * **Developer Notes**
-	* Moved `NgfbSharing::$cf['sharing']` to `NgfbConfig::$cf['sharing']`.
+	* Renamed and updated the share/lib/cacert.pem file to share/lib/ca-bundle.crt.
 	* Moved `NgfbSharing::$cf['opt']['preset']` to `NgfbConfig::$cf['opt']['preset']`.
+	* Moved `NgfbSharing::$cf['sharing']` to `NgfbConfig::$cf['sharing']`.
 
 = Version 8.20.0 (2015/12/24) =
 
