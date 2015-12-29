@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4
-Stable Tag: 8.20.1.1
+Stable Tag: 8.20.1.2
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -549,7 +549,7 @@ Official announcement: http://surniaulula.com/2015/11/28/ngfb-wpsso-update-new-h
 
 = 8.20.1.2 =
 
-2015/12/29 - Important update - Fixed an Open Graph image size definition issue on the front-end.
+2015/12/29 - Important update: Fixed an Open Graph image size definition issue on the front-end.
 
 = 8.20.1.1 =
 
