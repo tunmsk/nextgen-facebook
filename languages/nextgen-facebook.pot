@@ -306,8 +306,8 @@ msgstr ""
 
 #: lib/admin.php:1142
 msgid ""
-"Please disable the '<em>Open Graph Integrator</em>' module in the <a href=\"%"
-"s\">SEO Ultimate Module Manager</a>."
+"Please disable the '<em>Open Graph Integrator</em>' module in the <a href="
+"\"%s\">SEO Ultimate Module Manager</a>."
 msgstr ""
 
 #: lib/admin.php:1153
@@ -364,32 +364,32 @@ msgctxt "option label (very short)"
 msgid "Site Use"
 msgstr ""
 
-#: lib/com/form.php:82 lib/config-gettext-extract.php:38
+#: lib/com/form.php:82 lib/config-gettext-extract.php:6
 msgctxt "option value"
 msgid "(option disabled)"
 msgstr ""
 
-#: lib/com/form.php:176 lib/com/form.php:236 lib/config-gettext-extract.php:43
+#: lib/com/form.php:176 lib/com/form.php:236 lib/config-gettext-extract.php:7
 msgctxt "option value"
 msgid "(settings value)"
 msgstr ""
 
-#: lib/com/form.php:184 lib/config-gettext-extract.php:34
+#: lib/com/form.php:184 lib/config-gettext-extract.php:4
 msgctxt "option value"
 msgid "(no images)"
 msgstr ""
 
-#: lib/com/form.php:188 lib/config-gettext-extract.php:37
+#: lib/com/form.php:188 lib/config-gettext-extract.php:5
 msgctxt "option value"
 msgid "(no videos)"
 msgstr ""
 
-#: lib/com/form.php:192 lib/config-gettext-extract.php:35
+#: lib/com/form.php:192 lib/config-gettext-extract.php:58
 msgctxt "option value"
 msgid "[none]"
 msgstr ""
 
-#: lib/com/form.php:197 lib/com/form.php:283 lib/config-gettext-extract.php:17
+#: lib/com/form.php:197 lib/com/form.php:283 lib/config-gettext-extract.php:3
 msgctxt "option value"
 msgid "(default)"
 msgstr ""
@@ -414,176 +414,176 @@ msgstr ""
 msgid "Use Image"
 msgstr ""
 
-#: lib/config-gettext-extract.php:3
-msgctxt "metabox tab"
-msgid "Admin Edit"
-msgstr ""
-
-#: lib/config-gettext-extract.php:4
-msgctxt "option value"
-msgid "Admin Edit"
-msgstr ""
-
-#: lib/config-gettext-extract.php:5
-msgctxt "lib file description"
-msgid "Advanced Settings"
-msgstr ""
-
-#: lib/config-gettext-extract.php:6 lib/website/facebook.php:26
-msgctxt "metabox tab"
-msgid "All Buttons"
-msgstr ""
-
-#: lib/config-gettext-extract.php:7
-msgctxt "option value"
-msgid "All Options"
-msgstr ""
-
 #: lib/config-gettext-extract.php:8
-msgctxt "option value"
-msgid "Basic Options"
+msgctxt "lib file description"
+msgid "<span>Extension Plugins</span> and Pro Licenses"
 msgstr ""
 
 #: lib/config-gettext-extract.php:9
-msgctxt "option value"
-msgid "Bit.ly (suggested)"
+msgctxt "metabox tab"
+msgid "Admin Edit"
 msgstr ""
 
 #: lib/config-gettext-extract.php:10
 msgctxt "option value"
-msgid "Both Top and Bottom"
+msgid "Admin Edit"
 msgstr ""
 
 #: lib/config-gettext-extract.php:11
-msgctxt "option value"
-msgid "Bottom"
+msgctxt "lib file description"
+msgid "Advanced Settings"
 msgstr ""
 
-#: lib/config-gettext-extract.php:12
-msgctxt "option value"
-msgid "Center"
+#: lib/config-gettext-extract.php:12 lib/website/facebook.php:26
+msgctxt "metabox tab"
+msgid "All Buttons"
 msgstr ""
 
 #: lib/config-gettext-extract.php:13
-msgctxt "metabox tab"
-msgid "Content"
+msgctxt "option value"
+msgid "All Options"
 msgstr ""
 
 #: lib/config-gettext-extract.php:14
 msgctxt "option value"
-msgid "Content"
+msgid "Basic Options"
 msgstr ""
 
 #: lib/config-gettext-extract.php:15
-msgctxt "metabox tab"
-msgid "CSS Sidebar"
+msgctxt "option value"
+msgid "Bit.ly (suggested)"
 msgstr ""
 
 #: lib/config-gettext-extract.php:16
 msgctxt "option value"
-msgid "CSS Sidebar"
+msgid "Both Top and Bottom"
+msgstr ""
+
+#: lib/config-gettext-extract.php:17
+msgctxt "option value"
+msgid "Bottom"
 msgstr ""
 
 #: lib/config-gettext-extract.php:18
-msgctxt "option value"
-msgid "Default value"
+msgctxt "metabox tab"
+msgid "CSS Sidebar"
 msgstr ""
 
 #: lib/config-gettext-extract.php:19
 msgctxt "option value"
-msgid "Display Name"
+msgid "CSS Sidebar"
 msgstr ""
 
 #: lib/config-gettext-extract.php:20
+msgctxt "option value"
+msgid "Center"
+msgstr ""
+
+#: lib/config-gettext-extract.php:21
+msgctxt "metabox tab"
+msgid "Content"
+msgstr ""
+
+#: lib/config-gettext-extract.php:22
+msgctxt "option value"
+msgid "Content"
+msgstr ""
+
+#: lib/config-gettext-extract.php:23
+msgctxt "option value"
+msgid "Default value"
+msgstr ""
+
+#: lib/config-gettext-extract.php:24
+msgctxt "option value"
+msgid "Display Name"
+msgstr ""
+
+#: lib/config-gettext-extract.php:25
 msgctxt "plugin description"
 msgid ""
 "Display your content in the best possible way on Facebook, Google+, Twitter, "
 "Pinterest, etc. - no matter how your webpage is shared!"
 msgstr ""
 
-#: lib/config-gettext-extract.php:21
+#: lib/config-gettext-extract.php:26
 msgctxt "lib file description"
 msgid "Essential Settings"
 msgstr ""
 
-#: lib/config-gettext-extract.php:22
-msgctxt "metabox tab"
-msgid "Excerpt"
-msgstr ""
-
-#: lib/config-gettext-extract.php:23
+#: lib/config-gettext-extract.php:27
 msgctxt "option value"
 msgid "Excerpt Only"
 msgstr ""
 
-#: lib/config-gettext-extract.php:24
-msgctxt "option value"
-msgid "Excerpt"
-msgstr ""
-
-#: lib/config-gettext-extract.php:25
-msgctxt "option value"
-msgid "First and Last Names"
-msgstr ""
-
-#: lib/config-gettext-extract.php:26
-msgctxt "option value"
-msgid "Footer"
-msgstr ""
-
-#: lib/config-gettext-extract.php:27
-msgctxt "option value"
-msgid "Force this value"
-msgstr ""
-
 #: lib/config-gettext-extract.php:28
-msgctxt "lib file description"
-msgid "General Settings"
+msgctxt "metabox tab"
+msgid "Excerpt"
 msgstr ""
 
 #: lib/config-gettext-extract.php:29
 msgctxt "option value"
-msgid "Goo.gl"
+msgid "Excerpt"
 msgstr ""
 
 #: lib/config-gettext-extract.php:30
 msgctxt "option value"
-msgid "Header"
+msgid "First and Last Names"
 msgstr ""
 
 #: lib/config-gettext-extract.php:31
 msgctxt "option value"
-msgid "If value is empty"
+msgid "Footer"
 msgstr ""
 
 #: lib/config-gettext-extract.php:32
 msgctxt "option value"
-msgid "Left"
+msgid "Force this value"
 msgstr ""
 
 #: lib/config-gettext-extract.php:33
+msgctxt "lib file description"
+msgid "General Settings"
+msgstr ""
+
+#: lib/config-gettext-extract.php:34
 msgctxt "option value"
-msgid "Nickname"
+msgid "Goo.gl"
+msgstr ""
+
+#: lib/config-gettext-extract.php:35
+msgctxt "option value"
+msgid "Header"
 msgstr ""
 
 #: lib/config-gettext-extract.php:36
 msgctxt "option value"
-msgid "No"
+msgid "If value is empty"
+msgstr ""
+
+#: lib/config-gettext-extract.php:37
+msgctxt "option value"
+msgid "Left"
+msgstr ""
+
+#: lib/config-gettext-extract.php:38
+msgctxt "option value"
+msgid "Nickname"
 msgstr ""
 
 #: lib/config-gettext-extract.php:39
 msgctxt "option value"
-msgid "Ow.ly"
+msgid "No"
 msgstr ""
 
 #: lib/config-gettext-extract.php:40
-msgctxt "lib file description"
-msgid "Plugin Read Me"
+msgctxt "option value"
+msgid "Ow.ly"
 msgstr ""
 
 #: lib/config-gettext-extract.php:41
 msgctxt "lib file description"
-msgid "Quick Setup Guide"
+msgid "Plugin Read Me"
 msgstr ""
 
 #: lib/config-gettext-extract.php:42
@@ -591,85 +591,80 @@ msgctxt "option value"
 msgid "Right"
 msgstr ""
 
-#: lib/config-gettext-extract.php:44
+#: lib/config-gettext-extract.php:43
 msgctxt "lib file description"
 msgid "Setup Guide"
 msgstr ""
 
-#: lib/config-gettext-extract.php:45 lib/sharing.php:281 lib/sharing.php:290
+#: lib/config-gettext-extract.php:44 lib/sharing.php:281 lib/sharing.php:290
 msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:46 lib/sharing.php:281 lib/sharing.php:284
+#: lib/config-gettext-extract.php:45 lib/sharing.php:281 lib/sharing.php:284
 #: lib/submenu/style.php:32
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr ""
 
-#: lib/config-gettext-extract.php:47
+#: lib/config-gettext-extract.php:46
 msgctxt "metabox tab"
 msgid "Shortcode"
 msgstr ""
 
-#: lib/config-gettext-extract.php:48
+#: lib/config-gettext-extract.php:47
 msgctxt "lib file description"
 msgid "Social Image Dimensions"
 msgstr ""
 
-#: lib/config-gettext-extract.php:49
-msgctxt "lib file description"
-msgid "<span>Extension Plugins</span> and Pro Licenses"
-msgstr ""
-
-#: lib/config-gettext-extract.php:50
+#: lib/config-gettext-extract.php:48
 msgctxt "option value"
 msgid "TinyURL (slow)"
 msgstr ""
 
-#: lib/config-gettext-extract.php:51
-msgctxt "option value"
-msgid "Title and Excerpt"
-msgstr ""
-
-#: lib/config-gettext-extract.php:52
+#: lib/config-gettext-extract.php:49
 msgctxt "option value"
 msgid "Title Only"
 msgstr ""
 
-#: lib/config-gettext-extract.php:53
+#: lib/config-gettext-extract.php:50
+msgctxt "option value"
+msgid "Title and Excerpt"
+msgstr ""
+
+#: lib/config-gettext-extract.php:51
 msgctxt "option value"
 msgid "Top"
 msgstr ""
 
-#: lib/config-gettext-extract.php:54
+#: lib/config-gettext-extract.php:52
 msgctxt "plugin description"
 msgid ""
 "Update Manager for the NextGEN Facebook (NGFB) Pro plugin and its Pro "
 "extensions."
 msgstr ""
 
-#: lib/config-gettext-extract.php:55
+#: lib/config-gettext-extract.php:53
 msgctxt "lib file description"
 msgid "User Profile Contact Methods"
 msgstr ""
 
-#: lib/config-gettext-extract.php:56
+#: lib/config-gettext-extract.php:54
 msgctxt "lib file description"
 msgid "Website / Business Social Accounts"
 msgstr ""
 
-#: lib/config-gettext-extract.php:57
+#: lib/config-gettext-extract.php:55
 msgctxt "metabox tab"
 msgid "Widget"
 msgstr ""
 
-#: lib/config-gettext-extract.php:58
+#: lib/config-gettext-extract.php:56
 msgctxt "option value"
 msgid "Yes"
 msgstr ""
 
-#: lib/config-gettext-extract.php:59
+#: lib/config-gettext-extract.php:57
 msgctxt "lib file description"
 msgid "Your Social Settings"
 msgstr ""
@@ -1218,8 +1213,8 @@ msgstr ""
 
 #: lib/media.php:471
 msgid ""
-"Media Library image ID %1$s has been ignored &mdash; the resulting image of %"
-"2$s created for the <a href=\"%3%s\">%4$s social image dimensions</a> is "
+"Media Library image ID %1$s has been ignored &mdash; the resulting image of "
+"%2$s created for the <a href=\"%3%s\">%4$s social image dimensions</a> is "
 "smaller than the minimum %5$s allowed by the Facebook / Open Graph standard."
 msgstr ""
 
@@ -1406,8 +1401,8 @@ msgstr ""
 msgid ""
 "If you have a <a href=\"%1$s\" target=\"_blank\">Facebook Business Page for "
 "your website / business</a>, you may enter its URL here (for example, the "
-"Facebook Business Page URL for %2$s is <a href=\"%3$s\" target=\"_blank\">%4"
-"$s</a>)."
+"Facebook Business Page URL for %2$s is <a href=\"%3$s\" target=\"_blank\">"
+"%4$s</a>)."
 msgstr ""
 
 #: lib/messages.php:462
@@ -1559,8 +1554,8 @@ msgstr ""
 
 #: lib/messages.php:651
 msgid ""
-"Please note that the <em>default</em> site / blog must be licensed and the %1"
-"$s extension must be active in order to install %2$s Pro updates from the "
+"Please note that the <em>default</em> site / blog must be licensed and the "
+"%1$s extension must be active in order to install %2$s Pro updates from the "
 "Network admin interface."
 msgstr ""
 
@@ -2248,8 +2243,8 @@ msgstr ""
 
 #: lib/sharing.php:281
 msgid ""
-"Social sharing features include the <a href=\"%1$s\">%2$s</a> and <a href=\"%"
-"3$s\">%4$s</a> settings pages, the <em>%5$s</em> tab in the <em>%6$s</em> "
+"Social sharing features include the <a href=\"%1$s\">%2$s</a> and <a href="
+"\"%3$s\">%4$s</a> settings pages, the <em>%5$s</em> tab in the <em>%6$s</em> "
 "metabox, along with the social sharing shortcode and widget."
 msgstr ""
 
@@ -2262,8 +2257,8 @@ msgstr ""
 #: lib/sharing.php:284
 msgid ""
 "A stylesheet for the social sharing buttons can be included in all webpages. "
-"You can enable or disable use of the stylesheet from the <a href=\"%1$s\">%2"
-"$s</a> settings page."
+"You can enable or disable use of the stylesheet from the <a href=\"%1$s\">"
+"%2$s</a> settings page."
 msgstr ""
 
 #: lib/sharing.php:287
