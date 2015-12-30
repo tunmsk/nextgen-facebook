@@ -263,6 +263,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 * [Integration Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/)
 	* [BuddyPress Integration](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/buddypress-integration/)
 * [Uninstall the Plugin](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/uninstall-the-plugin/)
+* [Performance Tuning](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/performance-tuning/)
 * [Debugging and Problem Solving](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/debugging-and-problem-solving/)
 * [Developer Special – Buy one, Get one Free](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/developer-special-buy-one-get-one-free/)
 
@@ -345,7 +346,6 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 * [Inline Variables](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/inline-variables/)
 * [Multisite / Network Support](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/multisite-network-support/)
 * [NGFB Shortcode for Sharing Buttons](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/ngfb-shortcode/)
-* [Performance Tuning](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/performance-tuning/)
 * [Styling Social Buttons](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/styling-social-buttons/)
 * [Working with Image Attachments](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/working-with-image-attachments/)
 
