@@ -52,9 +52,9 @@ if ( ! class_exists( 'NgfbGplAdminGeneral' ) ) {
 
 			$rows[] = $this->p->util->get_th( _x( 'Include Video Preview Image(s)',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_prev_img' ).
-			'<td class="blank"><input type="checkbox" disabled="disabled" />'.
-			' '._x( 'video preview images are included first',
-				'option comment', 'nextgen-facebook' ).'</td>';
+			'<td class="blank"><input type="checkbox" disabled="disabled" />'.' '.
+				_x( 'video preview images are included first',
+					'option comment', 'nextgen-facebook' ).'</td>';
 
 			$rows[] = $this->p->util->get_th( _x( 'Include Embed text/html Type',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_html_type' ).
