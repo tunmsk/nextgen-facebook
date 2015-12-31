@@ -381,6 +381,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.20.1.3 (2015/12/30) =
+
+Official announcement: N/A
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* Fixed a preg_replace_callback() syntax error.
+* **Developer Notes**
+	* *None*
+
 = Version 8.20.1.2 (2015/12/29) =
 
 Official announcement: N/A
@@ -479,83 +492,9 @@ Official announcement: N/A
 	* Refactored the NgfbSchema class and JSON related sections of the NgfbUser class.
 	* Added a call to `getimagesize()` when saving options to retrieve image dimensions from URLs (default image URL, schema logo URL, etc.).
 
-= Version 8.18.1 (2015/12/11) =
-
-Official announcement: N/A
-
-* **New Features**
-	* *None*
-* **Improvements**
-	* Enabled all fields in the Social Settings metabox when editing a non-auto-draft Post / Page (previously, some fields were only enabled for published Posts / Pages).
-* **Bugfixes**
-	* *None*
-* **Developer Notes**
-	* *None*
-
-= Version 8.18.0 (2015/12/09) =
-
-Official announcement: N/A
-
-* **New Features**
-	* Added a new "Schema Item Type by Post Type" option to select the Schema item type for each post type.
-* **Improvements**
-	* Checks for head HTML elements without attribute filters - along with its template update process - are now done on all header templates, not just the header.php file.
-* **Bugfixes**
-	* *None*
-* **Developer Notes**
-	* Added a new `Sucom::sanitize_key()` method (returns a lower case string with alpha-numeric, hypens, and underscores).
-	* Refactored the post, user, and taxonomy meta code to support action hooks for URL query arguments, and improve loading / parsing of head meta tags.
-	* Renamed the NgfbOptions method `push_add_to_options()` to `add_ptns_to_opts()` and changed its arguments (breaking change - not backwards compatible).
-	* Changed the NgfbUtil `get_post_types()` arguments as well (breaking change - not backwards compatible).
-	* Renamed several NgfbAmin methods:
-		* `load_form_page()` to `load_setting_page()`.
-		* `show_form_page()` to `show_setting_page()`
-		* `head_attr_filter_check()` to `check_tmpl_head_elements()`
-		* `head_attr_filter_update()` to `modify_tmpl_head_elements()`
-
-= Version 8.17.0 (2015/12/06) =
-
-Official announcement: http://surniaulula.com/2015/12/06/ngfb-wpsso-update-improvements-video-autoplay/
-
-* **New Features**
-	* Added a new "Force Autoplay when Possible" option on the General settings page to force autoplay of Vimeo and Wistia videos when possible (Pro version).
-	* Added a new "Show Tabs in Social Settings Metabox" option on the Advanced settings page to include/exclude the Social Preview, Head Tags, and Validate tabs (Pro version).
-* **Improvements**
-	* Refactored the All in One SEO Pack integration module to improved post object detection (Pro version).
-	* Refactored the video integration modules to improve code quality (Pro version).
-	* Moved several Advanced options under the "WP / Theme Integration" tab.
-	* Improved the Head Tags listing in the Social Settings metabox to include JSON and additional Schema markup HTML blocks.
-* **Bugfixes**
-	* Added a check for HTTPS when defining the social buttons transient cache object, allowing for differences in sharing URLs when using HTTP and HTTPS.
-* **Developer Notes**
-	* Added `sanitize_classname()` and `sanitize_hookname()` static methods in the SucomUtil class.
-	* Added a check for the required mbstring PHP extension.
-
-= Version 8.16.0 (2015/11/27) =
-
-Official announcement: http://surniaulula.com/2015/11/28/ngfb-wpsso-update-new-head_attributes-filter/
-
-* **New Features**
-	* *None*
-* **Improvements**
-	* The default "&lt;head&gt; Attributes Filter Hook" option value has been changed from "language_attributes" to "head_attributes".
-	* Added a check on theme activation / update for a standard &lt;head&gt; element (without an attribute filter) in the header.php theme template. If found, a warning will be displayed with a feature to modify the &lt;head&gt; element in order to include the new "head_attributes" filter.
-* **Bugfixes**
-	* *None*
-* **Developer Notes**
-	* *None*
-
 == Upgrade Notice ==
 
-= 8.20.1.2 =
+= 8.20.1.3 =
 
-2015/12/29 - Important update: Fixed an Open Graph image size definition issue on the front-end.
-
-= 8.20.1.1 =
-
-2015/12/27 - Added a "Copy to clipboard" icon for sharing and short URLs under the Social Preview tab, added an information notice when checking for duplicate meta tags. Fixed action button URLs on NGFB settings pages.
-
-= 8.20.0 =
-
-2015/12/24 - Added a new "Your Social Settings" menu page, fixed 'article:published_time' and 'article:modified_time' values on post editing pages, added a call to wp_encode_emoji() for all encoded strings.
+2015/12/30 - Fixed a preg_replace_callback() syntax error.
 

@@ -364,32 +364,32 @@ msgctxt "option label (very short)"
 msgid "Site Use"
 msgstr ""
 
-#: lib/com/form.php:82 lib/config-gettext-extract.php:6
+#: lib/com/form.php:82 lib/config-gettext-extract.php:38
 msgctxt "option value"
 msgid "(option disabled)"
 msgstr ""
 
-#: lib/com/form.php:176 lib/com/form.php:236 lib/config-gettext-extract.php:7
+#: lib/com/form.php:176 lib/com/form.php:236 lib/config-gettext-extract.php:42
 msgctxt "option value"
 msgid "(settings value)"
 msgstr ""
 
-#: lib/com/form.php:184 lib/config-gettext-extract.php:4
+#: lib/com/form.php:184 lib/config-gettext-extract.php:34
 msgctxt "option value"
 msgid "(no images)"
 msgstr ""
 
-#: lib/com/form.php:188 lib/config-gettext-extract.php:5
+#: lib/com/form.php:188 lib/config-gettext-extract.php:37
 msgctxt "option value"
 msgid "(no videos)"
 msgstr ""
 
-#: lib/com/form.php:192 lib/config-gettext-extract.php:58
+#: lib/com/form.php:192 lib/config-gettext-extract.php:35
 msgctxt "option value"
 msgid "[none]"
 msgstr ""
 
-#: lib/com/form.php:197 lib/com/form.php:283 lib/config-gettext-extract.php:3
+#: lib/com/form.php:197 lib/com/form.php:283 lib/config-gettext-extract.php:17
 msgctxt "option value"
 msgid "(default)"
 msgstr ""
@@ -414,179 +414,174 @@ msgstr ""
 msgid "Use Image"
 msgstr ""
 
-#: lib/config-gettext-extract.php:8
-msgctxt "lib file description"
-msgid "<span>Extension Plugins</span> and Pro Licenses"
-msgstr ""
-
-#: lib/config-gettext-extract.php:9
+#: lib/config-gettext-extract.php:3
 msgctxt "metabox tab"
 msgid "Admin Edit"
 msgstr ""
 
-#: lib/config-gettext-extract.php:10
+#: lib/config-gettext-extract.php:4
 msgctxt "option value"
 msgid "Admin Edit"
 msgstr ""
 
-#: lib/config-gettext-extract.php:11
+#: lib/config-gettext-extract.php:5
 msgctxt "lib file description"
 msgid "Advanced Settings"
 msgstr ""
 
-#: lib/config-gettext-extract.php:12 lib/website/facebook.php:26
+#: lib/config-gettext-extract.php:6 lib/website/facebook.php:26
 msgctxt "metabox tab"
 msgid "All Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:13
+#: lib/config-gettext-extract.php:7
 msgctxt "option value"
 msgid "All Options"
 msgstr ""
 
-#: lib/config-gettext-extract.php:14
+#: lib/config-gettext-extract.php:8
 msgctxt "option value"
 msgid "Basic Options"
 msgstr ""
 
-#: lib/config-gettext-extract.php:15
+#: lib/config-gettext-extract.php:9
 msgctxt "option value"
 msgid "Bit.ly (suggested)"
 msgstr ""
 
-#: lib/config-gettext-extract.php:16
+#: lib/config-gettext-extract.php:10
 msgctxt "option value"
 msgid "Both Top and Bottom"
 msgstr ""
 
-#: lib/config-gettext-extract.php:17
+#: lib/config-gettext-extract.php:11
 msgctxt "option value"
 msgid "Bottom"
 msgstr ""
 
-#: lib/config-gettext-extract.php:18
-msgctxt "metabox tab"
-msgid "CSS Sidebar"
-msgstr ""
-
-#: lib/config-gettext-extract.php:19
-msgctxt "option value"
-msgid "CSS Sidebar"
-msgstr ""
-
-#: lib/config-gettext-extract.php:20
+#: lib/config-gettext-extract.php:12
 msgctxt "option value"
 msgid "Center"
 msgstr ""
 
-#: lib/config-gettext-extract.php:21
+#: lib/config-gettext-extract.php:13
 msgctxt "metabox tab"
 msgid "Content"
 msgstr ""
 
-#: lib/config-gettext-extract.php:22
+#: lib/config-gettext-extract.php:14
 msgctxt "option value"
 msgid "Content"
 msgstr ""
 
-#: lib/config-gettext-extract.php:23
+#: lib/config-gettext-extract.php:15
+msgctxt "metabox tab"
+msgid "CSS Sidebar"
+msgstr ""
+
+#: lib/config-gettext-extract.php:16
+msgctxt "option value"
+msgid "CSS Sidebar"
+msgstr ""
+
+#: lib/config-gettext-extract.php:18
 msgctxt "option value"
 msgid "Default value"
 msgstr ""
 
-#: lib/config-gettext-extract.php:24
+#: lib/config-gettext-extract.php:19
 msgctxt "option value"
 msgid "Display Name"
 msgstr ""
 
-#: lib/config-gettext-extract.php:25
+#: lib/config-gettext-extract.php:20
 msgctxt "plugin description"
 msgid ""
 "Display your content in the best possible way on Facebook, Google+, Twitter, "
 "Pinterest, etc. - no matter how your webpage is shared!"
 msgstr ""
 
-#: lib/config-gettext-extract.php:26
+#: lib/config-gettext-extract.php:21
 msgctxt "lib file description"
 msgid "Essential Settings"
 msgstr ""
 
-#: lib/config-gettext-extract.php:27
-msgctxt "option value"
-msgid "Excerpt Only"
-msgstr ""
-
-#: lib/config-gettext-extract.php:28
+#: lib/config-gettext-extract.php:22
 msgctxt "metabox tab"
 msgid "Excerpt"
 msgstr ""
 
-#: lib/config-gettext-extract.php:29
+#: lib/config-gettext-extract.php:23
+msgctxt "option value"
+msgid "Excerpt Only"
+msgstr ""
+
+#: lib/config-gettext-extract.php:24
 msgctxt "option value"
 msgid "Excerpt"
 msgstr ""
 
-#: lib/config-gettext-extract.php:30
+#: lib/config-gettext-extract.php:25
 msgctxt "option value"
 msgid "First and Last Names"
 msgstr ""
 
-#: lib/config-gettext-extract.php:31
+#: lib/config-gettext-extract.php:26
 msgctxt "option value"
 msgid "Footer"
 msgstr ""
 
-#: lib/config-gettext-extract.php:32
+#: lib/config-gettext-extract.php:27
 msgctxt "option value"
 msgid "Force this value"
 msgstr ""
 
-#: lib/config-gettext-extract.php:33
+#: lib/config-gettext-extract.php:28
 msgctxt "lib file description"
 msgid "General Settings"
 msgstr ""
 
-#: lib/config-gettext-extract.php:34
+#: lib/config-gettext-extract.php:29
 msgctxt "option value"
 msgid "Goo.gl"
 msgstr ""
 
-#: lib/config-gettext-extract.php:35
+#: lib/config-gettext-extract.php:30
 msgctxt "option value"
 msgid "Header"
 msgstr ""
 
-#: lib/config-gettext-extract.php:36
+#: lib/config-gettext-extract.php:31
 msgctxt "option value"
 msgid "If value is empty"
 msgstr ""
 
-#: lib/config-gettext-extract.php:37
+#: lib/config-gettext-extract.php:32
 msgctxt "option value"
 msgid "Left"
 msgstr ""
 
-#: lib/config-gettext-extract.php:38
+#: lib/config-gettext-extract.php:33
 msgctxt "option value"
 msgid "Nickname"
 msgstr ""
 
-#: lib/config-gettext-extract.php:39
+#: lib/config-gettext-extract.php:36
 msgctxt "option value"
 msgid "No"
 msgstr ""
 
-#: lib/config-gettext-extract.php:40
+#: lib/config-gettext-extract.php:39
 msgctxt "option value"
 msgid "Ow.ly"
 msgstr ""
 
-#: lib/config-gettext-extract.php:41
+#: lib/config-gettext-extract.php:40
 msgctxt "lib file description"
 msgid "Plugin Read Me"
 msgstr ""
 
-#: lib/config-gettext-extract.php:42
+#: lib/config-gettext-extract.php:41
 msgctxt "option value"
 msgid "Right"
 msgstr ""
@@ -618,13 +613,13 @@ msgid "Social Image Dimensions"
 msgstr ""
 
 #: lib/config-gettext-extract.php:48
-msgctxt "option value"
-msgid "TinyURL (slow)"
+msgctxt "lib file description"
+msgid "<span>Extension Plugins</span> and Pro Licenses"
 msgstr ""
 
 #: lib/config-gettext-extract.php:49
 msgctxt "option value"
-msgid "Title Only"
+msgid "TinyURL (slow)"
 msgstr ""
 
 #: lib/config-gettext-extract.php:50
@@ -634,37 +629,42 @@ msgstr ""
 
 #: lib/config-gettext-extract.php:51
 msgctxt "option value"
-msgid "Top"
+msgid "Title Only"
 msgstr ""
 
 #: lib/config-gettext-extract.php:52
+msgctxt "option value"
+msgid "Top"
+msgstr ""
+
+#: lib/config-gettext-extract.php:53
 msgctxt "plugin description"
 msgid ""
 "Update Manager for the NextGEN Facebook (NGFB) Pro plugin and its Pro "
 "extensions."
 msgstr ""
 
-#: lib/config-gettext-extract.php:53
+#: lib/config-gettext-extract.php:54
 msgctxt "lib file description"
 msgid "User Profile Contact Methods"
 msgstr ""
 
-#: lib/config-gettext-extract.php:54
+#: lib/config-gettext-extract.php:55
 msgctxt "lib file description"
 msgid "Website / Business Social Accounts"
 msgstr ""
 
-#: lib/config-gettext-extract.php:55
+#: lib/config-gettext-extract.php:56
 msgctxt "metabox tab"
 msgid "Widget"
 msgstr ""
 
-#: lib/config-gettext-extract.php:56
+#: lib/config-gettext-extract.php:57
 msgctxt "option value"
 msgid "Yes"
 msgstr ""
 
-#: lib/config-gettext-extract.php:57
+#: lib/config-gettext-extract.php:58
 msgctxt "lib file description"
 msgid "Your Social Settings"
 msgstr ""
