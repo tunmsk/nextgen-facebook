@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.20.1.2\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.21.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2015-12-29 06:07-0700\n"
-"PO-Revision-Date: 2015-12-29 06:09-0700\n"
+"POT-Creation-Date: 2015-12-31 12:01-0700\n"
+"PO-Revision-Date: 2015-12-31 12:05-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -416,7 +416,7 @@ msgctxt "option value"
 msgid "(option disabled)"
 msgstr "(option désactivée)"
 
-#: lib/com/form.php:176 lib/com/form.php:236 lib/config-gettext-extract.php:43
+#: lib/com/form.php:176 lib/com/form.php:236 lib/config-gettext-extract.php:42
 msgctxt "option value"
 msgid "(settings value)"
 msgstr "(valeur de réglages)"
@@ -635,67 +635,62 @@ msgid "Plugin Read Me"
 msgstr "Lisez-moi"
 
 #: lib/config-gettext-extract.php:41
-msgctxt "lib file description"
-msgid "Quick Setup Guide"
-msgstr "Guide de Configuration"
-
-#: lib/config-gettext-extract.php:42
 msgctxt "option value"
 msgid "Right"
 msgstr "Droite"
 
-#: lib/config-gettext-extract.php:44
+#: lib/config-gettext-extract.php:43
 msgctxt "lib file description"
 msgid "Setup Guide"
 msgstr "Guide de Config"
 
-#: lib/config-gettext-extract.php:45 lib/sharing.php:281 lib/sharing.php:290
+#: lib/config-gettext-extract.php:44 lib/sharing.php:281 lib/sharing.php:290
 msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr "Boutons de Partage"
 
-#: lib/config-gettext-extract.php:46 lib/sharing.php:281 lib/sharing.php:284
+#: lib/config-gettext-extract.php:45 lib/sharing.php:281 lib/sharing.php:284
 #: lib/submenu/style.php:32
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr "Styles de Partage"
 
-#: lib/config-gettext-extract.php:47
+#: lib/config-gettext-extract.php:46
 msgctxt "metabox tab"
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: lib/config-gettext-extract.php:48
+#: lib/config-gettext-extract.php:47
 msgctxt "lib file description"
 msgid "Social Image Dimensions"
 msgstr "Dimensions des Images Sociaux"
 
-#: lib/config-gettext-extract.php:49
+#: lib/config-gettext-extract.php:48
 msgctxt "lib file description"
 msgid "<span>Extension Plugins</span> and Pro Licenses"
 msgstr "<span>Autres Extensions</span> et Licences Pro"
 
-#: lib/config-gettext-extract.php:50
+#: lib/config-gettext-extract.php:49
 msgctxt "option value"
 msgid "TinyURL (slow)"
 msgstr "TinyURL (lent)"
 
-#: lib/config-gettext-extract.php:51
+#: lib/config-gettext-extract.php:50
 msgctxt "option value"
 msgid "Title and Excerpt"
 msgstr "Titre et extrait"
 
-#: lib/config-gettext-extract.php:52
+#: lib/config-gettext-extract.php:51
 msgctxt "option value"
 msgid "Title Only"
 msgstr "Titre seulement"
 
-#: lib/config-gettext-extract.php:53
+#: lib/config-gettext-extract.php:52
 msgctxt "option value"
 msgid "Top"
 msgstr "Le haut"
 
-#: lib/config-gettext-extract.php:54
+#: lib/config-gettext-extract.php:53
 msgctxt "plugin description"
 msgid ""
 "Update Manager for the NextGEN Facebook (NGFB) Pro plugin and its Pro "
@@ -704,27 +699,27 @@ msgstr ""
 "Gestionnaire de mise à jour pour NextGEN Facebook (NGFB) Pro et ses "
 "extensions Pro."
 
-#: lib/config-gettext-extract.php:55
+#: lib/config-gettext-extract.php:54
 msgctxt "lib file description"
 msgid "User Profile Contact Methods"
 msgstr "Méthodes de Contact du Profil Utilisateur"
 
-#: lib/config-gettext-extract.php:56
+#: lib/config-gettext-extract.php:55
 msgctxt "lib file description"
 msgid "Website / Business Social Accounts"
 msgstr "Site Web et Comptes Sociaux de l’Entreprise"
 
-#: lib/config-gettext-extract.php:57
+#: lib/config-gettext-extract.php:56
 msgctxt "metabox tab"
 msgid "Widget"
 msgstr "Widget"
 
-#: lib/config-gettext-extract.php:58
+#: lib/config-gettext-extract.php:57
 msgctxt "option value"
 msgid "Yes"
 msgstr "Oui"
 
-#: lib/config-gettext-extract.php:59
+#: lib/config-gettext-extract.php:58
 msgctxt "lib file description"
 msgid "Your Social Settings"
 msgstr "Vos Réglages Sociaux"
@@ -774,7 +769,7 @@ msgstr "Vérifier pour médias intégrés"
 #: lib/pro/admin/advanced.php:86 lib/pro/admin/advanced.php:103
 msgctxt "option label"
 msgid "Show Social Img / Desc Columns for"
-msgstr "Afficher Colonnes Sociales Img / Desc pour"
+msgstr "Colonnes Sociales Img / Desc pour"
 
 #: lib/gpl/admin/advanced.php:90 lib/gpl/admin/advanced.php:107
 #: lib/pro/admin/advanced.php:90 lib/pro/admin/advanced.php:107
@@ -782,7 +777,7 @@ msgid "Posts, Pages, and Custom Post Types"
 msgstr "Articles, pages, et articles de type personnalisé"
 
 #: lib/gpl/admin/advanced.php:95 lib/gpl/admin/advanced.php:109
-#: lib/gpl/admin/advanced.php:121 lib/pro/admin/advanced.php:95
+#: lib/gpl/admin/advanced.php:122 lib/pro/admin/advanced.php:95
 #: lib/pro/admin/advanced.php:109 lib/pro/admin/advanced.php:122
 msgid "Taxonomy (Categories and Tags)"
 msgstr "Taxinomie (Catégories et étiquettes)"
@@ -792,180 +787,196 @@ msgstr "Taxinomie (Catégories et étiquettes)"
 msgid "Users"
 msgstr "Utilisateurs"
 
-#: lib/gpl/admin/advanced.php:123 lib/pro/admin/advanced.php:125
+#: lib/gpl/admin/advanced.php:125 lib/pro/admin/advanced.php:125
 msgid "User Profile"
 msgstr "Profil d'usagé"
 
-#: lib/gpl/admin/advanced.php:125 lib/pro/admin/advanced.php:127
+#: lib/gpl/admin/advanced.php:127 lib/pro/admin/advanced.php:127
 msgctxt "option label"
 msgid "Include Social Settings Metabox on"
 msgstr "Ajout metabox Réglages Sociaux sur"
 
-#: lib/gpl/admin/advanced.php:130 lib/pro/admin/advanced.php:132
+#: lib/gpl/admin/advanced.php:132 lib/pro/admin/advanced.php:132
 msgctxt "option label"
 msgid "Add Tabs to Social Settings Metabox"
 msgstr "Ajout d'onglets aux Réglages Sociaux"
 
-#: lib/gpl/admin/advanced.php:134 lib/meta.php:31
+#: lib/gpl/admin/advanced.php:136 lib/meta.php:31
 #: lib/pro/admin/advanced.php:136
 msgctxt "metabox tab"
 msgid "Social Preview"
 msgstr "Aperçu Social"
 
-#: lib/gpl/admin/advanced.php:136 lib/meta.php:32
+#: lib/gpl/admin/advanced.php:138 lib/meta.php:32
 #: lib/pro/admin/advanced.php:138
 msgctxt "metabox tab"
 msgid "Head Tags"
 msgstr "Balises d’Entête"
 
-#: lib/gpl/admin/advanced.php:138 lib/meta.php:33
+#: lib/gpl/admin/advanced.php:140 lib/meta.php:33
 #: lib/pro/admin/advanced.php:140
 msgctxt "metabox tab"
 msgid "Validate"
 msgstr "Validations"
 
-#: lib/gpl/admin/advanced.php:142 lib/pro/admin/advanced.php:144
+#: lib/gpl/admin/advanced.php:144 lib/pro/admin/advanced.php:144
 msgctxt "option label"
 msgid "Image URL Custom Field"
 msgstr "Champ URL d’image personnalisé"
 
-#: lib/gpl/admin/advanced.php:148 lib/pro/admin/advanced.php:149
+#: lib/gpl/admin/advanced.php:150 lib/pro/admin/advanced.php:149
 msgctxt "option label"
 msgid "Video URL Custom Field"
 msgstr "Champ URL de vidéo personnalisé"
 
-#: lib/gpl/admin/advanced.php:154 lib/pro/admin/advanced.php:154
+#: lib/gpl/admin/advanced.php:156 lib/pro/admin/advanced.php:154
 msgctxt "option label"
 msgid "Video Embed HTML Custom Field"
 msgstr "Champ HTML vidéo intégrée pers."
 
-#: lib/gpl/admin/advanced.php:168 lib/pro/admin/advanced.php:164
+#: lib/gpl/admin/advanced.php:170 lib/pro/admin/advanced.php:164
 msgctxt "option label"
 msgid "&lt;html&gt; Attributes Filter Hook"
 msgstr "Filtre d’attribut pour balise &lt;html&gt;"
 
-#: lib/gpl/admin/advanced.php:173 lib/pro/admin/advanced.php:169
+#: lib/gpl/admin/advanced.php:175 lib/pro/admin/advanced.php:169
 msgctxt "option label"
 msgid "&lt;head&gt; Attributes Filter Hook"
 msgstr "Filtre d’attribut pour balise &lt;head&gt;"
 
-#: lib/gpl/admin/advanced.php:178 lib/pro/admin/advanced.php:174
+#: lib/gpl/admin/advanced.php:180 lib/pro/admin/advanced.php:174
 msgctxt "option label"
 msgid "Check for Duplicate Meta Tags"
 msgstr "Vérifier doublons de balises méta"
 
-#: lib/gpl/admin/advanced.php:183 lib/pro/admin/advanced.php:179
+#: lib/gpl/admin/advanced.php:185 lib/pro/admin/advanced.php:179
 msgctxt "option label"
 msgid "Use WP Locale for Language"
 msgstr "Utilisez WP Locale pour la langue"
 
-#: lib/gpl/admin/advanced.php:189 lib/pro/admin/advanced.php:185
+#: lib/gpl/admin/advanced.php:190 lib/pro/admin/advanced.php:184
 msgctxt "option label"
 msgid "Create Missing WP Media Images"
 msgstr "Créer images manquantes Médias WP"
 
-#: lib/gpl/admin/advanced.php:195 lib/pro/admin/advanced.php:191
+#: lib/gpl/admin/advanced.php:195 lib/pro/admin/advanced.php:189
 msgctxt "option label"
 msgid "Enforce Image Dimensions Check"
 msgstr "Appliquer verif. dimensions d'images"
 
-#: lib/gpl/admin/advanced.php:214 lib/pro/admin/advanced.php:210
+#: lib/gpl/admin/advanced.php:199 lib/pro/admin/advanced.php:193
+msgctxt "option label"
+msgid "Allow Upscaling of Smaller Images"
+msgstr "Permettre d'agrandir petites images"
+
+#: lib/gpl/admin/advanced.php:202 lib/pro/admin/advanced.php:196
+msgctxt "option comment"
+msgid "upscaling option applies to all defined WP image sizes"
+msgstr ""
+"L'option d'agrandissement s'applique à toutes les tailles d'image WP définis"
+
+#: lib/gpl/admin/advanced.php:205 lib/pro/admin/advanced.php:199
+msgctxt "option label"
+msgid "Maximum Image Upscale Percentage"
+msgstr "Pourcentage d'agrandissement max."
+
+#: lib/gpl/admin/advanced.php:211 lib/pro/admin/advanced.php:205
 msgctxt "option label"
 msgid "Enable Plugin Shortcode(s)"
 msgstr "Activer le/les Shortcode(s)"
 
-#: lib/gpl/admin/advanced.php:222 lib/pro/admin/advanced.php:218
+#: lib/gpl/admin/advanced.php:218 lib/pro/admin/advanced.php:212
 msgctxt "option label"
 msgid "Enable Plugin Widget(s)"
 msgstr "Activer le/les Widget(s)"
 
-#: lib/gpl/admin/advanced.php:229 lib/pro/admin/advanced.php:225
+#: lib/gpl/admin/advanced.php:224 lib/pro/admin/advanced.php:218
 msgctxt "option label"
 msgid "Enable WP Excerpt for Pages"
 msgstr "Activer Extrait WP pour Pages"
 
-#: lib/gpl/admin/advanced.php:235 lib/pro/admin/advanced.php:231
+#: lib/gpl/admin/advanced.php:229 lib/pro/admin/advanced.php:223
 msgctxt "option label"
 msgid "Enable WP Tags for Pages"
 msgstr "Activer Étiquettes WP pour Pages"
 
-#: lib/gpl/admin/advanced.php:248 lib/messages.php:707
-#: lib/pro/admin/advanced.php:241
+#: lib/gpl/admin/advanced.php:241 lib/messages.php:707
+#: lib/pro/admin/advanced.php:232
 msgctxt "option label"
 msgid "Object Cache Expiry"
 msgstr "Expiration du cache objet"
 
-#: lib/gpl/admin/advanced.php:254 lib/pro/admin/advanced.php:247
+#: lib/gpl/admin/advanced.php:247 lib/pro/admin/advanced.php:238
 msgctxt "option label"
-msgid "Verify SSL Certificates"
+msgid "Verify Peer SSL Certificate"
 msgstr "Vérification des certificats SSL"
 
-#: lib/gpl/admin/advanced.php:260 lib/pro/admin/advanced.php:253
+#: lib/gpl/admin/advanced.php:253 lib/pro/admin/advanced.php:244
 msgctxt "option label"
 msgid "Report Cache Purge Count"
 msgstr "Rapporter le vidange des caches"
 
-#: lib/gpl/admin/advanced.php:273 lib/pro/admin/advanced.php:263
+#: lib/gpl/admin/advanced.php:266 lib/pro/admin/advanced.php:254
 msgctxt "option label"
 msgid "Preferred URL Shortening Service"
 msgstr "Service de raccourcissement d'URL"
 
-#: lib/gpl/admin/advanced.php:277 lib/pro/admin/advanced.php:267
+#: lib/gpl/admin/advanced.php:270 lib/pro/admin/advanced.php:258
 msgctxt "option label"
 msgid "<em>Get Shortlink</em> Button Gives Short URL"
 msgstr "Le bouton <em>Obtenir le lien court</em> donne l'URL raccourci"
 
-#: lib/gpl/admin/advanced.php:282 lib/pro/admin/advanced.php:272
+#: lib/gpl/admin/advanced.php:275 lib/pro/admin/advanced.php:263
 msgctxt "option label"
 msgid "Minimum URL Length to Shorten"
 msgstr "Longueur d’URL minimale à raccourcir"
 
-#: lib/gpl/admin/advanced.php:285 lib/pro/admin/advanced.php:275
+#: lib/gpl/admin/advanced.php:278 lib/pro/admin/advanced.php:266
 msgctxt "option comment"
 msgid "characters"
 msgstr "caractères"
 
-#: lib/gpl/admin/advanced.php:287 lib/pro/admin/advanced.php:277
+#: lib/gpl/admin/advanced.php:280 lib/pro/admin/advanced.php:268
 msgctxt "option label"
 msgid "Bit.ly Username"
 msgstr "Nom d’utilisateur Bit.ly"
 
-#: lib/gpl/admin/advanced.php:291 lib/pro/admin/advanced.php:281
+#: lib/gpl/admin/advanced.php:284 lib/pro/admin/advanced.php:272
 msgctxt "option label"
 msgid "Bit.ly API Key"
 msgstr "La Clé d’API pour Bit.ly"
 
-#: lib/gpl/admin/advanced.php:296 lib/pro/admin/advanced.php:286
+#: lib/gpl/admin/advanced.php:289 lib/pro/admin/advanced.php:277
 msgctxt "option label"
 msgid "Ow.ly API Key"
 msgstr "La Clé d’API pour Ow.ly"
 
-#: lib/gpl/admin/advanced.php:301 lib/pro/admin/advanced.php:291
+#: lib/gpl/admin/advanced.php:294 lib/pro/admin/advanced.php:282
 msgctxt "option label"
 msgid "Google Project App BrowserKey"
 msgstr "App BrowserKey du projet Google"
 
-#: lib/gpl/admin/advanced.php:306
+#: lib/gpl/admin/advanced.php:299
 msgctxt "option label"
 msgid "Google URL Shortener API is ON"
 msgstr "API raccourcissement Google est actif"
 
-#: lib/gpl/admin/advanced.php:320 lib/gpl/admin/advanced.php:359
-#: lib/pro/admin/advanced.php:306 lib/pro/admin/advanced.php:342
+#: lib/gpl/admin/advanced.php:313 lib/gpl/admin/advanced.php:352
+#: lib/pro/admin/advanced.php:297 lib/pro/admin/advanced.php:333
 msgctxt "column title"
 msgid "Show"
 msgstr "Afficher"
 
-#: lib/gpl/admin/advanced.php:322 lib/gpl/admin/advanced.php:361
-#: lib/messages.php:663 lib/pro/admin/advanced.php:308
-#: lib/pro/admin/advanced.php:344
+#: lib/gpl/admin/advanced.php:315 lib/gpl/admin/advanced.php:354
+#: lib/messages.php:663 lib/pro/admin/advanced.php:299
+#: lib/pro/admin/advanced.php:335
 msgctxt "column title"
 msgid "Contact Field Name"
 msgstr "Nom du Champ Contact"
 
-#: lib/gpl/admin/advanced.php:324 lib/gpl/admin/advanced.php:363
-#: lib/messages.php:663 lib/pro/admin/advanced.php:310
-#: lib/pro/admin/advanced.php:346
+#: lib/gpl/admin/advanced.php:317 lib/gpl/admin/advanced.php:356
+#: lib/messages.php:663 lib/pro/admin/advanced.php:301
+#: lib/pro/admin/advanced.php:337
 msgctxt "column title"
 msgid "Profile Contact Label"
 msgstr "Titre du Champ Contact"
@@ -989,8 +1000,8 @@ msgstr "Vidéos maximum a inclure"
 
 #: lib/gpl/admin/general.php:47 lib/pro/admin/general.php:46
 msgctxt "option label"
-msgid "Use HTTPS for Video API Calls"
-msgstr "Utiliser HTTPS pour appels API vidéo"
+msgid "Use HTTPS for Video API"
+msgstr "Utiliser HTTPS pour les APIs vidéo"
 
 #: lib/gpl/admin/general.php:50 lib/pro/admin/general.php:49
 msgctxt "option comment"
@@ -2391,26 +2402,26 @@ msgctxt "image size label"
 msgid "Facebook / Open Graph"
 msgstr "Facebook / Open Graph"
 
-#: lib/options.php:182
+#: lib/options.php:188
 msgid "WordPress could not find an entry for %s in the options table."
 msgstr ""
 "WordPress n'a pas pu trouver une entrée pour %s dans sa table d'options."
 
-#: lib/options.php:185
+#: lib/options.php:191
 msgid ""
 "WordPress returned a non-array value when reading %s from the options table."
 msgstr ""
 "WordPress a retourné une valeur non-tableau lors de la lecture de %s dans sa "
 "table d'options."
 
-#: lib/options.php:188
+#: lib/options.php:194
 msgid ""
 "WordPress returned an empty array when reading %s from the options table."
 msgstr ""
 "WordPress a retourné un tableau vide lors de la lecture de %s dans sa table "
 "d'options."
 
-#: lib/options.php:190
+#: lib/options.php:196
 msgid ""
 "WordPress returned an unknown condition when reading %s from the options "
 "table."
@@ -2418,7 +2429,7 @@ msgstr ""
 "WordPress a retourné un état inconnu lors de la lecture de %s dans sa table "
 "options."
 
-#: lib/options.php:206
+#: lib/options.php:212
 msgid ""
 "The plugin settings have been returned to their default values &mdash; <a "
 "href=\"%s\">please review and save the new settings</a>."
@@ -2427,7 +2438,7 @@ msgstr ""
 "href=\"%s\">s'il vous plaît examiner et sauvegarder les nouveaux réglages</"
 "a>."
 
-#: lib/options.php:292
+#: lib/options.php:298
 msgid ""
 "The Facebook App ID must be numeric and 32 characters or less in length "
 "&mdash; the value of \"%s\" is not valid."
@@ -2435,7 +2446,7 @@ msgstr ""
 "L'ID de l'App Facebook doit être numérique et 32 ​​caractères ou moins de "
 "longueur - la valeur \"%s\" n'est pas valide."
 
-#: lib/options.php:340
+#: lib/options.php:346
 msgid "Plugin settings (%s) have been upgraded and saved."
 msgstr "Les réglages (%s) ont été mis à jour et sauvegardés."
 
@@ -2475,10 +2486,10 @@ msgstr ""
 "Les outils de validation seront disponibles lorsque publié avec visibilité "
 "publique."
 
-#: lib/pro/admin/advanced.php:296
+#: lib/pro/admin/advanced.php:287
 msgctxt "option label"
 msgid "Goo.gl URL Shortener API is ON"
-msgstr "L'API de raccourcissement Google est actif"
+msgstr "API raccourcissement Google est actif"
 
 #: lib/pro/forum/bbpress.php:73 lib/pro/forum/bbpress.php:121
 msgctxt "bbpress single user description"
@@ -2783,28 +2794,28 @@ msgstr "Boutons de Partage Social"
 msgid "%s must be published<br/>before it can be shared."
 msgstr "%s doit être publié<br/>avant d'être partagé."
 
-#: lib/sitesubmenu/siteadvanced.php:31
+#: lib/sitesubmenu/siteadvanced.php:32
 msgctxt "metabox title"
 msgid "Network Advanced Settings"
 msgstr "Réglages Avancés du Réseau"
 
-#: lib/sitesubmenu/siteadvanced.php:47 lib/submenu/advanced.php:42
+#: lib/sitesubmenu/siteadvanced.php:48 lib/submenu/advanced.php:42
 msgctxt "metabox tab"
 msgid "Plugin Settings"
 msgstr "Réglages de l’Ext."
 
-#: lib/sitesubmenu/siteadvanced.php:48 lib/submenu/advanced.php:46
+#: lib/sitesubmenu/siteadvanced.php:49 lib/submenu/advanced.php:46
 msgctxt "metabox tab"
 msgid "File and Object Cache"
 msgstr "Cache Fichiers / Objets"
 
-#: lib/sitesubmenu/siteadvanced.php:63 lib/submenu/advanced.php:92
+#: lib/sitesubmenu/siteadvanced.php:64 lib/submenu/advanced.php:92
 #: lib/submenu/essential.php:145
 msgctxt "option label"
 msgid "Preserve Settings on Uninstall"
 msgstr "Conserver réglages sur suppression"
 
-#: lib/sitesubmenu/siteadvanced.php:68 lib/submenu/advanced.php:96
+#: lib/sitesubmenu/siteadvanced.php:69 lib/submenu/advanced.php:96
 #: lib/submenu/essential.php:149
 msgctxt "option label"
 msgid "Add Hidden Debug Messages"
@@ -2899,7 +2910,7 @@ msgstr "ID de l’application Facebook"
 #: lib/submenu/essential.php:90 lib/submenu/general.php:215
 msgctxt "option label"
 msgid "or Facebook Admin Username(s)"
-msgstr "ou Nom d’utilisateurs admin Facebook"
+msgstr "ou Nom d’utilisateurs admin FB"
 
 #: lib/submenu/essential.php:94 lib/submenu/general.php:224
 msgctxt "option label"
@@ -3104,8 +3115,8 @@ msgstr "Type de schéma par type d'article"
 
 #: lib/submenu/general.php:295
 msgctxt "option label"
-msgid "Use Meta Property Container(s)"
-msgstr "Utiliser Conteneur(s) de Propriétés Méta"
+msgid "Use Meta Property Containers"
+msgstr "Utiliser des contenants de propriété Meta"
 
 #: lib/submenu/general.php:300
 msgctxt "option label"

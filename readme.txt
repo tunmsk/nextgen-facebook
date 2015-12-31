@@ -381,6 +381,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.21.0 (TBD) =
+
+Official announcement: N/A
+
+* **New Features**
+	* Added a new "Allow Upscaling of Smaller Images" and "Maximum Image Upscale Percentage" (default is 20%) option in the Advanced settings, under the WP / Theme Integration tab (Pro version).
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* *None*
+
 = Version 8.20.1.3 (2015/12/30) =
 
 Official announcement: N/A

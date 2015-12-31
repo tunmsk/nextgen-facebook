@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.20.1.3',		// plugin version
+					'version' => '8.21.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -151,7 +151,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'ngg' => 'NextGEN Gallery',
 								'photon' => 'Jetpack Photon',
 								'slideshare' => 'Slideshare API',
-								//'upscale' => 'WP Image Upscaler',
+								'upscale' => 'WP Image Upscaler',
 								'vimeo' => 'Vimeo Video API',
 								'wistia' => 'Wistia Video API',
 								'youtube' => 'YouTube Video / Playlist API',

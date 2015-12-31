@@ -101,7 +101,8 @@ if ( ! class_exists( 'NgfbSubmenuAdvanced' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					$rows['plugin_show_opts'] = $this->p->util->get_th( _x( 'Options to Show by Default',
 						'option label', 'nextgen-facebook' ), null, 'plugin_show_opts' ).
-					'<td>'.$this->form->get_select( 'plugin_show_opts', $this->p->cf['form']['show_options'] ).'</td>';
+					'<td>'.$this->form->get_select( 'plugin_show_opts', 
+						$this->p->cf['form']['show_options'] ).'</td>';
 
 					break;
 			}
