@@ -154,6 +154,10 @@ if ( ! class_exists( 'SucomStyle' ) ) {
 	.'.$lca.'-notice.updated {
 		padding:0;
 	}
+	.'.$lca.'-notice ul {
+		margin:5px 0 5px 40px;
+		list-style:disc outside none;
+	}
 	.'.$lca.'-notice .notice-label {
 		display:table-cell;
 		vertical-align:top;
@@ -171,9 +175,9 @@ if ( ! class_exists( 'SucomStyle' ) ) {
 		margin:0;
 		line-height:1.5em;
 	}
-	.'.$lca.'-notice ul {
-		margin:5px 0 5px 40px;
-		list-style:disc outside none;
+	.'.$lca.'-notice .notice-message li {
+		margin-top:2px;
+		margin-bottom:2px;
 	}
 	.'.$lca.'-dismissible .notice-dismiss:before {
 		display:inline-block;
