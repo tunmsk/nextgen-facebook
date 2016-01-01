@@ -66,7 +66,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		public function __construct( &$plugin, $plugin_filepath = NGFB_FILEPATH ) {
 			$this->p =& $plugin;
 			if ( $this->p->debug->enabled )
-				$this->p->debug->mark( 'action / filter setup' );
+				$this->p->debug->mark( 'action / filter setup' );	// begin timer
+
 			$this->plugin_filepath = $plugin_filepath;
 
 			self::$sharing_css_name = 'sharing-styles-id-'.get_current_blog_id().'.min.css';
@@ -111,8 +112,9 @@ jQuery("#ngfb-sidebar-header").click( function(){
 					'status_pro_features' => 3,	// include social file cache status
 				), 10, 'ngfb' );			// hook into the extension name instead
 			}
+
 			if ( $this->p->debug->enabled )
-				$this->p->debug->mark( 'action / filter setup' );
+				$this->p->debug->mark( 'action / filter setup' );	// end timer
 		}
 
 		private function set_objects() {

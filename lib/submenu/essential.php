@@ -32,7 +32,7 @@ if ( ! class_exists( 'NgfbSubmenuEssential' ) && class_exists( 'NgfbAdmin' ) ) {
 					array( &$this, 'show_metabox_advanced' ), $this->pagehook, 'normal' );
 
 			// issues a warning notice if the default image size is too small
-			if ( ! defined( 'NGFB_CHECK_DEFAULT_IMAGE' ) || NGFB_CHECK_DEFAULT_IMAGE )
+			if ( ! SucomUtil::get_const( 'NGFB_CHECK_DEFAULT_IMAGE' ) )
 				$og_image = $this->p->media->get_default_image( 1, $this->p->cf['lca'].'-opengraph', false );
 		}
 
@@ -148,7 +148,7 @@ if ( ! class_exists( 'NgfbSubmenuEssential' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					$rows['plugin_debug'] = $this->p->util->get_th( _x( 'Add Hidden Debug Messages', 
 						'option label', 'nextgen-facebook' ), null, 'plugin_debug' ).
-					'<td>'.( defined( 'NGFB_HTML_DEBUG' ) && NGFB_HTML_DEBUG ? 
+					'<td>'.( SucomUtil::get_const( 'NGFB_HTML_DEBUG' ) ? 
 						$this->form->get_no_checkbox( 'plugin_debug' ).' NGFB_HTML_DEBUG constant enabled' :
 						$this->form->get_checkbox( 'plugin_debug' ) ).'</td>';
 

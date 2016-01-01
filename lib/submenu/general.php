@@ -32,7 +32,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					array( &$this, 'show_metabox_publishers' ), $this->pagehook, 'normal' );
 
 			// issues a warning notice if the default image size is too small
-			if ( ! defined( 'NGFB_CHECK_DEFAULT_IMAGE' ) || NGFB_CHECK_DEFAULT_IMAGE )
+			if ( ! SucomUtil::get_const( 'NGFB_CHECK_DEFAULT_IMAGE' ) )
 				$og_image = $this->p->media->get_default_image( 1, $this->p->cf['lca'].'-opengraph', false );
 		}
 

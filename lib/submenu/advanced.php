@@ -95,7 +95,7 @@ if ( ! class_exists( 'NgfbSubmenuAdvanced' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					$rows['plugin_debug'] = $this->p->util->get_th( _x( 'Add Hidden Debug Messages', 
 						'option label', 'nextgen-facebook' ), null, 'plugin_debug' ).
-					'<td>'.( defined( 'NGFB_HTML_DEBUG' ) && NGFB_HTML_DEBUG ? 
+					'<td>'.( SucomUtil::get_const( 'NGFB_HTML_DEBUG' ) ? 
 						$this->form->get_no_checkbox( 'plugin_debug' ).' NGFB_HTML_DEBUG constant enabled' :
 						$this->form->get_checkbox( 'plugin_debug' ) ).'</td>';
 

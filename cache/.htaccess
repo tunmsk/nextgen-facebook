@@ -1,4 +1,4 @@
-<FilesMatch "\.(php|pl|cgi|shtml|txt)$">
+<FilesMatch "\.(php|pl|cgi|shtml)$">
 	# Apache 2.2
 	<IfModule !mod_authz_core.c>
 		Order	deny,allow
