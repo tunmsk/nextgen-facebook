@@ -381,18 +381,26 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.21.0 (TBD) =
+= Version 8.21.0 (2016/01/03) =
 
 Official announcement: N/A
 
 * **New Features**
-	* Added a new "Allow Upscaling of Smaller Images" and "Maximum Image Upscale Percentage" (default is 20%) option in the Advanced settings, under the WP / Theme Integration tab (Pro version).
+	* Added new "Allow Upscaling of Small WP Images" and "Maximum Image Upscale Percentage" (default is 20%) options on the Advanced settings page, under the WP / Theme Integration tab (Pro version).
 * **Improvements**
+	* Improved the NextGEN Gallery integration module by calling `get_post_object()` instead of using the $post global.
 	* Added `SucomUtil::encode_emoji()` to call WordPress v4.2's `wp_encode_emoji()` function if available (or duplicate its behavior if missing).
 * **Bugfixes**
-	* *None*
+	* Fixed a call to a `wp_encode_emoji()` function which did not exist before WordPress v4.2.
 * **Developer Notes**
-	* *None*
+	* Added the $post_id argument to NGG integration module methods for `get_post_object()`.
+	* Added two constants for the image upscaling feature:
+		* NGFB_IMAGE_UPSCALE_ALL = false
+		* NGFB_IMAGE_UPSCALE_TEST = false
+	* Added three filters for the image upscaling feature:
+		* apply_filters( 'ngfb_image_upscale_all', NGFB_IMAGE_UPSCALE_ALL = false );
+		* apply_filters( 'ngfb_image_upscale_max', $max_diff, $img_info );
+		* apply_filters( 'ngfb_image_upscale_test', NGFB_IMAGE_UPSCALE_TEST = false, $img_info );
 
 = Version 8.20.1.3 (2015/12/30) =
 
@@ -506,6 +514,10 @@ Official announcement: N/A
 	* Added a call to `getimagesize()` when saving options to retrieve image dimensions from URLs (default image URL, schema logo URL, etc.).
 
 == Upgrade Notice ==
+
+= 8.21.0 =
+
+2016/01/03 - Fixed a call to wp_encode_emoji() which did not exist before WP v4.2. Added new "Allow Upscaling of Small WP Images" and "Maximum Image Upscale Percentage" (default is 20%) options (Pro version).
 
 = 8.20.1.3 =
 
