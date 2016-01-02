@@ -31,7 +31,7 @@ apply_filters( 'ngfb_get_user_options', $options, $user_id, $attr );
 apply_filters( 'ngfb_hashtags', $hashtags, $post_id );
 apply_filters( 'ngfb_hashtags_seed', '', $post_id );
 apply_filters( 'ngfb_image_upscale_all', NGFB_IMAGE_UPSCALE_ALL = false );
-apply_filters( 'ngfb_image_upscale_max', $max_diff, $img_info );
+apply_filters( 'ngfb_image_upscale_max', $max_diff = 50, $img_info );
 apply_filters( 'ngfb_image_upscale_test', NGFB_IMAGE_UPSCALE_TEST = false, $img_info );
 apply_filters( 'ngfb_is_functions', $is_functions );
 apply_filters( 'ngfb_js_url_facebook', $url, $pos );
