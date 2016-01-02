@@ -205,7 +205,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb403',				// increment when changing default options
+				'version' => 'ngfb404',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'schema_logo_url' => '',
@@ -464,7 +464,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_auto_img_resize' => 1,			// Create Missing WP Media Images
 					'plugin_ignore_small_img' => 1,			// Enforce Image Dimensions Check
 					'plugin_upscale_images' => 0,			// Allow Upscaling of Smaller Images
-					'plugin_upscale_img_max' => 20,			// Maximum Image Upscale Percentage
+					'plugin_upscale_img_max' => 50,			// Maximum Image Upscale Percentage
 					'plugin_shortcodes' => 1,			// Enable Plugin Shortcode(s)
 					'plugin_widgets' => 1,				// Enable Plugin Widget(s)
 					'plugin_page_excerpt' => 0,			// Enable WP Excerpt for Pages
