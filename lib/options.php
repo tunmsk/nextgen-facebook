@@ -140,8 +140,10 @@ if ( ! class_exists( 'NgfbOptions' ) ) {
 						) as $idx ) {
 							$def_val = $this->get_defaults( $idx );
 							if ( $opts[$idx] !== $def_val ) {
-								$this->p->notice->err( sprintf( __( 'Non-standard value for Free version \'%s\' option - resetting the option to its default value.', 'nextgen-facebook' ), $idx ), true );
+								if ( is_admin() )
+									$this->p->notice->err( sprintf( __( 'Non-standard value for Free version \'%s\' option - resetting the option to its default value.', 'nextgen-facebook' ), $idx ), true );
 								$opts[$idx] = $def_val;
+								$has_diff_options = true;	// save the options
 							}
 						}
 					}
