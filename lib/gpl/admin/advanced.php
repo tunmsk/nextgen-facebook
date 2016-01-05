@@ -265,7 +265,7 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 				'option label', 'nextgen-facebook' ), null, 'plugin_shortener' ).
 			'<td class="blank">[none]</td>';
 
-			$rows['plugin_shortlink'] = $this->p->util->get_th( _x( '<em>Get Shortlink</em> Button Gives Short URL',
+			$rows['plugin_shortlink'] = $this->p->util->get_th( _x( '<em>Get Shortlink</em> Gives Shortened URL',
 				'option label', 'nextgen-facebook' ), null, 'plugin_shortlink' ).
 			$this->get_nocb_cell( 'plugin_shortlink' );
 
