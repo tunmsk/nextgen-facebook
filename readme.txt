@@ -393,6 +393,7 @@ Official announcement: N/A
 	* Fixed the missing Social Img / Desc columns after using Quick Edit on a post / page.
 * **Developer Notes**
 	* Added a new 'ngfb_columns_post_{post_type_name}' filter (true by default).
+	* Added an integer cast when saving numeric options.
 
 = Version 8.21.0 (2016/01/03) =
 
