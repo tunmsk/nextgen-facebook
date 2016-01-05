@@ -381,6 +381,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.21.1 (TBD) =
+
+Official announcement: N/A
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* Fixed the missing Social Img / Desc columns after using Quick Edit on a post / page.
+* **Developer Notes**
+	* Added a new 'ngfb_columns_post_{post_type_name}' filter (true by default).
+
 = Version 8.21.0 (2016/01/03) =
 
 Official announcement: N/A
@@ -518,8 +531,4 @@ Official announcement: N/A
 = 8.21.0 =
 
 2016/01/03 - Fixed a call to wp_encode_emoji() which did not exist before WP v4.2. Added new "Allow Upscaling of Small WP Images" and "Maximum Image Upscale Percentage" options (Pro version).
-
-= 8.20.1.3 =
-
-2015/12/30 - Fixed a preg_replace_callback() syntax error.
 
