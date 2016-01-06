@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4
-Stable Tag: 8.21.0
+Stable Tag: 8.21.1
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -381,7 +381,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.21.1 (TBD) =
+= Version 8.21.1 (2016/01/06) =
 
 Official announcement: N/A
 
@@ -391,6 +391,7 @@ Official announcement: N/A
 	* *None*
 * **Bugfixes**
 	* Fixed the missing Social Img / Desc columns after using Quick Edit on a post / page.
+	* Fixed recurring error message about resetting the 'plugin_object_cache_exp' option to its default value (Free version).
 * **Developer Notes**
 	* Added a new 'ngfb_columns_post_{post_type_name}' filter (true by default).
 	* Added an integer cast when saving numeric options.
@@ -528,6 +529,10 @@ Official announcement: N/A
 	* Added a call to `getimagesize()` when saving options to retrieve image dimensions from URLs (default image URL, schema logo URL, etc.).
 
 == Upgrade Notice ==
+
+= 8.21.1 =
+
+2016/01/06 - Fixed the missing Social Img / Desc columns after Quick Edit. Fixed recurring error message about resetting the 'plugin_object_cache_exp' option (Free version).
 
 = 8.21.0 =
 
