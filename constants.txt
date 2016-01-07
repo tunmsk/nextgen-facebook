@@ -7,10 +7,10 @@ NGFB_PLUGINBASE
 NGFB_URLPATH
 NGFB_NONCE
 /*
- * variable constants - can be pre-defined in wp-config.php file to modify default values
+ * variable constants - define in wp-config.php file to modify the default values
  */
-NGFB_CACHEDIR			= NGFB_PLUGINDIR.'cache/'
 NGFB_TOPICS_LIST		= NGFB_PLUGINDIR.'share/topics.txt'
+NGFB_CACHEDIR			= NGFB_PLUGINDIR.'cache/'
 NGFB_CACHEURL			= NGFB_URLPATH.'cache/'
 NGFB_DEBUG_FILE_EXP		= 300
 NGFB_MENU_ORDER			= 99.11
@@ -36,7 +36,21 @@ NGFB_HEAD_PRIORITY		= 10
 NGFB_SOCIAL_PRIORITY		= 100
 NGFB_FOOTER_PRIORITY		= 100
 NGFB_SEO_FILTERS_PRIORITY	= 100
-NGFB_CURL_CAINFO		= NGFB_PLUGINDIR.'share/curl/cacert.pem'
+NGFB_CURL_CAINFO		= NGFB_PLUGINDIR.'share/curl/ca-bundle.crt'
 NGFB_CURL_USERAGENT		= 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:40.0) Gecko/20100101 Firefox/40.0'
-NGFB_IMAGE_UPSCALE_ALL		= false
-NGFB_IMAGE_UPSCALE_TEST		= false
+/*
+ * undefined constants - can be defined to change specific plugin behaviors
+ */
+NGFB_HTML_DEBUG			= (not defined)
+NGFB_WP_DEBUG			= (not defined)
+NGFB_OBJECT_CACHE_DISABLE	= (not defined)
+NGFB_TRANSIENT_CACHE_DISABLE	= (not defined)
+NGFB_CURL_DISABLE		= (not defined)
+NGFB_FILE_CACHE_DISABLE		= (not defined)
+NGFB_OPEN_GRAPH_DISABLE		= (not defined)
+NGFB_META_TAGS_DISABLE		= (not defined)
+NGFB_SOCIAL_SHARING_DISABLE	= (not defined)
+NGFB_FILTER_SINGLE_TAGS		= (not defined)
+NGFB_RESET_ON_ACTIVATE		= (not defined)
+NGFB_IMAGE_UPSCALE_ALL		= (not defined)
+NGFB_IMAGE_UPSCALE_TEST		= (not defined)
