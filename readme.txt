@@ -20,7 +20,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 **A solid social meta tag plugin is the foundation of any good social strategy** &mdash; NextGEN Facebook (NGFB) gives you total control over all the information [social website crawlers](https://developers.facebook.com/docs/sharing/webmasters/crawler) need, improving Google Search ranking, social engagement, and click-through-rates on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!
 
-**NGFB automatically retrieves and uses information from a wide range or sources**, including All in One SEO Pack, bbPress, BuddyPress, Easy Digital Downloads, HeadSpace2 SEO, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, Yoast SEO (aka WordPress SEO), WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, extends the WordPress REST API v2, and much more.
+**NGFB automatically retrieves and uses information from a wide range or sources**, including All in One SEO Pack, bbPress, BuddyPress, Easy Digital Downloads, HeadSpace2 SEO, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, Yoast SEO (aka WordPress SEO), WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, extends the WordPress REST API version 2, and much more.
 
 = Available in Multiple Languages =
 
@@ -139,7 +139,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 		* Polylang
 		* <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce versions 1 and 2</a>
 		* WP e-Commerce
-		* <a href="https://wordpress.org/plugins/rest-api/">WordPress REST API v2</a>
+		* <a href="https://wordpress.org/plugins/rest-api/">WordPress REST API version 2</a>
 		* Yoast SEO (aka WordPress SEO)
 		* Yotpo Social Reviews for WooCommerce
 	* **Supported Service APIs**
@@ -320,7 +320,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 	* [HeadSpace2 SEO](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/headspace2-seo/)
 	* [Slideshare, Vimeo, Wistia, Youtube APIs](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/videos-apis/)
 	* [WooCommerce](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/)
-	* [WordPress REST API v2](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/wordpress-rest-api-v2/)
+	* [WordPress REST API version 2](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/wordpress-rest-api-v2/)
 * [Contact Information and Feeds](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/contact-information/)
 * [Developer Resources](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/)
 	* [Constants](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/)
