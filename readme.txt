@@ -5,7 +5,7 @@ Text Domain: nextgen-facebook
 Domain Path: /languages
 Contributors: jsmoriss
 Donate Link: https://surniaulula.com/extend/plugins/nextgen-facebook/
-Tags: attached, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd, Facebook, featured, g+, gallery, google, google plus, hashtags, imagebrowser, jetpack, JSON-LD, knowledge graph, Like, linkedin, marketpress, meta-tags, multilingual, multisite, nextgen gallery, nggalbum, nggallery, object cache, open graph, photon, pinterest, player card, polylang, rich pins, schema, seo, Share, shortcode, singlepic, slideshare, social, stumbleupon, Summary Card, transient cache, tumblr, twitter, twitter cards, vimeo, widget, wistia, woocommerce, wp_cache, youtube, yotpo
+Tags: attached, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd, Facebook, featured, g+, gallery, google, google plus, hashtags, imagebrowser, JSON-LD, knowledge graph, Like, linkedin, marketpress, meta-tags, multilingual, multisite, nextgen gallery, nggalbum, nggallery, object cache, open graph, pinterest, player card, polylang, rich pins, schema, seo, Share, shortcode, singlepic, slideshare, social, stumbleupon, Summary Card, transient cache, tumblr, twitter, twitter cards, vimeo, widget, wistia, woocommerce, wp_cache, youtube, yotpo
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
@@ -20,7 +20,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 **A solid social meta tag plugin is the foundation of any good social strategy** &mdash; NextGEN Facebook (NGFB) gives you total control over all the information [social website crawlers](https://developers.facebook.com/docs/sharing/webmasters/crawler) need, improving Google Search ranking, social engagement, and click-through-rates on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!
 
-**NGFB automatically retrieves and uses information from a wide range or sources**, including All in One SEO Pack, bbPress, BuddyPress, Easy Digital Downloads, HeadSpace2 SEO, JetPack Photon, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, Yoast SEO (aka WordPress SEO), WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, extends the WordPress REST API v2, and much more.
+**NGFB automatically retrieves and uses information from a wide range or sources**, including All in One SEO Pack, bbPress, BuddyPress, Easy Digital Downloads, HeadSpace2 SEO, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, Yoast SEO (aka WordPress SEO), WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, extends the WordPress REST API v2, and much more.
 
 = Available in Multiple Languages =
 
@@ -134,11 +134,10 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 		* BuddyPress
 		* Easy Digital Downloads
 		* HeadSpace2 SEO
-		* JetPack Photon
 		* NextGEN Gallery
 		* MarketPress - WordPress eCommerce
 		* Polylang
-		* <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce v1 and v2</a>
+		* <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce versions 1 and 2</a>
 		* WP e-Commerce
 		* <a href="https://wordpress.org/plugins/rest-api/">WordPress REST API v2</a>
 		* Yoast SEO (aka WordPress SEO)
@@ -226,7 +225,7 @@ Aside from the additional support for Twitter Cards, the main difference between
 
 NGFB detects and uses all images - associated or included in your content - including the WordPress image gallery and NextGEN Gallery shortcodes. WordPress Media Library images (and NextGEN Gallery in the Pro version) are resized according to their intended audience (Facebook, Twitter, Pinterest, etc). The Pro version also detects embedded videos from Slideshare, Vimeo, Wistia, and Youtube (including their preview images).
 
-NGFB (Pro version) also includes support for [JetPack Photon](http://jetpack.me/support/photon/) and [NextGEN Gallery v1 and v2](https://wordpress.org/plugins/nextgen-gallery/) albums, galleries and images (shortcodes, image tags, album / gallery preview images, etc.).
+NGFB (Pro version) also includes support for [NextGEN Gallery versions 1 and 2](https://wordpress.org/plugins/nextgen-gallery/) albums, galleries and images (shortcodes, image tags, album / gallery preview images, etc.).
 
 **Enhanced SEO**
 
@@ -239,7 +238,7 @@ NGFB (Pro version) integrates with [Yoast SEO](https://wordpress.org/plugins/wor
 
 **eCommerce Products**
 
-NGFB (Pro version) also supports [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/), [MarketPress - WordPress eCommerce](https://wordpress.org/plugins/wordpress-ecommerce/), [WooCommerce v1 and v2](https://wordpress.org/plugins/woocommerce/), and [WP e-Commerce](https://wordpress.org/plugins/wp-e-commerce/) product pages, creating appropriate meta tags for [Facebook Products](https://developers.facebook.com/docs/payments/product/), [Twitter Product Cards](https://dev.twitter.com/docs/cards/types/product-card) and [Pinterest Rich Pins](http://developers.pinterest.com/rich_pins/), including variations and additional / custom images.
+NGFB (Pro version) also supports [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/), [MarketPress - WordPress eCommerce](https://wordpress.org/plugins/wordpress-ecommerce/), [WooCommerce versions 1 and 2](https://wordpress.org/plugins/woocommerce/), and [WP e-Commerce](https://wordpress.org/plugins/wp-e-commerce/) product pages, creating appropriate meta tags for [Facebook Products](https://developers.facebook.com/docs/payments/product/), [Twitter Product Cards](https://dev.twitter.com/docs/cards/types/product-card) and [Pinterest Rich Pins](http://developers.pinterest.com/rich_pins/), including variations and additional / custom images.
 
 **Forums and Social**
 
@@ -319,7 +318,6 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 	* [Author Gravatar](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/author-gravatar/)
 	* [Easy Digital Downloads](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/easy-digital-downloads/)
 	* [HeadSpace2 SEO](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/headspace2-seo/)
-	* [Jetpack Photon](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/jetpack-photon/)
 	* [Slideshare, Vimeo, Wistia, Youtube APIs](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/videos-apis/)
 	* [WooCommerce](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/)
 	* [WordPress REST API v2](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/wordpress-rest-api-v2/)
