@@ -379,7 +379,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.21.2 (TBD) =
+= Version 8.21.2 (2016/01/09) =
 
 Official announcement: N/A
 
@@ -541,6 +541,10 @@ Official announcement: N/A
 	* Added a call to `getimagesize()` when saving options to retrieve image dimensions from URLs (default image URL, schema logo URL, etc.).
 
 == Upgrade Notice ==
+
+= 8.21.2 =
+
+2016/01/09 - Removed the Jetpack Photon integration module -- the latest version of Photon can return correct image dimensions. Fixed author Schema meta tags by adding only to Article, Blog, Review, WebPage, and WebSite item types.
 
 = 8.21.1 =
 
