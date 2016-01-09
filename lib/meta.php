@@ -26,9 +26,9 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 		protected function get_default_tabs() {
 			$tabs = array();
 			foreach( array(
+				'preview' => _x( 'Social Preview', 'metabox tab', 'nextgen-facebook' ),
 				'header' => _x( 'Descriptions', 'metabox tab', 'nextgen-facebook' ),
 				'media' => _x( 'Priority Media', 'metabox tab', 'nextgen-facebook' ),
-				'preview' => _x( 'Social Preview', 'metabox tab', 'nextgen-facebook' ),
 				'tags' => _x( 'Head Tags', 'metabox tab', 'nextgen-facebook' ),
 				'validate' => _x( 'Validate', 'metabox tab', 'nextgen-facebook' ),
 			) as $key => $name ) {
