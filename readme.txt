@@ -556,6 +556,10 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
+= 8.21.3 =
+
+2016/01/10 - Fixed the SucomUtil::get_max_nums() method to return the correct maximum number of Open Graph images for index type webpages.
+
 = 8.21.2 =
 
 2016/01/09 - Removed the Jetpack Photon integration module -- the latest version of Photon can return correct image dimensions. Fixed author Schema meta tags by adding only to Article, Blog, Review, WebPage, and WebSite item types.
