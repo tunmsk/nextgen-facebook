@@ -379,6 +379,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.21.4 (2016/01/14) =
+
+Official announcement: N/A
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* Added enabled / disabled / recommended tooltip text to the green / gray / red status lights in the settings page side metaboxes.
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* *None*
+
 = Version 8.21.3 (2016/01/10) =
 
 Official announcement: N/A
@@ -555,6 +568,10 @@ Official announcement: N/A
 	* Added a call to `getimagesize()` when saving options to retrieve image dimensions from URLs (default image URL, schema logo URL, etc.).
 
 == Upgrade Notice ==
+
+= 8.21.4 =
+
+2016/01/14 - Added enabled / disabled / recommended tooltip text to the green / gray / red status lights in the settings page side metaboxes.
 
 = 8.21.3 =
 
