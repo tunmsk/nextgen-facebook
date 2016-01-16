@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4
-Stable Tag: 8.21.4
+Stable Tag: 8.21.5
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -584,7 +584,7 @@ Official announcement: N/A
 
 = 8.21.5 =
 
-2016/01/16 - Fixed the 'fb_app_id' value check for some 32bit platforms where the max integer size is 2147483647.
+2016/01/16 - Fixed 'fb_app_id' value for some 32bit platforms where max integer size is 2147483647. Added shorter / more helpful notice, displayed for users without admin privileges, for images that are too small.
 
 = 8.21.4 =
 
