@@ -263,7 +263,7 @@ if ( ! class_exists( 'NgfbSharingTumblr' ) ) {
 			$html = '<!-- Tumblr Button --><div '.$this->p->sharing->get_css( 'tumblr', $atts ).'>';
 			$html .= '<a href="http://www.tumblr.com/share/'. $query.'" title="Share on Tumblr">';
 			$html .= '<img border="0" alt="Share on Tumblr" src="'.
-				$this->p->util->get_cache_file_url( SucomUtil::get_http().'://platform.tumblr.com/v1/'.$opts['tumblr_button_style'].'.png' ).'" /></a></div>';
+				$this->p->util->get_cache_file_url( SucomUtil::get_prot().'://platform.tumblr.com/v1/'.$opts['tumblr_button_style'].'.png' ).'" /></a></div>';
 
 			if ( $this->p->debug->enabled )
 				$this->p->debug->log( 'returning html ('.strlen( $html ).' chars)' );
@@ -275,7 +275,7 @@ if ( ! class_exists( 'NgfbSharingTumblr' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 			$js_url = $this->p->util->get_cache_file_url( apply_filters( $this->p->cf['lca'].'_js_url_tumblr',
-				SucomUtil::get_http().'://platform.tumblr.com/v1/share.js', $pos ) );
+				SucomUtil::get_prot().'://platform.tumblr.com/v1/share.js', $pos ) );
 
 			return '<script type="text/javascript" id="tumblr-script-'.$pos.'" src="'.$js_url.'"></script>'."\n";
 		}

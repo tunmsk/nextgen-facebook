@@ -27,7 +27,7 @@ if ( ! class_exists( 'NgfbSubmenuSharingStumbleupon' ) && class_exists( 'NgfbSub
 					.badge { 
 						display:block;
 						background: url("'.$this->p->util->get_cache_file_url( 
-							SucomUtil::get_http().'://b9.sustatic.com/7ca234_0mUVfxHFR0NAk1g' ).'") no-repeat transparent; 
+							SucomUtil::get_prot().'://b9.sustatic.com/7ca234_0mUVfxHFR0NAk1g' ).'") no-repeat transparent; 
 						width:110px;
 						margin:5px 0 5px 0;
 					}
@@ -141,7 +141,7 @@ if ( ! class_exists( 'NgfbSharingStumbleupon' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 			$js_url = $this->p->util->get_cache_file_url( apply_filters( $this->p->cf['lca'].'_js_url_stumbleupon',
-				SucomUtil::get_http().'://platform.stumbleupon.com/1/widgets.js', $pos ) );
+				SucomUtil::get_prot().'://platform.stumbleupon.com/1/widgets.js', $pos ) );
 
 			return '<script type="text/javascript" id="stumbleupon-script-'.$pos.'">'.
 				$this->p->cf['lca'].'_insert_js( "stumbleupon-script-'.$pos.'", "'.$js_url.'" );</script>'."\n";

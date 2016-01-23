@@ -106,14 +106,14 @@ if ( ! class_exists( 'NgfbSharingReddit' ) ) {
 
 			switch ( $opts['reddit_type'] ) {
 				case 'static-tall-text':
-					$js_url = SucomUtil::get_http().'://www.reddit.com/static/button/button2.js';
+					$js_url = SucomUtil::get_prot().'://www.reddit.com/static/button/button2.js';
 					break;
 				case 'static-tall-logo':
-					$js_url = SucomUtil::get_http().'://www.reddit.com/static/button/button3.js';
+					$js_url = SucomUtil::get_prot().'://www.reddit.com/static/button/button3.js';
 					break;
 				case 'static-wide':
 				default:	// just in case
-					$js_url = SucomUtil::get_http().'://www.reddit.com/static/button/button1.js';
+					$js_url = SucomUtil::get_prot().'://www.reddit.com/static/button/button1.js';
 					break;
 			}
 			$js_url = $this->p->util->get_cache_file_url( apply_filters( $this->p->cf['lca'].'_js_url_reddit', $js_url, '' ) );

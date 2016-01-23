@@ -104,7 +104,7 @@ if ( ! class_exists( 'NgfbSharingManagewp' ) ) {
 				);
 
 			$js_url = $this->p->util->get_cache_file_url( apply_filters( $this->p->cf['lca'].'_js_url_managewp', 
-				SucomUtil::get_http().'://managewp.org/share.js#'.SucomUtil::get_http().'://managewp.org/share', '' ) );
+				SucomUtil::get_prot().'://managewp.org/share.js#'.SucomUtil::get_prot().'://managewp.org/share', '' ) );
 
 			$html = '<!-- ManageWP Button --><div '.$this->p->sharing->get_css( 'managewp', $atts ).'>';
 			$html .= '<script type="text/javascript" src="'.$js_url.'" data-url="'.$atts['url'].'" data-title="'.$atts['title'].'"';

@@ -46,7 +46,7 @@ if ( ! class_exists( 'SucomUtil' ) ) {
 		}
 
 		// returns 'http' or 'https'
-		public static function get_http( $url = '' ) {
+		public static function get_prot( $url = '' ) {
 			if ( self::is_https( $url ) )
 				return 'https';
 			else 'http';
@@ -126,7 +126,7 @@ if ( ! class_exists( 'SucomUtil' ) ) {
 
 			if ( is_admin() )
 				$request_url = $sharing_url;
-			else $request_url = self::get_http().'://'.
+			else $request_url = self::get_prot().'://'.
 				$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 
 			$short_url = empty( $atts['short_url'] ) ?
@@ -362,7 +362,7 @@ if ( ! class_exists( 'SucomUtil' ) ) {
 
 			// complete the url with a protocol name
 			if ( strpos( $url, '//' ) === 0 )
-				$url = SucomUtil::get_http().'//'.$url;
+				$url = SucomUtil::get_prot().'//'.$url;
 
 			if ( $this->p->debug->enabled && 
 				strpos( $url, '://' ) === false )
@@ -712,7 +712,7 @@ if ( ! class_exists( 'SucomUtil' ) ) {
 			// fallback for themes and plugins that don't use the standard wordpress functions/variables
 			if ( empty ( $url ) ) {
 				// strip out tracking query arguments by facebook, google, etc.
-				$url = preg_replace( '/([\?&])(fb_action_ids|fb_action_types|fb_source|fb_aggregation_id|utm_source|utm_medium|utm_campaign|utm_term|gclid|pk_campaign|pk_kwd)=[^&]*&?/i', '$1', SucomUtil::get_http().'://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
+				$url = preg_replace( '/([\?&])(fb_action_ids|fb_action_types|fb_source|fb_aggregation_id|utm_source|utm_medium|utm_campaign|utm_term|gclid|pk_campaign|pk_kwd)=[^&]*&?/i', '$1', SucomUtil::get_prot().'://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
 			}
 
 			return apply_filters( $this->p->cf['lca'].'_sharing_url', $url, $use_post, $add_page, $src_id );
@@ -726,11 +726,11 @@ if ( ! class_exists( 'SucomUtil' ) ) {
 					$this->p->debug->log( 'relative url found = '.$url );
 
 				if ( strpos( $url, '//' ) === 0 )
-					$url = SucomUtil::get_http().':'.$url;
+					$url = SucomUtil::get_prot().':'.$url;
 				elseif ( strpos( $url, '/' ) === 0 ) 
 					$url = home_url( $url );
 				else {
-					$base = SucomUtil::get_http().'://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+					$base = SucomUtil::get_prot().'://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 					if ( strpos( $base, '?' ) !== false ) {
 						$base_parts = explode( '?', $base );
 						$base = reset( $base_parts );

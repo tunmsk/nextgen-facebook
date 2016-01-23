@@ -197,7 +197,7 @@ if ( ! class_exists( 'NgfbSharingTwitter' ) ) {
 				$atts['dnt'] = $opts['twitter_dnt'] ? 'true' : 'false';
 
 			$html = '<!-- Twitter Button --><div '.$this->p->sharing->get_css( 'twitter', $atts ).'>';
-			$html .= '<a href="'.SucomUtil::get_http().'://twitter.com/share" class="twitter-share-button" data-lang="'. $atts['lang'].'" ';
+			$html .= '<a href="'.SucomUtil::get_prot().'://twitter.com/share" class="twitter-share-button" data-lang="'. $atts['lang'].'" ';
 			$html .= 'data-url="'.$short_url.'" data-counturl="'.$long_url.'" data-text="'.$atts['caption'].'" ';
 			$html .= 'data-via="'.$atts['via'].'" data-related="'.$atts['related'].'" data-hashtags="'.$atts['hashtags'].'" ';
 			$html .= 'data-count="'.$opts['twitter_count'].'" data-size="'.$opts['twitter_size'].'" data-dnt="'.$atts['dnt'].'"></a></div>';
@@ -211,7 +211,7 @@ if ( ! class_exists( 'NgfbSharingTwitter' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 			$js_url = $this->p->util->get_cache_file_url( apply_filters( $this->p->cf['lca'].'_js_url_twitter',
-				SucomUtil::get_http().'://platform.twitter.com/widgets.js', $pos ) );
+				SucomUtil::get_prot().'://platform.twitter.com/widgets.js', $pos ) );
 
 			return '<script type="text/javascript" id="twitter-script-'.$pos.'">'.
 				$this->p->cf['lca'].'_insert_js( "twitter-script-'.$pos.'", "'.$js_url.'" );</script>'."\n";

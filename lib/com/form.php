@@ -152,7 +152,7 @@ if ( ! class_exists( 'SucomForm' ) ) {
 
 			if ( $reload === true ) {
 				$url = add_query_arg( array( $name => '%%'.$name.'%%' ), 
-					SucomUtil::get_http().'://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
+					SucomUtil::get_prot().'://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
 				$html .= '
 <script type="text/javascript">
 	jQuery(function(){

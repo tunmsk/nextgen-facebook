@@ -259,7 +259,7 @@ if ( ! class_exists( 'NgfbSharingFacebook' ) ) {
 
 			// do not use get_cache_file_url() since the facebook javascript does not work when hosted locally
 			$js_url = apply_filters( $this->p->cf['lca'].'_js_url_facebook', 
-				SucomUtil::get_http().'://connect.facebook.net/'.$lang.'/sdk.js#xfbml=1&version=v2.3&appId='.$app_id, $pos );
+				SucomUtil::get_prot().'://connect.facebook.net/'.$lang.'/sdk.js#xfbml=1&version=v2.3&appId='.$app_id, $pos );
 
 			$html = '<script type="text/javascript" id="fb-script-'.$pos.'">'.
 				$this->p->cf['lca'].'_insert_js( "fb-script-'.$pos.'", "'.$js_url.'" );</script>'."\n";
