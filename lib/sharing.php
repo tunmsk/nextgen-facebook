@@ -595,7 +595,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			if ( $this->p->is_avail['cache']['transient'] ) {
 				$cache_salt = __METHOD__.'('.apply_filters( $lca.'_buttons_cache_salt', 
 					'lang:'.SucomUtil::get_locale().'_type:'.$type.'_post:'.$post_id.
-						( empty( $_SERVER['HTTPS'] ) ? '' : '_prot:https' ).
+						( SucomUtil::is_https() ? '_prot:https' : '' ).
 						( empty( $post_id ) ? '_url:'.$this->p->util->get_sharing_url( $use_post, true, $src_id ) : '' ),
 							$type, $use_post ).')';
 				$cache_id = $lca.'_'.md5( $cache_salt );
