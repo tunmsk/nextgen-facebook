@@ -91,6 +91,11 @@ if ( ! class_exists( 'NgfbSubmenuEssential' ) && class_exists( 'NgfbAdmin' ) ) {
 						'option label', 'nextgen-facebook' ), null, 'fb_admins' ).
 					'<td>'.$this->form->get_input( 'fb_admins' ).'</td>';
 
+					$rows[] = $this->p->util->get_th( _x( 'Author Name Format',
+						'option label', 'nextgen-facebook' ), null, 'google_seo_author_name' ).
+					'<td>'.$this->form->get_select( 'seo_author_name', 
+						$this->p->cf['form']['user_name_fields'] ).'</td>';
+
 					$rows[] = $this->p->util->get_th( _x( 'Default Content Language',
 						'option label', 'nextgen-facebook' ), null, 'fb_lang' ).
 					'<td>'.$this->form->get_select( 'fb_lang', SucomUtil::get_pub_lang( 'facebook' ) ).'</td>';
