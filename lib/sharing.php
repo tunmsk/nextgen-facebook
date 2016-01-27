@@ -592,6 +592,13 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			$src_id = $this->p->util->get_source_id( $type );
 			$html = false;
 
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->log( 'use_post: '.( $use_post === false ?
+					'false' : ( $use_post === true ? 'true' : $use_post ) ) );
+				$this->p->debug->log( 'post_id: '.$post_id );
+				$this->p->debug->log( 'src_id: '.$src_id );
+			}
+
 			if ( $this->p->is_avail['cache']['transient'] ) {
 				$cache_salt = __METHOD__.'('.apply_filters( $lca.'_buttons_cache_salt', 
 					'lang:'.SucomUtil::get_locale().'_type:'.$type.'_post:'.$post_id.
