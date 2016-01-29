@@ -379,7 +379,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.22.0 (TBD) =
+= Version 8.22.0 (2016/01/30) =
 
 Official announcement: N/A
 
@@ -390,13 +390,13 @@ Official announcement: N/A
 	* Added the Facebook "Author Name Format" option to the Essential Settings page.
 	* Used the new SucomUtil::is_https() and SucomUtil::get_prot() static methods to determine the protocol to be used (http or https).
 	* Updated the Setup Guide with a new "Accept Smaller / Thumbnail Images?" information box.
-	* Treat BuddyPress single activity pages as posts (using attached / content images, etc.) (Pro version).
+	* Treat BuddyPress single activity pages as posts (to use attached / content images, etc.) (Pro version).
 	* Treat BuddyPress user + activity URLs as an activity page instead of a user page (Pro version).
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
 	* Added SucomUtil::is_https() and SucomUtil::get_prot() static methods to test for PHP's `$_SERVER['HTTPS']` variable and the 'FORCE_SSL_ADMIN' WordPress constant.
-	* Added a new NGFB_GETIMGSIZE_DISABLE constant disable the use of getimagesize().
+	* Added a new NGFB_GETIMGSIZE_DISABLE constant disable the use of PHP's getimagesize() function.
 
 = Version 8.21.5 (2016/01/16) =
 
@@ -601,7 +601,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.21.5 =
+= 8.22.0 =
 
-2016/01/16 - Fixed 'fb_app_id' value for some 32bit platforms where max integer size is 2147483647. Added shorter / more helpful notice, displayed for users without admin privileges, for images that are too small.
+2016/01/30 - Added a call to getimagesize() for images in the content without width / height attribute values. Added a new module for BuddyPress rtMedia to include WP Media Library image IDs in BuddyPress activity images (Pro version).
 
