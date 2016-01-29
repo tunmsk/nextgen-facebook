@@ -384,6 +384,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 Official announcement: N/A
 
 * **New Features**
+	* Added a call to getimagesize() for images in the content without width / height attribute values.
 	* Added a new module for BuddyPress rtMedia to include WP Media Library image IDs in BuddyPress activity images (Pro version).
 * **Improvements**
 	* Added the Facebook "Author Name Format" option to the Essential Settings page.
@@ -394,8 +395,8 @@ Official announcement: N/A
 * **Bugfixes**
 	* *None*
 * **Developer Notes**
-	* Added SucomUtil::is_https() and SucomUtil::get_prot() static methods to test for both PHP's `$_SERVER['HTTPS']` variable and the 'FORCE_SSL_ADMIN' WordPress constant.
-	* Added a call to getimagesize() for images in the content without width / height attribute values. The NGFB_GETIMGSIZE_DISABLE constant can be defined as true in order to disable this feature.
+	* Added SucomUtil::is_https() and SucomUtil::get_prot() static methods to test for PHP's `$_SERVER['HTTPS']` variable and the 'FORCE_SSL_ADMIN' WordPress constant.
+	* Added a new NGFB_GETIMGSIZE_DISABLE constant disable the use of getimagesize().
 
 = Version 8.21.5 (2016/01/16) =
 
@@ -603,12 +604,4 @@ Official announcement: N/A
 = 8.21.5 =
 
 2016/01/16 - Fixed 'fb_app_id' value for some 32bit platforms where max integer size is 2147483647. Added shorter / more helpful notice, displayed for users without admin privileges, for images that are too small.
-
-= 8.21.4 =
-
-2016/01/14 - Added enabled / disabled / recommended tooltip text to the green / gray / red status lights in the settings page side metaboxes.
-
-= 8.21.3 =
-
-2016/01/10 - Fixed the SucomUtil::get_max_nums() method to return the correct maximum number of Open Graph images for index type webpages.
 
