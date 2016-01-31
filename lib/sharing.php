@@ -130,9 +130,11 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 		public function filter_get_meta_defaults( $opts_def, $mod ) {
 			$meta_def = array(
-				'twitter_desc' => '',
+				'tumblr_title' => '',
+				'tumblr_desc' => '',
 				'tumblr_img_desc' => '',
 				'tumblr_vid_desc' => '',
+				'twitter_desc' => '',
 				'buttons_disabled' => 0,
 			);
 			return array_merge( $opts_def, $meta_def );
