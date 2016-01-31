@@ -295,7 +295,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 			return self::$c[$kn] = $lic === true ? 
 				( ( ! empty( $this->p->options[$on] ) && 
 					$ins && class_exists( 'SucomUpdate' ) &&
-						( $uerr = SucomUpdate::get_umsg( $lca ) ? 
+						( $uerr = SucomUpdate::get_umsg( $lca ) ? 	// use get_umsg() for backwards compat
 							false : $ins ) ) ? $uerr : false ) : $ins;
 		}
 	}
