@@ -379,6 +379,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version 8.22.2 (TBD) =
+
+Official announcement: N/A
+
+* **New Features**
+	* *None*
+* **Improvements**
+	* *None*
+* **Bugfixes**
+	* *None*
+* **Developer Notes**
+	* Added a new SucomUtil::strip_shortcodes() static method and 'sucom_strip_shortcodes' filter.
+
 = Version 8.22.1 (2016/01/30) =
 
 Official announcement: N/A
