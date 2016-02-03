@@ -18,7 +18,7 @@
 
 <p><strong>A solid social meta tag plugin is the foundation of any good social strategy</strong> &mdash; NextGEN Facebook (NGFB) gives you total control over all the information <a href="https://developers.facebook.com/docs/sharing/webmasters/crawler">social website crawlers</a> need, improving Google Search ranking, social engagement, and click-through-rates on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
 
-<p><strong>NGFB automatically retrieves and uses information from a wide range or sources</strong>, including All in One SEO Pack, bbPress, BuddyPress, Easy Digital Downloads, HeadSpace2 SEO, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, Yoast SEO (aka WordPress SEO), WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, extends the WordPress REST API version 2, and much more.</p>
+<p><strong>NGFB automatically retrieves and uses information from a wide range or sources</strong>, including All in One SEO Pack, bbPress, BuddyPress, BuddyPress rtMedia, Easy Digital Downloads, HeadSpace2 SEO, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, Yoast SEO (aka WordPress SEO), WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, extends the WordPress REST API version 2, and much more.</p>
 
 <h4>Available in Multiple Languages</h4>
 
@@ -152,6 +152,7 @@
 <li>All in One SEO Pack</li>
 <li>bbPress</li>
 <li>BuddyPress</li>
+<li>BuddyPress rtMedia</li>
 <li>Easy Digital Downloads</li>
 <li>HeadSpace2 SEO</li>
 <li>NextGEN Gallery</li>
@@ -276,7 +277,7 @@
 
 <p><strong>Forums and Social</strong></p>
 
-<p>NGFB (Pro version) supports <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> and <a href="https://wordpress.org/plugins/buddypress/">BuddyPress</a> (see the <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/">BuddyPress Integration Notes</a>), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, etc. Social sharing buttons can also be added to <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> single template pages and <a href="https://wordpress.org/plugins/buddypress/">BuddyPress</a> activities.</p>
+<p>NGFB (Pro version) supports <a href="https://wordpress.org/plugins/bbpress/">bbPress</a>, <a href="https://wordpress.org/plugins/buddypress/">BuddyPress</a> (see the <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/">BuddyPress Integration Notes</a>), and <a href="https://wordpress.org/plugins/buddypress-media/">BuddyPress rtMedia</a>, making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, etc. Social sharing buttons can also be added to <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> single template pages and <a href="https://wordpress.org/plugins/buddypress/">BuddyPress</a> activities.</p>
 
 <h4>Proven Performance</h4>
 
