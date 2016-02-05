@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.22.2',		// plugin version
+					'version' => '8.23.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -205,10 +205,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb404',				// increment when changing default options
+				'version' => 'ngfb405',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'schema_logo_url' => '',
+					'schema_alt_name' => '',
 					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length
 					'schema_type_for_post' => 'webpage',
 					'schema_type_for_page' => 'webpage',

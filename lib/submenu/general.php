@@ -269,6 +269,11 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					'<td>'.$this->form->get_input( 'schema_logo_url', 'wide' ).'</td>';
 
 					$rows[] = '<tr class="hide_in_basic">'.
+					$this->p->util->get_th( _x( 'Website Alternate Name',
+						'option label', 'nextgen-facebook' ), null, 'google_schema_alt_name' ).
+					'<td>'.$this->form->get_input( 'schema_alt_name', 'wide' ).'</td>';
+
+					$rows[] = '<tr class="hide_in_basic">'.
 					$this->p->util->get_th( _x( 'Maximum Description Length',
 						'option label', 'nextgen-facebook' ), null, 'google_schema_desc_len' ).
 					'<td>'.$this->form->get_input( 'schema_desc_len', 'short' ).' '.
