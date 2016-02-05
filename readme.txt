@@ -426,7 +426,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 4.22.1 =
+= 8.23.0 =
 
 2016/02/06 - Added a new "Website Alternate Name" option. Updated Wistia media integration module. Fixed missing custom image sizes when editing an image in the Media Library. Fixed use of a custom Pinterest image ID / URL.
 
