@@ -387,7 +387,7 @@ Official announcement: N/A
 * **New Features**
 	* Added a new "Website Alternate Name" option in the General settings under the Google / Schema tab.
 * **Improvements**
-	* *None*
+	* Updated the Wistia integration module to support the new Wistia async embed HTML.
 * **Bugfixes**
 	* Fixed missing custom image sizes when editing an image in the Media Library.
 	* Fixed the use of a custom Pinterest image ID / URL for the Pinterest crawler.
