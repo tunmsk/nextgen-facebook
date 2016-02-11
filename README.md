@@ -99,11 +99,11 @@
 <li>Customizable <em>multilingual</em> Site Title and Site Description texts.</li>
 <li>Contextual help for <em>every</em> plugin option and <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/">comprehensive online documentation</a>.</li>
 <li>Uses object and transient caches to provide incredibly fast execution speeds.</li>
-<li>Default stylesheets for each social sharing button location.</li>
 <li>Social sharing buttons for the content, excerpt, in a widget, as a shortcode, floating sidebar, and/or PHP function.
 
 <ul>
 <li>Buffer</li>
+<li>Email</li>
 <li>Facebook</li>
 <li>Google+</li>
 <li>LinkedIn</li>
@@ -113,7 +113,10 @@
 <li>StumbleUpon</li>
 <li>Tumblr</li>
 <li>Twitter</li>
+<li>WhatsApp (for Mobile Devices)</li>
 </ul></li>
+<li>A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).</li>
+<li>Include / exclude each social sharing button based on the viewing device (desktop and/or mobile).</li>
 </ul>
 
 <blockquote>
@@ -193,6 +196,7 @@
 <p>NGFB comes with several sharing buttons, that you can optionally include on Post / Page editing pages, above / below your content or excerpt, <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> single pages, <a href="https://wordpress.org/plugins/buddypress/">BuddyPress</a> activity entries, as a sidebar, widget, shortcode, or even call a function from your theme template(s). Each of the following sharing buttons can be enabled, configured, and styled individually:</p>
 
 <ul>
+<li><strong>Email</strong></li>
 <li><strong>Buffer</strong></li>
 <li><strong>Facebook</strong> (Like, Send, and Share)</li>
 <li><strong>Google+</strong></li>
@@ -203,6 +207,7 @@
 <li><strong>StumbleUpon</strong></li>
 <li><strong>Tumblr</strong> (Links, Quotes, Images, Videos)</li>
 <li><strong>Twitter</strong></li>
+<li><strong>WhatsApp</strong> (for Mobile Devices)</li>
 </ul>
 
 <p>The Facebook, Google+ and Twitter sharing buttons support <em>multiple languages</em>. A default language can be chosen in the NGFB settings, and the <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/">Pro version</a> switches the sharing button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Open Graph (Facebook) and Pinterest Rich Pin descriptions, Tweet text, and other social captions.</p>

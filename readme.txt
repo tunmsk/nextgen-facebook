@@ -89,9 +89,9 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 * Customizable *multilingual* Site Title and Site Description texts.
 * Contextual help for *every* plugin option and [comprehensive online documentation](http://surniaulula.com/codex/plugins/nextgen-facebook/).
 * Uses object and transient caches to provide incredibly fast execution speeds.
-* Default stylesheets for each social sharing button location.
 * Social sharing buttons for the content, excerpt, in a widget, as a shortcode, floating sidebar, and/or PHP function.
 	* Buffer
+	* Email
 	* Facebook
 	* Google+
 	* LinkedIn
@@ -101,6 +101,9 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 	* StumbleUpon
 	* Tumblr
 	* Twitter
+	* WhatsApp (for Mobile Devices)
+* A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).
+* Include / exclude each social sharing button based on the viewing device (desktop and/or mobile).
 
 <blockquote>
 <p>Download the Free version from <a href="http://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>.</p>
@@ -165,6 +168,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 NGFB comes with several sharing buttons, that you can optionally include on Post / Page editing pages, above / below your content or excerpt, [bbPress](https://wordpress.org/plugins/bbpress/) single pages, [BuddyPress](https://wordpress.org/plugins/buddypress/) activity entries, as a sidebar, widget, shortcode, or even call a function from your theme template(s). Each of the following sharing buttons can be enabled, configured, and styled individually:
 
+* **Email**
 * **Buffer**
 * **Facebook** (Like, Send, and Share)
 * **Google+**
@@ -175,6 +179,7 @@ NGFB comes with several sharing buttons, that you can optionally include on Post
 * **StumbleUpon**
 * **Tumblr** (Links, Quotes, Images, Videos)
 * **Twitter**
+* **WhatsApp** (for Mobile Devices)
 
 The Facebook, Google+ and Twitter sharing buttons support *multiple languages*. A default language can be chosen in the NGFB settings, and the [Pro version](http://surniaulula.com/extend/plugins/nextgen-facebook/) switches the sharing button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Open Graph (Facebook) and Pinterest Rich Pin descriptions, Tweet text, and other social captions.
 
@@ -389,6 +394,7 @@ Please note: This latest release includes new social sharing buttons and styles.
 * **New Features**
 	* Added a new "Allow for Platform" option for all social sharing buttons.
 	* Added a new "Reload Default Styles" action button on the Sharing Styles settings page.
+	* Added a new "Email" and "WhatsApp" social sharing button -- Please note that the default "Allow for Platform" option value for the WhatsApp button is "Mobile Only".
 * **Improvements**
 	* Removed the "Use Meta Property Containers" option (the 'noscript' meta container feature has been deprecated).
 * **Bugfixes**
