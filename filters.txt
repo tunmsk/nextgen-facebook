@@ -91,7 +91,7 @@ apply_filters( 'ngfb_schema_person_data', $data, $use_post, $obj, $mt_og, $post_
 apply_filters( 'ngfb_schema_website_data', $data, $use_post, $obj, $mt_og, $post_id, $author_id );
 apply_filters( 'ngfb_section', $section );
 apply_filters( 'ngfb_sharing_show_on', $show_on, $prefix );
-apply_filters( 'ngfb_sharing_style_tabs', $tabs );
+apply_filters( 'ngfb_sharing_styles_tabs', $tabs );
 apply_filters( 'ngfb_sharing_url', $url, $use_post, $add_page, $src_id );
 apply_filters( 'ngfb_shortcode_ngfb', $atts, $content );
 apply_filters( 'ngfb_shorten_url', $long_url, $shortener );

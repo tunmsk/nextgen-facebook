@@ -384,8 +384,11 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 Official announcement: N/A
 
+Please note: This latest release includes new social sharing buttons and styles. You can use the new "Reload Default Styles" action button to load the latest sharing styles.
+
 * **New Features**
-	* *None*
+	* Added a new "Allow for Platform" option for all social sharing buttons.
+	* Added a new "Reload Default Styles" action button on the Sharing Styles settings page.
 * **Improvements**
 	* Removed the "Use Meta Property Containers" option (the 'noscript' meta container feature has been deprecated).
 * **Bugfixes**
@@ -460,8 +463,4 @@ Official announcement: N/A
 = 8.23.0 =
 
 2016/02/06 - Added a new "Website Alternate Name" option. Updated Wistia media integration module. Fixed missing custom image sizes when editing an image in the Media Library. Fixed use of a custom Pinterest image ID / URL.
-
-= 8.22.1 =
-
-2016/01/30 - Added a call to getimagesize() for images in the content without width / height attribute values. Added a new module for BuddyPress rtMedia to include WP Media Library image IDs in BuddyPress activity images (Pro version).
 
