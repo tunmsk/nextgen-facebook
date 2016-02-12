@@ -89,6 +89,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 * Customizable *multilingual* Site Title and Site Description texts.
 * Contextual help for *every* plugin option and [comprehensive online documentation](http://surniaulula.com/codex/plugins/nextgen-facebook/).
 * Uses object and transient caches to provide incredibly fast execution speeds.
+* Include / exclude each social sharing button based on the viewing device (desktop and/or mobile).
 * Social sharing buttons for the content, excerpt, in a widget, as a shortcode, floating sidebar, and/or PHP function.
 	* Buffer
 	* Email
@@ -102,8 +103,6 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 	* Tumblr
 	* Twitter
 	* WhatsApp (for Mobile Devices)
-* A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).
-* Include / exclude each social sharing button based on the viewing device (desktop and/or mobile).
 
 <blockquote>
 <p>Download the Free version from <a href="http://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>.</p>
@@ -130,6 +129,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 * URL shortening with Bitly or Google for URLs in Tweet texts.
 * Ability to include / exclude sharing buttons by post type.
 * Selection of preset button options by location (content, excerpt, shortcode, widget, etc.).
+* A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).
 * Integrates with **3rd party plugins and services** for additional image, video, product, and content information (see [About Pro Modules](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/) and [Integration Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/) for details). The following modules are included with the Pro version, and are automatically loaded if/when the supported plugins and/or services are detected.
 	* **Supported 3rd Party Plugins**
 		* All in One SEO Pack
@@ -385,11 +385,11 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.24.0 (TBD) =
+= Version 8.24.0 (2016/02/12) =
 
 Official announcement: N/A
 
-Please note: This latest release includes new social sharing buttons and styles. You can use the new "Reload Default Styles" action button to load the latest sharing styles.
+Please note: This latest release includes new social sharing buttons and styles. **Use the "Reload Default Styles" action button on the Sharing Styles page to reload the latest default sharing styles.**
 
 * **New Features**
 	* Added a new "Allow for Platform" option for all social sharing buttons.
@@ -419,6 +419,7 @@ Please note: This latest release includes new social sharing buttons and styles.
 		* 'ngfb_json_http_schema_org_person'
 		* 'ngfb_json_http_schema_org_website'
 		* 'ngfb_json_http_schema_org_{item_type}'
+	* Renamed all core 'ngfb_*_tabs' filters.
 
 = Version 8.23.0 (2016/02/06) =
 
@@ -465,6 +466,10 @@ Official announcement: N/A
 	* Added a new NGFB_GETIMGSIZE_DISABLE constant disable the use of PHP's getimagesize() function.
 
 == Upgrade Notice ==
+
+= 8.24.0 =
+
+2016/02/12 - Added new "Email" and "WhatsApp" sharing buttons and "Allow for Platform" option. Use the "Reload Default Styles" action button on the Sharing Styles page to reload the latest default sharing styles.
 
 = 8.23.0 =
 
