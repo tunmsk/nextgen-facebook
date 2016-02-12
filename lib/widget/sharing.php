@@ -140,7 +140,6 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 				echo '</label></p>', "\n";
 			}
 		}
-
 	}
 }
 
