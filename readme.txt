@@ -385,7 +385,9 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
-= Version 8.24.0 (2016/02/12) =
+= Changelog / Release Notes =
+
+** Version 8.24.0 (2016/02/12) **
 
 Official announcement: N/A
 
@@ -421,7 +423,7 @@ Please note: This latest release includes new social sharing buttons and styles.
 		* 'ngfb_json_http_schema_org_{item_type}'
 	* Renamed all core 'ngfb_*_tabs' filters.
 
-= Version 8.23.0 (2016/02/06) =
+** Version 8.23.0 (2016/02/06) **
 
 Official announcement: N/A
 
@@ -445,7 +447,7 @@ Official announcement: N/A
 		* 'ngfb_schema_organization_data' (return an array)
 		* 'ngfb_schema_person_data' (return an array)
 
-= Version 8.22.1 (2016/01/30) =
+** Version 8.22.1 (2016/01/30) **
 
 Official announcement: N/A
 
