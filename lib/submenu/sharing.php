@@ -105,8 +105,7 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 			}
 
 			// these metabox ids should be closed by default (array_diff() selects everything except those listed)
-			$ids = array_diff( array_keys( $this->p->cf['plugin']['ngfb']['lib']['website'] ), 
-				array( 'facebook', 'gplus', 'twitter' ) );
+			$ids = array_diff( array_keys( $this->p->cf['plugin']['ngfb']['lib']['website'] ), array() );
 			$this->p->mods['util']['user']->reset_metabox_prefs( $this->pagehook, $ids, 'closed' );
 		}
 
@@ -120,7 +119,7 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		public function show_metabox_sharing() {
 			$metabox = 'sharing';
-			$tabs = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_tabs', array(
+			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_buttons_tabs', array(
 				'include' => _x( 'Include Buttons', 'metabox tab', 'nextgen-facebook' ),
 				'position' => _x( 'Buttons Position', 'metabox tab', 'nextgen-facebook' ),
 				'preset' => _x( 'Button Presets', 'metabox tab', 'nextgen-facebook' ),

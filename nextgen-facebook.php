@@ -12,7 +12,7 @@
  * Description: Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.1
  * Tested Up To: 4.4.2
- * Version: 8.23.0
+ * Version: 8.24.0
  * 
  * Copyright 2012-2016 Jean-Sebastien Morisset (http://surniaulula.com/)
  */

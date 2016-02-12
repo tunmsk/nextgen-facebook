@@ -55,15 +55,20 @@ if ( ! class_exists( 'NgfbSubmenuSharingTumblr' ) && class_exists( 'NgfbSubmenuS
 			}
 			$buttons_html .= '</div>';
 
+			$rows[] = $this->p->util->get_th( _x( 'Preferred Order',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
+			$this->form->get_select( 'tumblr_order', 
+				range( 1, count( $this->p->admin->submenu['sharing']->website ) ), 'short' ).'</td>';
+
 			$rows[] = $this->p->util->get_th( _x( 'Show Button in',
 				'option label (short)', 'nextgen-facebook' ), 'short', null, 'The Tumblr button shares a custom Image ID (in the Social Settings metabox), a featured image, or an attached image, that is equal to or larger than the \'Image Dimensions\' you have chosen (when the <em>Use Attached Image</em> option is checked), embedded video, the content of <em>quote</em> custom Posts, or simply shares the webpage link.' ).'<td>'.
 			( $this->show_on_checkboxes( 'tumblr' ) ).'</td>';
 
-			$rows[] = $this->p->util->get_th( _x( 'Preferred Order',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$this->form->get_select( 'tumblr_order', 
-				range( 1, count( $this->p->admin->submenu['sharing']->website ) ), 
-					'short' ).'</td>';
+			$rows[] = '<tr class="hide_in_basic">'.
+			$this->p->util->get_th( _x( 'Allow for Platform',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
+			'<td>'.$this->form->get_select( 'tumblr_platform',
+				$this->p->cf['sharing']['platform'] ).'</td>';
 
 			$rows[] = '<tr class="hide_in_basic">'.
 			$this->p->util->get_th( _x( 'JavaScript in',
@@ -107,11 +112,12 @@ if ( ! class_exists( 'NgfbSharingTumblr' ) ) {
 		private static $cf = array(
 			'opt' => array(				// options
 				'defaults' => array(
+					'tumblr_order' => 12,
 					'tumblr_on_content' => 0,
 					'tumblr_on_excerpt' => 0,
 					'tumblr_on_sidebar' => 0,
 					'tumblr_on_admin_edit' => 1,
-					'tumblr_order' => 10,
+					'tumblr_platform' => 'any',
 					'tumblr_script_loc' => 'footer',
 					'tumblr_button_style' => 'share_1',
 					'tumblr_desc_len' => 300,

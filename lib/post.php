@@ -302,7 +302,7 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 			wp_nonce_field( NgfbAdmin::get_nonce(), NGFB_NONCE );
 
 			$metabox = 'post';
-			$tabs = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_tabs',
+			$tabs = apply_filters( $this->p->cf['lca'].'_post_social_settings_tabs',
 				$this->get_default_tabs(), $post, $post_type );
 			if ( empty( $this->p->is_avail['mt'] ) )
 				unset( $tabs['tags'] );

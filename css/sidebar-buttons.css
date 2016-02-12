@@ -89,7 +89,7 @@
 
 #ngfb-sidebar .ngfb-buttons div.pinterest-button,
 #ngfb-sidebar .ngfb-preset-large_share_vertical
-	.ngfb-buttons div.pinterest-button { height:40px; margin-top:42px; }
+	.ngfb-buttons div.pinterest-button { line-height:115px; }
 #ngfb-sidebar .ngfb-preset-small_share_count
 	.ngfb-buttons div.pinterest-button { height:20px; margin-top:10px; }
 
@@ -109,7 +109,7 @@
 
 #ngfb-sidebar .ngfb-buttons div.reddit-button,
 #ngfb-sidebar .ngfb-preset-large_share_vertical
-	.ngfb-buttons div.reddit-button { margin:20px 5px 20px 5px; }
+	.ngfb-buttons div.reddit-button { margin:10px 5px 20px 5px; }
 #ngfb-sidebar .ngfb-preset-small_share_count
 	.ngfb-buttons div.reddit-button { margin-bottom:10px; }
 

@@ -125,7 +125,6 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 		}
 
 		public function show_metabox_style() {
-			$metabox = 'style';
 
 			if ( file_exists( NgfbSharing::$sharing_css_file ) &&
 				( $fsize = filesize( NgfbSharing::$sharing_css_file ) ) !== false )
@@ -144,7 +143,8 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 				)
 			);
 
-			$tabs = apply_filters( $this->p->cf['lca'].'_style_tabs', 
+			$metabox = 'style';
+			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs', 
 				$this->p->cf['sharing']['style'] );
 			$rows = array();
 			foreach ( $tabs as $key => $title ) {

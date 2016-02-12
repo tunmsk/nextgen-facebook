@@ -49,7 +49,7 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_filters( $this, array( 
 					'sharing_show_on' => 2,
-					'style_tabs' => 1,
+					'sharing_styles_tabs' => 1,
 					'style_bbp_single_rows' => 2,
 					'sharing_position_rows' => 2,
 				) );
@@ -87,7 +87,7 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
 			return $show_on;
 		}
 
-		public function filter_style_tabs( $tabs ) {
+		public function filter_sharing_styles_tabs( $tabs ) {
 			$tabs['bbp_single'] = 'bbPress Single';
 			$this->p->options['buttons_css_bbp_single:is'] = 'disabled';
 			return $tabs;

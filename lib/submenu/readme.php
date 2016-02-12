@@ -30,7 +30,7 @@ if ( ! class_exists( 'NgfbSubmenuReadme' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		public function show_metabox_readme() {
 			$metabox = 'readme';
-			$tabs = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_tabs', array( 
+			$tabs = apply_filters( $this->p->cf['lca'].'_plugin_readme_tabs', array( 
 				'description' => _x( 'Description', 'metabox tab', 'nextgen-facebook' ),
 				'faq' => _x( 'FAQ', 'metabox tab', 'nextgen-facebook' ),
 				'notes' => _x( 'Other Notes', 'metabox tab', 'nextgen-facebook' ),

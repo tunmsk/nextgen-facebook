@@ -100,19 +100,23 @@ jQuery("#ngfb-sidebar-header").click( function(){
 					add_action( 'add_meta_boxes', array( &$this, 'add_post_buttons_metabox' ) );
 
 				$this->p->util->add_plugin_filters( $this, array( 
-					'save_options' => 3,		// update the sharing css file
-					'option_type' => 4,		// identify option type for sanitation
-					'post_cache_transients' => 4,	// clear transients on post save
-					'messages_tooltip_side' => 3,	// tooltip messages for side boxes
-					'messages_tooltip_post' => 3,	// tooltip messages for post social settings
+					'save_options' => 3,			// update the sharing css file
+					'option_type' => 4,			// identify option type for sanitation
+					'post_cache_transients' => 4,		// clear transients on post save
+					'messages_tooltip_side' => 3,		// tooltip messages for side boxes
+					'messages_tooltip_post' => 3,		// tooltip messages for post social settings
+					'secondary_action_buttons' => 4,	// add a reload default styles button
 				) );
 
 				$this->p->util->add_plugin_filters( $this, array( 
-					'status_gpl_features' => 3,	// include sharing, shortcode, and widget status
-					'status_pro_features' => 3,	// include social file cache status
-				), 10, 'ngfb' );			// hook into the extension name instead
-			}
+					'status_gpl_features' => 3,		// include sharing, shortcode, and widget status
+					'status_pro_features' => 3,		// include social file cache status
+				), 10, 'ngfb' );				// hook into the extension name instead
 
+				$this->p->util->add_plugin_actions( $this, array( 
+					'load_setting_page_reload_default_sharing_styles' => 4,
+				) );
+			}
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark( 'action / filter setup' );	// end timer
 		}
@@ -145,10 +149,10 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			$opts_def = $this->p->util->add_ptns_to_opts( $opts_def, 'buttons_add_to' );
 			$plugin_dir = trailingslashit( realpath( dirname( $this->plugin_filepath ) ) );
 			$url_path = parse_url( trailingslashit( plugins_url( '', $this->plugin_filepath ) ), PHP_URL_PATH );	// relative URL
-			$style_tabs = apply_filters( $this->p->cf['lca'].'_style_tabs',
+			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs',
 				$this->p->cf['sharing']['style'] );
 
-			foreach ( $style_tabs as $id => $name ) {
+			foreach ( $tabs as $id => $name ) {
 				$buttons_css_file = $plugin_dir.'css/'.$id.'-buttons.css';
 
 				// css files are only loaded once (when variable is empty) into defaults to minimize disk i/o
@@ -324,6 +328,28 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			return $text;
 		}
 
+		public function filter_secondary_action_buttons( $actions, $menu_id, $menu_name, $menu_lib ) {
+			if ( $menu_id === 'style' )
+				$actions['reload_default_sharing_styles'] = __( 'Reload Default Styles', 'submit button', 'nextgen-facebook' );
+			return $actions;
+		}
+		
+		public function action_load_setting_page_reload_default_sharing_styles( $pagehook, $menu_id, $menu_name, $menu_lib ) {
+			$opts =& $this->p->options;
+			$def_opts = $this->p->opt->get_defaults();
+			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs', 
+				$this->p->cf['sharing']['style'] );
+
+			foreach ( $tabs as $id => $name )
+				if ( isset( $opts['buttons_css_'.$id] ) &&
+					isset( $def_opts['buttons_css_'.$id] ) )
+						$opts['buttons_css_'.$id] = $def_opts['buttons_css_'.$id];
+
+			$this->update_sharing_css( $opts );
+			$this->p->opt->save_options( NGFB_OPTIONS_NAME, $opts, false );
+			$this->p->notice->inf( __( 'All sharing styles have been reloaded with their default settings and saved.', 'nextgen-facebook' ) );
+		}
+
 		public function wp_enqueue_styles() {
 			if ( ! empty( $this->p->options['buttons_use_social_css'] ) ) {
 				if ( ! file_exists( self::$sharing_css_file ) ) {
@@ -359,57 +385,61 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		}
 
 		public function update_sharing_css( &$opts ) {
-			if ( ! empty( $opts['buttons_use_social_css'] ) ) {
-				$css_data = '';
-				$style_tabs = apply_filters( $this->p->cf['lca'].'_style_tabs', 
-					$this->p->cf['sharing']['style'] );
 
-				foreach ( $style_tabs as $id => $name )
-					if ( isset( $opts['buttons_css_'.$id] ) )
-						$css_data .= $opts['buttons_css_'.$id];
+			if ( empty( $opts['buttons_use_social_css'] ) ) {
+				$this->unlink_sharing_css();
+				return;
+			}
 
-				$classname = apply_filters( $this->p->cf['lca'].'_load_lib', 
-					false, 'ext/compressor', 'SuextMinifyCssCompressor' );
+			$css_data = '';
+			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs', 
+				$this->p->cf['sharing']['style'] );
 
-				if ( $classname !== false && class_exists( $classname ) )
-					$css_data = call_user_func( array( $classname, 'process' ), $css_data );
-				else {
+			foreach ( $tabs as $id => $name )
+				if ( isset( $opts['buttons_css_'.$id] ) )
+					$css_data .= $opts['buttons_css_'.$id];
+
+			$classname = apply_filters( $this->p->cf['lca'].'_load_lib', 
+				false, 'ext/compressor', 'SuextMinifyCssCompressor' );
+
+			if ( $classname !== false && class_exists( $classname ) )
+				$css_data = call_user_func( array( $classname, 'process' ), $css_data );
+			else {
+				if ( $this->p->debug->enabled )
+					$this->p->debug->log( 'failed to load minify class SuextMinifyCssCompressor' );
+				if ( is_admin() )
+					$this->p->notice->err( __( 'Failed to load the minify class SuextMinifyCssCompressor.',
+						'nextgen-facebook' ), true );
+			}
+
+			if ( $fh = @fopen( self::$sharing_css_file, 'wb' ) ) {
+				if ( ( $written = fwrite( $fh, $css_data ) ) === false ) {
 					if ( $this->p->debug->enabled )
-						$this->p->debug->log( 'failed to load minify class SuextMinifyCssCompressor' );
+						$this->p->debug->log( 'failed writing to '.self::$sharing_css_file );
 					if ( is_admin() )
-						$this->p->notice->err( __( 'Failed to load the minify class SuextMinifyCssCompressor.',
-							'nextgen-facebook' ), true );
-				}
-
-				if ( $fh = @fopen( self::$sharing_css_file, 'wb' ) ) {
-					if ( ( $written = fwrite( $fh, $css_data ) ) === false ) {
-						if ( $this->p->debug->enabled )
-							$this->p->debug->log( 'failed writing to '.self::$sharing_css_file );
-						if ( is_admin() )
-							$this->p->notice->err( sprintf( __( 'Failed writing to the % file.',
-								'nextgen-facebook' ), self::$sharing_css_file ), true );
-					} elseif ( $this->p->debug->enabled ) {
-						$this->p->debug->log( 'updated css file '.self::$sharing_css_file.' ('.$written.' bytes written)' );
-						if ( is_admin() )
-							$this->p->notice->inf( sprintf( __( 'Updated the %1$s stylesheet (%2$d bytes written).',
-								'nextgen-facebook' ), self::$sharing_css_file, $written ), true );
-					}
-					fclose( $fh );
-				} else {
-					if ( ! is_writable( NGFB_CACHEDIR ) ) {
-						if ( $this->p->debug->enabled )
-							$this->p->debug->log( NGFB_CACHEDIR.' is not writable', true );
-						if ( is_admin() )
-							$this->p->notice->err( sprintf( __( 'The %s folder is not writable.',
-								'nextgen-facebook' ), NGFB_CACHEDIR ), true );
-					}
-					if ( $this->p->debug->enabled )
-						$this->p->debug->log( 'failed opening '.self::$sharing_css_file.' for writing' );
-					if ( is_admin() )
-						$this->p->notice->err( sprintf( __( 'Failed to open file %s for writing.',
+						$this->p->notice->err( sprintf( __( 'Failed writing to the % file.',
 							'nextgen-facebook' ), self::$sharing_css_file ), true );
+				} elseif ( $this->p->debug->enabled ) {
+					$this->p->debug->log( 'updated css file '.self::$sharing_css_file.' ('.$written.' bytes written)' );
+					if ( is_admin() )
+						$this->p->notice->inf( sprintf( __( 'Updated the %1$s stylesheet (%2$d bytes written).',
+							'nextgen-facebook' ), self::$sharing_css_file, $written ), true );
 				}
-			} else $this->unlink_sharing_css();
+				fclose( $fh );
+			} else {
+				if ( ! is_writable( NGFB_CACHEDIR ) ) {
+					if ( $this->p->debug->enabled )
+						$this->p->debug->log( NGFB_CACHEDIR.' is not writable', true );
+					if ( is_admin() )
+						$this->p->notice->err( sprintf( __( 'The %s folder is not writable.',
+							'nextgen-facebook' ), NGFB_CACHEDIR ), true );
+				}
+				if ( $this->p->debug->enabled )
+					$this->p->debug->log( 'failed opening '.self::$sharing_css_file.' for writing' );
+				if ( is_admin() )
+					$this->p->notice->err( sprintf( __( 'Failed to open file %s for writing.',
+						'nextgen-facebook' ), self::$sharing_css_file ), true );
+			}
 		}
 
 		public function unlink_sharing_css() {
@@ -595,8 +625,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			$html = false;
 
 			if ( $this->p->debug->enabled ) {
-				$this->p->debug->log( 'use_post: '.( $use_post === false ?
-					'false' : ( $use_post === true ? 'true' : $use_post ) ) );
+				$this->p->debug->log( 'use_post: '.( $use_post === false ? 'false' : 
+					( $use_post === true ? 'true' : $use_post ) ) );
 				$this->p->debug->log( 'post_id: '.$post_id );
 				$this->p->debug->log( 'src_id: '.$src_id );
 			}
@@ -636,9 +666,11 @@ jQuery("#ngfb-sidebar-header").click( function(){
 				if ( trim( $buttons_html ) !== '' ) {
 					$html = '
 <!-- '.$lca.' '.$css_type.' begin -->
-<div class="'.( $css_preset ? $css_preset.' ' : '' ).
-	( $use_post ? $lca.'-'.$css_type.'">' : '" id="'.$lca.'-'.$css_type.'">' ).'
-'.$buttons_html.'</div><!-- .'.$lca.'-'.$css_type.' -->
+<div class="'.
+	( $css_preset ? $css_preset.' ' : '' ).
+	( $use_post ? $lca.'-'.$css_type.'">' : '" id="'.$lca.'-'.$css_type.'">' ).
+$buttons_html.
+'</div><!-- .'.$lca.'-'.$css_type.' -->
 <!-- '.$lca.' '.$css_type.' end -->'."\n\n";
 
 					if ( $this->p->is_avail['cache']['transient'] ) {
@@ -676,10 +708,10 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			$html_ret = '';
 			$html_begin = '<div class="'.$lca.'-buttons">'."\n";
 			$html_end = '</div><!-- .'.$lca.'-buttons -->'."\n";
-			$preset_id = empty( $atts['preset_id'] ) ? '' : 
-				preg_replace( '/[^a-z0-9\-_]/', '', $atts['preset_id'] );
-			$filter_id = empty( $atts['filter_id'] ) ? '' : 
-				preg_replace( '/[^a-z0-9\-_]/', '', $atts['filter_id'] );
+			$preset_id = empty( $atts['preset_id'] ) ? 
+				'' : preg_replace( '/[^a-z0-9\-_]/', '', $atts['preset_id'] );
+			$filter_id = empty( $atts['filter_id'] ) ? 
+				'' : preg_replace( '/[^a-z0-9\-_]/', '', $atts['filter_id'] );
 
 			// possibly dereference the opts variable to prevent passing on changes
 			if ( empty( $preset_id ) && empty( $filter_id ) )
@@ -709,10 +741,16 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			}
 
 			foreach ( $ids as $id ) {
-				$id = preg_replace( '/[^a-z]/', '', $id );	// sanitize the website object name
-				if ( isset( $this->website[$id] ) &&
-					method_exists( $this->website[$id], 'get_html' ) )
-						$html_ret .= $this->website[$id]->get_html( $atts, $custom_opts )."\n";
+				if ( isset( $this->website[$id] ) ) {
+					if ( method_exists( $this->website[$id], 'get_html' ) ) {
+						if ( $this->allow_for_platform( $id ) ) {
+							$html_ret .= $this->website[$id]->get_html( $atts, $custom_opts )."\n";
+						} elseif ( $this->p->debug->enabled )
+							$this->p->debug->log( $id.' not allowed for platform' );
+					} elseif ( $this->p->debug->enabled )
+						$this->p->debug->log( 'get_html method missing for '.$id );
+				} elseif ( $this->p->debug->enabled )
+					$this->p->debug->log( 'website object missing for '.$id );
 			}
 
 			$html_ret = trim( $html_ret );
@@ -850,10 +888,30 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		public function have_buttons_for_type( $type ) {
 			if ( isset( $this->buttons_for_type[$type] ) )
 				return $this->buttons_for_type[$type];
-			foreach ( $this->p->cf['opt']['pre'] as $id => $pre )
-				if ( ! empty( $this->p->options[$pre.'_on_'.$type] ) )	// check if button is enabled
-					return $this->buttons_for_type[$type] = true;
+			foreach ( $this->p->cf['opt']['pre'] as $id => $pre ) {
+				if ( ! empty( $this->p->options[$pre.'_on_'.$type] ) &&		// check if button is enabled
+					$this->allow_for_platform( $id ) )			// check if allowed on platform
+						return $this->buttons_for_type[$type] = true;
+			}
 			return $this->buttons_for_type[$type] = false;
+		}
+
+		public function allow_for_platform( $id ) {
+			$pre = isset( $this->p->cf['opt']['pre'][$id] ) ?
+				$this->p->cf['opt']['pre'][$id] : $id;
+			if ( isset( $this->p->options[$pre.'_platform'] ) ) {
+				switch( $this->p->options[$pre.'_platform'] ) {
+					case 'any':
+						return true;
+					case 'desktop':
+						return SucomUtil::is_desktop();
+					case 'mobile':
+						return SucomUtil::is_mobile();
+					default:
+						return true;
+				}
+			}
+			return true;
 		}
 
 		public function is_post_buttons_disabled() {

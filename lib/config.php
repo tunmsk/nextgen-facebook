@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.23.0',		// plugin version
+					'version' => '8.24.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -79,6 +79,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'sitelicenses' => '<span>Extension Plugins</span> and Pro Licenses',
 						),
 						'website' => array(
+							'email' => 'Email',
 							'twitter' => 'Twitter',
 							'facebook' => 'Facebook', 
 							'gplus' => 'GooglePlus',
@@ -91,6 +92,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'tumblr' => 'Tumblr',
 							'youtube' => 'YouTube',
 							'skype' => 'Skype',
+							'whatsapp' => 'WhatsApp',
 						),
 						'shortcode' => array(
 							'sharing' => 'Sharing Shortcode',
@@ -205,7 +207,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb405',				// increment when changing default options
+				'version' => 'ngfb407',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'schema_logo_url' => '',
@@ -232,7 +234,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'schema_author_json' => 1,
 					'schema_publisher_json' => 1,
 					'schema_website_json' => 1,
-					'schema_add_noscript' => 1,
 					'seo_desc_len' => 156,			// meta name="description" maximum text length
 					'seo_author_name' => 'none',		// meta name="author" format
 					'seo_def_author_id' => 0,
@@ -633,6 +634,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'youtube' => 'yt',
 					'skype' => 'skype',
 					'vk' => 'vk',
+					'whatsapp' => 'wa',
 				),
 			),
 			'wp' => array(				// wordpress
@@ -926,7 +928,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'position' => array(
 					'top' => 'Top',
 					'bottom' => 'Bottom',
-					'both' => 'Both Top and Bottom',
+					'both' => 'Top and Bottom',
+				),
+				'platform' => array(
+					'desktop' => 'Desktop Only',
+					'mobile' => 'Mobile Only',
+					'any' => 'Any Platform',
 				),
 			),
 		);
