@@ -330,7 +330,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 		public function filter_secondary_action_buttons( $actions, $menu_id, $menu_name, $menu_lib ) {
 			if ( $menu_id === 'style' )
-				$actions['reload_default_sharing_styles'] = __( 'Reload Default Styles', 'submit button', 'nextgen-facebook' );
+				$actions['reload_default_sharing_styles'] = _x( 'Reload Default Styles', 'submit button', 'nextgen-facebook' );
 			return $actions;
 		}
 		

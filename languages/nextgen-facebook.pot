@@ -1755,6 +1755,7 @@ msgid ""
 msgstr ""
 
 #: lib/messages.php:695
+msgctxt "option comment"
 msgid "%s required to use this option"
 msgstr ""
 
@@ -2383,6 +2384,7 @@ msgid ""
 msgstr ""
 
 #: lib/sharing.php:333
+msgctxt "submit button"
 msgid "Reload Default Styles"
 msgstr ""
 
