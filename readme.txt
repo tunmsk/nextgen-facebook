@@ -471,7 +471,3 @@ Official announcement: N/A
 
 2016/02/12 - Added new "Email" and "WhatsApp" sharing buttons and "Allow for Platform" option. Use the "Reload Default Styles" action button on the Sharing Styles page to reload the latest default sharing styles.
 
-= 8.23.0 =
-
-2016/02/06 - Added a new "Website Alternate Name" option. Updated Wistia media integration module. Fixed missing custom image sizes when editing an image in the Media Library. Fixed use of a custom Pinterest image ID / URL.
-
