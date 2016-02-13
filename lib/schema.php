@@ -137,12 +137,12 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			return self::get_item_type_context( $this->get_head_item_type( $use_post, $obj ) );
 		}
 
-		public static function get_item_type_context( $item_type ) {
+		public static function get_item_type_context( $item_type, $properties = array() ) {
 			if ( preg_match( '/^(.+:\/\/.+)\/([^\/]+)$/', $item_type, $match ) )
-				return array(
+				return array_merge( array(
 					'@context' => $match[1],
 					'@type' => $match[2],
-				);
+				), $properties );
 			else return array();
 		}
 
