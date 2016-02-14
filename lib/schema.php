@@ -298,7 +298,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				'@context' => 'http://schema.org',
 				'@type' => 'Person',
 				'url' => '',
-				'name' => $ngfb->mods['util']['user']->get_author_name( $author_id,
+				'name' => $ngfb->m['util']['user']->get_author_name( $author_id,
 					$ngfb->options['schema_author_name'] ),
 			);
 
@@ -307,7 +307,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				$person_data['url'] = esc_url( $person_url );
 
 			$size_name = $ngfb->cf['lca'].'-schema';
-			$og_image = $ngfb->mods['util']['user']->get_og_image( 1, $size_name, $author_id, false );
+			$og_image = $ngfb->m['util']['user']->get_og_image( 1, $size_name, $author_id, false );
 			NgfbSchema::add_image_list_data( $person_data, 'image', $og_image, 'og:image' );
 
 			if ( empty( $item_prop ) )

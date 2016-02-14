@@ -106,7 +106,7 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 
 			// these metabox ids should be closed by default (array_diff() selects everything except those listed)
 			$ids = array_diff( array_keys( $this->p->cf['plugin']['ngfb']['lib']['website'] ), array() );
-			$this->p->mods['util']['user']->reset_metabox_prefs( $this->pagehook, $ids, 'closed' );
+			$this->p->m['util']['user']->reset_metabox_prefs( $this->pagehook, $ids, 'closed' );
 		}
 
 		public function add_class_postbox_website( $classes ) {

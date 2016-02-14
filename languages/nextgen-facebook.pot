@@ -3334,15 +3334,15 @@ msgctxt "option comment"
 msgid "(shares link on indexes)"
 msgstr ""
 
-#: nextgen-facebook.php:232
+#: nextgen-facebook.php:233
 msgid "HTML debug mode is active (transient cache could NOT be disabled)."
 msgstr ""
 
-#: nextgen-facebook.php:233
+#: nextgen-facebook.php:234
 msgid "HTML debug mode is active (transient cache use is disabled)."
 msgstr ""
 
-#: nextgen-facebook.php:234
+#: nextgen-facebook.php:235
 msgid "Informational debug messages are being added as hidden HTML comments."
 msgstr ""
 

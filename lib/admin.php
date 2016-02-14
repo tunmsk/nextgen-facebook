@@ -450,7 +450,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					_x( 'Pro / Power-User Version', 'metabox title (side)', 'nextgen-facebook' ), 
 						array( &$this, 'show_metabox_purchase' ), $this->pagehook, 'side' );
 
-				$this->p->mods['util']['user']->reset_metabox_prefs( $this->pagehook, 
+				$this->p->m['util']['user']->reset_metabox_prefs( $this->pagehook, 
 					array( 'purchase' ), null, 'side', true );
 			}
 
