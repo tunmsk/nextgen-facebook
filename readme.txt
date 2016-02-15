@@ -387,6 +387,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
+**Version 8.24.1 (2016/02/15)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Updated the admin editing page CSS for the new Email and WhatsApp buttons.
+* *Developer Notes*
+	* Modified the NgfbSchema::add_\* methods argument list (removed $item_type and added $list_element).
+
 **Version 8.24.0 (2016/02/12)**
 
 Official announcement: N/A
@@ -476,6 +489,10 @@ Official announcement: N/A
 	* Added a new NGFB_GETIMGSIZE_DISABLE constant disable the use of PHP's getimagesize() function.
 
 == Upgrade Notice ==
+
+= 8.24.1 =
+
+2016/02/15 - Updated the admin editing page CSS for the new Email and WhatsApp buttons. Modified the NgfbSchema::add_* methods argument list (removed $item_type and added $list_element).
 
 = 8.24.0 =
 
