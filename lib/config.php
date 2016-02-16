@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.24.1',		// plugin version
+					'version' => '8.24.2',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -878,13 +878,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 				'schema_type' => array(
 					'article' => 'http://schema.org/Article',
-					'news_article' => 'http://schema.org/NewsArticle',
-					'tech_article' => 'http://schema.org/TechArticle',
+					'article.news' => 'http://schema.org/NewsArticle',
+					'article.tech' => 'http://schema.org/TechArticle',
 					'book' => 'http://schema.org/Book',
 					'blog' => 'http://schema.org/Blog',
-					'blog_posting' => 'http://schema.org/BlogPosting',
+					'blog.posting' => 'http://schema.org/BlogPosting',
 					'event' => 'http://schema.org/Event',
-					'local_business' => 'http://schema.org/LocalBusiness',
+					'local.business' => 'http://schema.org/LocalBusiness',
 					'organization' => 'http://schema.org/Organization',
 					'other' => 'http://schema.org/Other',
 					'person' => 'http://schema.org/Person',
