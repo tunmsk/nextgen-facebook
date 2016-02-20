@@ -81,7 +81,7 @@ apply_filters( 'ngfb_save_options', $opts, $options_name );
 apply_filters( 'ngfb_save_site_options', $opts );
 apply_filters( 'ngfb_save_taxonomy_options', $opts );
 apply_filters( 'ngfb_save_user_options', $opts, $user_id );
-apply_filters( 'ngfb_schema_head_type_key', $type_key, $use_post, $obj );
+apply_filters( 'ngfb_schema_head_type', $type_key, $use_post, $obj );
 apply_filters( 'ngfb_schema_types', (array) $types );
 apply_filters( 'ngfb_section', $section );
 apply_filters( 'ngfb_sharing_show_on', $show_on, $prefix );

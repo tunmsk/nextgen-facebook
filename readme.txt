@@ -409,7 +409,7 @@ Official announcement: N/A
 	* Added a SucomUtil::get_id_stub_action() static method to return the id, stub, and action strings for a library item.
 	* Added a NgfbMedia check_image_min_max() method to check for minimum image dimensions and aspect ratio.
 	* Renamed these filter hooks:
-		* 'ngfb_schema_item_type' to 'ngfb_schema_head_type_key' (now filters the type key instead of its value)
+		* 'ngfb_schema_item_type' to 'ngfb_schema_head_type' (now filters the type key instead of its value)
 		* 'ngfb_schema_post_types' to 'ngfb_schema_types'
 
 **Version 8.24.1 (2016/02/15)**
