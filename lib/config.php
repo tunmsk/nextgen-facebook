@@ -207,7 +207,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb411',				// increment when changing default options
+				'version' => 'ngfb412',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'schema_website_json' => 1,
@@ -218,6 +218,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'schema_logo_url' => '',
 					'schema_banner_url' => '',
 					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length
+					'schema_type_for_home_page' => 'website',
 					'schema_type_for_post' => 'webpage',
 					'schema_type_for_page' => 'webpage',
 					'schema_type_for_attachment' => 'webpage',
