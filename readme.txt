@@ -411,6 +411,8 @@ Official announcement: N/A
 	* Renamed these filter hooks:
 		* 'ngfb_schema_item_type' to 'ngfb_schema_head_type' (now filters the type key instead of its value)
 		* 'ngfb_schema_post_types' to 'ngfb_schema_types'
+		* 'ngfb_add_http_schema_org_{item_type}' to 'ngfb_add_json_http_schema_org_{item_type}'
+		* 'ngfb_data_http_schema_org_{item_type}' to 'ngfb_json_data_http_schema_org_{item_type}'
 
 **Version 8.24.1 (2016/02/15)**
 
