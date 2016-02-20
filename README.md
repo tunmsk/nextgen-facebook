@@ -35,6 +35,7 @@
 <li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO Mobile App Meta</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO Place and Location Meta</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-rrssb/">WPSSO Ridiculously Responsive Social Sharing Buttons</a></li>
+<li><a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-ssb/">WPSSO Social Sharing Buttons</a></li>
 </ul></p>
 </blockquote>
