@@ -120,7 +120,7 @@ if ( ! class_exists( 'NgfbSubmenuEssential' ) && class_exists( 'NgfbAdmin' ) ) {
 						'option label', 'nextgen-facebook' ), null, 'google_schema_json' ).
 					'<td>'.
 					'<p>'.$this->form->get_checkbox( 'schema_website_json' ).' '.
-						sprintf( __( '<a href="%s">WebSite Information</a> for Search Results',
+						sprintf( __( '<a href="%s">WebSite Information</a> for Google Search',
 							'nextgen-facebook' ), 'https://developers.google.com/structured-data/site-name' ).'</p>'.
 					'<p>'.$this->form->get_checkbox( 'schema_organization_json' ).
 						' Site Publisher / <a href="https://developers.google.com/structured-data/customize/social-profiles">Organization Social Profile</a></p>'.
