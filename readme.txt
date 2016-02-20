@@ -387,7 +387,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.25.0 (TBD)**
+**Version 8.25.0 (2016/02/21)**
 
 Official announcement: N/A
 
@@ -515,11 +515,11 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
+= 8.25.0 =
+
+2016/02/21 - New "Google / Schema Image Dimensions" and "Business Banner (600x60) Image URL" options. Refactored much of the Schema JSON-LD related code. 
+
 = 8.24.1 =
 
 2016/02/15 - Updated the admin editing page CSS for the new Email and WhatsApp buttons. Modified the NgfbSchema::add_* methods argument list (removed $item_type and added $list_element).
-
-= 8.24.0 =
-
-2016/02/12 - Added new "Email" and "WhatsApp" sharing buttons and "Allow for Platform" option. Use the "Reload Default Styles" action button on the Sharing Styles page to reload the latest default sharing styles.
 
