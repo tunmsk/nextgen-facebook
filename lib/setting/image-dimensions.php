@@ -49,12 +49,16 @@ if ( ! class_exists( 'NgfbSettingImagedimensions' ) && class_exists( 'NgfbAdmin'
 
 				case 'image-dimensions-general':
 
-					$rows[] = $this->p->util->get_th( _x( 'Facebook / Open Graph',
+					$rows[] = $this->p->util->get_th( _x( 'Google / Schema Images',
+						'option label', 'nextgen-facebook' ), null, 'google_schema_img_dimensions' ).
+					'<td>'.$this->form->get_image_dimensions_input( 'schema_img', false, false ).'</td>';
+
+					$rows[] = $this->p->util->get_th( _x( 'Facebook / Open Graph Images',
 						'option label', 'nextgen-facebook' ), null, 'og_img_dimensions' ).
 					'<td>'.$this->form->get_image_dimensions_input( 'og_img', false, false ).'</td>';
 
 					if ( ! SucomUtil::get_const( 'NGFB_RICH_PIN_DISABLE' ) ) {
-						$rows[] = $this->p->util->get_th( _x( 'Pinterest Rich Pin',
+						$rows[] = $this->p->util->get_th( _x( 'Pinterest Rich Pin Images',
 							'option label', 'nextgen-facebook' ), null, 'rp_img_dimensions' ).
 						'<td>'.$this->form->get_image_dimensions_input( 'rp_img' ).'</td>';
 					}

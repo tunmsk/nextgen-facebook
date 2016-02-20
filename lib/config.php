@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.24.2',		// plugin version
+					'version' => '8.25.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -207,18 +207,26 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb407',				// increment when changing default options
+				'version' => 'ngfb411',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
-					'schema_logo_url' => '',
+					'schema_website_json' => 1,
+					'schema_organization_json' => 1,
+					'schema_person_json' => 0,
+					'schema_person_id' => '',
 					'schema_alt_name' => '',
+					'schema_logo_url' => '',
+					'schema_banner_url' => '',
 					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length
 					'schema_type_for_post' => 'webpage',
 					'schema_type_for_page' => 'webpage',
 					'schema_type_for_attachment' => 'webpage',
 					'schema_type_for_article' => 'article',
+					'schema_type_for_article.news' => 'article.news',
+					'schema_type_for_article.tech' => 'article.tech',
 					'schema_type_for_book' => 'book',
 					'schema_type_for_blog' => 'blog',
+					'schema_type_for_blog.posting' => 'blog.posting',
 					'schema_type_for_event' => 'event',
 					'schema_type_for_organization' => 'organization',
 					'schema_type_for_person' => 'person',
@@ -227,13 +235,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'schema_type_for_recipe' => 'recipe',
 					'schema_type_for_review' => 'review',
 					'schema_type_for_other' => 'other',
-					'schema_type_for_local_business' => 'local_business',
+					'schema_type_for_local.business' => 'local.business',
 					'schema_type_for_webpage' => 'webpage',
 					'schema_type_for_website' => 'website',
 					'schema_author_name' => 'display_name',
-					'schema_author_json' => 1,
-					'schema_publisher_json' => 1,
-					'schema_website_json' => 1,
+					'schema_img_width' => 800,		// must be at least 696px
+					'schema_img_height' => 1200,
+					'schema_img_crop' => 0,
+					'schema_img_crop_x' => 'center',
+					'schema_img_crop_y' => 'center',
 					'seo_desc_len' => 156,			// meta name="description" maximum text length
 					'seo_author_name' => 'none',		// meta name="author" format
 					'seo_def_author_id' => 0,
@@ -284,8 +294,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'og_desc_hashtags' => 3,
 					'rp_publisher_url' => '',
 					'rp_author_name' => 'display_name',	// rich-pin specific article:author
-					'rp_img_width' => 600,
-					'rp_img_height' => 600,
+					'rp_img_width' => 800,
+					'rp_img_height' => 1200,
 					'rp_img_crop' => 0,
 					'rp_img_crop_x' => 'center',
 					'rp_img_crop_y' => 'center',
@@ -293,14 +303,14 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'tc_site' => '',
 					'tc_desc_len' => 200,
 					// summary card
-					'tc_sum_width' => 300,
-					'tc_sum_height' => 300,
+					'tc_sum_width' => 600,
+					'tc_sum_height' => 600,
 					'tc_sum_crop' => 1,
 					'tc_sum_crop_x' => 'center',
 					'tc_sum_crop_y' => 'center',
 					// large image summary card
 					'tc_lrgimg_width' => 600,
-					'tc_lrgimg_height' => 600,
+					'tc_lrgimg_height' => 1200,
 					'tc_lrgimg_crop' => 0,
 					'tc_lrgimg_crop_x' => 'center',
 					'tc_lrgimg_crop_y' => 'center',
@@ -364,13 +374,14 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_property_place:postal_code' => 1,
 					'add_meta_property_place:country_name' => 1,
 					// product
+					'add_meta_property_product:availability' => 1,
 					'add_meta_property_product:price:amount' => 1,
 					'add_meta_property_product:price:currency' => 1,
-					'add_meta_property_product:availability' => 1,
 					'add_meta_property_product:rating:average' => 0,
 					'add_meta_property_product:rating:count' => 0,
 					'add_meta_property_product:rating:worst' => 0,
 					'add_meta_property_product:rating:best' => 0,
+					'add_meta_property_product:sku' => 0,
 					// profile
 					'add_meta_property_profile:first_name' => 1,
 					'add_meta_property_profile:last_name' => 1,
@@ -753,9 +764,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'head' => array(
-				'max_img_ratio' => 3,
-				'min_img_dim' => 200,
-				'min_desc_len' => 156,
+				'min' => array(
+					'og_desc_len' => 156,
+					'og_img_width' => 200,
+					'og_img_height' => 200,
+					'schema_img_width' => 696,
+				),
+				'max' => array(
+					'og_img_ratio' => 3,
+				),
 				'og_type_ns' => array(		// from http://ogp.me/#types
 					'article' => 'http://ogp.me/ns/article#',
 					'book' => 'http://ogp.me/ns/book#',
@@ -818,19 +835,21 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'place:location:longitude',
 						'place:location:altitude',
 						'place:street_address',
+						'place:po_box_number',
 						'place:locality',
 						'place:region',
 						'place:postal_code',
 						'place:country_name',
 					),
 					'product' => array(
+						'product:availability',
 						'product:price:amount',
 						'product:price:currency',
-						'product:availability',
 						'product:rating:average',
 						'product:rating:count',
 						'product:rating:worst',
 						'product:rating:best',
+						'product:sku',
 					),
 					'profile' => array(
 						'profile:first_name',
