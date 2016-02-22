@@ -245,6 +245,9 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 					$main_entity = true;
 				else $main_entity = false;
 
+				$main_entity = apply_filters( $lca.'_json_is_main_entity', 
+					$main_entity, $use_post, $post_obj, $mt_og, $post_id, $author_id, $head_type );
+
 				if ( is_front_page() && 
 					method_exists( __CLASS__, 'filter_json_data_'.$type_hook_name ) && 
 						! has_filter( $lca.'_json_data_'.$type_hook_name ) ) {
