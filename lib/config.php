@@ -210,6 +210,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'version' => 'ngfb412',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
+					'schema_add_noscript' => 1,
 					'schema_website_json' => 1,
 					'schema_organization_json' => 1,
 					'schema_person_json' => 0,
