@@ -388,6 +388,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
+**Version 8.25.1 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed the Schema Type default value in the Social Settings metabox.
+* *Developer Notes*
+	* Added NgfbSchema `get_json_data_filter()` and `has_json_data_filter()` methods to get JSON-LD filter names and check for registered hooks.
+
 **Version 8.25.0 (2016/02/21)**
 
 Official announcement: N/A
