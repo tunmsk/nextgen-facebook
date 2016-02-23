@@ -388,6 +388,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
+**Version 8.25.2 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed possible duplicate JavaScript when using the ngfb_get_sharing_buttons() function.
+* *Developer Notes*
+	* None
+
 **Version 8.25.1 (2016/02/23)**
 
 Official announcement: N/A
