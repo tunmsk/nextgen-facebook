@@ -218,7 +218,7 @@ if ( ! class_exists( 'NgfbUser' ) ) {
 
 		public function show_metabox_user( $user ) {
 			$opts = $this->get_options( $user->ID );
-			$def_opts = $this->get_defaults();
+			$def_opts = $this->get_defaults( false, 'user' );
 			NgfbMeta::$head_meta_info['post_id'] = false;
 
 			$this->form = new SucomForm( $this->p, NGFB_META_NAME, $opts, $def_opts );

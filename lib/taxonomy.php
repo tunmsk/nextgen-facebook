@@ -262,7 +262,7 @@ if ( ! class_exists( 'NgfbTaxonomy' ) ) {
 
 		public function show_metabox_taxonomy( $term ) {
 			$opts = $this->get_options( $term->term_id );
-			$def_opts = $this->get_defaults();
+			$def_opts = $this->get_defaults( false, 'taxonomy' );
 			NgfbMeta::$head_meta_info['post_id'] = false;
 
 			$this->form = new SucomForm( $this->p, NGFB_META_NAME, $opts, $def_opts );
