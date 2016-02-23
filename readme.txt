@@ -388,7 +388,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.25.1 (TBD)**
+**Version 8.25.1 (2016/02/23)**
 
 Official announcement: N/A
 
@@ -397,9 +397,9 @@ Official announcement: N/A
 * *Improvements*
 	* None
 * *Bugfixes*
-	* Fixed the Schema Type default value in the Social Settings metabox.
+	* None
 * *Developer Notes*
-	* Added NgfbSchema `get_json_data_filter()` and `has_json_data_filter()` methods to get JSON-LD filter names and check for registered hooks.
+	* Added NgfbSchema `get_json_data_filter()` and `has_json_data_filter()` methods to get JSON-LD filter name and check for registered hooks.
 
 **Version 8.25.0 (2016/02/21)**
 
@@ -531,11 +531,11 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
+= 8.25.1 =
+
+2016/02/23 - Added new NgfbSchema methods to get the JSON-LD filter name and check for registered hooks.
+
 = 8.25.0 =
 
 2016/02/21 - New "Google / Schema Image Dimensions" and "Business Banner (600x60) Image URL" options. Refactored much of the Schema JSON-LD related code. 
-
-= 8.24.1 =
-
-2016/02/15 - Updated the admin editing page CSS for the new Email and WhatsApp buttons. Modified the NgfbSchema::add_* methods argument list (removed $item_type and added $list_element).
 
