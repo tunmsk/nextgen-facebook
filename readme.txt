@@ -395,7 +395,7 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Increased the default object cache expiry from 86400 secs (1 day) to 259200 secs (3 days).
 * *Bugfixes*
 	* None
 * *Developer Notes*
