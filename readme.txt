@@ -397,7 +397,7 @@ Official announcement: N/A
 * *Improvements*
 	* None
 * *Bugfixes*
-	* Fixed possible duplicate JavaScript when using the ngfb_get_sharing_buttons() function.
+	* Fixed possible inclusion of duplicate JavaScript when using the `ngfb_get_sharing_buttons()` function.
 * *Developer Notes*
 	* None
 
