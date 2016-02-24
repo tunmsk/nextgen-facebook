@@ -659,13 +659,15 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 				$atts['use_post'] = $use_post;
 				$css_type = $atts['css_id'] = $type.'-buttons';
+
 				if ( ! empty( $this->p->options['buttons_preset_'.$type] ) ) {
 					$atts['preset_id'] = $this->p->options['buttons_preset_'.$type];
 					$css_preset = $lca.'-preset-'.$atts['preset_id'];
 				} else $css_preset = '';
 
 				$buttons_html = $this->get_html( $sorted_ids, $atts );
-				if ( trim( $buttons_html ) !== '' ) {
+
+				if ( trim( $buttons_html ) ) {
 					$html = '
 <!-- '.$lca.' '.$css_type.' begin -->
 <div class="'.
@@ -762,11 +764,15 @@ $buttons_html.
 		}
 
 		// add javascript for enabled buttons in content, widget, shortcode, etc.
-		public function get_script( $pos = 'header', $ids = array() ) {
+		public function get_script( $pos = 'header', $requested_ids = array() ) {
 
-			// determine which (if any) sharing buttons are enabled
-			// loop through the sharing button option prefixes (fb, gp, etc.)
-			if ( empty( $ids ) ) {
+			/*
+			 * Prevent duplicate loading of JavaScript by comparing enabled ids for the
+			 * current webpage, and any requested ids (by the sharing buttons function).
+			 */
+			$enabled_ids = array();
+
+			if ( empty( $requested_ids ) ) {
 				if ( is_admin() ) {
 					if ( ( $obj = $this->p->util->get_post_object() ) === false  ||
 						( get_post_status( $obj->ID ) !== 'publish' &&
@@ -777,44 +783,55 @@ $buttons_html.
 						$this->p->debug->log( 'exiting early: buttons disabled' );
 					return;
 				}
+			}
+
+			if ( is_admin() ) {
+				foreach ( $this->p->cf['opt']['pre'] as $id => $pre ) {
+					foreach ( SucomUtil::preg_grep_keys( '/^'.$pre.'_on_admin_/', $this->p->options ) as $key => $val )
+						if ( ! empty( $val ) )
+							$enabled_ids[] = $id;
+				}
+			} else {
+				if ( is_singular() || 
+					( ! is_singular() && ! empty( $this->p->options['buttons_on_index'] ) ) || 
+					( is_front_page() && ! empty( $this->p->options['buttons_on_front'] ) ) ) {
+
+					// exclude buttons enabled for admin editing pages
+					foreach ( $this->p->cf['opt']['pre'] as $id => $pre ) {
+						foreach ( SucomUtil::preg_grep_keys( '/^'.$pre.'_on_/', $this->p->options ) as $key => $val )
+							if ( strpos( $key, $pre.'_on_admin_' ) === false && ! empty( $val ) )
+								$enabled_ids[] = $id;
+					}
+				}
 
 				if ( class_exists( 'NgfbWidgetSharing' ) ) {
 					$widget = new NgfbWidgetSharing();
-		 			$widget_settings = $widget->get_settings();
+			 		$widget_settings = $widget->get_settings();
 				} else $widget_settings = array();
 
-				if ( is_admin() ) {
-					foreach ( $this->p->cf['opt']['pre'] as $id => $pre ) {
-						foreach ( SucomUtil::preg_grep_keys( '/^'.$pre.'_on_admin_/', $this->p->options ) as $key => $val )
-							if ( ! empty( $val ) )
-								$ids[] = $id;
-					}
-				} else {
-					if ( is_singular() || 
-						( ! is_singular() && ! empty( $this->p->options['buttons_on_index'] ) ) || 
-						( is_front_page() && ! empty( $this->p->options['buttons_on_front'] ) ) ) {
-	
-						// exclude buttons enabled for admin editing pages
+				// check for enabled buttons in ACTIVE widget(s)
+				foreach ( $widget_settings as $num => $instance ) {
+					if ( is_object( $widget ) && is_active_widget( false, $widget->id_base.'-'.$num, $widget->id_base ) ) {
 						foreach ( $this->p->cf['opt']['pre'] as $id => $pre ) {
-							foreach ( SucomUtil::preg_grep_keys( '/^'.$pre.'_on_/', $this->p->options ) as $key => $val )
-								if ( strpos( $key, $pre.'_on_admin_' ) === false && ! empty( $val ) )
-									$ids[] = $id;
-						}
-					}
-					// check for enabled buttons in ACTIVE widget(s)
-					foreach ( $widget_settings as $num => $instance ) {
-						if ( is_object( $widget ) && is_active_widget( false, $widget->id_base.'-'.$num, $widget->id_base ) ) {
-							foreach ( $this->p->cf['opt']['pre'] as $id => $pre ) {
-								if ( array_key_exists( $id, $instance ) && 
-									! empty( $instance[$id] ) )
-										$ids[] = $id;
-							}
+							if ( array_key_exists( $id, $instance ) && 
+								! empty( $instance[$id] ) )
+									$enabled_ids[] = $id;
 						}
 					}
 				}
+			}
+
+			if ( empty( $requested_ids ) ) {
+				if ( empty( $enabled_ids ) ) {
+					if ( $this->p->debug->enabled )
+						$this->p->debug->log( 'exiting early: no buttons enabled or requested' );
+					return;
+				} else $ids = $enabled_ids;
+			} else {
+				$ids = array_diff( $requested_ids, $enabled_ids );
 				if ( empty( $ids ) ) {
 					if ( $this->p->debug->enabled )
-						$this->p->debug->log( 'exiting early: no buttons enabled' );
+						$this->p->debug->log( 'exiting early: no buttons after removing enabled' );
 					return;
 				}
 			}

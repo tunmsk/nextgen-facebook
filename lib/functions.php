@@ -56,7 +56,7 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 				return $ngfb->debug->get_html().$html;
 			}
 
-			$html = '<!-- '.$ngfb->cf['lca'].' '.__FUNCTION__.' function begin -->'."\n";
+			$html = '<!-- '.$ngfb->cf['lca'].' '.__FUNCTION__.' function begin -->'."\n".
 				$ngfb->sharing->get_script( 'sharing-buttons-header', $ids ).
 				$ngfb->sharing->get_html( $ids, $atts ).
 				$ngfb->sharing->get_script( 'sharing-buttons-footer', $ids ).
