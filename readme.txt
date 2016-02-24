@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4.2
-Stable Tag: 8.25.1
+Stable Tag: 8.25.2
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -388,7 +388,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.25.2 (TBD)**
+**Version 8.25.2 (2016/02/24)**
 
 Official announcement: N/A
 
@@ -543,6 +543,10 @@ Official announcement: N/A
 	* Added a new NGFB_GETIMGSIZE_DISABLE constant disable the use of PHP's getimagesize() function.
 
 == Upgrade Notice ==
+
+= 8.25.2 =
+
+2016/02/24 - Fixed possible inclusion of duplicate JavaScript when using the ngfb_get_sharing_buttons() function.
 
 = 8.25.1 =
 
