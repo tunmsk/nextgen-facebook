@@ -388,6 +388,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
+**Version 8.25.3 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added a new `NGFB_HIDE_ALL_WARNINGS` constant - see the NGFB Setup Guide for details. 
+
 **Version 8.25.2 (2016/02/24)**
 
 Official announcement: N/A
