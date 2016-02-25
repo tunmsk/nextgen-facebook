@@ -293,6 +293,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 * [How do I attach an image without showing it on the webpage?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-attach-an-image-without-showing-it-on-the-webpage/)
 * [How do I fix my theme’s front page pagination?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-fix-my-themes-front-page-pagination/)
 * [How do I install the Pro version?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-install-the-pro-version/)
+* [How do I remove duplicate meta tags?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-remove-duplicate-meta-tags/)
 * [How does NGFB find / detect / select images?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-does-ngfb-find-detect-select-images/)
 * [Social Sharing Buttons](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/)
 	* [Can I share a single image on a webpage?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/can-i-share-a-single-image-on-a-webpage/)
