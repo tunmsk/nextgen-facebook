@@ -175,9 +175,9 @@ if ( ! class_exists( 'SucomStyle' ) ) {
 		margin:0;
 		line-height:1.5em;
 	}
-	.'.$lca.'-notice .notice-message li {
-		margin-top:2px;
-		margin-bottom:2px;
+	.'.$lca.'-notice .notice-message ul li {
+		margin-top:3px;
+		margin-bottom:3px;
 	}
 	.'.$lca.'-notice .notice-message a {
 		text-decoration:none;
