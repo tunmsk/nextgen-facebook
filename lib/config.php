@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.25.2',		// plugin version
+					'version' => '8.25.3',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -1044,9 +1044,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				$var_const['NGFB_CACHEURL'] = NGFB_URLPATH.'cache/';
 
 			$var_const['NGFB_DEBUG_FILE_EXP'] = 300;
-			$var_const['NGFB_MENU_ORDER'] = '99.11';
-			$var_const['NGFB_MENU_ICON_HIGHLIGHT'] = true;
+			$var_const['NGFB_MENU_ORDER'] = '99.11';		// position of the NGFB menu item
+			$var_const['NGFB_MENU_ICON_HIGHLIGHT'] = true;		// highlight the NGFB menu icon
 			$var_const['NGFB_SHARING_SHORTCODE'] = 'ngfb';		// used by social sharing features
+			$var_const['NGFB_HIDE_ALL_WARNINGS'] = false;		// hide all warning notices by default
 
 			/*
 			 * NGFB option and meta array names
@@ -1089,7 +1090,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 			// disable 3rd-party caching for duplicate meta tag checks
 			if ( ! empty( $_GET['NGFB_META_TAGS_DISABLE'] ) ) {
-				$var_const['DONOTCACHEPAGE'] = true;		// wp super cache
+				$var_const['DONOTCACHEPAGE'] = true;		// wp super cache and w3tc
+				$var_const['COMET_CACHE_ALLOWED'] = false;	// comet cache
 				$var_const['QUICK_CACHE_ALLOWED'] = false;	// quick cache
 				$var_const['ZENCACHE_ALLOWED'] = false;		// zencache
 			}
