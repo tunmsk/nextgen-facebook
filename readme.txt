@@ -389,6 +389,20 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
+**Version 8.25.4 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Refactored the Wistia to parse the API XML meta tags for the video URL and description (Pro version).
+	* Added video title and description (internal) meta tags for later use by Schema JSON-LD filters.
+* *Bugfixes*
+	* Fixed detection of duplicate embedded videos.
+* *Developer Notes*
+	* Added `ngfb_clear_all_cache()` and `ngfb_clear_post_cache( $post_id )` functions.
+
 **Version 8.25.3 (2016/02/25)**
 
 Official announcement: N/A
