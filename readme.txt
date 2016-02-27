@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4.2
-Stable Tag: 8.25.3
+Stable Tag: 8.25.4
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -389,15 +389,15 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.25.4 (TBD)**
+**Version 8.25.4 (2016/02/27)**
 
 Official announcement: N/A
 
 * *New Features*
 	* None
 * *Improvements*
-	* Refactored the Wistia to parse the API XML meta tags for the video URL and description (Pro version).
-	* Added video title and description (internal) meta tags for later use by Schema JSON-LD filters.
+	* Refactored the Wistia module to parse API XML meta tags for the video URL and description (Pro version).
+	* Added video title and description (internal) meta tags for use by Schema JSON-LD filters.
 * *Bugfixes*
 	* Fixed detection of duplicate embedded videos.
 * *Developer Notes*
@@ -571,6 +571,10 @@ Official announcement: N/A
 	* Added a new NGFB_GETIMGSIZE_DISABLE constant disable the use of PHP's getimagesize() function.
 
 == Upgrade Notice ==
+
+= 8.25.4 =
+
+2016/02/27 - Fixed detection of duplicate embedded videos. Added video title and description (internal) meta tags for Schema JSON-LD filters. Added two functions developers can use to clear the NGFB cache.
 
 = 8.25.3 =
 
