@@ -103,4 +103,18 @@ if ( ! function_exists( 'ngfb_schema_attributes' ) ) {
 	}
 }
 
+if ( ! function_exists( 'ngfb_clear_all_cache' ) ) {
+	function ngfb_clear_all_cache() {
+		$ngfb =& Ngfb::get_instance();
+		return $ngfb->util->clear_all_cache( false );	// $ext_cache = false
+	}
+}
+
+if ( ! function_exists( 'ngfb_clear_post_cache' ) ) {
+	function ngfb_clear_post_cache( $post_id ) {
+		$ngfb =& Ngfb::get_instance();
+		return $ngfb->util->clear_post_cache( $post_id );
+	}
+}
+
 ?>

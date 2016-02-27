@@ -215,7 +215,7 @@ if ( ! class_exists( 'NgfbSharingTumblr' ) ) {
 						$opts['tumblr_cap_len'],	// max caption length
 						$use_post,			//
 						true,				// use_cache
-						true,				// add_hashtags
+						false,				// add_hashtags
 						false,				// encode is false for later url encoding)
 						( ! empty( $atts['photo'] ) ? 
 							'tumblr_img_desc' : 'tumblr_vid_desc' ),
@@ -240,7 +240,7 @@ if ( ! class_exists( 'NgfbSharingTumblr' ) ) {
 						'...',				// trailing
 						$use_post,			//
 						true,				// use_cache
-						true,				// add_hashtags
+						false,				// add_hashtags
 						false,				// encode (false for later url encoding)
 						null,				// metadata key
 						$src_id

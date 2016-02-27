@@ -224,11 +224,12 @@ if ( ! class_exists( 'NgfbTaxonomy' ) ) {
 			$action_query = $lca.'-action';
 			if ( ! empty( $_GET[$action_query] ) ) {
 				$action_name = SucomUtil::sanitize_hookname( $_GET[$action_query] );
-				if ( empty( $_GET[ NGFB_NONCE ] ) ) {
+				if ( empty( $_GET[ NGFB_NONCE ] ) ) {	// NGFB_NONCE is an md5() string
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'nonce token validation query field missing' );
 				} elseif ( ! wp_verify_nonce( $_GET[ NGFB_NONCE ], NgfbAdmin::get_nonce() ) ) {
-					$this->p->notice->err( __( 'Nonce token validation failed for action \"'.$action_name.'\".', 'nextgen-facebook' ) );
+					$this->p->notice->err( sprintf( __( 'Nonce token validation failed for %1$s action "%2$s".',
+						'nextgen-facebook' ), 'taxonomy', $action_name ) );
 				} else {
 					$_SERVER['REQUEST_URI'] = remove_query_arg( array( $action_query, NGFB_NONCE ) );
 					switch ( $action_name ) {
@@ -266,7 +267,7 @@ if ( ! class_exists( 'NgfbTaxonomy' ) ) {
 			NgfbMeta::$head_meta_info['post_id'] = false;
 
 			$this->form = new SucomForm( $this->p, NGFB_META_NAME, $opts, $def_opts );
-			wp_nonce_field( NgfbAdmin::get_nonce(), NGFB_NONCE );
+			wp_nonce_field( NgfbAdmin::get_nonce(), NGFB_NONCE );	// NGFB_NONCE is an md5() string
 
 			$metabox = 'taxonomy';
 			$tabs = apply_filters( $this->p->cf['lca'].'_social_settings_taxonomy_tabs',
