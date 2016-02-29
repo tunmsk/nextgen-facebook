@@ -393,10 +393,13 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 Official announcement: N/A
 
+Please note: This latest release includes style changes for the Tumblr button -- **use the "Reload Default Styles" action button, on the Sharing Styles page, to reload the latest default sharing styles.**
+
 * *New Features*
 	* Added a new 'ngfb_user_image_urls' filter to include the BuddyPress member image on author pages (Pro version).
 * *Improvements*
-	* Refactored the Gravatar module to hook 'ngfb_user_image_urls' instead of adding an option in the user Social Settings (Pro version).
+	* Refactored the Gravatar module to hook 'ngfb_user_image_urls' instead of pushing a custom option in the user Social Settings (Pro version).
+	* Updated the Tumblr button module with the latest options and HTML code (see https://www.tumblr.com/docs/en/share_button).
 * *Bugfixes*
 	* None
 * *Developer Notes*

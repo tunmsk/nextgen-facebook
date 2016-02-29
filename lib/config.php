@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.25.4',		// plugin version
+					'version' => '8.26.0-dev1',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -207,7 +207,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'opt' => array(						// options
-				'version' => 'ngfb413',				// increment when changing default options
+				'version' => 'ngfb415',				// increment when changing default options
 				'defaults' => array(
 					'options_filtered' => false,
 					'schema_add_noscript' => 1,
@@ -577,6 +577,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 				'preset' => array(
 					'small_share_count' => array(
+						'twitter_size' => 'medium',
+						'twitter_count' => 'horizontal',
 						'fb_button' => 'share',
 						'fb_send' => 0,
 						'fb_show_faces' => 0,
@@ -586,8 +588,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'gp_size' => 'medium',
 						'gp_annotation' => 'bubble',
 						'gp_expandto' => '',
-						'twitter_size' => 'medium',
-						'twitter_count' => 'horizontal',
 						'linkedin_counter' => 'right',
 						'linkedin_showzero' => 1,
 						'pin_button_shape' => 'rect',
@@ -596,10 +596,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'buffer_count' => 'horizontal',
 						'reddit_type' => 'static-wide',
 						'managewp_type' => 'small',
-						'tumblr_button_style' => 'share_1',
 						'stumble_badge' => 1,
+						'tumblr_counter' => 'right',
 					),
 					'large_share_vertical' => array(
+						'twitter_size' => 'medium',
+						'twitter_count' => 'vertical',
 						'fb_button' => 'share',
 						'fb_send' => 0,
 						'fb_show_faces' => 0,
@@ -610,8 +612,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'gp_size' => 'tall',
 						'gp_annotation' => 'vertical-bubble',
 						'gp_expandto' => '',
-						'twitter_size' => 'medium',
-						'twitter_count' => 'vertical',
 						'linkedin_counter' => 'top',
 						'linkedin_showzero' => '1',
 						'pin_button_shape' => 'rect',
@@ -620,8 +620,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'buffer_count' => 'vertical',
 						'reddit_type' => 'static-tall-text',
 						'managewp_type' => 'big',
-						'tumblr_button_style' => 'share_2',
 						'stumble_badge' => 5,
+						'tumblr_counter' => 'top',
 					),
 				),
 				'pre' => array(

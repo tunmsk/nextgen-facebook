@@ -112,7 +112,7 @@
 .ngfb-preset-small_share_count 
 	.ngfb-buttons div.tumblr-button { width:85px; }
 .ngfb-preset-large_share_vertical 
-	.ngfb-buttons div.tumblr-button { height:20px; line-height:20px; }
+	.ngfb-buttons div.tumblr-button { height:40px; }
 
 /* non-JavaScript buttons */
 
