@@ -389,7 +389,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.26.0 (TBD)**
+**Version 8.26.0 (2016/02/29)**
 
 Official announcement: N/A
 
@@ -587,6 +587,10 @@ Official announcement: N/A
 	* Added a new NGFB_GETIMGSIZE_DISABLE constant disable the use of PHP's getimagesize() function.
 
 == Upgrade Notice ==
+
+= 8.26.0 =
+
+2016/02/29 - This latest release includes style changes for the Tumblr button -- use the "Reload Default Styles" action button, on the Sharing Styles page, to reload the latest default sharing styles.
 
 = 8.25.4 =
 
