@@ -92,7 +92,7 @@ if ( ! class_exists( 'NgfbSubmenuEssential' ) && class_exists( 'NgfbAdmin' ) ) {
 					'<td>'.$this->form->get_input( 'fb_admins' ).'</td>';
 
 					$rows[] = $this->p->util->get_th( _x( 'Author Name Format',
-						'option label', 'nextgen-facebook' ), null, 'google_seo_author_name' ).
+						'option label', 'nextgen-facebook' ), null, 'google_author_name' ).
 					'<td>'.$this->form->get_select( 'seo_author_name', 
 						$this->p->cf['form']['user_name_fields'] ).'</td>';
 
