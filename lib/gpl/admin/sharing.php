@@ -67,7 +67,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			foreach( $presets as $filter_id => $filter_name )
 				$rows[] = $this->p->util->get_th( sprintf( _x( '%s Preset',
 					'option label', 'nextgen-facebook' ), $filter_name ), null, 'sharing_preset' ).
-				'<td class="blank">'.$this->p->options['buttons_preset_'.$filter_id].'</td>';
+				'<td class="blank">'.( isset( $this->p->options['buttons_preset_'.$filter_id] ) ?
+					$this->p->options['buttons_preset_'.$filter_id] : '' ).'</td>';
 
 			return $rows;
 		}
