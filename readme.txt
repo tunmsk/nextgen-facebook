@@ -400,6 +400,7 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
+	* Added a new 'NGFB_JSON_PRETTY_PRINT' constant (defaults to true).
 	* Added a new `SucomUtil::get_is_page()` method to optimize all three `is_{post|term|user}_page()` checks.
 	* Refactored the SucomWebpage `get_caption()`, `get_title()`, and `get_description()` methods to use the new `SucomUtil::get_is_page()` static method.
 	* Renamed the `SucomUtil::is_author_page()` method to `SucomUtil::is_user_page()`.
@@ -501,107 +502,6 @@ Official announcement: N/A
 		* 'ngfb_schema_post_types' to 'ngfb_schema_types'
 		* 'ngfb_add_http_schema_org_{item_type}' to 'ngfb_add_json_http_schema_org_{item_type}'
 		* 'ngfb_data_http_schema_org_{item_type}' to 'ngfb_json_data_http_schema_org_{item_type}'
-
-**Version 8.24.1 (2016/02/15)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* Updated the admin editing page CSS for the new Email and WhatsApp buttons.
-* *Developer Notes*
-	* Modified the NgfbSchema::add_\* methods argument list (removed $item_type and added $list_element).
-
-**Version 8.24.0 (2016/02/12)**
-
-Official announcement: N/A
-
-Please note: This latest release includes new social sharing buttons and styles. **Use the "Reload Default Styles" action button on the Sharing Styles page to reload the latest default sharing styles.**
-
-* *New Features*
-	* Added a new "Allow for Platform" option for all social sharing buttons.
-	* Added a new "Reload Default Styles" action button on the Sharing Styles settings page.
-	* Added a new "Email" and "WhatsApp" social sharing button -- Please note that the default "Allow for Platform" option value for the WhatsApp button is "Mobile Only".
-* *Improvements*
-	* Removed the "Use Meta Property Containers" option (the 'noscript' meta container feature has been deprecated).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Refactored the NgfbUtil `add_plugin_hooks()` method to support both method and function hooks.
-	* Removed the NgfbSchema `get_noscript_array()` and `get_single_image_noscript()` methods (the 'noscript' meta container feature has been deprecated).
-	* Added new NgfbSchema filters:
-		* 'ngfb_add_schema_head_attributes'
-		* 'ngfb_add_schema_meta_array'
-		* 'ngfb_add_http_schema_org_item_type'
-		* 'ngfb_add_http_schema_org_organization'
-		* 'ngfb_add_http_schema_org_person'
-		* 'ngfb_add_http_schema_org_website'
-		* 'ngfb_add_http_schema_org_{item_type}'
-		* 'ngfb_data_http_schema_org_item_type'
-		* 'ngfb_data_http_schema_org_organization'
-		* 'ngfb_data_http_schema_org_person'
-		* 'ngfb_data_http_schema_org_website'
-		* 'ngfb_data_http_schema_org_{item_type}'
-	* Removed deprecated filters:
-		* 'ngfb_add_schema_author_json'
-		* 'ngfb_add_schema_organization_json'
-		* 'ngfb_add_schema_website_json'
-		* 'ngfb_schema_website_data'
-		* 'ngfb_schema_organization_data'
-		* 'ngfb_schema_person_data'
-		* 'ngfb_json_http_schema_org_item_type'
-		* 'ngfb_json_http_schema_org_organization'
-		* 'ngfb_json_http_schema_org_person'
-		* 'ngfb_json_http_schema_org_website'
-		* 'ngfb_json_http_schema_org_{item_type}'
-	* Renamed all core 'ngfb_*_tabs' filters.
-
-**Version 8.23.0 (2016/02/06)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added a new "Website Alternate Name" option in the General settings under the Google / Schema tab.
-* *Improvements*
-	* Updated the Wistia media integration module to support the new Wistia video async embed HTML (Pro version).
-* *Bugfixes*
-	* Fixed missing custom image sizes when editing an image in the Media Library.
-	* Fixed the use of a custom Pinterest image ID / URL for the Pinterest crawler.
-* *Developer Notes*
-	* Added a new SucomUtil::strip_shortcodes() static method and 'sucom_strip_shortcodes' filter, which strips all registered shortcodes and Visual Composer shortcodes as well.
-	* Refactored the NgfbSchema json methods and added a new SuextJsonFormat class to format json code for PHP pre-5.4.
-	* Added a new NgfbUtil `json_format()` method to encode (if required) json data and format json code for the Head Tags tab.
-	* Added new filters (see nextgen-facebook/filters.txt for all available filters):
-		* 'ngfb_json_ld_search_url' (return url or false to disable)
-		* 'ngfb_add_schema_website_json' (return true or false)
-		* 'ngfb_add_schema_organization_json' (return true or false)
-		* 'ngfb_add_schema_person_json' (return true or false)
-		* 'ngfb_schema_website_data' (return an array)
-		* 'ngfb_schema_organization_data' (return an array)
-		* 'ngfb_schema_person_data' (return an array)
-
-**Version 8.22.1 (2016/01/30)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added a call to getimagesize() for images in the content without width / height attribute values.
-	* Added a new module for BuddyPress rtMedia to include WP Media Library image IDs in BuddyPress activity images (Pro version).
-* *Improvements*
-	* **Enabled WordPress oEmbed filters on post content in the head section to generate complete HTML embed code.**
-	* Added the Facebook "Author Name Format" option to the Essential Settings page.
-	* Used the new SucomUtil::is_https() and SucomUtil::get_prot() static methods to determine the protocol to be used (http or https).
-	* Updated the Setup Guide with a new "Accept Smaller / Thumbnail Images?" information box.
-	* Treat BuddyPress single activity pages as posts (to use attached / content images, etc.) (Pro version).
-	* Treat BuddyPress user + activity URLs as an activity page instead of a user page (Pro version).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added SucomUtil::is_https() and SucomUtil::get_prot() static methods to test for PHP's `$_SERVER['HTTPS']` variable and the 'FORCE_SSL_ADMIN' WordPress constant.
-	* Added a new NGFB_GETIMGSIZE_DISABLE constant disable the use of PHP's getimagesize() function.
 
 == Upgrade Notice ==
 
