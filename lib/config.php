@@ -1047,7 +1047,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			$var_const['NGFB_MENU_ORDER'] = '99.11';		// position of the NGFB menu item
 			$var_const['NGFB_MENU_ICON_HIGHLIGHT'] = true;		// highlight the NGFB menu icon
 			$var_const['NGFB_SHARING_SHORTCODE'] = 'ngfb';		// used by social sharing features
-			$var_const['NGFB_HIDE_ALL_WARNINGS'] = false;		// hide all warning notices by default
+			$var_const['NGFB_HIDE_ALL_WARNINGS'] = false;		// auto-hide all warning notices
+			$var_const['NGFB_JSON_PRETTY_PRINT'] = true;		// don't minimize json code
 
 			/*
 			 * NGFB option and meta array names
