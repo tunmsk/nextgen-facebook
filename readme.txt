@@ -389,7 +389,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.26.1 (TBD)**
+**Version 8.26.1 (2016/03/02)**
 
 Official announcement: N/A
 
@@ -504,6 +504,10 @@ Official announcement: N/A
 		* 'ngfb_data_http_schema_org_{item_type}' to 'ngfb_json_data_http_schema_org_{item_type}'
 
 == Upgrade Notice ==
+
+= 8.26.1 =
+
+2016/03/02 - Added a new BuddyPress filter (and constant) to return a member "biographical" field value (Pro version). Added a new 'NGFB_JSON_PRETTY_PRINT' constant (defaults to true).
 
 = 8.26.0 =
 
