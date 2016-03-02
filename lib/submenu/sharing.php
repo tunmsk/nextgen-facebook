@@ -191,7 +191,8 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 				$col++;
 				$class = isset( $this->p->options[$prefix.'_on_'.$suffix.':is'] ) &&
 					$this->p->options[$prefix.'_on_'.$suffix.':is'] === 'disabled' &&
-					! $this->p->check->aop( 'ngfb' ) ? 'show_on blank' : 'show_on';
+					! $this->p->check->aop( 'ngfb', true, $this->p->is_avail['aop'] ) ?
+						'show_on blank' : 'show_on';
 				if ( $col == 1 )
 					$html .= '<tr><td class="'.$class.'">';
 				else $html .= '<td class="'.$class.'">';
