@@ -482,7 +482,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				$ret['description'] = $desc;
 
 			if ( ! empty( $ngfb->options[$logo_key] ) )
-				if ( ! self::add_single_image_data( $ret['logo'], $ngfb->options, $logo_key, false ) );	// list_element = false
+				if ( ! self::add_single_image_data( $ret['logo'], $ngfb->options, $logo_key, false ) )	// list_element = false
 					unset( $ret['logo'] );
 
 			if ( empty( $list_element ) )
