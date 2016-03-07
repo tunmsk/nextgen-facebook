@@ -401,16 +401,17 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.26.2 (TBD)**
+**Version 8.27.0 (TBD)**
 
 Official announcement: N/A
 
 * *New Features*
-	* None
+	* Added support for 'og:video:tag' provided by the YouTube video module (Pro version).
+	* Added new "Video Name / Title" and "Video Description" options in the Social Settings metabox for Posts / Pages and Custom Post Types.
 * *Improvements*
-	* None
+	* Optimized the speed of meta tag creation in the NgfbHead `get_mt_array()` method.
 * *Bugfixes*
-	* None
+	* Fixed the meta tag parser for fetched webpages (for Youtube videos and duplicate meta tag checks).
 * *Developer Notes*
 	* Added a new `SucomCountryCodes::get()` class and method to return 2 letter, 3 letter, and numeric country codes.
 	* Added a new `SucomUtil::get_alpha2_countries()` method to return an array of 2 letter country codes.
@@ -452,86 +453,6 @@ Please note: This latest release includes style changes for the Tumblr button --
 * *Developer Notes*
 	* None
 
-**Version 8.25.4 (2016/02/27)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Refactored the Wistia module to parse API XML meta tags for the video URL and description (Pro version).
-	* Added video title and description (internal) meta tags for use by Schema JSON-LD filters.
-* *Bugfixes*
-	* Fixed detection of duplicate embedded videos.
-* *Developer Notes*
-	* Added `ngfb_clear_all_cache()` and `ngfb_clear_post_cache( $post_id )` functions.
-
-**Version 8.25.3 (2016/02/25)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added a new `NGFB_HIDE_ALL_WARNINGS` constant - see the NGFB Setup Guide for details. 
-
-**Version 8.25.2 (2016/02/24)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* Fixed possible inclusion of duplicate JavaScript when using the `ngfb_get_sharing_buttons()` function.
-* *Developer Notes*
-	* None
-
-**Version 8.25.1 (2016/02/23)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Increased the default object cache expiry from 86400 secs (1 day) to 259200 secs (3 days).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added NgfbSchema `get_json_data_filter()` and `has_json_data_filter()` methods to get JSON-LD filter name and check for registered hooks.
-
-**Version 8.25.0 (2016/02/21)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added a new "Google / Schema Image Dimensions" option (defaults to 800x1200 uncropped).
-	* Added a new "Business Banner (600x60) Image URL" option.
-* *Improvements*
-	* Updated default image dimensions:
-		* Google / Schema Image: 800x1200 uncropped (new image size)
-		* Google / Schema Logo: 600x60 cropped (new image size)
-		* Facebook / Open Graph: 600x315 cropped
-		* Pinterest / Rich Pin: 800x1200 uncropped
-		* Twitter Large Image Summary: 800x1200 uncropped
-		* Twitter Summary Card: 600x600 cropped
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added support for an array of filter/action hook names in NgfbUtil `add_plugin_hooks()`.
-	* Added a SucomUtil::get_id_stub_action() static method to return the id, stub, and action strings for a library item.
-	* Added a NgfbMedia check_image_min_max() method to check for minimum image dimensions and aspect ratio.
-	* Renamed these filter hooks:
-		* 'ngfb_schema_item_type' to 'ngfb_schema_head_type' (now filters the type key instead of its value)
-		* 'ngfb_schema_post_types' to 'ngfb_schema_types'
-		* 'ngfb_add_http_schema_org_{item_type}' to 'ngfb_add_json_http_schema_org_{item_type}'
-		* 'ngfb_data_http_schema_org_{item_type}' to 'ngfb_json_data_http_schema_org_{item_type}'
-
 == Upgrade Notice ==
 
 = 8.26.1 =
@@ -541,24 +462,4 @@ Official announcement: N/A
 = 8.26.0 =
 
 2016/02/29 - This latest release includes style changes for the Tumblr button -- use the "Reload Default Styles" action button, on the Sharing Styles page, to reload the latest default sharing styles.
-
-= 8.25.4 =
-
-2016/02/27 - Fixed detection of duplicate embedded videos. Added video title and description (internal) meta tags for Schema JSON-LD filters. Added two functions developers can use to clear the NGFB cache.
-
-= 8.25.3 =
-
-2016/02/25 - Added a new NGFB_HIDE_ALL_WARNINGS constant - see the NGFB Setup Guide for details. 
-
-= 8.25.2 =
-
-2016/02/24 - Fixed possible inclusion of duplicate JavaScript when using the ngfb_get_sharing_buttons() function.
-
-= 8.25.1 =
-
-2016/02/23 - Added new NgfbSchema methods to get the JSON-LD filter name and check for registered hooks.
-
-= 8.25.0 =
-
-2016/02/21 - New "Google / Schema Image Dimensions" and "Business Banner (600x60) Image URL" options. Refactored much of the Schema JSON-LD related code. 
 
