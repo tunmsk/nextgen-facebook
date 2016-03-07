@@ -115,8 +115,8 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					$rows['og_desc_hashtags'] = $this->p->util->get_th( _x( 'Add Hashtags to Descriptions',
 						'option label', 'nextgen-facebook' ), null, 'og_desc_hashtags' ).
 					'<td>'.$this->form->get_select( 'og_desc_hashtags', 
-						range( 0, $this->p->cf['form']['max_hashtags'] ), 'short', null, true ).
-							' '._x( 'tag names', 'option comment', 'nextgen-facebook' ).'</td>';
+						range( 0, $this->p->cf['form']['max_hashtags'] ), 'short', null, true ).' '.
+							_x( 'tag names', 'option comment', 'nextgen-facebook' ).'</td>';
 
 					$rows['og_page_title_tag'] = '<tr class="hide_in_basic">'.
 					$this->p->util->get_th( _x( 'Add Page Title in Tags / Hashtags',

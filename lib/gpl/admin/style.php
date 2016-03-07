@@ -32,7 +32,7 @@ if ( ! class_exists( 'NgfbGplAdminStyle' ) ) {
 			if ( isset( $this->p->options['buttons_preset_'.$idx] ) ) {
 				$text .= '<p>The social sharing button options for the "'.$idx.'" style are subject to preset values selected on the '.$this->p->util->get_admin_url( 'sharing#sucom-tabset_sharing-tab_preset', 'Sharing Buttons' ).' settings page (used to modify the default behavior, size, counter orientation, etc.). The width and height values in your CSS should support these preset classes (if any).</p>';
 				$text .= '<p><strong>Selected preset:</strong> '.
-					( empty( $this->p->options['buttons_preset_'.$idx] ) ? '[none]' :
+					( empty( $this->p->options['buttons_preset_'.$idx] ) ? '[None]' :
 						$this->p->options['buttons_preset_'.$idx] ).'</p>';
 			}
 

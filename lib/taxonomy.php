@@ -155,15 +155,16 @@ if ( ! class_exists( 'NgfbTaxonomy' ) ) {
 		// hooked into the current_screen action
 		public function load_meta_page( $screen = false ) {
 
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
+
 			// all meta modules set this property, so use it to optimize code execution
 			if ( ! empty( NgfbMeta::$head_meta_tags ) 
 				|| ! isset( $screen->id ) )
 					return;
 
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
+			if ( $this->p->debug->enabled )
 				$this->p->debug->log( 'screen id: '.$screen->id );
-			}
 
 			$lca = $this->p->cf['lca'];
 			switch ( $screen->id ) {
@@ -234,10 +235,11 @@ if ( ! class_exists( 'NgfbTaxonomy' ) ) {
 		public function show_metabox_taxonomy( $term ) {
 			$opts = $this->get_options( $term->term_id );
 			$def_opts = $this->get_defaults( false, 'taxonomy' );
-			NgfbMeta::$head_meta_info['post_id'] = false;
-
 			$this->form = new SucomForm( $this->p, NGFB_META_NAME, $opts, $def_opts );
 			wp_nonce_field( NgfbAdmin::get_nonce(), NGFB_NONCE );	// NGFB_NONCE is an md5() string
+
+			// save additional info about the term
+			NgfbMeta::$head_meta_info['term_id'] = $term->term_id;			// term id
 
 			$metabox = 'taxonomy';
 			$tabs = apply_filters( $this->p->cf['lca'].'_social_settings_taxonomy_tabs',

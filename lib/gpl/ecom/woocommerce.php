@@ -98,7 +98,7 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 			<p>The Woo Short social sharing buttons are subject to preset values selected on the '.$this->p->util->get_admin_url( 'sharing#sucom-tabset_sharing-tab_preset', 'Sharing Buttons' ).' settings page.</p>
 			<p><strong>Selected preset:</strong> '.
 			( empty( $this->p->options['buttons_preset_woo_short'] ) ?
-				'[none]' : $this->p->options['buttons_preset_woo_short'] ).
+				'[None]' : $this->p->options['buttons_preset_woo_short'] ).
 			'</p></th><td><textarea disabled="disabled" class="tall code">'.
 				$this->p->options['buttons_css_woo_short'].'</textarea></td>';
 			return $rows;
