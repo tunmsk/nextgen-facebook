@@ -12,13 +12,14 @@ if ( ! class_exists( 'NgfbSettingSocialAccounts' ) && class_exists( 'NgfbAdmin' 
 
 	class NgfbSettingSocialAccounts extends NgfbAdmin {
 
-		public function __construct( &$plugin, $id, $name, $lib ) {
+		public function __construct( &$plugin, $id, $name, $lib, $ext ) {
 			$this->p =& $plugin;
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 			$this->menu_id = $id;
 			$this->menu_name = $name;
 			$this->menu_lib = $lib;
+			$this->menu_ext = $ext;
 		}
 
 		protected function add_meta_boxes() {
@@ -47,33 +48,46 @@ if ( ! class_exists( 'NgfbSettingSocialAccounts' ) && class_exists( 'NgfbAdmin' 
 
 				case 'social-accounts-general':
 
-					$rows[] = $this->p->util->get_th( _x( 'Facebook Business Page URL',
-						'option label', 'nextgen-facebook' ), null, 'fb_publisher_url' ).
-					'<td>'.$this->form->get_input( 'fb_publisher_url', 'wide' ).'</td>';
-
-					$rows[] = $this->p->util->get_th( _x( 'Google+ Business Page URL',
-						'option label', 'nextgen-facebook' ), null, 'google_publisher_url' ).
-					'<td>'.$this->form->get_input( 'seo_publisher_url', 'wide' ).'</td>';
-
-					$rows[] = $this->p->util->get_th( _x( 'Pinterest Company Page URL',
-						'option label', 'nextgen-facebook' ), null, 'rp_publisher_url'  ).
-					'<td>'.$this->form->get_input( 'rp_publisher_url', 'wide' ).'</td>';
-
-					$rows[] = $this->p->util->get_th( _x( 'Twitter Business @username',
-						'option label', 'nextgen-facebook' ), null, 'tc_site' ).
-					'<td>'.$this->form->get_input( 'tc_site' ).'</td>';
-
-					$rows[] = $this->p->util->get_th( _x( 'Instagram Business URL',
-						'option label', 'nextgen-facebook' ), null, 'instgram_publisher_url' ).
-					'<td>'.$this->form->get_input( 'instgram_publisher_url', 'wide' ).'</td>';
-
-					$rows[] = $this->p->util->get_th( _x( 'LinkedIn Company Page URL',
-						'option label', 'nextgen-facebook' ), null, 'linkedin_publisher_url'  ).
-					'<td>'.$this->form->get_input( 'linkedin_publisher_url', 'wide' ).'</td>';
-
-					$rows[] = $this->p->util->get_th( _x( 'MySpace Business (Brand) URL',
-						'option label', 'nextgen-facebook' ), null, 'myspace_publisher_url'  ).
-					'<td>'.$this->form->get_input( 'myspace_publisher_url', 'wide' ).'</td>';
+					foreach ( array(
+						'fb_publisher_url' => array(
+							'label' => _x( 'Facebook Business Page URL', 'option label', 'nextgen-facebook' ),
+							'tooltip' => 'fb_publisher_url',
+							'css_class' => 'wide',
+						),
+						'seo_publisher_url' => array(
+							'label' => _x( 'Google+ Business Page URL', 'option label', 'nextgen-facebook' ),
+							'tooltip' => 'google_publisher_url',
+							'css_class' => 'wide',
+						),
+						'rp_publisher_url' => array(
+							'label' => _x( 'Pinterest Company Page URL', 'option label', 'nextgen-facebook' ),
+							'tooltip' => 'rp_publisher_url',
+							'css_class' => 'wide',
+						),
+						'tc_site' => array(
+							'label' => _x( 'Twitter Business @username', 'option label', 'nextgen-facebook' ),
+							'tooltip' => 'tc_site',
+							'css_class' => null,
+						),
+						'instgram_publisher_url' => array(
+							'label' => _x( 'Instagram Business URL', 'option label', 'nextgen-facebook' ),
+							'tooltip' => 'instgram_publisher_url',
+							'css_class' => 'wide',
+						),
+						'linkedin_publisher_url' => array(
+							'label' => _x( 'LinkedIn Company Page URL', 'option label', 'nextgen-facebook' ),
+							'tooltip' => 'linkedin_publisher_url',
+							'css_class' => 'wide',
+						),
+						'myspace_publisher_url' => array(
+							'label' => _x( 'MySpace Business Page URL', 'option label', 'nextgen-facebook' ),
+							'tooltip' => 'myspace_publisher_url',
+							'css_class' => 'wide',
+						),
+					) as $key => $pub ) {
+						$rows[$key] = $this->p->util->get_th( $pub['label'], null, $pub['tooltip'], array( 'is_locale' => true ) ).
+						'<td>'.$this->form->get_input( SucomUtil::get_key_locale( $key, $this->p->options ), $pub['css_class'] ).'</td>';
+					}
 
 					break;
 			}
