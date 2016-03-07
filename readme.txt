@@ -87,7 +87,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 	* Twitter @username
 	* YouTube Channel URL
 * Validation tools, social preview, and meta tag value tabs on admin editing pages.
-* Customizable *multilingual* Site Title and Site Description texts.
+* Customizable **multilingual** / multi-language Site Title and Site Description texts.
 * Contextual help for *every* plugin option and [comprehensive online documentation](http://surniaulula.com/codex/plugins/nextgen-facebook/).
 * Uses object and transient caches to provide incredibly fast execution speeds.
 * Include / exclude each social sharing button based on the viewing device (desktop and/or mobile).
