@@ -525,7 +525,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				$json_data = $ret;
 			else $json_data[] = $ret;
 
-			return true;
+			return 1;
 		}
 
 		public static function add_single_person_data( &$json_data, $user_id, $list_element = true ) {
@@ -535,13 +535,13 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			if ( empty( $user_id ) ) {
 				if ( $ngfb->debug->enabled )
 					$ngfb->debug->log( 'exiting early: empty user_id' );
-				return false;
+				return 0;
 			}
 
 			if ( empty( $ngfb->m['util']['user'] ) ) {
 				if ( $ngfb->debug->enabled )
 					$ngfb->debug->log( 'exiting early: empty user module' );
-				return false;
+				return 0;
 			} else $mod_obj =& $ngfb->m['util']['user'];
 
 			$ret = array(
@@ -574,7 +574,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				$json_data = $ret;
 			else $json_data[] = $ret;
 
-			return true;
+			return 1;
 		}
 
 		// pass a single or two dimension image array in $og_image
