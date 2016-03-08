@@ -286,7 +286,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 * [Doesn't an SEO plugin cover that?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/doesnt-an-seo-plugin-cover-that/)
 * [How can I exclude / ignore certain parts of the content text?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-exclude-certain-parts-of-the-content-text/)
 * [How can I fix a ERR_TOO_MANY_REDIRECTS error?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-fix-a-err_too_many_redirects-error/)
-* [How can I fix an “HTTP error” when uploading images?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-fix-an-http-error-when-uploading-images/)
+* [How can I fix an "HTTP error" when uploading images?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-fix-an-http-error-when-uploading-images/)
 * [How can I have smaller dimensions for the default image?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-have-smaller-dimensions-for-the-default-image/)
 * [How can I see what the Facebook crawler sees?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-see-what-the-facebook-crawler-sees/)
 * [How can I share a single NextGEN Gallery image?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-share-a-single-nextgen-gallery-image/)
