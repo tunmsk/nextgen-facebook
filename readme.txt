@@ -408,13 +408,13 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* Improved the Social Settings display of default values (Free version).
+	* Improved the Social Settings options display (Free version).
 * *Bugfixes*
-	* None
+	* Fixed a typo in the social sharing buttons shortcode library.
 * *Developer Notes*
-	* Version 8.28.0 starts a refactoring process to remove most references to $post_id and $post_obj, replacing them by $mod array values instead (id, name, and obj).
-	* Modified the SucomUtil `get_term_object()` and `get_user_object()` arguments to allow requesting specific term and user IDs.
-	* Refactored several classes / methods to use the improved NgfbUtil `get_object_id_mod()` method.
+	* Version 8.28.0 starts a refactoring process to remove most references to `$post_id` and `$post_obj`, replacing them by a single `$mod` array instead. The $mod array includes the post/term/user id and module object reference.
+	* Modified the SucomUtil `get_term_object()` and `get_user_object()` method arguments to allow requesting a specific term and user ID.
+	* Refactored several classes / methods to use the new `$mod` variable and improved NgfbUtil `get_object_id_mod()` method.
 
 **Version 8.27.0 (2016/03/08)**
 
