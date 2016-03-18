@@ -406,7 +406,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 Official announcement: N/A
 
 * *New Features*
-	* None
+	* Added support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 * *Improvements*
 	* Improved the Social Settings options display (Free version).
 	* Standardized checks for required PHP curl, json, and mbstring extensions.
