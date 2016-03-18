@@ -254,9 +254,9 @@ if ( ! class_exists( 'NgfbUser' ) ) {
 
 			$mod = $this->get_mod( $user->ID );
 			$opts = $this->get_options( $user->ID );
-			$def_opts = $this->get_defaults( false, $mod );			// get the complete array
+			$def_opts = $this->get_defaults( $user->ID );
 			$this->form = new SucomForm( $this->p, NGFB_META_NAME, $opts, $def_opts );
-			wp_nonce_field( NgfbAdmin::get_nonce(), NGFB_NONCE );		// NGFB_NONCE is an md5() string
+			wp_nonce_field( NgfbAdmin::get_nonce(), NGFB_NONCE );
 
 			$metabox = 'user';
 			$tabs = apply_filters( $this->p->cf['lca'].'_social_settings_user_tabs',

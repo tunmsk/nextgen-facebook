@@ -262,9 +262,9 @@ if ( ! class_exists( 'NgfbTaxonomy' ) ) {
 
 			$mod = $this->get_mod( $term->term_id, $this->tax_slug );
 			$opts = $this->get_options( $term->term_id );
-			$def_opts = $this->get_defaults( false, $mod );			// get the complete array
+			$def_opts = $this->get_defaults( $term->term_id );
 			$this->form = new SucomForm( $this->p, NGFB_META_NAME, $opts, $def_opts );
-			wp_nonce_field( NgfbAdmin::get_nonce(), NGFB_NONCE );		// NGFB_NONCE is an md5() string
+			wp_nonce_field( NgfbAdmin::get_nonce(), NGFB_NONCE );
 
 			$metabox = 'taxonomy';
 			$tabs = apply_filters( $this->p->cf['lca'].'_social_settings_taxonomy_tabs',

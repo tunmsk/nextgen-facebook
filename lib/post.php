@@ -359,7 +359,7 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 
 			$mod = $this->get_mod( $post_id );
 			$opts = $this->get_options( $post_id );				// sanitized when saving
-			$def_opts = $this->get_defaults( false, $mod );			// get the complete array
+			$def_opts = $this->get_defaults( $post_id );			// get the complete array
 			$post_type = get_post_type_object( $post_obj->post_type );	// since 3.0
 			$this->form = new SucomForm( $this->p, NGFB_META_NAME, $opts, $def_opts );
 			wp_nonce_field( NgfbAdmin::get_nonce(), NGFB_NONCE );		// NGFB_NONCE is an md5() string
