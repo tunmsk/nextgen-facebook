@@ -23,10 +23,16 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 			$this->menu_name = $name;
 			$this->menu_lib = $lib;
 			$this->menu_ext = $ext;
+
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
+
 			$this->set_objects();
+
 			$this->p->util->add_plugin_actions( $this, array(
 				'form_content_metaboxes_sharing' => 1,
 			) );
+
 			$this->p->util->add_plugin_filters( $this, array(
 				'messages_tooltip' => 2,
 			) );
@@ -125,39 +131,37 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 				'position' => _x( 'Buttons Position', 'metabox tab', 'nextgen-facebook' ),
 				'preset' => _x( 'Button Presets', 'metabox tab', 'nextgen-facebook' ),
 			) );
-			$rows = array();
+			$table_rows = array();
 			foreach ( $tabs as $key => $title )
-				$rows[$key] = array_merge( $this->get_rows( $metabox, $key ), 
+				$table_rows[$key] = array_merge( $this->get_table_rows( $metabox, $key ), 
 					apply_filters( $this->p->cf['lca'].'_'.$metabox.'_'.$key.'_rows', array(), $this->form ) );
-			$this->p->util->do_tabs( $metabox, $tabs, $rows );
+			$this->p->util->do_metabox_tabs( $metabox, $tabs, $table_rows );
 		}
 
 		public function show_metabox_website() {
 			$metabox = 'website';
 			$key = $this->website_id;
 			$this->p->util->do_table_rows( 
-				array_merge( 
-					$this->get_rows( $metabox, $key ),
-					apply_filters( $this->p->cf['lca'].'_'.$metabox.'_'.$key.'_rows', array(), $this->form )
-				),
+				array_merge( $this->get_table_rows( $metabox, $key ),
+					apply_filters( $this->p->cf['lca'].'_'.$metabox.'_'.$key.'_rows', array(), $this->form ) ),
 				'metabox-'.$metabox.'-'.$key,
 				'metabox-website'
 			);
 		}
 
-		protected function get_rows( $metabox, $key ) {
-			$rows = array();
+		protected function get_table_rows( $metabox, $key ) {
+			$table_rows = array();
 			switch ( $metabox.'-'.$key ) {
 
 				case 'sharing-include':
 
-					$rows[] = '<tr><td colspan="2">'.$this->p->msgs->get( 'info-'.$metabox.'-'.$key ).'</td></tr>';
+					$table_rows[] = '<tr><td colspan="2">'.$this->p->msgs->get( 'info-'.$metabox.'-'.$key ).'</td></tr>';
 
-					$rows[] = $this->p->util->get_th( _x( 'Include on Index Webpages',
+					$table_rows[] = $this->form->get_th_html( _x( 'Include on Index Webpages',
 						'option label', 'nextgen-facebook' ), null, 'buttons_on_index' ).
 					'<td>'.$this->form->get_checkbox( 'buttons_on_index' ).'</td>';
 
-					$rows[] = $this->p->util->get_th( _x( 'Include on Static Homepage',
+					$table_rows[] = $this->form->get_th_html( _x( 'Include on Static Homepage',
 						'option label', 'nextgen-facebook' ), null, 'buttons_on_front' ).
 					'<td>'.$this->form->get_checkbox( 'buttons_on_front' ).'</td>';
 
@@ -165,19 +169,19 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 
 				case 'sharing-position':
 
-					$rows[] = $this->p->util->get_th( _x( 'Position in Content Text',
+					$table_rows[] = $this->form->get_th_html( _x( 'Position in Content Text',
 						'option label', 'nextgen-facebook' ), null, 'buttons_pos_content' ).
 					'<td>'.$this->form->get_select( 'buttons_pos_content',
 						$this->p->cf['sharing']['position'] ).'</td>';
 
-					$rows[] = $this->p->util->get_th( _x( 'Position in Excerpt Text',
+					$table_rows[] = $this->form->get_th_html( _x( 'Position in Excerpt Text',
 						'option label', 'nextgen-facebook' ), null, 'buttons_pos_excerpt' ).
 					'<td>'.$this->form->get_select( 'buttons_pos_excerpt', 
 						$this->p->cf['sharing']['position'] ).'</td>';
 
 					break;
 			}
-			return $rows;
+			return $table_rows;
 		}
 
 		// called by each website's settings class to display a list of checkboxes

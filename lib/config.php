@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.27.0',		// plugin version
+					'version' => '8.28.0',		// plugin version
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -107,8 +107,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
 								'post' => 'Post Settings',
-								'taxonomy' => 'Taxonomy Settings',
-								'user' => 'User Settings',
+								'meta' => 'User and Taxonomy Settings',
 							),
 							'ecom' => array(
 								'woocommerce' => 'WooCommerce',
@@ -132,8 +131,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'sharing' => 'Button Settings',
 								'style' => 'Style Settings',
 								'post' => 'Post Settings',
-								'taxonomy' => 'Taxonomy Settings',
-								'user' => 'User Settings',
+								'meta' => 'User and Taxonomy Settings',
 							),
 							'ecom' => array(
 								'edd' => 'Easy Digital Downloads',
@@ -695,6 +693,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'week' => 604800,
 					'month' => 18144000,
 				),
+				// to use in a form select, make sure you declare the array as associative
 				'file_cache_hrs' => array(
 					0 => 0,
 					3600 => 1,

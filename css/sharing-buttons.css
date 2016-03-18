@@ -26,6 +26,7 @@
 .ngfb-buttons iframe { 
 	margin:0;
 	max-width:none;
+	vertical-align:baseline;
 }
 
 .ngfb-buttons > div,		/* default uses small buttons */

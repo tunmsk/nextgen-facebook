@@ -16,32 +16,33 @@ if ( ! class_exists( 'NgfbSubmenuSharingWhatsApp' ) && class_exists( 'NgfbSubmen
 			$this->p =& $plugin;
 			$this->website_id = $id;
 			$this->website_name = $name;
+
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 		}
 
-		protected function get_rows( $metabox, $key ) {
-			$rows = array();
+		protected function get_table_rows( $metabox, $key ) {
+			$table_rows = array();
 
-			$rows[] = $this->p->util->get_th( _x( 'Preferred Order',
+			$table_rows[] = $this->form->get_th_html( _x( 'Preferred Order',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$this->form->get_select( 'wa_order', 
 				range( 1, count( $this->p->admin->submenu['sharing']->website ) ), 'short' ).  '</td>';
 
-			$rows[] = $this->p->util->get_th( _x( 'Show Button in',
+			$table_rows[] = $this->form->get_th_html( _x( 'Show Button in',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$this->show_on_checkboxes( 'wa' ).'</td>';
 
-			$rows[] = '<tr class="hide_in_basic">'.
-			$this->p->util->get_th( _x( 'Allow for Platform',
+			$table_rows[] = '<tr class="hide_in_basic">'.
+			$this->form->get_th_html( _x( 'Allow for Platform',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$this->form->get_select( 'wa_platform',
 				$this->p->cf['sharing']['platform'] ).'</td>';
 
-			$rows[] = '<tr class="hide_in_basic">'.
+			$table_rows[] = '<tr class="hide_in_basic">'.
 			'<td colspan="2">'.$this->form->get_textarea( 'wa_html', 'average code' ).'</td>';
 
-			return $rows;
+			return $table_rows;
 		}
 	}
 }
@@ -82,30 +83,27 @@ if ( ! class_exists( 'NgfbSharingWhatsApp' ) ) {
 			) );
 		}
 
-		public function filter_get_defaults( $opts_def ) {
-			return array_merge( $opts_def, self::$cf['opt']['defaults'] );
+		public function filter_get_defaults( $def_opts ) {
+			return array_merge( $def_opts, self::$cf['opt']['defaults'] );
 		}
 
-		public function get_html( $atts = array(), &$opts = array() ) {
+		// do not use an $atts reference to allow for local changes
+		public function get_html( array $atts, array &$opts, array &$mod ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
 			if ( empty( $opts ) ) 
 				$opts =& $this->p->options;
 
-			$use_post = isset( $atts['use_post'] ) ?
-				$atts['use_post'] : true;
-
-			if ( ! isset( $atts['add_page'] ) )
-				$atts['add_page'] = true;
-
-			if ( ! isset( $atts['source_id'] ) )
-				$atts['source_id'] = $this->p->util->get_source_id( 'whatsapp', $atts );
+			$atts['use_post'] = isset( $atts['use_post'] ) ? $atts['use_post'] : true;
+			$atts['add_page'] = isset( $atts['add_page'] ) ? $atts['add_page'] : true;      // get_sharing_url() argument
+			$atts['source_id'] = isset( $atts['source_id'] ) ?
+				$atts['source_id'] : $this->p->util->get_source_id( 'whatsapp', $atts );
 
 			return $this->p->util->replace_inline_vars( '<!-- WhatsApp Button -->'.
-				$this->p->options['wa_html'], $use_post, false, $atts, array(
+				$this->p->options['wa_html'], $atts['use_post'], false, $atts, array(
 			 		'title' => rawurlencode( $this->p->webpage->get_title( 0, '',
-						$use_post, true, false, false, 'og_title', 'whatsapp' ) ),
+						$atts['use_post'], true, false, false, 'og_title', 'whatsapp' ) ),
 				)
 			);
 		}

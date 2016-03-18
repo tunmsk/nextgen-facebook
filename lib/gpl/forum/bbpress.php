@@ -17,6 +17,7 @@ if ( ! class_exists( 'NgfbGplForumBbpress' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
+
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
@@ -93,11 +94,11 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
 			return $tabs;
 		}
 
-		public function filter_style_bbp_single_rows( $rows, $form ) {
-			$rows[] = '<td colspan="2" align="center">'.
+		public function filter_style_bbp_single_rows( $table_rows, $form ) {
+			$table_rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg', 
 					array( 'lca' => 'ngfb' ) ).'</td>';
-			$rows[] = '<th class="textinfo">
+			$table_rows[] = '<th class="textinfo">
 			<p>Social sharing buttons added at the top of bbPress Single Templates are assigned the \'ngfb-bbp_single-buttons\' class, which itself contains the \'ngfb-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
 
 			<p>Example:</p><pre>
@@ -105,16 +106,16 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
     .ngfb-buttons
         .facebook-button { }</pre></th><td><textarea disabled="disabled" class="tall code">'.
 			$this->p->options['buttons_css_bbp_single'].'</textarea></td>';
-			return $rows;
+			return $table_rows;
 		}
 
-		public function filter_sharing_position_rows( $rows, $form ) {
-			$rows[] = '<td colspan="2" align="center">'.
+		public function filter_sharing_position_rows( $table_rows, $form ) {
+			$table_rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'ngfb' ) ).'</td>';
-			$rows['buttons_pos_bbp_single'] = $this->p->util->get_th( _x( 'Position in bbPress Single',
+			$table_rows['buttons_pos_bbp_single'] = $form->get_th_html( _x( 'Position in bbPress Single',
 				'option label', 'nextgen-facebook' ), null, 'buttons_pos_bbp_single' ).
 			'<td class="blank">'.$this->p->cf['sharing']['position'][$this->p->options['buttons_pos_bbp_single']].'</td>';
-			return $rows;
+			return $table_rows;
 		}
 	}
 }

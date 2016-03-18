@@ -63,7 +63,7 @@ if ( ! class_exists( 'NgfbShortcodeSharing' ) ) {
 				$this->p->debug->log( 'exiting early: invalid object type' );
 				return $content;
 			}
-			$post_id = empty( $post_obj->ID ) || empty( $post_obj->post_type ) ? 0 : $post_obj->ID;
+			$post_id = empty( $post_obj->ID ) ? 0 : $post_obj->ID;
 
 			$lca = $this->p->cf['lca'];
 			$atts = apply_filters( $lca.'_shortcode_'.NGFB_SHARING_SHORTCODE, $atts, $content );
@@ -93,7 +93,7 @@ if ( ! class_exists( 'NgfbShortcodeSharing' ) ) {
 				unset ( $atts['buttons'] );
 				$html .= '<!-- '.$lca.' shortcode-buttons begin -->'.
 					$this->p->sharing->get_script( 'shortcode-header', $ids ).
-					'<div class="'.$lca.'-shortcode-buttons">'."\n";
+					'<div class="'.$lca.'-shortcode-buttons">'."\n".
 					$this->p->sharing->get_html( $ids, $atts ).'</div>'.
 					$this->p->sharing->get_script( 'shortcode-footer', $ids ).
 					'<!-- '.$lca.' shortcode-buttons end -->';

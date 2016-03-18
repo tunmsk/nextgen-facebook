@@ -18,6 +18,10 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 			$this->menu_name = $name;
 			$this->menu_lib = $lib;
 			$this->menu_ext = $ext;
+
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
+
 			$this->p->util->add_plugin_filters( $this, array( 
 				'messages_tooltip' => 2,	// tooltip messages filter
 				'messages_info' => 2,		// info messages filter
@@ -134,11 +138,11 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 
 			$this->p->util->do_table_rows( 
 				array( 
-					$this->p->util->get_th( _x( 'Use the Social Stylesheet',
+					$this->form->get_th_html( _x( 'Use the Social Stylesheet',
 						'option label', 'nextgen-facebook' ), null, 'buttons_use_social_css' ).
 					'<td>'.$this->form->get_checkbox( 'buttons_use_social_css' ).$css_min_msg.'</td>',
 	
-					$this->p->util->get_th( _x( 'Enqueue the Stylesheet',
+					$this->form->get_th_html( _x( 'Enqueue the Stylesheet',
 						'option label', 'nextgen-facebook' ), null, 'buttons_enqueue_social_css' ).
 					'<td>'.$this->form->get_checkbox( 'buttons_enqueue_social_css' ).'</td>',
 				)
@@ -147,16 +151,16 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 			$metabox = 'style';
 			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs', 
 				$this->p->cf['sharing']['style'] );
-			$rows = array();
+			$table_rows = array();
 			foreach ( $tabs as $key => $title ) {
 				$tabs[$key] = _x( $title, 'metabox tab', 'nextgen-facebook' );	// translate the tab title
-				$rows[$key] = array_merge( $this->get_rows( $metabox, $key ), 
+				$table_rows[$key] = array_merge( $this->get_table_rows( $metabox, $key ), 
 					apply_filters( $this->p->cf['lca'].'_'.$metabox.'_'.$key.'_rows', array(), $this->form ) );
 			}
-			$this->p->util->do_tabs( $metabox, $tabs, $rows );
+			$this->p->util->do_metabox_tabs( $metabox, $tabs, $table_rows );
 		}
 
-		protected function get_rows( $metabox, $key ) {
+		protected function get_table_rows( $metabox, $key ) {
 			return array();
 		}
 	}
