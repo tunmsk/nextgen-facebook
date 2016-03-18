@@ -338,7 +338,7 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 		protected function get_submit_opts( $mod_id ) {
 			$mod = $this->get_mod( $mod_id );
 
-			$defs = $this->get_defaults( $mod['id'], false );
+			$defs = $this->get_defaults( $mod['id'] );
 			unset ( $defs['options_filtered'] );
 			unset ( $defs['options_version'] );
 
