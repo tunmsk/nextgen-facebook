@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4.2
-Stable Tag: 8.28.0
+Stable Tag: 8.28.1
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -414,7 +414,7 @@ Official announcement: N/A
 	* None
 * *Developer Notes*
 	* Refactored the NgfbUtil `get_object_id_mod()` method to apply default array values.
-	* Modified the post / taxonomy / user metabox tabs filter arguments.
+	* Modified the post / taxonomy / user metabox tabs filter arguments (see filters.txt).
 
 **Version 8.28.0 (2016/03/18)**
 
