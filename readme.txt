@@ -402,7 +402,21 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.28.0 (TBD)**
+**Version 8.28.1 (2016/03/19)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Refactored the NgfbUtil `get_object_id_mod()` method to apply default array values.
+	* Modified the post / taxonomy / user metabox tabs filter arguments.
+
+**Version 8.28.0 (2016/03/18)**
 
 Official announcement: N/A
 
