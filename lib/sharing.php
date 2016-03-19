@@ -299,7 +299,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 					$text = sprintf( __( 'The sharing widget feature adds a <em>%s</em> widget to the WordPress Widgets settings page. The sharing widget shares the URL for the current webpage (and not individual items within an index / archive webpage, for example).', 'nextgen-facebook' ),_x( 'Sharing Buttons', 'lib file description', 'nextgen-facebook' ) );
 					break;
 				case 'tooltip-side-sharing-styles-editor':
-					$text = __( 'A stylesheet editor is available to edit the default CSS of social sharing buttons based on their intended location (content, except, etc.).', 'nextgen-facebook' );
+					$text = __( 'A stylesheet editor is available to modify the default CSS of social sharing buttons based on their intended location (content, except, etc.).', 'nextgen-facebook' );
 					break;
 				case 'tooltip-side-social-file-cache':
 					$text = __( 'Social sharing button images and JavaScript can be saved to a local cache folder. When this feature is enabled, the image and JavaScript URLs provided are those of the cached files instead of the originals (often with much better performance).', 'nextgen-facebook' ).' '.sprintf( __( 'The current <em>%1$s</em> value defined on the <a href="%2$s">%3$s</a> settings page is %4$s seconds (the default value of 0 disables social file caching).', 'nextgen-facebook' ), _x( 'Social File Cache Expiry', 'option label', 'nextgen-facebook' ), $this->p->util->get_admin_url( 'advanced' ), _x( 'Advanced', 'lib file description', 'nextgen-facebook' ), $this->p->options['plugin_file_cache_exp'] );
