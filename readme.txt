@@ -456,6 +456,10 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
+= 8.28.1 =
+
+2016/03/19 - Refactored the NgfbUtil get_object_id_mod() method to apply default array values.
+
 = 8.28.0 =
 
 2016/03/18 - Added support for Automattic's Accelerated Mobile Pages (AMP) plugin. Improved the Social Settings options display (Free version). Fixed a typo in the social sharing buttons shortcode library.
