@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4.2
-Stable Tag: 8.28.1
+Stable Tag: 8.28.1.1
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -459,12 +459,4 @@ Official announcement: N/A
 = 8.28.1.1 =
 
 2016/03/19 - Refactored the NgfbUtil get_object_id_mod() method to apply default array values.
-
-= 8.28.0 =
-
-2016/03/18 - Added support for Automattic's Accelerated Mobile Pages (AMP) plugin. Improved the Social Settings options display (Free version). Fixed a typo in the social sharing buttons shortcode library.
-
-= 8.27.0 =
-
-2016/03/08 - Added new "Video Name / Title" and "Video Description" options in the Social Settings metabox. Fixed the meta tag parser for fetched webpage content (Youtube API and duplicate meta tag check).
 
