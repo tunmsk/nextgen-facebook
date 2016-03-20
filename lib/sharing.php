@@ -625,7 +625,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			}
 
 			$lca = $this->p->cf['lca'];
-			$mod = $this->p->util->get_object_id_mod( $use_post );
+			$mod = $this->p->util->get_page_mod( $use_post );	// get post/user/term id, module name and object reference
 			$src_id = $this->p->util->get_source_id( $type );
 			$html = false;
 
@@ -714,7 +714,7 @@ $buttons_html."\n".
 			$use_post = isset( $atts['use_post'] ) ?
 				$atts['use_post'] : true;
 			if ( ! is_array( $mod ) )
-				$mod = $this->p->util->get_object_id_mod( $use_post, $mod );
+				$mod = $this->p->util->get_page_mod( $use_post );	// get post/user/term id, module name and object reference
 
 			$html_ret = '';
 			$html_begin = "\n".'<div class="'.$lca.'-buttons">'."\n";
