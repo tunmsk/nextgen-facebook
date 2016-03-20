@@ -421,7 +421,7 @@ Official announcement: N/A
 Official announcement: N/A
 
 * *New Features*
-	* Added support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
+	* Added support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin. See [the AMP project README on GitHub](https://github.com/Automattic/amp-wp/blob/master/readme.md) for details on modifying AMP plugin settings with custom filters.
 * *Improvements*
 	* Improved the Social Settings options display (Free version).
 	* Standardized checks for required PHP curl, json, and mbstring extensions.
