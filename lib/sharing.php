@@ -459,16 +459,15 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			// get the current object / post type
 			if ( ( $post_obj = $this->p->util->get_post_object() ) === false ) {
 				if ( $this->p->debug->enabled )
-					$this->p->debug->log( 'exiting early: invalid object type' );
+					$this->p->debug->log( 'exiting early: invalid post object' );
 				return;
 			}
-			$post_type = get_post_type_object( $post_obj->post_type );
 
-			if ( ! empty( $this->p->options[ 'buttons_add_to_'.$post_type->name ] ) ) {
+			if ( ! empty( $this->p->options[ 'buttons_add_to_'.$post_obj->post_type ] ) ) {
 				// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
 				add_meta_box( '_'.$this->p->cf['lca'].'_share',
 					_x( 'Sharing Buttons', 'metabox title', 'nextgen-facebook' ),
-						array( &$this, 'show_admin_sharing' ), $post_type->name, 'side', 'high' );
+						array( &$this, 'show_admin_sharing' ), $post_obj->post_type, 'side', 'high' );
 			}
 		}
 
@@ -514,10 +513,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 				$this->p->debug->show_html( null, 'Debug Log' );
 		}
 
-		public function show_admin_sharing( $post ) {
+		public function show_admin_sharing( $post_obj ) {
 			$lca = $this->p->cf['lca'];
-			$post_type = get_post_type_object( $post->post_type );	// since 3.0
-			$post_type_name = ucfirst( $post_type->name );
 			$css_data = '#side-sortables #_'.$lca.'_share .inside table.sucom-setting { padding:0; }'.
 				$this->p->options['buttons_css_admin_edit'];
 
@@ -529,8 +526,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 			echo '<style type="text/css">'.$css_data.'</style>', "\n";
 			echo '<table class="sucom-setting '.$this->p->cf['lca'].' side"><tr><td>';
-			if ( get_post_status( $post->ID ) === 'publish' || 
-				get_post_type( $post->ID ) === 'attachment' ) {
+			if ( get_post_status( $post_obj->ID ) === 'publish' || 
+				$post_obj->post_type === 'attachment' ) {
 
 				$content = '';
 				echo $this->get_script_loader();
@@ -542,7 +539,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 					$this->p->debug->show_html( null, 'Debug Log' );
 
 			} else echo '<p class="centered">'.sprintf( __( '%s must be published<br/>before it can be shared.',
-				'nextgen-facebook' ), $post_type_name ).'</p>';
+				'nextgen-facebook' ), ucfirst( $post_obj->post_type ) ).'</p>';
 			echo '</td></tr></table>';
 		}
 
@@ -625,7 +622,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			}
 
 			$lca = $this->p->cf['lca'];
-			$mod = $this->p->util->get_page_mod( $use_post );	// get post/user/term id, module name and object reference
+			$mod = $this->p->util->get_page_mod( $use_post );	// get post/user/term id, module name, and module object reference
 			$src_id = $this->p->util->get_source_id( $type );
 			$html = false;
 
@@ -714,7 +711,7 @@ $buttons_html."\n".
 			$use_post = isset( $atts['use_post'] ) ?
 				$atts['use_post'] : true;
 			if ( ! is_array( $mod ) )
-				$mod = $this->p->util->get_page_mod( $use_post );	// get post/user/term id, module name and object reference
+				$mod = $this->p->util->get_page_mod( $use_post );	// get post/user/term id, module name, and module object reference
 
 			$html_ret = '';
 			$html_begin = "\n".'<div class="'.$lca.'-buttons">'."\n";
@@ -788,7 +785,7 @@ $buttons_html."\n".
 				if ( is_admin() ) {
 					if ( ( $post_obj = $this->p->util->get_post_object() ) === false  ||
 						( get_post_status( $post_obj->ID ) !== 'publish' &&
-							get_post_type( $post_obj->ID ) !== 'attachment' ) )
+							$post_obj->post_type !== 'attachment' ) )
 								return;
 				} elseif ( is_singular() && $this->is_post_buttons_disabled() ) {
 					if ( $this->p->debug->enabled )
@@ -953,11 +950,9 @@ $buttons_html."\n".
 
 			if ( ( $post_obj = $this->p->util->get_post_object() ) === false ) {
 				if ( $this->p->debug->enabled )
-					$this->p->debug->log( 'exiting early: invalid object type' );
+					$this->p->debug->log( 'exiting early: invalid post object' );
 				return $ret;
-			}
-
-			$post_id = empty( $post_obj->ID ) ? 0 : $post_obj->ID;
+			} else $post_id = empty( $post_obj->ID ) ? 0 : $post_obj->ID;
 
 			if ( empty( $post_id ) )
 				return $ret;
