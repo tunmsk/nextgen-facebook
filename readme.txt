@@ -402,7 +402,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.28.1 (2016/03/19)**
+**Version 8.28.1.1 (2016/03/19)**
 
 Official announcement: N/A
 
@@ -456,7 +456,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.28.1 =
+= 8.28.1.1 =
 
 2016/03/19 - Refactored the NgfbUtil get_object_id_mod() method to apply default array values.
 
