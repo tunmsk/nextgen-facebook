@@ -413,7 +413,7 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Refactored the NgfbUtil `get_object_id_mod()` method to apply default array values.
+	* Refactored the NgfbUtil `get_page_mod()` method to apply default array values.
 	* Modified the post / taxonomy / user metabox tabs filter arguments (see filters.txt).
 
 **Version 8.28.0 (2016/03/18)**
