@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4.2
-Stable Tag: 8.28.2
+Stable Tag: 8.28.2.1
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -402,7 +402,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.28.2 (2016/03/22)**
+**Version 8.28.2.1 (2016/03/22)**
 
 Official announcement: N/A
 
@@ -472,7 +472,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.28.2 =
+= 8.28.2.1 =
 
 2016/03/22 - Refactored / improved several methods to use the new $mod array.
 
