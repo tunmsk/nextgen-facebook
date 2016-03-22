@@ -102,7 +102,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 				$this->p->util->add_plugin_filters( $this, array( 
 					'save_options' => 3,			// update the sharing css file
-					'option_type' => 4,			// identify option type for sanitation
+					'option_type' => 2,			// identify option type for sanitation
 					'post_cache_transients' => 4,		// clear transients on post save
 					'messages_tooltip_side' => 3,		// tooltip messages for side boxes
 					'messages_tooltip_post' => 3,		// tooltip messages for post social settings
@@ -188,7 +188,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			return $opts;
 		}
 
-		public function filter_option_type( $type, $key, $network, $mod ) {
+		public function filter_option_type( $type, $key ) {
 			if ( ! empty( $type ) )
 				return $type;
 
