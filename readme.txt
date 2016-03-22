@@ -402,6 +402,22 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
+**Version 8.28.2 (2016/03/22)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Refactored the Polylang 'locale' filter to use the new `$mod` array as an argument (Pro version).
+	* Refactored the SucomWebpage `get_caption()`, `get_title()`, and `get_description()` methods to use the new `$mod` array.
+	* Moved the 'opt_version' variable value of each extension into their individual config arrays. When saving options (plugin or meta), the value of each 'opt_version' is also saved. This allows each extension to check and update (if necessary) their options.
+	* Removed the NgfbMedia and NgfbProMediaNgg `get_gallery_images()` methods. They are no longer required since Twitter deprecated their Gallery Card.
+
 **Version 8.28.1.1 (2016/03/19)**
 
 Official announcement: N/A
