@@ -172,9 +172,8 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 		// def_opts accepts output from functions, so don't force reference
 		public function options( $options_name, &$opts = array(), $def_opts = array(), $network = false ) {
 
-			// retrieve the first numeric string
-			$opts_version = empty( $opts['options_version'] ) ? 0 :
-				preg_replace( '/^[^0-9]*([0-9]*).*$/', '$1', $opts['options_version'] );
+			$opts_version = empty( $opts['plugin_'.$this->p->cf['lca'].'_opt_version'] ) ?
+				0 : $opts['plugin_'.$this->p->cf['lca'].'_opt_version'];
 
 			if ( $options_name === constant( 'NGFB_OPTIONS_NAME' ) ) {
 
