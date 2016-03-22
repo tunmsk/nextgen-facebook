@@ -409,11 +409,13 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Removed the check for enabled/disabled buttons by webpage type for the buttons widget (it will always show).
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Added a new NgfbMeta `get_options_multi()` method to fetch meta data using fallback index keys.
+	* Deprecated the NgfbUtil `get_mod_options()` method (which is replaced by NgfbMeta `get_options_multi()`).
+	* Refactored the NgfbSharing `get_script()` method to improve the enabled/disabled buttons logic (which no longer applies to shortcode, function or widget buttons).
 
 **Version 8.28.2.1 (2016/03/22)**
 
