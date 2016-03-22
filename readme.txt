@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4.2
-Stable Tag: 8.28.1.1
+Stable Tag: 8.28.2
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -415,8 +415,8 @@ Official announcement: N/A
 * *Developer Notes*
 	* Refactored the Polylang 'locale' filter to use the new `$mod` array as an argument (Pro version).
 	* Refactored the SucomWebpage `get_caption()`, `get_title()`, and `get_description()` methods to use the new `$mod` array.
-	* Moved the 'opt_version' variable value of each extension into their individual config arrays. When saving options (plugin or meta), the value of each 'opt_version' is also saved. This allows each extension to check and update (if necessary) their options.
 	* Removed the NgfbMedia and NgfbProMediaNgg `get_gallery_images()` methods. They are no longer required since Twitter deprecated their Gallery Card.
+	* Moved the 'opt_version' variable value of each extension into their individual config arrays. When saving options (plugin or meta), the value of each 'opt_version' is also saved. This allows each extension to check and update (if necessary) their options.
 
 **Version 8.28.1.1 (2016/03/19)**
 
@@ -447,7 +447,7 @@ Official announcement: N/A
 * *Developer Notes*
 	* Version 8.28.0 starts a refactoring process to remove most references to `$use_post`, `$post_id` and `$post_obj`, replacing them by a single `$mod` array instead. The `$mod` array includes the post/term/user id and module object reference.
 	* Modified the SucomUtil `get_term_object()` and `get_user_object()` method arguments to allow requesting a specific term and user ID.
-	* Refactored several classes / methods to use the new `$mod` variable and improved NgfbUtil `get_object_id_mod()` method.
+	* Refactored several classes / methods to use the new `$mod` variable and improved NgfbUtil `get_page_mod()` method.
 
 **Version 8.27.0 (2016/03/08)**
 
@@ -472,7 +472,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.28.1.1 =
+= 8.28.2 =
 
-2016/03/19 - Refactored the NgfbUtil get_object_id_mod() method to apply default array values.
+2016/03/22 - Refactored / improved several methods to use the new $mod array.
 
