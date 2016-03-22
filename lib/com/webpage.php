@@ -405,7 +405,7 @@ if ( ! class_exists( 'SucomWebpage' ) ) {
 				// quick sanitation
 				if ( $mod['id'] && $mod['name'] )
 					// returns null if $md_idx is not found in the options array
-					$title = $this->p->util->get_mod_options( $mod['id'], $mod['name'],
+					$desc = $this->p->util->get_mod_options( $mod['id'], $mod['name'],
 						( $mod['is_post'] ? array( $md_idx, 'og_desc' ) : $md_idx ) );
 
 				if ( $this->p->debug->enabled ) {
@@ -425,7 +425,7 @@ if ( ! class_exists( 'SucomWebpage' ) ) {
 				}
 			}
 
-			// check for hashtags in meta or seed title, remove and then add again after shorten
+			// check for hashtags in meta or seed desc, remove and then add again after shorten
 			if ( preg_match( '/^(.*)(( *#[a-z][a-z0-9\-]+)+)$/U', $desc, $match ) ) {
 				$desc = $match[1];
 				$hashtags = trim( $match[2] );
