@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.28.3',		// plugin version
-					'opt_version' => '417',		// increment when changing default options
+					'opt_version' => '418',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
