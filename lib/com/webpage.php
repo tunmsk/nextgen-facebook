@@ -292,9 +292,12 @@ if ( ! class_exists( 'SucomWebpage' ) ) {
 				} elseif ( $mod['is_taxonomy'] ) {
 
 					$term_obj = $this->p->util->get_term_object( $mod['id'], $mod['tax_slug'] );
-					if ( SucomUtil::is_category_page() ) {
+					if ( SucomUtil::is_category_page() )
 						$title = $this->get_category_title( $term_obj );	// includes parents in title string
-					} else $title = apply_filters( 'wp_title', $term_obj->name.' '.$separator.' ', $separator, 'right' );
+					elseif ( isset( $term_obj->name ) )
+						$title = apply_filters( 'wp_title', $term_obj->name.' '.$separator.' ', $separator, 'right' );
+					elseif ( $this->p->debug->enabled )
+						$this->p->debug->log( 'name property missing in term object' );
 
 				} elseif ( $mod['is_user'] ) { 
 
@@ -835,24 +838,34 @@ if ( ! class_exists( 'SucomWebpage' ) ) {
 			if ( ! is_object( $term_obj ) )
 				$term_obj = $this->p->util->get_term_object();
 
-			$separator = html_entity_decode( $this->p->options['og_title_sep'], ENT_QUOTES, get_bloginfo( 'charset' ) );
-			$title = $term_obj->name.' Archives '.$separator.' ';	// default value
+			$separator = html_entity_decode( $this->p->options['og_title_sep'], 
+				ENT_QUOTES, get_bloginfo( 'charset' ) );
+
+			if ( isset( $term_obj->name ) )
+				$title = $term_obj->name.' Archives '.$separator.' ';	// default value
+			elseif ( $this->p->debug->enabled )
+				$this->p->debug->log( 'name property missing in term object' );
 
 			$cat = get_category( $term_obj->term_id );
+
 			if ( ! empty( $cat->category_parent ) ) {
+
 				$cat_parents = get_category_parents( $term_obj->term_id, false, ' '.$separator.' ', false );
+
 				if ( is_wp_error( $cat_parents ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'get_category_parents error: '.$cat_parents->get_error_message() );
 				} else {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'get_category_parents() = "'.$cat_parents.'"' );
+
 					if ( ! empty( $cat_parents ) ) {
 						$title = $cat_parents;
 						$title = preg_replace( '/\.\.\. '.preg_quote( $separator, '/' ).' /', '... ', $title );
 					}
 				}
 			}
+
 			return apply_filters( 'wp_title', $title, $separator, 'right' );
 		}
 	}
