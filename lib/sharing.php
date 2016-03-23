@@ -497,6 +497,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		}
 
 		public function show_sidebar() {
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 			$lca = $this->p->cf['lca'];
 			$js = trim( preg_replace( '/\/\*.*\*\//', '', 
 				$this->p->options['buttons_js_sidebar'] ) );
@@ -514,6 +516,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		}
 
 		public function show_admin_sharing( $post_obj ) {
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 			$lca = $this->p->cf['lca'];
 			$css_data = '#side-sortables #_'.$lca.'_share .inside table.sucom-setting { padding:0; }'.
 				$this->p->options['buttons_css_admin_edit'];
@@ -567,6 +571,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		}
 
 		public function get_buttons_the_excerpt( $text ) {
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 			$id = $this->p->cf['lca'].' excerpt-buttons';
 			$text = preg_replace_callback( '/(<!-- '.$id.' begin -->.*<!-- '.$id.' end -->)(<\/p>)?/Usi', 
 				array( __CLASS__, 'remove_paragraph_tags' ), $text );
@@ -574,10 +580,14 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		}
 
 		public function get_buttons_get_the_excerpt( $text ) {
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 			return $this->get_buttons( $text, 'excerpt' );
 		}
 
 		public function get_buttons_the_content( $text ) {
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 			return $this->get_buttons( $text, 'content' );
 		}
 
