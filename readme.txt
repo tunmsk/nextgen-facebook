@@ -402,7 +402,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.28.3 (TBD)**
+**Version 8.28.3 (2016/03/23)**
 
 Official announcement: N/A
 
@@ -416,6 +416,7 @@ Official announcement: N/A
 	* Added a new NgfbMeta `get_options_multi()` method to fetch meta data using fallback index keys.
 	* Deprecated the NgfbUtil `get_mod_options()` method (which is replaced by NgfbMeta `get_options_multi()`).
 	* Refactored the NgfbSharing `get_script()` method to improve the enabled/disabled buttons logic (which no longer applies to shortcode, function or widget buttons).
+	* Added admin styles and scripts to the new term.php page in WP 4.5.
 
 **Version 8.28.2.1 (2016/03/22)**
 
@@ -486,6 +487,10 @@ Official announcement: N/A
 	* Renamed the WpssoOpengraph `get_first_media_url()` method to `get_first_media_info()` (old method gives deprecated message).
 
 == Upgrade Notice ==
+
+= 8.28.3 =
+
+2016/03/23 - Improved enabled/disabled buttons logic (no longer applies to shortcode, function or widget buttons). Added admin styles and scripts to the new term.php page in WP 4.5.
 
 = 8.28.2.1 =
 
