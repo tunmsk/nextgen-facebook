@@ -155,8 +155,6 @@ if ( ! class_exists( 'NgfbSubmenuSharing' ) && class_exists( 'NgfbAdmin' ) ) {
 
 				case 'sharing-include':
 
-					$table_rows[] = '<tr><td colspan="2">'.$this->p->msgs->get( 'info-'.$metabox.'-'.$key ).'</td></tr>';
-
 					$table_rows[] = $this->form->get_th_html( _x( 'Include on Index Webpages',
 						'option label', 'nextgen-facebook' ), null, 'buttons_on_index' ).
 					'<td>'.$this->form->get_checkbox( 'buttons_on_index' ).'</td>';

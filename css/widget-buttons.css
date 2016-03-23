@@ -4,18 +4,18 @@
  * buttons can be aligned vertically, horizontally, floated, etc.
  */
 
-/* align the buttons vertically in a single 117px wide column */
-.wpsso-ssb-widget { 
+/* align the buttons vertically in 135px wide column(s) */
+.ngfb-widget-buttons { 
 	text-align:left;
 }
-.wpsso-ssb-widget .ssb-buttons { 
+.ngfb-widget-buttons .ngfb-buttons { 
 	margin:20px 0 0 0;
 }
-.wpsso-ssb-widget .ssb-buttons > div { 
+.ngfb-widget-buttons .ngfb-buttons > div { 
 	display:inline-block;
 	vertical-align:top;
 	padding:0;
 	margin:5px;
-	width:117px; 
+	width:135px; 
 	height:20px;
 }

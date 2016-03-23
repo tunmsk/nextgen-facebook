@@ -121,10 +121,8 @@ if ( ! class_exists( 'SucomWebpage' ) ) {
 
 			// skip if no metadata index / key name
 			if ( ! empty( $md_idx ) ) {
-				// quick sanitation
-				if ( $mod['id'] && $mod['name'] )
-					// returns null if $md_idx is not found in the options array
-					$caption = $this->p->util->get_mod_options( $mod['id'], $mod['name'], $md_idx );
+				$caption = $mod['obj'] ?
+					$mod['obj']->get_options_multi( $mod['id'], $md_idx ) : null;
 
 				// maybe add hashtags to a post caption
 				if ( $mod['is_post'] ) {
@@ -230,11 +228,9 @@ if ( ! class_exists( 'SucomWebpage' ) ) {
 
 			// skip if no metadata index / key name
 			if ( ! empty( $md_idx ) ) {
-				// quick sanitation
-				if ( $mod['id'] && $mod['name'] )
-					// returns null if $md_idx is not found in the options array
-					$title = $this->p->util->get_mod_options( $mod['id'], $mod['name'],
-						( $mod['is_post'] ? array( $md_idx, 'og_title' ) : $md_idx ) );
+				$title = $mod['obj'] ?
+					$mod['obj']->get_options_multi( $mod['id'], ( $mod['is_post'] ? 
+						array( $md_idx, 'og_title' ) : $md_idx ) ) : null;
 
 				if ( $this->p->debug->enabled ) {
 					if ( empty( $title ) )
@@ -402,11 +398,9 @@ if ( ! class_exists( 'SucomWebpage' ) ) {
 
 			// skip if no metadata index / key name
 			if ( ! empty( $md_idx ) ) {
-				// quick sanitation
-				if ( $mod['id'] && $mod['name'] )
-					// returns null if $md_idx is not found in the options array
-					$desc = $this->p->util->get_mod_options( $mod['id'], $mod['name'],
-						( $mod['is_post'] ? array( $md_idx, 'og_desc' ) : $md_idx ) );
+				$desc = $mod['obj'] ?
+					$mod['obj']->get_options_multi( $mod['id'], ( $mod['is_post'] ? 
+						array( $md_idx, 'og_desc' ) : $md_idx ) ) : null;
 
 				if ( $this->p->debug->enabled ) {
 					if ( empty( $desc ) )
