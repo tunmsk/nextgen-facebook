@@ -508,6 +508,10 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
+= 8.28.4 =
+
+2016/03/25 - Refactored individual sharing button settings to use a filter hook instead of extending a class. Added new filters for schema type defaults.
+
 = 8.28.3 =
 
 2016/03/23 - Improved enabled/disabled buttons logic (no longer applies to shortcode, function or widget buttons). Added admin styles and scripts to the new term.php page in WP 4.5.
