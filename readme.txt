@@ -413,6 +413,7 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
+	* Tested with WordPress v4.5-RC1-37079.
 	* Renamed the website library classes.
 	* Renamed CSS classes and ids for the website metaboxes.
 	* Added new filters for schema type defaults:
@@ -510,7 +511,7 @@ Official announcement: N/A
 
 = 8.28.4 =
 
-2016/03/25 - Refactored individual sharing button settings to use a filter hook instead of extending a class. Added new filters for schema type defaults.
+2016/03/25 - Refactored sharing button settings to use a filter hooks. Added new filters for schema type defaults. Tested with WordPress v4.5-RC1-37079.
 
 = 8.28.3 =
 
