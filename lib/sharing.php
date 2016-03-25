@@ -125,7 +125,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 		private function set_objects() {
 			foreach ( $this->p->cf['plugin']['ngfb']['lib']['website'] as $id => $name ) {
-				$classname = NgfbConfig::load_lib( false, 'website/'.$id, 'ngfbsharing'.$id );
+				$classname = NgfbConfig::load_lib( false, 'website/'.$id, 'ngfbwebsite'.$id );
 				if ( $classname !== false && class_exists( $classname ) ) {
 					$this->website[$id] = new $classname( $this->p );
 					if ( $this->p->debug->enabled )
@@ -237,12 +237,14 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		}
 
 		public function filter_post_cache_transients( $transients, $post_id, $lang = 'en_US', $sharing_url ) {
-			$show_on = apply_filters( $this->p->cf['lca'].'_sharing_show_on', 
+			$show_on = apply_filters( $this->p->cf['lca'].'_buttons_show_on', 
 				$this->p->cf['sharing']['show_on'], null );
+
 			foreach( $show_on as $type_id => $type_name ) {
 				$transients['NgfbSharing::get_buttons'][] = 'lang:'.$lang.'_type:'.$type_id.'_id:'.$post_id.'_name:post';
 				$transients['NgfbSharing::get_buttons'][] = 'lang:'.$lang.'_type:'.$type_id.'_id:'.$post_id.'_name:post_prot:https';
 			}
+
 			return $transients;
 		}
 
@@ -875,7 +877,7 @@ $buttons_html."\n".
 
 			natsort( $include_ids );
 			$include_ids = array_unique( $include_ids );
-			$js = '<!-- '.$this->p->cf['lca'].' '.$pos.' javascript begin -->'."\n";
+			$html = '<!-- '.$this->p->cf['lca'].' '.$pos.' javascript begin -->'."\n";
 
 			if ( strpos( $pos, '-header' ) ) 
 				$script_loc = 'header';
@@ -892,12 +894,12 @@ $buttons_html."\n".
 						method_exists( $this->website[$id], 'get_script' ) && 
 							isset( $this->p->options[$opt_name] ) && 
 								$this->p->options[$opt_name] === $script_loc )
-									$js .= $this->website[$id]->get_script( $pos )."\n";
+									$html .= $this->website[$id]->get_script( $pos )."\n";
 				}
 			}
-			$js .= '<!-- '.$this->p->cf['lca'].' '.$pos.' javascript end -->'."\n";
+			$html .= '<!-- '.$this->p->cf['lca'].' '.$pos.' javascript end -->'."\n";
 
-			return $js;
+			return $html;
 		}
 
 		public function get_script_loader( $pos = 'id' ) {
@@ -1011,10 +1013,19 @@ $buttons_html."\n".
 			return $suff.$ret; 
 		}
 
-		public function get_defined_website_names() {
+		public function get_website_object_ids( $website_obj = array() ) {
 			$ids = array();
-			foreach ( array_keys( $this->website ) as $id )
-				$ids[$id] = $this->p->cf['*']['lib']['website'][$id];
+
+			if ( empty( $website_obj ) )
+				$website_keys = array_keys( $this->website );
+			else $website_keys = array_keys( $website_obj );
+
+			$website_ids = $this->p->cf['plugin']['ngfb']['lib']['website'];
+
+			foreach ( $website_keys as $id )
+				$ids[$id] = isset( $website_ids[$id] ) ?
+					$website_ids[$id] : ucfirst( $id );
+
 			return $ids;
 		}
 	}

@@ -9,8 +9,8 @@ Tags: amp, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
-Tested Up To: 4.4.2
-Stable Tag: 8.28.3
+Tested Up To: 4.5
+Stable Tag: 8.28.4
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -401,6 +401,26 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
 = Changelog / Release Notes =
+
+**Version 8.28.4 (2016/03/25)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Refactored individual sharing button settings to use a filter hook instead of extending a class.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Renamed the website library classes.
+	* Renamed CSS classes and ids for the website metaboxes.
+	* Added new filters for schema type defaults:
+		* 'ngfb_schema_type_for_author_forced'
+		* 'ngfb_schema_type_for_default'
+		* 'ngfb_schema_type_for_home_page'
+		* 'ngfb_schema_type_for_post_type_empty'
+		* 'ngfb_schema_type_for_post_type_unknown'
 
 **Version 8.28.3 (2016/03/23)**
 

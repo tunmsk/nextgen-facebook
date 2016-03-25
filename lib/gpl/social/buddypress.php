@@ -48,7 +48,7 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
 
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_filters( $this, array( 
-					'sharing_show_on' => 2,
+					'buttons_show_on' => 2,
 					'sharing_styles_tabs' => 1,
 					'style_bp_activity_rows' => 2,
 				) );
@@ -72,7 +72,7 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
 			return $opts_def;
 		}
 
-		public function filter_sharing_show_on( $show_on = array(), $prefix = '' ) {
+		public function filter_buttons_show_on( $show_on = array(), $prefix = '' ) {
 			switch ( $prefix ) {
 				case 'pin':
 					break;

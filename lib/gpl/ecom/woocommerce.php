@@ -46,10 +46,10 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_filters( $this, array( 
-					'sharing_show_on' => 2,
+					'buttons_show_on' => 2,
 					'sharing_styles_tabs' => 1,
 					'style_woo_short_rows' => 2,
-					'sharing_position_rows' => 2,	// social sharing 'Buttons Position' options
+					'buttons_position_rows' => 2,	// social sharing 'Buttons Position' options
 				) );
 			}
 		}
@@ -73,7 +73,7 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 			return $opts_def;
 		}
 
-		public function filter_sharing_show_on( $show_on = array(), $prefix ) {
+		public function filter_buttons_show_on( $show_on = array(), $prefix ) {
 			$show_on['woo_short'] = 'Woo Short';
 			$this->p->options[$prefix.'_on_woo_short:is'] = 'disabled';
 			return $show_on;
@@ -105,7 +105,7 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 			return $table_rows;
 		}
 
-		public function filter_sharing_position_rows( $table_rows, $form ) {
+		public function filter_buttons_position_rows( $table_rows, $form ) {
 			$table_rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'ngfb' ) ).'</td>';
 			$table_rows['buttons_pos_woo_short'] = $form->get_th_html( _x( 'Position in Woo Short Text',

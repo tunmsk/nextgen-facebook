@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.28.3',		// plugin version
+					'version' => '8.28.4',		// plugin version
 					'opt_version' => '418',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -65,7 +65,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'essential' => 'Essential Settings',
 							'general' => 'General Settings',
 							'advanced' => 'Advanced Settings',
-							'sharing' => 'Sharing Buttons',
+							'buttons' => 'Sharing Buttons',
 							'style' => 'Sharing Styles',
 							'readme' => 'Plugin Read Me',
 							'setup' => 'Setup Guide',
@@ -105,8 +105,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'admin' => array(
 								'general' => 'General Settings',
 								'advanced' => 'Advanced Settings',
-								'sharing' => 'Button Settings',
-								'style' => 'Style Settings',
+								'sharing' => 'Sharing Settings',
 								'post' => 'Post Settings',
 								'meta' => 'User and Taxonomy Settings',
 							),
@@ -129,8 +128,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'admin' => array(
 								'general' => 'General Settings',
 								'advanced' => 'Advanced Settings',
-								'sharing' => 'Button Settings',
-								'style' => 'Style Settings',
+								'sharing' => 'Sharing Settings',
 								'post' => 'Post Settings',
 								'meta' => 'User and Taxonomy Settings',
 							),

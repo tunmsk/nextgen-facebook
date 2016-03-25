@@ -49,10 +49,10 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
 
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_filters( $this, array( 
-					'sharing_show_on' => 2,
+					'buttons_show_on' => 2,
 					'sharing_styles_tabs' => 1,
 					'style_bbp_single_rows' => 2,
-					'sharing_position_rows' => 2,
+					'buttons_position_rows' => 2,
 				) );
 			}
 		}
@@ -76,7 +76,7 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
 			return $opts_def;
 		}
 
-		public function filter_sharing_show_on( $show_on = array(), $prefix ) {
+		public function filter_buttons_show_on( $show_on = array(), $prefix ) {
 			switch ( $prefix ) {
 				case 'pin':
 					break;
@@ -109,7 +109,7 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
 			return $table_rows;
 		}
 
-		public function filter_sharing_position_rows( $table_rows, $form ) {
+		public function filter_buttons_position_rows( $table_rows, $form ) {
 			$table_rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'ngfb' ) ).'</td>';
 			$table_rows['buttons_pos_bbp_single'] = $form->get_th_html( _x( 'Position in bbPress Single',

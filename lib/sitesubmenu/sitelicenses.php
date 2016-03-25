@@ -40,7 +40,7 @@ if ( ! class_exists( 'NgfbSitesubmenuSitelicenses' ) && class_exists( 'NgfbAdmin
 		}
 
 		public function add_class_postbox_network( $classes ) {
-			array_push( $classes, 'postbox_network' );
+			$classes[] = 'postbox-network';
 			return $classes;
 		}
 

@@ -8,20 +8,15 @@
 if ( ! defined( 'ABSPATH' ) ) 
 	die( 'These aren\'t the droids you\'re looking for...' );
 
-if ( ! class_exists( 'NgfbSubmenuSharingPinterest' ) && class_exists( 'NgfbSubmenuSharing' ) ) {
+if ( ! class_exists( 'NgfbSubmenuWebsitePinterest' ) ) {
 
-	class NgfbSubmenuSharingPinterest extends NgfbSubmenuSharing {
+	class NgfbSubmenuWebsitePinterest {
 
-		public function __construct( &$plugin, $id, $name ) {
+		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->website_id = $id;
-			$this->website_name = $name;
-
-			if ( $this->p->debug->enabled )
-				$this->p->debug->mark();
-
 			$this->p->util->add_plugin_filters( $this, array( 
-				'image-dimensions_general_rows' => 2,
+				'image-dimensions_general_rows' => 2,	// $table_rows, $form
+				'website_pinterest_rows' => 3,		// $table_rows, $form, $submenu
 			) );
 		}
 
@@ -32,58 +27,57 @@ if ( ! class_exists( 'NgfbSubmenuSharingPinterest' ) && class_exists( 'NgfbSubme
 				$this->p->opt->get_defaults( 'pin_img_height' ).' '.
 				( $this->p->opt->get_defaults( 'pin_img_crop' ) == 0 ? 'uncropped' : 'cropped' );
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Pinterest <em>Sharing Button</em>', 'option label', 'nextgen-facebook' ), null, 'pin_img_dimensions', 'The image dimensions that the Pinterest Pin It button will share (defaults is '.$def_dimensions.'). Images in the Facebook / Open Graph meta tags are usually cropped, where-as images on Pinterest often look better in their original aspect ratio (uncropped) and/or cropped using portrait photo dimensions.' ).
+			$table_rows['pin_img_dimensions'] = $form->get_th_html( _x( 'Pinterest <em>Sharing Button</em>', 'option label', 'nextgen-facebook' ), null, 'pin_img_dimensions', 'The image dimensions that the Pinterest Pin It button will share (defaults is '.$def_dimensions.'). Images in the Facebook / Open Graph meta tags are usually cropped, where-as images on Pinterest often look better in their original aspect ratio (uncropped) and/or cropped using portrait photo dimensions.' ).
 			'<td>'.$form->get_image_dimensions_input( 'pin_img' ).'</td>';
 
 			return $table_rows;
 		}
 
-		protected function get_table_rows( $metabox, $key ) {
-			$table_rows = array();
+		public function filter_website_pinterest_rows( $table_rows, $form, $submenu ) {
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Preferred Order',
+			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_select( 'pin_order', range( 1, 
-				count( $this->p->admin->submenu['sharing']->website ) ), 'short' ).'</td>';
+			'<td>'.$form->get_select( 'pin_order', range( 1, 
+				count( $submenu->website ) ), 'short' ).'</td>';
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Show Button in',
+			$table_rows[] = $form->get_th_html( _x( 'Show Button in',
 				'option label (short)', 'nextgen-facebook' ), 'short', null ).
-			'<td>'.$this->show_on_checkboxes( 'pin' ).'</td>';
+			'<td>'.$submenu->show_on_checkboxes( 'pin' ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
-			$this->form->get_th_html( _x( 'Allow for Platform',
+			$form->get_th_html( _x( 'Allow for Platform',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_select( 'pin_platform',
+			'<td>'.$form->get_select( 'pin_platform',
 				$this->p->cf['sharing']['platform'] ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
-			$this->form->get_th_html( _x( 'JavaScript in',
+			$form->get_th_html( _x( 'JavaScript in',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_select( 'pin_script_loc', $this->p->cf['form']['script_locations'] ).'</td>';
+			'<td>'.$form->get_select( 'pin_script_loc', $this->p->cf['form']['script_locations'] ).'</td>';
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Button Height',
+			$table_rows[] = $form->get_th_html( _x( 'Button Height',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_select( 'pin_button_height', 
+			'<td>'.$form->get_select( 'pin_button_height', 
 				array( 'small' => 'Small', 'large' => 'Large' ) );
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Button Shape',
+			$table_rows[] = $form->get_th_html( _x( 'Button Shape',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_select( 'pin_button_shape', 
+			'<td>'.$form->get_select( 'pin_button_shape', 
 				array( 'rect' => 'Rectangular', 'round' => 'Circular' ) );
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Button Color',
+			$table_rows[] = $form->get_th_html( _x( 'Button Color',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_select( 'pin_button_color', 
+			'<td>'.$form->get_select( 'pin_button_color', 
 				array( 'gray' => 'Gray', 'red' => 'Red', 'white' => 'White' ) );
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Button Language',
+			$table_rows[] = $form->get_th_html( _x( 'Button Language',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_select( 'pin_button_lang', 
+			'<td>'.$form->get_select( 'pin_button_lang', 
 				SucomUtil::get_pub_lang( 'pinterest' ) );
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Show Pin Count',
+			$table_rows[] = $form->get_th_html( _x( 'Show Pin Count',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_select( 'pin_count_layout', 
+			'<td>'.$form->get_select( 'pin_count_layout', 
 				array( 
 					'none' => 'Not Shown',
 					'beside' => 'Beside the Button',
@@ -92,24 +86,24 @@ if ( ! class_exists( 'NgfbSubmenuSharingPinterest' ) && class_exists( 'NgfbSubme
 			).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
-			$this->form->get_th_html( _x( 'Share Single Image',
+			$form->get_th_html( _x( 'Share Single Image',
 				'option label (short)', 'nextgen-facebook' ), 'short', null,
 			'Check this option to have the Pinterest Pin It button appear only on Posts and Pages with a custom Image ID (in the Social Settings metabox), a featured image, or an attached image, that is equal to or larger than the \'Image Dimensions\' you have chosen. <strong>By leaving this option unchecked, the Pin It button will submit the current webpage URL without a specific image</strong>, allowing Pinterest to present any number of available images for pinning.' ).
-			'<td>'.$this->form->get_checkbox( 'pin_use_img' ).'</td>';
+			'<td>'.$form->get_checkbox( 'pin_use_img' ).'</td>';
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Image Dimensions',
+			$table_rows[] = $form->get_th_html( _x( 'Image Dimensions',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_image_dimensions_input( 'pin_img', false, true ).'</td>';
-
-			$table_rows[] = '<tr class="hide_in_basic">'.
-			$this->form->get_th_html( _x( 'Caption Text',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_select( 'pin_caption', $this->p->cf['form']['caption_types'] ).'</td>';
+			'<td>'.$form->get_image_dimensions_input( 'pin_img', false, true ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
-			$this->form->get_th_html( _x( 'Caption Length',
+			$form->get_th_html( _x( 'Caption Text',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_input( 'pin_cap_len', 'short' ).' '.
+			'<td>'.$form->get_select( 'pin_caption', $this->p->cf['form']['caption_types'] ).'</td>';
+
+			$table_rows[] = '<tr class="hide_in_basic">'.
+			$form->get_th_html( _x( 'Caption Length',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
+			'<td>'.$form->get_input( 'pin_cap_len', 'short' ).' '.
 				_x( 'characters or less', 'option comment', 'nextgen-facebook' ).'</td>';
 
 			return $table_rows;
@@ -117,9 +111,9 @@ if ( ! class_exists( 'NgfbSubmenuSharingPinterest' ) && class_exists( 'NgfbSubme
 	}
 }
 
-if ( ! class_exists( 'NgfbSharingPinterest' ) ) {
+if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 
-	class NgfbSharingPinterest {
+	class NgfbWebsitePinterest {
 
 		private static $cf = array(
 			'opt' => array(				// options
@@ -161,8 +155,7 @@ if ( ! class_exists( 'NgfbSharingPinterest' ) ) {
 		public function filter_plugin_image_sizes( $sizes ) {
 			$sizes['pin_img'] = array(
 				'name' => 'pinterest-button',
-				'label' => _x( 'Pinterest Sharing Button',
-					'image size label', 'nextgen-facebook' ),
+				'label' => _x( 'Pinterest Sharing Button', 'image size label', 'nextgen-facebook' ),
 			);
 			return $sizes;
 		}

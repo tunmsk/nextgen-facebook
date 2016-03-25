@@ -62,7 +62,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 					break;
 
 				case 'info-style-content':
-					$text = '<p>Social sharing buttons, enabled / added to the content text from the '.$this->p->util->get_admin_url( 'sharing', 'Sharing Buttons' ).' settings page, are assigned the \''.$lca.'-content-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
+					$text = '<p>Social sharing buttons, enabled / added to the content text from the '.$this->p->util->get_admin_url( 'buttons', 'Sharing Buttons' ).' settings page, are assigned the \''.$lca.'-content-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
 					<p>Example:</p><pre>
 .'.$lca.'-content-buttons 
     .'.$lca.'-buttons
@@ -70,7 +70,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 					break;
 
 				case 'info-style-excerpt':
-					$text = '<p>Social sharing buttons, enabled / added to the excerpt text from the '.$this->p->util->get_admin_url( 'sharing', 'Sharing Buttons' ).' settings page, are assigned the \''.$lca.'-excerpt-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
+					$text = '<p>Social sharing buttons, enabled / added to the excerpt text from the '.$this->p->util->get_admin_url( 'buttons', 'Sharing Buttons' ).' settings page, are assigned the \''.$lca.'-excerpt-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
 					<p>Example:</p><pre>
 .'.$lca.'-excerpt-buttons 
     .'.$lca.'-buttons

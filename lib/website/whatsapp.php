@@ -8,48 +8,45 @@
 if ( ! defined( 'ABSPATH' ) ) 
 	die( 'These aren\'t the droids you\'re looking for...' );
 
-if ( ! class_exists( 'NgfbSubmenuSharingWhatsApp' ) && class_exists( 'NgfbSubmenuSharing' ) ) {
+if ( ! class_exists( 'NgfbSubmenuWebsiteWhatsApp' ) ) {
 
-	class NgfbSubmenuSharingWhatsApp extends NgfbSubmenuSharing {
+	class NgfbSubmenuWebsiteWhatsApp {
 
-		public function __construct( &$plugin, $id, $name ) {
+		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->website_id = $id;
-			$this->website_name = $name;
-
-			if ( $this->p->debug->enabled )
-				$this->p->debug->mark();
+			$this->p->util->add_plugin_filters( $this, array( 
+				'website_whatsapp_rows' => 3,		// $table_rows, $form, $submenu
+			) );
 		}
 
-		protected function get_table_rows( $metabox, $key ) {
-			$table_rows = array();
+		public function filter_website_whatsapp_rows( $table_rows, $form, $submenu ) {
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Preferred Order',
+			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_select( 'wa_order', 
-				range( 1, count( $this->p->admin->submenu['sharing']->website ) ), 'short' ).  '</td>';
+			'<td>'.$form->get_select( 'wa_order', 
+				range( 1, count( $submenu->website ) ), 'short' ).  '</td>';
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Show Button in',
+			$table_rows[] = $form->get_th_html( _x( 'Show Button in',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->show_on_checkboxes( 'wa' ).'</td>';
+			'<td>'.$submenu->show_on_checkboxes( 'wa' ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
-			$this->form->get_th_html( _x( 'Allow for Platform',
+			$form->get_th_html( _x( 'Allow for Platform',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_select( 'wa_platform',
+			'<td>'.$form->get_select( 'wa_platform',
 				$this->p->cf['sharing']['platform'] ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
-			'<td colspan="2">'.$this->form->get_textarea( 'wa_html', 'average code' ).'</td>';
+			'<td colspan="2">'.$form->get_textarea( 'wa_html', 'average code' ).'</td>';
 
 			return $table_rows;
 		}
 	}
 }
 
-if ( ! class_exists( 'NgfbSharingWhatsApp' ) ) {
+if ( ! class_exists( 'NgfbWebsiteWhatsApp' ) ) {
 
-	class NgfbSharingWhatsApp {
+	class NgfbWebsiteWhatsApp {
 
 		private static $cf = array(
 			'opt' => array(				// options

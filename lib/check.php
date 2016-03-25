@@ -214,7 +214,6 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 								$ret[$sub]['*'] = $ret[$sub][$id] = true;
 							break;
 						case 'admin-sharing':
-						case 'admin-style':
 							if ( $is_admin && $ret['ssb'] === true )
 								$ret[$sub]['*'] = $ret[$sub][$id] = true;
 							break;

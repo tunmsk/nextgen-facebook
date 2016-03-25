@@ -16,10 +16,17 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			$this->p =& $plugin;
 			$this->p->util->add_plugin_filters( $this, array( 
 				'plugin_cache_rows' => 3,		// $table_rows, $form, $network
-				'sharing_include_rows' => 2,		// $table_rows, $form
-				'sharing_preset_rows' => 2,		// $table_rows, $form, $network
+				'buttons_include_rows' => 2,		// $table_rows, $form
+				'buttons_preset_rows' => 2,		// $table_rows, $form, $network
 				'post_social_settings_tabs' => 1,	// $tabs
-				'post_sharing_rows' => 4,		// $table_rows, $form, $head, $mod
+				'post_buttons_rows' => 4,		// $table_rows, $form, $head, $mod
+				'style_sharing_rows' => 2,		// $table_rows, $form
+				'style_content_rows' => 2,		// $table_rows, $form
+				'style_excerpt_rows' => 2,		// $table_rows, $form
+				'style_sidebar_rows' => 2,		// $table_rows, $form
+				'style_shortcode_rows' => 2,		// $table_rows, $form
+				'style_widget_rows' => 2,		// $table_rows, $form
+				'style_admin_edit_rows' => 2,		// $table_rows, $form
 			), 30 );
 		}
 
@@ -35,7 +42,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			return $table_rows;
 		}
 
-		public function filter_sharing_include_rows( $table_rows, $form ) {
+		public function filter_buttons_include_rows( $table_rows, $form ) {
 
 			$add_to_checkboxes = '';
 			foreach ( $this->p->util->get_post_types() as $post_type )
@@ -54,10 +61,10 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			return $table_rows;
 		}
 
-		public function filter_sharing_preset_rows( $table_rows, $form ) {
+		public function filter_buttons_preset_rows( $table_rows, $form ) {
 
 			$presets = array( 'shortcode' => 'Shortcode', 'widget' => 'Widget' );
-			$show_on = apply_filters( $this->p->cf['lca'].'_sharing_show_on', 
+			$show_on = apply_filters( $this->p->cf['lca'].'_buttons_show_on', 
 				$this->p->cf['sharing']['show_on'], '' );
 			foreach ( $show_on as $type => $label )
 				$presets[$type] = $label;
@@ -69,7 +76,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 
 			foreach( $presets as $filter_id => $filter_name )
 				$table_rows[] = $form->get_th_html( sprintf( _x( '%s Preset',
-					'option label', 'nextgen-facebook' ), $filter_name ), null, 'sharing_preset' ).
+					'option label', 'nextgen-facebook' ), $filter_name ), null, 'buttons_preset' ).
 				'<td class="blank">'.$form->get_no_select( 'buttons_preset_'.$filter_id, 
 					array_merge( array( '' ), array_keys( $this->p->cf['opt']['preset'] ) ) ).'</td>';
 
@@ -81,13 +88,13 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			foreach ( $tabs as $key => $val ) {
 				$new_tabs[$key] = $val;
 				if ( $key === 'media' )	// insert the social sharing tab after the media tab
-					$new_tabs['sharing'] = _x( 'Sharing Buttons',
+					$new_tabs['buttons'] = _x( 'Sharing Buttons',
 						'metabox tab', 'nextgen-facebook' );
 			}
 			return $new_tabs;
 		}
 
-		public function filter_post_sharing_rows( $table_rows, $form, $head, $mod ) {
+		public function filter_post_buttons_rows( $table_rows, $form, $head, $mod ) {
 
 			if ( empty( $mod['post_status'] ) || $mod['post_status'] === 'auto-draft' ) {
 				$table_rows['save_a_draft'] = '<td><blockquote class="status-info"><p class="centered">'.
@@ -181,6 +188,64 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			);
 
 			return $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod );
+		}
+
+		public function filter_style_sharing_rows( $table_rows, $form ) {
+			return $this->filter_style_common_rows( $table_rows, $form, 'sharing' );
+		}
+
+		public function filter_style_content_rows( $table_rows, $form ) {
+			return $this->filter_style_common_rows( $table_rows, $form, 'content' );
+		}
+
+		public function filter_style_excerpt_rows( $table_rows, $form ) {
+			return $this->filter_style_common_rows( $table_rows, $form, 'excerpt' );
+		}
+
+		public function filter_style_sidebar_rows( $table_rows, $form ) {
+			$table_rows = array_merge( $table_rows, 
+				$this->filter_style_common_rows( $table_rows, $form, 'sidebar' ) );
+
+			$table_rows[] = '<tr class="hide_in_basic">'.
+			$form->get_th_html( _x( 'Sidebar Javascript',
+				'option label', 'nextgen-facebook' ), null, 'buttons_js_sidebar' ).
+			'<td><textarea disabled="disabled" class="average code">'.
+			$this->p->options['buttons_js_sidebar'].'</textarea></td>';
+
+			return $table_rows;
+		}
+
+		public function filter_style_shortcode_rows( $table_rows, $form ) {
+			return $this->filter_style_common_rows( $table_rows, $form, 'shortcode' );
+		}
+
+		public function filter_style_widget_rows( $table_rows, $form ) {
+			return $this->filter_style_common_rows( $table_rows, $form, 'widget' );
+		}
+
+		public function filter_style_admin_edit_rows( $table_rows, $form ) {
+			return $this->filter_style_common_rows( $table_rows, $form, 'admin_edit' );
+		}
+
+		public function filter_style_common_rows( &$table_rows, &$form, $idx ) {
+
+			$text = $this->p->msgs->get( 'info-style-'.$idx );
+
+			if ( isset( $this->p->options['buttons_preset_'.$idx] ) ) {
+				$text .= '<p>The social sharing button options for the "'.$idx.'" style are subject to preset values selected on the '.$this->p->util->get_admin_url( 'sharing#sucom-tabset_sharing-tab_preset', 'Sharing Buttons' ).' settings page (used to modify the default behavior, size, counter orientation, etc.). The width and height values in your CSS should support these preset classes (if any).</p>';
+				$text .= '<p><strong>Selected preset:</strong> '.
+					( empty( $this->p->options['buttons_preset_'.$idx] ) ? '[None]' :
+						$this->p->options['buttons_preset_'.$idx] ).'</p>';
+			}
+
+			$table_rows[] = '<td colspan="2" align="center">'.
+				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
+		
+			$table_rows[] = '<th class="textinfo">'.$text.'</th>'.
+			'<td><textarea disabled="disabled" class="tall code">'.
+			$this->p->options['buttons_css_'.$idx].'</textarea></td>';
+
+			return $table_rows;
 		}
 	}
 }

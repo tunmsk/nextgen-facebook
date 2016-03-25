@@ -8,65 +8,62 @@
 if ( ! defined( 'ABSPATH' ) ) 
 	die( 'These aren\'t the droids you\'re looking for...' );
 
-if ( ! class_exists( 'NgfbSubmenuSharingGplus' ) && class_exists( 'NgfbSubmenuSharing' ) ) {
+if ( ! class_exists( 'NgfbSubmenuWebsiteGplus' ) ) {
 
-	class NgfbSubmenuSharingGplus extends NgfbSubmenuSharing {
+	class NgfbSubmenuWebsiteGplus {
 
-		public function __construct( &$plugin, $id, $name ) {
+		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->website_id = $id;
-			$this->website_name = $name;
-
-			if ( $this->p->debug->enabled )
-				$this->p->debug->mark();
+			$this->p->util->add_plugin_filters( $this, array( 
+				'website_gplus_rows' => 3,		// $table_rows, $form, $submenu
+			) );
 		}
 
-		protected function get_table_rows( $metabox, $key ) {
-			$table_rows = array();
+		public function filter_website_gplus_rows( $table_rows, $form, $submenu ) {
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Preferred Order',
+			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$this->form->get_select( 'gp_order', 
-				range( 1, count( $this->p->admin->submenu['sharing']->website ) ), 'short' ).'</td>';
+			$form->get_select( 'gp_order', 
+				range( 1, count( $submenu->website ) ), 'short' ).'</td>';
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Show Button in',
+			$table_rows[] = $form->get_th_html( _x( 'Show Button in',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			( $this->show_on_checkboxes( 'gp' ) ).'</td>';
+			( $submenu->show_on_checkboxes( 'gp' ) ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
-			$this->form->get_th_html( _x( 'Allow for Platform',
+			$form->get_th_html( _x( 'Allow for Platform',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$this->form->get_select( 'gp_platform',
+			'<td>'.$form->get_select( 'gp_platform',
 				$this->p->cf['sharing']['platform'] ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
-			$this->form->get_th_html( _x( 'JavaScript in',
+			$form->get_th_html( _x( 'JavaScript in',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$this->form->get_select( 'gp_script_loc', 
+			$form->get_select( 'gp_script_loc', 
 				$this->p->cf['form']['script_locations'] ).'</td>';
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Default Language',
+			$table_rows[] = $form->get_th_html( _x( 'Default Language',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$this->form->get_select( 'gp_lang',
+			$form->get_select( 'gp_lang',
 				SucomUtil::get_pub_lang( 'gplus' ) ).'</td>';
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Button Type',
+			$table_rows[] = $form->get_th_html( _x( 'Button Type',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$this->form->get_select( 'gp_action', 
+			$form->get_select( 'gp_action', 
 				array( 'plusone' => 'G +1', 'share' => 'G+ Share' ) ).'</td>';
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Button Size',
+			$table_rows[] = $form->get_th_html( _x( 'Button Size',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$this->form->get_select( 'gp_size', array( 
+			$form->get_select( 'gp_size', array( 
 				'small' => 'Small [ 15px ]',
 				'medium' => 'Medium [ 20px ]',
 				'standard' => 'Standard [ 24px ]',
 				'tall' => 'Tall [ 60px ]',
 			) ).'</td>';
 
-			$table_rows[] = $this->form->get_th_html( _x( 'Annotation',
+			$table_rows[] = $form->get_th_html( _x( 'Annotation',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$this->form->get_select( 'gp_annotation', array( 
+			$form->get_select( 'gp_annotation', array( 
 				'none' => '',
 				'inline' => 'Inline',
 				'bubble' => 'Bubble',
@@ -74,9 +71,9 @@ if ( ! class_exists( 'NgfbSubmenuSharingGplus' ) && class_exists( 'NgfbSubmenuSh
 			) ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
-			$this->form->get_th_html( _x( 'Expand to',
+			$form->get_th_html( _x( 'Expand to',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$this->form->get_select( 'gp_expandto', array( 
+			$form->get_select( 'gp_expandto', array( 
 				'none' => '',
 				'top' => 'Top',
 				'bottom' => 'Bottom',
@@ -93,9 +90,9 @@ if ( ! class_exists( 'NgfbSubmenuSharingGplus' ) && class_exists( 'NgfbSubmenuSh
 	}
 }
 
-if ( ! class_exists( 'NgfbSharingGplus' ) ) {
+if ( ! class_exists( 'NgfbWebsiteGplus' ) ) {
 
-	class NgfbSharingGplus {
+	class NgfbWebsiteGplus {
 
 		private static $cf = array(
 			'opt' => array(				// options
