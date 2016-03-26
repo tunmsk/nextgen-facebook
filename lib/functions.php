@@ -61,7 +61,7 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 				$ngfb->sharing->get_html( $ids, $atts ).
 				$ngfb->sharing->get_script( 'sharing-buttons-footer', $ids ).
 				'<!-- '.$ngfb->cf['lca'].' '.__FUNCTION__.' function end -->';
-	
+
 			if ( $ngfb->is_avail['cache']['transient'] ||
 				$ngfb->is_avail['cache']['object'] ) {
 

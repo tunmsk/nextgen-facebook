@@ -36,7 +36,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 				case 'tooltip-buttons_use_social_css':
 					$text = sprintf( __( 'Add the CSS of all <em>%1$s</em> to webpages (default is checked). The CSS will be <strong>minimized</strong>, and saved to a single stylesheet with a URL of <a href="%2$s">%3$s</a>. The minimized stylesheet can be enqueued or added directly to the webpage HTML.', 'nextgen-facebook' ), _x( 'Sharing Styles', 'lib file description', 'nextgen-facebook' ), NgfbSharing::$sharing_css_url, NgfbSharing::$sharing_css_url );
 					break;
-	
+
 				case 'tooltip-buttons_js_sidebar':
 					$text = __( 'JavaScript added to webpages for the social sharing sidebar.' );
 					break;
@@ -91,7 +91,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 
 				case 'info-style-shortcode':
 					$text = '<p>Social sharing buttons added from a shortcode are assigned the \''.$lca.'-shortcode-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
-					
+
 					<p>Example:</p><pre>
 .'.$lca.'-shortcode-buttons 
     .'.$lca.'-buttons
@@ -141,7 +141,7 @@ if ( ! class_exists( 'NgfbSubmenuStyle' ) && class_exists( 'NgfbAdmin' ) ) {
 					$this->form->get_th_html( _x( 'Use the Social Stylesheet',
 						'option label', 'nextgen-facebook' ), null, 'buttons_use_social_css' ).
 					'<td>'.$this->form->get_checkbox( 'buttons_use_social_css' ).$css_min_msg.'</td>',
-	
+
 					$this->form->get_th_html( _x( 'Enqueue the Stylesheet',
 						'option label', 'nextgen-facebook' ), null, 'buttons_enqueue_social_css' ).
 					'<td>'.$this->form->get_checkbox( 'buttons_enqueue_social_css' ).'</td>',

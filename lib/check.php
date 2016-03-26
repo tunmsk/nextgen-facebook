@@ -43,7 +43,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 					add_filter( 'jetpack_enable_open_graph', '__return_false', 99 );
 					add_filter( 'jetpack_disable_twitter_cards', '__return_true', 99 );
 				}
-	
+
 				// disable Yoast SEO social meta tags
 				if ( function_exists( 'wpseo_init' ) || 
 					isset( $this->active_plugins['wordpress-seo/wp-seo.php'] ) )

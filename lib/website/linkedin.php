@@ -120,7 +120,7 @@ if ( ! class_exists( 'NgfbWebsiteLinkedin' ) ) {
 				$this->p->debug->log( 'returning html ('.strlen( $html ).' chars)' );
 			return $html;
 		}
-		
+
 		public function get_script( $pos = 'id' ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();

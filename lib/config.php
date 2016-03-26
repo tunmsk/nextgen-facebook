@@ -991,22 +991,22 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					}
 
 					foreach ( self::$cf['plugin'] as $ext => $info ) {
-	
+
 						if ( defined( strtoupper( $ext ).'_PLUGINDIR' ) )
 							$pkg = is_dir( constant( strtoupper( $ext ).
 								'_PLUGINDIR' ).'lib/pro/' ) ? 'pro' : 'gpl';
 						else $pkg = '';
-	
+
 						if ( isset( $info['base'] ) )
 							self::$cf['*']['base'][$info['base']] = $ext;
-	
+
 						if ( isset( $info['lib'] ) && is_array( $info['lib'] ) )
 							self::$cf['*']['lib'] = SucomUtil::array_merge_recursive_distinct( 
 								self::$cf['*']['lib'], $info['lib'] );
-	
+
 						if ( isset( $info['version'] ) )
 							self::$cf['*']['version'] .= '-'.$ext.$info['version'].$pkg;
-	
+
 						if ( isset( $info['opt_version'] ) )
 							self::$cf['opt']['version'] .= '-'.$ext.$info['opt_version'].$pkg;
 
@@ -1115,7 +1115,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 		}
 
 		public static function require_libs( $plugin_filepath ) {
-			
+
 			require_once( NGFB_PLUGINDIR.'lib/com/util.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/cache.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/script.php' );

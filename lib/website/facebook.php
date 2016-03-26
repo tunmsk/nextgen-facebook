@@ -128,7 +128,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteFacebook' ) ) {
 
 			return $table_rows;
 		}
-	
+
 		public function filter_website_facebook_share_rows( $table_rows, $form, $submenu ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Layout',
@@ -250,7 +250,7 @@ if ( ! class_exists( 'NgfbWebsiteFacebook' ) ) {
 				$this->p->debug->log( 'returning html ('.strlen( $html ).' chars)' );
 			return $html;
 		}
-		
+
 		public function get_script( $pos = 'id' ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();

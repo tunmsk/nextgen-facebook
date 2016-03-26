@@ -33,7 +33,7 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 
 			parent::__construct( $widget_class, $widget_name, $widget_ops );
 		}
-	
+
 		public function widget( $args, $instance ) {
 			if ( is_feed() )
 				return;	// nothing to do in the feeds
@@ -97,7 +97,7 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->show_html();
 		}
-	
+
 		public function update( $new_instance, $old_instance ) {
 			$instance = $old_instance;
 			$instance['title'] = strip_tags( $new_instance['title'] );
@@ -105,7 +105,7 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 				$instance[$id] = empty( $new_instance[$id] ) ? 0 : 1;
 			return $instance;
 		}
-	
+
 		public function form( $instance ) {
 			$title = isset( $instance['title'] ) ?
 				esc_attr( $instance['title'] ) : _x( 'Share It', 'option value', 'nextgen-facebook' );
@@ -113,7 +113,7 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 				_x( 'Widget Title (leave blank for no title)', 'option label', 'nextgen-facebook' ).':</label>'.
 				'<input class="widefat" id="'.$this->get_field_id( 'title' ).'" name="'.
 					$this->get_field_name( 'title' ).'" type="text" value="'.$title.'"/></p>'."\n";
-	
+
 			foreach ( $this->p->sharing->get_website_object_ids() as $id => $name ) {
 				$name = $name == 'GooglePlus' ? 'Google+' : $name;
 				echo '<p><label for="'.$this->get_field_id( $id ).'">'.

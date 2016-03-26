@@ -183,7 +183,6 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 					0 : preg_replace( '/^[^0-9]*([0-9]*).*$/',
 						'$1', $opts['options_version'] );
 
-
 			if ( $options_name === constant( 'NGFB_OPTIONS_NAME' ) ) {
 
 				$opts = SucomUtil::rename_keys( $opts, $this->renamed_keys );
@@ -213,7 +212,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 							( $opts['og_img_crop'] ? '' : 'un' ).'cropped to '.
 							$def_opts['og_img_width'].'x'.$def_opts['og_img_height'].', '.
 							( $def_opts['og_img_crop'] ? '' : 'un' ).'cropped.', true );
-	
+
 						$opts['og_img_width'] = $def_opts['og_img_width'];
 						$opts['og_img_height'] = $def_opts['og_img_height'];
 						$opts['og_img_crop'] = $def_opts['og_img_crop'];

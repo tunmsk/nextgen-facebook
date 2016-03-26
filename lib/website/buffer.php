@@ -34,7 +34,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteBuffer' ) ) {
 		}
 
 		public function filter_website_buffer_rows( $table_rows, $form, $submenu ) {
-			
+
 			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 			$form->get_select( 'buffer_order', 
@@ -204,7 +204,7 @@ if ( ! class_exists( 'NgfbWebsiteBuffer' ) ) {
 				$this->p->debug->log( 'returning html ('.strlen( $html ).' chars)' );
 			return $html;
 		}
-		
+
 		public function get_script( $pos = 'id' ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();

@@ -94,7 +94,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteTumblr' ) ) {
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
 			$form->get_input( 'tumblr_cap_len', 'short' ).' '.
 				_x( 'characters or less', 'option comment', 'nextgen-facebook' ).'</td>';
-	
+
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Link Description',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
@@ -250,7 +250,7 @@ if ( ! class_exists( 'NgfbWebsiteTumblr' ) ) {
 				$atts['caption'] = $atts['description'];
 
 			} else {
-			
+
 				$atts['posttype'] = 'text';
 				$atts['content'] = $atts['description'];
 				// uses $atts['title']

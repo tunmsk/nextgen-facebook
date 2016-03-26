@@ -336,7 +336,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 				$actions['reload_default_sharing_styles'] = _x( 'Reload Default Styles', 'submit button', 'nextgen-facebook' );
 			return $actions;
 		}
-		
+
 		public function action_load_setting_page_reload_default_sharing_styles( $pagehook, $menu_id, $menu_name, $menu_lib ) {
 			$opts =& $this->p->options;
 			$def_opts = $this->p->opt->get_defaults();
@@ -802,12 +802,12 @@ $buttons_html."\n".
 					$widget = new NgfbWidgetSharing();
 			 		$widget_settings = $widget->get_settings();
 				} else $widget_settings = array();
-	
+
 				// check for enabled buttons in ACTIVE widget(s)
 				foreach ( $widget_settings as $num => $instance ) {
 					if ( is_object( $widget ) && is_active_widget( false,
 						$widget->id_base.'-'.$num, $widget->id_base ) ) {
-	
+
 						foreach ( $this->p->cf['opt']['pre'] as $id => $pre ) {
 							if ( array_key_exists( $id, $instance ) && 
 								! empty( $instance[$id] ) )

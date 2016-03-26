@@ -240,7 +240,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 
 			$table_rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
-		
+
 			$table_rows[] = '<th class="textinfo">'.$text.'</th>'.
 			'<td><textarea disabled="disabled" class="tall code">'.
 			$this->p->options['buttons_css_'.$idx].'</textarea></td>';

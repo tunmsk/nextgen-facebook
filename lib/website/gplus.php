@@ -84,7 +84,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteGplus' ) ) {
 				'bottom,left' => 'Bottom Left',
 				'bottom,right' => 'Bottom Right',
 			) ).'</td>';
-	
+
 			return $table_rows;
 		}
 	}
@@ -154,7 +154,7 @@ if ( ! class_exists( 'NgfbWebsiteGplus' ) ) {
 				$this->p->debug->log( 'returning html ('.strlen( $html ).' chars)' );
 			return $html;
 		}
-		
+
 		public function get_script( $pos = 'id' ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
