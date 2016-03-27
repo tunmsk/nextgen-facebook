@@ -402,7 +402,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.28.4.1 (2016/03/26)**
+**Version 8.28.4.1 (2016/03/27)**
 
 Official announcement: N/A
 
@@ -525,7 +525,7 @@ Official announcement: N/A
 
 = 8.28.4.1 =
 
-2016/03/26 - Fixed an undefined index error for td_class. Fixed saving of custom Social Settings that have variable default values.
+2016/03/27 - Fixed an undefined index error for td_class. Fixed saving of custom Social Settings that have variable default values.
 
 = 8.28.4 =
 
