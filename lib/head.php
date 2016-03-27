@@ -23,7 +23,7 @@ if ( ! class_exists( 'NgfbHead' ) ) {
 			add_action( 'amp_post_template_head', array( $this, 'add_header' ), NGFB_HEAD_PRIORITY );
 		}
 
-		public function filter_head_cache_salt( $salt, $use_post = false ) {
+		public function filter_head_cache_salt( $salt, array &$mod ) {
 
 			if ( $this->p->is_avail['amp_endpoint'] && is_amp_endpoint() )
 				$salt .= '_amp:true';
@@ -212,10 +212,12 @@ if ( ! class_exists( 'NgfbHead' ) ) {
 			$header_array = array();
 
 			if ( $this->p->is_avail['cache']['transient'] ) {
+
 				// head_cache_salt filter may add amp true/false and/or crawler name
 				$cache_salt = __METHOD__.'('.apply_filters( $lca.'_head_cache_salt', 
-					'lang:'.SucomUtil::get_locale().'_id:'.$mod['id'].'_name:'.$mod['name'].
-						'_url:'.$sharing_url, $use_post ).')';
+					'lang:'.SucomUtil::get_locale().
+					'_id:'.$mod['id'].'_name:'.$mod['name'].
+					'_url:'.$sharing_url, $mod ).')';
 				$cache_id = $lca.'_'.md5( $cache_salt );
 				$cache_type = 'object cache';
 
