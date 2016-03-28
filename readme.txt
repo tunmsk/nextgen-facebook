@@ -402,6 +402,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
+**Version 8.28.4.2 (2016/03/28)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed NgfbHead filter_head_cache_salt parameter 2 error.
+* *Developer Notes*
+	* None
+
 **Version 8.28.4.1 (2016/03/27)**
 
 Official announcement: N/A
@@ -523,6 +536,10 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
+= 8.28.4.2 =
+
+2016/03/28 - Fixed NgfbHead filter_head_cache_salt parameter 2 error.
+
 = 8.28.4.1 =
 
 2016/03/27 - Fixed an undefined index error for td_class. Fixed saving of custom Social Settings that have variable default values.
@@ -530,12 +547,4 @@ Official announcement: N/A
 = 8.28.4 =
 
 2016/03/25 - Refactored sharing button settings to use a filter hooks. Added new filters for schema type defaults. Tested with WordPress v4.5-RC1-37079.
-
-= 8.28.3 =
-
-2016/03/23 - Improved enabled/disabled buttons logic (no longer applies to shortcode, function or widget buttons). Added admin styles and scripts to the new term.php page in WP 4.5.
-
-= 8.28.2.1 =
-
-2016/03/22 - Refactored / improved several methods to use the new $mod array.
 
