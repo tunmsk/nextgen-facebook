@@ -411,6 +411,7 @@ Official announcement: N/A
 * *Improvements*
 	* Updated the Google testing tool URL to remove the large and unnecessary header/footer.
 	* Allowed for missing second argument in the NgfbUtil `image_editor_save_pre_image_sizes()` filter to tolerate incorrect arguments from WordPress or other plugins.
+	* Added default image as fallback for posts in NgfbOpenGraph `get_the_media_info()`.
 * *Bugfixes*
 	* Fixed return of an image URL from the NgfbOpenGraph `get_the_media_info()` method.
 * *Developer Notes*
@@ -418,154 +419,12 @@ Official announcement: N/A
 	* Added two new filters for NGFB Pro Update Manager v1.4.0-1:
 		* 'ngfb_readme_upgrade_notices'
 		* 'ngfb_newer_version_available'
-
-**Version 8.28.4.2 (2016/03/28)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* Fixed NgfbHead filter_head_cache_salt parameter 2 error.
-* *Developer Notes*
-	* None
-
-**Version 8.28.4.1 (2016/03/27)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* Fixed an undefined index error for td_class when creating a new draft.
-	* Fixed saving of custom Social Settings that have variable default values (which may be incorrect during the WordPress save process).
-* *Developer Notes*
-	* None
-
-**Version 8.28.4 (2016/03/25)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Refactored individual sharing button settings to use a filter hook instead of extending a class.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Tested with WordPress v4.5-RC1-37079.
-	* Renamed the website library classes.
-	* Renamed CSS classes and ids for the website metaboxes.
-	* Added new filters for schema type defaults:
-		* 'ngfb_schema_type_for_author_forced'
-		* 'ngfb_schema_type_for_default'
-		* 'ngfb_schema_type_for_home_page'
-		* 'ngfb_schema_type_for_post_type_empty'
-		* 'ngfb_schema_type_for_post_type_unknown'
-
-**Version 8.28.3 (2016/03/23)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Removed the check for enabled/disabled buttons by webpage type for the buttons widget (it will always show).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added a new NgfbMeta `get_options_multi()` method to fetch meta data using fallback index keys.
-	* Deprecated the NgfbUtil `get_mod_options()` method (which is replaced by NgfbMeta `get_options_multi()`).
-	* Refactored the NgfbSharing `get_script()` method to improve the enabled/disabled buttons logic (which no longer applies to shortcode, function or widget buttons).
-	* Added admin styles and scripts to the new term.php page in WP 4.5.
-
-**Version 8.28.2.1 (2016/03/22)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Refactored the Polylang 'locale' filter to use the new `$mod` array as an argument (Pro version).
-	* Refactored the SucomWebpage `get_caption()`, `get_title()`, and `get_description()` methods to use the new `$mod` array.
-	* Removed the NgfbMedia and NgfbProMediaNgg `get_gallery_images()` methods. They are no longer required since Twitter deprecated their Gallery Card.
-	* Moved the 'opt_version' variable value of each extension into their individual config arrays. When saving options (plugin or meta), the value of each 'opt_version' is also saved. This allows each extension to check and update (if necessary) their options.
-
-**Version 8.28.1.1 (2016/03/19)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Refactored the NgfbUtil `get_page_mod()` method to apply default array values.
-	* Modified the post / taxonomy / user metabox tabs filter arguments (see filters.txt).
-
-**Version 8.28.0 (2016/03/18)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin. See [the AMP project README on GitHub](https://github.com/Automattic/amp-wp/blob/master/readme.md) for details on modifying AMP plugin settings with custom filters.
-* *Improvements*
-	* Improved the Social Settings options display (Free version).
-	* Standardized checks for required PHP curl, json, and mbstring extensions.
-	* Added HTML attribute and javascript escaping to name, class, and id form values.
-* *Bugfixes*
-	* Fixed a typo in the social sharing buttons shortcode library.
-* *Developer Notes*
-	* Version 8.28.0 starts a refactoring process to remove most references to `$use_post`, `$post_id` and `$post_obj`, replacing them by a single `$mod` array instead. The `$mod` array includes the post/term/user id and module object reference.
-	* Modified the SucomUtil `get_term_object()` and `get_user_object()` method arguments to allow requesting a specific term and user ID.
-	* Refactored several classes / methods to use the new `$mod` variable and improved NgfbUtil `get_page_mod()` method.
-
-**Version 8.27.0 (2016/03/08)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added new "Video Name / Title" and "Video Description" options in the Social Settings metabox for Posts / Pages and Custom Post Types.
-	* Added support for 'og:video:tag' provided by the YouTube video module (Pro version).
-* *Improvements*
-	* Enabled multilingual / multi-language support of all publisher URL options (Facebook Business Page URL, etc.).
-	* Optimized the speed of meta tag creation in the NgfbHead `get_mt_array()` method.
-* *Bugfixes*
-	* Fixed the meta tag parser for fetched webpage content (used by the Youtube API module and the duplicate meta tag check feature).
-* *Developer Notes*
-	* Added a new `sucomSelectChangeUnhideRows()` javascript function to hide/unhide rows on select change.
-	* Added a new `SucomCountryCodes::get()` class and method to return 2 letter, 3 letter, and numeric country codes.
-	* Added a new `SucomUtil::get_alpha2_countries()` method to return an array of 2 letter country codes.
-	* Added a new `SucomUtil::get_alpha2_country_name()` method to return a countrry name from a 2 letter country code.
-	* Added a new SucomForm `get_select_country()` method to select a country.
-	* Renamed the WpssoOpengraph `get_the_media_urls()` method to `get_the_media_info()` (old method gives deprecated message).
-	* Renamed the WpssoOpengraph `get_first_media_url()` method to `get_first_media_info()` (old method gives deprecated message).
+	* Adopted a standard version numbering system:
+		* `{major}.{minor}.{bugfix}-{stage}{level}`
 
 == Upgrade Notice ==
 
 = 8.28.5-1 =
 
 ETA 2016/03/31 - Updated the Google testing tool URL to remove the large and unnecessary header/footer.
-
-= 8.28.4.2 =
-
-2016/03/28 - Fixed NgfbHead filter_head_cache_salt parameter 2 error.
-
-= 8.28.4.1 =
-
-2016/03/27 - Fixed an undefined index error for td_class. Fixed saving of custom Social Settings that have variable default values.
-
-= 8.28.4 =
-
-2016/03/25 - Refactored sharing button settings to use a filter hooks. Added new filters for schema type defaults. Tested with WordPress v4.5-RC1-37079.
 
