@@ -15,7 +15,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsitePinterest' ) ) {
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
 			$this->p->util->add_plugin_filters( $this, array( 
-				'image-dimensions_general_rows' => 2,	// $table_rows, $form
+				'image_dimensions_general_rows' => 2,	// $table_rows, $form
 				'website_pinterest_rows' => 3,		// $table_rows, $form, $submenu
 			) );
 		}
@@ -85,12 +85,6 @@ if ( ! class_exists( 'NgfbSubmenuWebsitePinterest' ) ) {
 				)
 			).'</td>';
 
-			$table_rows[] = '<tr class="hide_in_basic">'.
-			$form->get_th_html( _x( 'Share Single Image',
-				'option label (short)', 'nextgen-facebook' ), 'short', null,
-			'Check this option to have the Pinterest Pin It button appear only on Posts and Pages with a custom Image ID (in the Social Settings metabox), a featured image, or an attached image, that is equal to or larger than the \'Image Dimensions\' you have chosen. <strong>By leaving this option unchecked, the Pin It button will submit the current webpage URL without a specific image</strong>, allowing Pinterest to present any number of available images for pinning.' ).
-			'<td>'.$form->get_checkbox( 'pin_use_img' ).'</td>';
-
 			$table_rows[] = $form->get_th_html( _x( 'Image Dimensions',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$form->get_image_dimensions_input( 'pin_img', false, true ).'</td>';
@@ -130,7 +124,6 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 					'pin_button_color' => 'gray',
 					'pin_button_height' => 'small',
 					'pin_count_layout' => 'beside',
-					'pin_use_img' => 0,
 					'pin_img_width' => 600,
 					'pin_img_height' => 600,
 					'pin_img_crop' => 0,
@@ -197,25 +190,21 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 					$this->p->debug->log( 'returned image '.$atts['photo'].' ('.$atts['width'].'x'.$atts['height'].')' );
 			}
 
-			// we must have an image to proceed
-			if ( ! empty( $this->p->options['pin_use_img'] ) ) {
+			if ( empty( $atts['photo'] ) ) {
+				$media_info = $this->p->og->get_the_media_info( $atts['size'], $mod, 'rp', array( 'img_url' ) );
+				$atts['photo'] = $media_info['img_url'];
 				if ( empty( $atts['photo'] ) ) {
-					$media_info = $this->p->og->get_the_media_info( $atts['size'], $mod, 'rp', array( 'img_url' ) );
-					$atts['photo'] = $media_info['img_url'];
-					if ( empty( $atts['photo'] ) ) {
-						if ( $this->p->debug->enabled )
-							$this->p->debug->log( 'exiting early: pin_use_img enabled but no photo available' );
+					if ( $this->p->debug->enabled )
+						$this->p->debug->log( 'exiting early: no photo available' );
 						return '<!-- Pinterest Button: No Photo Available -->';	// abort
-					}
 				}
-				$href_query .= '&amp;media='.rawurlencode( $atts['photo'] );
 			}
+			$href_query .= '&amp;media='.rawurlencode( $atts['photo'] );
 
 			if ( empty( $atts['caption'] ) ) {
 				$atts['caption'] = $this->p->webpage->get_caption( $opts['pin_caption'], $opts['pin_cap_len'],
 					$mod, true, true, false, 'pin_desc', $atts['source_id'] );
 			}
-
 			// use rawurlencode() for mobile devices (encodes a space as '%20' instead of '+')
 			$href_query .= '&amp;description='.rawurlencode( $atts['caption'] );
 

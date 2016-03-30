@@ -15,7 +15,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteTumblr' ) ) {
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
 			$this->p->util->add_plugin_filters( $this, array( 
-				'image-dimensions_general_rows' => 2,	// $table_rows, $form
+				'image_dimensions_general_rows' => 2,	// $table_rows, $form
 				'website_tumblr_rows' => 3,		// $table_rows, $form, $submenu
 			) );
 		}
