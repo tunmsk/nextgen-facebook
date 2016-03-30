@@ -410,10 +410,14 @@ Official announcement: N/A
 	* None
 * *Improvements*
 	* Updated the Google testing tool URL to remove the large and unnecessary header/footer.
+	* Allowed for missing second argument in the NgfbUtil `image_editor_save_pre_image_sizes()` filter to tolerate incorrect arguments from WordPress or other plugins.
 * *Bugfixes*
-	* None
+	* Fixed return of an image URL from the NgfbOpenGraph `get_the_media_info()` method.
 * *Developer Notes*
-	* None
+	* Renamed the 'ngfb_meta_schema' filter to 'ngfb_schema_meta_itemprop'.
+	* Added two new filters for NGFB Pro Update Manager v1.4.0-1:
+		* 'ngfb_readme_upgrade_notices'
+		* 'ngfb_newer_version_available'
 
 **Version 8.28.4.2 (2016/03/28)**
 
