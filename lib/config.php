@@ -16,7 +16,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'lca' => 'ngfb',		// lowercase acronym
 			'uca' => 'NGFB',		// uppercase acronym
 			'menu' => 'NGFB',		// menu item label
-			'color' => 'f60',		// menu item color - dark orange
+			'color' => 'ff6600',		// menu item color - dark orange
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
