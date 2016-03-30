@@ -62,7 +62,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public $options = array();	// individual blog/site options
 		public $site_options = array();	// multisite options
 
-		protected static $instance = null;
+		private static $instance = null;
 
 		public static function &get_instance() {
 			if ( self::$instance === null )

@@ -529,7 +529,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 		// $logo_key can be 'schema_logo_url' or 'schema_banner_url' (for Articles)
 		public static function add_single_organization_data( &$json_data, &$mod, $logo_key = 'schema_logo_url', $list_element = false ) {
 
-			$ngfb = Ngfb::get_instance();
+			$ngfb =& Ngfb::get_instance();
 
 			$ret = array(
 				'@context' => 'http://schema.org',
@@ -555,7 +555,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 
 		public static function add_single_person_data( &$json_data, $user_id = 0, $list_element = true ) {
 
-			$ngfb = Ngfb::get_instance();
+			$ngfb =& Ngfb::get_instance();
 
 			if ( empty( $user_id ) ) {
 				if ( $ngfb->debug->enabled )
@@ -623,7 +623,8 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 		// pass a single dimension image array in $opts
 		public static function add_single_image_data( &$json_data, &$opts, $prefix = 'og:image', $list_element = true ) {
 
-			$ngfb = Ngfb::get_instance();
+			$ngfb =& Ngfb::get_instance();
+
 			if ( empty( $opts ) || ! is_array( $opts ) ) {
 				if ( $ngfb->debug->enabled )
 					$ngfb->debug->log( 'exiting early: options array is empty or not an array' );

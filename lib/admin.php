@@ -406,7 +406,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 						case 'check_for_updates': 
 							if ( $this->p->is_avail['util']['um'] ) {
 								self::$readme_info = array();
-								$ngfbum = NgfbUm::get_instance();
+								$ngfbum =& NgfbUm::get_instance();
 								$ngfbum->update->check_for_updates( null, true, false );
 							} else {
 								$this->p->notice->err( sprintf( __( 'The <b>%s</b> extension is required to check for Pro version updates.',
