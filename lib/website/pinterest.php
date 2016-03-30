@@ -197,12 +197,11 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 					$this->p->debug->log( 'returned image '.$atts['photo'].' ('.$atts['width'].'x'.$atts['height'].')' );
 			}
 
-			if ( empty( $atts['photo'] ) && empty( $atts['embed'] ) ) {
-				$media_info = $this->p->og->get_the_media_info( $atts['size'], $mod, 'rp', array( 'img_url', 'vid_url' ) );
-				if ( empty( $atts['photo'] ) )
+			if ( empty( $atts['photo'] ) ) {
+				if ( ! empty( $this->p->options['pin_use_img'] ) ) {
+					$media_info = $this->p->og->get_the_media_info( $atts['size'], $mod, 'rp', array( 'img_url' ) );
 					$atts['photo'] = $media_info['img_url'];
-				if ( empty( $atts['embed'] ) )
-					$atts['embed'] = $media_info['vid_url'];
+				} else $atts['photo'] = '';
 			}
 
 			// let the pinterest crawler choose an image
