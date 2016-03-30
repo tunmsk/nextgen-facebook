@@ -402,7 +402,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.28.5-dev1 (ETA 2016/04/02)**
+**Version 8.28.5-1 (ETA 2016/03/31)**
 
 Official announcement: N/A
 
@@ -553,9 +553,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.28.5-dev1 =
+= 8.28.5-1 =
 
-ETA 2016/04/02 - Updated the Google testing tool URL to remove the large and unnecessary header/footer.
+ETA 2016/03/31 - Updated the Google testing tool URL to remove the large and unnecessary header/footer.
 
 = 8.28.4.2 =
 
