@@ -412,6 +412,8 @@ Official announcement: N/A
 	* Updated the Google testing tool URL to remove the large and unnecessary header/footer.
 	* Allowed for missing second argument in the NgfbUtil `image_editor_save_pre_image_sizes()` filter to tolerate incorrect arguments from WordPress or other plugins.
 	* Added default image as fallback for posts in NgfbOpenGraph `get_the_media_info()`.
+	* Optimized image selection for the Pinterest button, including fallback to the default image.
+	* Removed the "Share Single Image" option from the Pinterest button settings.
 * *Bugfixes*
 	* Fixed return of an image URL from the NgfbOpenGraph `get_the_media_info()` method.
 * *Developer Notes*
