@@ -978,14 +978,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						foreach ( array_keys( self::$cf['plugin'] ) as $ext ) {
 							unset (
 								self::$cf['plugin'][$ext]['lib']['website'],
-								self::$cf['plugin'][$ext]['lib']['submenu']['sharing'],
+								self::$cf['plugin'][$ext]['lib']['submenu']['buttons'],
 								self::$cf['plugin'][$ext]['lib']['submenu']['style'],
 								self::$cf['plugin'][$ext]['lib']['shortcode']['sharing'],
 								self::$cf['plugin'][$ext]['lib']['widget']['sharing'],
 								self::$cf['plugin'][$ext]['lib']['gpl']['admin']['sharing'],
-								self::$cf['plugin'][$ext]['lib']['gpl']['admin']['style'],
-								self::$cf['plugin'][$ext]['lib']['pro']['admin']['sharing'],
-								self::$cf['plugin'][$ext]['lib']['pro']['admin']['style']
+								self::$cf['plugin'][$ext]['lib']['pro']['admin']['sharing']
 							);
 						}
 					}
