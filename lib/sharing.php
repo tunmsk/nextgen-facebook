@@ -246,7 +246,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		}
 
 		public function filter_status_gpl_features( $features, $lca, $info ) {
-			if ( ! empty( $info['lib']['submenu']['sharing'] ) )
+			if ( ! empty( $info['lib']['submenu']['buttons'] ) )
 				$features['Sharing Buttons'] = array(
 					'classname' => $lca.'Sharing',
 				);
@@ -267,7 +267,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 		public function filter_status_pro_features( $features = array(), $lca = '', $info = array() ) {
 			if ( ! empty( $lca ) && 
-				! empty( $info['lib']['submenu']['sharing'] ) ) {
+				! empty( $info['lib']['submenu']['buttons'] ) ) {
 
 				$aop = $this->p->check->aop( $lca );
 				$features['Social File Cache'] = array( 
