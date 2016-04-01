@@ -413,7 +413,7 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Re-arranged the order of NgfbOpengraph `get_the_media_info()` method arguments.
 
 **Version 8.28.5-1 (2016/03/31)**
 
@@ -441,5 +441,5 @@ Official announcement: N/A
 
 = 8.28.5-1 =
 
-(2016/03/31) Updated the Google testing tool URL to remove the large and unnecessary header/footer.
+(2016/03/31) Updated the Google testing tool URL to remove the large and unnecessary header/footer. Removed the "Share Single Image" option from the Pinterest button settings.
 
