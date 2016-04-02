@@ -416,7 +416,7 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Re-arranged the order of NgfbOpengraph `get_the_media_info()` method arguments.
+	* Modified the order of NgfbOpengraph `get_the_media_info()` method arguments.
 	* Modified the NgfbUtil `get_max_nums()` arguments to allow for custom Schema image dimensions.
 
 **Version 8.28.5-1 (2016/03/31)**
