@@ -411,10 +411,13 @@ Official announcement: N/A
 	* Added a new "Google Structured Data / Schema Markup" section in the Social Settings metabox under the Select Media tab.
 * *Improvements*
 	* Schema itemprop meta tags for images will not be included if the "Use Meta Property Containers" option is checked (the containers include the same images).
+	* Removed Image Dimension options from the Essential Settings page.
+	* Updated the non-cropped image dimension defaults to 800x1600.
 * *Bugfixes*
 	* None
 * *Developer Notes*
 	* Re-arranged the order of NgfbOpengraph `get_the_media_info()` method arguments.
+	* Modified the NgfbUtil `get_max_nums()` arguments to allow for custom Schema image dimensions.
 
 **Version 8.28.5-1 (2016/03/31)**
 
