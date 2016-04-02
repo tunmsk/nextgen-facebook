@@ -414,7 +414,7 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Re-arranged the order of NgfbOpengraph `get_the_media_info()` method arguments (breaking change, not backwards compatible).
+	* Re-arranged the order of NgfbOpengraph `get_the_media_info()` method arguments.
 
 **Version 8.28.5-1 (2016/03/31)**
 
