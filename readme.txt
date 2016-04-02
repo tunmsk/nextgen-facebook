@@ -402,13 +402,13 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.29.0-dev1 (TBD)**
+**Version 8.29.0-dev1 (2016/04/02)**
 
 Official announcement: N/A
 
 * *New Features*
-	* Added a new "Maximum Images to Include" option under the Google / Schema settings tab.
 	* Added a new "Google Structured Data / Schema Markup" section in the Social Settings metabox under the Select Media tab.
+	* Added a new "Maximum Images to Include" option under the Google / Schema settings tab.
 * *Improvements*
 	* Schema itemprop meta tags for images will not be included if the "Use Meta Property Containers" option is checked (the containers include the same images).
 	* Removed Image Dimension options from the Essential Settings page.
@@ -442,6 +442,10 @@ Official announcement: N/A
 		* `{major}.{minor}.{bugfix}-{stage}{level}`
 
 == Upgrade Notice ==
+
+= 8.29.0-dev1 =
+
+(2016/04/02) Added a new "Google Structured Data / Schema Markup" section in the Social Settings metabox under the Select Media tab.
 
 = 8.28.5-1 =
 
