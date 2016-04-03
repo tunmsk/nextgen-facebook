@@ -129,7 +129,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 				$caption_len, $mod );
 
 			$media = $this->p->og->get_the_media_info( $this->p->cf['lca'].'-pinterest-button',
-				$mod, 'rp', array( 'pid', 'img_url' ) );
+				array( 'pid', 'img_url' ), $mod, 'rp' );	// $md_pre = 'rp'
 
 			if ( ! empty( $media['pid'] ) )
 				list( $media['img_url'], $img_width, $img_height,
@@ -153,7 +153,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 				$caption_len, $mod );
 
 			$media = $this->p->og->get_the_media_info( $this->p->cf['lca'].'-tumblr-button',
-				$mod, 'og', array( 'pid', 'img_url' ) );
+				array( 'pid', 'img_url' ), $mod, 'og' );	// $md_pre = 'og'
 
 			if ( ! empty( $media['pid'] ) )
 				list( $media['img_url'], $img_width, $img_height,

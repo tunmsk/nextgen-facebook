@@ -124,8 +124,8 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 					'pin_button_color' => 'gray',
 					'pin_button_height' => 'small',
 					'pin_count_layout' => 'beside',
-					'pin_img_width' => 600,
-					'pin_img_height' => 600,
+					'pin_img_width' => 800,
+					'pin_img_height' => 1600,
 					'pin_img_crop' => 0,
 					'pin_img_crop_x' => 'center',
 					'pin_img_crop_y' => 'center',
@@ -191,7 +191,7 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 			}
 
 			if ( empty( $atts['photo'] ) ) {
-				$media_info = $this->p->og->get_the_media_info( $atts['size'], $mod, 'rp', array( 'img_url' ) );
+				$media_info = $this->p->og->get_the_media_info( $atts['size'], array( 'img_url' ), $mod, 'rp' );
 				$atts['photo'] = $media_info['img_url'];
 				if ( empty( $atts['photo'] ) ) {
 					if ( $this->p->debug->enabled )

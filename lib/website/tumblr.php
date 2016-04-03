@@ -124,8 +124,8 @@ if ( ! class_exists( 'NgfbWebsiteTumblr' ) ) {
 					'tumblr_color' => 'blue',
 					'tumblr_counter' => 'right',
 					'tumblr_show_via' => 1,
-					'tumblr_img_width' => 600,
-					'tumblr_img_height' => 600,
+					'tumblr_img_width' => 800,
+					'tumblr_img_height' => 1600,
 					'tumblr_img_crop' => 0,
 					'tumblr_img_crop_x' => 'center',
 					'tumblr_img_crop_y' => 'center',
@@ -189,7 +189,7 @@ if ( ! class_exists( 'NgfbWebsiteTumblr' ) ) {
 					$atts['cropped'] ) = $this->p->media->get_attachment_image_src( $atts['pid'], $atts['size'], false );
 
 			if ( empty( $atts['photo'] ) && empty( $atts['embed'] ) ) {
-				$media_info = $this->p->og->get_the_media_info( $atts['size'], $mod, 'og', array( 'img_url', 'vid_url' ) );
+				$media_info = $this->p->og->get_the_media_info( $atts['size'], array( 'img_url', 'vid_url' ), $mod, 'og' );
 				if ( empty( $atts['photo'] ) )
 					$atts['photo'] = $media_info['img_url'];
 				if ( empty( $atts['embed'] ) )
@@ -200,7 +200,7 @@ if ( ! class_exists( 'NgfbWebsiteTumblr' ) ) {
 				// if no image or video, then check for a 'quote'
 				if ( empty( $atts['photo'] ) && empty( $atts['embed'] ) && empty( $atts['quote'] ) )
 					if ( get_post_format( $mod['id'] ) === 'quote' ) 
-						$atts['quote'] = $this->p->webpage->get_quote( $mod['id'] );
+						$atts['quote'] = $this->p->webpage->get_quote( $mod );
 				$atts['tags'] = implode( ', ', $this->p->webpage->get_tags( $mod['id'] ) );
 			}
 

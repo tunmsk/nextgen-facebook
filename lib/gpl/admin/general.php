@@ -39,42 +39,42 @@ if ( ! class_exists( 'NgfbGplAdminGeneral' ) ) {
 					'nextgen-facebook' ).'</p>'.
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 
-			$table_rows[] = $form->get_th_html( _x( 'Maximum Videos to Include',
+			$table_rows['og_vid_max'] = $form->get_th_html( _x( 'Maximum Videos to Include',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_max' ).
 			'<td class="blank">'.$this->p->options['og_vid_max'].'</td>';
 
-			$table_rows[] = '<tr class="hide_in_basic">'.
+			$table_rows['og_vid_https'] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Use HTTPS for Video API',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_https' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" /> '.
 				sprintf( _x( 'uses %s', 'option comment', 'nextgen-facebook' ),
 					str_replace( NGFB_PLUGINDIR, NGFB_PLUGINSLUG.'/', NGFB_CURL_CAINFO ) ).'</td>';
 
-			$table_rows[] = $form->get_th_html( _x( 'Include Video Preview Image(s)',
+			$table_rows['og_vid_prev_img'] = $form->get_th_html( _x( 'Include Video Preview Image(s)',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_prev_img' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" />'.' '.
 				_x( 'video preview images are included first',
 					'option comment', 'nextgen-facebook' ).'</td>';
 
-			$table_rows[] = $form->get_th_html( _x( 'Include Embed text/html Type',
+			$table_rows['og_vid_html_type'] = $form->get_th_html( _x( 'Include Embed text/html Type',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_html_type' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" /></td>';
 
-			$table_rows[] = $form->get_th_html( _x( 'Force Autoplay when Possible',
+			$table_rows['og_vid_autoplay'] = $form->get_th_html( _x( 'Force Autoplay when Possible',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_autoplay' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" /></td>';
 
-			$table_rows[] = '<tr class="hide_in_basic">'.
+			$table_rows['og_def_vid_url'] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Default / Fallback Video URL',
 				'option label', 'nextgen-facebook' ), null, 'og_def_vid_url' ).
 			'<td class="blank">'.$this->p->options['og_def_vid_url'].'</td>';
 
-			$table_rows[] = '<tr class="hide_in_basic">'.
+			$table_rows['og_def_vid_on_index'] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Use Default Video on Indexes',
 				'option label', 'nextgen-facebook' ), null, 'og_def_vid_on_index' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" /></td>';
 
-			$table_rows[] = '<tr class="hide_in_basic">'.
+			$table_rows['og_def_vid_on_search'] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Use Default Video on Search Results',
 				'option label', 'nextgen-facebook' ), null, 'og_def_vid_on_search' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" /></td>';

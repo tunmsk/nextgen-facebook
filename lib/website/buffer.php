@@ -162,12 +162,9 @@ if ( ! class_exists( 'NgfbWebsiteBuffer' ) ) {
 					$atts['cropped']
 				) = $this->p->media->get_attachment_image_src( $atts['pid'], $atts['size'], false );
 
-			if ( empty( $atts['photo'] ) && empty( $atts['embed'] ) ) {
-				$media_info = $this->p->og->get_the_media_info( $atts['size'], $mod, 'og', array( 'img_url', 'vid_url' ) );
-				if ( empty( $atts['photo'] ) )
-					$atts['photo'] = $media_info['img_url'];
-				if ( empty( $atts['embed'] ) )
-					$atts['embed'] = $media_info['vid_url'];
+			if ( empty( $atts['photo'] ) ) {
+				$media_info = $this->p->og->get_the_media_info( $atts['size'], array( 'img_url' ), $mod, 'og' );
+				$atts['photo'] = $media_info['img_url'];
 			}
 
 			if ( array_key_exists( 'tweet', $atts ) )

@@ -643,7 +643,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 				$sharing_url = $this->p->util->get_sharing_url( $use_post, true, $src_id );
 				$cache_salt = __METHOD__.'('.apply_filters( $lca.'_buttons_cache_salt', 
-					'lang:'.SucomUtil::get_locale().
+					'lang:'.SucomUtil::get_locale( $mod ).
 					'_type:'.$type.'_id:'.$mod['id'].
 					'_name:'.$mod['name'].
 					( SucomUtil::is_https() ? '_prot:https' : '' ).

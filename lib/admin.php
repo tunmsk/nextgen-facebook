@@ -1177,18 +1177,18 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			// PHP
 			if ( ! extension_loaded( 'curl' ) ) {
 				if ( $this->p->debug->enabled )
-					$this->p->debug->log( 'php curl extension is missing' );
-				$this->p->notice->err( sprintf( __( '<a href="%s" target="_blank">PHP Client URL Library (cURL) extension</a> is missing.', 'nextgen-facebook' ), 'http://php.net/manual/en/book.curl.php' ).' '.__( 'Please contact your hosting provider to have the missing extension installed.', 'nextgen-facebook' ) );
+					$this->p->debug->log( 'php curl extension is not loaded' );
+				$this->p->notice->err( sprintf( __( '<a href="%s" target="_blank">PHP Client URL Library (cURL) extension</a> is not loaded.', 'nextgen-facebook' ), 'http://php.net/manual/en/book.curl.php' ).' '.__( 'Please contact your hosting provider to have the missing extension installed and/or enabled.', 'nextgen-facebook' ) );
 			}
 			if ( ! extension_loaded( 'json' ) ) {
 				if ( $this->p->debug->enabled )
-					$this->p->debug->log( 'php json extension is missing' );
-				$this->p->notice->err( sprintf( __( '<a href="%s" target="_blank">PHP JavaScript Object Notation (JSON) extension</a> is missing.', 'nextgen-facebook' ), 'http://php.net/manual/en/book.json.php' ).' '.__( 'Please contact your hosting provider to have the missing extension installed.', 'nextgen-facebook' ) );
+					$this->p->debug->log( 'php json extension is not loaded' );
+				$this->p->notice->err( sprintf( __( '<a href="%s" target="_blank">PHP JavaScript Object Notation (JSON) extension</a> is not loaded.', 'nextgen-facebook' ), 'http://php.net/manual/en/book.json.php' ).' '.__( 'Please contact your hosting provider to have the missing extension installed and/or enabled.', 'nextgen-facebook' ) );
 			}
 			if ( ! extension_loaded( 'mbstring' ) ) {
 				if ( $this->p->debug->enabled )
-					$this->p->debug->log( 'php mbstring extension is missing' );
-				$this->p->notice->err( sprintf( __( '<a href="%s" target="_blank">PHP Multibyte String extension</a> is missing.', 'nextgen-facebook' ), 'http://php.net/manual/en/book.mbstring.php' ).' '.__( 'Please contact your hosting provider to have the missing extension installed.', 'nextgen-facebook' ) );
+					$this->p->debug->log( 'php mbstring extension is not loaded' );
+				$this->p->notice->err( sprintf( __( '<a href="%s" target="_blank">PHP Multibyte String extension</a> is not loaded.', 'nextgen-facebook' ), 'http://php.net/manual/en/book.mbstring.php' ).' '.__( 'Please contact your hosting provider to have the missing extension installed and/or enabled.', 'nextgen-facebook' ) );
 			}
 
 			// Yoast SEO
