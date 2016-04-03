@@ -402,7 +402,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.29.0-dev1 (2016/04/02)**
+**Version 8.29.0-dev2 (2016/04/03)**
 
 Official announcement: N/A
 
@@ -418,6 +418,20 @@ Official announcement: N/A
 * *Developer Notes*
 	* Modified the order of NgfbOpengraph `get_the_media_info()` method arguments.
 	* Modified the NgfbUtil `get_max_nums()` arguments to allow for custom Schema image dimensions.
+	* Mofified the SucomWebpage `get_quote()` method to use the new `$mod` array.
+	* Renamed the `$mod['is_taxonomy']` array key to `$mod['is_term']` (the module is still named 'taxonomy' for now).
+	* Saved `$use_post` in the `$mod` array from the NgfbUtil `get_page_mod()` method.
+	* Removed the NgfbUtil 'sucom_installed_version' and 'sucom_ua_plugin' filters (no longer required).
+	* Added a new `SucomUtil::get_locale_opt()` static method to get localized option values.
+	* Added a new `SucomUtil::get_site_name()` and `SucomUtil::get_site_description()` to return localized values with fallback to WP values.
+	* Replaced `$use_post` argument with `$mod` in the following filters:
+		* 'ngfb_caption'
+		* 'ngfb_content'
+		* 'ngfb_content_seed'
+		* 'ngfb_description'
+		* 'ngfb_description_seed'
+		* 'ngfb_title'
+		* 'ngfb_title_seed'
 
 **Version 8.28.5-1 (2016/03/31)**
 
@@ -443,9 +457,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.29.0-dev1 =
+= 8.29.0-dev2 =
 
-(2016/04/02) Added a new "Google Structured Data / Schema Markup" section in the Social Settings metabox under the Select Media tab.
+(2016/04/03) Added a new "Google Structured Data / Schema Markup" section in the Social Settings metabox under the Select Media tab. Changes to SucomWebpage caption, content, description, and title related methods.
 
 = 8.28.5-1 =
 
