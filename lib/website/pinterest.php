@@ -167,12 +167,11 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 
 			$atts['use_post'] = isset( $atts['use_post'] ) ? $atts['use_post'] : true;
 			$atts['add_page'] = isset( $atts['add_page'] ) ? $atts['add_page'] : true;      // get_sharing_url() argument
-			$atts['source_id'] = isset( $atts['source_id'] ) ?
-				$atts['source_id'] : $this->p->util->get_source_id( 'pinterest', $atts );
+
 			$atts['url'] = empty( $atts['url'] ) ? 
-				$this->p->util->get_sharing_url( $atts['use_post'], $atts['add_page'], $atts['source_id'] ) : 
-				apply_filters( $this->p->cf['lca'].'_sharing_url', $atts['url'], 
-					$atts['use_post'], $atts['add_page'], $atts['source_id'] );
+				$this->p->util->get_sharing_url( $atts['use_post'], $atts['add_page'] ) : 
+				apply_filters( $this->p->cf['lca'].'_sharing_url', $atts['url'], $atts['use_post'], $atts['add_page'] );
+
 			$href_query = '?url='.urlencode( $atts['url'] );
 
 			if ( empty( $atts['size'] ) ) 
@@ -203,7 +202,7 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 
 			if ( empty( $atts['caption'] ) ) {
 				$atts['caption'] = $this->p->webpage->get_caption( $opts['pin_caption'], $opts['pin_cap_len'],
-					$mod, true, true, false, 'pin_desc', $atts['source_id'] );
+					$mod, true, true, false, 'pin_desc' );
 			}
 			// use rawurlencode() for mobile devices (encodes a space as '%20' instead of '+')
 			$href_query .= '&amp;description='.rawurlencode( $atts['caption'] );

@@ -81,17 +81,17 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 }
 
 if ( ! function_exists( 'ngfb_get_sharing_url' ) ) {
-	function ngfb_get_sharing_url( $use_post = false, $add_page = true, $src_id = false ) {
+	function ngfb_get_sharing_url( $use_post = false, $add_page = true ) {
 		$ngfb =& Ngfb::get_instance();
-		return $ngfb->util->get_sharing_url( $use_post, $add_page, $src_id );
+		return $ngfb->util->get_sharing_url( $use_post, $add_page );
 	}
 }
 
 if ( ! function_exists( 'ngfb_get_short_url' ) ) {
-	function ngfb_get_short_url( $use_post = false, $add_page = true, $src_id = false ) {
+	function ngfb_get_short_url( $use_post = false, $add_page = true ) {
 		$ngfb =& Ngfb::get_instance();
 		return apply_filters( 'ngfb_shorten_url', 
-			$ngfb->util->get_sharing_url( $use_post, $add_page, $src_id ),
+			$ngfb->util->get_sharing_url( $use_post, $add_page ),
 			$ngfb->options['plugin_shortener'] );
 	}
 }
