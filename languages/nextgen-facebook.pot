@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.29.0-dev3\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.29.0-dev4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -1188,7 +1188,7 @@ msgctxt "option label"
 msgid "Position in Woo Short Text"
 msgstr ""
 
-#: lib/gpl/forum/bbpress.php:115 lib/pro/forum/bbpress.php:285
+#: lib/gpl/forum/bbpress.php:115 lib/pro/forum/bbpress.php:315
 msgctxt "option label"
 msgid "Position in bbPress Single"
 msgstr ""
@@ -2212,32 +2212,32 @@ msgid ""
 "is disabled and/or a known SEO plugin has been detected."
 msgstr ""
 
-#: lib/pro/forum/bbpress.php:79 lib/pro/forum/bbpress.php:127
+#: lib/pro/forum/bbpress.php:89 lib/pro/forum/bbpress.php:149
 msgctxt "bbpress single user description"
 msgid "%s's Profile"
 msgstr ""
 
-#: lib/pro/forum/bbpress.php:133
+#: lib/pro/forum/bbpress.php:155
 msgctxt "bbpress single user description"
 msgid "%s's Topics Started"
 msgstr ""
 
-#: lib/pro/forum/bbpress.php:137
+#: lib/pro/forum/bbpress.php:159
 msgctxt "bbpress single user description"
 msgid "%s's Replies Created"
 msgstr ""
 
-#: lib/pro/forum/bbpress.php:141
+#: lib/pro/forum/bbpress.php:163
 msgctxt "bbpress single user description"
 msgid "%s's Favorites"
 msgstr ""
 
-#: lib/pro/forum/bbpress.php:145
+#: lib/pro/forum/bbpress.php:167
 msgctxt "bbpress single user description"
 msgid "%s's Subscriptions"
 msgstr ""
 
-#: lib/pro/forum/bbpress.php:149
+#: lib/pro/forum/bbpress.php:171
 msgctxt "bbpress single user description"
 msgid "Edit %s's Profile"
 msgstr ""
