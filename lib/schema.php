@@ -42,7 +42,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 
 			$sizes['schema_img'] = array(		// options prefix
 				'name' => 'schema',		// ngfb-schema
-				'label' => _x( 'Google / Schema Image',
+				'label' => _x( 'Google / Schema Markup Image',
 					'image size label', 'nextgen-facebook' ),
 			);
 
@@ -560,6 +560,13 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			if ( ! empty( $ngfb->options[$logo_key] ) )
 				if ( ! self::add_single_image_data( $ret['logo'], $ngfb->options, $logo_key, false ) )	// list_element = false
 					unset( $ret['logo'] );	// prevent null assignment
+
+			if ( empty( $ret['logo'] ) ) {
+				if ( $ngfb->debug->enabled )
+					$ngfb->debug->log( 'organization '.$logo_key.' image is missing and required' );
+				if ( is_admin() )
+					$ngfb->notice->err( $ngfb->msgs->get( 'notice-missing-'.$logo_key ) );
+			}
 
 			if ( empty( $list_element ) )
 				$json_data = $ret;

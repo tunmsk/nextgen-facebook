@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.29.0-dev4',	// plugin version
+					'version' => '8.29.0-alpha1',	// plugin version
 					'opt_version' => '419',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -949,6 +949,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 		);
+
+		public static function get_version() { 
+			return self::$cf['plugin']['ngfb']['version'];
+		}
 
 		// get_config is called very early, so don't apply filters unless instructed
 		public static function get_config( $idx = false, $do_filter = false ) { 
