@@ -402,7 +402,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.29.0-dev3 (2016/04/04)**
+**Version 8.29.0-dev4 (2016/04/05)**
 
 Official announcement: N/A
 
@@ -435,6 +435,7 @@ Official announcement: N/A
 	* Removed the NgfbUtil `get_source_id()` method.
 	* Removed `$src_id` from all method and filter arguments.
 	* Added a new `SucomDebug::clear()` static method to remove cached content by URL.
+	* Added new `SucomUtil::protect_filter_start()` and `SucomUtil::protect_filter_stop()` methods to save/restore pre-filtered values.
 
 **Version 8.28.5-1 (2016/03/31)**
 
@@ -460,9 +461,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.29.0-dev3 =
+= 8.29.0-dev4 =
 
-(2016/04/04) Added a new "Google Structured Data / Schema Markup" section in the Social Settings metabox under the Select Media tab. Changes to SucomWebpage caption, content, description, and title related methods.
+(2016/04/05) Added a new "Google Structured Data / Schema Markup" section in the Social Settings metabox under the Select Media tab. Changes to SucomWebpage caption, content, description, and title related methods.
 
 = 8.28.5-1 =
 
