@@ -415,6 +415,7 @@ Official announcement: N/A
 	* Updated the non-cropped image dimension defaults to 800x1600.
 	* Added a notice for missing Schema Organization logo and banner images.
 	* Added a check for a minimum Pro Update Manager version required (Pro version).
+	* Added support for a 'use_post' argument in the sharing buttons shortcode.
 * *Bugfixes*
 	* None
 * *Developer Notes*
