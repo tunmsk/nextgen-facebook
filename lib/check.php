@@ -232,7 +232,6 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 							$chk['optval'] = 'plugin_shortener';
 							break;
 						case 'util-um':
-							$chk['class'] = 'NgfbUm';
 							$chk['plugin'] = 'nextgen-facebook-um/nextgen-facebook-um.php';
 							break;
 					}
