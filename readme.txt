@@ -402,7 +402,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.29.0-alpha1 (2016/04/05)**
+**Version 8.29.0-alpha2 (2016/04/06)**
 
 Official announcement: N/A
 
@@ -463,9 +463,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.29.0-alpha1 =
+= 8.29.0-alpha2 =
 
-(2016/04/05) Added a new "Google Structured Data / Schema Markup" section in the Social Settings metabox under the Select Media tab. Changes to SucomWebpage caption, content, description, and title related methods.
+(2016/04/06) Added a new "Google Structured Data / Schema Markup" section in the Social Settings metabox under the Select Media tab. Changes to SucomWebpage caption, content, description, and title related methods.
 
 = 8.28.5-1 =
 
