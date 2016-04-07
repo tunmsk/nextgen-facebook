@@ -790,7 +790,6 @@ $buttons_html."\n".
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			$lca = $this->p->cf['lca'];
 			$enabled_ids = array();
 
 			// there are no widgets on the admin back-end, so don't bother checking
@@ -837,7 +836,7 @@ $buttons_html."\n".
 				if ( empty( $request_ids ) && empty( $enabled_ids ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'exiting early: '.$exit_message  );
-					return '<!-- '.$lca.' '.$pos.': '.$exit_message.' -->'."\n";
+					return '<!-- ngfb '.$pos.': '.$exit_message.' -->'."\n";
 				} elseif ( $this->p->debug->enabled )
 					$this->p->debug->log( 'ignoring exit message: have requested or enabled ids' );
 			} elseif ( is_admin() ) {
@@ -861,20 +860,20 @@ $buttons_html."\n".
 				if ( empty( $enabled_ids ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'exiting early: no buttons enabled or requested' );
-					return '<!-- '.$lca.' '.$pos.': no buttons enabled or requested -->'."\n";
+					return '<!-- ngfb '.$pos.': no buttons enabled or requested -->'."\n";
 				} else $include_ids = $enabled_ids;
 			} else {
 				$include_ids = array_diff( $request_ids, $enabled_ids );
 				if ( empty( $include_ids ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'exiting early: no scripts after removing enabled buttons' );
-					return '<!-- '.$lca.' '.$pos.': no scripts after removing enabled buttons -->'."\n";
+					return '<!-- ngfb '.$pos.': no scripts after removing enabled buttons -->'."\n";
 				}
 			}
 
 			natsort( $include_ids );
 			$include_ids = array_unique( $include_ids );
-			$html = '<!-- '.$lca.' '.$pos.' javascript begin -->'."\n";
+			$html = '<!-- ngfb '.$pos.' javascript begin -->'."\n";
 
 			if ( strpos( $pos, '-header' ) ) 
 				$script_loc = 'header';
@@ -893,12 +892,12 @@ $buttons_html."\n".
 						if ( isset( $this->p->options[$opt_name] ) && 
 							$this->p->options[$opt_name] === $script_loc )
 								$html .= $this->website[$id]->get_script( $pos )."\n";
-						else $html .= '<!-- '.$lca.' '.$pos.': '.$id.' script location is '.$script_loc.' -->'."\n";
+						else $html .= '<!-- ngfb '.$pos.': '.$id.' script location is '.$this->p->options[$opt_name].' -->'."\n";
 					}
 				}
 			}
 
-			$html .= '<!-- '.$lca.' '.$pos.' javascript end -->'."\n";
+			$html .= '<!-- ngfb '.$pos.' javascript end -->'."\n";
 
 			return $html;
 		}
