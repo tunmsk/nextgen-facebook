@@ -900,10 +900,8 @@ $buttons_html."\n".
 
 		public function get_script_loader( $pos = 'id' ) {
 
-			$lang = empty( $this->p->options['gp_lang'] ) ?
-				'en-US' : $this->p->options['gp_lang'];
-
-			$lang = apply_filters( $this->p->cf['lca'].'_pub_lang', $lang, 'google' );
+			$lang = empty( $this->p->options['gp_lang'] ) ? 'en-US' : $this->p->options['gp_lang'];
+			$lang = apply_filters( $this->p->cf['lca'].'_pub_lang', $lang, 'google', 'current' );
 
 			return '<script type="text/javascript" id="ngfb-header-script">
 	window.___gcfg = { lang: "'.$lang.'" };
