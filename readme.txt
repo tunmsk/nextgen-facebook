@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.5
-Stable Tag: 8.29.0-1
+Stable Tag: 8.29.1-1
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -402,7 +402,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.29.0-1 (2016/04/08)**
+**Version 8.29.1-1 (2016/04/08)**
 
 Official announcement: N/A
 
@@ -468,7 +468,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.29.0-1 =
+= 8.29.1-1 =
 
 (2016/04/08) Added a new "Google Structured Data / Schema Markup" section in the Social Settings metabox. Changes to SucomWebpage caption, content, description, and title related methods.
 
