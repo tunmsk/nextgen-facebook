@@ -463,8 +463,7 @@ Official announcement: N/A
 	* Added two new filters for NGFB Pro Update Manager v1.4.0-1:
 		* 'ngfb_readme_upgrade_notices'
 		* 'ngfb_newer_version_available'
-	* Adopted a standard version numbering system:
-		* `{major}.{minor}.{bugfix}-{stage}{level}`
+	* Adopted a new version numbering system: `{major}.{minor}.{bugfix}-{stage}{level}`
 
 == Upgrade Notice ==
 
