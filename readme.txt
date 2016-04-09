@@ -402,6 +402,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
+**Version 8.29.2-1 (2016/04/09)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed Twitter Card player video detection -- the embed URL was being removed when the Open Graph "Include Embed text/html Type" option was enabled.
+* *Developer Notes*
+	* None
+
 **Version 8.29.1-1 (2016/04/08)**
 
 Official announcement: N/A
@@ -466,6 +479,10 @@ Official announcement: N/A
 	* Adopted a new version numbering system: `{major}.{minor}.{bugfix}-{stage}{level}`
 
 == Upgrade Notice ==
+
+= 8.29.2-1 =
+
+(2016/04/09) Fixed Twitter Card player video detection.
 
 = 8.29.1-1 =
 
