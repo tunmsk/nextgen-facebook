@@ -402,7 +402,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.29.3-1 (2016/04/12)**
+**Version 8.29.4-1 (2016/04/12)**
 
 Official announcement: N/A
 
@@ -413,6 +413,7 @@ Official announcement: N/A
 	* Removed the "Plugin Read Me" settings page and highlighted the "Setup Guide" settings page.
 * *Bugfixes*
 	* Fixed cache salt value for mobile/non-mobile version of sharing buttons.
+	* Fixed 'og_vid_url' input option name in the Social Settings metabox.
 * *Developer Notes*
 	* Added crawler name argument to NgfbUser `get_og_profile_urls()` for the Pinterest crawler.
 	* Added an alternative to ksort() in `NgfbUtil::get_user_select()` for older PHP versions.
@@ -496,7 +497,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.29.3-1 =
+= 8.29.4-1 =
 
 (2016/04/12) Changed the Facebook "Author Name Format" option to a fallback feature. Fixed cache salt value for mobile/non-mobile version of sharing buttons.
 
