@@ -402,7 +402,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 8.29.3-dev1 (TBD)**
+**Version 8.29.3-1 (2016/04/12)**
 
 Official announcement: N/A
 
@@ -496,9 +496,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.29.3-dev1 =
+= 8.29.3-1 =
 
-(TBD) Changed the Facebook "Author Name Format" option to a fallback feature. Fixed cache salt value for mobile/non-mobile version of sharing buttons.
+(2016/04/12) Changed the Facebook "Author Name Format" option to a fallback feature. Fixed cache salt value for mobile/non-mobile version of sharing buttons.
 
 = 8.29.2-1 =
 
