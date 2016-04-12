@@ -415,6 +415,7 @@ Official announcement: N/A
 	* Fixed cache salt value for mobile/non-mobile version of sharing buttons.
 * *Developer Notes*
 	* Added crawler name argument to NgfbUser `get_og_profile_urls()` for the Pinterest crawler.
+	* Added an alternative to ksort() in `NgfbUtil::get_user_select()` for older PHP versions.
 	* Move apply_filters() on options before site options are read (and their values applied if/when required).
 
 **Version 8.29.2-1 (2016/04/09)**
