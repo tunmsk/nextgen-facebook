@@ -23,9 +23,9 @@ if ( ! class_exists( 'NgfbSitesubmenuSiteadvanced' ) && class_exists( 'NgfbAdmin
 				$this->p->debug->mark();
 		}
 
-		protected function set_form_property() {
+		protected function set_form_property( $menu_ext ) {
 			$def_site_opts = $this->p->opt->get_site_defaults();
-			$this->form = new SucomForm( $this->p, NGFB_SITE_OPTIONS_NAME, $this->p->site_options, $def_site_opts );
+			$this->form = new SucomForm( $this->p, NGFB_SITE_OPTIONS_NAME, $this->p->site_options, $def_site_opts, $menu_ext );
 		}
 
 		protected function add_meta_boxes() {
@@ -66,12 +66,12 @@ if ( ! class_exists( 'NgfbSitesubmenuSiteadvanced' ) && class_exists( 'NgfbAdmin
 					$table_rows['plugin_preserve'] = $this->form->get_th_html( _x( 'Preserve Settings on Uninstall',
 						'option label', 'nextgen-facebook' ), null, 'plugin_preserve' ).
 					'<td>'.$this->form->get_checkbox( 'plugin_preserve' ).'</td>'.
-					$this->p->admin->get_site_use( $this->form, true, 'plugin_preserve' );
+					$this->p->admin->get_site_use( $this->form, true, 'plugin_preserve', true );	// $network = true
 
 					$table_rows['plugin_debug'] = $this->form->get_th_html( _x( 'Add Hidden Debug Messages',
 						'option label', 'nextgen-facebook' ), null, 'plugin_debug' ).
 					'<td>'.$this->form->get_checkbox( 'plugin_debug' ).'</td>'.
-					$this->p->admin->get_site_use( $this->form, true, 'plugin_debug' );
+					$this->p->admin->get_site_use( $this->form, true, 'plugin_debug', true );	// $network = true
 
 					break;
 			}

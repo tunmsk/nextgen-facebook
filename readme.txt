@@ -409,11 +409,13 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Changed the Facebook "Author Name Format" option to a fallback feature instead, for cases where the author does not have a Facebook page URL in their WordPress profile.
+	* Removed the "Plugin Read Me" settings page and highlighted the "Setup Guide" settings page.
 * *Bugfixes*
-	* None
+	* Fixed cache salt value for mobile/non-mobile version of sharing buttons.
 * *Developer Notes*
-	* None
+	* Added crawler name argument to NgfbUser `get_og_profile_urls()` for the Pinterest crawler.
+	* Move apply_filters() on options before site options are read (and their values applied if/when required).
 
 **Version 8.29.2-1 (2016/04/09)**
 
@@ -492,6 +494,10 @@ Official announcement: N/A
 	* Adopted a new version numbering system: `{major}.{minor}.{bugfix}-{stage}{level}`
 
 == Upgrade Notice ==
+
+= 8.29.3-dev1 =
+
+(TBD) Changed the Facebook "Author Name Format" option to a fallback feature. Fixed cache salt value for mobile/non-mobile version of sharing buttons.
 
 = 8.29.2-1 =
 
