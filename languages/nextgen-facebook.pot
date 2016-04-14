@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.29.4-1\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.29.5-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -134,7 +134,7 @@ msgctxt "submit button"
 msgid "Save All Profile Settings"
 msgstr ""
 
-#: lib/admin.php:681 lib/messages.php:825
+#: lib/admin.php:681 lib/messages.php:831
 msgctxt "submit button"
 msgid "Save All Plugin Settings"
 msgstr ""
@@ -144,7 +144,7 @@ msgctxt "submit button"
 msgid "View %s by Default"
 msgstr ""
 
-#: lib/admin.php:698 lib/messages.php:805
+#: lib/admin.php:698 lib/messages.php:811
 msgctxt "submit button"
 msgid "Check for Pro Update(s)"
 msgstr ""
@@ -247,7 +247,7 @@ msgid "Download Latest Version"
 msgstr ""
 
 #: lib/admin.php:1148 lib/admin.php:1153 lib/admin.php:1169 lib/admin.php:1175
-#: lib/messages.php:785
+#: lib/messages.php:791
 msgctxt "option label"
 msgid "Pro Authentication ID"
 msgstr ""
@@ -330,7 +330,7 @@ msgstr ""
 msgid "Error copying %1$s to %2$s."
 msgstr ""
 
-#: lib/admin.php:1329 lib/sharing.php:441
+#: lib/admin.php:1329 lib/sharing.php:421
 msgid "Failed to open file %s for writing."
 msgstr ""
 
@@ -582,12 +582,12 @@ msgctxt "option value"
 msgid "Right"
 msgstr ""
 
-#: lib/config-gettext-extract.php:46 lib/sharing.php:290 lib/sharing.php:299
+#: lib/config-gettext-extract.php:46 lib/sharing.php:291 lib/sharing.php:300
 msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:47 lib/sharing.php:290 lib/sharing.php:293
+#: lib/config-gettext-extract.php:47 lib/sharing.php:291 lib/sharing.php:294
 #: lib/submenu/style.php:37
 msgctxt "lib file description"
 msgid "Sharing Styles"
@@ -665,7 +665,7 @@ msgctxt "option label"
 msgid "Use Filtered (SEO) Title"
 msgstr ""
 
-#: lib/gpl/admin/advanced.php:38 lib/messages.php:776
+#: lib/gpl/admin/advanced.php:38 lib/messages.php:782
 #: lib/pro/admin/advanced.php:46
 msgctxt "option label"
 msgid "Apply WordPress Content Filters"
@@ -837,7 +837,7 @@ msgctxt "option label"
 msgid "Enable WP Tags for Pages"
 msgstr ""
 
-#: lib/gpl/admin/advanced.php:244 lib/messages.php:773
+#: lib/gpl/admin/advanced.php:244 lib/messages.php:779
 #: lib/pro/admin/advanced.php:241
 msgctxt "option label"
 msgid "Object Cache Expiry"
@@ -978,143 +978,155 @@ msgctxt "option label"
 msgid "Use Default Video on Search Results"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:39 lib/gpl/admin/post.php:37
+#: lib/gpl/admin/meta.php:42 lib/gpl/admin/post.php:40
 #: lib/pro/admin/meta.php:50 lib/pro/admin/post.php:50
 msgctxt "option label"
 msgid "Default Title"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:45 lib/gpl/admin/post.php:44
+#: lib/gpl/admin/meta.php:48 lib/gpl/admin/post.php:47
 #: lib/pro/admin/meta.php:57 lib/pro/admin/post.php:58
 msgctxt "option label"
 msgid ""
 "Default Description (Facebook / Open Graph, LinkedIn, Pinterest Rich Pin)"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:51 lib/gpl/admin/post.php:51
+#: lib/gpl/admin/meta.php:54 lib/gpl/admin/post.php:54
 #: lib/pro/admin/meta.php:64 lib/pro/admin/post.php:66
 msgctxt "option label"
 msgid "Google / Schema Description"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:58 lib/gpl/admin/post.php:59
+#: lib/gpl/admin/meta.php:61 lib/gpl/admin/post.php:62
 #: lib/pro/admin/meta.php:72 lib/pro/admin/post.php:75
 msgctxt "option label"
 msgid "Google Search / SEO Description"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:64 lib/gpl/admin/post.php:66
+#: lib/gpl/admin/meta.php:67 lib/gpl/admin/post.php:69
 #: lib/pro/admin/meta.php:80 lib/pro/admin/post.php:84
 msgctxt "option label"
 msgid "Twitter Card Description"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:71 lib/gpl/admin/post.php:74 lib/meta.php:151
+#: lib/gpl/admin/meta.php:74 lib/gpl/admin/post.php:77 lib/meta.php:151
 #: lib/pro/admin/meta.php:88 lib/pro/admin/post.php:93
 msgctxt "option label"
 msgid "Sharing URL"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:86 lib/gpl/admin/sharing.php:101
-#: lib/pro/admin/meta.php:103 lib/pro/admin/sharing.php:103
+#: lib/gpl/admin/meta.php:89 lib/gpl/admin/sharing.php:101
+#: lib/pro/admin/meta.php:103 lib/pro/admin/sharing.php:104
 msgid "Save a draft version or publish the %s to display these options."
 msgstr ""
 
-#: lib/gpl/admin/meta.php:100 lib/pro/admin/meta.php:115
+#: lib/gpl/admin/meta.php:102
+msgid ""
+"You can change the social image by selecting a featured image (preferred), "
+"attaching one or more images, or including images in the content."
+msgstr ""
+
+#: lib/gpl/admin/meta.php:102
+msgid ""
+"The service API modules required for embedded video discovery are available "
+"in the Pro version."
+msgstr ""
+
+#: lib/gpl/admin/meta.php:109 lib/pro/admin/meta.php:115
 #: lib/submenu/general.php:29
 msgctxt "metabox title"
 msgid "All Social Websites / Open Graph"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:104 lib/pro/admin/meta.php:119
+#: lib/gpl/admin/meta.php:113 lib/pro/admin/meta.php:119
 msgctxt "metabox title"
 msgid "Priority Image Information"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:108 lib/gpl/admin/meta.php:185
-#: lib/gpl/admin/meta.php:216 lib/pro/admin/meta.php:123
+#: lib/gpl/admin/meta.php:117 lib/gpl/admin/meta.php:194
+#: lib/gpl/admin/meta.php:225 lib/pro/admin/meta.php:123
 #: lib/pro/admin/meta.php:207 lib/pro/admin/meta.php:241
 msgctxt "option label"
 msgid "Image Dimensions"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:113 lib/gpl/admin/meta.php:191
-#: lib/gpl/admin/meta.php:222 lib/pro/admin/meta.php:128
+#: lib/gpl/admin/meta.php:122 lib/gpl/admin/meta.php:200
+#: lib/gpl/admin/meta.php:231 lib/pro/admin/meta.php:128
 #: lib/pro/admin/meta.php:213 lib/pro/admin/meta.php:247
 msgctxt "option label"
 msgid "Image ID"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:118 lib/gpl/admin/meta.php:197
-#: lib/gpl/admin/meta.php:228 lib/pro/admin/meta.php:133
+#: lib/gpl/admin/meta.php:127 lib/gpl/admin/meta.php:206
+#: lib/gpl/admin/meta.php:237 lib/pro/admin/meta.php:133
 #: lib/pro/admin/meta.php:219 lib/pro/admin/meta.php:253
 msgctxt "option label"
 msgid "or an Image URL"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:125 lib/gpl/admin/meta.php:235
+#: lib/gpl/admin/meta.php:134 lib/gpl/admin/meta.php:244
 #: lib/pro/admin/meta.php:140 lib/pro/admin/meta.php:260
 msgctxt "option label"
 msgid "Maximum Images"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:132 lib/pro/admin/meta.php:148
+#: lib/gpl/admin/meta.php:141 lib/pro/admin/meta.php:148
 msgctxt "metabox title"
 msgid "Priority Video Information"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:135 lib/pro/admin/meta.php:151
+#: lib/gpl/admin/meta.php:144 lib/pro/admin/meta.php:151
 msgctxt "option label"
 msgid "Video Embed HTML"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:140 lib/pro/admin/meta.php:156
+#: lib/gpl/admin/meta.php:149 lib/pro/admin/meta.php:156
 msgctxt "option label"
 msgid "or a Video URL"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:146 lib/pro/admin/meta.php:162
+#: lib/gpl/admin/meta.php:155 lib/pro/admin/meta.php:162
 msgctxt "option label"
 msgid "Video Name / Title"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:152 lib/pro/admin/meta.php:169
+#: lib/gpl/admin/meta.php:161 lib/pro/admin/meta.php:169
 msgctxt "option label"
 msgid "Video Description"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:159 lib/pro/admin/meta.php:177
+#: lib/gpl/admin/meta.php:168 lib/pro/admin/meta.php:177
 msgctxt "option label"
 msgid "Maximum Videos"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:166 lib/pro/admin/meta.php:185
+#: lib/gpl/admin/meta.php:175 lib/pro/admin/meta.php:185
 msgctxt "option label"
 msgid "Include Preview Image(s)"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:181 lib/pro/admin/meta.php:203
+#: lib/gpl/admin/meta.php:190 lib/pro/admin/meta.php:203
 msgctxt "metabox title"
 msgid "Pinterest / Rich Pin"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:212 lib/pro/admin/meta.php:237
+#: lib/gpl/admin/meta.php:221 lib/pro/admin/meta.php:237
 #: lib/submenu/general.php:267
 msgctxt "metabox title"
 msgid "Google Structured Data / Schema Markup"
 msgstr ""
 
-#: lib/gpl/admin/post.php:32 lib/pro/admin/post.php:44
+#: lib/gpl/admin/post.php:35 lib/pro/admin/post.php:44
 msgctxt "option label"
 msgid "Article Topic"
 msgstr ""
 
-#: lib/gpl/admin/post.php:81 lib/post.php:387 lib/pro/admin/post.php:100
+#: lib/gpl/admin/post.php:84 lib/post.php:387 lib/pro/admin/post.php:100
 msgid "Save a draft version or publish the %s to update this value."
 msgstr ""
 
 #: lib/gpl/admin/sharing.php:35 lib/pro/admin/sharing.php:46
-#: lib/sharing.php:305
+#: lib/sharing.php:306
 msgctxt "option label"
 msgid "Social File Cache Expiry"
 msgstr ""
@@ -1135,45 +1147,55 @@ msgid "%s Preset"
 msgstr ""
 
 #: lib/gpl/admin/sharing.php:91 lib/pro/admin/sharing.php:94
-#: lib/sharing.php:290
+#: lib/sharing.php:291
 msgctxt "metabox tab"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:119 lib/pro/admin/sharing.php:118
+#: lib/gpl/admin/sharing.php:123 lib/pro/admin/sharing.php:120
+msgctxt "option label"
+msgid "Email Subject"
+msgstr ""
+
+#: lib/gpl/admin/sharing.php:128 lib/pro/admin/sharing.php:126
+msgctxt "option label"
+msgid "Email Message"
+msgstr ""
+
+#: lib/gpl/admin/sharing.php:141 lib/pro/admin/sharing.php:140
 msgctxt "option label"
 msgid "Tweet Text"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:140 lib/pro/admin/sharing.php:140
+#: lib/gpl/admin/sharing.php:162 lib/pro/admin/sharing.php:162
 msgctxt "option label"
 msgid "Pinterest Caption Text"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:164 lib/pro/admin/sharing.php:164
+#: lib/gpl/admin/sharing.php:186 lib/pro/admin/sharing.php:186
 msgctxt "option label"
 msgid "Tumblr Image Caption"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:167 lib/pro/admin/sharing.php:167
+#: lib/gpl/admin/sharing.php:189 lib/pro/admin/sharing.php:189
 msgid "Caption disabled - no suitable image found for the %s button"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:175 lib/pro/admin/sharing.php:176
+#: lib/gpl/admin/sharing.php:197 lib/pro/admin/sharing.php:198
 msgctxt "option label"
 msgid "Tumblr Video Caption"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:177 lib/pro/admin/sharing.php:179
+#: lib/gpl/admin/sharing.php:199 lib/pro/admin/sharing.php:201
 msgid "Caption disabled - no suitable video found for the %s button"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:185 lib/pro/admin/sharing.php:191
+#: lib/gpl/admin/sharing.php:207 lib/pro/admin/sharing.php:213
 msgctxt "option label"
 msgid "Disable Sharing Buttons"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:210 lib/pro/admin/sharing.php:216
+#: lib/gpl/admin/sharing.php:232 lib/pro/admin/sharing.php:238
 msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr ""
@@ -1296,7 +1318,7 @@ msgid ""
 "\" target=\"_blank\">constants</a>."
 msgstr ""
 
-#: lib/messages.php:82 lib/sharing.php:296 lib/sharing.php:305
+#: lib/messages.php:82 lib/sharing.php:297 lib/sharing.php:306
 #: lib/website/twitter.php:84
 msgctxt "lib file description"
 msgid "Advanced"
@@ -1807,95 +1829,109 @@ msgctxt "option comment"
 msgid "%s required to use this option"
 msgstr ""
 
-#: lib/messages.php:742
+#: lib/messages.php:730
+msgid ""
+"You can modify the description values by updating the content or excerpt, "
+"and change the social image by selecting a featured image, attaching one or "
+"more images, or including images in the content."
+msgstr ""
+
+#: lib/messages.php:733
+msgid ""
+"The Free / Basic version of %1$s does not include the modules required to "
+"manage custom post, taxonomy, or user meta &mdash; these options are "
+"included for display purposes only."
+msgstr ""
+
+#: lib/messages.php:748
 msgid ""
 "The <em>Select Media</em> tab in the Social Settings metabox can be used to "
 "select a larger image specifically for social / SEO purposes."
 msgstr ""
 
-#: lib/messages.php:744
+#: lib/messages.php:750
 msgid ""
 "Additional information shown only to users with Administrative privileges:"
 msgstr ""
 
-#: lib/messages.php:746
+#: lib/messages.php:752
 msgid ""
 "You can also adjust the <b>%2$s</b> option in the <a href=\"%1$s\">Social "
 "and SEO Image Dimensions</a> settings."
 msgstr ""
 
-#: lib/messages.php:747
+#: lib/messages.php:753
 msgid ""
 "Enable or increase the <a href=\"%1$s\">WP / Theme Integration</a> <em>image "
 "upscaling percentage</em> feature."
 msgstr ""
 
-#: lib/messages.php:748
+#: lib/messages.php:754
 msgid ""
 "Disable the <a href=\"%1$s\">WP / Theme Integration</a> <em>image dimensions "
 "check</em> option (not recommended)."
 msgstr ""
 
-#: lib/messages.php:750
+#: lib/messages.php:756
 msgid ""
 "Define the %1$s constant as <em>true</em> to auto-hide all dismissable "
 "warnings."
 msgstr ""
 
-#: lib/messages.php:755
+#: lib/messages.php:761
 msgid ""
 "An Open Graph image meta tag could not be created from this webpage content. "
 "Facebook and other social websites <em>require</em> at least one image meta "
 "tag to render shared content correctly."
 msgstr ""
 
-#: lib/messages.php:758
+#: lib/messages.php:764
 msgid ""
 "Google / Schema image markup could not be created from this webpage content. "
 "Google <em>requires</em> at least one image object for this Schema item type."
 msgstr ""
 
-#: lib/messages.php:761
+#: lib/messages.php:767
 msgid "A Business Logo Image is missing for the Schema Organization markup."
 msgstr ""
 
-#: lib/messages.php:762
+#: lib/messages.php:768
 msgid "Please entrer a Business Logo Image URL in the %1$s settings."
 msgstr ""
 
-#: lib/messages.php:767
+#: lib/messages.php:773
 msgid "A Business Banner Image is missing for the Schema Organization markup."
 msgstr ""
 
-#: lib/messages.php:768
+#: lib/messages.php:774
 msgid "Please enter a Business Banner (600x60) Image URL in the %1$s settings."
 msgstr ""
 
-#: lib/messages.php:773
+#: lib/messages.php:779
 msgid ""
 "Please note that the <a href=\"%1$s\">%2$s</a> advanced option is currently "
 "set at %3$d seconds &mdash; this is lower than the recommended default value "
 "of %4$d seconds."
 msgstr ""
 
-#: lib/messages.php:776
+#: lib/messages.php:782
 msgid "The <a href=\"%1$s\">%2$s</a> advanced option is currently disabled."
 msgstr ""
 
-#: lib/messages.php:776
+#: lib/messages.php:782
 msgid ""
 "The use of WordPress content filters allows %s to fully render your content "
 "text for meta tag descriptions, and detect additional images / embedded "
 "videos provided by shortcodes."
 msgstr ""
 
-#: lib/messages.php:776
+#: lib/messages.php:782
 msgid ""
 "Some theme / plugins have badly coded content filters, so this option is "
 "disabled by default."
 msgstr ""
 
-#: lib/messages.php:776
+#: lib/messages.php:782
 msgid ""
 "<a href=\"%s\">If you use any shortcodes in your content text, this option "
 "should be enabled</a> (Pro version required) &mdash; if you experience "
@@ -1903,127 +1939,127 @@ msgid ""
 "content filter is at fault, and report the problem to its author(s)."
 msgstr ""
 
-#: lib/messages.php:781
+#: lib/messages.php:787
 msgid ""
 "At least one of your theme header templates does not support Schema markup "
 "of the webpage head section."
 msgstr ""
 
-#: lib/messages.php:781
+#: lib/messages.php:787
 msgid ""
 "The %s element in your theme's header templates should include a function / "
 "action / filter call for its attributes."
 msgstr ""
 
-#: lib/messages.php:781
+#: lib/messages.php:787
 msgid ""
 "%1$s can update your theme header templates automatically to change the "
 "default %2$s element to:"
 msgstr ""
 
-#: lib/messages.php:781
+#: lib/messages.php:787
 msgid ""
 "<b><a href=\"%1$s\">Click here to update theme header templates "
 "automatically</a></b> or update the theme templates yourself manually."
 msgstr ""
 
-#: lib/messages.php:785
+#: lib/messages.php:791
 msgid "The %1$s plugin %2$s option is empty."
 msgstr ""
 
-#: lib/messages.php:785
+#: lib/messages.php:791
 msgid ""
 "To enable Pro version features and allow the plugin to authenticate itself "
 "for updates, please enter the unique Authentication ID you received by email "
 "on the <a href=\"%s\">Pro Licenses settings page</a>."
 msgstr ""
 
-#: lib/messages.php:788
+#: lib/messages.php:794
 msgid ""
 "An Authentication ID has been entered for %s, but the Pro version is not yet "
 "installed &ndash; don't forget to update the plugin to install the latest "
 "Pro version. ;-)"
 msgstr ""
 
-#: lib/messages.php:794
+#: lib/messages.php:800
 msgid ""
 "At least one Authentication ID has been entered on the <a href=\"%1$s\">Pro "
 "Licenses settings page</a>, but the %2$s plugin is not active."
 msgstr ""
 
-#: lib/messages.php:797
+#: lib/messages.php:803
 msgid ""
 "This Free plugin is required to update and enable the %s plugin and its Pro "
 "extensions."
 msgstr ""
 
-#: lib/messages.php:797
+#: lib/messages.php:803
 msgid "Download the Free <a href=\"%1$s\">%2$s plugin archive</a> (ZIP)."
 msgstr ""
 
-#: lib/messages.php:797
+#: lib/messages.php:803
 msgid ""
 "Then <a href=\"%s\">upload and activate the plugin</a> on the WordPress "
 "plugin upload page."
 msgstr ""
 
-#: lib/messages.php:800
+#: lib/messages.php:806
 msgid ""
 "Once the %s extension has been activated, one or more Pro version updates "
 "may be available for your licensed plugin(s)."
 msgstr ""
 
-#: lib/messages.php:800
+#: lib/messages.php:806
 msgid ""
 "Read more <a href=\"%1$s\" target=\"_blank\">about the %2$s extension "
 "plugin</a>."
 msgstr ""
 
-#: lib/messages.php:805
+#: lib/messages.php:811
 msgid ""
 "%1$s version %2$s requires the use of %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
 msgstr ""
 
-#: lib/messages.php:805
+#: lib/messages.php:811
 msgid ""
 "Use the <em>%1$s</em> button from any %2$s settings page to retrieve the "
 "latest update information, or <a href=\"%3$s\" target=\"_blank\">download "
 "the latest %4$s extension version</a> and install the ZIP file manually."
 msgstr ""
 
-#: lib/messages.php:819
+#: lib/messages.php:825
 msgid ""
 "%s can be purchased quickly and easily via Paypal &ndash; allowing you to "
 "license and enable Pro version features within seconds of your purchase."
 msgstr ""
 
-#: lib/messages.php:820
+#: lib/messages.php:826
 msgid ""
 "%s can be purchased quickly and easily via Paypal &ndash; allowing you to "
 "update the plugin within seconds of your purchase."
 msgstr ""
 
-#: lib/messages.php:821
+#: lib/messages.php:827
 msgid ""
 "Pro version licenses do not expire &ndash; there are no yearly or recurring "
 "fees for updates and support."
 msgstr ""
 
-#: lib/messages.php:826
+#: lib/messages.php:832
 msgid ""
 "Metaboxes (like this one) can be opened / closed by clicking on their title "
 "bar, moved and re-ordered by dragging them, or removed / added from the "
 "<em>Screen Options</em> tab (top-right of page)."
 msgstr ""
 
-#: lib/messages.php:826
+#: lib/messages.php:832
 msgid ""
 "Option values in multiple tabs can be modified before clicking the '%s' "
 "button."
 msgstr ""
 
-#: lib/messages.php:836
+#: lib/messages.php:842
 msgid ""
 "This option is localized &mdash; you may change the WordPress admin locale "
 "with <a href=\"%1$s\" target=\"_blank\">Polylang</a>, <a href=\"%2$s\" "
@@ -2230,7 +2266,7 @@ msgid ""
 "<code>%1$s</code> HTML tag to the head section of this webpage."
 msgstr ""
 
-#: lib/post.php:336 lib/profile/social-settings.php:27 lib/sharing.php:290
+#: lib/post.php:336 lib/profile/social-settings.php:27 lib/sharing.php:291
 #: lib/taxonomy.php:252 lib/user.php:235
 msgctxt "metabox title"
 msgid "Social Settings"
@@ -2386,38 +2422,38 @@ msgctxt "option label"
 msgid "MySpace Business Page URL"
 msgstr ""
 
-#: lib/sharing.php:162
+#: lib/sharing.php:163
 msgid "Failed to open the %s file for reading."
 msgstr ""
 
-#: lib/sharing.php:290
+#: lib/sharing.php:291
 msgid ""
 "Social sharing features include the <a href=\"%1$s\">%2$s</a> and <a href="
 "\"%3$s\">%4$s</a> settings pages, the <em>%5$s</em> tab in the <em>%6$s</em> "
 "metabox, along with the social sharing shortcode and widget."
 msgstr ""
 
-#: lib/sharing.php:290
+#: lib/sharing.php:291
 msgid ""
 "All social sharing features can be disabled using a <a href=\"%s\" target="
 "\"_blank\">PHP constant</a> in your wp-config.php file."
 msgstr ""
 
-#: lib/sharing.php:293
+#: lib/sharing.php:294
 msgid ""
 "A stylesheet for the social sharing buttons can be included in all webpages. "
 "You can enable or disable use of the stylesheet from the <a href=\"%1$s\">"
 "%2$s</a> settings page."
 msgstr ""
 
-#: lib/sharing.php:296
+#: lib/sharing.php:297
 msgid ""
 "Support for shortcode(s) can be enabled and disabled on the <a href=\"%1$s\">"
 "%2$s</a> settings page. Shortcodes are disabled by default to optimize "
 "performance and content processing."
 msgstr ""
 
-#: lib/sharing.php:299
+#: lib/sharing.php:300
 msgid ""
 "The sharing widget feature adds a <em>%s</em> widget to the WordPress "
 "Widgets settings page. The sharing widget shares the URL for the current "
@@ -2425,13 +2461,13 @@ msgid ""
 "example)."
 msgstr ""
 
-#: lib/sharing.php:302
+#: lib/sharing.php:303
 msgid ""
 "A stylesheet editor is available to modify the default CSS of social sharing "
 "buttons based on their intended location (content, except, etc.)."
 msgstr ""
 
-#: lib/sharing.php:305
+#: lib/sharing.php:306
 msgid ""
 "Social sharing button images and JavaScript can be saved to a local cache "
 "folder. When this feature is enabled, the image and JavaScript URLs provided "
@@ -2439,78 +2475,55 @@ msgid ""
 "better performance)."
 msgstr ""
 
-#: lib/sharing.php:305
+#: lib/sharing.php:306
 msgid ""
 "The current <em>%1$s</em> value defined on the <a href=\"%2$s\">%3$s</a> "
 "settings page is %4$s seconds (the default value of 0 disables social file "
 "caching)."
 msgstr ""
 
-#: lib/sharing.php:314 lib/sharing.php:317
-msgid ""
-"A custom caption text used by the %s social sharing button for the custom "
-"Image ID, attached or featured image."
-msgstr ""
-
-#: lib/sharing.php:320
-msgid ""
-"A custom caption text used by the %s social sharing button for the custom "
-"Video URL or embedded video."
-msgstr ""
-
-#: lib/sharing.php:323
-msgid ""
-"A custom Tweet text for the Twitter social sharing button. This text is "
-"different than the Twitter Card description."
-msgstr ""
-
-#: lib/sharing.php:326
-msgid ""
-"Disable all social sharing buttons (content, excerpt, widget, shortcode)."
-msgstr ""
-
-#: lib/sharing.php:334
+#: lib/sharing.php:314
 msgctxt "submit button"
 msgid "Reload Default Styles"
 msgstr ""
 
-#: lib/sharing.php:351
+#: lib/sharing.php:331
 msgid ""
 "All sharing styles have been reloaded with their default settings and saved."
 msgstr ""
 
-#: lib/sharing.php:372
+#: lib/sharing.php:352
 msgid "The %s file is not readable."
 msgstr ""
 
-#: lib/sharing.php:412
+#: lib/sharing.php:392
 msgid "Failed to load the minify class SuextMinifyCssCompressor."
 msgstr ""
 
-#: lib/sharing.php:421
+#: lib/sharing.php:401
 msgid "Failed writing to the % file."
 msgstr ""
 
-#: lib/sharing.php:426
+#: lib/sharing.php:406
 msgid "Updated the <a href=\"%1$s\">%2$s</a> stylesheet (%3$d bytes written)."
 msgstr ""
 
-#: lib/sharing.php:435
+#: lib/sharing.php:415
 msgid "The %s folder is not writable."
 msgstr ""
 
-#: lib/sharing.php:450
+#: lib/sharing.php:430
 msgid ""
 "Error removing the minimized stylesheet &mdash; does the web server have "
 "sufficient privileges?"
 msgstr ""
 
-#: lib/sharing.php:469
+#: lib/sharing.php:449
 msgctxt "metabox title"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/sharing.php:545
+#: lib/sharing.php:525
 msgid "%s must be published<br/>before it can be shared."
 msgstr ""
 

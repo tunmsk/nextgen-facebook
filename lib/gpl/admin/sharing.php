@@ -104,9 +104,31 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			}
 
 			$size_info = $this->p->media->get_size_info( 'thumbnail' );
+			$title_caption = $this->p->webpage->get_caption( 'title', 0, $mod, true, false );
+
 			$table_rows[] = '<td colspan="3" align="center">'.
-				$this->p->msgs->get( 'pro-feature-msg', 
-					array( 'lca' => 'ngfb' ) ).'</td>';
+				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
+
+			$table_rows[] = '<td colspan="3" align="center">'.
+				$this->p->msgs->get( 'pro-about-msg-post' ).'</td>';
+
+			/*
+			 * Email
+			 */
+			$caption_len = $this->p->options['email_cap_len'];
+			$caption_text = $this->p->webpage->get_caption( 'excerpt', $caption_len, 
+				$mod, true, $this->p->options['email_cap_hashtags'], true, 'none' );
+
+			$form_rows['email_title'] = array(
+				'label' => _x( 'Email Subject', 'option label', 'nextgen-facebook' ),
+				'th_class' => 'medium', 'tooltip' => 'post-email_title', 'td_class' => 'blank',
+				'content' => $form->get_no_input_value( $title_caption, 'wide' ),
+			);
+			$form_rows['email_desc'] = array(
+				'label' => _x( 'Email Message', 'option label', 'nextgen-facebook' ),
+				'th_class' => 'medium', 'tooltip' => 'post-email_desc', 'td_class' => 'blank',
+				'content' => $form->get_no_textarea_value( $caption_text, '', '', $caption_len ),
+			);
 
 			/*
 			 * Twitter
