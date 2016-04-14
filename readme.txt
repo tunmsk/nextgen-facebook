@@ -380,7 +380,7 @@ frequent updates.</p>
 
 = Changelog / Release Notes =
 
-**Version 8.29.5-dev1 (TBD)**
+**Version 8.29.5-dev1 (2016/04/14)**
 
 Official announcement: N/A
 
@@ -488,6 +488,10 @@ Official announcement: N/A
 	* Adopted a new version numbering system: `{major}.{minor}.{bugfix}-{stage}{level}`
 
 == Upgrade Notice ==
+
+= 8.29.5-dev1 =
+
+(2016/04/14) Added the "Email Subject" and "Email Message" options in the Social Settings metabox. Added a message in the Free / Basic version to explain how to change the social text and image.
 
 = 8.29.4-1 =
 
