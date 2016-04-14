@@ -28,18 +28,6 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 * French (France)
 * More to come...
 
-<blockquote>
-<p><strong>September 14, 2015 - WPSSO Replaces NextGEN Facebook (NGFB)</strong></p>
-<p>NextGEN Facebook (NGFB) is being replaced by the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin. WPSSO is a fork / child of NGFB &mdash; they have the same author, the same core features and code-base, but WPSSO is distributed without the sharing buttons and their related features (making WPSSO about 25% smaller than NGFB). Additional extension plugins are also available for WPSSO, including two different sharing button extensions:
-<ul>
-<li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO Mobile App Meta</a></li>
-<li><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO Place and Location Meta</a></li>
-<li><a href="https://wordpress.org/plugins/wpsso-rrssb/">WPSSO Ridiculously Responsive Social Sharing Buttons</a></li>
-<li><a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD</a></li>
-<li><a href="https://wordpress.org/plugins/wpsso-ssb/">WPSSO Social Sharing Buttons</a></li>
-</ul></p>
-</blockquote>
-
 = Quick List of Features =
 
 **NGFB Free / Basic Features**
@@ -377,22 +365,12 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 == Changelog ==
 
 <blockquote id="changelog_top_info">
-<p><strong>September 14, 2015 - WPSSO Replaces NextGEN Facebook (NGFB)</strong></p>
-<p>NextGEN Facebook (NGFB) is being replaced by the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> (WPSSO) plugin. WPSSO is a fork / child of NGFB &mdash; they have the same author, the same core features and code-base, but WPSSO is distributed without the sharing buttons and their related features (making WPSSO about 25% smaller than NGFB). Additional extension plugins are also available for WPSSO, including two different sharing button extensions:
-<ul>
-<li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO Mobile App Meta</a></li>
-<li><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO Place and Location Meta</a></li>
-<li><a href="https://wordpress.org/plugins/wpsso-rrssb/">WPSSO Ridiculously Responsive Social Sharing Buttons</a></li>
-<li><a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD</a></li>
-<li><a href="https://wordpress.org/plugins/wpsso-ssb/">WPSSO Social Sharing Buttons</a></li>
-</ul></p>
-</blockquote>
-
-<blockquote>
-<p>New versions of the plugin are released approximately every week (more or less). 
-New features are added, tested, and released incrementally, instead of grouping them together in a major version release. 
-When minor bugs fixes and/or code improvements are applied, new versions are also released.
-This release schedule keeps the code stable and reliable, at the cost of more frequent updates.</p>
+<p>New versions of the plugin are released approximately every week (more or
+less). New features are added, tested, and released incrementally, instead of
+grouping them together in a major version release. When minor bugs fixes
+and/or code improvements are applied, new versions are also released. This
+release schedule keeps the code stable and reliable, at the cost of more
+frequent updates.</p>
 </blockquote>
 
 = Free / Basic Version Repository =
