@@ -409,6 +409,7 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
+	* Added the "Email Subject" and "Email Message" options in the Social Settings metabox.
 	* Added a message in the Free / Basic version to explain how to change the social text and image.
 * *Bugfixes*
 	* None
