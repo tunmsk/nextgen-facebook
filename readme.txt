@@ -380,7 +380,7 @@ frequent updates.</p>
 
 = Changelog / Release Notes =
 
-**Version 8.29.5-dev1 (2016/04/14)**
+**Version 8.29.5-1 (2016/04/15)**
 
 Official announcement: N/A
 
@@ -390,7 +390,7 @@ Official announcement: N/A
 	* Added the "Email Subject" and "Email Message" options in the Social Settings metabox.
 	* Added a message in the Free / Basic version to explain how to change the social text and image.
 * *Bugfixes*
-	* None
+	* Fixed possible call to undefined module object when loading image sizes (Pro version).
 * *Developer Notes*
 	* None
 
@@ -489,9 +489,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.29.5-dev1 =
+= 8.29.5-1 =
 
-(2016/04/14) Added the "Email Subject" and "Email Message" options in the Social Settings metabox. Added a message in the Free / Basic version to explain how to change the social text and image.
+(2016/04/15) Added the "Email Subject" and "Email Message" options in the Social Settings metabox. Added a message in the Free / Basic version to explain how to change the social text and image. Fixed possible call to undefined module object when loading image sizes (Pro version).
 
 = 8.29.4-1 =
 
