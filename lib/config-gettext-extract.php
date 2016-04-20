@@ -43,6 +43,7 @@ _x( '(no videos)', 'option value', 'nextgen-facebook' );
 _x( '(option disabled)', 'option value', 'nextgen-facebook' );
 _x( 'Ow.ly', 'option value', 'nextgen-facebook' );
 _x( 'Pro Licenses and Extension Plugins', 'lib file description', 'nextgen-facebook' );
+_x( 'Public Holidays', 'option value', 'nextgen-facebook' );
 _x( 'Right', 'option value', 'nextgen-facebook' );
 _x( 'Saturday', 'option value', 'nextgen-facebook' );
 _x( '(settings value)', 'option value', 'nextgen-facebook' );

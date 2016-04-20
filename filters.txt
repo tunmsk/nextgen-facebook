@@ -80,7 +80,7 @@ apply_filters( 'ngfb_quote', $quote, $use_post, $post_obj );
 apply_filters( 'ngfb_quote_seed', '', $use_post, $post_obj );
 apply_filters( 'ngfb_save_options', $opts, $options_name );
 apply_filters( 'ngfb_save_site_options', $opts );
-apply_filters( 'ngfb_schema_head_type', $type_id, $use_post, $mod );
+apply_filters( 'ngfb_schema_head_type', $type_id, $use_post, $mod, $is_md_type );
 apply_filters( 'ngfb_schema_meta_itemprop', $mt_schema, $use_post, $mod );
 apply_filters( 'ngfb_schema_type_for_author_forced', $type_id );
 apply_filters( 'ngfb_schema_type_for_default', 'webpage' );
