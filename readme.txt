@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.5
-Stable Tag: 8.29.5-1
+Stable Tag: 8.29.6-1
 
 Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -387,7 +387,7 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added a plugin icon for extension sub-menu items.
 * *Bugfixes*
 	* Fixed non-static home page detection for WebSite, Person, and Organization markup.
 * *Developer Notes*
@@ -486,20 +486,4 @@ Official announcement: N/A
 = 8.29.6-1 =
 
 (2016/04/21) Fixed non-static home page detection for WebSite, Person, and Organization markup. Added support for a date form input field using jQuery's datepicker.
-
-= 8.29.5-1 =
-
-(2016/04/15) Added the "Email Subject" and "Email Message" options in the Social Settings metabox. Added a message in the Free / Basic version to explain how to change the social text and image. Fixed possible call to undefined module object when loading image sizes (Pro version).
-
-= 8.29.4-1 =
-
-(2016/04/12) Changed the Facebook "Author Name Format" option to a fallback feature. Fixed cache salt value for mobile/non-mobile version of sharing buttons.
-
-= 8.29.2-1 =
-
-(2016/04/09) Fixed Twitter Card player video detection.
-
-= 8.29.1-1 =
-
-(2016/04/08) Added a new "Google Structured Data / Schema Markup" section in the Social Settings metabox. Changes to SucomWebpage caption, content, description, and title related methods.
 
