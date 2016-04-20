@@ -94,6 +94,7 @@ if ( ! class_exists( 'NgfbTaxonomy' ) ) {
 			 */
 			$mod['is_term'] = true;
 			$mod['tax_slug'] = $tax_slug;
+
 			return $mod;
 		}
 

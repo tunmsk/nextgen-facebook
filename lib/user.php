@@ -82,6 +82,7 @@ if ( ! class_exists( 'NgfbUser' ) ) {
 			 * User
 			 */
 			$mod['is_user'] = true;
+
 			return $mod;
 		}
 
