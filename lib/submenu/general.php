@@ -273,7 +273,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					$this->form->get_th_html( _x( 'Use Meta Property Containers',
 						'option label', 'nextgen-facebook' ), null, 'schema_add_noscript' ).
 					'<td>'.( $noscript_disabled ? $this->form->get_no_checkbox( 'schema_add_noscript', '', '', 0 ).
-							' <em>'._x( 'disabled by extension plugin or custom filter',
+							' <em>'._x( 'option disabled by extension plugin or custom filter',
 								'option comment', 'nextgen-facebook' ).'</em>' :
 							$this->form->get_checkbox( 'schema_add_noscript' ) ).'</td>';
 

@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.29.6-1',	// plugin version
+					'version' => '8.29.7-dev1',	// plugin version
 					'opt_version' => '420',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -828,9 +828,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'music:musician',
 					),
 					'place' => array(
-						'og:altitude',
-						'og:latitude',
-						'og:longitude',
 						'place:location:latitude',
 						'place:location:longitude',
 						'place:location:altitude',
