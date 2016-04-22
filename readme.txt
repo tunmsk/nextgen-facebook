@@ -380,6 +380,21 @@ frequent updates.</p>
 
 = Changelog / Release Notes =
 
+**Version 8.29.7-dev1 (2016/04/22)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added more debugging messages to the NgfbUtil `get_sharing_url()` method and improved home page detection.
+	* Added 'http://ogp.me/ns/article#' to default array of Open Graph namespaces.
+	* Added a meta tag cleanup loop to remove non-og:type related meta tags (for example, removing article meta tags for a product type, etc.).
+
 **Version 8.29.6-1 (2016/04/21)**
 
 Official announcement: N/A
@@ -482,6 +497,10 @@ Official announcement: N/A
 	* Changed the SucomUtil `get_post_object()`, `get_term_object()` and `get_user_object()` methods to static methods.
 
 == Upgrade Notice ==
+
+= 8.29.7-dev1 =
+
+(2016/04/22) Added more debugging messages to the NgfbUtil get_sharing_url() method and improved home page detection.
 
 = 8.29.6-1 =
 
