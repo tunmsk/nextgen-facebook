@@ -380,20 +380,22 @@ frequent updates.</p>
 
 = Changelog / Release Notes =
 
-**Version 8.29.7-dev1 (2016/04/22)**
+**Version 8.29.7-dev2 (2016/04/23)**
 
 Official announcement: N/A
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added a 'video' context to improve duplicate video URL detection.
 * *Bugfixes*
 	* None
 * *Developer Notes*
 	* Added more debugging messages to the NgfbUtil `get_sharing_url()` method and improved home page detection.
 	* Added 'http://ogp.me/ns/article#' to default array of Open Graph namespaces.
 	* Added a meta tag cleanup loop to remove non-og:type related meta tags (for example, removing article meta tags for a product type, etc.).
+	* Added an NgfbUtil `clear_uniq_urls()` method and called at the top of `get_all_images()` and `get_all_videos()`.
+	* Added meta itemprop openinghoursspecification dayofweek / opens / closes / validfrom / validthrough to the meta tags list.
 
 **Version 8.29.6-1 (2016/04/21)**
 
@@ -498,9 +500,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.29.7-dev1 =
+= 8.29.7-dev2 =
 
-(2016/04/22) Added more debugging messages to the NgfbUtil get_sharing_url() method and improved home page detection.
+(2016/04/23) Added more debugging messages to the NgfbUtil get_sharing_url() method and improved home page detection. Added a 'video' context to improve duplicate video URL detection.
 
 = 8.29.6-1 =
 
