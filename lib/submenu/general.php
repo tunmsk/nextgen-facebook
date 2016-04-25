@@ -339,12 +339,12 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 							$schema_types, 'schema_type' ).' for '.$post_type->label.'</p>'."\n";
 
 					$table_rows['schema_type_for_home_page'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Schema Item Type for Home Page',
+					$this->form->get_th_html( _x( 'Default Item Type for Home Page',
 						'option label', 'nextgen-facebook' ), null, 'schema_home_page' ).
 					'<td>'.$this->form->get_select( 'schema_type_for_home_page', $schema_types, 'schema_type' ).'</td>';
 
 					$table_rows['schema_type_for_ptn'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Schema Item Type by Post Type',
+					$this->form->get_th_html( _x( 'Default Item Type by Post Type',
 						'option label', 'nextgen-facebook' ), null, 'schema_type_for_ptn' ).
 					'<td>'.$schema_select.'</td>';
 
