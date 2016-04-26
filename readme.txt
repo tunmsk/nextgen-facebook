@@ -380,7 +380,7 @@ frequent updates.</p>
 
 = Changelog / Release Notes =
 
-**Version 8.29.7-dev3 (2016/04/25)**
+**Version 8.29.7-rc1 (2016/04/25)**
 
 Official announcement: N/A
 
@@ -501,7 +501,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.29.7-dev3 =
+= 8.29.7-rc1 =
 
 (2016/04/25) Added a new "Clear All Cache(s) on Save Settings" option. Included additional Schema Place and LocalBusiness types. Added a 'video' context to improve duplicate video detection.
 
