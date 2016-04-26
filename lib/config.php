@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.29.7-dev3',	// plugin version
+					'version' => '8.29.7-rc1',	// plugin version
 					'opt_version' => '423',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -894,6 +894,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'video:tag',
 					),
 				),
+				// NgfbSchema get_schema_types() flattens the array.
+				// MAKE SURE NOT TO USE DUPLICATE KEYS IN THE ARRAY.
 				'schema_type' => array(
 					'article' => array( 
 						'article' => 'http://schema.org/Article',
