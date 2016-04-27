@@ -264,9 +264,9 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				if ( ! isset( $this->schema_types['filtered'] ) ) {
 					$this->schema_types['filtered'] = (array) apply_filters( $lca.'_schema_types', $this->p->cf['head']['schema_type'] );
 					$this->schema_types['flattened'] = SucomUtil::array_flatten( $this->schema_types['filtered'] );
-					$this->schema_types['parents_index'] = SucomUtil::array_parents_index( $this->schema_types['filtered'] );
+					$this->schema_types['parent_index'] = SucomUtil::array_parent_index( $this->schema_types['filtered'] );
 					ksort( $this->schema_types['flattened'] );
-					ksort( $this->schema_types['parents_index'] );
+					ksort( $this->schema_types['parent_index'] );
 					if ( ! empty( $cache_id ) )
 						set_transient( $cache_id, $this->schema_types, $this->p->options['plugin_object_cache_exp'] );
 				}
@@ -313,9 +313,9 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 		public function get_schema_type_parents( $child_id ) {
 			$return = array();
 			$schema_types =& $this->get_schema_types( true );
-			$parents_index =& $this->schema_types['parents_index'];	// shortcut
-			if ( isset( $parents_index[$child_id] ) ) {
-				$parent_id = $parents_index[$child_id];
+			$parent_index =& $this->schema_types['parent_index'];	// shortcut
+			if ( isset( $parent_index[$child_id] ) ) {
+				$parent_id = $parent_index[$child_id];
 				if ( isset( $schema_types[$parent_id] ) ) {
 					if ( $parent_id !== $child_id )	// prevent infinite loops
 						$return = array_merge( $return, $this->get_schema_type_parents( $parent_id ) );
@@ -323,6 +323,17 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			}
 			$return[] = $child_id;	// always add child after parent
 			return $return;
+		}
+
+		public function count_schema_type_children( $type_id ) {
+			$count = 1;
+			$schema_types =& $this->get_schema_types( true );
+			$parent_index =& $this->schema_types['parent_index'];	// shortcut
+			foreach ( $parent_index as $child_id => $parent_id ) {
+				if ( $parent_id === $type_id )
+					$count += $this->count_schema_type_children( $child_id );
+			}
+			return $count;
 		}
 
 		public function has_json_data_filter( array &$mod, $item_type = '' ) {
