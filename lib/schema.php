@@ -283,10 +283,8 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 
 			$select = array();
 
-			foreach ( $schema_types as $type_id => $label ) {
-				$label = preg_replace( '/^.*:\/\//', '', $label );	// remove the protocol
-				$select[$type_id] = $label.' ('.$type_id.')';
-			}
+			foreach ( $schema_types as $type_id => $label )
+				$select[$type_id] = $type_id.' ('.$label.')';
 
 			if ( defined( 'SORT_NATURAL' ) )
 				asort( $select, SORT_NATURAL );
