@@ -467,19 +467,31 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 							$text = sprintf( __( 'URLs shorter than this length will not be shortened (the default suggested by Twitter is %d characters).', 'nextgen-facebook' ), $this->p->opt->get_defaults( 'plugin_min_shorten' ) );
 							break;
 						case 'tooltip-plugin_bitly_login':
-							$text = sprintf( __( 'The username for your Bit.ly API key (see <a href="%s" target="_blank">Your Bit.ly API Key</a> for details).', 'nextgen-facebook' ), 'https://bitly.com/a/your_api_key' );
+							$text = sprintf( __( 'The username for your Bitly API key (see <a href="%s" target="_blank">Your Bitly API Key</a> for details).', 'nextgen-facebook' ), 'https://bitly.com/a/your_api_key' );
 							break;
 						case 'tooltip-plugin_bitly_api_key':
-							$text = sprintf( __( 'To use Bit.ly as your preferred shortening service, you must provide the Bit.ly API key for this website (see <a href="%s" target="_blank">Your Bit.ly API Key</a> for details).', 'nextgen-facebook' ), 'https://bitly.com/a/your_api_key' );
-							break;
-						case 'tooltip-plugin_owly_api_key':
-							$text = sprintf( __( 'To use Ow.ly as your preferred shortening service, you must provide the Ow.ly API key for this website (complete this form to <a href="%s" target="_blank">Request Ow.ly API Access</a>).', 'nextgen-facebook' ), 'https://docs.google.com/forms/d/1Fn8E-XlJvZwlN4uSRNrAIWaY-nN_QA3xAHUJ7aEF7NU/viewform' );
+							$text = sprintf( __( 'To use Bitly as your preferred shortening service, you must provide the Bitly API key for this website (see <a href="%s" target="_blank">Your Bitly API Key</a> for details).', 'nextgen-facebook' ), 'https://bitly.com/a/your_api_key' );
 							break;
 						case 'tooltip-plugin_google_api_key':
 							$text = sprintf( __( 'The Google BrowserKey value for this website (project). If you don\'t already have a Google project, visit <a href="%s" target="_blank">Google\'s Cloud Console</a> and create a new project for your website (use the \'Select a project\' drop-down).', 'nextgen-facebook' ), 'https://console.developers.google.com/start' );
 							break;
 						case 'tooltip-plugin_google_shorten':
 							$text = sprintf( __( 'In order to use Google\'s URL Shortener API service, you must <em>Enable</em> the URL Shortener API from <a href="%s" target="_blank">Google\'s Cloud Console</a> (under the project\'s <em>API &amp; auth / APIs / URL Shortener API</em> settings page).', 'nextgen-facebook' ), 'https://console.developers.google.com/start' ).' '.__( 'Confirm that you have enabled Google\'s URL Shortener API service by checking the \'Yes\' option value.', 'nextgen-facebook' );
+							break;
+						case 'tooltip-plugin_owly_api_key':
+							$text = sprintf( __( 'To use Ow.ly as your preferred shortening service, you must provide the Ow.ly API key for this website (complete this form to <a href="%s" target="_blank">Request Ow.ly API Access</a>).', 'nextgen-facebook' ), 'https://docs.google.com/forms/d/1Fn8E-XlJvZwlN4uSRNrAIWaY-nN_QA3xAHUJ7aEF7NU/viewform' );
+							break;
+						case 'tooltip-plugin_yourls_api_url':
+							$text = sprintf( __( 'The URL to <a href="%1$s" target="_blank">Your Own URL Shortener</a> (YOURLS) shortening service.', 'nextgen-facebook' ), 'http://yourls.org/' );
+							break;
+						case 'tooltip-plugin_yourls_username':
+							$text = sprintf( __( 'If <a href="%1$s" target="_blank">Your Own URL Shortener</a> (YOURLS) shortening service is private, enter a configured username (see YOURLS Token for an alternative to the username / password options).', 'nextgen-facebook' ), 'http://yourls.org/' );
+							break;
+						case 'tooltip-plugin_yourls_password':
+							$text = sprintf( __( 'If <a href="%1$s" target="_blank">Your Own URL Shortener</a> (YOURLS) shortening service is private, enter a configured user password (see YOURLS Token for an alternative to the username / password options).', 'nextgen-facebook' ), 'http://yourls.org/' );
+							break;
+						case 'tooltip-plugin_yourls_token':
+							$text = sprintf( __( 'If <a href="%1$s" target="_blank">Your Own URL Shortener</a> (YOURLS) shortening service is private, you can use a token string for authentication instead of a username / password combination.', 'nextgen-facebook' ), 'http://yourls.org/' );
 							break;
 						default:
 							$text = apply_filters( $lca.'_messages_tooltip_plugin', $text, $idx, $info );

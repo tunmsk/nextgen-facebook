@@ -12,6 +12,7 @@
  * class will affect all other button layouts.
  */
 .ngfb-buttons { 
+	visibility:visible;
 	box-sizing:content-box;
 }
 .ngfb-buttons img { 
