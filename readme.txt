@@ -380,14 +380,14 @@ frequent updates.</p>
 
 = Changelog / Release Notes =
 
-**Version 8.30.0-dev1 (2016/05/04)**
+**Version 8.30.0-dev2 (2016/05/05)**
 
 Official announcement: N/A
 
 * *New Features*
 	* Added support for [Your Own URL Shortener](https://yourls.org/) (YOURLS) (Pro version).
 * *Improvements*
-	* None
+	* Added support for bbPress topics in BuddyPress groups (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -514,9 +514,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.30.0-dev1 =
+= 8.30.0-dev2 =
 
-(2016/05/04) Added support for Your Own URL Shortener (YOURLS) https://yourls.org/ (Pro version).
+(2016/05/05) Added support for Your Own URL Shortener (YOURLS) https://yourls.org/ (Pro version).
 
 = 8.29.7-1 =
 
