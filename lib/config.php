@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.30.0-dev1',	// plugin version
-					'opt_version' => '424',		// increment when changing default options
+					'version' => '8.30.0-dev2',	// plugin version
+					'opt_version' => '425',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -455,10 +455,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_columns_post' => 1,
 					'plugin_columns_taxonomy' => 1,
 					'plugin_columns_user' => 1,
-					'plugin_add_to_post' => 1,
-					'plugin_add_to_page' => 1,
 					'plugin_add_to_attachment' => 1,
+					'plugin_add_to_page' => 1,
+					'plugin_add_to_post' => 1,
+					'plugin_add_to_product' => 1,
+					'plugin_add_to_reply' => 0,	// bbpress
 					'plugin_add_to_taxonomy' => 1,
+					'plugin_add_to_topic' => 0,	// bbpress
 					'plugin_add_to_user' => 1,
 					'plugin_add_tab_preview' => 1,
 					'plugin_add_tab_tags' => 1,
