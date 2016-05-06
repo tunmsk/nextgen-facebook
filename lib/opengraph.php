@@ -129,9 +129,13 @@ if ( ! class_exists( 'NgfbOpengraph' ) ) {
 					$og['og:type'] = 'article';
 
 					// meta tag not defined or value is null
-					if ( ! isset( $og['article:author'] ) )
-						// returns the author name for the pinterest crawler
+					if ( ! isset( $og['article:author'] ) ) {
+						if ( $this->p->debug->enabled ) {
+							$this->p->debug->log( 'getting name / url for article:author meta tag' );
+							$this->p->debug->log( 'using default author id '.$def_author_id );
+						}
 						$og['article:author'] = $this->p->m['util']['user']->get_og_profile_urls( $def_author_id, $crawler_name );
+					}
 
 				// default for everything else is 'website'
 				} else $og['og:type'] = 'website';
@@ -178,11 +182,15 @@ if ( ! class_exists( 'NgfbOpengraph' ) ) {
 				// meta tag not defined or value is null
 				if ( ! isset( $og['article:author'] ) ) {
 					if ( $mod['is_post'] ) {
-						if ( ! empty( $mod['post_author'] ) )
-							// returns the author name for the pinterest crawler
-							$og['article:author'] = $this->p->m['util']['user']->get_og_profile_urls( $mod['post_author'], $crawler_name );
-						elseif ( $def_author_id = $this->p->util->get_default_author_id( 'og' ) )
+						if ( $this->p->debug->enabled )
+							$this->p->debug->log( 'getting name / url for article:author meta tag' );
+						if ( $author_id = apply_filters( $lca.'_post_author_id', $mod['post_author'] ) ) {
+							$og['article:author'] = $this->p->m['util']['user']->get_og_profile_urls( $author_id, $crawler_name );
+						} elseif ( $def_author_id = $this->p->util->get_default_author_id( 'og' ) ) {
+							if ( $this->p->debug->enabled )
+								$this->p->debug->log( 'using default author id '.$def_author_id );
 							$og['article:author'] = $this->p->m['util']['user']->get_og_profile_urls( $def_author_id, $crawler_name );
+						}
 					}
 				}
 
