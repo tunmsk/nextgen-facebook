@@ -74,6 +74,9 @@ if ( ! class_exists( 'NgfbUser' ) ) {
 		}
 
 		public function get_mod( $mod_id ) {
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
+
 			$mod = NgfbMeta::$mod_array;
 			$mod['id'] = $mod_id;
 			$mod['name'] = 'user';
