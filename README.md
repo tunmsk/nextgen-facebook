@@ -132,7 +132,7 @@
 <li>File caching for social sharing button images and JavaScript, maximizing performance on VPS and dedicated hardware hosting platforms.</li>
 <li>A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).</li>
 <li>Dynamic button language switching based on the current WordPress locale.</li>
-<li>URL shortening with Bitly or Google for URLs in Tweet texts.</li>
+<li>URL shortening with Bitly, Google, Ow.ly, TinyURL, or YOURLS "Shortlink" and Tweet text URLs.</li>
 <li>Ability to include / exclude sharing buttons by post type.</li>
 <li>Selection of preset button options by location (content, excerpt, shortcode, widget, etc.).</li>
 <li>A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).</li>
@@ -144,7 +144,7 @@
 <ul>
 <li>All in One SEO Pack</li>
 <li>bbPress</li>
-<li>BuddyPress</li>
+<li>BuddyPress (including Group Forum Topics)</li>
 <li>BuddyPress rtMedia</li>
 <li>Easy Digital Downloads</li>
 <li>HeadSpace2 SEO</li>
@@ -160,12 +160,15 @@
 <li><strong>Supported Service APIs</strong>
 
 <ul>
+<li>Bitly</li>
+<li><a href="https://goo.gl/">Google URL Shortener</a></li>
 <li>Gravatar Images</li>
-<li>Bitly Shortener</li>
-<li>Google Shortener</li>
+<li>Ow.ly</li>
 <li>Slideshare Presentations</li>
+<li>TinyURL</li>
 <li>Vimeo Videos</li>
 <li>Wistia Videos</li>
+<li><a href="http://yourls.org/">Your Own URL Shortener</a> (YOURLS)</li>
 <li>Youtube Videos and Playlists</li>
 </ul></li>
 </ul></li>

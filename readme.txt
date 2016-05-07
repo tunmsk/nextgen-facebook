@@ -116,7 +116,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 * File caching for social sharing button images and JavaScript, maximizing performance on VPS and dedicated hardware hosting platforms.
 * A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).
 * Dynamic button language switching based on the current WordPress locale.
-* URL shortening with Bitly or Google for URLs in Tweet texts.
+* URL shortening with Bitly, Google, Ow.ly, TinyURL, or YOURLS "Shortlink" and Tweet text URLs.
 * Ability to include / exclude sharing buttons by post type.
 * Selection of preset button options by location (content, excerpt, shortcode, widget, etc.).
 * A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).
@@ -124,7 +124,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 	* **Supported 3rd Party Plugins**
 		* All in One SEO Pack
 		* bbPress
-		* BuddyPress
+		* BuddyPress (including Group Forum Topics)
 		* BuddyPress rtMedia
 		* Easy Digital Downloads
 		* HeadSpace2 SEO
@@ -137,12 +137,15 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 		* Yoast SEO (aka WordPress SEO)
 		* Yotpo Social Reviews for WooCommerce
 	* **Supported Service APIs**
+		* Bitly
+		* [Google URL Shortener](https://goo.gl/)
 		* Gravatar Images
-		* Bitly Shortener
-		* Google Shortener
+		* Ow.ly
 		* Slideshare Presentations
+		* TinyURL
 		* Vimeo Videos
 		* Wistia Videos
+		* [Your Own URL Shortener](http://yourls.org/) (YOURLS)
 		* Youtube Videos and Playlists
 
 <blockquote>
