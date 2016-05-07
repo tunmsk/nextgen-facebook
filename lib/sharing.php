@@ -238,10 +238,10 @@ jQuery("#ngfb-sidebar-header").click( function(){
 				$this->p->cf['sharing']['show_on'], null );
 
 			foreach( $show_on as $type_id => $type_name ) {
-				$transients['NgfbSharing::get_buttons'][] = 'locale:'.$locale.'_post:'.$post_id.'_type:'.$type_id;
-				$transients['NgfbSharing::get_buttons'][] = 'locale:'.$locale.'_post:'.$post_id.'_type:'.$type_id.'_prot:https';
-				$transients['NgfbSharing::get_buttons'][] = 'locale:'.$locale.'_post:'.$post_id.'_type:'.$type_id.'_mobile:true';
-				$transients['NgfbSharing::get_buttons'][] = 'locale:'.$locale.'_post:'.$post_id.'_type:'.$type_id.'_mobile:true_prot:https';
+				$transients[__CLASS__.'::get_buttons'][] = 'locale:'.$locale.'_post:'.$post_id.'_type:'.$type_id;
+				$transients[__CLASS__.'::get_buttons'][] = 'locale:'.$locale.'_post:'.$post_id.'_type:'.$type_id.'_prot:https';
+				$transients[__CLASS__.'::get_buttons'][] = 'locale:'.$locale.'_post:'.$post_id.'_type:'.$type_id.'_mobile:true';
+				$transients[__CLASS__.'::get_buttons'][] = 'locale:'.$locale.'_post:'.$post_id.'_type:'.$type_id.'_mobile:true_prot:https';
 			}
 
 			return $transients;

@@ -77,10 +77,8 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteBuffer' ) ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Add via @username',
 				'option label (short)', 'nextgen-facebook' ), 'short', null,
-			'Append the website\'s @username to the tweet (see the '.$this->p->util->get_admin_url( 'general#sucom-tabset_pub-tab_twitter', 'Twitter options tab' ).' on the General Settings page).' ).
-			( $this->p->check->aop() == true ? 
-				'<td>'.$form->get_checkbox( 'buffer_via' ).'</td>' :
-				'<td class="blank">'.$form->get_no_checkbox( 'buffer_via' ).'</td>' );
+			sprintf( __( 'Append the website\'s business @username to the tweet (see the <a href="%1$s">Twitter</a> options tab on the %2$s settings page).', 'nextgen-facebook' ), $this->p->util->get_admin_url( 'general#sucom-tabset_pub-tab_twitter' ), _x( 'General', 'lib file description', 'nextgen-facebook' ) ) ).
+			'<td>'.$form->get_checkbox( 'buffer_via' ).'</td>';
 
 			return $table_rows;
 		}
@@ -179,9 +177,10 @@ if ( ! class_exists( 'NgfbWebsiteBuffer' ) ) {
 			}
 
 			if ( ! array_key_exists( 'via', $atts ) ) {
-				if ( ! empty( $opts['buffer_via'] ) && $this->p->check->aop() )
-					$atts['via'] = preg_replace( '/^@/', '', $opts['tc_site'] );
-				else $atts['via'] = '';
+				if ( ! empty( $opts['buffer_via'] ) ) {
+					$key_locale = SucomUtil::get_key_locale( 'tc_site', $opts );
+					$atts['via'] = preg_replace( '/^@/', '', $opts[$key_locale] );
+				} else $atts['via'] = '';
 			}
 
 			// hashtags are included in the caption instead
