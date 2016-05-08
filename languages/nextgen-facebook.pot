@@ -1289,7 +1289,7 @@ msgctxt "option label"
 msgid "Position in Woo Short Text"
 msgstr ""
 
-#: lib/gpl/forum/bbpress.php:115 lib/pro/forum/bbpress.php:324
+#: lib/gpl/forum/bbpress.php:115 lib/pro/forum/bbpress.php:335
 msgctxt "option label"
 msgid "Position in bbPress Single"
 msgstr ""
@@ -2389,32 +2389,32 @@ msgid ""
 "is disabled and/or a known SEO plugin has been detected."
 msgstr ""
 
-#: lib/pro/forum/bbpress.php:92 lib/pro/forum/bbpress.php:153
+#: lib/pro/forum/bbpress.php:93 lib/pro/forum/bbpress.php:154
 msgctxt "bbpress single user description"
 msgid "%s's Profile"
 msgstr ""
 
-#: lib/pro/forum/bbpress.php:159
+#: lib/pro/forum/bbpress.php:160
 msgctxt "bbpress single user description"
 msgid "%s's Topics Started"
 msgstr ""
 
-#: lib/pro/forum/bbpress.php:163
+#: lib/pro/forum/bbpress.php:164
 msgctxt "bbpress single user description"
 msgid "%s's Replies Created"
 msgstr ""
 
-#: lib/pro/forum/bbpress.php:167
+#: lib/pro/forum/bbpress.php:168
 msgctxt "bbpress single user description"
 msgid "%s's Favorites"
 msgstr ""
 
-#: lib/pro/forum/bbpress.php:171
+#: lib/pro/forum/bbpress.php:172
 msgctxt "bbpress single user description"
 msgid "%s's Subscriptions"
 msgstr ""
 
-#: lib/pro/forum/bbpress.php:175
+#: lib/pro/forum/bbpress.php:176
 msgctxt "bbpress single user description"
 msgid "Edit %s's Profile"
 msgstr ""
