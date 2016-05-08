@@ -395,7 +395,8 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Renamed the 'ngfb_text_filter_has_removed' to 'ngfb_text_filter_has_changes_before'.
+	* Renamed the 'ngfb_text_filter_has_added' to 'ngfb_text_filter_has_changes_after'.
 
 **Version 8.29.7-1 (2016/04/27)**
 
