@@ -10,9 +10,6 @@ if ( ! defined( 'ABSPATH' ) )
 
 if ( ! class_exists( 'NgfbMeta' ) ) {
 
-	/*
-	 * This class is extended by NgfbPost, NgfbUser, and NgfbTaxonomy.
-	 */
 	class NgfbMeta {
 
 		protected $p;
@@ -38,6 +35,7 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 			'post_type' => false,
 			'post_status' => false,
 			'post_author' => false,
+			'post_coauthors' => array(),
 			/*
 			 * Term
 			 */

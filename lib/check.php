@@ -217,8 +217,11 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 							if ( $is_admin && $ret['ssb'] === true )
 								$ret[$sub]['*'] = $ret[$sub][$id] = true;
 							break;
+						case 'util-coauthors':
+							$chk['plugin'] = 'co-authors-plus/co-authors-plus.php';
+							break;
 						case 'util-post':
-						case 'util-taxonomy':
+						case 'util-term':
 						case 'util-user':
 							$ret[$sub]['*'] = $ret[$sub][$id] = true;
 							break;

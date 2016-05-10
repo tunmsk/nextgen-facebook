@@ -161,8 +161,8 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 
 					NgfbUser::delete_metabox_prefs( $user->ID );
 				}
-				foreach ( NgfbTaxonomy::get_public_terms() as $term_id )
-					NgfbTaxonomy::delete_term_meta( $term_id, $var_const['NGFB_META_NAME'] );
+				foreach ( NgfbTerm::get_public_terms() as $term_id )
+					NgfbTerm::delete_term_meta( $term_id, $var_const['NGFB_META_NAME'] );
 			}
 
 			// delete transients
