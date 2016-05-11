@@ -78,7 +78,7 @@ if ( ! class_exists( 'NgfbUser' ) ) {
 				$this->p->debug->mark();
 
 			$mod = NgfbMeta::$mod_array;
-			$mod['id'] = $mod_id;
+			$mod['id'] = (int) $mod_id;
 			$mod['name'] = 'user';
 			$mod['obj'] =& $this;
 			/*

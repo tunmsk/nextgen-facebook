@@ -35,7 +35,7 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 			'post_type' => false,
 			'post_status' => false,
 			'post_author' => false,
-			'post_coauthors' => array(),
+			'post_coauthors' => false,
 			/*
 			 * Term
 			 */

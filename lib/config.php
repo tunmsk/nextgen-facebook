@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.31.0-dev1',	// plugin version
+					'version' => '8.31.0-dev2',	// plugin version
 					'opt_version' => '425',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -132,7 +132,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'edd' => '(plugin) Easy Digital Downloads',
 								'marketpress' => '(plugin) MarketPress',
 								'woocommerce' => '(plugin) WooCommerce',
-								'wpecommerce' => '(plugin) WP e-Commerce',
+								'wpecommerce' => '(plugin) WP eCommerce',
 								'yotpowc' => '(plugin) Yotpo Social Reviews for WooCommerce',
 							),
 							'forum' => array(
@@ -144,7 +144,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'media' => array(
 								'gravatar' => '(api) Author Gravatar Image',
 								'ngg' => '(plugin) NextGEN Gallery',
-								'rtmedia' => '(plugin) BuddyPress rtMedia',
+								'rtmedia' => '(plugin) rtMedia for WordPress, BuddyPress and bbPress',
 								'slideshare' => '(api) Slideshare API',
 								'upscale' => '(tool) WP Image Upscaling',
 								'vimeo' => '(api) Vimeo Video API',
@@ -160,6 +160,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'buddypress' => '(plugin) BuddyPress',
 							),
 							'util' => array(
+								'coauthors' => '(plugin) Co-Authors Plus',
 								'language' => '(tool) WP Locale to Publisher Language',
 								'shorten' => '(api) URL Shortening Service APIs',
 								'post' => '(tool) Custom Post Meta',
