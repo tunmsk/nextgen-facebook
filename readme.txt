@@ -122,31 +122,32 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 * A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).
 * Integrates with **3rd party plugins and services** for additional image, video, product, and content information (see [About Pro Modules](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/) and [Integration Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/) for details). The following modules are included with the Pro version, and are automatically loaded if/when the supported plugins and/or services are detected.
 	* **Supported 3rd Party Plugins**
-		* All in One SEO Pack
-		* bbPress
-		* BuddyPress (including Group Forum Topics)
-		* BuddyPress rtMedia
-		* Easy Digital Downloads
-		* HeadSpace2 SEO
-		* NextGEN Gallery
-		* MarketPress - WordPress eCommerce
-		* Polylang
-		* <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce versions 1 and 2</a>
-		* WP e-Commerce
-		* <a href="https://wordpress.org/plugins/rest-api/">WordPress REST API version 2</a>
-		* Yoast SEO (aka WordPress SEO)
-		* Yotpo Social Reviews for WooCommerce
+		* [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/)
+		* [bbPress](https://wordpress.org/plugins/bbpress/)
+		* [BuddyPress](https://wordpress.org/plugins/buddypress/) (including Group Forum Topics)
+		* [rtMedia for WordPress, BuddyPress and bbPress](https://wordpress.org/plugins/buddypress-media/)
+		* [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/)
+		* [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/)
+		* [HeadSpace2 SEO](https://wordpress.org/plugins/headspace2/)
+		* [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/)
+		* [MarketPress - WordPress eCommerce](https://wordpress.org/plugins/wordpress-ecommerce/)
+		* [Polylang](https://wordpress.org/plugins/polylang/)
+		* [WooCommerce](https://wordpress.org/plugins/woocommerce/) (version 1 and 2)
+		* [WP eCommerce](https://wordpress.org/plugins/wp-e-commerce/)
+		* [WordPress REST API](https://wordpress.org/plugins/rest-api/) (version 2)
+		* [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) (aka WordPress SEO)
+		* [Yotpo Social Reviews for WooCommerce](https://wordpress.org/plugins/yotpo-social-reviews-for-woocommerce/)
 	* **Supported Service APIs**
-		* Bitly
+		* [Bitly](https://bitly.com/)
 		* [Google URL Shortener](https://goo.gl/)
-		* Gravatar Images
-		* Ow.ly
-		* Slideshare Presentations
-		* TinyURL
-		* Vimeo Videos
-		* Wistia Videos
+		* [Gravatar](https://en.gravatar.com/) (Author Image)
+		* [Ow.ly](http://ow.ly/)
+		* [Slideshare](http://www.slideshare.net/) Presentations
+		* [TinyURL](http://tinyurl.com/)
+		* [Vimeo](https://vimeo.com/) Videos
+		* [Wistia](http://wistia.com/) Videos
 		* [Your Own URL Shortener](http://yourls.org/) (YOURLS)
-		* Youtube Videos and Playlists
+		* [YouTube](https://www.youtube.com/) Videos and Playlists
 
 <blockquote>
 <p><a href="http://wpsso.com/extend/plugins/wpsso/">Purchase the Pro version</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
