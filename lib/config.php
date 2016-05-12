@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.31.0-dev2',	// plugin version
+					'version' => '8.31.0-dev3',	// plugin version
 					'opt_version' => '425',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -1228,6 +1228,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
+			require_once( NGFB_PLUGINDIR.'lib/com/exception.php' );	// extends Exception
 			require_once( NGFB_PLUGINDIR.'lib/com/util.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/cache.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/script.php' );
