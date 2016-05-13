@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.31.0-dev5\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.31.0-rc1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -3025,15 +3025,15 @@ msgctxt "image size label"
 msgid "Twitter Large Image Card"
 msgstr ""
 
-#: lib/user.php:406
+#: lib/user.php:403
 msgid "AIM"
 msgstr ""
 
-#: lib/user.php:407
+#: lib/user.php:404
 msgid "Yahoo IM"
 msgstr ""
 
-#: lib/user.php:408
+#: lib/user.php:405
 msgid "Jabber / Google Talk"
 msgstr ""
 
