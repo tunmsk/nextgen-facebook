@@ -34,27 +34,22 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 * Adds Open Graph / Rich Pin meta tags (Facebook, Google+, Pinterest, LinkedIn, etc.).
 * Twitter Card meta tags:
-	* [App Card](https://dev.twitter.com/cards/types/app) (requires the [WPSSO](https://wordpress.org/plugins/wpsso/) plugin and [WPSSO Mobile App Meta](https://wordpress.org/plugins/wpsso-am/) extension)
 	* [Summary Card with Large Image](https://dev.twitter.com/cards/types/summary-large-image)
 	* [Summary Card](https://dev.twitter.com/cards/types/summary)
-	* [Player Card](https://dev.twitter.com/cards/types/player) is provided with the Pro version (as it requires video discovery modules available only in the Pro version).
-	* [Photo Card](https://dev.twitter.com/cards/types/photo), [Gallery Card](https://dev.twitter.com/cards/types/gallery), and [Product Card](https://dev.twitter.com/cards/types/product) were deprecated by Twitter on July 3rd, 2015 and are no longer supported. 
+	* [Player Card](https://dev.twitter.com/cards/types/player) is available in the Pro version (as it requires video discovery modules, which are provided with the Pro version).
 * Support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 * Support for featured, attached, gallery shortcode, and/or image HTML tags in content.
-* Configurable image sizes for Open Graph (Facebook, LinkedIn, etc.) and Pinterest.
-* Customizable image dimensions for each Twitter Card type.
+* Customizable image dimensions for Facebook / Open Graph, Pinterest, Schema and each Twitter Card type.
 * Fallback to image alt values if the content and except do not include any text.
 * Optional fallback to a default image and video for index and search webpages.
 * Validates image dimensions and aspect ratios for reliable sharing results.
 * Auto-regeneration of inaccurate / missing WordPress image sizes.
 * Fully renders content (including shortcodes) for accurate description texts.
-* Support of WordPress and/or SEO titles for Posts and Pages.
 * Configurable title separator character (hyphen by default).
-* Configurable title and description lengths for different contexts (Open Graph, Twitter Card, SEO).
-* Includes author and publisher profile URLs and markup for Facebook and Google Search.
-* Includes hashtags from Post and Page WordPress tags.
-* Includes the author's name for Pinterest Rich Pins.
-* Includes a Google / SEO description meta tag, if a known SEO plugin is not detected.
+* Configurable title and description lengths (Open Graph, Twitter Card, SEO).
+* Includes author and publisher markup for Facebook, PInterest, and Google.
+* Includes WordPress tags as hashtags (including a configurable maximum).
+* Includes a Google / SEO description meta tag (if an SEO plugin is not detected).
 * Includes <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite Site Name</a> in schema.org JSON-LD format for Google Search and their <em>Knowledge Graph</em>.
 * Configurable website / business social accounts for JSON-LD markup:
 	* Facebook Business Page URL
@@ -93,6 +88,50 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 	* Tumblr
 	* Twitter
 	* WhatsApp (for Mobile Devices)
+
+**NGFB Free / Basic Example Meta Tags**
+
+`
+<link rel="author" href="https://plus.google.com/u/1/+JSMorisset"/>
+<link rel="publisher" href="https://plus.google.com/+SurniaUlula"/>
+<meta property="fb:app_id" content="525239184171769"/>
+<meta property="og:url" content="http://test.surniaulula.com/2013/03/15/tiled-gallery/"/>
+<meta property="og:type" content="article"/>
+<!-- article:author:1 --><meta property="article:author" content="https://www.facebook.com/jsmoriss"/>
+<meta property="article:section" content="IT"/>
+<meta property="article:published_time" content="2013-03-15T17:23:27+00:00"/>
+<meta property="article:modified_time" content="2016-05-13T11:02:32+00:00"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Test Site"/>
+<meta property="og:title" content="Tiled Gallery"/>
+<meta property="og:description" content="This is a test for Jetpack&#039;s Tiled Gallery. You can install Jetpack or Slim Jetpack to test it out. This is some text after the Tiled Gallery just to make sure that everything spaces nicely."/>
+<meta property="article:publisher" content="https://www.facebook.com/SurniaUlulaCom/"/>
+<!-- og:image:1 --><meta property="og:image" content="http://test.surniaulula.com/wp-content/uploads/2013/03/captain-america-600x315.jpg"/>
+<!-- og:image:1 --><meta property="og:image:width" content="600"/>
+<!-- og:image:1 --><meta property="og:image:height" content="315"/>
+<meta name="twitter:domain" content="test.surniaulula.com"/>
+<meta name="twitter:site" content="@surniaululacom"/>
+<meta name="twitter:title" content="Tiled Gallery"/>
+<meta name="twitter:description" content="This is a test for Jetpack&#039;s Tiled Gallery. You can install Jetpack or Slim Jetpack to test it out. This is some text after the Tiled Gallery just to make sure that everything spaces nicely."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://test.surniaulula.com/wp-content/uploads/2013/03/captain-america-800x1212.jpg"/>
+<meta itemprop="url" content="http://test.surniaulula.com/2013/03/15/tiled-gallery/"/>
+<meta itemprop="name" content="Tiled Gallery"/>
+<meta itemprop="description" content="This is a test for Jetpack&#039;s Tiled Gallery. You can install Jetpack or Slim Jetpack to test it out. This is some text after the Tiled Gallery just to make sure that everything spaces nicely."/>
+<meta itemprop="datepublished" content="2013-03-15T17:23:27+00:00"/>
+<meta itemprop="datemodified" content="2016-05-13T11:02:32+00:00"/>
+<meta name="description" content="This is a test for Jetpack&#039;s Tiled Gallery. You can install Jetpack or Slim Jetpack to test it out. This is some text after the Tiled Gallery just to..."/>
+<noscript itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+	<meta itemprop="url" content="http://test.surniaulula.com/wp-content/uploads/2013/03/captain-america-800x1212.jpg"/>
+	<meta itemprop="width" content="800"/>
+	<meta itemprop="height" content="1212"/>
+</noscript>
+<noscript itemprop="author" itemscope itemtype="http://schema.org/Person">
+	<meta itemprop="url" content="http://surniaulula.com/"/>
+	<meta itemprop="name" content="JS Morisset"/>
+	<meta itemprop="description" content="PHP developer and author of several Pro / Freemium plugins for WordPress."/>
+</noscript>
+`
 
 <blockquote>
 <p>Download the Free version from <a href="http://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>.</p>
