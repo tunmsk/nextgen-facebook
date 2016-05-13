@@ -225,13 +225,13 @@ NGFB provides <a href="https://developers.google.com/structured-data/customize/s
 
 = User Profile Social Contacts =
 
-NGFB allows you to customize (Pro version) the field names, label, and add / remove the following contacts from the user profile page:
+NGFB allows you to customize (Pro version) the field names, label, and add / remove the following contacts on user profile pages, including [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) guest author profiles:
 
 * AIM
 * Facebook URL
+* Google Talk
 * Google+ URL
 * Instagram URL
-* Jabber / Google Talk
 * LinkedIn URL
 * MySpace URL
 * Pinterest URL
@@ -420,7 +420,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.31.0-dev5 (2016/05/13)**
+**Version 8.31.0-rc1 (2016/05/13)**
 
 Official announcement: N/A
 
@@ -450,7 +450,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.31.0-dev5 =
+= 8.31.0-rc1 =
 
 (2016/05/13) Renamed the 'taxonomy' module and all related filters to 'term'. Categorized the display of Free / Pro features in the sidebar metabox. Added support for the Co-Authors Plus plugin (including Guest Authors).
 
