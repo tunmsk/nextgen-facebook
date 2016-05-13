@@ -22,12 +22,6 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 **NGFB automatically retrieves and uses information from a wide range or sources**, including All in One SEO Pack, bbPress, BuddyPress, BuddyPress rtMedia, Easy Digital Downloads, HeadSpace2 SEO, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, Yoast SEO (aka WordPress SEO), WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, extends the WordPress REST API version 2, and much more.
 
-= Available in Multiple Languages =
-
-* English (US)
-* French (France)
-* More to come...
-
 = Quick List of Features =
 
 **NGFB Free / Basic Features**
@@ -90,6 +84,8 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 	* WhatsApp (for Mobile Devices)
 
 **NGFB Free / Basic Example Meta Tags**
+
+Example meta tags from the *Tiled Gallery* post provided by the [WP Test](http://wptest.io/) data.
 
 `
 <link rel="author" href="https://plus.google.com/u/1/+JSMorisset"/>
@@ -250,6 +246,12 @@ NGFB allows you to customize (Pro version) the field names, label, and add / rem
 NGFB adds [Open Graph](http://ogp.me/) (Facebook), [Pinterest Rich Pins](http://developers.pinterest.com/rich_pins/), [Twitter Cards](https://dev.twitter.com/docs/cards), and [Search Engine Optimization](http://en.wikipedia.org/wiki/Search_engine_optimization) meta tags to the head section of webpages. These meta tags are used by Google Search and all social websites to describe and display your content correctly (title, description, hashtags, images, videos, product, author profile / authorship, publisher, etc.). NGFB is a complete social sharing solution that uses the *existing* content of your webpages to build HTML meta tags &mdash; There's no need to manually enter / configure any additional values or settings (although many settings and options *are* available). <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/screenshots/">See examples from Google Search, Google+, Facebook, Twitter, Pinterest, StumbleUpon, Tumblr, etc.</a> &mdash; along with screenshots of the NGFB settings pages.
 
 NGFB provides the [Summary](https://dev.twitter.com/cards/types/summary), [Summary with Large Image](https://dev.twitter.com/cards/types/summary-large-image), and [Player](https://dev.twitter.com/cards/types/player) Twitter Cards &mdash; *including configurable image sizes for each card type*. The [Photo](https://dev.twitter.com/cards/types/photo), [Gallery](https://dev.twitter.com/cards/types/gallery), and [Product](https://dev.twitter.com/cards/types/product) Twitter Cards were deprecated by Twitter on July 3rd, 2015.
+
+= Available in Multiple Languages =
+
+* English (US)
+* French (France)
+* More to come...
 
 = 3rd Party Integration (Pro version) =
 
