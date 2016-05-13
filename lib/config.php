@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.31.0-dev4',	// plugin version
-					'opt_version' => '426',		// increment when changing default options
+					'version' => '8.31.0-dev5',	// plugin version
+					'opt_version' => '428',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -419,8 +419,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_itemprop_publisher.name' => 1,
 					'add_meta_itemprop_author.url' => 1,
 					'add_meta_itemprop_author.name' => 1,
+					'add_meta_itemprop_author.description' => 1,
+					'add_meta_itemprop_author.image' => 1,
 					'add_meta_itemprop_contributor.url' => 1,
 					'add_meta_itemprop_contributor.name' => 1,
+					'add_meta_itemprop_contributor.description' => 1,
+					'add_meta_itemprop_contributor.image' => 1,
 					'add_meta_itemprop_address' => 1,
 					'add_meta_itemprop_openinghoursspecification.dayofweek' => 1,
 					'add_meta_itemprop_openinghoursspecification.opens' => 1,
