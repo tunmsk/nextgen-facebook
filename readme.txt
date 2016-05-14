@@ -420,7 +420,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.31.0-rc1 (2016/05/13)**
+**Version 8.31.0-1 (2016/05/14)**
 
 Official announcement: N/A
 
@@ -450,9 +450,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.31.0-rc1 =
+= 8.31.0-1 =
 
-(2016/05/13) Renamed the 'taxonomy' module and all related filters to 'term'. Categorized the display of Free / Pro features in the sidebar metabox. Added support for the Co-Authors Plus plugin (including Guest Authors).
+(2016/05/14) Renamed the 'taxonomy' module and all related filters to 'term'. Categorized the display of Free / Pro features in the sidebar metabox. Added support for the Co-Authors Plus plugin (including Guest Authors).
 
 = 8.30.0-1 =
 
