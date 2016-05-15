@@ -420,6 +420,27 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.31.1-dev1 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added new Open Graph meta tags for WooCommerce (Pro version):
+		* product:sku
+		* product:dimensions
+		* product:weight
+		* product:category 
+		* product:tag
+	* Added new Open Graph meta tags for Easy Digital Downloads (Pro version):
+		* product:category 
+		* product:tag
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.31.0-1 (2016/05/14)**
 
 Official announcement: N/A
@@ -433,28 +454,9 @@ Official announcement: N/A
 * *Developer Notes*
 	* Renamed the 'taxonomy' module and all related filters to 'term'.
 
-**Version 8.30.0-1 (2016/05/08)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added support for [Your Own URL Shortener](https://yourls.org/) (YOURLS) (Pro version).
-* *Improvements*
-	* Added support for bbPress topics in BuddyPress groups (Pro version).
-	* Added 30 more specific types under the http://schema.org/Store type.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Renamed the 'ngfb_text_filter_has_removed' to 'ngfb_text_filter_has_changes_before'.
-	* Renamed the 'ngfb_text_filter_has_added' to 'ngfb_text_filter_has_changes_after'.
-
 == Upgrade Notice ==
 
 = 8.31.0-1 =
 
 (2016/05/14) Renamed the 'taxonomy' module and all related filters to 'term'. Categorized the display of Free / Pro features in the sidebar metabox. Added support for the Co-Authors Plus plugin (including Guest Authors).
-
-= 8.30.0-1 =
-
-(2016/05/08) Added support for Your Own URL Shortener (YOURLS) https://yourls.org/ (Pro version). Added support for bbPress topics in BuddyPress groups (Pro version).
 
