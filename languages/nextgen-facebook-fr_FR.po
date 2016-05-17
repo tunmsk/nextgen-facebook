@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.31.0-1\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.31.1-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2016-05-12 12:14-0400\n"
-"PO-Revision-Date: 2016-05-12 12:19-0400\n"
+"POT-Creation-Date: 2016-05-17 19:04-0400\n"
+"PO-Revision-Date: 2016-05-17 19:15-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -360,6 +360,26 @@ msgstr "Avis %s"
 #: lib/com/script.php:89
 msgid "Use Image"
 msgstr "Utiliser l’image"
+
+#: lib/com/util.php:1215
+msgctxt "option comment"
+msgid "%1$d additional options not shown in %2$s view"
+msgstr "%1$d options supplémentaires ne figurent pas dans la vue %2$s"
+
+#: lib/com/util.php:1218
+msgctxt "option comment"
+msgid "unhide these options"
+msgstr "afficher ces options"
+
+#: lib/com/util.php:1221
+msgctxt "option comment"
+msgid "%1$d additional rows not shown in %2$s view"
+msgstr "%1$d lignes supplémentaires ne figurent pas dans la vue %2$s"
+
+#: lib/com/util.php:1224
+msgctxt "option comment"
+msgid "unhide these rows"
+msgstr "afficher ces lignes"
 
 #: lib/config-gettext-extract.php:3
 msgctxt "metabox tab"
@@ -1237,7 +1257,7 @@ msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr "JavaScript de la barre latérale"
 
-#: lib/gpl/ecom/woocommerce.php:111 lib/pro/ecom/woocommerce.php:332
+#: lib/gpl/ecom/woocommerce.php:111 lib/pro/ecom/woocommerce.php:413
 msgctxt "option label"
 msgid "Position in Woo Short Text"
 msgstr "Position dans le texte Woo Short"
@@ -1815,85 +1835,85 @@ msgctxt "option label"
 msgid "Open Graph Example"
 msgstr "Example Open Graph"
 
-#: lib/meta.php:236
+#: lib/meta.php:247
 msgctxt "option label"
 msgid "Facebook Debugger"
 msgstr "Débogueur Facebook"
 
-#: lib/meta.php:236
+#: lib/meta.php:247
 msgid "Facebook, Pinterest, LinkedIn, Google+, and most social websites use Open Graph meta tags."
 msgstr "Facebook, Pinterest, LinkedIn, Google+ et la majorité des sites sociaux utilisent les balises méta Open Graph."
 
-#: lib/meta.php:236
+#: lib/meta.php:247
 msgid "The Facebook debugger allows you to refresh Facebook's cache, while also validating the Open Graph and Pinterest Rich Pin meta tags."
 msgstr "Le débogueur de Facebook vous permet d'actualiser le cache de Facebook, tout en validant également les balises méta Open Graph et Rich Pin de Pinterest."
 
-#: lib/meta.php:236
+#: lib/meta.php:247
 msgid "The Facebook debugger remains the most stable and reliable method to verify Open Graph meta tags. <strong>You may have to click the \"Fetch new scrape information\" button several times to refresh Facebook's cache</strong>."
 msgstr "Le débogueur Facebook reste la méthode la plus stable et fiable pour vérifier les balises méta Open Graph. <strong>Vous devez cliquer sur le bouton \"Fetch new scrape information\" quelques fois pour actualiser le cache de Facebook</strong>."
 
-#: lib/meta.php:236
+#: lib/meta.php:247
 msgctxt "submit button"
 msgid "Validate Open Graph"
 msgstr "Valider Open Graph"
 
-#: lib/meta.php:238
+#: lib/meta.php:249
 msgctxt "option label"
 msgid "Google Structured Data Testing Tool"
 msgstr "Outil Google de test des données structurées"
 
-#: lib/meta.php:238
+#: lib/meta.php:249
 msgid "Verify that Google can correctly parse your structured data markup (meta tags, Schema, Microdata, and social JSON-LD markup) for Google Search and Google+."
 msgstr "Vérifiez que Google peut analyser correctement votre balisage de données structurées (méta, schéma, microdonnées, et social JSON-LD) pour Google Search et Google+."
 
-#: lib/meta.php:238
+#: lib/meta.php:249
 msgctxt "submit button"
 msgid "Validate Data Markup"
 msgstr "Valider Données Structurées"
 
-#: lib/meta.php:240
+#: lib/meta.php:251
 msgctxt "option label"
 msgid "Pinterest Rich Pin Validator"
 msgstr "Validateur Pinterest de Rich Pin"
 
-#: lib/meta.php:240
+#: lib/meta.php:251
 msgid "Validate the Open Graph / Rich Pin meta tags and apply to have them shown on Pinterest zoomed pins."
 msgstr "Valider les balises méta Open Graph / Rich Pin et appliquent pour les montrés sur les épingles Pinterest agrandies."
 
-#: lib/meta.php:240
+#: lib/meta.php:251
 msgctxt "submit button"
 msgid "Validate Rich Pins"
 msgstr "Valider Rich Pins"
 
-#: lib/meta.php:242
+#: lib/meta.php:253
 msgctxt "option label"
 msgid "Twitter Card Validator"
 msgstr "Vérificateur de carte Twitter"
 
-#: lib/meta.php:242
+#: lib/meta.php:253
 msgid "The Twitter Card Validator does not accept query arguments &ndash; copy-paste the following sharing URL into the validation input field."
 msgstr "Le validateur de carte Twitter n'accepte pas les arguments de requête &ndash; copier-coller l'URL de partage suivant dans le champ d'entrée de validation."
 
-#: lib/meta.php:242
+#: lib/meta.php:253
 msgctxt "submit button"
 msgid "Validate Twitter Card"
 msgstr "Valider carte de Twitter"
 
-#: lib/meta.php:409
+#: lib/meta.php:420
 msgid "Nonce token validation failed for the submitted form (update ignored)."
 msgstr "La validation du jeton Nonce pour le formulaire soumis a échoué (mise à jour ignorée)."
 
-#: lib/meta.php:497
+#: lib/meta.php:508
 msgctxt "column title"
 msgid "Social Img"
 msgstr "Img Social"
 
-#: lib/meta.php:498
+#: lib/meta.php:509
 msgctxt "column title"
 msgid "Social Desc"
 msgstr "Desc Social"
 
-#: lib/meta.php:516
+#: lib/meta.php:527
 msgid "Reload to View"
 msgstr "Pecharger pour voir"
 
@@ -2642,15 +2662,15 @@ msgctxt "image size label"
 msgid "Twitter Large Image Card"
 msgstr "Carte Twitter Grande Image"
 
-#: lib/user.php:406
+#: lib/user.php:407
 msgid "AIM"
 msgstr "AIM"
 
-#: lib/user.php:407
+#: lib/user.php:408
 msgid "Yahoo IM"
 msgstr "Yahoo IM"
 
-#: lib/user.php:408
+#: lib/user.php:409
 msgid "Jabber / Google Talk"
 msgstr "Jabber / Google Talk"
 
@@ -3047,54 +3067,3 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "http://surniaulula.com/"
 msgstr "http://surniaulula.com/"
-
-#~ msgid "If the %1$s plugin is detected, %2$s will load additional integration modules to provide enhanced support and features for %3$s."
-#~ msgstr "Si l'extension %1$s est détecté, %2$s chargera des modules d'intégration supplémentaires pour fournir des fonctionnalités et un soutien accru pour %3$s."
-
-#~ msgid "The debug library is loaded when the <em>Add Hidden Debug Messages</em> option is checked, or one of the debugging <a href=\"%s\" target=\"_blank\">constants</a> is defined."
-#~ msgstr "La librairie de débogage est chargée lorsque l'option <em>Ajout messages de débogage caché</em> est cochée, ou une des <a href=\"%s\" target=\"_blank\">constantes</a> de débogage est définie."
-
-#~ msgid "Add Person social profiles markup to the home page header for Google Search."
-#~ msgstr "Ajouter des balises sociales de profil d'auteur / Personne à l'en-tête des pages Web pour l'engin de recherche Google."
-
-#~ msgid "Add Organization social profiles markup to the home page header for Google Search."
-#~ msgstr "Ajouter des balises sociales de profil d'éditeur / Organisation à l'en-tête des pages Web pour l'engin de recherche Google."
-
-#~ msgid "Add Website markup to the home page header Google Search. The Website markup includes the home page URL, name, alternate name, and search query URL."
-#~ msgstr "Ajouter des balises Site Web a l'en-têtes de la page d'accueil pour l'engin de recherche Google. Les balises Site Web comprend l'URL de la page d'accueil, le nom du site, le nom alternatif, et l'URL de recherche."
-
-#~ msgid "The plugin saves filtered / rendered content to a non-persistant cache (aka <a href=\"%1$s\" target=\"_blank\">WP Object Cache</a>) for re-use within the same page load. You can disable the use of non-persistant cache (not recommended) using one of the available <a href=\"%2$s\" target=\"_blank\">constants</a>."
-#~ msgstr "L'extension enregistre le contenu filtré / rendu dans un cache non-persistant (aka <a href=\"%1$s\" target=\"_blank\">WP cache d'objets</a>) pour réutiliser dans la page courante. Vous pouvez désactiver l'utilisation du cache non-persistant (ceci n'est pas recommandé) avec l'une des <a href=\"%2$s\" target=\"_blank\">constantes</a> disponibles."
-
-#~ msgid "Facebook / Open Graph and Pinterest Rich Pin meta tags are added to the head section of all webpages. You must have a supported eCommerce plugin installed to add <em>Product</em> Rich Pins, including product prices and attributes."
-#~ msgstr "Des balises méta Facebook / Open Graph et Pinterest Rich Pin sont ajoutés à l'en-tête de toutes les pages Web. Vous devez avoir une extension eCommerce supportés pour ajouter des Rich Pins de type <em>Product</em>, y compris les prix et les attributs de ces produits."
-
-#~ msgid "The plugin saves Facebook / Open Graph, Pinterest Rich Pin, Twitter Card meta tags, and JSON-LD markup to a persistant (aka <a href=\"%1$s\" target=\"_blank\">Transient</a>) cache for %2$d seconds. You can adjust the Transient cache expiration value on the <a href=\"%3$s\">%4$s</a> settings page, or disable it completely by using one of the available <a href=\"%5$s\" target=\"_blank\">constants</a>."
-#~ msgstr "L'extension sauvegarde les balises méta Facebook / Open Graph, Pinterest Rich Pin, Twitter Card et JSON-LD dans un cache persistant (aka <a href=\"%1$s\" target=\"_blank\">Transient</a>) pour %2$d secondes. Vous pouvez ajuster la valeur d'expiration du cache persistant dans la page de réglage <a href=\"%3$s\">%4$s</a>, ou désactiver le cache complètement en utilisant l'une des <a href=\"%5$s\" target=\"_blank\">constantes</a> disponibles."
-
-#~ msgid "Twitter Cards extend the standard Facebook / Open Graph and Pinterest Rich Pin meta tags with additional information about your content. Twitter Cards are displayed more prominently on Twitter, allowing you to highlight your content more effectively."
-#~ msgstr "Les cartes Twitter bonifie les standards de balises méta Facebook / Open Graph et Pinterest Rich Pin avec des informations supplémentaires à propos de votre contenu. Les cartes Twitter sont mis en évidence sur Twitter, vous permettant de promouvoir votre contenu plus efficacement."
-
-#~ msgid "Social sharing features include the <a href=\"%1$s\">%2$s</a> and <a href=\"%3$s\">%4$s</a> settings pages, the <em>%5$s</em> tab in the <em>%6$s</em> metabox, along with the social sharing shortcode and widget."
-#~ msgstr "Les fonctionnalités de partage social incluent les pages de réglages <a href=\"%1$s\">%2$s</a> et <a href=\"%3$s\">%4$s</a>, l'onglet <em>%5$s</em> dans la metabox <em>%6$s</em>, ainsi que le shortcode et widget de partage social."
-
-#~ msgid "All social sharing features can be disabled using a <a href=\"%s\" target=\"_blank\">PHP constant</a> in your wp-config.php file."
-#~ msgstr "Toutes les fonctionnalités de partage social peuvent être désactivés en utilisant une <a href=\"%s\" target=\"_blank\">constante PHP</a> dans votre fichier wp-config.php."
-
-#~ msgid "A stylesheet for the social sharing buttons can be included in all webpages. You can enable or disable use of the stylesheet from the <a href=\"%1$s\">%2$s</a> settings page."
-#~ msgstr "Une feuille de style pour les boutons de partage social peut être inclus dans toutes les pages Web. Vous pouvez activer ou désactiver l'utilisation de la feuille de style dans la page de réglage <a href=\"%1$s\">%2$s</a>."
-
-#~ msgid "Support for shortcode(s) can be enabled and disabled on the <a href=\"%1$s\">%2$s</a> settings page. Shortcodes are disabled by default to optimize performance and content processing."
-#~ msgstr "Le support pour shortcode(s) peut être activé et désactivé sur la page de réglage <a href=\"%1$s\">%2$s</a>. Les shortcodes sont désactivés par défaut pour optimiser la performance et le traitement du contenu."
-
-#~ msgid "The sharing widget feature adds a <em>%s</em> widget to the WordPress Widgets settings page. The sharing widget shares the URL for the current webpage (and not individual items within an index / archive webpage, for example)."
-#~ msgstr "La fonctionnalité du widget de partage ajoute un widget <em>%s</em> sur la page de réglages Widgets de WordPress. Le widget de partage soumet au sites sociaux l'URL de la page Web actuelle (et non l'URL de chaque item sur une page Web d'index / archive, par exemple)."
-
-#~ msgid "A stylesheet editor is available to modify the default CSS of social sharing buttons based on their intended location (content, except, etc.)."
-#~ msgstr "Un éditeur de feuille de style est disponible pour modifier le CSS par défaut des boutons de partage social basé sur l'emplacement des boutons (contenu, sauf, etc..)."
-
-#~ msgid "Social sharing button images and JavaScript can be saved to a local cache folder. When this feature is enabled, the image and JavaScript URLs provided are those of the cached files instead of the originals (often with much better performance)."
-#~ msgstr "Les images et JavaScripts des bouton de partage social peuvent être sauvegardés dans un dossier de cache local. Lorsque cette fonction est activée, les URLs d'image et JavaScript fournies sont celles des fichiers du cache au lieux des URLs originaux (qui donne souvent une meilleure performance)."
-
-#~ msgid "The current <em>%1$s</em> value defined on the <a href=\"%2$s\">%3$s</a> settings page is %4$s seconds (the default value of 0 disables social file caching)."
-#~ msgstr "La valeur de l'option <em>%1$s</em> définie actuellement dans la page réglage <a href=\"%2$s\">%3$s</a> est %4$s secondes (la valeur par défaut de 0 désactive la mise en cache des fichiers sociaux)."
