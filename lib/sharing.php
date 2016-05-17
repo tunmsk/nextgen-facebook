@@ -686,8 +686,8 @@ $buttons_html."\n".
 				$mod = $this->p->util->get_page_mod( $use_post );	// get post/user/term id, module name, and module object reference
 
 			$html_ret = '';
-			$html_begin = "\n".'<div class="'.$lca.'-buttons">'."\n";
-			$html_end = "\n".'</div><!-- .'.$lca.'-buttons -->';
+			$html_begin = "\n".'<div class="ngfb-buttons '.SucomUtil::get_locale( $mod ).'">'."\n";
+			$html_end = "\n".'</div><!-- .ngfb-buttons.'.SucomUtil::get_locale( $mod ).' -->';
 
 			$preset_id = empty( $atts['preset_id'] ) ? 
 				'' : preg_replace( '/[^a-z0-9\-_]/', '', $atts['preset_id'] );
