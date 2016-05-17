@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.31.1-dev2\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.31.1-dev3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -1295,7 +1295,7 @@ msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr ""
 
-#: lib/gpl/ecom/woocommerce.php:111 lib/pro/ecom/woocommerce.php:410
+#: lib/gpl/ecom/woocommerce.php:111 lib/pro/ecom/woocommerce.php:413
 msgctxt "option label"
 msgid "Position in Woo Short Text"
 msgstr ""
