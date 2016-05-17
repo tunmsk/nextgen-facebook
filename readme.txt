@@ -420,7 +420,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.31.1-dev2 (2016/05/17)**
+**Version 8.31.1-dev3 (2016/05/17)**
 
 Official announcement: N/A
 
@@ -430,13 +430,16 @@ Official announcement: N/A
 	* Added new Open Graph meta tags for WooCommerce (Pro version):
 		* product:id
 		* product:sku
-		* product:color
-		* product:size
+		* product:url
+		* product:name
+		* product:image:id
 		* product:dimensions
 		* product:width (cm)
 		* product:height (cm)
 		* product:length (cm)
 		* product:weight (kg)
+		* product:color
+		* product:size
 		* product:category 
 		* product:tag
 	* Added new Open Graph meta tags for Easy Digital Downloads (Pro version):
@@ -448,6 +451,21 @@ Official announcement: N/A
 	* None
 * *Developer Notes*
 	* Added a new 'ngfb_og_add_product_mt_offer' filter (returns false by default) to include "product:offer" meta tags in the Open Graph array for WooCommerce products (Pro version).
+		* product:offer:id
+		* product:offer:sku
+		* product:offer:url
+		* product:offer:name
+		* product:offer:image:id
+		* product:offer:dimensions
+		* product:offer:width (cm)
+		* product:offer:height (cm)
+		* product:offer:length (cm)
+		* product:offer:weight (kg)
+		* product:offer:color
+		* product:offer:size
+		* product:offer:category 
+		* product:offer:tag
+		* product:offer:description
 
 **Version 8.31.0-1 (2016/05/14)**
 
@@ -464,7 +482,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.31.1-dev2 =
+= 8.31.1-dev3 =
 
 (2016/05/17) Added new internal / non-standard Open Graph meta tags for WooCommerce and Easy Digital Downloads (Pro version). Added current locale to the sharing buttons CSS class.
 
