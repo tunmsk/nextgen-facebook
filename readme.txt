@@ -420,7 +420,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.31.1-dev2 (TBD)**
+**Version 8.31.1-dev2 (2016/05/17)**
 
 Official announcement: N/A
 
@@ -466,7 +466,7 @@ Official announcement: N/A
 
 = 8.31.1-dev2 =
 
-(TBD) Added new internal / non-standard Open Graph meta tags for WooCommerce and Easy Digital Downloads (Pro version). Added current locale to the sharing buttons CSS class.
+(2016/05/17) Added new internal / non-standard Open Graph meta tags for WooCommerce and Easy Digital Downloads (Pro version). Added current locale to the sharing buttons CSS class.
 
 = 8.31.0-1 =
 
