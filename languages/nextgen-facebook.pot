@@ -1275,7 +1275,7 @@ msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr ""
 
-#: lib/gpl/ecom/woocommerce.php:111 lib/pro/ecom/woocommerce.php:420
+#: lib/gpl/ecom/woocommerce.php:111 lib/pro/ecom/woocommerce.php:424
 msgctxt "option label"
 msgid "Position in Woo Short Text"
 msgstr ""
