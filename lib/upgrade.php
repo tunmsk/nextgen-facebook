@@ -13,9 +13,10 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 	class NgfbOptionsUpgrade extends NgfbOptions {
 
 		private $renamed_site_keys = array(
-			'plugin_tid_use' => 'plugin_ngfb_tid:use',
-			'plugin_tid:use' => 'plugin_ngfb_tid:use',
 			'plugin_tid' => 'plugin_ngfb_tid',
+			'plugin_tid:use' => 'plugin_ngfb_tid:use',
+			'plugin_ignore_small_img' => 'plugin_check_img_dims',		// renamed in v8.31.1-1
+			'plugin_ignore_small_img:use' => 'plugin_check_img_dims:use',	// renamed in v8.31.1-1
 		);
 
 		private $renamed_keys = array(
@@ -43,7 +44,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'ngfb_preserve' => 'plugin_preserve',
 			'ngfb_debug' => 'plugin_debug',
 			'ngfb_enable_shortcode' => 'plugin_shortcodes',
-			'ngfb_skip_small_img' => 'plugin_ignore_small_img',
+			'ngfb_skip_small_img' => 'plugin_check_img_dims',
 			'ngfb_filter_content' => 'plugin_filter_content',
 			'ngfb_filter_excerpt' => 'plugin_filter_excerpt',
 			'ngfb_add_to_post' => 'plugin_add_to_post',
@@ -162,6 +163,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'seo_author_name' => '',
 			'plugin_columns_taxonomy' => 'plugin_columns_term',	// renamed in v8.31.0-1
 			'plugin_add_to_taxonomy' => 'plugin_add_to_term',	// renamed in v8.31.0-1
+			'plugin_ignore_small_img' => 'plugin_check_img_dims',	// renamed in v8.31.1-1
 		);
 
 		protected $p;
