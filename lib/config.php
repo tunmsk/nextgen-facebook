@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.31.1-1',	// plugin version
+					'version' => '8.31.2-dev1',	// plugin version
 					'opt_version' => '432',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -146,7 +146,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'ngg' => '(plugin) NextGEN Gallery',
 								'rtmedia' => '(plugin) rtMedia for WordPress, BuddyPress and bbPress',
 								'slideshare' => '(api) Slideshare API',
-								'upscale' => '(tool) WP Image Upscaling',
+								'upscale' => '(tool) WP Media Library Image Upscaling',
 								'vimeo' => '(api) Vimeo Video API',
 								'wistia' => '(api) Wistia Video API',
 								'youtube' => '(api) YouTube Video / Playlist API',
@@ -160,8 +160,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'buddypress' => '(plugin) BuddyPress',
 							),
 							'util' => array(
+								'checkimgdims' => '(tool) Verify Image Dimensions',
 								'coauthors' => '(plugin) Co-Authors Plus',
-								'language' => '(tool) WP Locale to Publisher Language',
+								'language' => '(tool) WP Locale to Publisher Language Mapping',
 								'shorten' => '(api) URL Shortening Service APIs',
 								'post' => '(tool) Custom Post Meta',
 								'restapi' => '(plugin) WordPress REST API (Version 2)',

@@ -217,6 +217,9 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 							if ( $is_admin && $ret['ssb'] === true )
 								$ret[$sub]['*'] = $ret[$sub][$id] = true;
 							break;
+						case 'util-checkimgdims':
+							$chk['optval'] = 'plugin_check_img_dims';
+							break;
 						case 'util-coauthors':
 							$chk['plugin'] = 'co-authors-plus/co-authors-plus.php';
 							break;

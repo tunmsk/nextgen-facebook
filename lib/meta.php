@@ -61,9 +61,9 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 		protected function get_default_tabs() {
 			$tabs = array();
 			foreach( apply_filters( $this->p->cf['lca'].'_social_settings_default_tabs', array(
+				'preview' => _x( 'Preview', 'metabox tab', 'nextgen-facebook' ),
 				'header' => _x( 'Edit Text', 'metabox tab', 'nextgen-facebook' ),
 				'media' => _x( 'Select Media', 'metabox tab', 'nextgen-facebook' ),
-				'preview' => _x( 'Preview', 'metabox tab', 'nextgen-facebook' ),
 				'tags' => _x( 'Head Tags', 'metabox tab', 'nextgen-facebook' ),
 				'validate' => _x( 'Validate', 'metabox tab', 'nextgen-facebook' ),
 			) ) as $key => $name ) {
@@ -163,8 +163,9 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 							'No Title' : $head['og:title'] ).'</div>
 						<div class="preview_desc">'.( empty( $head['og:description'] ) ?
 							'No Description' : $head['og:description'] ).'</div>
-						<div class="preview_by">'.( $_SERVER['SERVER_NAME'].( empty( $head['author'] )
-							? '' : ' | By '.$head['author'] ) ).'</div>
+						<div class="preview_by">'.( $_SERVER['SERVER_NAME'].
+							( empty( $head['article:author:name'] ) ?
+								'' : ' | By '.$head['article:author:name'] ) ).'</div>
 					</div>
 				</div>
 			</div></td>';

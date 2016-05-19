@@ -109,7 +109,7 @@ if ( ! class_exists( 'NgfbHead' ) ) {
 					case 'property-og:type':
 					case 'property-og:title':
 					case 'property-og:description':
-					case 'name-author':
+					case 'property-article:author:name':
 					case ( strpos( $mt_match, 'name-schema:' ) === 0 ? true : false ):
 
 						if ( ! isset( $head_info[$mt[3]] ) )
