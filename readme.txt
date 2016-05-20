@@ -420,7 +420,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.31.2-dev1 (2016/05/19)**
+**Version 8.31.2-rc1 (2016/05/20)**
 
 Official announcement: N/A
 
@@ -428,8 +428,8 @@ Official announcement: N/A
 	* None
 * *Improvements*
 	* Changed the default "Enforce Image Dimensions Check" value to unchecked.
-	* Added a new Verify Image Dimensions module, enabled when the "Enforce Image Dimensions Check" option is checked (Pro version).
 	* Moved the Social Preview tab in the Social Settings metabox to the left-most position.
+	* Added a Verify Image Dimensions module, enabled when the "Enforce Image Dimensions Check" option is checked (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -497,9 +497,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.31.2-dev1 =
+= 8.31.2-rc1 =
 
-(2016/05/19) Moved the Social Preview tab to the left-most position. Added a new Verify Image Dimensions module (Pro version).
+(2016/05/20) Moved the Social Preview tab to the left-most position. Added a new Verify Image Dimensions module (Pro version).
 
 = 8.31.1-1 =
 
