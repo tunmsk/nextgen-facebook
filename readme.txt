@@ -420,7 +420,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.31.2-rc1 (2016/05/20)**
+**Version 8.31.2-1 (2016/05/20)**
 
 Official announcement: N/A
 
@@ -497,7 +497,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.31.2-rc1 =
+= 8.31.2-1 =
 
 (2016/05/20) Moved the Social Preview tab to the left-most position. Added a new Verify Image Dimensions module (Pro version).
 
