@@ -12,7 +12,7 @@
  * Description: Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.1
  * Tested Up To: 4.5.2
- * Version: 8.31.2-rc1
+ * Version: 8.31.2-1
  *
  * Version Numbers: {major}.{minor}.{bugfix}-{stage}{level}
  *
