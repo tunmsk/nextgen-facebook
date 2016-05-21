@@ -49,9 +49,13 @@
 	height:61px;
 }
 
-.ngfb-buttons div.facebook-button,
+.ngfb-buttons div.facebook-button,		/* English (Default) */
 .ngfb-preset-small_share_count
 	.ngfb-buttons div.facebook-button { width:139px; }
+
+.ngfb-buttons.cs_CZ div.facebook-button,	/* Czech */
+.ngfb-preset-small_share_count
+	.ngfb-buttons.cs_CZ div.facebook-button { width:169px; }
 
 .ngfb-buttons div.fb-share-button,
 .ngfb-preset-small_share_count 
