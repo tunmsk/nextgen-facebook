@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.31.2-1',	// plugin version
-					'opt_version' => '432',		// increment when changing default options
+					'version' => '8.32.0-dev1',	// plugin version
+					'opt_version' => '434',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -153,6 +153,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							),
 							'seo' => array(
 								'aioseop' => '(plugin) All in One SEO Pack',
+								'autodescription' => '(plugin) The SEO Framework',
 								'headspace2' => '(plugin) HeadSpace2 SEO',
 								'wpseo' => '(plugin) Yoast SEO',
 							),
@@ -462,9 +463,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_wistia_api' => 1,
 					'plugin_youtube_api' => 1,
 					// Social Settings Tab
-					'plugin_columns_post' => 1,
-					'plugin_columns_term' => 1,
-					'plugin_columns_user' => 1,
+					'plugin_og_img_col_post' => 1,
+					'plugin_og_img_col_term' => 1,
+					'plugin_og_img_col_user' => 1,
+					'plugin_og_desc_col_post' => 0,
+					'plugin_og_desc_col_term' => 0,
+					'plugin_og_desc_col_user' => 0,
 					'plugin_add_to_attachment' => 1,
 					'plugin_add_to_page' => 1,
 					'plugin_add_to_post' => 1,
@@ -698,8 +702,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'min_version' => '4.1.0',	// minimum php version
 			),
 			'form' => array(
-				'og_image_col_width' => '70px',
-				'og_image_col_height' => '37px',
+				'og_img_col_width' => '70px',
+				'og_img_col_height' => '37px',
 				'tooltip_class' => 'sucom_tooltip',
 				'max_hashtags' => 10,
 				'max_media_items' => 20,

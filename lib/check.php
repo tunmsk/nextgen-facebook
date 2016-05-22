@@ -162,6 +162,10 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 						case 'seo-aioseop':
 							$chk['class'] = 'All_in_One_SEO_Pack';
 							break;
+						case 'seo-autodescription':
+							$chk['function'] = 'the_seo_framework';
+							$chk['plugin'] = 'autodescription/autodescription.php';
+							break;
 						case 'seo-headspace2':
 							$chk['class'] = 'HeadSpace_Plugin';
 							$chk['plugin'] = 'headspace2/headspace.php';
