@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.32.0-dev1',	// plugin version
+					'version' => '8.32.0-dev2',	// plugin version
 					'opt_version' => '434',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -1041,6 +1041,19 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'images/follow/Twitter.png' => 'https://twitter.com/surniaululacom',
 					//'images/follow/Youtube.png' => 'https://www.youtube.com/user/SurniaUlulaCom',
 					'images/follow/Rss.png' => 'http://surniaulula.com/category/application/wordpress/wp-plugins/ngfb/feed/',
+				),
+			),
+			'schema' => array(
+				'organization' => array(
+					'sameas' => array(
+						'fb_publisher_url' => 'Facebook Business Page URL',
+						'instgram_publisher_url' => 'Instagram Business URL',
+						'linkedin_publisher_url' => 'LinkedIn Company Page URL',
+						'myspace_publisher_url' => 'MySpace Business Page URL',
+						'rp_publisher_url' => 'Pinterest Company Page URL',
+						'seo_publisher_url' => 'Google+ Business Page URL',
+						'tc_site' => 'Twitter Business @username',
+					),
 				),
 			),
 			'sharing' => array(
