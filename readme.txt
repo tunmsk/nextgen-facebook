@@ -20,7 +20,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 
 **A solid social meta tag plugin is the foundation of any good social strategy** &mdash; NextGEN Facebook (NGFB) gives you total control over all the information [social website crawlers](https://developers.facebook.com/docs/sharing/webmasters/crawler) need, improving Google Search ranking, social engagement, and click-through-rates on Facebook, Google+, Twitter, Pinterest, LinkedIn, StumbleUpon, Tumblr and and many more &mdash; along with offering many of the most popular social sharing buttons!
 
-**NGFB automatically retrieves and uses information from a wide range or sources**, including All in One SEO Pack, rtMedia for WordPress, BuddyPress and bbPress, Easy Digital Downloads, HeadSpace2 SEO, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, WooCommerce, Yoast SEO (aka WordPress SEO), WP e-Commerce, Gravatar, Slideshare, Vimeo, Wistia, YouTube, extends the WordPress REST API version 2, and much more.
+**NGFB Pro automatically retrieves and uses information from a wide range or sources**, including All in One SEO Pack, rtMedia for WordPress, BuddyPress and bbPress, Easy Digital Downloads, HeadSpace2 SEO, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, The SEO Framework, WooCommerce, WP e-Commerce, WordPress REST API, Yoast SEO (aka WordPress SEO), Yotpo Social Reviews for WooCommerce, Bitly, Google URL Shortener, Gravatar, Ow.ly, Slideshare, TinyURL, Vimeo, Wistia, Your Own URL Shortener (YOURLS), and YouTube.
 
 = Quick List of Features =
 
@@ -30,7 +30,7 @@ Display your content in the best possible way on Facebook, Google+, Twitter, Pin
 * Twitter Card meta tags:
 	* [Summary Card with Large Image](https://dev.twitter.com/cards/types/summary-large-image)
 	* [Summary Card](https://dev.twitter.com/cards/types/summary)
-	* [Player Card](https://dev.twitter.com/cards/types/player) is available in the Pro version (as it requires video discovery modules, which are provided with the Pro version).
+	* [Player Card](https://dev.twitter.com/cards/types/player) is available in the Pro version (requires video discovery modules, provided with the Pro version).
 * Support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 * Support for featured, attached, gallery shortcode, and/or image HTML tags in content.
 * Customizable image dimensions for Facebook / Open Graph, Pinterest, Schema and each Twitter Card type.
@@ -167,6 +167,7 @@ Example meta tags from the *Tiled Gallery* post provided by the [WP Test](http:/
 		* [MarketPress - WordPress eCommerce](https://wordpress.org/plugins/wordpress-ecommerce/)
 		* [Polylang](https://wordpress.org/plugins/polylang/)
 		* [rtMedia for WordPress, BuddyPress and bbPress](https://wordpress.org/plugins/buddypress-media/)
+		* [The SEO Framework](https://wordpress.org/plugins/autodescription/)
 		* [WooCommerce](https://wordpress.org/plugins/woocommerce/) (version 1 and 2)
 		* [WP eCommerce](https://wordpress.org/plugins/wp-e-commerce/)
 		* [WordPress REST API](https://wordpress.org/plugins/rest-api/) (version 2)
@@ -225,7 +226,7 @@ NGFB provides <a href="https://developers.google.com/structured-data/customize/s
 
 = User Profile Social Contacts =
 
-NGFB allows you to customize (Pro version) the field names, label, and add / remove the following contacts on user profile pages, including [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) guest author profiles:
+NGFB Pro allows you to customize the field names, label, and add / remove the following contacts on user profile pages, including [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) guest author profiles:
 
 * AIM
 * Facebook URL
@@ -262,13 +263,11 @@ NGFB provides the [Summary](https://dev.twitter.com/cards/types/summary), [Summa
 
 **Images and Videos**
 
-NGFB detects and uses all images - associated or included in your content - including the WordPress image gallery and [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/) shortcodes. WordPress Media Library images (and NextGEN Gallery in the Pro version) are resized according to their intended consumer (Facebook, Twitter, Pinterest, etc). The Pro version also detects embedded videos from Slideshare, Vimeo, Wistia, and Youtube (including preview image, video title, and video description).
-
-NGFB (Pro version) also includes support for [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/) albums, galleries and images (shortcodes, image tags, album / gallery preview images, etc.).
+NGFB detects and uses all images - associated or included in your content - including the WordPress image gallery and [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/) shortcodes. WordPress Media Library images (and NextGEN Gallery in the Pro version) are resized according to their intended consumer (Facebook, Twitter, Pinterest, etc). The Pro version detects embedded videos from Slideshare, Vimeo, Wistia, and Youtube (including preview image, video title, and video description). NGFB Pro also includes support for [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/) albums, galleries and images (shortcodes, image tags, album / gallery preview images, etc.).
 
 **Enhanced SEO**
 
-NGFB (Pro version) integrates with [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/), [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/), and [HeadSpace2 SEO](https://wordpress.org/plugins/headspace2/) &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, Schema, and Twitter Card meta tags.
+NGFB Pro integrates with [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/), [HeadSpace2 SEO](https://wordpress.org/plugins/headspace2/), [The SEO Framework](https://wordpress.org/plugins/autodescription/), and [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) (aka WordPress SEO) &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, Schema, and Twitter Card meta tags.
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
@@ -277,11 +276,11 @@ NGFB (Pro version) integrates with [Yoast SEO](https://wordpress.org/plugins/wor
 
 **eCommerce Products**
 
-NGFB (Pro version) also supports [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/), [MarketPress - WordPress eCommerce](https://wordpress.org/plugins/wordpress-ecommerce/), [WooCommerce](https://wordpress.org/plugins/woocommerce/), and [WP e-Commerce](https://wordpress.org/plugins/wp-e-commerce/) product pages, creating appropriate meta tags for [Facebook Products](https://developers.facebook.com/docs/payments/product/), [Twitter Product Cards](https://dev.twitter.com/docs/cards/types/product-card) and [Pinterest Rich Pins](http://developers.pinterest.com/rich_pins/), including variations and additional / custom images.
+NGFB Pro also supports [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/), [MarketPress - WordPress eCommerce](https://wordpress.org/plugins/wordpress-ecommerce/), [WooCommerce](https://wordpress.org/plugins/woocommerce/), and [WP e-Commerce](https://wordpress.org/plugins/wp-e-commerce/) product pages, creating appropriate meta tags for [Facebook Products](https://developers.facebook.com/docs/payments/product/, and [Pinterest Rich Pins](http://developers.pinterest.com/rich_pins/), including variations and additional / custom images.
 
 **Forums and Social**
 
-NGFB (Pro version) supports [bbPress](https://wordpress.org/plugins/bbpress/), [BuddyPress](https://wordpress.org/plugins/buddypress/) (see the [BuddyPress Integration Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/)), and [rtMedia for WordPress, BuddyPress and bbPress](https://wordpress.org/plugins/buddypress-media/), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, author information, etc. Social sharing buttons can also be added to [bbPress](https://wordpress.org/plugins/bbpress/) single template pages and [BuddyPress](https://wordpress.org/plugins/buddypress/) activities.
+NGFB Pro supports [bbPress](https://wordpress.org/plugins/bbpress/), [BuddyPress](https://wordpress.org/plugins/buddypress/) (see the [BuddyPress Integration Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/)), and [rtMedia for WordPress, BuddyPress and bbPress](https://wordpress.org/plugins/buddypress-media/), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, author information, etc. Social sharing buttons can also be added to [bbPress](https://wordpress.org/plugins/bbpress/) single template pages and [BuddyPress](https://wordpress.org/plugins/buddypress/) activities.
 
 = Proven Performance =
 
@@ -420,6 +419,20 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.32.0-dev1 (2016/05/22)**
+
+Official announcement: N/A
+
+* *New Features*
+	* Added support for [The SEO Framework](https://wordpress.org/plugins/autodescription/) plugin (Pro version).
+* *Improvements*
+	* Added new 'Show "NGFB Img" Column for' and 'Show "NGFB Desc" Column for' options.
+	* Removed the 'Show Social Img / Desc Columns for' option.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.31.2-1 (2016/05/20)**
 
 Official announcement: N/A
@@ -496,6 +509,10 @@ Official announcement: N/A
 	* Renamed the 'taxonomy' module and all related filters to 'term'.
 
 == Upgrade Notice ==
+
+= 8.32.0-dev1 =
+
+(2016/05/22) Added new 'Show "NGFB Img" Column for' and 'Show "NGFB Desc" Column for' options. Added support for The SEO Framework plugin (Pro version).
 
 = 8.31.2-1 =
 
