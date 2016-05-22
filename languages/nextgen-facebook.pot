@@ -775,7 +775,7 @@ msgctxt "column title"
 msgid "%s Img"
 msgstr ""
 
-#: lib/gpl/admin/advanced.php:87 lib/messages.php:311
+#: lib/gpl/admin/advanced.php:87 lib/messages.php:311 lib/meta.php:511
 #: lib/pro/admin/advanced.php:92
 msgctxt "column title"
 msgid "%s Desc"
@@ -2238,11 +2238,6 @@ msgstr ""
 
 #: lib/meta.php:421
 msgid "Nonce token validation failed for the submitted form (update ignored)."
-msgstr ""
-
-#: lib/meta.php:511
-msgctxt "option label"
-msgid "%s Desc"
 msgstr ""
 
 #: lib/meta.php:534
