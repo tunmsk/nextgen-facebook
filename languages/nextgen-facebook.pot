@@ -363,32 +363,32 @@ msgctxt "option label (very short)"
 msgid "Site Use"
 msgstr ""
 
-#: lib/com/form.php:72
+#: lib/com/form.php:72 lib/config-gettext-extract.php:48
 msgctxt "option value"
 msgid "(option disabled)"
 msgstr ""
 
-#: lib/com/form.php:186 lib/com/form.php:407
+#: lib/com/form.php:186 lib/com/form.php:407 lib/config-gettext-extract.php:55
 msgctxt "option value"
 msgid "(settings value)"
 msgstr ""
 
-#: lib/com/form.php:194
+#: lib/com/form.php:194 lib/config-gettext-extract.php:44
 msgctxt "option value"
 msgid "(no images)"
 msgstr ""
 
-#: lib/com/form.php:198
+#: lib/com/form.php:198 lib/config-gettext-extract.php:47
 msgctxt "option value"
 msgid "(no videos)"
 msgstr ""
 
-#: lib/com/form.php:202
+#: lib/com/form.php:202 lib/config-gettext-extract.php:45
 msgctxt "option value"
 msgid "[None]"
 msgstr ""
 
-#: lib/com/form.php:207 lib/com/form.php:273
+#: lib/com/form.php:207 lib/com/form.php:273 lib/config-gettext-extract.php:18
 msgctxt "option value"
 msgid "(default)"
 msgstr ""
@@ -418,48 +418,343 @@ msgctxt "metabox tab"
 msgid "Admin Edit"
 msgstr ""
 
-#: lib/config-gettext-extract.php:4 lib/website/facebook.php:27
+#: lib/config-gettext-extract.php:4
+msgctxt "option value"
+msgid "Admin Edit"
+msgstr ""
+
+#: lib/config-gettext-extract.php:5
+msgctxt "lib file description"
+msgid "Advanced Settings"
+msgstr ""
+
+#: lib/config-gettext-extract.php:6 lib/website/facebook.php:27
 msgctxt "metabox tab"
 msgid "All Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:5
+#: lib/config-gettext-extract.php:7
+msgctxt "option value"
+msgid "All Options"
+msgstr ""
+
+#: lib/config-gettext-extract.php:8
+msgctxt "option value"
+msgid "Any Platform"
+msgstr ""
+
+#: lib/config-gettext-extract.php:9
+msgctxt "option value"
+msgid "Basic Options"
+msgstr ""
+
+#: lib/config-gettext-extract.php:10
+msgctxt "option value"
+msgid "Bitly (suggested)"
+msgstr ""
+
+#: lib/config-gettext-extract.php:11
+msgctxt "option value"
+msgid "Bottom"
+msgstr ""
+
+#: lib/config-gettext-extract.php:12
+msgctxt "option value"
+msgid "Center"
+msgstr ""
+
+#: lib/config-gettext-extract.php:13
+msgctxt "lib file description"
+msgid "<color>Plugin Setup Guide and Notes</color>"
+msgstr ""
+
+#: lib/config-gettext-extract.php:14
 msgctxt "metabox tab"
 msgid "Content"
 msgstr ""
 
-#: lib/config-gettext-extract.php:6
+#: lib/config-gettext-extract.php:15
+msgctxt "option value"
+msgid "Content"
+msgstr ""
+
+#: lib/config-gettext-extract.php:16
 msgctxt "metabox tab"
 msgid "CSS Sidebar"
 msgstr ""
 
-#: lib/config-gettext-extract.php:7
+#: lib/config-gettext-extract.php:17
+msgctxt "option value"
+msgid "CSS Sidebar"
+msgstr ""
+
+#: lib/config-gettext-extract.php:19
+msgctxt "option value"
+msgid "Desktop Only"
+msgstr ""
+
+#: lib/config-gettext-extract.php:20
+msgctxt "option value"
+msgid "Display Name"
+msgstr ""
+
+#: lib/config-gettext-extract.php:21
 msgctxt "plugin description"
 msgid ""
 "Display your content in the best possible way on Facebook, Google+, Twitter, "
 "Pinterest, etc. - no matter how your webpage is shared!"
 msgstr ""
 
-#: lib/config-gettext-extract.php:8
+#: lib/config-gettext-extract.php:22
+msgctxt "lib file description"
+msgid "Essential Settings"
+msgstr ""
+
+#: lib/config-gettext-extract.php:23
 msgctxt "metabox tab"
 msgid "Excerpt"
 msgstr ""
 
-#: lib/config-gettext-extract.php:9
+#: lib/config-gettext-extract.php:24
+msgctxt "option value"
+msgid "Excerpt Only"
+msgstr ""
+
+#: lib/config-gettext-extract.php:25
+msgctxt "option value"
+msgid "Excerpt"
+msgstr ""
+
+#: lib/config-gettext-extract.php:26
+msgctxt "option value"
+msgid "Facebook Business Page URL"
+msgstr ""
+
+#: lib/config-gettext-extract.php:27
+msgctxt "option value"
+msgid "First and Last Names"
+msgstr ""
+
+#: lib/config-gettext-extract.php:28
+msgctxt "option value"
+msgid "Footer"
+msgstr ""
+
+#: lib/config-gettext-extract.php:29
+msgctxt "option value"
+msgid "Force this value"
+msgstr ""
+
+#: lib/config-gettext-extract.php:30
+msgctxt "option value"
+msgid "Friday"
+msgstr ""
+
+#: lib/config-gettext-extract.php:31
+msgctxt "lib file description"
+msgid "General Settings"
+msgstr ""
+
+#: lib/config-gettext-extract.php:32
+msgctxt "option value"
+msgid "Google+ Business Page URL"
+msgstr ""
+
+#: lib/config-gettext-extract.php:33
+msgctxt "option value"
+msgid "Google"
+msgstr ""
+
+#: lib/config-gettext-extract.php:34
+msgctxt "option value"
+msgid "Header"
+msgstr ""
+
+#: lib/config-gettext-extract.php:35
+msgctxt "option value"
+msgid "If value is empty"
+msgstr ""
+
+#: lib/config-gettext-extract.php:36
+msgctxt "option value"
+msgid "Instagram Business URL"
+msgstr ""
+
+#: lib/config-gettext-extract.php:37
+msgctxt "option value"
+msgid "Left"
+msgstr ""
+
+#: lib/config-gettext-extract.php:38
+msgctxt "option value"
+msgid "LinkedIn Company Page URL"
+msgstr ""
+
+#: lib/config-gettext-extract.php:39
+msgctxt "option value"
+msgid "Mobile Only"
+msgstr ""
+
+#: lib/config-gettext-extract.php:40
+msgctxt "option value"
+msgid "Monday"
+msgstr ""
+
+#: lib/config-gettext-extract.php:41
+msgctxt "option value"
+msgid "MySpace Business Page URL"
+msgstr ""
+
+#: lib/config-gettext-extract.php:42
+msgctxt "option value"
+msgid "New activation"
+msgstr ""
+
+#: lib/config-gettext-extract.php:43
+msgctxt "option value"
+msgid "Nickname"
+msgstr ""
+
+#: lib/config-gettext-extract.php:46
+msgctxt "option value"
+msgid "No"
+msgstr ""
+
+#: lib/config-gettext-extract.php:49
+msgctxt "option value"
+msgid "Ow.ly"
+msgstr ""
+
+#: lib/config-gettext-extract.php:50
+msgctxt "option value"
+msgid "Pinterest Company Page URL"
+msgstr ""
+
+#: lib/config-gettext-extract.php:51
+msgctxt "lib file description"
+msgid "Pro Licenses and Extension Plugins"
+msgstr ""
+
+#: lib/config-gettext-extract.php:52
+msgctxt "option value"
+msgid "Public Holidays"
+msgstr ""
+
+#: lib/config-gettext-extract.php:53
+msgctxt "option value"
+msgid "Right"
+msgstr ""
+
+#: lib/config-gettext-extract.php:54
+msgctxt "option value"
+msgid "Saturday"
+msgstr ""
+
+#: lib/config-gettext-extract.php:56
+msgctxt "lib file description"
+msgid "Sharing Buttons"
+msgstr ""
+
+#: lib/config-gettext-extract.php:57 lib/submenu/style.php:37
+msgctxt "lib file description"
+msgid "Sharing Styles"
+msgstr ""
+
+#: lib/config-gettext-extract.php:58
 msgctxt "metabox tab"
 msgid "Shortcode"
 msgstr ""
 
-#: lib/config-gettext-extract.php:10
+#: lib/config-gettext-extract.php:59
+msgctxt "lib file description"
+msgid "Social and SEO Image Dimensions"
+msgstr ""
+
+#: lib/config-gettext-extract.php:60
+msgctxt "option value"
+msgid "Sunday"
+msgstr ""
+
+#: lib/config-gettext-extract.php:61
+msgctxt "option value"
+msgid "Thursday"
+msgstr ""
+
+#: lib/config-gettext-extract.php:62
+msgctxt "option value"
+msgid "TinyURL"
+msgstr ""
+
+#: lib/config-gettext-extract.php:63
+msgctxt "option value"
+msgid "Title and Excerpt"
+msgstr ""
+
+#: lib/config-gettext-extract.php:64
+msgctxt "option value"
+msgid "Title Only"
+msgstr ""
+
+#: lib/config-gettext-extract.php:65
+msgctxt "option value"
+msgid "Top and Bottom"
+msgstr ""
+
+#: lib/config-gettext-extract.php:66
+msgctxt "option value"
+msgid "Top"
+msgstr ""
+
+#: lib/config-gettext-extract.php:67
+msgctxt "option value"
+msgid "Tuesday"
+msgstr ""
+
+#: lib/config-gettext-extract.php:68
+msgctxt "option value"
+msgid "Twitter Business @username"
+msgstr ""
+
+#: lib/config-gettext-extract.php:69
 msgctxt "plugin description"
 msgid ""
 "Update Manager for the NextGEN Facebook (NGFB) Pro plugin and its Pro "
 "extensions."
 msgstr ""
 
-#: lib/config-gettext-extract.php:11
+#: lib/config-gettext-extract.php:70
+msgctxt "lib file description"
+msgid "User Profile Contact Methods"
+msgstr ""
+
+#: lib/config-gettext-extract.php:71
+msgctxt "lib file description"
+msgid "Website Social Pages and Accounts"
+msgstr ""
+
+#: lib/config-gettext-extract.php:72
+msgctxt "option value"
+msgid "Wednesday"
+msgstr ""
+
+#: lib/config-gettext-extract.php:73
 msgctxt "metabox tab"
 msgid "Widget"
+msgstr ""
+
+#: lib/config-gettext-extract.php:74
+msgctxt "option value"
+msgid "Yes"
+msgstr ""
+
+#: lib/config-gettext-extract.php:75
+msgctxt "option value"
+msgid "YOURLS"
+msgstr ""
+
+#: lib/config-gettext-extract.php:76
+msgctxt "lib file description"
+msgid "Your Social Settings"
 msgstr ""
 
 #: lib/gpl/admin/advanced.php:34 lib/pro/admin/advanced.php:42
@@ -2761,11 +3056,6 @@ msgid ""
 "will be <strong>minimized</strong>, and saved to a single stylesheet with a "
 "URL of <a href=\"%2$s\">%3$s</a>. The minimized stylesheet can be enqueued "
 "or added directly to the webpage HTML."
-msgstr ""
-
-#: lib/submenu/style.php:37
-msgctxt "lib file description"
-msgid "Sharing Styles"
 msgstr ""
 
 #: lib/submenu/style.php:41
