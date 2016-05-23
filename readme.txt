@@ -432,7 +432,7 @@ Official announcement: N/A
 	* None
 * *Developer Notes*
 	* Renamed the 'ngfb_section' filter to 'ngfb_article_section'.
-	* Added a new 'ngfb_schema_organization_sameas' filter.
+	* Added a new 'ngfb_social_accounts' filter.
 
 **Version 8.31.2-1 (2016/05/20)**
 
