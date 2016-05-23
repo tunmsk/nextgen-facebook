@@ -419,7 +419,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.32.0-1 (2016/05/22)**
+**Version 8.32.0-1 (2016/05/23)**
 
 Official announcement: N/A
 
@@ -513,7 +513,7 @@ Official announcement: N/A
 
 = 8.32.0-1 =
 
-(2016/05/22) Added new 'Show "NGFB Img" Column for' and 'Show "NGFB Desc" Column for' options. Added support for The SEO Framework plugin (Pro version).
+(2016/05/23) Added new 'Show "NGFB Img" Column for' and 'Show "NGFB Desc" Column for' options. Added support for The SEO Framework plugin (Pro version).
 
 = 8.31.2-1 =
 
