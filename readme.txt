@@ -419,7 +419,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.32.0-dev2 (2016/05/22)**
+**Version 8.32.0-1 (2016/05/22)**
 
 Official announcement: N/A
 
@@ -431,8 +431,8 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Added a new 'ngfb_author_object_description' filter.
 	* Renamed the 'ngfb_section' filter to 'ngfb_article_section'.
+	* Added a new 'ngfb_schema_organization_sameas' filter.
 
 **Version 8.31.2-1 (2016/05/20)**
 
@@ -511,7 +511,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.32.0-dev2 =
+= 8.32.0-1 =
 
 (2016/05/22) Added new 'Show "NGFB Img" Column for' and 'Show "NGFB Desc" Column for' options. Added support for The SEO Framework plugin (Pro version).
 
