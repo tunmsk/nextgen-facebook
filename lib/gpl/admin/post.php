@@ -77,7 +77,7 @@ if ( ! class_exists( 'NgfbGplAdminPost' ) ) {
 					'label' => _x( 'Sharing URL', 'option label', 'nextgen-facebook' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-sharing_url', 'td_class' => 'blank',
 					'no_auto_draft' => ( $mod['post_type'] === 'attachment' ? false : true ),
-					'content' => $form->get_no_input_value( $this->p->util->get_sharing_url( $mod['use_post'] ), 'wide' ),
+					'content' => $form->get_no_input_value( $this->p->util->get_sharing_url( $mod, false ), 'wide' ),
 				),
 			);
 

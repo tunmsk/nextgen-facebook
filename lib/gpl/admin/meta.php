@@ -73,7 +73,7 @@ if ( ! class_exists( 'NgfbGplAdminMeta' ) ) {
 					'tr_class' => 'hide_in_basic',
 					'label' => _x( 'Sharing URL', 'option label', 'nextgen-facebook' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-sharing_url', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( $this->p->util->get_sharing_url( $mod['use_post'] ), 'wide' ),
+					'content' => $form->get_no_input_value( $this->p->util->get_sharing_url( $mod, false ), 'wide' ),
 				),
 			);
 
