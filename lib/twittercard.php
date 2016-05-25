@@ -8,9 +8,9 @@
 if ( ! defined( 'ABSPATH' ) ) 
 	die( 'These aren\'t the droids you\'re looking for...' );
 
-if ( ! class_exists( 'NgfbTwittercard' ) ) {
+if ( ! class_exists( 'NgfbTwitterCard' ) ) {
 
-	class NgfbTwittercard {
+	class NgfbTwitterCard {
 
 		private $p;
 

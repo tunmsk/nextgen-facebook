@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.32.1-dev3',	// plugin version
+					'version' => '8.32.1-dev4',	// plugin version
 					'opt_version' => '434',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -505,7 +505,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					// Service API Keys Tab
 					'plugin_shortener' => 'none',
 					'plugin_shortlink' => 1,
-					'plugin_min_shorten' => 22,
+					'plugin_min_shorten' => 23,
 					'plugin_bitly_login' => '',
 					'plugin_bitly_api_key' => '',
 					'plugin_google_api_key' => '',
