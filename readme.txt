@@ -431,7 +431,7 @@ Official announcement: N/A
 	* Added a hook for 'the_seo_framework_current_object_id' coming in The SEO Framework v2.6.2 (Pro version).
 	* Added top-level schema.org/CreativeWork to the available Schema types.
 * *Bugfixes*
-	* None
+	* Refactored the NgfbUrl `get_tweet_max_len()` method to provide more accurate and predictable results.
 * *Developer Notes*
 	* Refactored the NgfbUtil `get_sharing_url()` method and changed several filter arguments:
 		* apply_filters( 'ngfb_post_url', $url, $mod, $add_page );
