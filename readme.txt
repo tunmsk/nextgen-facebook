@@ -419,7 +419,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.32.1-dev4 (2016/05/25)**
+**Version 8.32.1-rc1 (2016/05/25)**
 
 Official announcement: N/A
 
@@ -431,8 +431,11 @@ Official announcement: N/A
 	* Added a hook for 'the_seo_framework_current_object_id' coming in The SEO Framework v2.6.2 (Pro version).
 	* Added top-level schema.org/CreativeWork to the available Schema types.
 * *Bugfixes*
-	* Refactored the NgfbUrl `get_tweet_max_len()` method to provide more accurate and predictable results.
+	* Refactored the `get_tweet_max_len()` method to provide more accurate and predictable results.
 * *Developer Notes*
+	* Replaced the `$use_post` variable by `$mod` in the NgfbHead `get_single_mt()` method.
+	* Replaced the `$use_post` variable by `$mod` in the NgfbUtil `replace_inline_vars()` method.
+	* Refactored the `is_post_page()`, `is_term_page()`, and `is_user_page()` method to use `$screen->base` instead of `$screen->id`.
 	* Refactored the NgfbUtil `get_sharing_url()` method and changed several filter arguments:
 		* apply_filters( 'ngfb_post_url', $url, $mod, $add_page );
 		* apply_filters( 'ngfb_term_url', $url, $mod, $add_page );
@@ -531,7 +534,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.32.1-dev4 =
+= 8.32.1-rc1 =
 
 (2016/05/25) Improvements for The SEO Framework plugin. Refactored the NgfbUtil get_sharing_url() method and changed several filter arguments.
 
