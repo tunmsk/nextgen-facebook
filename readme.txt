@@ -419,7 +419,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.32.1-rc2 (2016/05/26)**
+**Version 8.32.1-1 (2016/05/27)**
 
 Official announcement: N/A
 
@@ -534,9 +534,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.32.1-rc2 =
+= 8.32.1-1 =
 
-(2016/05/26) Improvements for The SEO Framework plugin. Refactored the NgfbUtil get_sharing_url() method and changed several filter arguments.
+(2016/05/27) Improvements for The SEO Framework plugin. Refactored the NgfbUtil get_sharing_url() method and changed several filter arguments.
 
 = 8.32.0-1 =
 
