@@ -133,7 +133,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			/*
 			 * Twitter
 			 */
-			$caption_len = $this->p->util->get_tweet_max_len();
+			$caption_len = $this->p->sharing->get_tweet_max_len();
 			$caption_text = $this->p->webpage->get_caption( $this->p->options['twitter_caption'],
 				$caption_len, $mod, true, true );	// $use_cache = true, $add_hashtags = true
 

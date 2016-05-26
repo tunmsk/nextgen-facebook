@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.32.1-dev4\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.32.1-rc1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -3194,22 +3194,22 @@ msgid ""
 "class."
 msgstr ""
 
-#: lib/util.php:1603
+#: lib/util.php:1563
 msgctxt "option comment"
 msgid "%1$d additional options not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1606
+#: lib/util.php:1566
 msgctxt "option comment"
 msgid "unhide these options"
 msgstr ""
 
-#: lib/util.php:1609
+#: lib/util.php:1569
 msgctxt "option comment"
 msgid "%1$d additional rows not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1612
+#: lib/util.php:1572
 msgctxt "option comment"
 msgid "unhide these rows"
 msgstr ""

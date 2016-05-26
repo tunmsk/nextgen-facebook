@@ -157,7 +157,7 @@ if ( ! class_exists( 'NgfbWebsiteTwitter' ) ) {
 
 			if ( ! array_key_exists( 'caption', $atts ) ) {
 				if ( empty( $atts['caption'] ) ) {
-					$caption_len = $this->p->util->get_tweet_max_len();
+					$caption_len = $this->p->sharing->get_tweet_max_len();
 					$atts['caption'] = $this->p->webpage->get_caption( $opts['twitter_caption'], $caption_len,
 						$mod, true, true, true, 'twitter_desc' );
 				}
