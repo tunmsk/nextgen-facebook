@@ -419,6 +419,19 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.32.2-dev1 (2016/05/28)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Refactored the Organization schema filter to allow for Organization sub-types.
+* *Bugfixes*
+	* Added a missing third argument to `preg_match_all()` in NgfbUtil for older PHP versions.
+* *Developer Notes*
+	* None
+
 **Version 8.32.1-1 (2016/05/27)**
 
 Official announcement: N/A
@@ -457,82 +470,11 @@ Official announcement: N/A
 	* Renamed the 'ngfb_section' filter to 'ngfb_article_section'.
 	* Added a new 'ngfb_social_accounts' filter.
 
-**Version 8.31.2-1 (2016/05/20)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Changed the default "Enforce Image Dimensions Check" value to unchecked.
-	* Moved the Social Preview tab in the Social Settings metabox to the left-most position.
-	* Added a Verify Image Dimensions module, enabled when the "Enforce Image Dimensions Check" option is checked (Pro version).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added an internal / non-standard 'article:author:name' meta tag (used for the Social Preview feature).
-
-**Version 8.31.1-1 (2016/05/18)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added new Open Graph meta tags for WooCommerce (Pro version):
-		* product:id
-		* product:sku
-		* product:url
-		* product:title
-		* product:image:id
-		* product:dimensions
-		* product:width (cm)
-		* product:height (cm)
-		* product:length (cm)
-		* product:weight (kg)
-		* product:color
-		* product:size
-		* product:category 
-		* product:tag
-	* Added new Open Graph meta tags for Easy Digital Downloads (Pro version):
-		* product:category 
-		* product:tag
-	* Added the current locale value to the sharing buttons CSS class (example: .ngfb-buttons.en_US).
-	* Added an "unhide these rows" link for internal / non-standard meta tags under the Head Tags tab in the Social Settings metabox.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added a new 'ngfb_og_add_product_mt_offer' filter (returns false by default) to include "product:offer" meta tags in the Open Graph array for WooCommerce products (Pro version).
-		* product:offer:id
-		* product:offer:sku
-		* product:offer:url
-		* product:offer:title
-		* product:offer:image:id
-		* product:offer:dimensions
-		* product:offer:width (cm)
-		* product:offer:height (cm)
-		* product:offer:length (cm)
-		* product:offer:weight (kg)
-		* product:offer:color
-		* product:offer:size
-		* product:offer:category 
-		* product:offer:tag
-		* product:offer:description
-
-**Version 8.31.0-1 (2016/05/14)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added support for the [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) plugin (including Guest Authors).
-* *Improvements*
-	* Categorized the display of Free / Pro features in the sidebar metabox.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Renamed the 'taxonomy' module and all related filters to 'term'.
-
 == Upgrade Notice ==
+
+= 8.32.2-dev1 =
+
+(2016/05/28) Refactored the Organization schema filter to allow for Organization sub-types. Added a missing third argument to preg_match_all() in NgfbUtil for older PHP versions.
 
 = 8.32.1-1 =
 
@@ -541,8 +483,4 @@ Official announcement: N/A
 = 8.32.0-1 =
 
 (2016/05/23) Added new 'Show "NGFB Img" Column for' and 'Show "NGFB Desc" Column for' options. Added support for The SEO Framework plugin (Pro version).
-
-= 8.31.2-1 =
-
-(2016/05/20) Moved the Social Preview tab to the left-most position. Added a new Verify Image Dimensions module (Pro version).
 
