@@ -419,7 +419,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.32.2-dev1 (2016/05/28)**
+**Version 8.32.2-1 (2016/05/29)**
 
 Official announcement: N/A
 
@@ -472,9 +472,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.32.2-dev1 =
+= 8.32.2-1 =
 
-(2016/05/28) Refactored the Organization schema filter to allow for Organization sub-types. Added a missing third argument to preg_match_all() in NgfbUtil for older PHP versions.
+(2016/05/29) Refactored the Organization schema filter to allow for Organization sub-types. Added a missing third argument to preg_match_all() in NgfbUtil for older PHP versions.
 
 = 8.32.1-1 =
 
