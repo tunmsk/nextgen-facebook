@@ -101,7 +101,7 @@ if ( ! class_exists( 'NgfbGplAdminMeta' ) ) {
 
 			if ( $mod['is_post'] )
 				$table_rows[] = '<td colspan="2" align="center">'.
-					$this->p->msgs->get( 'pro-about-msg', __( 'You can change the social image by selecting a featured image, attaching one or more images, or including images in the content.', 'nextgen-facebook' ).' '.__( 'The video service API modules &mdash; required to find embedded videos &mdash; are available in the Pro version.', 'nextgen-facebook' ) ).'</td>';
+					$this->p->msgs->get( 'pro-about-msg-media' ).'</td>';
 			else $table_rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-about-msg' ).'</td>';
 
