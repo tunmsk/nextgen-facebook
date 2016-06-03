@@ -169,7 +169,7 @@
 <li>Ability to include / exclude sharing buttons by post type.</li>
 <li>Selection of preset button options by location (content, excerpt, shortcode, widget, etc.).</li>
 <li>A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).</li>
-<li>Integrates with <strong>3rd party plugins and services</strong> for additional image, video, product, and content information (see <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/">About Pro Modules</a> and <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/">Integration Notes</a> for details). The following modules are included with the Pro version, and are automatically loaded if/when the supported plugins and/or services are detected.
+<li>Integrates with 3rd party plugins and services for additional image, video, product, and content information (see <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/">About Pro Modules</a> and <a href="http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/">Integration Notes</a> for details). The following modules are included with the Pro version, and are automatically loaded if/when the supported plugins and/or services are detected.
 
 <ul>
 <li><strong>Supported 3rd Party Plugins</strong>
