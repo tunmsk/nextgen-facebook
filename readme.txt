@@ -23,7 +23,7 @@ The most complete meta tags for the best looking shares on Facebook, G+, Twitter
 **Tired of sub-standard social meta tags from other SEO plugins?** &mdash; NGFB Pro *automatically* retrieves and uses information from a wide range or sources, including All in One SEO Pack, bbPress, BuddyPress, Co-Authors Plus, Easy Digital Downloads, HeadSpace2 SEO, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, rtMedia for WordPress (BuddyPress and bbPress), The SEO Framework, WooCommerce, WP e-Commerce, WordPress REST API, Yoast SEO (aka WordPress SEO), Yotpo Social Reviews for WooCommerce, along with service APIs like Bitly, Google URL Shortener, Gravatar, Ow.ly, Slideshare, TinyURL, Vimeo, Wistia, Your Own URL Shortener (YOURLS), and YouTube.
 
 <blockquote>
-<strong>Don't need the included social sharing buttons?</strong> The <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin is a fork / child of NGFB &mdash; they have the same author, the same solid core features and code-base, but WPSSO is distributed without the sharing buttons and their related features.
+<p><strong>Don't need the included social sharing buttons?</strong> The <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin is a fork / child of NGFB &mdash; they have the same author, the same solid core features and code-base, but WPSSO is distributed without the sharing buttons and their related features.</p>
 </blockquote>
 
 = Quick List of Features =
