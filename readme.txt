@@ -1,4 +1,4 @@
-=== NextGEN Facebook - The Most Complete Meta Tags for FB / Open Graph, Google, Twitter Cards ===
+=== NextGEN Facebook - Most Complete Meta Tags for FB / Open Graph, Google, Twitter Cards ===
 Plugin Name: NextGEN Facebook (NGFB)
 Plugin Slug: nextgen-facebook
 Text Domain: nextgen-facebook
