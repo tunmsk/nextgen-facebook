@@ -1,4 +1,4 @@
-=== NextGEN Facebook - Complete Meta Tags for FB, Google, Pinterest, Twitter, LinkedIn & More ===
+=== NextGEN Facebook - Most Complete Meta Tags for FB / Open Graph, Google, Twitter Cards etc ===
 Plugin Name: NextGEN Facebook (NGFB)
 Plugin Slug: nextgen-facebook
 Text Domain: nextgen-facebook
@@ -12,7 +12,7 @@ Requires At Least: 3.1
 Tested Up To: 4.5.2
 Stable Tag: 8.32.3-1
 
-Display your content in the best possible way on Facebook, Google+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
+The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
 == Description ==
 
