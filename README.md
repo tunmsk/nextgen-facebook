@@ -1,4 +1,4 @@
-<h1>NextGEN Facebook</h1><h3>The Most Complete Meta Tags for FB / Open Graph, G+, Twitter Cards</h3>
+<h1>NextGEN Facebook</h1><h3>The Most Complete Open Graph, Twitter Card, and Schema Meta Tags</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>NextGEN Facebook (NGFB)</td></tr>
