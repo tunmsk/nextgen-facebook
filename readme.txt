@@ -423,6 +423,21 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.32.4-dev1 (2016/06/05)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed extra semi-colon preventing the custom Open Graph description from being used as a fallback for other description meta tags.
+* *Developer Notes*
+	* Optimized the option type detection for the site social account URLs.
+	* Allowed fallback to custom Open Graph description for terms and user pages as well.
+	* Added a new `SucomUtil::get_multi_key_locale()` and `SucomUtil::get_first_next_nums()` method for the PLM extension.
+
 **Version 8.32.3-1 (2016/06/02)**
 
 Official announcement: N/A
@@ -491,6 +506,10 @@ Official announcement: N/A
 	* Added a new 'ngfb_social_accounts' filter.
 
 == Upgrade Notice ==
+
+= 8.32.4-dev1 =
+
+(2016/06/05) Fixed extra semi-colon preventing the custom Open Graph description from being used as a fallback for other description meta tags.
 
 = 8.32.3-1 =
 
