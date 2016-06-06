@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.32.3-1',	// plugin version
+					'version' => '8.32.4-dev1',	// plugin version
 					'opt_version' => '434',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -247,17 +247,17 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'seo_def_author_on_index' => 0,
 					'seo_def_author_on_search' => 0,
 					'seo_author_field' => '',		// default value set by NgfbOptions::get_defaults()
-					'seo_publisher_url' => '',		// multilingual
-					'fb_publisher_url' => '',		// multilingual
+					'seo_publisher_url' => '',		// (multilingual)
+					'fb_publisher_url' => '',		// (multilingual)
 					'fb_app_id' => '',
 					'fb_admins' => '',
 					'fb_author_name' => 'display_name',
 					'fb_lang' => 'en_US',
-					'instgram_publisher_url' => '',		// multilingual
-					'linkedin_publisher_url' => '',		// multilingual
-					'myspace_publisher_url' => '',		// multilingual
-					'og_site_name' => '',			// multilingual
-					'og_site_description' => '',		// multilingual
+					'instgram_publisher_url' => '',		// (multilingual)
+					'linkedin_publisher_url' => '',		// (multilingual)
+					'myspace_publisher_url' => '',		// (multilingual)
+					'og_site_name' => '',			// (multilingual)
+					'og_site_description' => '',		// (multilingual)
 					'og_art_section' => 'none',
 					'og_img_width' => 600,
 					'og_img_height' => 315,
@@ -290,7 +290,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'og_title_len' => 70,
 					'og_desc_len' => 300,
 					'og_desc_hashtags' => 3,
-					'rp_publisher_url' => '',		// multilingual
+					'rp_publisher_url' => '',		// (multilingual)
 					'rp_author_name' => 'display_name',	// rich-pin specific article:author
 					'rp_img_width' => 800,
 					'rp_img_height' => 1600,
@@ -298,8 +298,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'rp_img_crop_x' => 'center',
 					'rp_img_crop_y' => 'center',
 					'rp_dom_verify' => '',
-					'tc_site' => '',			// multilingual
-					'tc_desc_len' => 200,
+					'tc_site' => '',			// Twitter Business @username (multilingual)
+					'tc_desc_len' => 200,			// Maximum Description Length
 					// summary card
 					'tc_sum_width' => 600,
 					'tc_sum_height' => 600,

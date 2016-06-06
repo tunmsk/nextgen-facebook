@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.32.3-1\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.32.4-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -360,7 +360,7 @@ msgstr ""
 msgid "Error copying %1$s to %2$s."
 msgstr ""
 
-#: lib/admin.php:1409 lib/sharing.php:397
+#: lib/admin.php:1409 lib/sharing.php:394
 msgid "Failed to open file %s for writing."
 msgstr ""
 
@@ -380,7 +380,7 @@ msgctxt "option value"
 msgid "(option disabled)"
 msgstr ""
 
-#: lib/com/form.php:186 lib/com/form.php:407 lib/config-gettext-extract.php:54
+#: lib/com/form.php:186 lib/com/form.php:408 lib/config-gettext-extract.php:54
 msgctxt "option value"
 msgid "(settings value)"
 msgstr ""
@@ -2514,48 +2514,48 @@ msgstr ""
 msgid "Failed to open the %s file for reading."
 msgstr ""
 
-#: lib/sharing.php:290
+#: lib/sharing.php:287
 msgctxt "submit button"
 msgid "Reload Default Styles"
 msgstr ""
 
-#: lib/sharing.php:307
+#: lib/sharing.php:304
 msgid ""
 "All sharing styles have been reloaded with their default settings and saved."
 msgstr ""
 
-#: lib/sharing.php:328
+#: lib/sharing.php:325
 msgid "The %s file is not readable."
 msgstr ""
 
-#: lib/sharing.php:368
+#: lib/sharing.php:365
 msgid "Failed to load the minify class SuextMinifyCssCompressor."
 msgstr ""
 
-#: lib/sharing.php:377
+#: lib/sharing.php:374
 msgid "Failed writing to the % file."
 msgstr ""
 
-#: lib/sharing.php:382
+#: lib/sharing.php:379
 msgid "Updated the <a href=\"%1$s\">%2$s</a> stylesheet (%3$d bytes written)."
 msgstr ""
 
-#: lib/sharing.php:391
+#: lib/sharing.php:388
 msgid "The %s folder is not writable."
 msgstr ""
 
-#: lib/sharing.php:406
+#: lib/sharing.php:403
 msgid ""
 "Error removing the minimized stylesheet &mdash; does the web server have "
 "sufficient privileges?"
 msgstr ""
 
-#: lib/sharing.php:425
+#: lib/sharing.php:422
 msgctxt "metabox title"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/sharing.php:501
+#: lib/sharing.php:498
 msgid "%s must be published<br/>before it can be shared."
 msgstr ""
 
