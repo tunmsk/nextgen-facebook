@@ -515,15 +515,3 @@ Official announcement: N/A
 
 (2016/06/02) Added support for all Schema Organization sub-types. Improved loop through Schema types and sub-types. Sorted extension sub-menu items alphabetically.
 
-= 8.32.2-1 =
-
-(2016/05/29) Refactored the Organization schema filter to allow for Organization sub-types. Added a missing third argument to preg_match_all() in NgfbUtil for older PHP versions.
-
-= 8.32.1-1 =
-
-(2016/05/27) Improvements for The SEO Framework plugin. Refactored the NgfbUtil get_sharing_url() method and changed several filter arguments.
-
-= 8.32.0-1 =
-
-(2016/05/23) Added new 'Show "NGFB Img" Column for' and 'Show "NGFB Desc" Column for' options. Added support for The SEO Framework plugin (Pro version).
-
