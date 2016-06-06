@@ -81,9 +81,9 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 
 			foreach ( array( 
-				'og_img' => sprintf( _x( 'Show "%s" Column for', 'option label', 'nextgen-facebook' ), 
+				'og_img' => sprintf( _x( 'Add \'%s\' Column for', 'option label', 'nextgen-facebook' ), 
 					sprintf( _x( '%s Img', 'column title', 'nextgen-facebook' ), $this->p->cf['menu'] ) ),
-				'og_desc' => sprintf( _x( 'Show "%s" Column for', 'option label', 'nextgen-facebook' ), 
+				'og_desc' => sprintf( _x( 'Add \'%s\' Column for', 'option label', 'nextgen-facebook' ), 
 					sprintf( _x( '%s Desc', 'column title', 'nextgen-facebook' ), $this->p->cf['menu'] ) ),
 			) as $key => $label ) {
 
@@ -121,21 +121,9 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 				' '.__( 'User Profile', 'nextgen-facebook' ).'</p>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
-			$form->get_th_html( _x( 'Include Social Settings Metabox on',
+			$form->get_th_html( _x( 'Include Social Metaboxed on',
 				'option label', 'nextgen-facebook' ), null, 'plugin_add_to' ).
 			'<td class="blank">'.$checkboxes.'</td>';
-
-			$table_rows[] = '<tr class="hide_in_basic">'.
-			$form->get_th_html( _x( 'Add Tabs to Social Settings Metabox',
-				'option label', 'nextgen-facebook' ), null, 'plugin_add_tab' ).
-			'<td class="blank">'.
-			'<p>'.$this->get_nocb( 'plugin_add_tab_preview' ).' '.
-				_x( 'Preview', 'metabox tab', 'nextgen-facebook' ).'</p>'.
-			'<p>'.$this->get_nocb( 'plugin_add_tab_tags' ).' '.
-				_x( 'Head Tags', 'metabox tab', 'nextgen-facebook' ).'</p>'.
-			'<p>'.$this->get_nocb( 'plugin_add_tab_validate' ).' '.
-				_x( 'Validate', 'metabox tab', 'nextgen-facebook' ).'</p>'.
-			'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Image URL Custom Field',

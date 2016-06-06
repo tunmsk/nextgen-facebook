@@ -34,7 +34,7 @@ if ( ! class_exists( 'NgfbProfileSocialSettings' ) && class_exists( 'NgfbAdmin' 
 			$user = get_userdata( $user_id );
 			if ( empty( $user->ID ) )
 				wp_die( __( 'Invalid user ID.' ) );
-			$this->p->m['util']['user']->show_metabox_user( $user );
+			$this->p->m['util']['user']->show_metabox_social_settings( $user );
 		}
 	}
 }

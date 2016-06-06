@@ -50,29 +50,38 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 		public function __construct() {
 		}
 
-		protected function add_actions() {
-			return $this->must_be_extended( __METHOD__ );
-		}
-
 		public function get_mod( $mod_id ) {
 			return $this->must_be_extended( __METHOD__, self::$mod_array );
 		}
 
-		protected function get_default_tabs() {
-			$tabs = array();
-			foreach( apply_filters( $this->p->cf['lca'].'_social_settings_default_tabs', array(
-				'preview' => _x( 'Preview', 'metabox tab', 'nextgen-facebook' ),
-				'header' => _x( 'Edit Text', 'metabox tab', 'nextgen-facebook' ),
-				'media' => _x( 'Select Media', 'metabox tab', 'nextgen-facebook' ),
-				'tags' => _x( 'Head Tags', 'metabox tab', 'nextgen-facebook' ),
-				'validate' => _x( 'Validate', 'metabox tab', 'nextgen-facebook' ),
-			) ) as $key => $name ) {
-				if ( isset( $this->p->options['plugin_add_tab_'.$key] ) ) {
-					if ( ! empty( $this->p->options['plugin_add_tab_'.$key] ) )
-						$tabs[$key] = $name;
-				} else $tabs[$key] = $name;
+		protected function add_actions() {
+			return $this->must_be_extended( __METHOD__ );
+		}
+
+		public function add_metaboxes() {
+			return $this->must_be_extended( __METHOD__ );
+		}
+
+		public function show_metabox_social_settings( $obj ) {
+			return $this->must_be_extended( __METHOD__ );
+		}
+
+		protected function get_social_tabs( $metabox, array &$mod ) {
+			switch ( $metabox ) {
+				case 'social_settings':
+					$tabs = array(
+						'header' => _x( 'Edit Text', 'metabox tab', 'nextgen-facebook' ),
+						'media' => _x( 'Select Media', 'metabox tab', 'nextgen-facebook' ),
+						'preview' => _x( 'Preview', 'metabox tab', 'nextgen-facebook' ),
+						'tags' => _x( 'Head Tags', 'metabox tab', 'nextgen-facebook' ),
+						'validate' => _x( 'Validate', 'metabox tab', 'nextgen-facebook' ),
+					);
+					break;
+				default:
+					$tabs = array();	// just in case
+					break;
 			}
-			return $tabs;
+			return apply_filters( $this->p->cf['lca'].'_'.$mod['name'].'_'.$metabox.'_tabs', $tabs, $mod );
 		}
 
 		protected function get_table_rows( &$metabox, &$key, &$head, &$mod ) {
