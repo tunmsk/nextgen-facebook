@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.32.4-dev4',	// plugin version
+					'version' => '8.32.4-dev5',	// plugin version
 					'opt_version' => '434',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -215,15 +215,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'schema_banner_url' => '',
 					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length
 					'schema_type_for_home_page' => 'website',
-					'schema_type_for_post' => 'webpage',
+					'schema_type_for_post' => 'blog.posting',
 					'schema_type_for_page' => 'webpage',
 					'schema_type_for_attachment' => 'webpage',
 					'schema_type_for_article' => 'article',
-					'schema_type_for_article.news' => 'article.news',
-					'schema_type_for_article.tech' => 'article.tech',
 					'schema_type_for_book' => 'book',
 					'schema_type_for_blog' => 'blog',
-					'schema_type_for_blog.posting' => 'blog.posting',
+					'schema_type_for_business' => 'local.business',
 					'schema_type_for_download' => 'product',
 					'schema_type_for_organization' => 'organization',
 					'schema_type_for_person' => 'person',
@@ -232,7 +230,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'schema_type_for_recipe' => 'recipe',
 					'schema_type_for_review' => 'review',
 					'schema_type_for_other' => 'other',
-					'schema_type_for_local.business' => 'local.business',
 					'schema_type_for_webpage' => 'webpage',
 					'schema_type_for_website' => 'website',
 					'schema_author_name' => 'display_name',

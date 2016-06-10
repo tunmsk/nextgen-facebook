@@ -96,8 +96,8 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
 
 		public function filter_style_bbp_single_rows( $table_rows, $form ) {
 			$table_rows[] = '<td colspan="2" align="center">'.
-				$this->p->msgs->get( 'pro-feature-msg', 
-					array( 'lca' => 'ngfb' ) ).'</td>';
+				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
+
 			$table_rows[] = '<th class="textinfo">
 			<p>Social sharing buttons added at the top of bbPress Single Templates are assigned the \'ngfb-bbp_single-buttons\' class, which itself contains the \'ngfb-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
 
@@ -106,15 +106,18 @@ if ( ! class_exists( 'NgfbGplForumBbpressSharing' ) ) {
     .ngfb-buttons
         .facebook-button { }</pre></th><td><textarea disabled="disabled" class="tall code">'.
 			$this->p->options['buttons_css_bbp_single'].'</textarea></td>';
+
 			return $table_rows;
 		}
 
 		public function filter_buttons_position_rows( $table_rows, $form ) {
 			$table_rows[] = '<td colspan="2" align="center">'.
-				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'ngfb' ) ).'</td>';
+				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
+
 			$table_rows['buttons_pos_bbp_single'] = $form->get_th_html( _x( 'Position in bbPress Single',
 				'option label', 'nextgen-facebook' ), null, 'buttons_pos_bbp_single' ).
 			'<td class="blank">'.$this->p->cf['sharing']['position'][$this->p->options['buttons_pos_bbp_single']].'</td>';
+
 			return $table_rows;
 		}
 	}

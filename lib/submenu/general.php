@@ -41,7 +41,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 		public function show_metabox_opengraph() {
 			$metabox = 'og';
 			$tabs = apply_filters( $this->p->cf['lca'].'_general_og_tabs', array( 
-				'general' => _x( 'Website Information', 'metabox tab', 'nextgen-facebook' ),
+				'general' => _x( 'Site Information', 'metabox tab', 'nextgen-facebook' ),
 				'content' => _x( 'Descriptions', 'metabox tab', 'nextgen-facebook' ),	// same text as Social Settings tab
 				'author' => _x( 'Authorship', 'metabox tab', 'nextgen-facebook' ),
 				'images' => _x( 'Images', 'metabox tab', 'nextgen-facebook' ),
@@ -142,23 +142,25 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 						'option label', 'nextgen-facebook' ), null, 'og_author_fallback' ).
 					'<td>'.$this->form->get_checkbox( 'og_author_fallback' ).'</td>';
 
-					$table_rows['og_def_author_id'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Default Author when Missing',
-						'option label', 'nextgen-facebook' ), null, 'og_def_author_id' ).
-					'<td>'.$this->form->get_select( 'og_def_author_id', $user_names, null, null, true ).'</td>';
+					if ( SucomUtil::get_const( 'NGFB_DEFAULT_AUTHOR_OPTIONS' ) ) {
 
-					$table_rows['og_def_author_on_index'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Use Default Author on Indexes',
-						'option label', 'nextgen-facebook' ), null, 'og_def_author_on_index' ).
-					'<td>'.$this->form->get_checkbox( 'og_def_author_on_index' ).' '.
-						_x( 'defines index / archive webpages as articles', 'option comment', 'nextgen-facebook' ).'</td>';
-
-					$table_rows['og_def_author_on_search'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Use Default Author on Search Results',
-						'option label', 'nextgen-facebook' ), null, 'og_def_author_on_search' ).
-					'<td>'.$this->form->get_checkbox( 'og_def_author_on_search' ).' '.
-						_x( 'defines search webpages as articles', 'option comment', 'nextgen-facebook' ).'</td>';
-
+						$table_rows['og_def_author_id'] = '<tr class="hide_in_basic">'.
+						$this->form->get_th_html( _x( 'Default Author when Missing',
+							'option label', 'nextgen-facebook' ), null, 'og_def_author_id' ).
+						'<td>'.$this->form->get_select( 'og_def_author_id', $user_names, null, null, true ).'</td>';
+	
+						$table_rows['og_def_author_on_index'] = '<tr class="hide_in_basic">'.
+						$this->form->get_th_html( _x( 'Use Default Author on Indexes',
+							'option label', 'nextgen-facebook' ), null, 'og_def_author_on_index' ).
+						'<td>'.$this->form->get_checkbox( 'og_def_author_on_index' ).' '.
+							_x( 'defines index / archive webpages as articles', 'option comment', 'nextgen-facebook' ).'</td>';
+	
+						$table_rows['og_def_author_on_search'] = '<tr class="hide_in_basic">'.
+						$this->form->get_th_html( _x( 'Use Default Author on Search Results',
+							'option label', 'nextgen-facebook' ), null, 'og_def_author_on_search' ).
+						'<td>'.$this->form->get_checkbox( 'og_def_author_on_search' ).' '.
+							_x( 'defines search webpages as articles', 'option comment', 'nextgen-facebook' ).'</td>';
+					}	
 					break;
 
 				case 'og-images':
@@ -248,20 +250,23 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 						'option label', 'nextgen-facebook' ), null, 'seo_author_field' ).
 					'<td>'.$this->form->get_select( 'seo_author_field', $user_contacts ).'</td>';
 
-					$table_rows['seo_def_author_id'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Default Author when Missing',
-						'option label', 'nextgen-facebook' ), null, 'seo_def_author_id' ).
-					'<td>'.$this->form->get_select( 'seo_def_author_id', $user_names, null, null, true ).'</td>';
+					if ( SucomUtil::get_const( 'NGFB_DEFAULT_AUTHOR_OPTIONS' ) ) {
 
-					$table_rows['seo_def_author_on_index'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Use Default Author on Indexes',
-						'option label', 'nextgen-facebook' ), null, 'seo_def_author_on_index' ).
-					'<td>'.$this->form->get_checkbox( 'seo_def_author_on_index' ).'</td>';
-
-					$table_rows['seo_def_author_on_search'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Use Default Author on Search Results',
-						'option label', 'nextgen-facebook' ), null, 'seo_def_author_on_search' ).
-					'<td>'.$this->form->get_checkbox( 'seo_def_author_on_search' ).'</td>';
+						$table_rows['seo_def_author_id'] = '<tr class="hide_in_basic">'.
+						$this->form->get_th_html( _x( 'Default Author when Missing',
+							'option label', 'nextgen-facebook' ), null, 'seo_def_author_id' ).
+						'<td>'.$this->form->get_select( 'seo_def_author_id', $user_names, null, null, true ).'</td>';
+	
+						$table_rows['seo_def_author_on_index'] = '<tr class="hide_in_basic">'.
+						$this->form->get_th_html( _x( 'Use Default Author on Indexes',
+							'option label', 'nextgen-facebook' ), null, 'seo_def_author_on_index' ).
+						'<td>'.$this->form->get_checkbox( 'seo_def_author_on_index' ).'</td>';
+	
+						$table_rows['seo_def_author_on_search'] = '<tr class="hide_in_basic">'.
+						$this->form->get_th_html( _x( 'Use Default Author on Search Results',
+							'option label', 'nextgen-facebook' ), null, 'seo_def_author_on_search' ).
+						'<td>'.$this->form->get_checkbox( 'seo_def_author_on_search' ).'</td>';
+					}
 
 					$table_rows['subsection_google_schema'] = '<td></td><td class="subsection"><h4>'.
 						_x( 'Google Structured Data / Schema Markup',
@@ -289,23 +294,18 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 						sprintf( __( ' Include <a href="%s">Organization Social Profile</a>',
 							'nextgen-facebook' ), 'https://developers.google.com/structured-data/customize/social-profiles' ).'</p>'.
 					'<p>'.$this->form->get_checkbox( 'schema_person_json' ).
-						sprintf( __( ' Include <a href="%s">Person Social Profile</a> for Website Owner',
+						sprintf( __( ' Include <a href="%s">Person Social Profile</a> for Site Owner',
 							'nextgen-facebook' ), 'https://developers.google.com/structured-data/customize/social-profiles' ).' '.
 								$this->form->get_select( 'schema_person_id', $users, null, null, true ).'</p>'.
 					'</td>';
 
-					$table_rows['schema_alt_name'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Website Alternate Name',
-						'option label', 'nextgen-facebook' ), null, 'schema_alt_name' ).
-					'<td>'.$this->form->get_input( 'schema_alt_name', 'wide' ).'</td>';
-
 					$table_rows['schema_logo_url'] = $this->form->get_th_html( 
 						'<a href="https://developers.google.com/structured-data/customize/logos">'.
-						_x( 'Website Logo Image URL', 'option label', 'nextgen-facebook' ).'</a>', null, 'schema_logo_url' ).
+						_x( 'Organization Logo Image URL', 'option label', 'nextgen-facebook' ).'</a>', null, 'schema_logo_url' ).
 					'<td>'.$this->form->get_input( 'schema_logo_url', 'wide' ).'</td>';
 
 					$table_rows['schema_banner_url'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Website Banner (600x60px) URL',
+					$this->form->get_th_html( _x( 'Organization Banner (600x60px) URL',
 						'option label', 'nextgen-facebook' ), null, 'schema_banner_url' ).
 					'<td>'.$this->form->get_input( 'schema_banner_url', 'wide' ).'</td>';
 

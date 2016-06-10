@@ -92,8 +92,8 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
 
 		public function filter_style_bp_activity_rows( $rows, $form ) {
 			$rows[] = '<td colspan="2" align="center">'.
-				$this->p->msgs->get( 'pro-feature-msg', 
-					array( 'lca' => 'ngfb' ) ).'</td>';
+				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
+
 			$rows[] = '<th class="textinfo">
 			<p>Social sharing buttons added to BuddyPress Activities are assigned the \'ngfb-bp_activity-buttons\' class, which itself contains the \'ngfb-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
 
@@ -102,6 +102,7 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
     .ngfb-buttons
         .facebook-button { }</pre></th><td><textarea disabled="disabled" class="tall code">'.
 			$this->p->options['buttons_css_bp_activity'].'</textarea></td>';
+
 			return $rows;
 		}
 	}

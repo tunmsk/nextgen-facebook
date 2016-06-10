@@ -51,8 +51,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 						'('.$post_type->description.')' ).'</p>';
 
 			$table_rows[] = '<td colspan="2" align="center">'.
-				$this->p->msgs->get( 'pro-feature-msg', 
-					array( 'lca' => 'ngfb' ) ).'</td>';
+				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 
 			$table_rows['buttons_add_to'] = $form->get_th_html( _x( 'Include on Post Types',
 				'option label', 'nextgen-facebook' ), null, 'buttons_add_to' ).
@@ -71,8 +70,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			asort( $presets );
 
 			$table_rows[] = '<td colspan="2" align="center">'.
-				$this->p->msgs->get( 'pro-feature-msg', 
-					array( 'lca' => 'ngfb' ) ).'</td>';
+				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 
 			foreach( $presets as $filter_id => $filter_name )
 				$table_rows[] = $form->get_th_html( sprintf( _x( '%s Preset',
