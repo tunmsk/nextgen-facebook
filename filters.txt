@@ -47,7 +47,7 @@ apply_filters( 'ngfb_json_data_http_schema_org', false, $use_post, $mod, $mt_og,
 apply_filters( 'ngfb_json_data_http_schema_org_{item_type}', false, $use_post, $mod, $mt_og, $user_id, $is_main );
 apply_filters( 'ngfb_json_is_main_entity', $bool, $use_post, $mod, $mt_og, $post_id, $user_id );
 apply_filters( 'ngfb_json_ld_search_url', $url );
-apply_filters( 'ngfb_json_schema_type_ids', $type_ids, $mod );
+apply_filters( 'ngfb_json_array_type_ids', $type_ids, $mod );
 apply_filters( 'ngfb_link_rel', $link_rel, $use_post, $mod );
 apply_filters( 'ngfb_load_lib', false, "$type/$sub/$id" );
 apply_filters( 'ngfb_meta_name', $meta_name, $use_post, $mod );
