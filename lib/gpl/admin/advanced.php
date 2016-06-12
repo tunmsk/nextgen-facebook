@@ -121,7 +121,7 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 				' '.__( 'User Profile', 'nextgen-facebook' ).'</p>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
-			$form->get_th_html( _x( 'Include Social Metaboxed on',
+			$form->get_th_html( _x( 'Include Social Metaboxes on',
 				'option label', 'nextgen-facebook' ), null, 'plugin_add_to' ).
 			'<td class="blank">'.$checkboxes.'</td>';
 
