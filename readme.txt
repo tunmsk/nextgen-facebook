@@ -423,7 +423,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.32.4-dev6 (2016/06/12)**
+**Version 8.32.4-1 (2016/06/13)**
 
 Official announcement: N/A
 
@@ -512,9 +512,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.32.4-dev6 =
+= 8.32.4-1 =
 
-(2016/06/12) Fixed extra semi-colon preventing the custom Open Graph description from being used as a fallback. Several code changes to allow for additional origanization Schema markup.
+(2016/06/13) Fixed extra semi-colon preventing the custom Open Graph description from being used as a fallback. Several code changes to allow for additional origanization Schema markup.
 
 = 8.32.3-1 =
 
