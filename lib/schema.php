@@ -652,8 +652,18 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			if ( empty( $ret['logo'] ) ) {
 				if ( $ngfb->debug->enabled )
 					$ngfb->debug->log( 'organization '.$logo_key.' image is missing and required' );
-				if ( is_admin() && ( ! $mod['is_post'] || $mod['post_status'] === 'publish' ) )
-					$ngfb->notice->err( $ngfb->msgs->get( 'notice-missing-'.$logo_key ) );
+				if ( is_admin() && ( ! $mod['is_post'] || $mod['post_status'] === 'publish' ) ) {
+					switch ( $logo_key ) {
+						case 'org_logo_url':
+							$ngfb->notice->err( sprintf( __( 'The "%1$s" Organization Logo Image is missing and required for the Schema %2$s markup.',
+								'nextgen-facebook' ), $ret['name'], $org_type_url ) );
+							break;
+						case 'org_banner_url':
+							$ngfb->notice->err( sprintf( __( 'The "%1$s" Organization Banner (600x60px) is missing and required for the Schema %2$s markup.',
+								'nextgen-facebook' ), $ret['name'], $org_type_url ) );
+							break;
+					}
+				}
 			}
 
 			/*
