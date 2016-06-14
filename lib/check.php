@@ -48,7 +48,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 
 		// cleanup incorrect Yoast SEO notifications
 		public function cleanup_wpseo_notifications() {
-			if ( class_exists( 'Yoast_Notification_Center' ) ) {
+			if ( class_exists( 'Yoast_Notification_Center' ) ) {	// just in case
 				$lca = $this->p->cf['lca'];
 				$base = $this->p->cf['plugin'][$lca]['base'];
 				$notif_center = Yoast_Notification_Center::get();
