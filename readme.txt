@@ -423,6 +423,19 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.32.4-2 (2016/06/14)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Updated a filter to cleanup incorrect notifications in Yoast SEO v3.3.0.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.32.4-1 (2016/06/13)**
 
 Official announcement: N/A
@@ -511,6 +524,10 @@ Official announcement: N/A
 	* Added a new 'ngfb_social_accounts' filter.
 
 == Upgrade Notice ==
+
+= 8.32.4-2 =
+
+(2016/06/14) Updated a filter to cleanup incorrect notifications in Yoast SEO v3.3.0.
 
 = 8.32.4-1 =
 
