@@ -13,7 +13,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 	class NgfbCheck {
 
 		private $p;
-		private $active_plugins = array();
+		private $active_plugins = array();	// active site and network plugins
 
 		private static $c = array();
 		private static $extend_checks = array(
@@ -27,31 +27,35 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
+			$this->active_plugins = SucomUtil::active_plugins();
 
-			if ( is_object( $this->p->debug ) && 
-				method_exists( $this->p->debug, 'mark' ) )
-					$this->p->debug->mark();
-
-			$this->active_plugins = NgfbUtil::active_plugins();
-
-			if ( ! is_admin() ) {
+			if ( is_admin() ) {
+				// cleanup incorrect Yoast SEO notifications
+				if ( isset( $this->active_plugins['wordpress-seo/wp-seo.php'] ) )
+					add_action( 'admin_init', array( $this, 'cleanup_wpseo_notifications' ), 15 );
+			} else {
 				// disable jetPack open graph meta tags
-				if ( class_exists( 'JetPack' ) || 
-					isset( $this->active_plugins['jetpack/jetpack.php'] ) ) {
-
+				if ( isset( $this->active_plugins['jetpack/jetpack.php'] ) ) {
 					add_filter( 'jetpack_enable_opengraph', '__return_false', 100 );
 					add_filter( 'jetpack_enable_open_graph', '__return_false', 100 );
 					add_filter( 'jetpack_disable_twitter_cards', '__return_true', 100 );
 				}
-
 				// disable Yoast SEO social meta tags
-				if ( function_exists( 'wpseo_init' ) || 
-					isset( $this->active_plugins['wordpress-seo/wp-seo.php'] ) )
-						add_action( 'template_redirect', array( $this, 'cleanup_wpseo_filters' ), 1000 );
+				if ( isset( $this->active_plugins['wordpress-seo/wp-seo.php'] ) )
+					add_action( 'template_redirect', array( $this, 'cleanup_wpseo_filters' ), 100 );
 			}
-			do_action( $this->p->cf['lca'].'_init_check', $this->active_plugins );
 		}
 
+		// cleanup incorrect Yoast SEO notifications
+		public function cleanup_wpseo_notifications() {
+			$lca = $this->p->cf['lca'];
+			$base = $this->p->cf['plugin'][$lca]['base'];
+			$notif_center = Yoast_Notification_Center::get();
+			if ( $notif_obj = $notif_center->get_notification_by_id( 'wpseo-conflict-'.md5( $base ) ) )
+				$notif_center->remove_notification( $notif_obj, true );
+		}
+
+		// disable Yoast SEO social meta tags
 		public function cleanup_wpseo_filters() {
 
 			if ( isset( $GLOBALS['wpseo_og'] ) && is_object( $GLOBALS['wpseo_og'] ) && 

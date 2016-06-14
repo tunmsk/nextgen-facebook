@@ -12,7 +12,7 @@
  * Description: The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.1
  * Tested Up To: 4.5.2
- * Version: 8.32.4-1
+ * Version: 8.32.4-2
  *
  * Version Numbers: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -81,17 +81,16 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			NgfbConfig::require_libs( __FILE__ );			// includes the register.php class library
 			$this->reg = new NgfbRegister( $this );			// activate, deactivate, uninstall hooks
 
-			add_action( 'init', array( &$this, 'set_config' ), -1 );
+			add_action( 'init', array( &$this, 'set_config' ), -10 );
 			add_action( 'init', array( &$this, 'init_plugin' ), NGFB_INIT_PRIORITY );
 			add_action( 'widgets_init', array( &$this, 'init_widgets' ), 10 );
 		}
 
-		// runs at init priority -1
+		// runs at init priority -10
 		public function set_config() {
 			$this->cf = NgfbConfig::get_config( false, true );	// apply filters - define the $cf['*'] array
 		}
 
-		// runs at init priority 1
 		public function init_widgets() {
 			$opts = get_option( NGFB_OPTIONS_NAME );
 			if ( ! empty( $opts['plugin_widgets'] ) ) {
