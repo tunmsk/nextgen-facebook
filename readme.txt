@@ -423,7 +423,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.32.5-dev1 (2016/06/15)**
+**Version 8.32.5-dev2 (2016/06/16)**
 
 Official announcement: N/A
 
@@ -538,9 +538,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.32.5-dev1 =
+= 8.32.5-dev2 =
 
-(2016/06/15) Added basic support for the http://schema.org/Event type and its sub-types.
+(2016/06/16) Added basic support for the http://schema.org/Event type and its sub-types.
 
 = 8.32.4-2 =
 
