@@ -392,21 +392,18 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 == Screenshots ==
 
-01. NGFB General Settings Page &mdash; Includes options for Open Graph (All Publishers) site information, titles, descriptions, images, videos, and authors. There is also a Publisher Specific section for Facebook, Google (G+ and Search), LinkedIn, Pinterest Rich Pins, and Twitter Cards.
-02. NGFB Advanced Settings Page &mdash; Allows you to fine-tune some advanced plugin settings, the use of various content filters, custom post meta fields, caching techniques, user profile contacts, and enable / disable a long list of meta tags.
-03. NGFB Social Settings on Posts, Pages, Taxonomy / Terms, and User editing pages &mdash; The Social Settings metabox allows you to modify the default title, description, image, video, preview an example share, preview the meta tags, and validate the webpage markup with online tools.
-04. NGFB "Social Image" and "Social Description" preview columns (available on posts, pages, category, tags, and custom taxonomy editing pages).
+01. General settings page &mdash; Includes options for Open Graph (All Publishers) site information, titles, descriptions, images, videos, and authors. There is also a Publisher Specific section for Facebook, Google (G+ and Search), LinkedIn, Pinterest Rich Pins, and Twitter Cards.
+02. Advanced settings page &mdash; Allows you to fine-tune some advanced plugin settings, the use of various content filters, custom post meta fields, caching techniques, user profile contacts, and enable / disable a long list of meta tags.
+03. Social Settings metabox on Posts, Pages, Taxonomy / Terms, and User editing pages &mdash; Allows you to modify the default title, description, image, video, preview an example share, preview the meta tags, and validate the webpage markup with online tools.
+04. "Social Image" and "Social Description" preview columns (available on posts, pages, category, tags, and custom taxonomy editing pages).
 05. Example Pinterest Product Pin (Zoomed).
 06. Example Facebook Link Share.
 07. Example Facebook Video Share.
 08. Example Twitter 'Summary' Card.
 09. Example Twitter 'Large Image Summary' Card.
-10. Example Twitter 'Photo' Card (The [Photo](https://dev.twitter.com/cards/types/photo) Card was deprecated by Twitter on July 3rd, 2015).
-11. Example Twitter 'Gallery' Card (The [Gallery](https://dev.twitter.com/cards/types/gallery) Card was deprecated by Twitter on July 3rd, 2015).
-12. Example Twitter 'Product' Card (The [Product](https://dev.twitter.com/cards/types/product) Card was deprecated by Twitter on July 3rd, 2015).
-13. Example Twitter 'Player' Card.
-14. Example Social Profiles in Google Search &mdash; NGFB includes author (Person) and publisher (Organization) social profiles in schema.org JSON-LD format for Google Search and their Knowledge Graph.
-15. Example Showing All Social Sharing Buttons Enabled.
+10. Example Twitter 'Player' Card.
+11. Example Social Profiles in Google Search &mdash; NGFB includes author (Person) and publisher (Organization) social profiles in schema.org JSON-LD format for Google Search and their Knowledge Graph.
+12. Example Showing All Social Sharing Buttons Enabled.
 
 == Changelog ==
 
