@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.32.5-dev2',	// plugin version
-					'opt_version' => '434',		// increment when changing default options
+					'opt_version' => '436',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -135,6 +135,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'wpecommerce' => '(plugin) WP eCommerce',
 								'yotpowc' => '(plugin) Yotpo Social Reviews for WooCommerce',
 							),
+							'event' => array(
+								'tribe_events' => '(plugin) The Events Calendar',
+							),
 							'forum' => array(
 								'bbpress' => '(plugin) bbPress',
 							),
@@ -223,13 +226,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'schema_type_for_blog' => 'blog',
 					'schema_type_for_business' => 'local.business',
 					'schema_type_for_download' => 'product',
+					'schema_type_for_event' => 'event',
 					'schema_type_for_organization' => 'organization',
+					'schema_type_for_other' => 'other',
 					'schema_type_for_person' => 'person',
 					'schema_type_for_place' => 'place',
 					'schema_type_for_product' => 'product',
 					'schema_type_for_recipe' => 'recipe',
 					'schema_type_for_review' => 'review',
-					'schema_type_for_other' => 'other',
+					'schema_type_for_tribe_events' => 'event',
 					'schema_type_for_webpage' => 'webpage',
 					'schema_type_for_website' => 'website',
 					'schema_author_name' => 'display_name',
@@ -1343,7 +1348,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				if ( file_exists( $filepath ) ) {
 					require_once( $filepath );
 					if ( empty( $classname ) )
-						return SucomUtil::sanitize_classname( 'ngfb'.$filespec );
+						return SucomUtil::sanitize_classname( 'ngfb'.$filespec, false );	// $underscore = false
 					else return $classname;
 				}
 			}
