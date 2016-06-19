@@ -420,12 +420,12 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.32.5-dev2 (2016/06/16)**
+**Version 8.33.0-dev3 (2016/06/19)**
 
 Official announcement: N/A
 
 * *New Features*
-	* None
+	* Added support for The Events Calendar plugin (Pro version).
 * *Improvements*
 	* Added basic support for the http://schema.org/Event type and its sub-types.
 * *Bugfixes*
@@ -463,7 +463,7 @@ Official announcement: N/A
 	* Added a new `SucomUtil::get_multi_key_locale()` and `SucomUtil::get_first_last_next_nums()` method for the PLM extension.
 	* Added value caching to the `SucomUtil::get_locale()` method for a minor performance improvement.
 	* Refactored the `NgfbSchema::add_single_organization_data()` method, and added a new `$org_id` argument (false by default).
-	* Added a new 'ngfb_organization_options' filter to provide custom organization information.
+	* Added a new 'ngfb_get_organization_options' filter to provide custom organization information.
 	* Added a new `NgfbSchema::add_single_place_data()` method.
 
 **Version 8.32.3-1 (2016/06/02)**
@@ -535,9 +535,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.32.5-dev2 =
+= 8.33.0-dev3 =
 
-(2016/06/16) Added basic support for the http://schema.org/Event type and its sub-types.
+(2016/06/19) Added support for The Events Calendar plugin (Pro version). Added basic support for the http://schema.org/Event type and its sub-types.
 
 = 8.32.4-2 =
 
