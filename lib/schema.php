@@ -604,7 +604,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				return 0;
 
 			$ngfb =& Ngfb::get_instance();
-			$org_opts = apply_filters( $ngfb->cf['lca'].'_organization_options', array(), $mod, $org_id );
+			$org_opts = apply_filters( $ngfb->cf['lca'].'_get_organization_options', false, $mod, $org_id );
 
 			if ( empty( $org_opts ) ) {	// $org_opts could be false or empty array
 				$org_opts = array(
@@ -619,13 +619,10 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				foreach ( apply_filters( $ngfb->cf['lca'].'_social_accounts', 
 					$ngfb->cf['form']['social_accounts'] ) as $key => $label )
 						$org_opts['org_sameas_'.$key] = SucomUtil::get_locale_opt( $key, $ngfb->options, $mod );
-			} elseif ( empty( $org_opts['org_type'] ) ) {
-				if ( $ngfb->debug->enabled )
-					$ngfb->debug->log( 'exiting early: organization org_type is empty' );
-				return 0;
 			}
 
-			$org_type_url = $ngfb->schema->get_schema_type_url( $org_opts['org_type'], 'organization' );
+			$org_type_id = empty( $org_opts['org_type'] ) ? 'organization' : $org_opts['org_type'];
+			$org_type_url = $ngfb->schema->get_schema_type_url( $org_type_id, 'organization' );
 			$ret = self::get_item_type_context( $org_type_url );
 
 			// add schema properties from the organization options
@@ -698,9 +695,9 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				return 0;
 
 			$ngfb =& Ngfb::get_instance();
-			$place_opts = apply_filters( $ngfb->cf['lca'].'_place_options', array(), $mod, $place_id );
+			$place_opts = apply_filters( $ngfb->cf['lca'].'_get_place_options', false, $mod, $place_id );
 
-			if ( empty( $place_opts ) ) {	// $org_opts could be false or empty array
+			if ( empty( $place_opts ) ) {	// $place_opts could be false or empty array
 				if ( $ngfb->debug->enabled )
 					$ngfb->debug->log( 'exiting early: no place options' );
 				return 0;
@@ -708,12 +705,12 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 
 			// local business is a sub-type of place
 			// use the local business schema type if we have one
-			if ( ! empty( $place_opts['place_business_type'] ) &&
-				$place_opts['place_business_type'] !== 'none' )
-					$place_type_url = $ngfb->schema->get_schema_type_url( $place_opts['place_business_type'], 'place' );
-			else $place_type_url = 'http://schema.org/Place';
-
+			$place_type_id = empty( $place_opts['place_business_type'] ) || 
+				$place_opts['place_business_type'] === 'none' ?
+					'place' : $place_opts['place_business_type'];
+			$place_type_url = $ngfb->schema->get_schema_type_url( $place_type_id, 'place' );
 			$ret = self::get_item_type_context( $place_type_url );
+
 			$address = array();
 			$geo = array();
 			$opening_hours = array();
@@ -815,6 +812,37 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			return 1;
 		}
 
+		public static function add_single_event_data( &$json_data, &$mod, $event_id = false, $list_element = false ) {
+
+			if ( $event_id === 'none' )
+				return 0;
+
+			$ngfb =& Ngfb::get_instance();
+			$event_opts = apply_filters( $ngfb->cf['lca'].'_get_event_options', false, $mod, $event_id );
+
+			if ( empty( $event_opts ) ) {	// $event_opts could be false or empty array
+				if ( $ngfb->debug->enabled )
+					$ngfb->debug->log( 'exiting early: no event options' );
+				return 0;
+			}
+
+			$event_type_id = empty( $event_opts['event_type'] ) ? 'event' : $event_opts['event_type'];
+			$event_type_url = $ngfb->schema->get_schema_type_url( $event_type_id, 'event' );
+			$ret = self::get_item_type_context( $event_type_url );
+
+			// add schema properties from the place options
+			self::add_data_itemprop_from_assoc( $ret, $event_opts, array(
+				'startDate' => 'event_start_date',
+				'endDate' => 'event_end_date',
+			) );
+
+			if ( empty( $list_element ) )
+				$json_data = $ret;
+			else $json_data[] = $ret;
+
+			return 1;
+		}
+
 		// $user_id is optional and takes precedence over the $mod post_author value
 		public static function add_author_and_coauthor_data( &$json_data, $mod, $user_id = 0 ) {
 
@@ -833,13 +861,12 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			}
 
 			// single author
-			$authors_added += self::add_single_person_data( $json_data['author'],
-				$user_id, false );			// list_element = false
+			$authors_added += self::add_single_person_data( $json_data['author'], $user_id, false );	// list_element = false
 
 			// list of contributors / co-authors
 			if ( isset( $mod['post_coauthors'] ) && is_array( $mod['post_coauthors'] ) )
 				foreach ( $mod['post_coauthors'] as $author_id )
-					$coauthors_added += self::add_single_person_data( $json_data['contributor'],
+					$coauthors_added += self::add_single_person_data( $json_data['contributor'], 
 						$author_id, true );	// list_element = true
 
 			foreach ( array( 'author', 'contributor' ) as $itemprop )
