@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.33.0-dev4',	// plugin version
+					'version' => '8.33.0-dev5',	// plugin version
 					'opt_version' => '437',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -444,6 +444,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_itemprop_reviewcount' => 1,
 					'add_meta_itemprop_startdate' => 1,	// Schema Event
 					'add_meta_itemprop_enddate' => 1,	// Schema Event
+					'add_meta_itemprop_location' => 1,	// Schema Event
 					/*
 					 * Advanced Settings
 					 */

@@ -69,9 +69,6 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 						case 'tooltip-meta-schema_headline':
 							$text = __( 'A custom headline for the Schema Article item type and its sub-types (NewsArticle, TechArticle, etc). The headline property is not used for non-Article item types.', 'nextgen-facebook' );
 						 	break;
-						case 'tooltip-meta-schema_pub_org_id':
-							$text = __( 'Select a publisher for the Schema Article item type and its sub-types (NewsArticle, TechArticle, etc).', 'nextgen-facebook' );
-						 	break;
 						case 'tooltip-meta-schema_desc':
 							$text = __( 'A custom description for the Schema item type\'s description property.', 'nextgen-facebook' );
 						 	break;
@@ -128,7 +125,7 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 							$text = __( 'The maximum number of images to include in the Google / Schema meta tags and JSON-LD markup.', 'nextgen-facebook' );
 						 	break;
 						default:
-							$text = apply_filters( $lca.'_messages_tooltip_user', $text, $idx, $info );
+							$text = apply_filters( $lca.'_messages_tooltip_meta', $text, $idx, $info );
 							break;
 					}	// end of tooltip-user switch
 				/*
