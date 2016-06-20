@@ -420,7 +420,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.0-dev4 (2016/06/19)**
+**Version 8.33.0-dev5 (2016/06/20)**
 
 Official announcement: N/A
 
@@ -431,7 +431,11 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Added a new `NgfbSchema::add_single_event_data()` method.
+	* Added the $mod argument to all `NgfbSchema::add_single_person_data()` method calls.
+	* Refactored the `NgfbSchema::add_single_person_data()` method.
+	* Renamed the NgfbSchema `add_data_itemprop_from_og()` method to `add_data_itemprop_from_assoc()`.
+	* Renamed the NgfbSchema `add_data_quantitative_from_og()` method to `add_data_quant_from_assoc()`.
 
 **Version 8.32.4-2 (2016/06/14)**
 
@@ -535,9 +539,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.33.0-dev4 =
+= 8.33.0-dev5 =
 
-(2016/06/19) Added support for The Events Calendar plugin (Pro version). Added basic support for the http://schema.org/Event type and its sub-types.
+(2016/06/20) Added support for The Events Calendar plugin (Pro version). Added basic support for the http://schema.org/Event type and its sub-types.
 
 = 8.32.4-2 =
 
