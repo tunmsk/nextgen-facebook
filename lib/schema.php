@@ -608,9 +608,9 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 
 			if ( empty( $org_opts ) ) {	// $org_opts could be false or empty array
 				$org_opts = array(
+					'org_url' => esc_url( get_bloginfo( 'url' ) ),
 					'org_name' => SucomUtil::get_site_name( $ngfb->options, $mod ),
 					'org_desc' => SucomUtil::get_site_description( $ngfb->options, $mod ),
-					'org_url' => esc_url( get_bloginfo( 'url' ) ),
 					'org_logo_url' => $ngfb->options['schema_logo_url'],
 					'org_banner_url' => $ngfb->options['schema_banner_url'],
 					'org_type' => 'organization',
@@ -631,31 +631,33 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				'name' => 'org_name',
 				'alternateName' => 'org_alt_name',
 				'description' => 'org_desc',
+				'telephone' => 'org_phone',
 			) );
 
 			/*
 			 * Organization Logo
 			 *
-			 * $logo_key can be 'org_logo_url' (default) or 'org_banner_url' (600x60px image) for Articles
+			 * $logo_key can be false, 'org_logo_url' (default), or 'org_banner_url' (600x60px image) for Articles
 			 */
-			if ( ! empty( $org_opts[$logo_key] ) ) {
-				if ( ! self::add_single_image_data( $ret['logo'], $org_opts, $logo_key, false ) )	// list_element = false
-					unset( $ret['logo'] );	// prevent null assignment
-			}
+			if ( ! empty( $logo_key ) ) {
 
-			if ( empty( $ret['logo'] ) ) {
-				if ( $ngfb->debug->enabled )
-					$ngfb->debug->log( 'organization '.$logo_key.' image is missing and required' );
-				if ( is_admin() && ( ! $mod['is_post'] || $mod['post_status'] === 'publish' ) ) {
-					switch ( $logo_key ) {
-						case 'org_logo_url':
-							$ngfb->notice->err( sprintf( __( 'The "%1$s" Organization Logo Image is missing and required for the Schema %2$s markup.',
-								'nextgen-facebook' ), $ret['name'], $org_type_url ) );
-							break;
-						case 'org_banner_url':
-							$ngfb->notice->err( sprintf( __( 'The "%1$s" Organization Banner (600x60px) is missing and required for the Schema %2$s markup.',
-								'nextgen-facebook' ), $ret['name'], $org_type_url ) );
-							break;
+				if ( ! empty( $org_opts[$logo_key] ) ) {
+					if ( ! self::add_single_image_data( $ret['logo'], $org_opts, $logo_key, false ) )	// list_element = false
+						unset( $ret['logo'] );	// prevent null assignment
+				}
+	
+				if ( empty( $ret['logo'] ) ) {
+					if ( $ngfb->debug->enabled )
+						$ngfb->debug->log( 'organization '.$logo_key.' image is missing and required' );
+					if ( is_admin() && ( ! $mod['is_post'] || $mod['post_status'] === 'publish' ) ) {
+						switch ( $logo_key ) {
+							case 'org_logo_url':
+								$ngfb->notice->err( sprintf( __( 'The "%1$s" Organization Logo Image is missing and required for the Schema %2$s markup.', 'nextgen-facebook' ), $ret['name'], $org_type_url ) );
+								break;
+							case 'org_banner_url':
+								$ngfb->notice->err( sprintf( __( 'The "%1$s" Organization Banner (600x60px) is missing and required for the Schema %2$s markup.', 'nextgen-facebook' ), $ret['name'], $org_type_url ) );
+								break;
+						}
 					}
 				}
 			}
@@ -721,6 +723,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				'name' => 'place_name',
 				'alternateName' => 'place_alt_name',
 				'description' => 'place_desc',
+				'telephone' => 'place_phone',
 			) );
 
 			/*
@@ -732,8 +735,8 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				'postOfficeBoxNumber' => 'place_po_box_number', 
 				'addressLocality' => 'place_city',
 				'addressRegion' => 'place_state',
-				'postalCode' => 'place_zipcode',
 				'addressCountry' => 'place_country',
+				'postalCode' => 'place_zipcode',
 			) as $prop_name => $key ) {
 				if ( isset( $place_opts[$key] ) )
 					$address[$prop_name] = $place_opts[$key];
@@ -836,6 +839,16 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				'endDate' => 'event_end_date',
 			) );
 
+			if ( is_array( $event_opts['event_organizer_ids'] ) ) {
+				foreach ( $event_opts['event_organizer_ids'] as $org_id )
+					self::add_single_organization_data( $ret['organizer'], $mod, $org_id, false, true );	// $list_element = true
+			}
+
+			if ( ! empty( $event_opts['event_place_id'] ) ) {
+				if ( ! self::add_single_place_data( $ret['location'], $mod, $event_opts['event_place_id'], false ) )	// $list_element = false
+					unset( $ret['location'] );	// prevent null assignment
+			}
+
 			if ( empty( $list_element ) )
 				$json_data = $ret;
 			else $json_data[] = $ret;
@@ -866,8 +879,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			// list of contributors / co-authors
 			if ( isset( $mod['post_coauthors'] ) && is_array( $mod['post_coauthors'] ) )
 				foreach ( $mod['post_coauthors'] as $author_id )
-					$coauthors_added += self::add_single_person_data( $json_data['contributor'], 
-						$author_id, true );	// list_element = true
+					$coauthors_added += self::add_single_person_data( $json_data['contributor'], $author_id, true );	// list_element = true
 
 			foreach ( array( 'author', 'contributor' ) as $itemprop )
 				if ( empty( $json_data[$itemprop] ) )
@@ -1063,8 +1075,8 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			) );
 
 			if ( ! empty( $this->p->options['add_meta_itemprop_description'] ) )
-				$mt_schema['description'] = $this->p->webpage->get_description( $this->p->options['schema_desc_len'], 
-					'...', $mod, true, true, true, 'schema_desc' );	// $md_idx = schema_desc
+				$mt_schema['description'] = $this->p->webpage->get_description( $this->p->options['schema_desc_len'], '...', $mod, true,
+					false, true, 'schema_desc' );	// $add_hashtags = false, $encode = true, $md_idx = schema_desc
 
 			switch ( $head_type_url ) {
 				case 'http://schema.org/BlogPosting':
