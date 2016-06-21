@@ -421,7 +421,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.0-rc1 (2016/06/21)**
+**Version 8.33.0-1 (2016/06/21)**
 
 Official announcement: N/A
 
@@ -430,7 +430,7 @@ Official announcement: N/A
 * *Improvements*
 	* Added basic support for the http://schema.org/Event type and its sub-types.
 * *Bugfixes*
-	* None
+	* Fixed incorrect Open Graph article type detection in the Social Settings metabox (Pro version).
 * *Developer Notes*
 	* Added a new `NgfbSchema::add_single_event_data()` method.
 	* Added the $mod argument to all `NgfbSchema::add_single_person_data()` method calls.
@@ -540,7 +540,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.33.0-rc1 =
+= 8.33.0-1 =
 
 (2016/06/21) Added support for The Events Calendar plugin (Pro version). Added basic support for the http://schema.org/Event type and its sub-types.
 
