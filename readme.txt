@@ -9,7 +9,7 @@ Tags: amp, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
-Tested Up To: 4.5.2
+Tested Up To: 4.5.3
 Stable Tag: 8.32.4-2
 
 The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
