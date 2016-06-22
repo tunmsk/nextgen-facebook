@@ -544,7 +544,3 @@ Official announcement: N/A
 
 (2016/06/21) Added support for The Events Calendar plugin (Pro version). Added basic support for the http://schema.org/Event type and its sub-types.
 
-= 8.32.4-2 =
-
-(2016/06/14) Updated a filter to cleanup incorrect notifications in Yoast SEO v3.3.0.
-
