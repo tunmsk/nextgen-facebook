@@ -421,6 +421,19 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.33.1-dev1 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Renamed the 'style' library and array indexes to 'styles'.
+
 **Version 8.33.0-1 (2016/06/21)**
 
 Official announcement: N/A
@@ -437,106 +450,6 @@ Official announcement: N/A
 	* Renamed the NgfbSchema `add_data_itemprop_from_og()` method to `add_data_itemprop_from_assoc()`.
 	* Renamed the NgfbSchema `add_data_quantitative_from_og()` method to `add_data_quant_from_assoc()`.
 	* Refactored the `NgfbSchema::add_single_person_data()` method.
-
-**Version 8.32.4-2 (2016/06/14)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Updated a filter to cleanup incorrect notifications in Yoast SEO v3.3.0.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 8.32.4-1 (2016/06/13)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Disabled the "Default Author" options and features unless the 'NGFB_DEFAULT_AUTHOR_OPTIONS' constant is set to true.
-* *Bugfixes*
-	* Fixed extra semi-colon preventing the custom Open Graph description from being used as a fallback for other description meta tags.
-* *Developer Notes*
-	* Optimized the option type detection for the site social account URLs.
-	* Allowed fallback to custom Open Graph description for terms and user pages as well.
-	* Removed the "Add Tabs to Social Settings Metabox" option (using a filter hook is preferred to modify the Social Settings metabox tabs).
-	* Added a new `SucomUtil::get_multi_key_locale()` and `SucomUtil::get_first_last_next_nums()` method for the PLM extension.
-	* Added value caching to the `SucomUtil::get_locale()` method for a minor performance improvement.
-	* Refactored the `NgfbSchema::add_single_organization_data()` method, and added a new `$org_id` argument (false by default).
-	* Added a new 'ngfb_get_organization_options' filter to provide custom organization information.
-	* Added a new `NgfbSchema::add_single_place_data()` method.
-
-**Version 8.32.3-1 (2016/06/02)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added support for all Schema Organization sub-types.
-	* Improved loop through Schema types and sub-types.
-	* Sorted extension sub-menu items alphabetically.
-	* Updated some option labels and help texts.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 8.32.2-1 (2016/05/29)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Refactored the Organization schema filter to allow for Organization sub-types.
-* *Bugfixes*
-	* Added a missing third argument to `preg_match_all()` in NgfbUtil for older PHP versions.
-* *Developer Notes*
-	* None
-
-**Version 8.32.1-1 (2016/05/27)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added a warning if The SEO Framework's Knowledge Graph is enabled.
-	* Added support for The SEO Framework's custom canonical URL (Pro version).
-	* Added a hook for 'the_seo_framework_current_object_id' coming in The SEO Framework v2.6.2 (Pro version).
-	* Added top-level schema.org/CreativeWork to the available Schema types.
-* *Bugfixes*
-	* Refactored the `get_tweet_max_len()` method to provide more accurate and predictable results.
-* *Developer Notes*
-	* Replaced the `$use_post` variable by `$mod` in the NgfbHead `get_single_mt()` method.
-	* Replaced the `$use_post` variable by `$mod` in the NgfbUtil `replace_inline_vars()` method.
-	* Refactored the `is_post_page()`, `is_term_page()`, and `is_user_page()` method to use `$screen->base` instead of `$screen->id`.
-	* Refactored the NgfbUtil `get_sharing_url()` method and changed several filter arguments:
-		* apply_filters( 'ngfb_post_url', $url, $mod, $add_page );
-		* apply_filters( 'ngfb_term_url', $url, $mod, $add_page );
-		* apply_filters( 'ngfb_author_url', $url, $mod, $add_page );
-		* apply_filters( 'ngfb_sharing_url', $url, $mod, $add_page );
-
-**Version 8.32.0-1 (2016/05/23)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added support for [The SEO Framework](https://wordpress.org/plugins/autodescription/) plugin (Pro version).
-* *Improvements*
-	* Added new 'Show "NGFB Img" Column for' and 'Show "NGFB Desc" Column for' options.
-	* Removed the 'Show Social Img / Desc Columns for' option.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Renamed the 'ngfb_section' filter to 'ngfb_article_section'.
-	* Added a new 'ngfb_social_accounts' filter.
 
 == Upgrade Notice ==
 
