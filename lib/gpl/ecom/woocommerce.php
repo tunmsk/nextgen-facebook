@@ -48,7 +48,7 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 				$this->p->util->add_plugin_filters( $this, array( 
 					'buttons_show_on' => 2,
 					'sharing_styles_tabs' => 1,
-					'style_woo_short_rows' => 2,
+					'styles_woo_short_rows' => 2,
 					'buttons_position_rows' => 2,	// social sharing 'Buttons Position' options
 				) );
 			}
@@ -85,7 +85,7 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 			return $tabs;
 		}
 
-		public function filter_style_woo_short_rows( $table_rows, $form ) {
+		public function filter_styles_woo_short_rows( $table_rows, $form ) {
 			$table_rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 

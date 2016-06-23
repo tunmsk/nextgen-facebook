@@ -20,13 +20,13 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 				'buttons_preset_rows' => 2,		// $table_rows, $form, $network
 				'post_social_settings_tabs' => 1,	// $tabs
 				'post_buttons_rows' => 4,		// $table_rows, $form, $head, $mod
-				'style_sharing_rows' => 2,		// $table_rows, $form
-				'style_content_rows' => 2,		// $table_rows, $form
-				'style_excerpt_rows' => 2,		// $table_rows, $form
-				'style_sidebar_rows' => 2,		// $table_rows, $form
-				'style_shortcode_rows' => 2,		// $table_rows, $form
-				'style_widget_rows' => 2,		// $table_rows, $form
-				'style_admin_edit_rows' => 2,		// $table_rows, $form
+				'styles_sharing_rows' => 2,		// $table_rows, $form
+				'styles_content_rows' => 2,		// $table_rows, $form
+				'styles_excerpt_rows' => 2,		// $table_rows, $form
+				'styles_sidebar_rows' => 2,		// $table_rows, $form
+				'styles_shortcode_rows' => 2,		// $table_rows, $form
+				'styles_widget_rows' => 2,		// $table_rows, $form
+				'styles_admin_edit_rows' => 2,		// $table_rows, $form
 			), 30 );
 		}
 
@@ -210,21 +210,21 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			return $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod );
 		}
 
-		public function filter_style_sharing_rows( $table_rows, $form ) {
-			return $this->filter_style_common_rows( $table_rows, $form, 'sharing' );
+		public function filter_styles_sharing_rows( $table_rows, $form ) {
+			return $this->filter_styles_common_rows( $table_rows, $form, 'sharing' );
 		}
 
-		public function filter_style_content_rows( $table_rows, $form ) {
-			return $this->filter_style_common_rows( $table_rows, $form, 'content' );
+		public function filter_styles_content_rows( $table_rows, $form ) {
+			return $this->filter_styles_common_rows( $table_rows, $form, 'content' );
 		}
 
-		public function filter_style_excerpt_rows( $table_rows, $form ) {
-			return $this->filter_style_common_rows( $table_rows, $form, 'excerpt' );
+		public function filter_styles_excerpt_rows( $table_rows, $form ) {
+			return $this->filter_styles_common_rows( $table_rows, $form, 'excerpt' );
 		}
 
-		public function filter_style_sidebar_rows( $table_rows, $form ) {
+		public function filter_styles_sidebar_rows( $table_rows, $form ) {
 			$table_rows = array_merge( $table_rows, 
-				$this->filter_style_common_rows( $table_rows, $form, 'sidebar' ) );
+				$this->filter_styles_common_rows( $table_rows, $form, 'sidebar' ) );
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Sidebar Javascript',
@@ -235,21 +235,21 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			return $table_rows;
 		}
 
-		public function filter_style_shortcode_rows( $table_rows, $form ) {
-			return $this->filter_style_common_rows( $table_rows, $form, 'shortcode' );
+		public function filter_styles_shortcode_rows( $table_rows, $form ) {
+			return $this->filter_styles_common_rows( $table_rows, $form, 'shortcode' );
 		}
 
-		public function filter_style_widget_rows( $table_rows, $form ) {
-			return $this->filter_style_common_rows( $table_rows, $form, 'widget' );
+		public function filter_styles_widget_rows( $table_rows, $form ) {
+			return $this->filter_styles_common_rows( $table_rows, $form, 'widget' );
 		}
 
-		public function filter_style_admin_edit_rows( $table_rows, $form ) {
-			return $this->filter_style_common_rows( $table_rows, $form, 'admin_edit' );
+		public function filter_styles_admin_edit_rows( $table_rows, $form ) {
+			return $this->filter_styles_common_rows( $table_rows, $form, 'admin_edit' );
 		}
 
-		public function filter_style_common_rows( &$table_rows, &$form, $idx ) {
+		public function filter_styles_common_rows( &$table_rows, &$form, $idx ) {
 
-			$text = $this->p->msgs->get( 'info-style-'.$idx );
+			$text = $this->p->msgs->get( 'info-styles-'.$idx );
 
 			if ( isset( $this->p->options['buttons_preset_'.$idx] ) ) {
 				$text .= '<p>The social sharing button options for the "'.$idx.'" style are subject to preset values selected on the '.$this->p->util->get_admin_url( 'sharing#sucom-tabset_sharing-tab_preset', 'Sharing Buttons' ).' settings page (used to modify the default behavior, size, counter orientation, etc.). The width and height values in your CSS should support these preset classes (if any).</p>';

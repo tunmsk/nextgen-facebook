@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.33.0-1',	// plugin version
+					'version' => '8.33.1-1',	// plugin version
 					'opt_version' => '437',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -66,7 +66,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'general' => 'General Settings',
 							'advanced' => 'Advanced Settings',
 							'buttons' => 'Sharing Buttons',
-							'style' => 'Sharing Styles',
+							'styles' => 'Sharing Styles',
 							'setup' => '<color>Plugin Setup Guide and Notes</color>',
 							'licenses' => 'Pro Licenses and Extension Plugins',
 						),
@@ -1115,7 +1115,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'sidebar' => 'CSS Sidebar', 
 					'admin_edit' => 'Admin Edit',
 				),
-				'style' => array(
+				'styles' => array(
 					'sharing' => 'All Buttons',
 					'content' => 'Content',
 					'excerpt' => 'Excerpt',
@@ -1171,7 +1171,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							unset (
 								self::$cf['plugin'][$ext]['lib']['website'],
 								self::$cf['plugin'][$ext]['lib']['submenu']['buttons'],
-								self::$cf['plugin'][$ext]['lib']['submenu']['style'],
+								self::$cf['plugin'][$ext]['lib']['submenu']['styles'],
 								self::$cf['plugin'][$ext]['lib']['shortcode']['sharing'],
 								self::$cf['plugin'][$ext]['lib']['widget']['sharing'],
 								self::$cf['plugin'][$ext]['lib']['gpl']['admin']['sharing'],

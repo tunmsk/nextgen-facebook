@@ -50,7 +50,7 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
 				$this->p->util->add_plugin_filters( $this, array( 
 					'buttons_show_on' => 2,
 					'sharing_styles_tabs' => 1,
-					'style_bp_activity_rows' => 2,
+					'styles_bp_activity_rows' => 2,
 				) );
 			}
 		}
@@ -90,7 +90,7 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
 			return $tabs;
 		}
 
-		public function filter_style_bp_activity_rows( $rows, $form ) {
+		public function filter_styles_bp_activity_rows( $rows, $form ) {
 			$rows[] = '<td colspan="2" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 

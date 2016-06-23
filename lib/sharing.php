@@ -149,7 +149,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			$def_opts = $this->p->util->add_ptns_to_opts( $def_opts, 'buttons_add_to' );
 			$plugin_dir = trailingslashit( realpath( dirname( $this->plugin_filepath ) ) );
 			$url_path = parse_url( trailingslashit( plugins_url( '', $this->plugin_filepath ) ), PHP_URL_PATH );	// relative URL
-			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs', $this->p->cf['sharing']['style'] );
+			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs', $this->p->cf['sharing']['styles'] );
 
 			foreach ( $tabs as $id => $name ) {
 				$buttons_css_file = $plugin_dir.'css/'.$id.'-buttons.css';
@@ -250,7 +250,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 				$features['(sharing) Sharing Buttons'] = array(
 					'classname' => $ext.'Sharing',
 				);
-			if ( ! empty( $info['lib']['submenu']['style'] ) )
+			if ( ! empty( $info['lib']['submenu']['styles'] ) )
 				$features['(sharing) Sharing Stylesheet'] = array(
 					'status' => $this->p->options['buttons_use_social_css'] ? 'on' : 'off',
 				);
@@ -283,7 +283,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		}
 
 		public function filter_secondary_action_buttons( $actions, $menu_id, $menu_name, $menu_lib ) {
-			if ( $menu_id === 'style' )
+			if ( $menu_id === 'styles' )
 				$actions['reload_default_sharing_styles'] = _x( 'Reload Default Styles', 'submit button', 'nextgen-facebook' );
 			return $actions;
 		}
@@ -292,7 +292,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			$opts =& $this->p->options;
 			$def_opts = $this->p->opt->get_defaults();
 			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs', 
-				$this->p->cf['sharing']['style'] );
+				$this->p->cf['sharing']['styles'] );
 
 			foreach ( $tabs as $id => $name )
 				if ( isset( $opts['buttons_css_'.$id] ) &&
@@ -347,7 +347,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 			$css_data = '';
 			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs', 
-				$this->p->cf['sharing']['style'] );
+				$this->p->cf['sharing']['styles'] );
 
 			foreach ( $tabs as $id => $name )
 				if ( isset( $opts['buttons_css_'.$id] ) )
