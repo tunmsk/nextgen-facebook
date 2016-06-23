@@ -421,7 +421,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.1-dev1 (TBD)**
+**Version 8.33.1-1 (2016/06/23)**
 
 Official announcement: N/A
 
@@ -430,7 +430,7 @@ Official announcement: N/A
 * *Improvements*
 	* None
 * *Bugfixes*
-	* None
+	* Fixed SucomUtil::get_multi_key_locale() method to preserve numeric index.
 * *Developer Notes*
 	* Renamed the 'style' library and array indexes to 'styles'.
 
@@ -452,6 +452,10 @@ Official announcement: N/A
 	* Refactored the `NgfbSchema::add_single_person_data()` method.
 
 == Upgrade Notice ==
+
+= 8.33.1-1 =
+
+(2016/06/23) Fixed SucomUtil::get_multi_key_locale() method to preserve numeric index. Renamed the 'style' library and array indexes to 'styles'.
 
 = 8.33.0-1 =
 
