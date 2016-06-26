@@ -373,6 +373,26 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.33.2-dev1 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a new "Hide All Pro Settings and Options" option.
+	* Added tabs to the Header Tags List metabox:
+		* Open Graph
+		* Schema
+		* Twitter
+		* SEO / Other
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added new filters to manage image size hard-limits.
+		* 'ngfb_opengraph_img_size_limits'
+		* 'ngfb_schema_img_size_limits'
+
 **Version 8.33.1-1 (2016/06/23)**
 
 Official announcement: N/A
