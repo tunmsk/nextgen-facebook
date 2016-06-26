@@ -373,7 +373,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.2-dev1 (TBD)**
+**Version 8.33.2-dev1 (2016/06/26)**
 
 Official announcement: N/A
 
@@ -424,6 +424,10 @@ Official announcement: N/A
 	* Refactored the `NgfbSchema::add_single_person_data()` method.
 
 == Upgrade Notice ==
+
+= 8.33.2-dev1 =
+
+(2016/06/26) Added a new "Hide All Pro Settings and Options" option. Added tabs to the Header Tags List metabox.
 
 = 8.33.1-1 =
 
