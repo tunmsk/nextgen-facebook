@@ -409,7 +409,3 @@ Official announcement: N/A
 
 (2016/06/23) Fixed SucomUtil::get_multi_key_locale() method to preserve numeric index. Renamed the 'style' library and array indexes to 'styles'.
 
-= 8.33.0-1 =
-
-(2016/06/21) Added support for The Events Calendar plugin (Pro version). Added basic support for the http://schema.org/Event type and its sub-types.
-
