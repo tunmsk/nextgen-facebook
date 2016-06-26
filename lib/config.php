@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.33.1-1',	// plugin version
-					'opt_version' => '437',		// increment when changing default options
+					'version' => '8.33.2-dev1',	// plugin version
+					'opt_version' => '438',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -494,7 +494,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_auto_img_resize' => 1,			// Create Missing WP Media Images
 					'plugin_check_img_dims' => 0,			// Enforce Image Dimensions Check
 					'plugin_upscale_images' => 0,			// Allow Upscaling of Smaller Images
-					'plugin_upscale_img_max' => 50,			// Maximum Image Upscale Percentage
+					'plugin_upscale_img_max' => 33,			// Maximum Image Upscale Percentage
 					'plugin_shortcodes' => 1,			// Enable Plugin Shortcode(s)
 					'plugin_widgets' => 1,				// Enable Plugin Widget(s)
 					'plugin_page_excerpt' => 0,			// Enable WP Excerpt for Pages
@@ -811,6 +811,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'og_img_width' => 200,
 					'og_img_height' => 200,
 					'schema_img_width' => 696,	// https://developers.google.com/search/docs/data-types/articles#article_types
+					'schema_img_height' => 0,
 				),
 				'max' => array(
 					'og_img_ratio' => 3,
