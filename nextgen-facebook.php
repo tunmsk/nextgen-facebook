@@ -12,7 +12,7 @@
  * Description: The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.1
  * Tested Up To: 4.5.3
- * Version: 8.33.2-dev1
+ * Version: 8.33.2-dev2
  *
  * Version Numbers: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -235,7 +235,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 				if ( is_admin() )
 					// text_domain is already loaded by the NgfbAdmin class construct
-					$this->notice->inf( ( $this->is_avail['cache']['transient'] ?
+					$this->notice->warn( ( $this->is_avail['cache']['transient'] ?
 						__( 'HTML debug mode is active (transient cache could NOT be disabled).', 'nextgen-facebook' ) :
 						__( 'HTML debug mode is active (transient cache use is disabled).', 'nextgen-facebook' ) ).' '.
 						__( 'Informational debug messages are being added as hidden HTML comments.', 'nextgen-facebook' ) );

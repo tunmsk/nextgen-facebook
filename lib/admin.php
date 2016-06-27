@@ -116,7 +116,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					isset( $info['base'] ) && SucomUtil::active_plugins( $info['base'] ) ) {
 					$has_ext_tid = true;	// found at least one active plugin with an auth id
 					if ( ! $this->p->check->aop( $ext, false ) )
-						$this->p->notice->err( $this->p->msgs->get( 'notice-pro-not-installed', 
+						$this->p->notice->warn( $this->p->msgs->get( 'notice-pro-not-installed', 
 							array( 'lca' => $ext ) ) );
 				}
 			}
@@ -371,12 +371,12 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				$clear_cache_link = wp_nonce_url( $this->p->util->get_admin_url( '?'.$this->p->cf['lca'].
 					'-action=clear_all_cache' ), NgfbAdmin::get_nonce(), NGFB_NONCE );
 	
-				$this->p->notice->inf( __( 'Plugin settings have been saved.', 'nextgen-facebook' ).' '.
+				$this->p->notice->upd( __( 'Plugin settings have been saved.', 'nextgen-facebook' ).' '.
 					sprintf( __( 'Wait %1$d seconds for cache objects to expire or <a href="%2$s">%3$s</a> now.',
 						'nextgen-facebook' ), $this->p->options['plugin_object_cache_exp'], $clear_cache_link,
 							_x( 'Clear All Cache(s)', 'submit button', 'nextgen-facebook' ) ), true );
 			} else {
-				$this->p->notice->inf( __( 'Plugin settings have been saved.', 'nextgen-facebook' ), true );
+				$this->p->notice->upd( __( 'Plugin settings have been saved.', 'nextgen-facebook' ), true );
 				$this->p->util->clear_all_cache( true, true );	// $clear_ext_cache = true, $run_only_once = true
 			}
 
@@ -419,7 +419,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$opts = $this->p->opt->sanitize( $opts, $def_opts, $network );
 			$opts = apply_filters( $this->p->cf['lca'].'_save_site_options', $opts, $def_opts, $network );
 			update_site_option( NGFB_SITE_OPTIONS_NAME, $opts );
-			$this->p->notice->inf( __( 'Plugin settings have been saved.', 'nextgen-facebook' ), true );
+			$this->p->notice->upd( __( 'Plugin settings have been saved.', 'nextgen-facebook' ), true );
 			wp_redirect( $this->p->util->get_admin_url( $page ).'&settings-updated=true' );
 			exit;	// stop here
 		}
@@ -468,7 +468,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 							//$user_name = trim( $user->first_name.' '.$user->last_name );
 							$user_name = $user->display_name;
 							NgfbUser::delete_metabox_prefs( $user_id );
-							$this->p->notice->inf( sprintf( __( 'Metabox layout preferences for user ID #%d "%s" have been reset.',
+							$this->p->notice->upd( sprintf( __( 'Metabox layout preferences for user ID #%d "%s" have been reset.',
 								'nextgen-facebook' ), $user_id, $user_name ) );
 							break;
 
@@ -478,13 +478,13 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 							//$user_name = trim( $user->first_name.' '.$user->last_name );
 							$user_name = $user->display_name;
 							delete_user_option( $user_id, NGFB_DISMISS_NAME );
-							$this->p->notice->inf( sprintf( __( 'Hidden notices for user ID #%d "%s" have been cleared.',
+							$this->p->notice->upd( sprintf( __( 'Hidden notices for user ID #%d "%s" have been cleared.',
 								'nextgen-facebook' ), $user_id, $user_name ) );
 							break;
 
 						case 'change_show_options': 
 							if ( isset( $this->p->cf['form']['show_options'][$_GET['show-opts']] ) ) {
-								$this->p->notice->inf( sprintf( 'Option preference saved &mdash; viewing "%s" by default.',
+								$this->p->notice->upd( sprintf( 'Option preference saved &mdash; viewing "%s" by default.',
 									$this->p->cf['form']['show_options'][$_GET['show-opts']] ) );
 								NgfbUser::save_pref( array( 'show_opts' => $_GET['show-opts'] ) );
 							}
@@ -617,7 +617,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				parse_str( parse_url( $location, PHP_URL_QUERY ), $parts );
 
 				if ( strpos( $parts['wp_http_referer'], $referer_match ) ) {
-					$this->p->notice->inf( __( 'Profile updated.' ), true );
+					$this->p->notice->upd( __( 'Profile updated.' ), true );
 					return add_query_arg( 'updated', true, $parts['wp_http_referer'] );
 				}
 			}
@@ -1372,7 +1372,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					continue;
 
 				if ( strpos( $html, '<head>' ) !== false ) {
-					$this->p->notice->err( $this->p->msgs->get( 'notice-header-tmpl-no-head-attr' ),
+					$this->p->notice->warn( $this->p->msgs->get( 'notice-header-tmpl-no-head-attr' ),
 						true, true, 'notice-header-tmpl-no-head-attr', false );
 					break;
 				}
@@ -1414,7 +1414,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 				if ( fwrite( $fh, $php ) ) {
 					fclose( $fh );
-					$this->p->notice->inf( sprintf( __( 'The %1$s template has been successfully updated and saved. A backup copy of the original template is available in %2$s.', 'nextgen-facebook' ), $base, $backup ), true );
+					$this->p->notice->upd( sprintf( __( 'The %1$s template has been successfully updated and saved. A backup copy of the original template is available in %2$s.', 'nextgen-facebook' ), $base, $backup ), true );
 					$have_changes = true;
 				}
 			}

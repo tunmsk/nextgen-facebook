@@ -212,7 +212,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 						$opts['og_img_height'] == 630 &&
 						! empty( $opts['og_img_crop'] ) ) {
 
-						$this->p->notice->inf( 'Open Graph Image Dimentions have been updated from '.
+						$this->p->notice->warn( 'Open Graph Image Dimentions have been updated from '.
 							$opts['og_img_width'].'x'.$opts['og_img_height'].', '.
 							( $opts['og_img_crop'] ? '' : 'un' ).'cropped to '.
 							$def_opts['og_img_width'].'x'.$def_opts['og_img_height'].', '.
