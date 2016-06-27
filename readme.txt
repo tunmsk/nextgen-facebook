@@ -386,7 +386,7 @@ Official announcement: N/A
 		* Schema
 		* Twitter
 		* SEO / Other
-	* Updated the notification colors from red (error) and green (update), to red (error), yellow (warning), blue (informational), and green (update).
+	* Updated the notification categories / colors from red (error) and green (update), to red (error), yellow (warning), blue (info), and green (success).
 	* Reclassified several notification messages to use all four notification colors.
 * *Bugfixes*
 	* None
@@ -429,7 +429,7 @@ Official announcement: N/A
 
 = 8.33.2-dev2 =
 
-(2016/06/27) Added a new "Hide All Pro Settings and Options" option. Added tabs to the Header Tags List metabox.
+(2016/06/27) Added a new "Hide All Pro Settings and Options" option. Added tabs to the Header Tags List metabox. Reclassified several notification messages.
 
 = 8.33.1-1 =
 
