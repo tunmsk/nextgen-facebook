@@ -377,7 +377,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 							_x( 'Clear All Cache(s)', 'submit button', 'nextgen-facebook' ) ), true );
 			} else {
 				$this->p->notice->upd( __( 'Plugin settings have been saved.', 'nextgen-facebook' ), true );
-				$this->p->util->clear_all_cache( true, true );	// $clear_ext_cache = true, $run_only_once = true
+				$this->p->util->clear_all_cache( true, true, __FUNCTION__.'_clear_on_save', true );
 			}
 
 			// filter_head_attributes() is disabled when the wpsso-schema-json-ld extension is active

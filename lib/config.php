@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.33.2-dev2',	// plugin version
-					'opt_version' => '438',		// increment when changing default options
+					'version' => '8.33.2-dev3',	// plugin version
+					'opt_version' => '439',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -449,9 +449,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					 * Advanced Settings
 					 */
 					// Plugin Settings Tab
+					'plugin_clear_on_save' => 1,			// Clear All Cache(s) on Save Settings
 					'plugin_preserve' => 0,				// Preserve Settings on Uninstall
 					'plugin_debug' => 0,				// Add Hidden Debug Messages
-					'plugin_clear_on_save' => 1,			// Clear All Cache(s) on Save Settings
+					'plugin_hide_pro' => 0,				// Hide All Pro Version Options
 					'plugin_show_opts' => 'basic',			// Options to Show by Default
 					// Content and Filters Tab
 					'plugin_filter_title' => 0,

@@ -377,7 +377,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 					$this->p->debug->log( 'updated css file '.self::$sharing_css_file.' ('.$written.' bytes written)' );
 					if ( is_admin() )
 						$this->p->notice->upd( sprintf( __( 'Updated the <a href="%1$s">%2$s</a> stylesheet (%3$d bytes written).',
-							'nextgen-facebook' ), self::$sharing_css_url, self::$sharing_css_file, $written ), true );
+							'nextgen-facebook' ), self::$sharing_css_url, self::$sharing_css_file, $written ), 
+								true, true, 'updated_'.self::$sharing_css_file, true );
 				}
 				fclose( $fh );
 			} else {
