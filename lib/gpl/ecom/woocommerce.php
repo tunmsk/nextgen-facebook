@@ -44,7 +44,7 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 				'get_defaults' => 1,
 			) );
 
-			if ( is_admin() ) {
+			if ( is_admin() && empty( $this->p->options['plugin_hide_pro'] ) ) {
 				$this->p->util->add_plugin_filters( $this, array( 
 					'buttons_show_on' => 2,
 					'sharing_styles_tabs' => 1,
