@@ -105,10 +105,9 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			$title_caption = $this->p->webpage->get_caption( 'title', 0, $mod, true, false );
 
 			$table_rows[] = '<td colspan="3" align="center">'.
-				$this->p->msgs->get( 'pro-about-msg-post' ).'</td>';
-
-			$table_rows[] = '<td colspan="3" align="center">'.
-				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
+				$this->p->msgs->get( 'pro-about-msg-post' ).
+				$this->p->msgs->get( 'pro-feature-msg' ).
+				'</td>';
 
 			/*
 			 * Email

@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.33.2-dev5',	// plugin version
-					'opt_version' => '439',		// increment when changing default options
+					'version' => '8.33.2-dev6',	// plugin version
+					'opt_version' => '440',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -461,9 +461,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_p_strip' => 0,				// Content Starts at 1st Paragraph
 					'plugin_use_img_alt' => 1,			// Use Image Alt if No Content
 					'plugin_img_alt_prefix' => 'Image:',		// Image Alt Text Prefix
-					'plugin_p_cap_prefix' => 'Caption:',		// WP Caption Paragraph Prefix
+					'plugin_p_cap_prefix' => 'Caption:',		// WP Caption Prefix
+					'plugin_content_img_max' => 5,			// Maximum Images from Content
+					'plugin_content_vid_max' => 5,			// Maximum Videos from Content
 					'plugin_gravatar_api' => 1,			// Include Author Gravatar Image
-					'plugin_slideshare_api' => 1,			// Check for Embedded Media
+					'plugin_slideshare_api' => 1,			// Check for Embedded Media from
 					'plugin_vimeo_api' => 1,
 					'plugin_wistia_api' => 1,
 					'plugin_youtube_api' => 1,
