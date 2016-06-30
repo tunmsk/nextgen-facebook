@@ -145,7 +145,7 @@ The most complete meta tags for the best looking shares on Facebook, G+, Twitter
 		* [YouTube](https://www.youtube.com/) Videos and Playlists
 
 <blockquote>
-<p><a href="http://wpsso.com/extend/plugins/wpsso/">Purchase the Pro version</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
+<p><a href="http://surniaulula.com/extend/plugins/nextgen-facebook/?utm_source=ngfb-readme-purchase">Purchase the Pro version</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 </blockquote>
 
 <div style="clear:both;"></div>
@@ -373,7 +373,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.2-1 (2016/06/29)**
+**Version 8.33.2-1 (2016/06/30)**
 
 Official announcement: N/A
 
@@ -431,7 +431,7 @@ Official announcement: N/A
 
 = 8.33.2-1 =
 
-(2016/06/29) Added a new "Hide All Pro Version Options" option. Added tabs to the Header Tags List metabox. Reclassified several notification messages.
+(2016/06/30) Added a new "Hide All Pro Version Options" option. Added tabs to the Header Tags List metabox. Reclassified several notification messages.
 
 = 8.33.1-1 =
 

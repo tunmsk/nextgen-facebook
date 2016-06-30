@@ -169,7 +169,7 @@
 </ul>
 
 <blockquote>
-<p><a href="http://wpsso.com/extend/plugins/wpsso/">Purchase the Pro version</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
+<p><a href="http://surniaulula.com/extend/plugins/nextgen-facebook/?utm_source=ngfb-readme-purchase">Purchase the Pro version</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 </blockquote>
 
 <div style="clear:both;"></div>
