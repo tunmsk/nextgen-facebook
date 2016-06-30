@@ -4,7 +4,7 @@ Plugin Slug: nextgen-facebook
 Text Domain: nextgen-facebook
 Domain Path: /languages
 Contributors: jsmoriss
-Donate Link: https://surniaulula.com/extend/plugins/nextgen-facebook/
+Donate Link: https://surniaulula.com/extend/plugins/nextgen-facebook/?utm_source=ngfb-readme-donate
 Tags: amp, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd, facebook, g+, gallery, google, google plus, hashtags, like, linkedin, marketpress, meta tags, multilingual, multisite, nextgen gallery, open graph, pinterest, player card, polylang, rich pins, schema, seo, share, shortcode, slideshare, social, stumbleupon, summary card, tumblr, twitter, twitter cards, vimeo, widget, wistia, woocommerce, youtube, yotpo, yourls, whatsapp, the events calendar
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
