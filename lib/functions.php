@@ -115,9 +115,9 @@ if ( ! function_exists( 'ngfb_schema_attributes' ) ) {
 }
 
 if ( ! function_exists( 'ngfb_clear_all_cache' ) ) {
-	function ngfb_clear_all_cache() {
+	function ngfb_clear_all_cache( $clear_external = false ) {
 		$ngfb =& Ngfb::get_instance();
-		return $ngfb->util->clear_all_cache( false );	// $ext_cache = false
+		return $ngfb->util->clear_all_cache( $clear_external, __FUNCTION__, true );
 	}
 }
 
