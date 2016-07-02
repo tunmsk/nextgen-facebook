@@ -124,7 +124,8 @@ if ( ! function_exists( 'ngfb_clear_all_cache' ) ) {
 if ( ! function_exists( 'ngfb_clear_post_cache' ) ) {
 	function ngfb_clear_post_cache( $post_id ) {
 		$ngfb =& Ngfb::get_instance();
-		return $ngfb->util->clear_post_cache( $post_id );
+		if ( is_object( $ngfb->m['util']['post'] ) )
+			$ngfb->m['util']['post']->clear_cache( $post_id );
 	}
 }
 
