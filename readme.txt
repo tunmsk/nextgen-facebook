@@ -380,7 +380,7 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Updated the default CSS for the latest Facebook button style. Click "Reload Default Styles" on the Sharing Styles settings page to reload the default CSS.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -444,7 +444,7 @@ Official announcement: N/A
 
 = 8.33.3-dev1 =
 
-(2016/07/02) Removed the NgfbUtil::clear_post_cache() method.
+(2016/07/02) Removed the NgfbUtil::clear_post_cache() method. Updated the default CSS for the latest Facebook button style.
 
 = 8.33.2-1 =
 
