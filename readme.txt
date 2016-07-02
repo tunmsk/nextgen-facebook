@@ -373,6 +373,19 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.33.3-dev1 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Removed the NgfbUtil::clear_post_cache() method.
+
 **Version 8.33.2-1 (2016/06/30)**
 
 Official announcement: N/A
