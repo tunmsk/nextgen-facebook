@@ -373,7 +373,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.3-dev1 (TBD)**
+**Version 8.33.3-dev1 (2016/07/02)**
 
 Official announcement: N/A
 
@@ -441,6 +441,10 @@ Official announcement: N/A
 	* Refactored the `NgfbSchema::add_single_person_data()` method.
 
 == Upgrade Notice ==
+
+= 8.33.3-dev1 =
+
+(2016/07/02) Removed the NgfbUtil::clear_post_cache() method.
 
 = 8.33.2-1 =
 
