@@ -51,19 +51,21 @@
 
 .ngfb-buttons div.facebook-button,		/* English (Default) */
 .ngfb-preset-small_share_count
-	.ngfb-buttons div.facebook-button { width:139px; }
+	.ngfb-buttons div.facebook-button { width:114px; }
 
 .ngfb-buttons.cs_CZ div.facebook-button,	/* Czech */
 .ngfb-preset-small_share_count
-	.ngfb-buttons.cs_CZ div.facebook-button { width:169px; }
+	.ngfb-buttons.cs_CZ div.facebook-button { width:144px; }
 
 .ngfb-buttons div.fb-share-button,
 .ngfb-preset-small_share_count 
-	.ngfb-buttons div.fb-share-button { width:105px; }
+	.ngfb-buttons div.fb-share-button { width:80px; }
+
+.ngfb-preset-large_share_vertical 
+	.ngfb-buttons div.fb-share-button { height:40px; line-height:40px; }
 
 .ngfb-buttons div.fb-share-button span {
 	display:inline-block	!important;
-	vertical-align:middle	!important;
 }
 
 .ngfb-buttons div.gplus-button,
@@ -98,7 +100,7 @@
 
 .ngfb-buttons div.pinterest-button,
 .ngfb-preset-small_share_count 
-	.ngfb-buttons div.pinterest-button { width:78px; }
+	.ngfb-buttons div.pinterest-button { width:85px; }
 .ngfb-preset-large_share_vertical 
 	.ngfb-buttons div.pinterest-button { height:40px; margin-top:42px; }
 

@@ -87,6 +87,10 @@
 #ngfb-sidebar .ngfb-preset-large_share_vertical
 	.ngfb-buttons div.twitter-button { height:20px; line-height:20px; }
 
+#ngfb-sidebar .ngfb-buttons div.fb-share-button,
+#ngfb-sidebar .ngfb-preset-large_share_vertical
+	.ngfb-buttons div.fb-share-button { height:40px; line-height:40px;}
+
 #ngfb-sidebar .ngfb-buttons div.gplus-button,
 #ngfb-sidebar .ngfb-preset-large_share_vertical
 	.ngfb-buttons div.gplus-button { height:60px; line-height:40px;}
