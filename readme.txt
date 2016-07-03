@@ -373,7 +373,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.3-dev2 (2016/07/03)**
+**Version 8.33.3-1 (2016/07/03)**
 
 Official announcement: N/A
 
@@ -383,7 +383,7 @@ Official announcement: N/A
 	* Updated the default CSS for the latest Facebook button style. Click "Reload Default Styles" on the Sharing Styles settings page to reload the default CSS.
 	* Added a check for Schema Article images, which must be 696px wide, compared to standard Schema images, which must be 400px wide.
 * *Bugfixes*
-	* None
+	* Fixed missing Schema images in the meta property containers.
 * *Developer Notes*
 	* Removed the NgfbUtil::clear_post_cache() method.
 
@@ -443,7 +443,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.33.3-dev2 =
+= 8.33.3-1 =
 
 (2016/07/03) Removed the NgfbUtil::clear_post_cache() method. Added a check for Schema Article image width, different than standard Schema image width.
 
