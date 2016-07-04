@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.33.3-1\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.33.4-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"

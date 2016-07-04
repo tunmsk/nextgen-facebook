@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.33.3-1',	// plugin version
+					'version' => '8.33.4-dev1',	// plugin version
 					'opt_version' => '440',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -952,8 +952,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'book' => 'http://schema.org/Book',
 						'blog' => 'http://schema.org/Blog',
 						'creative.work' => 'http://schema.org/CreativeWork',
+						'game' => 'http://schema.org/Game',
+						'movie' => 'http://schema.org/Movie',
+						'painting' => 'http://schema.org/Painting',
+						'photograph' => 'http://schema.org/Photograph',
 						'recipe' => 'http://schema.org/Recipe',
 						'review' => 'http://schema.org/Review',
+						'sculpture' => 'http://schema.org/Sculpture',
+						'software.application' => 'http://schema.org/SoftwareApplication',
+						'visual.artwork' => 'http://schema.org/VisualArtwork',
 						'webpage' => 'http://schema.org/WebPage',
 						'website' => 'http://schema.org/WebSite',
 					),
