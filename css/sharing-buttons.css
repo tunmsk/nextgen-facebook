@@ -59,7 +59,7 @@
 
 .ngfb-buttons div.fb-share-button,
 .ngfb-preset-small_share_count 
-	.ngfb-buttons div.fb-share-button { width:80px; }
+	.ngfb-buttons div.fb-share-button { width:90px; }
 
 .ngfb-preset-large_share_vertical 
 	.ngfb-buttons div.fb-share-button { height:40px; line-height:40px; }
