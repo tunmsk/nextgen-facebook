@@ -373,7 +373,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.4-dev1 (2016/07/04)**
+**Version 8.33.4-dev2 (2016/07/04)**
 
 Official announcement: N/A
 
@@ -388,10 +388,12 @@ Official announcement: N/A
 		* http://schema.org/Sculpture
 		* http://schema.org/SoftwareApplication
 		* http://schema.org/VisualArtwork
+	* Added recursion prevention to the BuddyPress `add_activity_entry_buttons()` method (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
 	* Renamed the `NgfbSchema::add_author_and_coauthor_data()` method to `add_author_coauthor_data()`.
+	* Removed `bp_has_groups()` check from the BuddyPress `filter_is_post_page()` and `filter_get_post_object()` methods to prevent recursion (Pro version).
 
 **Version 8.33.3-1 (2016/07/03)**
 
@@ -463,9 +465,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.33.4-dev1 =
+= 8.33.4-dev2 =
 
-(2016/07/04) Added support for additional Schema types.
+(2016/07/04) Added support for additional Schema types (see Changelog). Updated the BuddyPress module to prevent recursion (Pro version).
 
 = 8.33.3-1 =
 
