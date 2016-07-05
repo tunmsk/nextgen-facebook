@@ -467,7 +467,7 @@ Official announcement: N/A
 
 = 8.33.4-dev3 =
 
-(2016/07/05) Added support for additional Schema types (see Changelog). Updated the BuddyPress module to prevent recursion (Pro version).
+(2016/07/05) Added support for additional Schema types (see Changelog). Updated the BuddyPress module to prevent recursion (Pro version). Fixed a fallback feature for localized options.
 
 = 8.33.3-1 =
 
