@@ -18,7 +18,6 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 				'plugin_cache_rows' => 3,		// $table_rows, $form, $network
 				'buttons_include_rows' => 2,		// $table_rows, $form
 				'buttons_preset_rows' => 2,		// $table_rows, $form, $network
-				'post_social_settings_tabs' => 1,	// $tabs
 				'post_buttons_rows' => 4,		// $table_rows, $form, $head, $mod
 				'styles_sharing_rows' => 2,		// $table_rows, $form
 				'styles_content_rows' => 2,		// $table_rows, $form
@@ -79,17 +78,6 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 					array_merge( array( '' ), array_keys( $this->p->cf['opt']['preset'] ) ) ).'</td>';
 
 			return $table_rows;
-		}
-
-		public function filter_post_social_settings_tabs( $tabs ) {
-			$new_tabs = array();
-			foreach ( $tabs as $key => $val ) {
-				$new_tabs[$key] = $val;
-				if ( $key === 'media' )	// insert the social sharing tab after the media tab
-					$new_tabs['buttons'] = _x( 'Sharing Buttons',
-						'metabox tab', 'nextgen-facebook' );
-			}
-			return $new_tabs;
 		}
 
 		public function filter_post_buttons_rows( $table_rows, $form, $head, $mod ) {
