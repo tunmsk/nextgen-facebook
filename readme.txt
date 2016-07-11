@@ -375,6 +375,19 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.33.5-dev1 (2016/07/11)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Updated the Facebook language locales (https://www.facebook.com/translations/FacebookLocales.xml).
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.33.4-1 (2016/07/06)**
 
 Official announcement: N/A
@@ -466,6 +479,10 @@ Official announcement: N/A
 	* Refactored the `NgfbSchema::add_single_person_data()` method.
 
 == Upgrade Notice ==
+
+= 8.33.5-dev1 =
+
+(2016/07/11) Updated the Facebook language locales (https://www.facebook.com/translations/FacebookLocales.xml).
 
 = 8.33.4-1 =
 
