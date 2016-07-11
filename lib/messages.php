@@ -780,9 +780,8 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 						$text .= ' '.__( 'Pro version licenses do not expire &ndash; there are no yearly or recurring fees for updates and support.', 'nextgen-facebook' );
 						$text .= '<p>';
 						break;
-					case 'side-help':
-						$submit_text = _x( 'Save All Plugin Settings', 'submit button', 'nextgen-facebook' );
-						$text = '<p>'.sprintf( __( 'Metaboxes (like this one) can be opened / closed by clicking on their title bar, moved and re-ordered by dragging them, or removed / added from the <em>Screen Options</em> tab (top-right of page).', 'nextgen-facebook' ).' '.__( 'Option values in multiple tabs can be modified before clicking the \'%s\' button.', 'nextgen-facebook' ), $submit_text ).'</p>';
+					case 'side-help-support':
+						$text = '<p>'.sprintf( __( 'The development of %1$s is driven by customer requests &mdash; we welcome your comments and suggestions. ;-)', 'nextgen-facebook' ), $info['short'] ).'</p>';
 						break;
 					default:
 						$text = apply_filters( $lca.'_messages_side', $text, $idx, $info );
