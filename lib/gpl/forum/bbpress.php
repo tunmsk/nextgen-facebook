@@ -17,7 +17,6 @@ if ( ! class_exists( 'NgfbGplForumBbpress' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 

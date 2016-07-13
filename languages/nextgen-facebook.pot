@@ -1315,12 +1315,12 @@ msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr ""
 
-#: lib/gpl/ecom/woocommerce.php:112 lib/pro/ecom/woocommerce.php:424
+#: lib/gpl/ecom/woocommerce.php:111 lib/pro/ecom/woocommerce.php:424
 msgctxt "option label"
 msgid "Position in Woo Short Text"
 msgstr ""
 
-#: lib/gpl/forum/bbpress.php:117 lib/pro/forum/bbpress.php:335
+#: lib/gpl/forum/bbpress.php:116 lib/pro/forum/bbpress.php:335
 msgctxt "option label"
 msgid "Position in bbPress Single"
 msgstr ""
@@ -2716,7 +2716,7 @@ msgstr ""
 
 #: lib/submenu/buttons.php:134
 msgctxt "metabox tab"
-msgid "Button Presets"
+msgid "Buttons Presets"
 msgstr ""
 
 #: lib/submenu/buttons.php:166

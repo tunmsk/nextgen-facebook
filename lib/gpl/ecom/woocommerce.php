@@ -17,7 +17,6 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerce' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
@@ -49,7 +48,7 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 					'buttons_show_on' => 2,
 					'sharing_styles_tabs' => 1,
 					'styles_woo_short_rows' => 2,
-					'buttons_position_rows' => 2,	// social sharing 'Buttons Position' options
+					'buttons_position_rows' => 2,
 				) );
 			}
 		}
