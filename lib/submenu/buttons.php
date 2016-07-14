@@ -163,7 +163,7 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 
 				case 'buttons-include':
 
-					$table_rows[] = $this->form->get_th_html( _x( 'Include on Index Webpages',
+					$table_rows[] = $this->form->get_th_html( _x( 'Include on Index / Archive Webpages',
 						'option label', 'nextgen-facebook' ), null, 'buttons_on_index' ).
 					'<td>'.$this->form->get_checkbox( 'buttons_on_index' ).'</td>';
 

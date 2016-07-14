@@ -2721,7 +2721,7 @@ msgstr ""
 
 #: lib/submenu/buttons.php:166
 msgctxt "option label"
-msgid "Include on Index Webpages"
+msgid "Include on Index / Archive Webpages"
 msgstr ""
 
 #: lib/submenu/buttons.php:170
