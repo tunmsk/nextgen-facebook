@@ -245,7 +245,7 @@ NGFB (Pro version) supports [bbPress](https://wordpress.org/plugins/bbpress/), [
 
 = Proven Performance =
 
-NGFB is *fast and coded for performance*, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NGFB loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features.
+NGFB is *fast and coded for performance*, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NGFB loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features. NGFB requires PHP v4.1.0 or better, and is fully compatible with PHP v7.
 
 = Professional Support =
 
@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.5-dev1 (2016/07/11)**
+**Version 8.33.5-dev2 (2016/07/14)**
 
 Official announcement: N/A
 
@@ -386,7 +386,7 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Updated the markdown library for PHP v7 compatibility.
 
 **Version 8.33.4-1 (2016/07/06)**
 
@@ -480,9 +480,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.33.5-dev1 =
+= 8.33.5-dev2 =
 
-(2016/07/11) Updated the Facebook language locales (https://www.facebook.com/translations/FacebookLocales.xml).
+(2016/07/14) Updated the Facebook language locales (https://www.facebook.com/translations/FacebookLocales.xml). Updated the markdown library for PHP v7 compatibility.
 
 = 8.33.4-1 =
 
