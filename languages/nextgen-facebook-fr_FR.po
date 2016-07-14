@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NextGEN Facebook (NGFB) 8.33.5-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2016-07-11 13:43-0400\n"
-"PO-Revision-Date: 2016-07-11 13:45-0400\n"
+"POT-Creation-Date: 2016-07-14 11:54-0400\n"
+"PO-Revision-Date: 2016-07-14 12:01-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -564,7 +564,7 @@ msgstr "Nouvelle activation"
 #: lib/config-gettext-extract.php:38
 msgctxt "plugin description"
 msgid "NGFB extension to provide updates for the NextGEN Facebook (NGFB) Pro plugin and its Pro extensions."
-msgstr "Une extension NGFB pour fournir des mises à jour a NextGEN Facebook (NGFB) Pro et ses extensions Pro."
+msgstr "Extension NGFB pour fournir des mises à jour a NextGEN Facebook (NGFB) Pro et ses extensions Pro."
 
 #: lib/config-gettext-extract.php:39
 msgctxt "option value"
@@ -1271,12 +1271,12 @@ msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr "JavaScript de la barre latérale"
 
-#: lib/gpl/ecom/woocommerce.php:112 lib/pro/ecom/woocommerce.php:424
+#: lib/gpl/ecom/woocommerce.php:111 lib/pro/ecom/woocommerce.php:424
 msgctxt "option label"
 msgid "Position in Woo Short Text"
 msgstr "Position dans le texte Woo Short"
 
-#: lib/gpl/forum/bbpress.php:117 lib/pro/forum/bbpress.php:335
+#: lib/gpl/forum/bbpress.php:116 lib/pro/forum/bbpress.php:335
 msgctxt "option label"
 msgid "Position in bbPress Single"
 msgstr "Position dans le texte bbPress Single"
@@ -2318,13 +2318,13 @@ msgstr "Position des Boutons"
 
 #: lib/submenu/buttons.php:134
 msgctxt "metabox tab"
-msgid "Button Presets"
-msgstr "Préréglages des Butons"
+msgid "Buttons Presets"
+msgstr "Préréglages des Boutons"
 
 #: lib/submenu/buttons.php:166
 msgctxt "option label"
-msgid "Include on Index Webpages"
-msgstr "Inclure sur les pages Web d'index"
+msgid "Include on Index / Archive Webpages"
+msgstr "Inclure sur les pages d'index / archive"
 
 #: lib/submenu/buttons.php:170
 msgctxt "option label"
