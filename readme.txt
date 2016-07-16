@@ -384,7 +384,7 @@ Official announcement: N/A
 * *Improvements*
 	* Updated the Facebook language locales (https://www.facebook.com/translations/FacebookLocales.xml).
 	* Added a new "Bitly Generic Access Token" option for the Bitly URL shortening service (Pro version).
-	* Added an extra check for WC_Product::get_id() before for older WC versions (before WC 2.5).
+	* Added an extra check for WC_Product::get_id() before for older WC versions (before WC 2.5) (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -484,7 +484,7 @@ Official announcement: N/A
 
 = 8.33.5-dev3 =
 
-(2016/07/16) Updated Facebook language locales. Updated the markdown library for PHP v7 compatibility. Added a new "Bitly Generic Access Token" option.
+(2016/07/16) Updated Facebook language locales. Updated the markdown library for PHP v7 compatibility. Added a new "Bitly Generic Access Token" option (Pro version).
 
 = 8.33.4-1 =
 
