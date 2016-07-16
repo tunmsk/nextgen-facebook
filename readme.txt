@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.5-dev3 (TBD)**
+**Version 8.33.5-dev3 (2016/07/16)**
 
 Official announcement: N/A
 
@@ -383,7 +383,8 @@ Official announcement: N/A
 	* None
 * *Improvements*
 	* Updated the Facebook language locales (https://www.facebook.com/translations/FacebookLocales.xml).
-	* Added a new Bitly Generic Access Token option for the Bitly URL shortening service (Pro version).
+	* Added a new "Bitly Generic Access Token" option for the Bitly URL shortening service (Pro version).
+	* Added an extra check for WC_Product::get_id() before for older WC versions (before WC 2.5).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -483,7 +484,7 @@ Official announcement: N/A
 
 = 8.33.5-dev3 =
 
-(TBD) Updated the Facebook language locales (https://www.facebook.com/translations/FacebookLocales.xml). Updated the markdown library for PHP v7 compatibility.
+(2016/07/16) Updated Facebook language locales. Updated the markdown library for PHP v7 compatibility. Added a new "Bitly Generic Access Token" option.
 
 = 8.33.4-1 =
 
