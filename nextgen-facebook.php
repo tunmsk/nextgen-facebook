@@ -12,7 +12,7 @@
  * Description: The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.1
  * Tested Up To: 4.5.3
- * Version: 8.33.5-dev3
+ * Version: 8.33.5-dev4
  *
  * Version Numbers: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -113,6 +113,9 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 			$this->set_objects();				// define the class object variables
 
+			if ( $this->debug->enabled )
+				$this->debug->mark( 'plugin initialization' );
+
 			if ( $this->debug->enabled ) {
 				foreach ( array( 'wp_head', 'wp_footer', 'admin_head', 'admin_footer' ) as $action ) {
 					foreach ( array( -9999, 9999 ) as $prio ) {
@@ -122,7 +125,11 @@ if ( ! class_exists( 'Ngfb' ) ) {
 					}
 				}
 			}
+
 			do_action( 'ngfb_init_plugin' );
+
+			if ( $this->debug->enabled )
+				$this->debug->mark( 'plugin initialization' );
 		}
 
 		public function show_debug_html() { 
