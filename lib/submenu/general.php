@@ -152,14 +152,16 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 						$table_rows['og_def_author_on_index'] = '<tr class="hide_in_basic">'.
 						$this->form->get_th_html( _x( 'Use Default Author on Indexes',
 							'option label', 'nextgen-facebook' ), null, 'og_def_author_on_index' ).
-						'<td>'.$this->form->get_checkbox( 'og_def_author_on_index' ).' '.
-							_x( 'defines index / archive webpages as articles', 'option comment', 'nextgen-facebook' ).'</td>';
+						'<td>'.$this->form->get_checkbox( 'og_def_author_on_index' ).' <em>'.
+							_x( 'defines index / archive webpages as articles',
+								'option comment', 'nextgen-facebook' ).'</em></td>';
 	
 						$table_rows['og_def_author_on_search'] = '<tr class="hide_in_basic">'.
 						$this->form->get_th_html( _x( 'Use Default Author on Search Results',
 							'option label', 'nextgen-facebook' ), null, 'og_def_author_on_search' ).
-						'<td>'.$this->form->get_checkbox( 'og_def_author_on_search' ).' '.
-							_x( 'defines search webpages as articles', 'option comment', 'nextgen-facebook' ).'</td>';
+						'<td>'.$this->form->get_checkbox( 'og_def_author_on_search' ).' <em>'.
+							_x( 'defines search webpages as articles',
+								'option comment', 'nextgen-facebook' ).'</em></td>';
 					}	
 					break;
 
@@ -170,8 +172,8 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					'<td>'.$this->form->get_select( 'og_img_max', 
 						range( 0, $this->p->cf['form']['max_media_items'] ), 'short', null, true ).
 					( empty( $this->form->options['og_vid_prev_img'] ) ?
-						'' : ' '._x( '<em>video preview images are enabled</em> (and included first)',
-							'option comment', 'nextgen-facebook' ) ).'</td>';
+						'' : ' <em>'._x( 'video preview images are enabled (and included first)',
+							'option comment', 'nextgen-facebook' ).'</em>' ).'</td>';
 
 					$table_rows['og_img'] = $this->form->get_th_html( _x( 'Open Graph Image Dimensions',
 						'option label', 'nextgen-facebook' ), null, 'og_img_dimensions' ).
@@ -300,7 +302,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					'</td>';
 
 					$table_rows['schema_logo_url'] = $this->form->get_th_html( 
-						'<a href="https://developers.google.com/structured-data/customize/logos">'.
+						'<a href="https://developers.google.com/structured-data/customize/logos" target="_blank">'.
 						_x( 'Organization Logo Image URL', 'option label', 'nextgen-facebook' ).'</a>', null, 'schema_logo_url' ).
 					'<td>'.$this->form->get_input( 'schema_logo_url', 'wide' ).'</td>';
 
@@ -314,8 +316,8 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					'<td>'.$this->form->get_select( 'schema_img_max', 
 						range( 0, $this->p->cf['form']['max_media_items'] ), 'short', null, true ).
 					( empty( $this->form->options['og_vid_prev_img'] ) ?
-						'' : ' '._x( '<em>video preview images are enabled</em> (and included first)',
-							'option comment', 'nextgen-facebook' ) ).'</td>';
+						'' : ' <em>'._x( 'video preview images are enabled (and included first)',
+							'option comment', 'nextgen-facebook' ).'</em>' ).'</td>';
 
 					$table_rows['schema_img'] = $this->form->get_th_html( _x( 'Schema Image Dimensions',
 						'option label', 'nextgen-facebook' ), null, 'schema_img_dimensions' ).

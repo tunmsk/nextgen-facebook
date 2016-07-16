@@ -46,15 +46,15 @@ if ( ! class_exists( 'NgfbGplAdminGeneral' ) ) {
 			$table_rows['og_vid_https'] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Use HTTPS for Video API Requests',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_https' ).
-			'<td class="blank"><input type="checkbox" disabled="disabled" /> '.
+			'<td class="blank"><input type="checkbox" disabled="disabled" /> <em>'.
 				sprintf( _x( 'uses %s', 'option comment', 'nextgen-facebook' ),
-					str_replace( NGFB_PLUGINDIR, NGFB_PLUGINSLUG.'/', NGFB_CURL_CAINFO ) ).'</td>';
+					str_replace( NGFB_PLUGINDIR, NGFB_PLUGINSLUG.'/', NGFB_CURL_CAINFO ) ).'</em></td>';
 
 			$table_rows['og_vid_prev_img'] = $form->get_th_html( _x( 'Include Video Preview Image(s)',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_prev_img' ).
-			'<td class="blank"><input type="checkbox" disabled="disabled" />'.' '.
-				_x( 'video preview images are included first',
-					'option comment', 'nextgen-facebook' ).'</td>';
+			'<td class="blank"><input type="checkbox" disabled="disabled" />'.' <em>'.
+				_x( 'video preview images are included first', 
+					'option comment', 'nextgen-facebook' ).'</em></td>';
 
 			$table_rows['og_vid_html_type'] = $form->get_th_html( _x( 'Include Embed text/html Type',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_html_type' ).

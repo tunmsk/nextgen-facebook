@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.33.5-dev2',	// plugin version
-					'opt_version' => '440',		// increment when changing default options
+					'version' => '8.33.5-dev3',	// plugin version
+					'opt_version' => '441',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -512,6 +512,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_shortlink' => 1,
 					'plugin_min_shorten' => 23,
 					'plugin_bitly_login' => '',
+					'plugin_bitly_token' => '',
 					'plugin_bitly_api_key' => '',
 					'plugin_google_api_key' => '',
 					'plugin_google_shorten' => 0,
