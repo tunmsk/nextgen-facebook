@@ -107,8 +107,8 @@
 
 <div style="clear:both;"></div>
 
-<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png" width="100%" height="100%" style="max-width:600px;"/></p>
+<div style="text-align:center;width=100%;max-width:600px;height:auto;margin:0 0 20px 0;">
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png" width="100%" height="100%"/></p>
 </div>
 
 <h4>Quick List of Features (Continued)</h4>
@@ -176,8 +176,8 @@
 
 <div style="clear:both;"></div>
 
-<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png" width="100%" height="100%" style="max-width:600px;"/></p>
+<div style="text-align:center;width=100%;max-width:600px;height:auto;margin:0 0 20px 0;">
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png" width="100%" height="100%"/></p>
 </div>
 
 <h4>Social Sharing Buttons</h4>
@@ -203,8 +203,8 @@
 
 <div style="clear:both;"></div>
 
-<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png" width="100%" height="100%" style="max-width:600px;"/></p>
+<div style="text-align:center;width=100%;max-width:600px;height:auto;margin:0 0 20px 0;">
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png" width="100%" height="100%"/></p>
 </div>
 
 <h4>Social Profiles for Google Search</h4>
@@ -251,8 +251,8 @@
 
 <div style="clear:both;"></div>
 
-<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-large-image-summary-single.png" width="100%" height="100%" style="max-width:600px;"/></p>
+<div style="text-align:center;width=100%;max-width:600px;height:auto;margin:0 0 20px 0;">
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-large-image-summary-single.png" width="100%" height="100%"/></p>
 </div>
 
 <p><strong>Images and Videos</strong></p>
@@ -265,8 +265,8 @@
 
 <div style="clear:both;"></div>
 
-<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-product-ngfb-single.png" width="100%" height="100%" style="max-width:600px;"/></p>
+<div style="text-align:center;width=100%;max-width:600px;height:auto;margin:0 0 20px 0;">
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-product-ngfb-single.png" width="100%" height="100%"/></p>
 </div>
 
 <p><strong>eCommerce Products</strong></p>

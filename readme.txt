@@ -95,7 +95,7 @@ The most complete meta tags for the best looking shares on Facebook, G+, Twitter
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png" width="100%" height="100%" style="max-width:600px;"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png" width="100%" height="100%"/></p>
 </div>
 
 = Quick List of Features (Continued) =
@@ -152,7 +152,7 @@ The most complete meta tags for the best looking shares on Facebook, G+, Twitter
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png" width="100%" height="100%" style="max-width:600px;"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png" width="100%" height="100%"/></p>
 </div>
 
 = Social Sharing Buttons =
@@ -176,7 +176,7 @@ The Facebook, Google+ and Twitter sharing buttons support *multiple languages*. 
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png" width="100%" height="100%" style="max-width:600px;"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png" width="100%" height="100%"/></p>
 </div>
 
 = Social Profiles for Google Search =
@@ -219,7 +219,7 @@ NGFB provides the [Summary](https://dev.twitter.com/cards/types/summary), [Summa
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-large-image-summary-single.png" width="100%" height="100%" style="max-width:600px;"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-large-image-summary-single.png" width="100%" height="100%"/></p>
 </div>
 
 **Images and Videos**
@@ -232,7 +232,7 @@ NGFB (Pro version) integrates with [All in One SEO Pack](https://wordpress.org/p
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-product-ngfb-single.png" width="100%" height="100%" style="max-width:600px;"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-product-ngfb-single.png" width="100%" height="100%"/></p>
 </div>
 
 **eCommerce Products**
