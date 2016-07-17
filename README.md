@@ -3,7 +3,7 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>NextGEN Facebook (NGFB)</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>8.33.4-1</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>8.33.5-1</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.5.3</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
@@ -107,7 +107,7 @@
 
 <div style="clear:both;"></div>
 
-<div style="text-align:center;width=100%;max-width:600px;height:auto;margin:0 0 20px 0;">
+<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png" width="100%" height="100%"/></p>
 </div>
 
@@ -176,7 +176,7 @@
 
 <div style="clear:both;"></div>
 
-<div style="text-align:center;width=100%;max-width:600px;height:auto;margin:0 0 20px 0;">
+<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png" width="100%" height="100%"/></p>
 </div>
 
@@ -203,7 +203,7 @@
 
 <div style="clear:both;"></div>
 
-<div style="text-align:center;width=100%;max-width:600px;height:auto;margin:0 0 20px 0;">
+<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png" width="100%" height="100%"/></p>
 </div>
 
@@ -251,7 +251,7 @@
 
 <div style="clear:both;"></div>
 
-<div style="text-align:center;width=100%;max-width:600px;height:auto;margin:0 0 20px 0;">
+<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-large-image-summary-single.png" width="100%" height="100%"/></p>
 </div>
 
@@ -265,7 +265,7 @@
 
 <div style="clear:both;"></div>
 
-<div style="text-align:center;width=100%;max-width:600px;height:auto;margin:0 0 20px 0;">
+<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
 <p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-product-ngfb-single.png" width="100%" height="100%"/></p>
 </div>
 
