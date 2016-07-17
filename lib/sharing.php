@@ -67,7 +67,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled )
-				$this->p->debug->mark( 'action / filter setup' );	// begin timer
+				$this->p->debug->mark( 'sharing action / filter setup' );	// begin timer
 
 			$this->plugin_filepath = $plugin_filepath;
 
@@ -119,7 +119,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			}
 
 			if ( $this->p->debug->enabled )
-				$this->p->debug->mark( 'action / filter setup' );	// end timer
+				$this->p->debug->mark( 'sharing action / filter setup' );	// end timer
 		}
 
 		private function set_objects() {
