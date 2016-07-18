@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.6-dev1 (2016/07/18)**
+**Version 8.33.6-dev2 (2016/07/18)**
 
 Official announcement: N/A
 
@@ -498,7 +498,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.33.6-dev1 =
+= 8.33.6-dev2 =
 
 (2016/07/18) Added a check for WP_Error after determining the sharing URL.
 
