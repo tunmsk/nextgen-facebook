@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 		protected static $head_meta_info = array();
 
 		public static $mod_array = array(
-			'id' => false,
+			'id' => 0,
 			'name' => false,
 			'obj' => false,
 			'use_post' => false,
@@ -40,7 +40,7 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 			 * Term
 			 */
 			'is_term' => false,		// is term module
-			'tax_slug' => false,
+			'tax_slug' => '',		// empty string by default
 			/*
 			 * User
 			 */
