@@ -73,7 +73,10 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		protected function get_table_rows( $metabox, $key ) {
 			$table_rows = array();
-			$user_names = $this->p->m['util']['user']->get_form_display_names();
+		
+			if ( SucomUtil::get_const( 'NGFB_DEFAULT_AUTHOR_OPTIONS' ) )
+				$user_names = $this->p->m['util']['user']->get_form_display_names();
+
 			$user_contacts = $this->p->m['util']['user']->get_form_contact_fields();
 
 			switch ( $metabox.'-'.$key ) {
