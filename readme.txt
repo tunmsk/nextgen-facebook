@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.6-rc1 (2016/07/20)**
+**Version 8.33.6-1 (2016/07/20)**
 
 Official announcement: N/A
 
@@ -500,7 +500,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.33.6-rc1 =
+= 8.33.6-1 =
 
 (2016/07/20) Added a check for WP_Error when determining the sharing URL. Updated the qTip2 JavaScript / CSS library files. Refined the user list, when selecting a default author.
 
