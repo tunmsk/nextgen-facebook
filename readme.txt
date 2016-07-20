@@ -16,14 +16,21 @@ The most complete meta tags for the best looking shares on Facebook, G+, Twitter
 
 == Description ==
 
-<p><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" style="width:33%;min-width:128px;max-width:256px;float:left;margin:10px 60px 40px 0;" />
-<strong>NGFB provides <em>complete</em> social meta tags and Schema / Structured Data markup</strong> &mdash; <a href="http://ogp.me/">Facebook / Open Graph</a>, <a href="https://business.pinterest.com/en/rich-pins">Pinterest Rich Pin</a>, <a href="https://dev.twitter.com/cards/overview">Twitter Card</a> meta tags and <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Schema / Structured Data</a> markup in webpages are read by Google Search and social websites to describe &amp; display your content correctly (title, description, hashtags, images, videos, ecommerce product details, author profile / authorship, publisher name, etc.).</p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" style="width:33%;min-width:128px;max-width:256px;float:left;margin:10px 60px 40px 0;" /><strong>NGFB provides <em>complete</em> social meta tags and Schema / Structured Data markup</strong> &mdash;</p>
 
-<p><strong>NGFB uses the <em>existing</em> content of your site to generate meta tags and Schema markup</strong> &mdash; there's no need to enter / configure any additional settings or values manually.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://ogp.me/">Facebook / Open Graph</a>, <a href="https://business.pinterest.com/en/rich-pins">Pinterest Rich Pin</a>, <a href="https://dev.twitter.com/cards/overview">Twitter Card</a> meta tags and <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Schema / Structured Data</a> markup in webpages are read by Google Search and social websites to describe &amp; display your content correctly (title, description, hashtags, images, videos, ecommerce product details, author profile / authorship, publisher name, etc.).</p>
 
-<p><strong>Social meta tags and Schema markup are the cornerstone of any social SEO strategy</strong> &mdash; NGFB provides all the information social websites need, improving <em>Google Search ranking</em>, <em>social engagement</em>, and <em>click-through-rates</em> on Facebook, Google+, Twitter, Pinterest, LinkedIn, and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
+<p><strong>NGFB uses the <em>existing</em> content of your site to generate meta tags and Schema markup</strong> &mdash;</p>
 
-<p><strong>Additional and customized social meta tags and Schema markup</strong> &mdash; NGFB (Pro version) retrieves information from a wide range of sources <em>automatically</em>, including All in One SEO Pack, bbPress, BuddyPress, Co-Authors Plus, Easy Digital Downloads, HeadSpace2 SEO, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, rtMedia for WordPress (BuddyPress and bbPress), The Events Calendar, The SEO Framework, WooCommerce, WP e-Commerce, WordPress REST API, Yoast SEO (aka WordPress SEO), Yotpo Social Reviews for WooCommerce, along with service APIs like Bitly, Google URL Shortener, Gravatar, Ow.ly, Slideshare, TinyURL, Vimeo, Wistia, Your Own URL Shortener (YOURLS), and YouTube.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There's no need to enter / configure any additional settings or values manually.</p>
+
+<p><strong>Social meta tags and Schema markup are the cornerstone of any social SEO strategy</strong> &mdash;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NGFB provides all the information social websites need, improving <em>Google Search ranking</em>, <em>social engagement</em>, and <em>click-through-rates</em> on Facebook, Google+, Twitter, Pinterest, LinkedIn, and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
+
+<p><strong>Additional and customized social meta tags and Schema markup</strong> &mdash;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NGFB (Pro version) retrieves information from a wide range of sources <em>automatically</em>, including All in One SEO Pack, bbPress, BuddyPress, Co-Authors Plus, Easy Digital Downloads, HeadSpace2 SEO, NextGEN Gallery, MarketPress - WordPress eCommerce, Polylang, rtMedia for WordPress (BuddyPress and bbPress), The Events Calendar, The SEO Framework, WooCommerce, WP e-Commerce, WordPress REST API, Yoast SEO (aka WordPress SEO), Yotpo Social Reviews for WooCommerce, along with service APIs like Bitly, Google URL Shortener, Gravatar, Ow.ly, Slideshare, TinyURL, Vimeo, Wistia, Your Own URL Shortener (YOURLS), and YouTube.</p>
 
 <blockquote>
 <p><strong>Don't need the included social sharing buttons?</strong> The <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin is a fork / child of NGFB &mdash; they have the same author, the same solid core features and code-base, but WPSSO is distributed without the sharing buttons and their related features.</p>
