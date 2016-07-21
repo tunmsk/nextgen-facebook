@@ -25,7 +25,7 @@ The most complete meta tags for the best looking shares on Facebook, G+, Twitter
 
 <p>There's no need to manually enter / configure any additional settings or values.</p>
 
-<p><strong>Social meta tags and Schema markup are the social SEO cornerstone</strong> &mdash;</p>
+<p><strong>Social meta tags and Schema markup are the cornerstone of social SEO</strong> &mdash;</p>
 
 <p>NGFB provides all the information social websites need, improving <em>Google Search ranking</em>, <em>social engagement</em>, and <em>click-through-rates</em> on Facebook, Google+, Twitter, Pinterest, LinkedIn, and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
 
@@ -511,8 +511,4 @@ Official announcement: N/A
 = 8.33.6-1 =
 
 (2016/07/20) Added a check for WP_Error when determining the sharing URL. Updated the qTip2 JavaScript / CSS library files. Refined the user list, when selecting a default author.
-
-= 8.33.5-1 =
-
-(2016/07/17) Updated Facebook language locales. Updated the markdown library for PHP v7 compatibility. Added a new "Bitly Generic Access Token" option (Pro version). Minor performance improvement.
 

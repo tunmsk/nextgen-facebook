@@ -23,7 +23,7 @@
 
 <p>There's no need to manually enter / configure any additional settings or values.</p>
 
-<p><strong>Social meta tags and Schema markup are the social SEO cornerstone</strong> &mdash;</p>
+<p><strong>Social meta tags and Schema markup are the cornerstone of social SEO</strong> &mdash;</p>
 
 <p>NGFB provides all the information social websites need, improving <em>Google Search ranking</em>, <em>social engagement</em>, and <em>click-through-rates</em> on Facebook, Google+, Twitter, Pinterest, LinkedIn, and many more &mdash; along with offering many of the most popular social sharing buttons!</p>
 
