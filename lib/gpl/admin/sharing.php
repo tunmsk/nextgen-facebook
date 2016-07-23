@@ -89,7 +89,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 				return $table_rows;	// abort
 			}
 
-			$size_info = $this->p->media->get_size_info( 'thumbnail' );
+			$size_info = SucomUtil::get_size_info( 'thumbnail' );
 			$title_caption = $this->p->webpage->get_caption( 'title', 0, $mod, true, false );
 
 			$table_rows[] = '<td colspan="3" align="center">'.

@@ -196,7 +196,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 					// upgrade the old og_img_size name into width / height / crop values
 					if ( array_key_exists( 'og_img_size', $opts ) ) {
 						if ( ! empty( $opts['og_img_size'] ) && $opts['og_img_size'] !== 'medium' ) {
-							$size_info = $this->p->media->get_size_info( $opts['og_img_size'] );
+							$size_info = SucomUtil::get_size_info( $opts['og_img_size'] );
 							if ( $size_info['width'] > 0 && $size_info['height'] > 0 ) {
 								$opts['og_img_width'] = $size_info['width'];
 								$opts['og_img_height'] = $size_info['height'];
