@@ -523,7 +523,7 @@ Official announcement: N/A
 
 = 8.33.7-dev4 =
 
-(2016/07/23) Added a new SucomDebug log_arr() method. Renamed the SucomDebug args() method to log_args().
+(2016/07/23) Improved the Yoast SEO notification message filter. Added new SucomDebug log_arr() and log_args() methods.
 
 = 8.33.6-1 =
 
