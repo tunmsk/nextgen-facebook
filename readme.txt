@@ -383,7 +383,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.7-dev4 (2016/07/23)**
+**Version 8.33.7-1 (2016/07/23)**
 
 Official announcement: N/A
 
@@ -521,7 +521,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.33.7-dev4 =
+= 8.33.7-1 =
 
 (2016/07/23) Improved the Yoast SEO notification message filter. Added new SucomDebug log_arr() and log_args() methods.
 
