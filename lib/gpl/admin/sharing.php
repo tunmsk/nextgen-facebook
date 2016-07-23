@@ -162,10 +162,15 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			$media = $this->p->og->get_the_media_info( $this->p->cf['lca'].'-tumblr-button',
 				array( 'pid', 'img_url' ), $mod, 'og' );	// $md_pre = 'og'
 
-			if ( ! empty( $media['pid'] ) )
-				list( $media['img_url'], $img_width, $img_height,
-					$img_cropped ) = $this->p->media->get_attachment_image_src( $media['pid'],
-						'thumbnail', false ); 
+			if ( ! empty( $media['pid'] ) ) {
+				list( 
+					$media['img_url'], 
+					$img_width, 
+					$img_height, 
+					$img_cropped, 
+					$img_pid
+				) = $this->p->media->get_attachment_image_src( $media['pid'], 'thumbnail', false ); 
+			}
 
 			$form_rows['tumblr_img_desc'] = array(
 				'label' => _x( 'Tumblr Image Caption', 'option label', 'nextgen-facebook' ),

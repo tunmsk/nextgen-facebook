@@ -1296,35 +1296,35 @@ msgctxt "option label"
 msgid "Tweet Text"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:147 lib/pro/admin/sharing.php:150
+#: lib/gpl/admin/sharing.php:147 lib/pro/admin/sharing.php:155
 msgctxt "option label"
 msgid "Pinterest Caption Text"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:171 lib/pro/admin/sharing.php:174
+#: lib/gpl/admin/sharing.php:176 lib/pro/admin/sharing.php:184
 msgctxt "option label"
 msgid "Tumblr Image Caption"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:174 lib/pro/admin/sharing.php:177
+#: lib/gpl/admin/sharing.php:179 lib/pro/admin/sharing.php:187
 msgid "Caption disabled - no suitable image found for the %s button"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:182 lib/pro/admin/sharing.php:186
+#: lib/gpl/admin/sharing.php:187 lib/pro/admin/sharing.php:196
 msgctxt "option label"
 msgid "Tumblr Video Caption"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:184 lib/pro/admin/sharing.php:189
+#: lib/gpl/admin/sharing.php:189 lib/pro/admin/sharing.php:199
 msgid "Caption disabled - no suitable video found for the %s button"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:192 lib/pro/admin/sharing.php:201
+#: lib/gpl/admin/sharing.php:197 lib/pro/admin/sharing.php:211
 msgctxt "option label"
 msgid "Disable Sharing Buttons"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:217 lib/pro/admin/sharing.php:226
+#: lib/gpl/admin/sharing.php:222 lib/pro/admin/sharing.php:236
 msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr ""
@@ -1339,28 +1339,28 @@ msgctxt "option label"
 msgid "Position in bbPress Single"
 msgstr ""
 
-#: lib/media.php:315
+#: lib/media.php:318
 msgid ""
 "The NextGEN Gallery integration module provided by %1$s is required to read "
 "information for image ID %2$s."
 msgstr ""
 
-#: lib/media.php:687
+#: lib/media.php:690
 msgid "Content"
 msgstr ""
 
-#: lib/media.php:906 lib/pro/util/checkimgdims.php:62
+#: lib/media.php:909 lib/pro/util/checkimgdims.php:62
 msgid "Media Library"
 msgstr ""
 
-#: lib/media.php:961
+#: lib/media.php:964
 msgid ""
 "%1$s image %2$s ignored &mdash; the resulting image of %3$s has an "
 "<strong>aspect ratio equal to/or greater than %4$d:1 allowed by the %5$s "
 "standard</strong>."
 msgstr ""
 
-#: lib/media.php:978
+#: lib/media.php:981
 msgid ""
 "%1$s image %2$s ignored &mdash; the resulting image of %3$s is "
 "<strong>smaller than the minimum of %4$s allowed by the %5$s standard</"

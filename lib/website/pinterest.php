@@ -186,6 +186,7 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 					$atts['cropped'],
 					$atts['pid']
 				) = $this->p->media->get_attachment_image_src( $atts['pid'], $atts['size'], false );	// $check_dupes = false
+
 				if ( $this->p->debug->enabled )
 					$this->p->debug->log( 'returned image '.$atts['photo'].' ('.$atts['width'].'x'.$atts['height'].')' );
 			}
@@ -196,7 +197,7 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 				if ( empty( $atts['photo'] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( 'exiting early: no photo available' );
-						return '<!-- Pinterest Button: No Photo Available -->';	// abort
+					return '<!-- Pinterest Button: No Photo Available -->';	// abort
 				}
 			}
 			$href_query .= '&amp;media='.rawurlencode( $atts['photo'] );
