@@ -440,6 +440,7 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 						),
 						'NgfbHead::get_header_array' => array( 
 							$locale_salt.'_url:'.$sharing_url,
+							$locale_salt.'_url:'.$sharing_url.'_amp:true',
 							$locale_salt.'_url:'.$sharing_url.'_crawler:pinterest',
 						),
 						'NgfbMeta::get_mod_column_content' => array( 
