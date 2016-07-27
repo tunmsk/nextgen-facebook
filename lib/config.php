@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.33.7-1',	// plugin version
-					'opt_version' => '441',		// increment when changing default options
+					'version' => '8.33.8-dev1',	// plugin version
+					'opt_version' => '442',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -469,7 +469,22 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_vimeo_api' => 1,
 					'plugin_wistia_api' => 1,
 					'plugin_youtube_api' => 1,
-					// Social Settings Tab
+					// WP / Theme Integration Tab
+					'plugin_html_attr_filter_name' => 'language_attributes',
+					'plugin_html_attr_filter_prio' => 100,
+					'plugin_head_attr_filter_name' => 'head_attributes',
+					'plugin_head_attr_filter_prio' => 100,
+					'plugin_check_head' => 1,			// Check for Duplicate Meta Tags
+					'plugin_filter_lang' => 1,			// Use WP Locale for Language
+					'plugin_auto_img_resize' => 1,			// Recreate Missing WP Media Sizes
+					'plugin_check_img_dims' => 0,			// Enforce Image Dimensions Check
+					'plugin_upscale_images' => 0,			// Allow Upscaling of Smaller Images
+					'plugin_upscale_img_max' => 33,			// Maximum Image Upscale Percentage
+					'plugin_shortcodes' => 1,			// Enable Plugin Shortcode(s)
+					'plugin_widgets' => 1,				// Enable Plugin Widget(s)
+					'plugin_page_excerpt' => 0,			// Enable WP Excerpt for Pages
+					'plugin_page_tags' => 0,			// Enable WP Tags for Pages
+					// Social Settings Meta Tab
 					'plugin_og_img_col_post' => 1,
 					'plugin_og_img_col_term' => 1,
 					'plugin_og_img_col_user' => 1,
@@ -487,21 +502,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_cf_img_url' => '_format_image_url',
 					'plugin_cf_vid_url' => '_format_video_url',
 					'plugin_cf_vid_embed' => '_format_video_embed',
-					// WP / Theme Integration Tab
-					'plugin_html_attr_filter_name' => 'language_attributes',
-					'plugin_html_attr_filter_prio' => 100,
-					'plugin_head_attr_filter_name' => 'head_attributes',
-					'plugin_head_attr_filter_prio' => 100,
-					'plugin_check_head' => 1,			// Check for Duplicate Meta Tags
-					'plugin_filter_lang' => 1,			// Use WP Locale for Language
-					'plugin_auto_img_resize' => 1,			// Recreate Missing WP Media Sizes
-					'plugin_check_img_dims' => 0,			// Enforce Image Dimensions Check
-					'plugin_upscale_images' => 0,			// Allow Upscaling of Smaller Images
-					'plugin_upscale_img_max' => 33,			// Maximum Image Upscale Percentage
-					'plugin_shortcodes' => 1,			// Enable Plugin Shortcode(s)
-					'plugin_widgets' => 1,				// Enable Plugin Widget(s)
-					'plugin_page_excerpt' => 0,			// Enable WP Excerpt for Pages
-					'plugin_page_tags' => 0,			// Enable WP Tags for Pages
+					'plugin_cf_recipe_ingredients' => '_recipe_ingredients',
 					// File and Object Cache Tab
 					'plugin_object_cache_exp' => 259200,		// Object Cache Expiry (259200 secs = 3 days)
 					'plugin_verify_certs' => 0,			// Verify SSL Certificates
