@@ -1316,8 +1316,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			 * NGFB curl settings
 			 */
 			if ( defined( 'NGFB_PLUGINDIR' ) )
-				$var_const['NGFB_CURL_CAINFO'] = NGFB_PLUGINDIR.'share/curl/ca-bundle.crt';
-			$var_const['NGFB_CURL_USERAGENT'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:40.0) Gecko/20100101 Firefox/40.0';
+				$var_const['NGFB_PHP_CURL_CAINFO'] = NGFB_PLUGINDIR.'share/curl/ca-bundle.crt';
+			$var_const['NGFB_PHP_CURL_USERAGENT'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0';
 
 			// disable 3rd-party caching for duplicate meta tag checks
 			if ( ! empty( $_GET['NGFB_META_TAGS_DISABLE'] ) ) {
