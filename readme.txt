@@ -397,6 +397,11 @@ Official announcement: N/A
 	* Optimized caching of post / term / user meta options and defaults (Pro version).
 	* Added a new "Recipe Ingredients Custom Field" option for use by plugin extensions (Pro version).
 	* Added a new SucomForm `get_input_multi()` method to dynamically show multiple text input fields.
+	* Renamed several constants:
+		* NGFB_CURL_DISABLE to NGFB_PHP_CURL_DISABLE
+		* NGFB_CURL_CAINFO to NGFB_PHP_CURL_CAINFO
+		* NGFB_CURL_USERAGENT to NGFB_PHP_CURL_USERAGENT
+		* NGFB_GETIMGSIZE_DISABLE to NGFB_PHP_GETIMGSIZE_DISABLE
 
 **Version 8.33.7-1 (2016/07/23)**
 

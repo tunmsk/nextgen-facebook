@@ -39,8 +39,8 @@ NGFB_HEAD_PRIORITY		= 10
 NGFB_SOCIAL_PRIORITY		= 100
 NGFB_FOOTER_PRIORITY		= 100
 NGFB_SEO_FILTERS_PRIORITY	= 100
-NGFB_CURL_CAINFO		= NGFB_PLUGINDIR.'share/curl/ca-bundle.crt'
-NGFB_CURL_USERAGENT		= 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:40.0) Gecko/20100101 Firefox/40.0'
+NGFB_PHP_CURL_CAINFO		= NGFB_PLUGINDIR.'share/curl/ca-bundle.crt'
+NGFB_PHP_CURL_USERAGENT		= 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0'
 /*
  * undefined constants - can be defined to change specific plugin behaviors
  */
@@ -48,7 +48,8 @@ NGFB_HTML_DEBUG			= (not defined)
 NGFB_WP_DEBUG			= (not defined)
 NGFB_OBJECT_CACHE_DISABLE	= (not defined)
 NGFB_TRANSIENT_CACHE_DISABLE	= (not defined)
-NGFB_CURL_DISABLE		= (not defined)
+NGFB_PHP_CURL_DISABLE		= (not defined)
+NGFB_PHP_GETIMGSIZE_DISABLE	= (not defined)
 NGFB_FILE_CACHE_DISABLE		= (not defined)
 NGFB_OPEN_GRAPH_DISABLE		= (not defined)
 NGFB_META_TAGS_DISABLE		= (not defined)
@@ -57,6 +58,5 @@ NGFB_FILTER_SINGLE_TAGS		= (not defined)
 NGFB_RESET_ON_ACTIVATE		= (not defined)
 NGFB_IMAGE_UPSCALE_ALL		= (not defined)
 NGFB_IMAGE_UPSCALE_TEST		= (not defined)
-NGFB_GETIMGSIZE_DISABLE		= (not defined)
 NGFB_DEFAULT_AUTHOR_OPTIONS	= (not defined)
 NGFB_USE_IMG_WIDTH_HEIGHT	= (not defined)
