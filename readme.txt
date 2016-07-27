@@ -378,7 +378,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Free / Basic Version Repository =
 
-* [GitHub](https://github.com/SurniaUlula/nextgen-facebook)
+* [GitHub](https://surniaulula.github.io/nextgen-facebook/)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
 = Changelog / Release Notes =
