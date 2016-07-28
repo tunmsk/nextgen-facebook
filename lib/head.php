@@ -13,6 +13,12 @@ if ( ! class_exists( 'NgfbHead' ) ) {
 	class NgfbHead {
 
 		private $p;
+		private static $dnc_const = array(
+			'DONOTCACHEPAGE' => true,	// wp super cache and w3tc
+			'COMET_CACHE_ALLOWED' => false,	// comet cache
+			'QUICK_CACHE_ALLOWED' => false,	// quick cache
+			'ZENCACHE_ALLOWED' => false,	// zencache
+		);
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
@@ -21,19 +27,23 @@ if ( ! class_exists( 'NgfbHead' ) ) {
 			) );
 			add_action( 'wp_head', array( &$this, 'add_header' ), NGFB_HEAD_PRIORITY );
 			add_action( 'amp_post_template_head', array( $this, 'add_header' ), NGFB_HEAD_PRIORITY );
+
+			// disable page caching for pinterest
+			$crawler_name = SucomUtil::crawler_name();
+			if ( $crawler_name === 'pinterest' )
+				NgfbConfig::set_variable_constants( self::$dnc_const );
 		}
 
 		public function filter_head_cache_salt( $salt, $crawler_name ) {
-
-			if ( $this->p->is_avail['amp_endpoint'] && is_amp_endpoint() )
-				$salt .= '_amp:true';
+			if ( $this->p->is_avail['amp_endpoint'] && 
+				is_amp_endpoint() )
+					$salt .= '_amp:true';
 
 			switch ( $crawler_name ) {
 				case 'pinterest':
 					$salt .= '_crawler:'.$crawler_name;
 					break;
 			}
-
 			return $salt;
 		}
 

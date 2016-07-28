@@ -1258,8 +1258,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			self::set_variable_constants();
 		}
 
-		public static function set_variable_constants() { 
-			foreach ( self::get_variable_constants() as $name => $value )
+		public static function set_variable_constants( $var_const = null ) { 
+			if ( $var_const === null )
+				$var_const = self::get_variable_constants();
+			foreach ( $var_const as $name => $value )
 				if ( ! defined( $name ) )
 					define( $name, $value );
 		}
@@ -1321,14 +1323,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			if ( defined( 'NGFB_PLUGINDIR' ) )
 				$var_const['NGFB_PHP_CURL_CAINFO'] = NGFB_PLUGINDIR.'share/curl/ca-bundle.crt';
 			$var_const['NGFB_PHP_CURL_USERAGENT'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0';
-
-			// disable 3rd-party caching for duplicate meta tag checks
-			if ( ! empty( $_GET['NGFB_META_TAGS_DISABLE'] ) ) {
-				$var_const['DONOTCACHEPAGE'] = true;		// wp super cache and w3tc
-				$var_const['COMET_CACHE_ALLOWED'] = false;	// comet cache
-				$var_const['QUICK_CACHE_ALLOWED'] = false;	// quick cache
-				$var_const['ZENCACHE_ALLOWED'] = false;		// zencache
-			}
 
 			foreach ( $var_const as $name => $value )
 				if ( defined( $name ) )
