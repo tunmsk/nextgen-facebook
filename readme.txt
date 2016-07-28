@@ -9,7 +9,7 @@ Tags: amp, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
-Tested Up To: 4.5.3
+Tested Up To: 4.6
 Stable Tag: 8.33.7-1
 
 The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
@@ -383,7 +383,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.8-dev4 (2016/07/27)**
+**Version 8.33.8-dev5 (2016/07/28)**
 
 Official announcement: N/A
 
@@ -541,9 +541,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.33.8-dev4 =
+= 8.33.8-dev5 =
 
-(2016/07/27) Optimized caching of post / term / user meta options and defaults (Pro version). Added a new "Recipe Ingredients Custom Field" option. Added a new SucomForm get_input_multi() method. 
+(2016/07/28) Optimized caching of post / term / user meta options and defaults (Pro version). Added a new "Recipe Ingredients Custom Field" option. Added a new SucomForm get_input_multi() method. 
 
 = 8.33.7-1 =
 
