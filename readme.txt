@@ -391,6 +391,7 @@ Official announcement: N/A
 	* None
 * *Improvements*
 	* Added several popular "do not cache" constants when the Pinterest crawler is detected (allows for customized Pinterest meta tags).
+	* Improved Pinterest support and optimization by disabling Twitter Cards and JSON-LD markup when the Pinterest crawler is detected. The Pinterest crawler does not (presently) support Schema markup in JSON-LD format, so Schema markup is provided using standard meta tags instead.
 * *Bugfixes*
 	* None
 * *Developer Notes*
