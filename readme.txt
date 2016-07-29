@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.6
-Stable Tag: 8.33.7-1
+Stable Tag: 8.33.8-1
 
 The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -545,8 +545,4 @@ Official announcement: N/A
 = 8.33.8-1 =
 
 (2016/07/29) Optimized caching of post / term / user meta options and defaults (Pro version). Added a new "Recipe Ingredients Custom Field" option. Added a new SucomForm get_input_multi() method. 
-
-= 8.33.7-1 =
-
-(2016/07/23) Improved the Yoast SEO notification message filter. Added new SucomDebug log_arr() and log_args() methods.
 
