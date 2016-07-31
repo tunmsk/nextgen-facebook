@@ -349,6 +349,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 		* [Filters by Name](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-name/)
 		* [Other Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/other/)
 	* [Sharing Buttons Function](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/sharing-buttons-function/)
+	* [The $mod Variable](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/the-mod-variable/)
 * [Inline Variables](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/inline-variables/)
 * [Multisite / Network Support](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/multisite-network-support/)
 * [NGFB Shortcode for Sharing Buttons](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/ngfb-shortcode/)
