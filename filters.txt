@@ -20,6 +20,7 @@ apply_filters( 'ngfb_author_object_description', $description, $author_obj );
 apply_filters( 'ngfb_author_object_title', $title, $author_obj );
 apply_filters( 'ngfb_author_url', $url, $mod, $add_page );
 apply_filters( 'ngfb_caption', $caption, $mod, $add_hashtags, $md_idx );
+apply_filters( 'ngfb_check_post_header', $bool, $post_id, $post_obj );
 apply_filters( 'ngfb_columns_post_{post_type_name}', true );
 apply_filters( 'ngfb_content', $content, $mod, $md_idx );
 apply_filters( 'ngfb_content_accept_img_dims', $bool, $img_url, $img_width, $img_height, $size_name, $mod );
