@@ -390,6 +390,19 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.33.9-dev1 (2016/08/04)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added support for the new term meta functions in WordPress v4.4+.
+* *Bugfixes*
+	* Fixed possible iframe video detection issue in the post content.
+* *Developer Notes*
+	* None
+
 **Version 8.33.8-2 (2016/07/29)**
 
 Official announcement: N/A
@@ -548,6 +561,10 @@ Official announcement: N/A
 	* Refactored the `NgfbSchema::add_single_person_data()` method.
 
 == Upgrade Notice ==
+
+= 8.33.9-dev1 =
+
+(2016/08/04) Added support for the new term meta functions in WordPress v4.4+. Fixed possible iframe video detection issue in the post content.
 
 = 8.33.8-2 =
 
