@@ -390,6 +390,19 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.33.10-1 (2016/08/05)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed typo in variable name for custom field value assignment.
+* *Developer Notes*
+	* None
+
 **Version 8.33.9-1 (2016/08/05)**
 
 Official announcement: N/A
@@ -561,6 +574,10 @@ Official announcement: N/A
 	* Refactored the `NgfbSchema::add_single_person_data()` method.
 
 == Upgrade Notice ==
+
+= 8.33.10-1 =
+
+(2016/08/05) Fixed typo in variable name for custom field value assignment.
 
 = 8.33.9-1 =
 
