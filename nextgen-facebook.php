@@ -5,6 +5,7 @@
  * Text Domain: nextgen-facebook
  * Domain Path: /languages
  * Plugin URI: http://surniaulula.com/extend/plugins/nextgen-facebook/
+ * Assets URI: https://surniaulula.github.io/nextgen-facebook/assets/
  * Author: JS Morisset
  * Author URI: http://surniaulula.com/
  * License: GPLv3

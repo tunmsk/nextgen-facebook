@@ -3603,15 +3603,15 @@ msgctxt "option label"
 msgid "Widget Title (leave blank for no title)"
 msgstr ""
 
-#: nextgen-facebook.php:257
+#: nextgen-facebook.php:258
 msgid "HTML debug mode is active (transient cache could NOT be disabled)."
 msgstr ""
 
-#: nextgen-facebook.php:258
+#: nextgen-facebook.php:259
 msgid "HTML debug mode is active (transient cache use is disabled)."
 msgstr ""
 
-#: nextgen-facebook.php:259
+#: nextgen-facebook.php:260
 msgid "Informational debug messages are being added as hidden HTML comments."
 msgstr ""
 
