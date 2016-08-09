@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.33.11-1\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.33.12-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2016-08-06 09:42-0300\n"
-"PO-Revision-Date: 2016-08-06 09:42-0300\n"
+"POT-Creation-Date: 2016-08-09 11:20-0300\n"
+"PO-Revision-Date: 2016-08-09 11:20-0300\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -765,8 +765,8 @@ msgstr "Découvrir les médias intégrés pour"
 #: lib/gpl/admin/advanced.php:99 lib/gpl/admin/advanced.php:101
 #: lib/pro/admin/advanced.php:102 lib/pro/admin/advanced.php:104
 msgctxt "option label"
-msgid "Add \"%s\" Column for"
-msgstr "Ajouter colonne \"%s\" pour"
+msgid "Add %s Column for"
+msgstr "Ajouter colonne %s pour"
 
 #: lib/gpl/admin/advanced.php:100 lib/messages.php:309 lib/meta.php:553
 #: lib/pro/admin/advanced.php:103
@@ -1237,50 +1237,50 @@ msgctxt "option label"
 msgid "%s Preset"
 msgstr "Préréglage '%s'"
 
-#: lib/gpl/admin/sharing.php:108 lib/pro/admin/sharing.php:108
+#: lib/gpl/admin/sharing.php:107 lib/pro/admin/sharing.php:108
 msgctxt "option label"
 msgid "Email Subject"
 msgstr "Sujet du couriel"
 
-#: lib/gpl/admin/sharing.php:113 lib/pro/admin/sharing.php:114
+#: lib/gpl/admin/sharing.php:112 lib/pro/admin/sharing.php:114
 msgctxt "option label"
 msgid "Email Message"
 msgstr "Message du courriel"
 
-#: lib/gpl/admin/sharing.php:126 lib/pro/admin/sharing.php:128
+#: lib/gpl/admin/sharing.php:125 lib/pro/admin/sharing.php:128
 msgctxt "option label"
 msgid "Tweet Text"
 msgstr "Texte du Tweet"
 
-#: lib/gpl/admin/sharing.php:147 lib/pro/admin/sharing.php:155
+#: lib/gpl/admin/sharing.php:151 lib/pro/admin/sharing.php:155
 msgctxt "option label"
 msgid "Pinterest Caption Text"
 msgstr "Texte légende Pinterest"
 
-#: lib/gpl/admin/sharing.php:176 lib/pro/admin/sharing.php:184
+#: lib/gpl/admin/sharing.php:179 lib/pro/admin/sharing.php:184
 msgctxt "option label"
 msgid "Tumblr Image Caption"
 msgstr "Légende d'image Tumblr"
 
-#: lib/gpl/admin/sharing.php:179 lib/pro/admin/sharing.php:187
+#: lib/gpl/admin/sharing.php:182 lib/pro/admin/sharing.php:187
 msgid "Caption disabled - no suitable image found for the %s button"
 msgstr "Légende désactivé - aucune image appropriée trouvé pour le bouton %"
 
-#: lib/gpl/admin/sharing.php:187 lib/pro/admin/sharing.php:196
+#: lib/gpl/admin/sharing.php:190 lib/pro/admin/sharing.php:195
 msgctxt "option label"
 msgid "Tumblr Video Caption"
 msgstr "Légende vidéo Tumblr"
 
-#: lib/gpl/admin/sharing.php:189 lib/pro/admin/sharing.php:199
+#: lib/gpl/admin/sharing.php:192 lib/pro/admin/sharing.php:198
 msgid "Caption disabled - no suitable video found for the %s button"
 msgstr "Légende désactivé - aucun vidéo appropriée trouvé pour le bouton %"
 
-#: lib/gpl/admin/sharing.php:197 lib/pro/admin/sharing.php:211
+#: lib/gpl/admin/sharing.php:200 lib/pro/admin/sharing.php:209
 msgctxt "option label"
 msgid "Disable Sharing Buttons"
 msgstr "Désactiver les boutons"
 
-#: lib/gpl/admin/sharing.php:222 lib/pro/admin/sharing.php:236
+#: lib/gpl/admin/sharing.php:225 lib/pro/admin/sharing.php:234
 msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr "JavaScript de la barre latérale"
@@ -3161,15 +3161,15 @@ msgctxt "option label"
 msgid "Widget Title (leave blank for no title)"
 msgstr "Titre du Widget (laisser vide pour aucun titre)"
 
-#: nextgen-facebook.php:257
+#: nextgen-facebook.php:258
 msgid "HTML debug mode is active (transient cache could NOT be disabled)."
 msgstr "Le mode de débogage HTML est actif (l’utilisation du cache transitoire n'a pas pu être désactivée)."
 
-#: nextgen-facebook.php:258
+#: nextgen-facebook.php:259
 msgid "HTML debug mode is active (transient cache use is disabled)."
 msgstr "Le mode de débogage HTML est actif (l’utilisation du cache transitoire est désactivée)."
 
-#: nextgen-facebook.php:259
+#: nextgen-facebook.php:260
 msgid "Informational debug messages are being added as hidden HTML comments."
 msgstr "Des messages d’information de débogage sont ajoutés en commentaires HTML."
 
