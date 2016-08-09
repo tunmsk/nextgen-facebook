@@ -391,6 +391,19 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.33.12-1 (2016/08/09)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed typo in `delete_term_meta()` function name.
+* *Developer Notes*
+	* None
+
 **Version 8.33.11-1 (2016/08/06)**
 
 Official announcement: N/A
@@ -406,6 +419,10 @@ Official announcement: N/A
 	* None
 
 == Upgrade Notice ==
+
+= 8.33.12-1 =
+
+(2016/08/09) Fixed typo in `delete_term_meta()` function name.
 
 = 8.33.11-1 =
 
