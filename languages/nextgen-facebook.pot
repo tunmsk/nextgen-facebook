@@ -1319,12 +1319,12 @@ msgstr ""
 msgid "Caption disabled - no suitable video found for the %s button"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:200 lib/pro/admin/sharing.php:210
+#: lib/gpl/admin/sharing.php:200 lib/pro/admin/sharing.php:209
 msgctxt "option label"
 msgid "Disable Sharing Buttons"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:225 lib/pro/admin/sharing.php:235
+#: lib/gpl/admin/sharing.php:225 lib/pro/admin/sharing.php:234
 msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr ""
