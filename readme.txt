@@ -398,7 +398,7 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added thumbnail preview CSS for mobile in the Social Settings metabox.
 * *Bugfixes*
 	* Fixed typo in `delete_term_meta()` function name.
 * *Developer Notes*
@@ -422,7 +422,7 @@ Official announcement: N/A
 
 = 8.33.12-1 =
 
-(2016/08/09) Fixed typo in `delete_term_meta()` function name.
+(2016/08/09) Fixed typo in delete_term_meta() function name. Added thumbnail preview CSS for mobile in the Social Settings metabox.
 
 = 8.33.11-1 =
 
