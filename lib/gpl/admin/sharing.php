@@ -93,9 +93,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			$title_caption = $this->p->webpage->get_caption( 'title', 0, $mod, true, false );
 
 			$table_rows[] = '<td colspan="3" align="center">'.
-				$this->p->msgs->get( 'pro-about-msg-post' ).
-				$this->p->msgs->get( 'pro-feature-msg' ).
-				'</td>';
+				$this->p->msgs->get( 'pro-feature-msg',
+					array( 'lca' => 'ngfb' ) ).'</td>';
 
 			/*
 			 * Email
@@ -138,18 +137,22 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			$media = $this->p->og->get_the_media_info( $this->p->cf['lca'].'-pinterest-button',
 				array( 'pid', 'img_url' ), $mod, 'rp' );	// $md_pre = 'rp'
 
-			if ( ! empty( $media['pid'] ) )
-				list( $media['img_url'], $img_width, $img_height,
-					$img_cropped ) = $this->p->media->get_attachment_image_src( $media['pid'],
-						'thumbnail', false ); 
+			if ( ! empty( $media['pid'] ) ) {
+				list( 
+					$media['img_url'], 
+					$img_width,
+					$img_height,
+					$img_cropped,
+					$img_pid
+				) = $this->p->media->get_attachment_image_src( $media['pid'], 'thumbnail', false ); 
+			}
 
 			$form_rows['pin_desc'] = array(
 				'label' => _x( 'Pinterest Caption Text', 'option label', 'nextgen-facebook' ),
 				'th_class' => 'medium', 'tooltip' => 'post-pin_desc', 'td_class' => 'blank top',
 				'content' => $form->get_no_textarea_value( $caption_text, '', '', $caption_len ).
-					( empty( $media['img_url'] ) ? '' : '</td><td class="top" style="width:'.
-					$size_info['width'].'px;"><img src="'.$media['img_url'].'" style="max-width:'.
-					$size_info['width'].'px;">' ),
+					( empty( $media['img_url'] ) ? '' : '</td><td class="top thumb_preview">'.
+					'<img src="'.$media['img_url'].'" style="max-width:'.$size_info['width'].'px;">' ),
 			);
 
 			/*
@@ -179,8 +182,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 					'<em>'.sprintf( __( 'Caption disabled - no suitable image found for the %s button',
 						'nextgen-facebook' ), 'Tumblr' ).'</em>' :
 					$form->get_no_textarea_value( $caption_text, '', '', $caption_len ).
-					'</td><td class="top" style="width:'.$size_info['width'].'px;"><img src="'.
-					$media['img_url'].'" style="max-width:'.$size_info['width'].'px;">' ),
+					'</td><td class="top thumb_preview"><img src="'.$media['img_url'].'"'.
+					' style="max-width:'.$size_info['width'].'px;">' ),
 			);
 
 			$form_rows['tumblr_vid_desc'] = array(
