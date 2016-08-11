@@ -403,7 +403,6 @@ Official announcement: N/A
 	* None
 * *Developer Notes*
 	* Flipped `NgfbSharing::get_css_class_id()` arguments (the CSS class name is now second).
-	* Added a new `NgfbUtil::shorten_html_a_href()` static method.
 
 **Version 8.33.12-1 (2016/08/09)**
 
