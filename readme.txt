@@ -391,18 +391,18 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.13-dev1 (TBD)**
+**Version 8.34.0-dev1 (2016/08/11)**
 
 Official announcement: N/A
 
 * *New Features*
-	* None
+	* Added support for Facebook embedded iframe videos (Pro version).
 * *Improvements*
 	* Removed the "Shorten URLs with" duplicate option from Twitter settings (see the Advanced settings page for shortening options).
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Flipped `NgfbSharing::get_css_class_id()` arguments (the CSS class name is now second).
+	* Flipped `NgfbSharing::get_css_class_id()` method arguments (the CSS class name is now second).
 
 **Version 8.33.12-1 (2016/08/09)**
 
@@ -432,6 +432,10 @@ Official announcement: N/A
 	* None
 
 == Upgrade Notice ==
+
+= 8.34.0-dev1 =
+
+(2016/08/11) Added support for Facebook embedded iframe videos (Pro version). Removed the "Shorten URLs with" option from Twitter settings. Flipped NgfbSharing get_css_class_id() arguments.
 
 = 8.33.12-1 =
 
