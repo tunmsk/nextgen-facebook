@@ -115,7 +115,7 @@ if ( ! class_exists( 'NgfbWebsiteReddit' ) ) {
 
 			$html = '<!-- Reddit Button -->'.
 			'<script type="text/javascript">reddit_url=\''.$atts['url'].'\'; reddit_title=\''.$atts['title'].'\';</script>'.
-			'<div '.NgfbSharing::get_css_class_id( 'reddit', $atts ).'>'.
+			'<div '.NgfbSharing::get_css_class_id( $atts, 'reddit' ).'>'.
 			'<script type="text/javascript" src="'.$js_url.'"></script></div>';
 
 			if ( $this->p->debug->enabled )

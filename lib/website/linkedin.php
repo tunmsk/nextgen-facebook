@@ -109,7 +109,7 @@ if ( ! class_exists( 'NgfbWebsiteLinkedin' ) ) {
 				apply_filters( $lca.'_sharing_url', $atts['url'], $mod, $atts['add_page'] );
 
 			$html = '<!-- LinkedIn Button -->'.
-			'<div '.NgfbSharing::get_css_class_id( 'linkedin', $atts ).'>'.
+			'<div '.NgfbSharing::get_css_class_id( $atts, 'linkedin' ).'>'.
 			'<script type="IN/Share" data-url="'.$atts['url'].'"'.
 				( empty( $opts['linkedin_counter'] ) ? '' : ' data-counter="'.$opts['linkedin_counter'].'"' ).
 				( empty( $opts['linkedin_showzero'] ) ? '' : ' data-showzero="true"' ).'>'.

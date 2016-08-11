@@ -136,7 +136,7 @@ if ( ! class_exists( 'NgfbWebsiteStumbleupon' ) ) {
 				apply_filters( $lca.'_sharing_url', $atts['url'], $mod, $atts['add_page'] );
 
 			$html = '<!-- StumbleUpon Button -->'.
-			'<div '.NgfbSharing::get_css_class_id( 'stumbleupon', $atts, 'stumble-button' ).'>'.
+			'<div '.NgfbSharing::get_css_class_id( $atts, 'stumbleupon', 'stumble-button' ).'>'.
 			'<su:badge layout="'.$opts['stumble_badge'].'" location="'.$atts['url'].'"></su:badge></div>';
 
 			if ( $this->p->debug->enabled )

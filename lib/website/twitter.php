@@ -76,16 +76,6 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteTwitter' ) ) {
 			sprintf( __( 'Recommend following the author\'s Twitter @username (from their profile) after sharing a webpage. If the <em>%1$s</em> option is also checked, the website\'s @username is suggested first.', 'nextgen-facebook' ), _x( 'Add via @username', 'option label (short)', 'wpsso-rrssb' ) ) ).
 			'<td>'.$form->get_checkbox( 'twitter_rel_author' ).'</td>';
 
-			$table_rows[] = $form->get_th_html( _x( 'Shorten URLs with',
-				'option label (short)', 'nextgen-facebook' ), 'short', null, 
-			sprintf( __( 'If you select a URL shortening service here, you must also enter its <a href="%1$s">%2$s</a> on the %3$s settings page.', 'nextgen-facebook' ), $this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_apikeys' ), _x( 'Service API Keys', 'metabox tab', 'nextgen-facebook' ), _x( 'Advanced', 'lib file description', 'nextgen-facebook' ) ) ).
-			( $this->p->check->aop( $this->p->cf['lca'], true, $this->p->is_avail['aop'] ) ?
-				'<td>'.$form->get_select( 'plugin_shortener', $this->p->cf['form']['shorteners'], 'short' ).'&nbsp; ' :
-				'<td class="blank">'.$this->p->cf['form']['shorteners'][$this->p->options['plugin_shortener']].' &mdash; ' ).
-			sprintf( __( 'using these <a href="%1$s">%2$s</a>', 'nextgen-facebook' ),
-				$this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_apikeys' ),
-				_x( 'Service API Keys', 'metabox tab', 'nextgen-facebook' ) ).'</td>';
-
 			return $table_rows;
 		}
 	}
@@ -186,7 +176,7 @@ if ( ! class_exists( 'NgfbWebsiteTwitter' ) ) {
 				$atts['dnt'] = $opts['twitter_dnt'] ? 'true' : 'false';
 
 			$html = '<!-- Twitter Button -->'.
-			'<div '.NgfbSharing::get_css_class_id( 'twitter', $atts ).'>'.
+			'<div '.NgfbSharing::get_css_class_id( $atts, 'twitter' ).'>'.
 			'<a href="'.SucomUtil::get_prot().'://twitter.com/share" class="twitter-share-button"'.
 			' data-lang="'.$atts['lang'].'"'.
 			' data-url="'.$short_url.'"'.

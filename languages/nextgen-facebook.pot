@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.33.12-1\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.33.13-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -2465,7 +2465,7 @@ msgid ""
 "for the required %2$s image dimensions."
 msgstr ""
 
-#: lib/pro/util/shorten.php:166
+#: lib/pro/util/shorten.php:165
 msgid ""
 "Incomplete and/or missing %s service API credentials for URL shortening."
 msgstr ""
@@ -2641,8 +2641,7 @@ msgctxt "metabox tab"
 msgid "Social Settings Meta"
 msgstr ""
 
-#: lib/submenu/advanced.php:49 lib/website/twitter.php:81
-#: lib/website/twitter.php:87
+#: lib/submenu/advanced.php:49
 msgctxt "metabox tab"
 msgid "Service API Keys"
 msgstr ""
@@ -3254,26 +3253,26 @@ msgid ""
 "install the missing %1$s PHP class."
 msgstr ""
 
-#: lib/util.php:1599
+#: lib/util.php:1597
 msgid "No options available."
 msgstr ""
 
-#: lib/util.php:1625
+#: lib/util.php:1623
 msgctxt "option comment"
 msgid "%1$d additional options not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1629
+#: lib/util.php:1627
 msgctxt "option comment"
 msgid "unhide these options"
 msgstr ""
 
-#: lib/util.php:1632
+#: lib/util.php:1630
 msgctxt "option comment"
 msgid "%1$d additional rows not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1636
+#: lib/util.php:1634
 msgctxt "option comment"
 msgid "unhide these rows"
 msgstr ""
@@ -3567,26 +3566,6 @@ msgid ""
 "Recommend following the author's Twitter @username (from their profile) "
 "after sharing a webpage. If the <em>%1$s</em> option is also checked, the "
 "website's @username is suggested first."
-msgstr ""
-
-#: lib/website/twitter.php:79
-msgctxt "option label (short)"
-msgid "Shorten URLs with"
-msgstr ""
-
-#: lib/website/twitter.php:81
-msgid ""
-"If you select a URL shortening service here, you must also enter its <a href="
-"\"%1$s\">%2$s</a> on the %3$s settings page."
-msgstr ""
-
-#: lib/website/twitter.php:81
-msgctxt "lib file description"
-msgid "Advanced"
-msgstr ""
-
-#: lib/website/twitter.php:85
-msgid "using these <a href=\"%1$s\">%2$s</a>"
 msgstr ""
 
 #: lib/widget/sharing.php:31

@@ -145,7 +145,7 @@ if ( ! class_exists( 'NgfbWebsiteGplus' ) ) {
 				'class="g-plusone"';
 
 			$html = '<!-- GooglePlus Button -->'.
-			'<div '.NgfbSharing::get_css_class_id( ( $opts['gp_action'] == 'share' ? 'gplus' : 'gplusone' ), $atts ).'>'.
+			'<div '.NgfbSharing::get_css_class_id( $atts, ( $opts['gp_action'] == 'share' ? 'gplus' : 'gplusone' ) ).'>'.
 			'<span '.$gp_class.' data-size="'.$opts['gp_size'].'" data-annotation="'.$opts['gp_annotation'].'" data-href="'.$atts['url'].'"'.
 				( empty( $opts['gp_expandto'] ) || $opts['gp_expandto'] == 'none' ?
 					'' : ' data-expandTo="'.$opts['gp_expandto'].'"' ).'>'.

@@ -232,7 +232,7 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 			$pin_img_url = $this->p->util->get_cache_file_url( $pin_img_url );
 
 			$html = '<!-- Pinterest Button -->'.
-			'<div '.NgfbSharing::get_css_class_id( 'pinterest', $atts ).'>'.
+			'<div '.NgfbSharing::get_css_class_id( $atts, 'pinterest' ).'>'.
 			'<a href="'.SucomUtil::get_prot().'://pinterest.com/pin/create/button/'.$href_query.'" '.
 			'data-pin-do="buttonPin" '.
 			'data-pin-zero="true" '.

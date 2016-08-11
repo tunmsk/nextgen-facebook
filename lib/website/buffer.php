@@ -192,7 +192,7 @@ if ( ! class_exists( 'NgfbWebsiteBuffer' ) ) {
 				$atts['hashtags'] = '';
 
 			$html = '<!-- Buffer Button -->'.
-			'<div '.NgfbSharing::get_css_class_id( 'buffer', $atts ).'>'.
+			'<div '.NgfbSharing::get_css_class_id( $atts, 'buffer' ).'>'.
 			'<a href="'.SucomUtil::get_prot().'://bufferapp.com/add" class="buffer-add-button"'.
 			' data-url="'.$atts['url'].'"'.
 			' data-count="'.$opts['buffer_count'].'"'.
