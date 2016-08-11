@@ -391,7 +391,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.33.13-dev1 (2016/08/11)**
+**Version 8.33.13-dev1 (TBD)**
 
 Official announcement: N/A
 
@@ -432,10 +432,6 @@ Official announcement: N/A
 	* None
 
 == Upgrade Notice ==
-
-= 8.33.13-dev1 =
-
-(2016/08/11) Removed the "Shorten URLs with" duplicate option from Twitter settings. Flipped NgfbSharing get_css_class_id() arguments.
 
 = 8.33.12-1 =
 
