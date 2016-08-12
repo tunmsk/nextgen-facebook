@@ -1010,26 +1010,27 @@ $buttons_html."\n".
 			return $max_len;
 		}
 
-		public static function get_css_class_id( array $atts, $css_class_name, $css_class_extra = '' ) {
+		public static function get_css_class_id( array $atts, $css_name, $css_extra = '' ) {
+			$css_class = $css_name.'-'.
+				( empty( $atts['css_class'] ) ? $atts['css_class'] : 'button' );
 
-			// set default css class and id value to 'button'
-			foreach ( array( 'css_class', 'css_id' ) as $key )
-				if ( empty( $atts[$key] ) )
-					$atts[$key] = 'button';
+			if ( ! empty( $css_extra ) ) 
+				$css_class = $css_extra.' '.$css_class;
 
-			$css_class = $css_class_name.'-'.$atts['css_class'];
-			$css_id = $css_class_name.'-'.$atts['css_id'];
+			return 'class="'.$css_class.'" id="'.self::get_src_id( $atts, $css_name ).'"';
+		}
+
+		public static function get_src_id( array $atts, $src_name ) {
+			$src_id = $src_name.'-'.
+				( empty( $atts['css_id'] ) ? $atts['css_id'] : 'button' );
 
 			if ( is_singular() || in_the_loop() ) {
 				global $post;
 				if ( ! empty( $post->ID ) )
-					$css_id .= '-post-'.$post->ID;
+					$src_id .= '-post-'.$post->ID;
 			}
 
-			if ( ! empty( $css_class_extra ) ) 
-				$css_class = $css_class_extra.' '.$css_class;
-
-			return 'class="'.$css_class.'" id="'.$css_id.'"';
+			return $src_id;
 		}
 	}
 }
