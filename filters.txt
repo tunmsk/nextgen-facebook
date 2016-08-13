@@ -12,13 +12,14 @@
 'ngfb_add_metbox_post' ( $bool, $post_id );
 'ngfb_add_metbox_term' ( $bool, $term_id );
 'ngfb_add_metbox_user' ( $bool, $user_id );
+'ngfb_archive_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_article_section' ( $section, $post_id );
 'ngfb_attached_image_ids' ( $attach_ids, $post_id );
 'ngfb_attached_images' ( $og_ret, $num, $size_name, $post_id, $check_dupes );
 'ngfb_attached_accept_img_dims' ( $bool, $img_url, $img_width, $img_height, $size_name, $pid );
 'ngfb_author_object_description' ( $description, $author_obj );
 'ngfb_author_object_title' ( $title, $author_obj );
-'ngfb_author_url' ( $url, $mod, $add_page );
+'ngfb_author_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_caption' ( $caption, $mod, $add_hashtags, $md_idx );
 'ngfb_check_post_header' ( $bool, $post_id, $post_obj );
 'ngfb_columns_post_{post_type_name}' ( true );
@@ -42,6 +43,7 @@
 'ngfb_hashtags' ( $hashtags, $post_id );
 'ngfb_hashtags_seed' ( '', $post_id );
 'ngfb_header_read_cache' ( $bool );
+'ngfb_home_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_image_upscale_all' ( NGFB_IMAGE_UPSCALE_ALL = false );
 'ngfb_image_upscale_max' ( $max_diff = 50, $img_info );
 'ngfb_image_upscale_test' ( NGFB_IMAGE_UPSCALE_TEST = false, $img_info );
@@ -51,7 +53,7 @@
 'ngfb_json_data_http_schema_org' ( false, $use_post, $mod, $mt_og, $user_id, $is_main );
 'ngfb_json_data_http_schema_org_{item_type}' ( false, $use_post, $mod, $mt_og, $user_id, $is_main );
 'ngfb_json_is_main_entity' ( $bool, $use_post, $mod, $mt_og, $post_id, $user_id );
-'ngfb_json_ld_search_url' ( $url );
+'ngfb_json_ld_search_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_link_rel' ( $link_rel, $use_post, $mod );
 'ngfb_load_lib' ( false, "$type/$sub/$id" );
 'ngfb_meta_name' ( $meta_name, $use_post, $mod );
@@ -83,7 +85,7 @@
 'ngfb_post_image_urls' ( array $urls, $size_name, $post_id );
 'ngfb_post_social_settings_tabs' ( $tabs, $mod );
 'ngfb_post_types' ( $post_types, $type, $output );
-'ngfb_post_url' ( $url, $mod, $add_page );
+'ngfb_post_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_quote' ( $quote, $mod );
 'ngfb_quote_seed' ( '', $mod );
 'ngfb_save_options' ( $opts, $options_name );
@@ -98,9 +100,10 @@
 'ngfb_schema_type_for_post_type_empty' ( $type_id );
 'ngfb_schema_type_for_post_type_unknown' ( $type_id );
 'ngfb_schema_types' ( (array) $schema_types );
+'ngfb_search_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_sharing_show_on' ( $show_on, $prefix );
 'ngfb_sharing_styles_tabs' ( $tabs );
-'ngfb_sharing_url' ( $url, $mod, $add_page );
+'ngfb_sharing_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_shortcode_ngfb' ( $atts, $content );
 'ngfb_shorten_url' ( $long_url, $shortener );
 'ngfb_size_info_'.$size_name ( $size_info, $post_id );
@@ -112,7 +115,7 @@
 'ngfb_term_social_settings_tabs' ( $tabs, $mod );
 'ngfb_tc' ( $tc, $use_post, $mod );
 'ngfb_tc_seed' ( $tc, $use_post, $mod );
-'ngfb_term_url' ( $url, $mod, $add_page );
+'ngfb_term_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_text_filter_has_changes_after' ( false, $filter_name );
 'ngfb_text_filter_has_changes_before' ( false, $filter_name );
 'ngfb_title' ( $title, $mod, $add_hashtags, $md_idx );
