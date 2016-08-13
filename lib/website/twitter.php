@@ -117,25 +117,13 @@ if ( ! class_exists( 'NgfbWebsiteTwitter' ) ) {
 			return array_merge( $def_opts, self::$cf['opt']['defaults'] );
 		}
 
-		// do not use an $atts reference to allow for local changes
-		public function get_html( array $atts, array &$opts, array &$mod ) {
+		public function get_html( array $atts, array $opts, array $mod ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			if ( empty( $opts ) ) 
-				$opts =& $this->p->options;
-
-			global $post; 
-
 			$lca = $this->p->cf['lca'];
-			$atts['use_post'] = isset( $atts['use_post'] ) ? $atts['use_post'] : true;
-			$atts['add_page'] = isset( $atts['add_page'] ) ? $atts['add_page'] : true;      // get_sharing_url() argument
 
-			$long_url = empty( $atts['url'] ) ? 
-				$this->p->util->get_sharing_url( $mod, $atts['add_page'] ) : 
-				apply_filters( $lca.'_sharing_url', $atts['url'], $mod, $atts['add_page'] );
-
-			$short_url = apply_filters( $lca.'_shorten_url', $long_url, $opts['plugin_shortener'] );
+			$short_url = apply_filters( $lca.'_shorten_url', $atts['url'], $opts['plugin_shortener'] );
 
 			if ( ! array_key_exists( 'lang', $atts ) ) {
 				$atts['lang'] = empty( $opts['twitter_lang'] ) ? 'en' : $opts['twitter_lang'];
@@ -147,7 +135,7 @@ if ( ! class_exists( 'NgfbWebsiteTwitter' ) ) {
 
 			if ( ! array_key_exists( 'caption', $atts ) ) {
 				if ( empty( $atts['caption'] ) ) {
-					$caption_len = $this->p->sharing->get_tweet_max_len();
+					$caption_len = $this->p->sharing->get_tweet_max_len( 'twitter' );
 					$atts['caption'] = $this->p->webpage->get_caption( $opts['twitter_caption'], $caption_len,
 						$mod, true, true, true, 'twitter_desc' );
 				}
@@ -161,11 +149,12 @@ if ( ! class_exists( 'NgfbWebsiteTwitter' ) ) {
 			}
 
 			if ( ! array_key_exists( 'related', $atts ) ) {
+				global $post; 
 				if ( ! empty( $opts['twitter_rel_author'] ) && 
-					! empty( $post ) && $atts['use_post'] )
-						$atts['related'] = preg_replace( '/^@/', '', 
-							get_the_author_meta( $opts['plugin_cm_twitter_name'], $post->author ) );
-				else $atts['related'] = '';
+					! empty( $post ) && $atts['use_post'] ) {
+					$atts['related'] = preg_replace( '/^@/', '', 
+						get_the_author_meta( $opts['plugin_cm_twitter_name'], $post->author ) );
+				} else $atts['related'] = '';
 			}
 
 			// hashtags are included in the caption instead
@@ -176,11 +165,11 @@ if ( ! class_exists( 'NgfbWebsiteTwitter' ) ) {
 				$atts['dnt'] = $opts['twitter_dnt'] ? 'true' : 'false';
 
 			$html = '<!-- Twitter Button -->'.
-			'<div '.NgfbSharing::get_css_class_id( $atts, 'twitter' ).'>'.
+			'<div '.SucomUtil::get_atts_css_attr( $atts, 'twitter' ).'>'.
 			'<a href="'.SucomUtil::get_prot().'://twitter.com/share" class="twitter-share-button"'.
 			' data-lang="'.$atts['lang'].'"'.
 			' data-url="'.$short_url.'"'.
-			' data-counturl="'.$long_url.'"'.
+			' data-counturl="'.$atts['url'].'"'.
 			' data-text="'.$atts['caption'].'"'.
 			' data-via="'.$atts['via'].'"'.
 			' data-related="'.$atts['related'].'"'.
@@ -190,6 +179,7 @@ if ( ! class_exists( 'NgfbWebsiteTwitter' ) ) {
 
 			if ( $this->p->debug->enabled )
 				$this->p->debug->log( 'returning html ('.strlen( $html ).' chars)' );
+
 			return $html;
 		}
 

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.34.0-dev2\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.34.0-dev3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -3253,26 +3253,26 @@ msgid ""
 "install the missing %1$s PHP class."
 msgstr ""
 
-#: lib/util.php:1597
+#: lib/util.php:1598
 msgid "No options available."
 msgstr ""
 
-#: lib/util.php:1623
+#: lib/util.php:1624
 msgctxt "option comment"
 msgid "%1$d additional options not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1627
+#: lib/util.php:1628
 msgctxt "option comment"
 msgid "unhide these options"
 msgstr ""
 
-#: lib/util.php:1630
+#: lib/util.php:1631
 msgctxt "option comment"
 msgid "%1$d additional rows not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1634
+#: lib/util.php:1635
 msgctxt "option comment"
 msgid "unhide these rows"
 msgstr ""
@@ -3572,12 +3572,12 @@ msgstr ""
 msgid "The %s social sharing buttons widget."
 msgstr ""
 
-#: lib/widget/sharing.php:112
+#: lib/widget/sharing.php:113
 msgctxt "option value"
 msgid "Share It"
 msgstr ""
 
-#: lib/widget/sharing.php:114
+#: lib/widget/sharing.php:115
 msgctxt "option label"
 msgid "Widget Title (leave blank for no title)"
 msgstr ""

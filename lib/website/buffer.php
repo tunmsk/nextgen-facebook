@@ -134,22 +134,14 @@ if ( ! class_exists( 'NgfbWebsiteBuffer' ) ) {
 			return array_merge( $def_opts, self::$cf['opt']['defaults'] );
 		}
 
-		// do not use an $atts reference to allow for local changes
-		public function get_html( array $atts, array &$opts, array &$mod ) {
+		public function get_html( array $atts, array $opts, array $mod ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			if ( empty( $opts ) ) 
-				$opts =& $this->p->options;
-
 			$lca = $this->p->cf['lca'];
-			$atts['use_post'] = isset( $atts['use_post'] ) ? $atts['use_post'] : true;
-			$atts['add_page'] = isset( $atts['add_page'] ) ? $atts['add_page'] : true;      // get_sharing_url() argument
-			$atts['size'] = isset( $atts['size'] ) ? $atts['size'] : $lca.'-buffer-button';
 
-			$atts['url'] = empty( $atts['url'] ) ? 
-				$this->p->util->get_sharing_url( $mod, $atts['add_page'] ) : 
-				apply_filters( $lca.'_sharing_url', $atts['url'], $mod, $atts['add_page'] );
+			$atts['size'] = isset( $atts['size'] ) ?
+				$atts['size'] : $lca.'-buffer-button';
 
 			if ( ! empty( $atts['pid'] ) ) {
 				list(
@@ -192,16 +184,17 @@ if ( ! class_exists( 'NgfbWebsiteBuffer' ) ) {
 				$atts['hashtags'] = '';
 
 			$html = '<!-- Buffer Button -->'.
-			'<div '.NgfbSharing::get_css_class_id( $atts, 'buffer' ).'>'.
+			'<div '.SucomUtil::get_atts_css_attr( $atts, 'buffer' ).'>'.
 			'<a href="'.SucomUtil::get_prot().'://bufferapp.com/add" class="buffer-add-button"'.
 			' data-url="'.$atts['url'].'"'.
 			' data-count="'.$opts['buffer_count'].'"'.
-				( empty( $atts['photo'] ) ? '' : ' data-picture="'.$atts['photo'].'"' ).
-				( empty( $atts['caption'] ) ? '' : ' data-text="'.$atts['caption'].'"' ).
-				( empty( $atts['via'] ) ? '' : ' data-via="'.$atts['via'].'"' ).'></a></div>';
+			( empty( $atts['photo'] ) ? '' : ' data-picture="'.$atts['photo'].'"' ).
+			( empty( $atts['caption'] ) ? '' : ' data-text="'.$atts['caption'].'"' ).
+			( empty( $atts['via'] ) ? '' : ' data-via="'.$atts['via'].'"' ).'></a></div>';
 
 			if ( $this->p->debug->enabled )
 				$this->p->debug->log( 'returning html ('.strlen( $html ).' chars)' );
+
 			return $html;
 		}
 
