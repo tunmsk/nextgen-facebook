@@ -404,6 +404,7 @@ Official announcement: N/A
 	* None
 * *Developer Notes*
 	* Added a $src_id argument to the NgfbUtil get_sharing_url() method and its filters.
+	* Moved the get_sharing_url() call from the social website modules into the main sharing class loop.
 
 **Version 8.33.12-1 (2016/08/09)**
 
