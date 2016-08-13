@@ -403,7 +403,7 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Flipped `NgfbSharing::get_css_class_id()` method arguments (the CSS class name is now second).
+	* None
 
 **Version 8.33.12-1 (2016/08/09)**
 
@@ -436,7 +436,7 @@ Official announcement: N/A
 
 = 8.34.0-dev2 =
 
-(2016/08/12) Added support for Facebook embedded iframe videos (Pro version). Removed the "Shorten URLs with" option from Twitter settings. Flipped NgfbSharing get_css_class_id() arguments.
+(2016/08/12) Added support for Facebook embedded iframe videos (Pro version). Removed the "Shorten URLs with" option from Twitter settings.
 
 = 8.33.12-1 =
 
