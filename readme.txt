@@ -392,7 +392,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.34.0-rc2 (2016/08/15)**
+**Version 8.34.0-rc3 (2016/08/16)**
 
 Official announcement: N/A
 
@@ -400,6 +400,7 @@ Official announcement: N/A
 	* Added support for Facebook embedded iframe videos (Pro version).
 * *Improvements*
 	* Removed the "Shorten URLs with" duplicate option from Twitter settings (see the Advanced settings page for shortening options).
+	* Added support for Schema http://schema.org/AutomotiveBusiness sub-types (AutoDealer, AutoRental, AutoRepair, etc.).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -435,9 +436,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.34.0-rc2 =
+= 8.34.0-rc3 =
 
-(2016/08/15) Added support for Facebook embedded iframe videos (Pro version). Removed the "Shorten URLs with" option from Twitter settings.
+(2016/08/16) Added support for Facebook embedded iframe videos (Pro version). Removed the "Shorten URLs with" option from Twitter settings. Added support for Schema Automotive Business sub-types.
 
 = 8.33.12-1 =
 
