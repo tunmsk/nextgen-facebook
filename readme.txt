@@ -392,7 +392,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.34.0-rc3 (2016/08/16)**
+**Version 8.34.0-rc4 (2016/08/16)**
 
 Official announcement: N/A
 
@@ -436,7 +436,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.34.0-rc3 =
+= 8.34.0-rc4 =
 
 (2016/08/16) Added support for Facebook embedded iframe videos (Pro version). Removed the "Shorten URLs with" option from Twitter settings. Added support for Schema Automotive Business sub-types.
 
