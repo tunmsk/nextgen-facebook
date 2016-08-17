@@ -50,9 +50,9 @@
 'ngfb_is_functions' ( $is_functions );
 'ngfb_js_url_facebook' ( $url, $pos );
 'ngfb_json_array_type_ids' ( $type_ids, $mod );
-'ngfb_json_data_http_schema_org' ( false, $use_post, $mod, $mt_og, $user_id, $is_main );
-'ngfb_json_data_http_schema_org_{item_type}' ( false, $use_post, $mod, $mt_og, $user_id, $is_main );
-'ngfb_json_is_main_entity' ( $bool, $use_post, $mod, $mt_og, $post_id, $user_id );
+'ngfb_json_data_http_schema_org' ( false, $mod, $mt_og, $user_id, $is_main );
+'ngfb_json_data_http_schema_org_{item_type}' ( false, $mod, $mt_og, $user_id, $is_main );
+'ngfb_json_is_main_entity' ( $bool, $mod, $mt_og, $post_id, $user_id );
 'ngfb_json_ld_search_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_link_rel' ( $link_rel, $use_post, $mod );
 'ngfb_load_lib' ( false, "$type/$sub/$id" );
