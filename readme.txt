@@ -392,7 +392,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.34.0-rc4 (2016/08/16)**
+**Version 8.34.0-rc5 (2016/08/17)**
 
 Official announcement: N/A
 
@@ -406,6 +406,7 @@ Official announcement: N/A
 * *Developer Notes*
 	* Added a `$src_id` argument to the NgfbUtil `get_sharing_url()` method and its filters.
 	* Moved the `get_sharing_url()` call from the social website modules into the main NgfbSharing loop.
+	* Removed the '$use_post' argument in the json data filters.
 
 **Version 8.33.12-1 (2016/08/09)**
 
@@ -436,9 +437,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.34.0-rc4 =
+= 8.34.0-rc5 =
 
-(2016/08/16) Added support for Facebook embedded iframe videos (Pro version). Removed the "Shorten URLs with" option from Twitter settings. Added support for Schema Automotive Business sub-types.
+(2016/08/17) Added support for Facebook embedded iframe videos (Pro version). Removed the "Shorten URLs with" option from Twitter settings. Added support for Schema Automotive Business sub-types.
 
 = 8.33.12-1 =
 
