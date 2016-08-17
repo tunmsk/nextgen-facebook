@@ -401,6 +401,7 @@ Official announcement: N/A
 * *Improvements*
 	* Removed the "Shorten URLs with" duplicate option from Twitter settings (see the Advanced settings page for shortening options).
 	* Added support for Schema http://schema.org/AutomotiveBusiness sub-types (AutoDealer, AutoRental, AutoRepair, etc.).
+	* Added the first (top) Co-Authors Plus author ID as the post / page author (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
