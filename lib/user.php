@@ -442,6 +442,7 @@ if ( ! class_exists( 'NgfbUser' ) ) {
 				if ( ! empty( $val ) )	// make sure we don't add empty values
 					$ret[] = $val;
 			}
+
 			return $ret;
 		}
 
