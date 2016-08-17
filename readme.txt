@@ -18,7 +18,7 @@ The most complete meta tags for the best looking shares on Facebook, G+, Twitter
 == Description ==
 
 <p><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" style="width:33%;min-width:128px;max-width:256px;float:left;margin:10px 60px 40px 0;" />
-<strong>NGFB provides <em>complete</em> and <em>accurate</em> meta tags and Schema markup</strong> &mdash;</p>
+<strong>NGFB adds <em>complete</em> and <em>accurate</em> meta tags and Schema markup</strong> &mdash;</p>
 
 <blockquote>
 <p>Google and social websites use a wide variety of meta tags and Schema markup standards provided by NGFB (<a href="http://ogp.me/">Facebook / Open Graph</a>, <a href="https://business.pinterest.com/en/rich-pins">Pinterest Rich Pin</a>, <a href="https://dev.twitter.com/cards/overview">Twitter Card</a> meta tags and <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Schema / Structured Data / Rich Snippet</a> markup) to describe &amp; display your content correctly &mdash; including titles, descriptions, hashtags, images, videos, ecommerce product details, author profile / authorship, publisher name, ratings, and much more.</li></ul></p>
