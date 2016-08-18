@@ -11,7 +11,7 @@ Tags: amp, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd
 Contributors: jsmoriss
 Requires At Least: 3.1
 Tested Up To: 4.6
-Stable Tag: 8.33.12-1
+Stable Tag: 8.34.0-1
 
 The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
 
@@ -411,44 +411,9 @@ Official announcement: N/A
 	* Moved the `get_sharing_url()` call from the social website modules into the main NgfbSharing loop.
 	* Removed the '$use_post' argument in the json data filters.
 
-**Version 8.33.12-1 (2016/08/09)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added thumbnail preview CSS for mobile in the Social Settings metabox.
-* *Bugfixes*
-	* Fixed typo in `delete_term_meta()` function name.
-* *Developer Notes*
-	* None
-
-**Version 8.33.11-1 (2016/08/06)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added a new NgfbMedia `can_make_size()` method to check the full size image width and height before calling `image_make_intermediate_size()` (no use requesting an image size that WordPress cannot create).
-* *Bugfixes*
-	* Fixed a known issue with PHP's DOMDocument and non-english languages (affected video titles and descriptions from the YouTube API).
-	* Fixed declaration of `get_md_image()` method arguments in the Free version for compatibility with parent method arguments.
-* *Developer Notes*
-	* None
-
 == Upgrade Notice ==
 
 = 8.34.0-1 =
 
 (2016/08/18) Added support for Facebook embedded iframe videos (Pro version). Removed the "Shorten URLs with" option from Twitter settings. Added support for Schema Automotive Business sub-types.
-
-= 8.33.12-1 =
-
-(2016/08/09) Fixed typo in delete_term_meta() function name. Added thumbnail preview CSS for mobile in the Social Settings metabox.
-
-= 8.33.11-1 =
-
-(2016/08/06) Added check for full size image width and height before requesting an image size. Fixed a known issue with PHP's DOMDocument and non-english languages. Fixed declaration method arguments in the Free version for compatibility.
 
