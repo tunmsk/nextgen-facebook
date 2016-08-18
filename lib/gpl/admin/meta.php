@@ -174,7 +174,7 @@ if ( ! class_exists( 'NgfbGplAdminMeta' ) ) {
 			}
 			$form_rows['og_vid_prev_img'] = array(
 				'tr_class' => 'hide_in_basic',
-				'label' => _x( 'Include Preview Image(s)', 'option label', 'nextgen-facebook' ),
+				'label' => _x( 'Include Preview Images', 'option label', 'nextgen-facebook' ),
 				'th_class' => 'medium', 'tooltip' => 'meta-og_vid_prev_img', 'td_class' => 'blank',
 					'content' => $form->get_no_checkbox( 'og_vid_prev_img' ),
 			);

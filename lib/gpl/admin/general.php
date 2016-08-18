@@ -50,7 +50,7 @@ if ( ! class_exists( 'NgfbGplAdminGeneral' ) ) {
 				sprintf( _x( 'uses %s', 'option comment', 'nextgen-facebook' ),
 					str_replace( NGFB_PLUGINDIR, NGFB_PLUGINSLUG.'/', NGFB_PHP_CURL_CAINFO ) ).'</em></td>';
 
-			$table_rows['og_vid_prev_img'] = $form->get_th_html( _x( 'Include Video Preview Image(s)',
+			$table_rows['og_vid_prev_img'] = $form->get_th_html( _x( 'Include Video Preview Images',
 				'option label', 'nextgen-facebook' ), null, 'og_vid_prev_img' ).
 			'<td class="blank"><input type="checkbox" disabled="disabled" />'.' <em>'.
 				_x( 'video preview images are included first', 
