@@ -394,7 +394,7 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 							$text = sprintf( __( 'A preferred URL shortening service for %s plugin filters and/or extensions that may need to shorten URLs &mdash; don\'t forget to define the Service API Keys for the URL shortening service of your choice.', 'nextgen-facebook' ), $info['short'] );
 							break;
 						case 'tooltip-plugin_shortlink':
-							$text = __( 'The <em>Get Shortlink</em> button on Posts / Pages admin editing pages provides the shortened sharing URL instead of the default WordPress shortlink URL.', 'nextgen-facebook' );
+							$text = __( 'The <em>Get Shortlink</em> button and the shortlink meta tag on Posts / Pages provides the shortened sharing URL instead of the default WordPress shortlink URL.', 'nextgen-facebook' );
 							break;
 						case 'tooltip-plugin_min_shorten':
 							$text = sprintf( __( 'URLs shorter than this length will not be shortened (the default suggested by Twitter is %d characters).', 'nextgen-facebook' ), $this->p->opt->get_defaults( 'plugin_min_shorten' ) );
