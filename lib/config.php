@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.34.0-1',	// plugin version
-					'opt_version' => '443',		// increment when changing default options
+					'version' => '8.34.1-dev1',	// plugin version
+					'opt_version' => '444',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -1346,6 +1346,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
+			require_once( NGFB_PLUGINDIR.'lib/com/nodebug.php' );
+			require_once( NGFB_PLUGINDIR.'lib/com/nonotice.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/exception.php' );	// extends Exception
 			require_once( NGFB_PLUGINDIR.'lib/com/util.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/cache.php' );

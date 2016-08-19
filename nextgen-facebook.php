@@ -13,7 +13,7 @@
  * Description: The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!
  * Requires At Least: 3.1
  * Tested Up To: 4.6
- * Version: 8.34.0-1
+ * Version: 8.34.1-dev1
  *
  * Version Numbers: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -37,12 +37,12 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public $p;			// Ngfb
 		public $admin;			// NgfbAdmin (admin menus and page loader)
 		public $cache;			// SucomCache (object and file caching)
-		public $debug;			// SucomDebug or NgfbNoDebug
+		public $debug;			// SucomDebug or SucomNoDebug
 		public $head;			// NgfbHead
 		public $loader;			// NgfbLoader
 		public $media;			// NgfbMedia (images, videos, etc.)
 		public $msgs;			// NgfbMessages (admin tooltip messages)
-		public $notice;			// SucomNotice or NgfbNoNotice
+		public $notice;			// SucomNotice or SucomNoNotice
 		public $og;			// NgfbOpengraph
 		public $tc;			// NgfbTwittercard
 		public $opt;			// NgfbOptions
@@ -158,17 +158,15 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			if ( ( $html_debug || $wp_debug ) && 
 				( $classname = NgfbConfig::load_lib( false, 'com/debug', 'SucomDebug' ) ) )
 					$this->debug = new $classname( $this, array( 'html' => $html_debug, 'wp' => $wp_debug ) );
-			else $this->debug = new NgfbNoDebug();
+			else $this->debug = new SucomNoDebug();
 
-			if ( $activate === true &&
-				$this->debug->enabled )
-					$this->debug->log( 'method called for plugin activation' );
+			if ( $activate === true && $this->debug->enabled )
+				$this->debug->log( 'method called for plugin activation' );
 
 			// only load the notification class in the admin interface
-			if ( is_admin() &&
-				( $classname = NgfbConfig::load_lib( false, 'com/notice', 'SucomNotice' ) ) )
-					$this->notice = new $classname( $this );
-			else $this->notice = new NgfbNoNotice();
+			if ( is_admin() && ( $classname = NgfbConfig::load_lib( false, 'com/notice', 'SucomNotice' ) ) )
+				$this->notice = new $classname( $this );
+			else $this->notice = new SucomNoNotice();
 
 			$this->util = new NgfbUtil( $this );
 			$this->opt = new NgfbOptions( $this );
@@ -337,28 +335,6 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 	global $ngfb;
 	$ngfb =& Ngfb::get_instance();
-}
-
-if ( ! class_exists( 'NgfbNoDebug' ) ) {
-	class NgfbNoDebug {
-		public $enabled = false;
-		public function mark() { return; }
-		public function args() { return; }
-		public function log() { return; }
-		public function show_html() { return; }
-		public function get_html() { return; }
-		public function is_enabled() { return false; }
-	}
-}
-
-if ( ! class_exists( 'NgfbNoNotice' ) ) {
-	class NgfbNoNotice {
-		public function nag() { return; }
-		public function inf() { return; }
-		public function err() { return; }
-		public function log() { return; }
-		public function trunc() { return; }
-	}
 }
 
 ?>

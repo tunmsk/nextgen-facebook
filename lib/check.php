@@ -87,27 +87,35 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 				add_filter( 'wpseo_json_ld_output', '__return_empty_array', 99 );
 		}
 
-		private function get_avail_check( $key ) {
-			switch ( $key ) {
-				case 'aop':
-					$ret = ! SucomUtil::get_const( 'NGFB_PRO_MODULE_DISABLE' ) &&
-					is_dir( NGFB_PLUGINDIR.'lib/pro/' ) ? true : false;
-					break;
-				case 'mt':
-					$ret = ! SucomUtil::get_const( 'NGFB_META_TAGS_DISABLE' ) &&
-					empty( $_SERVER['NGFB_META_TAGS_DISABLE'] ) &&
-					empty( $_GET['NGFB_META_TAGS_DISABLE'] ) ? true : false;	// allow meta tags to be disabled with query argument
-					break;
-				case 'ssb':
-					$ret = ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
-					empty( $_SERVER['NGFB_SOCIAL_SHARING_DISABLE'] ) &&
-					class_exists( $this->p->cf['lca'].'sharing' ) ? true : false;
-					break;
-				default:
-					$ret = false;
-					break;
-			}
-			return $ret;
+		public function aop( $lca = '', $lic = true, $rv = true ) {
+			$lca = empty( $lca ) ? 
+				$this->p->cf['lca'] : $lca;
+			$kn = $lca.'-'.$lic.'-'.$rv;
+			if ( isset( self::$c[$kn] ) )
+				return self::$c[$kn];
+			$uca = strtoupper( $lca );
+			if ( defined( $uca.'_PLUGINDIR' ) )
+				$pdir = constant( $uca.'_PLUGINDIR' );
+			elseif ( isset( $this->p->cf['plugin'][$lca]['slug'] ) ) {
+				$slug = $this->p->cf['plugin'][$lca]['slug'];
+				if ( ! defined ( 'WPMU_PLUGIN_DIR' ) || 
+					! is_dir( $pdir = WPMU_PLUGIN_DIR.'/'.$slug.'/' ) ) {
+					if ( ! defined ( 'WP_PLUGIN_DIR' ) || 
+						! is_dir( $pdir = WP_PLUGIN_DIR.'/'.$slug.'/' ) )
+							return self::$c[$kn] = false;
+				}
+			} else return self::$c[$kn] = false;
+			$on = 'plugin_'.$lca.'_tid';
+			$ins = is_dir( $pdir.'lib/pro/' ) ? $rv : false;
+			return self::$c[$kn] = $lic === true ? 
+				( ( ! empty( $this->p->options[$on] ) && 
+					$ins && class_exists( 'SucomUpdate' ) &&
+						( $uerr = SucomUpdate::get_umsg( $lca ) ?
+							false : $ins ) ) ? $uerr : false ) : $ins;
+		}
+
+		public function is_aop( $lca = '' ) { 
+			return $this->aop( $lca, true, $this->get_avail_check( 'aop' ) );
 		}
 
 		public function get_avail() {
@@ -279,42 +287,34 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 			return apply_filters( $this->p->cf['lca'].'_get_avail', $ret );
 		}
 
+		private function get_avail_check( $key ) {
+			switch ( $key ) {
+				case 'aop':
+					$ret = ! SucomUtil::get_const( 'NGFB_PRO_MODULE_DISABLE' ) &&
+						is_dir( NGFB_PLUGINDIR.'lib/pro/' ) ? true : false;
+					break;
+				case 'mt':
+					$ret = ! SucomUtil::get_const( 'NGFB_META_TAGS_DISABLE' ) &&
+						empty( $_SERVER['NGFB_META_TAGS_DISABLE'] ) &&
+							empty( $_GET['NGFB_META_TAGS_DISABLE'] ) ? true : false;
+					break;
+				case 'ssb':
+					$ret = ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
+						empty( $_SERVER['NGFB_SOCIAL_SHARING_DISABLE'] ) &&
+							class_exists( $this->p->cf['lca'].'sharing' ) ? true : false;
+					break;
+				default:
+					$ret = false;
+					break;
+			}
+			return $ret;
+		}
+
 		private function has_optval( $opt_name ) { 
 			if ( ! empty( $opt_name ) && 
 				! empty( $this->p->options[$opt_name] ) && 
 					$this->p->options[$opt_name] !== 'none' )
 						return true;
-		}
-
-		public function is_aop( $lca = '' ) { 
-			return $this->aop( $lca, true, $this->get_avail_check( 'aop' ) );
-		}
-
-		public function aop( $lca = '', $lic = true, $rv = true ) {
-			$lca = empty( $lca ) ? 
-				$this->p->cf['lca'] : $lca;
-			$kn = $lca.'-'.$lic.'-'.$rv;
-			if ( isset( self::$c[$kn] ) )
-				return self::$c[$kn];
-			$uca = strtoupper( $lca );
-			if ( defined( $uca.'_PLUGINDIR' ) )
-				$pdir = constant( $uca.'_PLUGINDIR' );
-			elseif ( isset( $this->p->cf['plugin'][$lca]['slug'] ) ) {
-				$slug = $this->p->cf['plugin'][$lca]['slug'];
-				if ( ! defined ( 'WPMU_PLUGIN_DIR' ) || 
-					! is_dir( $pdir = WPMU_PLUGIN_DIR.'/'.$slug.'/' ) ) {
-					if ( ! defined ( 'WP_PLUGIN_DIR' ) || 
-						! is_dir( $pdir = WP_PLUGIN_DIR.'/'.$slug.'/' ) )
-							return self::$c[$kn] = false;
-				}
-			} else return self::$c[$kn] = false;
-			$on = 'plugin_'.$lca.'_tid';
-			$ins = is_dir( $pdir.'lib/pro/' ) ? $rv : false;
-			return self::$c[$kn] = $lic === true ? 
-				( ( ! empty( $this->p->options[$on] ) && 
-					$ins && class_exists( 'SucomUpdate' ) &&
-						( $uerr = SucomUpdate::get_umsg( $lca ) ?
-							false : $ins ) ) ? $uerr : false ) : $ins;
 		}
 	}
 }
