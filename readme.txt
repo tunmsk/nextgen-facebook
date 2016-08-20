@@ -7,7 +7,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Donate Link: https://surniaulula.com/extend/plugins/nextgen-facebook/?utm_source=ngfb-readme-donate
 Assets URI: https://surniaulula.github.io/nextgen-facebook/assets/
-Tags: amp, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd, facebook, g+, google, google plus, hashtags, like, linkedin, marketpress, meta tags, multilingual, multisite, nextgen gallery, open graph, pinterest, player card, polylang, rich pin, schema, seo, share, shortcode, social, summary card, tumblr, twitter, twitter card, vimeo, widget, wistia, woocommerce, youtube, yotpo, yourls, whatsapp, the events calendar, social share, social engagement, click-through, sharing, facebook video, slideshare, video embed, social meta tags, seo meta tags
+Tags: amp, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd, facebook, g+, google, google plus, hashtags, like, linkedin, marketpress, meta tags, multilingual, multisite, nextgen gallery, open graph, pinterest, player card, polylang, rich pin, schema, schema.org, seo, share, shortcode, social, summary card, tumblr, twitter, twitter card, vimeo, widget, wistia, woocommerce, youtube, yotpo, yourls, whatsapp, the events calendar, social share, social engagement, click-through, sharing, facebook video, slideshare, video embed, social meta tags, seo meta tags, featured, json, json-ld, search engine optimization
 Contributors: jsmoriss
 Requires At Least: 3.1
 Tested Up To: 4.6
