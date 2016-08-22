@@ -388,8 +388,8 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 				case 'pub-twitter':
 
 					$tc_types = array(
-						'summary' => 'Summary',
-						'summary_large_image' => 'Summary Large Image',
+						'summary' => _x( 'Summary', 'option value', 'nextgen-facebook' ),
+						'summary_large_image' => _x( 'Summary Large Image', 'option value', 'nextgen-facebook' ),
 					);
 
 					$table_rows['tc_site'] = $this->form->get_th_html( _x( 'Twitter Business @username',
@@ -403,7 +403,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 						_x( 'characters or less', 'option comment', 'nextgen-facebook' ).'</td>';
 
 					$table_rows['tc_type_singular'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Twitter Card for Post / Page Images',
+					$this->form->get_th_html( _x( 'Twitter Card for Post / Page Image',
 						'option label', 'nextgen-facebook' ), null, 'tc_type_post' ).
 					'<td>'.$this->form->get_select( 'tc_type_post', $tc_types ).'</td>';
 
