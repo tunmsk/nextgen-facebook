@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.34.1-1',	// plugin version
-					'opt_version' => '445',		// increment when changing default options
+					'version' => '8.34.2-dev1',	// plugin version
+					'opt_version' => '448',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!',
@@ -303,14 +303,16 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'rp_dom_verify' => '',
 					'tc_site' => '',			// Twitter Business @username (multilingual)
 					'tc_desc_len' => 200,			// Maximum Description Length
+					'tc_type_post' => 'summary_large_image',
+					'tc_type_default' => 'summary',
 					// summary card
-					'tc_sum_width' => 600,
+					'tc_sum_width' => 600,			// Summary Card Image Dimensions
 					'tc_sum_height' => 600,
 					'tc_sum_crop' => 1,
 					'tc_sum_crop_x' => 'center',
 					'tc_sum_crop_y' => 'center',
 					// large image summary card
-					'tc_lrgimg_width' => 800,
+					'tc_lrgimg_width' => 800,		// Large Image Card Img Dimensions
 					'tc_lrgimg_height' => 1600,
 					'tc_lrgimg_crop' => 0,
 					'tc_lrgimg_crop_x' => 'center',
