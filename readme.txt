@@ -392,14 +392,14 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.34.2-dev1 (TBD)**
+**Version 8.34.2-dev1 (2016/08/22)**
 
 Official announcement: N/A
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added the "Twitter Card for Post / Page Images" and "Twitter Card Type by Default" options.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -442,6 +442,10 @@ Official announcement: N/A
 	* Removed the '$use_post' argument in the json data filters.
 
 == Upgrade Notice ==
+
+= 8.34.2-dev1 =
+
+(2016/08/22) Added the "Twitter Card for Post / Page Images" and "Twitter Card Type by Default" options.
 
 = 8.34.1-1 =
 
