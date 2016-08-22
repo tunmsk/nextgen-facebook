@@ -403,7 +403,7 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Added `libxml_use_internal_errors()` when checking webpage for duplicates to avoid any HTML Parsing errors.
 
 **Version 8.34.1-1 (2016/08/20)**
 
