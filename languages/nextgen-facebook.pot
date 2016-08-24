@@ -387,32 +387,32 @@ msgctxt "option label (very short)"
 msgid "Site Use"
 msgstr ""
 
-#: lib/com/form.php:73 lib/config-gettext-extract.php:44
+#: lib/com/form.php:73 lib/config-gettext-extract.php:45
 msgctxt "option value"
 msgid "(option disabled)"
 msgstr ""
 
-#: lib/com/form.php:186 lib/com/form.php:440 lib/config-gettext-extract.php:51
+#: lib/com/form.php:186 lib/com/form.php:440 lib/config-gettext-extract.php:52
 msgctxt "option value"
 msgid "(settings value)"
 msgstr ""
 
-#: lib/com/form.php:194 lib/config-gettext-extract.php:40
+#: lib/com/form.php:194 lib/config-gettext-extract.php:41
 msgctxt "option value"
 msgid "(no images)"
 msgstr ""
 
-#: lib/com/form.php:198 lib/config-gettext-extract.php:43
+#: lib/com/form.php:198 lib/config-gettext-extract.php:44
 msgctxt "option value"
 msgid "(no videos)"
 msgstr ""
 
-#: lib/com/form.php:202 lib/config-gettext-extract.php:41
+#: lib/com/form.php:202 lib/config-gettext-extract.php:42
 msgctxt "option value"
 msgid "[None]"
 msgstr ""
 
-#: lib/com/form.php:207 lib/com/form.php:273 lib/config-gettext-extract.php:15
+#: lib/com/form.php:207 lib/com/form.php:273 lib/config-gettext-extract.php:16
 msgctxt "option value"
 msgid "(default)"
 msgstr ""
@@ -498,202 +498,202 @@ msgid "<color>Plugin Setup Guide and Notes</color>"
 msgstr ""
 
 #: lib/config-gettext-extract.php:13
-msgctxt "option value"
-msgid "Content"
+msgctxt "plugin description"
+msgid ""
+"Complete meta tags for the best looking shares on Facebook, Google, "
+"Pinterest, Twitter, etc - no matter how your webpage is shared!"
 msgstr ""
 
 #: lib/config-gettext-extract.php:14
 msgctxt "option value"
-msgid "CSS Sidebar"
+msgid "Content"
 msgstr ""
 
-#: lib/config-gettext-extract.php:16
+#: lib/config-gettext-extract.php:15
 msgctxt "option value"
-msgid "Desktop Only"
+msgid "CSS Sidebar"
 msgstr ""
 
 #: lib/config-gettext-extract.php:17
 msgctxt "option value"
-msgid "Display Name"
+msgid "Desktop Only"
 msgstr ""
 
 #: lib/config-gettext-extract.php:18
+msgctxt "option value"
+msgid "Display Name"
+msgstr ""
+
+#: lib/config-gettext-extract.php:19
 msgctxt "lib file description"
 msgid "Essential Settings"
 msgstr ""
 
-#: lib/config-gettext-extract.php:19
+#: lib/config-gettext-extract.php:20
 msgctxt "option value"
 msgid "Excerpt Only"
 msgstr ""
 
-#: lib/config-gettext-extract.php:20
+#: lib/config-gettext-extract.php:21
 msgctxt "option value"
 msgid "Excerpt"
 msgstr ""
 
-#: lib/config-gettext-extract.php:21
+#: lib/config-gettext-extract.php:22
 msgctxt "option value"
 msgid "Facebook Business Page URL"
 msgstr ""
 
-#: lib/config-gettext-extract.php:22
+#: lib/config-gettext-extract.php:23
 msgctxt "option value"
 msgid "First and Last Names"
 msgstr ""
 
-#: lib/config-gettext-extract.php:23
+#: lib/config-gettext-extract.php:24
 msgctxt "option value"
 msgid "Footer"
 msgstr ""
 
-#: lib/config-gettext-extract.php:24
+#: lib/config-gettext-extract.php:25
 msgctxt "option value"
 msgid "Force this value"
 msgstr ""
 
-#: lib/config-gettext-extract.php:25
+#: lib/config-gettext-extract.php:26
 msgctxt "option value"
 msgid "Friday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:26
+#: lib/config-gettext-extract.php:27
 msgctxt "lib file description"
 msgid "General Settings"
 msgstr ""
 
-#: lib/config-gettext-extract.php:27
+#: lib/config-gettext-extract.php:28
 msgctxt "option value"
 msgid "Google+ Business Page URL"
 msgstr ""
 
-#: lib/config-gettext-extract.php:28
+#: lib/config-gettext-extract.php:29
 msgctxt "option value"
 msgid "Google"
 msgstr ""
 
-#: lib/config-gettext-extract.php:29
+#: lib/config-gettext-extract.php:30
 msgctxt "option value"
 msgid "Header"
 msgstr ""
 
-#: lib/config-gettext-extract.php:30
+#: lib/config-gettext-extract.php:31
 msgctxt "option value"
 msgid "If value is empty"
 msgstr ""
 
-#: lib/config-gettext-extract.php:31
+#: lib/config-gettext-extract.php:32
 msgctxt "option value"
 msgid "Instagram Business URL"
 msgstr ""
 
-#: lib/config-gettext-extract.php:32
+#: lib/config-gettext-extract.php:33
 msgctxt "option value"
 msgid "Left"
 msgstr ""
 
-#: lib/config-gettext-extract.php:33
+#: lib/config-gettext-extract.php:34
 msgctxt "option value"
 msgid "LinkedIn Company Page URL"
 msgstr ""
 
-#: lib/config-gettext-extract.php:34
+#: lib/config-gettext-extract.php:35
 msgctxt "option value"
 msgid "Mobile Only"
 msgstr ""
 
-#: lib/config-gettext-extract.php:35
+#: lib/config-gettext-extract.php:36
 msgctxt "option value"
 msgid "Monday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:36
+#: lib/config-gettext-extract.php:37
 msgctxt "option value"
 msgid "MySpace Business Page URL"
 msgstr ""
 
-#: lib/config-gettext-extract.php:37
+#: lib/config-gettext-extract.php:38
 msgctxt "option value"
 msgid "New activation"
 msgstr ""
 
-#: lib/config-gettext-extract.php:38
+#: lib/config-gettext-extract.php:39
 msgctxt "plugin description"
 msgid ""
 "NGFB extension to provide updates for the NextGEN Facebook (NGFB) Pro plugin "
 "and its Pro extensions."
 msgstr ""
 
-#: lib/config-gettext-extract.php:39
+#: lib/config-gettext-extract.php:40
 msgctxt "option value"
 msgid "Nickname"
 msgstr ""
 
-#: lib/config-gettext-extract.php:42
+#: lib/config-gettext-extract.php:43
 msgctxt "option value"
 msgid "No"
 msgstr ""
 
-#: lib/config-gettext-extract.php:45
+#: lib/config-gettext-extract.php:46
 msgctxt "option value"
 msgid "Ow.ly"
 msgstr ""
 
-#: lib/config-gettext-extract.php:46
+#: lib/config-gettext-extract.php:47
 msgctxt "option value"
 msgid "Pinterest Company Page URL"
 msgstr ""
 
-#: lib/config-gettext-extract.php:47
+#: lib/config-gettext-extract.php:48
 msgctxt "lib file description"
 msgid "Pro Licenses and Extension Plugins"
 msgstr ""
 
-#: lib/config-gettext-extract.php:48
+#: lib/config-gettext-extract.php:49
 msgctxt "option value"
 msgid "Public Holidays"
 msgstr ""
 
-#: lib/config-gettext-extract.php:49
+#: lib/config-gettext-extract.php:50
 msgctxt "option value"
 msgid "Right"
 msgstr ""
 
-#: lib/config-gettext-extract.php:50
+#: lib/config-gettext-extract.php:51
 msgctxt "option value"
 msgid "Saturday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:52
+#: lib/config-gettext-extract.php:53
 msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:53 lib/submenu/styles.php:37
+#: lib/config-gettext-extract.php:54 lib/submenu/styles.php:37
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr ""
 
-#: lib/config-gettext-extract.php:54
+#: lib/config-gettext-extract.php:55
 msgctxt "option value"
 msgid "Shortcode"
 msgstr ""
 
-#: lib/config-gettext-extract.php:55
+#: lib/config-gettext-extract.php:56
 msgctxt "lib file description"
 msgid "Social and SEO Image Dimensions"
 msgstr ""
 
-#: lib/config-gettext-extract.php:56
+#: lib/config-gettext-extract.php:57
 msgctxt "option value"
 msgid "Sunday"
-msgstr ""
-
-#: lib/config-gettext-extract.php:57
-msgctxt "plugin description"
-msgid ""
-"The most complete meta tags for the best looking shares on Facebook, G+, "
-"Twitter, Pinterest, etc. - no matter how your webpage is shared!"
 msgstr ""
 
 #: lib/config-gettext-extract.php:58
@@ -3641,8 +3641,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"The most complete meta tags for the best looking shares on Facebook, G+, "
-"Twitter, Pinterest, etc. - no matter how your webpage is shared!"
+"Complete meta tags for the best looking shares on Facebook, Google, "
+"Pinterest, Twitter, etc - no matter how your webpage is shared!"
 msgstr ""
 
 #. Author of the plugin/theme
