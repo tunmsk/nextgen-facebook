@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>NextGEN Facebook (NGFB)</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>Complete meta tags and Schema for the best looking shares on Facebook, Twitter, Pinterest, G+ etc - no matter how your webpage is shared!</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>8.34.2-1</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.6</td></tr>

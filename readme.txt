@@ -13,7 +13,7 @@ Requires At Least: 3.1
 Tested Up To: 4.6
 Stable Tag: 8.34.2-1
 
-Complete meta tags and Schema for the best looking shares on Facebook, Twitter, Pinterest, G+ etc - no matter how your webpage is shared!
+Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
 
 == Description ==
 
