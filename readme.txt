@@ -429,11 +429,3 @@ Official announcement: N/A
 
 (2016/08/24) Added the "Twitter Card for Post / Page Images" and "Twitter Card Type by Default" options. Fixed the email and whatsapp button SVG icon width value.
 
-= 8.34.1-1 =
-
-(2016/08/20) Added a new "link rel shortlink" meta tag. Added new filters to manage auto-disabling of canonical and description meta tags.
-
-= 8.34.0-1 =
-
-(2016/08/18) Added support for Facebook embedded iframe videos (Pro version). Removed the "Shorten URLs with" option from Twitter settings. Added support for Schema Automotive Business sub-types.
-
