@@ -14,7 +14,7 @@
 
 <h2>Description</h2>
 
-<p align="center"><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" /></p><p><strong>NGFB adds <em>complete</em> and <em>accurate</em> meta tags and Schema markup.</strong></p>
+<p align="center"><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" /></p><p><strong>NGFB creates <em>complete</em> and <em>accurate</em> meta tags and Schema markup.</strong></p>
 
 <p><strong>NGFB uses your <em>existing</em> content to generate its meta tags and Schema markup</strong> &mdash; there's no need to manually enter / configure any additional settings or values.</p>
 
