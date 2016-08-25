@@ -11,7 +11,7 @@ Tags: amp, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd
 Contributors: jsmoriss
 Requires At Least: 3.1
 Tested Up To: 4.6
-Stable Tag: 8.34.2-1
+Stable Tag: 8.34.3-1
 
 Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
 
@@ -442,8 +442,4 @@ Official announcement: N/A
 = 8.34.3-1 =
 
 (2016/08/25) Fixed the transient cache id to clear the cache for retrieved permalinks.
-
-= 8.34.2-1 =
-
-(2016/08/24) Added the "Twitter Card for Post / Page Images" and "Twitter Card Type by Default" options. Fixed the email and whatsapp button SVG icon width value.
 
