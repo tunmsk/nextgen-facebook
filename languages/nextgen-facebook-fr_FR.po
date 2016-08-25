@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.34.2-1\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.34.3-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2016-08-24 09:33-0400\n"
-"PO-Revision-Date: 2016-08-24 09:33-0400\n"
+"POT-Creation-Date: 2016-08-25 18:45-0400\n"
+"PO-Revision-Date: 2016-08-25 18:50-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -347,55 +347,55 @@ msgctxt "option label (very short)"
 msgid "Site Use"
 msgstr "Util. par site"
 
-#: lib/com/form.php:73 lib/config-gettext-extract.php:44
+#: lib/com/form.php:73 lib/config-gettext-extract.php:45
 msgctxt "option value"
 msgid "(option disabled)"
 msgstr "(option désactivée)"
 
-#: lib/com/form.php:186 lib/com/form.php:440 lib/config-gettext-extract.php:51
+#: lib/com/form.php:186 lib/com/form.php:440 lib/config-gettext-extract.php:52
 msgctxt "option value"
 msgid "(settings value)"
 msgstr "(valeur de réglages)"
 
-#: lib/com/form.php:194 lib/config-gettext-extract.php:40
+#: lib/com/form.php:194 lib/config-gettext-extract.php:41
 msgctxt "option value"
 msgid "(no images)"
 msgstr "(pas d'images)"
 
-#: lib/com/form.php:198 lib/config-gettext-extract.php:43
+#: lib/com/form.php:198 lib/config-gettext-extract.php:44
 msgctxt "option value"
 msgid "(no videos)"
 msgstr "(aucun vidéos)"
 
-#: lib/com/form.php:202 lib/config-gettext-extract.php:41
+#: lib/com/form.php:202 lib/config-gettext-extract.php:42
 msgctxt "option value"
 msgid "[None]"
 msgstr "[Aucun]"
 
-#: lib/com/form.php:207 lib/com/form.php:273 lib/config-gettext-extract.php:15
+#: lib/com/form.php:207 lib/com/form.php:273 lib/config-gettext-extract.php:16
 msgctxt "option value"
 msgid "(default)"
 msgstr "(défaut)"
 
-#: lib/com/notice.php:289
+#: lib/com/notice.php:298
 msgctxt "notification type"
 msgid "error"
 msgstr "erreur"
 
-#: lib/com/notice.php:290
+#: lib/com/notice.php:299
 msgctxt "notification type"
 msgid "warning"
 msgstr "attention"
 
-#: lib/com/notice.php:294
+#: lib/com/notice.php:303
 msgid "%1$d important %2$s notices have been hidden and/or dismissed &mdash; <a id=\"%3$s\">unhide and view the %2$s messages</a>."
 msgstr "%1$d avis d'%2$ss importants on été masqués et/ou ignorés &mdash; <a id=\"%3$s\">démasquer et afficher les message d'%2$ss</a>."
 
-#: lib/com/notice.php:295
+#: lib/com/notice.php:304
 msgid "%1$d important %2$s notice has been hidden and/or dismissed &mdash; <a id=\"%3$s\">unhide and view the %2$s message</a>."
 msgstr "%1$d avis d'%2$s important a été masqué et/ou ignoré &mdash; <a id=\"%3$s\">démasquer et afficher le message d'%2$s</a>."
 
-#: lib/com/notice.php:366
+#: lib/com/notice.php:375
 msgid "%s Note"
 msgstr "Avis %s"
 
@@ -454,199 +454,199 @@ msgid "<color>Plugin Setup Guide and Notes</color>"
 msgstr "<color>Notes et Guide d'Installation</color>"
 
 #: lib/config-gettext-extract.php:13
+msgctxt "plugin description"
+msgid "Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!"
+msgstr "Balises méta complètes pour des beaux partages sur Facebook, Google, Pinterest, Twitter, etc - peu importe la méthode de partage!"
+
+#: lib/config-gettext-extract.php:14
 msgctxt "option value"
 msgid "Content"
 msgstr "Contenu"
 
-#: lib/config-gettext-extract.php:14
+#: lib/config-gettext-extract.php:15
 msgctxt "option value"
 msgid "CSS Sidebar"
 msgstr "Barre Latérale"
 
-#: lib/config-gettext-extract.php:16
+#: lib/config-gettext-extract.php:17
 msgctxt "option value"
 msgid "Desktop Only"
 msgstr "Plateforme de Bureau"
 
-#: lib/config-gettext-extract.php:17
+#: lib/config-gettext-extract.php:18
 msgctxt "option value"
 msgid "Display Name"
 msgstr "Nom d'affichage publique"
 
-#: lib/config-gettext-extract.php:18
+#: lib/config-gettext-extract.php:19
 msgctxt "lib file description"
 msgid "Essential Settings"
 msgstr "Réglages Essentiels"
 
-#: lib/config-gettext-extract.php:19
+#: lib/config-gettext-extract.php:20
 msgctxt "option value"
 msgid "Excerpt Only"
 msgstr "Extrait seulement"
 
-#: lib/config-gettext-extract.php:20
+#: lib/config-gettext-extract.php:21
 msgctxt "option value"
 msgid "Excerpt"
 msgstr "Extrait"
 
-#: lib/config-gettext-extract.php:21
+#: lib/config-gettext-extract.php:22
 msgctxt "option value"
 msgid "Facebook Business Page URL"
 msgstr "URL page d’affaires Facebook"
 
-#: lib/config-gettext-extract.php:22
+#: lib/config-gettext-extract.php:23
 msgctxt "option value"
 msgid "First and Last Names"
 msgstr "Nom et prénom"
 
-#: lib/config-gettext-extract.php:23
+#: lib/config-gettext-extract.php:24
 msgctxt "option value"
 msgid "Footer"
 msgstr "Pied de page"
 
-#: lib/config-gettext-extract.php:24
+#: lib/config-gettext-extract.php:25
 msgctxt "option value"
 msgid "Force this value"
 msgstr "Forcer cette valeur"
 
-#: lib/config-gettext-extract.php:25
+#: lib/config-gettext-extract.php:26
 msgctxt "option value"
 msgid "Friday"
 msgstr "Vendredi"
 
-#: lib/config-gettext-extract.php:26
+#: lib/config-gettext-extract.php:27
 msgctxt "lib file description"
 msgid "General Settings"
 msgstr "Réglages Généraux"
 
-#: lib/config-gettext-extract.php:27
+#: lib/config-gettext-extract.php:28
 msgctxt "option value"
 msgid "Google+ Business Page URL"
 msgstr "URL page d’affaires Google+"
 
-#: lib/config-gettext-extract.php:28
+#: lib/config-gettext-extract.php:29
 msgctxt "option value"
 msgid "Google"
 msgstr "Google"
 
-#: lib/config-gettext-extract.php:29
+#: lib/config-gettext-extract.php:30
 msgctxt "option value"
 msgid "Header"
 msgstr "Entête"
 
-#: lib/config-gettext-extract.php:30
+#: lib/config-gettext-extract.php:31
 msgctxt "option value"
 msgid "If value is empty"
 msgstr "Si la valeur est vide"
 
-#: lib/config-gettext-extract.php:31
+#: lib/config-gettext-extract.php:32
 msgctxt "option value"
 msgid "Instagram Business URL"
 msgstr "URL page d’affaires Instagram"
 
-#: lib/config-gettext-extract.php:32
+#: lib/config-gettext-extract.php:33
 msgctxt "option value"
 msgid "Left"
 msgstr "Gauche"
 
-#: lib/config-gettext-extract.php:33
+#: lib/config-gettext-extract.php:34
 msgctxt "option value"
 msgid "LinkedIn Company Page URL"
 msgstr "URL page entreprise LinkedIn"
 
-#: lib/config-gettext-extract.php:34
+#: lib/config-gettext-extract.php:35
 msgctxt "option value"
 msgid "Mobile Only"
 msgstr "Mobile Seulement"
 
-#: lib/config-gettext-extract.php:35
+#: lib/config-gettext-extract.php:36
 msgctxt "option value"
 msgid "Monday"
 msgstr "Lundi"
 
-#: lib/config-gettext-extract.php:36
+#: lib/config-gettext-extract.php:37
 msgctxt "option value"
 msgid "MySpace Business Page URL"
 msgstr "URL page d’affaires MySpace"
 
-#: lib/config-gettext-extract.php:37
+#: lib/config-gettext-extract.php:38
 msgctxt "option value"
 msgid "New activation"
 msgstr "Nouvelle activation"
 
-#: lib/config-gettext-extract.php:38
+#: lib/config-gettext-extract.php:39
 msgctxt "plugin description"
 msgid "NGFB extension to provide updates for the NextGEN Facebook (NGFB) Pro plugin and its Pro extensions."
 msgstr "Extension NGFB pour fournir des mises à jour a NextGEN Facebook (NGFB) Pro et ses extensions Pro."
 
-#: lib/config-gettext-extract.php:39
+#: lib/config-gettext-extract.php:40
 msgctxt "option value"
 msgid "Nickname"
 msgstr "Pseudonyme"
 
-#: lib/config-gettext-extract.php:42
+#: lib/config-gettext-extract.php:43
 msgctxt "option value"
 msgid "No"
 msgstr "Non"
 
-#: lib/config-gettext-extract.php:45
+#: lib/config-gettext-extract.php:46
 msgctxt "option value"
 msgid "Ow.ly"
 msgstr "Ow.ly"
 
-#: lib/config-gettext-extract.php:46
+#: lib/config-gettext-extract.php:47
 msgctxt "option value"
 msgid "Pinterest Company Page URL"
 msgstr "URL page entreprise Pinterest"
 
-#: lib/config-gettext-extract.php:47
+#: lib/config-gettext-extract.php:48
 msgctxt "lib file description"
 msgid "Pro Licenses and Extension Plugins"
 msgstr "Licences Pro et Autres Extensions"
 
-#: lib/config-gettext-extract.php:48
+#: lib/config-gettext-extract.php:49
 msgctxt "option value"
 msgid "Public Holidays"
 msgstr "Jours fériés"
 
-#: lib/config-gettext-extract.php:49
+#: lib/config-gettext-extract.php:50
 msgctxt "option value"
 msgid "Right"
 msgstr "Droite"
 
-#: lib/config-gettext-extract.php:50
+#: lib/config-gettext-extract.php:51
 msgctxt "option value"
 msgid "Saturday"
 msgstr "Samedi"
 
-#: lib/config-gettext-extract.php:52
+#: lib/config-gettext-extract.php:53
 msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr "Boutons de Partage"
 
-#: lib/config-gettext-extract.php:53 lib/submenu/styles.php:37
+#: lib/config-gettext-extract.php:54 lib/submenu/styles.php:37
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr "Styles de Partage"
 
-#: lib/config-gettext-extract.php:54
+#: lib/config-gettext-extract.php:55
 msgctxt "option value"
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: lib/config-gettext-extract.php:55
+#: lib/config-gettext-extract.php:56
 msgctxt "lib file description"
 msgid "Social and SEO Image Dimensions"
 msgstr "Dimensions des Images SEO et Sociaux"
 
-#: lib/config-gettext-extract.php:56
+#: lib/config-gettext-extract.php:57
 msgctxt "option value"
 msgid "Sunday"
 msgstr "Dimanche"
-
-#: lib/config-gettext-extract.php:57
-msgctxt "plugin description"
-msgid "The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!"
-msgstr "Les balises méta complètes pour de plus beaux partages sur Facebook, G+, Twitter, Pinterest, etc. - peu importe la méthode de partage!"
 
 #: lib/config-gettext-extract.php:58
 msgctxt "option value"
@@ -2849,30 +2849,38 @@ msgstr "La valeur de l'option '%s' doit être du code HTML - l'option est remise
 msgid "The value of option '%s' cannot be empty - resetting the option to its default value."
 msgstr "La valeur de l'option '%s' ne peut pas être vide - l'option est remise à sa valeur par défaut."
 
-#: lib/util.php:623
+#: lib/util.php:576
+msgid "Error retrieving webpage from <a href=\"%1$s\">%1$s</a>."
+msgstr "Erreur en récupérant le la page Web <a href=\"%1$s\">%1$s</a>."
+
+#: lib/util.php:582
+msgid "Webpage retrieved from <a href=\"%1$s\">%1$s</a> is empty."
+msgstr "La page Web récupéré de <a href=\"%1$s\">%1$s</a> est vide."
+
+#: lib/util.php:630
 msgid "The %1$s PHP class is missing - please contact your hosting provider to install the missing %1$s PHP class."
 msgstr "La classe PHP %1$s est manquante - veuillez communiquer avec votre fournisseur d'hébergement pour installer la classe PHP %1$s manquante."
 
-#: lib/util.php:1596
+#: lib/util.php:1603
 msgid "No options available."
 msgstr "Aucune options disponibles."
 
-#: lib/util.php:1622
+#: lib/util.php:1629
 msgctxt "option comment"
 msgid "%1$d additional options not shown in %2$s view"
 msgstr "%1$d options supplémentaires ne figurent pas dans la vue %2$s"
 
-#: lib/util.php:1626
+#: lib/util.php:1633
 msgctxt "option comment"
 msgid "unhide these options"
 msgstr "afficher ces options"
 
-#: lib/util.php:1629
+#: lib/util.php:1636
 msgctxt "option comment"
 msgid "%1$d additional rows not shown in %2$s view"
 msgstr "%1$d lignes supplémentaires ne figurent pas dans la vue %2$s"
 
-#: lib/util.php:1633
+#: lib/util.php:1640
 msgctxt "option comment"
 msgid "unhide these rows"
 msgstr "afficher ces lignes"
@@ -3174,15 +3182,15 @@ msgctxt "option label"
 msgid "Widget Title (leave blank for no title)"
 msgstr "Titre du Widget (laisser vide pour aucun titre)"
 
-#: nextgen-facebook.php:256
+#: nextgen-facebook.php:254
 msgid "HTML debug mode is active (transient cache could NOT be disabled)."
 msgstr "Le mode de débogage HTML est actif (l’utilisation du cache transitoire n'a pas pu être désactivée)."
 
-#: nextgen-facebook.php:257
+#: nextgen-facebook.php:255
 msgid "HTML debug mode is active (transient cache use is disabled)."
 msgstr "Le mode de débogage HTML est actif (l’utilisation du cache transitoire est désactivée)."
 
-#: nextgen-facebook.php:258
+#: nextgen-facebook.php:256
 msgid "Informational debug messages are being added as hidden HTML comments."
 msgstr "Des messages d’information de débogage sont ajoutés en commentaires HTML."
 
@@ -3195,8 +3203,8 @@ msgid "http://surniaulula.com/extend/plugins/nextgen-facebook/"
 msgstr "http://surniaulula.com/extend/plugins/nextgen-facebook/"
 
 #. Description of the plugin/theme
-msgid "The most complete meta tags for the best looking shares on Facebook, G+, Twitter, Pinterest, etc. - no matter how your webpage is shared!"
-msgstr "Les balises méta les plus complètes pour de plus beaux partages sur Facebook, G+, Twitter, Pinterest, etc. - peu importe la méthode de partage!"
+msgid "Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!"
+msgstr "Balises méta complètes pour des beaux partages sur Facebook, Google, Pinterest, Twitter, etc - peu importe la méthode de partage!"
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
