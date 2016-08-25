@@ -373,7 +373,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.34.3-1 (TBD)**
+**Version 8.34.3-1 (2016/08/25)**
 
 Official announcement: N/A
 
@@ -438,6 +438,10 @@ Official announcement: N/A
 	* Removed the '$use_post' argument in the json data filters.
 
 == Upgrade Notice ==
+
+= 8.34.3-1 =
+
+(2016/08/25) Fixed the transient cache id to clear the cache for retrieved permalinks.
 
 = 8.34.2-1 =
 
