@@ -382,7 +382,8 @@ Official announcement: N/A
 * *Improvements*
 	* None
 * *Bugfixes*
-	* None
+	* Added a warning for an empty webpage when checking for duplicate meta tags.  
+	* Fixed the transient cache id to clear the cache for retrieved permalinks.
 * *Developer Notes*
 	* None
 
