@@ -706,14 +706,11 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 							sprintf( _x( '%s required to use this option', 'option comment', 'nextgen-facebook' ),
 								$info['short_pro'] ).'</a></p>';
 						break;
-					case 'pro-about-msg-post':
-						$text = '<p>'.sprintf( __( 'The Free / Basic version of %1$s does not include modules required to customize post, term, and/or user meta &mdash; these options are shown for informative purposes only.', 'nextgen-facebook' ), $info['short'] ).' '.__( 'Update the content or excerpt text to change the default values shown here.', 'nextgen-facebook' ).'</p>';
+					case 'pro-about-msg-post-text':
+						$text = '<p>'.__( 'You can update the excerpt or content text to change the default description values.', 'nextgen-facebook' ).'</p>';
 						break;
-					case 'pro-about-msg-media':
-						$text = '<p>'.sprintf( __( 'The Free / Basic version of %1$s does not include modules required to customize post, term, and/or user meta &mdash; these options are shown for informative purposes only.', 'nextgen-facebook' ), $info['short'] ).' '.__( 'You can change the social image by selecting a featured image or including images in the content.', 'nextgen-facebook' ).' '.sprintf( __( 'The video service modules &mdash; required to detect embedded videos &mdash; are available in the %s Pro version.', 'nextgen-facebook' ),  $info['short'] ).'</p>';
-						break;
-					case 'pro-about-msg':
-						$text = '<p>'.sprintf( __( 'The Free / Basic version of %1$s does not include modules required to customize post, term, and/or user meta &mdash; these options are shown for informative purposes only.', 'nextgen-facebook' ), $info['short'] ).( empty( $info['text'] ) ? '' : ' '.$info['text'] ).'</p>';
+					case 'pro-about-msg-post-media':
+						$text = '<p>'.__( 'You can change the social image by selecting a featured image, attaching image(s) or including images in the content.', 'nextgen-facebook' ).'<br/>'.sprintf( __( 'The video service modules &mdash; required to detect embedded videos &mdash; are available with the %s Pro version.', 'nextgen-facebook' ),  $info['short'] ).'</p>';
 						break;
 					default:
 						$text = apply_filters( $lca.'_messages_pro', $text, $idx, $info );
