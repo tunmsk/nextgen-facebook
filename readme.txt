@@ -382,7 +382,7 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Changed from using the post permalink to a shortlink when checking for duplicate meta tags.
 * *Bugfixes*
 	* None
 * *Developer Notes*
