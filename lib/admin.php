@@ -375,9 +375,9 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				$this->p->notice->upd( __( 'Plugin settings have been saved.', 'nextgen-facebook' ).' '.
 					sprintf( __( 'Wait %1$d seconds for cache objects to expire or <a href="%2$s">%3$s</a> now.',
 						'nextgen-facebook' ), $this->p->options['plugin_object_cache_exp'], $clear_cache_link,
-							_x( 'Clear All Cache(s)', 'submit button', 'nextgen-facebook' ) ), true );
+							_x( 'Clear All Cache(s)', 'submit button', 'nextgen-facebook' ) ) );
 			} else {
-				$this->p->notice->upd( __( 'Plugin settings have been saved.', 'nextgen-facebook' ), true );
+				$this->p->notice->upd( __( 'Plugin settings have been saved.', 'nextgen-facebook' ) );
 				$this->p->util->clear_all_cache( true, __FUNCTION__, true );
 			}
 
@@ -400,12 +400,12 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				exit;
 			} elseif ( ! wp_verify_nonce( $_POST[ NGFB_NONCE ], NgfbAdmin::get_nonce() ) ) {
 				$this->p->notice->err( __( 'Nonce token validation failed for network options (update ignored).',
-					'nextgen-facebook' ), true );
+					'nextgen-facebook' ) );
 				wp_redirect( $this->p->util->get_admin_url( $page ) );
 				exit;
 			} elseif ( ! current_user_can( 'manage_network_options' ) ) {
 				$this->p->notice->err( __( 'Insufficient privileges to modify network options.',
-					'nextgen-facebook' ), true );
+					'nextgen-facebook' ) );
 				wp_redirect( $this->p->util->get_admin_url( $page ) );
 				exit;
 			}
@@ -418,7 +418,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$opts = $this->p->opt->sanitize( $opts, $def_opts, $network );
 			$opts = apply_filters( $this->p->cf['lca'].'_save_site_options', $opts, $def_opts, $network );
 			update_site_option( NGFB_SITE_OPTIONS_NAME, $opts );
-			$this->p->notice->upd( __( 'Plugin settings have been saved.', 'nextgen-facebook' ), true );
+			$this->p->notice->upd( __( 'Plugin settings have been saved.', 'nextgen-facebook' ) );
 			wp_redirect( $this->p->util->get_admin_url( $page ).'&settings-updated=true' );
 			exit;	// stop here
 		}
@@ -616,7 +616,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				parse_str( parse_url( $location, PHP_URL_QUERY ), $parts );
 
 				if ( strpos( $parts['wp_http_referer'], $referer_match ) ) {
-					$this->p->notice->upd( __( 'Profile updated.' ), true );
+					$this->p->notice->upd( __( 'Profile updated.' ) );
 					return add_query_arg( 'updated', true, $parts['wp_http_referer'] );
 				}
 			}
@@ -1407,14 +1407,14 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				if ( ( $html = SucomUtil::get_stripped_php( $file ) ) === false ||
 					strpos( $html, '<head>' ) === false ) {
 					$this->p->notice->err( sprintf( __( '&lt;head&gt; element not found in %s.',
-						'nextgen-facebook' ), $file ), true );
+						'nextgen-facebook' ), $file ) );
 					continue;
 				}
 
 				// make a backup of the original
 				if ( ! copy( $file, $backup ) ) {
 					$this->p->notice->err( sprintf( __( 'Error copying %1$s to %2$s.',
-						'nextgen-facebook' ), 'header.php', $backup ), true );
+						'nextgen-facebook' ), 'header.php', $backup ) );
 					continue;
 				}
 
@@ -1423,13 +1423,13 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 				if ( ! $fh = @fopen( $file, 'wb' ) ) {
 					$this->p->notice->err( sprintf( __( 'Failed to open file %s for writing.',
-						'nextgen-facebook' ), $file ), true );
+						'nextgen-facebook' ), $file ) );
 					continue;
 				}
 
 				if ( fwrite( $fh, $php ) ) {
 					fclose( $fh );
-					$this->p->notice->upd( sprintf( __( 'The %1$s template has been successfully updated and saved. A backup copy of the original template is available in %2$s.', 'nextgen-facebook' ), $base, $backup ), true );
+					$this->p->notice->upd( sprintf( __( 'The %1$s template has been successfully updated and saved. A backup copy of the original template is available in %2$s.', 'nextgen-facebook' ), $base, $backup ) );
 					$have_changes = true;
 				}
 			}

@@ -290,7 +290,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 		public function filter_secondary_action_buttons( $actions, $menu_id, $menu_name, $menu_lib ) {
 			if ( $menu_id === 'styles' )
-				$actions['reload_default_sharing_styles'] = _x( 'Reload Default Styles', 'submit button', 'nextgen-facebook' );
+				$actions['reload_default_sharing_styles'] = _x( 'Reload Default Styles',
+					'submit button', 'nextgen-facebook' );
 			return $actions;
 		}
 
@@ -307,7 +308,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 			$this->update_sharing_css( $opts );
 			$this->p->opt->save_options( NGFB_OPTIONS_NAME, $opts, false );
-			$this->p->notice->upd( __( 'All sharing styles have been reloaded with their default settings and saved.', 'nextgen-facebook' ) );
+			$this->p->notice->upd( __( 'All sharing styles have been reloaded with their default settings and saved.',
+				'nextgen-facebook' ) );
 		}
 
 		public function wp_enqueue_styles() {
@@ -329,7 +331,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 							$this->p->debug->log( self::$sharing_css_file.' is not readable' );
 						if ( is_admin() )
 							$this->p->notice->err( sprintf( __( 'The %s file is not readable.',
-								'nextgen-facebook' ), self::$sharing_css_file ), true );
+								'nextgen-facebook' ), self::$sharing_css_file ) );
 					} else {
 						echo '<style type="text/css">';
 						if ( ( $fsize = @filesize( self::$sharing_css_file ) ) > 0 &&
@@ -369,7 +371,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 					$this->p->debug->log( 'failed to load minify class SuextMinifyCssCompressor' );
 				if ( is_admin() )
 					$this->p->notice->err( __( 'Failed to load the minify class SuextMinifyCssCompressor.',
-						'nextgen-facebook' ), true );
+						'nextgen-facebook' ) );
 			}
 
 			if ( $fh = @fopen( self::$sharing_css_file, 'wb' ) ) {
@@ -378,13 +380,13 @@ jQuery("#ngfb-sidebar-header").click( function(){
 						$this->p->debug->log( 'failed writing to '.self::$sharing_css_file );
 					if ( is_admin() )
 						$this->p->notice->err( sprintf( __( 'Failed writing to the % file.',
-							'nextgen-facebook' ), self::$sharing_css_file ), true );
+							'nextgen-facebook' ), self::$sharing_css_file ) );
 				} elseif ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'updated css file '.self::$sharing_css_file.' ('.$written.' bytes written)' );
 					if ( is_admin() )
 						$this->p->notice->upd( sprintf( __( 'Updated the <a href="%1$s">%2$s</a> stylesheet (%3$d bytes written).',
 							'nextgen-facebook' ), self::$sharing_css_url, self::$sharing_css_file, $written ), 
-								true, true, 'updated_'.self::$sharing_css_file, true );
+								true, 'updated_'.self::$sharing_css_file, true );
 				}
 				fclose( $fh );
 			} else {
@@ -393,13 +395,13 @@ jQuery("#ngfb-sidebar-header").click( function(){
 						$this->p->debug->log( NGFB_CACHEDIR.' is not writable', true );
 					if ( is_admin() )
 						$this->p->notice->err( sprintf( __( 'The %s folder is not writable.',
-							'nextgen-facebook' ), NGFB_CACHEDIR ), true );
+							'nextgen-facebook' ), NGFB_CACHEDIR ) );
 				}
 				if ( $this->p->debug->enabled )
 					$this->p->debug->log( 'failed opening '.self::$sharing_css_file.' for writing' );
 				if ( is_admin() )
 					$this->p->notice->err( sprintf( __( 'Failed to open file %s for writing.',
-						'nextgen-facebook' ), self::$sharing_css_file ), true );
+						'nextgen-facebook' ), self::$sharing_css_file ) );
 			}
 		}
 
@@ -407,7 +409,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			if ( file_exists( self::$sharing_css_file ) ) {
 				if ( ! @unlink( self::$sharing_css_file ) ) {
 					if ( is_admin() )
-						$this->p->notice->err( __( 'Error removing the minimized stylesheet &mdash; does the web server have sufficient privileges?', 'nextgen-facebook' ), true );
+						$this->p->notice->err( __( 'Error removing the minimized stylesheet &mdash; does the web server have sufficient privileges?',
+							'nextgen-facebook' ) );
 				}
 			}
 		}
