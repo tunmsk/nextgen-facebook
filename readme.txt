@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.35.0-dev1 (2016/09/04)**
+**Version 8.35.0-rc1 (2016/09/05)**
 
 Official announcement: N/A
 
@@ -455,9 +455,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.35.0-dev1 =
+= 8.35.0-rc1 =
 
-(2016/09/04) Refactored the SucomNotice class to improve performance. Changed to a shortlink when checking for duplicate meta tags.
+(2016/09/05) Refactored the SucomNotice class to improve performance. Changed to a shortlink when checking for duplicate meta tags.
 
 = 8.34.3-1 =
 
