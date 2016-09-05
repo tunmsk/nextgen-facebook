@@ -603,8 +603,8 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 			}
 
 			// define a constant to ignore notice messages
-			if ( ! defined( 'DOING_COLUMN_CONTENT' ) )
-				define( 'DOING_COLUMN_CONTENT', true );
+			if ( ! defined( 'SUCOM_NOTICE_LOG_DISABLE' ) )
+				define( 'SUCOM_NOTICE_LOG_DISABLE', true );
 
 			/* hooked by:
 			 *	NgfbPost::filter_og_img_post_column_content()
