@@ -25,7 +25,7 @@
 }
 
 .ngfb-buttons iframe { 
-	margin:0;
+	margin:0 !important;
 	max-width:none;
 	vertical-align:baseline;
 }
