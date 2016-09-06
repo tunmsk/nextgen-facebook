@@ -219,6 +219,9 @@ if ( ! class_exists( 'NgfbTerm' ) ) {
 				// check for missing open graph image and issue warning
 				if ( empty( NgfbMeta::$head_meta_info['og:image'] ) )
 					$this->p->notice->err( $this->p->msgs->get( 'notice-missing-og-image' ) );
+
+				if ( empty( NgfbMeta::$head_meta_info['og:description'] ) )
+					$this->p->notice->err( $this->p->msgs->get( 'notice-missing-og-description' ) );
 			}
 
 			$action_query = $lca.'-action';

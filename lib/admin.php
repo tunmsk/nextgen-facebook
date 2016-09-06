@@ -45,6 +45,10 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				add_action( 'admin_init', array( &$this, 'register_setting' ) );
 				add_action( 'admin_menu', array( &$this, 'add_admin_menus' ), NGFB_ADD_MENU_PRIORITY );
 				add_action( 'admin_menu', array( &$this, 'add_admin_submenus' ), NGFB_ADD_SUBMENU_PRIORITY );
+
+				add_action( 'after_switch_theme', array( &$this, 'reset_check_header_exec_count' ) );
+				add_action( 'upgrader_process_complete', array( &$this, 'reset_check_header_exec_count' ) );
+
 				add_action( 'after_switch_theme', array( &$this, 'check_tmpl_head_elements' ) );
 				add_action( 'upgrader_process_complete', array( &$this, 'check_tmpl_head_elements' ) );
 
@@ -1370,6 +1374,11 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					$this->p->notice->err( $err_pre.sprintf( __( 'please uncheck the \'<em>adds the Json-LD metas for Semantic SEO</em>\' option in the <a href="%s">Squirrly SEO</a> settings.', 'nextgen-facebook' ), get_admin_url( null, 'admin.php?page=sq_seo' ) ) );
 				}
 			}
+		}
+
+		public function reset_check_header_exec_count() {
+			$lca = $this->p->cf['lca'];
+			delete_option( $lca.'_post_header_count' );
 		}
 
 		public function check_tmpl_head_elements() {
