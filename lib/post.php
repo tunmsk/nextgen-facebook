@@ -312,7 +312,7 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 
 			$lca = $this->p->cf['lca'];
 			$exec_count = (int) get_option( $lca.'_post_header_count' );	// changes false to 0
-			$max_count = (int) SucomUtil::get_const( 'NGFB_CHECK_HEADER_COUNT', 30 );
+			$max_count = (int) SucomUtil::get_const( 'NGFB_CHECK_HEADER_COUNT', 10 );
 
 			if ( $exec_count >= $max_count ) {
 				if ( $this->p->debug->enabled )
@@ -363,8 +363,7 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 			}
 
 			if ( ! $conflicts_found ) {
-				$exec_count++;
-				update_option( $lca.'_post_header_count', $exec_count, false );	// autoload = false
+				update_option( $lca.'_post_header_count', ++$exec_count, false );	// autoload = false
 				$this->p->notice->inf( sprintf( __( 'Awesome! No duplicate meta tags found. :-) %s more checks to go...',
 					'nextgen-facebook' ), $max_count - $exec_count ) );
 			}
