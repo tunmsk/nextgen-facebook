@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.35.0-rc1 (2016/09/05)**
+**Version 8.35.0-rc2 (2016/09/06)**
 
 Official announcement: N/A
 
@@ -384,6 +384,8 @@ Official announcement: N/A
 * *Improvements*
 	* Refactored the SucomNotice class to improve performance.
 	* Changed from using the post permalink to a shortlink when checking for duplicate meta tags.
+	* Added a maximum (success) count of 30 when checking for duplicate meta tags.
+	* Added a notice for a missing Open Graph description meta tag.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -455,9 +457,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.35.0-rc1 =
+= 8.35.0-rc2 =
 
-(2016/09/05) Refactored the SucomNotice class to improve performance. Changed to a shortlink when checking for duplicate meta tags.
+(2016/09/06) Refactored the SucomNotice class to improve performance. Changed to a shortlink when checking for duplicate meta tags. Added a maximum count when checking for duplicate meta tags. Added a notice for a missing Open Graph description meta tag.
 
 = 8.34.3-1 =
 
