@@ -384,7 +384,7 @@ Official announcement: N/A
 * *Improvements*
 	* Refactored the SucomNotice class to improve performance.
 	* Changed from using the post permalink to a shortlink when checking for duplicate meta tags.
-	* Added a maximum (success) count of 30 when checking for duplicate meta tags.
+	* Added a maximum (success) count of 10 when checking for duplicate meta tags.
 	* Added a notice for a missing Open Graph description meta tag.
 * *Bugfixes*
 	* None
