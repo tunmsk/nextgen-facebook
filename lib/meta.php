@@ -602,10 +602,6 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 					break;
 			}
 
-			// define a constant to ignore notice messages
-			if ( ! defined( 'SUCOM_NOTICE_LOG_DISABLE' ) )
-				define( 'SUCOM_NOTICE_LOG_DISABLE', true );
-
 			/* hooked by:
 			 *	NgfbPost::filter_og_img_post_column_content()
 			 *	NgfbTerm::filter_og_img_term_column_content()
