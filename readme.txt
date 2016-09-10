@@ -391,77 +391,9 @@ Official announcement: N/A
 * *Developer Notes*
 	* Replaced the `register_uninstall_hook()` function call with an uninstall.php file.
 
-**Version 8.34.3-1 (2016/08/25)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* Added a warning for an empty webpage when checking for duplicate meta tags.  
-	* Fixed the transient cache id to clear the cache for retrieved permalinks.
-* *Developer Notes*
-	* None
-
-**Version 8.34.2-1 (2016/08/24)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added the "Twitter Card for Post / Page Images" and "Twitter Card Type by Default" options.
-* *Bugfixes*
-	* Fixed the email and whatsapp button SVG icon width value.
-* *Developer Notes*
-	* Updated the minimum PHP version required has from v4.1 to v5.1.
-	* Added `libxml_use_internal_errors()` when checking webpage for duplicates to avoid any HTML Parsing errors.
-
-**Version 8.34.1-1 (2016/08/20)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added a new "link rel shortlink" meta tag with the shortened sharing URL or post shortlink.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added the post ID argument to `wp_get_shortlink()` for more reliable results.
-	* Added new SucomNoDebug and SucomNoNotice classes.
-	* Added new filters to manage auto-disabling of canonical and description meta tags when an SEO plugin is detected:
-		* 'ngfb_add_meta_name_canonical' ( $bool )
-		* 'ngfb_add_meta_name_description' ( $bool )
-
-**Version 8.34.0-1 (2016/08/18)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added support for Facebook embedded iframe videos (Pro version).
-* *Improvements*
-	* Removed the "Shorten URLs with" duplicate option from Twitter settings (see the Advanced settings page for shortening options).
-	* Added support for Schema http://schema.org/AutomotiveBusiness sub-types (AutoDealer, AutoRental, AutoRepair, etc.).
-	* Added Co-Authors Plus authors and guests (with Facebook URLs) to the Open Graph article:author meta tags.
-	* Added the first (top) Co-Authors Plus author ID as the post / page author (Pro version).
-	* Added a check and warnings for conflicting settings in the Squirrly SEO plugin.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added a `$src_id` argument to the NgfbUtil `get_sharing_url()` method and its filters.
-	* Moved the `get_sharing_url()` call from the social website modules into the main NgfbSharing loop.
-	* Removed the '$use_post' argument in the json data filters.
-
 == Upgrade Notice ==
 
 = 8.35.0-1 =
 
 (2016/09/10) Refactored the SucomNotice class to improve performance. Changed to a shortlink when checking for duplicate meta tags. Added a maximum count when checking for duplicate meta tags. Added a notice for a missing Open Graph description meta tag.
-
-= 8.34.3-1 =
-
-(2016/08/25) Fixed the transient cache id to clear the cache for retrieved permalinks.
 
