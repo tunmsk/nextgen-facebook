@@ -542,14 +542,6 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					_x( 'Pro Version Features', 'metabox title (side)', 'nextgen-facebook' ), 
 						array( &$this, 'show_metabox_status_pro' ), $this->pagehook, 'side' );
 			}
-
-			// only show under in the plugin or network settings pages
-			// (don't show under the WordPress settings menu)
-			if ( $this->menu_lib === 'submenu' || $this->menu_lib === 'sitesubmenu' ) {
-				add_meta_box( $this->pagehook.'_version_info',
-					_x( 'Version Information', 'metabox title (side)', 'nextgen-facebook' ), 
-						array( &$this, 'show_metabox_version_info' ), $this->pagehook, 'side' );
-			}
 		}
 
 		protected function add_meta_boxes() {
@@ -681,9 +673,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				SucomUtil::sanitize_hookname( $this->menu_id ), $this->pagehook );
 
 			switch ( $this->menu_id ) {
-				case 'readme':
 				case 'setup':
-				case 'sitereadme':
 				case 'sitesetup':
 					break;
 				default:
@@ -754,8 +744,13 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 				$installed_version = $info['version'];	// static value from config
 				$installed_style = '';
-				$stable_version = __( 'N/A', 'nextgen-facebook' );
-				$latest_version = __( 'N/A', 'nextgen-facebook' );
+				if ( empty( $this->is_avail['cache']['transient'] ) ) {
+					$stable_version = __( 'Not Available (Cache Disabled)', 'nextgen-facebook' );
+					$latest_version = __( 'Not Available (Cache Disabled)', 'nextgen-facebook' );
+				} else {
+					$stable_version = __( 'Not Available', 'nextgen-facebook' );
+					$latest_version = __( 'Not Available', 'nextgen-facebook' );
+				}
 				$latest_notice = '';
 				$changelog_url = $info['url']['changelog'];
 
