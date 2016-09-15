@@ -375,6 +375,19 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.35.1-1 (2016/09/15)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed an undefined og:image value when adding an og:image:secure_url meta tag.
+* *Developer Notes*
+	* None
+
 **Version 8.35.0-1 (2016/09/10)**
 
 Official announcement: N/A
@@ -393,6 +406,10 @@ Official announcement: N/A
 	* Replaced the `register_uninstall_hook()` function call with an uninstall.php file.
 
 == Upgrade Notice ==
+
+= 8.35.1-1 =
+
+(2016/09/15) Fixed an undefined og:image value when adding an og:image:secure_url meta tag.
 
 = 8.35.0-1 =
 
