@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.35.1-1',	// plugin version
-					'opt_version' => '448',		// increment when changing default options
+					'version' => '8.35.2-dev1',	// plugin version
+					'opt_version' => '450',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -344,19 +344,19 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_property_og:altitude' => 1,
 					'add_meta_property_og:latitude' => 1,
 					'add_meta_property_og:longitude' => 1,
-					// article
+					// open graph (article)
 					'add_meta_property_article:author' => 1,
 					'add_meta_property_article:publisher' => 1,
 					'add_meta_property_article:published_time' => 1,
 					'add_meta_property_article:modified_time' => 1,
 					'add_meta_property_article:section' => 1,
 					'add_meta_property_article:tag' => 1,
-					// book
+					// open graph (book)
 					'add_meta_property_book:author' => 1,
 					'add_meta_property_book:isbn' => 1,
 					'add_meta_property_book:release_date' => 1,
 					'add_meta_property_book:tag' => 1,
-					// music
+					// open graph (music)
 					'add_meta_property_music:album' => 1,
 					'add_meta_property_music:album:disc' => 1,
 					'add_meta_property_music:album:track' => 1,
@@ -367,7 +367,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_property_music:song' => 1,
 					'add_meta_property_music:song:disc' => 1,
 					'add_meta_property_music:song:track' => 1,
-					// place
+					// open graph (place)
 					'add_meta_property_place:location:altitude' => 1,
 					'add_meta_property_place:location:latitude' => 1,
 					'add_meta_property_place:location:longitude' => 1,
@@ -376,16 +376,16 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_property_place:region' => 1,
 					'add_meta_property_place:postal_code' => 1,
 					'add_meta_property_place:country_name' => 1,
-					// product
+					// open graph (product)
 					'add_meta_property_product:availability' => 1,
 					'add_meta_property_product:price:amount' => 1,
 					'add_meta_property_product:price:currency' => 1,
-					// profile
+					// open graph (profile)
 					'add_meta_property_profile:first_name' => 1,
 					'add_meta_property_profile:last_name' => 1,
 					'add_meta_property_profile:username' => 1,
 					'add_meta_property_profile:gender' => 1,
-					// video
+					// open graph (video)
 					'add_meta_property_video:actor' => 1,
 					'add_meta_property_video:actor:role' => 1,
 					'add_meta_property_video:director' => 1,
@@ -401,6 +401,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_name_generator' => 1,
 					// pinterest
 					'add_meta_name_p:domain_verify' => 1,
+					// weibo
+					'add_meta_name_weibo:article:create_at' => 1,
+					'add_meta_name_weibo:article:update_at' => 1,
 					// twitter cards
 					'add_meta_name_twitter:card' => 1,
 					'add_meta_name_twitter:creator' => 1,
@@ -412,6 +415,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_name_twitter:image:width' => 1,
 					'add_meta_name_twitter:image:height' => 1,
 					'add_meta_name_twitter:player' => 1,
+					'add_meta_name_twitter:player:stream' => 1,
+					'add_meta_name_twitter:player:stream:content_type' => 1,
 					'add_meta_name_twitter:player:width' => 1,
 					'add_meta_name_twitter:player:height' => 1,
 					// schema
@@ -726,7 +731,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'php' => array(				// php
-				'min_version' => '5.1.0',	// minimum php version
+				'min_version' => '5.2.0',	// minimum php version
 			),
 			'form' => array(
 				'og_img_col_width' => '70px',
@@ -1369,6 +1374,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			require_once( NGFB_PLUGINDIR.'lib/media.php' );
 			require_once( NGFB_PLUGINDIR.'lib/head.php' );
 			require_once( NGFB_PLUGINDIR.'lib/opengraph.php' );
+			require_once( NGFB_PLUGINDIR.'lib/weibo.php' );
 			require_once( NGFB_PLUGINDIR.'lib/twittercard.php' );
 			require_once( NGFB_PLUGINDIR.'lib/schema.php' );
 			require_once( NGFB_PLUGINDIR.'lib/functions.php' );

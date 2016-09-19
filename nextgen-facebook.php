@@ -12,8 +12,8 @@
  * License URI: http://www.gnu.org/licenses/gpl.txt
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
  * Requires At Least: 3.1
- * Tested Up To: 4.6
- * Version: 8.35.1-1
+ * Tested Up To: 4.6.1
+ * Version: 8.35.2-dev1
  *
  * Version Numbers: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -43,8 +43,9 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public $media;			// NgfbMedia (images, videos, etc.)
 		public $msgs;			// NgfbMessages (admin tooltip messages)
 		public $notice;			// SucomNotice or SucomNoNotice
-		public $og;			// NgfbOpengraph
-		public $tc;			// NgfbTwittercard
+		public $og;			// NgfbOpenGraph
+		public $weibo;			// NgfbWeibo
+		public $tc;			// NgfbTwitterCard
 		public $opt;			// NgfbOptions
 		public $reg;			// NgfbRegister
 		public $script;			// SucomScript (admin jquery tooltips)
@@ -174,8 +175,9 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			$this->webpage = new SucomWebpage( $this );		// title, desc, etc., plus shortcodes
 			$this->media = new NgfbMedia( $this );			// images, videos, etc.
 			$this->head = new NgfbHead( $this );
-			$this->og = new NgfbOpengraph( $this );
-			$this->tc = new NgfbTwittercard( $this );
+			$this->og = new NgfbOpenGraph( $this );
+			$this->weibo = new NgfbWeibo( $this );
+			$this->tc = new NgfbTwitterCard( $this );
 			$this->schema = new NgfbSchema( $this );
 
 			if ( is_admin() ) {
