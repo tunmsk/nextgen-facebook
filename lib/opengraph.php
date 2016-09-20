@@ -398,8 +398,7 @@ if ( ! class_exists( 'NgfbOpenGraph' ) ) {
 
 						if ( strpos( $og_video['og:video:embed_url'], 'https:' ) !== false ) {
 							$og_embed['og:video:secure_url'] = $og_video['og:video:embed_url'];
-							$og_embed['og:video:url'] = preg_replace( '/^https:/', 'http:',
-								$og_video['og:video:embed_url'] );
+							$og_embed['og:video:url'] = $og_video['og:video:embed_url'];
 						} else {
 							$og_embed['og:video:secure_url'] = '';
 							$og_embed['og:video:url'] = $og_video['og:video:embed_url'];
