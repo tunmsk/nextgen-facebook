@@ -506,7 +506,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 					$this->p->debug->show_html( null, 'Debug Log' );
 
 			} else echo '<p class="centered">'.sprintf( __( '%s must be published<br/>before it can be shared.',
-				'nextgen-facebook' ), ucfirst( $post_obj->post_type ) ).'</p>';
+				'nextgen-facebook' ), SucomUtil::title_words( $post_obj->post_type ) ).'</p>';
 			echo '</td></tr></table>';
 		}
 

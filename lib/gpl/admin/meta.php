@@ -90,7 +90,7 @@ if ( ! class_exists( 'NgfbGplAdminMeta' ) ) {
 			if ( $mod['is_post'] && ( empty( $mod['post_status'] ) || $mod['post_status'] === 'auto-draft' ) ) {
 				$table_rows[] = '<td><blockquote class="status-info"><p class="centered">'.
 					sprintf( __( 'Save a draft version or publish the %s to display these options.',
-						'nextgen-facebook' ), ucfirst( $mod['post_type'] ) ).'</p></td>';
+						'nextgen-facebook' ), SucomUtil::title_words( $mod['post_type'] ) ).'</p></td>';
 				return $table_rows;	// abort
 			}
 

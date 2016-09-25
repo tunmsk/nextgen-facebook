@@ -148,7 +148,7 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 				$mod['post_status'] === 'auto-draft' ) {
 
 				$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
-					'nextgen-facebook' ), ucfirst( $mod['post_type'] ) );
+					'nextgen-facebook' ), SucomUtil::title_words( $mod['post_type'] ) );
 
 				$table_rows[] = $form->get_th_html( _x( 'Sharing URL',
 					'option label', 'nextgen-facebook' ), 'medium' ).

@@ -117,14 +117,15 @@ if ( ! function_exists( 'ngfb_schema_attributes' ) ) {
 if ( ! function_exists( 'ngfb_clear_all_cache' ) ) {
 	function ngfb_clear_all_cache( $clear_external = false ) {
 		$ngfb =& Ngfb::get_instance();
-		return $ngfb->util->clear_all_cache( $clear_external, __FUNCTION__, true );
+		if ( is_object( $ngfb->util ) )	// just in case
+			return $ngfb->util->clear_all_cache( $clear_external, __FUNCTION__, true );
 	}
 }
 
 if ( ! function_exists( 'ngfb_clear_post_cache' ) ) {
 	function ngfb_clear_post_cache( $post_id ) {
 		$ngfb =& Ngfb::get_instance();
-		if ( is_object( $ngfb->m['util']['post'] ) )
+		if ( is_object( $ngfb->m['util']['post'] ) )	// just in case
 			$ngfb->m['util']['post']->clear_cache( $post_id );
 	}
 }
