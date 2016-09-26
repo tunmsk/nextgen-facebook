@@ -441,7 +441,7 @@ Official announcement: N/A
 
 = 8.35.3-dev2 =
 
-(2016/09/25) Added a check for product get_width(), get_height(), get_length() and get_weight() for older WooCommerce versions (Pro version).
+(2016/09/25) Added a check for product methods for older WooCommerce versions (Pro version). Added a new method to enqueue scripts / styles for editing posts in settings pages (required for Event Espresso plugin). Fixed the "View Plugin Details" link in multisite settings pages.
 
 = 8.35.2-1 =
 
