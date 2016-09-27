@@ -153,21 +153,20 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				( defined( 'NGFB_HTML_DEBUG' ) && NGFB_HTML_DEBUG ) ? true : false;
 			$wp_debug = defined( 'NGFB_WP_DEBUG' ) && NGFB_WP_DEBUG ? true : false;
 
-			// only load the debug class if one or more debug options are enabled
-			if ( ( $html_debug || $wp_debug ) && 
+			if ( ( $html_debug || $wp_debug ) &&			// only load debug class if one or more debug options enabled
 				( $classname = NgfbConfig::load_lib( false, 'com/debug', 'SucomDebug' ) ) )
 					$this->debug = new $classname( $this, array( 'html' => $html_debug, 'wp' => $wp_debug ) );
-			else $this->debug = new SucomNoDebug();
+			else $this->debug = new SucomNoDebug();			// make sure debug property is always available
 
 			if ( $activate === true && $this->debug->enabled )
 				$this->debug->log( 'method called for plugin activation' );
 
-			// only load the notification class in the admin interface
-			if ( is_admin() && ( $classname = NgfbConfig::load_lib( false, 'com/notice', 'SucomNotice' ) ) )
-				$this->notice = new $classname( $this );
-			else $this->notice = new SucomNoNotice();
+			if ( is_admin() && 					// only load notice class in the admin interface
+				( $classname = NgfbConfig::load_lib( false, 'com/notice', 'SucomNotice' ) ) )
+					$this->notice = new $classname( $this );
+			else $this->notice = new SucomNoNotice();		// make sure notice property is always available
 
-			$this->util = new NgfbUtil( $this );
+			$this->util = new NgfbUtil( $this );			// extends SucomUtil
 			$this->opt = new NgfbOptions( $this );
 			$this->cache = new SucomCache( $this );			// object and file caching
 			$this->style = new SucomStyle( $this );			// admin styles

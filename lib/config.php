@@ -1354,8 +1354,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once( NGFB_PLUGINDIR.'lib/com/nodebug.php' );
-			require_once( NGFB_PLUGINDIR.'lib/com/nonotice.php' );
+			require_once( NGFB_PLUGINDIR.'lib/com/nodebug.php' );	// always load fallback class
+			require_once( NGFB_PLUGINDIR.'lib/com/nonotice.php' );	// always load fallback class
 			require_once( NGFB_PLUGINDIR.'lib/com/exception.php' );	// extends Exception
 			require_once( NGFB_PLUGINDIR.'lib/com/util.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/cache.php' );
