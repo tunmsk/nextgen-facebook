@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.35.3-dev3',	// plugin version
-					'opt_version' => '453',		// increment when changing default options
+					'version' => '8.35.3-b1',	// plugin version
+					'opt_version' => '454',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -331,11 +331,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_property_og:title' => 1,
 					'add_meta_property_og:type' => 1,
 					'add_meta_property_og:url' => 1,
-					'add_meta_property_og:image:secure_url' => 0,
+					'add_meta_property_og:image:secure_url' => 1,
 					'add_meta_property_og:image' => 1,
 					'add_meta_property_og:image:width' => 1,
 					'add_meta_property_og:image:height' => 1,
-					'add_meta_property_og:video:secure_url' => 0,
+					'add_meta_property_og:video:secure_url' => 1,
 					'add_meta_property_og:video:url' => 1,
 					'add_meta_property_og:video:type' => 1,
 					'add_meta_property_og:video:width' => 1,
