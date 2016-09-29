@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.35.3-dev2 (2016/09/25)**
+**Version 8.35.3-dev3 (2016/09/28)**
 
 Official announcement: N/A
 
@@ -439,9 +439,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.35.3-dev2 =
+= 8.35.3-dev3 =
 
-(2016/09/25) Added a check for product methods for older WooCommerce versions (Pro version). Added a new method to enqueue scripts / styles for editing posts in settings pages (required for Event Espresso plugin). Fixed the "View Plugin Details" link in multisite settings pages.
+(2016/09/28) Added a check for product methods for older WooCommerce versions (Pro version). Added a new method to enqueue scripts / styles for editing posts in settings pages (required for Event Espresso plugin). Fixed the "View Plugin Details" link in multisite settings pages.
 
 = 8.35.2-1 =
 
