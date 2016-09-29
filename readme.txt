@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.35.3-dev3 (2016/09/28)**
+**Version 8.35.3-b1 (2016/09/29)**
 
 Official announcement: N/A
 
@@ -385,6 +385,7 @@ Official announcement: N/A
 	* Added a check for product get_width(), get_height(), get_length() and get_weight() for older WooCommerce versions (Pro version).
 	* Added a new SucomUtil::is_toplevel_edit() method to enqueue scripts / styles for editing posts in settings pages (required for Event Espresso plugin).
 	* Added a new SucomUtil::titleize() method to format post type names for display.
+	* Re-enabled the 'og:image:secure_url' and 'og:video:secure_url' meta tags by default.
 * *Bugfixes*
 	* Fixed the "View Plugin Details" link in multisite settings pages.
 * *Developer Notes*
@@ -439,9 +440,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.35.3-dev3 =
+= 8.35.3-b1 =
 
-(2016/09/28) Added a check for product methods for older WooCommerce versions (Pro version). Added a new method to enqueue scripts / styles for editing posts in settings pages (required for Event Espresso plugin). Fixed the "View Plugin Details" link in multisite settings pages.
+(2016/09/29) Added a check for product methods for older WooCommerce versions (Pro version). Added a new method to enqueue scripts / styles for editing posts in settings pages (required for Event Espresso plugin). Fixed the "View Plugin Details" link in multisite settings pages.
 
 = 8.35.2-1 =
 
