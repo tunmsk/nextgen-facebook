@@ -11,7 +11,7 @@ Tags: amp, bbPress, buddypress, buttons, e-commerce, easy digital downloads, edd
 Contributors: jsmoriss
 Requires At Least: 3.1
 Tested Up To: 4.6.1
-Stable Tag: 8.35.3-1
+Stable Tag: 8.35.4-1
 
 Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
 
@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.35.3-1 (2016/10/01)**
+**Version 8.35.4-1 (2016/10/01)**
 
 Official announcement: N/A
 
@@ -440,7 +440,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.35.3-1 =
+= 8.35.4-1 =
 
 (2016/10/01) Added a check for product methods for older WooCommerce versions (Pro version). Added a new method to enqueue scripts / styles for editing posts in settings pages (required for Event Espresso plugin). Fixed the "View Plugin Details" link in multisite settings pages.
 
