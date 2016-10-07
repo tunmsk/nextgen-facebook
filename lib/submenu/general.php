@@ -114,8 +114,12 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					$table_rows['og_desc_len'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Maximum Description Length',
 						'option label', 'nextgen-facebook' ), null, 'og_desc_len' ).
-					'<td>'.$this->form->get_input( 'og_desc_len', 'short' ).' '.
-						_x( 'characters or less', 'option comment', 'nextgen-facebook' ).'</td>';
+					'<td>'.
+						$this->form->get_input( 'og_desc_len', 'short' ).' '.
+						_x( 'characters or less (hard limit), and warn at', 'option comment', 'nextgen-facebook' ).' '.
+						$this->form->get_input( 'og_desc_warn', 'short' ).' '.
+						_x( 'characters (soft limit)', 'option comment', 'nextgen-facebook' ).
+					'</td>';
 
 					$table_rows['og_desc_hashtags'] = $this->form->get_th_html( _x( 'Add Hashtags to Descriptions',
 						'option label', 'nextgen-facebook' ), null, 'og_desc_hashtags' ).
