@@ -375,14 +375,14 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.35.5-1 (TBD)**
+**Version 8.35.5-dev1 (TBD)**
 
 Official announcement: N/A
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added a description length warning option for Open Graph descriptions (defaults are 300 characters hard limit, and 200 characters soft limit).
+	* Added a description length warning to the Open Graph description option (defaults is 300 characters hard limit, and 200 characters soft limit).
 * *Bugfixes*
 	* None
 * *Developer Notes*
