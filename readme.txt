@@ -375,14 +375,14 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.35.5-dev1 (TBD)**
+**Version 8.35.5-dev1 (2016/10/09)**
 
 Official announcement: N/A
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added a description length warning to the Open Graph description option (defaults is 300 characters hard limit, and 200 characters soft limit).
+	* Added a configurable length warning to the Open Graph description textarea (defaults is 300 characters hard limit, and 200 characters soft limit).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -452,6 +452,10 @@ Official announcement: N/A
 	* Replaced the `register_uninstall_hook()` function call with an uninstall.php file.
 
 == Upgrade Notice ==
+ 
+= 8.35.5-dev1 =
+
+(2016/10/09) Added a configurable length warning to the Open Graph description textarea.
 
 = 8.35.4-1 =
 
