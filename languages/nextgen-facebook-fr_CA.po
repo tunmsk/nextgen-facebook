@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NextGEN Facebook (NGFB) 8.35.5-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2016-10-11 10:55-0700\n"
-"PO-Revision-Date: 2016-10-11 11:01-0700\n"
+"POT-Creation-Date: 2016-10-11 11:14-0700\n"
+"PO-Revision-Date: 2016-10-11 11:14-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -1967,11 +1967,11 @@ msgstr "Validateur W3C de balises"
 
 #: lib/meta.php:290
 msgid "Validate the HTML syntax and HTML 5 conformance of your meta tags and theme templates markup."
-msgstr ""
+msgstr "Valider la syntaxe HTML et la conformité  HTML 5 de vos balises méta et le balisage de modèles de votre thème."
 
 #: lib/meta.php:290
 msgid "When the %1$s option is enabled, the W3C validator will show errors for itemprop attributes in meta elements. You may ignore these errors or disable the %1$s option."
-msgstr ""
+msgstr "Lorsque l'option %1$s est active, le validateur W3C indiquera des erreurs pour des attributs itemprop dans les éléments méta. Vous pouvez ignorer ces erreurs ou désactivez l'option %1$s."
 
 #: lib/meta.php:290
 msgctxt "submit button"
@@ -1984,12 +1984,12 @@ msgid "The AMP Validator"
 msgstr "Le validateur AMP"
 
 #: lib/meta.php:294
-msgid "Validate the HTML syntax and AMP conformance of your meta tags and templates markup."
-msgstr ""
+msgid "Validate the HTML syntax and HTML AMP conformance of your meta tags and AMP templates markup."
+msgstr "Valider la syntaxe HTML et la conformité HTML AMP de vos balises méta et le balisage de modèles AMP."
 
 #: lib/meta.php:294
 msgid "The <a href=\"%s\">AMP plugin by Automattic</a> is required to create and validate AMP formatted webpages."
-msgstr ""
+msgstr "L'<a href=\"%s\">extension AMP d'Automattic</a> est requise pour créer et valider des pages Web AMP."
 
 #: lib/meta.php:294
 msgctxt "submit button"
