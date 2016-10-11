@@ -414,7 +414,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 								NgfbAdmin::set_readme_info( $this->p->cf['feed_cache_exp'], false );	// $use_cache = false
 
 								$ngfbum =& NgfbUm::get_instance();
-								$ngfbum->update->check_for_updates( null, true, false );
+								$ngfbum->update->check_for_updates( null, true, false );	// $use_cache = false
 							} else {
 								$this->p->notice->err( sprintf( __( 'The <b>%s</b> extension is required to check for Pro version updates.',
 									'nextgen-facebook' ), $this->p->cf['plugin'][$lca.'um']['name'] ) );
