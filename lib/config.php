@@ -990,7 +990,17 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'sculpture' => 'http://schema.org/Sculpture',
 						'software.application' => 'http://schema.org/SoftwareApplication',
 						'visual.artwork' => 'http://schema.org/VisualArtwork',
-						'webpage' => 'http://schema.org/WebPage',
+						'webpage' => array(
+							'webpage' => 'http://schema.org/WebPage',
+							'webpage.about' => 'http://schema.org/AboutPage',
+							'webpage.checkout' => 'http://schema.org/CheckoutPage',
+							'webpage.collection' => 'http://schema.org/CollectionPage',
+							'webpage.contact' => 'http://schema.org/ContactPage',
+							'webpage.item' => 'http://schema.org/ItemPage',
+							'webpage.profile' => 'http://schema.org/ProfilePage',
+							'webpage.qa' => 'http://schema.org/QAPage',
+							'webpage.search.results' => 'http://schema.org/SearchResultsPage',
+						),
 						'website' => 'http://schema.org/WebSite',
 					),
 					'event' => array(
