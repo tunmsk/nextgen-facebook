@@ -114,9 +114,6 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'link_desc_len' => 'seo_desc_len',
 			'link_author_field' => 'seo_author_field',
 			'link_publisher_url' => 'seo_publisher_url',
-			'link_def_author_id' => 'seo_def_author_id',
-			'link_def_author_on_index' => 'seo_def_author_on_index',
-			'link_def_author_on_search' => 'seo_def_author_on_search',
 			'plugin_tid' => 'plugin_ngfb_tid',
 			'og_publisher_url' => 'fb_publisher_url',
 			'add_meta_property_og:video' => 'add_meta_property_og:video:url',
@@ -258,6 +255,21 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 				if ( $opts_version && $opts_version <= 453 ) {
 					$opts['add_meta_property_og:image:secure_url'] = 1;
 					$opts['add_meta_property_og:video:secure_url'] = 1;
+				}
+
+				// removed default author options in v8.36.0-1
+				if ( $opts_version && $opts_version <= 458 ) {
+					unset (
+						$opts['link_def_author_id'],
+						$opts['link_def_author_on_index'],
+						$opts['link_def_author_on_search'],
+						$opts['seo_def_author_id'],
+						$opts['seo_def_author_on_index'],
+						$opts['seo_def_author_on_search'],
+						$opts['og_def_author_id'],
+						$opts['og_def_author_on_index'],
+						$opts['og_def_author_on_search']
+					);
 				}
 
 			} elseif ( $options_name === constant( 'NGFB_SITE_OPTIONS_NAME' ) )

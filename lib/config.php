@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.35.5-dev4',	// plugin version
-					'opt_version' => '456',		// increment when changing default options
+					'version' => '8.36.0-dev1',	// plugin version
+					'opt_version' => '458',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -217,11 +217,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'schema_alt_name' => '',
 					'schema_logo_url' => '',
 					'schema_banner_url' => '',
-					'schema_desc_len' => 250,		// meta itemprop="description" maximum text length (hard limit)
-					'schema_type_for_home_page' => 'website',
-					'schema_type_for_post' => 'blog.posting',
-					'schema_type_for_page' => 'webpage',
+					'schema_desc_len' => 250,			// meta itemprop="description" maximum text length (hard limit)
+					// standard types
+					'schema_type_for_archive_page' => 'webpage.collection',
 					'schema_type_for_attachment' => 'webpage',
+					'schema_type_for_home_page' => 'website',
+					'schema_type_for_page' => 'webpage',		// article would be a good default, if the requirements weren't so strict
+					'schema_type_for_post' => 'blog.posting',
+					'schema_type_for_search_page' => 'webpage.search.results',
+					// custom post types
 					'schema_type_for_article' => 'article',
 					'schema_type_for_book' => 'book',
 					'schema_type_for_blog' => 'blog',
@@ -246,9 +250,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'schema_img_crop_x' => 'center',
 					'schema_img_crop_y' => 'center',
 					'seo_desc_len' => 156,			// meta name="description" maximum text length (hard limit)
-					'seo_def_author_id' => 0,
-					'seo_def_author_on_index' => 0,
-					'seo_def_author_on_search' => 0,
 					'seo_author_field' => '',		// default value set by NgfbOptions::get_defaults()
 					'seo_publisher_url' => '',		// (localized)
 					'fb_publisher_url' => '',		// (localized)
@@ -281,9 +282,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'og_def_vid_url' => '',
 					'og_def_vid_on_index' => 1,
 					'og_def_vid_on_search' => 0,
-					'og_def_author_id' => 0,
-					'og_def_author_on_index' => 0,
-					'og_def_author_on_search' => 0,
 					'og_ngg_tags' => 0,
 					'og_page_parent_tags' => 0,
 					'og_page_title_tag' => 0,
