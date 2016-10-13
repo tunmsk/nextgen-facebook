@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.35.5-dev5 (2016/10/12)**
+**Version 8.36.0-dev1 (TBD)**
 
 Official announcement: N/A
 
@@ -390,7 +390,7 @@ Official announcement: N/A
 	* Fixed getting the term object (category and tags) when no term ID is provided to the SucomUtil::get_term_object() method.
 	* Removed the open graph namespace from the HTML tag attributes for AMP v0.4.
 * *Developer Notes*
-	* None
+	* Removed the NGFB_DEFAULT_AUTHOR_OPTIONS constant, and all associated default author options.
 
 **Version 8.35.4-1 (2016/10/01)**
 
@@ -457,9 +457,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
  
-= 8.35.5-dev5 =
+= 8.36.0-dev1 =
 
-(2016/10/12) Added a configurable length warning to the Open Graph description textarea. Removed the open graph namespace from the HTML tag attributes for AMP v0.4. Added new "Validate AMP Markup" and "Validate HTML Markup" buttons under the Social Settings metabox Validate tab.
+(TBD) Added a configurable length warning to the Open Graph description textarea. Removed the open graph namespace from the HTML tag attributes for AMP v0.4. Added new "Validate AMP Markup" and "Validate HTML Markup" buttons under the Social Settings metabox Validate tab.
 
 = 8.35.4-1 =
 
