@@ -315,7 +315,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 						'home_page' => _x( 'Item Type for Home Page', 'option label', 'nextgen-facebook' ),
 						'archive_page' => _x( 'Item Type for Archive Page', 'option label', 'nextgen-facebook' ),
 						'user_page' => _x( 'Item Type for User / Author Page', 'option label', 'nextgen-facebook' ),
-						'search_page' => _x( 'Item Type for Search Result Page', 'option label', 'nextgen-facebook' ),
+						'search_page' => _x( 'Item Type for Search Results Page', 'option label', 'nextgen-facebook' ),
 					) as $type_name => $type_label ) {
 						$table_rows['schema_type_for_'.$type_name] = '<tr class="hide_in_basic">'.
 						$this->form->get_th_html( $type_label, null, 'schema_type_for_'.$type_name ).
