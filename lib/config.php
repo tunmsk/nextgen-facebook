@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.36.0-dev1',	// plugin version
-					'opt_version' => '458',		// increment when changing default options
+					'opt_version' => '459',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -225,6 +225,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'schema_type_for_page' => 'webpage',		// article would be a good default, if the requirements weren't so strict
 					'schema_type_for_post' => 'blog.posting',
 					'schema_type_for_search_page' => 'webpage.search.results',
+					'schema_type_for_user_page' => 'webpage.profile',
 					// custom post types
 					'schema_type_for_article' => 'article',
 					'schema_type_for_book' => 'book',
