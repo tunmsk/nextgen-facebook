@@ -4,14 +4,14 @@ Plugin Slug: nextgen-facebook
 Text Domain: nextgen-facebook
 Domain Path: /languages
 License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl.txt
+License URI: https://www.gnu.org/licenses/gpl.txt
 Donate Link: https://surniaulula.com/extend/plugins/nextgen-facebook/?utm_source=ngfb-readme-donate
 Assets URI: https://surniaulula.github.io/nextgen-facebook/assets/
 Tags: social, sharing, share, meta tags, facebook, buttons, pinterest, twitter, whatsapp, json, json-ld, seo, open graph, schema.org, amp, bbPress, buddypress, e-commerce, easy digital downloads, edd, g+, google, google plus, hashtags, like, linkedin, marketpress, multilingual, multisite, nextgen gallery, player card, polylang, rich pin, schema, shortcode, summary card, tumblr, twitter card, vimeo, widget, wistia, woocommerce, youtube, yotpo, yourls, the events calendar, social share, social sharing, social media, social engagement, click-through, facebook video, slideshare, video embed, social meta tags, seo meta tags, featured, search engine optimization, seo meta, wordpress seo, yoast seo, shortlink
 Contributors: jsmoriss
 Requires At Least: 3.1
 Tested Up To: 4.6.1
-Stable Tag: 8.35.4-1
+Stable Tag: 8.36.0-1
 
 Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
 
@@ -464,8 +464,4 @@ Official announcement: N/A
 = 8.36.0-1 =
 
 (2016/10/15) Added new Item Type options in the General settings page. Added a configurable length warning for the Open Graph description. Removed the Open Graph namespace from the HTML tag attributes when using the AMP plugin. Added "Validate AMP Markup" and "Validate HTML Markup" buttons in the Social Settings metabox.
-
-= 8.35.4-1 =
-
-(2016/10/01) Added a check for product methods for older WooCommerce versions (Pro version). Added a new method to enqueue scripts / styles for editing posts in settings pages (required for Event Espresso plugin). Fixed the "View Plugin Details" link in multisite settings pages.
 
