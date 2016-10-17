@@ -4,10 +4,10 @@
  * Plugin Slug: nextgen-facebook
  * Text Domain: nextgen-facebook
  * Domain Path: /languages
- * Plugin URI: http://surniaulula.com/extend/plugins/nextgen-facebook/
+ * Plugin URI: https://surniaulula.com/extend/plugins/nextgen-facebook/
  * Assets URI: https://surniaulula.github.io/nextgen-facebook/assets/
  * Author: JS Morisset
- * Author URI: http://surniaulula.com/
+ * Author URI: https://surniaulula.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
@@ -22,7 +22,7 @@
  *	{bugfix}	Bugfixes and/or very minor improvements.
  *	{stage}{level}	dev# (development), rc# (release candidate), # (production release)
  * 
- * Copyright 2012-2016 Jean-Sebastien Morisset (http://surniaulula.com/)
+ * Copyright 2012-2016 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
 if ( ! defined( 'ABSPATH' ) ) 
