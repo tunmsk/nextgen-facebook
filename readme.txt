@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.36.1-1 (2016/10/17)**
+**Version 8.36.2-1 (2016/10/17)**
 
 Official announcement: N/A
 
@@ -383,6 +383,7 @@ Official announcement: N/A
 	* None
 * *Improvements*
 	* Changed all http://surniaulula.com/ URLs to https.
+	* Added transient caching of results when fetching size information for image URLs.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -411,7 +412,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
  
-= 8.36.1-1 =
+= 8.36.2-1 =
 
-(2016/10/17) Changed all http://surniaulula.com/ URLs to https.
+(2016/10/17) Changed all http://surniaulula.com/ URLs to https. Added transient caching of results when fetching size information for image URLs.
 
