@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.36.1-1',	// plugin version
+					'version' => '8.36.2-1',	// plugin version
 					'opt_version' => '459',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
