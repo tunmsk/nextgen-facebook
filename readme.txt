@@ -70,7 +70,7 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 	* Twitter @username
 	* YouTube Channel URL
 * Customizable **multilingual** / multi-language Site Title and Site Description texts.
-* Contextual help for *every* plugin option and [comprehensive online documentation](http://surniaulula.com/codex/plugins/nextgen-facebook/).
+* Contextual help for *every* plugin option and [comprehensive online documentation](https://surniaulula.com/codex/plugins/nextgen-facebook/).
 * Uses object and transient caches to provide incredibly fast execution speeds.
 * Include / exclude each social sharing button based on the viewing device (desktop and/or mobile).
 * Social sharing buttons for the content, excerpt, in a widget, as a shortcode, floating sidebar, and/or PHP function.
@@ -88,7 +88,7 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 	* WhatsApp (for Mobile Devices)
 
 <blockquote>
-<p>Download the Free version from <a href="http://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>.</p>
+<p>Download the Free version from <a href="https://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>.</p>
 </blockquote>
 
 <div style="clear:both;"></div>
@@ -146,7 +146,7 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 		* YouTube Videos and Playlists
 
 <blockquote>
-<p><a href="http://surniaulula.com/extend/plugins/nextgen-facebook/?utm_source=ngfb-readme-purchase">Purchase the Pro version</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
+<p><a href="https://surniaulula.com/extend/plugins/nextgen-facebook/?utm_source=ngfb-readme-purchase">Purchase the Pro version</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 </blockquote>
 
 <div style="clear:both;"></div>
@@ -171,7 +171,7 @@ NextGEN Facebook (NGFB) comes with several sharing buttons, that you can optiona
 * **Twitter**
 * **WhatsApp** (for Mobile Devices)
 
-The Facebook, Google+ and Twitter sharing buttons support *multiple languages*. A default language can be chosen in the NGFB settings, and the [Pro version](http://surniaulula.com/extend/plugins/nextgen-facebook/) switches the sharing button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Open Graph (Facebook) and Pinterest Rich Pin descriptions, Tweet text, and other social captions.
+The Facebook, Google+ and Twitter sharing buttons support *multiple languages*. A default language can be chosen in the NGFB settings, and the [Pro version](https://surniaulula.com/extend/plugins/nextgen-facebook/) switches the sharing button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Open Graph (Facebook) and Pinterest Rich Pin descriptions, Tweet text, and other social captions.
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
@@ -204,7 +204,7 @@ NextGEN Facebook (NGFB) Pro allows you to customize the field names, label, and 
 
 = Complete Social Meta Tags =
 
-NextGEN Facebook (NGFB) adds Facebook / Open Graph, Pinterest Rich Pins, Twitter Cards, and Search Engine Optimization (SEO) meta tags to the head section of webpages. These meta tags are used by Google Search and all social websites to describe and display your content correctly (title, description, hashtags, images, videos, ecommerce product details, author profile / authorship, publisher, etc.). NGFB uses the *existing* content of your webpages to build HTML meta tags &mdash; there's no need to manually enter / configure any additional values or settings (although many settings and options *are* available in the Pro version). <a href="http://surniaulula.com/extend/plugins/nextgen-facebook/screenshots/">See example screenshots from Google Search, Google+, Facebook, Twitter, Pinterest, StumbleUpon, Tumblr, etc.</a>.
+NextGEN Facebook (NGFB) adds Facebook / Open Graph, Pinterest Rich Pins, Twitter Cards, and Search Engine Optimization (SEO) meta tags to the head section of webpages. These meta tags are used by Google Search and all social websites to describe and display your content correctly (title, description, hashtags, images, videos, ecommerce product details, author profile / authorship, publisher, etc.). NGFB uses the *existing* content of your webpages to build HTML meta tags &mdash; there's no need to manually enter / configure any additional values or settings (although many settings and options *are* available in the Pro version). <a href="https://surniaulula.com/extend/plugins/nextgen-facebook/screenshots/">See example screenshots from Google Search, Google+, Facebook, Twitter, Pinterest, StumbleUpon, Tumblr, etc.</a>.
 
 NextGEN Facebook (NGFB) provides the [Summary](https://dev.twitter.com/cards/types/summary), [Summary with Large Image](https://dev.twitter.com/cards/types/summary-large-image), and [Player](https://dev.twitter.com/cards/types/player) Twitter Cards &mdash; *including configurable image sizes for each card type*.
 
@@ -240,7 +240,7 @@ NextGEN Facebook (NGFB) Pro also supports [Easy Digital Downloads](https://wordp
 
 **Forums and Social**
 
-NextGEN Facebook (NGFB) Pro supports [bbPress](https://wordpress.org/plugins/bbpress/), [BuddyPress](https://wordpress.org/plugins/buddypress/) (see the [BuddyPress Integration Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/)), and [rtMedia for WordPress, BuddyPress and bbPress](https://wordpress.org/plugins/buddypress-media/), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, author information, etc. Social sharing buttons can also be added to [bbPress](https://wordpress.org/plugins/bbpress/) single template pages and [BuddyPress](https://wordpress.org/plugins/buddypress/) activities.
+NextGEN Facebook (NGFB) Pro supports [bbPress](https://wordpress.org/plugins/bbpress/), [BuddyPress](https://wordpress.org/plugins/buddypress/) (see the [BuddyPress Integration Notes](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/)), and [rtMedia for WordPress, BuddyPress and bbPress](https://wordpress.org/plugins/buddypress-media/), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, author information, etc. Social sharing buttons can also be added to [bbPress](https://wordpress.org/plugins/bbpress/) single template pages and [BuddyPress](https://wordpress.org/plugins/buddypress/) activities.
 
 = Proven Performance =
 
@@ -248,7 +248,7 @@ NextGEN Facebook (NGFB) is *fast and coded for performance*, making full use of 
 
 = Professional Support =
 
-NextGEN Facebook (NGFB) support and development is on-going. You can review the [FAQ](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/) and [Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/) pages for additional setup information. If you have any suggestions or comments, post them to the [WordPress support forum](https://wordpress.org/support/plugin/nextgen-facebook) or the [Pro version support website](http://nextgen-facebook.support.surniaulula.com/).
+NextGEN Facebook (NGFB) support and development is on-going. You can review the [FAQ](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/) and [Notes](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/) pages for additional setup information. If you have any suggestions or comments, post them to the [WordPress support forum](https://wordpress.org/support/plugin/nextgen-facebook) or the [Pro version support website](http://nextgen-facebook.support.surniaulula.com/).
 
 Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=author), [Facebook](https://www.facebook.com/SurniaUlulaCom), [Twitter](https://twitter.com/surniaululacom), and [YouTube](http://www.youtube.com/user/SurniaUlulaCom).
 
@@ -256,96 +256,96 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Install and Uninstall =
 
-* [Install the Plugin](http://surniaulula.com/codex/plugins/nextgen-facebook/installation-to/install-the-plugin/)
-* [Integration Notes](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/)
-	* [BuddyPress Integration](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/buddypress-integration/)
-* [Uninstall the Plugin](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/uninstall-the-plugin/)
-* [Performance Tuning](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/performance-tuning/)
-* [Debugging and Problem Solving](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/debugging-and-problem-solving/)
-* [Developer Special - Buy one, Get one Free](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/developer-special-buy-one-get-one-free/)
+* [Install the Plugin](https://surniaulula.com/codex/plugins/nextgen-facebook/installation-to/install-the-plugin/)
+* [Integration Notes](https://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/)
+	* [BuddyPress Integration](https://surniaulula.com/codex/plugins/nextgen-facebook/installation/integration/buddypress-integration/)
+* [Uninstall the Plugin](https://surniaulula.com/codex/plugins/nextgen-facebook/installation/uninstall-the-plugin/)
+* [Performance Tuning](https://surniaulula.com/codex/plugins/nextgen-facebook/installation/performance-tuning/)
+* [Debugging and Problem Solving](https://surniaulula.com/codex/plugins/nextgen-facebook/installation/debugging-and-problem-solving/)
+* [Developer Special - Buy one, Get one Free](https://surniaulula.com/codex/plugins/nextgen-facebook/installation/developer-special-buy-one-get-one-free/)
 
 = Plugin Setup =
 
-* [A Setup Guide for NGFB](http://surniaulula.com/codex/plugins/nextgen-facebook/installation/a-setup-guide/)
+* [A Setup Guide for NGFB](https://surniaulula.com/codex/plugins/nextgen-facebook/installation/a-setup-guide/)
 
 == Frequently Asked Questions ==
 
 = Frequently Asked Questions =
 
-* [Can I use the Pro version on multiple websites?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/can-i-use-the-pro-version-on-multiple-websites/)
-* [Does LinkedIn read the Open Graph meta tags?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/does-linkedin-read-the-open-graph-meta-tags/)
-* [Doesn't an SEO plugin cover that?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/doesnt-an-seo-plugin-cover-that/)
-* [How can I exclude / ignore certain parts of the content text?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-exclude-certain-parts-of-the-content-text/)
-* [How can I fix a ERR_TOO_MANY_REDIRECTS error?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-fix-a-err_too_many_redirects-error/)
-* [How can I fix an "HTTP error" when uploading images?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-fix-an-http-error-when-uploading-images/)
-* [How can I have smaller dimensions for the default image?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-have-smaller-dimensions-for-the-default-image/)
-* [How can I see what the Facebook crawler sees?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-see-what-the-facebook-crawler-sees/)
-* [How can I share a single NextGEN Gallery image?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-share-a-single-nextgen-gallery-image/)
-* [How do I attach an image without showing it on the webpage?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-attach-an-image-without-showing-it-on-the-webpage/)
-* [How do I fix my theme's front page pagination?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-fix-my-themes-front-page-pagination/)
-* [How do I install the NGFB Pro version?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-install-the-pro-version/)
-* [How do I remove duplicate meta tags?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-remove-duplicate-meta-tags/)
-* [How does NGFB find / detect / select images?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-does-ngfb-find-detect-select-images/)
-* [Social Sharing Buttons](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/)
-	* [Can I share a single image on a webpage?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/can-i-share-a-single-image-on-a-webpage/)
-	* [Can I use other social sharing buttons?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/can-i-use-other-social-sharing-buttons/)
-	* [How do I turn on Social Sharing Buttons for a page?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/how-do-i-turn-on-social-sharing-buttons-for-a-page/)
-	* [Why are the buttons showing the wrong language?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-are-the-buttons-showing-the-wrong-language/)
-	* [Why does the Facebook "Like" button flyout get clipped?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-does-the-facebook-like-button-flyout-get-clipped/)
-	* [Why doesn't the Pinterest button show?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-doesnt-the-pinterest-button-show/)
-	* [Why doesn't the Twitter count increase?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-doesnt-the-twitter-count-increase/)
-* [W3C says "there is no attribute 'property'"](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/w3c-says-there-is-no-attribute-property/)
-* [What about Google Search and Google Plus?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-about-google-search-and-google-plus/)
-* [What features of NextGEN Gallery are supported?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-features-of-nextgen-gallery-are-supported/)
-* [What is the difference between NGFB and WPSSO?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-is-the-difference-between-ngfb-and-wpsso/)
-* [What is the difference between the Free and Pro versions?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-is-the-difference-between-the-free-and-pro-versions/)
-* [Why aren't Pins from my website posting Rich?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-arent-pins-from-my-website-posting-rich/)
-* [Why do my Facebook shares have small images?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-do-my-facebook-shares-have-small-images/)
-* [Why does Facebook play videos instead of linking them?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-play-videos-instead-of-linking-them/)
-* [Why does Facebook show the wrong image / text?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-show-the-wrong-image-text/)
-* [Why does Google Structured Data Testing Tool show errors?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-google-structured-data-testing-tool-show-errors/)
-* [Why does the plugin ignore some &lt;img/&gt; HTML tags?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-the-plugin-ignore-some-img-html-tags/)
-* [Why don't my Twitter Cards show on Twitter?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-dont-my-twitter-cards-show-on-twitter/)
-* [Why is the Open Graph title the same for every webpage?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-is-the-open-graph-title-the-same-for-every-webpage/)
-* [Why is the page blank or its components misaligned?](http://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-is-the-page-blank-or-its-components-misaligned/)
+* [Can I use the Pro version on multiple websites?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/can-i-use-the-pro-version-on-multiple-websites/)
+* [Does LinkedIn read the Open Graph meta tags?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/does-linkedin-read-the-open-graph-meta-tags/)
+* [Doesn't an SEO plugin cover that?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/doesnt-an-seo-plugin-cover-that/)
+* [How can I exclude / ignore certain parts of the content text?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-exclude-certain-parts-of-the-content-text/)
+* [How can I fix a ERR_TOO_MANY_REDIRECTS error?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-fix-a-err_too_many_redirects-error/)
+* [How can I fix an "HTTP error" when uploading images?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-fix-an-http-error-when-uploading-images/)
+* [How can I have smaller dimensions for the default image?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-have-smaller-dimensions-for-the-default-image/)
+* [How can I see what the Facebook crawler sees?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-see-what-the-facebook-crawler-sees/)
+* [How can I share a single NextGEN Gallery image?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-can-i-share-a-single-nextgen-gallery-image/)
+* [How do I attach an image without showing it on the webpage?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-attach-an-image-without-showing-it-on-the-webpage/)
+* [How do I fix my theme's front page pagination?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-fix-my-themes-front-page-pagination/)
+* [How do I install the NGFB Pro version?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-install-the-pro-version/)
+* [How do I remove duplicate meta tags?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-do-i-remove-duplicate-meta-tags/)
+* [How does NGFB find / detect / select images?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/how-does-ngfb-find-detect-select-images/)
+* [Social Sharing Buttons](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/)
+	* [Can I share a single image on a webpage?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/can-i-share-a-single-image-on-a-webpage/)
+	* [Can I use other social sharing buttons?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/can-i-use-other-social-sharing-buttons/)
+	* [How do I turn on Social Sharing Buttons for a page?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/how-do-i-turn-on-social-sharing-buttons-for-a-page/)
+	* [Why are the buttons showing the wrong language?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-are-the-buttons-showing-the-wrong-language/)
+	* [Why does the Facebook "Like" button flyout get clipped?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-does-the-facebook-like-button-flyout-get-clipped/)
+	* [Why doesn't the Pinterest button show?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-doesnt-the-pinterest-button-show/)
+	* [Why doesn't the Twitter count increase?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/social-sharing-buttons/why-doesnt-the-twitter-count-increase/)
+* [W3C says "there is no attribute 'property'"](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/w3c-says-there-is-no-attribute-property/)
+* [What about Google Search and Google Plus?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-about-google-search-and-google-plus/)
+* [What features of NextGEN Gallery are supported?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-features-of-nextgen-gallery-are-supported/)
+* [What is the difference between NGFB and WPSSO?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-is-the-difference-between-ngfb-and-wpsso/)
+* [What is the difference between the Free and Pro versions?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-is-the-difference-between-the-free-and-pro-versions/)
+* [Why aren't Pins from my website posting Rich?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-arent-pins-from-my-website-posting-rich/)
+* [Why do my Facebook shares have small images?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-do-my-facebook-shares-have-small-images/)
+* [Why does Facebook play videos instead of linking them?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-play-videos-instead-of-linking-them/)
+* [Why does Facebook show the wrong image / text?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-show-the-wrong-image-text/)
+* [Why does Google Structured Data Testing Tool show errors?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-google-structured-data-testing-tool-show-errors/)
+* [Why does the plugin ignore some &lt;img/&gt; HTML tags?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-the-plugin-ignore-some-img-html-tags/)
+* [Why don't my Twitter Cards show on Twitter?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-dont-my-twitter-cards-show-on-twitter/)
+* [Why is the Open Graph title the same for every webpage?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-is-the-open-graph-title-the-same-for-every-webpage/)
+* [Why is the page blank or its components misaligned?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-is-the-page-blank-or-its-components-misaligned/)
 
 == Other Notes ==
 
 = Additional Documentation =
 
-* [About Pro Modules](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/)
-	* [Author Gravatar](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/author-gravatar/)
-	* [Easy Digital Downloads](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/easy-digital-downloads/)
-	* [Facebook, Slideshare, Vimeo, Wistia, Youtube Video APIs](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/facebook-slideshare-vimeo-wistia-youtube-video-apis/)
-	* [HeadSpace2 SEO](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/headspace2-seo/)
-	* [WooCommerce](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/)
-	* [WordPress REST API version 2](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/wordpress-rest-api-v2/)
-* [Contact Information and Feeds](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/contact-information/)
-* [Developer Resources](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/)
-	* [Constants](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/)
-		* [Disable the Open Graph Meta Tags](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/disable-the-open-graph-meta-tags/)
-	* [Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/)
-		* [Filter Examples](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/)
-			* [Detect YouTube URL Links as Videos](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/detect-youtube-url-links-as-videos/)
-			* [Modify Shortcode Attributes (URL)](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-shortcode-attributes-url/)
-			* [Modify the "article:tag" Keywords / Names](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-articletag-keywords-names/)
-			* [Modify the Default Topics List](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-default-topics-list/)
-			* [Modify the Home Page Title for Facebook / Open Graph](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-home-page-title-for-facebook-open-graph/)
-		* [Filters by Category](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/)
-			* [Head Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/head/)
-			* [Media Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/media/)
-			* [Open Graph Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/open-graph/)
-			* [Twitter Card Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/twitter-card/)
-			* [Webpage Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/webpage/)
-		* [Filters by Name](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-name/)
-		* [Other Filters](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/other/)
-	* [Sharing Buttons Function](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/sharing-buttons-function/)
-	* [The $mod Variable](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/the-mod-variable/)
-* [Inline Variables](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/inline-variables/)
-* [Multisite / Network Support](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/multisite-network-support/)
-* [NGFB Shortcode for Sharing Buttons](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/ngfb-shortcode/)
-* [Styling Social Buttons](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/styling-social-buttons/)
-* [Working with Image Attachments](http://surniaulula.com/codex/plugins/nextgen-facebook/notes/working-with-image-attachments/)
+* [About Pro Modules](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/)
+	* [Author Gravatar](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/author-gravatar/)
+	* [Easy Digital Downloads](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/easy-digital-downloads/)
+	* [Facebook, Slideshare, Vimeo, Wistia, Youtube Video APIs](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/facebook-slideshare-vimeo-wistia-youtube-video-apis/)
+	* [HeadSpace2 SEO](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/headspace2-seo/)
+	* [WooCommerce](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/woocommerce/)
+	* [WordPress REST API version 2](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/wordpress-rest-api-v2/)
+* [Contact Information and Feeds](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/contact-information/)
+* [Developer Resources](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/)
+	* [Constants](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/)
+		* [Disable the Open Graph Meta Tags](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/constants/disable-the-open-graph-meta-tags/)
+	* [Filters](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/)
+		* [Filter Examples](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/)
+			* [Detect YouTube URL Links as Videos](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/detect-youtube-url-links-as-videos/)
+			* [Modify Shortcode Attributes (URL)](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-shortcode-attributes-url/)
+			* [Modify the "article:tag" Keywords / Names](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-articletag-keywords-names/)
+			* [Modify the Default Topics List](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-default-topics-list/)
+			* [Modify the Home Page Title for Facebook / Open Graph](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/examples/modify-the-home-page-title-for-facebook-open-graph/)
+		* [Filters by Category](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/)
+			* [Head Filters](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/head/)
+			* [Media Filters](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/media/)
+			* [Open Graph Filters](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/open-graph/)
+			* [Twitter Card Filters](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/twitter-card/)
+			* [Webpage Filters](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-category/webpage/)
+		* [Filters by Name](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/by-name/)
+		* [Other Filters](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/filters/other/)
+	* [Sharing Buttons Function](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/sharing-buttons-function/)
+	* [The $mod Variable](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/developer/the-mod-variable/)
+* [Inline Variables](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/inline-variables/)
+* [Multisite / Network Support](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/multisite-network-support/)
+* [NGFB Shortcode for Sharing Buttons](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/ngfb-shortcode/)
+* [Styling Social Buttons](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/styling-social-buttons/)
+* [Working with Image Attachments](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/working-with-image-attachments/)
 
 == Screenshots ==
 
