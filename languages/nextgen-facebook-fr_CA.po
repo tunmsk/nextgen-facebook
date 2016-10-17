@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NextGEN Facebook (NGFB) 8.36.1-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2016-10-17 08:46-0700\n"
-"PO-Revision-Date: 2016-10-17 08:48-0700\n"
+"POT-Creation-Date: 2016-10-17 09:54-0700\n"
+"PO-Revision-Date: 2016-10-17 09:55-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -3253,8 +3253,8 @@ msgid "NextGEN Facebook (NGFB)"
 msgstr "NextGEN Facebook (NGFB)"
 
 #. Plugin URI of the plugin/theme
-msgid "http://surniaulula.com/extend/plugins/nextgen-facebook/"
-msgstr "http://surniaulula.com/extend/plugins/nextgen-facebook/"
+msgid "https://surniaulula.com/extend/plugins/nextgen-facebook/"
+msgstr "https://surniaulula.com/extend/plugins/nextgen-facebook/"
 
 #. Description of the plugin/theme
 msgid "Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!"
@@ -3265,5 +3265,5 @@ msgid "JS Morisset"
 msgstr "JS Morisset"
 
 #. Author URI of the plugin/theme
-msgid "http://surniaulula.com/"
-msgstr "http://surniaulula.com/"
+msgid "https://surniaulula.com/"
+msgstr "https://surniaulula.com/"
