@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.36.0-1',	// plugin version
+					'version' => '8.36.1-1',	// plugin version
 					'opt_version' => '459',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -68,12 +68,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'buttons' => 'Sharing Buttons',
 							'styles' => 'Sharing Styles',
 							'setup' => '<color>Plugin Setup Guide and Notes</color>',
-							'licenses' => 'Pro Licenses and Extension Plugins',
+							'licenses' => 'Extension Plugins and Pro Licenses',
 						),
 						'sitesubmenu' => array(	// lib file descriptions will be translated
 							'siteadvanced' => 'Advanced Settings',
 							'sitesetup' => '<color>Plugin Setup Guide and Notes</color>',
-							'sitelicenses' => 'Pro Licenses and Extension Plugins',
+							'sitelicenses' => 'Extension Plugins and Pro Licenses',
 						),
 						'website' => array(
 							'email' => 'Email',
@@ -200,8 +200,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'purchase' => '',
 						'changelog' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/changelog/',
 						'codex' => 'https://surniaulula.com/codex/plugins/nextgen-facebook-um/',
-						'faq' => 'https://surniaulula.com/codex/plugins/nextgen-facebook-um/faq/',
-						'notes' => 'https://surniaulula.com/codex/plugins/nextgen-facebook-um/notes/',
+						'faq' => '',
+						'notes' => '',
 						'feed' => 'https://surniaulula.com/category/application/wordpress/wp-plugins/nextgen-facebook-um/feed/',
 						'pro_support' => '',
 					),
@@ -576,7 +576,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'wp_cm_yim_name' => 'yim',
 					'wp_cm_yim_label' => 'Yahoo IM', 
 					'wp_cm_yim_enabled' => 1,
-					// Pro Licenses and Extension Plugins
+					// Extension Plugins and Pro Licenses
 					'plugin_ngfb_tid' => '',
 				),
 				'site_defaults' => array(
@@ -627,7 +627,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_cache_info:use' => 'default',
 					'plugin_file_cache_exp' => 0,			// File Cache Expiry
 					'plugin_file_cache_exp:use' => 'default',
-					// Pro Licenses and Extension Plugins
+					// Extension Plugins and Pro Licenses
 					'plugin_ngfb_tid' => '',
 					'plugin_ngfb_tid:use' => 'default',
 				),
