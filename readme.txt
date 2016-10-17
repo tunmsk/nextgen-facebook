@@ -375,6 +375,19 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 8.36.1-1 (2016/10/17)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Changed all http://surniaulula.com/ URLs to https.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.36.0-1 (2016/10/15)**
 
 Official announcement: N/A
@@ -461,6 +474,10 @@ Official announcement: N/A
 
 == Upgrade Notice ==
  
+= 8.36.1-1 =
+
+(2016/10/17) Changed all http://surniaulula.com/ URLs to https.
+
 = 8.36.0-1 =
 
 (2016/10/15) Added new Item Type options in the General settings page. Added a configurable length warning for the Open Graph description. Removed the Open Graph namespace from the HTML tag attributes when using the AMP plugin. Added "Validate AMP Markup" and "Validate HTML Markup" buttons in the Social Settings metabox.
