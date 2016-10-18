@@ -49,6 +49,7 @@
 'ngfb_image_upscale_all' ( NGFB_IMAGE_UPSCALE_ALL = false );
 'ngfb_image_upscale_max' ( $max_diff = 50, $img_info );
 'ngfb_image_upscale_test' ( NGFB_IMAGE_UPSCALE_TEST = false, $img_info );
+'ngfb_image_url_sizes_cache_expire' ( $expire_secs, $media_url );
 'ngfb_is_functions' ( $is_functions );
 'ngfb_js_url_facebook' ( $url, $pos );
 'ngfb_json_array_type_ids' ( $type_ids, $mod );
