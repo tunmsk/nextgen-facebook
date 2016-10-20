@@ -388,6 +388,8 @@ Official announcement: N/A
 * *Developer Notes*
 	* Renamed the Social Settings 'header' index name to 'text'.
 	* Renamed the 'wpsso_admin_post_header' filter to 'wpsso_admin_post_head'.
+	* Renamed the NgfbHead::get_header_array() method to NgfbHead::get_head_array().
+	* Added a new NgfbHead::get_head_index() method to cache meta tags as array elements.
 
 **Version 8.36.2-1 (2016/10/17)**
 
