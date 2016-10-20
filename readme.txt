@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.36.3-dev1 (TBD)**
+**Version 8.36.3-dev1 (2016/10/20)**
 
 Official announcement: N/A
 
@@ -428,6 +428,10 @@ Official announcement: N/A
 
 == Upgrade Notice ==
  
+= 8.36.3-dev1 =
+
+(2016/10/20) Fixed HTML table syntax in the Tumblr settings metabox. Optimized the head meta tag transient cache value (using 1 transient instead of 2).
+
 = 8.36.2-1 =
 
 (2016/10/17) Changed all http://surniaulula.com/ URLs to https. Added transient caching of results when fetching size information for image URLs.
