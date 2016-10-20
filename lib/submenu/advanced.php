@@ -34,7 +34,7 @@ if ( ! class_exists( 'NgfbSubmenuAdvanced' ) && class_exists( 'NgfbAdmin' ) ) {
 					array( &$this, 'show_metabox_contact_fields' ), $this->pagehook, 'normal' );
 
 			add_meta_box( $this->pagehook.'_taglist',
-				_x( 'Header Tags List', 'metabox title', 'nextgen-facebook' ), 
+				_x( 'Head Tags List', 'metabox title', 'nextgen-facebook' ), 
 					array( &$this, 'show_metabox_taglist' ), $this->pagehook, 'normal' );
 		}
 

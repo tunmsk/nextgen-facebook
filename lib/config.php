@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'feed_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.36.2-1',	// plugin version
+					'version' => '8.36.3-dev1',	// plugin version
 					'opt_version' => '459',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -318,7 +318,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'tc_lrgimg_crop' => 0,
 					'tc_lrgimg_crop_x' => 'center',
 					'tc_lrgimg_crop_y' => 'center',
-					// enable/disable header html tags
+					// enable/disable head html tags
 					'add_link_rel_author' => 1,
 					'add_link_rel_publisher' => 1,
 					'add_link_rel_shortlink' => 1,
@@ -760,7 +760,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'week' => 604800,
 					'month' => 18144000,
 				),
-				// to use in a form select, make sure you declare the array as associative
 				'file_cache_hrs' => array(
 					0 => 0,
 					3600 => 1,

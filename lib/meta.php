@@ -70,7 +70,7 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 			switch ( $metabox ) {
 				case 'social_settings':
 					$tabs = array(
-						'header' => _x( 'Edit Text', 'metabox tab', 'nextgen-facebook' ),
+						'text' => _x( 'Edit Text', 'metabox tab', 'nextgen-facebook' ),
 						'media' => _x( 'Select Media', 'metabox tab', 'nextgen-facebook' ),
 						'preview' => _x( 'Preview', 'metabox tab', 'nextgen-facebook' ),
 						'tags' => _x( 'Head Tags', 'metabox tab', 'nextgen-facebook' ),
@@ -78,7 +78,7 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 					);
 					// keep it clean and remove demo form pages
 					if ( ! empty( $this->p->options['plugin_hide_pro'] ) )
-						foreach ( array( 'header', 'media' ) as $key )
+						foreach ( array( 'text', 'media' ) as $key )
 							SucomUtil::move_to_end( $tabs, $key );
 					break;
 				default:
