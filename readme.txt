@@ -105,7 +105,7 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 * Support for embedded videos in content text (iframe and object HTML markup).
 * Additional Open Graph / Rich Pin meta tags for videos and ecommerce products.
 * Twitter [Player Card](https://dev.twitter.com/cards/types/player) markup for embedded videos from Facebook, Slideshare, Vimeo, Wistia, and/or Youtube.
-* Include or exclude individual Google / SEO, Open Graph, Twitter Card, and Schema meta tags from the webpage head section.
+* Include or exclude individual Google / SEO, Open Graph, Twitter Card, and Schema meta tags in the webpage head section.
 * Configurable user profile contact field names and labels.
 * Optional URL shortening with Bitly, Google, Ow.ly, TinyURL, or YOURLS.
 * Dynamic button language switching based on the current WordPress locale.
