@@ -9,7 +9,7 @@ Donate Link: https://surniaulula.com/extend/plugins/nextgen-facebook/?utm_source
 Assets URI: https://surniaulula.github.io/nextgen-facebook/assets/
 Tags: social, sharing, share, meta tags, facebook, buttons, pinterest, twitter, whatsapp, json, json-ld, seo, open graph, schema.org, amp, bbPress, buddypress, e-commerce, easy digital downloads, edd, g+, google, google plus, hashtags, like, linkedin, marketpress, multilingual, multisite, nextgen gallery, player card, polylang, rich pin, schema, shortcode, summary card, tumblr, twitter card, vimeo, widget, wistia, woocommerce, youtube, yotpo, yourls, the events calendar, social share, social sharing, social media, social engagement, click-through, facebook video, slideshare, video embed, social meta tags, seo meta tags, featured, search engine optimization, seo meta, wordpress seo, yoast seo, shortlink
 Contributors: jsmoriss
-Requires At Least: 3.1
+Requires At Least: 3.5
 Tested Up To: 4.6.1
 Stable Tag: 8.36.2-1
 
@@ -390,6 +390,7 @@ Official announcement: N/A
 	* Renamed the 'wpsso_admin_post_header' filter to 'wpsso_admin_post_head'.
 	* Renamed the NgfbHead::get_header_array() method to NgfbHead::get_head_array().
 	* Added a new NgfbHead::get_head_index() method to cache meta tags as array elements. This optimizes the head meta transient cache for Pinterest by storing 1 transient instead of 2.
+	* Minimum requirements updated to WP v3.5 and PHP v5.4.
 
 **Version 8.36.2-1 (2016/10/17)**
 
