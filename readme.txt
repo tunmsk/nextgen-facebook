@@ -386,11 +386,11 @@ Official announcement: N/A
 * *Bugfixes*
 	* Fixed HTML table syntax in the Tumblr settings metabox.
 * *Developer Notes*
+	* Minimum requirements updated to WP v3.5 and PHP v5.4.
 	* Renamed the Social Settings 'header' index name to 'text'.
 	* Renamed the 'wpsso_admin_post_header' filter to 'wpsso_admin_post_head'.
 	* Renamed the NgfbHead::get_header_array() method to NgfbHead::get_head_array().
 	* Added a new NgfbHead::get_head_index() method to cache meta tags as array elements. This optimizes the head meta transient cache for Pinterest by storing 1 transient instead of 2.
-	* Minimum requirements updated to WP v3.5 and PHP v5.4.
 
 **Version 8.36.2-1 (2016/10/17)**
 
@@ -431,7 +431,7 @@ Official announcement: N/A
  
 = 8.36.3-rc1 =
 
-(2016/10/21) Fixed HTML table syntax in the Tumblr settings metabox. Optimized the head meta transient cache value for Pinterest (storing 1 transient instead of 2).
+(2016/10/21) Fixed HTML table syntax in the Tumblr settings metabox. Optimized the head meta transient cache value for Pinterest (storing 1 transient instead of 2). Minimum requirements updated to WP v3.5 and PHP v5.4.
 
 = 8.36.2-1 =
 
