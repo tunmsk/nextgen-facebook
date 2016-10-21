@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.36.3-dev1 (2016/10/20)**
+**Version 8.36.3-rc1 (2016/10/20)**
 
 Official announcement: N/A
 
@@ -428,7 +428,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
  
-= 8.36.3-dev1 =
+= 8.36.3-rc1 =
 
 (2016/10/20) Fixed HTML table syntax in the Tumblr settings metabox. Optimized the head meta transient cache value (storing 1 transient instead of 2).
 
