@@ -433,7 +433,3 @@ Official announcement: N/A
 
 (2016/10/22) Fixed HTML table syntax in the Tumblr settings metabox. Optimized the head meta transient cache value for Pinterest (storing 1 transient instead of 2). Minimum requirements updated to WP v3.5 and PHP v5.4.
 
-= 8.36.2-1 =
-
-(2016/10/17) Changed all http://surniaulula.com/ URLs to https. Added transient caching of results when fetching size information for image URLs.
-
