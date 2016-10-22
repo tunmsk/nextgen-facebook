@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.36.3-1 (2016/10/21)**
+**Version 8.36.3-1 (2016/10/22)**
 
 Official announcement: N/A
 
@@ -431,7 +431,7 @@ Official announcement: N/A
  
 = 8.36.3-1 =
 
-(2016/10/21) Fixed HTML table syntax in the Tumblr settings metabox. Optimized the head meta transient cache value for Pinterest (storing 1 transient instead of 2). Minimum requirements updated to WP v3.5 and PHP v5.4.
+(2016/10/22) Fixed HTML table syntax in the Tumblr settings metabox. Optimized the head meta transient cache value for Pinterest (storing 1 transient instead of 2). Minimum requirements updated to WP v3.5 and PHP v5.4.
 
 = 8.36.2-1 =
 
