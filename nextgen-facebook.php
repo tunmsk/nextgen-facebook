@@ -157,11 +157,8 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				( $classname = NgfbConfig::load_lib( false, 'com/debug', 'SucomDebug' ) ) ) {
 				$this->debug = new $classname( $this, array( 'html' => $html_debug, 'wp' => $wp_debug ) );
 				if ( $this->debug->enabled ) {
-					$lca = $this->cf['lca'];
-					$ins = $this->check->aop( $ext, false );
-					$version = $this->cf['plugin'][$lca]['version'].'/'.( $this->check->aop( $ext,
-						true, $this->is_avail['aop'] ) ? 'L' : ( $ins ? 'U' : 'G' ) );
-					$this->debug->log( 'debug enabled for '.$lca.' version '.$version );
+					$this->debug->log( 'debug enabled' );
+					$this->debug->log( $this->check->get_ext_list() );
 				}
 			} else $this->debug = new SucomNoDebug();			// make sure debug property is always available
 
@@ -197,8 +194,10 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			$this->loader = new NgfbLoader( $this, $activate );	// module loader
 
 			if ( $this->debug->enabled )
-				$this->debug->log( 'running init_objects action' );
+				$this->debug->mark( 'init objects action' );
 			do_action( 'ngfb_init_objects', $activate );
+			if ( $this->debug->enabled )
+				$this->debug->mark( 'init objects action' );
 
 			/*
 			 * check and create the default options array
