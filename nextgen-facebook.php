@@ -154,9 +154,16 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			$wp_debug = defined( 'NGFB_WP_DEBUG' ) && NGFB_WP_DEBUG ? true : false;
 
 			if ( ( $html_debug || $wp_debug ) &&			// only load debug class if one or more debug options enabled
-				( $classname = NgfbConfig::load_lib( false, 'com/debug', 'SucomDebug' ) ) )
-					$this->debug = new $classname( $this, array( 'html' => $html_debug, 'wp' => $wp_debug ) );
-			else $this->debug = new SucomNoDebug();			// make sure debug property is always available
+				( $classname = NgfbConfig::load_lib( false, 'com/debug', 'SucomDebug' ) ) ) {
+				$this->debug = new $classname( $this, array( 'html' => $html_debug, 'wp' => $wp_debug ) );
+				if ( $this->debug->enabled ) {
+					$lca = $this->cf['lca'];
+					$ins = $this->check->aop( $ext, false );
+					$version = $this->cf['plugin'][$lca]['version'].'/'.( $this->check->aop( $ext,
+						true, $this->is_avail['aop'] ) ? 'L' : ( $ins ? 'U' : 'G' ) );
+					$this->debug->log( 'debug enabled for '.$lca.' version '.$version );
+				}
+			} else $this->debug = new SucomNoDebug();			// make sure debug property is always available
 
 			if ( $activate === true && $this->debug->enabled )
 				$this->debug->log( 'method called for plugin activation' );
