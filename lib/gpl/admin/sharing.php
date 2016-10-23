@@ -14,6 +14,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 			$this->p->util->add_plugin_filters( $this, array( 
 				'plugin_cache_rows' => 3,		// $table_rows, $form, $network
 				'buttons_include_rows' => 2,		// $table_rows, $form
@@ -30,6 +32,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 		}
 
 		public function filter_plugin_cache_rows( $table_rows, $form, $network = false ) {
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 
 			$table_rows['plugin_file_cache_exp'] = $form->get_th_html( _x( 'Social File Cache Expiry',
 				'option label', 'nextgen-facebook' ), null, 'plugin_file_cache_exp' ).
@@ -42,6 +46,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 		}
 
 		public function filter_buttons_include_rows( $table_rows, $form ) {
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 
 			$add_to_checkboxes = '';
 			foreach ( $this->p->util->get_post_types() as $post_type )
@@ -60,6 +66,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 		}
 
 		public function filter_buttons_preset_rows( $table_rows, $form ) {
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 
 			$presets = array( 'shortcode' => 'Shortcode', 'widget' => 'Widget' );
 			$show_on = apply_filters( $this->p->cf['lca'].'_buttons_show_on', 
@@ -81,6 +89,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 		}
 
 		public function filter_post_buttons_rows( $table_rows, $form, $head, $mod ) {
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 
 			if ( empty( $mod['post_status'] ) || $mod['post_status'] === 'auto-draft' ) {
 				$table_rows['save_a_draft'] = '<td><blockquote class="status-info"><p class="centered">'.
@@ -206,20 +216,29 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 		}
 
 		public function filter_styles_sharing_rows( $table_rows, $form ) {
-			return $this->filter_styles_common_rows( $table_rows, $form, 'sharing' );
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
+			return $this->get_styles_common_rows( $table_rows, $form, 'sharing' );
 		}
 
 		public function filter_styles_content_rows( $table_rows, $form ) {
-			return $this->filter_styles_common_rows( $table_rows, $form, 'content' );
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
+			return $this->get_styles_common_rows( $table_rows, $form, 'content' );
 		}
 
 		public function filter_styles_excerpt_rows( $table_rows, $form ) {
-			return $this->filter_styles_common_rows( $table_rows, $form, 'excerpt' );
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
+			return $this->get_styles_common_rows( $table_rows, $form, 'excerpt' );
 		}
 
 		public function filter_styles_sidebar_rows( $table_rows, $form ) {
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
+
 			$table_rows = array_merge( $table_rows, 
-				$this->filter_styles_common_rows( $table_rows, $form, 'sidebar' ) );
+				$this->get_styles_common_rows( $table_rows, $form, 'sidebar' ) );
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Sidebar Javascript',
@@ -231,18 +250,24 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 		}
 
 		public function filter_styles_shortcode_rows( $table_rows, $form ) {
-			return $this->filter_styles_common_rows( $table_rows, $form, 'shortcode' );
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
+			return $this->get_styles_common_rows( $table_rows, $form, 'shortcode' );
 		}
 
 		public function filter_styles_widget_rows( $table_rows, $form ) {
-			return $this->filter_styles_common_rows( $table_rows, $form, 'widget' );
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
+			return $this->get_styles_common_rows( $table_rows, $form, 'widget' );
 		}
 
 		public function filter_styles_admin_edit_rows( $table_rows, $form ) {
-			return $this->filter_styles_common_rows( $table_rows, $form, 'admin_edit' );
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
+			return $this->get_styles_common_rows( $table_rows, $form, 'admin_edit' );
 		}
 
-		public function filter_styles_common_rows( &$table_rows, &$form, $idx ) {
+		private function get_styles_common_rows( &$table_rows, &$form, $idx ) {
 
 			$text = $this->p->msgs->get( 'info-styles-'.$idx );
 
