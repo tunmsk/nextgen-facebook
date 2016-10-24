@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NextGEN Facebook (NGFB) 8.36.3-2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2016-10-23 18:33-0700\n"
-"PO-Revision-Date: 2016-10-23 18:33-0700\n"
+"POT-Creation-Date: 2016-10-24 14:17-0700\n"
+"PO-Revision-Date: 2016-10-24 14:17-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -1792,8 +1792,8 @@ msgid "<a href=\"%s\">If you use any shortcodes in your content text, this optio
 msgstr "<a href=\"%s\">Si vous utilisez des shortcodes dans votre contenu, cette option devrait être activée</a> &mdash; si vous rencontrez des problèmes d'affichage après l'activation de cette option, déterminer quel thème / extension filtre le contenu d'une façon incorrecte, et signalez le problème à son auteur(s)."
 
 #: lib/messages.php:770
-msgid "At least one of your theme header templates does not support Schema markup of the webpage head section &mdash; this is especially important for Pinterest."
-msgstr "Au moins un modèle header de votre thème ne supporte pas les balises de schéma d'en-têtes de page Web &mdash;  ceci est particulièrement important pour Pinterest."
+msgid "At least one of your theme header templates does not support Schema markup of the webpage head section &mdash; this is especially important for Google and Pinterest."
+msgstr "Au moins un modèle header de votre thème ne supporte pas les balises de schéma d'en-têtes de page Web &mdash;  ceci est particulièrement important pour Google et Pinterest."
 
 #: lib/messages.php:770
 msgid "The %s element in your header templates should include a function, action, or filter for its attributes."
