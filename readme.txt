@@ -375,6 +375,21 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
+**Version 3.36.4-dev1 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added https://schema.org/Thing to the Schema Types array.
+	* Renamed the 'ngfb_add_json_https_schema_org' filter to 'ngfb_add_json_https_schema_org_thing'.
+	* Renamed the 'ngfb_json_data_https_schema_org' filter to 'ngfb_json_data_https_schema_org_thing'.
+
 **Version 8.36.3-2 (2016/10/23)**
 
 Official announcement: N/A
