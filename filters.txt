@@ -7,7 +7,6 @@
 'sucom_strip_shortcodes' ( $preg_array );
 'ngfb_add_schema_head_attributes' ( $bool );
 'ngfb_add_schema_meta_array' ( $bool );
-'ngfb_add_json_https_schema_org_{item_type}' ( $bool );
 'ngfb_add_meta_name_canonical' ( $bool );
 'ngfb_add_meta_name_description' ( $bool );
 'ngfb_add_metabox_post' ( $bool, $post_id, $post_type );
@@ -50,9 +49,8 @@
 'ngfb_image_url_sizes_cache_expire' ( $expire_secs, $media_url );
 'ngfb_is_functions' ( $is_functions );
 'ngfb_js_url_facebook' ( $url, $pos );
-'ngfb_json_array_type_ids' ( $type_ids, $mod );
-'ngfb_json_data_https_schema_org_{item_type}' ( false, $mod, $mt_og, $user_id, $is_main );
-'ngfb_json_is_main_entity' ( $bool, $mod, $mt_og, $post_id, $user_id );
+'ngfb_json_array_top_type_ids' ( $type_ids, $mod );
+'ngfb_json_data_https_schema_org_{item_type}' ( null, $mod, $mt_og, $user_id, $is_main, $top_type_id );
 'ngfb_json_ld_search_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_link_rel' ( $link_rel, $use_post, $mod );
 'ngfb_load_lib' ( false, "$type/$sub/$id" );
