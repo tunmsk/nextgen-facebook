@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.36.4-dev1 (TBD)**
+**Version 8.37.0-dev1 (TBD)**
 
 Official announcement: N/A
 
