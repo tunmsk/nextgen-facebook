@@ -388,6 +388,8 @@ Official announcement: N/A
 * *Developer Notes*
 	* Refactored the NgfbSchema::get_json_array() method for a slight performance improvement.
 	* Added https://schema.org/Thing to the Schema Types array.
+	* Replaced the $user_id argument in all JSON data and property filters by the Schema $type_id.
+	* Renamed the 'ngfb_json_array_type_ids' filter to 'ngfb_json_array_schema_type_ids'.
 	* Renamed the 'ngfb_json_data_https_schema_org' filter to 'ngfb_json_data_https_schema_org_thing'.
 	* Removed the 'ngfb_add_json_https_schema_org' filter.
 
