@@ -116,15 +116,15 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 		}
 
 		public function register_setting() {
-			register_setting( $this->p->cf['lca'].'_setting', 
-				NGFB_OPTIONS_NAME, array( &$this, 'registered_setting_sanitation' ) );
+			register_setting( $this->p->cf['lca'].'_setting', NGFB_OPTIONS_NAME, 
+				array( &$this, 'registered_setting_sanitation' ) );
 		} 
 
 		public static function set_readme_info( $expire_secs = 86400, $use_cache = true ) {
 			$ngfb =& Ngfb::get_instance();
 			foreach ( array_keys( $ngfb->cf['plugin'] ) as $ext ) {
 				if ( empty( self::$readme_info[$ext] ) )
-					self::$readme_info[$ext] = $ngfb->util->parse_readme( $ext, $expire_secs, $use_cache );
+					self::$readme_info[$ext] = $ngfb->util->get_readme_info( $ext, $expire_secs, $use_cache );
 			}
 		}
 
@@ -410,7 +410,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 						case 'check_for_updates': 
 							if ( $this->p->is_avail['util']['um'] ) {
 								// refresh the readme info
-								NgfbAdmin::set_readme_info( $this->p->cf['feed_cache_exp'], false );	// $use_cache = false
+								NgfbAdmin::set_readme_info( $this->p->cf['readme_cache_exp'], false );	// $use_cache = false
 
 								$ngfbum =& NgfbUm::get_instance();
 								$ngfbum->update->check_for_updates( null, true, false );	// $use_cache = false
@@ -694,7 +694,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 		public function show_metabox_version_info() {
 
-			NgfbAdmin::set_readme_info( $this->p->cf['feed_cache_exp'] );
+			NgfbAdmin::set_readme_info( $this->p->cf['readme_cache_exp'] );
 
 			echo '<table class="sucom-setting '.$this->p->cf['lca'].' side">';
 			foreach ( $this->p->cf['plugin'] as $ext => $info ) {

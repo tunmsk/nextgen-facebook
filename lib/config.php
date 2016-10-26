@@ -17,10 +17,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'uca' => 'NGFB',		// uppercase acronym
 			'menu' => 'NGFB',		// menu item label
 			'color' => 'ff6600',		// menu item color - dark orange
-			'feed_cache_exp' => 86400,	// 24 hours
+			'readme_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.36.4-dev1',	// plugin version
+					'version' => '8.37.0-dev1',	// plugin version
 					'opt_version' => '459',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
