@@ -18,10 +18,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'menu' => 'NGFB',		// menu item label
 			'color' => 'ff6600',		// menu item color - dark orange
 			'readme_cache_exp' => 86400,	// 24 hours
+			'setup_cache_exp' => 86400,	// 24 hours
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.37.0-dev1',	// plugin version
-					'opt_version' => '459',		// increment when changing default options
+					'opt_version' => '460',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -519,6 +520,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_cf_recipe_ingredients' => '_recipe_ingredients',
 					// File and Object Cache Tab
 					'plugin_object_cache_exp' => 259200,		// Object Cache Expiry (259200 secs = 3 days)
+					'plugin_head_cache_exp' => 259200,		// Head Markup Cache Expiry (259200 secs = 3 days)
 					'plugin_verify_certs' => 0,			// Verify SSL Certificates
 					'plugin_cache_info' => 0,			// Report Cache Purge Count
 					'plugin_file_cache_exp' => 0,			// File Cache Expiry
