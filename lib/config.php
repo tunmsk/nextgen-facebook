@@ -519,13 +519,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_cf_vid_embed' => '_format_video_embed',
 					'plugin_cf_recipe_ingredients' => '_recipe_ingredients',
 					// File and Object Cache Tab
-					'plugin_object_cache_exp' => 259200,		// Object Cache Expiry (3 days)
+					'plugin_object_cache_exp' => 259200,		// XXX TO BE DELETED
+					'plugin_file_cache_exp' => 0,			// Social File Cache Expiry
 					'plugin_head_cache_exp' => 259200,		// Head Markup Cache Expiry (3 days)
-					'plugin_topics_cache_exp' => 1814400,		// Topics Array Cache Expiry (7 days)
+					'plugin_topics_cache_exp' => 604800,		// Topics Array Cache Expiry (7 days)
 					'plugin_imgsize_cache_exp' => 86400,		// Image URL Size Cache Expiry (1 day)
 					'plugin_verify_certs' => 0,			// Verify SSL Certificates
 					'plugin_cache_info' => 0,			// Report Cache Purge Count
-					'plugin_file_cache_exp' => 0,			// File Cache Expiry
 					// Service API Keys Tab
 					'plugin_shortener' => 'none',
 					'plugin_shortlink' => 1,			// Use Shortnened URL for WP Shortlink
@@ -766,16 +766,18 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 				'cache_hrs' => array(
 					0 => 0,
-					3600 => 1,
-					7200 => 3,
-					21600 => 6,
-					32400 => 9,
-					43200 => 12,
-					86400 => 24,
-					129600 => 36,
-					172800 => 48,
-					259200 => 72,
-					604800 => 168,
+					3600 => 1,	// 1 hour
+					7200 => 3,	// 3 hours
+					21600 => 6,	// 6 hours
+					32400 => 9,	// 9 hours
+					43200 => 12,	// 12 hours
+					86400 => 24,	// 1 day
+					129600 => 36,	// 1.5 days
+					172800 => 48,	// 2 days
+					259200 => 72,	// 3 days
+					604800 => 168,	// 7 days
+					1209600 => 336,	// 14 days
+					2419200 => 672,	// 28 days
 				),
 				'qualifiers' => array(
 					'default' => '(default)',
