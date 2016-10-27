@@ -255,6 +255,11 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 			'<td nowrap class="blank">'.$this->p->options['plugin_head_cache_exp'].' seconds</td>'.
 			$this->p->admin->get_site_use( $form, $network, 'plugin_head_cache_exp' );
 
+			$table_rows['plugin_head_cache_exp'] = $form->get_th_html( _x( 'Topics Array Cache Expiry',
+				'option label', 'nextgen-facebook' ), null, 'plugin_topics_cache_exp' ).
+			'<td nowrap class="blank">'.$this->p->options['plugin_topics_cache_exp'].' seconds</td>'.
+			$this->p->admin->get_site_use( $form, $network, 'plugin_topics_cache_exp' );
+
 			// XXX TO BE REMOVED
 			$table_rows['plugin_object_cache_exp'] = $form->get_th_html( _x( 'Object Cache Expiry',
 				'option label', 'nextgen-facebook' ), null, 'plugin_object_cache_exp' ).
