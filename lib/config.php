@@ -17,12 +17,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'uca' => 'NGFB',		// uppercase acronym
 			'menu' => 'NGFB',		// menu item label
 			'color' => 'ff6600',		// menu item color - dark orange
-			'readme_cache_exp' => 86400,	// 24 hours
-			'setup_cache_exp' => 86400,	// 24 hours
+			'readme_cache_exp' => 86400,	// 1 day
+			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.37.0-dev1',	// plugin version
-					'opt_version' => '462',		// increment when changing default options
+					'opt_version' => '464',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -520,10 +520,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_cf_recipe_ingredients' => '_recipe_ingredients',
 					// File and Object Cache Tab
 					'plugin_object_cache_exp' => 259200,		// XXX TO BE DELETED
+					'plugin_head_cache_exp' => 259200,		// Head Markup Array Cache Expiry (3 days)
+					'plugin_content_cache_exp' => 3600,		// Content (Non-Persist) Cache Expiry (1 hour)
+					'plugin_imgsize_cache_exp' => 86400,		// Get Image (URL) Size Cache Expiry (1 day)
+					'plugin_shorten_cache_exp' => 604800,		// Shortened URL Cache Expiry (7 days)
+					'plugin_topics_cache_exp' => 604800,		// Article Topics Array Cache Expiry (7 days)
 					'plugin_file_cache_exp' => 0,			// Social File Cache Expiry
-					'plugin_head_cache_exp' => 259200,		// Head Markup Cache Expiry (3 days)
-					'plugin_topics_cache_exp' => 604800,		// Topics Array Cache Expiry (7 days)
-					'plugin_imgsize_cache_exp' => 86400,		// Image URL Size Cache Expiry (1 day)
 					'plugin_verify_certs' => 0,			// Verify SSL Certificates
 					'plugin_cache_info' => 0,			// Report Cache Purge Count
 					// Service API Keys Tab
@@ -625,14 +627,18 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					// File and Object Cache Tab
 					'plugin_object_cache_exp' => 259200,		// XXX TO BE DELETED
 					'plugin_object_cache_exp:use' => 'default',
-					'plugin_file_cache_exp' => 0,			// File Cache Expiry
-					'plugin_file_cache_exp:use' => 'default',
-					'plugin_head_cache_exp' => 259200,		// Head Markup Cache Expiry (3 days)
+					'plugin_head_cache_exp' => 259200,		// Head Markup Array Cache Expiry (3 days)
 					'plugin_head_cache_exp:use' => 'default',
-					'plugin_topics_cache_exp' => 604800,		// Topics Array Cache Expiry (7 days)
-					'plugin_topics_cache_exp:use' => 'default',
-					'plugin_imgsize_cache_exp' => 86400,		// Image URL Size Cache Expiry (1 day)
+					'plugin_content_cache_exp' => 3600,		// Content (Non-Persist) Cache Expiry (1 hour)
+					'plugin_content_cache_exp:use' => 'default',
+					'plugin_imgsize_cache_exp' => 86400,		// Get Image (URL) Size Cache Expiry (1 day)
 					'plugin_imgsize_cache_exp:use' => 'default',
+					'plugin_shorten_cache_exp' => 604800,		// Shortened URL Cache Expiry (7 days)
+					'plugin_shorten_cache_exp:use' => 'default',
+					'plugin_topics_cache_exp' => 604800,		// Article Topics Array Cache Expiry (7 days)
+					'plugin_topics_cache_exp:use' => 'default',
+					'plugin_file_cache_exp' => 0,			// Social File Cache Expiry
+					'plugin_file_cache_exp:use' => 'default',
 					'plugin_verify_certs' => 0,			// Verify SSL Certificates
 					'plugin_verify_certs:use' => 'default',
 					'plugin_cache_info' => 0,			// Report Cache Purge Count
