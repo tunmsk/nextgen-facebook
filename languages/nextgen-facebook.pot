@@ -959,11 +959,11 @@ msgid "Head Markup Cache Expiry"
 msgstr ""
 
 #: lib/gpl/admin/advanced.php:256 lib/gpl/admin/advanced.php:263
-#: lib/gpl/admin/advanced.php:270 lib/gpl/admin/sharing.php:40
+#: lib/gpl/admin/advanced.php:270 lib/gpl/admin/sharing.php:41
 #: lib/pro/admin/advanced.php:253 lib/pro/admin/advanced.php:260
-#: lib/pro/admin/advanced.php:267 lib/pro/admin/sharing.php:52
+#: lib/pro/admin/advanced.php:267 lib/pro/admin/sharing.php:53
 msgctxt "option comment"
-msgid "seconds"
+msgid "seconds (0 to disable)"
 msgstr ""
 
 #: lib/gpl/admin/advanced.php:260 lib/gpl/admin/advanced.php:267
@@ -1207,8 +1207,8 @@ msgctxt "option label"
 msgid "Schema Description"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:95 lib/gpl/admin/sharing.php:95
-#: lib/pro/admin/meta.php:113 lib/pro/admin/sharing.php:101
+#: lib/gpl/admin/meta.php:95 lib/gpl/admin/sharing.php:96
+#: lib/pro/admin/meta.php:113 lib/pro/admin/sharing.php:102
 msgid "Save a draft version or publish the %s to display these options."
 msgstr ""
 
@@ -1305,60 +1305,60 @@ msgctxt "option label"
 msgid "Social File Cache Expiry"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:59 lib/pro/admin/sharing.php:68
+#: lib/gpl/admin/sharing.php:60 lib/pro/admin/sharing.php:69
 msgctxt "option label"
 msgid "Include on Post Types"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:81 lib/pro/admin/sharing.php:87
+#: lib/gpl/admin/sharing.php:82 lib/pro/admin/sharing.php:88
 msgctxt "option label"
 msgid "%s Preset"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:115 lib/pro/admin/sharing.php:117
+#: lib/gpl/admin/sharing.php:116 lib/pro/admin/sharing.php:118
 msgctxt "option label"
 msgid "Email Subject"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:120 lib/pro/admin/sharing.php:123
+#: lib/gpl/admin/sharing.php:121 lib/pro/admin/sharing.php:124
 msgctxt "option label"
 msgid "Email Message"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:133 lib/pro/admin/sharing.php:137
+#: lib/gpl/admin/sharing.php:134 lib/pro/admin/sharing.php:138
 msgctxt "option label"
 msgid "Tweet Text"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:159 lib/pro/admin/sharing.php:164
+#: lib/gpl/admin/sharing.php:160 lib/pro/admin/sharing.php:165
 msgctxt "option label"
 msgid "Pinterest Caption Text"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:187 lib/pro/admin/sharing.php:193
+#: lib/gpl/admin/sharing.php:188 lib/pro/admin/sharing.php:194
 msgctxt "option label"
 msgid "Tumblr Image Caption"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:190 lib/pro/admin/sharing.php:196
+#: lib/gpl/admin/sharing.php:191 lib/pro/admin/sharing.php:197
 msgid "Caption disabled - no suitable image found for the %s button"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:198 lib/pro/admin/sharing.php:204
+#: lib/gpl/admin/sharing.php:199 lib/pro/admin/sharing.php:205
 msgctxt "option label"
 msgid "Tumblr Video Caption"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:200 lib/pro/admin/sharing.php:207
+#: lib/gpl/admin/sharing.php:201 lib/pro/admin/sharing.php:208
 msgid "Caption disabled - no suitable video found for the %s button"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:208 lib/pro/admin/sharing.php:218
+#: lib/gpl/admin/sharing.php:209 lib/pro/admin/sharing.php:219
 msgctxt "option label"
 msgid "Disable Sharing Buttons"
 msgstr ""
 
-#: lib/gpl/admin/sharing.php:242 lib/pro/admin/sharing.php:252
+#: lib/gpl/admin/sharing.php:243 lib/pro/admin/sharing.php:253
 msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr ""
@@ -3423,38 +3423,38 @@ msgid ""
 "install the missing %1$s PHP class."
 msgstr ""
 
-#: lib/util.php:912
+#: lib/util.php:918
 msgid "Fetched image size by HTTP for %1$s (%2$s)."
 msgstr ""
 
-#: lib/util.php:1339
+#: lib/util.php:1345
 msgid "Failed to open directory %s for reading."
 msgstr ""
 
-#: lib/util.php:1347
+#: lib/util.php:1353
 msgid "Error removing file %s."
 msgstr ""
 
-#: lib/util.php:1632
+#: lib/util.php:1638
 msgid "No options available."
 msgstr ""
 
-#: lib/util.php:1658
+#: lib/util.php:1664
 msgctxt "option comment"
 msgid "%1$d additional options not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1662
+#: lib/util.php:1668
 msgctxt "option comment"
 msgid "unhide these options"
 msgstr ""
 
-#: lib/util.php:1665
+#: lib/util.php:1671
 msgctxt "option comment"
 msgid "%1$d additional rows not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1669
+#: lib/util.php:1675
 msgctxt "option comment"
 msgid "unhide these rows"
 msgstr ""
@@ -3764,15 +3764,15 @@ msgctxt "option label"
 msgid "Widget Title (leave blank for no title)"
 msgstr ""
 
-#: nextgen-facebook.php:261
+#: nextgen-facebook.php:259
 msgid "HTML debug mode is active (transient cache could NOT be disabled)."
 msgstr ""
 
-#: nextgen-facebook.php:262
+#: nextgen-facebook.php:260
 msgid "HTML debug mode is active (transient cache use is disabled)."
 msgstr ""
 
-#: nextgen-facebook.php:263
+#: nextgen-facebook.php:261
 msgid "Informational debug messages are being added as hidden HTML comments."
 msgstr ""
 

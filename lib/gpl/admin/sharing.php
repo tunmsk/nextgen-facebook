@@ -37,7 +37,8 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 
 			SucomUtil::add_before_key( $table_rows, 'plugin_verify_certs', 'plugin_file_cache_exp',
 			$form->get_th_html( _x( 'Social File Cache Expiry', 'option label', 'nextgen-facebook' ), null, 'plugin_file_cache_exp' ).
-			'<td nowrap class="blank">'.$this->p->options['plugin_file_cache_exp'].' '._x( 'seconds', 'option comment', 'nextgen-facebook' ).'</td>'.
+			'<td nowrap class="blank">'.$this->p->options['plugin_file_cache_exp'].' '.
+			_x( 'seconds (0 to disable)', 'option comment', 'nextgen-facebook' ).'</td>'.
 			$this->p->admin->get_site_use( $form, $network, 'plugin_file_cache_exp' ) );
 
 			return $table_rows;
