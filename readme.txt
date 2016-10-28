@@ -382,7 +382,7 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added a "Sharing Buttons Cache Expiry" option on the Advanced settings page.
 * *Bugfixes*
 	* None
 * *Developer Notes*
