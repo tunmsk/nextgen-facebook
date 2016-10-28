@@ -76,7 +76,7 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 						'tags' => _x( 'Head Tags', 'metabox tab', 'nextgen-facebook' ),
 						'validate' => _x( 'Validate', 'metabox tab', 'nextgen-facebook' ),
 					);
-					// keep it clean and remove demo form pages
+					// keep it clean and remove non-functional form tabs (if required)
 					if ( ! empty( $this->p->options['plugin_hide_pro'] ) )
 						foreach ( array( 'text', 'media' ) as $key )
 							SucomUtil::move_to_end( $tabs, $key );

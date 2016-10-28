@@ -233,20 +233,17 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				$this->site_options = $this->opt->check_options( NGFB_SITE_OPTIONS_NAME, $this->site_options, true );
 			}
 
-			if ( $this->debug->is_enabled( 'html' ) === true ) {
-				$this->is_avail['cache']['transient'] = defined( 'NGFB_TRANSIENT_CACHE_DISABLE' ) &&
-					! NGFB_TRANSIENT_CACHE_DISABLE ? true : false;
-				if ( $this->debug->enabled ) {
-					$this->debug->log( 'html debug mode is active: transient cache use '.
-						( $this->is_avail['cache']['transient'] ? 'could not be' : 'is' ).' disabled' );
+			if ( $this->debug->enabled ) {
+				if ( $this->debug->is_enabled( 'wp' ) ) {
+					$this->debug->log( 'WP debug log mode is active' );
+					$this->notice->warn( __( 'WP debug log mode is active &mdash; debug messages are being sent to the WordPress debug log.', 'nextgen-facebook' ) );
+				} elseif ( $this->debug->is_enabled( 'html' ) ) {
+					$this->debug->log( 'HTML debug mode is active' );
+					$this->notice->warn( __( 'HTML debug mode is active &mdash; debug messages are being added to webpages as hidden HTML comments.', 'nextgen-facebook' ) );
 				}
-				if ( is_admin() ) {
-					// text_domain already loaded by the NgfbAdmin class construct
-					$this->notice->warn( ( $this->is_avail['cache']['transient'] ?
-						__( 'HTML debug mode is active (transient cache use could not be disabled).', 'nextgen-facebook' ) :
-						__( 'HTML debug mode is active (transient cache use is disabled).', 'nextgen-facebook' ) ).' '.
-						__( 'Informational debug messages are being added as hidden HTML comments.', 'nextgen-facebook' ) );
-				}
+				$this->util->add_plugin_filters( $this, array( 
+					'cache_expire_head_array' => '__return_zero',	// disable caching of the head markup array
+				) );
 			}
 		}
 

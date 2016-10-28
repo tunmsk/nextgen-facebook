@@ -29,10 +29,6 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 			$this->p->util->add_plugin_actions( $this, array(
 				'form_content_metaboxes_buttons' => 1,	// show two-column metaboxes
 			) );
-
-			$this->p->util->add_plugin_filters( $this, array(
-				'messages_tooltip' => 2,
-			) );
 		}
 
 		private function set_objects() {
@@ -61,27 +57,6 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 				}
 				echo '<div style="clear:both;"></div>';
 			}
-		}
-
-		public function filter_messages_tooltip( $text, $idx ) {
-			if ( strpos( $idx, 'tooltip-buttons_' ) !== 0 )
-				return $text;
-
-			switch ( $idx ) {
-				case ( strpos( $idx, 'tooltip-buttons_pos_' ) === false ? false : true ):
-					$text = sprintf( __( 'Social sharing buttons can be added to the top, bottom, or both. Each sharing button must also be enabled below (see the <em>%s</em> options).', 'nextgen-facebook' ), _x( 'Show Button in', 'option label', 'nextgen-facebook' ) );
-					break;
-				case 'tooltip-buttons_on_index':
-					$text = __( 'Add the social sharing buttons to each entry of an index webpage (for example, <strong>non-static</strong> homepage, category, archive, etc.). Social sharing buttons are not included on index webpages by default.', 'nextgen-facebook' );
-					break;
-				case 'tooltip-buttons_on_front':
-					$text = __( 'If a static Post or Page has been selected for the homepage, you can add the social sharing buttons to that static homepage as well (default is unchecked).', 'nextgen-facebook' );
-					break;
-				case 'tooltip-buttons_add_to':
-					$text = __( 'Enabled social sharing buttons are added to the Post, Page, Media, and Product webpages by default. If your theme (or another plugin) supports additional custom post types, and you would like to include social sharing buttons on these webpages, check the appropriate option(s) here.', 'nextgen-facebook' );
-					break;
-			}
-			return $text;
 		}
 
 		protected function add_meta_boxes() {

@@ -22,7 +22,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.37.0-dev1',	// plugin version
-					'opt_version' => '464',		// increment when changing default options
+					'opt_version' => '465',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -525,7 +525,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_imgsize_cache_exp' => 86400,		// Get Image (URL) Size Cache Expiry (1 day)
 					'plugin_shorten_cache_exp' => 604800,		// Shortened URL Cache Expiry (7 days)
 					'plugin_topics_cache_exp' => 604800,		// Article Topics Array Cache Expiry (7 days)
-					'plugin_file_cache_exp' => 0,			// Social File Cache Expiry
 					'plugin_verify_certs' => 0,			// Verify SSL Certificates
 					'plugin_cache_info' => 0,			// Report Cache Purge Count
 					// Service API Keys Tab
@@ -584,7 +583,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'wp_cm_yim_enabled' => 1,
 					// Extension Plugins and Pro Licenses
 					'plugin_ngfb_tid' => '',
-				),
+				),	// end of defaults
 				'site_defaults' => array(
 					'options_filtered' => false,
 					/*
@@ -637,8 +636,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_shorten_cache_exp:use' => 'default',
 					'plugin_topics_cache_exp' => 604800,		// Article Topics Array Cache Expiry (7 days)
 					'plugin_topics_cache_exp:use' => 'default',
-					'plugin_file_cache_exp' => 0,			// Social File Cache Expiry
-					'plugin_file_cache_exp:use' => 'default',
 					'plugin_verify_certs' => 0,			// Verify SSL Certificates
 					'plugin_verify_certs:use' => 'default',
 					'plugin_cache_info' => 0,			// Report Cache Purge Count
@@ -646,7 +643,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					// Extension Plugins and Pro Licenses
 					'plugin_ngfb_tid' => '',
 					'plugin_ngfb_tid:use' => 'default',
-				),
+				),	// end of site defaults
 				'preset' => array(
 					'small_share_count' => array(
 						'twitter_size' => 'medium',
