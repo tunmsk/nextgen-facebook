@@ -335,12 +335,13 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				$clear_cache_link = wp_nonce_url( $this->p->util->get_admin_url( '?'.$this->p->cf['lca'].
 					'-action=clear_all_cache' ), NgfbAdmin::get_nonce(), NGFB_NONCE );
 	
-				$this->p->notice->upd( __( 'Plugin settings have been saved.', 'nextgen-facebook' ).' '.
-					sprintf( __( 'Wait %1$d seconds for cache objects to expire or <a href="%2$s">%3$s</a> now.',
-						'nextgen-facebook' ), $this->p->options['plugin_object_cache_exp'], $clear_cache_link,
-							_x( 'Clear All Cache(s)', 'submit button', 'nextgen-facebook' ) ) );
+				$this->p->notice->upd( '<strong>'.__( 'Plugin settings have been saved.', 'nextgen-facebook' ).'</strong> <em>'.
+					__( 'Please note that webpage content may take several days to reflect changes.', 'nextgen-facebook' ).' '.
+					sprintf( __( '<a href="%1$s">%2$s</a> now to force a refresh.', 'nextgen-facebook' ),
+						$clear_cache_link, _x( 'Clear All Cache(s)', 'submit button', 'nextgen-facebook' ) ).'</em>' );
 			} else {
-				$this->p->notice->upd( __( 'Plugin settings have been saved (and all caches cleared).', 'nextgen-facebook' ) );
+				$this->p->notice->upd( '<strong>'.__( 'Plugin settings have been saved.', 'nextgen-facebook' ).'</strong> '.
+					__( 'All caches have also been cleared.', 'nextgen-facebook' ) );
 				$this->p->util->clear_all_cache( true, __FUNCTION__, true );
 			}
 
@@ -381,7 +382,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$opts = $this->p->opt->sanitize( $opts, $def_opts, $network );
 			$opts = apply_filters( $this->p->cf['lca'].'_save_site_options', $opts, $def_opts, $network );
 			update_site_option( NGFB_SITE_OPTIONS_NAME, $opts );
-			$this->p->notice->upd( __( 'Plugin settings have been saved.', 'nextgen-facebook' ) );
+			$this->p->notice->upd( '<strong>'.__( 'Plugin settings have been saved.', 'nextgen-facebook' ).'</strong>' );
 			wp_redirect( $this->p->util->get_admin_url( $page ).'&settings-updated=true' );
 			exit;	// stop here
 		}

@@ -51,7 +51,6 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'ngfb_add_to_attachment' => 'plugin_add_to_attachment',
 			'ngfb_verify_certs' => 'plugin_verify_certs',
 			'ngfb_file_cache_hrs' => 'plugin_file_cache_hrs',
-			'ngfb_object_cache_exp' => 'plugin_object_cache_exp',
 			'ngfb_min_shorten' => 'plugin_min_shorten',
 			'ngfb_googl_api_key' => 'plugin_google_api_key',
 			'ngfb_bitly_login' => 'plugin_bitly_login',
