@@ -386,16 +386,17 @@ Official announcement: N/A
 		* Get Image (URL) Size Cache Expiry (default 1 day).
 		* Shortened URL Cache Expiry (default 7 days).
 		* Article Topics Array Cache Expiry (default 7 days).
+		* Sharing Buttons Cache Expiry (default 7 days).
 * *Improvements*
-	* Added a "Sharing Buttons Cache Expiry" option on the Advanced settings page.
+	* Replaced the "Social File Cache Expiry" drop-down (in hours) with an input field (in seconds).
 * *Bugfixes*
 	* None
 * *Developer Notes*
 	* Refactored the NgfbSchema::get_json_array() method for a slight performance improvement.
-	* Added https://schema.org/Thing to the Schema Types array.
+	* Added https://schema.org/Thing to the Schema Types array (as top-level parent for all other Schema types).
 	* Replaced the $user_id argument in all JSON data and property filters by the Schema $type_id.
-	* Renamed the 'ngfb_json_array_type_ids' filter to 'ngfb_json_array_schema_type_ids'.
 	* Renamed the 'ngfb_json_data_https_schema_org' filter to 'ngfb_json_data_https_schema_org_thing'.
+	* Renamed the 'ngfb_json_array_type_ids' filter to 'ngfb_json_array_schema_type_ids'.
 	* Removed the 'ngfb_add_json_https_schema_org' filter.
 
 **Version 8.36.3-2 (2016/10/23)**
