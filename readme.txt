@@ -375,12 +375,12 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.37.0-dev1 (TBD)**
+**Version 8.37.0-dev1 (2016/10/29)**
 
 Official announcement: N/A
 
 * *New Features*
-	* Replaced the "Object Cache Expiry" option with:
+	* Replaced the Object Cache Expiry option with new options for finer control of caching features.
 		* Head Markup Array Cache Expiry (default 3 days).
 		* Filtered Content Text Cache Expiry (default 1 hour).
 		* Get Image (URL) Size Cache Expiry (default 1 day).
@@ -392,9 +392,10 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
+	* Added a new NgfbSharing::get_buttons_index() method to cache sharing buttons HTML as array elements. This optimizes the cache by storing one transient instead of one transient per sharing buttons location within the same webpage.
 	* Refactored the NgfbSchema::get_json_array() method for a slight performance improvement.
 	* Added https://schema.org/Thing to the Schema Types array (as top-level parent for all other Schema types).
-	* Replaced the $user_id argument in all JSON data and property filters by the Schema $type_id.
+	* Replaced the `$user_id` argument in all JSON data and property filters by the Schema `$type_id`.
 	* Renamed the 'ngfb_json_data_https_schema_org' filter to 'ngfb_json_data_https_schema_org_thing'.
 	* Renamed the 'ngfb_json_array_type_ids' filter to 'ngfb_json_array_schema_type_ids'.
 	* Removed the 'ngfb_add_json_https_schema_org' filter.
@@ -453,6 +454,10 @@ Official announcement: N/A
 
 == Upgrade Notice ==
  
+= 8.37.0-dev1 =
+
+(2016/10/29) Replaced the Object Cache Expiry option with new options for finer control of caching features. Refactored the Schema JSON method for a slight performance improvement. Added https://schema.org/Thing to the Schema Types array. Optimized the sharing buttons HTML cache by storing only one transient per webpage.
+
 = 8.36.3-2 =
 
 (2016/10/23) Fixed HTML table syntax in the Tumblr settings metabox. Optimized the head meta transient cache value for Pinterest (storing 1 transient instead of 2). Minimum requirements updated to WP v3.5 and PHP v5.4.
