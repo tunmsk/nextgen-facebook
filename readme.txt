@@ -380,7 +380,12 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 Official announcement: N/A
 
 * *New Features*
-	* None
+	* Replaced the "Object Cache Expiry" option with:
+		* Head Markup Array Cache Expiry (default 3 days).
+		* Filtered Content Text Cache Expiry (default 1 hour).
+		* Get Image (URL) Size Cache Expiry (default 1 day).
+		* Shortened URL Cache Expiry (default 7 days).
+		* Article Topics Array Cache Expiry (default 7 days).
 * *Improvements*
 	* Added a "Sharing Buttons Cache Expiry" option on the Advanced settings page.
 * *Bugfixes*
