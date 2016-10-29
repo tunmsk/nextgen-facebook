@@ -161,6 +161,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'plugin_columns_taxonomy' => 'plugin_columns_term',		// renamed in v8.31.0-1
 			'plugin_add_to_taxonomy' => 'plugin_add_to_term',		// renamed in v8.31.0-1
 			'plugin_ignore_small_img' => 'plugin_check_img_dims',		// renamed in v8.31.1-1
+			'plugin_file_cache_exp' => 'plugin_social_file_cache_exp',
 		);
 
 		protected $p;
@@ -277,7 +278,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 
 			if ( $opts_version && $opts_version <= 342 ) {
 				if ( isset( $opts['plugin_file_cache_hrs'] ) ) {
-					$opts['plugin_file_cache_exp'] = $opts['plugin_file_cache_hrs'] * 3600;
+					$opts['plugin_social_file_cache_exp'] = $opts['plugin_file_cache_hrs'] * 3600;
 					unset( $opts['plugin_file_cache_hrs'] );
 				}
 			}

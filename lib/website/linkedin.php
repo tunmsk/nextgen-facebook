@@ -110,7 +110,7 @@ if ( ! class_exists( 'NgfbWebsiteLinkedin' ) ) {
 		public function get_script( $pos = 'id' ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
-			$js_url = $this->p->sharing->get_file_cache_url( apply_filters( $this->p->cf['lca'].'_js_url_linkedin',
+			$js_url = $this->p->sharing->get_social_file_cache_url( apply_filters( $this->p->cf['lca'].'_js_url_linkedin',
 				SucomUtil::get_prot().'://platform.linkedin.com/in.js', $pos ) );
 
 			return  '<script type="text/javascript" id="linkedin-script-'.$pos.'">'.
