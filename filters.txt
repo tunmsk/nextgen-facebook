@@ -20,9 +20,8 @@
 'ngfb_author_object_description' ( $description, $author_obj );
 'ngfb_author_object_title' ( $title, $author_obj );
 'ngfb_author_url' ( $url, $mod, $add_page, $src_id );
-'ngfb_cache_expire_content' ( $secs );
-'ngfb_cache_expire_file_url' ( $secs );
-'ngfb_cache_expire_head_array' ( $secs );
+'ngfb_cache_expire_content_text' ( $secs );
+'ngfb_cache_expire_head_array' ( $secs, $array_key );
 'ngfb_cache_expire_image_url_size' ( $secs, $media_url );
 'ngfb_cache_expire_shorten_url' ( $secs, $short_url );
 'ngfb_cache_expire_topics_array' ( $secs );
