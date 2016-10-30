@@ -125,7 +125,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 			$ret['post_thumbnail'] = function_exists( 'has_post_thumbnail' ) ? true : false;
 			$ret['amp_endpoint'] = function_exists( 'is_amp_endpoint' ) ? true : false;
 
-			foreach ( array( 'aop', 'mt', 'ssb' ) as $key )
+			foreach ( array( 'aop', 'head', 'ssb' ) as $key )
 				$ret[$key] = $this->get_avail_check( $key );
 
 			foreach ( $this->p->cf['cache'] as $name => $val ) {
@@ -293,10 +293,10 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 					$ret = ! SucomUtil::get_const( 'NGFB_PRO_MODULE_DISABLE' ) &&
 						is_dir( NGFB_PLUGINDIR.'lib/pro/' ) ? true : false;
 					break;
-				case 'mt':
-					$ret = ! SucomUtil::get_const( 'NGFB_META_TAGS_DISABLE' ) &&
-						empty( $_SERVER['NGFB_META_TAGS_DISABLE'] ) &&
-							empty( $_GET['NGFB_META_TAGS_DISABLE'] ) ? true : false;
+				case 'head':
+					$ret = ! SucomUtil::get_const( 'NGFB_HEAD_HTML_DISABLE' ) &&
+						empty( $_SERVER['NGFB_HEAD_HTML_DISABLE'] ) &&
+							empty( $_GET['NGFB_HEAD_HTML_DISABLE'] ) ? true : false;
 					break;
 				case 'ssb':
 					$ret = ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&

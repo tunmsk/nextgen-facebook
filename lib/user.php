@@ -672,14 +672,8 @@ if ( ! class_exists( 'NgfbUser' ) ) {
 			$sharing_url = $this->p->util->get_sharing_url( false );
 			$locale_salt = 'locale:'.$locale.'_user:'.$user_id;
 			$transients = array(
-				'NgfbHead::get_head_array' => array( 
-					$locale_salt.'_url:'.$sharing_url,
-					$locale_salt.'_url:'.$sharing_url.'_amp:true',
-				),
-				'NgfbMeta::get_mod_column_content' => array( 
-					$locale_salt.'_column:'.$lca.'_og_img',
-					$locale_salt.'_column:'.$lca.'_og_desc',
-				),
+				'NgfbHead::get_head_array' => array( $locale_salt.'_url:'.$sharing_url ),
+				'NgfbMeta::get_mod_column_content' => array( $locale_salt ),
 			);
 			$transients = apply_filters( $lca.'_user_cache_transients', $transients, $user_id, $locale, $sharing_url );
 

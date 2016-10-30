@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.37.0-dev2',	// plugin version
+					'version' => '8.37.0-dev3',	// plugin version
 					'opt_version' => '469',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -1342,7 +1342,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			$var_const['NGFB_DEBUG_FILE_EXP'] = 300;
 			$var_const['NGFB_MENU_ORDER'] = '99.11';		// position of the NGFB menu item
 			$var_const['NGFB_MENU_ICON_HIGHLIGHT'] = true;		// highlight the NGFB menu icon
-			$var_const['NGFB_SHARING_SHORTCODE'] = 'ngfb';		// used by social sharing features
+			$var_const['NGFB_SHARING_SHORTCODE_NAME'] = 'ngfb';
 			$var_const['NGFB_HIDE_ALL_ERRORS'] = false;		// auto-hide all error notices
 			$var_const['NGFB_HIDE_ALL_WARNINGS'] = false;		// auto-hide all warning notices
 			$var_const['NGFB_JSON_PRETTY_PRINT'] = true;		// output pretty / human readable json

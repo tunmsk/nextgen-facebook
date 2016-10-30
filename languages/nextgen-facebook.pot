@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.37.0-dev2\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.37.0-dev3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -678,7 +678,7 @@ msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:54 lib/sharing.php:1062
+#: lib/config-gettext-extract.php:54 lib/sharing.php:1063
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr ""
@@ -1323,7 +1323,7 @@ msgctxt "option label"
 msgid "Article Topic"
 msgstr ""
 
-#: lib/gpl/admin/post.php:94 lib/meta.php:152 lib/post.php:437
+#: lib/gpl/admin/post.php:94 lib/meta.php:152 lib/post.php:428
 #: lib/pro/admin/post.php:122
 msgid "Save a draft version or publish the %s to update this value."
 msgstr ""
@@ -1412,22 +1412,22 @@ msgid ""
 "information for image ID %2$s."
 msgstr ""
 
-#: lib/media.php:701
+#: lib/media.php:694
 msgid "Content"
 msgstr ""
 
-#: lib/media.php:916 lib/pro/util/checkimgdims.php:67
+#: lib/media.php:909 lib/pro/util/checkimgdims.php:67
 msgid "Media Library"
 msgstr ""
 
-#: lib/media.php:971
+#: lib/media.php:964
 msgid ""
 "%1$s image %2$s ignored &mdash; the resulting image of %3$s has an "
 "<strong>aspect ratio equal to/or greater than %4$d:1 allowed by the %5$s "
 "standard</strong>."
 msgstr ""
 
-#: lib/media.php:989
+#: lib/media.php:982
 msgid ""
 "%1$s image %2$s ignored &mdash; the resulting image of %3$s is "
 "<strong>smaller than the minimum of %4$s allowed by the %5$s standard</"
@@ -2504,25 +2504,21 @@ msgstr ""
 msgid "Plugin settings (%s) have been upgraded and saved."
 msgstr ""
 
-#: lib/post.php:331
-msgid "see <a href=\"%s\">WP / Theme Integration</a> settings"
-msgstr ""
-
-#: lib/post.php:335
+#: lib/post.php:327
 msgid "Checking %1$s for duplicate meta tags"
 msgstr ""
 
-#: lib/post.php:352
+#: lib/post.php:343
 msgid ""
 "Possible conflict detected &mdash; your theme or another plugin is adding a "
 "<code>%1$s</code> HTML tag to the head section of this webpage."
 msgstr ""
 
-#: lib/post.php:362
+#: lib/post.php:353
 msgid "Awesome! No duplicate meta tags found. :-) %s more checks to go..."
 msgstr ""
 
-#: lib/post.php:395 lib/profile/social-settings.php:27 lib/term.php:258
+#: lib/post.php:386 lib/profile/social-settings.php:27 lib/term.php:258
 #: lib/user.php:242
 msgctxt "metabox title"
 msgid "Social Settings"
@@ -2756,32 +2752,32 @@ msgstr ""
 msgid "%s must be published<br/>before it can be shared."
 msgstr ""
 
-#: lib/sharing.php:1050
+#: lib/sharing.php:1051
 msgid ""
 "Social sharing buttons can be added to the top, bottom, or both. Each "
 "sharing button must also be enabled below (see the <em>%s</em> options)."
 msgstr ""
 
-#: lib/sharing.php:1050
+#: lib/sharing.php:1051
 msgctxt "option label"
 msgid "Show Button in"
 msgstr ""
 
-#: lib/sharing.php:1053
+#: lib/sharing.php:1054
 msgid ""
 "Add the social sharing buttons to each entry of an index webpage (for "
 "example, <strong>non-static</strong> homepage, category, archive, etc.). "
 "Social sharing buttons are not included on index webpages by default."
 msgstr ""
 
-#: lib/sharing.php:1056
+#: lib/sharing.php:1057
 msgid ""
 "If a static Post or Page has been selected for the homepage, you can add the "
 "social sharing buttons to that static homepage as well (default is "
 "unchecked)."
 msgstr ""
 
-#: lib/sharing.php:1059
+#: lib/sharing.php:1060
 msgid ""
 "Enabled social sharing buttons are added to the Post, Page, Media, and "
 "Product webpages by default. If your theme (or another plugin) supports "
@@ -2789,7 +2785,7 @@ msgid ""
 "buttons on these webpages, check the appropriate option(s) here."
 msgstr ""
 
-#: lib/sharing.php:1062
+#: lib/sharing.php:1063
 msgid ""
 "Add the CSS of all <em>%1$s</em> to webpages (default is checked). The CSS "
 "will be <strong>minimized</strong>, and saved to a single stylesheet with a "
@@ -2797,7 +2793,7 @@ msgid ""
 "or added directly to the webpage HTML."
 msgstr ""
 
-#: lib/sharing.php:1065
+#: lib/sharing.php:1066
 msgid ""
 "Have WordPress enqueue the social stylesheet instead of adding the CSS to in "
 "the webpage HTML (default is unchecked). Enqueueing the stylesheet may be "
@@ -2805,7 +2801,7 @@ msgid ""
 "single stylesheet URL."
 msgstr ""
 
-#: lib/sharing.php:1068
+#: lib/sharing.php:1069
 msgid "JavaScript added to webpages for the social sharing sidebar."
 msgstr ""
 
