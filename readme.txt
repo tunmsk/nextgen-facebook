@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.37.0-dev2 (2016/10/29)**
+**Version 8.37.0-dev3 (2016/10/30)**
 
 Official announcement: N/A
 
@@ -402,6 +402,7 @@ Official announcement: N/A
 	* Renamed the 'ngfb_json_array_type_ids' filter to 'ngfb_json_array_schema_type_ids'.
 	* Removed the 'ngfb_add_json_https_schema_org' filter.
 	* Renamed the 'ngfb_shortcode_ngfb' filter to 'ngfb_sharing_shortcode_ngfb'.
+	* Renamed the NGFB_META_TAGS_DISABLE contant to NGFB_HEAD_HTML_DISABLE.
 
 **Version 8.36.3-2 (2016/10/23)**
 
@@ -457,9 +458,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
  
-= 8.37.0-dev2 =
+= 8.37.0-dev3 =
 
-(2016/10/29) Replaced the Object Cache Expiry option with new options for finer control of caching features. Refactored the Schema JSON method for a slight performance improvement. Added https://schema.org/Thing to the Schema Types array. Optimized the sharing buttons HTML cache by storing only one transient per webpage.
+(2016/10/30) Replaced the Object Cache Expiry option with new options for finer control of caching features. Refactored the Schema JSON method for a slight performance improvement. Added https://schema.org/Thing to the Schema Types array. Optimized the sharing buttons HTML cache by storing only one transient per webpage.
 
 = 8.36.3-2 =
 
