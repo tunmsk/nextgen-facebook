@@ -401,6 +401,7 @@ Official announcement: N/A
 	* Renamed the 'ngfb_json_data_https_schema_org' filter to 'ngfb_json_data_https_schema_org_thing'.
 	* Renamed the 'ngfb_json_array_type_ids' filter to 'ngfb_json_array_schema_type_ids'.
 	* Removed the 'ngfb_add_json_https_schema_org' filter.
+	* Renamed the 'ngfb_shortcode_ngfb' filter to 'ngfb_sharing_shortcode_ngfb'.
 
 **Version 8.36.3-2 (2016/10/23)**
 
