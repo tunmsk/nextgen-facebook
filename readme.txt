@@ -403,6 +403,16 @@ Official announcement: N/A
 	* Removed the 'ngfb_add_json_https_schema_org' filter.
 	* Renamed the 'ngfb_shortcode_ngfb' filter to 'ngfb_sharing_shortcode_ngfb'.
 	* Renamed the NGFB_META_TAGS_DISABLE contant to NGFB_HEAD_HTML_DISABLE.
+	* Renamed the NGFB_SHARING_SHORTCODE contant to NGFB_SHARING_SHORTCODE_NAME.
+	* Added new filters to adjust cache expiration:
+		* 'ngfb_cache_expire_article_topics' ( $secs );
+		* 'ngfb_cache_expire_column_content' ( $secs );
+		* 'ngfb_cache_expire_content_text' ( $secs );
+		* 'ngfb_cache_expire_head_array' ( $secs );
+		* 'ngfb_cache_expire_image_url_size' ( $secs );
+		* 'ngfb_cache_expire_schema_types' ( $secs );
+		* 'ngfb_cache_expire_sharing_buttons' ( $secs );
+		* 'ngfb_cache_expire_shorten_url' ( $secs );
 
 **Version 8.36.3-2 (2016/10/23)**
 
