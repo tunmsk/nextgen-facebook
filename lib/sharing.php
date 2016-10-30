@@ -265,7 +265,9 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 		public function filter_post_cache_transients( $transients, $post_id, $locale, $sharing_url ) {
 			$locale_salt = 'locale:'.$locale.'_post:'.$post_id;	// see SucomUtil::get_mod_salt()
-			$transients[__CLASS__.'::get_buttons'][] = $locale_salt;
+			$transients['NgfbSharing::get_buttons'][] = $locale_salt;
+			$transients['NgfbShortcodeSharing::shortcode'][] = $locale_salt;
+			$transients['NgfbWidgetSharing::widget'][] = $locale_salt;
 			return $transients;
 		}
 
@@ -531,7 +533,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		public function add_buttons_filter( $filter_name = 'the_content' ) {
 			$added = false;
 			if ( method_exists( $this, 'get_buttons_'.$filter_name ) ) {
-				$added = add_filter( $tfilter_name, array( &$this, 'get_buttons_'.$filter_name ), NGFB_SOCIAL_PRIORITY );
+				$added = add_filter( $filter_name, array( &$this, 'get_buttons_'.$filter_name ), NGFB_SOCIAL_PRIORITY );
 				if ( $this->p->debug->enabled )
 					$this->p->debug->log( 'buttons filter '.$filter_name.
 						' added ('.( $added  ? 'true' : 'false' ).')' );

@@ -374,7 +374,7 @@ msgstr ""
 msgid "Error copying %1$s to %2$s."
 msgstr ""
 
-#: lib/admin.php:1428 lib/sharing.php:422
+#: lib/admin.php:1428 lib/sharing.php:424
 msgid "Failed to open file %s for writing."
 msgstr ""
 
@@ -678,7 +678,7 @@ msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:54 lib/sharing.php:1063
+#: lib/config-gettext-extract.php:54 lib/sharing.php:1065
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr ""
@@ -2707,77 +2707,77 @@ msgctxt "metabox tab"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/sharing.php:312
+#: lib/sharing.php:314
 msgctxt "submit button"
 msgid "Reload Default Styles"
 msgstr ""
 
-#: lib/sharing.php:330
+#: lib/sharing.php:332
 msgid ""
 "All sharing styles have been reloaded with their default settings and saved."
 msgstr ""
 
-#: lib/sharing.php:352
+#: lib/sharing.php:354
 msgid "The %s file is not readable."
 msgstr ""
 
-#: lib/sharing.php:392
+#: lib/sharing.php:394
 msgid "Failed to load the minify class SuextMinifyCssCompressor."
 msgstr ""
 
-#: lib/sharing.php:401
+#: lib/sharing.php:403
 msgid "Failed writing to the % file."
 msgstr ""
 
-#: lib/sharing.php:406
+#: lib/sharing.php:408
 msgid "Updated the <a href=\"%1$s\">%2$s</a> stylesheet (%3$d bytes written)."
 msgstr ""
 
-#: lib/sharing.php:416
+#: lib/sharing.php:418
 msgid "The %s folder is not writable."
 msgstr ""
 
-#: lib/sharing.php:431
+#: lib/sharing.php:433
 msgid ""
 "Error removing the minimized stylesheet &mdash; does the web server have "
 "sufficient privileges?"
 msgstr ""
 
-#: lib/sharing.php:451
+#: lib/sharing.php:453
 msgctxt "metabox title"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/sharing.php:526
+#: lib/sharing.php:528
 msgid "%s must be published<br/>before it can be shared."
 msgstr ""
 
-#: lib/sharing.php:1051
+#: lib/sharing.php:1053
 msgid ""
 "Social sharing buttons can be added to the top, bottom, or both. Each "
 "sharing button must also be enabled below (see the <em>%s</em> options)."
 msgstr ""
 
-#: lib/sharing.php:1051
+#: lib/sharing.php:1053
 msgctxt "option label"
 msgid "Show Button in"
 msgstr ""
 
-#: lib/sharing.php:1054
+#: lib/sharing.php:1056
 msgid ""
 "Add the social sharing buttons to each entry of an index webpage (for "
 "example, <strong>non-static</strong> homepage, category, archive, etc.). "
 "Social sharing buttons are not included on index webpages by default."
 msgstr ""
 
-#: lib/sharing.php:1057
+#: lib/sharing.php:1059
 msgid ""
 "If a static Post or Page has been selected for the homepage, you can add the "
 "social sharing buttons to that static homepage as well (default is "
 "unchecked)."
 msgstr ""
 
-#: lib/sharing.php:1060
+#: lib/sharing.php:1062
 msgid ""
 "Enabled social sharing buttons are added to the Post, Page, Media, and "
 "Product webpages by default. If your theme (or another plugin) supports "
@@ -2785,7 +2785,7 @@ msgid ""
 "buttons on these webpages, check the appropriate option(s) here."
 msgstr ""
 
-#: lib/sharing.php:1063
+#: lib/sharing.php:1065
 msgid ""
 "Add the CSS of all <em>%1$s</em> to webpages (default is checked). The CSS "
 "will be <strong>minimized</strong>, and saved to a single stylesheet with a "
@@ -2793,7 +2793,7 @@ msgid ""
 "or added directly to the webpage HTML."
 msgstr ""
 
-#: lib/sharing.php:1066
+#: lib/sharing.php:1068
 msgid ""
 "Have WordPress enqueue the social stylesheet instead of adding the CSS to in "
 "the webpage HTML (default is unchecked). Enqueueing the stylesheet may be "
@@ -2801,7 +2801,7 @@ msgid ""
 "single stylesheet URL."
 msgstr ""
 
-#: lib/sharing.php:1069
+#: lib/sharing.php:1071
 msgid "JavaScript added to webpages for the social sharing sidebar."
 msgstr ""
 
@@ -3774,16 +3774,16 @@ msgid ""
 "website's @username is suggested first."
 msgstr ""
 
-#: lib/widget/sharing.php:31
+#: lib/widget/sharing.php:28
 msgid "The %s social sharing buttons widget."
 msgstr ""
 
-#: lib/widget/sharing.php:113
+#: lib/widget/sharing.php:124
 msgctxt "option value"
 msgid "Share It"
 msgstr ""
 
-#: lib/widget/sharing.php:115
+#: lib/widget/sharing.php:127
 msgctxt "option label"
 msgid "Widget Title (leave blank for no title)"
 msgstr ""

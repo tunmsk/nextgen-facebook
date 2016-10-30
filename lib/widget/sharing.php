@@ -15,15 +15,12 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 		protected $p;
 
 		public function __construct() {
-
 			$this->p =& Ngfb::get_instance();
 			if ( ! is_object( $this->p ) )
 				return;
 
 			$lca = $this->p->cf['lca'];
 			$short = $this->p->cf['plugin'][$lca]['short'];
-			$name = $this->p->cf['plugin'][$lca]['name'];
-
 			$widget_name = $short.' Sharing Buttons';
 			$widget_class = $lca.'-widget-buttons';
 			$widget_ops = array( 
@@ -35,14 +32,12 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 		}
 
 		public function widget( $args, $instance ) {
-			if ( is_feed() )
-				return;	// nothing to do in the feeds
-
-			if ( ! empty( $_SERVER['NGFB_SOCIAL_SHARING_DISABLE'] ) )
-				return;
-
 			if ( ! is_object( $this->p ) )
 				return;
+			elseif ( ! $this->p->is_avail['ssb'] )
+				return;
+			elseif ( is_feed() )
+				return;	// nothing to do in the feeds
 
 			extract( $args );
 
@@ -56,46 +51,61 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 			$title = apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base );
 
 			$lca = $this->p->cf['lca'];
-			if ( $this->p->is_avail['cache']['transient'] ) {
-				$sharing_url = $this->p->util->get_sharing_url( $atts['use_post'] );
-				$cache_salt = __METHOD__.'(locale:'.SucomUtil::get_locale().'_widget:'.$this->id.'_url:'.$sharing_url.')';
+			$type = 'sharing_widget_'.$this->id;
+			$buttons_index = $this->p->sharing->get_buttons_cache_index( $type, $atts );
+			$buttons_array = array();
+			$cache_exp = (int) apply_filters( $lca.'_cache_expire_sharing_buttons', 
+				$this->p->options['plugin_sharing_buttons_cache_exp'], $buttons_index );
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->log( 'buttons index = '.$buttons_index );
+				$this->p->debug->log( 'cache expire = '.$cache_exp );
+			}
+
+			if ( $cache_exp > 0 ) {
+				$cache_salt = __METHOD__.'(locale:'.SucomUtil::get_locale().
+					( empty( $mod['id'] ) ? '_url:'.$this->p->util->get_sharing_url( $atts['use_post'] ) : '' ).')';
 				$cache_id = $lca.'_'.md5( $cache_salt );
-				$cache_type = 'object cache';
 				if ( $this->p->debug->enabled )
-					$this->p->debug->log( $cache_type.': transient salt '.$cache_salt );
-				$html = get_transient( $cache_id );
-				if ( $html !== false ) {
+					$this->p->debug->log( 'transient cache salt '.$cache_salt );
+				$buttons_array = get_transient( $cache_id );
+				if ( isset( $buttons_array[$buttons_index] ) ) {
 					if ( $this->p->debug->enabled )
-						$this->p->debug->log( $cache_type.': html retrieved from transient '.$cache_id );
-					echo $html;
-					if ( $this->p->debug->enabled )
-						$this->p->debug->show_html();
-					return;
+						$this->p->debug->log( $type.' buttons array retrieved from transient '.$cache_id );
 				}
 			}
 
-			// sort enabled sharing buttons by their preferred order
-			$sorted_ids = array();
-			foreach ( $this->p->cf['opt']['pre'] as $id => $pre )
-				if ( array_key_exists( $id, $instance ) && (int) $instance[$id] )
-					$sorted_ids[ zeroise( $this->p->options[$pre.'_order'], 3 ).'-'.$id] = $id;
-			ksort( $sorted_ids );
+			if ( ! isset( $buttons_array[$buttons_index] ) ) {
 
-			$html = '<!-- '.$this->p->cf['lca'].' '.$args['widget_id'].' begin -->'.
-				$before_widget.
-				( empty( $title ) ? '' : $before_title.$title.$after_title ).
-				$this->p->sharing->get_html( $sorted_ids, $atts ).
-				$after_widget.
-				'<!-- '.$this->p->cf['lca'].' '.$args['widget_id'].' end -->'."\n";
+				// sort enabled sharing buttons by their preferred order
+				$sorted_ids = array();
+				foreach ( $this->p->cf['opt']['pre'] as $id => $pre )
+					if ( array_key_exists( $id, $instance ) && (int) $instance[$id] )
+						$sorted_ids[ zeroise( $this->p->options[$pre.'_order'], 3 ).'-'.$id] = $id;
+				ksort( $sorted_ids );
+	
+				// returns html or an empty string
+				$buttons_array[$buttons_index] = $this->p->sharing->get_html( $sorted_ids, $atts );
 
-			if ( $this->p->is_avail['cache']['transient'] ) {
-				set_transient( $cache_id, $html, $this->p->options['plugin_object_cache_exp'] );
-				if ( $this->p->debug->enabled )
-					$this->p->debug->log( $cache_type.': html saved to transient '.
-						$cache_id.' ('.$this->p->options['plugin_object_cache_exp'].' seconds)');
+				if ( ! empty( $buttons_array[$buttons_index] ) ) {
+					$buttons_array[$buttons_index] = '
+<!-- '.$lca.' sharing widget '.$args['widget_id'].' begin -->'."\n".
+$before_widget.
+( empty( $title ) ? '' : $before_title.$title.$after_title ).
+$buttons_array[$buttons_index]."\n".	// buttons html is trimmed, so add newline
+$after_widget.
+'<!-- '.$lca.' sharing widget '.$args['widget_id'].' end -->'."\n\n";
+	
+					if ( $cache_exp > 0 ) {
+						set_transient( $cache_id, $buttons_array, $cache_exp );
+						if ( $this->p->debug->enabled )
+							$this->p->debug->log( $type.' buttons html saved to transient '.
+								$cache_id.' ('.$cache_exp.' seconds)' );
+					}
+				}
 			}
 
-			echo $html;
+			echo $buttons_array[$buttons_index];
 			if ( $this->p->debug->enabled )
 				$this->p->debug->show_html();
 		}
@@ -110,11 +120,13 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 
 		public function form( $instance ) {
 			$title = isset( $instance['title'] ) ?
-				esc_attr( $instance['title'] ) : _x( 'Share It', 'option value', 'nextgen-facebook' );
+				esc_attr( $instance['title'] ) : 
+				_x( 'Share It', 'option value', 'nextgen-facebook' );
+
 			echo "\n".'<p><label for="'.$this->get_field_id( 'title' ).'">'.
-				_x( 'Widget Title (leave blank for no title)', 'option label', 'nextgen-facebook' ).':</label>'.
-				'<input class="widefat" id="'.$this->get_field_id( 'title' ).'" name="'.
-					$this->get_field_name( 'title' ).'" type="text" value="'.$title.'"/></p>'."\n";
+			_x( 'Widget Title (leave blank for no title)', 'option label', 'nextgen-facebook' ).':</label>'.
+			'<input class="widefat" id="'.$this->get_field_id( 'title' ).'" name="'.
+				$this->get_field_name( 'title' ).'" type="text" value="'.$title.'"/></p>'."\n";
 
 			foreach ( $this->p->sharing->get_website_object_ids() as $id => $name ) {
 				$name = $name == 'GooglePlus' ? 'Google+' : $name;
@@ -124,7 +136,7 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 					'" value="1" type="checkbox" ';
 				if ( ! empty( $instance[$id] ) )
 					echo checked( 1, $instance[$id] );
-				echo ' /> '.$name.'</label></p>', "\n";
+				echo '/> '.$name.'</label></p>', "\n";
 			}
 		}
 	}
