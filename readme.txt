@@ -406,7 +406,8 @@ Official announcement: N/A
 	* Renamed the 'ngfb_shortcode_ngfb' filter to 'ngfb_sharing_shortcode_ngfb'.
 	* Renamed the NGFB_META_TAGS_DISABLE contant to NGFB_HEAD_HTML_DISABLE.
 	* Renamed the NGFB_SHARING_SHORTCODE contant to NGFB_SHARING_SHORTCODE_NAME.
-	* Added new filters to adjust cache expiration:
+	* Removed the WPSSO_TRANSIENT_CACHE_DISABLE and WPSSO_OBJECT_CACHE_DISABLE constants.
+	* Added several new filters to adjust transient / object cache expiration:
 		* 'ngfb_cache_expire_article_topics' ( $secs );
 		* 'ngfb_cache_expire_column_content' ( $secs );
 		* 'ngfb_cache_expire_content_text' ( $secs );
