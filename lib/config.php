@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.37.0-dev3',	// plugin version
+					'version' => '8.37.0-dev4',	// plugin version
 					'opt_version' => '469',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -1183,11 +1183,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'thing' => 'https://schema.org/Thing',
 					),
 				),
-			),
-			'cache' => array(
-				'file' => false,
-				'object' => true,
-				'transient' => true,
 			),
 			'follow' => array(
 				'size' => 24,
