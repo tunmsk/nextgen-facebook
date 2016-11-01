@@ -372,11 +372,65 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 						/*
 						 * 'Cache Settings' settings
 						 */
+						case 'tooltip-plugin_head_cache_exp':
+							$cache_exp = NgfbConfig::$cf['opt']['defaults']['plugin_head_cache_exp'];	// use original un-filtered value
+							$cache_diff = $cache_exp ? human_time_diff( 0, $cache_exp ) : _x( 'disabled', 'option comment', 'nextgen-facebook' );
+							$text = __( 'Head meta tags and Schema markup are saved to the WordPress transient cache to optimize performance.',
+								'nextgen-facebook' ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).',
+									'nextgen-facebook' ), $cache_exp, $cache_diff );
+							break;
+						case 'tooltip-plugin_column_cache_exp':
+							$cache_exp = NgfbConfig::$cf['opt']['defaults']['plugin_column_cache_exp'];	// use original un-filtered value
+							$cache_diff = $cache_exp ? human_time_diff( 0, $cache_exp ) : _x( 'disabled', 'option comment', 'nextgen-facebook' );
+							$text = __( 'The content of list table columns is saved to the WordPress transient cache to optimize performance.',
+								'nextgen-facebook' ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).',
+									'nextgen-facebook' ), $cache_exp, $cache_diff );
+							break;
+						case 'tooltip-plugin_content_cache_exp':
+							$cache_exp = NgfbConfig::$cf['opt']['defaults']['plugin_content_cache_exp'];	// use original un-filtered value
+							$cache_diff = $cache_exp ? human_time_diff( 0, $cache_exp ) : _x( 'disabled', 'option comment', 'nextgen-facebook' );
+							$text = __( 'Filtered post content is saved to the WordPress <em>non-persistent</em> object cache to optimize performance.',
+								'nextgen-facebook' ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).',
+									'nextgen-facebook' ), $cache_exp, $cache_diff );
+							break;
+						case 'tooltip-plugin_imgsize_cache_exp':
+							$cache_exp = NgfbConfig::$cf['opt']['defaults']['plugin_imgsize_cache_exp'];	// use original un-filtered value
+							$cache_diff = $cache_exp ? human_time_diff( 0, $cache_exp ) : _x( 'disabled', 'option comment', 'nextgen-facebook' );
+							$text = __( 'The size for image URLs (not image IDs) is retrieved and saved to the WordPress transient cache to optimize performance and network bandwidth.',
+								'nextgen-facebook' ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).',
+									'nextgen-facebook' ), $cache_exp, $cache_diff );
+							break;
+						case 'tooltip-plugin_shorten_cache_exp':
+							$cache_exp = NgfbConfig::$cf['opt']['defaults']['plugin_shorten_cache_exp'];	// use original un-filtered value
+							$cache_diff = $cache_exp ? human_time_diff( 0, $cache_exp ) : _x( 'disabled', 'option comment', 'nextgen-facebook' );
+							$text = __( 'Shortened URLs are saved to the WordPress transient cache to optimize performance and API connections.',
+								'nextgen-facebook' ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).',
+									'nextgen-facebook' ), $cache_exp, $cache_diff );
+							break;
+						case 'tooltip-plugin_topics_cache_exp':
+							$cache_exp = NgfbConfig::$cf['opt']['defaults']['plugin_topics_cache_exp'];	// use original un-filtered value
+							$cache_diff = $cache_exp ? human_time_diff( 0, $cache_exp ) : _x( 'disabled', 'option comment', 'nextgen-facebook' );
+							$text = __( 'The filtered article topics array is saved to the WordPress transient cache to optimize performance and disk access.',
+								'nextgen-facebook' ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).',
+									'nextgen-facebook' ), $cache_exp, $cache_diff );
+							break;
+						case 'tooltip-plugin_types_cache_exp':
+							$cache_exp = NgfbConfig::$cf['opt']['defaults']['plugin_types_cache_exp'];	// use original un-filtered value
+							$cache_diff = $cache_exp ? human_time_diff( 0, $cache_exp ) : _x( 'disabled', 'option comment', 'nextgen-facebook' );
+							$text = __( 'The filtered Schema types array is saved to the WordPress transient cache to optimize performance.',
+								'nextgen-facebook' ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).',
+									'nextgen-facebook' ), $cache_exp, $cache_diff );
+							break;
 						case 'tooltip-plugin_verify_certs':
-							$text = 'Enable verification of peer SSL certificates when fetching content to be cached using HTTPS. The PHP \'curl\' function will use the '.NGFB_PHP_CURL_CAINFO.' certificate file by default. You can define a NGFB_PHP_CURL_CAINFO constant in your wp-config.php file to use an alternate certificate file.';
+							$text = __( 'Verify peer SSL certificates when getting remote content for caching.', 'nextgen-facebook' ).' '.
+								sprintf( __( 'The PHP cURL library will use the Certificate Authority (CA) bundle in <u>%s</u> by default.',
+									'nextgen-facebook' ), NGFB_PHP_CURL_CAINFO ).' '.
+								sprintf( __( 'You can define the %s constant to provide an alternate certificate file path.',
+									'nextgen-facebook' ), 'NGFB_PHP_CURL_CAINFO' );
 							break;
 						case 'tooltip-plugin_cache_info':
-							$text = 'Report the number of objects removed from the cache when updating Posts and Pages.';
+							$text = __( 'Report the number of objects removed from the WordPress cache when Posts and Pages are updated.',
+								'nextgen-facebook' );
 							break;
 						/*
 						 * 'Service API Keys' (URL Shortening) settings

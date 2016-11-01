@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.37.0-b1',	// plugin version
+					'version' => '8.37.0-b2',	// plugin version
 					'opt_version' => '469',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -524,8 +524,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_content_cache_exp' => 3600,		// Filtered Content Text Cache Expiry (1 hour)
 					'plugin_imgsize_cache_exp' => 86400,		// Get Image (URL) Size Cache Expiry (1 day)
 					'plugin_shorten_cache_exp' => 604800,		// Shortened URL Cache Expiry (7 days)
-					'plugin_topics_cache_exp' => 604800,		// Article Topics Array Cache Expiry (7 days)
-					'plugin_types_cache_exp' => 604800,		// Schema Types Array Cache Expiry (7 days)
+					'plugin_topics_cache_exp' => 2419200,		// Article Topics Array Cache Expiry (4 weeks)
+					'plugin_types_cache_exp' => 2419200,		// Schema Types Array Cache Expiry (4 weeks)
 					'plugin_verify_certs' => 0,			// Verify SSL Certificates
 					'plugin_cache_info' => 0,			// Report Cache Purge Count
 					// Service API Keys Tab
@@ -633,9 +633,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_imgsize_cache_exp:use' => 'default',
 					'plugin_shorten_cache_exp' => 604800,		// Shortened URL Cache Expiry (7 days)
 					'plugin_shorten_cache_exp:use' => 'default',
-					'plugin_topics_cache_exp' => 604800,		// Article Topics Array Cache Expiry (7 days)
+					'plugin_topics_cache_exp' => 2419200,		// Article Topics Array Cache Expiry (4 weeks)
 					'plugin_topics_cache_exp:use' => 'default',
-					'plugin_types_cache_exp' => 604800,		// Schema Types Array Cache Expiry (7 days)
+					'plugin_types_cache_exp' => 2419200,		// Schema Types Array Cache Expiry (4 weeks)
 					'plugin_types_cache_exp:use' => 'default',
 					'plugin_verify_certs' => 0,			// Verify SSL Certificates
 					'plugin_verify_certs:use' => 'default',
