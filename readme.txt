@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.37.0-dev4 (2016/10/30)**
+**Version 8.37.0-b1 (2016/10/31)**
 
 Official announcement: N/A
 
@@ -406,7 +406,7 @@ Official announcement: N/A
 	* Renamed the 'ngfb_shortcode_ngfb' filter to 'ngfb_sharing_shortcode_ngfb'.
 	* Renamed the NGFB_META_TAGS_DISABLE contant to NGFB_HEAD_HTML_DISABLE.
 	* Renamed the NGFB_SHARING_SHORTCODE contant to NGFB_SHARING_SHORTCODE_NAME.
-	* Removed the WPSSO_TRANSIENT_CACHE_DISABLE, WPSSO_OBJECT_CACHE_DISABLE and WPSSO_FILE_CACHE_DISABLE constants.
+	* Removed the NGFB_TRANSIENT_CACHE_DISABLE, NGFB_OBJECT_CACHE_DISABLE and NGFB_FILE_CACHE_DISABLE constants.
 	* Added several new filters to adjust transient / object cache expiration:
 		* 'ngfb_cache_expire_article_topics' ( $secs );
 		* 'ngfb_cache_expire_column_content' ( $secs );
@@ -416,6 +416,7 @@ Official announcement: N/A
 		* 'ngfb_cache_expire_schema_types' ( $secs );
 		* 'ngfb_cache_expire_sharing_buttons' ( $secs );
 		* 'ngfb_cache_expire_shorten_url' ( $secs );
+		* 'ngfb_cache_expire_social_file' ( $secs );
 
 **Version 8.36.3-2 (2016/10/23)**
 
@@ -471,9 +472,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
  
-= 8.37.0-dev4 =
+= 8.37.0-b1 =
 
-(2016/10/30) Replaced the Object Cache Expiry option with new options for finer control of caching features. Refactored the Schema JSON method for a slight performance improvement. Added https://schema.org/Thing to the Schema Types array. Optimized the sharing buttons HTML cache by storing only one transient per webpage.
+(2016/10/31) Replaced the Object Cache Expiry option with new options for finer control of caching features. Refactored the Schema JSON method for a slight performance improvement. Added https://schema.org/Thing to the Schema Types array. Optimized the sharing buttons HTML cache by storing only one transient per webpage.
 
 = 8.36.3-2 =
 

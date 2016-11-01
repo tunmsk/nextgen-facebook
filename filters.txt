@@ -29,6 +29,7 @@
 'ngfb_cache_expire_schema_types' ( $secs );
 'ngfb_cache_expire_sharing_buttons' ( $secs );
 'ngfb_cache_expire_shorten_url' ( $secs );
+'ngfb_cache_expire_social_file' ( $secs );
 'ngfb_caption' ( $caption, $mod, $add_hashtags, $md_idx );
 'ngfb_check_post_head' ( $bool, $post_id, $post_obj );
 'ngfb_columns_post_{post_type_name}' ( true );
