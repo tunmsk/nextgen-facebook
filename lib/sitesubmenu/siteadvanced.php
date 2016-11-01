@@ -48,7 +48,7 @@ if ( ! class_exists( 'NgfbSitesubmenuSiteadvanced' ) && class_exists( 'NgfbAdmin
 			$metabox = 'plugin';
 			$tabs = apply_filters( $this->p->cf['lca'].'_siteadvanced_plugin_tabs', array( 
 				'settings' => _x( 'Plugin Settings', 'metabox tab', 'nextgen-facebook' ),
-				'cache' => _x( 'File and Object Cache', 'metabox tab', 'nextgen-facebook' ),
+				'cache' => _x( 'Cache Settings', 'metabox tab', 'nextgen-facebook' ),
 			) );
 			$table_rows = array();
 			foreach ( $tabs as $key => $title )
