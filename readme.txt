@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.37.0-b2 (2016/11/01)**
+**Version 8.37.0-rc1 (2016/11/01)**
 
 Official announcement: N/A
 
@@ -392,7 +392,7 @@ Official announcement: N/A
 * *Improvements*
 	* Replaced the "Social File Cache Expiry" drop-down (in hours) with an input field (in seconds).
 * *Bugfixes*
-	* None
+	* Fixed the SucomUtil::get_first_last_next_nums() method, which was not returning a correct 'next' number for single element arrays.
 * *Developer Notes*
 	* Refactored the NgfbShortcodeSharing and NgfbWidgetSharing classes to optimize caching performance.
 	* Refactored the ngfb_get_sharing_buttons() function to optimize caching performance.
@@ -472,7 +472,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
  
-= 8.37.0-b2 =
+= 8.37.0-rc1 =
 
 (2016/11/01) Replaced the Object Cache Expiry option with new options for finer control of caching features. Refactored the Schema JSON method for a slight performance improvement. Added https://schema.org/Thing to the Schema Types array. Optimized the sharing buttons HTML cache by storing only one transient per webpage.
 
