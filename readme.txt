@@ -375,7 +375,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Changelog / Release Notes =
 
-**Version 8.37.0-rc1 (2016/11/01)**
+**Version 8.37.0-rc1 (2016/11/02)**
 
 Official announcement: N/A
 
@@ -474,7 +474,7 @@ Official announcement: N/A
  
 = 8.37.0-rc1 =
 
-(2016/11/01) Replaced the Object Cache Expiry option with new options for finer control of caching features. Refactored the Schema JSON method for a slight performance improvement. Added https://schema.org/Thing to the Schema Types array. Optimized the sharing buttons HTML cache by storing only one transient per webpage.
+(2016/11/02) Replaced the Object Cache Expiry option with new options for finer control of caching features. Refactored the Schema JSON method for a slight performance improvement. Added https://schema.org/Thing to the Schema Types array. Optimized the sharing buttons HTML cache by storing only one transient per webpage.
 
 = 8.36.3-2 =
 
