@@ -55,7 +55,7 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 			$buttons_index = $this->p->sharing->get_buttons_cache_index( $type, $atts );
 			$buttons_array = array();
 			$cache_exp = (int) apply_filters( $lca.'_cache_expire_sharing_buttons', 
-				$this->p->options['plugin_sharing_buttons_cache_exp'], $buttons_index );
+				$this->p->options['plugin_sharing_buttons_cache_exp'] );
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'buttons index = '.$buttons_index );

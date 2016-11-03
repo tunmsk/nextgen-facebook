@@ -49,7 +49,7 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 		$buttons_index = $ngfb->sharing->get_buttons_cache_index( $type, $atts, $ids );
 		$buttons_array = array();
 		$cache_exp = (int) apply_filters( $lca.'_cache_expire_sharing_buttons', 
-			( $cache_exp === false ? $ngfb->options['plugin_sharing_buttons_cache_exp'] : $cache_exp ), $buttons_index );
+			( $cache_exp === false ? $ngfb->options['plugin_sharing_buttons_cache_exp'] : $cache_exp ) );
 
 		if ( $ngfb->debug->enabled ) {
 			$ngfb->debug->log( 'buttons index = '.$buttons_index );
