@@ -410,9 +410,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					switch ( $action_name ) {
 						case 'check_for_updates': 
 							if ( $this->p->is_avail['util']['um'] ) {
-								// refresh the readme info
 								NgfbAdmin::set_readme_info( false );	// $read_cache = false
-
 								$ngfbum =& NgfbUm::get_instance();
 								$ngfbum->update->check_for_updates( null, true, false );	// $use_cache = false
 							} else {
@@ -695,9 +693,8 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 		public function show_metabox_version_info() {
 
-			NgfbAdmin::set_readme_info();
-
 			$lca = $this->p->cf['lca'];
+			NgfbAdmin::set_readme_info();	// $read_cache = true
 			echo '<table class="sucom-setting '.$lca.' side">';
 			foreach ( $this->p->cf['plugin'] as $ext => $info ) {
 				if ( empty( $info['version'] ) )	// only active extensions
@@ -738,16 +735,13 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 				echo '<tr><td colspan="2"><h4>'.self::$pkg_short[$ext].'</h4></td></tr>';
 
-				echo '<tr><th class="side">'._x( 'Installed',
-					'plugin status label', 'nextgen-facebook' ).':</th>
+				echo '<tr><th class="side">'._x( 'Installed', 'plugin status label', 'nextgen-facebook' ).':</th>
 					<td class="side_version" '.$installed_style.'>'.$installed_version.'</td></tr>';
 
-				echo '<tr><th class="side">'._x( 'Stable',
-					'plugin status label', 'nextgen-facebook' ).':</th>
+				echo '<tr><th class="side">'._x( 'Stable', 'plugin status label', 'nextgen-facebook' ).':</th>
 					<td class="side_version">'.$stable_version.'</td></tr>';
 
-				echo '<tr><th class="side">'._x( 'Latest',
-					'plugin status label', 'nextgen-facebook' ).':</th>
+				echo '<tr><th class="side">'._x( 'Latest', 'plugin status label', 'nextgen-facebook' ).':</th>
 					<td class="side_version">'.$latest_version.'</td></tr>';
 
 				echo '<tr><td colspan="2" id="latest_notice"><p>Version '.$latest_version.' '.$latest_notice.'</p>'.
@@ -768,8 +762,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				if ( isset( $info['lib']['gpl'] ) )
 					$plugin_count++;
 
-			echo '<table class="sucom-setting '.$lca.' side"
-				style="margin-bottom:10px;">';
+			echo '<table class="sucom-setting '.$lca.' side" style="margin-bottom:10px;">';
 
 			/*
 			 * GPL version features
@@ -826,8 +819,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				if ( isset( $info['lib']['pro'] ) )
 					$plugin_count++;
 
-			echo '<table class="sucom-setting '.$lca.' side"
-				style="margin-bottom:10px;">';
+			echo '<table class="sucom-setting '.$lca.' side" style="margin-bottom:10px;">';
 
 			/*
 			 * Pro version features
@@ -881,15 +873,15 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$status_info = array( 
 				'on' => array(
 					'img' => 'green-circle.png',
-					'title' => 'Feature is enabled',
+					'title' => __( 'Feature is enabled.', 'nextgen-facebook' ),
 				),
 				'off' => array(
 					'img' => 'gray-circle.png',
-					'title' => 'Feature is disabled / not loaded',
+					'title' => __( 'Feature is disabled / not loaded.', 'nextgen-facebook' ),
 				),
 				'rec' => array(
 					'img' => 'red-circle.png',
-					'title' => 'Feature is recommended but disabled / not available',
+					'title' => __( 'Feature is recommended but disabled / not available.', 'nextgen-facebook' ),
 				),
 			);
 
@@ -993,9 +985,8 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 						'nextgen-facebook' ), $info['url']['forum'] ).'</li>';
 
 				if ( ! empty( $help_links ) ) {
-					echo '<p><strong>'.sprintf( _x( '%s Support', 
-						'metabox title (side)', 'nextgen-facebook' ), 
-							self::$pkg_short[$ext] ).'</strong></p>';
+					echo '<p><strong>'.sprintf( _x( '%s Support', 'metabox title (side)',
+						'nextgen-facebook' ), self::$pkg_short[$ext] ).'</strong></p>';
 					echo '<ul>'.$help_links.'</ul>';
 				}
 			}
@@ -1056,7 +1047,8 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				$num++;
 				$links = '';
 				$img_href = '';
-				$view_text = _x( 'View Plugin Details', 'plugin action link', 'nextgen-facebook' );
+				$view_text = _x( 'View Plugin Details',
+					'plugin action link', 'nextgen-facebook' );
 
 				if ( ! empty( $info['slug'] ) && 
 					( empty( $info['url']['latest'] ) ||
