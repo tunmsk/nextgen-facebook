@@ -14,9 +14,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 		public static $cf = array(
 			'lca' => 'ngfb',		// lowercase acronym
-			'uca' => 'NGFB',		// uppercase acronym
-			'menu' => 'NGFB',		// menu item label
-			'color' => 'ff6600',		// menu item color - dark orange
+			'menu_label' => 'NGFB',		// menu item label
+			'menu_color' => 'ff6600',	// menu item color (dark orange)
 			'readme_cache_exp' => 86400,	// 1 day
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(

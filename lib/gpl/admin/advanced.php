@@ -105,9 +105,9 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 
 			foreach ( array( 
 				'og_img' => sprintf( _x( 'Add \'%s\' Column in', 'option label', 'nextgen-facebook' ), 
-					sprintf( _x( '%s Img', 'column title', 'nextgen-facebook' ), $this->p->cf['menu'] ) ),
+					sprintf( _x( '%s Img', 'column title', 'nextgen-facebook' ), $this->p->cf['menu_label'] ) ),
 				'og_desc' => sprintf( _x( 'Add \'%s\' Column in', 'option label', 'nextgen-facebook' ), 
-					sprintf( _x( '%s Desc', 'column title', 'nextgen-facebook' ), $this->p->cf['menu'] ) ),
+					sprintf( _x( '%s Desc', 'column title', 'nextgen-facebook' ), $this->p->cf['menu_label'] ) ),
 			) as $key => $label ) {
 
 				if ( $network ) {

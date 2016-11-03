@@ -1119,12 +1119,12 @@ $buttons_array[$buttons_index]."\n".	// buttons html is trimmed, so add newline
         .facebook-button { }</pre>';
 					break;
 				case 'info-styles-widget':
-					$text = '<p>Social sharing buttons within the '.$this->p->cf['menu'].' Sharing Buttons widget are assigned the \''.$lca.'-widget-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
+					$text = '<p>Social sharing buttons within the social sharing buttons widget are assigned the \''.$lca.'-widget-buttons\' class, which itself contains the \''.$lca.'-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
 					<p>Example:</p><pre>
 .'.$lca.'-widget-buttons 
     .'.$lca.'-buttons
         .facebook-button { }</pre>
-					<p>The '.$this->p->cf['menu'].' Sharing Buttons widget also has an id of \''.$lca.'-widget-buttons-<em>#</em>\', and the buttons have an id of \'<em>name</em>-'.$lca.'-widget-buttons-<em>#</em>\'.</p>
+					<p>The social sharing buttons widget also has an id of \''.$lca.'-widget-buttons-<em>#</em>\', and the buttons have an id of \'<em>name</em>-'.$lca.'-widget-buttons-<em>#</em>\'.</p>
 					<p>Example:</p><pre>
 #'.$lca.'-widget-buttons-2
     .'.$lca.'-buttons
