@@ -373,6 +373,15 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 * [GitHub](https://surniaulula.github.io/nextgen-facebook/)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
 
+= Version Numbering Scheme =
+
+Version components: `{major}.{minor}.{bugfix}-{stage}{level}`
+
+* {major} = Major code changes / re-writes or significant feature changes.
+* {minor} = New features / options were added or improved.
+* {bugfix} = Bugfixes or minor improvements.
+* {stage}{level} = dev &lt; a (alpha) &lt; b (beta) &lt; rc (release candidate) &lt; # (production) &mdash; see [PHP's version_compare](http://php.net/manual/en/function.version-compare.php) documentation for additional information on release stages. The production stage level number can be incremented for simple text revisions and/or translation updates.
+
 = Changelog / Release Notes =
 
 **Version 8.37.0-2 (2016/11/04)**
