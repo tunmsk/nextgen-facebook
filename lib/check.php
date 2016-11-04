@@ -288,17 +288,20 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 						is_dir( NGFB_PLUGINDIR.'lib/pro/' ) ? true : false;
 					break;
 				case 'head':
-					$ret = ! SucomUtil::get_const( 'NGFB_HEAD_HTML_DISABLE' ) &&
-						empty( $_SERVER['NGFB_HEAD_HTML_DISABLE'] ) &&
-							empty( $_GET['NGFB_HEAD_HTML_DISABLE'] ) ? true : false;
+					$ret = apply_filters( $this->p->cf['lca'].'_is_avail_'.$key, 
+						( ! SucomUtil::get_const( 'NGFB_HEAD_HTML_DISABLE' ) &&
+							empty( $_SERVER['NGFB_HEAD_HTML_DISABLE'] ) &&
+								empty( $_GET['NGFB_HEAD_HTML_DISABLE'] ) ? 
+									true : false ) );
 					break;
 				case 'ssb':
 					$ret = ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
 						empty( $_SERVER['NGFB_SOCIAL_SHARING_DISABLE'] ) &&
-							class_exists( $this->p->cf['lca'].'sharing' ) ? true : false;
+							class_exists( $this->p->cf['lca'].'sharing' ) ?
+								true : false;
 					break;
 				default:
-					$ret = false;
+					$ret = false;	// just in case
 					break;
 			}
 			return $ret;
