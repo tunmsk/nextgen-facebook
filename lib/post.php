@@ -22,9 +22,12 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 		protected function add_actions() {
 
 			if ( is_admin() ) {
-				add_action( 'add_meta_boxes', array( &$this, 'add_metaboxes' ) );
-				// load_meta_page() priorities: 100 post, 200 user, 300 term
-				add_action( 'current_screen', array( &$this, 'load_meta_page' ), 100, 1 );
+				if ( ! empty( $_GET ) ) {
+					add_action( 'add_meta_boxes', array( &$this, 'add_metaboxes' ) );
+					// load_meta_page() priorities: 100 post, 200 user, 300 term
+					add_action( 'current_screen', array( &$this, 'load_meta_page' ), 100, 1 );
+				}
+
 				add_action( 'save_post', array( &$this, 'save_options' ), NGFB_META_SAVE_PRIORITY );
 				add_action( 'save_post', array( &$this, 'clear_cache' ), NGFB_META_CACHE_PRIORITY );
 				add_action( 'edit_attachment', array( &$this, 'save_options' ), NGFB_META_SAVE_PRIORITY );
@@ -175,14 +178,12 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 
 		// hooked into the current_screen action
 		public function load_meta_page( $screen = false ) {
-
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
 			// all meta modules set this property, so use it to optimize code execution
-			if ( ! empty( NgfbMeta::$head_meta_tags ) 
-				|| ! isset( $screen->id ) )
-					return;
+			if ( NgfbMeta::$head_meta_tags !== false || ! isset( $screen->id ) )
+				return;
 
 			if ( $this->p->debug->enabled )
 				$this->p->debug->log( 'screen id: '.$screen->id );
@@ -191,7 +192,6 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 				case 'upload':
 				case ( strpos( $screen->id, 'edit-' ) === 0 ? true : false ):	// posts list table
 					return;
-					break;
 			}
 
 			$post_obj = SucomUtil::get_post_object();
@@ -221,6 +221,7 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 			if ( $post_obj->post_status === 'auto-draft' ) {
 				if ( $this->p->debug->enabled )
 					$this->p->debug->log( 'head meta skipped: post_status is auto-draft' );
+				NgfbMeta::$head_meta_tags = array();
 			} else {
 				$add_metabox = empty( $this->p->options['plugin_add_to_'.$post_obj->post_type] ) ? false : true;
 				if ( apply_filters( $lca.'_add_metabox_post', $add_metabox, $post_id, $post_obj->post_type ) ) {
