@@ -224,6 +224,8 @@ if ( ! class_exists( 'NgfbOptions' ) ) {
 						}
 					}
 
+					// the generator meta tags are required for plugin support
+					// you can disable the generator meta tags, but any request for support will be denied
 					$opts['add_meta_name_generator'] = SucomUtil::get_const( 'NGFB_META_GENERATOR_DISABLE' ) ? 0 : 1;
 				}
 

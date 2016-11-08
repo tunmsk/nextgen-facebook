@@ -25,6 +25,7 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 				if ( ! empty( $_GET ) ) {
 					add_action( 'add_meta_boxes', array( &$this, 'add_metaboxes' ) );
 					// load_meta_page() priorities: 100 post, 200 user, 300 term
+					// sets the NgfbMeta::$head_meta_tags and NgfbMeta::$head_meta_info class properties
 					add_action( 'current_screen', array( &$this, 'load_meta_page' ), 100, 1 );
 				}
 
@@ -177,6 +178,7 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 		}
 
 		// hooked into the current_screen action
+		// sets the NgfbMeta::$head_meta_tags and NgfbMeta::$head_meta_info class properties
 		public function load_meta_page( $screen = false ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
