@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.37.0-2',	// plugin version
+					'version' => '8.37.1-dev1',	// plugin version
 					'opt_version' => '469',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -975,7 +975,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					),
 				),
 				/*
-				 * NgfbSchema::get_schema_types() flattens the array, so AVOID DUPLICATE KEY NAMES.
+				 * NgfbSchema::get_schema_types_array() flattens the array, so AVOID DUPLICATE KEY NAMES.
 				 *
 				 * https URLs are preferred - for more info, see https://schema.org/docs/faq.html#19:
 				 *
