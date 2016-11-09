@@ -671,11 +671,14 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 		}
 
 		public static function add_main_entity_data( array &$json_data, $url ) {
+			/*
 			$json_data['mainEntityOfPage'] = array(
 				'@context' => 'https://schema.org',
 				'@type' => 'WebPage',
 				'@id' => $url,
 			);
+			*/
+			$json_data['mainEntityOfPage'] = $url;
 		}
 
 		// $logo_key can be 'org_logo_url' or 'org_banner_url' (600x60px image) for Articles
@@ -1031,6 +1034,9 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 					'person_sameas' => $user_sameas,
 				);
 			}
+
+			if ( $ngfb->debug->enabled )
+				$ngfb->debug->log_arr( 'person options', $opts );
 
 			$person_type_id = empty( $opts['person_type'] ) ? 'person' : $opts['person_type'];	// person or patient
 			$person_type_url = $ngfb->schema->get_schema_type_url( $person_type_id, 'person' );
