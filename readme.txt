@@ -386,6 +386,23 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.37.1-dev1 (2016/11/09)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Refactored the NgfbSchema class to provide a public get_json_data() method for other classes.
+	* Added NgfbPost::get_posts(), NgfbTerm::get_posts(), and NgfbUser::get_posts() methods.
+	* Added a NgfbMeta::get_posts_mods() method to return `$mod` arrays for all posts in the current archive page.
+	* Added a NgfbSchema::get_json_data() method with used by NgfbSchema::get_json_array() in the same class.
+	* Renamed the NgfbSchema::get_head_item_type() method to NgfbSchema::get_mod_schema_type().
+
 **Version 8.37.0-2 (2016/11/04)**
 
 Official announcement: N/A
@@ -483,6 +500,10 @@ Official announcement: N/A
 
 == Upgrade Notice ==
  
+= 8.37.1-dev1 =
+
+(2016/11/09) Refactored the NgfbSchema class to provide a public get_json_data() method for other classes.
+
 = 8.37.0-2 =
 
 (2016/11/04) Replaced the Object Cache Expiry option with new options for finer control of caching features. Refactored the Schema JSON method for a slight performance improvement. Added https://schema.org/Thing to the Schema Types array. Optimized the sharing buttons HTML cache by storing only one transient per webpage.
