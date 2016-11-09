@@ -402,6 +402,7 @@ Official announcement: N/A
 	* Added a NgfbMeta::get_posts_mods() method to return `$mod` arrays for all posts in the current archive page.
 	* Added a NgfbSchema::get_json_data() method with used by NgfbSchema::get_json_array() in the same class.
 	* Renamed the NgfbSchema::get_head_item_type() method to NgfbSchema::get_mod_schema_type().
+	* Renamed the NgfbSchema::get_item_type_context() method to NgfbSchema::get_schema_type_context().
 
 **Version 8.37.0-2 (2016/11/04)**
 
