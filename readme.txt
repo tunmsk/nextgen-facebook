@@ -386,7 +386,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.1-rc1 (2016/11/12)**
+**Version 8.37.1-1 (2016/11/12)**
 
 Official announcement: N/A
 
@@ -502,7 +502,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
  
-= 8.37.1-rc1 =
+= 8.37.1-1 =
 
 (2016/11/12) Refactored the NgfbSchema class to provide a public get_json_data() method for other classes.
 
