@@ -11,7 +11,7 @@ Tags: social, sharing, share, meta tags, facebook, buttons, pinterest, twitter, 
 Contributors: jsmoriss
 Requires At Least: 3.5
 Tested Up To: 4.6.1
-Stable Tag: 8.37.0-2
+Stable Tag: 8.37.1-2
 
 Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
 
@@ -505,8 +505,4 @@ Official announcement: N/A
 = 8.37.1-1 =
 
 (2016/11/12) Refactored the NgfbSchema class to provide a public get_json_data() method for other classes. Added an "Item Type for Blog Home Page" option for non-static home pages. Simplified the Schema mainEntityOfPage markup property by using a URL instead of an @id.
-
-= 8.37.0-2 =
-
-(2016/11/04) Replaced the Object Cache Expiry option with new options for finer control of caching features. Refactored the Schema JSON method for a slight performance improvement. Added https://schema.org/Thing to the Schema Types array. Optimized the sharing buttons HTML cache by storing only one transient per webpage.
 
