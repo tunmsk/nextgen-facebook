@@ -405,7 +405,7 @@ Official announcement: N/A
 	* Renamed the NgfbSchema::get_head_item_type() method to NgfbSchema::get_mod_schema_type().
 	* Renamed the NgfbSchema::get_item_type_context() method to NgfbSchema::get_schema_type_context().
 
-**Version 8.37.0-2 (2016/11/04)**
+**Version 8.37.0-1 (2016/11/04)**
 
 Official announcement: N/A
 
