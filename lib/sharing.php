@@ -264,8 +264,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 				_x( 'Sharing Buttons', 'metabox tab', 'nextgen-facebook' ) );
 		}
 
-		public function filter_post_cache_transients( $transients, $post_id, $locale, $sharing_url ) {
-			$locale_salt = 'locale:'.$locale.'_post:'.$post_id;	// see SucomUtil::get_mod_salt()
+		public function filter_post_cache_transients( $transients, $mod, $locale, $sharing_url ) {
+			$locale_salt = SucomUtil::get_mod_salt( $mod, $locale );
 			$transients['NgfbSharing::get_buttons'][] = $locale_salt;
 			$transients['NgfbShortcodeSharing::shortcode'][] = $locale_salt;
 			$transients['NgfbWidgetSharing::widget'][] = $locale_salt;
