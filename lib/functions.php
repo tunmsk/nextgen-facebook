@@ -46,22 +46,23 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 		$lca = $ngfb->cf['lca'];
 		$type = __FUNCTION__;
 		$mod = $ngfb->util->get_page_mod( $atts['use_post'] );
+		$sharing_url = $ngfb->util->get_sharing_url( $mod );
 		$buttons_index = $ngfb->sharing->get_buttons_cache_index( $type, $atts, $ids );
 		$buttons_array = array();
 		$cache_exp = (int) apply_filters( $lca.'_cache_expire_sharing_buttons', 
 			( $cache_exp === false ? $ngfb->options['plugin_sharing_buttons_cache_exp'] : $cache_exp ) );
 
 		if ( $ngfb->debug->enabled ) {
+			$ngfb->debug->log( 'sharing url = '.$sharing_url );
 			$ngfb->debug->log( 'buttons index = '.$buttons_index );
 			$ngfb->debug->log( 'cache expire = '.$cache_exp );
 		}
 
 		if ( $cache_exp > 0 ) {
-			$cache_salt = __FUNCTION__.'('.SucomUtil::get_mod_salt( $mod ).
-				( empty( $mod['id'] ) ? '_url:'.$ngfb->util->get_sharing_url( $mod ) : '' ).')';
+			$cache_salt = __FUNCTION__.'('.SucomUtil::get_mod_salt( $mod, false, $sharing_url ).')';
 			$cache_id = $lca.'_'.md5( $cache_salt );
 			if ( $ngfb->debug->enabled )
-				$ngfb->debug->log( 'transient cache salt '.$cache_salt );
+				$ngfb->debug->log( 'transient cache salt = '.$cache_salt );
 			$buttons_array = get_transient( $cache_id );
 			if ( isset( $buttons_array[$buttons_index] ) ) {
 				if ( $ngfb->debug->enabled )
@@ -98,17 +99,17 @@ $ngfb->sharing->get_script( 'sharing-buttons-footer', $ids ).
 }
 
 if ( ! function_exists( 'ngfb_get_sharing_url' ) ) {
-	function ngfb_get_sharing_url( $use_post = false, $add_page = true ) {
+	function ngfb_get_sharing_url( $mod = false, $add_page = true ) {
 		$ngfb =& Ngfb::get_instance();
-		return $ngfb->util->get_sharing_url( $use_post, $add_page );
+		return $ngfb->util->get_sharing_url( $mod, $add_page );
 	}
 }
 
 if ( ! function_exists( 'ngfb_get_short_url' ) ) {
-	function ngfb_get_short_url( $use_post = false, $add_page = true ) {
+	function ngfb_get_short_url( $mod = false, $add_page = true ) {
 		$ngfb =& Ngfb::get_instance();
 		return apply_filters( 'ngfb_shorten_url', 
-			$ngfb->util->get_sharing_url( $use_post, $add_page ),
+			$ngfb->util->get_sharing_url( $mod, $add_page ),
 			$ngfb->options['plugin_shortener'] );
 	}
 }

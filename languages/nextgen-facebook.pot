@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.37.2-1\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.37.3-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -697,7 +697,7 @@ msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:54 lib/sharing.php:1048
+#: lib/config-gettext-extract.php:54 lib/sharing.php:1049
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr ""
@@ -1625,7 +1625,7 @@ msgstr ""
 
 #: lib/messages.php:378 lib/messages.php:385 lib/messages.php:392
 #: lib/messages.php:399 lib/messages.php:406 lib/messages.php:413
-#: lib/messages.php:420 lib/sharing.php:1064 lib/sharing.php:1071
+#: lib/messages.php:420 lib/sharing.php:1065 lib/sharing.php:1072
 msgctxt "option comment"
 msgid "disabled"
 msgstr ""
@@ -1638,7 +1638,7 @@ msgstr ""
 
 #: lib/messages.php:380 lib/messages.php:387 lib/messages.php:394
 #: lib/messages.php:401 lib/messages.php:408 lib/messages.php:415
-#: lib/messages.php:422 lib/sharing.php:1066 lib/sharing.php:1072
+#: lib/messages.php:422 lib/sharing.php:1067 lib/sharing.php:1073
 msgid "The suggested cache expiration value is %1$s seconds (%2$s)."
 msgstr ""
 
@@ -2856,32 +2856,32 @@ msgstr ""
 msgid "%s must be published<br/>before it can be shared."
 msgstr ""
 
-#: lib/sharing.php:1036
+#: lib/sharing.php:1037
 msgid ""
 "Social sharing buttons can be added to the top, bottom, or both. Each "
 "sharing button must also be enabled below (see the <em>%s</em> options)."
 msgstr ""
 
-#: lib/sharing.php:1036
+#: lib/sharing.php:1037
 msgctxt "option label"
 msgid "Show Button in"
 msgstr ""
 
-#: lib/sharing.php:1039
+#: lib/sharing.php:1040
 msgid ""
 "Add the social sharing buttons to each entry of an index webpage (for "
 "example, <strong>non-static</strong> homepage, category, archive, etc.). "
 "Social sharing buttons are not included on index webpages by default."
 msgstr ""
 
-#: lib/sharing.php:1042
+#: lib/sharing.php:1043
 msgid ""
 "If a static Post or Page has been selected for the homepage, you can add the "
 "social sharing buttons to that static homepage as well (default is "
 "unchecked)."
 msgstr ""
 
-#: lib/sharing.php:1045
+#: lib/sharing.php:1046
 msgid ""
 "Enabled social sharing buttons are added to the Post, Page, Media, and "
 "Product webpages by default. If your theme (or another plugin) supports "
@@ -2889,7 +2889,7 @@ msgid ""
 "buttons on these webpages, check the appropriate option(s) here."
 msgstr ""
 
-#: lib/sharing.php:1048
+#: lib/sharing.php:1049
 msgid ""
 "Add the CSS of all <em>%1$s</em> to webpages (default is checked). The CSS "
 "will be <strong>minimized</strong>, and saved to a single stylesheet with a "
@@ -2897,7 +2897,7 @@ msgid ""
 "or added directly to the webpage HTML."
 msgstr ""
 
-#: lib/sharing.php:1051
+#: lib/sharing.php:1052
 msgid ""
 "Have WordPress enqueue the social stylesheet instead of adding the CSS to in "
 "the webpage HTML (default is unchecked). Enqueueing the stylesheet may be "
@@ -2905,23 +2905,23 @@ msgid ""
 "single stylesheet URL."
 msgstr ""
 
-#: lib/sharing.php:1054
+#: lib/sharing.php:1055
 msgid "JavaScript added to webpages for the social sharing sidebar."
 msgstr ""
 
-#: lib/sharing.php:1065
+#: lib/sharing.php:1066
 msgid ""
 "The rendered HTML for social sharing buttons is saved to the WordPress "
 "transient cache to optimize performance."
 msgstr ""
 
-#: lib/sharing.php:1072
+#: lib/sharing.php:1073
 msgid ""
 "The JavaScript of most social sharing buttons can be saved locally to cache "
 "folder in order to provide cached URLs instead of the originals."
 msgstr ""
 
-#: lib/sharing.php:1072
+#: lib/sharing.php:1073
 msgid ""
 "If your hosting infrastructure performs reasonably well, this option can "
 "improve page load times significantly."
@@ -3586,26 +3586,26 @@ msgstr ""
 msgid "Error removing cache file %s."
 msgstr ""
 
-#: lib/util.php:1623
+#: lib/util.php:1629
 msgid "No options available."
 msgstr ""
 
-#: lib/util.php:1649
+#: lib/util.php:1655
 msgctxt "option comment"
 msgid "%1$d additional options not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1653
+#: lib/util.php:1659
 msgctxt "option comment"
 msgid "unhide these options"
 msgstr ""
 
-#: lib/util.php:1656
+#: lib/util.php:1662
 msgctxt "option comment"
 msgid "%1$d additional rows not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1660
+#: lib/util.php:1666
 msgctxt "option comment"
 msgid "unhide these rows"
 msgstr ""
@@ -3905,12 +3905,12 @@ msgstr ""
 msgid "The %s social sharing buttons widget."
 msgstr ""
 
-#: lib/widget/sharing.php:124
+#: lib/widget/sharing.php:126
 msgctxt "option value"
 msgid "Share It"
 msgstr ""
 
-#: lib/widget/sharing.php:127
+#: lib/widget/sharing.php:129
 msgctxt "option label"
 msgid "Widget Title (leave blank for no title)"
 msgstr ""
