@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.37.2-1\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.37.3-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2016-11-13 08:07-0800\n"
-"PO-Revision-Date: 2016-11-13 08:08-0800\n"
+"POT-Creation-Date: 2016-11-14 08:39-0800\n"
+"PO-Revision-Date: 2016-11-14 08:39-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -320,7 +320,7 @@ msgstr "s'il vous plaît décocher l'option <strong>Output Open Graph meta tags?
 #: lib/admin.php:1274
 #, fuzzy
 msgid "please uncheck the <strong>Output Facebook meta tags?</strong> option in <a href=\"%s\">The SEO Framework</a> Social Meta Settings."
-msgstr "s'il vous plaît décocher l'option <strong>Output Facebook meta tags?</strong> dans les réglages de l'extension <a href=\"%s\">The SEO Framework</a>."
+msgstr "s'il vous plaît décocher l'option <strong>Output Twitter meta tags?</strong> dans les réglages de l'extension <a href=\"%s\">The SEO Framework</a>."
 
 #: lib/admin.php:1279
 msgid "please uncheck the <strong>Output Twitter meta tags?</strong> option in <a href=\"%s\">The SEO Framework</a> Social Meta Settings."
@@ -648,7 +648,7 @@ msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr "Boutons de Partage"
 
-#: lib/config-gettext-extract.php:54 lib/sharing.php:1048
+#: lib/config-gettext-extract.php:54 lib/sharing.php:1049
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr "Styles de Partage"
@@ -1512,7 +1512,7 @@ msgstr "Créer automatiquement les images manquantes ou incorrectes dans la bibl
 
 #: lib/messages.php:378 lib/messages.php:385 lib/messages.php:392
 #: lib/messages.php:399 lib/messages.php:406 lib/messages.php:413
-#: lib/messages.php:420 lib/sharing.php:1064 lib/sharing.php:1071
+#: lib/messages.php:420 lib/sharing.php:1065 lib/sharing.php:1072
 msgctxt "option comment"
 msgid "disabled"
 msgstr "désactivé"
@@ -1523,7 +1523,7 @@ msgstr "Les balises méta et balisage de Schéma de l'entête sont enregistrés 
 
 #: lib/messages.php:380 lib/messages.php:387 lib/messages.php:394
 #: lib/messages.php:401 lib/messages.php:408 lib/messages.php:415
-#: lib/messages.php:422 lib/sharing.php:1066 lib/sharing.php:1072
+#: lib/messages.php:422 lib/sharing.php:1067 lib/sharing.php:1073
 msgid "The suggested cache expiration value is %1$s seconds (%2$s)."
 msgstr "La valeur d'expiration de cache suggérée est de %1$s secondes (%2$s)."
 
@@ -2421,48 +2421,48 @@ msgstr "Boutons de Partage Social"
 msgid "%s must be published<br/>before it can be shared."
 msgstr "%s doit être publié<br/>avant d'être partagé."
 
-#: lib/sharing.php:1036
+#: lib/sharing.php:1037
 msgid "Social sharing buttons can be added to the top, bottom, or both. Each sharing button must also be enabled below (see the <em>%s</em> options)."
 msgstr "Les boutons de partage social peuvent être ajoutés en haut, en bas, ou les deux. Chaque bouton de partage doit aussi être activé ci-dessous (voir les options <em>%s</em>)."
 
-#: lib/sharing.php:1036
+#: lib/sharing.php:1037
 msgctxt "option label"
 msgid "Show Button in"
 msgstr "Afficher le bouton"
 
-#: lib/sharing.php:1039
+#: lib/sharing.php:1040
 msgid "Add the social sharing buttons to each entry of an index webpage (for example, <strong>non-static</strong> homepage, category, archive, etc.). Social sharing buttons are not included on index webpages by default."
 msgstr "Ajouter les boutons de partage social à chaque item d'une page d'index (par exemple, page d'accueil <strong>non-statique</strong>, catégorie, archives, etc.). Les boutons de partage social ne sont pas inclus dans les pages Web d'index par défaut."
 
-#: lib/sharing.php:1042
+#: lib/sharing.php:1043
 msgid "If a static Post or Page has been selected for the homepage, you can add the social sharing buttons to that static homepage as well (default is unchecked)."
 msgstr "Si un Article ou une Page statique a été sélectionnée pour la page d'accueil, les boutons de partage social peuvent paraître sur la page d'accueil statique aussi (valeur par défaut est décochée)."
 
-#: lib/sharing.php:1045
+#: lib/sharing.php:1046
 msgid "Enabled social sharing buttons are added to the Post, Page, Media, and Product webpages by default. If your theme (or another plugin) supports additional custom post types, and you would like to include social sharing buttons on these webpages, check the appropriate option(s) here."
 msgstr "Les boutons de partage social activés sont ajoutés par défaut au pages Web d'Articles, Pages, Médias, et Produits. Si votre thème (ou une autre extension) supporte des articles de types personnalisé supplémentaires, et que vous souhaitez ajouter des boutons de partage social sur ces pages Web, cochez les options appropriées ici."
 
-#: lib/sharing.php:1048
+#: lib/sharing.php:1049
 msgid "Add the CSS of all <em>%1$s</em> to webpages (default is checked). The CSS will be <strong>minimized</strong>, and saved to a single stylesheet with a URL of <a href=\"%2$s\">%3$s</a>. The minimized stylesheet can be enqueued or added directly to the webpage HTML."
 msgstr "Ajouter le CSS de tous les <em>%1$s</em> au pages Web (cochée par défaut). Le CSS sera <strong>minimisé</strong> et sauvegardé dans une seule feuille de style avec l'URL <a href=\"%2$s\">%3$s</a>. La feuille de style peut être mis en queue ou ajouté directement au HTML des pages Web."
 
-#: lib/sharing.php:1051
+#: lib/sharing.php:1052
 msgid "Have WordPress enqueue the social stylesheet instead of adding the CSS to in the webpage HTML (default is unchecked). Enqueueing the stylesheet may be desirable if you use a plugin to concatenate all enqueued styles into a single stylesheet URL."
 msgstr "Demander a WordPress de mettre la feuille de style en queue au lieu d'ajouter le CSS au HTML des pages Web (décochée par défaut). Mettre la feuille de style en queue peut être souhaitable si vous utilisez une extension pour assembler tous le contenu des feuilles de styles dans un seul URL."
 
-#: lib/sharing.php:1054
+#: lib/sharing.php:1055
 msgid "JavaScript added to webpages for the social sharing sidebar."
 msgstr "JavaScript ajouté au pages Web pour la barre latérale de partage sociale."
 
-#: lib/sharing.php:1065
+#: lib/sharing.php:1066
 msgid "The rendered HTML for social sharing buttons is saved to the WordPress transient cache to optimize performance."
 msgstr "Le code HTML des boutons de partage social est enregistré dans le cache transitoire de WordPress pour optimiser la performance."
 
-#: lib/sharing.php:1072
+#: lib/sharing.php:1073
 msgid "The JavaScript of most social sharing buttons can be saved locally to cache folder in order to provide cached URLs instead of the originals."
 msgstr "Le JavaScript des boutons de partage social peut être enregistré localement afin de fournir des URLs du cache au lieu des originaux."
 
-#: lib/sharing.php:1072
+#: lib/sharing.php:1073
 msgid "If your hosting infrastructure performs reasonably well, this option can improve page load times significantly."
 msgstr "Si votre infrastructure d'hébergement fonctionne raisonnablement bien, cette option peut améliorer le temp de chargement des pages Web considérablement."
 
@@ -3103,26 +3103,26 @@ msgstr "Impossible d'ouvrir le répertoire %s pour lecture."
 msgid "Error removing cache file %s."
 msgstr "Erreur de suppression du fichier cache %s."
 
-#: lib/util.php:1623
+#: lib/util.php:1629
 msgid "No options available."
 msgstr "Aucune options disponibles."
 
-#: lib/util.php:1649
+#: lib/util.php:1655
 msgctxt "option comment"
 msgid "%1$d additional options not shown in %2$s view"
 msgstr "%1$d options supplémentaires ne figurent pas dans la vue %2$s"
 
-#: lib/util.php:1653
+#: lib/util.php:1659
 msgctxt "option comment"
 msgid "unhide these options"
 msgstr "afficher ces options"
 
-#: lib/util.php:1656
+#: lib/util.php:1662
 msgctxt "option comment"
 msgid "%1$d additional rows not shown in %2$s view"
 msgstr "%1$d lignes supplémentaires ne figurent pas dans la vue %2$s"
 
-#: lib/util.php:1660
+#: lib/util.php:1666
 msgctxt "option comment"
 msgid "unhide these rows"
 msgstr "afficher ces lignes"
@@ -3414,12 +3414,12 @@ msgstr "Conseiller de suivre le @nom Twitter de l'auteur (défini sur leur page 
 msgid "The %s social sharing buttons widget."
 msgstr "Les boutons de partage social du widget de %."
 
-#: lib/widget/sharing.php:124
+#: lib/widget/sharing.php:126
 msgctxt "option value"
 msgid "Share It"
 msgstr "Partager"
 
-#: lib/widget/sharing.php:127
+#: lib/widget/sharing.php:129
 msgctxt "option label"
 msgid "Widget Title (leave blank for no title)"
 msgstr "Titre du Widget (laisser vide pour aucun titre)"
