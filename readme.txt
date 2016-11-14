@@ -386,6 +386,19 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.37.3-dev1 (2016/11/14)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Updated the "Plugin Setup Guide and Notes".
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added a sharing URL argument to the SucomUtil::get_mod_salt() method for cases where the $mod id is false.
+
 **Version 8.37.2-1 (2016/11/12)**
 
 Official announcement: N/A
@@ -449,6 +462,10 @@ Official announcement: N/A
 		* 'ngfb_cache_expire_social_file' ( $secs );
 
 == Upgrade Notice ==
+
+= 8.37.3-dev1 =
+
+(2016/11/14) Updated the "Plugin Setup Guide and Notes". Added a sharing URL argument to the SucomUtil::get_mod_salt() method for cases where the $mod id is false.
  
 = 8.37.2-1 =
 
