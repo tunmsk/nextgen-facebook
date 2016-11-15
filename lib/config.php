@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.37.3-dev1',	// plugin version
+					'version' => '8.37.3-dev2',	// plugin version
 					'opt_version' => '471',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -67,13 +67,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'advanced' => 'Advanced Settings',
 							'buttons' => 'Sharing Buttons',
 							'styles' => 'Sharing Styles',
-							'setup' => '<color>Plugin Setup Guide and Notes</color>',
 							'licenses' => 'Extension Plugins and Pro Licenses',
+							'setup' => '<color>Plugin Setup Guide and Notes</color>',
 						),
 						'sitesubmenu' => array(	// lib file descriptions will be translated
 							'siteadvanced' => 'Advanced Settings',
-							'sitesetup' => '<color>Plugin Setup Guide and Notes</color>',
 							'sitelicenses' => 'Extension Plugins and Pro Licenses',
+							'sitesetup' => '<color>Plugin Setup Guide and Notes</color>',
 						),
 						'website' => array(
 							'email' => 'Email',
@@ -458,7 +458,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					 * Advanced Settings
 					 */
 					// Plugin Settings Tab
-					'plugin_clear_on_save' => 0,			// Clear All Cache(s) on Save Settings
+					'plugin_clear_on_save' => 1,			// Clear All Cache(s) on Save Settings
 					'plugin_preserve' => 0,				// Preserve Settings on Uninstall
 					'plugin_debug' => 0,				// Add Hidden Debug Messages
 					'plugin_hide_pro' => 0,				// Hide All Pro Version Options
