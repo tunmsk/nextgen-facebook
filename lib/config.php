@@ -753,7 +753,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'php' => array(				// php
-				'min_version' => '5.3',		// minimum php version (hard limit)
+				'min_version' => '5.2',		// minimum php version (hard limit)
 				'rec_version' => '5.4',		// recommended php version (soft limit)
 				'sup_version_url' => 'http://php.net/supported-versions.php',
 			),
