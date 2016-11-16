@@ -36,10 +36,9 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 	* [Summary Card with Large Image](https://dev.twitter.com/cards/types/summary-large-image)
 	* [Summary Card](https://dev.twitter.com/cards/types/summary)
 	* [Player Card](https://dev.twitter.com/cards/types/player) is available in the Pro version (requires video discovery modules, provided with the Pro version).
-* Adds Pinterest Rich Pin meta tags and Schema markup.
+* Adds Pinterest Rich Pin meta tags and Schema Structured Data markup.
 * Adds author (Person), publisher (Organization) and WebSite markup for Google Search and Google's <em>Knowledge Graph</em>.
 * Customizable image dimensions for Facebook / Open Graph, Pinterest, Schema and all Twitter Card types.
-* Validation of minimum / maximum image dimensions and aspect ratios.
 * Auto-regeneration of inaccurate / missing WordPress image sizes.
 * Support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 * Support for featured, attached, gallery shortcode, and/or image HTML tags in content.
@@ -106,6 +105,7 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 * Additional Open Graph / Rich Pin meta tags for videos and ecommerce products.
 * Twitter [Player Card](https://dev.twitter.com/cards/types/player) markup for embedded videos from Facebook, Slideshare, Vimeo, Wistia, and/or Youtube.
 * Include or exclude individual Google / SEO, Open Graph, Twitter Card, and Schema meta tags in the webpage head section.
+* Validation of minimum / maximum image dimensions and aspect ratios.
 * Configurable user profile contact field names and labels.
 * Optional URL shortening with Bitly, Google, Ow.ly, TinyURL, or YOURLS.
 * Dynamic button language switching based on the current WordPress locale.
@@ -227,7 +227,7 @@ NextGEN Facebook (NGFB) detects and uses all images - associated or included in 
 
 **Enhanced SEO**
 
-NextGEN Facebook (NGFB) Pro integrates with [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/), [HeadSpace2 SEO](https://wordpress.org/plugins/headspace2/), [The SEO Framework](https://wordpress.org/plugins/autodescription/), and [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) (aka WordPress SEO) &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, Schema, and Twitter Card meta tags.
+NextGEN Facebook (NGFB) Pro integrates with [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/), [HeadSpace2 SEO](https://wordpress.org/plugins/headspace2/), [The SEO Framework](https://wordpress.org/plugins/autodescription/), and [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) (aka WordPress SEO) &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, Schema Structured Data, and Twitter Card meta tags.
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
@@ -244,7 +244,7 @@ NextGEN Facebook (NGFB) Pro supports [bbPress](https://wordpress.org/plugins/bbp
 
 = Proven Performance =
 
-NextGEN Facebook (NGFB) is *fast and coded for performance*, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NGFB loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features. NGFB requires PHP v4.1.0 or better, and is fully compatible with PHP v7.
+NextGEN Facebook (NGFB) is *fast and coded for performance*, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NGFB loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features. NGFB requires PHP v5.2.0 or better, and is fully compatible with PHP v7.
 
 = Professional Support =
 
@@ -387,7 +387,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.3-dev3 (2016/11/16)**
+**Version 8.37.3-rc1 (2016/11/17)**
 
 Official announcement: N/A
 
@@ -468,9 +468,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.37.3-dev3 =
+= 8.37.3-rc1 =
 
-(2016/11/16) Updated the "Plugin Setup Guide and Notes". Updated hard minimum and recommended minimum WordPress and PHP versions. Added a sharing URL argument to the SucomUtil::get_mod_salt() method for cases where the $mod id is false.
+(2016/11/17) Updated the "Plugin Setup Guide and Notes". Updated hard minimum and recommended minimum WordPress and PHP versions. Added a sharing URL argument to the SucomUtil::get_mod_salt() method for cases where the $mod id is false.
  
 = 8.37.2-1 =
 

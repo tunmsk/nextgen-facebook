@@ -37,10 +37,9 @@
 <li><a href="https://dev.twitter.com/cards/types/summary">Summary Card</a></li>
 <li><a href="https://dev.twitter.com/cards/types/player">Player Card</a> is available in the Pro version (requires video discovery modules, provided with the Pro version).</li>
 </ul></li>
-<li>Adds Pinterest Rich Pin meta tags and Schema markup.</li>
+<li>Adds Pinterest Rich Pin meta tags and Schema Structured Data markup.</li>
 <li>Adds author (Person), publisher (Organization) and WebSite markup for Google Search and Google's <em>Knowledge Graph</em>.</li>
 <li>Customizable image dimensions for Facebook / Open Graph, Pinterest, Schema and all Twitter Card types.</li>
-<li>Validation of minimum / maximum image dimensions and aspect ratios.</li>
 <li>Auto-regeneration of inaccurate / missing WordPress image sizes.</li>
 <li>Support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</li>
 <li>Support for featured, attached, gallery shortcode, and/or image HTML tags in content.</li>
@@ -119,6 +118,7 @@
 <li>Additional Open Graph / Rich Pin meta tags for videos and ecommerce products.</li>
 <li>Twitter <a href="https://dev.twitter.com/cards/types/player">Player Card</a> markup for embedded videos from Facebook, Slideshare, Vimeo, Wistia, and/or Youtube.</li>
 <li>Include or exclude individual Google / SEO, Open Graph, Twitter Card, and Schema meta tags in the webpage head section.</li>
+<li>Validation of minimum / maximum image dimensions and aspect ratios.</li>
 <li>Configurable user profile contact field names and labels.</li>
 <li>Optional URL shortening with Bitly, Google, Ow.ly, TinyURL, or YOURLS.</li>
 <li>Dynamic button language switching based on the current WordPress locale.</li>
@@ -259,7 +259,7 @@
 
 <p><strong>Enhanced SEO</strong></p>
 
-<p>NextGEN Facebook (NGFB) Pro integrates with <a href="https://wordpress.org/plugins/all-in-one-seo-pack/">All in One SEO Pack</a>, <a href="https://wordpress.org/plugins/headspace2/">HeadSpace2 SEO</a>, <a href="https://wordpress.org/plugins/autodescription/">The SEO Framework</a>, and <a href="https://wordpress.org/plugins/wordpress-seo/">Yoast SEO</a> (aka WordPress SEO) &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, Schema, and Twitter Card meta tags.</p>
+<p>NextGEN Facebook (NGFB) Pro integrates with <a href="https://wordpress.org/plugins/all-in-one-seo-pack/">All in One SEO Pack</a>, <a href="https://wordpress.org/plugins/headspace2/">HeadSpace2 SEO</a>, <a href="https://wordpress.org/plugins/autodescription/">The SEO Framework</a>, and <a href="https://wordpress.org/plugins/wordpress-seo/">Yoast SEO</a> (aka WordPress SEO) &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, Schema Structured Data, and Twitter Card meta tags.</p>
 
 <div style="clear:both;"></div>
 
@@ -277,7 +277,7 @@
 
 <h4>Proven Performance</h4>
 
-<p>NextGEN Facebook (NGFB) is <em>fast and coded for performance</em>, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NGFB loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features. NGFB requires PHP v4.1.0 or better, and is fully compatible with PHP v7.</p>
+<p>NextGEN Facebook (NGFB) is <em>fast and coded for performance</em>, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NGFB loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features. NGFB requires PHP v5.2.0 or better, and is fully compatible with PHP v7.</p>
 
 <h4>Professional Support</h4>
 
