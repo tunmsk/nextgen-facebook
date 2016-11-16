@@ -387,7 +387,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.3-dev2 (2016/11/15)**
+**Version 8.37.3-dev3 (2016/11/16)**
 
 Official announcement: N/A
 
@@ -465,9 +465,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.37.3-dev2 =
+= 8.37.3-dev3 =
 
-(2016/11/15) Updated the "Plugin Setup Guide and Notes". Added a sharing URL argument to the SucomUtil::get_mod_salt() method for cases where the $mod id is false.
+(2016/11/16) Updated the "Plugin Setup Guide and Notes". Added a sharing URL argument to the SucomUtil::get_mod_salt() method for cases where the $mod id is false.
  
 = 8.37.2-1 =
 
