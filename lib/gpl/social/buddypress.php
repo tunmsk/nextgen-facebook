@@ -67,18 +67,18 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
 	margin:10px auto;
 	text-align:center;
 }';
-			foreach ( $this->p->cf['opt']['pre'] as $name => $prefix )
-				$opts_def[$prefix.'_on_bp_activity'] = 0;
+			foreach ( $this->p->cf['opt']['cm_prefix'] as $id => $opt_pre )
+				$opts_def[$opt_pre.'_on_bp_activity'] = 0;
 			return $opts_def;
 		}
 
-		public function filter_buttons_show_on( $show_on = array(), $prefix = '' ) {
-			switch ( $prefix ) {
+		public function filter_buttons_show_on( $show_on = array(), $opt_pre = '' ) {
+			switch ( $opt_pre ) {
 				case 'pin':
 					break;
 				default:
 					$show_on['bp_activity'] = 'BP Activity';
-					$this->p->options[$prefix.'_on_bp_activity:is'] = 'disabled';
+					$this->p->options[$opt_pre.'_on_bp_activity:is'] = 'disabled';
 					break;
 			}
 			return $show_on;
