@@ -446,7 +446,7 @@ Official announcement: N/A
 * *Developer Notes*
 	* Refactored the NgfbShortcodeSharing and NgfbWidgetSharing classes to optimize caching performance.
 	* Refactored the ngfb_get_sharing_buttons() function to optimize caching performance.
-	* Added a new NgfbSharing::get_buttons_cache_index() method to cache sharing buttons HTML as array elements. This optimizes the cache by storing one transient instead of one transient per sharing buttons location within the same webpage.
+	* Added a new NgfbSharing::get_buttons_cache_index() method to cache social sharing buttons HTML as array elements. This optimizes the cache by storing one transient instead of one transient per social sharing buttons location within the same webpage.
 	* Refactored the NgfbSchema::get_json_array() method for a slight performance improvement.
 	* Added https://schema.org/Thing to the Schema Types array (as top-level parent for all other Schema types).
 	* Replaced the `$user_id` argument in all JSON data and property filters by the Schema `$type_id`.
