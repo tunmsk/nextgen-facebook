@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.37.3-rc1',	// plugin version
+					'version' => '8.37.3-1',	// plugin version
 					'opt_version' => '471',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -724,7 +724,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'min_version' => '3.7',		// minimum wordpress version (hard limit)
 				'rec_version' => '4.2',		// recommended minimum wordpress version (soft limit)
 				'sup_version_url' => 'https://codex.wordpress.org/Supported_Versions',
-				'cm' => array(
+				'cm_names' => array(
 					'aim' => 'AIM',
 					'jabber' => 'Google Talk',
 					'yim' => 'Yahoo IM',
