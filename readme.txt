@@ -11,13 +11,13 @@ Tags: social, sharing, share, meta tags, facebook, buttons, pinterest, twitter, 
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.6.1
-Stable Tag: 8.37.2-1
+Stable Tag: 8.37.3-1
 
 Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
 
 == Description ==
 
-<p><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" style="width:33%;min-width:128px;max-width:256px;float:left;margin:10px 60px 40px 0;" /><strong>NGFB creates <em>complete</em> and <em>accurate</em> meta tags and Schema markup.</strong></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" style="width:33%;min-width:128px;max-width:256px;float:left;margin:10px 60px 40px 0;" /><strong>NGFB creates <em>complete</em> and <em>accurate</em> social meta tags and Schema markup.</strong></p>
 
 <p><strong>NGFB uses your <em>existing</em> content to generate its meta tags and Schema markup</strong> &mdash; there's no need to manually enter / configure any additional settings or values.</p>
 
@@ -472,9 +472,5 @@ Official announcement: N/A
 
 = 8.37.3-1 =
 
-(2016/11/17) Updated the "Plugin Setup Guide and Notes". Updated hard minimum and recommended minimum WordPress and PHP versions. Added a sharing URL argument to the SucomUtil::get_mod_salt() method for cases where the $mod id is false.
+(2016/11/17) Updated the "Plugin Setup Guide and Notes". Updated hard minimum and recommended minimum WordPress and PHP versions. Added a "Reference URL" link to notice messages when generating the head meta tag array.
  
-= 8.37.2-1 =
-
-(2016/11/12) Refactored the NgfbSchema class to provide a public get_json_data() method for other classes. Added an "Item Type for Blog Home Page" option for non-static home pages. Simplified the Schema mainEntityOfPage markup property by using a URL instead of an @id.
-
