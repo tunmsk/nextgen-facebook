@@ -387,7 +387,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.3-rc1 (2016/11/17)**
+**Version 8.37.3-1 (2016/11/17)**
 
 Official announcement: N/A
 
@@ -470,7 +470,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.37.3-rc1 =
+= 8.37.3-1 =
 
 (2016/11/17) Updated the "Plugin Setup Guide and Notes". Updated hard minimum and recommended minimum WordPress and PHP versions. Added a sharing URL argument to the SucomUtil::get_mod_salt() method for cases where the $mod id is false.
  
