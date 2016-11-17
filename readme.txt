@@ -23,9 +23,9 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 
 <p><strong>NGFB provides all the information social websites and search engines need</strong> &mdash; improving social engagement, Google Search ranking, and click-through-rates on Facebook, Google Search / Google+, Twitter, Pinterest, LinkedIn, and many more.</p>
 
-<p><strong>NGFB includes special support and optimization features for Pinterest</strong> &mdash; avoiding conflicts between <em>incompatible</em> Pinterest and Facebook Open Graph meta tags.</p>
+<p><strong>NGFB includes special support and optimization features for Pinterest</strong> &mdash; providing customized Pinterest image sizes, and avoiding conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
 
-<p><strong>Don't need the included social sharing buttons?</strong> The <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin is a fork / child of NextGEN Facebook (NGFB) &mdash; they have the same author, the same solid core features and code-base, but WPSSO is distributed without the sharing buttons and their related features.</p>
+<p><strong>Don't need the included social share buttons?</strong> The <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin is a fork / child of NextGEN Facebook (NGFB) &mdash; they have the same author, the same solid core features and code-base, but WPSSO is distributed without the social share buttons and their related features.</p>
 
 = Quick List of Features =
 
@@ -71,8 +71,8 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 * Customizable **multilingual** / multi-language Site Title and Site Description texts.
 * Contextual help for *every* plugin option and [comprehensive online documentation](https://surniaulula.com/codex/plugins/nextgen-facebook/).
 * Uses object and transient caches to provide incredibly fast execution speeds.
-* Include / exclude each social sharing button based on the viewing device (desktop and/or mobile).
-* Social sharing buttons for the content, excerpt, in a widget, as a shortcode, floating sidebar, and/or PHP function.
+* Include / exclude each social share button based on the viewing device (desktop and/or mobile).
+* Social share buttons for the content, excerpt, in a widget, as a shortcode, floating sidebar, and/or PHP function.
 	* Buffer
 	* Email
 	* Facebook
@@ -109,10 +109,10 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 * Configurable user profile contact field names and labels.
 * Optional URL shortening with Bitly, Google, Ow.ly, TinyURL, or YOURLS.
 * Dynamic button language switching based on the current WordPress locale.
-* A stylesheets editor for each social sharing button locations (content, excerpt, shortcode, widget, etc.).
-* File caching for social sharing button images and JavaScript, maximizing performance on VPS and dedicated hardware hosting platforms.
+* A stylesheets editor for each social share button locations (content, excerpt, shortcode, widget, etc.).
+* File caching for social share button images and JavaScript, maximizing performance on VPS and dedicated hardware hosting platforms.
 * Selection of preset button options by location (content, excerpt, shortcode, widget, etc.).
-* Ability to include / exclude sharing buttons by post type.
+* Ability to include / exclude social share buttons by post type.
 * Integrates with 3rd party plugins and services for additional image, video, ecommerce product details, SEO settings, etc. The following modules are included with the Pro version, and are automatically loaded if/when the supported plugins and/or services are required.
 	* **Supported 3rd Party Plugins**
 		* All in One SEO Pack
@@ -156,7 +156,7 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 
 = Social Sharing Buttons =
 
-NextGEN Facebook (NGFB) comes with several sharing buttons, that you can optionally include on Post / Page editing pages, above / below your content or excerpt, [bbPress](https://wordpress.org/plugins/bbpress/) single pages, [BuddyPress](https://wordpress.org/plugins/buddypress/) activity entries, as a sidebar, widget, shortcode, or even call a function from your theme template(s). Each of the following sharing buttons can be enabled, configured, and styled individually:
+NextGEN Facebook (NGFB) comes with several social share buttons, that you can optionally include on Post / Page editing pages, above / below your content or excerpt, [bbPress](https://wordpress.org/plugins/bbpress/) single pages, [BuddyPress](https://wordpress.org/plugins/buddypress/) activity entries, as a sidebar, widget, shortcode, or even call a function from your theme template(s). Each of the following social share buttons can be enabled, configured, and styled individually:
 
 * **Email**
 * **Buffer**
@@ -171,7 +171,7 @@ NextGEN Facebook (NGFB) comes with several sharing buttons, that you can optiona
 * **Twitter**
 * **WhatsApp** (for Mobile Devices)
 
-The Facebook, Google+ and Twitter sharing buttons support *multiple languages*. A default language can be chosen in the NGFB settings, and the [Pro version](https://surniaulula.com/extend/plugins/nextgen-facebook/) switches the sharing button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Open Graph (Facebook) and Pinterest Rich Pin descriptions, Tweet text, and other social captions.
+The Facebook, Google+ and Twitter social share buttons support *multiple languages*. A default language can be chosen in the NGFB settings, and the [Pro version](https://surniaulula.com/extend/plugins/nextgen-facebook/) switches the social share button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Open Graph (Facebook) and Pinterest Rich Pin descriptions, Tweet text, and other social captions.
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
@@ -240,7 +240,7 @@ NextGEN Facebook (NGFB) Pro also supports [Easy Digital Downloads](https://wordp
 
 **Forums and Social**
 
-NextGEN Facebook (NGFB) Pro supports [bbPress](https://wordpress.org/plugins/bbpress/), [BuddyPress](https://wordpress.org/plugins/buddypress/) (see the [BuddyPress Integration Notes](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/)), and [rtMedia for WordPress, BuddyPress and bbPress](https://wordpress.org/plugins/buddypress-media/), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, author information, etc. Social sharing buttons can also be added to [bbPress](https://wordpress.org/plugins/bbpress/) single template pages and [BuddyPress](https://wordpress.org/plugins/buddypress/) activities.
+NextGEN Facebook (NGFB) Pro supports [bbPress](https://wordpress.org/plugins/bbpress/), [BuddyPress](https://wordpress.org/plugins/buddypress/) (see the [BuddyPress Integration Notes](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/buddypress-integration/)), and [rtMedia for WordPress, BuddyPress and bbPress](https://wordpress.org/plugins/buddypress-media/), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, author information, etc. Social share buttons can also be added to [bbPress](https://wordpress.org/plugins/bbpress/) single template pages and [BuddyPress](https://wordpress.org/plugins/buddypress/) activities.
 
 = Proven Performance =
 
