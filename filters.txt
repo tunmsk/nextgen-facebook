@@ -19,7 +19,7 @@
 'ngfb_attached_image_ids' ( $attach_ids, $post_id );
 'ngfb_attached_images' ( $og_ret, $num, $size_name, $post_id, $check_dupes );
 'ngfb_attached_accept_img_dims' ( $bool, $img_url, $img_width, $img_height, $size_name, $pid );
-'ngfb_author_object_description' ( $description, $author_obj );
+'ngfb_author_object_description' ( $desc, $author_obj );
 'ngfb_author_object_title' ( $title, $author_obj );
 'ngfb_author_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_cache_expire_article_topics' ( $secs );
