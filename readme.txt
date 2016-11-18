@@ -17,9 +17,9 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 
 == Description ==
 
-<p><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" style="width:33%;min-width:128px;max-width:256px;float:left;margin:10px 60px 40px 0;" /><strong>NGFB creates <em>complete</em> and <em>accurate</em> social meta tags and Schema markup.</strong></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" style="width:33%;min-width:128px;max-width:256px;float:left;margin:10px 60px 40px 0;" /><strong>NGFB creates <em>complete</em> and <em>accurate</em> social meta tags and Schema marku &mdash; including titles, descriptions, hashtags, images, videos, ecommerce product details, author profile / authorship, co-authors, publisher information, ratings, event details, recipe information, and much more.</p>p
 
-<p><strong>NGFB uses your <em>existing</em> content to generate its meta tags and Schema markup</strong> &mdash; there's no need to manually enter / configure any additional settings or values.</p>
+<p><strong>NGFB uses your <em>existing</em> content to generate its meta tags and Schema markup</strong> &mdash; there's no need to manually enter / configure any additional settings or values, but if you want to, you can customize just about anything and everything. ;-).</p>
 
 <p><strong>NGFB provides all the information social websites and search engines need</strong> &mdash; improving social engagement, Google Search ranking, and click-through-rates on Facebook, Google Search / Google+, Twitter, Pinterest, LinkedIn, and many more.</p>
 
@@ -31,13 +31,14 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 
 **NextGEN Facebook (NGFB) Free / Basic Features**
 
-* Adds Open Graph meta tags (Facebook, Google+, Pinterest, LinkedIn, etc.).
+* Adds Open Graph meta tags for Facebook, Google+, Pinterest, LinkedIn, etc.
 * Adds Twitter Card meta tags:
 	* [Summary Card with Large Image](https://dev.twitter.com/cards/types/summary-large-image)
 	* [Summary Card](https://dev.twitter.com/cards/types/summary)
 	* [Player Card](https://dev.twitter.com/cards/types/player) is available in the Pro version (requires video discovery modules, provided with the Pro version).
+* Adds Weibo meta tags for article creation and update dates.
 * Adds Pinterest Rich Pin meta tags and Schema Structured Data markup.
-* Adds author (Person), publisher (Organization) and WebSite markup for Google Search and Google's <em>Knowledge Graph</em>.
+* Adds author (Person), publisher (Organization) and WebSite markup for Google Search and <em>Knowledge Graph</em>.
 * Customizable image dimensions for Facebook / Open Graph, Pinterest, Schema and all Twitter Card types.
 * Auto-regeneration of inaccurate / missing WordPress image sizes.
 * Support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
