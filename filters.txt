@@ -113,10 +113,10 @@
 'ngfb_schema_type_id' ( $type_id, $mod, $is_md_type );
 'ngfb_schema_types' ( (array) $schema_types );
 'ngfb_search_url' ( $url, $mod, $add_page, $src_id );
-'ngfb_sharing_shortcode_ngfb' ( $atts, $content );
 'ngfb_sharing_show_on' ( $show_on, $prefix );
 'ngfb_sharing_styles_tabs' ( $tabs );
 'ngfb_sharing_url' ( $url, $mod, $add_page, $src_id );
+'ngfb_shortcode_ngfb' ( $atts, $content );
 'ngfb_shorten_url' ( $long_url, $shortener );
 'ngfb_size_info_'.$size_name ( $size_info, $post_id );
 'ngfb_social_accounts' ( (array) $social_accounts );

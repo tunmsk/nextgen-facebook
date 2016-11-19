@@ -454,7 +454,6 @@ Official announcement: N/A
 	* Renamed the 'ngfb_json_data_https_schema_org' filter to 'ngfb_json_data_https_schema_org_thing'.
 	* Renamed the 'ngfb_json_array_type_ids' filter to 'ngfb_json_array_schema_type_ids'.
 	* Removed the 'ngfb_add_json_https_schema_org' filter.
-	* Renamed the 'ngfb_shortcode_ngfb' filter to 'ngfb_sharing_shortcode_ngfb'.
 	* Renamed the NGFB_META_TAGS_DISABLE contant to NGFB_HEAD_HTML_DISABLE.
 	* Renamed the NGFB_SHARING_SHORTCODE contant to NGFB_SHARING_SHORTCODE_NAME.
 	* Removed the NGFB_TRANSIENT_CACHE_DISABLE, NGFB_OBJECT_CACHE_DISABLE and NGFB_FILE_CACHE_DISABLE constants.
