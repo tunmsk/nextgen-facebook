@@ -69,7 +69,7 @@ if ( ! class_exists( 'NgfbShortcodeSharing' ) ) {
 			} 
 
 			$lca = $this->p->cf['lca'];
-			$atts = apply_filters( $lca.'_sharing_shortcode_'.NGFB_SHARING_SHORTCODE_NAME, $atts, $content );
+			$atts = (array) apply_filters( $lca.'_sharing_shortcode_'.NGFB_SHARING_SHORTCODE_NAME, $atts, $content );
 
 			if ( empty( $atts['buttons'] ) )	// nothing to do
 				return '<!-- '.$lca.' sharing shortcode: no buttons defined -->'."\n\n";
@@ -116,14 +116,14 @@ if ( ! class_exists( 'NgfbShortcodeSharing' ) ) {
 
 				if ( ! empty( $buttons_array[$buttons_index] ) ) {
 					$buttons_array[$buttons_index] = '
-<!-- '.$lca.' sharing shortcode begin -->
+<!-- '.$lca.' '.$type.' begin -->
 <!-- generated on '.date( 'c' ).' -->'."\n".
 $this->p->sharing->get_script( 'shortcode-header', $ids ).
 '<div class="'.$lca.'-shortcode-buttons">'."\n".
 $buttons_array[$buttons_index]."\n".	// buttons html is trimmed, so add newline
 '</div><!-- .'.$lca.'-shortcode-buttons -->'."\n".
 $this->p->sharing->get_script( 'shortcode-footer', $ids ).
-'<!-- '.$lca.' sharing shortcode end -->'."\n\n";
+'<!-- '.$lca.' '.$type.' end -->'."\n\n";
 	
 					if ( $cache_exp > 0 ) {
 						set_transient( $cache_id, $buttons_array, $cache_exp );

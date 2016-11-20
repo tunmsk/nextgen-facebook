@@ -83,7 +83,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'og_img_resize' => 'plugin_auto_img_resize',
 			'buttons_css_social' => 'buttons_css_sharing',
 			'plugin_shortcode_ngfb' => 'plugin_shortcodes',
-			'buttons_link_css' => 'buttons_use_social_css',
+			'buttons_link_css' => 'buttons_use_social_style',
 			'fb_on_admin_sharing' => 'fb_on_admin_edit',
 			'gp_on_admin_sharing' => 'gp_on_admin_edit',
 			'twitter_on_admin_sharing' => 'twitter_on_admin_edit',
@@ -161,6 +161,8 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'plugin_add_to_taxonomy' => 'plugin_add_to_term',		// renamed in v8.31.0-1
 			'plugin_ignore_small_img' => 'plugin_check_img_dims',		// renamed in v8.31.1-1
 			'plugin_file_cache_exp' => 'plugin_social_file_cache_exp',
+			'buttons_use_social_css' => 'buttons_use_social_style',
+			'buttons_enqueue_social_css' => 'buttons_enqueue_social_style',
 		);
 
 		protected $p;
