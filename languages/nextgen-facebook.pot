@@ -1615,7 +1615,7 @@ msgstr ""
 
 #: lib/messages.php:378 lib/messages.php:385 lib/messages.php:392
 #: lib/messages.php:399 lib/messages.php:406 lib/messages.php:413
-#: lib/messages.php:420 lib/sharing.php:1064 lib/sharing.php:1071
+#: lib/messages.php:420 lib/sharing.php:1070 lib/sharing.php:1077
 msgctxt "option comment"
 msgid "disabled"
 msgstr ""
@@ -1628,7 +1628,7 @@ msgstr ""
 
 #: lib/messages.php:380 lib/messages.php:387 lib/messages.php:394
 #: lib/messages.php:401 lib/messages.php:408 lib/messages.php:415
-#: lib/messages.php:422 lib/sharing.php:1066 lib/sharing.php:1072
+#: lib/messages.php:422 lib/sharing.php:1072 lib/sharing.php:1078
 msgid "The suggested cache expiration value is %1$s seconds (%2$s)."
 msgstr ""
 
@@ -2906,19 +2906,48 @@ msgstr ""
 msgid "JavaScript added to webpages for the social sharing sidebar."
 msgstr ""
 
-#: lib/sharing.php:1065
+#: lib/sharing.php:1057
+msgid ""
+"Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</"
+"a> in the %3$s settings page). The %1$s will be displayed and recommended "
+"after the webpage is shared."
+msgstr ""
+
+#: lib/sharing.php:1057 lib/sharing.php:1060 lib/submenu/essential.php:144
+#: lib/submenu/general.php:365
+msgctxt "option label"
+msgid "Twitter Business @username"
+msgstr ""
+
+#: lib/sharing.php:1057
+msgctxt "lib file description"
+msgid "General"
+msgstr ""
+
+#: lib/sharing.php:1060
+msgid ""
+"Recommend following the author's Twitter @username after sharing a webpage. "
+"If the %1$s option (above) is also checked, the %2$s is suggested first."
+msgstr ""
+
+#: lib/sharing.php:1060 lib/website/buffer.php:78 lib/website/twitter.php:67
+msgctxt "option label (short)"
+msgid "Add via @username"
+msgstr ""
+
+#: lib/sharing.php:1071
 msgid ""
 "The rendered HTML for social sharing buttons is saved to the WordPress "
 "transient cache to optimize performance."
 msgstr ""
 
-#: lib/sharing.php:1072
+#: lib/sharing.php:1078
 msgid ""
 "The JavaScript of most social sharing buttons can be saved locally to cache "
 "folder in order to provide cached URLs instead of the originals."
 msgstr ""
 
-#: lib/sharing.php:1072
+#: lib/sharing.php:1078
 msgid ""
 "If your hosting infrastructure performs reasonably well, this option can "
 "improve page load times significantly."
@@ -3180,11 +3209,6 @@ msgstr ""
 #: lib/submenu/essential.php:142
 msgctxt "metabox title"
 msgid "Twitter"
-msgstr ""
-
-#: lib/submenu/essential.php:144 lib/submenu/general.php:365
-msgctxt "option label"
-msgid "Twitter Business @username"
 msgstr ""
 
 #: lib/submenu/general.php:33
@@ -3671,24 +3695,7 @@ msgctxt "option label (short)"
 msgid "Tweet Text Length"
 msgstr ""
 
-#: lib/website/buffer.php:78 lib/website/twitter.php:67
-#: lib/website/twitter.php:74
-msgctxt "option label (short)"
-msgid "Add via @username"
-msgstr ""
-
-#: lib/website/buffer.php:80
-msgid ""
-"Append the website's business @username to the tweet (see the <a href=\"%1$s"
-"\">Twitter</a> options tab on the %2$s settings page)."
-msgstr ""
-
-#: lib/website/buffer.php:80 lib/website/twitter.php:69
-msgctxt "lib file description"
-msgid "General"
-msgstr ""
-
-#: lib/website/buffer.php:128
+#: lib/website/buffer.php:127
 msgctxt "image size label"
 msgid "Buffer Sharing Button"
 msgstr ""
@@ -3879,23 +3886,9 @@ msgstr ""
 msgid "Disable tracking for Twitter's tailored suggestions and ads feature."
 msgstr ""
 
-#: lib/website/twitter.php:69
-msgid ""
-"Append the website's business @username to the tweet (see the <a href=\"%1$s"
-"\">Twitter</a> options tab on the %2$s settings page). The website's "
-"@username will be displayed and recommended after the webpage is shared."
-msgstr ""
-
-#: lib/website/twitter.php:72
+#: lib/website/twitter.php:71
 msgctxt "option label (short)"
 msgid "Recommend Author"
-msgstr ""
-
-#: lib/website/twitter.php:74
-msgid ""
-"Recommend following the author's Twitter @username (from their profile) "
-"after sharing a webpage. If the <em>%1$s</em> option is also checked, the "
-"website's @username is suggested first."
 msgstr ""
 
 #: lib/widget/sharing.php:28
