@@ -388,6 +388,23 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.37.4-dev1 (2016/11/20)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added a check for 'manage_options' permission before checking for outdated WP / PHP versions and duplicate post meta tags. 
+	* Removed a call to stripslashes() when saving HTML / CSS / JS code.
+	* Refactored the Twitter button class to use the $mod variable instead of the global $post.
+	* Renamed the 'buttons_use_social_css' option key to 'buttons_use_social_style'.
+	* Renamed the 'buttons_enqueue_social_css' option key to 'buttons_enqueue_social_style'.
+
 **Version 8.37.3-1 (2016/11/17)**
 
 Official announcement: N/A
@@ -470,6 +487,10 @@ Official announcement: N/A
 		* 'ngfb_cache_expire_social_file' ( $secs );
 
 == Upgrade Notice ==
+
+= 8.37.4-dev1 =
+
+(2016/11/20) Added a check for 'manage_options' permission before checking for outdated WP / PHP versions and duplicate post meta tags.
 
 = 8.37.3-1 =
 
