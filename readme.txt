@@ -388,7 +388,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.4-dev1 (2016/11/20)**
+**Version 8.37.4-dev2 (2016/11/21)**
 
 Official announcement: N/A
 
@@ -397,7 +397,8 @@ Official announcement: N/A
 * *Improvements*
 	* None
 * *Bugfixes*
-	* None
+	* Fixed an incorrect variable name in the WhatsApp class which prevented the button HTML from being added.
+	* Fixed the Tumblr caption, title, and description attribute values that were being added without being properly encoded.
 * *Developer Notes*
 	* Added a check for 'manage_options' permission before checking for outdated WP / PHP versions and duplicate post meta tags. 
 	* Removed a call to stripslashes() when saving HTML / CSS / JS code.
@@ -488,9 +489,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.37.4-dev1 =
+= 8.37.4-dev2 =
 
-(2016/11/20) Added a check for 'manage_options' permission before checking for outdated WP / PHP versions and duplicate post meta tags.
+(2016/11/21) Added a check for 'manage_options' permission before checking for outdated WP / PHP versions and duplicate post meta tags.
 
 = 8.37.3-1 =
 
