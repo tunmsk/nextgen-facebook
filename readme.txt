@@ -388,7 +388,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.4-dev2 (2016/11/21)**
+**Version 8.37.4-rc1 (2016/11/22)**
 
 Official announcement: N/A
 
@@ -489,9 +489,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.37.4-dev2 =
+= 8.37.4-rc1 =
 
-(2016/11/21) Added a check for 'manage_options' permission before checking for outdated WP / PHP versions and duplicate post meta tags.
+(2016/11/22) Added a check for 'manage_options' permission before checking for outdated WP / PHP versions and duplicate post meta tags.
 
 = 8.37.3-1 =
 
