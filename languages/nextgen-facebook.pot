@@ -3707,7 +3707,7 @@ msgstr ""
 
 #: lib/website/email.php:46
 msgctxt "option label (short)"
-msgid "Add Hashtags to Message"
+msgid "Add Hashtags"
 msgstr ""
 
 #: lib/website/facebook.php:27
