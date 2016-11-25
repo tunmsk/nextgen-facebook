@@ -1380,8 +1380,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			 */
 			$var_const['NGFB_ADD_MENU_PRIORITY'] = -20;
 			$var_const['NGFB_ADD_SUBMENU_PRIORITY'] = -10;
-			$var_const['NGFB_META_SAVE_PRIORITY'] = 6;
-			$var_const['NGFB_META_CACHE_PRIORITY'] = 9;
+			$var_const['NGFB_META_SAVE_PRIORITY'] = 5;
+			$var_const['NGFB_META_CACHE_PRIORITY'] = 10;
 			$var_const['NGFB_INIT_PRIORITY'] = 14;
 			$var_const['NGFB_HEAD_PRIORITY'] = 10;
 			$var_const['NGFB_SOCIAL_PRIORITY'] = 100;		// used by social sharing features
