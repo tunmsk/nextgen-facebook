@@ -11,7 +11,7 @@ Tags: social, sharing, share, meta tags, facebook, buttons, pinterest, twitter, 
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.6.1
-Stable Tag: 8.37.3-1
+Stable Tag: 8.37.4-1
 
 Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
 
@@ -388,7 +388,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.4-rc2 (2016/11/25)**
+**Version 8.37.4-1 (2016/11/25)**
 
 Official announcement: N/A
 
@@ -489,11 +489,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.37.4-rc2 =
+= 8.37.4-1 =
 
-(2016/11/25) Added a check for 'manage_options' permission before checking for outdated WP / PHP versions and duplicate post meta tags.
+(2016/11/25) Added a check for 'manage_options' permission before checking for outdated WP / PHP versions and duplicate post meta tags. Fixed an incorrect variable name in the WhatsApp class. Fixed the Tumblr caption, title, and description attribute values.
 
-= 8.37.3-1 =
-
-(2016/11/17) Updated the "Plugin Setup Guide and Notes". Updated hard minimum and recommended minimum WordPress and PHP versions. Added a "Reference URL" link to notice messages when generating the head meta tag array.
- 
