@@ -62,7 +62,7 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 			$cache_salt = __FUNCTION__.'('.SucomUtil::get_mod_salt( $mod, false, $sharing_url ).')';
 			$cache_id = $lca.'_'.md5( $cache_salt );
 			if ( $ngfb->debug->enabled )
-				$ngfb->debug->log( 'transient cache salt = '.$cache_salt );
+				$ngfb->debug->log( 'transient cache salt '.$cache_salt );
 			$buttons_array = get_transient( $cache_id );
 			if ( isset( $buttons_array[$buttons_index] ) ) {
 				if ( $ngfb->debug->enabled )
