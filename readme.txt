@@ -388,7 +388,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.5-dev1 (2016/11/28)**
+**Version 8.37.5-1 (2016/11/28)**
 
 Official announcement: N/A
 
@@ -397,9 +397,9 @@ Official announcement: N/A
 * *Improvements*
 	* None
 * *Bugfixes*
-	* None
+	* Fixed BuddyPress user page detection when current object is a post (Pro version).
 * *Developer Notes*
-	* Added extra debugging messages in the BuddyPress user class methods.
+	* Added extra debugging messages in the BuddyPress user class methods (Pro version).
 
 **Version 8.37.4-1 (2016/11/25)**
 
@@ -502,9 +502,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.37.5-dev1 =
+= 8.37.5-1 =
 
-(2016/11/28) Added extra debugging messages in the BuddyPress user class methods.
+(2016/11/28) Fixed BuddyPress user page detection when current object is a post (Pro version).
 
 = 8.37.4-1 =
 
