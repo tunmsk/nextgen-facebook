@@ -22,12 +22,10 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 		protected function add_actions() {
 
 			if ( is_admin() ) {
-				if ( ! empty( $_GET ) ) {
-					add_action( 'add_meta_boxes', array( &$this, 'add_metaboxes' ) );
-					// load_meta_page() priorities: 100 post, 200 user, 300 term
-					// sets the NgfbMeta::$head_meta_tags and NgfbMeta::$head_meta_info class properties
-					add_action( 'current_screen', array( &$this, 'load_meta_page' ), 100, 1 );
-				}
+				add_action( 'add_meta_boxes', array( &$this, 'add_metaboxes' ) );
+				// load_meta_page() priorities: 100 post, 200 user, 300 term
+				// sets the NgfbMeta::$head_meta_tags and NgfbMeta::$head_meta_info class properties
+				add_action( 'current_screen', array( &$this, 'load_meta_page' ), 100, 1 );
 
 				add_action( 'save_post', array( &$this, 'save_options' ), NGFB_META_SAVE_PRIORITY );
 				add_action( 'save_post', array( &$this, 'clear_cache' ), NGFB_META_CACHE_PRIORITY );
