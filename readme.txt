@@ -506,7 +506,3 @@ Official announcement: N/A
 
 (2016/11/28) Fixed BuddyPress user page detection when current object is a post (Pro version).
 
-= 8.37.4-1 =
-
-(2016/11/25) Added a check for 'manage_options' permission before checking for outdated WP / PHP versions and duplicate post meta tags. Fixed an incorrect variable name in the WhatsApp class. Fixed the Tumblr caption, title, and description attribute values.
-
