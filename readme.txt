@@ -10,7 +10,7 @@ Assets URI: https://surniaulula.github.io/nextgen-facebook/assets/
 Tags: social, sharing, share, meta tags, facebook, buttons, pinterest, twitter, whatsapp, json, json-ld, seo, open graph, schema.org, amp, bbPress, buddypress, e-commerce, easy digital downloads, edd, g+, google, google plus, hashtags, like, linkedin, marketpress, multilingual, multisite, nextgen gallery, player card, polylang, rich pin, schema, shortcode, summary card, tumblr, twitter card, vimeo, widget, wistia, woocommerce, youtube, yotpo, yourls, the events calendar, social share, social sharing, social media, social engagement, click-through, facebook video, slideshare, video embed, social meta tags, seo meta tags, featured, search engine optimization, seo meta, wordpress seo, yoast seo, shortlink
 Contributors: jsmoriss
 Requires At Least: 3.7
-Tested Up To: 4.6.1
+Tested Up To: 4.7
 Stable Tag: 8.37.5-1
 
 Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
