@@ -63,6 +63,11 @@ if ( ! class_exists( 'NgfbSitesubmenuSiteadvanced' ) && class_exists( 'NgfbAdmin
 			switch ( $metabox.'-'.$key ) {
 				case 'plugin-settings':
 
+					$table_rows['plugin_clear_on_save'] = $this->form->get_th_html( _x( 'Clear All Cache(s) on Save Settings',
+						'option label', 'nextgen-facebook' ), null, 'plugin_clear_on_save' ).
+					'<td>'.$this->form->get_checkbox( 'plugin_clear_on_save' ).'</td>'.
+					$this->p->admin->get_site_use( $this->form, true, 'plugin_clear_on_save', true );	// $network = true
+
 					$table_rows['plugin_preserve'] = $this->form->get_th_html( _x( 'Preserve Settings on Uninstall',
 						'option label', 'nextgen-facebook' ), null, 'plugin_preserve' ).
 					'<td>'.$this->form->get_checkbox( 'plugin_preserve' ).'</td>'.

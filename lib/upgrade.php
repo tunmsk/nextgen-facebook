@@ -17,6 +17,8 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'plugin_tid:use' => 'plugin_ngfb_tid:use',
 			'plugin_ignore_small_img' => 'plugin_check_img_dims',		// renamed in v8.31.1-1
 			'plugin_ignore_small_img:use' => 'plugin_check_img_dims:use',	// renamed in v8.31.1-1
+			'plugin_file_cache_exp' => 'plugin_social_file_cache_exp',
+			'plugin_file_cache_exp:use' => 'plugin_social_file_cache_exp:use',
 		);
 
 		private $renamed_keys = array(
@@ -282,6 +284,11 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 					$opts['plugin_social_file_cache_exp'] = $opts['plugin_file_cache_hrs'] * 3600;
 					unset( $opts['plugin_file_cache_hrs'] );
 				}
+			}
+
+			if ( $opts_version && $opts_version <= 473 ) {
+				unset( $opts['plugin_object_cache_exp'] );
+				unset( $opts['plugin_object_cache_exp:use'] );
 			}
 
 			return $this->sanitize( $opts, $def_opts, $network );	// cleanup options and sanitize

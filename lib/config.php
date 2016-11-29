@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.37.5-1',	// plugin version
-					'opt_version' => '472',		// increment when changing default options
+					'opt_version' => '474',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -622,12 +622,14 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					// Cache Settings Tab
 					'plugin_head_cache_exp' => 259200,		// Head Markup Array Cache Expiry (3 days)
 					'plugin_head_cache_exp:use' => 'default',
+					'plugin_shorten_cache_exp' => 604800,		// Shortened URL Cache Expiry (7 days)
+					'plugin_shorten_cache_exp:use' => 'default',
+					'plugin_column_cache_exp' => 604800,		// List Column Content Cache Expiry (1 week)
+					'plugin_column_cache_exp:use' => 'default',
 					'plugin_content_cache_exp' => 3600,		// Content (Non-Persist) Cache Expiry (1 hour)
 					'plugin_content_cache_exp:use' => 'default',
 					'plugin_imgsize_cache_exp' => 86400,		// Get Image (URL) Size Cache Expiry (1 day)
 					'plugin_imgsize_cache_exp:use' => 'default',
-					'plugin_shorten_cache_exp' => 604800,		// Shortened URL Cache Expiry (7 days)
-					'plugin_shorten_cache_exp:use' => 'default',
 					'plugin_topics_cache_exp' => 2419200,		// Article Topics Array Cache Expiry (4 weeks)
 					'plugin_topics_cache_exp:use' => 'default',
 					'plugin_types_cache_exp' => 2419200,		// Schema Types Array Cache Expiry (4 weeks)
