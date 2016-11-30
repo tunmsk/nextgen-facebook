@@ -19,9 +19,6 @@
 'ngfb_attached_image_ids' ( $attach_ids, $post_id );
 'ngfb_attached_images' ( $og_ret, $num, $size_name, $post_id, $check_dupes );
 'ngfb_attached_accept_img_dims' ( $bool, $img_url, $img_width, $img_height, $size_name, $pid );
-'ngfb_author_object_description' ( $desc, $author_obj );
-'ngfb_author_object_title' ( $title, $author_obj );
-'ngfb_author_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_cache_expire_article_topics' ( $secs );
 'ngfb_cache_expire_column_content' ( $secs );
 'ngfb_cache_expire_content_text' ( $secs );
@@ -136,5 +133,8 @@
 'ngfb_user_cache_transients' ( $transients, $mod, $locale, $sharing_url );
 'ngfb_user_image_ids' ( array $ids, $size_name, $user_id );
 'ngfb_user_image_urls' ( array $ids, $size_name, $user_id );
+'ngfb_user_object_description' ( $desc, $author_obj );
+'ngfb_user_object_title' ( $title, $author_obj );
 'ngfb_user_social_settings_tabs' ( $tabs, $mod );
+'ngfb_user_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_wp_tags' ( $tags, $post_id );
