@@ -58,17 +58,19 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 			$ngfb->debug->log( 'cache expire = '.$cache_exp );
 		}
 
+		$cache_salt = __FUNCTION__.'('.SucomUtil::get_mod_salt( $mod, false, $sharing_url ).')';
+		$cache_id = $lca.'_'.md5( $cache_salt );
+		if ( $ngfb->debug->enabled )
+			$ngfb->debug->log( 'transient cache salt '.$cache_salt );
+
 		if ( $cache_exp > 0 ) {
-			$cache_salt = __FUNCTION__.'('.SucomUtil::get_mod_salt( $mod, false, $sharing_url ).')';
-			$cache_id = $lca.'_'.md5( $cache_salt );
-			if ( $ngfb->debug->enabled )
-				$ngfb->debug->log( 'transient cache salt '.$cache_salt );
 			$buttons_array = get_transient( $cache_id );
 			if ( isset( $buttons_array[$buttons_index] ) ) {
 				if ( $ngfb->debug->enabled )
 					$ngfb->debug->log( $type.' buttons array retrieved from transient '.$cache_id );
 			}
-		}
+		} elseif ( $this->p->debug->enabled )
+			$ngfb->debug->log( $type.' buttons array transient cache is disabled' );
 
 		if ( ! isset( $buttons_array[$buttons_index] ) ) {
 
