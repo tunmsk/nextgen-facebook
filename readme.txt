@@ -408,6 +408,7 @@ Official announcement: N/A
 	* Fixed the sharing URL value for BuddyPress users (Pro version).
 * *Developer Notes*
 	* Added an SucomUtil::update_transient_array() method to update transient arrays and keep the original transient expiration time.
+	* Added a new 'ngfb_json_prop_https_schema_org_potentialaction' filter.
 
 **Version 8.37.5-1 (2016/11/28)**
 
