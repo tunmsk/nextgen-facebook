@@ -388,14 +388,22 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.6-dev1 (2016/12/01)**
+**Version 8.37.6-dev2 (2016/12/01)**
 
 Official announcement: N/A
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added new Schema meta tags:
+		* alternatename
+		* email
+		* telephone
+		* currenciesaccepted
+		* paymentaccepted
+		* pricerange 
+		* preptime
+		* cooktime
 * *Bugfixes*
 	* Fixed the sharing URL value for BuddyPress users (Pro version).
 * *Developer Notes*
@@ -515,9 +523,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.37.6-dev1 =
+= 8.37.6-dev2 =
 
-(2016/12/01) Fixed the sharing URL value for BuddyPress users (Pro version). Added a newmethod to update transient arrays and keep the original transient expiration time.
+(2016/12/01) Fixed the sharing URL value for BuddyPress users (Pro version). Added a new method to update transient arrays and keep the original transient expiration time. Added several new Schema meta tags.
 
 = 8.37.5-1 =
 
