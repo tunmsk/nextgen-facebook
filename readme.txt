@@ -409,6 +409,7 @@ Official announcement: N/A
 * *Developer Notes*
 	* Added an SucomUtil::update_transient_array() method to update transient arrays and keep the original transient expiration time.
 	* Added a new 'ngfb_json_prop_https_schema_org_potentialaction' filter.
+	* Removed $locale argument from SucomUtil::get_mod_salt() calls.
 
 **Version 8.37.5-1 (2016/11/28)**
 
