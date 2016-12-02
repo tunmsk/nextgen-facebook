@@ -694,9 +694,10 @@ if ( ! class_exists( 'NgfbUser' ) ) {
 			$sharing_url = $this->p->util->get_sharing_url( $mod );
 			$locale = SucomUtil::get_locale( $mod );
 			$locale_salt = SucomUtil::get_mod_salt( $mod, $locale, $sharing_url );
+			$none_salt = SucomUtil::get_mod_salt( $mod, 'none', $sharing_url );
 
 			$transients = array(
-				'NgfbHead::get_head_array' => array( $locale_salt ),
+				'NgfbHead::get_head_array' => array( $none_salt ),
 				'NgfbMeta::get_mod_column_content' => array( $locale_salt ),
 			);
 			$transients = apply_filters( $lca.'_user_cache_transients', $transients, $mod, $locale, $sharing_url );

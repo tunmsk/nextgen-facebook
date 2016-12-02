@@ -497,11 +497,12 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 					$sharing_url = $this->p->util->get_sharing_url( $mod );
 					$locale = SucomUtil::get_locale( $mod );
 					$locale_salt = SucomUtil::get_mod_salt( $mod, $locale, $sharing_url );
+					$none_salt = SucomUtil::get_mod_salt( $mod, 'none', $sharing_url );
 					$permalink = get_permalink( $post_id );
 					$shortlink = wp_get_shortlink( $post_id );
 
 					$transients = array(
-						'NgfbHead::get_head_array' => array( $locale_salt ),
+						'NgfbHead::get_head_array' => array( $none_salt ),
 						'NgfbMeta::get_mod_column_content' => array( $locale_salt ),
 						'SucomCache::get' => array( 'url:'.$permalink, 'url:'.$shortlink ),
 					);
