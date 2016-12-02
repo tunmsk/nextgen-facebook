@@ -388,7 +388,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.6-dev3 (2016/12/01)**
+**Version 8.37.6-dev4 (2016/12/03)**
 
 Official announcement: N/A
 
@@ -525,9 +525,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.37.6-dev3 =
+= 8.37.6-dev4 =
 
-(2016/12/01) Fixed the sharing URL value for BuddyPress users (Pro version). Added a new method to update transient arrays and keep the original transient expiration time. Added several new Schema meta tags.
+(2016/12/03) Fixed the sharing URL value for BuddyPress users (Pro version). Added a new method to update transient arrays and keep the original transient expiration time. Added several new Schema meta tags.
 
 = 8.37.5-1 =
 
