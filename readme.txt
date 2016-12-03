@@ -388,7 +388,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.6-rc1 (2016/12/03)**
+**Version 8.37.6-1 (2016/12/04)**
 
 Official announcement: N/A
 
@@ -526,9 +526,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.37.6-rc1 =
+= 8.37.6-1 =
 
-(2016/12/03) Fixed the sharing URL value for BuddyPress users (Pro version). Optimized wp_cache and transient caching for multilingual sites. Added a new method to update transient arrays and keep the original transient expiration time. Added several new Schema meta tags.
+(2016/12/04) Fixed the sharing URL value for BuddyPress users (Pro version). Optimized wp_cache and transient caching for multilingual sites. Added a new method to update transient arrays and keep the original transient expiration time. Added several new Schema meta tags.
 
 = 8.37.5-1 =
 
