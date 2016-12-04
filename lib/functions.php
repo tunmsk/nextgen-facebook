@@ -65,9 +65,9 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 			if ( isset( $buttons_array[$buttons_index] ) ) {
 				if ( $ngfb->debug->enabled )
 					$ngfb->debug->log( $type.' buttons index found in array from transient '.$cache_id );
-			} elseif ( $this->p->debug->enabled )
+			} elseif ( $ngfb->debug->enabled )
 				$ngfb->debug->log( $type.' buttons index not in array from transient '.$cache_id );
-		} elseif ( $this->p->debug->enabled )
+		} elseif ( $ngfb->debug->enabled )
 			$ngfb->debug->log( $type.' buttons array transient is disabled' );
 
 		if ( ! isset( $buttons_array[$buttons_index] ) ) {
