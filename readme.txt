@@ -388,6 +388,19 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.37.7-dev1 (2016/12/06)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added support for the new get_user_locale() function in WordPress v4.7.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.37.6-3 (2016/12/05)**
 
 Official announcement: N/A
@@ -525,6 +538,10 @@ Official announcement: N/A
 		* 'ngfb_cache_expire_social_file' ( $secs );
 
 == Upgrade Notice ==
+
+= 8.37.7-dev1 =
+
+(2016/12/06) Added support for the new get_user_locale() function in WordPress v4.7.
 
 = 8.37.6-3 =
 
