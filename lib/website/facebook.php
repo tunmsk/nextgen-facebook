@@ -50,7 +50,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteFacebook' ) ) {
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'. $form->get_select( 'fb_script_loc', $this->p->cf['form']['script_locations'] ).'</td>';
 
-			$table_rows[] = $form->get_th_html( _x( 'Default Language',
+			$table_rows[] = $form->get_th_html( _x( 'Button Language',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$form->get_select( 'fb_lang', SucomUtil::get_pub_lang( 'facebook' ) ).'</td>';
 
@@ -157,6 +157,7 @@ if ( ! class_exists( 'NgfbWebsiteFacebook' ) ) {
 					'fb_on_admin_edit' => 1,
 					'fb_platform' => 'any',
 					'fb_script_loc' => 'header',
+					'fb_lang' => 'en_US',
 					'fb_button' => 'like',
 					'fb_markup' => 'xfbml',
 					'fb_send' => 1,

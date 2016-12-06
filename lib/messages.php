@@ -496,9 +496,6 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 						case 'tooltip-fb_author_name':
 							$text = sprintf( __( '%1$s uses the Facebook contact field value in the author\'s WordPress profile for <code>article:author</code> Open Graph meta tags. This allows Facebook to credit an author on shares, and link their Facebook page URL.', 'nextgen-facebook' ), $info['short'] ).' '.sprintf( __( 'If an author does not have a Facebook page URL, %1$s can fallback and use the <em>%2$s</em> instead (the recommended value is \'Display Name\').', 'nextgen-facebook' ), $info['short'], _x( 'Author Name Format', 'option label', 'nextgen-facebook' ) );
 							break;
-						case 'tooltip-fb_lang':
-							$text = __( 'The default language of your website content, used in the Facebook / Open Graph and Pinterest Rich Pin meta tags. The Pro version can also use the WordPress locale to adjust the language value dynamically (useful for websites with multilingual content).', 'nextgen-facebook' );
-							break;
 						default:
 							$text = apply_filters( $lca.'_messages_tooltip_fb', $text, $idx, $info );
 							break;
