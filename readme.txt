@@ -401,6 +401,7 @@ Official announcement: N/A
 		* Button Layout
 		* Button Size
 		* Mobile iFrame
+	* Removed the Facebook "Default Content Language" option from the Essential and General settings pages (not required for the og:locale value).
 * *Bugfixes*
 	* None
 * *Developer Notes*
