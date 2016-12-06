@@ -396,6 +396,11 @@ Official announcement: N/A
 	* None
 * *Improvements*
 	* Added support for the new get_user_locale() function in WordPress v4.7.
+	* Updated the Facebook share button with latest Facebook options (see https://developers.facebook.com/docs/plugins/share-button for details).
+		* Markup Language
+		* Button Layout
+		* Button Size
+		* Mobile iFrame
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -541,7 +546,7 @@ Official announcement: N/A
 
 = 8.37.7-dev1 =
 
-(2016/12/06) Added support for the new get_user_locale() function in WordPress v4.7.
+(2016/12/06) Added support for the new get_user_locale() function in WordPress v4.7. Updated the Facebook share button with latest Facebook options.
 
 = 8.37.6-3 =
 
