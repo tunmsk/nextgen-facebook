@@ -3739,44 +3739,50 @@ msgctxt "option label (short)"
 msgid "Button Type"
 msgstr ""
 
-#: lib/website/facebook.php:66
+#: lib/website/facebook.php:69 lib/website/facebook.php:117
 msgctxt "option label (short)"
 msgid "Markup Language"
 msgstr ""
 
-#: lib/website/facebook.php:70
+#: lib/website/facebook.php:73
 msgctxt "option label (short)"
 msgid "Include Send"
 msgstr ""
 
-#: lib/website/facebook.php:75 lib/website/facebook.php:118
+#: lib/website/facebook.php:78 lib/website/facebook.php:121
 msgctxt "option label (short)"
-msgid "Layout"
+msgid "Button Layout"
 msgstr ""
 
-#: lib/website/facebook.php:87
+#: lib/website/facebook.php:88
 msgctxt "option label (short)"
 msgid "Show Faces"
 msgstr ""
 
-#: lib/website/facebook.php:92
+#: lib/website/facebook.php:93
 msgctxt "option label (short)"
 msgid "Font"
 msgstr ""
 
-#: lib/website/facebook.php:105
+#: lib/website/facebook.php:104
 msgctxt "option label (short)"
 msgid "Color Scheme"
 msgstr ""
 
-#: lib/website/facebook.php:109
+#: lib/website/facebook.php:108
 msgctxt "option label (short)"
 msgid "Action Name"
 msgstr ""
 
-#: lib/website/gplus.php:50 lib/website/twitter.php:46
+#: lib/website/facebook.php:130 lib/website/gplus.php:50
+#: lib/website/twitter.php:46
 msgctxt "option label (short)"
 msgid "Button Size"
+msgstr ""
+
+#: lib/website/facebook.php:137
+msgctxt "option label (short)"
+msgid "Mobile iFrame"
 msgstr ""
 
 #: lib/website/gplus.php:59
