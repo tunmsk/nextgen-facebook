@@ -404,7 +404,7 @@ Official announcement: N/A
 		* Mobile iFrame
 	* Removed the Facebook "Default Content Language" option from the Essential and General settings pages (not required for the og:locale value).
 * *Bugfixes*
-	* None
+	* Fixed the "Click here update header templates automatically" URL in the notice message.
 * *Developer Notes*
 	* None
 
@@ -548,7 +548,7 @@ Official announcement: N/A
 
 = 8.37.7-rc1 =
 
-(2016/12/08) Added support for the new get_user_locale() function in WordPress v4.7. Updated the Facebook share button with latest Facebook options. Removed the Facebook "Default Content Language" option.
+(2016/12/08) Added support for the new get_user_locale() function in WordPress v4.7. Updated the Facebook share button with latest Facebook options. Fixed the "Click here update header templates automatically" URL in the notice message.
 
 = 8.37.6-3 =
 
