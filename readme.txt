@@ -389,7 +389,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.7-rc1 (2016/12/08)**
+**Version 8.37.7-1 (2016/12/08)**
 
 Official announcement: N/A
 
@@ -546,7 +546,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.37.7-rc1 =
+= 8.37.7-1 =
 
 (2016/12/08) Added support for the new get_user_locale() function in WordPress v4.7. Updated the Facebook share button with latest Facebook options. Fixed the "Click here update header templates automatically" URL in the notice message.
 
