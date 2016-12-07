@@ -14,11 +14,11 @@
 
 <h2>Description</h2>
 
-<p align="center"><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" /></p><p><strong>NGFB creates <em>complete</em> and <em>accurate</em> social meta tags and Schema marku &mdash; including titles, descriptions, hashtags, images, videos, ecommerce product details, author profile / authorship, co-authors, publisher information, ratings, event details, recipe information, and much more.</p>
-
-<p>p</p>
+<p align="center"><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" /></p><p></p>
 
 <p><strong>NGFB uses your <em>existing</em> content to generate its meta tags and Schema markup</strong> &mdash; there's no need to manually enter / configure any additional settings or values, but if you want to, you can customize just about anything and everything. ;-).</p>
+
+<p><strong>NGFB creates <em>complete</em> and <em>accurate</em> social meta tags and Schema markup</strong> &mdash; including titles, descriptions, hashtags, images, videos, ecommerce product details, author profile / authorship, co-authors, publisher information, ratings, event details, recipe information, and much more &mdash; all from your <em>existing</em> content.</p>
 
 <p><strong>NGFB provides all the information social websites and search engines need</strong> &mdash; improving social engagement, Google Search ranking, and click-through-rates on Facebook, Google Search / Google+, Twitter, Pinterest, LinkedIn, and many more.</p>
 
