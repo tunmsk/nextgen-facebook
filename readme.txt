@@ -11,7 +11,7 @@ Tags: facebook, twitter, pinterest, social, sharing, share, meta tags, social me
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7
-Stable Tag: 8.37.6-3
+Stable Tag: 8.37.7-1
 
 Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
 
