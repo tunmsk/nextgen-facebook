@@ -544,6 +544,58 @@ Official announcement: N/A
 		* 'ngfb_cache_expire_shorten_url' ( $secs );
 		* 'ngfb_cache_expire_social_file' ( $secs );
 
+**Version 8.36.3-2 (2016/10/23)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed HTML table syntax in the Tumblr settings metabox.
+* *Developer Notes*
+	* Minimum requirements updated to WP v3.5 and PHP v5.4.
+	* Renamed the Social Settings 'header' index name to 'text'.
+	* Renamed the 'wpsso_admin_post_header' filter to 'wpsso_admin_post_head'.
+	* Renamed the NgfbHead::get_header_array() method to NgfbHead::get_head_array().
+	* Added a new NgfbHead::get_head_index() method to cache meta tags as array elements. This optimizes the head meta transient cache for Pinterest by storing 1 transient instead of 2.
+
+**Version 8.36.2-1 (2016/10/17)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Changed all http://surniaulula.com/ URLs to https.
+	* Added transient caching of results when fetching size information for image URLs.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
+**Version 8.36.0-1 (2016/10/15)**
+
+Official announcement: N/A
+
+* *New Features*
+	* Added new Item Type options under the Google / Schema tab in the General settings page:
+		* Item Type for Archive Page (default is https://schema.org/CollectionPage)
+		* Item Type for User / Author Page (default is https://schema.org/ProfilePage)
+		* Item Type for Search Results Page (default is https://schema.org/SearchResultsPage)
+	* Added a "Validate AMP Markup" button under the Social Settings metabox Validate tab for the AMP Validator.
+	* Added a "Validate HTML Markup" button under the Social Settings metabox Validate tab for the W3C Markup Validation service.
+	* Added a configurable length warning for the Open Graph description textarea (defaults is 300 characters hard limit, and 200 characters soft limit).
+* *Improvements*
+	* Added the https://schema.org/WebPage sub-types in the plugin config schema_type array (AboutPage, CheckoutPage, CollectionPage, ContactPage, ItemPage, ProfilePage, QAPage, and SearchResultsPage).
+* *Bugfixes*
+	* Fixed getting the term object (category and tags) when no term ID is provided to the SucomUtil::get_term_object() method.
+	* Removed the Open Graph namespace from the HTML tag attributes when using the AMP plugin.
+* *Developer Notes*
+	* Removed the NGFB_DEFAULT_AUTHOR_OPTIONS constant, and all associated default author options.
+	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
+
 == Upgrade Notice ==
 
 = 8.37.7-1 =
@@ -553,4 +605,28 @@ Official announcement: N/A
 = 8.37.6-3 =
 
 (2016/12/05) Fixed the sharing URL value for BuddyPress users (Pro version). Optimized wp_cache and transient caching for multilingual sites. Added a new method to update transient arrays and keep the original transient expiration time. Added several new Schema meta tags.
+
+= 8.37.5-1 =
+
+(2016/11/28) Fixed BuddyPress user page detection when current object is a post (Pro version).
+
+= 8.37.4-1 =
+
+(2016/11/25) Added a check for 'manage_options' permission before checking for outdated WP / PHP versions and duplicate post meta tags. Fixed an incorrect variable name in the WhatsApp class. Fixed the Tumblr caption, title, and description attribute values.
+
+= 8.37.3-1 =
+
+(2016/11/17) Updated the "Plugin Setup Guide and Notes". Updated hard minimum and recommended minimum WordPress and PHP versions. Added a "Reference URL" link to notice messages when generating the head meta tag array.
+
+= 8.37.2-1 =
+
+(2016/11/12) Refactored the NgfbSchema class to provide a public get_json_data() method for other classes. Added an "Item Type for Blog Home Page" option for non-static home pages. Simplified the Schema mainEntityOfPage markup property by using a URL instead of an @id.
+
+= 8.37.1-1 =
+
+(2016/11/12) Refactored the NgfbSchema class to provide a public get_json_data() method for other classes. Added an "Item Type for Blog Home Page" option for non-static home pages. Simplified the Schema mainEntityOfPage markup property by using a URL instead of an @id.
+
+= 8.37.0-1 =
+
+(2016/11/03) Replaced the Object Cache Expiry option with new options for finer control of caching features. Refactored the Schema JSON method for a slight performance improvement. Added https://schema.org/Thing to the Schema Types array. Optimized the sharing buttons HTML cache by storing only one transient per webpage.
 
