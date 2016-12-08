@@ -389,6 +389,19 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.37.8-dev1 (2016/12/09)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed the Reddit button title by adding the title non-encoded.
+* *Developer Notes*
+	* None
+
 **Version 8.37.7-1 (2016/12/08)**
 
 Official announcement: N/A
@@ -598,6 +611,10 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
+= 8.37.8-dev1 =
+
+(2016/12/09) Fixed the Reddit button title by adding the title non-encoded.
+
 = 8.37.7-1 =
 
 (2016/12/08) Added support for the new get_user_locale() function in WordPress v4.7. Updated the Facebook share button with latest Facebook options. Fixed the "Click here update header templates automatically" URL in the notice message.
@@ -619,10 +636,6 @@ Official announcement: N/A
 (2016/11/17) Updated the "Plugin Setup Guide and Notes". Updated hard minimum and recommended minimum WordPress and PHP versions. Added a "Reference URL" link to notice messages when generating the head meta tag array.
 
 = 8.37.2-1 =
-
-(2016/11/12) Refactored the NgfbSchema class to provide a public get_json_data() method for other classes. Added an "Item Type for Blog Home Page" option for non-static home pages. Simplified the Schema mainEntityOfPage markup property by using a URL instead of an @id.
-
-= 8.37.1-1 =
 
 (2016/11/12) Refactored the NgfbSchema class to provide a public get_json_data() method for other classes. Added an "Item Type for Blog Home Page" option for non-static home pages. Simplified the Schema mainEntityOfPage markup property by using a URL instead of an @id.
 
