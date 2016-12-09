@@ -24,7 +24,19 @@
 
 <p><strong>NGFB includes special support and optimization features for Pinterest</strong> &mdash; providing customized Pinterest image sizes, and avoiding conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
 
-<p><strong>Don't need the included social share buttons?</strong> The <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin is a fork / child of NextGEN Facebook (NGFB) &mdash; they have the same author, the same solid core features and code-base, but WPSSO is distributed without the social share buttons and their related features.</p>
+<blockquote>
+<p><strong>Don't need the included social share buttons?</strong> The <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin is a fork / child of NextGEN Facebook (NGFB) &mdash; they have the same author, the same solid core features and code-base, but WPSSO is distributed without the social share buttons and their related features. Additional extension plugins are also available for WPSSO, including two different types of sharing button extensions:</p>
+
+<ul>
+<li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO Mobile App Meta</a></li>
+<li><a href="https://wordpress.org/plugins/wpsso-organization/">WPSSO Organization Markup</a></li>
+<li><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO Place / Location and Local Business Meta</a></li>
+<li><a href="https://wordpress.org/plugins/wpsso-rrssb/">WPSSO Ridiculously Responsive Social Sharing Buttons</a></li>
+<li><a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup</a></li>
+<li><a href="https://wordpress.org/plugins/wpsso-ssb/">WPSSO Social Sharing Buttons</a></li>
+<li><a href="https://wordpress.org/plugins/wpsso-strip-schema-microdata/">WPSSO Strip Schema Microdata</a></li>
+</ul>
+</blockquote>
 
 <h4>Quick List of Features</h4>
 
