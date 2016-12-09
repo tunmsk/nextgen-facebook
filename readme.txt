@@ -412,7 +412,7 @@ Official announcement: N/A
 * *Bugfixes*
 	* Fixed the Reddit button title by adding the title non-encoded.
 * *Developer Notes*
-	* Renamed the 'NGFB_OPTIONS_#_*' constants to 'NGFB_ID_#_OPT_*' and optimized checks.
+	* Renamed the `NGFB_OPTIONS_#_*` multisite single-option constants to `NGFB_ID_#_OPT_*` and optimized their checks.
 
 **Version 8.37.7-1 (2016/12/08)**
 
@@ -625,7 +625,7 @@ Official announcement: N/A
 
 = 8.37.8-dev1 =
 
-(2016/12/10) Fixed the Reddit button title by adding the title non-encoded. Renamed the 'NGFB_OPTIONS_#_*' constants to 'NGFB_ID_#_OPT_*' and optimized checks.
+(2016/12/10) Fixed the Reddit button title by adding the title non-encoded. Renamed the multisite single-option constants and optimized their checks.
 
 = 8.37.7-1 =
 
