@@ -88,7 +88,7 @@
 'ngfb_opengraph_img_size_limits' ( array( $min_width, $min_height, $max_ratio ) );
 'ngfb_option_type' ( false, $key, $network, $mod );
 'ngfb_plugin_image_sizes' ( $sizes, $mod, $crawler_name );
-'ngfb_post_buttons_disabled' ( $ret );
+'ngfb_post_buttons_disabled' ( $ret, $post_id );
 'ngfb_post_cache_objects' ( $wp_objects, $mod, $sharing_url );
 'ngfb_post_cache_transients' ( $transients, $mod, $sharing_url );
 'ngfb_post_image_ids' ( array $ids, $size_name, $post_id );

@@ -389,7 +389,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.8-dev1 (2016/12/09)**
+**Version 8.37.8-dev1 (2016/12/10)**
 
 Official announcement: N/A
 
@@ -400,7 +400,7 @@ Official announcement: N/A
 * *Bugfixes*
 	* Fixed the Reddit button title by adding the title non-encoded.
 * *Developer Notes*
-	* None
+	* Renamed the 'NGFB_OPTIONS_#_*' constants to 'NGFB_ID_#_OPT_*'.
 
 **Version 8.37.7-1 (2016/12/08)**
 
@@ -613,7 +613,7 @@ Official announcement: N/A
 
 = 8.37.8-dev1 =
 
-(2016/12/09) Fixed the Reddit button title by adding the title non-encoded.
+(2016/12/10) Fixed the Reddit button title by adding the title non-encoded. Renamed the 'NGFB_OPTIONS_#_*' constants to 'NGFB_ID_#_OPT_*'.
 
 = 8.37.7-1 =
 
