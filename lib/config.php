@@ -1300,8 +1300,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					self::$cf['config_filtered'] = true;
 
 					// remove the sharing libs if social sharing features are disabled
-					// don't use SucomUtil::get_const() since the SucomUtil class may not be loaded yet
-					if ( defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) && NGFB_SOCIAL_SHARING_DISABLE ) {
+					// SucomUtil class may not be loaded, so don't use SucomUtil::get_const()
+					if ( apply_filters( self::$cf['lca'].'_is_avail_ssb', 
+						( defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) ?
+							NGFB_SOCIAL_SHARING_DISABLE : false ) ) ) {
+
 						foreach ( array_keys( self::$cf['plugin'] ) as $ext ) {
 							unset (
 								self::$cf['plugin'][$ext]['lib']['website'],
@@ -1468,9 +1471,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				require_once( NGFB_PLUGINDIR.'lib/ext/parse-readme.php' );
 			}
 
-			if ( ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
-				empty( $_SERVER['NGFB_SOCIAL_SHARING_DISABLE'] ) &&
-					file_exists( NGFB_PLUGINDIR.'lib/sharing.php' ) )
+			if ( apply_filters( self::$cf['lca'].'_is_avail_ssb',
+				( ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
+					file_exists( NGFB_PLUGINDIR.'lib/sharing.php' ) ? true : false ) ) )
 						require_once( NGFB_PLUGINDIR.'lib/sharing.php' );
 
 			if ( file_exists( NGFB_PLUGINDIR.'lib/loader.php' ) )

@@ -305,8 +305,8 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 				// if multisite options are found, check for overwrite of site specific options
 				if ( is_array( $this->options ) && is_array( $this->site_options ) ) {
-					$current_blog_id = function_exists( 'get_current_blog_id' ) ? 
-						get_current_blog_id() : false;
+					$blog_id = get_current_blog_id();	// since wp 3.1
+					$defined_constants = get_defined_constants( true );	// $categorize = true
 					foreach ( $this->site_options as $key => $val ) {
 						if ( strpos( $key, ':use' ) !== false )
 							continue;
@@ -322,12 +322,9 @@ if ( ! class_exists( 'Ngfb' ) ) {
 									break;
 							}
 						}
-						// check for constant over-rides
-						if ( $current_blog_id !== false ) {
-							$constant_name = 'NGFB_OPTIONS_'.$current_blog_id.'_'.strtoupper( $key );
-							if ( defined( $constant_name ) )
-								$this->options[$key] = constant( $constant_name );
-						}
+						$constant_name = 'NGFB_ID_'.$blog_id.'_OPT_'.strtoupper( $key );
+						if ( isset( $defined_constants['user'][$constant_name] ) )
+							$this->options[$key] = $defined_constants['user'][$constant_name];
 					}
 				}
 			}

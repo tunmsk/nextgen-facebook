@@ -295,10 +295,11 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 									true : false ) );
 					break;
 				case 'ssb':
-					$ret = ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
-						empty( $_SERVER['NGFB_SOCIAL_SHARING_DISABLE'] ) &&
-							class_exists( $this->p->cf['lca'].'sharing' ) ?
-								true : false;
+					$ret = apply_filters( $this->p->cf['lca'].'_is_avail_'.$key,
+						( ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
+							empty( $_SERVER['NGFB_SOCIAL_SHARING_DISABLE'] ) &&
+								class_exists( $this->p->cf['lca'].'sharing' ) ?
+									true : false ) );
 					break;
 				default:
 					$ret = false;	// just in case
