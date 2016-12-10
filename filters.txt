@@ -96,6 +96,7 @@
 'ngfb_post_social_settings_tabs' ( $tabs, $mod );
 'ngfb_post_types' ( $post_types, $type, $output );
 'ngfb_post_url' ( $url, $mod, $add_page, $src_id );
+'ngfb_posts_per_page' ( $limit, $mod );
 'ngfb_quote' ( $quote, $mod );
 'ngfb_quote_seed' ( '', $mod );
 'ngfb_save_options' ( $opts, $options_name );
