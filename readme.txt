@@ -413,6 +413,7 @@ Official announcement: N/A
 	* Fixed the Reddit button title by adding the title non-encoded.
 * *Developer Notes*
 	* Renamed the `NGFB_OPTIONS_#_*` multisite single-option constants to `NGFB_ID_#_OPT_*` and optimized their checks.
+	* Added a new SucomUtil::explode_csv() static method to explode and trim CSV strings.
 
 **Version 8.37.7-1 (2016/12/08)**
 
@@ -625,7 +626,7 @@ Official announcement: N/A
 
 = 8.37.8-dev2 =
 
-(2016/12/11) Fixed the Reddit button title by adding the title non-encoded. Renamed the multisite single-option constants and optimized their checks.
+(2016/12/11) Fixed the Reddit button title by adding the title non-encoded. Renamed the multisite single-option constants and optimized their checks. Added a new SucomUtil::explode_csv() static method.
 
 = 8.37.7-1 =
 
