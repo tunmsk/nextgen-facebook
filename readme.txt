@@ -401,7 +401,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.8-dev1 (2016/12/10)**
+**Version 8.37.8-dev2 (2016/12/11)**
 
 Official announcement: N/A
 
@@ -623,9 +623,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 8.37.8-dev1 =
+= 8.37.8-dev2 =
 
-(2016/12/10) Fixed the Reddit button title by adding the title non-encoded. Renamed the multisite single-option constants and optimized their checks.
+(2016/12/11) Fixed the Reddit button title by adding the title non-encoded. Renamed the multisite single-option constants and optimized their checks.
 
 = 8.37.7-1 =
 
