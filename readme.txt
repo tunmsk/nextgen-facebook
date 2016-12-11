@@ -128,7 +128,7 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 * Selection of preset button options by location (content, excerpt, shortcode, widget, etc.).
 * Ability to include / exclude social share buttons by post type.
 * Integrates with 3rd party plugins and services for additional image, video, ecommerce product details, SEO settings, etc. The following modules are included with the Pro version, and are automatically loaded if/when the supported plugins and/or services are required.
-	* **Supported 3rd Party Plugins**
+	* **Integrated 3rd Party Plugins**
 		* All in One SEO Pack
 		* bbPress
 		* BuddyPress (including Group Forum Topics)
@@ -146,7 +146,7 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 		* WordPress REST API (version 2)
 		* Yoast SEO (aka WordPress SEO)
 		* Yotpo Social Reviews for WooCommerce
-	* **Supported Service APIs**
+	* **Integrated Service APIs**
 		* Bitly
 		* Facebook Embedded Videos
 		* Google URL Shortener
@@ -401,7 +401,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.8-rc1 (2016/12/11)**
+**Version 8.37.8-rc1 (2016/12/12)**
 
 Official announcement: N/A
 
@@ -626,7 +626,7 @@ Official announcement: N/A
 
 = 8.37.8-rc1 =
 
-(2016/12/11) Fixed the Reddit button title by adding the title non-encoded. Renamed the multisite single-option constants and optimized their checks. Added a new SucomUtil::explode_csv() static method.
+(2016/12/12) Fixed the Reddit button title by adding the title non-encoded. Renamed the multisite single-option constants and optimized their checks. Added a new SucomUtil::explode_csv() static method.
 
 = 8.37.7-1 =
 
