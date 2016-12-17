@@ -404,8 +404,6 @@ Note that the production stage level can be incremented on occasion for simple t
 
 **Version 8.37.8-1 (2016/12/12)**
 
-Official announcement: N/A
-
 * *New Features*
 	* None
 * *Improvements*
@@ -417,8 +415,6 @@ Official announcement: N/A
 	* Added a new SucomUtil::explode_csv() static method to explode and trim CSV strings.
 
 **Version 8.37.7-1 (2016/12/08)**
-
-Official announcement: N/A
 
 * *New Features*
 	* None
@@ -436,8 +432,6 @@ Official announcement: N/A
 	* None
 
 **Version 8.37.6-3 (2016/12/05)**
-
-Official announcement: N/A
 
 * *New Features*
 	* None
@@ -461,8 +455,6 @@ Official announcement: N/A
 
 **Version 8.37.5-1 (2016/11/28)**
 
-Official announcement: N/A
-
 * *New Features*
 	* None
 * *Improvements*
@@ -473,8 +465,6 @@ Official announcement: N/A
 	* Added extra debugging messages in the BuddyPress user class methods (Pro version).
 
 **Version 8.37.4-1 (2016/11/25)**
-
-Official announcement: N/A
 
 * *New Features*
 	* None
@@ -491,8 +481,6 @@ Official announcement: N/A
 	* Renamed the 'buttons_enqueue_social_css' option key to 'buttons_enqueue_social_style'.
 
 **Version 8.37.3-1 (2016/11/17)**
-
-Official announcement: N/A
 
 * *New Features*
 	* None
@@ -511,8 +499,6 @@ Official announcement: N/A
 
 **Version 8.37.2-1 (2016/11/12)**
 
-Official announcement: N/A
-
 * *New Features*
 	* None
 * *Improvements*
@@ -529,8 +515,6 @@ Official announcement: N/A
 	* Renamed the NgfbSchema::get_item_type_context() method to NgfbSchema::get_schema_type_context().
 
 **Version 8.37.0-1 (2016/11/04)**
-
-Official announcement: N/A
 
 * *New Features*
 	* Replaced the Object Cache Expiry option with new options for finer control of caching features.
@@ -573,8 +557,6 @@ Official announcement: N/A
 
 **Version 8.36.3-2 (2016/10/23)**
 
-Official announcement: N/A
-
 * *New Features*
 	* None
 * *Improvements*
@@ -590,8 +572,6 @@ Official announcement: N/A
 
 **Version 8.36.2-1 (2016/10/17)**
 
-Official announcement: N/A
-
 * *New Features*
 	* None
 * *Improvements*
@@ -603,8 +583,6 @@ Official announcement: N/A
 	* None
 
 **Version 8.36.0-1 (2016/10/15)**
-
-Official announcement: N/A
 
 * *New Features*
 	* Added new Item Type options under the Google / Schema tab in the General settings page:
