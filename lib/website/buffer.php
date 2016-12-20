@@ -156,7 +156,8 @@ if ( ! class_exists( 'NgfbWebsiteBuffer' ) ) {
 			}
 
 			if ( empty( $atts['photo'] ) ) {
-				$media_info = $this->p->og->get_the_media_info( $atts['size'], array( 'img_url' ), $mod, 'og' );
+				$media_info = $this->p->og->get_the_media_info( $atts['size'], 
+					array( 'img_url' ), $mod, 'og' );
 				$atts['photo'] = $media_info['img_url'];
 			}
 

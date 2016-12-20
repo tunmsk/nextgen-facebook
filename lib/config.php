@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.37.8-1',	// plugin version
+					'version' => '8.37.9-dev1',	// plugin version
 					'opt_version' => '475',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -1427,7 +1427,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			 * NGFB curl settings
 			 */
 			if ( defined( 'NGFB_PLUGINDIR' ) )
-				$var_const['NGFB_PHP_CURL_CAINFO'] = NGFB_PLUGINDIR.'share/curl/ca-bundle.crt';
+				$var_const['NGFB_PHP_CURL_CAINFO'] = ABSPATH.WPINC.'/certificates/ca-bundle.crt';
 			$var_const['NGFB_PHP_CURL_USERAGENT'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0';
 
 			foreach ( $var_const as $name => $value )
