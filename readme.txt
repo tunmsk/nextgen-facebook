@@ -402,12 +402,12 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.9-dev2 (2016/12/21)**
+**Version 8.37.9-dev3 (2016/12/22)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added a "Custom Facebook Locale" option to customize the WordPress locale value for Facebook.
 * *Bugfixes*
 	* Fixed fetching of image size for a custom Schema image URL.
 * *Developer Notes*
@@ -615,9 +615,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.37.9-dev2 =
+= 8.37.9-dev3 =
 
-(2016/12/21) Fixed fetching of image size for a custom Schema image URL. Removed the share/curl/ca-bundle.crt file to use the WordPress wp-includes/certificates/ca-bundle.crt file instead.
+(2016/12/22) Fixed fetching of image size for a custom Schema image URL. Removed the share/curl/ca-bundle.crt file to use the WordPress ca-bundle.crt file instead. Added a "Custom Facebook Locale" option to customize the WordPress locale value for Facebook.
 
 = 8.37.8-1 =
 
