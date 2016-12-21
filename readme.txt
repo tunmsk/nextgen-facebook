@@ -411,7 +411,8 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Removed the share/curl/ca-bundle.crt file to use the wordpress/wp-includes/certificates/ca-bundle.crt file instead.
+	* Added a check for positive numbers when adding Schema image size properties.
 
 **Version 8.37.8-1 (2016/12/12)**
 
