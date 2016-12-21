@@ -402,7 +402,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.37.9-dev1 (2016/12/21)**
+**Version 8.37.9-dev2 (2016/12/21)**
 
 * *New Features*
 	* None
@@ -615,7 +615,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.37.9-dev1 =
+= 8.37.9-dev2 =
 
 (2016/12/21) Fixed fetching of image size for a custom Schema image URL. Removed the share/curl/ca-bundle.crt file to use the WordPress wp-includes/certificates/ca-bundle.crt file instead.
 
