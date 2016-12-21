@@ -197,7 +197,8 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					$table_rows['fb_publisher_url'] = $this->form->get_th_html( _x( 'Facebook Business Page URL',
 						'option label', 'nextgen-facebook' ), null, 'fb_publisher_url', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'fb_publisher_url', $this->p->options ), 'wide' ).'</td>';
+					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'fb_publisher_url',
+						$this->p->options ), 'wide' ).'</td>';
 
 					$table_rows['fb_app_id'] = $this->form->get_th_html( _x( 'Facebook Application ID',
 						'option label', 'nextgen-facebook' ), null, 'fb_app_id' ).
@@ -213,13 +214,20 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					'<td>'.$this->form->get_select( 'fb_author_name', 
 						$this->p->cf['form']['user_name_fields'] ).'</td>';
 
+					$fb_pub_lang = SucomUtil::get_pub_lang( 'facebook' );
+					$fb_locale_key = SucomUtil::get_key_locale( 'fb_locale', $this->p->options );
+					$table_rows['fb_locale'] = $this->form->get_th_html( _x( 'Custom Facebook Locale',
+						'option label', 'nextgen-facebook' ), null, 'fb_locale', array( 'is_locale' => true ) ).
+					'<td>'.$this->form->get_select( $fb_locale_key, $fb_pub_lang ).'</td>';
+
 					break;
 
 				case 'pub-google':
 
 					$table_rows['seo_publisher_url'] = $this->form->get_th_html( _x( 'Google+ Business Page URL',
 						'option label', 'nextgen-facebook' ), null, 'seo_publisher_url', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'seo_publisher_url', $this->p->options ), 'wide' ).'</td>';
+					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'seo_publisher_url',
+						$this->p->options ), 'wide' ).'</td>';
 
 					$table_rows['seo_desc_len'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Search / SEO Description Length',
@@ -330,7 +338,8 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					$table_rows['rp_publisher_url'] = $this->form->get_th_html( _x( 'Pinterest Company Page URL',
 						'option label', 'nextgen-facebook' ), null, 'rp_publisher_url', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'rp_publisher_url', $this->p->options ), 'wide' ).'</td>';
+					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'rp_publisher_url',
+						$this->p->options ), 'wide' ).'</td>';
 
 					if ( ! SucomUtil::get_const( 'NGFB_RICH_PIN_DISABLE' ) ) {
 						$table_rows['rp_img'] = $this->form->get_th_html( _x( 'Rich Pin Image Dimensions',
@@ -360,7 +369,8 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					$table_rows['tc_site'] = $this->form->get_th_html( _x( 'Twitter Business @username',
 						'option label', 'nextgen-facebook' ), null, 'tc_site', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'tc_site', $this->p->options ) ).'</td>';
+					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'tc_site',
+						$this->p->options ) ).'</td>';
 
 					$table_rows['tc_desc_len'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Maximum Description Length',
@@ -392,15 +402,18 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					$table_rows['instgram_publisher_url'] = $this->form->get_th_html( _x( 'Instagram Business URL',
 						'option label', 'nextgen-facebook' ), null, 'instgram_publisher_url', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'instgram_publisher_url', $this->p->options ), 'wide' ).'</td>';
+					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'instgram_publisher_url',
+						$this->p->options ), 'wide' ).'</td>';
 
 					$table_rows['linkedin_publisher_url'] = $this->form->get_th_html( _x( 'LinkedIn Company Page URL',
 						'option label', 'nextgen-facebook' ), null, 'linkedin_publisher_url', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'linkedin_publisher_url', $this->p->options ), 'wide' ).'</td>';
+					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'linkedin_publisher_url',
+						$this->p->options ), 'wide' ).'</td>';
 
 					$table_rows['myspace_publisher_url'] = $this->form->get_th_html( _x( 'MySpace Business Page URL',
 						'option label', 'nextgen-facebook' ), null, 'myspace_publisher_url', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'myspace_publisher_url', $this->p->options ), 'wide' ).'</td>';
+					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'myspace_publisher_url',
+						$this->p->options ), 'wide' ).'</td>';
 
 					break;
 			}
