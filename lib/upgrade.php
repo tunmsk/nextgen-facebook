@@ -51,7 +51,6 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'ngfb_add_to_post' => 'plugin_add_to_post',
 			'ngfb_add_to_page' => 'plugin_add_to_page',
 			'ngfb_add_to_attachment' => 'plugin_add_to_attachment',
-			'ngfb_verify_certs' => 'plugin_verify_certs',
 			'ngfb_file_cache_hrs' => 'plugin_file_cache_hrs',
 			'ngfb_min_shorten' => 'plugin_min_shorten',
 			'ngfb_googl_api_key' => 'plugin_google_api_key',
@@ -290,6 +289,11 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			if ( $opts_version && $opts_version <= 473 ) {
 				unset( $opts['plugin_object_cache_exp'] );
 				unset( $opts['plugin_object_cache_exp:use'] );
+			}
+
+			if ( $opts_version && $opts_version <= 476 ) {
+				unset( $opts['ngfb_verify_certs'] );
+				unset( $opts['plugin_verify_certs'] );
 			}
 
 			return $this->sanitize( $opts, $def_opts, $network );	// cleanup options and sanitize

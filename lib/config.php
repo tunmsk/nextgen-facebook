@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.37.9-dev3',	// plugin version
-					'opt_version' => '476',		// increment when changing default options
+					'opt_version' => '477',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -529,7 +529,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_imgsize_cache_exp' => 86400,		// Get Image (URL) Size Cache Expiry (1 day)
 					'plugin_topics_cache_exp' => 2419200,		// Article Topics Array Cache Expiry (4 weeks)
 					'plugin_types_cache_exp' => 2419200,		// Schema Types Array Cache Expiry (4 weeks)
-					'plugin_verify_certs' => 0,			// Verify SSL Certificates
 					'plugin_cache_info' => 0,			// Report Cache Purge Count
 					// Service API Keys Tab
 					'plugin_shortener' => 'none',
@@ -642,8 +641,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_topics_cache_exp:use' => 'default',
 					'plugin_types_cache_exp' => 2419200,		// Schema Types Array Cache Expiry (4 weeks)
 					'plugin_types_cache_exp:use' => 'default',
-					'plugin_verify_certs' => 0,			// Verify SSL Certificates
-					'plugin_verify_certs:use' => 'default',
 					'plugin_cache_info' => 0,			// Report Cache Purge Count
 					'plugin_cache_info:use' => 'default',
 					// Extension Plugins and Pro Licenses
