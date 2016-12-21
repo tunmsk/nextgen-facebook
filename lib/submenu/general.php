@@ -216,7 +216,8 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					$fb_pub_lang = SucomUtil::get_pub_lang( 'facebook' );
 					$fb_locale_key = SucomUtil::get_key_locale( 'fb_locale', $this->p->options );
-					$table_rows['fb_locale'] = $this->form->get_th_html( _x( 'Custom Facebook Locale',
+					$table_rows['fb_locale'] = '<tr class="hide_in_basic">'.
+					$this->form->get_th_html( _x( 'Custom Facebook Locale',
 						'option label', 'nextgen-facebook' ), null, 'fb_locale', array( 'is_locale' => true ) ).
 					'<td>'.$this->form->get_select( $fb_locale_key, $fb_pub_lang ).'</td>';
 
@@ -354,7 +355,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 						$this->p->cf['form']['user_name_fields'] ).'</td>';
 
 					$table_rows['rp_dom_verify'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Pinterest Website Verification ID',
+					$this->form->get_th_html( _x( 'Pinterest Verification ID',
 						'option label', 'nextgen-facebook' ), null, 'rp_dom_verify' ).
 					'<td>'.$this->form->get_input( 'rp_dom_verify', 'api_key' ).'</td>';
 
