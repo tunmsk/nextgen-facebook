@@ -253,14 +253,6 @@
 
 <p>NextGEN Facebook (NGFB) provides the <a href="https://dev.twitter.com/cards/types/summary">Summary</a>, <a href="https://dev.twitter.com/cards/types/summary-large-image">Summary with Large Image</a>, and <a href="https://dev.twitter.com/cards/types/player">Player</a> Twitter Cards &mdash; <em>including configurable image sizes for each card type</em>.</p>
 
-<h4>Available in Multiple Languages</h4>
-
-<ul>
-<li>English (US)</li>
-<li>French (France)</li>
-<li>More to come...</li>
-</ul>
-
 <h4>3rd Party Integration (Pro version)</h4>
 
 <div style="clear:both;"></div>

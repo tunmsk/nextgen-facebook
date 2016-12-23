@@ -223,12 +223,6 @@ NextGEN Facebook (NGFB) adds Facebook / Open Graph, Pinterest Rich Pins, Twitter
 
 NextGEN Facebook (NGFB) provides the [Summary](https://dev.twitter.com/cards/types/summary), [Summary with Large Image](https://dev.twitter.com/cards/types/summary-large-image), and [Player](https://dev.twitter.com/cards/types/player) Twitter Cards &mdash; *including configurable image sizes for each card type*.
 
-= Available in Multiple Languages =
-
-* English (US)
-* French (France)
-* More to come...
-
 = 3rd Party Integration (Pro version) =
 
 <div style="clear:both;"></div>
