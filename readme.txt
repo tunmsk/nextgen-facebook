@@ -328,7 +328,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Additional Documentation =
 
-* [About Pro Modules](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/)
+* [About NGFB Pro Integration Modules](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/)
 	* [Author Gravatar](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/author-gravatar/)
 	* [Easy Digital Downloads](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/easy-digital-downloads/)
 	* [Facebook, Slideshare, Vimeo, Wistia, Youtube Video APIs](https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/facebook-slideshare-vimeo-wistia-youtube-video-apis/)

@@ -379,7 +379,7 @@
 <h4>Additional Documentation</h4>
 
 <ul>
-<li><a href="https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/">About Pro Modules</a>
+<li><a href="https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/">About NGFB Pro Integration Modules</a>
 
 <ul>
 <li><a href="https://surniaulula.com/codex/plugins/nextgen-facebook/notes/modules/author-gravatar/">Author Gravatar</a></li>
