@@ -396,7 +396,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.38.0-rc2 (2016/12/24)**
+**Version 8.38.0-1 (2016/12/24)**
 
 * *New Features*
 	* Added a new "Use Yoast SEO Custom Social Meta" option for Yoast SEO users under the NGFB &gt; Advanced &gt; Social / Custom Meta tab (Pro version).
@@ -610,7 +610,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.38.0-rc2 =
+= 8.38.0-1 =
 
 (2016/12/24) Fixed fetching of image size for a custom Schema image URL. Removed the share/curl/ca-bundle.crt file to use the WordPress ca-bundle.crt file instead. Added new "Use Yoast SEO Custom Social Meta" and "Custom Facebook Locale" options.
 
