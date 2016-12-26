@@ -146,6 +146,11 @@ if ( ! function_exists( 'ngfb_is_mobile' ) ) {
 	}
 }
 
+/*
+ * Hook the 'read_wpseo_custom_meta' filter and return true to allow reading of
+ * Yoast SEO custom post, term, and user meta - even when the Yoast SEO plugin
+ * is not active.
+ */
 if ( apply_filters( 'read_wpseo_custom_meta', false ) ) {
 	add_filter( 'ngfb_get_post_options', 'filter_get_post_options_wpseo_custom_meta', 10, 2 );
 	add_filter( 'ngfb_get_term_options', 'filter_get_term_options_wpseo_custom_meta', 10, 2 );
@@ -159,8 +164,7 @@ if ( ! function_exists( 'filter_get_post_options_wpseo_custom_meta' ) ) {
 			$opts['og_title'] = (string) get_post_meta( $post_id,
 				'_yoast_wpseo_opengraph-title', true );
 	
-		// fallback to the SEO title
-		if ( empty( $opts['og_title'] ) )
+		if ( empty( $opts['og_title'] ) )	// fallback to the SEO title
 			$opts['og_title'] = (string) get_post_meta( $post_id,
 				'_yoast_wpseo_title', true );
 	
@@ -168,8 +172,7 @@ if ( ! function_exists( 'filter_get_post_options_wpseo_custom_meta' ) ) {
 			$opts['og_desc'] = (string) get_post_meta( $post_id,
 				'_yoast_wpseo_opengraph-description', true );
 	
-		// fallback to the SEO description
-		if ( empty( $opts['og_desc'] ) )
+		if ( empty( $opts['og_desc'] ) )	// fallback to the SEO description
 			$opts['og_desc'] = (string) get_post_meta( $post_id,
 				'_yoast_wpseo_metadesc', true );
 	
@@ -193,8 +196,10 @@ if ( ! function_exists( 'filter_get_post_options_wpseo_custom_meta' ) ) {
 }
 
 if ( ! function_exists( 'filter_get_term_options_wpseo_custom_meta' ) ) {
-	// yoast seo does not support wordpress term meta (since wp 4.4)
-	// read term meta from the 'wpseo_taxonomy_meta' option instead
+	/*
+	 * Yoast SEO does not support wordpress term meta (added in wp 4.4).
+	 * Read term meta from the 'wpseo_taxonomy_meta' option instead.
+	 */
 	function filter_get_term_options_wpseo_custom_meta( $opts, $term_id ) {
 	
 		$term_obj = get_term( $term_id );
@@ -210,8 +215,7 @@ if ( ! function_exists( 'filter_get_term_options_wpseo_custom_meta' ) ) {
 			isset( $term_opts['wpseo_opengraph-title'] ) )
 				$opts['og_title'] = (string) $term_opts['wpseo_opengraph-title'];
 	
-		// fallback to the SEO title
-		if ( empty( $opts['og_title'] ) && 
+		if ( empty( $opts['og_title'] ) &&	// fallback to the SEO title
 			isset( $term_opts['wpseo_title'] ) )
 				$opts['og_title'] = (string) $term_opts['wpseo_title'];
 	
@@ -219,8 +223,7 @@ if ( ! function_exists( 'filter_get_term_options_wpseo_custom_meta' ) ) {
 			isset( $term_opts['wpseo_opengraph-description'] ) )
 				$opts['og_desc'] = (string) $term_opts['wpseo_opengraph-description'];
 	
-		// fallback to the SEO description
-		if ( empty( $opts['og_desc'] ) && 
+		if ( empty( $opts['og_desc'] ) &&	// fallback to the SEO description
 			isset( $term_opts['wpseo_desc'] ) )
 				$opts['og_desc'] = (string) $term_opts['wpseo_desc'];
 	
@@ -244,7 +247,9 @@ if ( ! function_exists( 'filter_get_term_options_wpseo_custom_meta' ) ) {
 }
 
 if ( ! function_exists( 'filter_get_user_options_wpseo_custom_meta' ) ) {
-	// yoast seo does not provide social settings for users
+	/*
+	 * Yoast SEO does not provide social settings for users.
+	 */
 	function filter_get_user_options_wpseo_custom_meta( $opts, $user_id ) {
 	
 		if ( empty( $opts['og_title'] ) )
