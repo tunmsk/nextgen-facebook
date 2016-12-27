@@ -219,7 +219,8 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 		}
 
 		public function is_aop( $lca = '' ) { 
-			return $this->aop( $lca, true, $this->get_avail_check( 'aop' ) );
+			return $this->aop( $lca, true, 
+				$this->get_avail_check( 'aop' ) );
 		}
 
 		public function aop( $lca = '', $lic = true, $rv = true ) {
