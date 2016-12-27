@@ -396,7 +396,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.38.1-dev1 (2016/12/27)**
+**Version 8.38.1-dev2 (2016/12/28)**
 
 * *New Features*
 	* None
@@ -621,9 +621,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.38.1-dev1 =
+= 8.38.1-dev2 =
 
-(2016/12/27) Added an NgfbFilters class to centralize 3rd party plugin filter hooks.
+(2016/12/28) Added an NgfbFilters class to centralize 3rd party plugin filter hooks.
 
 = 8.38.0-1 =
 
