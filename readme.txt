@@ -405,7 +405,6 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Added an optional NGFB_READ_WPSEO_META constant.
 	* Added a new NgfbFilters class to centralize 3rd party plugin filter hooks.
 
 **Version 8.38.0-1 (2016/12/24)**
@@ -624,7 +623,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.38.1-dev1 =
 
-(2016/12/27) Added the NGFB_READ_WPSEO_META constant. Added an NgfbFilters class to centralize 3rd party plugin filter hooks.
+(2016/12/27) Added an NgfbFilters class to centralize 3rd party plugin filter hooks.
 
 = 8.38.0-1 =
 
