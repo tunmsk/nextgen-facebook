@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.38.0-1',	// plugin version
+					'version' => '8.38.1-dev1',	// plugin version
 					'opt_version' => '478',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -517,7 +517,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_add_to_term' => 1,
 					'plugin_add_to_topic' => 0,	// bbpress
 					'plugin_add_to_user' => 1,
-					'plugin_wpseo_social_meta' => 1,		// Use Yoast SEO Custom Social Meta
+					'plugin_wpseo_social_meta' => 1,		// Read Yoast SEO Social Meta
 					'plugin_cf_img_url' => '_format_image_url',
 					'plugin_cf_vid_url' => '_format_video_url',
 					'plugin_cf_vid_embed' => '_format_video_embed',
@@ -1456,6 +1456,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			require_once( NGFB_PLUGINDIR.'lib/term.php' );		// extends meta.php
 			require_once( NGFB_PLUGINDIR.'lib/user.php' );		// extends meta.php
 			require_once( NGFB_PLUGINDIR.'lib/media.php' );
+			require_once( NGFB_PLUGINDIR.'lib/filters.php' );
 			require_once( NGFB_PLUGINDIR.'lib/head.php' );
 			require_once( NGFB_PLUGINDIR.'lib/opengraph.php' );
 			require_once( NGFB_PLUGINDIR.'lib/weibo.php' );
