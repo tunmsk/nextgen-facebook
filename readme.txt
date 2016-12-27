@@ -396,17 +396,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.38.1-dev2 (2016/12/28)**
+**Version 8.38.1-dev3 (2016/12/28)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* The "Read Yoast SEO Custom Meta" option is now enabled by default, if the Yoast SEO plugin is active or its settings are found in the database, otherwise it is disabled by default (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
 	* Added a new NgfbFilters class to centralize 3rd party plugin filter hooks.
-	* Added a new NgfbUtil get_canonical_url() method for the canonical meta tag.
+	* Added a new NgfbUtil get_canonical_url() method specifically for the canonical meta tag.
 	* Added a new 'ngfb_canonical_url' filter to allow filtering of canonical and sharing URLs separately.
 
 **Version 8.38.0-1 (2016/12/24)**
@@ -623,7 +623,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.38.1-dev2 =
+= 8.38.1-dev3 =
 
 (2016/12/28) Added an NgfbFilters class to centralize 3rd party plugin filter hooks.
 
