@@ -431,7 +431,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Fixed the Reddit button title by adding the title non-encoded.
 * *Developer Notes*
 	* Renamed the `NGFB_OPTIONS_#_*` multisite single-option constants to `NGFB_ID_#_OPT_*` and optimized their checks.
-	* Added a new SucomUtil::explode_csv() static method to explode and trim CSV strings.
+	* Added a new SucomUtil explode_csv() static method to explode and trim CSV strings.
 
 **Version 8.37.7-1 (2016/12/08)**
 
@@ -468,9 +468,9 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* Fixed the sharing URL value for BuddyPress users (Pro version).
 * *Developer Notes*
-	* Added an SucomUtil::update_transient_array() method to update transient arrays and keep the original transient expiration time.
+	* Added an SucomUtil update_transient_array() method to update transient arrays and keep the original transient expiration time.
 	* Added a new 'ngfb_json_prop_https_schema_org_potentialaction' filter.
-	* Removed $locale argument from SucomUtil::get_mod_salt() calls.
+	* Removed $locale argument from SucomUtil get_mod_salt() calls.
 
 **Version 8.37.5-1 (2016/11/28)**
 
@@ -512,7 +512,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Added a sharing URL argument to the SucomUtil::get_mod_salt() method for cases where the $mod id is false.
+	* Added a sharing URL argument to the SucomUtil get_mod_salt() method for cases where the $mod id is false.
 	* Renamed the 'ngfb_json_array_schema_type_ids' filter to 'ngfb_json_array_schema_page_type_ids' to emulate the $page_type_id variable name.
 	* Removed the deprecated $use_post argument from the get_array() methods for the Open Graph, Twitter Card, and Weibo classes.
 
@@ -527,11 +527,11 @@ Note that the production stage level can be incremented on occasion for simple t
 	* None
 * *Developer Notes*
 	* Refactored the NgfbSchema class to provide a public get_json_data() method for other classes.
-	* Added NgfbPost::get_posts(), NgfbTerm::get_posts(), and NgfbUser::get_posts() methods.
-	* Added a NgfbMeta::get_posts_mods() method to return `$mod` arrays for all posts in the current archive page.
-	* Added a NgfbSchema::get_json_data() method with used by NgfbSchema::get_json_array() in the same class.
-	* Renamed the NgfbSchema::get_head_item_type() method to NgfbSchema::get_mod_schema_type().
-	* Renamed the NgfbSchema::get_item_type_context() method to NgfbSchema::get_schema_type_context().
+	* Added NgfbPost get_posts(), NgfbTerm get_posts(), and NgfbUser get_posts() methods.
+	* Added a NgfbMeta get_posts_mods() method to return `$mod` arrays for all posts in the current archive page.
+	* Added a NgfbSchema get_json_data() method used by get_json_array() in the same class.
+	* Renamed the NgfbSchema get_head_item_type() method to get_mod_schema_type().
+	* Renamed the NgfbSchema get_item_type_context() method to get_schema_type_context().
 
 **Version 8.37.0-1 (2016/11/04)**
 
@@ -548,12 +548,12 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Improvements*
 	* Replaced the "Social File Cache Expiry" drop-down (in hours) with an input field (in seconds).
 * *Bugfixes*
-	* Fixed the SucomUtil::get_first_last_next_nums() method, which was not returning a correct 'next' number for single element arrays.
+	* Fixed the SucomUtil get_first_last_next_nums() method, which was not returning a correct 'next' number for single element arrays.
 * *Developer Notes*
 	* Refactored the NgfbShortcodeSharing and NgfbWidgetSharing classes to optimize caching performance.
 	* Refactored the ngfb_get_sharing_buttons() function to optimize caching performance.
-	* Added a new NgfbSharing::get_buttons_cache_index() method to cache social sharing buttons HTML as array elements. This optimizes the cache by storing one transient instead of one transient per social sharing buttons location within the same webpage.
-	* Refactored the NgfbSchema::get_json_array() method for a slight performance improvement.
+	* Added a new NgfbSharing get_buttons_cache_index() method to cache social sharing buttons HTML as array elements. This optimizes the cache by storing one transient instead of one transient per social sharing buttons location within the same webpage.
+	* Refactored the NgfbSchema get_json_array() method for a slight performance improvement.
 	* Added https://schema.org/Thing to the Schema Types array (as top-level parent for all other Schema types).
 	* Replaced the `$user_id` argument in all JSON data and property filters by the Schema `$type_id`.
 	* Renamed the 'ngfb_json_data_https_schema_org' filter to 'ngfb_json_data_https_schema_org_thing'.
@@ -586,8 +586,8 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Minimum requirements updated to WP v3.5 and PHP v5.4.
 	* Renamed the Social Settings 'header' index name to 'text'.
 	* Renamed the 'wpsso_admin_post_header' filter to 'wpsso_admin_post_head'.
-	* Renamed the NgfbHead::get_header_array() method to NgfbHead::get_head_array().
-	* Added a new NgfbHead::get_head_index() method to cache meta tags as array elements. This optimizes the head meta transient cache for Pinterest by storing 1 transient instead of 2.
+	* Renamed the NgfbHead get_header_array() method to get_head_array().
+	* Added a new NgfbHead get_head_index() method to cache meta tags as array elements. This optimizes the head meta transient cache for Pinterest by storing 1 transient instead of 2.
 
 **Version 8.36.2-1 (2016/10/17)**
 
@@ -614,7 +614,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Improvements*
 	* Added the https://schema.org/WebPage sub-types in the plugin config schema_type array (AboutPage, CheckoutPage, CollectionPage, ContactPage, ItemPage, ProfilePage, QAPage, and SearchResultsPage).
 * *Bugfixes*
-	* Fixed getting the term object (category and tags) when no term ID is provided to the SucomUtil::get_term_object() method.
+	* Fixed getting the term object (category and tags) when no term ID is provided to the SucomUtil get_term_object() method.
 	* Removed the Open Graph namespace from the HTML tag attributes when using the AMP plugin.
 * *Developer Notes*
 	* Removed the NGFB_DEFAULT_AUTHOR_OPTIONS constant, and all associated default author options.
@@ -632,7 +632,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.37.8-1 =
 
-(2016/12/12) Fixed the Reddit button title by adding the title non-encoded. Renamed the multisite single-option constants and optimized their checks. Added a new SucomUtil::explode_csv() static method.
+(2016/12/12) Fixed the Reddit button title by adding the title non-encoded. Renamed the multisite single-option constants and optimized their checks. Added a new SucomUtil explode_csv() static method.
 
 = 8.37.7-1 =
 
