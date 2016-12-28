@@ -878,7 +878,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				),
 				'off' => array(
 					'img' => 'gray-circle.png',
-					'title' => __( 'Module disabled / not loaded', 'nextgen-facebook' ),
+					'title' => __( 'Module is disabled / not loaded', 'nextgen-facebook' ),
 				),
 				'rec' => array(
 					'img' => 'red-circle.png',
