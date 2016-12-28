@@ -572,7 +572,7 @@ Note that the production stage level can be incremented on occasion for simple t
 		* 'ngfb_cache_expire_image_url_size' ( $secs );
 		* 'ngfb_cache_expire_schema_types' ( $secs );
 		* 'ngfb_cache_expire_sharing_buttons' ( $secs );
-		* 'ngfb_cache_expire_shorten_url' ( $secs );
+		* 'ngfb_cache_expire_shorten_url' ( $secs );	// Pro version
 		* 'ngfb_cache_expire_social_file' ( $secs );
 
 **Version 8.36.3-2 (2016/10/23)**
@@ -625,7 +625,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.38.1-1 =
 
-(2016/12/28) Added an NgfbFilters class to centralize 3rd party plugin filter hooks.
+(2016/12/28) Added an NgfbFilters class to centralize 3rd party plugin filter hooks. Added a new NgfbUtil get_canonical_url() method and 'ngfb_canonical_url' filter.
 
 = 8.38.0-1 =
 
