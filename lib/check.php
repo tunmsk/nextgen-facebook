@@ -168,6 +168,9 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 						case 'util-um':
 							$chk['plugin'] = 'nextgen-facebook-um/nextgen-facebook-um.php';
 							break;
+						case 'util-wpseo_meta':
+							$chk['optval'] = 'plugin_wpseo_social_meta';
+							break;
 					}
 					if ( ! empty( $chk ) ) {
 						if ( isset( $chk['plugin'] ) || isset( $chk['class'] ) || isset( $chk['function'] ) ) {

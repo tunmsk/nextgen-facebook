@@ -306,7 +306,7 @@ if ( ! class_exists( 'NgfbTerm' ) ) {
 				return;
 			$lca = $this->p->cf['lca'];
 			echo "\n".'<!-- '.$lca.' term metabox section begin -->'."\n";
-			echo '<h3 id="'.$lca.'-metaboxes">'.NgfbAdmin::$pkg_info[$lca]['short'].'</h3>'."\n";
+			echo '<h3 id="'.$lca.'-metaboxes">'.NgfbAdmin::$pkg[$lca]['short'].'</h3>'."\n";
 			echo '<div id="poststuff">'."\n";
 			do_meta_boxes( $lca.'-term', 'normal', $term );
 			echo "\n".'</div><!-- .poststuff -->'."\n";

@@ -173,6 +173,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'restapi' => '(plugin) WordPress REST API (Version 2)',
 								'term' => '(tool) Custom Term Meta',
 								'user' => '(tool) Custom User Meta',
+								'wpseo_meta' => '(tool) Yoast SEO Social Meta',
 							),
 						),
 					),

@@ -47,7 +47,7 @@ msgctxt "plugin action link"
 msgid "Support Forum"
 msgstr ""
 
-#: lib/admin.php:305 lib/admin.php:1101 lib/admin.php:1102
+#: lib/admin.php:305 lib/admin.php:1109 lib/admin.php:1110
 msgctxt "plugin action link"
 msgid "Purchase Pro License(s)"
 msgstr ""
@@ -185,109 +185,109 @@ msgctxt "following plugin status version numbers"
 msgid "View %s changelog..."
 msgstr ""
 
-#: lib/admin.php:881
+#: lib/admin.php:877
 msgid "Feature is enabled."
 msgstr ""
 
-#: lib/admin.php:885
+#: lib/admin.php:881
 msgid "Feature is disabled / not loaded."
 msgstr ""
 
-#: lib/admin.php:889
+#: lib/admin.php:885
 msgid "Feature is recommended but disabled / not available."
 msgstr ""
 
-#: lib/admin.php:958
+#: lib/admin.php:966
 msgctxt "submit button"
 msgid "Purchase Pro License(s)"
 msgstr ""
 
-#: lib/admin.php:959
+#: lib/admin.php:967
 msgctxt "submit button"
 msgid "Purchase Pro Version"
 msgstr ""
 
-#: lib/admin.php:977
+#: lib/admin.php:985
 msgid ""
 "Review the <a href=\"%s\" target=\"_blank\">Frequently Asked Questions</a>"
 msgstr ""
 
-#: lib/admin.php:980
+#: lib/admin.php:988
 msgid "and <a href=\"%s\" target=\"_blank\">Additional Documentation</a>"
 msgstr ""
 
-#: lib/admin.php:986
+#: lib/admin.php:994
 msgid ""
 "Open a <a href=\"%s\" target=\"_blank\">Priority Support Ticket</a> (Pro "
 "version)"
 msgstr ""
 
-#: lib/admin.php:989
+#: lib/admin.php:997
 msgid ""
 "Post in the <a href=\"%s\" target=\"_blank\">Community Support Forum</a> "
 "(Free version)"
 msgstr ""
 
-#: lib/admin.php:1054
+#: lib/admin.php:1062
 msgctxt "plugin action link"
 msgid "View Plugin Details"
 msgstr ""
 
-#: lib/admin.php:1077
+#: lib/admin.php:1085
 msgctxt "plugin action link"
 msgid "View Plugin Details + Update"
 msgstr ""
 
-#: lib/admin.php:1083
+#: lib/admin.php:1091
 msgctxt "plugin action link"
 msgid "View Plugin Details + Install"
 msgstr ""
 
-#: lib/admin.php:1089
+#: lib/admin.php:1097
 msgctxt "plugin action link"
 msgid "Plugin Description Page"
 msgstr ""
 
-#: lib/admin.php:1094
+#: lib/admin.php:1102
 msgctxt "plugin action link"
 msgid "Download Latest Version"
 msgstr ""
 
-#: lib/admin.php:1139 lib/admin.php:1144 lib/admin.php:1160 lib/admin.php:1166
+#: lib/admin.php:1147 lib/admin.php:1152 lib/admin.php:1168 lib/admin.php:1174
 #: lib/messages.php:821
 msgctxt "option label"
 msgid "Pro Authentication ID"
 msgstr ""
 
-#: lib/admin.php:1189
+#: lib/admin.php:1197
 msgid "Plugin conflict detected"
 msgstr ""
 
-#: lib/admin.php:1196
+#: lib/admin.php:1204
 msgid ""
 "<a href=\"%s\" target=\"_blank\">PHP Client URL Library (cURL) extension</a> "
 "is not loaded."
 msgstr ""
 
-#: lib/admin.php:1196 lib/admin.php:1201 lib/admin.php:1206
+#: lib/admin.php:1204 lib/admin.php:1209 lib/admin.php:1214
 msgid ""
 "please contact your hosting provider to have the missing PHP extension "
 "installed and/or enabled."
 msgstr ""
 
-#: lib/admin.php:1201
+#: lib/admin.php:1209
 msgid ""
 "<a href=\"%s\" target=\"_blank\">PHP JavaScript Object Notation (JSON) "
 "extension</a> is not loaded."
 msgstr ""
 
-#: lib/admin.php:1206
+#: lib/admin.php:1214
 msgid ""
 "<a href=\"%s\" target=\"_blank\">PHP Multibyte String extension</a> is not "
 "loaded."
 msgstr ""
 
-#: lib/admin.php:1213
+#: lib/admin.php:1221
 msgid ""
 "The WordPress <a href=\"%s\">Search Engine Visibility</a> option is set to "
 "discourage search engine and social crawlers from indexing this site. This "
@@ -296,114 +296,114 @@ msgid ""
 "crawlers to access your content."
 msgstr ""
 
-#: lib/admin.php:1222
+#: lib/admin.php:1230
 msgid ""
 "please uncheck the <strong>Add Open Graph meta data</strong> option under "
 "the <a href=\"%s\">Yoast SEO / Social / Facebook</a> settings tab."
 msgstr ""
 
-#: lib/admin.php:1227
+#: lib/admin.php:1235
 msgid ""
 "please uncheck the <strong>Add Twitter card meta data</strong> option under "
 "the <a href=\"%s\">Yoast SEO / Social / Twitter</a> settings tab."
 msgstr ""
 
-#: lib/admin.php:1232
+#: lib/admin.php:1240
 msgid ""
 "please uncheck the <strong>Add Google+ specific post meta data</strong> "
 "option under the <a href=\"%s\">Yoast SEO / Social / Google+</a> settings "
 "tab."
 msgstr ""
 
-#: lib/admin.php:1237
+#: lib/admin.php:1245
 msgid ""
 "please remove the <strong>Google Publisher Page</strong> value entered under "
 "the <a href=\"%s\">Yoast SEO / Social / Google+</a> settings tab."
 msgstr ""
 
-#: lib/admin.php:1248
+#: lib/admin.php:1256
 msgid ""
 "please disable the <strong>Open Graph Integrator</strong> module in the <a "
 "href=\"%s\">SEO Ultimate Module Manager</a>."
 msgstr ""
 
-#: lib/admin.php:1259
+#: lib/admin.php:1267
 msgid ""
 "please deactivate the <strong>Social Meta</strong> feature in the <a href="
 "\"%s\">All in One SEO Pack Feature Manager</a>."
 msgstr ""
 
-#: lib/admin.php:1264
+#: lib/admin.php:1272
 msgid ""
 "please check the <strong>Disable Google Plus Profile</strong> option in the "
 "<a href=\"%s\">All in One SEO Pack General Settings</a>."
 msgstr ""
 
-#: lib/admin.php:1269
+#: lib/admin.php:1277
 msgid ""
 "please uncheck the <strong>Use Schema.org Markup</strong> option in the <a "
 "href=\"%s\">All in One SEO Pack General Settings</a>."
 msgstr ""
 
-#: lib/admin.php:1279 lib/admin.php:1284 lib/admin.php:1289 lib/admin.php:1307
+#: lib/admin.php:1287 lib/admin.php:1292 lib/admin.php:1297 lib/admin.php:1315
 msgid ""
 "please uncheck the <strong>%1$s</strong> option in <a href=\"%2$s\">The SEO "
 "Framework</a> Social Meta Settings."
 msgstr ""
 
-#: lib/admin.php:1294
+#: lib/admin.php:1302
 msgid ""
 "please uncheck the <strong>Output Knowledge tags?</strong> option in <a href="
 "\"%s\">The SEO Framework</a> Knowledge Graph Settings."
 msgstr ""
 
-#: lib/admin.php:1318
+#: lib/admin.php:1326
 msgid ""
 "please uncheck <strong>Add the Social Open Graph objects</strong> in the <a "
 "href=\"%s\">Squirrly SEO</a> Social Media Options."
 msgstr ""
 
-#: lib/admin.php:1323
+#: lib/admin.php:1331
 msgid ""
 "please uncheck <strong>Add the Twitter card in your tweets</strong> in the "
 "<a href=\"%s\">Squirrly SEO</a> Social Media Options."
 msgstr ""
 
-#: lib/admin.php:1328
+#: lib/admin.php:1336
 msgid ""
 "please uncheck the <strong>adds the JSON-LD metas for Semantic SEO</strong> "
 "option in the <a href=\"%s\">Squirrly SEO</a> settings."
 msgstr ""
 
-#: lib/admin.php:1443
+#: lib/admin.php:1451
 msgid "No header templates found in %s."
 msgstr ""
 
-#: lib/admin.php:1452
+#: lib/admin.php:1460
 msgid "&lt;head&gt; element not found in %s."
 msgstr ""
 
-#: lib/admin.php:1458
+#: lib/admin.php:1466
 msgid "Error copying %1$s to %2$s."
 msgstr ""
 
-#: lib/admin.php:1466
+#: lib/admin.php:1474
 msgid "Failed to open %s for writing."
 msgstr ""
 
-#: lib/admin.php:1471
+#: lib/admin.php:1479
 msgid ""
 "The %1$s template has been successfully updated and saved. A backup copy of "
 "the original template is available in %2$s."
 msgstr ""
 
-#: lib/admin.php:1474
+#: lib/admin.php:1482
 msgid ""
 "Failed to write the %1$s template. You may need to restore the original "
 "template from %2$s."
 msgstr ""
 
-#: lib/admin.php:1488
+#: lib/admin.php:1496
 msgctxt "option label (very short)"
 msgid "Site Use"
 msgstr ""
@@ -705,7 +705,7 @@ msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:54 lib/sharing.php:1067
+#: lib/config-gettext-extract.php:54 lib/sharing.php:1066
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr ""
@@ -1722,7 +1722,7 @@ msgstr ""
 
 #: lib/messages.php:383 lib/messages.php:390 lib/messages.php:397
 #: lib/messages.php:404 lib/messages.php:411 lib/messages.php:418
-#: lib/messages.php:425 lib/sharing.php:1089 lib/sharing.php:1096
+#: lib/messages.php:425 lib/sharing.php:1088 lib/sharing.php:1095
 msgctxt "option comment"
 msgid "disabled"
 msgstr ""
@@ -1735,7 +1735,7 @@ msgstr ""
 
 #: lib/messages.php:385 lib/messages.php:392 lib/messages.php:399
 #: lib/messages.php:406 lib/messages.php:413 lib/messages.php:420
-#: lib/messages.php:427 lib/sharing.php:1091 lib/sharing.php:1097
+#: lib/messages.php:427 lib/sharing.php:1090 lib/sharing.php:1096
 msgid "The suggested cache expiration value is %1$s seconds (%2$s)."
 msgstr ""
 
@@ -2885,81 +2885,81 @@ msgctxt "metabox tab"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/sharing.php:321
+#: lib/sharing.php:320
 msgctxt "submit button"
 msgid "Reload Default Styles"
 msgstr ""
 
-#: lib/sharing.php:339
+#: lib/sharing.php:338
 msgid ""
 "All sharing styles have been reloaded with their default settings and saved."
 msgstr ""
 
-#: lib/sharing.php:361
+#: lib/sharing.php:360
 msgid "The %s file is not readable."
 msgstr ""
 
-#: lib/sharing.php:401
+#: lib/sharing.php:400
 msgid "Failed to load the minify class SuextMinifyCssCompressor."
 msgstr ""
 
-#: lib/sharing.php:410
+#: lib/sharing.php:409
 msgid "Failed writing to the % file."
 msgstr ""
 
-#: lib/sharing.php:415
+#: lib/sharing.php:414
 msgid "Updated the <a href=\"%1$s\">%2$s</a> stylesheet (%3$d bytes written)."
 msgstr ""
 
-#: lib/sharing.php:425
+#: lib/sharing.php:424
 msgid "The %s folder is not writable."
 msgstr ""
 
-#: lib/sharing.php:431
+#: lib/sharing.php:430
 msgid "Failed to open file %s for writing."
 msgstr ""
 
-#: lib/sharing.php:440
+#: lib/sharing.php:439
 msgid ""
 "Error removing the minimized stylesheet &mdash; does the web server have "
 "sufficient privileges?"
 msgstr ""
 
-#: lib/sharing.php:460
+#: lib/sharing.php:459
 msgctxt "metabox title"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/sharing.php:535
+#: lib/sharing.php:534
 msgid "%s must be published<br/>before it can be shared."
 msgstr ""
 
-#: lib/sharing.php:1055
+#: lib/sharing.php:1054
 msgid ""
 "Social sharing buttons can be added to the top, bottom, or both. Each "
 "sharing button must also be enabled below (see the <em>%s</em> options)."
 msgstr ""
 
-#: lib/sharing.php:1055
+#: lib/sharing.php:1054
 msgctxt "option label"
 msgid "Show Button in"
 msgstr ""
 
-#: lib/sharing.php:1058
+#: lib/sharing.php:1057
 msgid ""
 "Add the social sharing buttons to each entry of an index webpage (for "
 "example, <strong>non-static</strong> homepage, category, archive, etc.). "
 "Social sharing buttons are not included on index webpages by default."
 msgstr ""
 
-#: lib/sharing.php:1061
+#: lib/sharing.php:1060
 msgid ""
 "If a static Post or Page has been selected for the homepage, you can add the "
 "social sharing buttons to that static homepage as well (default is "
 "unchecked)."
 msgstr ""
 
-#: lib/sharing.php:1064
+#: lib/sharing.php:1063
 msgid ""
 "Enabled social sharing buttons are added to the Post, Page, Media, and "
 "Product webpages by default. If your theme (or another plugin) supports "
@@ -2967,7 +2967,7 @@ msgid ""
 "buttons on these webpages, check the appropriate option(s) here."
 msgstr ""
 
-#: lib/sharing.php:1067
+#: lib/sharing.php:1066
 msgid ""
 "Add the CSS of all <em>%1$s</em> to webpages (default is checked). The CSS "
 "will be <strong>minimized</strong>, and saved to a single stylesheet with a "
@@ -2975,7 +2975,7 @@ msgid ""
 "or added directly to the webpage HTML."
 msgstr ""
 
-#: lib/sharing.php:1070
+#: lib/sharing.php:1069
 msgid ""
 "Have WordPress enqueue the social stylesheet instead of adding the CSS to in "
 "the webpage HTML (default is unchecked). Enqueueing the stylesheet may be "
@@ -2983,52 +2983,52 @@ msgid ""
 "single stylesheet URL."
 msgstr ""
 
-#: lib/sharing.php:1073
+#: lib/sharing.php:1072
 msgid "JavaScript added to webpages for the social sharing sidebar."
 msgstr ""
 
-#: lib/sharing.php:1076
+#: lib/sharing.php:1075
 msgid ""
 "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</"
 "a> in the %3$s settings page). The %1$s will be displayed and recommended "
 "after the webpage is shared."
 msgstr ""
 
-#: lib/sharing.php:1076 lib/sharing.php:1079 lib/submenu/essential.php:140
+#: lib/sharing.php:1075 lib/sharing.php:1078 lib/submenu/essential.php:140
 #: lib/submenu/general.php:371
 msgctxt "option label"
 msgid "Twitter Business @username"
 msgstr ""
 
-#: lib/sharing.php:1076
+#: lib/sharing.php:1075
 msgctxt "lib file description"
 msgid "General"
 msgstr ""
 
-#: lib/sharing.php:1079
+#: lib/sharing.php:1078
 msgid ""
 "Recommend following the author's Twitter @username after sharing a webpage. "
 "If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr ""
 
-#: lib/sharing.php:1079 lib/website/buffer.php:78 lib/website/twitter.php:67
+#: lib/sharing.php:1078 lib/website/buffer.php:78 lib/website/twitter.php:67
 msgctxt "option label (short)"
 msgid "Add via @username"
 msgstr ""
 
-#: lib/sharing.php:1090
+#: lib/sharing.php:1089
 msgid ""
 "The rendered HTML for social sharing buttons is saved to the WordPress "
 "transient cache to optimize performance."
 msgstr ""
 
-#: lib/sharing.php:1097
+#: lib/sharing.php:1096
 msgid ""
 "The JavaScript of most social sharing buttons can be saved locally to cache "
 "folder in order to provide cached URLs instead of the originals."
 msgstr ""
 
-#: lib/sharing.php:1097
+#: lib/sharing.php:1096
 msgid ""
 "If your hosting infrastructure performs reasonably well, this option can "
 "improve page load times significantly."

@@ -133,8 +133,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 				) );
 
 				$this->p->util->add_plugin_filters( $this, array( 
-					'status_gpl_features' => 3,		// include sharing, shortcode, and widget status
-					'status_pro_features' => 3,		// include social file cache status
+					'status_gpl_features' => 4,		// include sharing, shortcode, and widget status
+					'status_pro_features' => 4,		// include social file cache status
 				), 10, 'ngfb' );				// hook into the extension name instead
 
 				$this->p->util->add_plugin_actions( $this, array( 
@@ -284,7 +284,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		}
 
 		// hooked to 'ngfb_status_gpl_features'
-		public function filter_status_gpl_features( $features, $ext, $info ) {
+		public function filter_status_gpl_features( $features, $ext, $info, $pkg ) {
 			if ( ! empty( $info['lib']['submenu']['buttons'] ) )
 				$features['(sharing) Sharing Buttons'] = array(
 					'classname' => $ext.'Sharing',
@@ -304,13 +304,12 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			return $features;
 		}
 
-		// hooked to 'ngfb_status_pro_features'
-		public function filter_status_pro_features( $features, $ext, $info ) {
+		public function filter_status_pro_features( $features, $ext, $info, $pkg ) {
 			if ( ! empty( $info['lib']['submenu']['buttons'] ) ) {
-				$aop = $this->p->check->aop( $ext, true, $this->p->is_avail['aop'] );
 				$features['(tool) Sharing Styles Editor'] = array( 
-					'td_class' => $aop ? '' : 'blank',
-					'status' => $aop ? 'on' : 'rec',
+					'td_class' => $pkg['aop'] ? '' : 'blank',
+					'purchase' => $pkg['purchase'],
+					'status' => $pkg['aop'] ? 'on' : 'rec',
 				);
 			}
 			return $features;
