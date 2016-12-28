@@ -27,7 +27,7 @@
 'ngfb_cache_expire_schema_types' ( $secs );
 'ngfb_cache_expire_sharing_buttons' ( $secs );
 'ngfb_cache_expire_shorten_url' ( $secs );
-'ngfb_cache_expire_social_file' ( $secs );
+'ngfb_cache_expire_social_file' ( $secs );	// Pro version
 'ngfb_canonical_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_caption' ( $caption, $mod, $add_hashtags, $md_idx );
 'ngfb_check_post_head' ( $bool, $post_id, $post_obj );
@@ -44,17 +44,17 @@
 'ngfb_get_config' ( $cf, $plugin_version );
 'ngfb_get_defaults' ( $defaults );
 'ngfb_get_options' ( $options );
-'ngfb_get_post_options' ( $options, $post_id );
+'ngfb_get_post_options' ( $options, $post_id );	// Pro version
 'ngfb_get_site_defaults' ( $defaults );
 'ngfb_get_site_options' ( $options );
-'ngfb_get_term_options' ( $options, $term_id );
-'ngfb_get_user_options' ( $options, $user_id );
+'ngfb_get_term_options' ( $options, $term_id );	// Pro version
+'ngfb_get_user_options' ( $options, $user_id );	// Pro version
 'ngfb_hashtags' ( $hashtags, $post_id );
 'ngfb_hashtags_seed' ( '', $post_id );
 'ngfb_home_url' ( $url, $mod, $add_page, $src_id );
-'ngfb_image_upscale_all' ( NGFB_IMAGE_UPSCALE_ALL = false );
-'ngfb_image_upscale_max' ( $max_diff = 50, $img_info );
-'ngfb_image_upscale_test' ( NGFB_IMAGE_UPSCALE_TEST = false, $img_info );
+'ngfb_image_upscale_all' ( NGFB_IMAGE_UPSCALE_ALL = false );	// Pro version
+'ngfb_image_upscale_max' ( $max_diff = 50, $img_info );	// Pro version
+'ngfb_image_upscale_test' ( NGFB_IMAGE_UPSCALE_TEST = false, $img_info );	// Pro version
 'ngfb_is_functions' ( $is_functions );
 'ngfb_js_url_facebook' ( $url, $pos );
 'ngfb_json_add_https_schema_org_collectionpage_parts' ( $bool );
@@ -66,7 +66,8 @@
 'ngfb_link_rel' ( $link_rel, $use_post, $mod );
 'ngfb_load_lib' ( false, "$type/$sub/$id" );
 'ngfb_meta_name' ( $meta_name, $use_post, $mod );
-'ngfb_ngg_tags' ( $tags, $pid );
+'ngfb_ngg_tags' ( $tags, $pid );	// Pro version
+'ngfb_ngg_tags_seed' ( $tags, $pid );	// Pro version
 'ngfb_ngg_accept_img_dims' ( $bool, $img_url, $img_width, $img_height, $size_name, $pid );
 'ngfb_og' ( $og, $use_post, $mod );
 'ngfb_og_add_product_mt_offer' ( $bool, $mod );
@@ -75,17 +76,17 @@
 'ngfb_og_default_img_url' ( $image_url );
 'ngfb_og_default_img_on_index' ( $bool );
 'ngfb_og_default_img_on_search' ( $bool );
-'ngfb_og_edd' ( $og_ecom, $use_post, $mod );
+'ngfb_og_edd' ( $og_ecom, $use_post, $mod );	// Pro version
 'ngfb_og_featured' ( $og_ret, $num, $size_name, $post_id, $check_dupes, $force_regen );
 'ngfb_og_img_post_column_content' ( $value, $column_name, $mod );
 'ngfb_og_img_term_column_content' ( $value, $column_name, $mod );
 'ngfb_og_img_user_column_content' ( $value, $column_name, $mod );
-'ngfb_og_marketpress' ( $og_ecom, $mod );
+'ngfb_og_marketpress' ( $og_ecom, $mod );	// Pro version
 'ngfb_og_prefix_ns' ( $ns );
 'ngfb_og_seed' ( $og, $use_post, $mod );
 'ngfb_og_type' ( $type, $use_post );
-'ngfb_og_woocommerce' ( $og_ecom, $use_post, $mod );
-'ngfb_og_wpecommerce' ( $og_ecom );
+'ngfb_og_woocommerce' ( $og_ecom, $use_post, $mod );	// Pro version
+'ngfb_og_wpecommerce' ( $og_ecom );	// Pro version
 'ngfb_opengraph_img_size_limits' ( array( $min_width, $min_height, $max_ratio ) );
 'ngfb_option_type' ( false, $key, $network, $mod );
 'ngfb_plugin_image_sizes' ( $sizes, $mod, $crawler_name );
