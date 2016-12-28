@@ -874,15 +874,15 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$status_info = array( 
 				'on' => array(
 					'img' => 'green-circle.png',
-					'title' => __( 'Feature is enabled.', 'nextgen-facebook' ),
+					'title' => __( 'Module is enabled', 'nextgen-facebook' ),
 				),
 				'off' => array(
 					'img' => 'gray-circle.png',
-					'title' => __( 'Feature is disabled / not loaded.', 'nextgen-facebook' ),
+					'title' => __( 'Module disabled / not loaded', 'nextgen-facebook' ),
 				),
 				'rec' => array(
 					'img' => 'red-circle.png',
-					'title' => __( 'Feature is recommended but disabled / not available.', 'nextgen-facebook' ),
+					'title' => __( 'Module recommended but disabled / not available', 'nextgen-facebook' ),
 				),
 			);
 
@@ -900,7 +900,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				if ( ! empty( $status_key ) ) {
 					$td_class = empty( $arr['td_class'] ) ? '' : ' '.$arr['td_class'];
 					$icon_type = preg_match( '/^\(([a-z\-]+)\) (.*)/', $label, $match ) ? $match[1] : 'admin-generic';
-					$icon_title = 'Generic Feature Module';
+					$icon_title = __( 'Generic feature module', 'nextgen-facebook' );
 					$label_text = empty( $match[2] ) ? $label : $match[2];
 					$label_text = empty( $arr['label'] ) ? $label_text : $arr['label'];
 					$purchase_url = $status_key === 'rec' && ! empty( $arr['purchase'] ) ? $arr['purchase'] : '';
@@ -908,23 +908,23 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					switch ( $icon_type ) {
 						case 'api':
 							$icon_type = 'controls-repeat';
-							$icon_title = 'Service API Module';
+							$icon_title = __( 'Service API module', 'nextgen-facebook' );
 							break;
 						case 'code':
 							$icon_type = 'editor-code';
-							$icon_title = 'Meta Tag and Markup Module';
+							$icon_title = __( 'Meta tag and markup module', 'nextgen-facebook' );
 							break;
 						case 'plugin':
 							$icon_type = 'admin-plugins';
-							$icon_title = 'Plugin Integration Module';
+							$icon_title = __( 'Plugin integration module', 'nextgen-facebook' );
 							break;
 						case 'sharing':
 							$icon_type = 'screenoptions';
-							$icon_title = 'Sharing Functionality Module';
+							$icon_title = __( 'Sharing functionality module', 'nextgen-facebook' );
 							break;
 						case 'tool':
 							$icon_type = 'admin-tools';
-							$icon_title = 'Additional Functionality Module';
+							$icon_title = __( 'Additional functionality module', 'nextgen-facebook' );
 							break;
 					}
 
