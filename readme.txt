@@ -401,7 +401,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added a new "Honor the FORCE_SSL Constant" option on the Advanced settings page.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -636,7 +636,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.38.2-dev1 =
 
-(TBD) Added a check and action hook to honor the FORCE_SSL constant on the front-end.
+(TBD) Added a new "Honor the FORCE_SSL Constant" option on the Advanced settings page.
 
 = 8.38.1-1 =
 
