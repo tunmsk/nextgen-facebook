@@ -396,6 +396,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.38.2-dev1 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added a check and action hook to honor the FORCE_SSL constant on the front-end.
+
 **Version 8.38.1-1 (2016/12/28)**
 
 * *New Features*
@@ -622,6 +633,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.38.2-dev1 =
+
+(TBD) Added a check and action hook to honor the FORCE_SSL constant on the front-end.
 
 = 8.38.1-1 =
 
