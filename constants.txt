@@ -1,5 +1,5 @@
 /*
- * hard-coded / fixed constants
+ * Hard-coded / fixed constants.
  */
 NGFB_FILEPATH
 NGFB_PLUGINDIR
@@ -7,7 +7,7 @@ NGFB_PLUGINBASE
 NGFB_URLPATH
 NGFB_NONCE
 /*
- * variable constants - define in wp-config.php file to modify the default values
+ * Variable constants - define in wp-config.php file to modify the default values.
  */
 NGFB_TOPICS_LIST		= NGFB_PLUGINDIR.'share/topics.txt'
 NGFB_CACHEDIR			= NGFB_PLUGINDIR.'cache/'
@@ -42,7 +42,7 @@ NGFB_SEO_FILTERS_PRIORITY	= 100
 NGFB_PHP_CURL_CAINFO		= ABSPATH.WPINC.'/certificates/ca-bundle.crt'
 NGFB_PHP_CURL_USERAGENT		= 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0'
 /*
- * undefined constants - can be defined to change specific plugin behaviors
+ * Undefined constants - can be defined to change specific plugin behaviors.
  */
 FORCE_SSL			= (not defined)
 NGFB_HTML_DEBUG			= (not defined)
