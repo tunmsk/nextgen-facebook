@@ -11,7 +11,7 @@ Tags: share, buttons, facebook, twitter, pinterest, youtube, social, sharing, me
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7
-Stable Tag: 8.38.1-1
+Stable Tag: 8.38.2-1
 
 Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
 
@@ -396,7 +396,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.38.2-dev1 (TBD)**
+**Version 8.38.2-1 (2017/01/02)**
 
 * *New Features*
 	* None
@@ -634,9 +634,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.38.2-dev1 =
+= 8.38.2-1 =
 
-(TBD) Added a new "Honor the FORCE_SSL Constant" option on the Advanced settings page.
+(2017/01/02) Added a new "Honor the FORCE_SSL Constant" option on the Advanced settings page.
 
 = 8.38.1-1 =
 
