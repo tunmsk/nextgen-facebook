@@ -145,7 +145,7 @@ if ( ! class_exists( 'NgfbSubmenuEssential' ) && class_exists( 'NgfbAdmin' ) ) {
 
 				case 'essential-advanced':
 
-					$table_rows['plugin_clear_on_save'] = $this->form->get_th_html( _x( 'Clear All Cache(s) on Save Settings',
+					$table_rows['plugin_clear_on_save'] = $this->form->get_th_html( _x( 'Clear Cache(s) on Save Settings',
 						'option label', 'nextgen-facebook' ), null, 'plugin_clear_on_save' ).
 					'<td>'.$this->form->get_checkbox( 'plugin_clear_on_save' ).'</td>';
 

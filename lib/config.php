@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.38.1-1',	// plugin version
-					'opt_version' => '479',		// increment when changing default options
+					'version' => '8.38.2-dev1',	// plugin version
+					'opt_version' => '480',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -467,7 +467,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					 * Advanced Settings
 					 */
 					// Plugin Settings Tab
-					'plugin_clear_on_save' => 1,			// Clear All Cache(s) on Save Settings
+					'plugin_honor_force_ssl' => 1,			// Honor the FORCE_SSL Constant
+					'plugin_clear_on_save' => 1,			// Clear Cache(s) on Save Settings
 					'plugin_preserve' => 0,				// Preserve Settings on Uninstall
 					'plugin_debug' => 0,				// Add Hidden Debug Messages
 					'plugin_hide_pro' => 0,				// Hide All Pro Version Options
@@ -595,7 +596,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					 * Advanced Settings
 					 */
 					// Plugin Settings Tab
-					'plugin_clear_on_save' => 0,			// Clear All Cache(s) on Save Settings
+					'plugin_honor_force_ssl' => 1,			// Honor the FORCE_SSL Constant
+					'plugin_honor_force_ssl:use' => 'default',
+					'plugin_clear_on_save' => 0,			// Clear Cache(s) on Save Settings
 					'plugin_clear_on_save:use' => 'default',
 					'plugin_preserve' => 0,				// Preserve Settings on Uninstall
 					'plugin_preserve:use' => 'default',
