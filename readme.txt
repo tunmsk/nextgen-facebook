@@ -406,6 +406,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* None
 * *Developer Notes*
 	* Refactored the SucomUtil is_https() method and added a check for proxy / load-balancing 'HTTP_X_FORWARDED_PROTO' and 'HTTP_X_FORWARDED_SSL' web server variables.
+	* Refactored the SucomUtil get_prot() method to support the FORCE_SSL and FORCE_SSL_ADMIN constants.
 
 **Version 8.38.2-1 (2017/01/02)**
 
@@ -647,7 +648,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.38.3-dev1 =
 
-(TBD) Added both parent and child theme header template files to the head HTML element attributes check. Refactored the SucomUtil is_https() method for proxy / load-balancing.
+(TBD) Added both parent and child theme header template files to the head HTML element attributes check. Refactored the SucomUtil is_https() and get_prot() methods.
 
 = 8.38.2-1 =
 
