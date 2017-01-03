@@ -401,7 +401,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added both parent and child theme header template files to the head HTML element attributes check.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -647,7 +647,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.38.3-dev1 =
 
-(TBD) Refactored the SucomUtil is_https() method.
+(TBD) Added both parent and child theme header template files to the head HTML element attributes check. Refactored the SucomUtil is_https() method for proxy / load-balancing.
 
 = 8.38.2-1 =
 
