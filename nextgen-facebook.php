@@ -79,12 +79,6 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 		private static $instance;
 
-		public static function &get_instance() {
-			if ( ! isset( self::$instance ) )
-				self::$instance = new self;
-			return self::$instance;
-		}
-
 		/*
 		 * Ngfb Constructor
 		 */
@@ -99,6 +93,12 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			add_action( 'init', array( &$this, 'set_config' ), -10 );
 			add_action( 'init', array( &$this, 'init_plugin' ), NGFB_INIT_PRIORITY );
 			add_action( 'widgets_init', array( &$this, 'init_widgets' ), 10 );
+		}
+
+		public static function &get_instance() {
+			if ( ! isset( self::$instance ) )
+				self::$instance = new self;
+			return self::$instance;
 		}
 
 		// runs at init priority -10
