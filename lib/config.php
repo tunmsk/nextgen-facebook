@@ -1368,7 +1368,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 		private static function sort_ext_by_name( $a, $b ) {
 			if ( isset( $a['name'] ) && isset( $b['name'] ) )	// just in case
 				return strcasecmp( $a['name'], $b['name'] );	// case-insensitive string comparison
-			else return 0;
+			else return 0;						// no change
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
