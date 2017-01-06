@@ -396,12 +396,13 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.38.3-dev1 (2017/01/04)**
+**Version 8.38.3-dev2 (2017/01/07)**
 
 * *New Features*
 	* None
 * *Improvements*
 	* Added both parent and child theme header template files to the head HTML element attributes check.
+	* The extensions listed on the "Extension Plugins and Pro Licenses" settings page are now sorted by name.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -646,9 +647,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.38.3-dev1 =
+= 8.38.3-dev2 =
 
-(2017/01/04) Added both parent and child theme header template files to the head HTML element attributes check. Refactored the SucomUtil is_https() and get_prot() methods.
+(2017/01/07) Added both parent and child theme header template files to the head HTML element attributes check. Refactored the SucomUtil is_https() and get_prot() methods.
 
 = 8.38.2-1 =
 
