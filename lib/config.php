@@ -1324,9 +1324,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					foreach ( self::$cf['plugin'] as $ext => $info ) {
 
 						if ( defined( strtoupper( $ext ).'_PLUGINDIR' ) )
-							$pkg = is_dir( constant( strtoupper( $ext ).
+							$pkg_lctype = is_dir( constant( strtoupper( $ext ).
 								'_PLUGINDIR' ).'lib/pro/' ) ? 'pro' : 'gpl';
-						else $pkg = '';
+						else $pkg_lctype = '';
 
 						if ( isset( $info['base'] ) )
 							self::$cf['*']['base'][$info['base']] = $ext;
@@ -1336,10 +1336,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								self::$cf['*']['lib'], $info['lib'] );
 
 						if ( isset( $info['version'] ) )
-							self::$cf['*']['version'] .= '-'.$ext.$info['version'].$pkg;
+							self::$cf['*']['version'] .= '-'.$ext.$info['version'].$pkg_lctype;
 
 						if ( isset( $info['opt_version'] ) )
-							self::$cf['opt']['version'] .= '-'.$ext.$info['opt_version'].$pkg;
+							self::$cf['opt']['version'] .= '-'.$ext.$info['opt_version'].$pkg_lctype;
 
 						// complete relative paths in the image array
 						foreach ( $info['img'] as $id => $url )
@@ -1354,6 +1354,21 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					return self::$cf[$idx];
 				else return null;
 			} else return self::$cf;
+		}
+
+		/*
+		 * Sort the 'plugin' array by each extension's 'name' value.
+		 */
+		public static function get_ext_sorted( $do_filter = false ) { 
+			$ext = self::get_config( 'plugin', $do_filter );
+			uasort( $ext, array( 'self', 'sort_ext_by_name' ) );	// sort array and maintain index association
+			return $ext;
+		}
+
+		private static function sort_ext_by_name( $a, $b ) {
+			if ( isset( $a['name'] ) && isset( $b['name'] ) )	// just in case
+				return strcasecmp( $a['name'], $b['name'] );	// case-insensitive string comparison
+			else return 0;
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
