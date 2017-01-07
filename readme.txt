@@ -38,6 +38,7 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 <li><a href="https://wordpress.org/plugins/wpsso-ssb/">WPSSO Social Sharing Buttons</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-strip-schema-microdata/">WPSSO Strip Schema Microdata</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-tweet-a-quote/">WPSSO Tweet a Quote</a></li>
+<li><a href="https://wordpress.org/plugins/wpsso-user-locale/">WPSSO User Locale</a></li>
 </ul>
 </blockquote>
 
