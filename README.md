@@ -361,7 +361,7 @@
 <li><a href="https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-play-videos-instead-of-linking-them/">Why does Facebook play videos instead of linking them?</a></li>
 <li><a href="https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-show-the-wrong-image-text/">Why does Facebook show the wrong image / text?</a></li>
 <li><a href="https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-google-structured-data-testing-tool-show-errors/">Why does Google Structured Data Testing Tool show errors?</a></li>
-<li><a href="https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-the-plugin-ignore-some-img-html-tags/">Why does the plugin ignore some &lt;img/&gt; HTML tags?</a></li>
+<li><a href="https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-ngfb-ignore-some-img-html-tags/">Why does the plugin ignore some &lt;img/&gt; HTML tags?</a></li>
 <li><a href="https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-dont-my-twitter-cards-show-on-twitter/">Why don't my Twitter Cards show on Twitter?</a></li>
 <li><a href="https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-is-the-open-graph-title-the-same-for-every-webpage/">Why is the Open Graph title the same for every webpage?</a></li>
 <li><a href="https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-is-the-page-blank-or-its-components-misaligned/">Why is the page blank or its components misaligned?</a></li>

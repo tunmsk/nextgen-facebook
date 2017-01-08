@@ -316,7 +316,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 * [Why does Facebook play videos instead of linking them?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-play-videos-instead-of-linking-them/)
 * [Why does Facebook show the wrong image / text?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-show-the-wrong-image-text/)
 * [Why does Google Structured Data Testing Tool show errors?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-google-structured-data-testing-tool-show-errors/)
-* [Why does the plugin ignore some &lt;img/&gt; HTML tags?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-the-plugin-ignore-some-img-html-tags/)
+* [Why does the plugin ignore some &lt;img/&gt; HTML tags?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-ngfb-ignore-some-img-html-tags/)
 * [Why don't my Twitter Cards show on Twitter?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-dont-my-twitter-cards-show-on-twitter/)
 * [Why is the Open Graph title the same for every webpage?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-is-the-open-graph-title-the-same-for-every-webpage/)
 * [Why is the page blank or its components misaligned?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-is-the-page-blank-or-its-components-misaligned/)
