@@ -399,6 +399,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.38.4-dev1 (2017/01/10)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Re-added older code to support the Yoast_Notification_Center class of older Yoast SEO versions.
+
 **Version 8.38.3-1 (2017/01/08)**
 
 * *New Features*
@@ -649,6 +660,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.38.4-dev1 =
+
+(2017/01/10) Re-added older code to support the Yoast_Notification_Center class of older Yoast SEO versions.
 
 = 8.38.3-1 =
 
