@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.38.4-dev3',	// plugin version
-					'opt_version' => '480',		// increment when changing default options
+					'opt_version' => '481',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -505,6 +505,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_page_excerpt' => 0,			// Enable WP Excerpt for Pages
 					'plugin_page_tags' => 0,			// Enable WP Tags for Pages
 					// Social / Custom Meta Tab
+					'plugin_schema_id_col_post' => 1,
+					'plugin_schema_id_col_term' => 1,
+					'plugin_schema_id_col_user' => 1,
 					'plugin_og_img_col_post' => 1,
 					'plugin_og_img_col_term' => 1,
 					'plugin_og_img_col_user' => 1,
