@@ -33,9 +33,6 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 				add_action( 'save_post', array( &$this, 'clear_cache' ), NGFB_META_CACHE_PRIORITY );
 				add_action( 'edit_attachment', array( &$this, 'save_options' ), NGFB_META_SAVE_PRIORITY );
 				add_action( 'edit_attachment', array( &$this, 'clear_cache' ), NGFB_META_CACHE_PRIORITY );
-
-				// applies to post, term, and user orderby queries
-				add_action( 'parse_query', array( &$this, 'set_column_orderby' ), 10, 1 );
 			}
 
 			// add the columns when doing AJAX as well to allow Quick Edit to add the required columns
@@ -57,6 +54,13 @@ if ( ! class_exists( 'NgfbPost' ) ) {
 							array( &$this, 'show_column_content',), 10, 2 );
 					}
 				}
+
+				/*
+				 * The 'parse_query' action is hooked ONCE in the NgfbPost class
+				 * to set the column orderby for post, term, and user edit tables.
+				 *
+				 */
+				add_action( 'parse_query', array( &$this, 'set_column_orderby' ), 10, 1 );
 
 				$this->p->util->add_plugin_filters( $this, array( 
 					'schema_id_post_column_content' => 3,
