@@ -148,8 +148,11 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 			delete_option( $var_const['NGFB_NOTICE_NAME'] );
 
 			if ( empty( $opts['plugin_preserve'] ) ) {
+
 				delete_option( $var_const['NGFB_OPTIONS_NAME'] );
 				delete_post_meta_by_key( $var_const['NGFB_META_NAME'] );
+				delete_post_meta_by_key( '_ngfb_orderby_schema_id' );
+
 				foreach ( get_users() as $user ) {
 
 					// site specific user options
