@@ -399,7 +399,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.0-b1 (2017/01/11)**
+**Version 8.39.0-b2 (2017/01/11)**
 
 * *New Features*
 	* Added a new "Add NGFB Schema Column in" option (for posts / pages, terms, and users) in the NGFB Advanced settings page (enabled by default). The new NGFB Schema column in the post / page edit table is also sortable.
@@ -666,7 +666,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.39.0-b1 =
+= 8.39.0-b2 =
 
 (2017/01/11) Added a new "Add NGFB Schema Column in" option for posts / pages, terms, and users edit tables. Re-added code to support the Yoast_Notification_Center class from older Yoast SEO versions.
 
