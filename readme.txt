@@ -402,7 +402,7 @@ Note that the production stage level can be incremented on occasion for simple t
 **Version 8.39.0-b1 (2017/01/11)**
 
 * *New Features*
-	* Added a new "Add NGFB Schema Column in" option in the NGFB Advanced settings page (enabled by default). The new NGFB Schema column in the post / page editing table is also sortable.
+	* Added a new "Add NGFB Schema Column in" option (for posts / pages, terms, and users) in the NGFB Advanced settings page (enabled by default). The new NGFB Schema column in the post / page edit table is also sortable.
 * *Improvements*
 	* None
 * *Bugfixes*
@@ -668,7 +668,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.39.0-b1 =
 
-(2017/01/11) Added a new SucomUtil get_dashicons() static method. Re-added code to support Yoast_Notification_Center from older versions.
+(2017/01/11) Added a new "Add NGFB Schema Column in" option for posts / pages, terms, and users edit tables. Re-added code to support the Yoast_Notification_Center class from older Yoast SEO versions.
 
 = 8.38.3-1 =
 
