@@ -404,7 +404,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *New Features*
 	* None
 * *Improvements*
-	* Added a new "Add 'NGFB Schema' Column in" option in the NGFB Advanced settings page (enabled by default).
+	* Added a new "Add NGFB Schema Column in" option in the NGFB Advanced settings page (enabled by default).
 * *Bugfixes*
 	* None
 * *Developer Notes*
