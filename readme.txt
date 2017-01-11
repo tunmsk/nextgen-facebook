@@ -399,12 +399,12 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.38.4-dev3 (2017/01/11)**
+**Version 8.39.0-b1 (2017/01/11)**
 
 * *New Features*
-	* None
+	* Added a new "Add NGFB Schema Column in" option in the NGFB Advanced settings page (enabled by default). The new NGFB Schema column in the post / page editing table is also sortable.
 * *Improvements*
-	* Added a new "Add NGFB Schema Column in" option in the NGFB Advanced settings page (enabled by default).
+	* None
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -666,7 +666,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.38.4-dev3 =
+= 8.39.0-b1 =
 
 (2017/01/11) Added a new SucomUtil get_dashicons() static method. Re-added code to support Yoast_Notification_Center from older versions.
 
