@@ -150,6 +150,7 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 			if ( empty( $opts['plugin_preserve'] ) ) {
 
 				delete_option( $var_const['NGFB_OPTIONS_NAME'] );
+
 				delete_post_meta_by_key( $var_const['NGFB_META_NAME'] );
 				delete_post_meta_by_key( '_ngfb_orderby_schema_id' );
 
@@ -162,11 +163,17 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 					// global / network user options
 					delete_user_meta( $user->ID, $var_const['NGFB_META_NAME'] );
 					delete_user_meta( $user->ID, $var_const['NGFB_PREF_NAME'] );
+					delete_user_meta( $user->ID, '_ngfb_orderby_schema_id' );
 
 					NgfbUser::delete_metabox_prefs( $user->ID );
 				}
-				foreach ( NgfbTerm::get_public_terms() as $term_id )
+				foreach ( NgfbTerm::get_public_terms() as $term_id ) {
 					NgfbTerm::delete_term_meta( $term_id, $var_const['NGFB_META_NAME'] );
+
+					if ( NgfbTerm::has_meta_table() ) {
+						NgfbTerm::delete_term_meta( $term_id, '_ngfb_orderby_schema_id' );
+					}
+				}
 			}
 
 			// delete transients

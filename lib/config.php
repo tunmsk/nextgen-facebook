@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.39.0-b1',	// plugin version
+					'version' => '8.39.0-b2',	// plugin version
 					'opt_version' => '482',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -506,8 +506,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_page_tags' => 0,			// Enable WP Tags for Pages
 					// Social / Custom Meta Tab
 					'plugin_schema_id_col_post' => 1,
-					'plugin_schema_id_col_term' => 1,
-					'plugin_schema_id_col_user' => 1,
+					'plugin_schema_id_col_term' => 0,
+					'plugin_schema_id_col_user' => 0,
 					'plugin_og_img_col_post' => 1,
 					'plugin_og_img_col_term' => 1,
 					'plugin_og_img_col_user' => 1,
