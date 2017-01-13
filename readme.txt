@@ -54,8 +54,8 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 	* [Summary Card](https://dev.twitter.com/cards/types/summary)
 	* [Player Card](https://dev.twitter.com/cards/types/player) is available in the Pro version (requires video discovery modules, provided with the Pro version).
 * Adds Weibo meta tags for article creation and update dates.
-* Adds Pinterest Rich Pin meta tags and Schema Structured Data markup.
-* Adds author (Person), publisher (Organization) and WebSite markup for Google Search and <em>Knowledge Graph</em>.
+* Adds Pinterest Rich Pin meta tags and Schema [Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) markup for Google.
+* Adds author (Person), publisher (Organization) and WebSite markup for Google Search and <em>Knowledge Graph</em>, including markup for the [Google Sitelinks Searchbox](https://developers.google.com/search/docs/data-types/sitelinks-searchbox).
 * Customizable image dimensions for Facebook / Open Graph, Pinterest, Schema and all Twitter Card types.
 * Auto-regeneration of inaccurate / missing WordPress image sizes.
 * Support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
@@ -398,6 +398,17 @@ Version components: `{major}.{minor}.{bugfix}-{stage}{level}`
 Note that the production stage level can be incremented on occasion for simple text revisions and/or translation updates. See [PHP's version_compare()](http://php.net/manual/en/function.version-compare.php) documentation for additional information on "PHP-standardized" version numbering.
 
 = Changelog / Release Notes =
+
+**Version 8.39.1-dev1 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added a new get_force_regen_id() method in the NgfbUtil class to check for the force regen of all social image sizes.
 
 **Version 8.39.0-1 (2017/01/13)**
 
