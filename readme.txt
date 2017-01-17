@@ -408,7 +408,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Added a new is_force_regen() method in the NgfbUtil class to check for the forced regen of all social image sizes, along with set_force_regen() to set the transient, and get_force_regen_id() to return the transient key.
+	* Added a new is_force_regen() method in the NgfbUtil class to check if the forced regen transient is set, along with a set_force_regen() method to set the transient, and get_force_regen_id() to return the transient key ID.
 	* Added a new is_post_exists() static method in the SucomUtil class to check if a post ID exists or not.
 	* Added support for post ID checking in the is_post_page() method in the SucomUtil class.
 
@@ -424,9 +424,9 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Added a new SucomUtil get_dashicons() static method to retrieve a sorted/unsorted dashicons array.
 	* Re-added code to support the Yoast_Notification_Center class from older Yoast SEO versions.
 	* Added new filters for the new "NGFB Schema" edit table column:
-		* 'ngfb_schema_id_post_column_content' ( $value, $column_name, $mod );
-		* 'ngfb_schema_id_term_column_content' ( $value, $column_name, $mod );
-		* 'ngfb_schema_id_user_column_content' ( $value, $column_name, $mod );
+		* 'ngfb_schema_type_id_post_column_content' ( $value, $column_name, $mod );
+		* 'ngfb_schema_type_id_term_column_content' ( $value, $column_name, $mod );
+		* 'ngfb_schema_type_id_user_column_content' ( $value, $column_name, $mod );
 
 **Version 8.38.3-1 (2017/01/08)**
 

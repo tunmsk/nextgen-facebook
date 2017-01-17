@@ -106,9 +106,9 @@
 'ngfb_quote_seed' ( '', $mod );
 'ngfb_save_options' ( $opts, $options_name );
 'ngfb_save_site_options' ( $opts );
-'ngfb_schema_id_post_column_content' ( $value, $column_name, $mod );
-'ngfb_schema_id_term_column_content' ( $value, $column_name, $mod );
-'ngfb_schema_id_user_column_content' ( $value, $column_name, $mod );
+'ngfb_schema_type_id_post_column_content' ( $value, $column_name, $mod );
+'ngfb_schema_type_id_term_column_content' ( $value, $column_name, $mod );
+'ngfb_schema_type_id_user_column_content' ( $value, $column_name, $mod );
 'ngfb_schema_img_size_limits' ( array( $min_width, $min_height, $max_ratio ) );
 'ngfb_schema_meta_itemprop' ( $mt_schema, $mod, $mt_og, $page_type_id );
 'ngfb_schema_noscript_array' ( $ret, $mod, $mt_og, $page_type_id );
