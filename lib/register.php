@@ -152,7 +152,7 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 				delete_option( $var_const['NGFB_OPTIONS_NAME'] );
 
 				delete_post_meta_by_key( $var_const['NGFB_META_NAME'] );
-				delete_post_meta_by_key( '_ngfb_orderby_schema_id' );
+				delete_post_meta_by_key( '_ngfb_head_info_schema_type' );
 
 				foreach ( get_users() as $user ) {
 
@@ -163,7 +163,7 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 					// global / network user options
 					delete_user_meta( $user->ID, $var_const['NGFB_META_NAME'] );
 					delete_user_meta( $user->ID, $var_const['NGFB_PREF_NAME'] );
-					delete_user_meta( $user->ID, '_ngfb_orderby_schema_id' );
+					delete_user_meta( $user->ID, '_ngfb_head_info_schema_type' );
 
 					NgfbUser::delete_metabox_prefs( $user->ID );
 				}
@@ -171,7 +171,7 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 					NgfbTerm::delete_term_meta( $term_id, $var_const['NGFB_META_NAME'] );
 
 					if ( NgfbTerm::has_meta_table() ) {
-						NgfbTerm::delete_term_meta( $term_id, '_ngfb_orderby_schema_id' );
+						NgfbTerm::delete_term_meta( $term_id, '_ngfb_head_info_schema_type' );
 					}
 				}
 			}

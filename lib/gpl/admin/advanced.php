@@ -176,7 +176,7 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 
 			foreach ( array( 
-				'schema_id' => sprintf( _x( 'Add %s Column in', 'option label', 'nextgen-facebook' ), 
+				'schema_type' => sprintf( _x( 'Add %s Column in', 'option label', 'nextgen-facebook' ), 
 					sprintf( _x( '%s Schema', 'column title', 'nextgen-facebook' ),
 						$this->p->cf['menu_label'] ) ),
 				'og_img' => sprintf( _x( 'Add %s Column in', 'option label', 'nextgen-facebook' ), 

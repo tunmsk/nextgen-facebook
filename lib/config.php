@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.39.1-dev1',	// plugin version
-					'opt_version' => '482',		// increment when changing default options
+					'opt_version' => '483',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -505,9 +505,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_page_excerpt' => 0,			// Enable WP Excerpt for Pages
 					'plugin_page_tags' => 0,			// Enable WP Tags for Pages
 					// Social / Custom Meta Tab
-					'plugin_schema_id_col_post' => 1,
-					'plugin_schema_id_col_term' => 0,
-					'plugin_schema_id_col_user' => 0,
+					'plugin_schema_type_col_post' => 1,
+					'plugin_schema_type_col_term' => 0,
+					'plugin_schema_type_col_user' => 0,
 					'plugin_og_img_col_post' => 1,
 					'plugin_og_img_col_term' => 1,
 					'plugin_og_img_col_user' => 1,
@@ -796,7 +796,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'sup_version_url' => 'http://php.net/supported-versions.php',
 			),
 			'form' => array(
-				'schema_id_col_width' => '130px',
+				'schema_type_col_width' => '130px',
 				'og_img_col_width' => '70px',
 				'og_img_col_height' => '37px',
 				'og_desc_col_width' => '12%',
