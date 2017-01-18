@@ -20,7 +20,6 @@
 'ngfb_attached_images' ( $og_ret, $num, $size_name, $post_id, $check_dupes );
 'ngfb_attached_accept_img_dims' ( $bool, $img_url, $img_width, $img_height, $size_name, $pid );
 'ngfb_cache_expire_article_topics' ( $secs );
-'ngfb_cache_expire_column_content' ( $secs );
 'ngfb_cache_expire_content_text' ( $secs );
 'ngfb_cache_expire_head_array' ( $secs );
 'ngfb_cache_expire_image_url_size' ( $secs );
