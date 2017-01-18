@@ -399,7 +399,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.1-dev1 (TBD)**
+**Version 8.39.1-dev1 (2017/01/18)**
 
 * *New Features*
 	* None
@@ -677,6 +677,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.39.1-dev1 =
+
+(2017/01/18) Improved the loading speed of editing table column content (NGFB Schema, NGFB Img, and NGFB Desc columns).
 
 = 8.39.0-1 =
 
