@@ -59,7 +59,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteGplus' ) ) {
 			$table_rows[] = $form->get_th_html( _x( 'Annotation',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$form->get_select( 'gp_annotation', array( 
-				'none' => '',
+				'none' => 'none',
 				'inline' => 'Inline',
 				'bubble' => 'Bubble',
 				'vertical-bubble' => 'Vertical Bubble',
@@ -69,7 +69,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteGplus' ) ) {
 			$form->get_th_html( _x( 'Expand to',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$form->get_select( 'gp_expandto', array( 
-				'none' => '',
+				'none' => 'none',
 				'top' => 'Top',
 				'bottom' => 'Bottom',
 				'left' => 'Left',

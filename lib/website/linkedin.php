@@ -43,7 +43,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteLinkedin' ) ) {
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$form->get_select( 'linkedin_counter', 
 				array( 
-					'none' => '',
+					'none' => 'none',
 					'right' => 'Horizontal',
 					'top' => 'Vertical',
 				)

@@ -36,29 +36,26 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteBuffer' ) ) {
 		public function filter_website_buffer_rows( $table_rows, $form, $submenu ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$form->get_select( 'buffer_order', 
-				range( 1, count( $submenu->website ) ), 'short' ).'</td>';
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
+			'<td>'.$form->get_select( 'buffer_order', range( 1, count( $submenu->website ) ), 'short' ).'</td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Show Button in',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			( $submenu->show_on_checkboxes( 'buffer' ) ).'</td>';
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
+			'<td>'.$submenu->show_on_checkboxes( 'buffer' ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Allow for Platform',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'buffer_platform',
-				$this->p->cf['sharing']['platform'] ).'</td>';
+			'<td>'.$form->get_select( 'buffer_platform', $this->p->cf['sharing']['platform'] ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'JavaScript in',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$form->get_select( 'buffer_script_loc', $this->p->cf['form']['script_locations'] ).'</td>';
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
+			'<td>'.$form->get_select( 'buffer_script_loc', $this->p->cf['form']['script_locations'] ).'</td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Count Position',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$form->get_select( 'buffer_count', array( 'none' => '', 
-			'horizontal' => 'Horizontal', 'vertical' => 'Vertical' ) ).'</td>';
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
+			'<td>'.$form->get_select( 'buffer_count', array( 'none' => 'none', 'horizontal' => 'Horizontal', 'vertical' => 'Vertical' ) ).'</td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Image Dimensions',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
@@ -66,13 +63,13 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteBuffer' ) ) {
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Tweet Text Source',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$form->get_select( 'buffer_caption', $this->p->cf['form']['caption_types'] ).'</td>';
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
+			'<td>'.$form->get_select( 'buffer_caption', $this->p->cf['form']['caption_types'] ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Tweet Text Length',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$form->get_input( 'buffer_cap_len', 'short' ).' '.
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
+			'<td>'.$form->get_input( 'buffer_cap_len', 'short' ).' '.
 				_x( 'characters or less', 'option comment', 'nextgen-facebook' ).'</td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Add via @username',
