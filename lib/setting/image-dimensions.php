@@ -51,25 +51,25 @@ if ( ! class_exists( 'NgfbSettingImagedimensions' ) && class_exists( 'NgfbAdmin'
 
 					$table_rows['og_img_dimensions'] = $this->form->get_th_html( _x( 'Facebook / Open Graph Images',
 						'option label', 'nextgen-facebook' ), null, 'og_img_dimensions' ).
-					'<td>'.$this->form->get_image_dimensions_input( 'og_img', false, false ).'</td>';
+					'<td>'.$this->form->get_image_dimensions_input( 'og_img' ).'</td>';	// $use_opts = false
 
 					if ( ! SucomUtil::get_const( 'NGFB_RICH_PIN_DISABLE' ) ) {
 						$table_rows['rp_img_dimensions'] = $this->form->get_th_html( _x( 'Pinterest Rich Pin Images',
 							'option label', 'nextgen-facebook' ), null, 'rp_img_dimensions' ).
-						'<td>'.$this->form->get_image_dimensions_input( 'rp_img' ).'</td>';
+						'<td>'.$this->form->get_image_dimensions_input( 'rp_img' ).'</td>';	// $use_opts = false
 					}
 
 					$table_rows['schema_img_dimensions'] = $this->form->get_th_html( _x( 'Google / Schema Images',
 						'option label', 'nextgen-facebook' ), null, 'schema_img_dimensions' ).
-					'<td>'.$this->form->get_image_dimensions_input( 'schema_img', false, false ).'</td>';
+					'<td>'.$this->form->get_image_dimensions_input( 'schema_img' ).'</td>';	// $use_opts = false
 
 					$table_rows['tc_sum_dimensions'] = $this->form->get_th_html( _x( 'Twitter <em>Summary</em> Card',
 						'option label', 'nextgen-facebook' ), null, 'tc_sum_dimensions' ).
-					'<td>'.$this->form->get_image_dimensions_input( 'tc_sum' ).'</td>';
+					'<td>'.$this->form->get_image_dimensions_input( 'tc_sum' ).'</td>';	// $use_opts = false
 
 					$table_rows['tc_lrgimg_dimensions'] = $this->form->get_th_html( _x( 'Twitter <em>Large Image Summary</em> Card',
 						'option label', 'nextgen-facebook' ), null, 'tc_lrgimg_dimensions' ).
-					'<td>'.$this->form->get_image_dimensions_input( 'tc_lrgimg' ).'</td>';
+					'<td>'.$this->form->get_image_dimensions_input( 'tc_lrgimg' ).'</td>';	// $use_opts = false
 
 					break;
 			}
