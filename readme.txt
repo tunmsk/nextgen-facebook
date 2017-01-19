@@ -399,12 +399,13 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.1-dev1 (2017/01/18)**
+**Version 8.39.1-dev2 (2017/01/19)**
 
 * *New Features*
 	* None
 * *Improvements*
 	* Improved the loading speed of editing table column content (NGFB Schema, NGFB Img, and NGFB Desc columns).
+	* Refactored the set_force_regen() and is_force_regen() methods to use a single transient array (to reduce the number of transient queries).
 * *Bugfixes*
 	* Added a missing user ID argument when getting the user object in the SucomWebpage get_description() method.
 * *Developer Notes*
@@ -678,9 +679,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.39.1-dev1 =
+= 8.39.1-dev2 =
 
-(2017/01/18) Improved the loading speed of editing table column content (NGFB Schema, NGFB Img, and NGFB Desc columns).
+(2017/01/19) Improved the loading speed of editing table column content (NGFB Schema, NGFB Img, and NGFB Desc columns).
 
 = 8.39.0-1 =
 
