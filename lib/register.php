@@ -152,7 +152,7 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 				delete_option( $var_const['NGFB_OPTIONS_NAME'] );
 				delete_post_meta_by_key( $var_const['NGFB_META_NAME'] );
 
-				foreach ( array( 'schema_type', 'og_img', 'og_desc' ) as $meta_key )
+				foreach ( array( 'schema_type', 'og_img_thumb', 'og_desc' ) as $meta_key )
 					delete_post_meta_by_key( '_ngfb_head_info_'.$meta_key );
 
 				foreach ( get_users() as $user ) {
@@ -165,7 +165,7 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 					delete_user_meta( $user->ID, $var_const['NGFB_META_NAME'] );
 					delete_user_meta( $user->ID, $var_const['NGFB_PREF_NAME'] );
 
-					foreach ( array( 'schema_type', 'og_img', 'og_desc' ) as $meta_key )
+					foreach ( array( 'schema_type', 'og_img_thumb', 'og_desc' ) as $meta_key )
 						delete_user_meta( $user->ID, '_ngfb_head_info_'.$meta_key );
 
 					NgfbUser::delete_metabox_prefs( $user->ID );
@@ -173,7 +173,7 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 				foreach ( NgfbTerm::get_public_terms() as $term_id ) {
 					NgfbTerm::delete_term_meta( $term_id, $var_const['NGFB_META_NAME'] );
 
-					foreach ( array( 'schema_type', 'og_img', 'og_desc' ) as $meta_key )
+					foreach ( array( 'schema_type', 'og_img_thumb', 'og_desc' ) as $meta_key )
 						NgfbTerm::delete_term_meta( $term_id, '_ngfb_head_info_'.$meta_key );
 				}
 			}
