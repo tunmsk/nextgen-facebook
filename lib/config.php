@@ -20,8 +20,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.39.1-dev2',	// plugin version
-					'opt_version' => '483',		// increment when changing default options
+					'version' => '8.39.1-rc1',	// plugin version
+					'opt_version' => '484',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -496,7 +496,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_head_attr_filter_prio' => 100,
 					'plugin_check_head' => 1,			// Check for Duplicate Meta Tags
 					'plugin_filter_lang' => 1,			// Use WP Locale for Language
-					'plugin_auto_img_resize' => 1,			// Create Missing WP Media Sizes
+					'plugin_create_wp_sizes' => 1,			// Create Missing WP Media Sizes
 					'plugin_check_img_dims' => 0,			// Enforce Image Dimensions Check
 					'plugin_upscale_images' => 0,			// Allow Upscale of Smaller Images
 					'plugin_upscale_img_max' => 33,			// Maximum Image Upscale Percent
@@ -618,8 +618,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_check_head:use' => 'default',
 					'plugin_filter_lang' => 1,			// Use WP Locale for Language
 					'plugin_filter_lang:use' => 'default',
-					'plugin_auto_img_resize' => 1,			// Recreate Missing WP Media Sizes
-					'plugin_auto_img_resize:use' => 'default',
+					'plugin_create_wp_sizes' => 1,			// Recreate Missing WP Media Sizes
+					'plugin_create_wp_sizes:use' => 'default',
 					'plugin_check_img_dims' => 0,			// Enforce Image Dimensions Check
 					'plugin_check_img_dims:use' => 'default',
 					'plugin_upscale_images' => 0,			// Allow Upscale of Smaller Images

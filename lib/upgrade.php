@@ -81,7 +81,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'ngfb_cm_skype_label' => 'plugin_cm_skype_label', 
 			'ngfb_cm_skype_enabled' => 'plugin_cm_skype_enabled',
 			'plugin_googl_api_key' => 'plugin_google_api_key',
-			'og_img_resize' => 'plugin_auto_img_resize',
+			'og_img_resize' => 'plugin_create_wp_sizes',
 			'buttons_css_social' => 'buttons_css_sharing',
 			'plugin_shortcode_ngfb' => 'plugin_shortcodes',
 			'buttons_link_css' => 'buttons_use_social_style',
@@ -168,6 +168,7 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'plugin_schema_type_id_col_post' => 'plugin_schema_type_col_post',	// renamed in v8.39.1-1
 			'plugin_schema_type_id_col_term' => 'plugin_schema_type_col_term',	// renamed in v8.39.1-1
 			'plugin_schema_type_id_col_user' => 'plugin_schema_type_col_user',	// renamed in v8.39.1-1
+			'plugin_auto_img_resize' => 'plugin_create_wp_sizes',
 		);
 
 		protected $p;

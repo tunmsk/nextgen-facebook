@@ -124,10 +124,10 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 				'option label', 'nextgen-facebook' ), null, 'plugin_filter_lang' ).
 			$this->get_nocb_cell( $form, 'plugin_filter_lang' );
 
-			$table_rows['plugin_auto_img_resize'] = '<tr class="hide_in_basic">'.
+			$table_rows['plugin_create_wp_sizes'] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Create Missing WP Media Sizes',
-				'option label', 'nextgen-facebook' ), null, 'plugin_auto_img_resize' ).
-			$this->get_nocb_cell( $form, 'plugin_auto_img_resize' );
+				'option label', 'nextgen-facebook' ), null, 'plugin_create_wp_sizes' ).
+			$this->get_nocb_cell( $form, 'plugin_create_wp_sizes' );
 
 			$table_rows['plugin_check_img_dims'] = $form->get_th_html( _x( 'Enforce Image Dimensions Check',
 				'option label', 'nextgen-facebook' ), null, 'plugin_check_img_dims' ).
