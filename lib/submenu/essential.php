@@ -127,10 +127,6 @@ if ( ! class_exists( 'NgfbSubmenuEssential' ) && class_exists( 'NgfbAdmin' ) ) {
 						_x( 'Organization Logo Image URL', 'option label', 'nextgen-facebook' ).'</a>', null, 'schema_logo_url' ).
 					'<td>'.$this->form->get_input( 'schema_logo_url', 'wide' ).'</td>';
 
-					$table_rows['schema_banner_url'] = $this->form->get_th_html( _x( 'Organization Banner (600x60) URL',
-						'option label', 'nextgen-facebook' ), null, 'schema_banner_url' ).
-					'<td>'.$this->form->get_input( 'schema_banner_url', 'wide' ).'</td>';
-
 					$table_rows['subsection_pinterest'] = '<td></td><td class="subsection"><h4>'.
 						_x( 'Pinterest', 'metabox title', 'nextgen-facebook' ).'</h4></td>';
 
