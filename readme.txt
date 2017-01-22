@@ -399,6 +399,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.39.2-dev1 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a new "Clear Short URLs on Clear All Cache" option (default is unchecked) to preserve / clear shortened URLs when clearing all cache transients (Pro version).
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.39.1-1 (2017/01/21)**
 
 * *New Features*
