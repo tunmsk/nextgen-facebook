@@ -442,9 +442,12 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 								'nextgen-facebook' ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).',
 									'nextgen-facebook' ), $cache_exp, $cache_diff );
 							break;
-						case 'tooltip-plugin_cache_info':
-							$text = __( 'Report the number of objects removed from the WordPress cache when Posts and Pages are updated.',
-								'nextgen-facebook' );
+						case 'tooltip-plugin_show_purge_count':
+							$text = __( 'Report the number of objects removed from the WordPress cache when posts, terms, and users are updated.', 'nextgen-facebook' );
+							break;
+						case 'tooltip-plugin_clear_short_urls':
+							$cache_exp = (int) apply_filters( $lca.'_cache_expire_shorten_url', $this->p->options['plugin_shorten_cache_exp'] );
+							$text = sprintf( __( 'Clear all shortened URLs when clearing all %s transients from the WordPress database (default is unchecked).', 'nextgen-facebook' ), $info['short'] ).' '.sprintf( __( 'Shortened URLs are cached for %s to minimize service API calls. Updating all shortened URLs at once may exceed API call limits imposed by your shortening service provider.', 'nextgen-facebook' ), human_time_diff( 0, $cache_exp ) );
 							break;
 						/*
 						 * 'Service API Keys' (URL Shortening) settings
