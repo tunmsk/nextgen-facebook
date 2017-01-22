@@ -400,13 +400,6 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 								'nextgen-facebook' ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).',
 									'nextgen-facebook' ), $cache_exp, $cache_diff );
 							break;
-						case 'tooltip-plugin_column_cache_exp':
-							$cache_exp = NgfbConfig::$cf['opt']['defaults']['plugin_column_cache_exp'];	// use original un-filtered value
-							$cache_diff = $cache_exp ? human_time_diff( 0, $cache_exp ) : _x( 'disabled', 'option comment', 'nextgen-facebook' );
-							$text = __( 'The content of list table columns is saved to the WordPress transient cache to optimize performance.',
-								'nextgen-facebook' ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).',
-									'nextgen-facebook' ), $cache_exp, $cache_diff );
-							break;
 						case 'tooltip-plugin_content_cache_exp':
 							$cache_exp = NgfbConfig::$cf['opt']['defaults']['plugin_content_cache_exp'];	// use original un-filtered value
 							$cache_diff = $cache_exp ? human_time_diff( 0, $cache_exp ) : _x( 'disabled', 'option comment', 'nextgen-facebook' );
