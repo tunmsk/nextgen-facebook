@@ -405,10 +405,11 @@ Note that the production stage level can be incremented on occasion for simple t
 	* None
 * *Improvements*
 	* Added a new "Clear Short URLs on Clear All Cache" option (default is unchecked) to preserve / clear shortened URLs when clearing all cache transients (Pro version).
+	* Updated the default "Shortened URL Cache Expiry" option value from 604800 seconds (1 week) to  2419200 seconds (4 weeks).
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Renamed the 'plugin_cache_info' option key to 'plugin_show_purge_count'.
 
 **Version 8.39.1-1 (2017/01/21)**
 
