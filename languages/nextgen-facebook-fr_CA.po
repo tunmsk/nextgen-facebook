@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NextGEN Facebook (NGFB) 8.39.2-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2017-01-25 06:52+0800\n"
-"PO-Revision-Date: 2017-01-25 06:56+0800\n"
+"POT-Creation-Date: 2017-01-25 07:10+0800\n"
+"PO-Revision-Date: 2017-01-25 07:10+0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -850,7 +850,6 @@ msgid "Check for Embedded Media from"
 msgstr "Découvrir les médias intégrés pour"
 
 #: lib/gpl/admin/advanced.php:107 lib/pro/admin/advanced.php:110
-#: lib/sitesubmenu/siteadvanced.php:66
 msgctxt "option label"
 msgid "Honor the FORCE_SSL Constant"
 msgstr "Honorer la constante FORCE_SSL"
@@ -927,19 +926,19 @@ msgctxt "option label"
 msgid "Add %s Column in"
 msgstr "Ajouter colonne %s pour"
 
-#: lib/gpl/admin/advanced.php:185 lib/messages.php:312 lib/meta.php:582
+#: lib/gpl/admin/advanced.php:185 lib/messages.php:306 lib/meta.php:582
 #: lib/pro/admin/advanced.php:185
 msgctxt "column title"
 msgid "%s Schema"
 msgstr "%s Schéma"
 
-#: lib/gpl/admin/advanced.php:188 lib/messages.php:318 lib/meta.php:585
+#: lib/gpl/admin/advanced.php:188 lib/messages.php:312 lib/meta.php:585
 #: lib/pro/admin/advanced.php:188
 msgctxt "column title"
 msgid "%s Img"
 msgstr "%s Img"
 
-#: lib/gpl/admin/advanced.php:191 lib/messages.php:324 lib/meta.php:588
+#: lib/gpl/admin/advanced.php:191 lib/messages.php:318 lib/meta.php:588
 #: lib/pro/admin/advanced.php:191
 msgctxt "column title"
 msgid "%s Desc"
@@ -1624,93 +1623,93 @@ msgid "Uncheck this option to disable the author URL fallback feature (default i
 msgstr "Décochez cette option pour désactiver la fonctionnalité de repli pour l'URL d'auteur (décochée par défaut)."
 
 #: lib/messages.php:257
-msgid "If the FORCE_SSL constant is defined as true, %s can redirect front-end URLs from HTTP to HTTPS when required (default is checked)."
-msgstr "Si la constante FORCE_SSL est définie comme <em>true</em>, %s peut rediriger les URLs d'avant de HTTP vers HTTPS lorsque requis (cochée par défaut)."
-
-#: lib/messages.php:260
-msgid "Automatically clear all known plugin cache(s) when saving the %s settings (default is checked)."
-msgstr "Automatiquement vider tous les caches d'extensions connu lors de l’enregistrement des réglages de %s (cochée par défaut)."
-
-#: lib/messages.php:263
 msgid "Check this option if you would like to preserve all %s settings when you <em>uninstall</em> the plugin (default is unchecked)."
 msgstr "Cochez cette option si vous souhaitez conserver tous les réglages de %s lorsque vous <em>désinstallez</em> l'extension (décochée par défaut)."
 
-#: lib/messages.php:266
+#: lib/messages.php:260
 msgid "Add debugging messages to back-end and front-end webpages as hidden HTML comments (default is unchecked)."
 msgstr "Ajouter des messages de débogage en commentaires HTML cachés dans les pages Web d'avant et arrière (décochée par défaut)."
 
-#: lib/messages.php:269
+#: lib/messages.php:263
 msgid "Hide all Pro version settings, tabs, and options (default is unchecked)."
 msgstr "Masquer tous les paramètres, onglets, et options de la version Pro (décochée par défaut)."
 
-#: lib/messages.php:272
+#: lib/messages.php:266
 msgid "Select the default set of options to display in the %s settings pages. The basic view shows only the most commonly used options."
 msgstr "Sélectionnez les options à afficher par défaut dans les pages de réglages de %s. L'affichage de base inclut seulement les options utilisés plus couramment."
 
-#: lib/messages.php:328
+#: lib/messages.php:322
 msgid "An \"%1$s\" column can be added to the Posts, Pages, Taxonomy / Terms, and Users admin list pages. When enabled, <b>users can also hide this column</b> by using the <em>Screen Options</em> tab on each admin list page."
 msgstr "Une colonne \"%1$s\" peut être ajouté aux listes d'Articles, Pages, Taxonomie / Termes et Utilisateurs. Lorsque cette colonne est active, les <b>utilisateurs peuvent également masquer la colonne</b> en utilisant l'onglet <em>Options de l'écran</em> sur chaque page de liste."
 
-#: lib/messages.php:334
+#: lib/messages.php:328
 msgid "Include and exclude specific tabs in the Social Settings metabox."
 msgstr "Inclure et exclure des onglets spécifiques dans le metabox Réglages Sociaux."
 
-#: lib/messages.php:337
+#: lib/messages.php:331
 msgid "Read the Yoast SEO custom social meta text for Posts, Terms, and Users."
 msgstr "Utiliser le texte méta social personnalisé de Yoast SEO pour les Articles, Termes, et Utilisateurs."
 
-#: lib/messages.php:338
+#: lib/messages.php:332
 msgid "This option is checked by default if the Yoast SEO plugin is active or its settings are found in the database."
 msgstr "Cette option est cochée par défaut si l'extension Yoast SEO est active ou ses réglages sont trouvés dans la base de données."
 
-#: lib/messages.php:358
+#: lib/messages.php:351
+msgid "If the FORCE_SSL constant is defined as true, %s can redirect front-end URLs from HTTP to HTTPS when required (default is checked)."
+msgstr "Si la constante FORCE_SSL est définie comme <em>true</em>, %s peut rediriger les URLs d'avant de HTTP vers HTTPS lorsque requis (cochée par défaut)."
+
+#: lib/messages.php:355
 msgid "When editing Posts and Pages, %1$s can check the head section of webpages for conflicting and/or duplicate HTML tags. After %2$d <em>successful</em> checks, no additional checks will be performed &mdash; until the theme and/or any plugin is updated, when another %2$d checks are performed."
 msgstr "Lorsque vous modifiez des Articles et Pages, %1$s peut verifier la section head des pages Web pour des balises HTML en conflit et/ou en double. Après %2$d vérifications <em>réussie</em>, aucune autre vérification sera effectuée — jusqu'à ce que le thème et/ou un plugin est mis à jour, lorsqu'un autre %2$d vérifications seront effectuées."
 
-#: lib/messages.php:370
+#: lib/messages.php:367
 msgid "Automatically create missing and/or incorrect images in the WordPress Media Library (default is checked)."
 msgstr "Créer automatiquement les images manquantes ou incorrectes dans la bibliothèque de Médias WordPress (cochée par défaut)."
 
-#: lib/messages.php:398 lib/messages.php:405 lib/messages.php:412
-#: lib/messages.php:419 lib/messages.php:426 lib/messages.php:433
+#: lib/messages.php:395 lib/messages.php:402 lib/messages.php:409
+#: lib/messages.php:416 lib/messages.php:423 lib/messages.php:430
 #: lib/sharing.php:1088 lib/sharing.php:1095
 msgctxt "option comment"
 msgid "disabled"
 msgstr "désactivé"
 
-#: lib/messages.php:399
+#: lib/messages.php:396
 msgid "Head meta tags and Schema markup are saved to the WordPress transient cache to optimize performance."
 msgstr "Les balises méta et balisage de Schéma de l'entête sont enregistrés dans le cache transitoire de WordPress pour optimiser la performance."
 
-#: lib/messages.php:400 lib/messages.php:407 lib/messages.php:414
-#: lib/messages.php:421 lib/messages.php:428 lib/messages.php:435
+#: lib/messages.php:397 lib/messages.php:404 lib/messages.php:411
+#: lib/messages.php:418 lib/messages.php:425 lib/messages.php:432
 #: lib/sharing.php:1090 lib/sharing.php:1096
 msgid "The suggested cache expiration value is %1$s seconds (%2$s)."
 msgstr "La valeur d'expiration de cache suggérée est de %1$s secondes (%2$s)."
 
-#: lib/messages.php:406
+#: lib/messages.php:403
 msgid "Filtered post content is saved to the WordPress <em>non-persistent</em> object cache to optimize performance."
 msgstr "Le contenu filtré d'article est enregistré dans le cache d'object WordPress <em>non-persistant</em> pour optimiser la performance."
 
-#: lib/messages.php:413
+#: lib/messages.php:410
 msgid "The size for image URLs (not image IDs) is retrieved and saved to the WordPress transient cache to optimize performance and network bandwidth."
 msgstr "La taille des URLs d'image (pas les IDs d'image) est récupérée et enregistrée dans le cache transitoire de WordPress pour optimiser les performances et la bande passante du réseau."
 
-#: lib/messages.php:420
+#: lib/messages.php:417
 msgid "Shortened URLs are saved to the WordPress transient cache to optimize performance and API connections."
 msgstr "Les URLs raccourcies sont enregistrés dans le cache transitoire de WordPress pour optimiser la performance et les connexions d'APIs."
 
-#: lib/messages.php:427
+#: lib/messages.php:424
 msgid "The filtered article topics array is saved to the WordPress transient cache to optimize performance and disk access."
 msgstr "La liste des sujets d'article filtré est enregistré dans le cache transitoire de WordPress pour optimiser les performances et l'accès au disque."
 
-#: lib/messages.php:434
+#: lib/messages.php:431
 msgid "The filtered Schema types array is saved to the WordPress transient cache to optimize performance."
 msgstr "La liste filtré des types de Schéma est enregistré dans le cache transitoire de WordPress pour optimiser la performance."
 
-#: lib/messages.php:439
+#: lib/messages.php:436
 msgid "Report the number of objects removed from the WordPress cache when posts, terms, and users are updated."
 msgstr "Rapporter le nombre d'objets supprimés du cache WordPress lorsque les articles, termes, et utilisateurs sont mises à jour."
+
+#: lib/messages.php:439
+msgid "Automatically clear all known plugin cache(s) when saving the %s settings (default is checked)."
+msgstr "Automatiquement vider tous les caches d'extensions connu lors de l’enregistrement des réglages de %s (cochée par défaut)."
 
 #: lib/messages.php:443
 msgid "Clear all shortened URLs when clearing all %s transients from the WordPress database (default is unchecked)."
@@ -2663,18 +2662,13 @@ msgctxt "metabox tab"
 msgid "Cache Settings"
 msgstr "Réglages cache"
 
-#: lib/sitesubmenu/siteadvanced.php:71
-msgctxt "option label"
-msgid "Clear Cache(s) on Save Settings"
-msgstr "Vider les caches lors de l'enregistrement des réglages"
-
-#: lib/sitesubmenu/siteadvanced.php:76 lib/submenu/advanced.php:98
+#: lib/sitesubmenu/siteadvanced.php:66 lib/submenu/advanced.php:98
 #: lib/submenu/essential.php:148
 msgctxt "option label"
 msgid "Preserve Settings on Uninstall"
 msgstr "Conserver réglages sur suppression"
 
-#: lib/sitesubmenu/siteadvanced.php:81 lib/submenu/advanced.php:102
+#: lib/sitesubmenu/siteadvanced.php:71 lib/submenu/advanced.php:102
 msgctxt "option label"
 msgid "Add Hidden Debug Messages"
 msgstr "Ajout messages de débogage caché"
@@ -3613,27 +3607,3 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://surniaulula.com/"
 msgstr "https://surniaulula.com/"
-
-#~ msgctxt "plugin action link"
-#~ msgid "Support Forum"
-#~ msgstr "Forum d'aide"
-
-#~ msgctxt "plugin action link"
-#~ msgid "Purchase Pro License(s)"
-#~ msgstr "Achetez licence(s) Pro"
-
-#~ msgctxt "submit button"
-#~ msgid "Purchase Pro License(s)"
-#~ msgstr "Achetez Licence(s) Pro"
-
-#~ msgctxt "submit button"
-#~ msgid "Purchase Pro Version"
-#~ msgstr "Achetez Version Pro"
-
-#~ msgctxt "plugin action link"
-#~ msgid "Download Latest Version"
-#~ msgstr "Téléchargez dernière version"
-
-#~ msgctxt "option comment"
-#~ msgid "%s required to use this option"
-#~ msgstr "%s requis pour utiliser cette option"
