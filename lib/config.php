@@ -39,7 +39,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						// wordpress
 						'download' => 'https://wordpress.org/plugins/nextgen-facebook/',
 						'forum' => 'https://wordpress.org/support/plugin/nextgen-facebook',
-						'review' => 'https://wordpress.org/support/view/plugin-reviews/nextgen-facebook?filter=5&rate=5#postform',
+						'review' => 'https://wordpress.org/support/plugin/nextgen-facebook/reviews/#new-post',
 						// github
 						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/nextgen-facebook/master/readme.txt',
 						'setup_html' => 'https://raw.githubusercontent.com/SurniaUlula/nextgen-facebook/master/setup.html',
