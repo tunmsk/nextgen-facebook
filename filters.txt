@@ -118,6 +118,7 @@
 'ngfb_size_info_'.$size_name ( $size_info, $post_id );
 'ngfb_social_accounts' ( (array) $social_accounts );
 'ngfb_tags' ( $tags, $post_id );
+'ngfb_term_cache_objects' ( $wp_objects, $mod, $sharing_url );
 'ngfb_term_cache_transients' ( $transients, $mod, $sharing_url );
 'ngfb_term_image_ids' ( array $ids, $size_name, $term_id );
 'ngfb_term_image_urls' ( array $urls, $size_name, $term_id );
@@ -130,6 +131,7 @@
 'ngfb_title' ( $title, $mod, $add_hashtags, $md_idx, $separator );
 'ngfb_title_pre_limit' ( $title );
 'ngfb_title_seed' ( '', $mod, $add_hashtags, $md_idx, $separator );
+'ngfb_user_cache_objects' ( $wp_objects, $mod, $sharing_url );
 'ngfb_user_cache_transients' ( $transients, $mod, $sharing_url );
 'ngfb_user_image_ids' ( array $ids, $size_name, $user_id );
 'ngfb_user_image_urls' ( array $ids, $size_name, $user_id );
