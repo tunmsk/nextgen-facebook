@@ -106,18 +106,18 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'meta' => 'Term and User Settings',
 							),
 							'ecom' => array(
-								'woocommerce' => 'WooCommerce',
+								'woocommerce' => '(plugin) WooCommerce',
 							),
 							'forum' => array(
-								'bbpress' => 'bbPress',
+								'bbpress' => '(plugin) bbPress',
 							),
 							'social' => array(
-								'buddypress' => 'BuddyPress',
+								'buddypress' => '(plugin) BuddyPress',
 							),
 							'util' => array(
-								'post' => 'Custom Post Meta',
-								'term' => 'Custom Term Meta',
-								'user' => 'Custom User Meta',
+								'post' => '(tool) Custom Post Meta',
+								'term' => '(tool) Custom Term Meta',
+								'user' => '(tool) Custom User Meta',
 							),
 						),
 						'pro' => array(
@@ -637,7 +637,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_head_cache_exp:use' => 'default',
 					'plugin_shorten_cache_exp' => 2419200,		// Shortened URL Cache Expiry (4 weeks)
 					'plugin_shorten_cache_exp:use' => 'default',
-					'plugin_content_cache_exp' => 3600,		// Content (Non-Persist) Cache Expiry (1 hour)
+					'plugin_content_cache_exp' => 3600,		// Filtered Content Text Cache Expiry (1 hour)
 					'plugin_content_cache_exp:use' => 'default',
 					'plugin_imgsize_cache_exp' => 86400,		// Get Image (URL) Size Cache Expiry (1 day)
 					'plugin_imgsize_cache_exp:use' => 'default',
@@ -796,7 +796,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'sup_version_url' => 'http://php.net/supported-versions.php',
 			),
 			'form' => array(
-				'schema_type_col_width' => '130px',
+				'schema_type_col_width' => '120px',
 				'og_img_col_width' => '70px',
 				'og_img_col_height' => '37px',
 				'og_desc_col_width' => '12%',
