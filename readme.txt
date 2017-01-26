@@ -399,6 +399,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.39.3-1 (2017/01/26)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Added a missing second argument for the NgfbUtil clear_cache_objects() method when clearing the cache for updated terms and users.
+* *Developer Notes*
+	* None
+
 **Version 8.39.2-1 (2017/01/25)**
 
 * *New Features*
@@ -694,6 +705,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.39.3-1 =
+
+(2017/01/26) Added a missing second argument for the NgfbUtil clear_cache_objects() method when clearing the cache for updated terms and users.
 
 = 8.39.2-1 =
 
