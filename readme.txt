@@ -399,7 +399,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.4-dev1 (2017/01/27)**
+**Version 8.39.4-1 (2017/01/27)**
 
 * *New Features*
 	* None
@@ -717,7 +717,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.39.4-dev1 =
+= 8.39.4-1 =
 
 (2017/01/27) Updated the default YouTube preview image name to maxresdefault.jpg and added a source query argument to the preview image URLs (Pro version).
 
