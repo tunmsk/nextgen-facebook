@@ -404,11 +404,11 @@ Note that the production stage level can be incremented on occasion for simple t
 * *New Features*
 	* None
 * *Improvements*
-	* Updated the default YouTube preview image name to maxresdefault.jpg and added a source query argument to preview image URLs (Pro version).
+	* Updated the default YouTube preview image name to maxresdefault.jpg and added a source query argument to the preview image URLs (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Added extra logging of the matched video array in all video modules (Pro version).
 
 **Version 8.39.3-1 (2017/01/26)**
 
@@ -719,7 +719,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.39.4-dev1 =
 
-(2017/01/27) Updated the default YouTube preview image name to maxresdefault.jpg and added a source query argument to preview image URLs (Pro version).
+(2017/01/27) Updated the default YouTube preview image name to maxresdefault.jpg and added a source query argument to the preview image URLs (Pro version).
 
 = 8.39.3-1 =
 
