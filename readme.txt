@@ -404,11 +404,14 @@ Note that the production stage level can be incremented on occasion for simple t
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added the title and description of WordPress Media Library images to the Schema "ImageObject" markup.
 * *Bugfixes*
 	* None
 * *Developer Notes*
 	* Simplified the reading of custom Yoast SEO meta by hooking NGFB filters from a single NgfbProUtilWpseoMeta class (Pro version).
+	* Refactored the SucomWebpage get_title() method to return titles based on the object ID (not just the current page).
+	* Added a $term_id argument to the SucomUtil is_term_page(), is_category_page(), and is_tag_page() methods.
+	* Added a $user_id argument to the SucomUtil is_author_page() and is_user_page() arguments.
 
 **Version 8.39.4-1 (2017/01/27)**
 
@@ -730,7 +733,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.39.5-dev1 =
 
-(2017/01/28) Simplified the reading of custom Yoast SEO meta by hooking NGFB filters from a single NgfbProUtilWpseoMeta class (Pro version).
+(2017/01/28) Added the title and description of WordPress Media Library images to the Schema "ImageObject" markup. Simplified the reading of custom Yoast SEO meta by hooking NGFB filters from a single NgfbProUtilWpseoMeta class (Pro version).
 
 = 8.39.4-1 =
 
