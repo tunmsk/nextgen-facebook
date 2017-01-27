@@ -399,6 +399,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.39.5-dev1 (2017/01/28)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Simplified the reading of custom Yoast SEO meta by hooking NGFB filters from a single NgfbProUtilWpseoMeta class (Pro version).
+
 **Version 8.39.4-1 (2017/01/27)**
 
 * *New Features*
@@ -716,6 +727,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.39.5-dev1 =
+
+(2017/01/28) Simplified the reading of custom Yoast SEO meta by hooking NGFB filters from a single NgfbProUtilWpseoMeta class (Pro version).
 
 = 8.39.4-1 =
 
