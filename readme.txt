@@ -10,7 +10,7 @@ Assets URI: https://surniaulula.github.io/nextgen-facebook/assets/
 Tags: share, buttons, facebook, twitter, pinterest, youtube, social, sharing, meta tags, rich pin, social media, whatsapp, json, json-ld, ld+json, seo, open graph, schema, schema.org, amp, bbPress, buddypress, e-commerce, easy digital downloads, edd, g+, google, google plus, hashtags, like, linkedin, marketpress, multilingual, multisite, nextgen gallery, player card, polylang, shortcode, summary card, tumblr, twitter card, vimeo, widget, wistia, woocommerce, yotpo, yourls, the events calendar, social share, social sharing, facebook video, slideshare, video embed, social meta tags, search engine optimization, wordpress seo, yoast seo, shortlink
 Contributors: jsmoriss
 Requires At Least: 3.7
-Tested Up To: 4.7.1
+Tested Up To: 4.7.2
 Stable Tag: 8.39.3-1
 
 Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
@@ -399,6 +399,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.39.4-dev1 (2017/01/27)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Updated the default YouTube preview image name to maxresdefault.jpg and added a source query argument to preview image URLs (Pro version).
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.39.3-1 (2017/01/26)**
 
 * *New Features*
@@ -705,6 +716,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.39.4-dev1 =
+
+(2017/01/27) Updated the default YouTube preview image name to maxresdefault.jpg and added a source query argument to preview image URLs (Pro version).
 
 = 8.39.3-1 =
 
