@@ -399,7 +399,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.5-dev1 (2017/01/28)**
+**Version 8.39.5-rc1 (2017/01/29)**
 
 * *New Features*
 	* None
@@ -731,9 +731,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.39.5-dev1 =
+= 8.39.5-rc1 =
 
-(2017/01/28) Added the title and description of WordPress Media Library images to the Schema "ImageObject" markup. Simplified the reading of custom Yoast SEO meta by hooking NGFB filters from a single NgfbProUtilWpseoMeta class (Pro version).
+(2017/01/29) Added the title and description of WordPress Media Library images to the Schema "ImageObject" markup. Simplified the reading of custom Yoast SEO meta by hooking NGFB filters from a single NgfbProUtilWpseoMeta class (Pro version).
 
 = 8.39.4-1 =
 
