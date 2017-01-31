@@ -399,6 +399,22 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.39.6-dev1 (2017/02/01)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added new Schema types from https://auto.schema.org/:
+		* https://auto.schema.org/BusOrCoach
+		* https://auto.schema.org/Car
+		* https://auto.schema.org/Motorcycle
+		* https://auto.schema.org/MotorizedBicycle
+		* https://auto.schema.org/Vehicle
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.39.5-1 (2017/01/30)**
 
 * *New Features*
@@ -730,6 +746,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.39.6-dev1 =
+
+(2017/02/01) Added new Schema types from https://auto.schema.org/.
 
 = 8.39.5-1 =
 
