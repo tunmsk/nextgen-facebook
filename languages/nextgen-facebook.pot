@@ -107,7 +107,7 @@ msgstr ""
 
 #: lib/admin.php:466
 msgid ""
-"All image dimensions have been reloaded with their default values and saved."
+"All image dimensions have been reloaded with their default value and saved."
 msgstr ""
 
 #: lib/admin.php:483
@@ -252,7 +252,8 @@ msgstr ""
 
 #: lib/admin.php:1006
 msgid ""
-"<a href=\"%1$s\" target=\"_blank\">Rate the %2$s Plugin</a> on WordPress.org"
+"Want to help? <a href=\"%1$s\" target=\"_blank\">Rate the %2$s Plugin</a> on "
+"WordPress.org"
 msgstr ""
 
 #: lib/admin.php:1072
@@ -2571,7 +2572,7 @@ msgstr ""
 #: lib/messages.php:885
 msgid ""
 "The development of %1$s is driven mostly by customer requests &mdash; we "
-"welcome your comments and suggestions. ;-)"
+"welcome your comments and suggestions."
 msgstr ""
 
 #: lib/messages.php:897
@@ -3031,7 +3032,7 @@ msgstr ""
 
 #: lib/sharing.php:339
 msgid ""
-"All sharing styles have been reloaded with their default values and saved."
+"All sharing styles have been reloaded with their default value and saved."
 msgstr ""
 
 #: lib/sharing.php:360

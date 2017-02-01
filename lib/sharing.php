@@ -336,7 +336,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 			$this->update_sharing_css( $opts );
 			$this->p->opt->save_options( NGFB_OPTIONS_NAME, $opts, false );
-			$this->p->notice->upd( __( 'All sharing styles have been reloaded with their default values and saved.', 'nextgen-facebook' ) );
+			$this->p->notice->upd( __( 'All sharing styles have been reloaded with their default value and saved.', 'nextgen-facebook' ) );
 		}
 
 		public function wp_enqueue_styles() {
