@@ -399,11 +399,12 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.6-dev1 (2017/02/01)**
+**Version 8.39.6-dev2 (2017/02/02)**
 
 * *New Features*
 	* None
 * *Improvements*
+	* Added a "Reload Default Sizes" button on the WordPress Settings &gt; Social and SEO Image Dimensions page.
 	* Added new Schema types from https://auto.schema.org/:
 		* https://auto.schema.org/BusOrCoach
 		* https://auto.schema.org/Car
@@ -413,7 +414,9 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Renamed the 'tc_sum' image dimention option keys to 'tc_sum_img'.
+	* Renamed the 'tc_lrgimg' image dimention option keys to 'tc_lrg_img'.
+	* Renamed the 'schema_img_article' image dimention option keys to 'schema_article_img'.
 
 **Version 8.39.5-1 (2017/01/30)**
 
@@ -747,9 +750,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.39.6-dev1 =
+= 8.39.6-dev2 =
 
-(2017/02/01) Added new Schema types from https://auto.schema.org/.
+(2017/02/02) Added new Schema types from https://auto.schema.org/.
 
 = 8.39.5-1 =
 
