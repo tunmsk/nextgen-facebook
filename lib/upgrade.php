@@ -172,6 +172,21 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			'plugin_schema_type_id_col_user' => 'plugin_schema_type_col_user',	// renamed in v8.39.1-1
 			'plugin_auto_img_resize' => 'plugin_create_wp_sizes',
 			'plugin_cache_info' => 'plugin_show_purge_count',
+			'tc_sum_width' => 'tc_sum_img_width',
+			'tc_sum_height' => 'tc_sum_img_height',
+			'tc_sum_crop' => 'tc_sum_img_crop',
+			'tc_sum_crop_x' => 'tc_sum_img_crop_x',
+			'tc_sum_crop_y' => 'tc_sum_img_crop_y',
+			'tc_lrgimg_width' => 'tc_lrg_img_width',
+			'tc_lrgimg_height' => 'tc_lrg_img_height',
+			'tc_lrgimg_crop' => 'tc_lrg_img_crop',
+			'tc_lrgimg_crop_x' => 'tc_lrg_img_crop_x',
+			'tc_lrgimg_crop_y' => 'tc_lrg_img_crop_y',
+			'schema_img_article_width' => 'schema_article_img_width',
+			'schema_img_article_height' => 'schema_article_img_height',
+			'schema_img_article_crop' => 'schema_article_img_crop',
+			'schema_img_article_crop_x' => 'schema_article_img_crop_x',
+			'schema_img_article_crop_y' => 'schema_article_img_crop_y',
 		);
 
 		protected $p;

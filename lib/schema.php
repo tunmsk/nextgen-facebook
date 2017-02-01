@@ -40,7 +40,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 					'image size label', 'nextgen-facebook' ),
 			);
 
-			$sizes['schema_img_article'] = array(		// options prefix
+			$sizes['schema_article_img'] = array(		// options prefix
 				'name' => 'schema-article',		// ngfb-schema-article
 				'label' => _x( 'Google / Schema Image',
 					'image size label', 'nextgen-facebook' ),

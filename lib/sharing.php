@@ -316,14 +316,15 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		}
 
 		public function filter_secondary_action_buttons( $actions, $menu_id, $menu_name, $menu_lib ) {
-			if ( $menu_id === 'styles' )
+			if ( $menu_id === 'styles' ) {
 				$actions['reload_default_sharing_styles'] = _x( 'Reload Default Styles',
 					'submit button', 'nextgen-facebook' );
+			}
 			return $actions;
 		}
 
 		public function action_load_setting_page_reload_default_sharing_styles( $pagehook, $menu_id, $menu_name, $menu_lib ) {
-			$opts =& $this->p->options;
+			$opts =& $this->p->options;	// update the existing options array
 			$def_opts = $this->p->opt->get_defaults();
 			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs', 
 				$this->p->cf['sharing']['styles'] );
@@ -335,8 +336,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 			$this->update_sharing_css( $opts );
 			$this->p->opt->save_options( NGFB_OPTIONS_NAME, $opts, false );
-			$this->p->notice->upd( __( 'All sharing styles have been reloaded with their default settings and saved.',
-				'nextgen-facebook' ) );
+			$this->p->notice->upd( __( 'All sharing styles have been reloaded with their default values and saved.', 'nextgen-facebook' ) );
 		}
 
 		public function wp_enqueue_styles() {

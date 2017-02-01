@@ -26,13 +26,13 @@ if ( ! class_exists( 'NgfbTwitterCard' ) ) {
 
 		public function filter_plugin_image_sizes( $sizes ) {
 
-			$sizes['tc_sum'] = array(		// options prefix
+			$sizes['tc_sum_img'] = array(		// options prefix
 				'name' => 'tc-summary',		// ngfb-tc-summary
 				'label' => _x( 'Twitter Summary Card',
 					'image size label', 'nextgen-facebook' ),
 			);
 
-			$sizes['tc_lrgimg'] = array(		// options prefix
+			$sizes['tc_lrg_img'] = array(		// options prefix
 				'name' => 'tc-lrgimg',		// ngfb-tc-lrgimg
 				'label' => _x( 'Twitter Large Image Card',
 					'image size label', 'nextgen-facebook' ),
