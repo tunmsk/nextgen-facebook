@@ -9,7 +9,7 @@ Donate Link: https://surniaulula.com/extend/plugins/nextgen-facebook/?utm_source
 Assets URI: https://surniaulula.github.io/nextgen-facebook/assets/
 Tags: share, buttons, facebook, twitter, pinterest, youtube, social, sharing, meta tags, rich pin, social media, whatsapp, json, json-ld, ld+json, seo, open graph, schema, schema.org, amp, bbPress, buddypress, e-commerce, easy digital downloads, edd, g+, google, google plus, hashtags, like, linkedin, marketpress, multilingual, multisite, nextgen gallery, player card, polylang, shortcode, summary card, tumblr, twitter card, vimeo, widget, wistia, woocommerce, yotpo, yourls, the events calendar, social share, social sharing, facebook video, slideshare, video embed, social meta tags, search engine optimization, wordpress seo, yoast seo, shortlink
 Contributors: jsmoriss
-Requires At Least: 3.7
+Requires At Least: 3.8
 Tested Up To: 4.7.2
 Stable Tag: 8.39.5-1
 
@@ -312,7 +312,6 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 * [What is the difference between NGFB and WPSSO?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-is-the-difference-between-ngfb-and-wpsso/)
 * [What is the difference between the Free and Pro versions?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/what-is-the-difference-between-the-free-and-pro-versions/)
 * [Why aren't Pins from my website posting Rich?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-arent-pins-from-my-website-posting-rich/)
-* [Why do my Facebook shares have small images?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-do-my-facebook-shares-have-small-images/)
 * [Why does Facebook play videos instead of linking them?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-play-videos-instead-of-linking-them/)
 * [Why does Facebook show the wrong image / text?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-facebook-show-the-wrong-image-text/)
 * [Why does Google Structured Data Testing Tool show errors?](https://surniaulula.com/codex/plugins/nextgen-facebook/faq/why-does-google-structured-data-testing-tool-show-errors/)
