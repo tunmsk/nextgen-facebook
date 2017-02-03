@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.6-rc1 (2017/02/02)**
+**Version 8.39.6-1 (2017/02/04)**
 
 * *New Features*
 	* None
@@ -749,9 +749,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.39.6-rc1 =
+= 8.39.6-1 =
 
-(2017/02/02) Added new Schema types from https://auto.schema.org/.
+(2017/02/04) Added a "Reload Default Sizes" button on the Social and SEO Image Dimensions page. Added new Schema types from https://auto.schema.org/.
 
 = 8.39.5-1 =
 
