@@ -398,6 +398,18 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.39.7-dev1 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Removed unnecessary offers code from the WooCommerce module (Pro version).
+	* Removed the 'ngfb_og_add_product_mt_offer' filter.
+
 **Version 8.39.6-1 (2017/02/04)**
 
 * *New Features*
@@ -751,6 +763,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.39.7-dev1 =
+
+(TBD) Removed unnecessary offers code from the WooCommerce module (Pro version).
 
 = 8.39.6-1 =
 
