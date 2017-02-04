@@ -80,7 +80,7 @@
 'ngfb_og_marketpress' ( $og_ecom, $mod );	// Pro version
 'ngfb_og_prefix_ns' ( $ns );
 'ngfb_og_seed' ( $og, $use_post, $mod );
-'ngfb_og_type' ( $type, $use_post );
+'ngfb_og_type' ( $og_type, $use_post, $mod );
 'ngfb_og_woocommerce' ( $og_ecom, $use_post, $mod );	// Pro version
 'ngfb_og_wpecommerce' ( $og_ecom );	// Pro version
 'ngfb_opengraph_img_size_limits' ( array( $min_width, $min_height, $max_ratio ) );
