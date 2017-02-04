@@ -11,7 +11,7 @@ Tags: share, buttons, facebook, twitter, pinterest, youtube, social, sharing, me
 Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 4.7.2
-Stable Tag: 8.39.5-1
+Stable Tag: 8.39.6-1
 
 Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
 
