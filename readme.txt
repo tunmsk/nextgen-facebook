@@ -403,6 +403,8 @@ Note that the production stage level can be incremented on occasion for simple t
 * *New Features*
 	* None
 * *Improvements*
+	* Added a distinct / separate div container for the buttons preset ID.
+	* Added CSS for the large_share_vertical preset ID in the default widget buttons stylesheet.
 	* Added a "Reload Default Sizes" button on the WordPress Settings &gt; Social and SEO Image Dimensions page.
 	* Added new Schema types from https://auto.schema.org/:
 		* https://auto.schema.org/BusOrCoach
