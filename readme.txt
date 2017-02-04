@@ -753,7 +753,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.39.6-1 =
 
-(2017/02/04) Added a "Reload Default Sizes" button on the Social and SEO Image Dimensions page. Added new Schema types from https://auto.schema.org/.
+(2017/02/04) Added a distinct / separate div container for the buttons preset ID. Added a "Reload Default Sizes" button on the Social and SEO Image Dimensions page. Added new Schema types from https://auto.schema.org/.
 
 = 8.39.5-1 =
 
