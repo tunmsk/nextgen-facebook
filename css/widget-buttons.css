@@ -19,3 +19,11 @@
 	width:135px; 
 	height:20px;
 }
+.ngfb-widget-buttons .ngfb-preset-large_share_vertical .ngfb-buttons > div { 
+	width:70px;
+	height:61px;
+}
+.ngfb-widget-buttons .ngfb-preset-large_share_vertical .ngfb-buttons > div.pinterest-button { 
+	height:40px;
+	line-height:40px;
+}
