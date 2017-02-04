@@ -406,12 +406,13 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Added a distinct / separate div container for the buttons preset ID.
 	* Added CSS for the large_share_vertical preset ID in the default widget buttons stylesheet.
 	* Added a "Reload Default Sizes" button on the WordPress Settings &gt; Social and SEO Image Dimensions page.
-	* Added new Schema types from https://auto.schema.org/:
+	* Added new auto Schema types from https://auto.schema.org/:
 		* https://auto.schema.org/BusOrCoach
 		* https://auto.schema.org/Car
 		* https://auto.schema.org/Motorcycle
 		* https://auto.schema.org/MotorizedBicycle
 		* https://auto.schema.org/Vehicle
+	* Forced the 'og:type' of the static home page to 'website' instead of 'article'.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -753,7 +754,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.39.6-1 =
 
-(2017/02/04) Added a distinct / separate div container for the buttons preset ID. Added a "Reload Default Sizes" button on the Social and SEO Image Dimensions page. Added new Schema types from https://auto.schema.org/.
+(2017/02/04) Added a distinct / separate div container for the buttons preset ID. Added a "Reload Default Sizes" button on the Social and SEO Image Dimensions page. Added new auto Schema types from https://auto.schema.org/.
 
 = 8.39.5-1 =
 
