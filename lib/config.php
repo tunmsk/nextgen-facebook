@@ -1453,7 +1453,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			$var_const['NGFB_INIT_PRIORITY'] = 14;
 			$var_const['NGFB_HEAD_PRIORITY'] = 10;
 			$var_const['NGFB_SOCIAL_PRIORITY'] = 100;		// used by social sharing features
-			$var_const['NGFB_FOOTER_PRIORITY'] = 100;		// used by social sharing features
+			$var_const['NGFB_FOOTER_PRIORITY'] = 100;
 			$var_const['NGFB_SEO_FILTERS_PRIORITY'] = 100;
 
 			/*
