@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.39.7-dev1',	// plugin version
-					'opt_version' => '487',		// increment when changing default options
+					'opt_version' => '489',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
