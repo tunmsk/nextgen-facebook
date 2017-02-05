@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.7-dev1 (TBD)**
+**Version 8.39.7-dev1 (2017/02/06)**
 
 * *New Features*
 	* None
@@ -407,9 +407,10 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Optimized the printing of debug log messages within the webpage.
-	* Removed unnecessary offers code from the WooCommerce module (Pro version).
-	* Removed the 'ngfb_og_add_product_mt_offer' filter.
+	* Optimized the printing of debug log messages within the webpage by using fewer action hooks.
+	* Added WooCommerce product reviews to the meta tags array (Pro version).
+	* Renamed the 'ngfb_og_add_product_mt_offer' filter to 'ngfb_og_add_product_mt_offers' (Pro version).
+	* Added a new 'ngfb_og_add_product_mt_review' filter (Pro version).
 
 **Version 8.39.6-1 (2017/02/04)**
 
@@ -728,7 +729,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Developer Notes*
 	* Minimum requirements updated to WP v3.5 and PHP v5.4.
 	* Renamed the Social Settings 'header' index name to 'text'.
-	* Renamed the 'wpsso_admin_post_header' filter to 'wpsso_admin_post_head'.
+	* Renamed the 'ngfb_admin_post_header' filter to 'ngfb_admin_post_head'.
 	* Renamed the NgfbHead get_header_array() method to get_head_array().
 	* Added a new NgfbHead get_head_index() method to cache meta tags as array elements. This optimizes the head meta transient cache for Pinterest by storing 1 transient instead of 2.
 
@@ -767,7 +768,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.39.7-dev1 =
 
-(TBD) Removed unnecessary offers code from the WooCommerce module (Pro version).
+(2017/02/06) Removed unnecessary offers code from the WooCommerce module (Pro version).
 
 = 8.39.6-1 =
 
