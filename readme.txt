@@ -407,6 +407,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
+	* Optimized the printing of debug log messages within the webpage.
 	* Removed unnecessary offers code from the WooCommerce module (Pro version).
 	* Removed the 'ngfb_og_add_product_mt_offer' filter.
 
