@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.7-dev1 (2017/02/06)**
+**Version 8.39.7-rc1 (2017/02/07)**
 
 * *New Features*
 	* None
@@ -407,7 +407,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Optimized the printing of debug log messages within the webpage by using fewer action hooks.
+	* Optimized the printing of debug log messages in the webpage HTML by using fewer action hooks.
 	* Added WooCommerce product reviews to the meta tags array (Pro version).
 	* Renamed the 'ngfb_og_add_product_mt_offer' filter to 'ngfb_og_add_product_mt_offers' (Pro version).
 	* Added a new 'ngfb_og_add_product_mt_reviews' filter (Pro version).
@@ -766,9 +766,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.39.7-dev1 =
+= 8.39.7-rc1 =
 
-(2017/02/06) Removed unnecessary offers code from the WooCommerce module (Pro version).
+(2017/02/07) Removed unnecessary offers code from the WooCommerce module (Pro version).
 
 = 8.39.6-1 =
 
