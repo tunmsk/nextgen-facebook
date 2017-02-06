@@ -71,7 +71,7 @@
 'ngfb_og' ( $og, $use_post, $mod );
 'ngfb_og_add_product_mt_offers' ( $bool, $mod );
 'ngfb_og_add_product_mt_rating' ( $bool, $mod );
-'ngfb_og_add_product_mt_review' ( $bool, $mod );
+'ngfb_og_add_product_mt_reviews' ( $bool, $mod );
 'ngfb_og_default_img_id' ( $image_id );
 'ngfb_og_default_img_url' ( $image_url );
 'ngfb_og_default_img_on_index' ( $bool );
