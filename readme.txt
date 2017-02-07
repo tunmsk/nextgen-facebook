@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.7-rc1 (2017/02/07)**
+**Version 8.39.7-1 (2017/02/08)**
 
 * *New Features*
 	* None
@@ -766,9 +766,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.39.7-rc1 =
+= 8.39.7-1 =
 
-(2017/02/07) Removed unnecessary offers code from the WooCommerce module (Pro version).
+(2017/02/08) Added a filter to define the WooCommerce shop page as a CollectionPage. Optimized the printing of debug log messages.
 
 = 8.39.6-1 =
 
