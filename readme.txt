@@ -408,7 +408,13 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Added new json data filters for single properties:
+		* 'ngfb_json_data_single_event' ( $event_data, $mod, $event_id );
+		* 'ngfb_json_data_single_organization' ( $org_data, $mod, $org_id );
+		* 'ngfb_json_data_single_organization_sameas' ( $org_sameas, $mod, $org_id );
+		* 'ngfb_json_data_single_person' ( $person_data, $mod, $user_id );
+		* 'ngfb_json_data_single_person_sameas' ( $person_sameas, $mod, $user_id );
+		* 'ngfb_json_data_single_place' ( $place_data, $mod, $place_id );
 
 **Version 8.39.7-1 (2017/02/08)**
 
