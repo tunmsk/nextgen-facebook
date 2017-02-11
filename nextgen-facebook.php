@@ -13,7 +13,7 @@
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
  * Requires At Least: 3.8
  * Tested Up To: 4.7.2
- * Version: 8.39.8-dev1
+ * Version: 8.39.8-dev2
  *
  * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
  *
