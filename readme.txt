@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.8-dev1 (2017/02/10)**
+**Version 8.39.8-dev2 (2017/02/11)**
 
 * *New Features*
 	* None
@@ -784,9 +784,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.39.8-dev1 =
+= 8.39.8-dev2 =
 
-(2017/02/10) Added a check (and fix) for relative URLs coming from the WordPress Media Library. Removed a check for WPSSO option values before disabling Yoast SEO JSON-LD (now always disabled).
+(2017/02/11) Added a check (and fix) for relative URLs coming from the WordPress Media Library. Removed a check for WPSSO option values before disabling Yoast SEO JSON-LD (now always disabled).
 
 = 8.39.7-1 =
 
