@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.39.8-dev2',	// plugin version
+					'version' => '8.39.8-dev3',	// plugin version
 					'opt_version' => '489',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -1106,6 +1106,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'college.or.university' => 'https://schema.org/CollegeOrUniversity',
 								'educational.organization' => 'https://schema.org/EducationalOrganization',
 								'elementary.school' => 'https://schema.org/ElementarySchool',
+								'high.school' => 'https://schema.org/HighSchool',
 								'middle.school' => 'https://schema.org/MiddleSchool',
 								'preschool' => 'https://schema.org/Preschool',
 								'school' => 'https://schema.org/School',
