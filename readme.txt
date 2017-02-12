@@ -11,7 +11,7 @@ Tags: share, buttons, facebook, twitter, pinterest, youtube, social, sharing, me
 Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 4.7.2
-Stable Tag: 8.39.7-1
+Stable Tag: 8.39.8-1
 
 Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
 
@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.8-1 (2017/02/12)**
+**Version 8.39.8-1 (2017/02/13)**
 
 * *New Features*
 	* None
@@ -787,7 +787,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.39.8-1 =
 
-(2017/02/12) Added a check (and fix) for relative URLs coming from the WordPress Media Library. Removed a check for WPSSO option values before disabling Yoast SEO JSON-LD (now always disabled).
+(2017/02/13) Added a check (and fix) for relative URLs coming from the WordPress Media Library. Removed a check for WPSSO option values before disabling Yoast SEO JSON-LD (now always disabled).
 
 = 8.39.7-1 =
 
