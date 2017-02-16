@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NextGEN Facebook (NGFB) 8.39.9-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2017-02-16 15:09+0700\n"
-"PO-Revision-Date: 2017-02-16 15:13+0700\n"
+"POT-Creation-Date: 2017-02-16 15:40+0700\n"
+"PO-Revision-Date: 2017-02-16 16:16+0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -1612,11 +1612,11 @@ msgstr "Vous pouvez modifier <a href=\"%1$s\">la valeur par défaut du slogan de
 
 #: lib/messages.php:155
 msgid "You may select a more descriptive Schema type from the Organization sub-types (default is Organization)."
-msgstr "Vous pouvez sélectionner un type de Schéma plus descriptif des sous-types d'organisme (valeur par défaut est Organization)."
+msgstr "Vous pouvez sélectionner un type de Schéma plus descriptif des sous-types d'organisation (valeur par défaut est Organization)."
 
 #: lib/messages.php:160
 msgid "Select an optional Place / Location address for this Organization (requires the %s extension)."
-msgstr "Choisissez une adresse d'emplacement optionnel pour cet organisme (nécessite l’extension %s)."
+msgstr "Choisissez une adresse d'emplacement optionnel pour cette organisation (nécessite l’extension %s)."
 
 #: lib/messages.php:227
 msgid "The topic that best describes the Posts and Pages on your website."
@@ -1802,7 +1802,7 @@ msgstr "Si vous avez une <a href=\"%1$s\" target=\"_blank\">Page d'entreprise Fa
 
 #: lib/messages.php:512
 msgid "The Facebook Business Page URL will be used in Open Graph <em>article</em> webpages and in the site's Schema Organization markup."
-msgstr "L'URL de la Page entreprise de Facebook sera utilisé pour les balises Open Graph des pages Web de type <em>article</em> et le Schéma d'organisme du site."
+msgstr "L'URL de la Page entreprise de Facebook sera utilisé pour les balises Open Graph des pages Web de type <em>article</em> et le Schéma d'organisation du site."
 
 #: lib/messages.php:512 lib/messages.php:536 lib/messages.php:621
 #: lib/messages.php:660 lib/messages.php:685 lib/messages.php:698
@@ -1991,11 +1991,11 @@ msgstr "La balise HTML \"meta name canonical\" n'est pas cochée par défaut pui
 
 #: lib/messages.php:761
 msgid "The website / business social account values are used for SEO, Schema, Open Graph, and other social meta tags &ndash; including publisher (Organization) social markup for Google Search."
-msgstr "Les valeurs des comptes sociaux site Web / d'affaires sont utilisées pour les balises méta SEO, Schéma, Open Graph, et autres – y compris le balisage sociale de l'organisme pour Google Search."
+msgstr "Les valeurs des comptes sociaux site Web / d'affaires sont utilisées pour les balises méta SEO, Schéma, Open Graph, et autres &ndash; y compris le balisage sociale de l'organisation pour Google Search."
 
 #: lib/messages.php:761
 msgid "See the <a href=\"%s\">Google / Schema settings tab</a> to define a website / business logo for Google Search results, and enable / disable the addition of publisher (Organization) and/or author (Person) JSON-LD markup."
-msgstr "Voir <a href=\"%s\">l'onglet de réglages Google / Schéma</a> pour définir un logo site Web / d'entreprise pour Google Search, ou activer / désactiver l'ajout de balisage d'organisme et/ou auteur (personne) JSON-LD."
+msgstr "Voir <a href=\"%s\">l'onglet de réglages Google / Schéma</a> pour définir un logo site Web / d'entreprise pour Google Search, ou activer / désactiver l'ajout de balisage d'organisation et/ou auteur (personne) JSON-LD."
 
 #: lib/messages.php:776
 msgid "(note that all %1$s extensions also require a licensed %1$s plugin)"
@@ -2502,11 +2502,11 @@ msgstr "Image Google / Schéma"
 
 #: lib/schema.php:779
 msgid "The \"%1$s\" Organization Logo Image is missing and required for the Schema %2$s markup."
-msgstr "L'image logo de l'organisme \"%1$s\" est manquante et nécessaire pour le balisage du Schéma %2$s."
+msgstr "L'image logo de l'organisation \"%1$s\" est manquante et nécessaire pour le balisage du Schéma %2$s."
 
 #: lib/schema.php:782
 msgid "The \"%1$s\" Organization Banner (600x60) is missing and required for the Schema %2$s markup."
-msgstr "Le bannière (600x60) de l'organisme \"%1$s\" est manquante et nécessaire pour le balisage du Schéma %2$s."
+msgstr "Le bannière (600x60) de l'organisation \"%1$s\" est manquante et nécessaire pour le balisage du Schéma %2$s."
 
 #: lib/setting/contact-fields.php:28 lib/submenu/advanced.php:33
 msgctxt "metabox title"
@@ -2894,7 +2894,7 @@ msgstr "Inclure les <a href=\"%s\">informations du site Web</a> pour Google Sear
 
 #: lib/submenu/essential.php:117 lib/submenu/general.php:267
 msgid "Include <a href=\"%s\">Organization Social Profile</a>"
-msgstr "Inclure le <a href=\"%s\">profil sociale de l'organisme</a>"
+msgstr "Inclure le <a href=\"%s\">profil sociale de l'organisation</a>"
 
 #: lib/submenu/essential.php:120 lib/submenu/general.php:270
 msgid "Include <a href=\"%s\">Person Social Profile</a> for Site Owner"
@@ -2903,7 +2903,7 @@ msgstr "Inclure le <a href=\"%s\">profil sociale d'une personne</a> pour propri�
 #: lib/submenu/essential.php:127 lib/submenu/general.php:277
 msgctxt "option label"
 msgid "Organization Logo Image URL"
-msgstr "URL de l'image logo de l'organisme"
+msgstr "URL de l'image logo de l'organisation"
 
 #: lib/submenu/essential.php:131
 msgctxt "metabox title"
@@ -3090,7 +3090,7 @@ msgstr "désactivée par une extension ou un filtre personnalisé"
 #: lib/submenu/general.php:281
 msgctxt "option label"
 msgid "Organization Banner (600x60) URL"
-msgstr "URL bannière (600x60) de l'organisme"
+msgstr "URL bannière (600x60) de l'organisation"
 
 #: lib/submenu/general.php:293
 msgctxt "option label"
