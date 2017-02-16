@@ -152,7 +152,7 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 							$text = sprintf( __( 'The WordPress tagline is used as a description for the blog (non-static) front page, and as a fallback for the Facebook / Open Graph and Pinterest Rich Pin %1$s meta tag.', 'nextgen-facebook' ), '<code>og:description</code>' ).' '.sprintf( __( 'You may override <a href="%1$s">the default WordPress Tagline value</a> here, to provide a longer and more complete description of your website.', 'nextgen-facebook' ), get_admin_url( null, 'options-general.php' ) );
 							break;
 						case 'tooltip-site_org_type':
-							$text = __( 'If appropriate, you may select a more descriptive Organization sub-type (default is Organization).', 'nextgen-facebook' );
+							$text = __( 'You may select a more descriptive Schema type from the Organization sub-types (default is Organization).', 'nextgen-facebook' );
 							break;
 						case 'tooltip-site_place_id':
 							if ( isset( $this->p->cf['plugin']['ngfbplm'] ) ) {
@@ -509,7 +509,7 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 				} elseif ( strpos( $idx, 'tooltip-fb_' ) === 0 ) {
 					switch ( $idx ) {
 						case 'tooltip-fb_publisher_url':
-							$text = sprintf( __( 'If you have a <a href="%1$s" target="_blank">Facebook Business Page for your website / business</a>, you may enter its URL here (for example, the Facebook Business Page URL for %2$s is <a href="%3$s" target="_blank">%4$s</a>).', 'nextgen-facebook' ), 'https://www.facebook.com/business', 'Surnia Ulula', 'https://www.facebook.com/SurniaUlulaCom', 'https://www.facebook.com/SurniaUlulaCom' ).' '.__( 'The Facebook Business Page URL will be used in Open Graph <em>article</em> type webpages (not index or archive webpages) and schema publisher (Organization) social JSON.', 'nextgen-facebook' ).' '.__( 'Google Search may use this information to display additional publisher / business details in its search results.', 'nextgen-facebook' );
+							$text = sprintf( __( 'If you have a <a href="%1$s" target="_blank">Facebook Business Page for your website / business</a>, you may enter its URL here (for example, the Facebook Business Page URL for %2$s is <a href="%3$s" target="_blank">%4$s</a>).', 'nextgen-facebook' ), 'https://www.facebook.com/business', 'Surnia Ulula', 'https://www.facebook.com/SurniaUlulaCom', 'https://www.facebook.com/SurniaUlulaCom' ).' '.__( 'The Facebook Business Page URL will be used in Open Graph <em>article</em> webpages and in the site\'s Schema Organization markup.', 'nextgen-facebook' ).' '.__( 'Google Search may use this information to display additional publisher / business details in its search results.', 'nextgen-facebook' );
 							break;
 						case 'tooltip-fb_admins':
 							$text = sprintf( __( 'The %1$s are used by Facebook to allow access to <a href="%2$s" target="_blank">Facebook Insight</a> data for your website. Note that these are <strong>user account names, not Facebook Page names</strong>. Enter one or more Facebook user names, separated with commas. When viewing your own Facebook wall, your user name is located in the URL (for example, https://www.facebook.com/<strong>user_name</strong>). Enter only the user names, not the URLs.', 'nextgen-facebook' ), _x( 'Facebook Admin Username(s)', 'option label', 'nextgen-facebook' ), 'https://developers.facebook.com/docs/insights/' ).' '.sprintf( __( 'You may update your Facebook user name in the <a href="%1$s" target="_blank">Facebook General Account Settings</a>.', 'nextgen-facebook' ), 'https://www.facebook.com/settings?tab=account&section=username&view' );
