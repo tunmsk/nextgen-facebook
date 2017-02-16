@@ -524,7 +524,7 @@ if ( ! class_exists( 'NgfbUtil' ) && class_exists( 'SucomUtil' ) ) {
 						'nextgen-facebook' ),
 					'html' => __( 'The value of option \'%s\' must be HTML code - resetting the option to its default value.',
 						'nextgen-facebook' ),
-					'not_blank' => __( 'The value of option \'%s\' cannot be empty - resetting the option to its default value.',
+					'not_blank' => __( 'The value of option \'%s\' cannot be an empty string - resetting the option to its default value.',
 						'nextgen-facebook' ),
 				);
 			}

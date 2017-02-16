@@ -615,7 +615,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			if ( $name = SucomUtil::get_site_name( $this->p->options, $mod ) )
 				$ret['name'] = $name;
 
-			if ( $alt_name = SucomUtil::get_locale_opt( 'schema_alt_name', $this->p->options, $mod ) )
+			if ( $alt_name = SucomUtil::get_site_alt_name( $this->p->options, $mod ) )
 				$ret['alternateName'] = $alt_name;
 
 			if ( $desc = SucomUtil::get_site_description( $this->p->options, $mod ) )
@@ -739,34 +739,12 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			if ( empty( $opts ) ) {	// $opts can be false or empty array
 				if ( $ngfb->debug->enabled )
 					$ngfb->debug->log( 'using default organization options for '.$org_id );
-
-				$org_sameas = array();
-				foreach ( apply_filters( $ngfb->cf['lca'].'_social_accounts', 
-					$ngfb->cf['form']['social_accounts'] ) as $key => $label ) {
-
-					$url = SucomUtil::get_locale_opt( $key, $ngfb->options, $mod );
-					if ( empty( $url ) )
-						continue;
-					if ( $key === 'tc_site' )
-						$url = 'https://twitter.com/'.preg_replace( '/^@/', '', $url );
-					if ( strpos( $url, '://' ) !== false )
-						$org_sameas[] = $url;
-				}
-
-				$opts = array(
-					'org_type' => 'organization',
-					'org_url' => get_bloginfo( 'url' ),
-					'org_name' => SucomUtil::get_site_name( $ngfb->options, $mod ),
-					'org_desc' => SucomUtil::get_site_description( $ngfb->options, $mod ),
-					'org_logo_url' => $ngfb->options['schema_logo_url'],
-					'org_banner_url' => $ngfb->options['schema_banner_url'],
-					'org_place_id' => 'none',
-					'org_sameas' => $org_sameas,
-				);
+				$opts = self::get_site_organization( $mod );
 			} elseif ( $ngfb->debug->enabled )
 				$ngfb->debug->log( 'using custom organization options for '.$org_id );
 
-			$org_type_id = empty( $opts['org_type'] ) ? 'organization' : $opts['org_type'];
+			$org_type_id = empty( $opts['org_type'] ) ?	// just in case
+				'organization' : $opts['org_type'];
 			$org_type_url = $ngfb->schema->get_schema_type_url( $org_type_id, 'organization' );
 			$ret = self::get_schema_type_context( $org_type_url );
 
@@ -837,6 +815,38 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			else $json_data[] = $ret;
 
 			return 1;
+		}
+
+		// get the site organization array
+		// $mixed = 'default' | 'current' | post ID | $mod array
+		public static function get_site_organization( $mixed = 'current' ) {
+
+			$ngfb =& Ngfb::get_instance();
+
+			$org_sameas = array();
+			foreach ( apply_filters( $ngfb->cf['lca'].'_social_accounts', 
+				$ngfb->cf['form']['social_accounts'] ) as $key => $label ) {
+
+				$url = SucomUtil::get_locale_opt( $key, $ngfb->options, $mixed );
+				if ( empty( $url ) )
+					continue;
+				elseif ( $key === 'tc_site' )
+					$org_sameas[] = 'https://twitter.com/'.preg_replace( '/^@/', '', $url );
+				elseif ( strpos( $url, '://' ) !== false )
+					$org_sameas[] = $url;
+			}
+
+			return array(
+				'org_type' => $ngfb->options['site_org_type'],
+				'org_url' => SucomUtil::get_site_url( $ngfb->options, $mixed ),
+				'org_name' => SucomUtil::get_site_name( $ngfb->options, $mixed ),
+				'org_alt_name' => SucomUtil::get_site_alt_name( $ngfb->options, $mixed ),
+				'org_desc' => SucomUtil::get_site_description( $ngfb->options, $mixed ),
+				'org_logo_url' => $ngfb->options['schema_logo_url'],
+				'org_banner_url' => $ngfb->options['schema_banner_url'],
+				'org_place_id' => $ngfb->options['site_place_id'],
+				'org_sameas' => $org_sameas,
+			);
 		}
 
 		public static function add_single_place_data( &$json_data, $mod, $place_id = false, $list_element = false ) {
