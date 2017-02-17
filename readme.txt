@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.9-dev2 (2017/02/16)**
+**Version 8.39.9-dev2 (2017/02/17)**
 
 * *New Features*
 	* None
@@ -807,7 +807,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.39.9-dev2 =
 
-(2017/02/16) Renamed site related options keys and added a few methods to return various site information (organization array, alternate name, and url).
+(2017/02/17) Renamed site related options keys and added a few methods to return various site information (organization array, alternate name, and url).
 
 = 8.39.8-1 =
 
