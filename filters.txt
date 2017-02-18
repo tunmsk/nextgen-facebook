@@ -104,6 +104,9 @@
 'ngfb_posts_per_page' ( $limit, $mod );
 'ngfb_quote' ( $quote, $mod );
 'ngfb_quote_seed' ( '', $mod );
+'ngfb_rename_options_keys' ( $options_keys );
+'ngfb_rename_site_options_keys' ( $options_keys );
+'ngfb_rename_md_options_keys' ( $options_keys );
 'ngfb_save_options' ( $opts, $options_name );
 'ngfb_save_site_options' ( $opts );
 'ngfb_schema_img_size_limits' ( array( $min_width, $min_height, $max_ratio ) );

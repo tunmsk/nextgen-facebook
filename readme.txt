@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.9-rc1 (2017/02/17)**
+**Version 8.39.9-rc1 (2017/02/18)**
 
 * *New Features*
 	* None
@@ -417,6 +417,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Added a new SucomUtil::get_site_alt_name() method.
 	* Added a new SucomUtil::get_site_url() method.
 	* Improved the SucomUtil::rename_keys() method to include localized keys.
+	* Added new filters when renaming options keys:
+		* 'ngfb_rename_options_keys' ( $options_keys );
+		* 'ngfb_rename_site_options_keys' ( $options_keys );
+		* 'ngfb_rename_md_options_keys' ( $options_keys );
 
 **Version 8.39.8-1 (2017/02/13)**
 
@@ -807,7 +811,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.39.9-rc1 =
 
-(2017/02/17) Renamed site related options keys and added a few methods to return various site information (organization array, alternate name, and url).
+(2017/02/18) Renamed site related options keys and added a few methods to return various site information (organization array, alternate name, and url).
 
 = 8.39.8-1 =
 
