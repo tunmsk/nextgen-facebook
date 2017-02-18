@@ -228,16 +228,10 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 			$opts_version = empty( $opts['plugin_'.$lca.'_opt_version'] ) ?
 				0 : $opts['plugin_'.$lca.'_opt_version'];
 
-			if ( $options_name === constant( 'NGFB_OPTIONS_NAME' ) )
+			if ( $options_name === constant( 'NGFB_OPTIONS_NAME' ) ) {
 				$this->p->util->rename_keys_by_ext( $opts, 
 					apply_filters( $lca.'_rename_options_keys',
 						self::$rename_options_keys ) );
-			elseif ( $options_name === constant( 'NGFB_SITE_OPTIONS_NAME' ) )
-				$this->p->util->rename_keys_by_ext( $opts,
-					apply_filters( $lca.'_rename_site_options_keys',
-						self::$rename_site_options_keys ) );
-
-			if ( $options_name === constant( 'NGFB_OPTIONS_NAME' ) ) {
 
 				if ( $opts_version && $opts_version <= 270 ) {
 					foreach ( $opts as $key => $val ) {
@@ -274,6 +268,11 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 					$opts['add_meta_property_og:image:secure_url'] = 1;
 					$opts['add_meta_property_og:video:secure_url'] = 1;
 				}
+
+			} elseif ( $options_name === constant( 'NGFB_SITE_OPTIONS_NAME' ) ) {
+				$this->p->util->rename_keys_by_ext( $opts,
+					apply_filters( $lca.'_rename_site_options_keys',
+						self::$rename_site_options_keys ) );
 			}
 
 			if ( $opts_version && $opts_version <= 342 ) {
