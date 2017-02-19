@@ -398,6 +398,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.39.10-dev1 (2017/02/19)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed the NgfbSchema::get_schema_type_context() method to provide correct JSON-LD syntax for Schema extensions (see https://schema.org/docs/extension.html).
+* *Developer Notes*
+	* Refactored the NgfbMeta::get_custom_fields() method to get custom field names from the config array.
+
 **Version 8.39.9-1 (2017/02/19)**
 
 * *New Features*
@@ -808,6 +819,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.39.10-dev1 =
+
+(2017/02/19) Fixed an NgfbSchema method to provide correct JSON-LD syntax for Schema extensions. Refactored an NgfbMeta method to get custom field names from the config array.
 
 = 8.39.9-1 =
 
