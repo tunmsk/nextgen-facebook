@@ -132,7 +132,7 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 * Selection of preset button options by location (content, excerpt, shortcode, widget, etc.).
 * Ability to include / exclude social share buttons by post type.
 * Integrates with 3rd party plugins and services for additional image, video, ecommerce product details, SEO settings, etc. The following modules are included with the Pro version, and are automatically loaded if/when the supported plugins and/or services are required.
-	* **Integrated 3rd Party Plugins**
+	* **NGFB Pro Integrated 3rd Party Plugins**
 		* All in One SEO Pack
 		* bbPress
 		* BuddyPress (including Group Forum Topics)
@@ -150,7 +150,7 @@ Complete meta tags for the best looking shares on Facebook, Google, Pinterest, T
 		* WordPress REST API (version 2)
 		* Yoast SEO (aka WordPress SEO)
 		* Yotpo Social Reviews for WooCommerce
-	* **Integrated Service APIs**
+	* **NGFB Pro Integrated Service APIs**
 		* Bitly
 		* Facebook Embedded Videos
 		* Google URL Shortener
