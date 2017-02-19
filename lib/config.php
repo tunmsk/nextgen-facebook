@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.39.9-1',	// plugin version
+					'version' => '8.39.10-dev1',	// plugin version
 					'opt_version' => '502',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -253,7 +253,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'schema_type_for_tribe_events' => 'event',
 					'schema_type_for_webpage' => 'webpage',
 					'schema_type_for_website' => 'website',
-					'schema_review_item_type' => 'none',
+					'schema_review_item_type' => 'none',	// Default Reviewed Item Type
 					'seo_desc_len' => 156,			// meta name="description" maximum text length (hard limit)
 					'seo_author_field' => '',		// default value set by NgfbOptions::get_defaults()
 					'seo_publisher_url' => '',		// (localized)
@@ -529,7 +529,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_cf_img_url' => '_format_image_url',
 					'plugin_cf_vid_url' => '_format_video_url',
 					'plugin_cf_vid_embed' => '_format_video_embed',
-					'plugin_cf_recipe_ingredients' => '_recipe_ingredients',
+					'plugin_cf_recipe_ingredients' => '',
 					// Cache Settings Tab
 					'plugin_head_cache_exp' => 259200,		// Head Markup Array Cache Expiry (3 days)
 					'plugin_shorten_cache_exp' => 2419200,		// Shortened URL Cache Expiry (4 weeks)
@@ -750,6 +750,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'skype' => 'skype',
 					'vk' => 'vk',
 					'whatsapp' => 'wa',
+				),
+				'cf_md_idx' => array(		// custom field to meta data index
+					'plugin_cf_img_url' => 'og_img_url',
+					'plugin_cf_vid_url' => 'og_vid_url',
+					'plugin_cf_vid_embed' => 'og_vid_embed',
+					'plugin_cf_recipe_ingredients' => 'schema_recipe_ingredient',
+				),
+				'cf_multi' => array(		// value read into numeric meta data index
+					'plugin_cf_recipe_ingredients' => true,
 				),
 			),
 			'um' => array(				// update manager
