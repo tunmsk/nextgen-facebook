@@ -410,6 +410,8 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Added transient caching to the NgfbSchema get_schema_type_parents() and get_schema_type_children() methods.
 	* Refactored the NgfbMeta get_custom_fields() method to get custom field names from the config array.
 	* Renamed the NgfbSchema get_schema_type_css_classes() method to get_children_css_class().
+	* Removed the forced reference for the $mod argument in NgfbOpenGraph methods.
+	* Added a new NgfbOpenGraph get_og_type() method.
 
 **Version 8.39.9-1 (2017/02/19)**
 
