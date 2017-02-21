@@ -401,18 +401,19 @@ Note that the production stage level can be incremented on occasion for simple t
 **Version 8.40.0-dev4 (2017/02/21)**
 
 * *New Features*
-	* None
+	* Added new product options in the Social Settings metabox:
+		* Product Availability
 * *Improvements*
 	* None
 * *Bugfixes*
 	* Fixed the NgfbSchema get_schema_type_context() method to provide correct JSON-LD syntax for Schema extensions (see https://schema.org/docs/extension.html).
 * *Developer Notes*
 	* Refactored the Easy Digital Downloads (EDD), MarketPress, WooCommerce, and WP e-Commerce modules to provide and use custom NGFB post meta for product availability, price, and currency (Pro version).
+	* Added a new NgfbOpenGraph get_og_type() method.
 	* Added transient caching to the NgfbSchema get_schema_type_parents() and get_schema_type_children() methods.
 	* Refactored the NgfbMeta get_custom_fields() method to get custom field names from the config array.
 	* Renamed the NgfbSchema get_schema_type_css_classes() method to get_children_css_class().
 	* Removed the forced reference for the $mod argument in NgfbOpenGraph methods.
-	* Added a new NgfbOpenGraph get_og_type() method.
 	* Renamed the 'ngfb_head_use_post' filter to 'ngfb_use_post'.
 	* BREAKING CHANGE: **Removed the `$use_post` argument from the following filters** (new filter arguments shown):
 		* 'ngfb_link_rel' ( $link_rel, $mod );
