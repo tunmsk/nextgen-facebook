@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.0-dev4',	// plugin version
+					'version' => '8.40.0-dev5',	// plugin version
 					'opt_version' => '503',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -921,7 +921,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 				// https://schema.org/ItemAvailability
 				'product_availability' => array(
-			 		'none' => 'None',
+			 		'none' => '[None]',
 			 		'Discontinued' => 'Discontinued',
 			 		'InStock' => 'In Stock',
 			 		'InStoreOnly' => 'In Store Only',

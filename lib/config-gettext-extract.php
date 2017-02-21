@@ -45,7 +45,6 @@ _x( 'NGFB extension to provide updates for the NextGEN Facebook (NGFB) Pro plugi
 _x( 'Nickname', 'option value', 'nextgen-facebook' );
 _x( '(no images)', 'option value', 'nextgen-facebook' );
 _x( '[None]', 'option value', 'nextgen-facebook' );
-_x( 'None', 'option value', 'nextgen-facebook' );
 _x( 'No', 'option value', 'nextgen-facebook' );
 _x( '(no videos)', 'option value', 'nextgen-facebook' );
 _x( 'Online Only', 'option value', 'nextgen-facebook' );

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.40.0-dev4\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.40.0-dev5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -485,12 +485,12 @@ msgstr ""
 msgid "Failed to open cache file %s for writing."
 msgstr ""
 
-#: lib/com/form.php:72 lib/config-gettext-extract.php:52
+#: lib/com/form.php:72 lib/config-gettext-extract.php:51
 msgctxt "option value"
 msgid "(option disabled)"
 msgstr ""
 
-#: lib/com/form.php:188 lib/com/form.php:446 lib/config-gettext-extract.php:60
+#: lib/com/form.php:188 lib/com/form.php:441 lib/config-gettext-extract.php:59
 msgctxt "option value"
 msgid "(settings value)"
 msgstr ""
@@ -500,7 +500,7 @@ msgctxt "option value"
 msgid "(no images)"
 msgstr ""
 
-#: lib/com/form.php:200 lib/config-gettext-extract.php:50
+#: lib/com/form.php:200 lib/config-gettext-extract.php:49
 msgctxt "option value"
 msgid "(no videos)"
 msgstr ""
@@ -769,155 +769,150 @@ msgstr ""
 
 #: lib/config-gettext-extract.php:48
 msgctxt "option value"
-msgid "None"
-msgstr ""
-
-#: lib/config-gettext-extract.php:49
-msgctxt "option value"
 msgid "No"
 msgstr ""
 
-#: lib/config-gettext-extract.php:51
+#: lib/config-gettext-extract.php:50
 msgctxt "option value"
 msgid "Online Only"
 msgstr ""
 
-#: lib/config-gettext-extract.php:53
+#: lib/config-gettext-extract.php:52
 msgctxt "option value"
 msgid "Out of Stock"
 msgstr ""
 
-#: lib/config-gettext-extract.php:54
+#: lib/config-gettext-extract.php:53
 msgctxt "option value"
 msgid "Ow.ly"
 msgstr ""
 
-#: lib/config-gettext-extract.php:55
+#: lib/config-gettext-extract.php:54
 msgctxt "option value"
 msgid "Pinterest Company Page URL"
 msgstr ""
 
-#: lib/config-gettext-extract.php:56
+#: lib/config-gettext-extract.php:55
 msgctxt "option value"
 msgid "Pre-Order"
 msgstr ""
 
-#: lib/config-gettext-extract.php:57
+#: lib/config-gettext-extract.php:56
 msgctxt "option value"
 msgid "Public Holidays"
 msgstr ""
 
-#: lib/config-gettext-extract.php:58
+#: lib/config-gettext-extract.php:57
 msgctxt "option value"
 msgid "Right"
 msgstr ""
 
-#: lib/config-gettext-extract.php:59
+#: lib/config-gettext-extract.php:58
 msgctxt "option value"
 msgid "Saturday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:61
+#: lib/config-gettext-extract.php:60
 msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:62 lib/sharing.php:1055
+#: lib/config-gettext-extract.php:61 lib/sharing.php:1055
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr ""
 
-#: lib/config-gettext-extract.php:63
+#: lib/config-gettext-extract.php:62
 msgctxt "option value"
 msgid "Shortcode"
 msgstr ""
 
-#: lib/config-gettext-extract.php:64
+#: lib/config-gettext-extract.php:63
 msgctxt "lib file description"
 msgid "Social and SEO Image Dimensions"
 msgstr ""
 
-#: lib/config-gettext-extract.php:65
+#: lib/config-gettext-extract.php:64
 msgctxt "option value"
 msgid "Sold Out"
 msgstr ""
 
-#: lib/config-gettext-extract.php:66
+#: lib/config-gettext-extract.php:65
 msgctxt "option value"
 msgid "Sunday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:67
+#: lib/config-gettext-extract.php:66
 msgctxt "option value"
 msgid "Thursday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:68
+#: lib/config-gettext-extract.php:67
 msgctxt "option value"
 msgid "TinyURL"
 msgstr ""
 
-#: lib/config-gettext-extract.php:69
+#: lib/config-gettext-extract.php:68
 msgctxt "option value"
 msgid "Title and Excerpt"
 msgstr ""
 
-#: lib/config-gettext-extract.php:70
+#: lib/config-gettext-extract.php:69
 msgctxt "option value"
 msgid "Title Only"
 msgstr ""
 
-#: lib/config-gettext-extract.php:71
+#: lib/config-gettext-extract.php:70
 msgctxt "option value"
 msgid "Top and Bottom"
 msgstr ""
 
-#: lib/config-gettext-extract.php:72
+#: lib/config-gettext-extract.php:71
 msgctxt "option value"
 msgid "Top"
 msgstr ""
 
-#: lib/config-gettext-extract.php:73
+#: lib/config-gettext-extract.php:72
 msgctxt "option value"
 msgid "Tuesday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:74
+#: lib/config-gettext-extract.php:73
 msgctxt "option value"
 msgid "Twitter Business @username"
 msgstr ""
 
-#: lib/config-gettext-extract.php:75
+#: lib/config-gettext-extract.php:74
 msgctxt "lib file description"
 msgid "User Profile Contact Methods"
 msgstr ""
 
-#: lib/config-gettext-extract.php:76
+#: lib/config-gettext-extract.php:75
 msgctxt "lib file description"
 msgid "Website Social Pages and Accounts"
 msgstr ""
 
-#: lib/config-gettext-extract.php:77
+#: lib/config-gettext-extract.php:76
 msgctxt "option value"
 msgid "Wednesday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:78
+#: lib/config-gettext-extract.php:77
 msgctxt "option value"
 msgid "Widget"
 msgstr ""
 
-#: lib/config-gettext-extract.php:79
+#: lib/config-gettext-extract.php:78
 msgctxt "option value"
 msgid "Yes"
 msgstr ""
 
-#: lib/config-gettext-extract.php:80
+#: lib/config-gettext-extract.php:79
 msgctxt "option value"
 msgid "YOURLS"
 msgstr ""
 
-#: lib/config-gettext-extract.php:81
+#: lib/config-gettext-extract.php:80
 msgctxt "lib file description"
 msgid "Your Social Settings"
 msgstr ""
@@ -1050,19 +1045,19 @@ msgctxt "option label"
 msgid "Add %s Column in"
 msgstr ""
 
-#: lib/gpl/admin/advanced.php:185 lib/messages.php:321 lib/meta.php:594
+#: lib/gpl/admin/advanced.php:185 lib/messages.php:321 lib/meta.php:596
 #: lib/pro/admin/advanced.php:185
 msgctxt "column title"
 msgid "%s Schema"
 msgstr ""
 
-#: lib/gpl/admin/advanced.php:188 lib/messages.php:327 lib/meta.php:597
+#: lib/gpl/admin/advanced.php:188 lib/messages.php:327 lib/meta.php:599
 #: lib/pro/admin/advanced.php:188
 msgctxt "column title"
 msgid "%s Img"
 msgstr ""
 
-#: lib/gpl/admin/advanced.php:191 lib/messages.php:333 lib/meta.php:600
+#: lib/gpl/admin/advanced.php:191 lib/messages.php:333 lib/meta.php:602
 #: lib/pro/admin/advanced.php:191
 msgctxt "column title"
 msgid "%s Desc"
@@ -1387,15 +1382,15 @@ msgid "Sharing URL"
 msgstr ""
 
 #: lib/gpl/admin/meta.php:76 lib/gpl/admin/meta.php:224
-#: lib/gpl/admin/post.php:92 lib/pro/admin/meta.php:97
-#: lib/pro/admin/meta.php:253 lib/pro/admin/post.php:124
+#: lib/gpl/admin/post.php:100 lib/pro/admin/meta.php:97
+#: lib/pro/admin/meta.php:253 lib/pro/admin/post.php:134
 #: lib/submenu/general.php:245
 msgctxt "metabox title"
 msgid "Google Structured Data / Schema Markup"
 msgstr ""
 
-#: lib/gpl/admin/meta.php:79 lib/gpl/admin/post.php:95
-#: lib/pro/admin/meta.php:100 lib/pro/admin/post.php:127
+#: lib/gpl/admin/meta.php:79 lib/gpl/admin/post.php:103
+#: lib/pro/admin/meta.php:100 lib/pro/admin/post.php:137
 msgctxt "option label"
 msgid "Schema Description"
 msgstr ""
@@ -1493,8 +1488,18 @@ msgctxt "option label"
 msgid "Product Availability"
 msgstr ""
 
-#: lib/gpl/admin/post.php:103 lib/meta.php:173 lib/post.php:475
-#: lib/pro/admin/post.php:137
+#: lib/gpl/admin/post.php:89 lib/pro/admin/post.php:121
+msgctxt "option label"
+msgid "Product Price"
+msgstr ""
+
+#: lib/gpl/admin/post.php:92 lib/pro/admin/post.php:125
+msgctxt "option comment"
+msgid "and currency"
+msgstr ""
+
+#: lib/gpl/admin/post.php:111 lib/meta.php:173 lib/post.php:475
+#: lib/pro/admin/post.php:147
 msgid "Save a draft version or publish the %s to update this value."
 msgstr ""
 
@@ -1566,7 +1571,7 @@ msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr ""
 
-#: lib/gpl/ecom/woocommerce.php:111 lib/pro/ecom/woocommerce.php:547
+#: lib/gpl/ecom/woocommerce.php:111 lib/pro/ecom/woocommerce.php:545
 msgctxt "option label"
 msgid "Position in Woo Short Text"
 msgstr ""
@@ -1879,7 +1884,7 @@ msgstr ""
 
 #: lib/messages.php:347
 msgid ""
-"This option is checked by default if the Yoast SEO plugin is active or its "
+"This option is checked by default if the Yoast SEO plugin is active, or its "
 "settings are found in the database."
 msgstr ""
 
@@ -2825,7 +2830,7 @@ msgctxt "submit button"
 msgid "Validate AMP Markup"
 msgstr ""
 
-#: lib/meta.php:504
+#: lib/meta.php:506
 msgid "Nonce token validation failed for the submitted form (update ignored)."
 msgstr ""
 
@@ -2909,7 +2914,7 @@ msgstr ""
 #: lib/pro/admin/meta.php:50 lib/pro/admin/post.php:45
 msgid ""
 "The SEO description field is disabled (the description meta tag is disabled "
-"and/or a known SEO plugin is active)."
+"and/or a known SEO plugin is/was active)."
 msgstr ""
 
 #: lib/pro/admin/post.php:53

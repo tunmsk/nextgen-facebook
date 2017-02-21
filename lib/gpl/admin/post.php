@@ -82,7 +82,15 @@ if ( ! class_exists( 'NgfbGplAdminPost' ) ) {
 					'label' => _x( 'Product Availability', 'option label', 'nextgen-facebook' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-product_avail', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'product_avail', 
-						array( $og_type => $this->p->cf['form']['product_availability'][$og_type] ) ),
+						$this->p->cf['form']['product_availability'] ),
+				),
+				'product_price' => array(
+					'tr_class' => ( $og_type === 'product' ? '' : 'hide_in_basic' ),	// hide if not a product
+					'label' => _x( 'Product Price', 'option label', 'nextgen-facebook' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-product_price', 'td_class' => 'blank',
+					'content' => $form->get_no_input( 'product_price', '', '', true ).' '.
+					_x( 'and currency', 'option comment', 'nextgen-facebook' ).' '.
+						$form->get_no_input( 'product_currency', 'short', '', true ),
 				),
 				/*
 				 * All Schema Types

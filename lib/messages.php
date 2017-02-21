@@ -344,7 +344,7 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 							break;
 						case 'tooltip-plugin_wpseo_social_meta':
 							$text = __( 'Read the Yoast SEO custom social meta text for Posts, Terms, and Users.', 'nextgen-facebook' ).' '.
-							__( 'This option is checked by default if the Yoast SEO plugin is active or its settings are found in the database.',
+							__( 'This option is checked by default if the Yoast SEO plugin is active, or its settings are found in the database.',
 								'nextgen-facebook' );
 							break;
 						case 'tooltip-plugin_cf_img_url':
