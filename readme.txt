@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.39.10-dev3 (2017/02/21)**
+**Version 8.40.0-dev3 (2017/02/21)**
 
 * *New Features*
 	* None
@@ -836,7 +836,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.39.10-dev3 =
+= 8.40.0-dev3 =
 
 (2017/02/21) Fixed an NgfbSchema method to provide correct JSON-LD syntax for Schema extensions. Refactored an NgfbMeta method to get custom field names from the config array.
 
