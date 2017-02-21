@@ -398,24 +398,25 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.0-dev4 (2017/02/21)**
+**Version 8.40.0-dev5 (2017/02/22)**
 
 * *New Features*
 	* Added new product options in the Social Settings metabox:
 		* Product Availability
+		* Product Price (and currency)
 * *Improvements*
 	* None
 * *Bugfixes*
 	* Fixed the NgfbSchema get_schema_type_context() method to provide correct JSON-LD syntax for Schema extensions (see https://schema.org/docs/extension.html).
 * *Developer Notes*
-	* Refactored the Easy Digital Downloads (EDD), MarketPress, WooCommerce, and WP e-Commerce modules to provide and use custom NGFB post meta for product availability, price, and currency (Pro version).
+	* Refactored the Easy Digital Downloads (EDD), MarketPress, WooCommerce, and WP e-Commerce modules to provide and use custom meta for product availability, price, and currency (Pro version).
 	* Added a new NgfbOpenGraph get_og_type() method.
 	* Added transient caching to the NgfbSchema get_schema_type_parents() and get_schema_type_children() methods.
 	* Refactored the NgfbMeta get_custom_fields() method to get custom field names from the config array.
 	* Renamed the NgfbSchema get_schema_type_css_classes() method to get_children_css_class().
 	* Removed the forced reference for the $mod argument in NgfbOpenGraph methods.
 	* Renamed the 'ngfb_head_use_post' filter to 'ngfb_use_post'.
-	* BREAKING CHANGE: **Removed the `$use_post` argument from the following filters** (new filter arguments shown):
+	* BREAKING CHANGE &mdash; **removed the `$use_post` argument from the following filters** (new filter arguments shown):
 		* 'ngfb_link_rel' ( $link_rel, $mod );
 		* 'ngfb_meta_name' ( $mt_name, $mod );
 		* 'ngfb_og' ( $og, $mod );
@@ -838,9 +839,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.40.0-dev4 =
+= 8.40.0-dev5 =
 
-(2017/02/21) Fixed an NgfbSchema method to provide correct JSON-LD syntax for Schema extensions. Refactored an NgfbMeta method to get custom field names from the config array.
+(2017/02/22) Added new product options for Availability, Price, and Currency in the Social Settings metabox. Fixed a NgfbSchema method to provide correct JSON-LD syntax for Schema extensions.
 
 = 8.39.9-1 =
 
