@@ -412,6 +412,18 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed the NgfbSchema get_schema_type_css_classes() method to get_children_css_class().
 	* Removed the forced reference for the $mod argument in NgfbOpenGraph methods.
 	* Added a new NgfbOpenGraph get_og_type() method.
+	* Renamed the 'ngfb_head_use_post' filter to 'ngfb_use_post'.
+	* Removed the $use_post argument from the following filters:
+		* 'ngfb_link_rel' ( $link_rel, $mod );
+		* 'ngfb_meta_name' ( $mt_name, $mod );
+		* 'ngfb_og' ( $og, $mod );
+		* 'ngfb_og_edd' ( $og_ecom, $mod );
+		* 'ngfb_og_marketpress' ( $og_ecom, $mod );
+		* 'ngfb_og_seed' ( $og, $mod );
+		* 'ngfb_og_woocommerce' ( $og_ecom, $mod );
+		* 'ngfb_og_wpecommerce' ( $og_ecom, $mod );
+		* 'ngfb_tc' ( $tc, $mod );
+		* 'ngfb_tc_seed' ( $tc, $mod );
 
 **Version 8.39.9-1 (2017/02/19)**
 

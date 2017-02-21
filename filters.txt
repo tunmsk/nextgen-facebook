@@ -68,13 +68,13 @@
 'ngfb_json_data_single_place' ( $place_data, $mod, $place_id );
 'ngfb_json_ld_search_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_json_prop_https_schema_org_potentialaction' ( $prop_data, $mod, $mt_og, $page_type_id, $is_main );
-'ngfb_link_rel' ( $link_rel, $use_post, $mod );
+'ngfb_link_rel' ( $link_rel, $mod );
 'ngfb_load_lib' ( false, "$type/$sub/$id" );
-'ngfb_meta_name' ( $meta_name, $use_post, $mod );
+'ngfb_meta_name' ( $mt_name, $mod );
 'ngfb_ngg_tags' ( $tags, $pid );	// Pro version
 'ngfb_ngg_tags_seed' ( $tags, $pid );	// Pro version
 'ngfb_ngg_accept_img_dims' ( $bool, $img_url, $img_width, $img_height, $size_name, $pid );
-'ngfb_og' ( $og, $use_post, $mod );
+'ngfb_og' ( $og, $mod );
 'ngfb_og_add_product_mt_offers' ( $bool, $mod );
 'ngfb_og_add_product_mt_rating' ( $bool, $mod );
 'ngfb_og_add_product_mt_reviews' ( $bool, $mod );
@@ -82,14 +82,14 @@
 'ngfb_og_default_img_url' ( $image_url );
 'ngfb_og_default_img_on_index' ( $bool );
 'ngfb_og_default_img_on_search' ( $bool );
-'ngfb_og_edd' ( $og_ecom, $use_post, $mod );	// Pro version
+'ngfb_og_edd' ( $og_ecom, $mod );	// Pro version
 'ngfb_og_featured' ( $og_ret, $num, $size_name, $post_id, $check_dupes, $force_regen );
 'ngfb_og_marketpress' ( $og_ecom, $mod );	// Pro version
-'ngfb_og_prefix_ns' ( $ns );
-'ngfb_og_seed' ( $og, $use_post, $mod );
-'ngfb_og_type' ( $og_type, $use_post, $mod );
-'ngfb_og_woocommerce' ( $og_ecom, $use_post, $mod );	// Pro version
-'ngfb_og_wpecommerce' ( $og_ecom );	// Pro version
+'ngfb_og_ns' ( $ns );
+'ngfb_og_seed' ( $og, $mod );
+'ngfb_og_type' ( $og_type, $mod );
+'ngfb_og_woocommerce' ( $og_ecom, $mod );	// Pro version
+'ngfb_og_wpecommerce' ( $og_ecom, $mod );	// Pro version
 'ngfb_opengraph_img_size_limits' ( array( $min_width, $min_height, $max_ratio ) );
 'ngfb_option_type' ( false, $key, $network, $mod );
 'ngfb_plugin_image_sizes' ( $sizes, $mod, $crawler_name );
@@ -133,8 +133,8 @@
 'ngfb_term_image_ids' ( array $ids, $size_name, $term_id );
 'ngfb_term_image_urls' ( array $urls, $size_name, $term_id );
 'ngfb_term_social_settings_tabs' ( $tabs, $mod );
-'ngfb_tc' ( $tc, $use_post, $mod );
-'ngfb_tc_seed' ( $tc, $use_post, $mod );
+'ngfb_tc' ( $tc, $mod );
+'ngfb_tc_seed' ( $tc, $mod );
 'ngfb_term_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_text_filter_has_changes_after' ( false, $filter_name );
 'ngfb_text_filter_has_changes_before' ( false, $filter_name );
