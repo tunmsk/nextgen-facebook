@@ -432,6 +432,7 @@ Note that the production stage level can be incremented on occasion for simple t
 		* 'ngfb_og_wpecommerce' ( $og_ecom, $mod );
 		* 'ngfb_tc' ( $tc, $mod );
 		* 'ngfb_tc_seed' ( $tc, $mod );
+	* Improved input sanitation checks and debugging error messages in the video modules (Pro version).
 
 **Version 8.39.9-1 (2017/02/19)**
 
