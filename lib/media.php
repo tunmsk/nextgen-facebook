@@ -864,11 +864,19 @@ if ( ! class_exists( 'NgfbMedia' ) ) {
 
 				// fallback to the original url
 				if ( empty( $media_url ) && $prefix === 'og:video' && $fallback ) {
+					if ( $this->p->debug->enabled ) {
+						$this->p->debug->log( 'no video returned by filters' );
+						$this->p->debug->log( 'falling back to embed url: '.$embed_url );
+					}
 					if ( strpos( $embed_url, 'https:' ) === 0 )
 						$media_url = $og_video['og:video:secure_url'] = $embed_url;
 					else $media_url = $og_video['og:video:url'] = $embed_url;
-					if ( preg_match( '/\.mp4(\?.*)?$/', $media_url ) )	// check for video/mp4
+
+					if ( preg_match( '/\.mp4(\?.*)?$/', $media_url ) ) {	// check for video/mp4
+						if ( $this->p->debug->enabled )
+							$this->p->debug->log( 'setting og:video:type = video/mp4' );
 						$og_video['og:video:type'] = 'video/mp4';
+					}
 				}
 
 				$have_media[$prefix] = empty( $media_url ) ? false : true;
