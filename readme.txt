@@ -419,7 +419,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Added transient caching to the NgfbSchema get_schema_type_parents() and get_schema_type_children() methods.
 	* Renamed the NgfbSchema get_schema_type_css_classes() method to get_children_css_class().
 	* Renamed the 'ngfb_head_use_post' filter to 'ngfb_use_post'.
-	* Removed the forced reference for the $mod argument in NgfbOpenGraph methods.
+	* Removed the forced variable reference for the $mod argument in NgfbOpenGraph methods.
 	* **BREAKING CHANGE** &mdash; removed the `$use_post` argument from the following filters (current filter arguments shown):
 		* 'ngfb_link_rel' ( $link_rel, $mod );
 		* 'ngfb_meta_name' ( $mt_name, $mod );
