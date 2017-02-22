@@ -409,7 +409,7 @@ Note that the production stage level can be incremented on occasion for simple t
 		* Product Price Custom Field
 		* Product Currency Custom Field
 * *Improvements*
-	* None
+	* Adjusted the admin CSS to define a default width for WooCommerce product SKU, Stock, and Price table columns.
 * *Bugfixes*
 	* Fixed the NgfbSchema get_schema_type_context() method to provide correct JSON-LD syntax for Schema extensions (see https://schema.org/docs/extension.html).
 * *Developer Notes*
