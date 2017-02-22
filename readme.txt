@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.0-dev5 (2017/02/22)**
+**Version 8.40.0-rc1 (2017/02/22)**
 
 * *New Features*
 	* Added new product options in the Social Settings metabox:
@@ -839,7 +839,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.40.0-dev5 =
+= 8.40.0-rc1 =
 
 (2017/02/22) Added new product options for Availability, Price, and Currency in the Social Settings metabox. Fixed a NgfbSchema method to provide correct JSON-LD syntax for Schema extensions.
 
