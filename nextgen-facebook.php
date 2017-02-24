@@ -87,8 +87,8 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			add_action( 'widgets_init', array( &$this, 'init_widgets' ), 10 );
 
 			if ( is_admin() )
-				add_action( 'ngfb_init_debug', 			// runs after debug property is defined
-					array( &$this, 'load_textdomain' ), -1000, 1 );
+				add_action( 'ngfb_init_textdomain', 		// runs after debug property is defined
+					array( &$this, 'init_textdomain' ), -1000, 1 );
 		}
 
 		public static function &get_instance() {
@@ -189,7 +189,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				}
 			} else $this->debug = new SucomNoDebug();			// make sure debug property is always available
 
-			do_action( 'ngfb_init_debug', $this->debug->enabled );
+			do_action( 'ngfb_init_textdomain', $this->debug->enabled );
 
 			if ( $activate === true && 
 				$this->debug->enabled )
@@ -199,8 +199,6 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				( $classname = NgfbConfig::load_lib( false, 'com/notice', 'SucomNotice' ) ) )
 					$this->notice = new $classname( $this );
 			else $this->notice = new SucomNoNotice();		// make sure notice property is always available
-
-			do_action( 'ngfb_init_notice', $this->notice->enabled );
 
 			$this->util = new NgfbUtil( $this );			// extends SucomUtil
 			$this->opt = new NgfbOptions( $this );
@@ -280,8 +278,8 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			}
 		}
 
-		// runs at ngfb_init_debug priority -1000
-		public function load_textdomain( $debug_enabled ) {
+		// runs at ngfb_init_textdomain priority -1000
+		public function init_textdomain( $debug_enabled ) {
 			if ( $debug_enabled )
 				add_filter( 'load_textdomain_mofile', array( &$this, 'override_textdomain_mofile' ), 10, 3 );
 			load_plugin_textdomain( 'nextgen-facebook', false, 'nextgen-facebook/languages/' );
