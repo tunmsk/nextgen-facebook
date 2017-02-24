@@ -230,8 +230,9 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 			foreach ( $this->p->cf['opt']['cf_md_idx'] as $cf_idx => $md_idx ) {
 				if ( $label = $this->p->cf['form']['cf_labels'][$cf_idx] ) {
 					$table_rows[$cf_idx] = '<tr class="hide_in_basic">'.
-						$form->get_th_html( __( $label, 'nextgen-facebook' ), null, $cf_idx ).
-							'<td class="blank">'.$form->get_no_input( $cf_idx ).'</td>';
+					$form->get_th_html( _x( $label,
+						'option label', 'nextgen-facebook' ), null, $cf_idx ).
+					'<td class="blank">'.$form->get_no_input( $cf_idx ).'</td>';
 				}
 			}
 
