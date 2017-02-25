@@ -1478,10 +1478,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			/*
 			 * NGFB option and meta array alternate names
 			 */
-			$var_const['NGFB_OPTIONS_NAME_ALT'] = 'wpsso_options';
-			$var_const['NGFB_SITE_OPTIONS_NAME_ALT'] = 'wpsso_site_options';
-			$var_const['NGFB_META_NAME_ALT'] = '_wpsso_meta';
-			$var_const['NGFB_PREF_NAME_ALT'] = '_wpsso_pref';
+			$var_const['NGFB_OPTIONS_NAME_ALT'] = 'wpsso_options';			// fallback name
+			$var_const['NGFB_SITE_OPTIONS_NAME_ALT'] = 'wpsso_site_options';	// fallback name
+			$var_const['NGFB_META_NAME_ALT'] = '_wpsso_meta';			// fallback name
+			$var_const['NGFB_PREF_NAME_ALT'] = '_wpsso_pref';			// fallback name
 
 			/*
 			 * NGFB hook priorities
@@ -1514,13 +1514,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 			require_once( NGFB_PLUGINDIR.'lib/com/nodebug.php' );	// always load fallback class
 			require_once( NGFB_PLUGINDIR.'lib/com/nonotice.php' );	// always load fallback class
-			require_once( NGFB_PLUGINDIR.'lib/com/exception.php' );	// extends Exception
 			require_once( NGFB_PLUGINDIR.'lib/com/util.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/cache.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/script.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/style.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/webpage.php' );
 
+			require_once( NGFB_PLUGINDIR.'lib/exception.php' );	// extends Exception
 			require_once( NGFB_PLUGINDIR.'lib/register.php' );
 			require_once( NGFB_PLUGINDIR.'lib/check.php' );
 			require_once( NGFB_PLUGINDIR.'lib/util.php' );

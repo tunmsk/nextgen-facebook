@@ -88,7 +88,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 			if ( is_admin() )
 				add_action( 'ngfb_init_textdomain', 		// runs after debug property is defined
-					array( &$this, 'init_textdomain' ), -1000, 1 );
+					array( __CLASS__, 'init_textdomain' ), -1000, 1 );
 		}
 
 		public static function &get_instance() {
@@ -279,9 +279,10 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		}
 
 		// runs at ngfb_init_textdomain priority -1000
-		public function init_textdomain( $debug_enabled ) {
+		public static function init_textdomain( $debug_enabled ) {
 			if ( $debug_enabled )
-				add_filter( 'load_textdomain_mofile', array( &$this, 'override_textdomain_mofile' ), 10, 3 );
+				add_filter( 'load_textdomain_mofile', 
+					array( Ngfb::get_instance(), 'override_textdomain_mofile' ), 10, 3 );
 			load_plugin_textdomain( 'nextgen-facebook', false, 'nextgen-facebook/languages/' );
 		}
 
