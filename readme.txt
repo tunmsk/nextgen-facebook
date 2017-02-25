@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.0-rc4 (2017/02/24)**
+**Version 8.40.0-rc5 (2017/02/25)**
 
 * *New Features*
 	* Added new product options in the Social Settings metabox (Pro version):
@@ -434,6 +434,7 @@ Note that the production stage level can be incremented on occasion for simple t
 		* 'ngfb_tc' ( $tc, $mod );
 		* 'ngfb_tc_seed' ( $tc, $mod );
 	* Improved input sanitation checks and debugging error messages in the video modules (Pro version).
+	* Moved the SucomException class from lib/com/exception.php to NgfbException in lib/exception.php.
 
 **Version 8.39.9-1 (2017/02/19)**
 
@@ -846,9 +847,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.40.0-rc4 =
+= 8.40.0-rc5 =
 
-(2017/02/24) Added new product options for Availability, Price, and Currency in the Social Settings metabox. Fixed a NgfbSchema method to provide correct JSON-LD syntax for Schema extensions.
+(2017/02/25) Added new product options for Availability, Price, and Currency in the Social Settings metabox. Fixed a NgfbSchema method to provide correct JSON-LD syntax for Schema extensions.
 
 = 8.39.9-1 =
 
