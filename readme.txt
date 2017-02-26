@@ -398,6 +398,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.40.1-1 (2017/02/26)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Added a missing hook to load the network admin menu objects.
+* *Developer Notes*
+	* None
+
 **Version 8.40.0-1 (2017/02/26)**
 
 * *New Features*
@@ -846,6 +857,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.40.1-1 =
+ 
+(2017/02/26) Added a missing hook to load the network admin menu objects.
 
 = 8.40.0-1 =
 
