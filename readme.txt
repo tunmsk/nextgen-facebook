@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.0-rc5 (2017/02/25)**
+**Version 8.40.0-1 (2017/02/26)**
 
 * *New Features*
 	* Added new product options in the Social Settings metabox (Pro version):
@@ -412,7 +412,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Adjusted the admin CSS to define a default width for WooCommerce product SKU, Stock, and Price table columns.
 	* Improved loading sequence of the plugin textdomain.
 * *Bugfixes*
-	* Fixed the missing 'og:video:type' meta tag for self-hosted videos.
+	* Fixed the missing 'og:video:type' meta tag for self-hosted videos (Pro version).
 	* Fixed the NgfbSchema get_schema_type_context() method to provide correct JSON-LD syntax for Schema extensions (see https://schema.org/docs/extension.html).
 * *Developer Notes*
 	* Refactored the Easy Digital Downloads (EDD), MarketPress, WooCommerce, and WP e-Commerce modules to provide and use custom meta for product availability, price, and currency (Pro version).
@@ -434,7 +434,7 @@ Note that the production stage level can be incremented on occasion for simple t
 		* 'ngfb_tc' ( $tc, $mod );
 		* 'ngfb_tc_seed' ( $tc, $mod );
 	* Improved input sanitation checks and debugging error messages in the video modules (Pro version).
-	* Moved the SucomException class from lib/com/exception.php to NgfbException in lib/exception.php.
+	* Renamed and moved the SucomException class from lib/com/exception.php to NgfbException in lib/exception.php.
 
 **Version 8.39.9-1 (2017/02/19)**
 
@@ -847,9 +847,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.40.0-rc5 =
+= 8.40.0-1 =
 
-(2017/02/25) Added new product options for Availability, Price, and Currency in the Social Settings metabox. Fixed a NgfbSchema method to provide correct JSON-LD syntax for Schema extensions.
+(2017/02/26) Added new options for product Availability, Price, and Currency. Fixed a missing 'og:video:type' meta tag for self-hosted videos (Pro version). Fixed a NgfbSchema method to provide correct Schema context for Schema extensions.
 
 = 8.39.9-1 =
 
