@@ -180,7 +180,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 				'ngfbum' => array(
 					'short' => 'NGFB UM',
-					'name' => 'NextGEN Facebook Pro Update Manager (NGFB UM)',
+					'name' => 'NextGEN Facebook Update Manager (NGFB UM)',
 					'desc' => 'NGFB extension to provide updates for the NextGEN Facebook (NGFB) Pro plugin and its Pro extensions.',
 					'slug' => 'nextgen-facebook-um',
 					'base' => 'nextgen-facebook-um/nextgen-facebook-um.php',
