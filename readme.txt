@@ -398,6 +398,18 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.40.2-dev1 (2017/02/27)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Refactored the SucomUtil is_home_page(), is_post_page(), and get_post_object() methods.
+	* Added a new SucomUtil::is_home_index() method - returns true for a static posts page and the standard home archive page.
+
 **Version 8.40.1-2 (2017/02/27)**
 
 * *New Features*
@@ -858,6 +870,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.40.2-dev1 =
+
+(2017/02/27) Refactored the SucomUtil is_home_page(), is_post_page(), and get_post_object() methods.
 
 = 8.40.1-2 =
  
