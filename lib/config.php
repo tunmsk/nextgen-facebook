@@ -1488,6 +1488,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			 */
 			$var_const['NGFB_ADD_MENU_PRIORITY'] = -20;
 			$var_const['NGFB_ADD_SUBMENU_PRIORITY'] = -10;
+			$var_const['NGFB_ADD_COLUMN_PRIORITY'] = 100;
 			$var_const['NGFB_META_SAVE_PRIORITY'] = 5;
 			$var_const['NGFB_META_CACHE_PRIORITY'] = 10;
 			$var_const['NGFB_INIT_PRIORITY'] = 14;
