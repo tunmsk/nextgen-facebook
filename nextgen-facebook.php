@@ -80,15 +80,16 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			NgfbConfig::require_libs( __FILE__ );			// includes the register.php class library
 			$this->reg = new NgfbRegister( $this );			// activate, deactivate, uninstall hooks
 
-			add_action( 'init', array( &$this, 'set_config' ), 0 );
-			add_action( 'init', array( &$this, 'set_options' ), 5 );
-			add_action( 'init', array( &$this, 'set_objects' ), 10 );
-			add_action( 'init', array( &$this, 'init_plugin' ), NGFB_INIT_PRIORITY );
+			add_action( 'init', array( &$this, 'set_config' ), NGFB_INIT_PRIORITY - 3 );	// 11 by default
+			add_action( 'init', array( &$this, 'set_options' ), NGFB_INIT_PRIORITY - 2 );	// 12 by default
+			add_action( 'init', array( &$this, 'set_objects' ), NGFB_INIT_PRIORITY - 1 );	// 13 by default
+			add_action( 'init', array( &$this, 'init_plugin' ), NGFB_INIT_PRIORITY );	// 14 by default
+
 			add_action( 'widgets_init', array( &$this, 'init_widgets' ), 10 );
 
 			if ( is_admin() )
-				add_action( 'ngfb_init_textdomain', 		// runs after debug property is defined
-					array( __CLASS__, 'init_textdomain' ), -10, 1 );
+				add_action( 'ngfb_init_textdomain', 		// action is run after the debug property is defined
+					array( __CLASS__, 'init_textdomain' ), -10, 1 );	// hooks override_textdomain_mofile if debug enabled
 		}
 
 		public static function &get_instance() {
