@@ -98,14 +98,13 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			return self::$instance;
 		}
 
-		// runs at init priority -3000
+		// runs at init priority 11 by default
 		// called by activate_plugin() as well
 		public function set_config() {
 			$this->cf = NgfbConfig::get_config( false, true );	// apply filters - define the $cf['*'] array
 		}
 
-
-		// runs at init priority -2000
+		// runs at init priority 12 by default
 		// called by activate_plugin() as well
 		public function set_options() {
 			$this->options = get_option( NGFB_OPTIONS_NAME );
@@ -169,7 +168,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			}
 		}
 
-		// runs at init priority -1000
+		// runs at init priority 13 by default
 		// called by activate_plugin() as well
 		public function set_objects( $activate = false ) {
 			
@@ -279,15 +278,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			}
 		}
 
-		// runs at ngfb_init_textdomain priority -1000
-		public static function init_textdomain( $debug_enabled ) {
-			if ( $debug_enabled )
-				add_filter( 'load_textdomain_mofile', 
-					array( Ngfb::get_instance(), 'override_textdomain_mofile' ), 10, 3 );
-			load_plugin_textdomain( 'nextgen-facebook', false, 'nextgen-facebook/languages/' );
-		}
-
-		// runs at init priority 13 (by default)
+		// runs at init priority 14 by default
 		public function init_plugin() {
 			if ( $this->debug->enabled )
 				$this->debug->mark( 'plugin initialization' );	// begin timer
@@ -331,6 +322,14 @@ if ( ! class_exists( 'Ngfb' ) ) {
 					}
 				}
 			}
+		}
+
+		// runs at ngfb_init_textdomain priority -10
+		public static function init_textdomain( $debug_enabled ) {
+			if ( $debug_enabled )
+				add_filter( 'load_textdomain_mofile', 
+					array( Ngfb::get_instance(), 'override_textdomain_mofile' ), 10, 3 );
+			load_plugin_textdomain( 'nextgen-facebook', false, 'nextgen-facebook/languages/' );
 		}
 
 		// only runs when debug is enabled
