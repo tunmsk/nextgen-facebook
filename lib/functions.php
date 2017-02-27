@@ -43,6 +43,8 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 		$lca = $ngfb->cf['lca'];
 		$type = __FUNCTION__;
 		$atts['use_post'] = SucomUtil::sanitize_use_post( $atts ); 
+		if ( $ngfb->debug->enabled )
+			$ngfb->debug->log( 'calling get_page_mod()' );
 		$mod = $ngfb->util->get_page_mod( $atts['use_post'] );
 		$sharing_url = $ngfb->util->get_sharing_url( $mod );
 		$buttons_array = array();
