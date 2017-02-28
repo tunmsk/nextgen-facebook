@@ -529,7 +529,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_cf_img_url' => '_format_image_url',
 					'plugin_cf_vid_url' => '_format_video_url',
 					'plugin_cf_vid_embed' => '',
-					'plugin_cf_recipe_ingredients' => '',
+					'plugin_cf_recipe_ingredients' => '',		// example: wprm_ingredients, recipe_ingredients
 					'plugin_cf_product_avail' => '',
 					'plugin_cf_product_price' => '',
 					'plugin_cf_product_currency' => '',
