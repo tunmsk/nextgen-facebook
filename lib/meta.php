@@ -288,7 +288,6 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 			$sharing_url_encoded = urlencode( $sharing_url );
 
 			$amp_url = $mod['is_post'] && 
-				$this->p->is_avail['amp_endpoint'] && 
 				function_exists( 'amp_get_permalink' ) ?
 					'https://validator.ampproject.org/#url='.urlencode( amp_get_permalink( $mod['id'] ) ) : '';
 
@@ -316,7 +315,7 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 
 			// AMP
 			if ( $mod['is_post'] ) {
-				$table_rows[] = $form->get_th_html( _x( 'The AMP Validator', 'option label', 'nextgen-facebook' ), 'medium' ).'<td class="validate"><p>'.__( 'Validate the HTML syntax and HTML AMP conformance of your meta tags and AMP templates markup.', 'nextgen-facebook' ).'</p>'.( $this->p->is_avail['amp_endpoint'] ? '' : '<p><i>'.sprintf( __( 'The <a href="%s">AMP plugin by Automattic</a> is required to validate AMP formatted webpages.', 'nextgen-facebook' ), 'https://wordpress.org/plugins/amp/' ).'</i></p>' ).'</td><td class="validate">'.$form->get_button( _x( 'Validate AMP Markup', 'submit button', 'nextgen-facebook' ), 'button-secondary', null, $amp_url, true, ( $this->p->is_avail['amp_endpoint'] ? false : true ) ).'</td>';
+				$table_rows[] = $form->get_th_html( _x( 'The AMP Validator', 'option label', 'nextgen-facebook' ), 'medium' ).'<td class="validate"><p>'.__( 'Validate the HTML syntax and HTML AMP conformance of your meta tags and the AMP markup of your templates.', 'nextgen-facebook' ).'</p>'.( $this->p->is_avail['amp_endpoint'] ? '' : '<p><i>'.sprintf( __( 'The <a href="%s">AMP plugin by Automattic</a> is required to validate AMP formatted webpages.', 'nextgen-facebook' ), 'https://wordpress.org/plugins/amp/' ).'</i></p>' ).'</td><td class="validate">'.$form->get_button( _x( 'Validate AMP Markup', 'submit button', 'nextgen-facebook' ), 'button-secondary', null, $amp_url, true, ( $amp_url ? false : true ) ).'</td>';
 			}
 
 			return $table_rows;
