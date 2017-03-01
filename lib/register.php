@@ -77,10 +77,8 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 		}
 
 		private function activate_plugin() {
-			$lca = NgfbConfig::$cf['lca'];
-			$uca = strtoupper( $lca );
-			$short = NgfbConfig::$cf['plugin'][$lca]['short'];
-			$version = NgfbConfig::$cf['plugin'][$lca]['version'];
+			$short = NgfbConfig::$cf['plugin']['ngfb']['short'];
+			$version = NgfbConfig::$cf['plugin']['ngfb']['version'];
 
 			foreach ( array( 'wp', 'php' ) as $key ) {
 				switch ( $key ) {
@@ -111,23 +109,23 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 			$this->p->set_objects( true );	// $activate = true
 			$this->p->util->clear_all_cache( true );	// $clear_ext = true
 
-			NgfbUtil::save_all_times( $lca, $version );
-			set_transient( $lca.'_activation_redirect', true, 60 * 60 );
+			NgfbUtil::save_all_times( 'ngfb', $version );
+			set_transient( 'ngfb_activation_redirect', true, 60 * 60 );
 
 			if ( ! is_array( $this->p->options ) || empty( $this->p->options ) ||
-				( defined( $uca.'_RESET_ON_ACTIVATE' ) && constant( $uca.'_RESET_ON_ACTIVATE' ) ) ) {
+				( defined( 'NGFB_RESET_ON_ACTIVATE' ) && constant( 'NGFB_RESET_ON_ACTIVATE' ) ) ) {
 
 				$this->p->options = $this->p->opt->get_defaults();
 				unset( $this->p->options['options_filtered'] );	// just in case
 
-				delete_option( constant( $uca.'_OPTIONS_NAME' ) );
-				add_option( constant( $uca.'_OPTIONS_NAME' ), $this->p->options, null, 'yes' );	// autoload = yes
+				delete_option( constant( 'NGFB_OPTIONS_NAME' ) );
+				add_option( constant( 'NGFB_OPTIONS_NAME' ), $this->p->options, null, 'yes' );	// autoload = yes
 
 				if ( $this->p->debug->enabled )
 					$this->p->debug->log( 'default options have been added to the database' );
 
-				if ( defined( $uca.'_RESET_ON_ACTIVATE' ) && constant( $uca.'_RESET_ON_ACTIVATE' ) )
-					$this->p->notice->warn( $uca.'_RESET_ON_ACTIVATE constant is true &ndash; 
+				if ( defined( 'NGFB_RESET_ON_ACTIVATE' ) && constant( 'NGFB_RESET_ON_ACTIVATE' ) )
+					$this->p->notice->warn( 'NGFB_RESET_ON_ACTIVATE constant is true &ndash; 
 						plugin options have been reset to their default values.' );
 			}
 		}
