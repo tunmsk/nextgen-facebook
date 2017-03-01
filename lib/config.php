@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.40.2-dev3',	// plugin version
-					'opt_version' => '503',		// increment when changing default options
+					'opt_version' => '505',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -527,14 +527,14 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_add_to_topic' => 0,	// bbpress
 					'plugin_add_to_user' => 1,
 					'plugin_wpseo_social_meta' => 0,		// Read Yoast SEO Social Meta
-					'plugin_cf_img_url' => '_format_image_url',
-					'plugin_cf_vid_url' => '_format_video_url',
-					'plugin_cf_vid_embed' => '',
-					'plugin_cf_recipe_ingredients' => '',
-					'plugin_cf_recipe_instructions' => '',
-					'plugin_cf_product_avail' => '',
-					'plugin_cf_product_price' => '',
-					'plugin_cf_product_currency' => '',
+					'plugin_cf_img_url' => '_format_image_url',	// Image URL Custom Field
+					'plugin_cf_vid_url' => '_format_video_url',	// Video URL Custom Field
+					'plugin_cf_vid_embed' => '',			// Video Embed HTML Custom Field
+					'plugin_cf_recipe_ingredients' => '',		// Recipe Ingredients Custom Field
+					'plugin_cf_recipe_instructions' => '',		// Recipe Instructions Custom Field
+					'plugin_cf_product_avail' => '',		// Product Availability Custom Field
+					'plugin_cf_product_price' => '',		// Product Price Custom Field
+					'plugin_cf_product_currency' => '',		// Product Currency Custom Field
 					// Cache Settings Tab
 					'plugin_head_cache_exp' => 259200,		// Head Markup Array Cache Expiry (3 days)
 					'plugin_shorten_cache_exp' => 2419200,		// Shortened URL Cache Expiry (4 weeks)
