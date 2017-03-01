@@ -42,10 +42,8 @@
 'ngfb_get_avail' ( $ret );
 'ngfb_get_config' ( $cf, $plugin_version );
 'ngfb_get_defaults' ( $defaults );
-'ngfb_get_options' ( $options );
 'ngfb_get_post_options' ( $options, $post_id );	// Pro version
 'ngfb_get_site_defaults' ( $defaults );
-'ngfb_get_site_options' ( $options );
 'ngfb_get_term_options' ( $options, $term_id );	// Pro version
 'ngfb_get_user_options' ( $options, $user_id );	// Pro version
 'ngfb_hashtags' ( $hashtags, $post_id );
