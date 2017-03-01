@@ -59,6 +59,7 @@ _x( 'Product Currency Custom Field', 'option label', 'nextgen-facebook' );
 _x( 'Product Price Custom Field', 'option label', 'nextgen-facebook' );
 _x( 'Public Holidays', 'option value', 'nextgen-facebook' );
 _x( 'Recipe Ingredients Custom Field', 'option label', 'nextgen-facebook' );
+_x( 'Recipe Instructions Custom Field', 'option label', 'nextgen-facebook' );
 _x( 'Right', 'option value', 'nextgen-facebook' );
 _x( 'Saturday', 'option value', 'nextgen-facebook' );
 _x( '(settings value)', 'option value', 'nextgen-facebook' );

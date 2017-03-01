@@ -388,6 +388,12 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 									_x( 'recipe ingredients', 'tooltip fragment', 'nextgen-facebook' ),
 									_x( 'Recipe Ingredients', 'option label', 'nextgen-facebook' ) );
 							// no break - fall through
+						case 'tooltip-plugin_cf_recipe_instructions':
+							if ( ! isset( $plugin_cf_info ) )
+								$plugin_cf_info = array(
+									_x( 'recipe instructions', 'tooltip fragment', 'nextgen-facebook' ),
+									_x( 'Recipe Instructions', 'option label', 'nextgen-facebook' ) );
+							// no break - fall through
 						case 'tooltip-plugin_cf_product_avail':
 							if ( ! isset( $plugin_cf_info ) )
 								$plugin_cf_info = array(
