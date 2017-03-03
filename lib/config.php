@@ -21,7 +21,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.40.2-rc2',	// plugin version
-					'opt_version' => '505',		// increment when changing default options
+					'opt_version' => '507',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -265,6 +265,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'instgram_publisher_url' => '',		// (localized)
 					'linkedin_publisher_url' => '',		// (localized)
 					'myspace_publisher_url' => '',		// (localized)
+					'og_post_type' => 'article',
 					'og_art_section' => 'none',
 					'og_img_width' => 600,
 					'og_img_height' => 315,
