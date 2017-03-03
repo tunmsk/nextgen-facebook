@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.2-rc1',	// plugin version
+					'version' => '8.40.2-rc2',	// plugin version
 					'opt_version' => '505',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -814,9 +814,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'php' => array(				// php
-				'min_version' => '5.2',		// minimum php version (hard limit)
+				'min_version' => '5.2.4',	// minimum php version (hard limit)
 				'rec_version' => '5.4',		// recommended minimum php version (soft limit)
 				'sup_version_url' => 'http://php.net/supported-versions.php',
+				'extensions' => array(
+					'curl' => 'Client URL Library (cURL)',
+					'json' => 'JavaScript Object Notation (JSON)',
+					'mbstring' => 'Multibyte String',
+					'simplexml' => 'SimpleXML',
+				),
 			),
 			'form' => array(
 				'schema_type_col_width' => '120px',
