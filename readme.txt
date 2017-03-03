@@ -13,7 +13,7 @@ Requires At Least: 3.8
 Tested Up To: 4.7.2
 Stable Tag: 8.40.1-2
 
-Complete meta tags for awesome looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how URLs are shared or re-shared!
+Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how URLs are shared or re-shared!
 
 == Description ==
 
