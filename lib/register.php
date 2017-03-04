@@ -133,8 +133,7 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 		private function deactivate_plugin() {
 
 			// clear all cached objects and transients
-			$this->p->util->delete_expired_db_transients( true );
-			$this->p->util->delete_all_cache_files();
+			$this->p->util->clear_all_cache( false );	// $clear_ext = false
 
 			// trunc all stored notices for all users
 			$this->p->notice->trunc_all();
@@ -153,9 +152,6 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 				delete_option( $var_const['NGFB_OPTIONS_NAME'] );
 				delete_post_meta_by_key( $var_const['NGFB_META_NAME'] );
 
-				foreach ( array( 'schema_type', 'og_img_thumb', 'og_desc' ) as $meta_key )
-					delete_post_meta_by_key( '_ngfb_head_info_'.$meta_key );
-
 				foreach ( get_users() as $user ) {
 
 					// site specific user options
@@ -166,29 +162,27 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 					delete_user_meta( $user->ID, $var_const['NGFB_META_NAME'] );
 					delete_user_meta( $user->ID, $var_const['NGFB_PREF_NAME'] );
 
-					foreach ( array( 'schema_type', 'og_img_thumb', 'og_desc' ) as $meta_key )
-						delete_user_meta( $user->ID, '_ngfb_head_info_'.$meta_key );
-
 					NgfbUser::delete_metabox_prefs( $user->ID );
 				}
+
 				foreach ( NgfbTerm::get_public_terms() as $term_id ) {
 					NgfbTerm::delete_term_meta( $term_id, $var_const['NGFB_META_NAME'] );
-
-					foreach ( array( 'schema_type', 'og_img_thumb', 'og_desc' ) as $meta_key )
-						NgfbTerm::delete_term_meta( $term_id, '_ngfb_head_info_'.$meta_key );
 				}
 			}
 
-			// delete transients
+			/*
+			 * Delete All Transients
+			 */
 			global $wpdb;
+			$prefix = '_transient_';	// clear all transients, even if no timeout value
 			$dbquery = 'SELECT option_name FROM '.$wpdb->options.
-				' WHERE option_name LIKE \'_transient_timeout_ngfb_%\';';
+				' WHERE option_name LIKE \''.$prefix.'ngfb_%\';';
 			$expired = $wpdb->get_col( $dbquery ); 
 
-			foreach( $expired as $transient ) { 
-				$key = str_replace( '_transient_timeout_', '', $transient );
-				if ( ! empty( $key ) )
-					delete_transient( $key );
+			foreach( $expired as $option_name ) { 
+				$transient_name = str_replace( $prefix, '', $option_name );
+				if ( ! empty( $transient_name ) )
+					delete_transient( $transient_name );
 			}
 		}
 	}

@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.2-rc2',	// plugin version
+					'version' => '8.40.2-rc3',	// plugin version
 					'opt_version' => '507',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -826,13 +826,29 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'form' => array(
-				'schema_type_col_width' => '120px',
-				'og_img_col_width' => '70px',
-				'og_img_col_height' => '37px',
-				'og_desc_col_width' => '12%',
-				'tooltip_class' => 'sucom_tooltip',
 				'max_hashtags' => 10,
 				'max_media_items' => 20,
+				'tooltip_class' => 'sucom_tooltip',
+				'columns' => array( 
+					'schema_type' => array(
+						'meta_key' => '_ngfb_head_info_schema_type',
+						'orderby' => 'meta_value',
+						'width' => '120px',
+						'height' => 'auto',
+					),
+					'og_img' => array(
+						'meta_key' => '_ngfb_head_info_og_img_thumb',
+						'orderby' => false,	// do not offer column sorting
+						'width' => '70px',
+						'height' => '37px',
+					),
+					'og_desc' => array(
+						'meta_key' => '_ngfb_head_info_og_desc',
+						'orderby' => false,	// do not offer column sorting
+						'width' => '12%',
+						'height' => 'auto',
+					),
+				),
 				'yes_no' => array(
 					'1' => 'Yes',
 					'0' => 'No',
@@ -1529,8 +1545,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			require_once( NGFB_PLUGINDIR.'lib/com/nonotice.php' );	// always load fallback class
 			require_once( NGFB_PLUGINDIR.'lib/com/util.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/cache.php' );
-			require_once( NGFB_PLUGINDIR.'lib/com/script.php' );
-			require_once( NGFB_PLUGINDIR.'lib/com/style.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/webpage.php' );
 
 			require_once( NGFB_PLUGINDIR.'lib/exception.php' );	// extends Exception
@@ -1550,6 +1564,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			require_once( NGFB_PLUGINDIR.'lib/twittercard.php' );
 			require_once( NGFB_PLUGINDIR.'lib/schema.php' );
 			require_once( NGFB_PLUGINDIR.'lib/functions.php' );
+			require_once( NGFB_PLUGINDIR.'lib/script.php' );
+			require_once( NGFB_PLUGINDIR.'lib/style.php' );
 
 			if ( is_admin() ) {
 				require_once( NGFB_PLUGINDIR.'lib/messages.php' );

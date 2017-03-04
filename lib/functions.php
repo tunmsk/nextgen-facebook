@@ -126,7 +126,7 @@ if ( ! function_exists( 'ngfb_clear_all_cache' ) ) {
 	function ngfb_clear_all_cache( $clear_ext = false ) {
 		$ngfb =& Ngfb::get_instance();
 		if ( is_object( $ngfb->util ) )	// just in case
-			return $ngfb->util->clear_all_cache( $clear_ext, __FUNCTION__, true );
+			$ngfb->util->clear_all_cache( $clear_ext, __FUNCTION__, true );
 	}
 }
 
