@@ -1013,6 +1013,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'article:author',
 						'article:section',
 						'article:tag',
+						'article:publisher',
 						'article:published_time',
 						'article:modified_time',
 						'article:expiration_time',
