@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
@@ -26,11 +27,11 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 		protected function add_meta_boxes() {
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
 			add_meta_box( $this->pagehook.'_opengraph',
-				_x( 'All Social Websites / Open Graph', 'metabox title', 'nextgen-facebook' ), 
+				_x( 'All Social Websites / Open Graph', 'metabox title', 'nextgen-facebook' ),
 					array( &$this, 'show_metabox_opengraph' ), $this->pagehook, 'normal' );
 
 			add_meta_box( $this->pagehook.'_publishers',
-				_x( 'Specific Websites and Publishers', 'metabox title', 'nextgen-facebook' ), 
+				_x( 'Specific Websites and Publishers', 'metabox title', 'nextgen-facebook' ),
 					array( &$this, 'show_metabox_publishers' ), $this->pagehook, 'normal' );
 
 			// issues a warning notice if the default image size is too small
@@ -41,7 +42,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		public function show_metabox_opengraph() {
 			$metabox = 'og';
-			$tabs = apply_filters( $this->p->cf['lca'].'_general_og_tabs', array( 
+			$tabs = apply_filters( $this->p->cf['lca'].'_general_og_tabs', array(
 				'general' => _x( 'Site Information', 'metabox tab', 'nextgen-facebook' ),
 				'content' => _x( 'Descriptions', 'metabox tab', 'nextgen-facebook' ),	// same text as Social Settings tab
 				'author' => _x( 'Authorship', 'metabox tab', 'nextgen-facebook' ),
@@ -57,7 +58,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		public function show_metabox_publishers() {
 			$metabox = 'pub';
-			$tabs = apply_filters( $this->p->cf['lca'].'_general_pub_tabs', array( 
+			$tabs = apply_filters( $this->p->cf['lca'].'_general_pub_tabs', array(
 				'facebook' => _x( 'Facebook', 'metabox tab', 'nextgen-facebook' ),
 				'google' => _x( 'Google / Schema', 'metabox tab', 'nextgen-facebook' ),
 				'pinterest' => _x( 'Pinterest', 'metabox tab', 'nextgen-facebook' ),
@@ -123,7 +124,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					$table_rows['og_desc_hashtags'] = $this->form->get_th_html( _x( 'Add Hashtags to Descriptions',
 						'option label', 'nextgen-facebook' ), '', 'og_desc_hashtags' ).
-					'<td>'.$this->form->get_select( 'og_desc_hashtags', 
+					'<td>'.$this->form->get_select( 'og_desc_hashtags',
 						range( 0, $this->p->cf['form']['max_hashtags'] ), 'short', '', true ).' '.
 							_x( 'tag names', 'option comment', 'nextgen-facebook' ).'</td>';
 
@@ -156,7 +157,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					$table_rows['og_img_max'] = $this->form->get_th_html( _x( 'Maximum Images to Include',
 						'option label', 'nextgen-facebook' ), '', 'og_img_max' ).
-					'<td>'.$this->form->get_select( 'og_img_max', 
+					'<td>'.$this->form->get_select( 'og_img_max',
 						range( 0, $this->p->cf['form']['max_media_items'] ), 'short', '', true ).
 					( empty( $this->form->options['og_vid_prev_img'] ) ?
 						'' : ' <em>'._x( 'video preview images are enabled (and included first)',
@@ -215,7 +216,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					$table_rows['fb_author_name'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Author Name Format',
 						'option label', 'nextgen-facebook' ), '', 'fb_author_name' ).
-					'<td>'.$this->form->get_select( 'fb_author_name', 
+					'<td>'.$this->form->get_select( 'fb_author_name',
 						$this->p->cf['form']['user_name_fields'] ).'</td>';
 
 					$fb_pub_lang = SucomUtil::get_pub_lang( 'facebook' );
@@ -276,7 +277,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 								$this->form->get_select( 'schema_person_id', $users, '', '', true ).'</p>'.
 					'</td>';
 
-					$table_rows['schema_logo_url'] = $this->form->get_th_html( 
+					$table_rows['schema_logo_url'] = $this->form->get_th_html(
 						'<a href="https://developers.google.com/structured-data/customize/logos" target="_blank">'.
 						_x( 'Organization Logo Image URL', 'option label', 'nextgen-facebook' ).'</a>', '', 'schema_logo_url' ).
 					'<td>'.$this->form->get_input( 'schema_logo_url', 'wide' ).'</td>';
@@ -288,7 +289,7 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					$table_rows['schema_img_max'] = $this->form->get_th_html( _x( 'Maximum Images to Include',
 						'option label', 'nextgen-facebook' ), '', 'schema_img_max' ).
-					'<td>'.$this->form->get_select( 'schema_img_max', 
+					'<td>'.$this->form->get_select( 'schema_img_max',
 						range( 0, $this->p->cf['form']['max_media_items'] ), 'short', '', true ).
 					( empty( $this->form->options['og_vid_prev_img'] ) ?
 						'' : ' <em>'._x( 'video preview images are enabled (and included first)',
@@ -307,12 +308,12 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					$table_rows['schema_author_name'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Author / Person Name Format',
 						'option label', 'nextgen-facebook' ), '', 'schema_author_name' ).
-					'<td>'.$this->form->get_select( 'schema_author_name', 
+					'<td>'.$this->form->get_select( 'schema_author_name',
 						$this->p->cf['form']['user_name_fields'] ).'</td>';
 
 					$schema_types = $this->p->schema->get_schema_types_select();	// $add_none = true
 
-					foreach ( array( 
+					foreach ( array(
 						'home_index' => _x( 'Item Type for Blog Front Page', 'option label', 'nextgen-facebook' ),
 						'home_page' => _x( 'Item Type for Static Front Page', 'option label', 'nextgen-facebook' ),
 						'archive_page' => _x( 'Item Type for Archive Page', 'option label', 'nextgen-facebook' ),

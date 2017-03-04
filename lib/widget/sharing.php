@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 
@@ -23,7 +24,7 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 			$short = $this->p->cf['plugin'][$lca]['short'];
 			$widget_name = $short.' Sharing Buttons';
 			$widget_class = $lca.'-widget-buttons';
-			$widget_ops = array( 
+			$widget_ops = array(
 				'classname' => $widget_class,
 				'description' => sprintf( __( 'The %s social sharing buttons widget.', 'nextgen-facebook' ), $short ),
 			);
@@ -41,7 +42,7 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 
 			extract( $args );
 
-			$atts = array( 
+			$atts = array(
 				'use_post' => false,		// don't use the post ID on indexes
 				'css_id' => $args['widget_id'],
 				'preset_id' => $this->p->options['buttons_preset_widget'],
@@ -60,7 +61,7 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 			$buttons_index = $this->p->sharing->get_buttons_cache_index( $type, $atts );
 			$cache_salt = __METHOD__.'('.SucomUtil::get_mod_salt( $mod, $sharing_url ).')';
 			$cache_id = $lca.'_'.md5( $cache_salt );
-			$cache_exp = (int) apply_filters( $lca.'_cache_expire_sharing_buttons', 
+			$cache_exp = (int) apply_filters( $lca.'_cache_expire_sharing_buttons',
 				$this->p->options['plugin_sharing_buttons_cache_exp'] );
 
 			if ( $this->p->debug->enabled ) {
@@ -124,7 +125,7 @@ $after_widget.
 
 		public function form( $instance ) {
 			$title = isset( $instance['title'] ) ?
-				esc_attr( $instance['title'] ) : 
+				esc_attr( $instance['title'] ) :
 				_x( 'Share It', 'option value', 'nextgen-facebook' );
 
 			echo "\n".'<p><label for="'.$this->get_field_id( 'title' ).'">'.

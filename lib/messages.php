@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbMessages' ) ) {
 
@@ -340,19 +341,19 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 							if ( empty( $col_name ) )
 								$col_name = sprintf( _x( '%s Schema',
 									'column title', 'nextgen-facebook' ),
-										$this->p->cf['menu_label'] );
+										$this->p->cf['menu']['label'] );
 							// no break
 						case 'tooltip-plugin_og_img_col':
 							if ( empty( $col_name ) )
 								$col_name = sprintf( _x( '%s Img',
 									'column title', 'nextgen-facebook' ),
-										$this->p->cf['menu_label'] );
+										$this->p->cf['menu']['label'] );
 							// no break
 						case 'tooltip-plugin_og_desc_col':
 							if ( empty( $col_name ) )
 								$col_name = sprintf( _x( '%s Desc',
 									'column title', 'nextgen-facebook' ),
-										$this->p->cf['menu_label'] );
+										$this->p->cf['menu']['label'] );
 
 							$text = sprintf( __( 'An "%1$s" column can be added to the Posts, Pages, Taxonomy / Terms, and Users admin list pages. When enabled, <b>users can also hide this column</b> by using the <em>Screen Options</em> tab on each admin list page.', 'nextgen-facebook' ), $col_name );
 							break;
@@ -932,7 +933,7 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 					case 'notice-um-version-required':
 						$um_info = $this->p->cf['plugin']['ngfbum'];
 						$um_version = isset( $um_info['version'] ) ? $um_info['version'] : 'unknown';
-						$text = sprintf( __( '%1$s version %2$s requires the use of %3$s version %4$s or newer (version %5$s is currently installed).', 'nextgen-facebook' ), $info['name_pro'], $this->p->cf['plugin']['ngfb']['version'], $um_info['short'], $info['min_version'], $um_version ).' '.sprintf( __( 'Use the <em>%1$s</em> button from any %2$s settings page to retrieve the latest update information, or <a href="%3$s" target="_blank">download the latest %4$s extension version</a> and install the ZIP file manually.', 'nextgen-facebook' ), _x( 'Check for Pro Update(s)', 'submit button', 'nextgen-facebook' ), $this->p->cf['menu_label'], $um_info['url']['download'], $um_info['short'] );
+						$text = sprintf( __( '%1$s version %2$s requires the use of %3$s version %4$s or newer (version %5$s is currently installed).', 'nextgen-facebook' ), $info['name_pro'], $this->p->cf['plugin']['ngfb']['version'], $um_info['short'], $info['min_version'], $um_version ).' '.sprintf( __( 'Use the <em>%1$s</em> button from any %2$s settings page to retrieve the latest update information, or <a href="%3$s" target="_blank">download the latest %4$s extension version</a> and install the ZIP file manually.', 'nextgen-facebook' ), _x( 'Check for Pro Update(s)', 'submit button', 'nextgen-facebook' ), $this->p->cf['menu']['label'], $um_info['url']['download'], $um_info['short'] );
 						break;
 					case 'notice-recommend-version':
 						$text = sprintf( __( 'You are using %1$s version %2$s &mdash; <a href="%3$s">this version is outdated, unsupported, and insecure</a> (and lacks important features). Please update to the latest %1$s stable production release (or at least version %3$s).' ), $info['app_label'], $info['cur_version'], $info['rec_version'], $info['sup_version_url'] );

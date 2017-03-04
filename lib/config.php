@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbConfig' ) ) {
 
@@ -14,8 +15,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 		public static $cf = array(
 			'lca' => 'ngfb',		// lowercase acronym
-			'menu_label' => 'NGFB',		// menu item label
-			'menu_color' => 'ff6600',	// menu item color (dark orange)
 			'readme_cache_exp' => 86400,	// 1 day
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
@@ -78,7 +77,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'website' => array(
 							'email' => 'Email',
 							'twitter' => 'Twitter',
-							'facebook' => 'Facebook', 
+							'facebook' => 'Facebook',
 							'gplus' => 'GooglePlus',
 							'pinterest' => 'Pinterest',
 							'linkedin' => 'LinkedIn',
@@ -561,44 +560,44 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_yourls_password' => '',
 					'plugin_yourls_token' => '',
 					// Contact Field Names and Labels
-					'plugin_cm_fb_name' => 'facebook', 
-					'plugin_cm_fb_label' => 'Facebook URL', 
+					'plugin_cm_fb_name' => 'facebook',
+					'plugin_cm_fb_label' => 'Facebook URL',
 					'plugin_cm_fb_enabled' => 1,
-					'plugin_cm_gp_name' => 'gplus', 
-					'plugin_cm_gp_label' => 'Google+ URL', 
+					'plugin_cm_gp_name' => 'gplus',
+					'plugin_cm_gp_label' => 'Google+ URL',
 					'plugin_cm_gp_enabled' => 1,
-					'plugin_cm_instgram_name' => 'instagram', 
-					'plugin_cm_instgram_label' => 'Instagram URL', 
+					'plugin_cm_instgram_name' => 'instagram',
+					'plugin_cm_instgram_label' => 'Instagram URL',
 					'plugin_cm_instgram_enabled' => 1,
-					'plugin_cm_linkedin_name' => 'linkedin', 
-					'plugin_cm_linkedin_label' => 'LinkedIn URL', 
+					'plugin_cm_linkedin_name' => 'linkedin',
+					'plugin_cm_linkedin_label' => 'LinkedIn URL',
 					'plugin_cm_linkedin_enabled' => 1,
-					'plugin_cm_myspace_name' => 'myspace', 
-					'plugin_cm_myspace_label' => 'MySpace URL', 
+					'plugin_cm_myspace_name' => 'myspace',
+					'plugin_cm_myspace_label' => 'MySpace URL',
 					'plugin_cm_myspace_enabled' => 1,
-					'plugin_cm_pin_name' => 'pinterest', 
-					'plugin_cm_pin_label' => 'Pinterest URL', 
+					'plugin_cm_pin_name' => 'pinterest',
+					'plugin_cm_pin_label' => 'Pinterest URL',
 					'plugin_cm_pin_enabled' => 1,
-					'plugin_cm_tumblr_name' => 'tumblr', 
-					'plugin_cm_tumblr_label' => 'Tumblr URL', 
+					'plugin_cm_tumblr_name' => 'tumblr',
+					'plugin_cm_tumblr_label' => 'Tumblr URL',
 					'plugin_cm_tumblr_enabled' => 1,
-					'plugin_cm_twitter_name' => 'twitter', 
-					'plugin_cm_twitter_label' => 'Twitter @username', 
+					'plugin_cm_twitter_name' => 'twitter',
+					'plugin_cm_twitter_label' => 'Twitter @username',
 					'plugin_cm_twitter_enabled' => 1,
-					'plugin_cm_yt_name' => 'youtube', 
-					'plugin_cm_yt_label' => 'YouTube Channel URL', 
+					'plugin_cm_yt_name' => 'youtube',
+					'plugin_cm_yt_label' => 'YouTube Channel URL',
 					'plugin_cm_yt_enabled' => 1,
-					'plugin_cm_skype_name' => 'skype', 
-					'plugin_cm_skype_label' => 'Skype Username', 
+					'plugin_cm_skype_name' => 'skype',
+					'plugin_cm_skype_label' => 'Skype Username',
 					'plugin_cm_skype_enabled' => 1,
-					'wp_cm_aim_name' => 'aim', 
-					'wp_cm_aim_label' => 'AIM', 
+					'wp_cm_aim_name' => 'aim',
+					'wp_cm_aim_label' => 'AIM',
 					'wp_cm_aim_enabled' => 1,
-					'wp_cm_jabber_name' => 'jabber', 
-					'wp_cm_jabber_label' => 'Google Talk', 
+					'wp_cm_jabber_name' => 'jabber',
+					'wp_cm_jabber_label' => 'Google Talk',
 					'wp_cm_jabber_enabled' => 1,
 					'wp_cm_yim_name' => 'yim',
-					'wp_cm_yim_label' => 'Yahoo IM', 
+					'wp_cm_yim_label' => 'Yahoo IM',
 					'wp_cm_yim_enabled' => 1,
 					// Extension Plugins and Pro Licenses
 					'plugin_ngfb_tid' => '',
@@ -738,8 +737,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					),
 				),
 				'cm_prefix' => array(		// contact method options prefix
-					'email' => 'email', 
-					'facebook' => 'fb', 
+					'email' => 'email',
+					'facebook' => 'fb',
 					'gplus' => 'gp',
 					'twitter' => 'twitter',
 					'instagram' => 'instgram',
@@ -776,12 +775,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'min_version' => '1.5.11-1',	// minimum update manager version (hard limit)
 			),
 			'wp' => array(				// wordpress
-				/* 
+				/*
 				 * https://codex.wordpress.org/Supported_Versions
 				 *
 				 * The only current officially supported version is WordPress 4.7.1. Previous major
-				 * releases from 3.7 onwards may or may not get security updates as serious exploits 
-				 * are discovered. 
+				 * releases from 3.7 onwards may or may not get security updates as serious exploits
+				 * are discovered.
 				 */
 				'min_version' => '3.8',		// minimum wordpress version (hard limit)
 				'rec_version' => '4.2',		// recommended minimum wordpress version (soft limit)
@@ -825,30 +824,39 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'simplexml' => 'SimpleXML',
 				),
 			),
-			'form' => array(
-				'max_hashtags' => 10,
-				'max_media_items' => 20,
-				'tooltip_class' => 'sucom_tooltip',
-				'columns' => array( 
+			'menu' => array(
+				'label' => 'NGFB',		// menu item label
+				'color' => 'ff6600',		// menu item color (dark orange)
+			),
+			'list' => array(
+				'columns' => array(
 					'schema_type' => array(
+						'header' => 'NGFB Schema',
 						'meta_key' => '_ngfb_head_info_schema_type',
 						'orderby' => 'meta_value',
 						'width' => '120px',
 						'height' => 'auto',
 					),
 					'og_img' => array(
+						'header' => 'NGFB Img',
 						'meta_key' => '_ngfb_head_info_og_img_thumb',
 						'orderby' => false,	// do not offer column sorting
 						'width' => '70px',
 						'height' => '37px',
 					),
 					'og_desc' => array(
+						'header' => 'NGFB Desc',
 						'meta_key' => '_ngfb_head_info_og_desc',
 						'orderby' => false,	// do not offer column sorting
 						'width' => '12%',
 						'height' => 'auto',
 					),
 				),
+			),
+			'form' => array(
+				'max_hashtags' => 10,
+				'max_media_items' => 20,
+				'tooltip_class' => 'sucom_tooltip',
 				'yes_no' => array(
 					'1' => 'Yes',
 					'0' => 'No',
@@ -1111,7 +1119,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'schema_type' => array(
 					'thing' => array(	// parent of all schema types
 						'creative.work' => array(
-							'article' => array( 
+							'article' => array(
 								'article' => 'https://schema.org/Article',
 								'article.news' => 'https://schema.org/NewsArticle',
 								'article.tech' => 'https://schema.org/TechArticle',
@@ -1205,7 +1213,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'civic.structure' => 'https://schema.org/CivicStructure',
 							'landform' => 'https://schema.org/Landform',
 							'landmarks.or.historical.buildings' => 'https://schema.org/LandmarksOrHistoricalBuildings',
-							'local.business' => array( 
+							'local.business' => array(
 								'animal.shelter' => 'https://schema.org/AnimalShelter',
 								'automotive.business' => array(
 									'auto.body.shop' => 'https://schema.org/AutoBodyShop',
@@ -1225,7 +1233,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'employement.agency' => 'https://schema.org/EmploymentAgency',
 								'entertainment.business' => 'https://schema.org/EntertainmentBusiness',
 								'financial.service' => 'https://schema.org/FinancialService',
-								'food.establishment' => array( 
+								'food.establishment' => array(
 									'bakery' => 'https://schema.org/Bakery',
 									'bar.or.pub' => 'https://schema.org/BarOrPub',
 									'brewery' => 'https://schema.org/Brewery',
@@ -1330,10 +1338,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'sharing' => array(
-				'show_on' => array( 
-					'content' => 'Content', 
-					'excerpt' => 'Excerpt', 
-					'sidebar' => 'CSS Sidebar', 
+				'show_on' => array(
+					'content' => 'Content',
+					'excerpt' => 'Excerpt',
+					'sidebar' => 'CSS Sidebar',
 					'admin_edit' => 'Admin Edit',
 				),
 				'styles' => array(
@@ -1358,14 +1366,14 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 		);
 
-		public static function get_version() { 
+		public static function get_version() {
 			return self::$cf['plugin']['ngfb']['version'];
 		}
 
 		// get_config is called very early, so don't apply filters unless instructed
-		public static function get_config( $idx = false, $filter_cf = false ) { 
+		public static function get_config( $idx = false, $filter_cf = false ) {
 
-			if ( ! isset( self::$cf['config_filtered'] ) || 
+			if ( ! isset( self::$cf['config_filtered'] ) ||
 				self::$cf['config_filtered'] !== true ) {
 
 				self::$cf['*'] = array(
@@ -1387,7 +1395,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 					// remove the sharing libs if social sharing features are disabled
 					// SucomUtil class may not be loaded, so don't use SucomUtil::get_const()
-					if ( apply_filters( self::$cf['lca'].'_is_avail_ssb', 
+					if ( apply_filters( self::$cf['lca'].'_is_avail_ssb',
 						( defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) ?
 							NGFB_SOCIAL_SHARING_DISABLE : false ) ) ) {
 
@@ -1415,7 +1423,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							self::$cf['*']['base'][$info['base']] = $ext;
 
 						if ( isset( $info['lib'] ) && is_array( $info['lib'] ) )
-							self::$cf['*']['lib'] = SucomUtil::array_merge_recursive_distinct( 
+							self::$cf['*']['lib'] = SucomUtil::array_merge_recursive_distinct(
 								self::$cf['*']['lib'], $info['lib'] );
 
 						if ( isset( $info['version'] ) )
@@ -1442,7 +1450,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 		/*
 		 * Sort the 'plugin' array by each extension's 'name' value.
 		 */
-		public static function get_ext_sorted( $filter_cf = false ) { 
+		public static function get_ext_sorted( $filter_cf = false ) {
 			$ext = self::get_config( 'plugin', $filter_cf );
 			uasort( $ext, array( 'self', 'sort_ext_by_name' ) );	// sort array and maintain index association
 			return $ext;
@@ -1454,7 +1462,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			else return 0;						// no change
 		}
 
-		public static function set_constants( $plugin_filepath ) { 
+		public static function set_constants( $plugin_filepath ) {
 			define( 'NGFB_FILEPATH', $plugin_filepath );						
 			define( 'NGFB_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
 			define( 'NGFB_PLUGINSLUG', self::$cf['plugin']['ngfb']['slug'] );		// nextgen-facebook
@@ -1465,7 +1473,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			self::set_variable_constants();
 		}
 
-		public static function set_variable_constants( $var_const = null ) { 
+		public static function set_variable_constants( $var_const = null ) {
 			if ( $var_const === null )
 				$var_const = self::get_variable_constants();
 			foreach ( $var_const as $name => $value )
@@ -1473,7 +1481,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					define( $name, $value );
 		}
 
-		public static function get_variable_constants() { 
+		public static function get_variable_constants() {
 			$var_const = array();
 
 			if ( defined( 'NGFB_PLUGINDIR' ) ) {

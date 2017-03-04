@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! function_exists( 'ngfb_get_social_buttons' ) ) {
 	function ngfb_get_social_buttons( $ids = array(), $atts = array() ) {
@@ -42,7 +43,7 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 
 		$lca = $ngfb->cf['lca'];
 		$type = __FUNCTION__;
-		$atts['use_post'] = SucomUtil::sanitize_use_post( $atts ); 
+		$atts['use_post'] = SucomUtil::sanitize_use_post( $atts );
 		if ( $ngfb->debug->enabled )
 			$ngfb->debug->log( 'calling get_page_mod()' );
 		$mod = $ngfb->util->get_page_mod( $atts['use_post'] );
@@ -51,7 +52,7 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 		$buttons_index = $ngfb->sharing->get_buttons_cache_index( $type, $atts, $ids );
 		$cache_salt = __FUNCTION__.'('.SucomUtil::get_mod_salt( $mod, $sharing_url ).')';
 		$cache_id = $lca.'_'.md5( $cache_salt );
-		$cache_exp = (int) apply_filters( $lca.'_cache_expire_sharing_buttons', 
+		$cache_exp = (int) apply_filters( $lca.'_cache_expire_sharing_buttons',
 			( $cache_exp === false ? $ngfb->options['plugin_sharing_buttons_cache_exp'] : $cache_exp ) );
 
 		if ( $ngfb->debug->enabled ) {
@@ -109,7 +110,7 @@ if ( ! function_exists( 'ngfb_get_sharing_url' ) ) {
 if ( ! function_exists( 'ngfb_get_short_url' ) ) {
 	function ngfb_get_short_url( $mod = false, $add_page = true ) {
 		$ngfb =& Ngfb::get_instance();
-		return apply_filters( 'ngfb_shorten_url', 
+		return apply_filters( 'ngfb_shorten_url',
 			$ngfb->util->get_sharing_url( $mod, $add_page ),
 			$ngfb->options['plugin_shortener'] );
 	}

@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbSubmenuWebsiteStumbleupon' ) ) {
 
@@ -14,7 +15,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteStumbleupon' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'website_stumbleupon_rows' => 3,		// $table_rows, $form, $submenu
 			) );
 		}
@@ -23,10 +24,10 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteStumbleupon' ) ) {
 
 			$badge_html = '
 				<style type="text/css">
-					.badge { 
+					.badge {
 						display:block;
-						background: url("'.$this->p->sharing->get_social_file_cache_url( 
-							SucomUtil::get_prot().'://b9.sustatic.com/7ca234_0mUVfxHFR0NAk1g' ).'") no-repeat transparent; 
+						background: url("'.$this->p->sharing->get_social_file_cache_url(
+							SucomUtil::get_prot().'://b9.sustatic.com/7ca234_0mUVfxHFR0NAk1g' ).'") no-repeat transparent;
 						width:110px;
 						margin:5px 0 5px 0;
 					}
@@ -47,14 +48,14 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteStumbleupon' ) ) {
 			$badge_number = empty( $this->p->options['stumble_badge'] ) ? 1 : $this->p->options['stumble_badge'];
 			foreach ( array( 1, 2, 3, 6 ) as $i ) {
 				$badge_html .= '<div class="badge" id="badge-'.$i.'">';
-				$badge_html .= '<input type="radio" name="'.$form->options_name.'[stumble_badge]" 
+				$badge_html .= '<input type="radio" name="'.$form->options_name.'[stumble_badge]"
 					value="'.$i.'" '.checked( $i, $badge_number, false ).'/>';
 				$badge_html .= '</div>';
 			}
 			$badge_html .= '</div><div class="badge-col-right">';
 			foreach ( array( 4, 5 ) as $i ) {
 				$badge_html .= '<div class="badge" id="badge-'.$i.'">';
-				$badge_html .= '<input type="radio" name="'.$form->options_name.'[stumble_badge]" 
+				$badge_html .= '<input type="radio" name="'.$form->options_name.'[stumble_badge]"
 					value="'.$i.'" '.checked( $i, $badge_number, false ).'/>';
 				$badge_html .= '</div>';
 			}

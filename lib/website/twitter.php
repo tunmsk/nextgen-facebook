@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbSubmenuWebsiteTwitter' ) ) {
 
@@ -14,7 +15,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteTwitter' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'website_twitter_rows' => 3,		// $table_rows, $form, $submenu
 			) );
 		}
@@ -139,15 +140,15 @@ if ( ! class_exists( 'NgfbWebsiteTwitter' ) ) {
 
 			if ( ! array_key_exists( 'via', $atts ) ) {
 				if ( ! empty( $opts['twitter_via'] ) ) {
-					$atts['via'] = preg_replace( '/^@/', '', 
+					$atts['via'] = preg_replace( '/^@/', '',
 						SucomUtil::get_locale_opt( 'tc_site', $opts ) );
 				} else $atts['via'] = '';
 			}
 
 			if ( ! array_key_exists( 'related', $atts ) ) {
-				if ( ! empty( $opts['twitter_rel_author'] ) && 
+				if ( ! empty( $opts['twitter_rel_author'] ) &&
 					! empty( $mod['post_author'] ) && $atts['use_post'] )
-						$atts['related'] = preg_replace( '/^@/', '', 
+						$atts['related'] = preg_replace( '/^@/', '',
 							get_the_author_meta( $opts['plugin_cm_twitter_name'], $mod['post_author'] ) );
 				else $atts['related'] = '';
 			}
@@ -156,7 +157,7 @@ if ( ! class_exists( 'NgfbWebsiteTwitter' ) ) {
 			if ( ! array_key_exists( 'hashtags', $atts ) )
 				$atts['hashtags'] = '';
 
-			if ( ! array_key_exists( 'dnt', $atts ) ) 
+			if ( ! array_key_exists( 'dnt', $atts ) )
 				$atts['dnt'] = $opts['twitter_dnt'] ? 'true' : 'false';
 
 			$html = '<!-- Twitter Button -->'.

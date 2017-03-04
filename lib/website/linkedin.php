@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbSubmenuWebsiteLinkedin' ) ) {
 
@@ -14,7 +15,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteLinkedin' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'website_linkedin_rows' => 3,		// $table_rows, $form, $submenu
 			) );
 		}
@@ -41,8 +42,8 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteLinkedin' ) ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Counter Mode',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'linkedin_counter', 
-				array( 
+			'<td>'.$form->get_select( 'linkedin_counter',
+				array(
 					'none' => 'none',
 					'right' => 'Horizontal',
 					'top' => 'Vertical',

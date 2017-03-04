@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) )
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbSubmenuWebsiteFacebook' ) ) {
 
@@ -14,7 +15,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteFacebook' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'website_facebook_tabs' => 1,		// $tabs
 				'website_facebook_all_rows' => 3,	// $table_rows, $form, $submenu
 				'website_facebook_like_rows' => 3,	// $table_rows, $form, $submenu
@@ -23,7 +24,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteFacebook' ) ) {
 		}
 
 		public function filter_website_facebook_tabs( $tabs ) {
-			return array( 
+			return array(
 				'all' => _x( 'All Buttons', 'metabox tab', 'nextgen-facebook' ),
 				'like' => _x( 'Like and Send', 'metabox tab', 'nextgen-facebook' ),
 				'share' => _x( 'Share', 'metabox tab', 'nextgen-facebook' ),
@@ -71,12 +72,12 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteFacebook' ) ) {
 			'<td>'.$form->get_select( 'fb_markup', array( 'html5' => 'HTML5', 'xfbml' => 'XFBML' ) ).'</td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Include Send',
-				'option label (short)', 'nextgen-facebook' ), 'short', null, 
+				'option label (short)', 'nextgen-facebook' ), 'short', null,
 			'The Send button is only available in combination with the XFBML <em>Markup Language</em>.' ).
 			'<td>'.$form->get_checkbox( 'fb_send' ).'</td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Button Layout',
-				'option label (short)', 'nextgen-facebook' ), 'short', null, 
+				'option label (short)', 'nextgen-facebook' ), 'short', null,
 			'The Standard layout displays social text to the right of the button and friends\' profile photos below (if <em>Show Faces</em> is also checked). The Button Count layout displays the total number of likes to the right of the button, and the Box Count layout displays the total number of likes above the button. See the <a href="https://developers.facebook.com/docs/plugins/like-button#faqlayout" target="_blank">Facebook Layout Settings FAQ</a> for details.' ).
 			'<td>'.$form->get_select( 'fb_layout', array(
 				'standard' => 'Standard',
@@ -86,13 +87,13 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteFacebook' ) ) {
 			) ).'</td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Show Faces',
-				'option label (short)', 'nextgen-facebook' ), 'short', null, 
+				'option label (short)', 'nextgen-facebook' ), 'short', null,
 			'Show profile photos below the Standard button (Standard <em>Button Layout</em> only).' ).
 			'<td>'.$form->get_checkbox( 'fb_show_faces' ).'</td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Font',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$form->get_select( 'fb_font', array( 
+			$form->get_select( 'fb_font', array(
 				'arial' => 'Arial',
 				'lucida grande' => 'Lucida Grande',
 				'segoe ui' => 'Segoe UI',
@@ -249,7 +250,7 @@ if ( ! class_exists( 'NgfbWebsiteFacebook' ) ) {
 			$lang = apply_filters( $this->p->cf['lca'].'_pub_lang', $lang, 'facebook', 'current' );
 
 			// do not use get_social_file_cache_url() since the facebook javascript does not work when hosted locally
-			$js_url = apply_filters( $this->p->cf['lca'].'_js_url_facebook', 
+			$js_url = apply_filters( $this->p->cf['lca'].'_js_url_facebook',
 				SucomUtil::get_prot().'://connect.facebook.net/'.$lang.'/sdk.js#xfbml=1&version='.
 					$this->sdk_version.'&appId='.$app_id, $pos );
 

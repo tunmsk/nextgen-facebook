@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbSubmenuWebsiteReddit' ) ) {
 
@@ -14,7 +15,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteReddit' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'website_reddit_rows' => 3,		// $table_rows, $form, $submenu
 			) );
 		}
@@ -23,7 +24,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteReddit' ) ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$form->get_select( 'reddit_order', 
+			$form->get_select( 'reddit_order',
 				range( 1, count( $submenu->website ) ), 'short' ).'</td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Show Button in',
@@ -38,8 +39,8 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteReddit' ) ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Button Type',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$form->get_select( 'reddit_type', 
-				array( 
+			$form->get_select( 'reddit_type',
+				array(
 					'static-wide' => 'Interactive Wide',
 					'static-tall-text' => 'Interactive Tall Text',
 					'static-tall-logo' => 'Interactive Tall Logo',
@@ -84,7 +85,7 @@ if ( ! class_exists( 'NgfbWebsiteReddit' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			if ( empty( $atts['title'] ) ) 
+			if ( empty( $atts['title'] ) )
 				$atts['title'] = $this->p->webpage->get_title( 0, '', $mod, true, false, false, null );	// $encode = false
 
 			switch ( $opts['reddit_type'] ) {

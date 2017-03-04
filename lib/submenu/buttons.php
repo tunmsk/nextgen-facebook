@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 
@@ -50,7 +51,7 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 					foreach ( range( 1, 2 ) as $col ) {
 						$pos_id = 'website-row-'.$row.'-col-'.$col;
 						echo '<div class="website-col-'.$col.'" id="'.$pos_id.'" >';
-						do_meta_boxes( $pagehook, $pos_id, null ); 
+						do_meta_boxes( $pagehook, $pos_id, null );
 						echo '</div>', "\n";
 					}
 					echo '</div>', "\n";
@@ -79,11 +80,11 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 					'Google+' : $name;
 				$args = array( 'id' => $id, 'name' => $name );
 
-				add_meta_box( $this->pagehook.'_'.$id, $name, 
+				add_meta_box( $this->pagehook.'_'.$id, $name,
 					array( &$this, 'show_metabox_website' ),
 						$this->pagehook, $pos_id, 'default', $args );
 
-				add_filter( 'postbox_classes_'.$this->pagehook.'_'.$this->pagehook.'_'.$id, 
+				add_filter( 'postbox_classes_'.$this->pagehook.'_'.$this->pagehook.'_'.$id,
 					array( &$this, 'add_class_postbox_website' ) );
 			}
 
@@ -110,7 +111,7 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 			) );
 			$table_rows = array();
 			foreach ( $tabs as $key => $title )
-				$table_rows[$key] = array_merge( $this->get_table_rows( $metabox, $key ), 
+				$table_rows[$key] = array_merge( $this->get_table_rows( $metabox, $key ),
 					apply_filters( $lca.'_'.$metabox.'_'.$key.'_rows', array(), $this->form ) );
 			$this->p->util->do_metabox_tabs( $metabox, $tabs, $table_rows );
 		}
@@ -157,7 +158,7 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Position in Excerpt Text',
 						'option label', 'nextgen-facebook' ), null, 'buttons_pos_excerpt' ).
-					'<td>'.$this->form->get_select( 'buttons_pos_excerpt', 
+					'<td>'.$this->form->get_select( 'buttons_pos_excerpt',
 						$this->p->cf['sharing']['position'] ).'</td>';
 
 					break;
@@ -171,7 +172,7 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 			$html = '<table>';
 			$lca = $this->p->cf['lca'];
 			$aop = $this->p->check->aop( 'ngfb', true, $this->p->is_avail['aop'] );
-			$show_on = apply_filters( $lca.'_buttons_show_on', 
+			$show_on = apply_filters( $lca.'_buttons_show_on',
 				$this->p->cf['sharing']['show_on'], $opt_prefix );
 
 			foreach ( $show_on as $opt_suffix => $short_desc ) {

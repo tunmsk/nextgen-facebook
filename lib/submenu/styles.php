@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbSubmenuStyles' ) && class_exists( 'NgfbAdmin' ) ) {
 
@@ -37,7 +38,7 @@ if ( ! class_exists( 'NgfbSubmenuStyles' ) && class_exists( 'NgfbAdmin' ) ) {
 					$css_min_msg = ' <a href="'.NgfbSharing::$sharing_css_url.'">minimized css is '.$fsize.' bytes</a>';
 			else $css_min_msg = '';
 
-			$this->p->util->do_table_rows( array( 
+			$this->p->util->do_table_rows( array(
 				$this->form->get_th_html( _x( 'Use the Social Stylesheet',
 					'option label', 'nextgen-facebook' ), null, 'buttons_use_social_style' ).
 				'<td>'.$this->form->get_checkbox( 'buttons_use_social_style' ).$css_min_msg.'</td>',
@@ -48,12 +49,12 @@ if ( ! class_exists( 'NgfbSubmenuStyles' ) && class_exists( 'NgfbAdmin' ) ) {
 			) );
 
 			$metabox = 'styles';
-			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs', 
+			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs',
 				$this->p->cf['sharing']['styles'] );
 			$table_rows = array();
 			foreach ( $tabs as $key => $title ) {
 				$tabs[$key] = _x( $title, 'metabox tab', 'nextgen-facebook' );	// translate the tab title
-				$table_rows[$key] = array_merge( $this->get_table_rows( $metabox, $key ), 
+				$table_rows[$key] = array_merge( $this->get_table_rows( $metabox, $key ),
 					apply_filters( $this->p->cf['lca'].'_'.$metabox.'_'.$key.'_rows', array(), $this->form ) );
 			}
 			$this->p->util->do_metabox_tabs( $metabox, $tabs, $table_rows );

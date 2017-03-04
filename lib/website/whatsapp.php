@@ -5,8 +5,9 @@
  * Copyright 2014-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbSubmenuWebsiteWhatsApp' ) ) {
 
@@ -14,7 +15,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteWhatsApp' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'website_whatsapp_rows' => 3,		// $table_rows, $form, $submenu
 			) );
 		}
@@ -23,7 +24,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteWhatsApp' ) ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'wa_order', 
+			'<td>'.$form->get_select( 'wa_order',
 				range( 1, count( $submenu->website ) ), 'short' ).  '</td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Show Button in',

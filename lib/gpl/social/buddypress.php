@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbGplSocialBuddypress' ) ) {
 
@@ -42,12 +43,12 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'get_defaults' => 1,
 			) );
 
 			if ( is_admin() && empty( $this->p->options['plugin_hide_pro'] ) ) {
-				$this->p->util->add_plugin_filters( $this, array( 
+				$this->p->util->add_plugin_filters( $this, array(
 					'buttons_show_on' => 2,
 					'sharing_styles_tabs' => 1,
 					'styles_bp_activity_rows' => 2,
@@ -57,12 +58,12 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
 
 		public function filter_get_defaults( $opts_def ) {
 			$opts_def['buttons_css_bp_activity'] = '/* Save an empty style text box to reload the default example styles.
- * These styles are provided as examples only - modifications may be 
+ * These styles are provided as examples only - modifications may be
  * necessary to customize the layout for your website. Social sharing
  * buttons can be aligned vertically, horizontally, floated, etc.
  */
 
-.ngfb-bp_activity-buttons { 
+.ngfb-bp_activity-buttons {
 	display:block;
 	margin:10px auto;
 	text-align:center;
@@ -95,10 +96,10 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 
 			$rows[] = '<th class="textinfo">
-			<p>Social sharing buttons added to BuddyPress Activities are assigned the \'ngfb-bp_activity-buttons\' class, which itself contains the \'ngfb-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
+			<p>Social sharing buttons added to BuddyPress Activities are assigned the \'ngfb-bp_activity-buttons\' class, which itself contains the \'ngfb-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p>
 
 			<p>Example:</p><pre>
-.ngfb-bp_activity-buttons 
+.ngfb-bp_activity-buttons
     .ngfb-buttons
         .facebook-button { }</pre></th><td><textarea disabled="disabled" class="tall code">'.
 			$this->p->options['buttons_css_bp_activity'].'</textarea></td>';

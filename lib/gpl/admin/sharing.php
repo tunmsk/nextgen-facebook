@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 
@@ -16,7 +17,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			$this->p =& $plugin;
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'plugin_cache_rows' => 3,		// $table_rows, $form, $network
 				'buttons_include_rows' => 2,		// $table_rows, $form
 				'buttons_preset_rows' => 2,		// $table_rows, $form, $network
@@ -77,7 +78,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 				$this->p->debug->mark();
 
 			$presets = array( 'shortcode' => 'Shortcode', 'widget' => 'Widget' );
-			$show_on = apply_filters( $this->p->cf['lca'].'_buttons_show_on', 
+			$show_on = apply_filters( $this->p->cf['lca'].'_buttons_show_on',
 				$this->p->cf['sharing']['show_on'], '' );
 			foreach ( $show_on as $type => $label )
 				$presets[$type] = $label;
@@ -89,7 +90,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			foreach( $presets as $filter_id => $filter_name )
 				$table_rows[] = $form->get_th_html( sprintf( _x( '%s Preset',
 					'option label', 'nextgen-facebook' ), $filter_name ), null, 'buttons_preset' ).
-				'<td class="blank">'.$form->get_no_select( 'buttons_preset_'.$filter_id, 
+				'<td class="blank">'.$form->get_no_select( 'buttons_preset_'.$filter_id,
 					array_merge( array( '' ), array_keys( $this->p->cf['opt']['preset'] ) ) ).'</td>';
 
 			return $table_rows;
@@ -117,7 +118,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			 * Email
 			 */
 			$caption_len = $this->p->options['email_cap_len'];
-			$caption_text = $this->p->webpage->get_caption( 'excerpt', $caption_len, 
+			$caption_text = $this->p->webpage->get_caption( 'excerpt', $caption_len,
 				$mod, true, $this->p->options['email_cap_hashtags'], true, 'none' );
 
 			$form_rows['email_title'] = array(
@@ -154,13 +155,13 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 				array( 'pid', 'img_url' ), $mod, 'rp' );	// $md_pre = 'rp'
 
 			if ( ! empty( $media['pid'] ) ) {
-				list( 
-					$media['img_url'], 
+				list(
+					$media['img_url'],
 					$img_width,
 					$img_height,
 					$img_cropped,
 					$img_pid
-				) = $this->p->media->get_attachment_image_src( $media['pid'], 'thumbnail', false, $force_regen ); 
+				) = $this->p->media->get_attachment_image_src( $media['pid'], 'thumbnail', false, $force_regen );
 			}
 
 			$form_rows['pin_desc'] = array(
@@ -181,13 +182,13 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 				array( 'pid', 'img_url' ), $mod, 'og' );	// $md_pre = 'og'
 
 			if ( ! empty( $media['pid'] ) ) {
-				list( 
-					$media['img_url'], 
-					$img_width, 
-					$img_height, 
-					$img_cropped, 
+				list(
+					$media['img_url'],
+					$img_width,
+					$img_height,
+					$img_cropped,
 					$img_pid
-				) = $this->p->media->get_attachment_image_src( $media['pid'], 'thumbnail', false, $force_regen ); 
+				) = $this->p->media->get_attachment_image_src( $media['pid'], 'thumbnail', false, $force_regen );
 			}
 
 			$form_rows['tumblr_img_desc'] = array(
@@ -242,7 +243,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			$table_rows = array_merge( $table_rows, 
+			$table_rows = array_merge( $table_rows,
 				$this->get_styles_common_rows( $table_rows, $form, 'sidebar' ) );
 
 			$table_rows[] = '<tr class="hide_in_basic">'.

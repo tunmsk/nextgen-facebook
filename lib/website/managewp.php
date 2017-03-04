@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbSubmenuWebsiteManagewp' ) ) {
 
@@ -14,7 +15,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteManagewp' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'website_managewp_rows' => 3,		// $table_rows, $form, $submenu
 			) );
 		}
@@ -23,7 +24,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteManagewp' ) ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$form->get_select( 'managewp_order', 
+			$form->get_select( 'managewp_order',
 				range( 1, count( $submenu->website ) ), 'short' ).'</td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Show Button in',
@@ -38,8 +39,8 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteManagewp' ) ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Button Type',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$form->get_select( 'managewp_type', 
-				array( 
+			$form->get_select( 'managewp_type',
+				array(
 					'small' => 'Small',
 					'big' => 'Big',
 				)
@@ -86,7 +87,7 @@ if ( ! class_exists( 'NgfbWebsiteManagewp' ) ) {
 			if ( empty( $atts['title'] ) )
 				$atts['title'] = $this->p->webpage->get_title( null, null, $mod, true, false, true, null );
 
-			$js_url = $this->p->sharing->get_social_file_cache_url( apply_filters( $this->p->cf['lca'].'_js_url_managewp', 
+			$js_url = $this->p->sharing->get_social_file_cache_url( apply_filters( $this->p->cf['lca'].'_js_url_managewp',
 				SucomUtil::get_prot().'://managewp.org/share.js#'.SucomUtil::get_prot().'://managewp.org/share', '' ) );
 
 			$html = '<!-- ManageWP Button -->'.

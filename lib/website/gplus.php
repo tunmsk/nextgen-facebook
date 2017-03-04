@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbSubmenuWebsiteGplus' ) ) {
 
@@ -14,7 +15,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteGplus' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'website_gplus_rows' => 3,		// $table_rows, $form, $submenu
 			) );
 		}
@@ -49,7 +50,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteGplus' ) ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Button Size',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'gp_size', array( 
+			'<td>'.$form->get_select( 'gp_size', array(
 				'small' => 'Small [ 15px ]',
 				'medium' => 'Medium [ 20px ]',
 				'standard' => 'Standard [ 24px ]',
@@ -58,7 +59,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteGplus' ) ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Annotation',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'gp_annotation', array( 
+			'<td>'.$form->get_select( 'gp_annotation', array(
 				'none' => 'none',
 				'inline' => 'Inline',
 				'bubble' => 'Bubble',
@@ -68,7 +69,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteGplus' ) ) {
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Expand to',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'gp_expandto', array( 
+			'<td>'.$form->get_select( 'gp_expandto', array(
 				'none' => 'none',
 				'top' => 'Top',
 				'bottom' => 'Bottom',

@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbCheck' ) ) {
 
@@ -38,7 +39,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 			foreach ( array( 'aop', 'head', 'ssb' ) as $key )
 				$ret[$key] = $this->get_avail_check( $key );
 
-			foreach ( SucomUtil::array_merge_recursive_distinct( $this->p->cf['*']['lib']['pro'], 
+			foreach ( SucomUtil::array_merge_recursive_distinct( $this->p->cf['*']['lib']['pro'],
 				self::$extend_lib_checks ) as $sub => $lib ) {
 
 				$ret[$sub] = array();
@@ -210,10 +211,10 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 						is_dir( NGFB_PLUGINDIR.'lib/pro/' ) ? true : false;
 					break;
 				case 'head':
-					$ret = apply_filters( $this->p->cf['lca'].'_is_avail_'.$key, 
+					$ret = apply_filters( $this->p->cf['lca'].'_is_avail_'.$key,
 						( ! SucomUtil::get_const( 'NGFB_HEAD_HTML_DISABLE' ) &&
 							empty( $_SERVER['NGFB_HEAD_HTML_DISABLE'] ) &&
-								empty( $_GET['NGFB_HEAD_HTML_DISABLE'] ) ? 
+								empty( $_GET['NGFB_HEAD_HTML_DISABLE'] ) ?
 									true : false ) );
 					break;
 				case 'ssb':
@@ -230,13 +231,13 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 			return $ret;
 		}
 
-		public function is_aop( $lca = '' ) { 
-			return $this->aop( $lca, true, 
+		public function is_aop( $lca = '' ) {
+			return $this->aop( $lca, true,
 				$this->get_avail_check( 'aop' ) );
 		}
 
 		public function aop( $lca = '', $lic = true, $rv = true ) {
-			$lca = empty( $lca ) ? 
+			$lca = empty( $lca ) ?
 				$this->p->cf['lca'] : $lca;
 			$kn = $lca.'-'.$lic.'-'.$rv;
 			if ( isset( self::$c[$kn] ) )
@@ -246,17 +247,17 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 				$pdir = constant( $uca.'_PLUGINDIR' );
 			elseif ( isset( $this->p->cf['plugin'][$lca]['slug'] ) ) {
 				$slug = $this->p->cf['plugin'][$lca]['slug'];
-				if ( ! defined ( 'WPMU_PLUGIN_DIR' ) || 
+				if ( ! defined ( 'WPMU_PLUGIN_DIR' ) ||
 					! is_dir( $pdir = WPMU_PLUGIN_DIR.'/'.$slug.'/' ) ) {
-					if ( ! defined ( 'WP_PLUGIN_DIR' ) || 
+					if ( ! defined ( 'WP_PLUGIN_DIR' ) ||
 						! is_dir( $pdir = WP_PLUGIN_DIR.'/'.$slug.'/' ) )
 							return self::$c[$kn] = false;
 				}
 			} else return self::$c[$kn] = false;
 			$on = 'plugin_'.$lca.'_tid';
 			$ins = is_dir( $pdir.'lib/pro/' ) ? $rv : false;
-			return self::$c[$kn] = $lic === true ? 
-				( ( ! empty( $this->p->options[$on] ) && 
+			return self::$c[$kn] = $lic === true ?
+				( ( ! empty( $this->p->options[$on] ) &&
 					$ins && class_exists( 'SucomUpdate' ) &&
 						( $uerr = SucomUpdate::get_umsg( $lca ) ?
 							false : $ins ) ) ? $uerr : false ) : $ins;
@@ -269,15 +270,15 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 					continue;
 				$ins = $this->aop( $ext, false );
 				$ext_list[] = $info['short'].( $ins ? ' Pro' : '' ).' '.$info['version'].'/'.
-					( $this->aop( $ext, true, $this->p->is_avail['aop'] ) ? 'L' : 
+					( $this->aop( $ext, true, $this->p->is_avail['aop'] ) ? 'L' :
 						( $ins ? 'U' : 'G' ) );
 			}
 			return $ext_list;
 		}
 
-		private function has_optval( $opt_name ) { 
-			if ( ! empty( $opt_name ) && 
-				! empty( $this->p->options[$opt_name] ) && 
+		private function has_optval( $opt_name ) {
+			if ( ! empty( $opt_name ) &&
+				! empty( $this->p->options[$opt_name] ) &&
 					$this->p->options[$opt_name] !== 'none' )
 						return true;
 		}

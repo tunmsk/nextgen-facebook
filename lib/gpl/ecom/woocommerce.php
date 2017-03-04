@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbGplEcomWoocommerce' ) ) {
 
@@ -39,12 +40,12 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 			$this->p =& $plugin;
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'get_defaults' => 1,
 			) );
 
 			if ( is_admin() && empty( $this->p->options['plugin_hide_pro'] ) ) {
-				$this->p->util->add_plugin_filters( $this, array( 
+				$this->p->util->add_plugin_filters( $this, array(
 					'buttons_show_on' => 2,
 					'sharing_styles_tabs' => 1,
 					'styles_woo_short_rows' => 2,
@@ -55,12 +56,12 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 
 		public function filter_get_defaults( $opts_def ) {
 			$opts_def['buttons_css_woo_short'] = '/* Save an empty style text box to reload the default example styles.
- * These styles are provided as examples only - modifications may be 
+ * These styles are provided as examples only - modifications may be
  * necessary to customize the layout for your website. Social sharing
  * buttons can be aligned vertically, horizontally, floated, etc.
  */
 
-.ngfb-woo_short-buttons { 
+.ngfb-woo_short-buttons {
 	display:block;
 	margin:10px auto;
 	text-align:center;
@@ -89,9 +90,9 @@ if ( ! class_exists( 'NgfbGplEcomWoocommerceSharing' ) ) {
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 
 			$table_rows['buttons_css_woo_short'] = '<th class="textinfo">
-			<p>Social sharing buttons added to the WooCommerce Short Description are assigned the \'ngfb-woo_short-buttons\' class, which itself contains the \'ngfb-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p> 
+			<p>Social sharing buttons added to the WooCommerce Short Description are assigned the \'ngfb-woo_short-buttons\' class, which itself contains the \'ngfb-buttons\' class -- a common class for all buttons (see the All Buttons tab).</p>
 			<p>Example:</p><pre>
-.ngfb-woo_short-buttons 
+.ngfb-woo_short-buttons
     .ngfb-buttons
         .facebook-button { }</pre>
 			<p>The Woo Short social sharing buttons are subject to preset values selected on the '.$this->p->util->get_admin_url( 'sharing#sucom-tabset_sharing-tab_preset', 'Sharing Buttons' ).' settings page.</p>

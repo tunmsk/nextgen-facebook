@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbSubmenuWebsitePinterest' ) ) {
 
@@ -14,7 +15,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsitePinterest' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'image_dimensions_general_rows' => 2,	// $table_rows, $form
 				'website_pinterest_rows' => 3,		// $table_rows, $form, $submenu
 			) );
@@ -71,8 +72,8 @@ if ( ! class_exists( 'NgfbSubmenuWebsitePinterest' ) ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Show Pin Count',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'pin_count_layout', 
-				array( 
+			'<td>'.$form->get_select( 'pin_count_layout',
+				array(
 					'none' => 'Not Shown',
 					'beside' => 'Beside the Button',
 					'above' => 'Above the Button',
@@ -133,7 +134,7 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'plugin_image_sizes' => 1,
 				'get_defaults' => 1,
 			) );
@@ -157,7 +158,7 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 
 			$href_query = '?url='.urlencode( $atts['url'] );
 
-			if ( empty( $atts['size'] ) ) 
+			if ( empty( $atts['size'] ) )
 				$atts['size'] = $this->p->cf['lca'].'-pinterest-button';
 
 			if ( ! empty( $atts['pid'] ) ) {
@@ -238,7 +239,7 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 		public function get_script( $pos = 'id' ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
-			$js_url = $this->p->sharing->get_social_file_cache_url( apply_filters( $this->p->cf['lca'].'_js_url_pinterest', 
+			$js_url = $this->p->sharing->get_social_file_cache_url( apply_filters( $this->p->cf['lca'].'_js_url_pinterest',
 				SucomUtil::get_prot().'://assets.pinterest.com/js/pinit.js', $pos ) );
 
 			return '<script type="text/javascript" id="pinterest-script-'.$pos.'">'.

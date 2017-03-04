@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbSubmenuWebsiteTumblr' ) ) {
 
@@ -14,7 +15,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteTumblr' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'image_dimensions_general_rows' => 2,	// $table_rows, $form
 				'website_tumblr_rows' => 3,		// $table_rows, $form, $submenu
 			) );
@@ -63,8 +64,8 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteTumblr' ) ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Show Counter',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'tumblr_counter', 
-				array( 
+			'<td>'.$form->get_select( 'tumblr_counter',
+				array(
 					'none' => 'Not Shown',
 					'top' => 'Above the Button',
 					'right' => 'Right of the Button',
@@ -135,7 +136,7 @@ if ( ! class_exists( 'NgfbWebsiteTumblr' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'plugin_image_sizes' => 1,
 				'get_defaults' => 1,
 			) );
@@ -159,7 +160,7 @@ if ( ! class_exists( 'NgfbWebsiteTumblr' ) ) {
 
 			$lca = $this->p->cf['lca'];
 
-			if ( empty( $atts['size'] ) ) 
+			if ( empty( $atts['size'] ) )
 				$atts['size'] = $this->p->cf['lca'].'-tumblr-button';
 
 			if ( ! array_key_exists( 'lang', $atts ) ) {
@@ -170,10 +171,10 @@ if ( ! class_exists( 'NgfbWebsiteTumblr' ) ) {
 			if ( ! empty( $atts['pid'] ) ) {
 				$force_regen = $this->p->util->is_force_regen( $mod, 'og' );	// false by default
 
-				list( 
+				list(
 					$atts['photo'],
 					$atts['width'],
-					$atts['height'], 
+					$atts['height'],
 					$atts['cropped'],
 					$atts['pid']
 				) = $this->p->media->get_attachment_image_src( $atts['pid'], $atts['size'], false, $force_regen );
@@ -193,7 +194,7 @@ if ( ! class_exists( 'NgfbWebsiteTumblr' ) ) {
 			if ( $mod['name'] === 'post' && $mod['id'] > 0 ) {
 				// if no image or video, then check for a 'quote'
 				if ( empty( $atts['photo'] ) && empty( $atts['embed'] ) && empty( $atts['quote'] ) )
-					if ( get_post_format( $mod['id'] ) === 'quote' ) 
+					if ( get_post_format( $mod['id'] ) === 'quote' )
 						$atts['quote'] = $this->p->webpage->get_quote( $mod );
 				$atts['tags'] = implode( ', ', $this->p->webpage->get_tags( $mod['id'] ) );
 			}
@@ -201,16 +202,16 @@ if ( ! class_exists( 'NgfbWebsiteTumblr' ) ) {
 			// we only need the caption, title, or description for some types of shares
 			if ( ! empty( $atts['photo'] ) || ! empty( $atts['embed'] ) ) {
 				// html encode param is false to use url encoding instead
-				if ( empty( $atts['caption'] ) ) 
+				if ( empty( $atts['caption'] ) )
 					$atts['caption'] = $this->p->webpage->get_caption( $opts['tumblr_caption'], $opts['tumblr_cap_len'],
 						$mod, true, false, true, ( ! empty( $atts['photo'] ) ? 'tumblr_img_desc' : 'tumblr_vid_desc' ) );
 
 			} else {
-				if ( empty( $atts['title'] ) ) 
-					$atts['title'] = $this->p->webpage->get_title( null, 
+				if ( empty( $atts['title'] ) )
+					$atts['title'] = $this->p->webpage->get_title( null,
 						null, $mod, true, false );	// $add_hashtags = false
 
-				if ( empty( $atts['description'] ) ) 
+				if ( empty( $atts['description'] ) )
 					$atts['description'] = $this->p->webpage->get_description( $opts['tumblr_desc_len'], '...',
 						$mod, true, false, false, null );
 			}

@@ -5,8 +5,9 @@
  * Copyright 2012-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'NgfbShortcodeSharing' ) ) {
 
@@ -27,7 +28,7 @@ if ( ! class_exists( 'NgfbShortcodeSharing' ) ) {
 		}
 
 		public function wpautop() {
-			// make sure wpautop() does not have a higher priority than 10, otherwise it will 
+			// make sure wpautop() does not have a higher priority than 10, otherwise it will
 			// format the shortcode output (shortcode filters are run at priority 11).
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
 				$default_priority = 10;
@@ -56,7 +57,7 @@ if ( ! class_exists( 'NgfbShortcodeSharing' ) ) {
 			}
 		}
 
-		public function shortcode( $atts, $content = null ) { 
+		public function shortcode( $atts, $content = null ) {
 
 			if ( SucomUtil::is_amp() ) {
 				if ( $this->p->debug->enabled )
@@ -66,7 +67,7 @@ if ( ! class_exists( 'NgfbShortcodeSharing' ) ) {
 				if ( $this->p->debug->enabled )
 					$this->p->debug->log( 'exiting early: buttons not allowed in rss feeds'  );
 				return $content;
-			} 
+			}
 
 			$lca = $this->p->cf['lca'];
 			$atts = (array) apply_filters( $lca.'_sharing_shortcode_'.NGFB_SHARING_SHORTCODE_NAME, $atts, $content );
@@ -88,7 +89,7 @@ if ( ! class_exists( 'NgfbShortcodeSharing' ) ) {
 			$buttons_index = $this->p->sharing->get_buttons_cache_index( $type, $atts );
 			$cache_salt = __METHOD__.'('.SucomUtil::get_mod_salt( $mod, $atts['url'] ).')';
 			$cache_id = $lca.'_'.md5( $cache_salt );
-			$cache_exp = (int) apply_filters( $lca.'_cache_expire_sharing_buttons', 
+			$cache_exp = (int) apply_filters( $lca.'_cache_expire_sharing_buttons',
 				$this->p->options['plugin_sharing_buttons_cache_exp'] );
 
 			if ( $this->p->debug->enabled ) {
