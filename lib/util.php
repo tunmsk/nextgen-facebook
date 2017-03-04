@@ -358,6 +358,8 @@ if ( ! class_exists( 'NgfbUtil' ) && class_exists( 'SucomUtil' ) ) {
 				}
 			}
 
+			$clear_all_msg .= ' '.__( 'Site performance may be impacted temporarily while all cache objects are rebuilt.', 'nextgen-facebook' );
+
 			$this->p->notice->inf( $clear_all_msg, true, $msg_id, $dismiss );
 		}
 

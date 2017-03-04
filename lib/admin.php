@@ -346,16 +346,19 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			if ( empty( $this->p->options['plugin_clear_on_save'] ) ) {
 				// admin url will redirect to essential settings since we're not on a settings page here
 				$clear_cache_link = wp_nonce_url( $this->p->util->get_admin_url( '?'.$this->p->cf['lca'].
-					'-action=clear_all_cache' ), NgfbAdmin::get_nonce(), NGFB_NONCE );
+					'-action=clear_all_cache,', _x( 'Clear All Cache(s)', 'submit button', 'nextgen-facebook' ) ), 
+						NgfbAdmin::get_nonce(), NGFB_NONCE );
 	
 				$this->p->notice->upd( '<strong>'.__( 'Plugin settings have been saved.', 'nextgen-facebook' ).'</strong> <em>'.
 					__( 'Please note that webpage content may take several days to reflect changes.', 'nextgen-facebook' ).' '.
-					sprintf( __( '<a href="%1$s">%2$s</a> now to force a refresh.', 'nextgen-facebook' ),
-						$clear_cache_link, _x( 'Clear All Cache(s)', 'submit button', 'nextgen-facebook' ) ).'</em>' );
+					sprintf( __( '%s now to force a refresh.', 'nextgen-facebook' ), $clear_cache_link ).'</em>' );
 			} else {
-				$this->p->notice->upd( '<strong>'.__( 'Plugin settings have been saved.', 'nextgen-facebook' ).'</strong> '.
-					__( 'All caches have also been cleared.', 'nextgen-facebook' ) );
 				$this->p->util->clear_all_cache( true, __FUNCTION__, true );
+
+				$this->p->notice->upd( '<strong>'.__( 'Plugin settings have been saved.', 'nextgen-facebook' ).'</strong> <em>'.
+					sprintf( __( 'All caches have also been cleared (the %s option is enabled).', 'nextgen-facebook' ),
+						$this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_cache',
+							_x( 'Clear All Cache on Save Settings', 'option label', 'nextgen-facebook' ) ) ).'</em>' );
 			}
 
 			$this->check_tmpl_head_attributes();
