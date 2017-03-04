@@ -458,7 +458,7 @@ msgid ""
 "have the cURL library installed."
 msgstr ""
 
-#: lib/com/cache.php:220 lib/util.php:453
+#: lib/com/cache.php:220 lib/util.php:461
 msgid "Error removing cache file %s."
 msgstr ""
 
@@ -856,7 +856,7 @@ msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:71 lib/sharing.php:1062
+#: lib/config-gettext-extract.php:71 lib/sharing.php:1070
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr ""
@@ -1591,22 +1591,22 @@ msgid ""
 "information for image ID %2$s."
 msgstr ""
 
-#: lib/media.php:691
+#: lib/media.php:693
 msgid "Content"
 msgstr ""
 
-#: lib/media.php:936 lib/pro/util/checkimgdims.php:68
+#: lib/media.php:938 lib/pro/util/checkimgdims.php:68
 msgid "Media Library"
 msgstr ""
 
-#: lib/media.php:991
+#: lib/media.php:993
 msgid ""
 "%1$s image %2$s ignored &mdash; the resulting image of %3$s has an "
 "<strong>aspect ratio equal to/or greater than %4$d:1 allowed by the %5$s "
 "standard</strong>."
 msgstr ""
 
-#: lib/media.php:1009
+#: lib/media.php:1011
 msgid ""
 "%1$s image %2$s ignored &mdash; the resulting image of %3$s is "
 "<strong>smaller than the minimum of %4$s allowed by the %5$s standard</"
@@ -2050,7 +2050,7 @@ msgstr ""
 
 #: lib/messages.php:469 lib/messages.php:476 lib/messages.php:483
 #: lib/messages.php:490 lib/messages.php:497 lib/messages.php:504
-#: lib/sharing.php:1084 lib/sharing.php:1091
+#: lib/sharing.php:1092 lib/sharing.php:1099
 msgctxt "option comment"
 msgid "disabled"
 msgstr ""
@@ -2063,7 +2063,7 @@ msgstr ""
 
 #: lib/messages.php:471 lib/messages.php:478 lib/messages.php:485
 #: lib/messages.php:492 lib/messages.php:499 lib/messages.php:506
-#: lib/sharing.php:1086 lib/sharing.php:1092
+#: lib/sharing.php:1094 lib/sharing.php:1100
 msgid "The suggested cache expiration value is %1$s seconds (%2$s)."
 msgstr ""
 
@@ -2974,12 +2974,12 @@ msgstr ""
 msgid "Nonce token validation failed for the submitted form (update ignored)."
 msgstr ""
 
-#: lib/opengraph.php:52
+#: lib/opengraph.php:56
 msgctxt "image size label"
 msgid "Facebook / Open Graph"
 msgstr ""
 
-#: lib/opengraph.php:59
+#: lib/opengraph.php:63
 msgctxt "image size label"
 msgid "Pinterest Rich Pin"
 msgstr ""
@@ -3186,13 +3186,13 @@ msgctxt "image size label"
 msgid "Google / Schema Image"
 msgstr ""
 
-#: lib/schema.php:832
+#: lib/schema.php:833
 msgid ""
 "The \"%1$s\" Organization Logo Image is missing and required for the Schema "
 "%2$s markup."
 msgstr ""
 
-#: lib/schema.php:835
+#: lib/schema.php:836
 msgid ""
 "The \"%1$s\" Organization Banner (600x60) is missing and required for the "
 "Schema %2$s markup."
@@ -3300,32 +3300,32 @@ msgstr ""
 msgid "%s must be published<br/>before it can be shared."
 msgstr ""
 
-#: lib/sharing.php:1050
+#: lib/sharing.php:1058
 msgid ""
 "Social sharing buttons can be added to the top, bottom, or both. Each "
 "sharing button must also be enabled below (see the <em>%s</em> options)."
 msgstr ""
 
-#: lib/sharing.php:1050
+#: lib/sharing.php:1058
 msgctxt "option label"
 msgid "Show Button in"
 msgstr ""
 
-#: lib/sharing.php:1053
+#: lib/sharing.php:1061
 msgid ""
 "Add the social sharing buttons to each entry of an index webpage (blog front "
 "page, category, archive, etc.). Social sharing buttons are not included on "
 "index webpages by default."
 msgstr ""
 
-#: lib/sharing.php:1056
+#: lib/sharing.php:1064
 msgid ""
 "If a static Post or Page has been selected for the front page, you can add "
 "the social sharing buttons to that static front page as well (default is "
 "unchecked)."
 msgstr ""
 
-#: lib/sharing.php:1059
+#: lib/sharing.php:1067
 msgid ""
 "Enabled social sharing buttons are added to the Post, Page, Media, and "
 "Product webpages by default. If your theme (or another plugin) supports "
@@ -3333,7 +3333,7 @@ msgid ""
 "buttons on these webpages, check the appropriate option(s) here."
 msgstr ""
 
-#: lib/sharing.php:1062
+#: lib/sharing.php:1070
 msgid ""
 "Add the CSS of all <em>%1$s</em> to webpages (default is checked). The CSS "
 "will be <strong>minimized</strong>, and saved to a single stylesheet with a "
@@ -3341,7 +3341,7 @@ msgid ""
 "or added directly to the webpage HTML."
 msgstr ""
 
-#: lib/sharing.php:1065
+#: lib/sharing.php:1073
 msgid ""
 "Have WordPress enqueue the social stylesheet instead of adding the CSS to in "
 "the webpage HTML (default is unchecked). Enqueueing the stylesheet may be "
@@ -3349,52 +3349,52 @@ msgid ""
 "single stylesheet URL."
 msgstr ""
 
-#: lib/sharing.php:1068
+#: lib/sharing.php:1076
 msgid "JavaScript added to webpages for the social sharing sidebar."
 msgstr ""
 
-#: lib/sharing.php:1071
+#: lib/sharing.php:1079
 msgid ""
 "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</"
 "a> in the %3$s settings page). The %1$s will be displayed and recommended "
 "after the webpage is shared."
 msgstr ""
 
-#: lib/sharing.php:1071 lib/sharing.php:1074 lib/submenu/essential.php:141
+#: lib/sharing.php:1079 lib/sharing.php:1082 lib/submenu/essential.php:141
 #: lib/submenu/general.php:376
 msgctxt "option label"
 msgid "Twitter Business @username"
 msgstr ""
 
-#: lib/sharing.php:1071
+#: lib/sharing.php:1079
 msgctxt "lib file description"
 msgid "General"
 msgstr ""
 
-#: lib/sharing.php:1074
+#: lib/sharing.php:1082
 msgid ""
 "Recommend following the author's Twitter @username after sharing a webpage. "
 "If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr ""
 
-#: lib/sharing.php:1074 lib/website/buffer.php:76 lib/website/twitter.php:68
+#: lib/sharing.php:1082 lib/website/buffer.php:76 lib/website/twitter.php:68
 msgctxt "option label (short)"
 msgid "Add via @username"
 msgstr ""
 
-#: lib/sharing.php:1085
+#: lib/sharing.php:1093
 msgid ""
 "The rendered HTML for social sharing buttons is saved to the WordPress "
 "transient cache to optimize performance."
 msgstr ""
 
-#: lib/sharing.php:1092
+#: lib/sharing.php:1100
 msgid ""
 "The JavaScript of most social sharing buttons can be saved locally to cache "
 "folder in order to provide cached URLs instead of the originals."
 msgstr ""
 
-#: lib/sharing.php:1092
+#: lib/sharing.php:1100
 msgid ""
 "If your hosting infrastructure performs reasonably well, this option can "
 "improve page load times significantly."
@@ -3960,134 +3960,134 @@ msgstr ""
 msgid "Jabber / Google Talk"
 msgstr ""
 
-#: lib/util.php:335
+#: lib/util.php:343
 msgid ""
 "%s cached files, transient cache, sortable column meta, and the WordPress "
 "object cache have all been cleared."
 msgstr ""
 
-#: lib/util.php:339
+#: lib/util.php:347
 msgid "The cache for %s has also been cleared."
 msgstr ""
 
-#: lib/util.php:362
+#: lib/util.php:370
 msgid ""
 "Site performance may be impacted slightly while all cache objects are "
 "rebuilt."
 msgstr ""
 
-#: lib/util.php:439
+#: lib/util.php:447
 msgid "Failed to open directory %s for reading."
 msgstr ""
 
-#: lib/util.php:509
+#: lib/util.php:517
 msgid "Error reading %s article topic list file."
 msgstr ""
 
-#: lib/util.php:543
+#: lib/util.php:551
 msgid ""
 "The value of option '%s' must be a URL - resetting the option to its default "
 "value."
 msgstr ""
 
-#: lib/util.php:545
+#: lib/util.php:553
 msgid ""
 "The value of option '%s' must be a comma-delimited list of URL(s) - "
 "resetting the option to its default value."
 msgstr ""
 
-#: lib/util.php:547
+#: lib/util.php:555
 msgid ""
 "The value of option '%s' must be equal to or greather than %s - resetting "
 "the option to its default value."
 msgstr ""
 
-#: lib/util.php:549 lib/util.php:551
+#: lib/util.php:557 lib/util.php:559
 msgid ""
 "The value of option '%s' must be numeric - resetting the option to its "
 "default value."
 msgstr ""
 
-#: lib/util.php:553
+#: lib/util.php:561
 msgid ""
 "'%1$s' is not an acceptable value for option '%2$s' - resetting the option "
 "to its default value."
 msgstr ""
 
-#: lib/util.php:555
+#: lib/util.php:563
 msgid ""
 "The value of option '%s' must be alpha-numeric - resetting the option to its "
 "default value."
 msgstr ""
 
-#: lib/util.php:557
+#: lib/util.php:565
 msgid ""
 "The value of option '%s' must be a yyyy-mm-dd date - resetting the option to "
 "its default value."
 msgstr ""
 
-#: lib/util.php:559
+#: lib/util.php:567
 msgid ""
 "The value of option '%s' must be a hh:mm time - resetting the option to its "
 "default value."
 msgstr ""
 
-#: lib/util.php:561
+#: lib/util.php:569
 msgid ""
 "The value of option '%s' must be HTML code - resetting the option to its "
 "default value."
 msgstr ""
 
-#: lib/util.php:563
+#: lib/util.php:571
 msgid ""
 "The value of option '%s' cannot be an empty string - resetting the option to "
 "its default value."
 msgstr ""
 
-#: lib/util.php:761
+#: lib/util.php:769
 msgid "Error retrieving webpage from <a href=\"%1$s\">%1$s</a>."
 msgstr ""
 
-#: lib/util.php:768
+#: lib/util.php:776
 msgid "Webpage retrieved from <a href=\"%1$s\">%1$s</a> is empty."
 msgstr ""
 
-#: lib/util.php:793
+#: lib/util.php:801
 msgid ""
 "The PHP preg_replace() function failed to remove the %s meta tag block - "
 "this could be an indication of an issue with the PHP PCRE library."
 msgstr ""
 
-#: lib/util.php:829
+#: lib/util.php:837
 msgid ""
 "The %1$s PHP class is missing - please contact your hosting provider to "
 "install the missing %1$s PHP class."
 msgstr ""
 
-#: lib/util.php:1107
+#: lib/util.php:1119
 msgid "Fetched image size by HTTP for %1$s (%2$s)."
 msgstr ""
 
-#: lib/util.php:1812
+#: lib/util.php:1826
 msgid "No options available."
 msgstr ""
 
-#: lib/util.php:1838
+#: lib/util.php:1852
 msgctxt "option comment"
 msgid "%1$d additional options not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1842
+#: lib/util.php:1856
 msgctxt "option comment"
 msgid "unhide these options"
 msgstr ""
 
-#: lib/util.php:1845
+#: lib/util.php:1859
 msgctxt "option comment"
 msgid "%1$d additional rows not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1849
+#: lib/util.php:1863
 msgctxt "option comment"
 msgid "unhide these rows"
 msgstr ""
@@ -4358,12 +4358,12 @@ msgstr ""
 msgid "The %s social sharing buttons widget."
 msgstr ""
 
-#: lib/widget/sharing.php:129
+#: lib/widget/sharing.php:130
 msgctxt "option value"
 msgid "Share It"
 msgstr ""
 
-#: lib/widget/sharing.php:132
+#: lib/widget/sharing.php:133
 msgctxt "option label"
 msgid "Widget Title (leave blank for no title)"
 msgstr ""
