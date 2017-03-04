@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.2-rc3 (2017/03/04)**
+**Version 8.40.2-rc4 (2017/03/04)**
 
 * *New Features*
 	* None
@@ -879,7 +879,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.40.2-rc3 =
+= 8.40.2-rc4 =
 
 (2017/03/04) Refactored the SucomUtil is_home_page(), is_post_page(), and get_post_object() methods.
 
