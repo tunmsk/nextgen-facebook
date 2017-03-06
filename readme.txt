@@ -11,7 +11,7 @@ Tags: share, open graph, facebook, twitter, pinterest, youtube, social, sharing,
 Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 4.7.2
-Stable Tag: 8.40.1-2
+Stable Tag: 8.40.2-1
 
 Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how URLs are shared or re-shared!
 
