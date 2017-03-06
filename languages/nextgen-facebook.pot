@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.40.2-rc5\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.40.2-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -478,27 +478,27 @@ msgstr ""
 msgid "Failed to open cache file %s for writing."
 msgstr ""
 
-#: lib/com/form.php:73 lib/config-gettext-extract.php:56
+#: lib/com/form.php:73 lib/config-gettext-extract.php:53
 msgctxt "option value"
 msgid "(option disabled)"
 msgstr ""
 
-#: lib/com/form.php:189 lib/com/form.php:442 lib/config-gettext-extract.php:69
+#: lib/com/form.php:189 lib/com/form.php:442 lib/config-gettext-extract.php:66
 msgctxt "option value"
 msgid "(settings value)"
 msgstr ""
 
-#: lib/com/form.php:197 lib/config-gettext-extract.php:51
+#: lib/com/form.php:197 lib/config-gettext-extract.php:48
 msgctxt "option value"
 msgid "(no images)"
 msgstr ""
 
-#: lib/com/form.php:201 lib/config-gettext-extract.php:54
+#: lib/com/form.php:201 lib/config-gettext-extract.php:51
 msgctxt "option value"
 msgid "(no videos)"
 msgstr ""
 
-#: lib/com/form.php:205 lib/config-gettext-extract.php:52
+#: lib/com/form.php:205 lib/config-gettext-extract.php:49
 msgctxt "option value"
 msgid "[None]"
 msgstr ""
@@ -750,218 +750,203 @@ msgid "New activation"
 msgstr ""
 
 #: lib/config-gettext-extract.php:45
-msgctxt "column header"
-msgid "NGFB Desc"
-msgstr ""
-
-#: lib/config-gettext-extract.php:46
 msgctxt "plugin description"
 msgid ""
 "NGFB extension to provide updates for the NextGEN Facebook (NGFB) Pro plugin "
 "and its Pro extensions."
 msgstr ""
 
-#: lib/config-gettext-extract.php:47
-msgctxt "column header"
-msgid "NGFB Img"
-msgstr ""
-
-#: lib/config-gettext-extract.php:48
+#: lib/config-gettext-extract.php:46
 msgctxt "menu label"
 msgid "NGFB"
 msgstr ""
 
-#: lib/config-gettext-extract.php:49
-msgctxt "column header"
-msgid "NGFB Schema"
-msgstr ""
-
-#: lib/config-gettext-extract.php:50
+#: lib/config-gettext-extract.php:47
 msgctxt "option value"
 msgid "Nickname"
 msgstr ""
 
-#: lib/config-gettext-extract.php:53
+#: lib/config-gettext-extract.php:50
 msgctxt "option value"
 msgid "No"
 msgstr ""
 
-#: lib/config-gettext-extract.php:55
+#: lib/config-gettext-extract.php:52
 msgctxt "option value"
 msgid "Online Only"
 msgstr ""
 
-#: lib/config-gettext-extract.php:57
+#: lib/config-gettext-extract.php:54
 msgctxt "option value"
 msgid "Out of Stock"
 msgstr ""
 
-#: lib/config-gettext-extract.php:58
+#: lib/config-gettext-extract.php:55
 msgctxt "option value"
 msgid "Ow.ly"
 msgstr ""
 
-#: lib/config-gettext-extract.php:59
+#: lib/config-gettext-extract.php:56
 msgctxt "option value"
 msgid "Pinterest Company Page URL"
 msgstr ""
 
-#: lib/config-gettext-extract.php:60
+#: lib/config-gettext-extract.php:57
 msgctxt "option value"
 msgid "Pre-Order"
 msgstr ""
 
-#: lib/config-gettext-extract.php:61
+#: lib/config-gettext-extract.php:58
 msgctxt "option label"
 msgid "Product Availability Custom Field"
 msgstr ""
 
-#: lib/config-gettext-extract.php:62
+#: lib/config-gettext-extract.php:59
 msgctxt "option label"
 msgid "Product Currency Custom Field"
 msgstr ""
 
-#: lib/config-gettext-extract.php:63
+#: lib/config-gettext-extract.php:60
 msgctxt "option label"
 msgid "Product Price Custom Field"
 msgstr ""
 
-#: lib/config-gettext-extract.php:64
+#: lib/config-gettext-extract.php:61
 msgctxt "option value"
 msgid "Public Holidays"
 msgstr ""
 
-#: lib/config-gettext-extract.php:65
+#: lib/config-gettext-extract.php:62
 msgctxt "option label"
 msgid "Recipe Ingredients Custom Field"
 msgstr ""
 
-#: lib/config-gettext-extract.php:66
+#: lib/config-gettext-extract.php:63
 msgctxt "option label"
 msgid "Recipe Instructions Custom Field"
 msgstr ""
 
-#: lib/config-gettext-extract.php:67
+#: lib/config-gettext-extract.php:64
 msgctxt "option value"
 msgid "Right"
 msgstr ""
 
-#: lib/config-gettext-extract.php:68
+#: lib/config-gettext-extract.php:65
 msgctxt "option value"
 msgid "Saturday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:70
+#: lib/config-gettext-extract.php:67
 msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:71 lib/sharing.php:1070
+#: lib/config-gettext-extract.php:68 lib/sharing.php:1070
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr ""
 
-#: lib/config-gettext-extract.php:72
+#: lib/config-gettext-extract.php:69
 msgctxt "option value"
 msgid "Shortcode"
 msgstr ""
 
-#: lib/config-gettext-extract.php:73
+#: lib/config-gettext-extract.php:70
 msgctxt "lib file description"
 msgid "Social and SEO Image Dimensions"
 msgstr ""
 
-#: lib/config-gettext-extract.php:74
+#: lib/config-gettext-extract.php:71
 msgctxt "option value"
 msgid "Sold Out"
 msgstr ""
 
-#: lib/config-gettext-extract.php:75
+#: lib/config-gettext-extract.php:72
 msgctxt "option value"
 msgid "Sunday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:76
+#: lib/config-gettext-extract.php:73
 msgctxt "option value"
 msgid "Thursday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:77
+#: lib/config-gettext-extract.php:74
 msgctxt "option value"
 msgid "TinyURL"
 msgstr ""
 
-#: lib/config-gettext-extract.php:78
+#: lib/config-gettext-extract.php:75
 msgctxt "option value"
 msgid "Title and Excerpt"
 msgstr ""
 
-#: lib/config-gettext-extract.php:79
+#: lib/config-gettext-extract.php:76
 msgctxt "option value"
 msgid "Title Only"
 msgstr ""
 
-#: lib/config-gettext-extract.php:80
+#: lib/config-gettext-extract.php:77
 msgctxt "option value"
 msgid "Top and Bottom"
 msgstr ""
 
-#: lib/config-gettext-extract.php:81
+#: lib/config-gettext-extract.php:78
 msgctxt "option value"
 msgid "Top"
 msgstr ""
 
-#: lib/config-gettext-extract.php:82
+#: lib/config-gettext-extract.php:79
 msgctxt "option value"
 msgid "Tuesday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:83
+#: lib/config-gettext-extract.php:80
 msgctxt "option value"
 msgid "Twitter Business @username"
 msgstr ""
 
-#: lib/config-gettext-extract.php:84
+#: lib/config-gettext-extract.php:81
 msgctxt "lib file description"
 msgid "User Profile Contact Methods"
 msgstr ""
 
-#: lib/config-gettext-extract.php:85
+#: lib/config-gettext-extract.php:82
 msgctxt "option label"
 msgid "Video Embed HTML Custom Field"
 msgstr ""
 
-#: lib/config-gettext-extract.php:86
+#: lib/config-gettext-extract.php:83
 msgctxt "option label"
 msgid "Video URL Custom Field"
 msgstr ""
 
-#: lib/config-gettext-extract.php:87
+#: lib/config-gettext-extract.php:84
 msgctxt "lib file description"
 msgid "Website Social Pages and Accounts"
 msgstr ""
 
-#: lib/config-gettext-extract.php:88
+#: lib/config-gettext-extract.php:85
 msgctxt "option value"
 msgid "Wednesday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:89
+#: lib/config-gettext-extract.php:86
 msgctxt "option value"
 msgid "Widget"
 msgstr ""
 
-#: lib/config-gettext-extract.php:90
+#: lib/config-gettext-extract.php:87
 msgctxt "option value"
 msgid "Yes"
 msgstr ""
 
-#: lib/config-gettext-extract.php:91
+#: lib/config-gettext-extract.php:88
 msgctxt "option value"
 msgid "YOURLS"
 msgstr ""
 
-#: lib/config-gettext-extract.php:92
+#: lib/config-gettext-extract.php:89
 msgctxt "lib file description"
 msgid "Your Social Settings"
 msgstr ""
@@ -2970,7 +2955,7 @@ msgctxt "submit button"
 msgid "Validate AMP Markup"
 msgstr ""
 
-#: lib/meta.php:509
+#: lib/meta.php:506
 msgid "Nonce token validation failed for the submitted form (update ignored)."
 msgstr ""
 

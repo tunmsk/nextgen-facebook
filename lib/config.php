@@ -19,8 +19,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.2-rc5',	// plugin version
-					'opt_version' => '507',		// increment when changing default options
+					'version' => '8.40.2-1',	// plugin version
+					'opt_version' => '508',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -829,7 +829,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'label' => 'NGFB',		// menu item label
 				'color' => 'ff6600',		// menu item color (dark orange)
 			),
-			'list' => array(
+			'edit' => array(
 				'columns' => array(
 					'schema_type' => array(
 						'header' => 'NGFB Schema',
@@ -872,11 +872,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'saturday' => 'Saturday',
 					'publicholidays' => 'Public Holidays',
 				),
-				'time_by_name' => array(
+				'time_by_name' => array(	// in seconds
 					'hour' => 3600,
 					'day' => 86400,
-					'week' => 604800,
-					'month' => 18144000,
+					'week' => 604800,	// 7 days
+					'month' => 2592000,	// 30 days
 				),
 				'cache_hrs' => array(
 					0 => 0,
