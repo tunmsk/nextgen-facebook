@@ -19,7 +19,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.2-1',	// plugin version
+					'version' => '8.40.3-dev1',	// plugin version
 					'opt_version' => '508',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -381,6 +381,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_property_place:country_name' => 1,
 					// open graph (product)
 					'add_meta_property_product:availability' => 1,
+					'add_meta_property_product:condition' => 1,
 					'add_meta_property_product:price:amount' => 1,
 					'add_meta_property_product:price:currency' => 1,
 					// open graph (profile)
@@ -534,6 +535,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_cf_recipe_ingredients' => '',		// Recipe Ingredients Custom Field
 					'plugin_cf_recipe_instructions' => '',		// Recipe Instructions Custom Field
 					'plugin_cf_product_avail' => '',		// Product Availability Custom Field
+					'plugin_cf_product_condition' => '',		// Product Condition Custom Field
 					'plugin_cf_product_price' => '',		// Product Price Custom Field
 					'plugin_cf_product_currency' => '',		// Product Currency Custom Field
 					// Cache Settings Tab
@@ -764,6 +766,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_cf_recipe_ingredients' => 'schema_recipe_ingredient',
 					'plugin_cf_recipe_instructions' => 'schema_recipe_instruction',
 					'plugin_cf_product_avail' => 'product_avail',
+					'plugin_cf_product_condition' => 'product_condition',
 					'plugin_cf_product_price' => 'product_price',
 					'plugin_cf_product_currency' => 'product_currency',
 				),
@@ -956,8 +959,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'tc_site' => 'Twitter Business @username',
 				),
 				// https://schema.org/ItemAvailability
-				'product_availability' => array(
-			 		'none' => '[None]',
+				'item_availability' => array(
 			 		'Discontinued' => 'Discontinued',
 			 		'InStock' => 'In Stock',
 			 		'InStoreOnly' => 'In Store Only',
@@ -967,6 +969,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			 		'PreOrder' => 'Pre-Order',
 			 		'SoldOut ' => 'Sold Out',
 				),
+				// https://schema.org/OfferItemCondition
+				'item_condition' => array(
+					'DamagedCondition' => 'Damaged',
+					'NewCondition' => 'New',
+					'RefurbishedCondition' => 'Refurbished',
+					'UsedCondition' => 'Used',
+				),
 				'cf_labels' => array(		// custom field option labels
 					'plugin_cf_img_url' => 'Image URL Custom Field',
 					'plugin_cf_vid_url' => 'Video URL Custom Field',
@@ -974,6 +983,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_cf_recipe_ingredients' => 'Recipe Ingredients Custom Field',
 					'plugin_cf_recipe_instructions' => 'Recipe Instructions Custom Field',
 					'plugin_cf_product_avail' => 'Product Availability Custom Field',
+					'plugin_cf_product_condition' => 'Product Condition Custom Field',
 					'plugin_cf_product_price' => 'Product Price Custom Field',
 					'plugin_cf_product_currency' => 'Product Currency Custom Field',
 				),
@@ -1011,100 +1021,120 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 				'og_type_mt' => array(
 					'article' => array(
-						'article:author',
-						'article:publisher',
-						'article:published_time',
-						'article:modified_time',
-						'article:expiration_time',
-						'article:section',
-						'article:tag',
+						'article:author' => '',
+						'article:publisher' => '',
+						'article:published_time' => '',
+						'article:modified_time' => '',
+						'article:expiration_time' => '',
+						'article:section' => '',
+						'article:tag' => '',
 					),
 					'book' => array(
-						'book:author',
-						'book:isbn',
-						'book:release_date',
-						'book:tag',
+						'book:author' => '',
+						'book:isbn' => '',
+						'book:release_date' => '',
+						'book:tag' => '',
 					),
 					'music.album' => array(
-						'music:song',
-						'music:song:disc',
-						'music:song:track',
-						'music:musician',
-						'music:release_date',
+						'music:song' => '',
+						'music:song:disc' => '',
+						'music:song:track' => '',
+						'music:musician' => '',
+						'music:release_date' => '',
 					),
 					'music.playlist' => array(
-						'music:creator',
-						'music:song',
-						'music:song:disc',
-						'music:song:track',
+						'music:creator' => '',
+						'music:song' => '',
+						'music:song:disc' => '',
+						'music:song:track' => '',
 					),
 					'music.radio_station' => array(
-						'music:creator',
+						'music:creator' => '',
 					),
 					'music.song' => array(
-						'music:album',
-						'music:album:disc',
-						'music:album:track',
-						'music:duration',
-						'music:musician',
+						'music:album' => '',
+						'music:album:disc' => '',
+						'music:album:track' => '',
+						'music:duration' => '',
+						'music:musician' => '',
 					),
 					'place' => array(
-						'place:location:latitude',
-						'place:location:longitude',
-						'place:location:altitude',
-						'place:street_address',
-						'place:locality',
-						'place:region',
-						'place:postal_code',
-						'place:country_name',
+						'place:location:latitude' => '',
+						'place:location:longitude' => '',
+						'place:location:altitude' => '',
+						'place:street_address' => '',
+						'place:locality' => '',
+						'place:region' => '',
+						'place:postal_code' => '',
+						'place:country_name' => '',
 					),
+					// https://developers.facebook.com/docs/reference/opengraph/object-type/product/
 					'product' => array(
-						'product:availability',
-						'product:price:amount',
-						'product:price:currency',
+						'product:availability' => 'product_avail',	// 'instock', 'oos', or 'pending'
+						'product:condition' => 'product_condition',	// 'new', 'refurbished', or 'used'
+						'product:price:amount' => 'product_price',
+						'product:price:currency' => 'product_currency',
 					),
 					'profile' => array(
-						'profile:first_name',
-						'profile:last_name',
-						'profile:username',
-						'profile:gender',
+						'profile:first_name' => '',
+						'profile:last_name' => '',
+						'profile:username' => '',
+						'profile:gender' => '',
 					),
 					'video.episode' => array(
-						'video:actor',
-						'video:actor:role',
-						'video:director',
-						'video:writer',
-						'video:duration',
-						'video:release_date',
-						'video:tag',
-						'video:series',
+						'video:actor' => '',
+						'video:actor:role' => '',
+						'video:director' => '',
+						'video:writer' => '',
+						'video:duration' => '',
+						'video:release_date' => '',
+						'video:tag' => '',
+						'video:series' => '',
 					),
 					'video.movie' => array(
-						'video:actor',
-						'video:actor:role',
-						'video:director',
-						'video:writer',
-						'video:duration',
-						'video:release_date',
-						'video:tag',
+						'video:actor' => '',
+						'video:actor:role' => '',
+						'video:director' => '',
+						'video:writer' => '',
+						'video:duration' => '',
+						'video:release_date' => '',
+						'video:tag' => '',
 					),
 					'video.other' => array(
-						'video:actor',
-						'video:actor:role',
-						'video:director',
-						'video:writer',
-						'video:duration',
-						'video:release_date',
-						'video:tag',
+						'video:actor' => '',
+						'video:actor:role' => '',
+						'video:director' => '',
+						'video:writer' => '',
+						'video:duration' => '',
+						'video:release_date' => '',
+						'video:tag' => '',
 					),
 					'video.tv_show' => array(
-						'video:actor',
-						'video:actor:role',
-						'video:director',
-						'video:writer',
-						'video:duration',
-						'video:release_date',
-						'video:tag',
+						'video:actor' => '',
+						'video:actor:role' => '',
+						'video:director' => '',
+						'video:writer' => '',
+						'video:duration' => '',
+						'video:release_date' => '',
+						'video:tag' => '',
+					),
+				),
+				'og_content_map' => array(
+					'product:availability' => array(	// 'instock', 'oos', or 'pending'
+				 		'Discontinued' => 'oos',
+				 		'InStock' => 'instock',
+				 		'InStoreOnly' => 'instock',
+				 		'LimitedAvailability' => 'instock',
+				 		'OnlineOnly' => 'instock',
+				 		'OutOfStock' => 'oos',
+				 		'PreOrder' => 'pending',
+				 		'SoldOut ' => 'oos',
+					),
+					'product:condition' => array(		// 'new', 'refurbished', or 'used'
+						'DamagedCondition' => 'used',
+						'NewCondition' => 'new',
+						'RefurbishedCondition' => 'refurbished',
+						'UsedCondition' => 'used',
 					),
 				),
 				/*

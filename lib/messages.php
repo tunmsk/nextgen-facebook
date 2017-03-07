@@ -83,16 +83,24 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 							$text = __( 'A custom description for the Twitter Card description meta tag (all Twitter Card formats).', 'nextgen-facebook' );
 						 	break;
 						case 'tooltip-meta-product_avail':
-							if ( ! isset( $product_meta_name ) )
+							if ( ! isset( $product_meta_name ) ) {
 								$product_meta_name = _x( 'availability', 'product meta name', 'nextgen-facebook' );
+							}
+							// no break - fall through
+						case 'tooltip-meta-product_condition':
+							if ( ! isset( $product_meta_name ) ) {
+								$product_meta_name = _x( 'condition', 'product meta name', 'nextgen-facebook' );
+							}
 							// no break - fall through
 						case 'tooltip-meta-product_price':
-							if ( ! isset( $product_meta_name ) )
+							if ( ! isset( $product_meta_name ) ) {
 								$product_meta_name = _x( 'price', 'product meta name', 'nextgen-facebook' );
+							}
 							// no break - fall through
 						case 'tooltip-meta-product_currency':
-							if ( ! isset( $product_meta_name ) )
+							if ( ! isset( $product_meta_name ) ) {
 								$product_meta_name = _x( 'currency', 'product meta name', 'nextgen-facebook' );
+							}
 							// no break - fall through
 							// use ucfirst() for the french translation which puts the (lowercase) product meta name first 
 							$text = sprintf( __( 'You may select a custom %1$s for your product, or leave the default value as-is.', 'nextgen-facebook' ), $product_meta_name ).' '.
@@ -369,52 +377,67 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 								'nextgen-facebook' );
 							break;
 						case 'tooltip-plugin_cf_img_url':
-							if ( ! isset( $plugin_cf_info ) )
+							if ( ! isset( $plugin_cf_info ) ) {
 								$plugin_cf_info = array(
 									_x( 'an image URL', 'tooltip fragment', 'nextgen-facebook' ),
 									_x( 'Image URL', 'option label', 'nextgen-facebook' ) );
+							}
 							// no break - fall through
 						case 'tooltip-plugin_cf_vid_url':
-							if ( ! isset( $plugin_cf_info ) )
+							if ( ! isset( $plugin_cf_info ) ) {
 								$plugin_cf_info = array(
 									_x( 'a video URL (not HTML code)', 'tooltip fragment', 'nextgen-facebook' ),
 									_x( 'Video URL', 'option label', 'nextgen-facebook' ) );
+							}
 							// no break - fall through
 						case 'tooltip-plugin_cf_vid_embed':
-							if ( ! isset( $plugin_cf_info ) )
+							if ( ! isset( $plugin_cf_info ) ) {
 								$plugin_cf_info = array(
 									_x( 'video embed HTML code (not a URL)', 'tooltip fragment', 'nextgen-facebook' ),
 									_x( 'Video Embed HTML', 'option label', 'nextgen-facebook' ) );
+							}
 							// no break - fall through
 						case 'tooltip-plugin_cf_recipe_ingredients':
-							if ( ! isset( $plugin_cf_info ) )
+							if ( ! isset( $plugin_cf_info ) ) {
 								$plugin_cf_info = array(
 									_x( 'recipe ingredients', 'tooltip fragment', 'nextgen-facebook' ),
 									_x( 'Recipe Ingredients', 'option label', 'nextgen-facebook' ) );
+							}
 							// no break - fall through
 						case 'tooltip-plugin_cf_recipe_instructions':
-							if ( ! isset( $plugin_cf_info ) )
+							if ( ! isset( $plugin_cf_info ) ) {
 								$plugin_cf_info = array(
 									_x( 'recipe instructions', 'tooltip fragment', 'nextgen-facebook' ),
 									_x( 'Recipe Instructions', 'option label', 'nextgen-facebook' ) );
+							}
 							// no break - fall through
 						case 'tooltip-plugin_cf_product_avail':
-							if ( ! isset( $plugin_cf_info ) )
+							if ( ! isset( $plugin_cf_info ) ) {
 								$plugin_cf_info = array(
 									_x( 'a product availability', 'tooltip fragment', 'nextgen-facebook' ),
 									_x( 'Product Availability', 'option label', 'nextgen-facebook' ) );
+							}
+							// no break - fall through
+						case 'tooltip-plugin_cf_product_condition':
+							if ( ! isset( $plugin_cf_info ) ) {
+								$plugin_cf_info = array(
+									_x( 'a product condition', 'tooltip fragment', 'nextgen-facebook' ),
+									_x( 'Product Condition', 'option label', 'nextgen-facebook' ) );
+							}
 							// no break - fall through
 						case 'tooltip-plugin_cf_product_price':
-							if ( ! isset( $plugin_cf_info ) )
+							if ( ! isset( $plugin_cf_info ) ) {
 								$plugin_cf_info = array(
 									_x( 'a product price', 'tooltip fragment', 'nextgen-facebook' ),
 									_x( 'Product Price', 'option label', 'nextgen-facebook' ) );
+							}
 							// no break - fall through
 						case 'tooltip-plugin_cf_product_currency':
-							if ( ! isset( $plugin_cf_info ) )
+							if ( ! isset( $plugin_cf_info ) ) {
 								$plugin_cf_info = array(
 									_x( 'a product currency', 'tooltip fragment', 'nextgen-facebook' ),
 									_x( 'Product Currency', 'option label', 'nextgen-facebook' ) );
+							}
 							// no break - fall through
 							$text = sprintf( __( 'If your theme or another plugin provides a custom field for %1$s, you may enter its custom field name here.', 'nextgen-facebook' ), $plugin_cf_info[0] ).' '.sprintf( __( 'If a custom field matching that name is found, its value may be used for the %1$s option in the Social Settings metabox.', 'nextgen-facebook' ), $plugin_cf_info[1] );
 							break;	// stop here
