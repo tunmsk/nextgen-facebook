@@ -1537,6 +1537,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			$var_const['NGFB_HIDE_ALL_ERRORS'] = false;		// auto-hide all error notices
 			$var_const['NGFB_HIDE_ALL_WARNINGS'] = false;		// auto-hide all warning notices
 			$var_const['NGFB_JSON_PRETTY_PRINT'] = true;		// output pretty / human readable json
+			$var_const['NGFB_DEF_PROD_CURRENCY'] = 'USD';		// default product currency
 
 			/*
 			 * NGFB option and meta array names

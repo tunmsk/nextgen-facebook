@@ -421,9 +421,9 @@ if ( ! class_exists( 'NgfbOpenGraph' ) ) {
 			}
 
 			if ( isset( $mt_og['product:price:amount'] ) ) {
-				if ( is_numeric( $mt_og['product:price:amount'] ) ) {
+				if ( is_numeric( $mt_og['product:price:amount'] ) ) {	// allow for price of 0
 					if ( empty( $mt_og['product:price:currency'] ) ) {
-						$mt_og['product:price:currency'] = 'USD';	// default value
+						$mt_og['product:price:currency'] = NGFB_DEF_PROD_CURRENCY;
 					}
 				} else {
 					if ( $this->p->debug->enabled ) {
