@@ -20,7 +20,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.40.3-dev1',	// plugin version
-					'opt_version' => '508',		// increment when changing default options
+					'opt_version' => '509',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -384,6 +384,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_property_product:condition' => 1,
 					'add_meta_property_product:price:amount' => 1,
 					'add_meta_property_product:price:currency' => 1,
+					'add_meta_property_product:weight:value' => 1,
+					'add_meta_property_product:weight:units' => 1,
 					// open graph (profile)
 					'add_meta_property_profile:first_name' => 1,
 					'add_meta_property_profile:last_name' => 1,
@@ -1070,10 +1072,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					),
 					// https://developers.facebook.com/docs/reference/opengraph/object-type/product/
 					'product' => array(
-						'product:availability' => 'product_avail',	// 'instock', 'oos', or 'pending'
-						'product:condition' => 'product_condition',	// 'new', 'refurbished', or 'used'
+						'product:availability' => 'product_avail',
+						'product:condition' => 'product_condition',
 						'product:price:amount' => 'product_price',
 						'product:price:currency' => 'product_currency',
+						'product:weight:value' => '',
+						'product:weight:units' => '',
 					),
 					'profile' => array(
 						'profile:first_name' => '',

@@ -51,7 +51,7 @@ if ( ! class_exists( 'NgfbWeibo' ) ) {
 				}
 			}
 
-			return apply_filters( $lca.'_weibo', $mt_weibo, $mod['use_post'], $mod );
+			return (array) apply_filters( $lca.'_weibo', $mt_weibo, $mod['use_post'], $mod );
 		}
 	}
 }
