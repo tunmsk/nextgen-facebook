@@ -1605,7 +1605,7 @@ msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr ""
 
-#: lib/gpl/ecom/woocommerce.php:112 lib/pro/ecom/woocommerce.php:562
+#: lib/gpl/ecom/woocommerce.php:112 lib/pro/ecom/woocommerce.php:592
 msgctxt "option label"
 msgid "Position in Woo Short Text"
 msgstr ""
@@ -3102,7 +3102,7 @@ msgid ""
 "Activate the %s extension for additional Schema markup features and options."
 msgstr ""
 
-#: lib/pro/ecom/woocommerce.php:429
+#: lib/pro/ecom/woocommerce.php:456
 msgid "\"%s\" is  an unknown Schema product item condition."
 msgstr ""
 
