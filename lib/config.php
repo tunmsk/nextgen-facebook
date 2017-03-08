@@ -19,7 +19,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.3-dev2',	// plugin version
+					'version' => '8.40.3-b1',	// plugin version
 					'opt_version' => '509',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -308,7 +308,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'tc_type_post' => 'summary_large_image',
 					'tc_type_default' => 'summary',
 					// summary card
-					'tc_sum_img_width' => 600,			// Summary Card Image Dimensions
+					'tc_sum_img_width' => 600,		// Summary Card Image Dimensions
 					'tc_sum_img_height' => 600,
 					'tc_sum_img_crop' => 1,
 					'tc_sum_img_crop_x' => 'center',
@@ -1023,7 +1023,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'video.tv_show' => 'http://ogp.me/ns/video#',
 					'website' => 'http://ogp.me/ns/website#',
 				),
+				// https://developers.facebook.com/docs/reference/opengraph/
 				'og_type_mt' => array(
+					// https://developers.facebook.com/docs/reference/opengraph/object-type/article/
 					'article' => array(
 						'article:author' => '',
 						'article:publisher' => '',
