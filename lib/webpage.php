@@ -9,9 +9,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
 }
 
-if ( ! class_exists( 'SucomWebpage' ) ) {
+if ( ! class_exists( 'NgfbWebpage' ) ) {
 
-	class SucomWebpage {
+	class NgfbWebpage {
 
 		private $p;
 		private $shortcode = array();

@@ -13,7 +13,7 @@
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
  * Requires At Least: 3.8
  * Tested Up To: 4.7.3
- * Version: 8.40.3-1
+ * Version: 8.40.4-dev1
  *
  * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -56,7 +56,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public $sharing;		// NgfbSharing (wp_head and wp_footer js and buttons)
 		public $style;			// SucomStyle (admin styles)
 		public $util;			// NgfbUtil (extends SucomUtil)
-		public $webpage;		// SucomWebpage (title, desc, etc., plus shortcodes)
+		public $webpage;		// NgfbWebpage (title, desc, etc., plus shortcodes)
 
 		/*
 		 * Reference Variables (config, options, modules, etc.)
@@ -81,12 +81,12 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			NgfbConfig::require_libs( __FILE__ );			// includes the register.php class library
 			$this->reg = new NgfbRegister( $this );			// activate, deactivate, uninstall hooks
 
+			add_action( 'widgets_init', array( &$this, 'init_widgets' ), 10 );	// runs at init 1
+
 			add_action( 'init', array( &$this, 'set_config' ), NGFB_INIT_PRIORITY - 3 );	// 11 by default
 			add_action( 'init', array( &$this, 'set_options' ), NGFB_INIT_PRIORITY - 2 );	// 12 by default
 			add_action( 'init', array( &$this, 'set_objects' ), NGFB_INIT_PRIORITY - 1 );	// 13 by default
 			add_action( 'init', array( &$this, 'init_plugin' ), NGFB_INIT_PRIORITY );	// 14 by default
-
-			add_action( 'widgets_init', array( &$this, 'init_widgets' ), 10 );
 
 			if ( is_admin() )
 				add_action( 'ngfb_init_textdomain', 		// action is run after the debug property is defined
@@ -97,6 +97,23 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			if ( ! isset( self::$instance ) )
 				self::$instance = new self;
 			return self::$instance;
+		}
+
+		// runs at widgets_init priority 10, and the widgets_init action runs at init 1
+		public function init_widgets() {
+			$opts = get_option( NGFB_OPTIONS_NAME );
+			if ( ! empty( $opts['plugin_widgets'] ) ) {
+				foreach ( $this->cf['plugin'] as $ext => $info ) {
+					if ( isset( $info['lib']['widget'] ) && is_array( $info['lib']['widget'] ) ) {
+						foreach ( $info['lib']['widget'] as $id => $name ) {
+							$classname = apply_filters( $ext.'_load_lib', false, 'widget/'.$id );
+							if ( $classname !== false && class_exists( $classname ) ) {
+								register_widget( $classname );	// name of a class that extends WP_Widget
+							}
+						}
+					}
+				}
+			}
 		}
 
 		// runs at init priority 11 by default
@@ -206,7 +223,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			$this->cache = new SucomCache( $this );			// object and file caching
 			$this->style = new SucomStyle( $this );			// admin styles
 			$this->script = new SucomScript( $this );		// admin jquery tooltips
-			$this->webpage = new SucomWebpage( $this );		// title, desc, etc., plus shortcodes
+			$this->webpage = new NgfbWebpage( $this );		// title, desc, etc., plus shortcodes
 			$this->media = new NgfbMedia( $this );			// images, videos, etc.
 			$this->filters = new NgfbFilters( $this );		// integration filters
 			$this->head = new NgfbHead( $this );
@@ -307,22 +324,6 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 			if ( $this->debug->enabled )
 				$this->debug->mark( 'plugin initialization' );	// end timer
-		}
-
-		// runs at widgets_init priority 10
-		public function init_widgets() {
-			$opts = get_option( NGFB_OPTIONS_NAME );
-			if ( ! empty( $opts['plugin_widgets'] ) ) {
-				foreach ( $this->cf['plugin'] as $ext => $info ) {
-					if ( isset( $info['lib']['widget'] ) && is_array( $info['lib']['widget'] ) ) {
-						foreach ( $info['lib']['widget'] as $id => $name ) {
-							$classname = apply_filters( $ext.'_load_lib', false, 'widget/'.$id );
-							if ( $classname !== false && class_exists( $classname ) )
-								register_widget( $classname );
-						}
-					}
-				}
-			}
 		}
 
 		// runs at ngfb_init_textdomain priority -10

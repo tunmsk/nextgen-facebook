@@ -19,7 +19,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.3-1',	// plugin version
+					'version' => '8.40.4-dev1',	// plugin version
 					'opt_version' => '509',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -1590,31 +1590,31 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
+			require_once( NGFB_PLUGINDIR.'lib/com/cache.php' );
 			require_once( NGFB_PLUGINDIR.'lib/com/nodebug.php' );	// always load fallback class
 			require_once( NGFB_PLUGINDIR.'lib/com/nonotice.php' );	// always load fallback class
 			require_once( NGFB_PLUGINDIR.'lib/com/util.php' );
-			require_once( NGFB_PLUGINDIR.'lib/com/cache.php' );
-			require_once( NGFB_PLUGINDIR.'lib/com/webpage.php' );
 
-			require_once( NGFB_PLUGINDIR.'lib/exception.php' );	// extends Exception
-			require_once( NGFB_PLUGINDIR.'lib/register.php' );
 			require_once( NGFB_PLUGINDIR.'lib/check.php' );
-			require_once( NGFB_PLUGINDIR.'lib/util.php' );
-			require_once( NGFB_PLUGINDIR.'lib/options.php' );
-			require_once( NGFB_PLUGINDIR.'lib/meta.php' );
-			require_once( NGFB_PLUGINDIR.'lib/post.php' );		// extends meta.php
-			require_once( NGFB_PLUGINDIR.'lib/term.php' );		// extends meta.php
-			require_once( NGFB_PLUGINDIR.'lib/user.php' );		// extends meta.php
-			require_once( NGFB_PLUGINDIR.'lib/media.php' );
+			require_once( NGFB_PLUGINDIR.'lib/exception.php' );	// extends exception
 			require_once( NGFB_PLUGINDIR.'lib/filters.php' );
-			require_once( NGFB_PLUGINDIR.'lib/head.php' );
-			require_once( NGFB_PLUGINDIR.'lib/opengraph.php' );
-			require_once( NGFB_PLUGINDIR.'lib/weibo.php' );
-			require_once( NGFB_PLUGINDIR.'lib/twittercard.php' );
-			require_once( NGFB_PLUGINDIR.'lib/schema.php' );
 			require_once( NGFB_PLUGINDIR.'lib/functions.php' );
+			require_once( NGFB_PLUGINDIR.'lib/head.php' );
+			require_once( NGFB_PLUGINDIR.'lib/media.php' );
+			require_once( NGFB_PLUGINDIR.'lib/meta.php' );
+			require_once( NGFB_PLUGINDIR.'lib/opengraph.php' );
+			require_once( NGFB_PLUGINDIR.'lib/options.php' );
+			require_once( NGFB_PLUGINDIR.'lib/post.php' );		// extends meta.php
+			require_once( NGFB_PLUGINDIR.'lib/register.php' );
+			require_once( NGFB_PLUGINDIR.'lib/schema.php' );
 			require_once( NGFB_PLUGINDIR.'lib/script.php' );
 			require_once( NGFB_PLUGINDIR.'lib/style.php' );
+			require_once( NGFB_PLUGINDIR.'lib/term.php' );		// extends meta.php
+			require_once( NGFB_PLUGINDIR.'lib/twittercard.php' );
+			require_once( NGFB_PLUGINDIR.'lib/user.php' );		// extends meta.php
+			require_once( NGFB_PLUGINDIR.'lib/util.php' );
+			require_once( NGFB_PLUGINDIR.'lib/webpage.php' );
+			require_once( NGFB_PLUGINDIR.'lib/weibo.php' );
 
 			if ( is_admin() ) {
 				require_once( NGFB_PLUGINDIR.'lib/messages.php' );
