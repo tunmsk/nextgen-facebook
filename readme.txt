@@ -408,6 +408,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* None
 * *Developer Notes*
 	* Renamed / moved the SucomWebpage class in lib/com/webpage.php to NgfbWebpage in lib/webpage.php.
+	* Renamed the "ngfb:mark" meta tags to unique "ngfb:mark:begin" and "ngfb:mark:end" meta tags (used to exclude wpsso meta tags when checking the header for duplicate meta tags).
 
 **Version 8.40.3-1 (2017/03/10)**
 
