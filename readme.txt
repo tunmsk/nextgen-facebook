@@ -398,12 +398,12 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.4-dev1 (TBD)**
+**Version 8.40.4-dev1 (2017/03/12)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added filtering to replace illegal characters in an Authentication ID string with regular dashes.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -907,6 +907,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.40.4-dev1 =
+
+(2017/03/12) Added filtering to replace illegal characters in an Authentication ID string with regular dashes. Renamed / moved the SucomWebpage class in lib/com/webpage.php to WpssoWebpage in lib/webpage.php.
 
 = 8.40.3-1 =
 
