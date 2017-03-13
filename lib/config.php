@@ -19,7 +19,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.4-dev1',	// plugin version
+					'version' => '8.40.4-dev2',	// plugin version
 					'opt_version' => '509',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -1529,8 +1529,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				$var_const['NGFB_TOPICS_LIST'] = NGFB_PLUGINDIR.'share/topics.txt';
 			}
 
-			if ( defined( 'NGFB_URLPATH' ) )
+			if ( defined( 'NGFB_URLPATH' ) ) {
 				$var_const['NGFB_CACHEURL'] = NGFB_URLPATH.'cache/';
+			}
 
 			$var_const['NGFB_DEBUG_FILE_EXP'] = 300;
 			$var_const['NGFB_MENU_ORDER'] = '99.11';		// position of the NGFB menu item
@@ -1539,7 +1540,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			$var_const['NGFB_HIDE_ALL_ERRORS'] = false;		// auto-hide all error notices
 			$var_const['NGFB_HIDE_ALL_WARNINGS'] = false;		// auto-hide all warning notices
 			$var_const['NGFB_JSON_PRETTY_PRINT'] = true;		// output pretty / human readable json
-			$var_const['NGFB_DEF_PROD_CURRENCY'] = 'USD';		// default product currency
+			$var_const['NGFB_PROD_CURRENCY'] = 'USD';		// default for 'product_currency'
+			$var_const['NGFB_UNDEF_INT'] = -1;			// undefined width / height value
 
 			/*
 			 * NGFB option and meta array names
@@ -1575,15 +1577,18 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			$var_const['NGFB_SEO_FILTERS_PRIORITY'] = 100;
 
 			/*
-			 * NGFB curl settings
+			 * NGFB cURL settings
 			 */
-			if ( defined( 'NGFB_PLUGINDIR' ) )
+			if ( defined( 'NGFB_PLUGINDIR' ) ) {
 				$var_const['NGFB_PHP_CURL_CAINFO'] = ABSPATH.WPINC.'/certificates/ca-bundle.crt';
+			}
 			$var_const['NGFB_PHP_CURL_USERAGENT'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0';
 
-			foreach ( $var_const as $name => $value )
-				if ( defined( $name ) )
+			foreach ( $var_const as $name => $value ) {
+				if ( defined( $name ) ) {
 					$var_const[$name] = constant( $name );	// inherit existing values
+				}
+			}
 
 			return $var_const;
 		}

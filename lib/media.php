@@ -295,8 +295,8 @@ if ( ! class_exists( 'NgfbMedia' ) ) {
 			$lca = $this->p->cf['lca'];
 			$size_info = SucomUtil::get_size_info( $size_name );
 			$img_url = '';
-			$img_width = -1;
-			$img_height = -1;
+			$img_width = NGFB_UNDEF_INT;
+			$img_height = NGFB_UNDEF_INT;
 			$img_cropped = empty( $size_info['crop'] ) ? 0 : 1;	// get_size_info() returns false, true, or an array
 
 			if ( $this->p->is_avail['media']['ngg'] === true && strpos( $pid, 'ngg-' ) === 0 ) {
@@ -666,8 +666,8 @@ if ( ! class_exists( 'NgfbMedia' ) ) {
 							} else {
 								$og_image = array(
 									'og:image' => $attr_value,
-									'og:image:width' => -1,
-									'og:image:height' => -1,
+									'og:image:width' => NGFB_UNDEF_INT,
+									'og:image:height' => NGFB_UNDEF_INT,
 								);
 							}
 
@@ -737,7 +737,8 @@ if ( ! class_exists( 'NgfbMedia' ) ) {
 					$this->p->debug->log( 'using default video url = '.$embed_url );
 
 				// fallback to video url if necessary
-				$og_video = $this->get_video_info( $embed_url, -1, -1, $check_dupes, true );	// $fallback = true
+				$og_video = $this->get_video_info( $embed_url, 
+					NGFB_UNDEF_INT, NGFB_UNDEF_INT, $check_dupes, true );	// $fallback = true
 
 				if ( ! empty( $og_video ) &&
 					$this->p->util->push_max( $og_ret, $og_video, $num ) )
@@ -804,9 +805,9 @@ if ( ! class_exists( 'NgfbMedia' ) ) {
 							$this->p->util->is_uniq_url( $embed_url, 'video' ) ) ) {	// $context = 'video'
 
 						$embed_width = preg_match( '/ width=[\'"]?([0-9]+)[\'"]?/i',
-							$media[0], $match) ? $match[1] : -1;
+							$media[0], $match) ? $match[1] : NGFB_UNDEF_INT;
 						$embed_height = preg_match( '/ height=[\'"]?([0-9]+)[\'"]?/i',
-							$media[0], $match) ? $match[1] : -1;
+							$media[0], $match) ? $match[1] : NGFB_UNDEF_INT;
 
 						$og_video = $this->get_video_info( $embed_url, $embed_width, $embed_height, $check_dupes );
 

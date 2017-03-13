@@ -328,7 +328,7 @@ if ( ! class_exists( 'NgfbOpenGraph' ) ) {
 				if ( isset( $mt_og['product:price:amount'] ) ) {
 					if ( is_numeric( $mt_og['product:price:amount'] ) ) {	// allow for price of 0
 						if ( empty( $mt_og['product:price:currency'] ) ) {
-							$mt_og['product:price:currency'] = NGFB_DEF_PROD_CURRENCY;
+							$mt_og['product:price:currency'] = NGFB_PROD_CURRENCY;
 						}
 					} else {
 						if ( $this->p->debug->enabled ) {
@@ -745,6 +745,8 @@ if ( ! class_exists( 'NgfbOpenGraph' ) ) {
 				return '';
 			}
 
+			$og_media = reset( $mt_og );	// only search the first media array
+
 			switch ( $prefix ) {
 				// if we're asking for an image or video url, then search all three values sequentially
 				case ( preg_match( '/:(image|video)(:secure_url|:url)?$/', $prefix ) ? true : false ):
@@ -760,10 +762,18 @@ if ( ! class_exists( 'NgfbOpenGraph' ) ) {
 					break;
 			}
 
-			$og_media = reset( $mt_og );	// only search the first media array
-
 			foreach ( $mt_search as $key ) {
-				if ( ! empty( $og_media[$key] ) && $og_media[$key] !== -1 ) {
+				if ( ! isset( $og_media[$key] ) ) {
+					continue;
+				} elseif ( $og_media[$key] === '' || $og_media[$key] === null ) {	// allow for 0
+					if ( $this->p->debug->enabled ) {
+						$this->p->debug->log( og_media[$key].' value is empty (skipped)' );
+					}
+				} elseif ( $og_media[$key] === NGFB_UNDEF_INT || $og_media[$key] === (string) NGFB_UNDEF_INT ) {
+					if ( $this->p->debug->enabled ) {
+						$this->p->debug->log( og_media[$key].' value is '.NGFB_UNDEF_INT.' (skipped)' );
+					}
+				} else {
 					return $og_media[$key];
 				}
 			}

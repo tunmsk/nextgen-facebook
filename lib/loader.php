@@ -45,7 +45,7 @@ if ( ! class_exists( 'NgfbLoader' ) ) {
 
 			foreach ( $this->p->cf['plugin'] as $ext => $info ) {
 				$type = $this->p->check->aop( $this->p->cf['lca'], true, $this->p->is_avail['aop'] ) &&
-					$this->p->check->aop( $ext, true, -1 ) === -1 ? 'pro' : 'gpl';
+					$this->p->check->aop( $ext, true, NGFB_UNDEF_INT ) === NGFB_UNDEF_INT ? 'pro' : 'gpl';
 				if ( ! isset( $info['lib'][$type] ) ) {
 					if ( $this->p->debug->enabled )
 						$this->p->debug->log( $ext.' lib/'.$type.' not defined' );

@@ -545,7 +545,6 @@ if ( ! class_exists( 'NgfbHead' ) ) {
 					$this->p->debug->log( $log_prefix.' value is an array (skipped)' );
 				}
 				return $ret;
-
 			} elseif ( is_object( $value ) ) {
 				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( $log_prefix.' value is an object (skipped)' );
@@ -574,6 +573,14 @@ if ( ! class_exists( 'NgfbHead' ) ) {
 			// $parts = array( $html, $tag, $type, $name, $attr, $value, $cmt );
 			foreach ( $ret as $num => $parts ) {
 
+				if ( ! isset( $parts[6] ) ) {
+					if ( $this->p->debug->enabled ) {
+						$this->p->debug->log( 'parts array is incomplete (skipped)' );
+						$this->p->debug->log_arr( '$parts', $parts );
+					}
+					continue;
+				}
+
 				// filtering of single meta tags can be enabled by defining NGFB_FILTER_SINGLE_TAGS as true
 				if ( SucomUtil::get_const( 'NGFB_FILTER_SINGLE_TAGS' ) ) {
 					$parts = $this->filter_single_mt( $parts, $mod );
@@ -585,13 +592,13 @@ if ( ! class_exists( 'NgfbHead' ) ) {
 					$this->p->debug->log( $log_prefix.' = "'.$parts[5].'"' );
 				}
 
-				if ( $parts[5] === '' || $parts[5] === null ) {		// allow for 0
+				if ( $parts[5] === '' || $parts[5] === null ) {	// allow for 0
 					if ( $this->p->debug->enabled ) {
 						$this->p->debug->log( $log_prefix.' value is empty (skipped)' );
 					}
-				} elseif ( $parts[5] === -1 || $parts[5] === '-1' ) {	// -1 is reserved
+				} elseif ( $parts[5] === NGFB_UNDEF_INT || $parts[5] === (string) NGFB_UNDEF_INT ) {
 					if ( $this->p->debug->enabled ) {
-						$this->p->debug->log( $log_prefix.' value is -1 (skipped)' );
+						$this->p->debug->log( $log_prefix.' value is '.NGFB_UNDEF_INT.' (skipped)' );
 					}
 				} else {
 					/*
@@ -663,6 +670,7 @@ if ( ! class_exists( 'NgfbHead' ) ) {
 		// filtering of single meta tags can be enabled by defining NGFB_FILTER_SINGLE_TAGS as true
 		// $parts = array( $html, $tag, $type, $name, $attr, $value, $cmt );
 		private function filter_single_mt( array &$parts, array &$mod ) {
+
 			$log_prefix = $parts[1].' '.$parts[2].' '.$parts[3];
 			$filter_name = $this->p->cf['lca'].'_'.$parts[1].'_'.$parts[2].'_'.$parts[3].'_'.$parts[4];
 			$new_value = apply_filters( $filter_name, $parts[5], $parts[6], $mod );

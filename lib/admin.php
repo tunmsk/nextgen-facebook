@@ -88,7 +88,8 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				self::$pkg[$ext]['pdir'] = $this->p->check->aop( $ext, false, $this->p->is_avail['aop'] );
 				self::$pkg[$ext]['aop'] = ! empty( $this->p->options['plugin_'.$ext.'_tid'] ) &&
 					$this->p->check->aop( $lca, true, $this->p->is_avail['aop'] ) &&
-						$this->p->check->aop( $ext, true, -1 ) === -1 ? true : false;
+						$this->p->check->aop( $ext, true, NGFB_UNDEF_INT ) === NGFB_UNDEF_INT ?
+							true : false;
 				self::$pkg[$ext]['type'] = self::$pkg[$ext]['aop'] ?
 					_x( 'Pro', 'package type', 'nextgen-facebook' ) :
 					_x( 'Free', 'package type', 'nextgen-facebook' );
