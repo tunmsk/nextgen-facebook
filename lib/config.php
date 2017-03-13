@@ -19,8 +19,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.4-dev2',	// plugin version
-					'opt_version' => '509',		// increment when changing default options
+					'version' => '8.40.4-dev3',	// plugin version
+					'opt_version' => '510',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -550,6 +550,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_show_purge_count' => 0,			// Show Cache Purge Count on Update
 					'plugin_clear_on_save' => 1,			// Clear All Cache on Save Settings
 					'plugin_clear_short_urls' => 0,			// Clear Short URLs on Clear All Cache
+					'plugin_clear_for_comment' => 1,		// Clear Post Cache for Comment
 					// Service API Keys Tab
 					'plugin_shortener' => 'none',
 					'plugin_shortlink' => 1,			// Use Shortnened URL for WP Shortlink
@@ -665,6 +666,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_clear_on_save:use' => 'default',
 					'plugin_clear_short_urls' => 0,			// Clear Short URLs on Clear All Cache
 					'plugin_clear_short_urls:use' => 'default',
+					'plugin_clear_for_comment' => 1,		// Clear Post Cache for Comment
+					'plugin_clear_for_comment:use' => 'default',
 					// Extension Plugins and Pro Licenses
 					'plugin_ngfb_tid' => '',
 					'plugin_ngfb_tid:use' => 'default',
