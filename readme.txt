@@ -404,6 +404,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* None
 * *Improvements*
 	* Added filtering to replace illegal characters in an Authentication ID string with regular dashes.
+	* Replaced the "(settings value)" text shown for options in the Social Settings metabox with the actual default value.
 * *Bugfixes*
 	* None
 * *Developer Notes*
