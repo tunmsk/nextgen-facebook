@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.4-dev1 (2017/03/12)**
+**Version 8.40.4-dev2 (2017/03/12)**
 
 * *New Features*
 	* None
@@ -910,7 +910,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.40.4-dev1 =
+= 8.40.4-dev2 =
 
 (2017/03/12) Added filtering to replace illegal characters in an Authentication ID string with regular dashes. Renamed / moved the SucomWebpage class in lib/com/webpage.php to WpssoWebpage in lib/webpage.php.
 
