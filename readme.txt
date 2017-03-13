@@ -398,7 +398,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.4-dev2 (2017/03/12)**
+**Version 8.40.4-dev3 (2017/03/13)**
 
 * *New Features*
 	* Added a new "Clear Post Cache for Comment" option on the Advanced settings page (Pro version).
@@ -406,7 +406,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Added filtering to replace illegal characters in an Authentication ID string with regular dashes.
 	* Replaced the "(settings value)" text shown for options in the Social Settings metabox with the actual default value.
 * *Bugfixes*
-	* Fixed the 'get_shortlink' hook registration from an action to a filter.
+	* Corrected the 'get_shortlink' hook registration from an action to a filter.
 * *Developer Notes*
 	* Renamed / moved the SucomWebpage class in lib/com/webpage.php to NgfbWebpage in lib/webpage.php.
 	* Renamed the "ngfb:mark" meta tags to unique "ngfb:mark:begin" and "ngfb:mark:end" meta tags (used to exclude wpsso meta tags when checking the header for duplicate meta tags).
@@ -910,9 +910,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.40.4-dev2 =
+= 8.40.4-dev3 =
 
-(2017/03/12) Added filtering to replace illegal characters in an Authentication ID string with regular dashes. Renamed / moved the SucomWebpage class in lib/com/webpage.php to WpssoWebpage in lib/webpage.php.
+(2017/03/13) Added a new "Clear Post Cache for Comment" option on the Advanced settings page (Pro version). Replaced the "(settings value)" text shown for options in the Social Settings metabox with the actual default value.
 
 = 8.40.3-1 =
 
