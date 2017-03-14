@@ -407,6 +407,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Replaced the "(settings value)" text shown for options in the Social Settings metabox with the actual default value.
 * *Bugfixes*
 	* Corrected the 'get_shortlink' hook registration from an action to a filter.
+	* Fixed an incorrect argument type cast in the NgfbMeta get_custom_fields() method (Pro version).
 * *Developer Notes*
 	* Renamed / moved the SucomWebpage class in lib/com/webpage.php to NgfbWebpage in lib/webpage.php.
 	* Renamed the "ngfb:mark" meta tags to unique "ngfb:mark:begin" and "ngfb:mark:end" meta tags (used to exclude wpsso meta tags when checking the header for duplicate meta tags).
