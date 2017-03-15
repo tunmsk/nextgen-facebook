@@ -407,7 +407,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* Added a check for the "Use Filtered (SEO) Title" option value before returning the SEO Framework title (Pro version).
 * *Developer Notes*
-	* None
+	* Updated the NgfbWebpage
 
 **Version 8.40.4-1 (2017/03/15)**
 
