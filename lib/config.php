@@ -19,7 +19,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.5-rc1',	// plugin version
+					'version' => '8.40.5-rc2',	// plugin version
 					'opt_version' => '511',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -1439,10 +1439,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 					// remove the sharing libs if social sharing features are disabled
 					// SucomUtil class may not be loaded, so don't use SucomUtil::get_const()
-					if ( apply_filters( self::$cf['lca'].'_is_avail_ssb',
-						( defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) ?
-							NGFB_SOCIAL_SHARING_DISABLE : false ) ) ) {
-
+					if ( defined( 'NGFB_SOCIAL_SHARING_DISABLE' ) && NGFB_SOCIAL_SHARING_DISABLE ) {
 						foreach ( array_keys( self::$cf['plugin'] ) as $ext ) {
 							unset (
 								self::$cf['plugin'][$ext]['lib']['website'],
@@ -1632,13 +1629,14 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				require_once( NGFB_PLUGINDIR.'lib/ext/parse-readme.php' );
 			}
 
-			if ( apply_filters( self::$cf['lca'].'_is_avail_ssb',
-				( ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
-					file_exists( NGFB_PLUGINDIR.'lib/sharing.php' ) ? true : false ) ) )
-						require_once( NGFB_PLUGINDIR.'lib/sharing.php' );
+			if ( ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
+				file_exists( NGFB_PLUGINDIR.'lib/sharing.php' ) ? true : false ) {
+					require_once( NGFB_PLUGINDIR.'lib/sharing.php' );
+			}
 
-			if ( file_exists( NGFB_PLUGINDIR.'lib/loader.php' ) )
+			if ( file_exists( NGFB_PLUGINDIR.'lib/loader.php' ) ) {
 				require_once( NGFB_PLUGINDIR.'lib/loader.php' );
+			}
 
 			add_filter( 'ngfb_load_lib', array( 'NgfbConfig', 'load_lib' ), 10, 3 );
 		}

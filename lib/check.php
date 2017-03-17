@@ -208,21 +208,20 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 			switch ( $key ) {
 				case 'aop':
 					$ret = ! SucomUtil::get_const( 'NGFB_PRO_MODULE_DISABLE' ) &&
-						is_dir( NGFB_PLUGINDIR.'lib/pro/' ) ? true : false;
+						is_dir( NGFB_PLUGINDIR.'lib/pro/' ) ?
+							true : false;
 					break;
 				case 'head':
-					$ret = apply_filters( $this->p->cf['lca'].'_is_avail_'.$key,
-						( ! SucomUtil::get_const( 'NGFB_HEAD_HTML_DISABLE' ) &&
-							empty( $_SERVER['NGFB_HEAD_HTML_DISABLE'] ) &&
-								empty( $_GET['NGFB_HEAD_HTML_DISABLE'] ) ?
-									true : false ) );
+					$ret = ! SucomUtil::get_const( 'NGFB_HEAD_HTML_DISABLE' ) &&
+						empty( $_SERVER['NGFB_HEAD_HTML_DISABLE'] ) &&
+							empty( $_GET['NGFB_HEAD_HTML_DISABLE'] ) ?
+								true : false;
 					break;
 				case 'ssb':
-					$ret = apply_filters( $this->p->cf['lca'].'_is_avail_'.$key,
-						( ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
-							empty( $_SERVER['NGFB_SOCIAL_SHARING_DISABLE'] ) &&
-								class_exists( $this->p->cf['lca'].'sharing' ) ?
-									true : false ) );
+					$ret = ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
+						empty( $_SERVER['NGFB_SOCIAL_SHARING_DISABLE'] ) &&
+							class_exists( $this->p->cf['lca'].'sharing' ) ?
+								true : false;
 					break;
 				default:
 					$ret = false;	// just in case

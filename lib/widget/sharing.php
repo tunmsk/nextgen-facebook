@@ -17,8 +17,10 @@ if ( ! class_exists( 'NgfbWidgetSharing' ) && class_exists( 'WP_Widget' ) ) {
 
 		public function __construct() {
 			$this->p =& Ngfb::get_instance();
-			if ( ! is_object( $this->p ) )
+
+			if ( ! is_object( $this->p ) ) {
 				return;
+			}
 
 			$lca = $this->p->cf['lca'];
 			$short = $this->p->cf['plugin'][$lca]['short'];
@@ -119,8 +121,10 @@ $after_widget.
 		public function update( $new_instance, $old_instance ) {
 			$instance = $old_instance;
 			$instance['title'] = strip_tags( $new_instance['title'] );
-			foreach ( $this->p->sharing->get_website_object_ids() as $id => $name ) {
-				$instance[$id] = empty( $new_instance[$id] ) ? 0 : 1;
+			if ( isset( $this->p->sharing ) ) {
+				foreach ( $this->p->sharing->get_website_object_ids() as $id => $name ) {
+					$instance[$id] = empty( $new_instance[$id] ) ? 0 : 1;
+				}
 			}
 			return $instance;
 		}
@@ -135,15 +139,17 @@ $after_widget.
 			'<input class="widefat" id="'.$this->get_field_id( 'title' ).'" name="'.
 				$this->get_field_name( 'title' ).'" type="text" value="'.$title.'"/></p>'."\n";
 
-			foreach ( $this->p->sharing->get_website_object_ids() as $id => $name ) {
-				$name = $name == 'GooglePlus' ? 'Google+' : $name;
-				echo '<p><label for="'.$this->get_field_id( $id ).'">'.
-					'<input id="'.$this->get_field_id( $id ).
-					'" name="'.$this->get_field_name( $id ).
-					'" value="1" type="checkbox" ';
-				if ( ! empty( $instance[$id] ) )
-					echo checked( 1, $instance[$id] );
-				echo '/> '.$name.'</label></p>', "\n";
+			if ( isset( $this->p->sharing ) ) {
+				foreach ( $this->p->sharing->get_website_object_ids() as $id => $name ) {
+					$name = $name == 'GooglePlus' ? 'Google+' : $name;
+					echo '<p><label for="'.$this->get_field_id( $id ).'">'.
+						'<input id="'.$this->get_field_id( $id ).
+						'" name="'.$this->get_field_name( $id ).
+						'" value="1" type="checkbox" ';
+					if ( ! empty( $instance[$id] ) )
+						echo checked( 1, $instance[$id] );
+					echo '/> '.$name.'</label></p>', "\n";
+				}
 			}
 		}
 	}

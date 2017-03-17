@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.40.5-rc1\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.40.5-rc2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -4407,27 +4407,27 @@ msgctxt "option label (short)"
 msgid "Recommend Author"
 msgstr ""
 
-#: lib/widget/sharing.php:29
+#: lib/widget/sharing.php:31
 msgid "The %s social sharing buttons widget."
 msgstr ""
 
-#: lib/widget/sharing.php:131
+#: lib/widget/sharing.php:135
 msgctxt "option value"
 msgid "Share It"
 msgstr ""
 
-#: lib/widget/sharing.php:134
+#: lib/widget/sharing.php:138
 msgctxt "option label"
 msgid "Widget Title (leave blank for no title)"
 msgstr ""
 
-#: nextgen-facebook.php:286
+#: nextgen-facebook.php:287
 msgid ""
 "WP debug log mode is active &mdash; debug messages are being sent to the "
 "WordPress debug log."
 msgstr ""
 
-#: nextgen-facebook.php:289
+#: nextgen-facebook.php:290
 msgid ""
 "HTML debug mode is active &mdash; debug messages are being added to webpages "
 "as hidden HTML comments."

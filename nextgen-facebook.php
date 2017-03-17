@@ -13,7 +13,7 @@
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
  * Requires At Least: 3.8
  * Tested Up To: 4.7.3
- * Version: 8.40.5-rc1
+ * Version: 8.40.5-rc2
  *
  * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -81,12 +81,11 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			NgfbConfig::require_libs( __FILE__ );			// includes the register.php class library
 			$this->reg = new NgfbRegister( $this );			// activate, deactivate, uninstall hooks
 
-			add_action( 'widgets_init', array( &$this, 'init_widgets' ), 10 );	// runs at init 1
-
-			add_action( 'init', array( &$this, 'set_config' ), NGFB_INIT_PRIORITY - 3 );	// 11 by default
-			add_action( 'init', array( &$this, 'set_options' ), NGFB_INIT_PRIORITY - 2 );	// 12 by default
-			add_action( 'init', array( &$this, 'set_objects' ), NGFB_INIT_PRIORITY - 1 );	// 13 by default
-			add_action( 'init', array( &$this, 'init_plugin' ), NGFB_INIT_PRIORITY );	// 14 by default
+			add_action( 'init', array( &$this, 'set_config' ), 10 );			// runs at init -10 (before widgets_init)
+			add_action( 'widgets_init', array( &$this, 'init_widgets' ), 10 );		// runs at init 1
+			add_action( 'init', array( &$this, 'set_options' ), NGFB_INIT_PRIORITY - 2 );	// runs at init 12 by default
+			add_action( 'init', array( &$this, 'set_objects' ), NGFB_INIT_PRIORITY - 1 );	// runs at init 13 by default
+			add_action( 'init', array( &$this, 'init_plugin' ), NGFB_INIT_PRIORITY );	// runs at init 14 by default
 
 			if ( is_admin() )
 				add_action( 'ngfb_init_textdomain', 		// action is run after the debug property is defined
@@ -99,11 +98,18 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			return self::$instance;
 		}
 
-		// runs at widgets_init priority 10, and the widgets_init action runs at init 1
+		// runs at init priority -10 by default
+		// called by activate_plugin() as well
+		public function set_config() {
+			$this->cf = NgfbConfig::get_config( false, true );	// apply filters - define the $cf['*'] array
+		}
+
+		// the widgets_init action runs at init 1
+		// and the hook runs at widgets_init priority 10
 		public function init_widgets() {
 			$opts = get_option( NGFB_OPTIONS_NAME );
 			if ( ! empty( $opts['plugin_widgets'] ) ) {
-				foreach ( $this->cf['plugin'] as $ext => $info ) {
+				foreach ( NgfbConfig::get_config( 'plugin' ) as $ext => $info ) {
 					if ( isset( $info['lib']['widget'] ) && is_array( $info['lib']['widget'] ) ) {
 						foreach ( $info['lib']['widget'] as $id => $name ) {
 							$classname = apply_filters( $ext.'_load_lib', false, 'widget/'.$id );
@@ -114,12 +120,6 @@ if ( ! class_exists( 'Ngfb' ) ) {
 					}
 				}
 			}
-		}
-
-		// runs at init priority 11 by default
-		// called by activate_plugin() as well
-		public function set_config() {
-			$this->cf = NgfbConfig::get_config( false, true );	// apply filters - define the $cf['*'] array
 		}
 
 		// runs at init priority 12 by default
@@ -237,8 +237,9 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				$this->admin = new NgfbAdmin( $this );		// admin menus and page loader
 			}
 
-			if ( $this->is_avail['ssb'] )
+			if ( $this->is_avail['ssb'] ) {
 				$this->sharing = new NgfbSharing( $this );	// wp_head and wp_footer js and buttons
+			}
 
 			$this->loader = new NgfbLoader( $this, $activate );	// module loader
 
