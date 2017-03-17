@@ -81,7 +81,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			NgfbConfig::require_libs( __FILE__ );			// includes the register.php class library
 			$this->reg = new NgfbRegister( $this );			// activate, deactivate, uninstall hooks
 
-			add_action( 'init', array( &$this, 'set_config' ), 10 );			// runs at init -10 (before widgets_init)
+			add_action( 'init', array( &$this, 'set_config' ), -10 );			// runs at init -10 (before widgets_init)
 			add_action( 'widgets_init', array( &$this, 'init_widgets' ), 10 );		// runs at init 1
 			add_action( 'init', array( &$this, 'set_options' ), NGFB_INIT_PRIORITY - 2 );	// runs at init 12 by default
 			add_action( 'init', array( &$this, 'set_objects' ), NGFB_INIT_PRIORITY - 1 );	// runs at init 13 by default
