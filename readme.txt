@@ -406,6 +406,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Added the 'og:updated_time' meta tag for post objects.
 * *Bugfixes*
 	* Added a missing check for the "Use Filtered (SEO) Title" option value before returning the SEO Framework title (Pro version).
+	* Fixed a widget load issue when the NGFB_SOCIAL_SHARING_DISABLE constant is enabled.
 * *Developer Notes*
 	* Updated the NgfbWebpage get_description() method to use term ids for tags and categories (provides compatibility for the admin back-end).
 
