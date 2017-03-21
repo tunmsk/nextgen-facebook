@@ -399,6 +399,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.40.6-dev1 (2017/03/21)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added Schema Thing &gt; Place &gt; LocalBusiness to Thing &gt; Organization &gt; LocalBusiness as a cross-reference in the Schema Types array.
+
 **Version 8.40.5-1 (2017/03/19)**
 
 * *New Features*
@@ -924,6 +935,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.40.6-dev1 =
+
+(2017/03/21) Added Schema Thing &gt; Place &gt; LocalBusiness in the Schema Types array.
 
 = 8.40.5-1 =
 
