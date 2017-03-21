@@ -313,8 +313,33 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 						$this->p->debug->mark( 'adding schema type cross-references' );
 					}
 					$schema_thing =& $this->types_cache['filtered']['thing'];
-					$schema_thing['organization']['local.business'] =& $schema_thing['place']['local.business'];
-					$schema_thing['place']['local.business']['dentist'] =& $schema_thing['organization']['medical.organization']['dentist'];
+
+					$schema_thing['organization']['local.business'] =& 
+						$schema_thing['place']['local.business'];
+
+					$schema_thing['organization']['medical.organization']['dentist'] =& 
+						$schema_thing['place']['local.business']['dentist'];
+
+					$schema_thing['organization']['medical.organization']['hospital'] =& 
+						$schema_thing['place']['local.business']['emergency.service']['hospital'];
+
+					$schema_thing['place']['civic.structure']['campground'] =&
+						$schema_thing['place']['local.business']['lodging.business']['campground'];
+
+					$schema_thing['place']['civic.structure']['fire.station'] =&
+						$schema_thing['place']['local.business']['emergency.service']['fire.station'];
+
+					$schema_thing['place']['civic.structure']['hospital'] =&
+						$schema_thing['place']['local.business']['emergency.service']['hospital'];
+
+					$schema_thing['place']['civic.structure']['movie.theatre'] =&
+						$schema_thing['place']['local.business']['entertainment.business']['movie.theatre'];
+
+					$schema_thing['place']['civic.structure']['police.station'] =&
+						$schema_thing['place']['local.business']['emergency.service']['police.station'];
+
+					$schema_thing['place']['civic.structure']['stadium.or.arena'] =&
+						$schema_thing['place']['local.business']['sports.activity.location']['stadium.or.arena'];
 
 					if ( $this->types_exp > 0 ) {
 						set_transient( $cache_id, $this->types_cache, $this->types_exp );
@@ -906,19 +931,6 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			if ( isset( $org_opts['org_place_id'] ) && $org_opts['org_place_id'] !== 'none' ) {
 				if ( ! self::add_single_place_data( $ret['location'], $mod, $org_opts['org_place_id'], false ) ) {	// $list_element = false
 					unset( $ret['location'] );	// prevent null assignment
-				} else {
-					// Google wants these properties in the Organization markup as well
-					self::add_data_itemprop_from_assoc( $ret, $ret['location'], array(
-						'telephone',
-						'currenciesAccepted',
-						'paymentAccepted',
-						'priceRange',
-						'address',
-						'geo',
-						'openingHoursSpecification',
-						'acceptsReservations',
-						'menu',
-					), false );	// $overwrite = false
 				}
 			}
 
