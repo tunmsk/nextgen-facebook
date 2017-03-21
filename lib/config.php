@@ -19,7 +19,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.5-1',	// plugin version
+					'version' => '8.40.6-dev1',	// plugin version
 					'opt_version' => '511',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -1306,7 +1306,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'library' => 'https://schema.org/Library',
 								'local.business' => 'https://schema.org/LocalBusiness',
 								'lodging.business' => 'https://schema.org/LodgingBusiness',
-								'medical.organization' => 'https://schema.org/MedicalOrganization',
 								'professional.service' => 'https://schema.org/ProfessionalService',
 								'radio.station' => 'https://schema.org/RadioStation',
 								'real.estate.agent' => 'https://schema.org/RealEstateAgent',
