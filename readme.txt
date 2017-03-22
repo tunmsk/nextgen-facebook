@@ -399,7 +399,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.6-dev2 (2017/03/22)**
+**Version 8.40.6-dev3 (2017/03/23)**
 
 * *New Features*
 	* None
@@ -940,9 +940,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.40.6-dev2 =
+= 8.40.6-dev3 =
 
-(2017/03/22) Added support for Schema Organization types that are also Schema Local Business types. Fixed the missing 'opens' and 'closes' properties for https://schema.org/OpeningHoursSpecification.
+(2017/03/23) Added support for Schema Organization types that are also Schema Local Business types. Fixed the missing 'opens' and 'closes' properties for https://schema.org/OpeningHoursSpecification.
 
 = 8.40.5-1 =
 
