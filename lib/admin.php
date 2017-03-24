@@ -327,11 +327,12 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 		// this method receives only a partial options array, so re-create a full one
 		// wordpress handles the actual saving of the options
 		public function registered_setting_sanitation( $opts ) {
+
+			$lca = $this->p->cf['lca'];
 			$network = false;
 
 			if ( ! is_array( $opts ) ) {
-				add_settings_error( NGFB_OPTIONS_NAME, 'notarray',
-					'<b>'.strtoupper( $this->p->cf['lca'] ).' Error</b> : '.
+				add_settings_error( NGFB_OPTIONS_NAME, 'notarray', '<b>'.strtoupper( $lca ).' Error</b> : '.
 					__( 'Submitted options are not an array.', 'nextgen-facebook' ), 'error' );
 				return $opts;
 			}
@@ -342,13 +343,12 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$opts = array_merge( $this->p->options, $opts );
 			$this->p->notice->trunc();	// clear all messages before sanitation checks
 			$opts = $this->p->opt->sanitize( $opts, $def_opts, $network );
-			$opts = apply_filters( $this->p->cf['lca'].'_save_options', $opts, NGFB_OPTIONS_NAME, $network );
+			$opts = apply_filters( $lca.'_save_options', $opts, NGFB_OPTIONS_NAME, $network );
 
 			if ( empty( $this->p->options['plugin_clear_on_save'] ) ) {
 				// admin url will redirect to essential settings since we're not on a settings page here
-				$clear_cache_link = wp_nonce_url( $this->p->util->get_admin_url( '?'.$this->p->cf['lca'].
-					'-action=clear_all_cache,', _x( 'Clear All Cache(s)', 'submit button', 'nextgen-facebook' ) ),
-						NgfbAdmin::get_nonce(), NGFB_NONCE );
+				$clear_cache_link = $this->p->util->get_admin_url( wp_nonce_url( '?'.$lca.'-action=clear_all_cache',
+					NgfbAdmin::get_nonce(), NGFB_NONCE ), _x( 'Clear All Cache(s)', 'submit button', 'nextgen-facebook' ) );
 	
 				$this->p->notice->upd( '<strong>'.__( 'Plugin settings have been saved.', 'nextgen-facebook' ).'</strong> <em>'.
 					__( 'Please note that webpage content may take several days to reflect changes.', 'nextgen-facebook' ).' '.
