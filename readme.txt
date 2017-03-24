@@ -111,7 +111,8 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png" width="100%" height="100%"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png" 
+	width="100%" height="100%" alt="Example Twitter 'Player' Card." /></p>
 </div>
 
 = Quick List of Features (Continued) =
@@ -170,7 +171,8 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png" width="100%" height="100%"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png"
+	width="100%" height="100%" alt="Example Showing All Social Sharing Buttons Enabled." /></p>
 </div>
 
 = Social Sharing Buttons =
@@ -194,7 +196,11 @@ The Facebook, Google+ and Twitter social share buttons support *multiple languag
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png" width="100%" height="100%"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png" 
+	width="100%" height="100%" alt="Example Social Profiles in Google
+	Search - NGFB includes author (Person) and publisher (Organization)
+	social profiles in schema.org JSON-LD format for Google Search and
+	their Knowledge Graph." /></p>
 </div>
 
 = Social Profiles for Google Search =
@@ -231,7 +237,8 @@ NextGEN Facebook (NGFB) provides the [Summary](https://dev.twitter.com/cards/typ
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-large-image-summary-single.png" width="100%" height="100%"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-large-image-summary-single.png" 
+	width="100%" height="100%" alt="Example Twitter 'Large Image Summary' Card." /></p>
 </div>
 
 **Images and Videos**
@@ -244,7 +251,8 @@ NextGEN Facebook (NGFB) Pro integrates with [All in One SEO Pack](https://wordpr
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/pinterest-pin-ngfb-zoomed.png" width="100%" height="100%"/></p>
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/pinterest-pin-ngfb-zoomed.png" 
+	width="100%" height="100%" alt="Example Pinterest Product Pin (Zoomed)." /></p>
 </div>
 
 **eCommerce Products**
