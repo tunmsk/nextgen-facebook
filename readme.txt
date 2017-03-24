@@ -410,6 +410,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* Fixed the missing 'opens' and 'closes' properties for https://schema.org/OpeningHoursSpecification.
 	* Fixed / improved the jQuery datepicker class search to avoid possible conflicts.
+	* Fixed the "Clear All Cache" link in the notice when saving the plugin settings.
 * *Developer Notes*
 	* Added Schema LocalBusiness to Thing &gt; Organization &gt; LocalBusiness as a cross-reference in the Schema Types array.
 	* Added a unique @id property for top-level Schema JSON-LD markup.
