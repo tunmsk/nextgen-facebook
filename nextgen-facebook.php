@@ -11,9 +11,9 @@
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
- * Requires At Least: 3.8
+ * Requires At Least: 3.7
  * Tested Up To: 4.7.3
- * Version: 8.40.6-rc1
+ * Version: 8.40.6-rc2
  *
  * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -75,7 +75,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		 */
 		public function __construct() {
 
-			require_once( dirname( __FILE__ ).'/lib/config.php' );
+			require_once dirname( __FILE__ ).'/lib/config.php';
 			$this->cf = NgfbConfig::get_config();			// unfiltered - $cf['*'] array is not available yet
 			NgfbConfig::set_constants( __FILE__ );
 			NgfbConfig::require_libs( __FILE__ );			// includes the register.php class library
@@ -87,9 +87,10 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			add_action( 'init', array( &$this, 'set_objects' ), NGFB_INIT_PRIORITY - 1 );	// runs at init 13 by default
 			add_action( 'init', array( &$this, 'init_plugin' ), NGFB_INIT_PRIORITY );	// runs at init 14 by default
 
-			if ( is_admin() )
+			if ( is_admin() ) {
 				add_action( 'ngfb_init_textdomain', 		// action is run after the debug property is defined
 					array( __CLASS__, 'init_textdomain' ), -10, 1 );	// hooks override_textdomain_mofile if debug enabled
+			}
 		}
 
 		public static function &get_instance() {
@@ -329,9 +330,10 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 		// runs at ngfb_init_textdomain priority -10
 		public static function init_textdomain( $debug_enabled ) {
-			if ( $debug_enabled )
+			if ( $debug_enabled ) {
 				add_filter( 'load_textdomain_mofile', 
 					array( Ngfb::get_instance(), 'override_textdomain_mofile' ), 10, 3 );
+			}
 			load_plugin_textdomain( 'nextgen-facebook', false, 'nextgen-facebook/languages/' );
 		}
 

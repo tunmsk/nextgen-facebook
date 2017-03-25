@@ -174,7 +174,7 @@ if ( ! class_exists( 'NgfbOptions' ) ) {
 								0 : $opts['options_version'] ) );
 
 					if ( ! is_object( $this->upg ) ) {
-						require_once( NGFB_PLUGINDIR.'lib/upgrade.php' );
+						require_once NGFB_PLUGINDIR.'lib/upgrade.php';
 						$this->upg = new NgfbOptionsUpgrade( $this->p );
 					}
 

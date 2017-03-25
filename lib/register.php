@@ -78,29 +78,35 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 		}
 
 		private function activate_plugin() {
-			$short = NgfbConfig::$cf['plugin']['ngfb']['short'];
-			$version = NgfbConfig::$cf['plugin']['ngfb']['version'];
+			$plugin_name = NgfbConfig::$cf['plugin']['ngfb']['name'];
+			$plugin_version = NgfbConfig::$cf['plugin']['ngfb']['version'];
 
 			foreach ( array( 'wp', 'php' ) as $key ) {
 				switch ( $key ) {
 					case 'wp':
 						global $wp_version;
 						$app_label = 'WordPress';
-						$cur_version = $wp_version;
+						$app_version = $wp_version;
 						break;
 					case 'php':
 						$app_label = 'PHP';
-						$cur_version = phpversion();
+						$app_version = phpversion();
 						break;
 				}
 				if ( isset( NgfbConfig::$cf[$key]['min_version'] ) ) {
 					$min_version = NgfbConfig::$cf[$key]['min_version'];
-					if ( version_compare( $cur_version, $min_version, '<' ) ) {
-						require_once( ABSPATH.'wp-admin/includes/plugin.php' );
-						deactivate_plugins( NGFB_PLUGINBASE );
-						error_log( NGFB_PLUGINBASE.' requires '.$app_label.' '.$min_version.' or higher ('.$cur_version.' reported).' );
-						wp_die( '<p>The '.$short.' plugin cannot be activated &mdash; '.
-							$short.' requires '.$app_label.' version '.$min_version.' or newer.</p>' );
+					if ( version_compare( $app_version, $min_version, '<' ) ) {
+						load_plugin_textdomain( 'nextgen-facebook', false, 'nextgen-facebook/languages/' );
+						if ( ! function_exists( 'deactivate_plugins' ) ) {
+							require_once ABSPATH.'wp-admin/includes/plugin.php';
+						}
+						deactivate_plugins( NGFB_PLUGINBASE, true );	// $silent = true
+						wp_die( 
+							'<p>'.sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
+								'nextgen-facebook' ), $plugin_name, $app_label, $min_version ).'</p>'.
+							'<p>'.sprintf( __( 'Please upgrade %1$s before trying to reactivate the %2$s plugin.',
+								'nextgen-facebook' ), $app_label, $plugin_name ).'</p>'
+						);
 					}
 				}
 			}
@@ -110,7 +116,7 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 			$this->p->set_objects( true );	// $activate = true
 			$this->p->util->clear_all_cache( true );	// $clear_ext = true
 
-			NgfbUtil::save_all_times( 'ngfb', $version );
+			NgfbUtil::save_all_times( 'ngfb', $plugin_version );
 			set_transient( 'ngfb_activation_redirect', true, 60 * 60 );
 
 			if ( ! is_array( $this->p->options ) || empty( $this->p->options ) ||
@@ -122,12 +128,14 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 				delete_option( constant( 'NGFB_OPTIONS_NAME' ) );
 				add_option( constant( 'NGFB_OPTIONS_NAME' ), $this->p->options, null, 'yes' );	// autoload = yes
 
-				if ( $this->p->debug->enabled )
+				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'default options have been added to the database' );
+				}
 
-				if ( defined( 'NGFB_RESET_ON_ACTIVATE' ) && constant( 'NGFB_RESET_ON_ACTIVATE' ) )
+				if ( defined( 'NGFB_RESET_ON_ACTIVATE' ) && constant( 'NGFB_RESET_ON_ACTIVATE' ) ) {
 					$this->p->notice->warn( 'NGFB_RESET_ON_ACTIVATE constant is true &ndash; 
 						plugin options have been reset to their default values.' );
+				}
 			}
 		}
 
