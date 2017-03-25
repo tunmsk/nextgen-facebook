@@ -10,7 +10,7 @@ Tags: share, open graph, facebook, twitter, pinterest, youtube, social, sharing,
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7.3
-Stable Tag: 8.40.5-1
+Stable Tag: 8.40.6-1
 
 Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how URLs are shared or re-shared!
 
@@ -412,8 +412,8 @@ Note that the production stage level can be incremented on occasion for simple t
 	* None
 * *Improvements*
 	* Added support for Schema Organization types that are also Schema Local Business types.
-	* Added checkbox options for the SSO Schema, Img, and Desc columns for the Media Library Item List (Pro version).
-	* Improved the layout of SSO Schema, Img, and Desc column checkbox options on the Advanced settings page.
+	* Added checkbox options for the NGFB Schema, Img, and Desc columns for the Media Library Item List (Pro version).
+	* Improved the layout of NGFB Schema, Img, and Desc column checkbox options on the Advanced settings page.
 * *Bugfixes*
 	* Fixed the missing 'opens' and 'closes' properties for https://schema.org/OpeningHoursSpecification.
 	* Fixed / improved the jQuery datepicker class search to avoid possible conflicts.
@@ -952,7 +952,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.40.6-1 =
 
-(2017/03/25) Added support for Schema Organization types that are also Schema Local Business types. Fixed the missing 'opens' and 'closes' properties for https://schema.org/OpeningHoursSpecification. Improved the layout of SSO Schema, Img, and Desc column checkbox options on the Advanced settings page.
+(2017/03/25) Added support for Schema Organization types that are also Schema Local Business types. Fixed the missing 'opens' and 'closes' properties for https://schema.org/OpeningHoursSpecification. Improved the layout of NGFB Schema, Img, and Desc column checkbox options on the Advanced settings page.
 
 = 8.40.5-1 =
 
@@ -984,7 +984,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.39.8-1 =
 
-(2017/02/13) Added a check (and fix) for relative URLs coming from the WordPress Media Library. Removed a check for WPSSO option values before disabling Yoast SEO JSON-LD (now always disabled).
+(2017/02/13) Added a check (and fix) for relative URLs coming from the WordPress Media Library. Removed a check for NGFB option values before disabling Yoast SEO JSON-LD (now always disabled).
 
 = 8.39.7-1 =
 
