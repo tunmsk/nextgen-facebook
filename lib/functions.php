@@ -9,18 +9,97 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
 }
 
-if ( ! function_exists( 'ngfb_get_social_buttons' ) ) {
-	function ngfb_get_social_buttons( $ids = array(), $atts = array() ) {
-		return ngfb_get_sharing_buttons( $ids, $atts );
+if ( ! function_exists( 'ngfb_get_page_mod' ) ) {
+	function ngfb_get_page_mod( $use_post = false ) {
+		$ngfb =& Ngfb::get_instance();
+		if ( is_object( $ngfb->util ) ) {
+			return $ngfb->util->get_page_mod( $use_post );
+		} else {
+			return false;
+		}
 	}
 }
 
+if ( ! function_exists( 'ngfb_get_post_mod' ) ) {
+	function ngfb_get_post_mod( $post_id ) {
+		$ngfb =& Ngfb::get_instance();
+		if ( isset( $ngfb->m['util']['post'] ) ) {
+			$ngfb->m['util']['post']->get_mod( $post_id );
+		} else {
+			return false;
+		}
+	}
+}
+
+if ( ! function_exists( 'ngfb_get_sharing_url' ) ) {
+	function ngfb_get_sharing_url( $mod = false, $add_page = true ) {
+		$ngfb =& Ngfb::get_instance();
+		if ( is_object( $ngfb->util ) ) {
+			return $ngfb->util->get_sharing_url( $mod, $add_page );
+		} else {
+			return false;
+		}
+	}
+}
+
+if ( ! function_exists( 'ngfb_get_short_url' ) ) {
+	function ngfb_get_short_url( $mod = false, $add_page = true ) {
+		$ngfb =& Ngfb::get_instance();
+		if ( is_object( $ngfb->util ) ) {
+			$sharing_url = $ngfb->util->get_sharing_url( $mod, $add_page );
+			return apply_filters( 'ngfb_shorten_url', $sharing_url, $ngfb->options['plugin_shortener'] );
+		} else {
+			return false;
+		}
+	}
+}
+
+if ( ! function_exists( 'ngfb_schema_attributes' ) ) {
+	function ngfb_schema_attributes( $attr = '' ) {
+		$ngfb =& Ngfb::get_instance();
+		if ( is_object( $ngfb->schema ) ) {
+			echo $ngfb->schema->filter_head_attributes( $attr );
+		}
+	}
+}
+
+if ( ! function_exists( 'ngfb_clear_all_cache' ) ) {
+	function ngfb_clear_all_cache( $clear_ext = false ) {
+		$ngfb =& Ngfb::get_instance();
+		if ( is_object( $ngfb->util ) ) {
+			$ngfb->util->clear_all_cache( $clear_ext, __FUNCTION__, true );
+		}
+	}
+}
+
+if ( ! function_exists( 'ngfb_clear_post_cache' ) ) {
+	function ngfb_clear_post_cache( $post_id ) {
+		$ngfb =& Ngfb::get_instance();
+		if ( isset( $ngfb->m['util']['post'] ) ) {
+			$ngfb->m['util']['post']->clear_cache( $post_id );
+		}
+	}
+}
+
+if ( ! function_exists( 'ngfb_is_mobile' ) ) {
+	function ngfb_is_mobile() {
+		if ( class_exists( 'SucomUtil' ) ) {
+			return SucomUtil::is_mobile();
+		} else {
+			return null;
+		}
+	}
+}
+
+/*
+ * Sharing Buttons
+ */
 if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 	function ngfb_get_sharing_buttons( $ids = array(), $atts = array(), $cache_exp = false ) {
-
 		$ngfb =& Ngfb::get_instance();
-		if ( $ngfb->debug->enabled )
+		if ( $ngfb->debug->enabled ) {
 			$ngfb->debug->mark();
+		}
 
 		$error_msg = false;
 		if ( ! is_array( $ids ) ) {
@@ -101,50 +180,10 @@ $ngfb->sharing->get_script( 'sharing-buttons-footer', $ids ).
 	}
 }
 
-if ( ! function_exists( 'ngfb_get_sharing_url' ) ) {
-	function ngfb_get_sharing_url( $mod = false, $add_page = true ) {
-		$ngfb =& Ngfb::get_instance();
-		return $ngfb->util->get_sharing_url( $mod, $add_page );
-	}
-}
-
-if ( ! function_exists( 'ngfb_get_short_url' ) ) {
-	function ngfb_get_short_url( $mod = false, $add_page = true ) {
-		$ngfb =& Ngfb::get_instance();
-		return apply_filters( 'ngfb_shorten_url',
-			$ngfb->util->get_sharing_url( $mod, $add_page ),
-			$ngfb->options['plugin_shortener'] );
-	}
-}
-
-if ( ! function_exists( 'ngfb_schema_attributes' ) ) {
-	function ngfb_schema_attributes( $attr = '' ) {
-		$ngfb =& Ngfb::get_instance();
-		echo $ngfb->schema->filter_head_attributes( $attr );
-	}
-}
-
-if ( ! function_exists( 'ngfb_clear_all_cache' ) ) {
-	function ngfb_clear_all_cache( $clear_ext = false ) {
-		$ngfb =& Ngfb::get_instance();
-		if ( is_object( $ngfb->util ) )	// just in case
-			$ngfb->util->clear_all_cache( $clear_ext, __FUNCTION__, true );
-	}
-}
-
-if ( ! function_exists( 'ngfb_clear_post_cache' ) ) {
-	function ngfb_clear_post_cache( $post_id ) {
-		$ngfb =& Ngfb::get_instance();
-		if ( is_object( $ngfb->m['util']['post'] ) )	// just in case
-			$ngfb->m['util']['post']->clear_cache( $post_id );
-	}
-}
-
-if ( ! function_exists( 'ngfb_is_mobile' ) ) {
-	function ngfb_is_mobile() {
-		if ( class_exists( 'SucomUtil' ) )	// just in case
-			return SucomUtil::is_mobile();
-		else return null;
+// deprecated
+if ( ! function_exists( 'ngfb_get_social_buttons' ) ) {
+	function ngfb_get_social_buttons( $ids = array(), $atts = array() ) {
+		return ngfb_get_sharing_buttons( $ids, $atts );
 	}
 }
 
