@@ -48,15 +48,16 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public $msgs;			// NgfbMessages (admin tooltip messages)
 		public $notice;			// SucomNotice or SucomNoNotice
 		public $og;			// NgfbOpenGraph
-		public $weibo;			// NgfbWeibo
-		public $tc;			// NgfbTwitterCard
 		public $opt;			// NgfbOptions
+		public $page;			// NgfbPage (page title, desc, etc.)
 		public $reg;			// NgfbRegister
 		public $script;			// SucomScript (admin jquery tooltips)
 		public $sharing;		// NgfbSharing (wp_head and wp_footer js and buttons)
 		public $style;			// SucomStyle (admin styles)
+		public $tc;			// NgfbTwitterCard
 		public $util;			// NgfbUtil (extends SucomUtil)
-		public $webpage;		// NgfbWebpage (page title, desc, etc.)
+		public $webpage;		// deprecated (backwards compatibility)
+		public $weibo;			// NgfbWeibo
 
 		/*
 		 * Reference Variables (config, options, modules, etc.)
@@ -226,14 +227,17 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			$this->cache = new SucomCache( $this );			// object and file caching
 			$this->style = new SucomStyle( $this );			// admin styles
 			$this->script = new SucomScript( $this );		// admin jquery tooltips
-			$this->webpage = new NgfbWebpage( $this );		// page title, desc, etc.
+			$this->page = new NgfbPage( $this );			// page title, desc, etc.
+			$this->webpage =& $this->page;				// deprecated (maintain backwards compatibility)
 			$this->media = new NgfbMedia( $this );			// images, videos, etc.
 			$this->filters = new NgfbFilters( $this );		// integration filters
 			$this->head = new NgfbHead( $this );
-			$this->og = new NgfbOpenGraph( $this );
-			$this->weibo = new NgfbWeibo( $this );
-			$this->tc = new NgfbTwitterCard( $this );
-			$this->schema = new NgfbSchema( $this );
+
+			// meta tags and json-ld markup
+			$this->og = new NgfbOpenGraph( $this );			// open graph
+			$this->weibo = new NgfbWeibo( $this );			// weibo
+			$this->tc = new NgfbTwitterCard( $this );		// twitter
+			$this->schema = new NgfbSchema( $this );		// schema
 
 			if ( is_admin() ) {
 				$this->msgs = new NgfbMessages( $this );	// admin tooltip messages

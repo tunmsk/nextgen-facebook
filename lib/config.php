@@ -1649,6 +1649,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			require_once NGFB_PLUGINDIR.'lib/meta.php';
 			require_once NGFB_PLUGINDIR.'lib/opengraph.php';
 			require_once NGFB_PLUGINDIR.'lib/options.php';
+			require_once NGFB_PLUGINDIR.'lib/page.php';
 			require_once NGFB_PLUGINDIR.'lib/post.php';		// extends meta.php
 			require_once NGFB_PLUGINDIR.'lib/register.php';
 			require_once NGFB_PLUGINDIR.'lib/schema.php';
@@ -1658,7 +1659,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			require_once NGFB_PLUGINDIR.'lib/twittercard.php';
 			require_once NGFB_PLUGINDIR.'lib/user.php';		// extends meta.php
 			require_once NGFB_PLUGINDIR.'lib/util.php';
-			require_once NGFB_PLUGINDIR.'lib/webpage.php';
 			require_once NGFB_PLUGINDIR.'lib/weibo.php';
 
 			if ( is_admin() ) {

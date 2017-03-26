@@ -4419,13 +4419,13 @@ msgctxt "option label"
 msgid "Widget Title (leave blank for no title)"
 msgstr ""
 
-#: nextgen-facebook.php:290
+#: nextgen-facebook.php:294
 msgid ""
 "WP debug log mode is active &mdash; debug messages are being sent to the "
 "WordPress debug log."
 msgstr ""
 
-#: nextgen-facebook.php:294
+#: nextgen-facebook.php:298
 msgid ""
 "HTML debug mode is active &mdash; debug messages are being added to webpages "
 "as hidden HTML comments."

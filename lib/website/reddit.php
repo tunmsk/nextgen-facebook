@@ -86,7 +86,7 @@ if ( ! class_exists( 'NgfbWebsiteReddit' ) ) {
 				$this->p->debug->mark();
 
 			if ( empty( $atts['title'] ) )
-				$atts['title'] = $this->p->webpage->get_title( 0, '', $mod, true, false, false, null );	// $encode = false
+				$atts['title'] = $this->p->page->get_title( 0, '', $mod, true, false, false, null );	// $encode = false
 
 			switch ( $opts['reddit_type'] ) {
 				case 'static-tall-text':

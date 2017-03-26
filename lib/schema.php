@@ -1570,12 +1570,12 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 				$post_id = $opts[$prefix.':id'];
 				$mod = $ngfb->m['util']['post']->get_mod( $post_id );
 
-				$ret['name'] = $ngfb->webpage->get_title( $ngfb->options['og_title_len'], '...', $mod, true,
+				$ret['name'] = $ngfb->page->get_title( $ngfb->options['og_title_len'], '...', $mod, true,
 					false, true, 'schema_title' );	// $add_hashtags = false, $encode = true, $md_idx = schema_title
 				if ( empty( $ret['name'] ) )	// just in case
 					unset( $ret['name'] );
 
-				$ret['description'] = $ngfb->webpage->get_description( $ngfb->options['schema_desc_len'], '...', $mod, true,
+				$ret['description'] = $ngfb->page->get_description( $ngfb->options['schema_desc_len'], '...', $mod, true,
 					false, true, 'schema_desc' );	// $add_hashtags = false, $encode = true, $md_idx = schema_desc
 				if ( empty( $ret['description'] ) )	// just in case
 					unset( $ret['description'] );
@@ -1679,7 +1679,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			) );
 
 			if ( ! empty( $this->p->options['add_meta_itemprop_description'] ) )
-				$mt_schema['description'] = $this->p->webpage->get_description( $this->p->options['schema_desc_len'], '...', $mod, true,
+				$mt_schema['description'] = $this->p->page->get_description( $this->p->options['schema_desc_len'], '...', $mod, true,
 					false, true, 'schema_desc' );	// $add_hashtags = false, $encode = true, $md_idx = schema_desc
 
 			switch ( $page_type_url ) {

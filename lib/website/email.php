@@ -113,9 +113,9 @@ if ( ! class_exists( 'NgfbWebsiteEmail' ) ) {
 
 			return $this->p->util->replace_inline_vars( '<!-- Email Button -->'.
 				$email_button_html, $mod, $atts, array(
-				 	'email_title' => rawurlencode( $this->p->webpage->get_title( 0, '',
+				 	'email_title' => rawurlencode( $this->p->page->get_title( 0, '',
 						$mod, true, false, false, 'og_title', 'email' ) ),
-					'email_excerpt' => rawurlencode( $this->p->webpage->get_caption( 'excerpt', $opts['email_cap_len'],
+					'email_excerpt' => rawurlencode( $this->p->page->get_caption( 'excerpt', $opts['email_cap_len'],
 						$mod, true, $atts['add_hashtags'], false, 'og_desc', 'email' ) ),
 				)
 			);

@@ -1018,7 +1018,7 @@ $buttons_array[$buttons_index].
 				$atts['use_post'] = isset( $atts['use_post'] ) ? $atts['use_post'] : true;
 				$atts['add_page'] = isset( $atts['add_page'] ) ? $atts['add_page'] : true;	// used by get_sharing_url()
 				$atts['add_hashtags'] = isset( $atts['add_hashtags'] ) ? $atts['add_hashtags'] : true;
-				return $this->p->webpage->get_caption( ( empty( $this->p->options[$opt_pre.'_caption'] ) ?
+				return $this->p->page->get_caption( ( empty( $this->p->options[$opt_pre.'_caption'] ) ?
 					'title' : $this->p->options[$opt_pre.'_caption'] ), $this->get_tweet_max_len( $opt_pre ),
 						$mod, true, $atts['add_hashtags'], false, $md_pre.'_desc' );
 			} else return $atts['tweet'];

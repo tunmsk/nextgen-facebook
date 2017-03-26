@@ -94,7 +94,7 @@ if ( ! class_exists( 'NgfbWebsiteWhatsApp' ) ) {
 
 			return $this->p->util->replace_inline_vars( '<!-- WhatsApp Button -->'.
 				$wa_button_html, $mod, $atts, array(
-			 		'title' => rawurlencode( $this->p->webpage->get_title( 0, '',
+			 		'title' => rawurlencode( $this->p->page->get_title( 0, '',
 						$mod, true, false, false, 'og_title', 'whatsapp' ) ),
 				)
 			);

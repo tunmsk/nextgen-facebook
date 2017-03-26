@@ -189,7 +189,7 @@ if ( ! class_exists( 'NgfbWebsitePinterest' ) ) {
 			$href_query .= '&amp;media='.rawurlencode( $atts['photo'] );
 
 			if ( empty( $atts['caption'] ) ) {
-				$atts['caption'] = $this->p->webpage->get_caption( $opts['pin_caption'], $opts['pin_cap_len'],
+				$atts['caption'] = $this->p->page->get_caption( $opts['pin_caption'], $opts['pin_cap_len'],
 					$mod, true, true, false, 'pin_desc' );
 			}
 

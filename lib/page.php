@@ -9,9 +9,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
 }
 
-if ( ! class_exists( 'NgfbWebpage' ) ) {
+if ( ! class_exists( 'NgfbPage' ) ) {
 
-	class NgfbWebpage {
+	class NgfbPage {
 
 		private $p;
 

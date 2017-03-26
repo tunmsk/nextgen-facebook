@@ -195,24 +195,24 @@ if ( ! class_exists( 'NgfbWebsiteTumblr' ) ) {
 				// if no image or video, then check for a 'quote'
 				if ( empty( $atts['photo'] ) && empty( $atts['embed'] ) && empty( $atts['quote'] ) )
 					if ( get_post_format( $mod['id'] ) === 'quote' )
-						$atts['quote'] = $this->p->webpage->get_quote( $mod );
-				$atts['tags'] = implode( ', ', $this->p->webpage->get_tags( $mod['id'] ) );
+						$atts['quote'] = $this->p->page->get_quote( $mod );
+				$atts['tags'] = implode( ', ', $this->p->page->get_tags( $mod['id'] ) );
 			}
 
 			// we only need the caption, title, or description for some types of shares
 			if ( ! empty( $atts['photo'] ) || ! empty( $atts['embed'] ) ) {
 				// html encode param is false to use url encoding instead
 				if ( empty( $atts['caption'] ) )
-					$atts['caption'] = $this->p->webpage->get_caption( $opts['tumblr_caption'], $opts['tumblr_cap_len'],
+					$atts['caption'] = $this->p->page->get_caption( $opts['tumblr_caption'], $opts['tumblr_cap_len'],
 						$mod, true, false, true, ( ! empty( $atts['photo'] ) ? 'tumblr_img_desc' : 'tumblr_vid_desc' ) );
 
 			} else {
 				if ( empty( $atts['title'] ) )
-					$atts['title'] = $this->p->webpage->get_title( null,
+					$atts['title'] = $this->p->page->get_title( null,
 						null, $mod, true, false );	// $add_hashtags = false
 
 				if ( empty( $atts['description'] ) )
-					$atts['description'] = $this->p->webpage->get_description( $opts['tumblr_desc_len'], '...',
+					$atts['description'] = $this->p->page->get_description( $opts['tumblr_desc_len'], '...',
 						$mod, true, false, false, null );
 			}
 

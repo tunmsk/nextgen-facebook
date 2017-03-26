@@ -108,7 +108,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			}
 
 			$size_info = SucomUtil::get_size_info( 'thumbnail' );
-			$title_caption = $this->p->webpage->get_caption( 'title', 0, $mod, true, false );
+			$title_caption = $this->p->page->get_caption( 'title', 0, $mod, true, false );
 
 			$table_rows[] = '<td colspan="3" align="center">'.
 				$this->p->msgs->get( 'pro-feature-msg',
@@ -118,7 +118,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			 * Email
 			 */
 			$caption_len = $this->p->options['email_cap_len'];
-			$caption_text = $this->p->webpage->get_caption( 'excerpt', $caption_len,
+			$caption_text = $this->p->page->get_caption( 'excerpt', $caption_len,
 				$mod, true, $this->p->options['email_cap_hashtags'], true, 'none' );
 
 			$form_rows['email_title'] = array(
@@ -136,7 +136,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			 * Twitter
 			 */
 			$caption_len = $this->p->sharing->get_tweet_max_len();
-			$caption_text = $this->p->webpage->get_caption( $this->p->options['twitter_caption'],
+			$caption_text = $this->p->page->get_caption( $this->p->options['twitter_caption'],
 				$caption_len, $mod, true, true );	// $use_cache = true, $add_hashtags = true
 
 			$form_rows['twitter_desc'] = array(
@@ -149,7 +149,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			 * Pinterest
 			 */
 			$caption_len = $this->p->options['pin_cap_len'];
-			$caption_text = $this->p->webpage->get_caption( $this->p->options['pin_caption'], $caption_len, $mod );
+			$caption_text = $this->p->page->get_caption( $this->p->options['pin_caption'], $caption_len, $mod );
 			$force_regen = $this->p->util->is_force_regen( $mod, 'rp' );	// false by default
 			$media = $this->p->og->get_the_media_info( $this->p->cf['lca'].'-pinterest-button',
 				array( 'pid', 'img_url' ), $mod, 'rp' );	// $md_pre = 'rp'
@@ -176,7 +176,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			 * Tumblr
 			 */
 			$caption_len = $this->p->options['tumblr_cap_len'];
-			$caption_text = $this->p->webpage->get_caption( $this->p->options['tumblr_caption'], $caption_len, $mod );
+			$caption_text = $this->p->page->get_caption( $this->p->options['tumblr_caption'], $caption_len, $mod );
 			$force_regen = $this->p->util->is_force_regen( $mod, 'og' );	// false by default
 			$media = $this->p->og->get_the_media_info( $this->p->cf['lca'].'-tumblr-button',
 				array( 'pid', 'img_url' ), $mod, 'og' );	// $md_pre = 'og'
