@@ -421,6 +421,7 @@ Note that the production stage level can be incremented on occasion for simple t
 		* ngfb_get_post_mod( $post_id )
 		* ngfb_get_term_mod( $term_id )
 		* ngfb_get_user_mod( $user_id )
+	* Renamed the NgfbWebpage class to NgfbPage, and renamed the Ngfb $webpage variable to $page ($webpage is now a reference to $page for backwards compatibility).
 
 **Version 8.40.6-1 (2017/03/25)**
 
