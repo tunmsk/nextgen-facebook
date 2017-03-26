@@ -406,6 +406,22 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.40.7-dev1 (2017/03/26)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed the checkbox column width in post/page table lists.
+* *Developer Notes*
+	* Moved shortcode instantiation to the Ngfb class.
+	* Added several new functions to retrieve the $mod array:
+		* ngfb_get_page_mod( $use_post = false )
+		* ngfb_get_post_mod( $post_id )
+		* ngfb_get_term_mod( $term_id )
+		* ngfb_get_user_mod( $user_id )
+
 **Version 8.40.6-1 (2017/03/25)**
 
 * *New Features*
@@ -949,6 +965,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.40.7-dev1 =
+
+(2017/03/26) Fixed the checkbox column width in post/page table lists. Added several new functions to retrieve the $mod array.
 
 = 8.40.6-1 =
 
