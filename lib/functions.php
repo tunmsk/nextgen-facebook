@@ -31,6 +31,28 @@ if ( ! function_exists( 'ngfb_get_post_mod' ) ) {
 	}
 }
 
+if ( ! function_exists( 'ngfb_get_term_mod' ) ) {
+	function ngfb_get_term_mod( $term_id ) {
+		$ngfb =& Ngfb::get_instance();
+		if ( isset( $ngfb->m['util']['term'] ) ) {
+			$ngfb->m['util']['term']->get_mod( $term_id );
+		} else {
+			return false;
+		}
+	}
+}
+
+if ( ! function_exists( 'ngfb_get_user_mod' ) ) {
+	function ngfb_get_user_mod( $user_id ) {
+		$ngfb =& Ngfb::get_instance();
+		if ( isset( $ngfb->m['util']['user'] ) ) {
+			$ngfb->m['util']['user']->get_mod( $user_id );
+		} else {
+			return false;
+		}
+	}
+}
+
 if ( ! function_exists( 'ngfb_get_sharing_url' ) ) {
 	function ngfb_get_sharing_url( $mod = false, $add_page = true ) {
 		$ngfb =& Ngfb::get_instance();
