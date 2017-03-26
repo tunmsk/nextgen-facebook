@@ -415,13 +415,14 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* Fixed the checkbox column width in post/page table lists.
 * *Developer Notes*
-	* Moved shortcode instantiation to the Ngfb class.
 	* Added several new functions to retrieve the $mod array:
 		* ngfb_get_page_mod( $use_post = false )
 		* ngfb_get_post_mod( $post_id )
 		* ngfb_get_term_mod( $term_id )
 		* ngfb_get_user_mod( $user_id )
 	* Renamed the NgfbWebpage class to NgfbPage, and renamed the Ngfb $webpage variable to $page ($webpage is now a reference to $page for backwards compatibility).
+	* Moved shortcode instantiation from NgfbPage to the Ngfb class.
+	* Moved the NgfbPage $shortcode variable to Ngfb $sc.
 
 **Version 8.40.6-1 (2017/03/25)**
 
