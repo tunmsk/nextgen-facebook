@@ -57,18 +57,11 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			$add_to_checkboxes = '';
-			foreach ( $this->p->util->get_post_types() as $post_type )
-				$add_to_checkboxes .= '<p>'.$form->get_no_checkbox( 'buttons_add_to_'.$post_type->name ).' '.
-					$post_type->label.' '.( empty( $post_type->description ) ? '' :
-						'('.$post_type->description.')' ).'</p>';
-
-			$table_rows[] = '<td colspan="2" align="center">'.
-				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
+			$table_rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 
 			$table_rows['buttons_add_to'] = $form->get_th_html( _x( 'Include on Post Types',
-				'option label', 'nextgen-facebook' ), null, 'buttons_add_to' ).
-				'<td class="blank">'.$add_to_checkboxes.'</td>';
+				'option label', 'nextgen-facebook' ), '', 'buttons_add_to' ).
+			'<td class="blank">'.$form->get_post_type_checkboxes( 'buttons_add_to', '', '', true ).'</td>';
 
 			return $table_rows;
 		}
