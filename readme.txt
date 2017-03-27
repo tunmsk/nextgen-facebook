@@ -406,7 +406,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.7-dev1 (2017/03/26)**
+**Version 8.40.7-dev2 (2017/03/27)**
 
 * *New Features*
 	* None
@@ -421,8 +421,8 @@ Note that the production stage level can be incremented on occasion for simple t
 		* ngfb_get_term_mod( $term_id )
 		* ngfb_get_user_mod( $user_id )
 	* Renamed the NgfbWebpage class to NgfbPage, and renamed the Ngfb $webpage variable to $page ($webpage is now a reference to $page for backwards compatibility).
-	* Moved shortcode instantiation from NgfbPage to the Ngfb class.
-	* Moved the NgfbPage $shortcode variable to Ngfb $sc.
+	* Moved shortcode instantiation from the NgfbPage class to Ngfb, and moved the NgfbPage $shortcode variable to Ngfb $sc.
+	* Added a SucomForm get_post_type_checkboxes() method to create a checkbox list for public post types.
 
 **Version 8.40.6-1 (2017/03/25)**
 
@@ -968,9 +968,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.40.7-dev1 =
+= 8.40.7-dev2 =
 
-(2017/03/26) Fixed the checkbox column width in post/page table lists. Added several new functions to retrieve the $mod array.
+(2017/03/27) Fixed the checkbox column width in post/page table lists. Added several new functions to retrieve the $mod array. Renamed the NgfbWebpage class to NgfbPage.
 
 = 8.40.6-1 =
 
