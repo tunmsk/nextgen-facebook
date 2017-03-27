@@ -98,7 +98,7 @@
 'ngfb_post_image_ids' ( array $ids, $size_name, $post_id );
 'ngfb_post_image_urls' ( array $urls, $size_name, $post_id );
 'ngfb_post_social_settings_tabs' ( $tabs, $mod );
-'ngfb_post_types' ( $post_types, $type, $output );
+'ngfb_post_types' ( $post_types, $output );
 'ngfb_post_url' ( $url, $mod, $add_page, $src_id );
 'ngfb_posts_per_page' ( $limit, $mod );
 'ngfb_quote' ( $quote, $mod );
