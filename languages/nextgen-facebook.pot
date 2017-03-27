@@ -458,7 +458,7 @@ msgid ""
 "have the cURL library installed."
 msgstr ""
 
-#: lib/com/cache.php:220 lib/util.php:463
+#: lib/com/cache.php:220 lib/util.php:464
 msgid "Error removing cache file %s."
 msgstr ""
 
@@ -880,7 +880,7 @@ msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/config-gettext-extract.php:75 lib/sharing.php:1073
+#: lib/config-gettext-extract.php:75 lib/sharing.php:1076
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr ""
@@ -2089,7 +2089,7 @@ msgstr ""
 
 #: lib/messages.php:475 lib/messages.php:482 lib/messages.php:489
 #: lib/messages.php:496 lib/messages.php:503 lib/messages.php:510
-#: lib/sharing.php:1095 lib/sharing.php:1102
+#: lib/sharing.php:1098 lib/sharing.php:1105
 msgctxt "option comment"
 msgid "disabled"
 msgstr ""
@@ -2102,7 +2102,7 @@ msgstr ""
 
 #: lib/messages.php:477 lib/messages.php:484 lib/messages.php:491
 #: lib/messages.php:498 lib/messages.php:505 lib/messages.php:512
-#: lib/sharing.php:1097 lib/sharing.php:1103
+#: lib/sharing.php:1100 lib/sharing.php:1106
 msgid "The suggested cache expiration value is %1$s seconds (%2$s)."
 msgstr ""
 
@@ -3029,50 +3029,50 @@ msgctxt "image size label"
 msgid "Pinterest Rich Pin"
 msgstr ""
 
-#: lib/options.php:210
+#: lib/options.php:239
 msgid ""
 "Non-standard value found for \"%s\" option - resetting to default value."
 msgstr ""
 
-#: lib/options.php:281
+#: lib/options.php:317
 msgid "WordPress could not find an entry for %s in the options table."
 msgstr ""
 
-#: lib/options.php:284
+#: lib/options.php:320
 msgid ""
 "WordPress returned a non-array value when reading %s from the options table."
 msgstr ""
 
-#: lib/options.php:287
+#: lib/options.php:323
 msgid ""
 "WordPress returned an empty array when reading %s from the options table."
 msgstr ""
 
-#: lib/options.php:289
+#: lib/options.php:326
 msgid ""
 "WordPress returned an unknown condition when reading %s from the options "
 "table."
 msgstr ""
 
-#: lib/options.php:300
+#: lib/options.php:340
 msgid ""
 "The plugin settings have been returned to their default values &mdash; <a "
 "href=\"%s\">please review and save the new settings</a>."
 msgstr ""
 
-#: lib/options.php:360
+#: lib/options.php:400
 msgid ""
 "The values for '%1$s' and  '%2$s' have an aspect ratio that is equal to / or "
 "greater than %3$s:1 &mdash; resetting these options to their default values."
 msgstr ""
 
-#: lib/options.php:407
+#: lib/options.php:447
 msgid ""
 "The Facebook App ID must be numeric and 32 characters or less in length "
 "&mdash; the value of \"%s\" is not valid."
 msgstr ""
 
-#: lib/options.php:459
+#: lib/options.php:505
 msgid "Plugin settings (%s) have been upgraded and saved."
 msgstr ""
 
@@ -3299,90 +3299,90 @@ msgctxt "metabox title"
 msgid "Social Pages and Accounts"
 msgstr ""
 
-#: lib/sharing.php:176
+#: lib/sharing.php:179
 msgid "Failed to open the %s file for reading."
 msgstr ""
 
-#: lib/sharing.php:276
+#: lib/sharing.php:279
 msgctxt "metabox tab"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/sharing.php:321
+#: lib/sharing.php:324
 msgctxt "submit button"
 msgid "Reload Default Styles"
 msgstr ""
 
-#: lib/sharing.php:340
+#: lib/sharing.php:343
 msgid ""
 "All sharing styles have been reloaded with their default value and saved."
 msgstr ""
 
-#: lib/sharing.php:361
+#: lib/sharing.php:364
 msgid "The %s file is not readable."
 msgstr ""
 
-#: lib/sharing.php:401
+#: lib/sharing.php:404
 msgid "Failed to load the minify class SuextMinifyCssCompressor."
 msgstr ""
 
-#: lib/sharing.php:410
+#: lib/sharing.php:413
 msgid "Failed writing to the % file."
 msgstr ""
 
-#: lib/sharing.php:415
+#: lib/sharing.php:418
 msgid "Updated the <a href=\"%1$s\">%2$s</a> stylesheet (%3$d bytes written)."
 msgstr ""
 
-#: lib/sharing.php:425
+#: lib/sharing.php:428
 msgid "The %s folder is not writable."
 msgstr ""
 
-#: lib/sharing.php:431
+#: lib/sharing.php:434
 msgid "Failed to open file %s for writing."
 msgstr ""
 
-#: lib/sharing.php:440
+#: lib/sharing.php:443
 msgid ""
 "Error removing the minimized stylesheet &mdash; does the web server have "
 "sufficient privileges?"
 msgstr ""
 
-#: lib/sharing.php:460
+#: lib/sharing.php:463
 msgctxt "metabox title"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/sharing.php:526
+#: lib/sharing.php:529
 msgid "%s must be published<br/>before it can be shared."
 msgstr ""
 
-#: lib/sharing.php:1061
+#: lib/sharing.php:1064
 msgid ""
 "Social sharing buttons can be added to the top, bottom, or both. Each "
 "sharing button must also be enabled below (see the <em>%s</em> options)."
 msgstr ""
 
-#: lib/sharing.php:1061
+#: lib/sharing.php:1064
 msgctxt "option label"
 msgid "Show Button in"
 msgstr ""
 
-#: lib/sharing.php:1064
+#: lib/sharing.php:1067
 msgid ""
 "Add the social sharing buttons to each entry of an index webpage (blog front "
 "page, category, archive, etc.). Social sharing buttons are not included on "
 "index webpages by default."
 msgstr ""
 
-#: lib/sharing.php:1067
+#: lib/sharing.php:1070
 msgid ""
 "If a static Post or Page has been selected for the front page, you can add "
 "the social sharing buttons to that static front page as well (default is "
 "unchecked)."
 msgstr ""
 
-#: lib/sharing.php:1070
+#: lib/sharing.php:1073
 msgid ""
 "Enabled social sharing buttons are added to the Post, Page, Media, and "
 "Product webpages by default. If your theme (or another plugin) supports "
@@ -3390,7 +3390,7 @@ msgid ""
 "buttons on these webpages, check the appropriate option(s) here."
 msgstr ""
 
-#: lib/sharing.php:1073
+#: lib/sharing.php:1076
 msgid ""
 "Add the CSS of all <em>%1$s</em> to webpages (default is checked). The CSS "
 "will be <strong>minimized</strong>, and saved to a single stylesheet with a "
@@ -3398,7 +3398,7 @@ msgid ""
 "or added directly to the webpage HTML."
 msgstr ""
 
-#: lib/sharing.php:1076
+#: lib/sharing.php:1079
 msgid ""
 "Have WordPress enqueue the social stylesheet instead of adding the CSS to in "
 "the webpage HTML (default is unchecked). Enqueueing the stylesheet may be "
@@ -3406,52 +3406,52 @@ msgid ""
 "single stylesheet URL."
 msgstr ""
 
-#: lib/sharing.php:1079
+#: lib/sharing.php:1082
 msgid "JavaScript added to webpages for the social sharing sidebar."
 msgstr ""
 
-#: lib/sharing.php:1082
+#: lib/sharing.php:1085
 msgid ""
 "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</"
 "a> in the %3$s settings page). The %1$s will be displayed and recommended "
 "after the webpage is shared."
 msgstr ""
 
-#: lib/sharing.php:1082 lib/sharing.php:1085 lib/submenu/essential.php:141
+#: lib/sharing.php:1085 lib/sharing.php:1088 lib/submenu/essential.php:141
 #: lib/submenu/general.php:377
 msgctxt "option label"
 msgid "Twitter Business @username"
 msgstr ""
 
-#: lib/sharing.php:1082
+#: lib/sharing.php:1085
 msgctxt "lib file description"
 msgid "General"
 msgstr ""
 
-#: lib/sharing.php:1085
+#: lib/sharing.php:1088
 msgid ""
 "Recommend following the author's Twitter @username after sharing a webpage. "
 "If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr ""
 
-#: lib/sharing.php:1085 lib/website/buffer.php:76 lib/website/twitter.php:68
+#: lib/sharing.php:1088 lib/website/buffer.php:76 lib/website/twitter.php:68
 msgctxt "option label (short)"
 msgid "Add via @username"
 msgstr ""
 
-#: lib/sharing.php:1096
+#: lib/sharing.php:1099
 msgid ""
 "The rendered HTML for social sharing buttons is saved to the WordPress "
 "transient cache to optimize performance."
 msgstr ""
 
-#: lib/sharing.php:1103
+#: lib/sharing.php:1106
 msgid ""
 "The JavaScript of most social sharing buttons can be saved locally to cache "
 "folder in order to provide cached URLs instead of the originals."
 msgstr ""
 
-#: lib/sharing.php:1103
+#: lib/sharing.php:1106
 msgid ""
 "If your hosting infrastructure performs reasonably well, this option can "
 "improve page load times significantly."
@@ -4017,128 +4017,128 @@ msgstr ""
 msgid "Jabber / Google Talk"
 msgstr ""
 
-#: lib/util.php:346
+#: lib/util.php:347
 msgid ""
 "%s cached files, transient cache, sortable column meta, and the WordPress "
 "object cache have all been cleared."
 msgstr ""
 
-#: lib/util.php:350
+#: lib/util.php:351
 msgid "The cache for %s has also been cleared."
 msgstr ""
 
-#: lib/util.php:373
+#: lib/util.php:374
 msgid ""
 "Site performance may be impacted slightly while all cache objects are "
 "rebuilt."
 msgstr ""
 
-#: lib/util.php:449
+#: lib/util.php:450
 msgid "Failed to open directory %s for reading."
 msgstr ""
 
-#: lib/util.php:519
+#: lib/util.php:520
 msgid "Error reading %s article topic list file."
 msgstr ""
 
-#: lib/util.php:553
+#: lib/util.php:554
 msgid ""
 "The value of option '%s' must be a URL - resetting the option to its default "
 "value."
 msgstr ""
 
-#: lib/util.php:555
+#: lib/util.php:556
 msgid ""
 "The value of option '%s' must be a comma-delimited list of URL(s) - "
 "resetting the option to its default value."
 msgstr ""
 
-#: lib/util.php:557
+#: lib/util.php:558
 msgid ""
 "The value of option '%s' must be equal to or greather than %s - resetting "
 "the option to its default value."
 msgstr ""
 
-#: lib/util.php:559 lib/util.php:561
+#: lib/util.php:560 lib/util.php:562
 msgid ""
 "The value of option '%s' must be numeric - resetting the option to its "
 "default value."
 msgstr ""
 
-#: lib/util.php:563
+#: lib/util.php:564
 msgid ""
 "The value of option '%s' must be alpha-numeric - resetting the option to its "
 "default value."
 msgstr ""
 
-#: lib/util.php:565
+#: lib/util.php:566
 msgid ""
 "The value of option '%s' must be a yyyy-mm-dd date - resetting the option to "
 "its default value."
 msgstr ""
 
-#: lib/util.php:567
+#: lib/util.php:568
 msgid ""
 "The value of option '%s' must be a hh:mm time - resetting the option to its "
 "default value."
 msgstr ""
 
-#: lib/util.php:569
+#: lib/util.php:570
 msgid ""
 "The value of option '%s' must be HTML code - resetting the option to its "
 "default value."
 msgstr ""
 
-#: lib/util.php:571
+#: lib/util.php:572
 msgid ""
 "The value of option '%s' cannot be an empty string - resetting the option to "
 "its default value."
 msgstr ""
 
-#: lib/util.php:775
+#: lib/util.php:776
 msgid "Error retrieving webpage from <a href=\"%1$s\">%1$s</a>."
 msgstr ""
 
-#: lib/util.php:782
+#: lib/util.php:783
 msgid "Webpage retrieved from <a href=\"%1$s\">%1$s</a> is empty."
 msgstr ""
 
-#: lib/util.php:807
+#: lib/util.php:808
 msgid ""
 "The PHP preg_replace() function failed to remove the %s meta tag block - "
 "this could be an indication of an issue with the PHP PCRE library."
 msgstr ""
 
-#: lib/util.php:843
+#: lib/util.php:844
 msgid ""
 "The %1$s PHP class is missing - please contact your hosting provider to "
 "install the missing %1$s PHP class."
 msgstr ""
 
-#: lib/util.php:1133
+#: lib/util.php:1134
 msgid "Fetched image size by HTTP for %1$s (%2$s)."
 msgstr ""
 
-#: lib/util.php:1865
+#: lib/util.php:1866
 msgid "No options available."
 msgstr ""
 
-#: lib/util.php:1891
+#: lib/util.php:1892
 msgctxt "option comment"
 msgid "%1$d additional options not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1895
+#: lib/util.php:1896
 msgctxt "option comment"
 msgid "unhide these options"
 msgstr ""
 
-#: lib/util.php:1898
+#: lib/util.php:1899
 msgctxt "option comment"
 msgid "%1$d additional rows not shown in %2$s view"
 msgstr ""
 
-#: lib/util.php:1902
+#: lib/util.php:1903
 msgctxt "option comment"
 msgid "unhide these rows"
 msgstr ""

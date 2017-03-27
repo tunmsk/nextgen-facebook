@@ -87,8 +87,9 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		public function __construct( &$plugin, $plugin_filepath = NGFB_FILEPATH ) {
 			$this->p =& $plugin;
 
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark( 'sharing action / filter setup' );	// begin timer
+			}
 
 			$this->plugin_filepath = $plugin_filepath;
 
@@ -102,8 +103,9 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			add_action( 'wp_head', array( &$this, 'show_head' ), NGFB_HEAD_PRIORITY );
 			add_action( 'wp_footer', array( &$this, 'show_footer' ), NGFB_FOOTER_PRIORITY );
 
-			if ( $this->have_buttons_for_type( 'content' ) )
+			if ( $this->have_buttons_for_type( 'content' ) ) {
 				$this->add_buttons_filter( 'the_content' );
+			}
 
 			if ( $this->have_buttons_for_type( 'excerpt' ) ) {
 				$this->add_buttons_filter( 'get_the_excerpt' );
@@ -119,9 +121,9 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			) );
 
 			if ( is_admin() ) {
-				if ( $this->have_buttons_for_type( 'admin_edit' ) )
+				if ( $this->have_buttons_for_type( 'admin_edit' ) ) {
 					add_action( 'add_meta_boxes', array( &$this, 'add_post_buttons_metabox' ) );
-
+				}
 				$this->p->util->add_plugin_filters( $this, array( 
 					'save_options' => 3,			// update the sharing css file
 					'option_type' => 2,			// identify option type for sanitation
@@ -143,8 +145,9 @@ jQuery("#ngfb-sidebar-header").click( function(){
 				) );
 			}
 
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark( 'sharing action / filter setup' );	// end timer
+			}
 		}
 
 		private function set_objects() {
