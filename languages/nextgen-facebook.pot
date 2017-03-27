@@ -3303,22 +3303,22 @@ msgstr ""
 msgid "Failed to open the %s file for reading."
 msgstr ""
 
-#: lib/sharing.php:279
+#: lib/sharing.php:281
 msgctxt "metabox tab"
 msgid "Sharing Buttons"
 msgstr ""
 
-#: lib/sharing.php:324
+#: lib/sharing.php:326
 msgctxt "submit button"
 msgid "Reload Default Styles"
 msgstr ""
 
-#: lib/sharing.php:343
+#: lib/sharing.php:345
 msgid ""
 "All sharing styles have been reloaded with their default value and saved."
 msgstr ""
 
-#: lib/sharing.php:364
+#: lib/sharing.php:366
 msgid "The %s file is not readable."
 msgstr ""
 
