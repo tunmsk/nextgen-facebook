@@ -40,7 +40,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 <li><a href="https://wordpress.org/plugins/wpsso-ssb/">WPSSO Social Sharing Buttons</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-strip-schema-microdata/">WPSSO Strip Schema Microdata</a></li>
 <li><a href="https://wordpress.org/plugins/wpsso-tweet-a-quote/">WPSSO Tweet a Quote</a></li>
-<li><a href="https://wordpress.org/plugins/wpsso-user-locale/">WPSSO User Locale</a></li>
+<li><a href="https://wordpress.org/plugins/wpsso-user-locale/">WPSSO User Locale Selector</a></li>
 </ul>
 </blockquote>
 
