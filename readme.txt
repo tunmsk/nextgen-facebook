@@ -423,6 +423,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed the NgfbWebpage class to NgfbPage, and renamed the Ngfb $webpage variable to $page ($webpage is now a reference to $page for backwards compatibility).
 	* Moved shortcode instantiation from the NgfbPage class to Ngfb, and moved the NgfbPage $shortcode variable to Ngfb $sc.
 	* Added a SucomForm get_post_type_checkboxes() method to create a checkbox list for public post types.
+	* Added NgfbPost get_og_page_reviews() and get_og_review_mt() methods to create review meta tags for the WooCommerce module.
 
 **Version 8.40.6-1 (2017/03/25)**
 
