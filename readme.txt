@@ -406,7 +406,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.7-dev5 (2017/03/29)**
+**Version 8.40.7-a1 (2017/03/29)**
 
 * *New Features*
 	* None
@@ -973,7 +973,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.40.7-dev5 =
+= 8.40.7-a1 =
 
 (2017/03/29) Fixed the checkbox column width in post/page table lists. Added several new functions to retrieve the $mod array. Renamed the NgfbWebpage class to NgfbPage.
 
