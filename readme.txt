@@ -424,6 +424,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Moved shortcode instantiation from the NgfbPage class to Ngfb, and moved the NgfbPage $shortcode variable to Ngfb $sc.
 	* Added a SucomForm get_post_type_checkboxes() method to create a checkbox list for public post types.
 	* Added NgfbPost get_og_type_reviews() and get_og_review_mt() methods to create review meta tags for the WooCommerce module.
+	* Renamed the offers, rating, and reviews filters that enable/disable the addition of meta tags:
+		* 'ngfb_og_add_product_mt_offers' to 'ngfb_og_add_mt_offers' 
+		* 'ngfb_og_add_product_mt_rating' to 'ngfb_og_add_mt_rating'
+		* 'ngfb_og_add_product_mt_reviews' to 'ngfb_og_add_mt_reviews'
 
 **Version 8.40.6-1 (2017/03/25)**
 
