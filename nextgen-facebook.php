@@ -13,7 +13,7 @@
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
  * Requires At Least: 3.7
  * Tested Up To: 4.7.3
- * Version: 8.40.7-dev4
+ * Version: 8.40.7-dev5
  *
  * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -213,14 +213,16 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 			do_action( 'ngfb_init_textdomain', $this->debug->enabled );
 
-			if ( $activate === true && 
-				$this->debug->enabled )
-					$this->debug->log( 'method called for plugin activation' );
+			if ( $activate === true && $this->debug->enabled ) {
+				$this->debug->log( 'method called for plugin activation' );
+			}
 
-			if ( is_admin() && 					// only load notice class in the admin interface
-				( $classname = NgfbConfig::load_lib( false, 'com/notice', 'SucomNotice' ) ) )
-					$this->notice = new $classname( $this );
-			else $this->notice = new SucomNoNotice();		// make sure notice property is always available
+			// only load notice class in the admin interface
+			if ( is_admin() && ( $classname = NgfbConfig::load_lib( false, 'com/notice', 'SucomNotice' ) ) ) {
+				$this->notice = new $classname( $this );
+			} else {
+				$this->notice = new SucomNoNotice();
+			}
 
 			$this->util = new NgfbUtil( $this );			// extends SucomUtil
 			$this->opt = new NgfbOptions( $this );
@@ -250,20 +252,22 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 			$this->loader = new NgfbLoader( $this, $activate );	// module loader
 
-			if ( $this->debug->enabled )
+			if ( $this->debug->enabled ) {
 				$this->debug->mark( 'init objects action' );	// begin timer
+			}
 
 			do_action( 'ngfb_init_objects', $activate );
 
-			if ( $this->debug->enabled )
+			if ( $this->debug->enabled ) {
 				$this->debug->mark( 'init objects action' );	// end timer
+			}
 
 			// check and create the default options array
 			// execute after all objects are defined, so all 'wpsso_get_site_defaults' filters are available
-			if ( is_multisite() && 
-				( ! is_array( $this->site_options ) || empty( $this->site_options ) ) ) {
-				if ( $this->debug->enabled )
+			if ( is_multisite() && ( ! is_array( $this->site_options ) || empty( $this->site_options ) ) ) {
+				if ( $this->debug->enabled ) {
 					$this->debug->log( 'setting site_options to site_defaults' );
+				}
 				$this->site_options = $this->opt->get_site_defaults();
 				unset( $this->site_options['options_filtered'] );	// just in case
 			}
@@ -272,19 +276,22 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			if ( $activate == true || 
 				( ! empty( $_GET['action'] ) && $_GET['action'] == 'activate-plugin' &&
 					! empty( $_GET['plugin'] ) && $_GET['plugin'] == NGFB_PLUGINBASE ) ) {
-				if ( $this->debug->enabled )
+				if ( $this->debug->enabled ) {
 					$this->debug->log( 'exiting early: init_plugin hook will follow' );
+				}
 				return;
 			}
 
 			// check and upgrade options if necessary
-			if ( $this->debug->enabled )
+			if ( $this->debug->enabled ) {
 				$this->debug->log( 'checking options' );
+			}
 			$this->options = $this->opt->check_options( NGFB_OPTIONS_NAME, $this->options );
 
 			if ( is_multisite() ) {
-				if ( $this->debug->enabled )
+				if ( $this->debug->enabled ) {
 					$this->debug->log( 'checking site_options' );
+				}
 				$this->site_options = $this->opt->check_options( NGFB_SITE_OPTIONS_NAME, $this->site_options, true );
 			}
 

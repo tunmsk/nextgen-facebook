@@ -163,7 +163,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 		public function filter_get_defaults( $def_opts ) {
 			$def_opts = array_merge( $def_opts, self::$cf['opt']['defaults'] );
-			$def_opts = $this->p->util->add_ptns_to_opts( $def_opts, 'buttons_add_to' );
+			$def_opts = $this->p->util->add_ptns_to_opts( $def_opts, 'buttons_add_to', 1 );
 			$plugin_dir = trailingslashit( realpath( dirname( $this->plugin_filepath ) ) );
 			$url_path = parse_url( trailingslashit( plugins_url( '', $this->plugin_filepath ) ), PHP_URL_PATH );	// relative URL
 			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs', $this->p->cf['sharing']['styles'] );
@@ -457,7 +457,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 				return;
 			}
 
-			if ( ! empty( $this->p->options[ 'buttons_add_to_'.$post_obj->post_type ] ) ) {
+			if ( ! empty( $this->p->options['buttons_add_to_'.$post_obj->post_type] ) ) {
 				// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
 				add_meta_box( '_'.$this->p->cf['lca'].'_share',
 					_x( 'Sharing Buttons', 'metabox title', 'nextgen-facebook' ),
