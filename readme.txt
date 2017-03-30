@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/nextgen-facebook/assets/
-Tags: share, open graph, facebook, twitter, pinterest, youtube, social, sharing, meta tags, rich pin, buttons, social media, whatsapp, json, json-ld, ld+json, seo, schema, schema.org, amp, bbPress, buddypress, e-commerce, easy digital downloads, edd, g+, google, google plus, hashtags, like, linkedin, marketpress, multilingual, multisite, nextgen gallery, player card, polylang, shortcode, summary card, tumblr, twitter card, vimeo, widget, wistia, woocommerce, yotpo, yourls, the events calendar, social share, social sharing, facebook video, slideshare, video embed, social meta tags, search engine optimization, wordpress seo, yoast seo, shortlink
+Tags: facebook, share buttons, social sharing, open graph, twitter, pinterest, google, linkedin, youtube, embedded video, seo, nextgen gallery
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7.3
