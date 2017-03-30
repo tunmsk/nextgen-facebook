@@ -449,7 +449,7 @@ if ( ! class_exists( 'NgfbOptions' ) ) {
 
 				if ( ! $network ) {
 					if ( empty( $this->p->options['plugin_check_head'] ) ) {
-						delete_option( $this->p->cf['lca'].'_post_head_count' );
+						delete_option( NGFB_POST_CHECK_NAME );
 					}
 				}
 			}

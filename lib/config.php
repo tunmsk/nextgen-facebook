@@ -1589,10 +1589,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			$var_const['NGFB_TS_NAME'] = 'ngfb_timestamps';
 			$var_const['NGFB_OPTIONS_NAME'] = 'ngfb_options';
 			$var_const['NGFB_SITE_OPTIONS_NAME'] = 'ngfb_site_options';
-			$var_const['NGFB_NOTICE_NAME'] = 'ngfb_notices';	// stored notices
-			$var_const['NGFB_DISMISS_NAME'] = 'ngfb_dismissed';	// dismissed notices
-			$var_const['NGFB_META_NAME'] = '_ngfb_meta';		// post meta
-			$var_const['NGFB_PREF_NAME'] = '_ngfb_pref';		// user meta
+			$var_const['NGFB_NOTICE_NAME'] = 'ngfb_notices';		// stored notices
+			$var_const['NGFB_DISMISS_NAME'] = 'ngfb_dismissed';		// dismissed notices
+			$var_const['NGFB_META_NAME'] = '_ngfb_meta';			// post meta
+			$var_const['NGFB_PREF_NAME'] = '_ngfb_pref';			// user meta
+			$var_const['NGFB_POST_CHECK_NAME'] = 'ngfb_post_head_count';	// duplicate check counter
 
 			/*
 			 * NGFB option and meta array alternate names
