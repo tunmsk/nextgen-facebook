@@ -863,7 +863,9 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 					case 'pro-purchase-text':
 						$text = _x( 'Purchase Pro', 'plugin action link', 'nextgen-facebook' );
 						if ( ! empty( $info['url'] ) ) {
-							$text = '<a href="'.$info['url'].'" target="_blank">'.$text.'</a>';
+							$text = '<a href="'.$info['url'].'" target="_blank"'.
+								( empty( $info['tabindex'] ) ? '' : ' tabindex="'.$info['tabindex'].'"' ).'>'.
+									$text.'</a>';
 						}
 						if ( ! empty( $info['ext'] ) && $info['ext'] !== $lca && ! NgfbAdmin::$pkg[$lca]['aop'] ) {
 							$text .= ' <em>'.sprintf( _x( '(%s required)', 'plugin action link',
