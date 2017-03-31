@@ -788,6 +788,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'min_version' => '1.5.11-1',	// minimum update manager version (hard limit)
 			),
 			'wp' => array(				// wordpress
+				'label' => 'WordPress',
 				/*
 				 * https://codex.wordpress.org/Supported_Versions
 				 *
@@ -827,6 +828,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'php' => array(				// php
+				'label' => 'PHP',
 				'min_version' => '5.4',		// hard limit - deactivate the plugin when activating
 				'rec_version' => '7.0',		// soft limit - issue warning if lower version found
 				'version_url' => 'http://php.net/supported-versions.php',
