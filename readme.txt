@@ -409,7 +409,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added tabindex values to the Extension Plugins and Pro Licenses settings page options.
 * *Bugfixes*
 	* Fixed the checkbox column width in post/page table lists.
 * *Developer Notes*
