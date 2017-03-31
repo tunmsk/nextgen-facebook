@@ -197,7 +197,7 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 
 			$form_rows['tumblr_vid_desc'] = array(
 				'label' => _x( 'Tumblr Video Caption', 'option label', 'nextgen-facebook' ),
-				'th_class' => 'medium', 'tooltip' => 'post-tumblr_vid_desc', 'td_class' => 'blank',
+				'th_class' => 'medium', 'tooltip' => 'post-tumblr_vid_desc', 'td_class' => 'blank top',
 				'content' => '<em>'.sprintf( __( 'Caption disabled - no suitable video found for the %s button',
 					'nextgen-facebook' ), 'Tumblr' ).'</em>',
 			);
