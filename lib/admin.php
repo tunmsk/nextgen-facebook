@@ -213,8 +213,9 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 		public static function set_readme_info( $read_cache = true ) {
 			$ngfb =& Ngfb::get_instance();
 			foreach ( array_keys( $ngfb->cf['plugin'] ) as $ext ) {
-				if ( empty( self::$readme[$ext] ) )
+				if ( empty( self::$readme[$ext] ) ) {
 					self::$readme[$ext] = $ngfb->util->get_readme_info( $ext, $read_cache );
+				}
 			}
 		}
 
