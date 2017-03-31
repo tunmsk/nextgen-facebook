@@ -10,7 +10,7 @@ Tags: facebook, share buttons, social sharing, open graph, twitter, pinterest, g
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7.3
-Stable Tag: 8.40.6-1
+Stable Tag: 8.40.7-1
 
 Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how URLs are shared or re-shared!
 
