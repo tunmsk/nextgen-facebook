@@ -24,7 +24,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 <p><strong>NGFB provides special support and optimization features for Pinterest</strong> &mdash; offering customized Pinterest image sizes and avoiding conflicts between incompatible Pinterest and Facebook / Open Graph meta tag values.</p>
 
-<p><strong>NGFB includes advanced quality control checks and features</strong> &mdash; verifying minimum / maximum image dimensions and aspect ratios, checking the webpage for duplicate meta tags, showing warnings for missing and required images, and theme header template validation for suggested markup.</p>
+<p><strong>NGFB includes advanced <em>quality control</em> options and features</strong> &mdash; verifying minimum / maximum image dimensions and aspect ratios, checking the webpage for duplicate meta tags, showing warnings for missing and required images, and theme header template validation for suggested markup.</p>
 
 <blockquote>
 <p><strong>Don't need the included social share buttons?</strong></p>
