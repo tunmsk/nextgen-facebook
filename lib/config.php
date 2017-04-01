@@ -1551,11 +1551,14 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 		}
 
 		public static function set_variable_constants( $var_const = null ) {
-			if ( $var_const === null )
+			if ( $var_const === null ) {
 				$var_const = self::get_variable_constants();
-			foreach ( $var_const as $name => $value )
-				if ( ! defined( $name ) )
+			}
+			foreach ( $var_const as $name => $value ) {
+				if ( ! defined( $name ) ) {
 					define( $name, $value );
+				}
+			}
 		}
 
 		public static function get_variable_constants() {

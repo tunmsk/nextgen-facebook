@@ -50,18 +50,17 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 			self::do_multisite( $sitewide, array( &$this, 'deactivate_plugin' ) );
 		}
 
-		// called from uninstall.php for network or single site
+		// uninstall.php defines constants before calling network_uninstall()
 		public static function network_uninstall() {
 			$sitewide = true;
 
 			// uninstall from the individual blogs first
 			self::do_multisite( $sitewide, array( __CLASS__, 'uninstall_plugin' ) );
 
-			$var_const = NgfbConfig::get_variable_constants();
-			$opts = get_site_option( $var_const['NGFB_SITE_OPTIONS_NAME'], array() );
+			$opts = get_site_option( NGFB_SITE_OPTIONS_NAME, array() );
 
 			if ( empty( $opts['plugin_preserve'] ) ) {
-				delete_site_option( $var_const['NGFB_SITE_OPTIONS_NAME'] );
+				delete_site_option( NGFB_SITE_OPTIONS_NAME );
 			}
 		}
 
@@ -125,34 +124,34 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 			}
 		}
 
+		// uninstall.php defines constants before calling network_uninstall()
 		private static function uninstall_plugin() {
 
-			$var_const = NgfbConfig::get_variable_constants();
-			$opts = get_option( $var_const['NGFB_OPTIONS_NAME'], array() );
+			$opts = get_option( NGFB_OPTIONS_NAME, array() );
 
-			delete_option( $var_const['NGFB_TS_NAME'] );
-			delete_option( $var_const['NGFB_NOTICE_NAME'] );
+			delete_option( NGFB_TS_NAME );
+			delete_option( NGFB_NOTICE_NAME );
 
 			if ( empty( $opts['plugin_preserve'] ) ) {
 
-				delete_option( $var_const['NGFB_OPTIONS_NAME'] );
-				delete_post_meta_by_key( $var_const['NGFB_META_NAME'] );
+				delete_option( NGFB_OPTIONS_NAME );
+				delete_post_meta_by_key( NGFB_META_NAME );
 
 				foreach ( get_users() as $user ) {
 
 					// site specific user options
-					delete_user_option( $user->ID, $var_const['NGFB_NOTICE_NAME'] );
-					delete_user_option( $user->ID, $var_const['NGFB_DISMISS_NAME'] );
+					delete_user_option( $user->ID, NGFB_NOTICE_NAME );
+					delete_user_option( $user->ID, NGFB_DISMISS_NAME );
 
 					// global / network user options
-					delete_user_meta( $user->ID, $var_const['NGFB_META_NAME'] );
-					delete_user_meta( $user->ID, $var_const['NGFB_PREF_NAME'] );
+					delete_user_meta( $user->ID, NGFB_META_NAME );
+					delete_user_meta( $user->ID, NGFB_PREF_NAME );
 
 					NgfbUser::delete_metabox_prefs( $user->ID );
 				}
 
 				foreach ( NgfbTerm::get_public_terms() as $term_id ) {
-					NgfbTerm::delete_term_meta( $term_id, $var_const['NGFB_META_NAME'] );
+					NgfbTerm::delete_term_meta( $term_id, NGFB_META_NAME );
 				}
 			}
 

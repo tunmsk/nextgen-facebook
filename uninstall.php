@@ -16,7 +16,6 @@ require_once dirname( __FILE__ ).'/lib/config.php';
 
 NgfbConfig::set_constants( $plugin_filepath );
 NgfbConfig::require_libs( $plugin_filepath );	// includes the register.php class library
-
 NgfbRegister::network_uninstall();
 
 ?>
