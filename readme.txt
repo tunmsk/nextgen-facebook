@@ -989,7 +989,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.40.8-1 =
 
-(2017/04/01) Minor CSS improvements for checkbox option fields.
+(2017/04/01) Minor CSS improvements for checkbox option fields. Minor translation string updates for option value checks.
 
 = 8.40.7-1 =
 
