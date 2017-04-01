@@ -18,15 +18,15 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 <img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" style="width:33%;min-width:128px;max-width:256px;float:left;margin:10px 40px 40px 0;" />
 
-<p><strong>NGFB uses <em>existing</em> content to generate meta tags and Schema markup</strong> &mdash; there's no need to manually enter / configure any additional settings or values, <em>but if you want to</em>, you can customize just about anything and everything. ;-)</p>
+<p><strong>NGFB uses <em>existing</em> content to generate meta tags + Schema markup</strong> &mdash; there's no need to manually enter / configure any additional settings or values, <em>but if you want to</em>, you can customize just about anything and everything. ;-)</p>
 
-<p><strong>NGFB creates <em>complete</em> and <em>accurate</em> meta tags and Schema markup</strong> &mdash; including hashtags, video seo, e-commerce products, author profile / authorship, co-authors, publisher information, ratings, event details, recipe information, and much more &mdash; all from your <em>existing</em> content.</p>
+<p><strong>NGFB creates <em>complete</em> and <em>accurate</em> meta tags + Schema markup</strong> &mdash; including hashtags, video seo, e-commerce products, author profile / authorship, co-authors, publisher information, ratings, event details, recipe information, and much more &mdash; all from your <em>existing</em> content.</p>
 
 <p><strong>NGFB provides special optimization features for Pinterest</strong> &mdash; offering customized Pinterest image sizes and preventing conflicts between incompatible Pinterest and Facebook / Open Graph meta tag values.</p>
 
 <p><strong>NGFB includes advanced <em>quality control</em> options and features</strong> &mdash; verifying minimum / maximum image dimensions and aspect ratios, checking the webpage for duplicate meta tags, showing warnings for missing and required images, and theme header template validation for suggested markup.</p>
 
-<p><strong>NGFB can integrate and enhance your favorite SEO plugin!</strong> &mdash; WPSSO specializes in providing all the meta tags and markup social sites + search engines need, and you can still continue to use your favorite SEO content / keyword analysis tools!</p>
+<p><strong>NGFB can integrate and enhance your favorite SEO plugin!</strong> &mdash; WPSSO specializes in providing all the meta tags + Schema markup social sites and search engines need, and you can still continue to use your favorite SEO content / keyword analysis tools!</p>
 
 <blockquote>
 <p><strong>Don't need the included social share buttons?</strong></p>
@@ -56,7 +56,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 	* [Summary Card](https://dev.twitter.com/cards/types/summary)
 	* [Player Card](https://dev.twitter.com/cards/types/player) is available in the Pro version (requires video discovery modules, provided with the Pro version).
 * Adds Weibo meta tags for article creation and update dates.
-* Adds Pinterest Rich Pin meta tags and Schema [Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) markup for Google.
+* Adds Pinterest Rich Pin meta tags + [Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) Schema markup for Google.
 * Adds author (Person), publisher (Organization) and WebSite markup for Google Search and <em>Knowledge Graph</em>, including markup for the [Google Sitelinks Searchbox](https://developers.google.com/search/docs/data-types/sitelinks-searchbox).
 * Customizable image dimensions for Facebook / Open Graph, Pinterest, Schema and all Twitter Card types.
 * Auto-regeneration of inaccurate / missing WordPress image sizes.
