@@ -10,7 +10,7 @@ Tags: facebook, share buttons, social sharing, open graph, twitter, pinterest, g
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7.3
-Stable Tag: 8.40.8-1
+Stable Tag: 8.40.9-1
 
 Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how URLs are shared or re-shared!
 
@@ -407,7 +407,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Minor CSS improvements for checkbox option fields.
 	* Minor translation string updates for option value checks.
 * *Bugfixes*
-	* Fixed incorrect integer cast on empty image sizes from the custom social settings.
+	* Fixed incorrect cast on empty image sizes from the custom social settings.
 * *Developer Notes*
 	* None
 
@@ -982,7 +982,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.40.9-1 =
 
-(2017/04/01) Minor CSS improvements for checkbox option fields. Minor translation string updates for option value checks.
+(2017/04/01) Minor CSS improvements for checkbox option fields. Minor translation string updates for option value checks. Fixed incorrect cast on empty image sizes from the custom social settings.
 
 = 8.40.7-1 =
 
