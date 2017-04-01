@@ -406,6 +406,18 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.40.8-1 (2017/04/01)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Minor CSS improvements for checkbox option fields.
+	* Minor translation string updates for option value checks.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.40.7-1 (2017/03/31)**
 
 * *New Features*
@@ -974,6 +986,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.40.8-1 =
+
+(2017/04/01) Minor CSS improvements for checkbox option fields.
 
 = 8.40.7-1 =
 
