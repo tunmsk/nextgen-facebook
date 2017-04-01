@@ -197,7 +197,7 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 			) as $mod_name => $mod_label ) {
 				$cols .= '<tr>';
 				foreach ( NgfbMeta::get_column_headers() as $col_idx => $col_header ) {
-					$cols .= $this->get_nocb_td( $form, 'plugin_'.$col_idx.'_col_'.$mod_name );
+					$cols .= '<td class="checkbox blank">'.$this->get_nocb( $form, $name ).'</td>';
 				}
 				$cols .= '<td><p>'.$mod_label.'</p></td></tr>'."\n";
 			}
@@ -415,9 +415,9 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 
 			$table_rows[] = '<td></td>'.
-			$form->get_th_html( _x( 'Show', 'column title', 'nextgen-facebook' ), 'left checkbox', 'custom-cm-show-checkbox' ).
-			$form->get_th_html( _x( 'Contact Field Name', 'column title', 'nextgen-facebook' ), 'left medium', 'custom-cm-field-name' ).
-			$form->get_th_html( _x( 'Profile Contact Label', 'column title', 'nextgen-facebook' ), 'left wide', 'custom-cm-contact-label' );
+			$form->get_th_html( _x( 'Show', 'column title', 'nextgen-facebook' ), 'checkbox left', 'custom-cm-show-checkbox' ).
+			$form->get_th_html( _x( 'Contact Field Name', 'column title', 'nextgen-facebook' ), 'medium left', 'custom-cm-field-name' ).
+			$form->get_th_html( _x( 'Profile Contact Label', 'column title', 'nextgen-facebook' ), 'wide left', 'custom-cm-contact-label' );
 
 			$sorted_opt_pre = $this->p->cf['opt']['cm_prefix'];
 			ksort( $sorted_opt_pre );
@@ -449,7 +449,7 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 						$label = 'Google+';
 
 					$table_rows[] = $tr.$form->get_th_html( $label, 'medium' ).
-					'<td class="blank checkbox">'.$this->get_nocb( $form, $cm_enabled ).'</td>'.
+					'<td class="checkbox blank">'.$this->get_nocb( $form, $cm_enabled ).'</td>'.
 					'<td class="blank">'.$form->get_no_input( $cm_name, 'medium' ).'</td>'.
 					'<td class="blank">'.$form->get_no_input( $cm_label ).'</td>';
 				}
@@ -466,9 +466,9 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 				$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 
 			$table_rows[] = '<td></td>'.
-			$form->get_th_html( _x( 'Show', 'column title', 'nextgen-facebook' ), 'left checkbox', 'custom-cm-show-checkbox' ).
-			$form->get_th_html( _x( 'Contact Field Name', 'column title', 'nextgen-facebook' ), 'left medium', 'custom-cm-field-name' ).
-			$form->get_th_html( _x( 'Profile Contact Label', 'column title', 'nextgen-facebook' ), 'left wide', 'custom-cm-contact-label' );
+			$form->get_th_html( _x( 'Show', 'column title', 'nextgen-facebook' ), 'checkbox left', 'custom-cm-show-checkbox' ).
+			$form->get_th_html( _x( 'Contact Field Name', 'column title', 'nextgen-facebook' ), 'medium left', 'custom-cm-field-name' ).
+			$form->get_th_html( _x( 'Profile Contact Label', 'column title', 'nextgen-facebook' ), 'wide left', 'custom-cm-contact-label' );
 
 			$sorted_cm_names = $this->p->cf['wp']['cm_names'];
 			ksort( $sorted_cm_names );
@@ -481,7 +481,7 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 
 				if ( array_key_exists( $cm_enabled, $this->p->options ) ) {
 					$table_rows[] = $form->get_th_html( $label, 'medium' ).
-					'<td class="blank checkbox">'.$this->get_nocb( $form, $cm_enabled ).'</td>'.
+					'<td class="checkbox blank">'.$this->get_nocb( $form, $cm_enabled ).'</td>'.
 					'<td>'.$form->get_no_input( $cm_name, 'medium' ).'</td>'.
 					'<td class="blank">'.$form->get_no_input( $cm_label ).'</td>';
 				}
@@ -557,7 +557,7 @@ if ( ! class_exists( 'NgfbGplAdminAdvanced' ) ) {
 		}
 
 		private function get_nocb_td( $form, $name, $comment = '' ) {
-			return '<td class="checkbox blank">'.$this->get_nocb( $form, $name, $comment ).'</td>';
+			return '<td class="blank">'.$this->get_nocb( $form, $name, $comment ).'</td>';
 		}
 	}
 }
