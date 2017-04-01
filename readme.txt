@@ -399,7 +399,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.8-1 (2017/04/01)**
+**Version 8.40.9-1 (2017/04/01)**
 
 * *New Features*
 	* None
@@ -407,7 +407,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Minor CSS improvements for checkbox option fields.
 	* Minor translation string updates for option value checks.
 * *Bugfixes*
-	* None
+	* Fixed incorrect integer cast on empty image sizes from the custom social settings.
 * *Developer Notes*
 	* None
 
@@ -980,7 +980,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.40.8-1 =
+= 8.40.9-1 =
 
 (2017/04/01) Minor CSS improvements for checkbox option fields. Minor translation string updates for option value checks.
 
