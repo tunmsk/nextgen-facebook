@@ -219,6 +219,12 @@ NextGEN Facebook (NGFB) Pro allows you to customize the field names, label, and 
 * Yahoo IM
 * YouTube Channel URL
 
+<div style="clear:both;"></div>
+<div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
+<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-large-image-summary-single.png" 
+	width="100%" height="100%" alt="Example Twitter 'Large Image Summary' Card." /></p>
+</div>
+
 = Complete Social Meta Tags =
 
 NextGEN Facebook (NGFB) adds Facebook / Open Graph, Pinterest Rich Pins, Twitter Cards, and Search Engine Optimization (SEO) meta tags to the head section of webpages. These meta tags are used by Google Search and all social websites to describe and display your content correctly (title, description, hashtags, images, videos, e-commerce product details, author profile / authorship, publisher, etc.). NGFB uses the *existing* content of your webpages to build HTML meta tags &mdash; there's no need to manually enter / configure any additional values or settings (although many settings and options *are* available in the Pro version). <a href="https://surniaulula.com/extend/plugins/nextgen-facebook/screenshots/">See example screenshots from Google Search, Google+, Facebook, Twitter, Pinterest, StumbleUpon, Tumblr, etc.</a>.
@@ -226,12 +232,6 @@ NextGEN Facebook (NGFB) adds Facebook / Open Graph, Pinterest Rich Pins, Twitter
 NextGEN Facebook (NGFB) provides the [Summary](https://dev.twitter.com/cards/types/summary), [Summary with Large Image](https://dev.twitter.com/cards/types/summary-large-image), and [Player](https://dev.twitter.com/cards/types/player) Twitter Cards &mdash; *including configurable image sizes for each card type*.
 
 = 3rd Party Integration (Pro version) =
-
-<div style="clear:both;"></div>
-<div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-large-image-summary-single.png" 
-	width="100%" height="100%" alt="Example Twitter 'Large Image Summary' Card." /></p>
-</div>
 
 **Images and Videos**
 
