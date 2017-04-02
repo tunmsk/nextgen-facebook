@@ -1433,7 +1433,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 								break;
 						}
 
-						$app_lebel = NgfbConfig::$cf[$key]['label'];
+						$app_label = NgfbConfig::$cf[$key]['label'];
 						$rec_version = NgfbConfig::$cf[$key]['rec_version'];
 
 						if ( version_compare( $app_version, $rec_version, '<' ) ) {
