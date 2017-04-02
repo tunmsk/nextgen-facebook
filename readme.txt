@@ -201,8 +201,6 @@ The Facebook, Google+ and Twitter social share buttons support *multiple languag
 
 NextGEN Facebook (NGFB) includes support for <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite site name</a> in Schema JSON-LD format for Google Search and their <em>Knowledge Graph</em>.
 
-<div style="clear:both;"></div>
-
 = User Profile Social Contacts =
 
 NextGEN Facebook (NGFB) Pro allows you to customize the field names, label, and add / remove the following contacts on user profile pages and [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) guest author profiles:
