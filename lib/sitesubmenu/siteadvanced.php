@@ -68,12 +68,12 @@ if ( ! class_exists( 'NgfbSitesubmenuSiteadvanced' ) && class_exists( 'NgfbAdmin
 					$table_rows['plugin_preserve'] = $this->form->get_th_html( _x( 'Preserve Settings on Uninstall',
 						'option label', 'nextgen-facebook' ), null, 'plugin_preserve' ).
 					'<td>'.$this->form->get_checkbox( 'plugin_preserve' ).'</td>'.
-					$this->p->admin->get_site_use( $this->form, true, 'plugin_preserve', true );	// $network = true
+					$this->p->admin->get_form_site_use( $this->form, true, 'plugin_preserve', true );	// $network = true
 
 					$table_rows['plugin_debug'] = $this->form->get_th_html( _x( 'Add Hidden Debug Messages',
 						'option label', 'nextgen-facebook' ), null, 'plugin_debug' ).
 					'<td>'.$this->form->get_checkbox( 'plugin_debug' ).'</td>'.
-					$this->p->admin->get_site_use( $this->form, true, 'plugin_debug', true );	// $network = true
+					$this->p->admin->get_form_site_use( $this->form, true, 'plugin_debug', true );	// $network = true
 
 					break;
 			}

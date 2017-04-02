@@ -41,13 +41,13 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 					'option label', 'nextgen-facebook' ), null, 'plugin_sharing_buttons_cache_exp' ).
 				'<td nowrap class="blank">'.$this->p->options['plugin_sharing_buttons_cache_exp'].' '.
 				_x( 'seconds (0 to disable)', 'option comment', 'nextgen-facebook' ).'</td>'.
-				$this->p->admin->get_site_use( $form, $network, 'plugin_sharing_buttons_cache_exp' ),
+				$this->p->admin->get_form_site_use( $form, $network, 'plugin_sharing_buttons_cache_exp' ),
 
 				'plugin_social_file_cache_exp' => $form->get_th_html( _x( 'Social File Cache Expiry',
 					'option label', 'nextgen-facebook' ), null, 'plugin_social_file_cache_exp' ).
 				'<td nowrap class="blank">'.$this->p->options['plugin_social_file_cache_exp'].' '.
 				_x( 'seconds (0 to disable)', 'option comment', 'nextgen-facebook' ).'</td>'.
-				$this->p->admin->get_site_use( $form, $network, 'plugin_social_file_cache_exp' ),
+				$this->p->admin->get_form_site_use( $form, $network, 'plugin_social_file_cache_exp' ),
 			) );
 
 			return $table_rows;
