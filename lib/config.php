@@ -1407,7 +1407,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'follow' => array(
-				'size' => 24,
+				'size' => 28,
 				'src' => array(
 					'images/follow/Wordpress.png' => 'https://profiles.wordpress.org/jsmoriss/',
 					'images/follow/Github.png' => 'https://github.com/SurniaUlula',
