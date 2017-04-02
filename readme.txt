@@ -399,6 +399,18 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.40.10-dev1 (2017/04/02)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Updated and added several new translation strings.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added a new NgfbAdmin add_essential_advanced_table_rows() method shared by the essential and advanced settings pages.
+	* Added a new NgfbAdmin get_option_site_use() static method to add a "Site Use" to network options (deprecates the get_site_use() method).
+
 **Version 8.40.9-1 (2017/04/01)**
 
 * *New Features*
@@ -407,7 +419,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Minor CSS improvements for checkbox option fields.
 	* Minor translation string updates for option value checks.
 * *Bugfixes*
-	* Fixed incorrect cast on empty image sizes from the custom social settings.
+	* Fixed incorrect cast on default image sizes from the custom social settings (they must remain empty strings to be ignored).
 * *Developer Notes*
 	* None
 
@@ -980,9 +992,13 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
+= 8.40.10-dev1 =
+
+(2017/04/02) Updated and added several new translation strings. Added a new WpssoAdmin method shared by the essential and advanced settings pages.
+
 = 8.40.9-1 =
 
-(2017/04/01) Minor CSS improvements for checkbox option fields. Minor translation string updates for option value checks. Fixed incorrect cast on empty image sizes from the custom social settings.
+(2017/04/01) Minor CSS improvements for checkbox option fields. Minor translation string updates for option value checks. Fixed incorrect cast on default image sizes from the custom social settings.
 
 = 8.40.7-1 =
 
