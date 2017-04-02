@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/nextgen-facebook/assets/
-Tags: facebook, share buttons, social sharing, open graph, twitter, pinterest, google, linkedin, youtube, embedded video, seo, nextgen gallery
+Tags: facebook, sharing buttons, social share, open graph, twitter, pinterest, google, linkedin, youtube, embedded video, seo, nextgen gallery
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7.3
