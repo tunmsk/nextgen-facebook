@@ -399,14 +399,18 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.10-dev1 (2017/04/02)**
+**Version 8.40.10-1 (2017/04/02)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* Updated and added several new translation strings.
+	* Added all available Advanced options in the Free version to the Essential settings page, and reviewed / improved their popup help text:
+		* Preserve Settings on Uninstall
+		* Add Hidden Debug Messages
+		* Hide All Pro Version Options
+		* Options to Show by Default
 * *Bugfixes*
-	* None
+	* Fixed an incorrect variable name in the notice for an outdated PHP / WP version.
 * *Developer Notes*
 	* Added a new NgfbAdmin add_essential_advanced_table_rows() method shared by the essential and advanced settings pages.
 	* Added a new NgfbAdmin get_option_site_use() static method to add a "Site Use" to network options (deprecates the get_site_use() method).
@@ -992,9 +996,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.40.10-dev1 =
+= 8.40.10-1 =
 
-(2017/04/02) Updated and added several new translation strings. Added a new WpssoAdmin method shared by the essential and advanced settings pages.
+(2017/04/02) Fixed an incorrect variable name in the notice for an outdated PHP / WP version. Added all available Advanced options in the Free version to the Essential settings page.
 
 = 8.40.9-1 =
 
