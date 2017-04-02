@@ -126,18 +126,18 @@
 <p><strong>NextGEN Facebook (NGFB) Pro / Power-User Features</strong></p>
 
 <ul>
-<li>A Social Settings metabox for Post, Page, custom post type, user profile, and term / taxonomy (category and tag) editing pages &mdash; the Social Settings metbox allows you to customize the article topic, the shared title, the Open Graph / Facebook / Rich Pin, Google Search, and Twitter Card descriptions, along with the shared image and/or video.</li>
+<li>Includes a Social Settings metabox for post, page, custom post type, user profile, and term / taxonomy (category and tag) editing pages &mdash; the Social Settings metbox allows you to customize the article topic, the shared title, the Open Graph / Facebook / Rich Pin, Google Search, and Twitter Card descriptions, along with the shared image and/or video.</li>
 <li>Fully renders content (including shortcodes) for accurate description texts.</li>
 <li>Support for embedded videos in content text (iframe and object HTML markup).</li>
-<li>Additional Open Graph / Rich Pin meta tags for videos and e-commerce products.</li>
-<li>Twitter <a href="https://dev.twitter.com/cards/types/player">Player Card</a> markup for embedded videos from Facebook, Slideshare, Vimeo, Wistia, and/or Youtube.</li>
+<li>Additional Facebook / Open Graph / Rich Pin meta tags for videos and e-commerce products.</li>
+<li>Twitter <a href="https://dev.twitter.com/cards/types/player">Player Card</a> meta tags for embedded videos from Facebook, Slideshare, Vimeo, Wistia, and/or Youtube.</li>
 <li>Include or exclude individual Google / SEO, Open Graph, Twitter Card, and Schema meta tags in the webpage head section.</li>
 <li>Validation of minimum / maximum image dimensions and aspect ratios.</li>
 <li>Configurable user profile contact field names and labels.</li>
 <li>Optional URL shortening with Bitly, Google, Ow.ly, TinyURL, or YOURLS.</li>
 <li>Dynamic button language switching based on the current WordPress locale.</li>
 <li>A stylesheets editor for each social share button locations (content, excerpt, shortcode, widget, etc.).</li>
-<li>File caching for social share button images and JavaScript, maximizing performance on VPS and dedicated hardware hosting platforms.</li>
+<li>Caching of share button images and JavaScript, maximizing performance on VPS and dedicated hardware hosting platforms.</li>
 <li>Selection of preset button options by location (content, excerpt, shortcode, widget, etc.).</li>
 <li>Ability to include / exclude social share buttons by post type.</li>
 <li>Integrates with 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version, and are automatically loaded if/when the supported plugins and/or services are required.
@@ -195,7 +195,7 @@
 
 <h4>Social Sharing Buttons</h4>
 
-<p>NextGEN Facebook (NGFB) comes with several social share buttons, that you can optionally include on Post / Page editing pages, above / below your content or excerpt, <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> single pages, <a href="https://wordpress.org/plugins/buddypress/">BuddyPress</a> activity entries, as a sidebar, widget, shortcode, or even call a function from your theme template(s). Each of the following social share buttons can be enabled, configured, and styled individually:</p>
+<p>NextGEN Facebook (NGFB) comes with several social share buttons, that you can optionally include on post / page editing pages, above / below your content or excerpt, <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> single pages, <a href="https://wordpress.org/plugins/buddypress/">BuddyPress</a> activity entries, CSS sidebar, widget, shortcode, and even call a function from your theme template(s). Each of the following social share buttons can be enabled, configured, and styled individually:</p>
 
 <ul>
 <li><strong>Email</strong></li>
@@ -212,7 +212,7 @@
 <li><strong>WhatsApp</strong> (for Mobile Devices)</li>
 </ul>
 
-<p>The Facebook, Google+ and Twitter social share buttons support <em>multiple languages</em>. A default language can be chosen in the NGFB settings, and the <a href="https://surniaulula.com/extend/plugins/nextgen-facebook/">Pro version</a> switches the social share button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Open Graph (Facebook) and Pinterest Rich Pin descriptions, Tweet text, and other social captions.</p>
+<p>The Facebook, Google+ and Twitter social share buttons support <em>multiple languages</em>. A default language can be chosen in the NGFB settings, and the <a href="https://surniaulula.com/extend/plugins/nextgen-facebook/">Pro version</a> switches the social share button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Facebook / Open Graph / Pinterest Rich Pin descriptions, Tweet text, and other social captions.</p>
 
 <div style="clear:both;"></div>
 
@@ -226,7 +226,7 @@
 
 <h4>Social Profiles for Google Search</h4>
 
-<p>NextGEN Facebook (NGFB) includes support for <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite site name</a> in Schema JSON-LD format for Google Search and their <em>Knowledge Graph</em>. The author (Person) markup includes the author's website URL, their social sharing image, and contact URLs. The publisher (Organization) markup includes the website URL, a corporate logo, the website default image, and the publisher Facebook, Google+, LinkedIn, Pinterest, and Twitter business pages.</p>
+<p>NextGEN Facebook (NGFB) includes support for <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite site name</a> in Schema JSON-LD format for Google Search and their <em>Knowledge Graph</em>.</p>
 
 <div style="clear:both;"></div>
 
