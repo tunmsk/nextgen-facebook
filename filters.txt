@@ -135,8 +135,8 @@
 'ngfb_tc' ( $tc, $mod );
 'ngfb_tc_seed' ( $tc, $mod );
 'ngfb_term_url' ( $url, $mod, $add_page, $src_id );
-'ngfb_text_filter_has_changes_after' ( false, $filter_name );
-'ngfb_text_filter_has_changes_before' ( false, $filter_name );
+'ngfb_text_filter_begin' ( false, $filter_name );
+'ngfb_text_filter_end' ( false, $filter_name );
 'ngfb_title' ( $title, $mod, $add_hashtags, $md_idx, $separator );
 'ngfb_title_pre_limit' ( $title );
 'ngfb_title_seed' ( '', $mod, $add_hashtags, $md_idx, $separator );
