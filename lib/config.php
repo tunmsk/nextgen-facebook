@@ -19,7 +19,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.10-1',	// plugin version
+					'version' => '8.40.11-dev1',	// plugin version
 					'opt_version' => '512',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -47,7 +47,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'purchase' => 'https://surniaulula.com/extend/plugins/nextgen-facebook/',
 						'changelog' => 'https://surniaulula.com/extend/plugins/nextgen-facebook/changelog/',
 						'codex' => 'https://surniaulula.com/codex/plugins/nextgen-facebook/',
-						'faq' => 'https://surniaulula.com/codex/plugins/nextgen-facebook/faq/',
+						'faqs' => 'https://surniaulula.com/codex/plugins/nextgen-facebook/faqs/',
 						'notes' => 'https://surniaulula.com/codex/plugins/nextgen-facebook/notes/',
 						'support' => 'http://nextgen-facebook.support.surniaulula.com/support/tickets/new',
 					),
@@ -197,7 +197,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'update' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/update/',
 						'changelog' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/changelog/',
 						'codex' => 'https://surniaulula.com/codex/plugins/nextgen-facebook-um/',
-						'faq' => '',
+						'faqs' => '',
 						'notes' => '',
 					),
 				),
