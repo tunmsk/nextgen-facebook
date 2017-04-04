@@ -33,7 +33,7 @@ if ( ! class_exists( 'NgfbSubmenuEssential' ) && class_exists( 'NgfbAdmin' ) ) {
 					array( &$this, 'show_metabox_general' ), $this->pagehook, 'normal' );
 
 			add_meta_box( $this->pagehook.'_advanced',
-				_x( 'Essential Advanced Settings', 'metabox title', 'nextgen-facebook' ),
+				_x( 'Optional Advanced Settings', 'metabox title', 'nextgen-facebook' ),
 					array( &$this, 'show_metabox_advanced' ), $this->pagehook, 'normal' );
 
 			// issues a warning notice if the default image size is too small
