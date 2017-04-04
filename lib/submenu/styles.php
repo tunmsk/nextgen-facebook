@@ -15,13 +15,15 @@ if ( ! class_exists( 'NgfbSubmenuStyles' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		public function __construct( &$plugin, $id, $name, $lib, $ext ) {
 			$this->p =& $plugin;
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
 			$this->menu_id = $id;
 			$this->menu_name = $name;
 			$this->menu_lib = $lib;
-			$this->menu_ext = $ext;
-
-			if ( $this->p->debug->enabled )
-				$this->p->debug->mark();
+			$this->menu_ext = $ext;	// lowercase acronyn for plugin or extension
 		}
 
 		protected function add_meta_boxes() {
@@ -34,9 +36,11 @@ if ( ! class_exists( 'NgfbSubmenuStyles' ) && class_exists( 'NgfbAdmin' ) ) {
 		public function show_metabox_styles() {
 
 			if ( file_exists( NgfbSharing::$sharing_css_file ) &&
-				( $fsize = filesize( NgfbSharing::$sharing_css_file ) ) !== false )
-					$css_min_msg = ' <a href="'.NgfbSharing::$sharing_css_url.'">minimized css is '.$fsize.' bytes</a>';
-			else $css_min_msg = '';
+				( $fsize = filesize( NgfbSharing::$sharing_css_file ) ) !== false ) {
+				$css_min_msg = ' <a href="'.NgfbSharing::$sharing_css_url.'">minimized css is '.$fsize.' bytes</a>';
+			} else {
+				$css_min_msg = '';
+			}
 
 			$this->p->util->do_table_rows( array(
 				$this->form->get_th_html( _x( 'Use the Social Stylesheet',

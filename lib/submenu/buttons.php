@@ -17,13 +17,15 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		public function __construct( &$plugin, $id, $name, $lib, $ext ) {
 			$this->p =& $plugin;
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
 			$this->menu_id = $id;
 			$this->menu_name = $name;
 			$this->menu_lib = $lib;
-			$this->menu_ext = $ext;
-
-			if ( $this->p->debug->enabled )
-				$this->p->debug->mark();
+			$this->menu_ext = $ext;	// lowercase acronyn for plugin or extension
 
 			$this->set_objects();
 
@@ -110,9 +112,10 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 				'preset' => _x( 'Buttons Presets', 'metabox tab', 'nextgen-facebook' ),
 			) );
 			$table_rows = array();
-			foreach ( $tabs as $key => $title )
+			foreach ( $tabs as $key => $title ) {
 				$table_rows[$key] = array_merge( $this->get_table_rows( $metabox, $key ),
 					apply_filters( $lca.'_'.$metabox.'_'.$key.'_rows', array(), $this->form ) );
+			}
 			$this->p->util->do_metabox_tabs( $metabox, $tabs, $table_rows );
 		}
 
