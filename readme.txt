@@ -227,9 +227,7 @@ NextGEN Facebook (NGFB) Pro allows you to customize the field names, label, and 
 
 = Complete Social Meta Tags =
 
-NextGEN Facebook (NGFB) adds Facebook / Open Graph, Pinterest Rich Pins, Twitter Cards, and Search Engine Optimization (SEO) meta tags to the head section of webpages. These meta tags are used by Google Search and all social websites to describe and display your content correctly (title, description, hashtags, images, videos, e-commerce product details, author profile / authorship, publisher, etc.). NGFB uses the *existing* content of your webpages to build HTML meta tags &mdash; there's no need to manually enter / configure any additional values or settings (although many settings and options *are* available in the Pro version). <a href="https://surniaulula.com/extend/plugins/nextgen-facebook/screenshots/">See example screenshots from Google Search, Google+, Facebook, Twitter, Pinterest, StumbleUpon, Tumblr, etc.</a>.
-
-NextGEN Facebook (NGFB) provides the [Summary](https://dev.twitter.com/cards/types/summary), [Summary with Large Image](https://dev.twitter.com/cards/types/summary-large-image), and [Player](https://dev.twitter.com/cards/types/player) Twitter Cards &mdash; *including configurable image sizes for each card type*.
+NextGEN Facebook (NGFB) adds Facebook / Open Graph, Pinterest Rich Pins, Twitter Cards, and Search Engine Optimization (SEO) meta tags to the head section of webpages. These meta tags are used by Google Search and all social websites to describe and display your content correctly (title, description, hashtags, images, videos, e-commerce product details, author profile / authorship, publisher, etc.). NGFB uses *existing* content to generate meta tags + Schema markup &mdash; there's no need to manually enter / configure any additional settings or values.
 
 = 3rd Party Integration (Pro version) =
 
