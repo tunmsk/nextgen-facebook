@@ -402,7 +402,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *New Features*
 	* None
 * *Improvements*
-	* Updated the plugin documentation and FAQ URLs.
+	* Updated the plugin icon images and the documentation URLs.
 	* Added a check for web server variables before doing a redirect for FORCE_SSL, in case WP is being used from the command-line.
 * *Bugfixes*
 	* None
@@ -1008,7 +1008,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.40.11-dev2 =
 
-(2017/04/04) Updated the plugin documentation and FAQ URLs.
+(2017/04/04) Updated the plugin icon images and the documentation URLs.
 
 = 8.40.10-1 =
 
