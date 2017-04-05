@@ -409,6 +409,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed the 'table.sucom-setting' CSS class to 'table.sucom-settings'.
 	* Renamed the table-setting.min.css stylesheet to settings-table.min.css.
 	* Renamed the setting-pages.min.css stylesheet to settings-page.min.css.
+	* Added a fonts sub-folder with a "Star" font for NGFB settings pages.
 	* Added a new admin-page.min.css stylesheet.
 
 **Version 8.40.10-1 (2017/04/02)**
