@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NextGEN Facebook (NGFB) 8.40.11-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2017-04-04 16:46+0200\n"
-"PO-Revision-Date: 2017-04-04 16:46+0200\n"
+"POT-Creation-Date: 2017-04-05 09:51+0200\n"
+"PO-Revision-Date: 2017-04-05 09:53+0200\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -239,11 +239,11 @@ msgstr "Achetez version Pro"
 
 #: lib/admin.php:1040
 msgid "Read the <a href=\"%s\" target=\"_blank\">Frequently Asked Questions</a>"
-msgstr "Consulter la <a href=\"%s\" target=\"_blank\">Foire aux Questions</a>"
+msgstr "Consulter la <a href=\"%s\" target=\"_blank\">foire aux questions</a>"
 
 #: lib/admin.php:1042
-msgid "and <a href=\"%s\" target=\"_blank\">Additional Documentation</a>"
-msgstr "et <a href=\"%s\" target=\"_blank\">autres documentations</a>"
+msgid "and <a href=\"%s\" target=\"_blank\">Other Notes</a>"
+msgstr "et <a href=\"%s\" target=\"_blank\">autres notes</a>"
 
 #: lib/admin.php:1047
 msgid "Open a <a href=\"%s\" target=\"_blank\">Priority Support Ticket</a> (Pro version)"
@@ -253,13 +253,13 @@ msgstr "Ouvrez un <a href=\"%s\" target=\"_blank\">billet de soutien prioritaire
 msgid "Post in the <a href=\"%s\" target=\"_blank\">Community Support Forum</a> (Free version)"
 msgstr "Postez dans le <a href=\"%s\" target=\"_blank\">forum de soutien communautaire</a> (version gratuite)"
 
-#: lib/admin.php:1056
+#: lib/admin.php:1055
 msgid "Want to say thank you?"
 msgstr "Voulez-vous dire merci?"
 
 #: lib/admin.php:1057
-msgid "<a href=\"%1$s\" target=\"_blank\">Rate the %2$s Plugin</a> on WordPress.org"
-msgstr "<a href=\"%1$s\" target=\"_blank\">Notez l'extension %2$s</a> sur WordPress.org"
+msgid "Rate the %1$s Plugin %2$s on WP.org"
+msgstr "Notez l'extension %1$s %2$s sur WP.org"
 
 #: lib/admin.php:1125
 msgctxt "plugin action link"
@@ -842,7 +842,7 @@ msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr "Boutons de Partage"
 
-#: lib/config-gettext-extract.php:75 lib/sharing.php:1075
+#: lib/config-gettext-extract.php:75 lib/sharing.php:1079
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr "Styles de Partage"
@@ -2006,7 +2006,7 @@ msgstr "Créer automatiquement les images manquantes ou incorrectes dans la bibl
 
 #: lib/messages.php:493 lib/messages.php:500 lib/messages.php:507
 #: lib/messages.php:514 lib/messages.php:521 lib/messages.php:528
-#: lib/sharing.php:1097 lib/sharing.php:1104
+#: lib/sharing.php:1101 lib/sharing.php:1108
 msgctxt "option comment"
 msgid "disabled"
 msgstr "désactivé"
@@ -2017,7 +2017,7 @@ msgstr "Les balises méta et balisage de Schéma de l'entête sont enregistrés 
 
 #: lib/messages.php:495 lib/messages.php:502 lib/messages.php:509
 #: lib/messages.php:516 lib/messages.php:523 lib/messages.php:530
-#: lib/sharing.php:1099 lib/sharing.php:1105
+#: lib/sharing.php:1103 lib/sharing.php:1109
 msgid "The suggested cache expiration value is %1$s seconds (%2$s)."
 msgstr "La valeur d'expiration de cache suggérée est de %1$s secondes (%2$s)."
 
@@ -2465,7 +2465,7 @@ msgstr "%1$s version %2$s requiert l'utilisation de %3$s version %4$s ou plus r�
 msgid "Use the <em>%1$s</em> button from any %2$s settings page to retrieve the latest update information, or <a href=\"%3$s\" target=\"_blank\">download the latest %4$s extension version</a> and install the ZIP file manually."
 msgstr "Utilisez le bouton <em>%1$s</em> d'une page de réglages %2$s pour récupérer l'information de mise à jour la plus récente, ou <a href=\"%3$s\" target=\"_blank\">télécharger la version de l'extension %4$s la plus récente</a> et installer le fichier ZIP manuellement."
 
-#: lib/messages.php:974 lib/register.php:211
+#: lib/messages.php:974 lib/register.php:220
 msgid "You are using %1$s version %2$s &mdash; <a href=\"%3$s\">this %1$s version is outdated, unsupported, insecure</a> and may lack important features."
 msgstr "Vous utilisez la version %2$s de %1$s &mdash; <a href=\"%3$s\">cette version de %1$s est obsolète, non supportée, insécure</a> et pourrait manquer certaines caractéristiques importantes."
 
@@ -2809,11 +2809,11 @@ msgstr "Identifiants API incomplet ou manquant pour le service de raccourcisseme
 msgid "Invalid user ID."
 msgstr "ID d'utilisateur non valide"
 
-#: lib/register.php:213
+#: lib/register.php:214 lib/register.php:222
 msgid "%1$s requires %2$s version %3$s or higher and has been deactivated."
 msgstr "%1$s nécessite %2$s version %3$s ou supérieure et a été désactivé."
 
-#: lib/register.php:215
+#: lib/register.php:224
 msgid "Please upgrade %1$s before trying to re-activate the %2$s plugin."
 msgstr "Veuillez mettre à jour %1$s avant d'essayer de réactiver l'extension %2$s."
 
@@ -2896,105 +2896,105 @@ msgstr "Tous les styles de partage ont été rechargé avec leur valeur par déf
 msgid "The %s file is not readable."
 msgstr "Le fichier %s n'est pas lisible."
 
-#: lib/sharing.php:403
+#: lib/sharing.php:404
 msgid "Failed to load the minify class SuextMinifyCssCompressor."
 msgstr "Impossible de charger la classe de rapetissement SuextMinifyCssCompressor."
 
-#: lib/sharing.php:412
+#: lib/sharing.php:414
 msgid "Failed writing to the % file."
 msgstr "Echec d'écriture dans le fichier%."
 
-#: lib/sharing.php:417
+#: lib/sharing.php:419
 msgid "Updated the <a href=\"%1$s\">%2$s</a> stylesheet (%3$d bytes written)."
 msgstr "La feuille de style <a href=\"%1$s\">%2$s</a> a été mise à jour (%3$d octets écrits)."
 
-#: lib/sharing.php:427
+#: lib/sharing.php:429
 msgid "The %s folder is not writable."
 msgstr "Le dossier %s n'est pas accessible en écriture."
 
-#: lib/sharing.php:433
+#: lib/sharing.php:435
 msgid "Failed to open file %s for writing."
 msgstr "Impossible d'ouvrir le fichier %s pour l'écriture."
 
-#: lib/sharing.php:442
+#: lib/sharing.php:444
 msgid "Error removing the minimized stylesheet &mdash; does the web server have sufficient privileges?"
 msgstr "Erreur en retirant la feuille de style minimisé &mdash; le serveur Web a t'il les privilèges nécessaires?"
 
-#: lib/sharing.php:462
+#: lib/sharing.php:464
 msgctxt "metabox title"
 msgid "Sharing Buttons"
 msgstr "Boutons de Partage Social"
 
-#: lib/sharing.php:528
+#: lib/sharing.php:530
 msgid "%s must be published<br/>before it can be shared."
 msgstr "%s doit être publié<br/>avant d'être partagé."
 
-#: lib/sharing.php:1063
+#: lib/sharing.php:1067
 msgid "Social sharing buttons can be added to the top, bottom, or both. Each sharing button must also be enabled below (see the <em>%s</em> options)."
 msgstr "Les boutons de partage social peuvent être ajoutés en haut, en bas, ou les deux. Chaque bouton de partage doit aussi être activé ci-dessous (voir les options <em>%s</em>)."
 
-#: lib/sharing.php:1063
+#: lib/sharing.php:1067
 msgctxt "option label"
 msgid "Show Button in"
 msgstr "Afficher le bouton"
 
-#: lib/sharing.php:1066
+#: lib/sharing.php:1070
 msgid "Add the social sharing buttons to each entry of an index webpage (blog front page, category, archive, etc.). Social sharing buttons are not included on index webpages by default."
 msgstr "Ajouter les boutons de partage social à chaque item d'une page d'index (page blog d'avant, catégorie, archives, etc.). Les boutons de partage social ne sont pas inclus dans les pages Web d'index par défaut."
 
-#: lib/sharing.php:1069
+#: lib/sharing.php:1073
 msgid "If a static Post or Page has been selected for the front page, you can add the social sharing buttons to that static front page as well (default is unchecked)."
 msgstr "Si un Article ou une Page statique a été sélectionnée pour la page d'avant, les boutons de partage social peuvent être ajouter sur la page statique d'avant aussi (valeur par défaut est décochée)."
 
-#: lib/sharing.php:1072
+#: lib/sharing.php:1076
 msgid "Enabled social sharing buttons are added to the Post, Page, Media, and Product webpages by default. If your theme (or another plugin) supports additional custom post types, and you would like to include social sharing buttons on these webpages, check the appropriate option(s) here."
 msgstr "Les boutons de partage social activés sont ajoutés par défaut au pages Web d'Articles, Pages, Médias, et Produits. Si votre thème (ou une autre extension) supporte des articles de types personnalisé supplémentaires, et que vous souhaitez ajouter des boutons de partage social sur ces pages Web, cochez les options appropriées ici."
 
-#: lib/sharing.php:1075
+#: lib/sharing.php:1079
 msgid "Add the CSS of all <em>%1$s</em> to webpages (default is checked). The CSS will be <strong>minimized</strong>, and saved to a single stylesheet with a URL of <a href=\"%2$s\">%3$s</a>. The minimized stylesheet can be enqueued or added directly to the webpage HTML."
 msgstr "Ajouter le CSS de tous les <em>%1$s</em> au pages Web (cochée par défaut). Le CSS sera <strong>minimisé</strong> et sauvegardé dans une seule feuille de style avec l'URL <a href=\"%2$s\">%3$s</a>. La feuille de style peut être mis en queue ou ajouté directement au HTML des pages Web."
 
-#: lib/sharing.php:1078
+#: lib/sharing.php:1082
 msgid "Have WordPress enqueue the social stylesheet instead of adding the CSS to in the webpage HTML (default is unchecked). Enqueueing the stylesheet may be desirable if you use a plugin to concatenate all enqueued styles into a single stylesheet URL."
 msgstr "Demander a WordPress de mettre la feuille de style en queue au lieu d'ajouter le CSS au HTML des pages Web (décochée par défaut). Mettre la feuille de style en queue peut être souhaitable si vous utilisez une extension pour assembler tous le contenu des feuilles de styles dans un seul URL."
 
-#: lib/sharing.php:1081
+#: lib/sharing.php:1085
 msgid "JavaScript added to webpages for the social sharing sidebar."
 msgstr "JavaScript ajouté au pages Web pour la barre latérale de partage sociale."
 
-#: lib/sharing.php:1084
+#: lib/sharing.php:1088
 msgid "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</a> in the %3$s settings page). The %1$s will be displayed and recommended after the webpage is shared."
 msgstr "Ajouter le %1$s au Tweet (voir <a href=\"%2$s\">l'onglet d'options Twitter</a> sur la page de réglages %3$s). Le %1$s sera affichés et recommandé après que la page Web est été partagée."
 
-#: lib/sharing.php:1084 lib/sharing.php:1087 lib/submenu/essential.php:143
+#: lib/sharing.php:1088 lib/sharing.php:1091 lib/submenu/essential.php:143
 #: lib/submenu/general.php:380
 msgctxt "option label"
 msgid "Twitter Business @username"
 msgstr "Le @nom d'affaires Twitter"
 
-#: lib/sharing.php:1084
+#: lib/sharing.php:1088
 msgctxt "lib file description"
 msgid "General"
 msgstr "Général"
 
-#: lib/sharing.php:1087
+#: lib/sharing.php:1091
 msgid "Recommend following the author's Twitter @username after sharing a webpage. If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr "Conseiller de suivre le @nom Twitter de l'auteur après avoir partagé une page Web. Si l'option %1$s (ci-dessus) est également cochée, le %2$s sera recommandé en premier."
 
-#: lib/sharing.php:1087 lib/website/buffer.php:76 lib/website/twitter.php:68
+#: lib/sharing.php:1091 lib/website/buffer.php:76 lib/website/twitter.php:68
 msgctxt "option label (short)"
 msgid "Add via @username"
 msgstr "Ajouter via @nom"
 
-#: lib/sharing.php:1098
+#: lib/sharing.php:1102
 msgid "The rendered HTML for social sharing buttons is saved to the WordPress transient cache to optimize performance."
 msgstr "Le code HTML des boutons de partage social est enregistré dans le cache transitoire de WordPress pour optimiser la performance."
 
-#: lib/sharing.php:1105
+#: lib/sharing.php:1109
 msgid "The JavaScript of most social sharing buttons can be saved locally to cache folder in order to provide cached URLs instead of the originals."
 msgstr "Le JavaScript des boutons de partage social peut être enregistré localement afin de fournir des URLs du cache au lieu des originaux."
 
-#: lib/sharing.php:1105
+#: lib/sharing.php:1109
 msgid "If your hosting infrastructure performs reasonably well, this option can improve page load times significantly."
 msgstr "Si votre infrastructure d'hébergement fonctionne raisonnablement bien, cette option peut améliorer le temp de chargement des pages Web considérablement."
 
@@ -3942,3 +3942,6 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://surniaulula.com/"
 msgstr "https://surniaulula.com/"
+
+#~ msgid "<a href=\"%1$s\" target=\"_blank\">Rate the %2$s Plugin</a> on WordPress.org"
+#~ msgstr "<a href=\"%1$s\" target=\"_blank\">Notez l'extension %2$s</a> sur WordPress.org"
