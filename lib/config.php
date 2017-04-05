@@ -19,7 +19,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.11-b1',	// plugin version
+					'version' => '8.40.11-rc1',	// plugin version
 					'opt_version' => '512',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -281,7 +281,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'schema_type_for_website' => 'website',
 					'schema_review_item_type' => 'none',	// Default Reviewed Item Type
 					'seo_desc_len' => 156,			// meta name="description" maximum text length (hard limit)
-					'seo_author_field' => '',		// default value set by NgfbOptions::get_defaults()
+					'seo_author_field' => 'gplus',
 					'seo_publisher_url' => '',		// (localized)
 					'fb_publisher_url' => '',		// (localized)
 					'fb_app_id' => '',
@@ -315,7 +315,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'og_ngg_tags' => 0,
 					'og_page_parent_tags' => 0,
 					'og_page_title_tag' => 0,
-					'og_author_field' => '',		// default value set by NgfbOptions::get_defaults()
+					'og_author_field' => 'facebook',
 					'og_author_fallback' => 0,
 					'og_title_sep' => '-',
 					'og_title_len' => 70,
@@ -1537,9 +1537,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							self::$cf['opt']['version'] .= '-'.$ext.$info['opt_version'].$pkg_lctype;
 
 						// complete relative paths in the image array
-						foreach ( $info['img'] as $id => $url )
-							if ( ! empty( $url ) && strpos( $url, '//' ) === false )
+						foreach ( $info['img'] as $id => $url ) {
+							if ( ! empty( $url ) && strpos( $url, '//' ) === false ) {
 								self::$cf['plugin'][$ext]['img'][$id] = trailingslashit( plugins_url( '', $info['base'] ) ).$url;
+							}
+						}
 					}
 				}
 			}

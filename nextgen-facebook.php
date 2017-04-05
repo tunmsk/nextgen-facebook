@@ -13,7 +13,7 @@
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
  * Requires At Least: 3.7
  * Tested Up To: 4.7.3
- * Version: 8.40.11-b1
+ * Version: 8.40.11-rc1
  *
  * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -106,7 +106,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		// runs at init priority -10
 		// called by activate_plugin() as well
 		public function set_config() {
-			$this->cf = NgfbConfig::get_config( false, true );	// apply filters - define the $cf['*'] array
+			$this->cf = NgfbConfig::get_config( false, true );	// apply filters and define the $cf['*'] array
 		}
 
 		// runs at init 1
@@ -143,8 +143,13 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				}
 			}
 
-			if ( ! is_array( $this->options ) )
-				$this->options = array();
+			if ( ! is_array( $this->options ) ) {
+				if ( isset( $this->cf['opt']['defaults'] ) ) {	// just in case
+					$this->options = $this->cf['opt']['defaults'];
+				} else {
+					$this->options = array();
+				}
+			}
 
 			if ( is_multisite() ) {
 				$this->site_options = get_site_option( NGFB_SITE_OPTIONS_NAME );
@@ -160,8 +165,13 @@ if ( ! class_exists( 'Ngfb' ) ) {
 					}
 				}
 
-				if ( ! is_array( $this->site_options ) )
-					$this->site_options = array();
+				if ( ! is_array( $this->site_options ) ) {
+					if ( isset( $this->cf['opt']['site_defaults'] ) ) {	// just in case
+						$this->site_options = $this->cf['opt']['site_defaults'];
+					} else {
+						$this->site_options = array();
+					}
+				}
 
 				// if multisite options are found, check for overwrite of site specific options
 				if ( is_array( $this->options ) && is_array( $this->site_options ) ) {
@@ -221,9 +231,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			// only load notice class in the admin interface
 			if ( is_admin() && ( $classname = NgfbConfig::load_lib( false, 'com/notice', 'SucomNotice' ) ) ) {
 				$this->notice = new $classname( $this );
-			} else {
-				$this->notice = new SucomNoNotice();
-			}
+			} else $this->notice = new SucomNoNotice();
 
 			$this->util = new NgfbUtil( $this );			// extends SucomUtil
 			$this->opt = new NgfbOptions( $this );
