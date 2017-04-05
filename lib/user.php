@@ -607,9 +607,12 @@ if ( ! class_exists( 'NgfbUser' ) ) {
 			}
 		}
 
+		// called by the NgfbRegister::uninstall_plugin() method
 		public static function delete_metabox_prefs( $user_id = false ) {
+
 			$user_id = $user_id === false ? 
 				get_current_user_id() : $user_id;
+
 			$cf = NgfbConfig::get_config( false, true );
 
 			$parent_slug = 'options-general.php';

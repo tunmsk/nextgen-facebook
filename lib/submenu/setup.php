@@ -35,7 +35,7 @@ if ( ! class_exists( 'NgfbSubmenuSetup' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		public function show_metabox_guide() {
 			$lca = $this->p->cf['lca'];
-			echo '<table class="sucom-setting '.$lca.' setup-metabox">';
+			echo '<table class="sucom-settings '.$lca.' setup-metabox">';
 			echo '<tr><td>';
 			echo $this->p->util->get_setup_content( $lca );
 			echo '</td></tr></table>';
