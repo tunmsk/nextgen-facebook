@@ -395,6 +395,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 8.40.12-dev1 (2017/04/06)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Optimized the creation of missing settings and/or new settings during the activation process.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.40.11-1 (2017/04/05)**
 
 * *New Features*
@@ -1009,6 +1020,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
 
 == Upgrade Notice ==
+
+= 8.40.12-dev1 =
+
+(2017/04/06) Optimized the creation of missing settings and/or new settings during the activation process.
 
 = 8.40.11-1 =
 
