@@ -947,7 +947,7 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 						break;
 					case 'notice-pro-tid-missing':
 						if ( ! is_multisite() ) {
-							$text = '<p><b>'.sprintf( __( 'The %1$s plugin Authentication ID option is empty.', 'nextgen-facebook' ), $info['name'] ).'</b> '.sprintf( __( 'To enable Pro version features and allow the plugin to authenticate itself for updates, please enter the unique Authentication ID you received by email on the <a href="%s">Extension Plugins and Pro Licenses</a> settings page.', 'nextgen-facebook' ), $this->p->util->get_admin_url( 'licenses' ) ).'</p>';
+							$text = '<p><b>'.sprintf( __( 'The %1$s plugin Authentication ID option is empty.', 'nextgen-facebook' ), $info['name'] ).'</b><br/>'.sprintf( __( 'To enable Pro version features and allow the plugin to authenticate itself for updates, please enter the unique Authentication ID you received by email on the <a href="%s">Extension Plugins and Pro Licenses</a> settings page.', 'nextgen-facebook' ), $this->p->util->get_admin_url( 'licenses' ) ).'</p>';
 						}
 						break;
 					case 'notice-pro-not-installed':
@@ -971,7 +971,7 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 						$text = sprintf( __( '%1$s version %2$s requires the use of %3$s version %4$s or newer (version %5$s is currently installed).', 'nextgen-facebook' ), $info['name_pro'], $this->p->cf['plugin']['ngfb']['version'], $um_info['short'], $info['min_version'], $um_version ).' '.sprintf( __( 'Use the <em>%1$s</em> button from any %2$s settings page to retrieve the latest update information, or <a href="%3$s" target="_blank">download the latest %4$s extension version</a> and install the ZIP file manually.', 'nextgen-facebook' ), _x( 'Check for Pro Update(s)', 'submit button', 'nextgen-facebook' ), $this->p->cf['menu']['label'], $um_info['url']['download'], $um_info['short'] );
 						break;
 					case 'notice-recommend-version':
-						$text = sprintf( __( 'You are using %1$s version %2$s &mdash; <a href="%3$s">this %1$s version is outdated, unsupported, insecure</a> and may lack important features.', 'nextgen-facebook' ), $info['app_label'], $info['app_version'], $info['version_url'] ).' '.sprintf( __( 'If possible, please update to the latest %1$s stable release (or at least version %2$s).', 'nextgen-facebook' ), $info['app_label'], $info['rec_version'] );
+						$text = sprintf( __( 'You are using %1$s version %2$s &mdash; <a href="%3$s">this %1$s version is outdated, unsupported, possibly insecure</a>, and may lack important updates and features.', 'nextgen-facebook' ), $info['app_label'], $info['app_version'], $info['version_url'] ).' '.sprintf( __( 'If possible, please update to the latest %1$s stable release (or at least version %2$s).', 'nextgen-facebook' ), $info['app_label'], $info['rec_version'] );
 						break;
 					default:
 						$text = apply_filters( $lca.'_messages_notice', $text, $idx, $info );

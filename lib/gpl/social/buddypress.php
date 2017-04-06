@@ -18,14 +18,17 @@ if ( ! class_exists( 'NgfbGplSocialBuddypress' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			if ( $this->p->debug->enabled )
+
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
 			if ( is_admin() || bp_current_component() ) {
 				if ( ! empty( $this->p->is_avail['ssb'] ) ) {
 					$classname = __CLASS__.'Sharing';
-					if ( class_exists( $classname ) )
+					if ( class_exists( $classname ) ) {
 						$this->sharing = new $classname( $this->p );
+					}
 				}
 			}
 		}
@@ -40,8 +43,10 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			if ( $this->p->debug->enabled )
+
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'get_defaults' => 1,
@@ -68,8 +73,9 @@ if ( ! class_exists( 'NgfbGplSocialBuddypressSharing' ) ) {
 	margin:10px auto;
 	text-align:center;
 }';
-			foreach ( $this->p->cf['opt']['cm_prefix'] as $id => $opt_pre )
+			foreach ( $this->p->cf['opt']['cm_prefix'] as $id => $opt_pre ) {
 				$opts_def[$opt_pre.'_on_bp_activity'] = 0;
+			}
 			return $opts_def;
 		}
 

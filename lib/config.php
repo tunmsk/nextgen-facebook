@@ -19,7 +19,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'setup_cache_exp' => 86400,	// 1 day
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.11-1',	// plugin version
+					'version' => '8.40.12-dev1',	// plugin version
 					'opt_version' => '512',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -201,36 +201,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'notes' => '',
 					),
 				),
-				/* 'jsmssl' => array(
-					'short' => 'JSM SSL',
-					'name' => 'JSM\'s Force SSL / HTTPS (JSM SSL)',
-					'desc' => 'A simple and effective plugin to force webpage and media library URLs from HTTP to HTTPS with a permanent redirect.',
-					'slug' => 'jsm-force-ssl',
-					'base' => 'jsm-force-ssl/jsm-force-ssl.php',
-					'update_auth' => '',
-					'img' => array(
-						'icon_small' => 'https://jsmoriss.github.io/jsm-force-ssl/assets/icon-128x128.jpg',
-						'icon_medium' => 'https://jsmoriss.github.io/jsm-force-ssl/assets/icon-256x256.jpg',
-					),
-					'url' => array(
-						// wordpress
-						'download' => 'https://wordpress.org/plugins/jsm-force-ssl/',
-						'forum' => 'https://wordpress.org/support/plugin/jsm-force-ssl',
-						'review' => 'https://wordpress.org/support/plugin/jsm-force-ssl/reviews/?rate=5#new-post',
-						// github
-						'readme_txt' => 'https://raw.githubusercontent.com/jsmoriss/jsm-force-ssl/master/readme.txt',
-						// surniaulula
-						'latest' => 'https://surniaulula.com/extend/plugins/jsm-force-ssl/latest/',
-						'update' => 'https://surniaulula.com/extend/plugins/jsm-force-ssl/update/',
-						'changelog' => 'https://surniaulula.com/extend/plugins/jsm-force-ssl/changelog/',
-						'docs' => '',
-						'faqs' => '',
-						'notes' => '',
-					),
-				), */
 			),
 			'opt' => array(						// options
 				'defaults' => array(
+					'options_version' => '',		// example: -ngfb512pro-ngfbum3gpl
 					'options_filtered' => false,
 					'site_name' => '',			// (localized)
 					'site_desc' => '',			// (localized)
@@ -638,6 +612,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'wp_cm_yim_enabled' => 1,
 				),	// end of defaults
 				'site_defaults' => array(
+					'options_version' => '',		// example: -ngfb512pro-ngfbum3gpl
 					'options_filtered' => false,
 					/*
 					 * Advanced Settings

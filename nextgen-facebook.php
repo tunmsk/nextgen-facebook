@@ -13,7 +13,7 @@
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
  * Requires At Least: 3.7
  * Tested Up To: 4.7.3
- * Version: 8.40.11-1
+ * Version: 8.40.12-dev1
  *
  * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -105,7 +105,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 		// runs at init priority -10
 		// called by activate_plugin() as well
-		public function set_config() {
+		public function set_config( $activate = false ) {
 			$this->cf = NgfbConfig::get_config( false, true );	// apply filters and define the $cf['*'] array
 		}
 
@@ -128,7 +128,13 @@ if ( ! class_exists( 'Ngfb' ) ) {
 
 		// runs at init priority 11 by default
 		// called by activate_plugin() as well
-		public function set_options() {
+		public function set_options( $activate = false ) {
+
+			if ( $activate && defined( 'NGFB_RESET_ON_ACTIVATE' ) && NGFB_RESET_ON_ACTIVATE ) {
+				error_log( 'NGFB_RESET_ON_ACTIVATE constant is true - reloading default settings for plugin activation' );
+				delete_option( NGFB_OPTIONS_NAME );
+			}
+
 			$this->options = get_option( NGFB_OPTIONS_NAME );
 
 			// look for alternate options name
@@ -136,13 +142,13 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				if ( defined( 'NGFB_OPTIONS_NAME_ALT' ) && NGFB_OPTIONS_NAME_ALT ) {
 					$this->options = get_option( NGFB_OPTIONS_NAME_ALT );
 					if ( is_array( $this->options ) ) {
-						// auto-creates options with autoload = yes
-						update_option( NGFB_OPTIONS_NAME, $this->options );
+						update_option( NGFB_OPTIONS_NAME, $this->options );	// auto-creates with autoload = yes
 						delete_option( NGFB_OPTIONS_NAME_ALT );
 					}
 				}
 			}
 
+			// a following check_options() call will save the settings
 			if ( ! is_array( $this->options ) ) {
 				if ( isset( $this->cf['opt']['defaults'] ) ) {	// just in case
 					$this->options = $this->cf['opt']['defaults'];
@@ -165,6 +171,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 					}
 				}
 
+				// a following check_options() call will save the settings
 				if ( ! is_array( $this->site_options ) ) {
 					if ( isset( $this->cf['opt']['site_defaults'] ) ) {	// just in case
 						$this->site_options = $this->cf['opt']['site_defaults'];
@@ -178,8 +185,9 @@ if ( ! class_exists( 'Ngfb' ) ) {
 					$blog_id = get_current_blog_id();	// since wp 3.1
 					$defined_constants = get_defined_constants( true );	// $categorize = true
 					foreach ( $this->site_options as $key => $val ) {
-						if ( strpos( $key, ':use' ) !== false )
+						if ( strpos( $key, ':use' ) !== false ) {
 							continue;
+						}
 						if ( isset( $this->site_options[$key.':use'] ) ) {
 							switch ( $this->site_options[$key.':use'] ) {
 								case'force':
@@ -194,8 +202,9 @@ if ( ! class_exists( 'Ngfb' ) ) {
 							}
 						}
 						$constant_name = 'NGFB_ID_'.$blog_id.'_OPT_'.strtoupper( $key );
-						if ( isset( $defined_constants['user'][$constant_name] ) )
+						if ( isset( $defined_constants['user'][$constant_name] ) ) {
 							$this->options[$key] = $defined_constants['user'][$constant_name];
+						}
 					}
 				}
 			}
@@ -223,10 +232,6 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			} else $this->debug = new SucomNoDebug();			// make sure debug property is always available
 
 			do_action( 'ngfb_init_textdomain', $this->debug->enabled );
-
-			if ( $activate === true && $this->debug->enabled ) {
-				$this->debug->log( 'method called for plugin activation' );
-			}
 
 			// only load notice class in the admin interface
 			if ( is_admin() && ( $classname = NgfbConfig::load_lib( false, 'com/notice', 'SucomNotice' ) ) ) {
@@ -259,49 +264,28 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				$this->sharing = new NgfbSharing( $this );	// wp_head and wp_footer js and buttons
 			}
 
-			$this->loader = new NgfbLoader( $this, $activate );	// module loader
+			$this->loader = new NgfbLoader( $this );		// module loader
 
 			if ( $this->debug->enabled ) {
 				$this->debug->mark( 'init objects action' );	// begin timer
 			}
-
 			do_action( 'ngfb_init_objects', $activate );
 
 			if ( $this->debug->enabled ) {
 				$this->debug->mark( 'init objects action' );	// end timer
 			}
 
-			// check and create the default options array
-			// execute after all objects are defined, so all 'wpsso_get_site_defaults' filters are available
-			if ( is_multisite() && ( ! is_array( $this->site_options ) || empty( $this->site_options ) ) ) {
-				if ( $this->debug->enabled ) {
-					$this->debug->log( 'setting site_options to site_defaults' );
-				}
-				$this->site_options = $this->opt->get_site_defaults();
-				unset( $this->site_options['options_filtered'] );	// just in case
-			}
-
-			// end here when called for plugin activation (the init_plugin() hook handles the rest)
-			if ( $activate == true || 
-				( ! empty( $_GET['action'] ) && $_GET['action'] == 'activate-plugin' &&
-					! empty( $_GET['plugin'] ) && $_GET['plugin'] == NGFB_PLUGINBASE ) ) {
-				if ( $this->debug->enabled ) {
-					$this->debug->log( 'exiting early: init_plugin hook will follow' );
-				}
-				return;
-			}
-
 			// check and upgrade options if necessary
 			if ( $this->debug->enabled ) {
 				$this->debug->log( 'checking options' );
 			}
-			$this->options = $this->opt->check_options( NGFB_OPTIONS_NAME, $this->options );
+			$this->options = $this->opt->check_options( NGFB_OPTIONS_NAME, $this->options, false, $activate );
 
 			if ( is_multisite() ) {
 				if ( $this->debug->enabled ) {
 					$this->debug->log( 'checking site_options' );
 				}
-				$this->site_options = $this->opt->check_options( NGFB_SITE_OPTIONS_NAME, $this->site_options, true );
+				$this->site_options = $this->opt->check_options( NGFB_SITE_OPTIONS_NAME, $this->site_options, true, $activate );
 			}
 
 			if ( $this->debug->enabled ) {
