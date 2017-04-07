@@ -112,8 +112,13 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 					$table_rows['og_title_len'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Maximum Title Length',
 						'option label', 'nextgen-facebook' ), '', 'og_title_len' ).
-					'<td>'.$this->form->get_input( 'og_title_len', 'short' ).' '.
-						_x( 'characters or less', 'option comment', 'nextgen-facebook' ).'</td>';
+					'<td>'.
+						$this->form->get_input( 'og_title_len', 'short' ).' '.
+						_x( 'characters or less (hard limit), and warn at', 'option comment', 'nextgen-facebook' ).' '.
+						$this->form->get_input( 'og_title_warn', 'short' ).' '.
+						_x( 'characters (soft limit)', 'option comment', 'nextgen-facebook' ).
+					'</td>';
+
 
 					$table_rows['og_desc_len'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Maximum Description Length',
