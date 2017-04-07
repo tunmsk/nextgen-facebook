@@ -395,7 +395,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 8.40.12-dev1 (2017/04/06)**
+**Version 8.40.12-dev2 (2017/04/07)**
 
 * *New Features*
 	* None
@@ -1021,9 +1021,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 8.40.12-dev1 =
+= 8.40.12-dev2 =
 
-(2017/04/06) Optimized the creation of missing settings and/or new settings during the activation process.
+(2017/04/07) Optimized the creation of missing settings and/or new settings during the activation process.
 
 = 8.40.11-1 =
 
