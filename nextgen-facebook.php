@@ -15,7 +15,7 @@
  * Tested Up To: 4.7.3
  * Version: 8.40.12-dev2
  *
- * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
+ * Version Numbering: {major}.{minor}.{bugfix}-{stage}{level}
  *
  *	{major}		Major code changes / re-writes or significant feature changes.
  *	{minor}		New features / options were added or improved.
@@ -78,7 +78,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public function __construct() {
 
 			require_once dirname( __FILE__ ).'/lib/config.php';
-			$this->cf = NgfbConfig::get_config();			// unfiltered - $cf['*'] array is not available yet
+			$this->cf = NgfbConfig::get_config( false, false );	// unfiltered - $cf['*'] array is not available yet
 			NgfbConfig::set_constants( __FILE__ );
 			NgfbConfig::require_libs( __FILE__ );			// includes the register.php class library
 			$this->reg = new NgfbRegister( $this );			// activate, deactivate, uninstall hooks
@@ -113,7 +113,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public function init_widgets() {
 			$opts = get_option( NGFB_OPTIONS_NAME );
 			if ( ! empty( $opts['plugin_widgets'] ) ) {
-				foreach ( NgfbConfig::get_config( 'plugin' ) as $ext => $info ) {
+				foreach ( $this->cf['plugin'] as $ext => $info ) {
 					if ( isset( $info['lib']['widget'] ) && is_array( $info['lib']['widget'] ) ) {
 						foreach ( $info['lib']['widget'] as $id => $name ) {
 							$classname = apply_filters( $ext.'_load_lib', false, 'widget/'.$id );
@@ -327,7 +327,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		// runs at init priority 13 by default
 		public function init_shortcodes() {
 			if ( ! empty( $this->options['plugin_shortcodes'] ) ) {
-				foreach ( NgfbConfig::get_config( 'plugin' ) as $ext => $info ) {
+				foreach ( $this->cf['plugin'] as $ext => $info ) {
 					if ( isset( $info['lib']['shortcode'] ) && is_array( $info['lib']['shortcode'] ) ) {
 						foreach ( $info['lib']['shortcode'] as $id => $name ) {
 							$classname = apply_filters( $ext.'_load_lib', false, 'shortcode/'.$id );
@@ -385,7 +385,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		// only runs when debug is enabled
 		public function override_textdomain_mofile( $wp_mofile, $domain ) {
 			if ( strpos( $domain, 'nextgen-facebook' ) === 0 ) {	// optimize
-				foreach ( NgfbConfig::get_config( 'plugin' ) as $ext => $info ) {
+				foreach ( $this->cf['plugin'] as $ext => $info ) {
 					if ( $info['slug'] === $domain ) {
 						$constant_name = strtoupper( $ext ).'_PLUGINDIR';
 						if ( defined( $constant_name ) && $plugin_dir = constant( $constant_name ) ) {
