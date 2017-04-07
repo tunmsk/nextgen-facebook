@@ -401,7 +401,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* None
 * *Improvements*
 	* Optimized the creation of missing settings and/or new settings during the activation process.
-	* Updated the "Maximum Title Length" option to include a warning soft limit.
+	* Updated the "Maximum Title Length" option to include a warning soft limit (40 characters by default).
 * *Bugfixes*
 	* None
 * *Developer Notes*
