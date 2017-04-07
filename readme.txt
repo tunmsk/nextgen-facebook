@@ -401,6 +401,7 @@ Note that the production stage level can be incremented on occasion for simple t
 	* None
 * *Improvements*
 	* Optimized the creation of missing settings and/or new settings during the activation process.
+	* Updated the "Maximum Title Length" option to include a warning soft limit.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -1023,7 +1024,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 8.40.12-dev2 =
 
-(2017/04/07) Optimized the creation of missing settings and/or new settings during the activation process.
+(2017/04/07) Optimized the creation of missing settings and/or new settings during the activation process. Updated the "Maximum Title Length" option to include a warning soft limit.
 
 = 8.40.11-1 =
 
