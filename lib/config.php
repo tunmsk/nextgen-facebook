@@ -36,7 +36,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					),
 					'url' => array(
 						// wordpress
-						'download' => 'https://wordpress.org/plugins/nextgen-facebook/',
+						'about' => 'https://wordpress.org/plugins/nextgen-facebook/',
 						'forum' => 'https://wordpress.org/support/plugin/nextgen-facebook',
 						'review' => 'https://wordpress.org/support/plugin/nextgen-facebook/reviews/?rate=5#new-post',
 						// github
@@ -192,13 +192,14 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						// github
 						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/nextgen-facebook-um/master/readme.txt',
 						// surniaulula
-						'download' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/',
+						'about' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/',
 						'latest' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/latest/',
 						'update' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/update/',
 						'changelog' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/changelog/',
 						'docs' => 'https://surniaulula.com/docs/plugins/nextgen-facebook-um/',
 						'faqs' => '',
 						'notes' => '',
+						'support' => '',
 					),
 				),
 			),
@@ -797,6 +798,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'min_version' => '3.7',		// hard limit - deactivate the plugin when activating
 				'rec_version' => '4.7.3',	// soft limit - issue warning if lower version found
 				'version_url' => 'https://codex.wordpress.org/Supported_Versions?nocache=1',
+				'tb_iframe' => array(	// thickbox iframe
+					'width' => 600,
+					'height' => 550,
+				),
 				'cm_names' => array(
 					'aim' => 'AIM',
 					'jabber' => 'Google Talk',
