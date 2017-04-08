@@ -1188,7 +1188,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					$links[] = '<strong>'.__( 'Want to say thank you?', 'nextgen-facebook' ).'</strong><br/>'.
 						'<a href="'.$info['url']['review'].'" target="_blank">'.
 						sprintf( __( 'Rate the %1$s Plugin %2$s on WP.org', 'nextgen-facebook' ), 
-							$info['short'], '<span class="ngfb-five-stars"></span>' ).'</a> <3';
+							$info['short'], '<span class="ngfb-five-stars"></span>' ).'</a>';
 				}
 
 				if ( ! empty( $links ) ) {
