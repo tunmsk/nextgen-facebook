@@ -30,26 +30,29 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'text_domain' => 'nextgen-facebook',
 					'domain_path' => '/languages',
 					'img' => array(
-						'icon_small' => 'images/icon-128x128.png',
-						'icon_medium' => 'images/icon-256x256.png',
 						'background' => 'images/background.jpg',
+						'icons' => array(
+							'low' => 'images/icon-128x128.png',
+							'high' => 'images/icon-256x256.png',
+						),
 					),
 					'url' => array(
 						// wordpress
-						'about' => 'https://wordpress.org/plugins/nextgen-facebook/',
+						'home' => 'https://wordpress.org/plugins/nextgen-facebook/',
 						'forum' => 'https://wordpress.org/support/plugin/nextgen-facebook',
 						'review' => 'https://wordpress.org/support/plugin/nextgen-facebook/reviews/?rate=5#new-post',
 						// github
 						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/nextgen-facebook/master/readme.txt',
 						'setup_html' => 'https://raw.githubusercontent.com/SurniaUlula/nextgen-facebook/master/setup.html',
 						// surniaulula
-						'update' => 'https://surniaulula.com/extend/plugins/nextgen-facebook/update/',
-						'purchase' => 'https://surniaulula.com/extend/plugins/nextgen-facebook/',
 						'changelog' => 'https://surniaulula.com/extend/plugins/nextgen-facebook/changelog/',
 						'docs' => 'https://surniaulula.com/docs/plugins/nextgen-facebook/',
 						'faqs' => 'https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/',
 						'notes' => 'https://surniaulula.com/docs/plugins/nextgen-facebook/notes/',
 						'support' => 'http://nextgen-facebook.support.surniaulula.com/support/tickets/new',
+						'purchase' => 'https://surniaulula.com/extend/plugins/nextgen-facebook/',
+						'update' => 'https://surniaulula.com/extend/plugins/nextgen-facebook/update/',
+						'latest' => '',
 					),
 					'lib' => array(			// libraries
 						'profile' => array (	// lib file descriptions will be translated
@@ -185,21 +188,27 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'base' => 'nextgen-facebook-um/nextgen-facebook-um.php',
 					'update_auth' => '',
 					'img' => array(
-						'icon_small' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/icon-128x128.png',
-						'icon_medium' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/icon-256x256.png',
+						'icons' => array(
+							'low' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/icon-128x128.png',
+							'high' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/icon-256x256.png',
+						),
 					),
 					'url' => array(
+						// wordpress
+						'forum' => '',
+						'review' => '',
 						// github
 						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/nextgen-facebook-um/master/readme.txt',
 						// surniaulula
-						'about' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/',
-						'latest' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/latest/',
-						'update' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/update/',
+						'home' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/',
 						'changelog' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/changelog/',
 						'docs' => 'https://surniaulula.com/docs/plugins/nextgen-facebook-um/',
 						'faqs' => '',
 						'notes' => '',
 						'support' => '',
+						'purchase' => '',
+						'update' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/update/',
+						'latest' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/latest/',
 					),
 				),
 			),
@@ -785,6 +794,32 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'um' => array(				// update manager
 				'min_version' => '1.5.11-1',	// minimum update manager version (hard limit)
+				'check_hours' => array(
+					24 => 'Every day',
+					48 => 'Every two days',
+					72 => 'Every three days',
+					96 => 'Every four days',
+					120 => 'Every five days',
+					144 => 'Every six days',
+					168 => 'Every week',
+					336 => 'Every two weeks',
+					504 => 'Every three weeks',
+					720 => 'Every month',
+				),
+				'version_filter' => array(
+					'dev' => 'Development and Up',
+					'alpha' => 'Alpha and Up',
+					'beta' => 'Beta and Up',
+					'rc' => 'Release Candidate and Up',
+					'stable' => 'Stable / Production',
+				),
+				'version_regex' => array(
+					'dev' => '/^[0-9\.\-]+(dev|a|alpha|b|beta|rc)?[0-9\.\+]+$/',
+					'alpha' => '/^[0-9\.\-]+(a|alpha|b|beta|rc)?[0-9\.\+]+$/',
+					'beta' => '/^[0-9\.\-]+(b|beta|rc)?[0-9\.\+]+$/',
+					'rc' => '/^[0-9\.\-]+(rc)?[0-9\.\+]+$/',
+					'stable' => '/^[0-9\.\-\+]+$/',
+				),
 			),
 			'wp' => array(				// wordpress
 				'label' => 'WordPress',
@@ -799,7 +834,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				'rec_version' => '4.7.3',	// soft limit - issue warning if lower version found
 				'version_url' => 'https://codex.wordpress.org/Supported_Versions?nocache=1',
 				'tb_iframe' => array(	// thickbox iframe
-					'width' => 600,
+					'width' => 772,
 					'height' => 550,
 				),
 				'cm_names' => array(
@@ -1499,39 +1534,57 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 
 					foreach ( self::$cf['plugin'] as $ext => $info ) {
 
-						if ( defined( strtoupper( $ext ).'_PLUGINDIR' ) )
+						if ( defined( strtoupper( $ext ).'_PLUGINDIR' ) ) {
 							$pkg_lctype = is_dir( constant( strtoupper( $ext ).
 								'_PLUGINDIR' ).'lib/pro/' ) ? 'pro' : 'gpl';
-						else $pkg_lctype = '';
+						} else {
+							$pkg_lctype = '';
+						}
 
-						if ( isset( $info['base'] ) )
+						if ( isset( $info['slug'] ) ) {
+							self::$cf['*']['slug'][$info['slug']] = $ext;
+						}
+
+						if ( isset( $info['base'] ) ) {
 							self::$cf['*']['base'][$info['base']] = $ext;
+						}
 
-						if ( isset( $info['lib'] ) && is_array( $info['lib'] ) )
+						if ( isset( $info['lib'] ) && is_array( $info['lib'] ) ) {
 							self::$cf['*']['lib'] = SucomUtil::array_merge_recursive_distinct(
 								self::$cf['*']['lib'], $info['lib'] );
-
-						if ( isset( $info['version'] ) )
-							self::$cf['*']['version'] .= '-'.$ext.$info['version'].$pkg_lctype;
-
-						if ( isset( $info['opt_version'] ) )
-							self::$cf['opt']['version'] .= '-'.$ext.$info['opt_version'].$pkg_lctype;
-
-						// complete relative paths in the image array
-						foreach ( $info['img'] as $id => $url ) {
-							if ( ! empty( $url ) && strpos( $url, '//' ) === false ) {
-								self::$cf['plugin'][$ext]['img'][$id] = trailingslashit( plugins_url( '', $info['base'] ) ).$url;
-							}
 						}
+
+						if ( isset( $info['version'] ) ) {
+							self::$cf['*']['version'] .= '-'.$ext.$info['version'].$pkg_lctype;
+						}
+
+						if ( isset( $info['opt_version'] ) ) {
+							self::$cf['opt']['version'] .= '-'.$ext.$info['opt_version'].$pkg_lctype;
+						}
+
+						// complete relative paths in the image arrays
+						$plugin_base = trailingslashit( plugins_url( '', $info['base'] ) );
+						array_walk_recursive( self::$cf['plugin'][$ext]['img'], 
+							array( __CLASS__, 'maybe_prefix_base_url' ), $plugin_base );
 					}
 				}
 			}
 
 			if ( $idx !== false ) {
-				if ( isset( self::$cf[$idx] ) )
+				if ( isset( self::$cf[$idx] ) ) {
 					return self::$cf[$idx];
-				else return null;
-			} else return self::$cf;
+				} else {
+					return null;
+				}
+			} else {
+				return self::$cf;
+			}
+		}
+
+		private static function maybe_prefix_base_url( &$url, $key, $plugin_base ) {
+			if ( ! empty( $url ) && strpos( $url, '//' ) === false ) {
+				$url = $plugin_base.$url;
+			}
 		}
 
 		/*
