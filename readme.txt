@@ -393,7 +393,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.40.12-dev2 (2017/04/07)**
+**Version 8.40.12-dev2 (2017/04/08)**
 
 * *New Features*
 	* None
@@ -401,7 +401,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Optimized the creation of missing settings and/or new settings during the activation process.
 	* Updated the "Maximum Title Length" option to include a warning soft limit (40 characters by default).
 * *Bugfixes*
-	* None
+	* Fixed an empty return value for additional term and user column content.
 * *Developer Notes*
 	* None
 
@@ -1022,7 +1022,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 8.40.12-dev2 =
 
-(2017/04/07) Optimized the creation of missing settings and/or new settings during the activation process. Updated the "Maximum Title Length" option to include a warning soft limit.
+(2017/04/08) Optimized the creation of missing settings and/or new settings during the activation process. Updated the "Maximum Title Length" option to include a warning soft limit.
 
 = 8.40.11-1 =
 
