@@ -177,14 +177,14 @@ if ( ! class_exists( 'SucomStyle' ) ) {
 
 			$custom_style_css .= '
 	@font-face {
-		font-family: "Star";
-		src: url("'.NGFB_URLPATH.'fonts/star.eot");
-		src: url("'.NGFB_URLPATH.'fonts/star.eot?#iefix") format("embedded-opentype"),
+		font-family:"Star";
+		src:url("'.NGFB_URLPATH.'fonts/star.eot");
+		src:url("'.NGFB_URLPATH.'fonts/star.eot?#iefix") format("embedded-opentype"),
 		url("'.NGFB_URLPATH.'fonts/star.woff") format("woff"),
 		url("'.NGFB_URLPATH.'fonts/star.ttf") format("truetype"),
 		url("'.NGFB_URLPATH.'fonts/star.svg#star") format("svg");
-		font-weight: normal;
-		font-style: normal;
+		font-weight:normal;
+		font-style:normal;
 	}
 	.column-ngfb_og_img { 
 		width:'.$sort_cols['og_img']['width'].' !important;
@@ -247,16 +247,16 @@ if ( ! class_exists( 'SucomStyle' ) ) {
 		margin-right:6px;
 	}
 	.ngfb-notice.notice-success .notice-label:before {
-		content: "\f147";	/* yes */
+		content:"\f147";	/* yes */
 	}
 	.ngfb-notice.notice-info .notice-label:before {
-		content: "\f537";	/* sticky */
+		content:"\f537";	/* sticky */
 	}
 	.ngfb-notice.notice-warning .notice-label:before {
-		content: "\f227";	/* flag */
+		content:"\f227";	/* flag */
 	}
 	.ngfb-notice.notice-error .notice-label:before {
-		content: "\f488";	/* megaphone */
+		content:"\f488";	/* megaphone */
 	}
 	.ngfb-notice .notice-label {
 		display:table-cell;
@@ -299,18 +299,25 @@ if ( ! class_exists( 'SucomStyle' ) ) {
 		font-size:12px;
 		vertical-align:top;
 	}
-	.ngfb-five-stars {
-		font-family: "Star";
-		font-size: 1em;
-		line-height: 1;
-		width: 5.4em;
-		height: 1em;
-		position: relative;
-		overflow: hidden;
+	.ngfb-rate-stars {
+		font-family:"Star";
+		font-size:0.9em;
+		width:5.4em;
+		height:1em;
+		line-height:1;
+		position:relative;
+		overflow:hidden;
 		margin:0 0 1.2em 0;
 	}
-	.ngfb-five-stars:before {
-		content: "\53\53\53\53\53";
+	.ngfb-rate-stars:before {
+		content:"\53\53\53\53\53";
+	}
+	.ngfb-rate-heart:before {
+		color:red;
+		font-size:1.1em;
+		width:1.1em;
+		height:1.1em;
+		vertical-align:middle;
 	}';
 
 			if ( ! empty( $this->p->is_avail['seo']['wpseo'] ) ) {
