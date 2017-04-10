@@ -870,7 +870,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'php' => array(				// php
 				'label' => 'PHP',
-				'min_version' => '5.4',		// hard limit - deactivate the plugin when activating
+				'min_version' => '5.3',		// hard limit - deactivate the plugin when activating
 				'rec_version' => '7.0',		// soft limit - issue warning if lower version found
 				'version_url' => 'http://php.net/supported-versions.php',
 				'extensions' => array(
