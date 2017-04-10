@@ -16,7 +16,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 == Description ==
 
-<img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" width="128" height="128" class="plugin-icon">
+<img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" width="128" height="128" class="readme-plugin-icon">
 
 <p><strong>NGFB uses <em>existing</em> content to generate meta tags + Schema markup</strong> &mdash; there's no need to manually enter / configure any additional settings or values, <em>but if you want to</em>, you can customize just about anything and everything. ;-)</p>
 
