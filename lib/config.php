@@ -211,7 +211,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'support' => '',
 						'purchase' => '',
 						'update' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/update/',
-						'latest' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/latest.zip',
+						'latest' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/latest/',
 					),
 				),
 			),
