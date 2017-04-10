@@ -13,7 +13,7 @@
 
 <h2>Description</h2>
 
-<p><img src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png" width="128" height="128" class="readme-plugin-icon"></p>
+<p><img class="readme-icon" src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png"></p>
 
 <p><strong>NGFB uses <em>existing</em> content to generate meta tags + Schema markup</strong> &mdash; there's no need to manually enter / configure any additional settings or values, <em>but if you want to</em>, you can customize just about anything and everything. ;-)</p>
 
@@ -114,12 +114,7 @@
 <p>Download the Free version from <a href="https://surniaulula.github.io/nextgen-facebook/">GitHub</a> or <a href="https://wordpress.org/plugins/nextgen-facebook/">WordPress.org</a>.</p>
 </blockquote>
 
-<div style="clear:both;"></div>
-
-<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png" 
-    width="100%" height="100%" alt="Example Twitter 'Player' Card." /></p>
-</div>
+<p><img class="readme-example" src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-player-card-single.png"></p>
 
 <h4>Quick List of Features (Continued)</h4>
 
@@ -186,12 +181,7 @@
 <p><a href="https://surniaulula.com/extend/plugins/nextgen-facebook/?utm_source=ngfb-readme-purchase">Purchase the Pro version</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 </blockquote>
 
-<div style="clear:both;"></div>
-
-<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png"
-    width="100%" height="100%" alt="Example Showing All Social Sharing Buttons Enabled." /></p>
-</div>
+<p><img class="readme-example" src="https://surniaulula.github.io/nextgen-facebook/images/settings/ngfb-social-sharing-buttons.png"></p>
 
 <h4>Social Sharing Buttons</h4>
 
@@ -214,15 +204,7 @@
 
 <p>The Facebook, Google+ and Twitter social share buttons support <em>multiple languages</em>. A default language can be chosen in the NGFB settings, and the <a href="https://surniaulula.com/extend/plugins/nextgen-facebook/">Pro version</a> switches the social share button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Facebook / Open Graph / Pinterest Rich Pin descriptions, Tweet text, and other social captions.</p>
 
-<div style="clear:both;"></div>
-
-<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png" 
-    width="100%" height="100%" alt="Example Social Profiles in Google
-    Search - NGFB includes author (Person) and publisher (Organization)
-    social profiles in schema.org JSON-LD format for Google Search and
-    their Knowledge Graph." /></p>
-</div>
+<p><img class="readme-example landscape" src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png"></p>
 
 <h4>Social Profiles for Google Search</h4>
 
@@ -248,12 +230,7 @@
 <li>YouTube Channel URL</li>
 </ul>
 
-<div style="clear:both;"></div>
-
-<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-large-image-summary-single.png" 
-    width="100%" height="100%" alt="Example Twitter 'Large Image Summary' Card." /></p>
-</div>
+<p><img class="readme-example" src="https://surniaulula.github.io/nextgen-facebook/images/social/twitter-large-image-summary-single.png"></p>
 
 <h4>Complete Social Meta Tags</h4>
 
@@ -269,12 +246,7 @@
 
 <p>NextGEN Facebook (NGFB) Pro integrates with <a href="https://wordpress.org/plugins/all-in-one-seo-pack/">All in One SEO Pack</a>, <a href="https://wordpress.org/plugins/headspace2/">HeadSpace2 SEO</a>, <a href="https://wordpress.org/plugins/autodescription/">The SEO Framework</a>, and <a href="https://wordpress.org/plugins/wordpress-seo/">Yoast SEO</a> (aka WordPress SEO) &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, Schema Structured Data, and Twitter Card meta tags.</p>
 
-<div style="clear:both;"></div>
-
-<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/nextgen-facebook/images/social/pinterest-pin-ngfb-zoomed.png" 
-    width="100%" height="100%" alt="Example Pinterest Product Pin (Zoomed)." /></p>
-</div>
+<p><img class="readme-example" src="https://surniaulula.github.io/nextgen-facebook/images/social/pinterest-pin-ngfb-zoomed.png"></p>
 
 <p><strong>eCommerce Products</strong></p>
 
