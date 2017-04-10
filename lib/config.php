@@ -17,9 +17,12 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'lca' => 'ngfb',		// lowercase acronym
 			'readme_cache_exp' => 86400,	// 1 day
 			'setup_cache_exp' => 86400,	// 1 day
+			'install_hosts' => array(	// allow extensions to be installed from these hosts
+				'https://surniaulula.com/extend/plugins/',
+			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.12',		// plugin version
+					'version' => '8.40.13-dev1',		// plugin version
 					'opt_version' => '514',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -208,7 +211,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 						'support' => '',
 						'purchase' => '',
 						'update' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/update/',
-						'latest' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/latest/',
+						'latest' => 'https://surniaulula.com/extend/plugins/nextgen-facebook-um/latest.zip',
 					),
 				),
 			),
@@ -793,7 +796,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'um' => array(				// update manager
-				'min_version' => '1.5.11-1',	// minimum update manager version (hard limit)
+				'min_version' => '1.5.18',	// minimum update manager version (hard limit)
 				'check_hours' => array(
 					24 => 'Every day',
 					48 => 'Every two days',
