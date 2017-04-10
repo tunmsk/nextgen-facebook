@@ -393,7 +393,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.40.13-dev1 (2017/04/10)**
+**Version 8.40.13-dev.1 (2017/04/10)**
 
 * *New Features*
 	* None
@@ -625,7 +625,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.40.13-dev1 =
+= 8.40.13-dev.1 =
 
 (2017/04/10) Fixed the Install / Update button in the plugin details thickbox.
 
