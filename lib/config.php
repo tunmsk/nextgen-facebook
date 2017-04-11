@@ -22,7 +22,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.13-dev.1',		// plugin version
+					'version' => '8.40.13-dev.2',		// plugin version
 					'opt_version' => '514',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -34,6 +34,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'domain_path' => '/languages',
 					'img' => array(
 						'background' => 'images/background.jpg',
+						'banners' => array(
+							'low' => 'https://surniaulula.github.io/nextgen-facebook/assets/banner-772x250.jpg',
+							'high' => 'https://surniaulula.github.io/nextgen-facebook/assets/banner-1544x500.jpg',
+						),
 						'icons' => array(
 							'low' => 'images/icon-128x128.png',
 							'high' => 'images/icon-256x256.png',
@@ -191,6 +195,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'base' => 'nextgen-facebook-um/nextgen-facebook-um.php',
 					'update_auth' => '',
 					'img' => array(
+						'banners' => array(
+							'low' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/banner-772x250.jpg',
+							'high' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/banner-1544x500.jpg',
+						),
 						'icons' => array(
 							'low' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/icon-128x128.png',
 							'high' => 'https://surniaulula.github.io/nextgen-facebook-um/assets/icon-256x256.png',

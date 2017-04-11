@@ -523,7 +523,7 @@ if ( ! class_exists( 'NgfbOptions' ) ) {
 						$this->p->debug->log( $options_name.' settings have been updated and saved' );
 					}
 					if ( is_admin() ) {
-						$this->p->notice->inf( sprintf( __( 'Plugin settings (%s) have been updated and saved.',
+						$this->p->notice->inf( sprintf( __( 'Plugin settings (%s) have been updated and saved.',	// blue status w pin
 							'nextgen-facebook' ), $options_name ), true, __FUNCTION__.'_updated', true );
 					}
 				} elseif ( $this->p->debug->enabled ) {
