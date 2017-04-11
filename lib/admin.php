@@ -1321,6 +1321,8 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 
 					if ( SucomUtil::installed_plugins( $info['base'] ) ) {
 
+						// TODO add Activate / Deactivate links (site and network)
+
 						if ( SucomUtil::plugin_has_update( $info['base'] ) ) {
 							$links[] = '<a href="'.$details_url.'" class="thickbox" tabindex="'.++$tabindex.'">'.
 								'<font color="red">'._x( 'Plugin Details and Update', 'plugin action link',
