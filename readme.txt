@@ -371,7 +371,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.40.13-dev.2 (2017/04/11)**
+**Version 8.40.13-dev.3 (2017/04/11)**
 
 * *New Features*
 	* None
@@ -604,7 +604,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.40.13-dev.2 =
+= 8.40.13-dev.3 =
 
 (2017/04/11) After installing / activating / updating from the Plugin Details thickbox, the user is now returned to the original NGFB settings page.
 
