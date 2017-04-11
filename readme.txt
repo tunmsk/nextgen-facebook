@@ -26,7 +26,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 <p><strong>NGFB includes advanced <em>quality control</em> features and options</strong> &mdash; checking minimum / maximum image dimensions and aspect ratios, verifying the webpage for duplicate meta tags, showing notices for missing and required images, along with theme header template validation.</p>
 
-<p><strong>NGFB can enhance and integrate with your favorite SEO plugin!</strong> &mdash; WPSSO specializes in providing all the meta tags + Schema markup social sites and search engines need, and you can still continue to use your favorite SEO content / keyword analysis tools!</p>
+<p><strong>NGFB can enhance and integrate with your favorite SEO plugin!</strong> &mdash; NGFB specializes in providing all the meta tags + Schema markup social sites and search engines need, and you can still continue to use your favorite SEO content / keyword analysis tools!</p>
 
 <blockquote>
 <p><strong>Don't need the included social share buttons?</strong></p>
@@ -371,14 +371,15 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.40.13-dev.1 (2017/04/10)**
+**Version 8.40.13-dev.2 (2017/04/10)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added a filter to allow the NGFB Update Manager to be downloaded / installed from the plugin details thickbox.
+	* Added a filter to allow the NGFB Update Manager to be downloaded and installed from the Plugin Extensions and Pro Licenses settings page.
+	* Added jQuery and filter hooks to return the user to the settings page (instead of the WordPress plugins page) after installing / activating / updating a from the Plugin Details thickbox.
 * *Bugfixes*
-	* Fixed the Install / Update button in the plugin details thickbox (added a jQuery work-around for a WordPress bug).
+	* Fixed the Install / Update button in the Plugin Details thickbox.
 * *Developer Notes*
 	* None
 
@@ -394,7 +395,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Fixed an empty return value for additional term and user column content.
 * *Developer Notes*
 	* Added icons and banners low/high resolution images for each extension in the plugin config.
-	* Moved all URLs in the extension configs to the main WPSSO plugin config.
+	* Moved all URLs in the extension configs to the main NGFB plugin config.
 	* Dropped the package number from the production version string.
 
 **Version 8.40.11-1 (2017/04/05)**
@@ -603,7 +604,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.40.13-dev.1 =
+= 8.40.13-dev.2 =
 
 (2017/04/10) Fixed the Install / Update button in the plugin details thickbox.
 

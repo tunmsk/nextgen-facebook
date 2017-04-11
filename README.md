@@ -23,7 +23,7 @@
 
 <p><strong>NGFB includes advanced <em>quality control</em> features and options</strong> &mdash; checking minimum / maximum image dimensions and aspect ratios, verifying the webpage for duplicate meta tags, showing notices for missing and required images, along with theme header template validation.</p>
 
-<p><strong>NGFB can enhance and integrate with your favorite SEO plugin!</strong> &mdash; WPSSO specializes in providing all the meta tags + Schema markup social sites and search engines need, and you can still continue to use your favorite SEO content / keyword analysis tools!</p>
+<p><strong>NGFB can enhance and integrate with your favorite SEO plugin!</strong> &mdash; NGFB specializes in providing all the meta tags + Schema markup social sites and search engines need, and you can still continue to use your favorite SEO content / keyword analysis tools!</p>
 
 <blockquote>
 <p><strong>Don't need the included social share buttons?</strong></p>
