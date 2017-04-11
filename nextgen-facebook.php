@@ -49,9 +49,9 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public $opt;			// NgfbOptions
 		public $page;			// NgfbPage (page title, desc, etc.)
 		public $reg;			// NgfbRegister
-		public $script;			// SucomScript (admin jquery tooltips)
+		public $script;			// NgfbScript (admin jquery tooltips)
 		public $sharing;		// NgfbSharing (wp_head and wp_footer js and buttons)
-		public $style;			// SucomStyle (admin styles)
+		public $style;			// NgfbStyle (admin styles)
 		public $tc;			// NgfbTwitterCard
 		public $util;			// NgfbUtil (extends SucomUtil)
 		public $webpage;		// deprecated (backwards compatibility)
@@ -246,8 +246,8 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			$this->util = new NgfbUtil( $this );			// extends SucomUtil
 			$this->opt = new NgfbOptions( $this );
 			$this->cache = new SucomCache( $this );			// object and file caching
-			$this->style = new SucomStyle( $this );			// admin styles
-			$this->script = new SucomScript( $this );		// admin jquery tooltips
+			$this->style = new NgfbStyle( $this );			// admin styles
+			$this->script = new NgfbScript( $this );		// admin jquery tooltips
 			$this->page = new NgfbPage( $this );			// page title, desc, etc.
 			$this->webpage =& $this->page;				// deprecated (maintain backwards compatibility)
 			$this->media = new NgfbMedia( $this );			// images, videos, etc.
