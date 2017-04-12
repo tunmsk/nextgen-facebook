@@ -381,6 +381,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* Fixed the Install / Update button in the Plugin Details thickbox.
 	* Fixed the default Organization ID for an Organization selected in the Social Settings metabox (the Organization was defaulting to 'site' instead of 'none').
+	* Fixed the widget buttons layout when using the default CSS and small button preset.
 * *Developer Notes*
 	* Moved/renamed the extension registration booleans from `is_avail[$name]` to `is_avail['p_ext'][$name]`.
 
