@@ -11,7 +11,8 @@
 .ngfb-widget-buttons .ngfb-buttons {
 	margin:20px 0 0 0;
 }
-.ngfb-widget-buttons .ngfb-buttons > div {
+.ngfb-widget-buttons .ngfb-buttons > div,	/* default uses small buttons */
+.ngfb-widget-buttons .ngfb-preset-small_share_count .ngfb-buttons > div {
 	display:inline-block;
 	vertical-align:top;
 	padding:0;
