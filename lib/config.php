@@ -22,7 +22,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.40.13-dev.3',		// plugin version
+					'version' => '8.40.13-a.1',		// plugin version
 					'opt_version' => '514',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -804,7 +804,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 			),
 			'um' => array(				// update manager
-				'min_version' => '1.5.18',	// minimum update manager version (hard limit)
+				'min_version' => '1.6.0-a.1',	// minimum update manager version (hard limit)
 				'check_hours' => array(
 					24 => 'Every day',
 					48 => 'Every two days',

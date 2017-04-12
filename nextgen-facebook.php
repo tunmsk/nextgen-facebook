@@ -13,7 +13,7 @@
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
  * Requires At Least: 3.7
  * Tested Up To: 4.7.3
- * Version: 8.40.13-dev.3
+ * Version: 8.40.13-a.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -227,21 +227,28 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				( defined( 'NGFB_HTML_DEBUG' ) && NGFB_HTML_DEBUG ) ? true : false;
 			$wp_debug = defined( 'NGFB_WP_DEBUG' ) && NGFB_WP_DEBUG ? true : false;
 
-			if ( ( $html_debug || $wp_debug ) &&			// only load debug class if one or more debug options enabled
+			if ( ( $html_debug || $wp_debug ) &&	// only load debug class if debug options are enabled
 				( $classname = NgfbConfig::load_lib( false, 'com/debug', 'SucomDebug' ) ) ) {
 				$this->debug = new $classname( $this, array( 'html' => $html_debug, 'wp' => $wp_debug ) );
 				if ( $this->debug->enabled ) {
+					global $wp_version;
 					$this->debug->log( 'debug enabled on '.date( 'c' ) );
+					$this->debug->log( 'WP version '.$wp_version );
+					$this->debug->log( 'PHP version '.phpversion() );
 					$this->debug->log( $this->check->get_ext_list() );
 				}
-			} else $this->debug = new SucomNoDebug();			// make sure debug property is always available
+			} else {
+				$this->debug = new SucomNoDebug();	// make sure debug property is always available
+			}
 
 			do_action( 'ngfb_init_textdomain', $this->debug->enabled );
 
-			// only load notice class in the admin interface
-			if ( is_admin() && ( $classname = NgfbConfig::load_lib( false, 'com/notice', 'SucomNotice' ) ) ) {
+			if ( is_admin() &&	// only load notice class in the admin interface
+				( $classname = NgfbConfig::load_lib( false, 'com/notice', 'SucomNotice' ) ) ) {
 				$this->notice = new $classname( $this );
-			} else $this->notice = new SucomNoNotice();
+			} else {
+				$this->notice = new SucomNoNotice();	// make sure the notice property is always available
+			}
 
 			$this->util = new NgfbUtil( $this );			// extends SucomUtil
 			$this->opt = new NgfbOptions( $this );
@@ -265,7 +272,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				$this->admin = new NgfbAdmin( $this );		// admin menus and page loader
 			}
 
-			if ( $this->is_avail['ssb'] ) {
+			if ( $this->is_avail['p_ext']['ssb'] ) {
 				$this->sharing = new NgfbSharing( $this );	// wp_head and wp_footer js and buttons
 			}
 

@@ -90,8 +90,6 @@ if ( ! class_exists( 'NgfbRegister' ) ) {
 
 			$plugin_version = NgfbConfig::$cf['plugin']['ngfb']['version'];
 			NgfbUtil::save_all_times( 'ngfb', $plugin_version );
-
-			set_transient( 'ngfb_activation_redirect', true, 60 * 60 );
 		}
 
 		private function deactivate_plugin() {
