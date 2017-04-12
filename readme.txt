@@ -371,7 +371,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.40.13-a.1 (2017/04/12)**
+**Version 8.40.13-a.2 (2017/04/12)**
 
 * *New Features*
 	* None
@@ -606,7 +606,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.40.13-a.1 =
+= 8.40.13-a.2 =
 
 (2017/04/12) Fixed the default Organization ID for an Organization selected in the Social Settings metabox. After installing / activating / updating from the Plugin Details thickbox, the user is now returned to the original NGFB settings page.
 
