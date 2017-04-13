@@ -236,15 +236,14 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 		}
 
 		public function aop( $lca = '', $lic = true, $rv = true ) {
-			$lca = empty( $lca ) ?
-				$this->p->cf['lca'] : $lca;
+			$lca = empty( $lca ) ? $this->p->cf['lca'] : $lca;
 			$kn = $lca.'-'.$lic.'-'.$rv;
 			if ( isset( self::$c[$kn] ) )
 				return self::$c[$kn];
 			$uca = strtoupper( $lca );
-			if ( defined( $uca.'_PLUGINDIR' ) )
+			if ( defined( $uca.'_PLUGINDIR' ) ) {
 				$pdir = constant( $uca.'_PLUGINDIR' );
-			elseif ( isset( $this->p->cf['plugin'][$lca]['slug'] ) ) {
+			} elseif ( isset( $this->p->cf['plugin'][$lca]['slug'] ) ) {
 				$slug = $this->p->cf['plugin'][$lca]['slug'];
 				if ( ! defined ( 'WPMU_PLUGIN_DIR' ) ||
 					! is_dir( $pdir = WPMU_PLUGIN_DIR.'/'.$slug.'/' ) ) {
