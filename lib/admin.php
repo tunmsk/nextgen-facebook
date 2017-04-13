@@ -1272,7 +1272,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					$links[] = '<strong>'.__( 'Want to say thank you?', 'nextgen-facebook' ).'</strong><br/>'.
 						'<a href="'.$info['url']['review'].'" target="_blank">'.
 						sprintf( __( 'Please rate %1$s %2$s at %3$s', 'nextgen-facebook' ), 
-							$info['short'], '<span class="ngfb-rate-stars"></span>', 'WP.org' ).'</a>';
+							$info['short'], '<span class="ngfb-rate-stars"></span>', 'WordPress.org' ).'</a>';
 				}
 
 				if ( ! empty( $links ) ) {

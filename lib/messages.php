@@ -640,10 +640,10 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 							break;
 
 						/*
-						 * 'Service API Keys' (URL Shortening) settings
+						 * 'Service APIs' (URL Shortening) settings
 						 */
 						case 'tooltip-plugin_shortener':
-							$text = sprintf( __( 'A preferred URL shortening service for %s plugin filters and/or extensions that may need to shorten URLs &mdash; don\'t forget to define the Service API Keys for the URL shortening service of your choice.', 'nextgen-facebook' ), $info['short'] );
+							$text = sprintf( __( 'A preferred URL shortening service for %s plugin filters and/or extensions that may need to shorten URLs &mdash; don\'t forget to define the service API keys for the URL shortening service of your choice.', 'nextgen-facebook' ), $info['short'] );
 							break;
 
 						case 'tooltip-plugin_shortlink':
@@ -1163,7 +1163,10 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 					case 'notice-um-version-required':
 						$um_info = $this->p->cf['plugin']['ngfbum'];
 						$um_version = isset( $um_info['version'] ) ? $um_info['version'] : 'unknown';
-						$text = sprintf( __( '%1$s version %2$s requires the use of %3$s version %4$s or newer (version %5$s is currently installed).', 'nextgen-facebook' ), $info['name_pro'], $this->p->cf['plugin']['ngfb']['version'], $um_info['short'], $info['min_version'], $um_version ).' '.sprintf( __( 'Use the <em>%1$s</em> button from any %2$s settings page to retrieve the latest update information, or <a href="%3$s" target="_blank">download the latest %4$s extension version</a> and install the ZIP file manually.', 'nextgen-facebook' ), _x( 'Check for Pro Update(s)', 'submit button', 'nextgen-facebook' ), $this->p->cf['menu']['label'], $um_info['url']['home'], $um_info['short'] );
+
+						$text = sprintf( __( '%1$s version %2$s requires the use of %3$s version %4$s or newer (version %5$s is currently installed).', 'nextgen-facebook' ), $info['name_pro'], $info['version'], $um_info['short'], $info['min_version'], $um_version ).' ';
+						
+						$text .= sprintf( __( 'If an update for %1$s is not available yet, you can use the <em>%2$s</em> button from the %3$s settings page to force an immediate refresh of all update information.', 'nextgen-facebook' ), $um_info['name'], _x( 'Check for Pro Update(s)', 'submit button', 'nextgen-facebook' ), $this->p->util->get_admin_url( 'um-general', _x( 'Update Manager', 'lib file description', 'wpsso-um' ) ) );
 						break;
 
 					case 'notice-recommend-version':
