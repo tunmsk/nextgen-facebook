@@ -36,13 +36,13 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteBuffer' ) ) {
 
 		public function filter_website_buffer_rows( $table_rows, $form, $submenu ) {
 
-			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'buffer_order', range( 1, count( $submenu->website ) ), 'short' ).'</td>';
-
 			$table_rows[] = $form->get_th_html( _x( 'Show Button in',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$submenu->show_on_checkboxes( 'buffer' ).'</td>';
+
+			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
+			'<td>'.$form->get_select( 'buffer_order', range( 1, count( $submenu->website ) ) ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Allow for Platform',
@@ -56,7 +56,11 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteBuffer' ) ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Count Position',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'buffer_count', array( 'none' => 'none', 'horizontal' => 'Horizontal', 'vertical' => 'Vertical' ) ).'</td>';
+			'<td>'.$form->get_select( 'buffer_count', array(
+				'none' => 'none',
+				'horizontal' => 'Horizontal',
+				'vertical' => 'Vertical',
+			) ).'</td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Image Dimensions',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).

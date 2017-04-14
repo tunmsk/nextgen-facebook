@@ -22,13 +22,13 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteLinkedin' ) ) {
 
 		public function filter_website_linkedin_rows( $table_rows, $form, $submenu ) {
 
-			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'linkedin_order', range( 1, count( $submenu->website ) ), 'short' ).'</td>';
-
 			$table_rows[] = $form->get_th_html( _x( 'Show Button in',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$submenu->show_on_checkboxes( 'linkedin' ).'</td>';
+
+			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
+			'<td>'.$form->get_select( 'linkedin_order', range( 1, count( $submenu->website ) ) ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Allow for Platform',
@@ -42,13 +42,11 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteLinkedin' ) ) {
 
 			$table_rows[] = $form->get_th_html( _x( 'Counter Mode',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'linkedin_counter',
-				array(
-					'none' => 'none',
-					'right' => 'Horizontal',
-					'top' => 'Vertical',
-				)
-			).'</td>';
+			'<td>'.$form->get_select( 'linkedin_counter', array(
+				'none' => 'none',
+				'right' => 'Horizontal',
+				'top' => 'Vertical',
+			) ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Zero in Counter',

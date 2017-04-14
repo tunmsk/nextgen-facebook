@@ -22,29 +22,25 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteManagewp' ) ) {
 
 		public function filter_website_managewp_rows( $table_rows, $form, $submenu ) {
 
-			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$form->get_select( 'managewp_order',
-				range( 1, count( $submenu->website ) ), 'short' ).'</td>';
-
 			$table_rows[] = $form->get_th_html( _x( 'Show Button in',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			( $submenu->show_on_checkboxes( 'managewp' ) ).'</td>';
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
+			'<td>'.( $submenu->show_on_checkboxes( 'managewp' ) ).'</td>';
+
+			$table_rows[] = $form->get_th_html( _x( 'Preferred Order',
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
+			'<td>'.$form->get_select( 'managewp_order', range( 1, count( $submenu->website ) ) ).'</td>';
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'Allow for Platform',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'managewp_platform',
-				$this->p->cf['sharing']['platform'] ).'</td>';
+			'<td>'.$form->get_select( 'managewp_platform', $this->p->cf['sharing']['platform'] ).'</td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Button Type',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).'<td>'.
-			$form->get_select( 'managewp_type',
-				array(
-					'small' => 'Small',
-					'big' => 'Big',
-				)
-			).'</td>';
+				'option label (short)', 'nextgen-facebook' ), 'short' ).
+			'<td>'.$form->get_select( 'managewp_type', array(
+				'small' => 'Small',
+				'big' => 'Big',
+			) ).'</td>';
 
 			return $table_rows;
 		}
