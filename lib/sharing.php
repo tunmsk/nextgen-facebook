@@ -393,8 +393,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			}
 
 			$lca = $this->p->cf['lca'];
-			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs', 
-				$this->p->cf['sharing']['styles'] );
+			$tabs = apply_filters( $lca.'_sharing_styles_tabs', $this->p->cf['sharing']['styles'] );
 			$sharing_css_data = '';
 
 			foreach ( $tabs as $id => $name ) {
