@@ -534,11 +534,13 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 				}
 				return false;
 			} elseif ( ! wp_verify_nonce( $_POST[ NGFB_NONCE ], NgfbAdmin::get_nonce() ) ) {
-				if ( $this->p->debug->enabled )
+				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'submit nonce token validation failed' );
-				if ( is_admin() )
+				}
+				if ( is_admin() ) {
 					$this->p->notice->err( __( 'Nonce token validation failed for the submitted form (update ignored).',
 						'nextgen-facebook' ) );
+				}
 				return false;
 			} else return true;
 		}

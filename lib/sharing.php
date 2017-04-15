@@ -124,6 +124,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 				if ( $this->have_buttons_for_type( 'admin_edit' ) ) {
 					add_action( 'add_meta_boxes', array( &$this, 'add_post_buttons_metabox' ) );
 				}
+
 				$this->p->util->add_plugin_filters( $this, array( 
 					'save_options' => 3,			// update the sharing css file
 					'option_type' => 2,			// identify option type for sanitation
@@ -133,6 +134,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 					'messages_info' => 2,
 					'messages_tooltip' => 2,
 					'messages_tooltip_plugin' => 2,
+					'settings_page_custom_style_css' => 1,
 				) );
 
 				$this->p->util->add_plugin_filters( $this, array( 
@@ -163,6 +165,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		}
 
 		public function filter_get_defaults( $def_opts ) {
+
 			$def_opts = array_merge( $def_opts, self::$cf['opt']['defaults'] );
 			$def_opts = $this->p->util->add_ptns_to_opts( $def_opts, 'buttons_add_to', 1 );
 			$plugin_dir = trailingslashit( realpath( dirname( $this->plugin_filepath ) ) );
@@ -180,15 +183,15 @@ jQuery("#ngfb-sidebar-header").click( function(){
 						$this->p->notice->err( sprintf( __( 'Failed to open the %s file for reading.',
 							'nextgen-facebook' ), $buttons_css_file ) );
 					} else {
-						$css_data = fread( $fh, filesize( $buttons_css_file ) );
+						$buttons_css_data = fread( $fh, filesize( $buttons_css_file ) );
 						fclose( $fh );
 						if ( $this->p->debug->enabled ) {
 							$this->p->debug->log( 'read css from file '.$buttons_css_file );
 						}
 						foreach ( array( 'plugin_url_path' => $url_path ) as $macro => $value ) {
-							$css_data = preg_replace( '/%%'.$macro.'%%/', $value, $css_data );
+							$buttons_css_data = preg_replace( '/%%'.$macro.'%%/', $value, $buttons_css_data );
 						}
-						$def_opts['buttons_css_'.$id] = $css_data;
+						$def_opts['buttons_css_'.$id] = $buttons_css_data;
 					}
 				}
 			}
@@ -213,8 +216,9 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 		public function filter_save_options( $opts, $options_name, $network ) {
 			// update the combined and minimized social stylesheet
-			if ( $network === false )
+			if ( $network === false ) {
 				$this->update_sharing_css( $opts );
+			}
 			return $opts;
 		}
 
@@ -341,7 +345,8 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 			$this->update_sharing_css( $opts );
 			$this->p->opt->save_options( NGFB_OPTIONS_NAME, $opts, false );
-			$this->p->notice->upd( __( 'All sharing styles have been reloaded with their default value and saved.', 'nextgen-facebook' ) );
+			$this->p->notice->upd( __( 'All sharing styles have been reloaded with their default value and saved.',
+				'nextgen-facebook' ) );
 		}
 
 		public function wp_enqueue_styles() {
@@ -387,80 +392,78 @@ jQuery("#ngfb-sidebar-header").click( function(){
 				return;
 			}
 
-			$css_data = '';
+			$lca = $this->p->cf['lca'];
 			$tabs = apply_filters( $this->p->cf['lca'].'_sharing_styles_tabs', 
 				$this->p->cf['sharing']['styles'] );
+			$sharing_css_data = '';
 
 			foreach ( $tabs as $id => $name ) {
 				if ( isset( $opts['buttons_css_'.$id] ) ) {
-					$css_data .= $opts['buttons_css_'.$id];
+					$sharing_css_data .= $opts['buttons_css_'.$id];
 				}
 			}
 
-			$classname = apply_filters( $this->p->cf['lca'].'_load_lib', 
-				false, 'ext/compressor', 'SuextMinifyCssCompressor' );
-
-			if ( $classname !== false && class_exists( $classname ) ) {
-				$css_data = call_user_func( array( $classname, 'process' ), $css_data );
-			} else {
-				if ( $this->p->debug->enabled ) {
-					$this->p->debug->log( 'failed to load minify class SuextMinifyCssCompressor' );
-				}
-				if ( is_admin() ) {
-					$this->p->notice->err( __( 'Failed to load the minify class SuextMinifyCssCompressor.',
-						'nextgen-facebook' ) );
-				}
-			}
+			$sharing_css_data = SucomUtil::minify_css( $sharing_css_data, $lca );
 
 			if ( $fh = @fopen( self::$sharing_css_file, 'wb' ) ) {
-				if ( ( $written = fwrite( $fh, $css_data ) ) === false ) {
-					if ( $this->p->debug->enabled )
+				if ( ( $written = fwrite( $fh, $sharing_css_data ) ) === false ) {
+					if ( $this->p->debug->enabled ) {
 						$this->p->debug->log( 'failed writing to '.self::$sharing_css_file );
-					if ( is_admin() )
+					}
+					if ( is_admin() ) {
 						$this->p->notice->err( sprintf( __( 'Failed writing to the % file.',
 							'nextgen-facebook' ), self::$sharing_css_file ) );
+					}
 				} elseif ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'updated css file '.self::$sharing_css_file.' ('.$written.' bytes written)' );
-					if ( is_admin() )
+					if ( is_admin() ) {
 						$this->p->notice->upd( sprintf( __( 'Updated the <a href="%1$s">%2$s</a> stylesheet (%3$d bytes written).',
 							'nextgen-facebook' ), self::$sharing_css_url, self::$sharing_css_file, $written ), 
-								true, 'updated_'.self::$sharing_css_file, true );
+								true, 'updated_'.self::$sharing_css_file, true );	// allow dismiss
+					}
 				}
 				fclose( $fh );
 			} else {
 				if ( ! is_writable( NGFB_CACHEDIR ) ) {
-					if ( $this->p->debug->enabled )
+					if ( $this->p->debug->enabled ) {
 						$this->p->debug->log( NGFB_CACHEDIR.' is not writable', true );
-					if ( is_admin() )
+					}
+					if ( is_admin() ) {
 						$this->p->notice->err( sprintf( __( 'The %s folder is not writable.',
 							'nextgen-facebook' ), NGFB_CACHEDIR ) );
+					}
 				}
-				if ( $this->p->debug->enabled )
+				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'failed opening '.self::$sharing_css_file.' for writing' );
-				if ( is_admin() )
+				}
+				if ( is_admin() ) {
 					$this->p->notice->err( sprintf( __( 'Failed to open file %s for writing.',
 						'nextgen-facebook' ), self::$sharing_css_file ) );
+				}
 			}
 		}
 
 		public function unlink_sharing_css() {
 			if ( file_exists( self::$sharing_css_file ) ) {
 				if ( ! @unlink( self::$sharing_css_file ) ) {
-					if ( is_admin() )
+					if ( is_admin() ) {
 						$this->p->notice->err( __( 'Error removing the minimized stylesheet &mdash; does the web server have sufficient privileges?',
 							'nextgen-facebook' ) );
+					}
 				}
 			}
 		}
 
 		public function add_post_buttons_metabox() {
-			if ( ! is_admin() )
+			if ( ! is_admin() ) {
 				return;
+			}
 
 			// get the current object / post type
 			if ( ( $post_obj = SucomUtil::get_post_object() ) === false ) {
-				if ( $this->p->debug->enabled )
+				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'exiting early: invalid post object' );
+				}
 				return;
 			}
 
@@ -494,8 +497,9 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		}
 
 		public function show_sidebar() {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 			$lca = $this->p->cf['lca'];
 			$js = trim( preg_replace( '/\/\*.*\*\//', '', 
 				$this->p->options['buttons_js_sidebar'] ) );
@@ -514,23 +518,17 @@ jQuery("#ngfb-sidebar-header").click( function(){
 				$this->p->debug->mark();
 			}
 			$lca = $this->p->cf['lca'];
-			$css_data = '#side-sortables #_'.$lca.'_share .inside table.sucom-settings { padding:0; }'.
+			$sharing_css_data = '#side-sortables #_'.$lca.'_share .inside table.sucom-settings { padding:0; }'.
 				$this->p->options['buttons_css_admin_edit'];
+			$sharing_css_data = SucomUtil::minify_css( $sharing_css_data, $lca );
 
-			$classname = apply_filters( $lca.'_load_lib', false, 'ext/compressor', 'SuextMinifyCssCompressor' );
-
-			if ( $classname !== false && class_exists( $classname ) ) {
-				$css_data = call_user_func( array( $classname, 'process' ), $css_data );
-			}
-
-			echo '<style type="text/css">'.$css_data.'</style>', "\n";
-			echo '<table class="sucom-settings '.$this->p->cf['lca'].' side"><tr><td>';
+			echo '<style type="text/css">'.$sharing_css_data.'</style>', "\n";
+			echo '<table class="sucom-settings '.$lca.' side"><tr><td>';
 
 			if ( get_post_status( $post_obj->ID ) === 'publish' || $post_obj->post_type === 'attachment' ) {
-				$content = '';
 				echo $this->get_script_loader();
 				echo $this->get_script( 'header' );
-				echo $this->get_buttons( $content, 'admin_edit' );
+				echo $this->get_buttons( '', 'admin_edit' );
 				echo $this->get_script( 'footer' );
 			} else {
 				echo '<p class="centered">'.sprintf( __( '%s must be published<br/>before it can be shared.',
@@ -544,11 +542,13 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			$added = false;
 			if ( method_exists( $this, 'get_buttons_'.$filter_name ) ) {
 				$added = add_filter( $filter_name, array( &$this, 'get_buttons_'.$filter_name ), NGFB_SOCIAL_PRIORITY );
-				if ( $this->p->debug->enabled )
+				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'buttons filter '.$filter_name.
 						' added ('.( $added  ? 'true' : 'false' ).')' );
-			} elseif ( $this->p->debug->enabled )
+				}
+			} elseif ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'get_buttons_'.$filter_name.' method is missing' );
+			}
 			return $added;
 		}
 
@@ -591,21 +591,25 @@ jQuery("#ngfb-sidebar-header").click( function(){
 
 			$error_msg = false;
 			if ( is_admin() ) {
-				if ( strpos( $type, 'admin_' ) !== 0 )
+				if ( strpos( $type, 'admin_' ) !== 0 ) {
 					$error_msg = $type.' ignored in back-end';
+				}
 			} elseif ( SucomUtil::is_amp() ) {
 				$error_msg = 'buttons not allowed in amp endpoint';
 			} elseif ( is_feed() ) {
 				$error_msg = 'buttons not allowed in rss feeds';
 			} elseif ( ! is_singular() ) {
-				if ( empty( $this->p->options['buttons_on_index'] ) )
+				if ( empty( $this->p->options['buttons_on_index'] ) ) {
 					$error_msg = 'buttons_on_index not enabled';
+				}
 			} elseif ( is_front_page() ) {
-				if ( empty( $this->p->options['buttons_on_front'] ) )
+				if ( empty( $this->p->options['buttons_on_front'] ) ) {
 					$error_msg = 'buttons_on_front not enabled';
+				}
 			} elseif ( is_singular() ) {
-				if ( $this->is_post_buttons_disabled() )
+				if ( $this->is_post_buttons_disabled() ) {
 					$error_msg = 'post buttons are disabled';
+				}
 			}
 
 			if ( ! $this->have_buttons_for_type( $type ) )
@@ -1182,6 +1186,54 @@ $buttons_array[$buttons_index].
 					break;
 			}
 			return $text;
+		}
+
+		public function filter_settings_page_custom_style_css( $custom_style_css ) {
+			$custom_style_css .= '
+				#website-metaboxes {
+					width:100%;
+				}
+				#website-col-1 {
+					float:left;
+					min-width:50%;
+				}
+				#website-col-1 .postbox {
+					overflow-x:hidden;
+				}
+				#website-col-2 {
+					float:left;
+					min-width:50%;
+				}
+				#website-col-2 .postbox {
+					overflow-x:hidden;
+				}
+				.postbox-website {
+					min-width:452px;
+				}
+				.postbox-website .metabox-website {
+					min-height:565px;
+					overflow-y:auto;
+				}
+				.postbox-website.postbox-show_basic .metabox-website {
+					min-height:435px;
+				}
+				.postbox-website div.sucom-metabox-tabs div.sucom-tabset.active {
+					min-height:519px;
+				}
+				.postbox-website.postbox-show_basic div.sucom-metabox-tabs div.sucom-tabset.active {
+					min-height:389px;
+				}
+				.postbox-website.closed {
+					overflow:hidden;
+				}
+				.postbox-website.closed,
+				.postbox-website.closed .metabox-website,
+				.postbox-website.postbox-show_basic.closed .metabox-website {
+					height:auto;
+					min-height:0;
+				}
+			';
+			return $custom_style_css;
 		}
 	}
 }

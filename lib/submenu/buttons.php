@@ -15,6 +15,8 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		public $website = array();
 
+		private $website_max_cols = 2;
+
 		public function __construct( &$plugin, $id, $name, $lib, $ext ) {
 			$this->p =& $plugin;
 
@@ -50,39 +52,36 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 		public function action_form_content_metaboxes_buttons( $pagehook ) {
 			if ( isset( $this->website ) ) {
 				echo '<div id="website-metaboxes">'."\n";
-				foreach ( range( 1, ceil( count( $this->website ) / 2 ) ) as $row ) {
-					echo '<div class="website-row">'."\n";
-					foreach ( range( 1, 2 ) as $col ) {
-						$pos_id = 'website-row-'.$row.'-col-'.$col;
-						echo '<div class="website-col-'.$col.'" id="'.$pos_id.'">';
-						do_meta_boxes( $pagehook, $pos_id, null );
-						echo '</div>'."\n";
-					}
-					echo '</div><!-- .website-row -->'."\n";
+				foreach ( range( 1, $this->website_max_cols ) as $col ) {
+					echo '<div id="website-col-'.$col.'">';
+					do_meta_boxes( $pagehook, 'website-col-'.$col, null );
+					echo '</div><!-- #website-col-'.$col.' -->'."\n";
 				}
 				echo '</div><!-- #website-metaboxes -->'."\n";
-				echo '<div style="clear:both;"></div>';
+				echo '<div style="clear:both;"></div>'."\n";
 			}
 		}
 
 		protected function add_meta_boxes() {
-			$col = 0;
-			$row = 0;
 
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-			add_meta_box( $this->pagehook.'_sharing_buttons',
+			add_meta_box( $this->pagehook.'_buttons',
 				_x( 'Social Sharing Buttons', 'metabox title', 'nextgen-facebook' ),
 					array( &$this, 'show_metabox_buttons' ),
 						$this->pagehook, 'normal' );
 
-			$website_ids = $this->p->sharing->get_website_object_ids( $this->website );
+			$col = 0;
+			$ids = $this->p->sharing->get_website_object_ids( $this->website );
 
-			foreach ( $website_ids as $id => $name ) {
+			foreach ( $ids as $id => $name ) {
+
+				$col++;
+				if ( $col > $this->website_max_cols ) {
+					$col = 1;
+				}
 
 				$name = $name == 'GooglePlus' ? 'Google+' : $name;
-				$col = $col == 1 ? 2 : 1;
-				$row = $col == 1 ? $row + 1 : $row;
-				$pos_id = 'website-row-'.$row.'-col-'.$col;
+				$pos_id = 'website-col-'.$col;
 				$prio = 'default';
 				$args = array( 'id' => $id, 'name' => $name );
 
@@ -95,21 +94,22 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 			}
 
 			// close all website metaboxes by default
-			NgfbUser::reset_metabox_prefs( $this->pagehook, array_keys( $website_ids ), 'closed' );
+			NgfbUser::reset_metabox_prefs( $this->pagehook, array_keys( $ids ), 'closed' );
 		}
 
 		public function add_class_postbox_website( $classes ) {
 			$show_opts = NgfbUser::show_opts();
 			$classes[] = 'postbox-website';
-			if ( ! empty( $show_opts ) )
+			if ( ! empty( $show_opts ) ) {
 				$classes[] = 'postbox-show_'.$show_opts;
+			}
 			return $classes;
 		}
 
 		public function show_metabox_buttons() {
 			$lca = $this->p->cf['lca'];
 			$metabox = 'buttons';
-			$tabs = apply_filters( $lca.'_sharing_buttons_tabs', array(
+			$tabs = apply_filters( $lca.'_buttons_tabs', array(
 				'include' => _x( 'Include Buttons', 'metabox tab', 'nextgen-facebook' ),
 				'position' => _x( 'Buttons Position', 'metabox tab', 'nextgen-facebook' ),
 				'preset' => _x( 'Buttons Presets', 'metabox tab', 'nextgen-facebook' ),
@@ -175,6 +175,7 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 		}
 
 		public function show_on_checkboxes( $opt_prefix ) {
+
 			$col = 0;
 			$max = 2;
 			$html = '<table>';
@@ -184,22 +185,31 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 				$this->p->cf['sharing']['show_on'], $opt_prefix );
 
 			foreach ( $show_on as $opt_suffix => $short_desc ) {
-				$col++;
-				$class = isset( $this->p->options[$opt_prefix.'_on_'.$opt_suffix.':is'] ) &&
+				$css_class = isset( $this->p->options[$opt_prefix.'_on_'.$opt_suffix.':is'] ) &&
 					$this->p->options[$opt_prefix.'_on_'.$opt_suffix.':is'] === 'disabled' &&
 						! $aop ? 'show_on blank' : 'show_on';
-				if ( $col == 1 )
-					$html .= '<tr><td class="'.$class.'">';
-				else $html .= '<td class="'.$class.'">';
+
+				$col++;
+				if ( $col === 1 ) {
+					$html .= '<tr><td class="'.$css_class.'">';
+				} else {
+					$html .= '<td class="'.$css_class.'">';
+				}
+
 				$html .= $this->form->get_checkbox( $opt_prefix.'_on_'.$opt_suffix ).
 					_x( $short_desc, 'option value', 'nextgen-facebook' ).'&nbsp; ';
-				if ( $col == $max ) {
+
+				if ( $col === $max ) {
 					$html .= '</td></tr>';
 					$col = 0;
-				} else $html .= '</td>';
+				} else {
+					$html .= '</td>';
+				}
 			}
+
 			$html .= $col < $max ? '</tr>' : '';
 			$html .= '</table>';
+
 			return $html;
 		}
 	}
