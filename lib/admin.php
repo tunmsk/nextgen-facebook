@@ -925,7 +925,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			 */
 			$secondary = array(
 				'clear_all_cache' => _x( 'Clear All Cache(s)', 'submit button', 'nextgen-facebook' ),
-				'check_for_updates' => _x( 'Check for Pro Update(s)', 'submit button', 'nextgen-facebook' ),
+				'check_for_updates' => _x( 'Check for Update(s)', 'submit button', 'nextgen-facebook' ),
 				'clear_metabox_prefs' => _x( 'Reset Metabox Layout', 'submit button', 'nextgen-facebook' ),
 				'clear_hidden_notices' => _x( 'Reset Hidden Notices', 'submit button', 'nextgen-facebook' ),
 				'reload_default_sizes' => _x( 'Reload Default Sizes', 'submit button', 'nextgen-facebook' ),
@@ -937,7 +937,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				unset( $secondary['clear_all_cache'] );
 			}
 
-			// Check for Pro Update(s) exceptions
+			// Check for Update(s) exceptions
 			if ( strpos( $this->menu_id, 'um-general' ) === false ||
 				empty( $this->p->options['plugin_'.$lca.'_tid'] ) ) {
 				unset( $secondary['check_for_updates'] );

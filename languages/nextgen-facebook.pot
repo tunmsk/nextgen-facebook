@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.40.13-rc.2\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.40.13\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -157,7 +157,7 @@ msgstr ""
 
 #: lib/admin.php:928 lib/messages.php:1169
 msgctxt "submit button"
-msgid "Check for Pro Update(s)"
+msgid "Check for Update(s)"
 msgstr ""
 
 #: lib/admin.php:929
@@ -2102,8 +2102,8 @@ msgstr ""
 
 #: lib/messages.php:375
 msgid ""
-"Select the set of options to display by default in the %1$s settings pages "
-"and %2$s metabox."
+"Select the set of options to display by default in %1$s settings pages and "
+"%2$s metabox."
 msgstr ""
 
 #: lib/messages.php:377
@@ -2986,9 +2986,9 @@ msgstr ""
 
 #: lib/messages.php:1169
 msgid ""
-"If an update for %1$s is not available yet, you can use the <em>%2$s</em> "
-"button from the %3$s settings page to force an immediate refresh of all "
-"update information."
+"If an update for %1$s is not available under the WordPress Plugins page, "
+"please use the <em>%2$s</em> button on the %3$s settings page to force an "
+"immediate refresh of all %4$s update information."
 msgstr ""
 
 #: lib/messages.php:1169
