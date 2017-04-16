@@ -10,7 +10,7 @@ Tags: facebook, sharing buttons, social share, open graph, twitter, pinterest, g
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7.3
-Stable Tag: 8.40.12
+Stable Tag: 8.40.13
 
 Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how URLs are shared or re-shared!
 
@@ -371,7 +371,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.40.13 (2017/04/15)**
+**Version 8.40.13 (2017/04/16)**
 
 * *New Features*
 	* None
@@ -611,7 +611,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 8.40.13 =
 
-(2017/04/15) Fixed the default Organization ID for an Organization selected in the Social Settings metabox. After installing / activating / updating from the Plugin Details thickbox, the user is now returned to the original NGFB settings page.
+(2017/04/16) Fixed the default Organization ID for an Organization selected in the Social Settings metabox. After installing / activating / updating from the Plugin Details thickbox, the user is now returned to the original NGFB settings page.
 
 = 8.40.12 =
 
