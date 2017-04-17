@@ -371,7 +371,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.41.0-dev.1 (TBD)**
+**Version 8.40.14-dev.1 (TBD)**
 
 * *New Features*
 	* None
