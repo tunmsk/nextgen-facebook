@@ -61,9 +61,9 @@ if ( ! class_exists( 'NgfbSettingImagedimensions' ) && class_exists( 'NgfbAdmin'
 					'<td>'.$this->form->get_image_dimensions_input( 'og_img' ).'</td>';	// $use_opts = false
 
 					if ( ! SucomUtil::get_const( 'NGFB_RICH_PIN_DISABLE' ) ) {
-						$table_rows['rp_img_dimensions'] = $this->form->get_th_html( _x( 'Pinterest Rich Pin Images',
-							'option label', 'nextgen-facebook' ), null, 'rp_img_dimensions' ).
-						'<td>'.$this->form->get_image_dimensions_input( 'rp_img' ).'</td>';	// $use_opts = false
+						$table_rows['p_img_dimensions'] = $this->form->get_th_html( _x( 'Pinterest Rich Pin Images',
+							'option label', 'nextgen-facebook' ), null, 'p_img_dimensions' ).
+						'<td>'.$this->form->get_image_dimensions_input( 'p_img' ).'</td>';	// $use_opts = false
 					}
 
 					$table_rows['schema_img_dimensions'] = $this->form->get_th_html( _x( 'Google / Schema Images',

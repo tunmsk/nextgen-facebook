@@ -143,9 +143,9 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			 */
 			$caption_len = $this->p->options['pin_cap_len'];
 			$caption_text = $this->p->page->get_caption( $this->p->options['pin_caption'], $caption_len, $mod );
-			$force_regen = $this->p->util->is_force_regen( $mod, 'rp' );	// false by default
+			$force_regen = $this->p->util->is_force_regen( $mod, 'p' );	// false by default
 			$media = $this->p->og->get_media_info( $this->p->cf['lca'].'-pinterest-button',
-				array( 'pid', 'img_url' ), $mod, 'rp' );	// $md_pre = 'rp'
+				array( 'pid', 'img_url' ), $mod, 'p' );	// $md_pre = 'p'
 
 			if ( ! empty( $media['pid'] ) ) {
 				list(

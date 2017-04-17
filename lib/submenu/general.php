@@ -69,9 +69,10 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 				'other' => _x( 'Other', 'metabox tab', 'nextgen-facebook' ),
 			) );
 			$table_rows = array();
-			foreach ( $tabs as $key => $title )
+			foreach ( $tabs as $key => $title ) {
 				$table_rows[$key] = apply_filters( $this->p->cf['lca'].'_'.$metabox.'_'.$key.'_rows',
 					$this->get_table_rows( $metabox, $key ), $this->form );
+			}
 			$this->p->util->do_metabox_tabs( $metabox, $tabs, $table_rows );
 		}
 
@@ -348,30 +349,27 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 				case 'pub-pinterest':
 
-					$table_rows[] = '<td colspan="2" style="padding-bottom:10px;">'.
-						$this->p->msgs->get( 'info-pub-pinterest' ).'</td>';
-
-					$table_rows['rp_publisher_url'] = $this->form->get_th_html( _x( 'Pinterest Company Page URL',
-						'option label', 'nextgen-facebook' ), '', 'rp_publisher_url', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'rp_publisher_url',
+					$table_rows['p_publisher_url'] = $this->form->get_th_html( _x( 'Pinterest Company Page URL',
+						'option label', 'nextgen-facebook' ), '', 'p_publisher_url', array( 'is_locale' => true ) ).
+					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'p_publisher_url',
 						$this->p->options ), 'wide' ).'</td>';
 
 					if ( ! SucomUtil::get_const( 'NGFB_RICH_PIN_DISABLE' ) ) {
-						$table_rows['rp_img'] = $this->form->get_th_html( _x( 'Rich Pin Image Dimensions',
-							'option label', 'nextgen-facebook' ), '', 'rp_img_dimensions' ).
-						'<td>'.$this->form->get_image_dimensions_input( 'rp_img' ).'</td>';	// $use_opts = false
+						$table_rows['p_img'] = $this->form->get_th_html( _x( 'Rich Pin Image Dimensions',
+							'option label', 'nextgen-facebook' ), '', 'p_img_dimensions' ).
+						'<td>'.$this->form->get_image_dimensions_input( 'p_img' ).'</td>';	// $use_opts = false
 					}
 
-					$table_rows['rp_author_name'] = '<tr class="hide_in_basic">'.
+					$table_rows['p_author_name'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Author Name Format',
-						'option label', 'nextgen-facebook' ), '', 'rp_author_name' ).
-					'<td>'.$this->form->get_select( 'rp_author_name',
+						'option label', 'nextgen-facebook' ), '', 'p_author_name' ).
+					'<td>'.$this->form->get_select( 'p_author_name',
 						$this->p->cf['form']['user_name_fields'] ).'</td>';
 
-					$table_rows['rp_dom_verify'] = '<tr class="hide_in_basic">'.
+					$table_rows['p_dom_verify'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Pinterest Verification ID',
-						'option label', 'nextgen-facebook' ), '', 'rp_dom_verify' ).
-					'<td>'.$this->form->get_input( 'rp_dom_verify', 'api_key' ).'</td>';
+						'option label', 'nextgen-facebook' ), '', 'p_dom_verify' ).
+					'<td>'.$this->form->get_input( 'p_dom_verify', 'api_key' ).'</td>';
 
 					break;
 

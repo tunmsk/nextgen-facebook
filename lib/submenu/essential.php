@@ -133,9 +133,9 @@ if ( ! class_exists( 'NgfbSubmenuEssential' ) && class_exists( 'NgfbAdmin' ) ) {
 					$table_rows['subsection_pinterest'] = '<td></td><td class="subsection"><h4>'.
 						_x( 'Pinterest', 'metabox title', 'nextgen-facebook' ).'</h4></td>';
 
-					$table_rows['rp_publisher_url'] = $this->form->get_th_html( _x( 'Pinterest Company Page URL',
-						'option label', 'nextgen-facebook' ), null, 'rp_publisher_url', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'rp_publisher_url', $this->p->options ), 'wide' ).'</td>';
+					$table_rows['p_publisher_url'] = $this->form->get_th_html( _x( 'Pinterest Company Page URL',
+						'option label', 'nextgen-facebook' ), null, 'p_publisher_url', array( 'is_locale' => true ) ).
+					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'p_publisher_url', $this->p->options ), 'wide' ).'</td>';
 
 					$table_rows['subsection_twitter'] = '<td></td><td class="subsection"><h4>'.
 						_x( 'Twitter', 'metabox title', 'nextgen-facebook' ).'</h4></td>';
