@@ -378,7 +378,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* Moved all sidebar metaboxes (Help and Support, Version Information, etc.) to the new "Status Dashboard" settings page.
 	* Added a WpssoHead user_agent_cross_check() method to handle user agents with special needs like the Pinterest crawler.
-	* Added edge-case handling of site name and title meta tags for the Pinterest crawler to avoid Pinterest removing the site name from the title value.
 	* Minor CSS optimizations for the Sharing Buttons settings page.
 * *Bugfixes*
 	* None
@@ -627,7 +626,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 8.41.0-dev.4 =
 
-(2017/04/18) Added a new "Status Dashboard" settings page, and moved all sidebar metaboxes to this new page. Added edge-case handling of site name and title meta tags for the Pinterest crawler. Renamed all Pinterest option key prefixes from 'rp' to 'p' to reflect the Pinterest meta tag prefix value.
+(2017/04/18) Added a new "Status Dashboard" settings page, and moved all sidebar metaboxes to this new page. 
 
 = 8.40.13 =
 
