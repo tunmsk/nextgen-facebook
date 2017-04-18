@@ -1198,18 +1198,11 @@ $buttons_array[$buttons_index].
 				#website-metaboxes {
 					width:100%;
 				}
-				#website-col-1 {
+				.website-col {
 					float:left;
 					min-width:50%;
 				}
-				#website-col-1 .postbox {
-					overflow-x:hidden;
-				}
-				#website-col-2 {
-					float:left;
-					min-width:50%;
-				}
-				#website-col-2 .postbox {
+				.website-col .postbox {
 					overflow-x:hidden;
 				}
 				.postbox-website {
@@ -1228,12 +1221,10 @@ $buttons_array[$buttons_index].
 				.postbox-website.postbox-show_basic div.sucom-metabox-tabs div.sucom-tabset.active {
 					min-height:389px;
 				}
-				.postbox-website.closed {
-					overflow:hidden;
-				}
 				.postbox-website.closed,
 				.postbox-website.closed .metabox-website,
 				.postbox-website.postbox-show_basic.closed .metabox-website {
+					overflow:hidden;
 					height:auto;
 					min-height:0;
 				}

@@ -1205,9 +1205,9 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 			/*
 			 * Misc sidebox messages
 			 */
-			} elseif ( strpos( $idx, 'side-' ) === 0 ) {
+			} elseif ( strpos( $idx, 'column-' ) === 0 ) {
 				switch ( $idx ) {
-					case 'side-purchase-pro':
+					case 'column-purchase-pro':
 						$text = '<p>';
 						if ( $this->p->is_avail['aop'] ) {
 							$text .= sprintf( __( '<strong>Purchase %s quickly and easily with PayPal</strong> &mdash; allows you to license the Pro version within seconds of your purchase.', 'nextgen-facebook' ), $info['short_pro'] );
@@ -1217,9 +1217,12 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 						$text .= '</p><p>'.__( '<strong>Pro licenses never expire</strong> &mdash; there are no yearly fees for support and updates!', 'nextgen-facebook' ).'</p>';
 						break;
 
-					case 'side-help-support':
-						$text = '<p>'.sprintf( __( '<strong>The development of %1$s is driven by user requests</strong> &mdash; we welcome your suggestions to improve the plugin and its extensions.', 'nextgen-facebook' ), $info['short'] ).'</p>'.
-							'<p>'.sprintf( __( '<strong>A terrific rating is a great way to encourage us!</strong> &mdash; and it only takes a minute or less.', 'nextgen-facebook' ), $info['short'] ).' ;-)</p>';
+					case 'column-help-support':
+						$text = '<p>'.sprintf( __( '<strong>The development of %1$s is driven by user requests</strong> &mdash; we welcome your suggestions to improve the plugin and its extensions.', 'nextgen-facebook' ), $info['short'] ).'</p>';
+						break;
+
+					case 'column-rate-review':
+						$text = '<p>'.sprintf( __( '<strong>A terrific rating is a great way to encourage us!</strong> &mdash; and it only takes a minute or less.', 'nextgen-facebook' ), $info['short'] ).' ;-)</p>';
 						break;
 
 					default:

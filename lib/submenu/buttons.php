@@ -15,7 +15,7 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		public $website = array();
 
-		private $website_max_cols = 2;
+		private $max_cols = 2;
 
 		public function __construct( &$plugin, $id, $name, $lib, $ext ) {
 			$this->p =& $plugin;
@@ -51,11 +51,11 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 		// show two-column metaboxes for sharing buttons
 		public function action_form_content_metaboxes_buttons( $pagehook ) {
 			if ( isset( $this->website ) ) {
-				echo '<div id="website-metaboxes">'."\n";
-				foreach ( range( 1, $this->website_max_cols ) as $col ) {
-					echo '<div id="website-col-'.$col.'">';
+				echo '<div id="website-metaboxes" class="max-cols-'.$this->max_cols.'">'."\n";
+				foreach ( range( 1, $this->max_cols ) as $col ) {
+					echo '<div id="website-col-'.$col.'" class="website-col">';
 					do_meta_boxes( $pagehook, 'website-col-'.$col, null );
-					echo '</div><!-- #website-col-'.$col.' -->'."\n";
+					echo '</div><!-- #website-col-'.$col.'.website-col -->'."\n";
 				}
 				echo '</div><!-- #website-metaboxes -->'."\n";
 				echo '<div style="clear:both;"></div>'."\n";
@@ -74,12 +74,7 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 			$ids = $this->p->sharing->get_website_object_ids( $this->website );
 
 			foreach ( $ids as $id => $name ) {
-
-				$col++;
-				if ( $col > $this->website_max_cols ) {
-					$col = 1;
-				}
-
+				$col = $col >= $this->max_cols ? 1 : $col + 1;
 				$name = $name == 'GooglePlus' ? 'Google+' : $name;
 				$pos_id = 'website-col-'.$col;
 				$prio = 'default';

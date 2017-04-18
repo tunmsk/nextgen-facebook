@@ -91,6 +91,7 @@ _x( 'Shortcode', 'option value', 'nextgen-facebook' );
 _x( 'Social and SEO Image Dimensions', 'lib file description', 'nextgen-facebook' );
 _x( 'Sold Out', 'option value', 'nextgen-facebook' );
 _x( 'Stable / Production', 'option value', 'nextgen-facebook' );
+_x( 'Status Dashboard', 'lib file description', 'nextgen-facebook' );
 _x( 'Sunday', 'option value', 'nextgen-facebook' );
 _x( 'Thursday', 'option value', 'nextgen-facebook' );
 _x( 'TinyURL', 'option value', 'nextgen-facebook' );
