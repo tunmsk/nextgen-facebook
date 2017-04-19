@@ -77,7 +77,7 @@ if ( ! class_exists( 'NgfbHead' ) ) {
 				exit;
 			}
 
-			add_filter( 'wp_headers', 'add_vary_user_agent_header' );
+			add_filter( 'wp_headers', array( &$this, 'add_vary_user_agent_header' ) );
 		}
 
 		public function add_vary_user_agent_header( $headers ) {
