@@ -30,10 +30,6 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 			$this->menu_ext = $ext;	// lowercase acronyn for plugin or extension
 
 			$this->set_objects();
-
-			$this->p->util->add_plugin_actions( $this, array(
-				'form_content_metaboxes_buttons' => 1,	// show two-column metaboxes
-			) );
 		}
 
 		private function set_objects() {
@@ -48,18 +44,10 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 			}
 		}
 
-		// show two-column metaboxes for sharing buttons
-		public function action_form_content_metaboxes_buttons( $pagehook ) {
-			if ( isset( $this->website ) ) {
-				echo '<div id="website-metaboxes" class="max-cols-'.$this->max_cols.'">'."\n";
-				foreach ( range( 1, $this->max_cols ) as $col ) {
-					echo '<div id="website-col-'.$col.'" class="website-col">';
-					do_meta_boxes( $pagehook, 'website-col-'.$col, null );
-					echo '</div><!-- #website-col-'.$col.'.website-col -->'."\n";
-				}
-				echo '</div><!-- #website-metaboxes -->'."\n";
-				echo '<div style="clear:both;"></div>'."\n";
-			}
+		protected function add_plugin_hooks() {
+			$this->p->util->add_plugin_actions( $this, array(
+				'form_content_metaboxes_buttons' => 1,	// show two-column metaboxes
+			) );
 		}
 
 		protected function add_meta_boxes() {
@@ -99,6 +87,20 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 				$classes[] = 'postbox-show_'.$show_opts;
 			}
 			return $classes;
+		}
+
+		// show two-column metaboxes for sharing buttons
+		public function action_form_content_metaboxes_buttons( $pagehook ) {
+			if ( isset( $this->website ) ) {
+				echo '<div id="website-metaboxes" class="max-cols-'.$this->max_cols.'">'."\n";
+				foreach ( range( 1, $this->max_cols ) as $col ) {
+					echo '<div id="website-col-'.$col.'" class="website-col">';
+					do_meta_boxes( $pagehook, 'website-col-'.$col, null );
+					echo '</div><!-- #website-col-'.$col.'.website-col -->'."\n";
+				}
+				echo '</div><!-- #website-metaboxes -->'."\n";
+				echo '<div style="clear:both;"></div>'."\n";
+			}
 		}
 
 		public function show_metabox_buttons() {
