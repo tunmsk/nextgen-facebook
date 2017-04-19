@@ -38,8 +38,9 @@ if ( ! class_exists( 'NgfbSubmenuGeneral' ) && class_exists( 'NgfbAdmin' ) ) {
 
 			// issues a warning notice if the default image size is too small
 			// unless the NGFB_CHECK_DEFAULT_IMAGE constant has been defined as false
-			if ( SucomUtil::get_const( 'NGFB_CHECK_DEFAULT_IMAGE' ) !== false )
+			if ( SucomUtil::get_const( 'NGFB_CHECK_DEFAULT_IMAGE' ) !== false ) {
 				$og_image = $this->p->media->get_default_image( 1, $this->p->cf['lca'].'-opengraph', false );
+			}
 		}
 
 		public function show_metabox_opengraph() {

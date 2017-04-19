@@ -41,10 +41,12 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteFacebook' ) ) {
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$form->get_select( 'fb_order', range( 1, count( $submenu->website ) ) ).'</td>';
 
-			$table_rows[] = '<tr class="hide_in_basic">'.
-			$form->get_th_html( _x( 'Allow for Platform',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'fb_platform', $this->p->cf['sharing']['platform'] ).'</td>';
+			if ( ! SucomUtil::get_const( 'NGFB_VARY_USER_AGENT_DISABLE' ) ) {
+				$table_rows[] = '<tr class="hide_in_basic">'.
+				$form->get_th_html( _x( 'Allow for Platform',
+					'option label (short)', 'nextgen-facebook' ), 'short' ).
+				'<td>'.$form->get_select( 'fb_platform', $this->p->cf['sharing']['platform'] ).'</td>';
+			}
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			$form->get_th_html( _x( 'JavaScript in',

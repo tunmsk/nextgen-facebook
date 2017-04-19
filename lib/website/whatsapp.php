@@ -30,10 +30,12 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteWhatsApp' ) ) {
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$form->get_select( 'wa_order', range( 1, count( $submenu->website ) ) ).'</td>';
 
-			$table_rows[] = '<tr class="hide_in_basic">'.
-			$form->get_th_html( _x( 'Allow for Platform',
-				'option label (short)', 'nextgen-facebook' ), 'short' ).
-			'<td>'.$form->get_select( 'wa_platform', $this->p->cf['sharing']['platform'] ).'</td>';
+			if ( ! SucomUtil::get_const( 'NGFB_VARY_USER_AGENT_DISABLE' ) ) {
+				$table_rows[] = '<tr class="hide_in_basic">'.
+				$form->get_th_html( _x( 'Allow for Platform',
+					'option label (short)', 'nextgen-facebook' ), 'short' ).
+				'<td>'.$form->get_select( 'wa_platform', $this->p->cf['sharing']['platform'] ).'</td>';
+			}
 
 			$table_rows[] = '<tr class="hide_in_basic">'.
 			'<td colspan="2">'.$form->get_textarea( 'wa_html', 'average code' ).'</td>';

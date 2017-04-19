@@ -13,7 +13,7 @@
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
  * Requires At Least: 3.7
  * Tested Up To: 4.7.3
- * Version: 8.41.0-dev.4
+ * Version: 8.41.0-dev.5
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -233,6 +233,7 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				if ( $this->debug->enabled ) {
 					global $wp_version;
 					$this->debug->log( 'debug enabled on '.date( 'c' ) );
+					$this->debug->log( 'hostname '.php_uname( 'n' ) );
 					$this->debug->log( 'WP version '.$wp_version );
 					$this->debug->log( 'PHP version '.phpversion() );
 					$this->debug->log( $this->check->get_ext_list() );

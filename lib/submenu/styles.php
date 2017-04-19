@@ -26,11 +26,23 @@ if ( ! class_exists( 'NgfbSubmenuStyles' ) && class_exists( 'NgfbAdmin' ) ) {
 			$this->menu_ext = $ext;	// lowercase acronyn for plugin or extension
 		}
 
+		protected function add_plugin_hooks() {
+			$this->p->util->add_plugin_filters( $this, array(
+				'action_buttons' => 1,
+			) );
+		}
+
 		protected function add_meta_boxes() {
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
 			add_meta_box( $this->pagehook.'_styles',
 				_x( 'Social Sharing Styles', 'metabox title', 'nextgen-facebook' ),
 					array( &$this, 'show_metabox_styles' ), $this->pagehook, 'normal' );
+		}
+
+		public function filter_action_buttons( $action_buttons ) {
+			$action_buttons[0]['reload_default_sharing_styles'] = _x( 'Reload Default Styles',
+				'submit button', 'nextgen-facebook' );
+			return $action_buttons;
 		}
 
 		public function show_metabox_styles() {
