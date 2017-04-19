@@ -371,7 +371,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.41.0-dev.4 (2017/04/18)**
+**Version 8.41.0-dev.5 (2017/04/19)**
 
 * *New Features*
 	* Added a new "Status Dashboard" settings page.
@@ -385,6 +385,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Moved the validate button informational text from the NgfbMeta class to the NgfbMessages class.
 	* Renamed all Pinterest option key prefixes from 'rp' to 'p' to reflect the Pinterest meta tag prefix value.
 	* Renamed the SucomUtil crawler_name() method to get_crawler_name().
+	* Added a new optional WPSSO_VARY_USER_AGENT_DISABLE constant.
 
 **Version 8.40.13 (2017/04/16)**
 
@@ -624,9 +625,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.41.0-dev.4 =
+= 8.41.0-dev.5 =
 
-(2017/04/18) Added a new "Status Dashboard" settings page, and moved all sidebar metaboxes to this new page. 
+(2017/04/19) Added a new "Status Dashboard" settings page, and moved all sidebar metaboxes to this new page. 
 
 = 8.40.13 =
 
