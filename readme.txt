@@ -377,7 +377,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new "Status Dashboard" settings page.
 * *Improvements*
 	* Moved all sidebar metaboxes (Help and Support, Version Information, etc.) to the new "Status Dashboard" settings page.
-	* Added a WpssoHead user_agent_cross_check() method to handle user agents with special needs like the Pinterest crawler.
+	* Added a WpssoHead vary_user_agent_check() method to handle user agents with special needs like the Pinterest crawler.
 	* Minor CSS optimizations for the Sharing Buttons settings page.
 * *Bugfixes*
 	* None
