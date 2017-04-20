@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: NextGEN Facebook (NGFB) 8.40.14\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2017-04-18 10:40+0200\n"
-"PO-Revision-Date: 2017-04-18 10:43+0200\n"
+"PO-Revision-Date: 2017-04-18 11:56+0200\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -2577,7 +2577,7 @@ msgstr "%1$s version %2$s requiert l'utilisation de %3$s version %4$s ou plus r�
 
 #: lib/messages.php:1194
 msgid "If an update for %1$s is not available under the WordPress Plugins page, please use the <em>%2$s</em> button on the %3$s settings page to force an immediate refresh of all %4$s update information."
-msgstr "Si une mise à jour pour %1$s n'est pas encore disponible dans la page d'Extensions WordPress, SVP utilisez le bouton <em>%2$s</em> sur la page de réglages %3$s pour forcer une actualisation immédiate de toutes les informations de mise à jour %2$s."
+msgstr "Si une mise à jour pour %1$s n'est pas encore disponible dans la page d'Extensions WordPress, SVP utilisez le bouton <em>%2$s</em> sur la page de réglages %3$s pour forcer une actualisation immédiate de toutes les informations de mise à jour %4$s."
 
 #: lib/messages.php:1194
 msgctxt "lib file description"

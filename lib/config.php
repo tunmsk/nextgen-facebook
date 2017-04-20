@@ -22,7 +22,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.41.0-dev.5',		// plugin version
+					'version' => '8.41.0-b.1',		// plugin version
 					'opt_version' => '515',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -33,7 +33,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'text_domain' => 'nextgen-facebook',
 					'domain_path' => '/languages',
 					'img' => array(
-						'background' => 'images/background.jpg',
 						'banners' => array(
 							'low' => 'https://surniaulula.github.io/nextgen-facebook/assets/banner-772x250.jpg',
 							'high' => 'https://surniaulula.github.io/nextgen-facebook/assets/banner-1544x500.jpg',
@@ -71,7 +70,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'contact-fields' => 'User Profile Contact Methods',
 						),
 						'submenu' => array (	// lib file descriptions will be translated
-							'dashboard' => 'Status Dashboard',
+							'dashboard' => 'Plugin Dashboard',
 							'essential' => 'Essential Settings',
 							'general' => 'General Settings',
 							'advanced' => 'Advanced Settings',
