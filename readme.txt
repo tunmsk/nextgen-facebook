@@ -380,7 +380,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a WpssoHead vary_user_agent_check() method to handle user agents with special needs like the Pinterest crawler.
 	* Minor CSS optimizations for the Sharing Buttons settings page.
 * *Bugfixes*
-	* None
+	* Fixed a null value for the default publisher ID in Schema WebPage and BlogPosting markup.
 * *Developer Notes*
 	* Moved the validate button informational text from the NgfbMeta class to the NgfbMessages class.
 	* Renamed all Pinterest option key prefixes from 'rp' to 'p' to reflect the Pinterest meta tag prefix value.
