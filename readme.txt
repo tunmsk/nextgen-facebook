@@ -371,7 +371,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.41.0-a.1 (2017/04/21)**
+**Version 8.41.0-rc.1 (2017/04/21)**
 
 * *New Features*
 	* Added a new "Plugin Dashboard" settings page.
@@ -625,7 +625,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.41.0-a.1 =
+= 8.41.0-rc.1 =
 
 (2017/04/21) Added a new "Plugin Dashboard" settings page, and moved all sidebar metaboxes to this new page. 
 
