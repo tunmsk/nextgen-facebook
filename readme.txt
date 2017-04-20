@@ -627,7 +627,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 8.41.0-rc.1 =
 
-(2017/04/21) Added a new "Plugin Dashboard" settings page, and moved all sidebar metaboxes to this new page. 
+(2017/04/21) Added a new "Plugin Dashboard" settings page, and moved all sidebar metaboxes to this new page. Fixed a null value for the default publisher ID in Schema WebPage and BlogPosting markup.
 
 = 8.40.13 =
 
