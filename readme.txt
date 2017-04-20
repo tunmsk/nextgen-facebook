@@ -374,9 +374,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 8.41.0-dev.5 (2017/04/19)**
 
 * *New Features*
-	* Added a new "Status Dashboard" settings page.
+	* Added a new "Plugin Dashboard" settings page.
 * *Improvements*
-	* Moved all sidebar metaboxes (Help and Support, Version Information, etc.) to the new "Status Dashboard" settings page.
+	* Moved all sidebar metaboxes (Help and Support, Version Information, etc.) to the new "Plugin Dashboard" settings page.
 	* Added a WpssoHead vary_user_agent_check() method to handle user agents with special needs like the Pinterest crawler.
 	* Minor CSS optimizations for the Sharing Buttons settings page.
 * *Bugfixes*
@@ -627,7 +627,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 8.41.0-dev.5 =
 
-(2017/04/19) Added a new "Status Dashboard" settings page, and moved all sidebar metaboxes to this new page. 
+(2017/04/19) Added a new "Plugin Dashboard" settings page, and moved all sidebar metaboxes to this new page. 
 
 = 8.40.13 =
 
