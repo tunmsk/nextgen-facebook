@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.41.0-b.1\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.41.0-a.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -3412,7 +3412,7 @@ msgid ""
 "Schema %2$s markup."
 msgstr ""
 
-#: lib/script.php:127
+#: lib/script.php:131
 msgid "Use Image"
 msgstr ""
 
