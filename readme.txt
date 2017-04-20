@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/nextgen-facebook/assets/
 Tags: facebook, sharing buttons, social share, open graph, twitter, pinterest, google, linkedin, youtube, embedded video, seo, nextgen gallery
 Contributors: jsmoriss
 Requires At Least: 3.7
-Tested Up To: 4.7.3
+Tested Up To: 4.7.4
 Stable Tag: 8.40.13
 
 Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how URLs are shared or re-shared!
