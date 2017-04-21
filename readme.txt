@@ -378,6 +378,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* Moved all sidebar metaboxes (Help and Support, Version Information, etc.) to the new "Plugin Dashboard" settings page.
 	* Added a WpssoHead vary_user_agent_check() method to handle user agents with special needs like the Pinterest crawler.
+	* Improved the responsive styling of metaboxes for smaller displays.
 	* Minor CSS optimizations for the Sharing Buttons settings page.
 * *Bugfixes*
 	* Fixed a null value for the default publisher ID in Schema WebPage and BlogPosting markup.
