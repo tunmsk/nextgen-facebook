@@ -720,9 +720,15 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 		protected function add_side_meta_boxes() {
 			$lca = $this->p->cf['lca'];
 			if ( ! self::$pkg[$lca]['aop'] ) {
+
 				add_meta_box( $this->pagehook.'_purchase_pro',
 					_x( 'Pro Version Available', 'metabox title', 'nextgen-facebook' ),
 						array( &$this, 'show_metabox_purchase_pro' ), $this->pagehook, 'side-fixed' );
+
+				add_meta_box( $this->pagehook.'_install_pro',
+					_x( 'Updating to Pro is Easy', 'metabox title', 'nextgen-facebook' ),
+						array( &$this, 'show_metabox_install_pro' ), $this->pagehook, 'side' );
+
 				NgfbUser::reset_metabox_prefs( $this->pagehook, array( 'purchase_pro' ), '', '', true );
 			}
 		}
@@ -1213,13 +1219,12 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$purchase_url = empty( $info['url']['purchase'] ) ?
 				'' : add_query_arg( 'utm_source', 'column-purchase-pro', $info['url']['purchase'] );
 			echo '<table class="sucom-settings '.$lca.' column-metabox"><tr><td>';
-			echo '<div>';
 
 			echo '<div class="column-metabox-icon">';
 			echo $this->get_ext_img_icon( $lca );
 			echo '</div>';
 
-			echo '<div class="column-metabox-content">';
+			echo '<div class="column-metabox-content has-buttons">';
 			echo $this->p->msgs->get( 'column-purchase-pro' );
 			echo '</div>';
 
@@ -1228,7 +1233,17 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				'button-primary', 'column-purchase-pro', $purchase_url, true );
 			echo '</div>';
 
+			echo '</td></tr></table>';
+		}
+
+		public function show_metabox_install_pro() {
+			$lca = $this->p->cf['lca'];
+			echo '<table class="sucom-settings '.$lca.' column-metabox"><tr><td>';
+
+			echo '<div class="column-metabox-content">';
+			echo $this->p->msgs->get( 'column-install-pro' );
 			echo '</div>';
+
 			echo '</td></tr></table>';
 		}
 
@@ -1284,11 +1299,14 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 				$links = array();
 
 				if ( ! empty( $info['url']['review'] ) ) {
-					$stars = '<a href="'.$info['url']['review'].'" target="_blank">'.
+
+					$rate_stars = '<a href="'.$info['url']['review'].'" target="_blank">'.
 						'<span class="ngfb-rate-stars"></span></a>';
 
-					$links[] = sprintf( __( 'Rate %1$s %2$s at %3$s', 'nextgen-facebook' ), 
-						'<strong>'.$info['name'].'</strong>', $stars, 'WordPress.org' );
+					$plugin_name = '<em>'.$info['name'].'</em>';
+
+					$links[] = sprintf( __( 'Rate %1$s stars the %2$s plugin.',
+						'nextgen-facebook' ), $rate_stars, $plugin_name );
 				}
 
 				if ( ! empty( $links ) ) {
