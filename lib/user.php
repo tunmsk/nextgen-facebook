@@ -302,8 +302,9 @@ if ( ! class_exists( 'NgfbUser' ) ) {
 			$this->form = new SucomForm( $this->p, NGFB_META_NAME, $opts, $def_opts );
 			wp_nonce_field( NgfbAdmin::get_nonce(), NGFB_NONCE );
 
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark( $metabox.' table rows' );	// start timer
+			}
 
 			$table_rows = array();
 			foreach ( $tabs as $key => $title ) {
@@ -312,8 +313,9 @@ if ( ! class_exists( 'NgfbUser' ) ) {
 			}
 			$this->p->util->do_metabox_tabs( $metabox, $tabs, $table_rows );
 
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark( $metabox.' table rows' );	// end timer
+			}
 		}
 
 		public function get_form_display_names( $roles = array( 'author', 'editor', 'administrator' ) ) {
