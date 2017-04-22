@@ -1201,18 +1201,36 @@ $buttons_array[$buttons_index].
 
 		public function filter_settings_page_custom_style_css( $custom_style_css ) {
 			$custom_style_css .= '
-				#website-metaboxes {
-					width:100%;
-				}
-				.website-col {
+				.website_col {
 					float:left;
-					min-width:50%;
+					min-height:50px;
 				}
-				.website-col .postbox {
+				.max_cols_1.website_col {
+					width:100%;
+					min-width:100%;
+					max-width:100%;
+				}
+				.max_cols_2.dashboard_col {
+					width:50%;
+					min-width:50%;
+					max-width:50%;
+				}
+				.max_cols_3.dashboard_col {
+					width:33.3333%;
+					min-width:33.3333%;
+					max-width:33.3333%;
+				}
+				.max_cols_4.dashboard_col {
+					width:25%;
+					min-width:25%;
+					max-width:25%;
+				}
+				.website_col .postbox {
 					overflow-x:hidden;
 				}
 				.postbox-website {
 					min-width:452px;
+					overflow-y:auto;
 				}
 				.postbox-website .metabox-website {
 					min-height:565px;
@@ -1230,9 +1248,9 @@ $buttons_array[$buttons_index].
 				.postbox-website.closed,
 				.postbox-website.closed .metabox-website,
 				.postbox-website.postbox-show_basic.closed .metabox-website {
-					overflow:hidden;
 					height:auto;
 					min-height:0;
+					overflow:hidden;
 				}
 			';
 			return $custom_style_css;

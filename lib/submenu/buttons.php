@@ -64,7 +64,7 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 			foreach ( $ids as $id => $name ) {
 				$col = $col >= $this->max_cols ? 1 : $col + 1;
 				$name = $name == 'GooglePlus' ? 'Google+' : $name;
-				$pos_id = 'website-col-'.$col;
+				$pos_id = 'website_col_'.$col;	// ids must use underscores instead of hyphens to order metaboxes
 				$prio = 'default';
 				$args = array( 'id' => $id, 'name' => $name );
 
@@ -91,14 +91,13 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 
 		// show two-column metaboxes for sharing buttons
 		public function action_form_content_metaboxes_buttons( $pagehook ) {
-			if ( isset( $this->website ) ) {
-				echo '<div id="website-metaboxes" class="max-cols-'.$this->max_cols.'">'."\n";
+			if ( ! empty( $this->website ) ) {
 				foreach ( range( 1, $this->max_cols ) as $col ) {
-					echo '<div id="website-col-'.$col.'" class="website-col">';
-					do_meta_boxes( $pagehook, 'website-col-'.$col, null );
-					echo '</div><!-- #website-col-'.$col.'.website-col -->'."\n";
+					// ids must use underscores instead of hyphens to order metaboxes
+					echo '<div id="website_col_'.$col.'" class="max-cols-'.$this->max_cols.' website_col">';
+					do_meta_boxes( $pagehook, 'website_col_'.$col, null );
+					echo '</div><!-- #website_col_'.$col.' -->'."\n";
 				}
-				echo '</div><!-- #website-metaboxes -->'."\n";
 				echo '<div style="clear:both;"></div>'."\n";
 			}
 		}

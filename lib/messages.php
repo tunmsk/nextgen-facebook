@@ -1229,7 +1229,7 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 						$plugins_html = '<a href="'.get_admin_url( null, 'plugins.php' ).'">'.
 							__( 'WordPress Plugins', 'nextgen-facebook' ).'</a>';
 
-						$text .= '<p>'.__( '<strong>Updating to the Pro version is easy as 1-2-3</strong> &mdash; you\'ll receive an email after your purchase with all the details, but here\'s a quick summary to give you an idea.', 'nextgen-facebook' ).' :-)</p>';
+						$text .= '<p>'.__( '<strong>Updating to the Pro version is easy as 1-2-3</strong> &mdash; after purchasing Pro license(s), you\'ll receive an email with all the details.', 'nextgen-facebook' ).' '.__( 'Here\'s a quick summary to give you an idea.', 'nextgen-facebook' ).' :-)</p>';
 						$text .= '<ol>';
 						$text .= '<li>'.sprintf( __( '<strong>Install and activate</strong> the %1$s extension from the %2$s page.', 'nextgen-facebook' ), $um_info['short'], $ext_menu_html ).'</li>';
 						$text .= '<li>'.sprintf( __( '<strong>Enter the Authentication ID</strong> received by email in the %1$s page.', 'nextgen-facebook' ), $ext_menu_html ).'</li>';
