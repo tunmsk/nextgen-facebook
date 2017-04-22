@@ -371,7 +371,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.41.0-rc.2 (2017/04/21)**
+**Version 8.41.0 (2017/04/22)**
 
 * *New Features*
 	* Added a new "Plugin Dashboard" settings page.
@@ -379,9 +379,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Moved all sidebar metaboxes (Help and Support, Version Information, etc.) to the new "Plugin Dashboard" settings page.
 	* Added a WpssoHead vary_user_agent_check() method to handle user agents with special needs like the Pinterest crawler.
 	* Improved the responsive styling of metaboxes for smaller displays.
-	* Minor CSS optimizations for the Sharing Buttons settings page.
 * *Bugfixes*
 	* Fixed a null value for the default publisher ID in Schema WebPage and BlogPosting markup.
+	* Fixed the moving/re-ordering feature of Sharing Buttons metaboxes (CSS identifiers must use underscores and not hyphens).
 * *Developer Notes*
 	* Moved the validate button informational text from the NgfbMeta class to the NgfbMessages class.
 	* Renamed all Pinterest option key prefixes from 'rp' to 'p' to reflect the Pinterest meta tag prefix value.
@@ -626,9 +626,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.41.0-rc.2 =
+= 8.41.0 =
 
-(2017/04/21) Added a new "Plugin Dashboard" settings page, and moved all sidebar metaboxes to this new page. Fixed a null value for the default publisher ID in Schema WebPage and BlogPosting markup.
+(2017/04/22) Added a new "Plugin Dashboard" settings page, and moved all sidebar metaboxes to this new page. Fixed a null value for the default publisher ID in Schema WebPage and BlogPosting markup.
 
 = 8.40.13 =
 
