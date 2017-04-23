@@ -371,6 +371,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 8.41.1-dev.1 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.41.0 (2017/04/22)**
 
 * *New Features*
@@ -394,7 +405,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Improvements*
 	* After installing / activating / updating from the Plugin Details thickbox, the user is now returned to the original NGFB settings page (instead of the WordPress plugins page).
-	* Added a filter to allow the NGFB Update Manager to be installed from the Plugin Extensions and Pro Licenses settings page.
+	* Added a filter to allow the NGFB Update Manager to be installed from the Extension Plugins and Pro Licenses settings page.
 	* Improved the CSS of settings pages for the sidebar and its metaboxes.
 * *Bugfixes*
 	* Fixed the Install / Update button in the Plugin Details thickbox.
