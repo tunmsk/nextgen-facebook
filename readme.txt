@@ -371,10 +371,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.41.1-dev.1 (2017/04/24)**
+**Version 8.42.0-dev.1 (2017/04/24)**
 
 * *New Features*
-	* None
+	* Added a new "Force Protocol for Shared URLs" option in the Sharing Buttons settings page (Pro version).
 * *Improvements*
 	* None
 * *Bugfixes*
