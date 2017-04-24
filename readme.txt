@@ -380,8 +380,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Renamed the $is_avail array to $avail.
-	* Replaced NGFB_VARY_USER_AGENT_DISABLE constant checks by $avail['*']['vary_ua'].
+	* Code refactoring to rename the $is_avail array to $avail.
+	* Replaced NGFB_VARY_USER_AGENT_DISABLE constant checks by $avail array checks.
 	* Removed the deprecated NgfbOpenGraph get_the_media_info() method.
 
 **Version 8.41.0 (2017/04/22)**
@@ -638,6 +638,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Renamed and moved the SucomException class from lib/com/exception.php to NgfbException in lib/exception.php.
 
 == Upgrade Notice ==
+
+= 8.42.0-dev.1 =
+
+(2017/04/24) Added a new "Force Protocol for Shared URLs" option in the Sharing Buttons settings page (Pro version). Code refactoring to rename the $is_avail array to $avail, and replace the NGFB_VARY_USER_AGENT_DISABLE constant checks by $avail array checks.
 
 = 8.41.0 =
 
