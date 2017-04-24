@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.41.0\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.42.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2017-04-22 09:13+0200\n"
-"PO-Revision-Date: 2017-04-22 09:15+0200\n"
+"POT-Creation-Date: 2017-04-24 15:00+0200\n"
+"PO-Revision-Date: 2017-04-24 15:04+0200\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -49,7 +49,7 @@ msgstr "Forum"
 msgid "Submitted options are not an array."
 msgstr "Les options soumises ne sont pas un tableau."
 
-#: lib/admin.php:551 lib/admin.php:904
+#: lib/admin.php:551 lib/admin.php:899
 msgctxt "submit button"
 msgid "Clear All Caches"
 msgstr "Vider tout les caches"
@@ -118,284 +118,284 @@ msgctxt "metabox title"
 msgid "Updating to Pro is Easy"
 msgstr "Mise à Jour Facile à Pro"
 
-#: lib/admin.php:816
+#: lib/admin.php:811
 msgid "Profile updated."
 msgstr "Profil mis à jour."
 
-#: lib/admin.php:879
+#: lib/admin.php:874
 msgctxt "submit button"
 msgid "Save All Profile Settings"
 msgstr "Enregistrer les réglages"
 
-#: lib/admin.php:893
+#: lib/admin.php:888
 msgctxt "submit button"
 msgid "Save All Plugin Settings"
 msgstr "Enregistrer les réglages"
 
-#: lib/admin.php:898
+#: lib/admin.php:893
 msgctxt "submit button"
 msgid "View %s by Default"
 msgstr "Voir %s par défaut"
 
-#: lib/admin.php:901
+#: lib/admin.php:896
 msgctxt "submit button"
 msgid "Clear All Caches for Site %d"
 msgstr "Vider tout les caches pour site %d"
 
-#: lib/admin.php:915
+#: lib/admin.php:910
 msgctxt "submit button"
 msgid "Reset Metabox Layout"
 msgstr "Réinit. disposition metabox"
 
-#: lib/admin.php:916
+#: lib/admin.php:911
 msgctxt "submit button"
 msgid "Reset Hidden Notices"
 msgstr "Réinit. les avis cachés"
 
-#: lib/admin.php:957 lib/admin.php:958
+#: lib/admin.php:952 lib/admin.php:953
 msgid "Not Available"
 msgstr "Non disponible"
 
-#: lib/admin.php:997
+#: lib/admin.php:992
 msgctxt "option label"
 msgid "Installed"
 msgstr "Installé"
 
-#: lib/admin.php:1000
+#: lib/admin.php:995
 msgctxt "option label"
 msgid "Stable"
 msgstr "Stable"
 
-#: lib/admin.php:1003
+#: lib/admin.php:998
 msgctxt "option label"
 msgid "Latest"
 msgstr "Dernière"
 
-#: lib/admin.php:1009
+#: lib/admin.php:1004
 msgid "View %s changelog..."
 msgstr "Voir le changelog %s…"
 
-#: lib/admin.php:1015 lib/messages.php:1199
+#: lib/admin.php:1010 lib/messages.php:1199
 msgctxt "submit button"
 msgid "Check for Updates"
 msgstr "Vérifier pour mises à jour"
 
-#: lib/admin.php:1145
+#: lib/admin.php:1140
 msgid "Module is enabled"
 msgstr "Module est activé"
 
-#: lib/admin.php:1149
+#: lib/admin.php:1144
 msgid "Module is disabled / not loaded"
 msgstr "Module désactivée / non chargée"
 
-#: lib/admin.php:1153
+#: lib/admin.php:1148
 msgid "Module recommended but disabled / not available"
 msgstr "Module recommandée mais désactivée / non disponible"
 
-#: lib/admin.php:1171
+#: lib/admin.php:1166
 msgid "Generic feature module"
 msgstr "Module de fonction générique"
 
-#: lib/admin.php:1179
+#: lib/admin.php:1174
 msgid "Service API module"
 msgstr "Module de service API"
 
-#: lib/admin.php:1183
+#: lib/admin.php:1178
 msgid "Meta tag and markup module"
 msgstr "Module de balisage et balises méta"
 
-#: lib/admin.php:1187
+#: lib/admin.php:1182
 msgid "Plugin integration module"
 msgstr "Module d'intégration d'extension"
 
-#: lib/admin.php:1191
+#: lib/admin.php:1186
 msgid "Sharing functionality module"
 msgstr "Module fonctionnalité de partage"
 
-#: lib/admin.php:1195
+#: lib/admin.php:1190
 msgid "Additional functionality module"
 msgstr "Module fonctionnalités supplémentaires"
 
-#: lib/admin.php:1241
+#: lib/admin.php:1236
 msgctxt "plugin action link"
 msgid "Purchase Pro Version"
 msgstr "Achetez version Pro"
 
-#: lib/admin.php:1275
+#: lib/admin.php:1270
 msgid "Read the <a href=\"%s\" target=\"_blank\">Frequently Asked Questions</a>"
 msgstr "Consulter la <a href=\"%s\" target=\"_blank\">foire aux questions</a>"
 
-#: lib/admin.php:1277
+#: lib/admin.php:1272
 msgid "and <a href=\"%s\" target=\"_blank\">Other Notes</a>"
 msgstr "et <a href=\"%s\" target=\"_blank\">autres notes</a>"
 
-#: lib/admin.php:1282
+#: lib/admin.php:1277
 msgid "Open a <a href=\"%s\" target=\"_blank\">Priority Support Ticket</a>"
 msgstr "Ouvrez un <a href=\"%s\" target=\"_blank\">billet de soutien prioritaire</a>"
 
-#: lib/admin.php:1283
+#: lib/admin.php:1278
 msgid "Pro version"
 msgstr "Version pro"
 
-#: lib/admin.php:1285
+#: lib/admin.php:1280
 msgid "Post in the <a href=\"%s\" target=\"_blank\">Community Support Forum</a>"
 msgstr "Postez dans le <a href=\"%s\" target=\"_blank\">forum de soutien communautaire</a>"
 
-#: lib/admin.php:1286
+#: lib/admin.php:1281
 msgid "Free version"
 msgstr "Version gratuite"
 
-#: lib/admin.php:1317
+#: lib/admin.php:1312
 msgid "Rate %1$s stars the %2$s plugin."
 msgstr "Notez %1$s étoiles l'extension %2$s."
 
-#: lib/admin.php:1403
+#: lib/admin.php:1398
 msgctxt "plugin action link"
 msgid "Plugin Details and Update"
 msgstr "Afficher détails et mise à jour"
 
-#: lib/admin.php:1407
+#: lib/admin.php:1402
 msgctxt "plugin action link"
 msgid "Plugin Details"
 msgstr "Afficher détails"
 
-#: lib/admin.php:1411
+#: lib/admin.php:1406
 msgctxt "plugin action link"
 msgid "Plugin Details and Install"
 msgstr "Afficher détails et installer"
 
-#: lib/admin.php:1416
+#: lib/admin.php:1411
 msgctxt "plugin action link"
 msgid "Plugin Description"
 msgstr "Description de l'extension"
 
-#: lib/admin.php:1446
+#: lib/admin.php:1441
 msgctxt "option label"
 msgid "%s Authentication ID"
 msgstr "ID d'authentification %s"
 
-#: lib/admin.php:1491
+#: lib/admin.php:1486
 msgid "Plugin conflict detected"
 msgstr "Conflit détecté"
 
-#: lib/admin.php:1500
+#: lib/admin.php:1495
 msgid "The PHP <a href=\"%1$s\" target=\"_blank\">%2$s extension</a> is not loaded."
 msgstr "<a href=\"%1$s\" target=\"_blank\">L'extension PHP %2$s</a> n'est pas chargé."
 
-#: lib/admin.php:1502
+#: lib/admin.php:1497
 msgid "Please contact your hosting provider to have the missing PHP extension installed and/or enabled."
 msgstr "SVP contactez votre hébergeur pour installer et/ou activer l'extension PHP manquante."
 
-#: lib/admin.php:1514
+#: lib/admin.php:1509
 msgid "The WordPress <a href=\"%s\">Search Engine Visibility</a> option is set to discourage search engine and social crawlers from indexing this site. This is not compatible with the purpose of sharing content on social sites &mdash; please uncheck the option to allow search engines and social crawlers to access your content."
 msgstr "L'option de WordPress <a href=\"%s\">Visibilité pour les moteurs de recherche</a> est définie afin de demander aux moteurs de recherche et robots sociaux de ne pas indexer ce site. Ceci n'est pas compatible avec le but de partager du contenu sur les sites sociaux &mdash; veuillez décocher cette option pour autoriser les moteurs de recherche et robots sociaux d'accéder votre contenu."
 
-#: lib/admin.php:1525
+#: lib/admin.php:1520
 msgid "please uncheck the <strong>Add Open Graph meta data</strong> option under the <a href=\"%s\">Yoast SEO / Social / Facebook</a> settings tab."
 msgstr "s'il vous plaît décocher l'option <strong>Ajouter les métadonnées OpenGraph</strong> sous l'onglet de réglages <a href=\"%s\">Yoast SEO / Social / Facebook</a>."
 
-#: lib/admin.php:1531
+#: lib/admin.php:1526
 msgid "please uncheck the <strong>Add Twitter card meta data</strong> option under the <a href=\"%s\">Yoast SEO / Social / Twitter</a> settings tab."
 msgstr "s'il vous plaît décocher l'option <strong>Ajoute les métadonnées de carte Twitter</strong> sous l'onglet de réglages <a href=\"%s\">Yoast SEO / Social / Twitter</a>."
 
-#: lib/admin.php:1537
+#: lib/admin.php:1532
 msgid "please uncheck the <strong>Add Google+ specific post meta data</strong> option under the <a href=\"%s\">Yoast SEO / Social / Google+</a> settings tab."
 msgstr "s'il vous plaît décocher l'option <strong>Ajouter des méta données spécifiques à Google+</strong> sous l'onglet de réglages <a href=\"%s\">Yoast SEO / Social / Google+</a>."
 
-#: lib/admin.php:1543
+#: lib/admin.php:1538
 msgid "please remove the <strong>Google Publisher Page</strong> value entered under the <a href=\"%s\">Yoast SEO / Social / Google+</a> settings tab."
 msgstr "s'il vous plaît supprimer la valeur de <strong>Page Google Publisher</strong> entrée sous l'onglet de réglages <a href=\"%s\">Yoast SEO / Social / Google +</a>."
 
-#: lib/admin.php:1555
+#: lib/admin.php:1550
 msgid "please disable the <strong>Open Graph Integrator</strong> module in the <a href=\"%s\">SEO Ultimate Module Manager</a>."
 msgstr "s'il vous plaît désactiver le module <strong>Open Graph Integrator</strong> dans <a href=\"%s\">SEO Ultimate Module Manager</a>."
 
-#: lib/admin.php:1567
+#: lib/admin.php:1562
 msgid "please deactivate the <strong>Social Meta</strong> feature in the <a href=\"%s\">All in One SEO Pack Feature Manager</a>."
 msgstr "s'il vous plaît désactiver la fonctionnalité <strong>Social Meta</strong> dans le <a href=\"%s\">All in One SEO Pack Feature Manager</a>."
 
-#: lib/admin.php:1573
+#: lib/admin.php:1568
 msgid "please check the <strong>Disable Google Plus Profile</strong> option in the <a href=\"%s\">All in One SEO Pack General Settings</a>."
 msgstr "s'il vous plaît cocher l'option <strong>Disable Google Plus Profile</strong> dans les réglages généraux de l'extension <a href=\"%s\">All in One SEO Pack</a>."
 
-#: lib/admin.php:1579
+#: lib/admin.php:1574
 msgid "please uncheck the <strong>Use Schema.org Markup</strong> option in the <a href=\"%s\">All in One SEO Pack General Settings</a>."
 msgstr "s'il vous plaît cocher l'option <strong>Use Schema.org Markup</strong> dans les réglages généraux de l'extension <a href=\"%s\">All in One SEO Pack</a>."
 
-#: lib/admin.php:1590 lib/admin.php:1596 lib/admin.php:1602 lib/admin.php:1622
+#: lib/admin.php:1585 lib/admin.php:1591 lib/admin.php:1597 lib/admin.php:1617
 msgid "please uncheck the <strong>%1$s</strong> option in <a href=\"%2$s\">The SEO Framework</a> Social Meta Settings."
 msgstr "s'il vous plaît décocher l'option <strong>%1$s</strong> dans les réglages sociaux de l'extension <a href=\"%2$s\">The SEO Framework</a>."
 
-#: lib/admin.php:1608
+#: lib/admin.php:1603
 msgid "please uncheck the <strong>Output Authorized Presence?</strong> option in <a href=\"%s\">The SEO Framework</a> Schema Settings."
 msgstr "s'il vous plaît décocher l'option <strong>Output Authorized Presence?</strong> dans les réglages de l'extension <a href=\"%s\">The SEO Framework</a>."
 
-#: lib/admin.php:1634
+#: lib/admin.php:1629
 msgid "please uncheck <strong>Add the Social Open Graph objects</strong> in the <a href=\"%s\">Squirrly SEO</a> Social Media Options."
 msgstr "s'il vous plaît décocher l'option <strong>Add the Social Open Graph objects</strong> dans les réglages de l'extension <a href=\"%s\">Squirrly SEO</a>."
 
-#: lib/admin.php:1640
+#: lib/admin.php:1635
 msgid "please uncheck <strong>Add the Twitter card in your tweets</strong> in the <a href=\"%s\">Squirrly SEO</a> Social Media Options."
 msgstr "s'il vous plaît décocher l'option <strong>Add the Twitter card in your tweets</strong> dans les réglages de l'extension <a href=\"%s\">Squirrly SEO</a>."
 
-#: lib/admin.php:1646
+#: lib/admin.php:1641
 msgid "please uncheck the <strong>adds the JSON-LD metas for Semantic SEO</strong> option in the <a href=\"%s\">Squirrly SEO</a> settings."
 msgstr "s'il vous plaît décocher l'option <strong>adds the JSON-LD metas for Semantic SEO</strong> dans les réglages de l'extension <a href=\"%s\">Squirrly SEO</a>."
 
-#: lib/admin.php:1764
+#: lib/admin.php:1759
 msgid "No header templates found in the parent or child theme directories."
 msgstr "Aucun modèle d'en-tête trouvés dans le répertoire de thème parent ou enfant."
 
-#: lib/admin.php:1777
+#: lib/admin.php:1772
 msgid "No &lt;head&gt; HTML element found in the %s template."
 msgstr "Aucun élément HTML &lt;head&gt; trouvé dans le modèle %s."
 
-#: lib/admin.php:1784
+#: lib/admin.php:1779
 msgid "Error copying %1$s to %2$s."
 msgstr "Erreur copiant %1$s à %2$s."
 
-#: lib/admin.php:1793
+#: lib/admin.php:1788
 msgid "Failed to open %s for writing."
 msgstr "Impossible d'ouvrir %s pour l'écriture."
 
-#: lib/admin.php:1799
+#: lib/admin.php:1794
 msgid "The %1$s template has been successfully modified and saved. A backup copy of the original template is available as %2$s in the same folder."
 msgstr "Le modèle %1$s a été mis à jour et enregistré avec succès. Une sauvegarde du fichier original est disponible tant que %2$s dans le même dossier."
 
-#: lib/admin.php:1802
+#: lib/admin.php:1797
 msgid "Failed to write the %1$s template. You may need to restore the original template saved as %2$s in the same folder."
 msgstr "Erreur lors de l'écriture du modèle %1$s. Vous pouvez restaurer le modèle original a partir de %2$s dans dans le même dossier."
 
-#: lib/admin.php:1817
+#: lib/admin.php:1812
 msgctxt "option label"
 msgid "Preserve Settings on Uninstall"
 msgstr "Conserver réglages sur suppression"
 
-#: lib/admin.php:1822
+#: lib/admin.php:1817
 msgctxt "option label"
 msgid "Add Hidden Debug Messages"
 msgstr "Ajout messages de débogage caché"
 
-#: lib/admin.php:1830
+#: lib/admin.php:1825
 msgctxt "option label"
 msgid "Hide All Pro Version Options"
 msgstr "Masquer toutes les options Pro"
 
-#: lib/admin.php:1838
+#: lib/admin.php:1833
 msgctxt "option label"
 msgid "Options to Show by Default"
 msgstr "Options a montrer par défaut"
 
-#: lib/admin.php:1851
+#: lib/admin.php:1846
 msgctxt "option label (very short)"
 msgid "Site Use"
 msgstr "Util. par site"
 
-#: lib/admin.php:2001
+#: lib/admin.php:1996
 msgid "Return to %s"
 msgstr "Retour à %s"
 
-#: lib/admin.php:2023
+#: lib/admin.php:2018
 msgid "Plugin <strong>activated</strong>."
 msgstr "Extension <strong>activé</strong>."
 
@@ -439,22 +439,22 @@ msgstr "Le dossier de cache %s n'est pas accessible en écriture."
 msgid "Failed to open cache file %s for writing."
 msgstr "Impossible d'ouvrir le fichier de cache %s pour écriture."
 
-#: lib/com/form.php:93 lib/config-gettext-extract.php:71
+#: lib/com/form.php:93 lib/config-gettext-extract.php:73
 msgctxt "option value"
 msgid "(option disabled)"
 msgstr "(option désactivée)"
 
-#: lib/com/form.php:229 lib/config-gettext-extract.php:66
+#: lib/com/form.php:229 lib/config-gettext-extract.php:68
 msgctxt "option value"
 msgid "(no images)"
 msgstr "(pas d'images)"
 
-#: lib/com/form.php:234 lib/config-gettext-extract.php:69
+#: lib/com/form.php:234 lib/config-gettext-extract.php:71
 msgctxt "option value"
 msgid "(no videos)"
 msgstr "(aucun vidéos)"
 
-#: lib/com/form.php:239 lib/config-gettext-extract.php:67
+#: lib/com/form.php:239 lib/config-gettext-extract.php:69
 msgctxt "option value"
 msgid "[None]"
 msgstr "[Aucun]"
@@ -716,315 +716,325 @@ msgstr "Entête"
 
 #: lib/config-gettext-extract.php:47
 msgctxt "option value"
+msgid "HTTP"
+msgstr "HTTP"
+
+#: lib/config-gettext-extract.php:48
+msgctxt "option value"
+msgid "HTTPS"
+msgstr "HTTPS"
+
+#: lib/config-gettext-extract.php:49
+msgctxt "option value"
 msgid "If value is empty"
 msgstr "Si la valeur est vide"
 
-#: lib/config-gettext-extract.php:48
+#: lib/config-gettext-extract.php:50
 msgctxt "option label"
 msgid "Image URL Custom Field"
 msgstr "Champ personnalisé URL d'image"
 
-#: lib/config-gettext-extract.php:49
+#: lib/config-gettext-extract.php:51
 msgctxt "option value"
 msgid "Instagram Business URL"
 msgstr "URL page d'affaires Instagram"
 
-#: lib/config-gettext-extract.php:50
+#: lib/config-gettext-extract.php:52
 msgctxt "option value"
 msgid "In Stock"
 msgstr "En main"
 
-#: lib/config-gettext-extract.php:51
+#: lib/config-gettext-extract.php:53
 msgctxt "option value"
 msgid "In Store Only"
 msgstr "En magasin uniquement"
 
-#: lib/config-gettext-extract.php:52
+#: lib/config-gettext-extract.php:54
 msgctxt "option value"
 msgid "Left"
 msgstr "Gauche"
 
-#: lib/config-gettext-extract.php:53
+#: lib/config-gettext-extract.php:55
 msgctxt "option value"
 msgid "Limited Availability"
 msgstr "Disponibilité limitée"
 
-#: lib/config-gettext-extract.php:54
+#: lib/config-gettext-extract.php:56
 msgctxt "option value"
 msgid "LinkedIn Company Page URL"
 msgstr "URL page entreprise LinkedIn"
 
-#: lib/config-gettext-extract.php:55
+#: lib/config-gettext-extract.php:57
 msgctxt "option value"
 msgid "Mobile Only"
 msgstr "Mobile Seulement"
 
-#: lib/config-gettext-extract.php:56
+#: lib/config-gettext-extract.php:58
 msgctxt "option value"
 msgid "Monday"
 msgstr "Lundi"
 
-#: lib/config-gettext-extract.php:57
+#: lib/config-gettext-extract.php:59
 msgctxt "option value"
 msgid "MySpace Business Page URL"
 msgstr "URL page d'affaires MySpace"
 
-#: lib/config-gettext-extract.php:58
+#: lib/config-gettext-extract.php:60
 msgctxt "option value"
 msgid "New activation"
 msgstr "Nouvelle activation"
 
-#: lib/config-gettext-extract.php:59
+#: lib/config-gettext-extract.php:61
 msgctxt "option value"
 msgid "New"
 msgstr "Neuf"
 
-#: lib/config-gettext-extract.php:60
+#: lib/config-gettext-extract.php:62
 msgctxt "column header"
 msgid "NGFB Desc"
 msgstr "NGFB Desc"
 
-#: lib/config-gettext-extract.php:61
+#: lib/config-gettext-extract.php:63
 msgctxt "plugin description"
 msgid "NGFB extension to provide updates for the NextGEN Facebook (NGFB) Pro plugin and its Pro extensions."
 msgstr "Extension NGFB pour fournir des mises à jour a NextGEN Facebook (NGFB) Pro et ses extensions Pro."
 
-#: lib/config-gettext-extract.php:62
+#: lib/config-gettext-extract.php:64
 msgctxt "column header"
 msgid "NGFB Img"
 msgstr "NGFB Img"
 
-#: lib/config-gettext-extract.php:63
+#: lib/config-gettext-extract.php:65
 msgctxt "menu label"
 msgid "NGFB"
 msgstr "NGFB"
 
-#: lib/config-gettext-extract.php:64
+#: lib/config-gettext-extract.php:66
 msgctxt "column header"
 msgid "NGFB Schema"
 msgstr "NGFB Schéma"
 
-#: lib/config-gettext-extract.php:65
+#: lib/config-gettext-extract.php:67
 msgctxt "option value"
 msgid "Nickname"
 msgstr "Pseudonyme"
 
-#: lib/config-gettext-extract.php:68
+#: lib/config-gettext-extract.php:70
 msgctxt "option value"
 msgid "No"
 msgstr "Non"
 
-#: lib/config-gettext-extract.php:70
+#: lib/config-gettext-extract.php:72
 msgctxt "option value"
 msgid "Online Only"
 msgstr "En ligne seulement"
 
-#: lib/config-gettext-extract.php:72
+#: lib/config-gettext-extract.php:74
 msgctxt "option value"
 msgid "Out of Stock"
 msgstr "Rupture de stock"
 
-#: lib/config-gettext-extract.php:73
+#: lib/config-gettext-extract.php:75
 msgctxt "option value"
 msgid "Ow.ly"
 msgstr "Ow.ly"
 
-#: lib/config-gettext-extract.php:74
+#: lib/config-gettext-extract.php:76
 msgctxt "option value"
 msgid "Pinterest Company Page URL"
 msgstr "URL page entreprise Pinterest"
 
-#: lib/config-gettext-extract.php:75
+#: lib/config-gettext-extract.php:77
 msgctxt "lib file description"
 msgid "Plugin Dashboard"
 msgstr "Tableau de bord"
 
-#: lib/config-gettext-extract.php:76
+#: lib/config-gettext-extract.php:78
 msgctxt "option value"
 msgid "Pre-Order"
 msgstr "Pré-commande"
 
-#: lib/config-gettext-extract.php:77
+#: lib/config-gettext-extract.php:79
 msgctxt "option label"
 msgid "Product Availability Custom Field"
 msgstr "Champ pers. disponibilité de produit"
 
-#: lib/config-gettext-extract.php:78
+#: lib/config-gettext-extract.php:80
 msgctxt "option label"
 msgid "Product Condition Custom Field"
 msgstr "Champ pers. condition de produit"
 
-#: lib/config-gettext-extract.php:79
+#: lib/config-gettext-extract.php:81
 msgctxt "option label"
 msgid "Product Currency Custom Field"
 msgstr "Champ pers. devise de produit"
 
-#: lib/config-gettext-extract.php:80
+#: lib/config-gettext-extract.php:82
 msgctxt "option label"
 msgid "Product Price Custom Field"
 msgstr "Champ personnalisé prix de produit"
 
-#: lib/config-gettext-extract.php:81
+#: lib/config-gettext-extract.php:83
 msgctxt "option value"
 msgid "Public Holidays"
 msgstr "Jours fériés"
 
-#: lib/config-gettext-extract.php:82
+#: lib/config-gettext-extract.php:84
 msgctxt "option label"
 msgid "Recipe Ingredients Custom Field"
 msgstr "Champ pers. ingrédients de recette"
 
-#: lib/config-gettext-extract.php:83
+#: lib/config-gettext-extract.php:85
 msgctxt "option label"
 msgid "Recipe Instructions Custom Field"
 msgstr "Champ pers. instructions de recette"
 
-#: lib/config-gettext-extract.php:84
+#: lib/config-gettext-extract.php:86
 msgctxt "option value"
 msgid "Refurbished"
 msgstr "Remis à neuf"
 
-#: lib/config-gettext-extract.php:85
+#: lib/config-gettext-extract.php:87
 msgctxt "option value"
 msgid "Release Candidate and Up"
 msgstr "Candidat stable et plus"
 
-#: lib/config-gettext-extract.php:86
+#: lib/config-gettext-extract.php:88
 msgctxt "option value"
 msgid "Right"
 msgstr "Droite"
 
-#: lib/config-gettext-extract.php:87
+#: lib/config-gettext-extract.php:89
 msgctxt "option value"
 msgid "Saturday"
 msgstr "Samedi"
 
-#: lib/config-gettext-extract.php:88
+#: lib/config-gettext-extract.php:90
 msgctxt "option value"
 msgid "(settings value)"
 msgstr "(valeur de réglages)"
 
-#: lib/config-gettext-extract.php:89
+#: lib/config-gettext-extract.php:91
 msgctxt "lib file description"
 msgid "Sharing Buttons"
 msgstr "Boutons de Partage"
 
-#: lib/config-gettext-extract.php:90 lib/sharing.php:1100
+#: lib/config-gettext-extract.php:92 lib/sharing.php:1121
 msgctxt "lib file description"
 msgid "Sharing Styles"
 msgstr "Styles de Partage"
 
-#: lib/config-gettext-extract.php:91
+#: lib/config-gettext-extract.php:93
 msgctxt "option value"
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: lib/config-gettext-extract.php:92
+#: lib/config-gettext-extract.php:94
 msgctxt "lib file description"
 msgid "Social and SEO Image Dimensions"
 msgstr "Dimensions des Images SEO et Sociaux"
 
-#: lib/config-gettext-extract.php:93
+#: lib/config-gettext-extract.php:95
 msgctxt "option value"
 msgid "Sold Out"
 msgstr "Épuisé"
 
-#: lib/config-gettext-extract.php:94
+#: lib/config-gettext-extract.php:96
 msgctxt "option value"
 msgid "Stable / Production"
 msgstr "Stable / production"
 
-#: lib/config-gettext-extract.php:95
+#: lib/config-gettext-extract.php:97
 msgctxt "option value"
 msgid "Sunday"
 msgstr "Dimanche"
 
-#: lib/config-gettext-extract.php:96
+#: lib/config-gettext-extract.php:98
 msgctxt "option value"
 msgid "Thursday"
 msgstr "Jeudi"
 
-#: lib/config-gettext-extract.php:97
+#: lib/config-gettext-extract.php:99
 msgctxt "option value"
 msgid "TinyURL"
 msgstr "TinyURL"
 
-#: lib/config-gettext-extract.php:98
+#: lib/config-gettext-extract.php:100
 msgctxt "option value"
 msgid "Title and Excerpt"
 msgstr "Titre et extrait"
 
-#: lib/config-gettext-extract.php:99
+#: lib/config-gettext-extract.php:101
 msgctxt "option value"
 msgid "Title Only"
 msgstr "Titre seulement"
 
-#: lib/config-gettext-extract.php:100
+#: lib/config-gettext-extract.php:102
 msgctxt "option value"
 msgid "Top and Bottom"
 msgstr "Haut et Bas"
 
-#: lib/config-gettext-extract.php:101
+#: lib/config-gettext-extract.php:103
 msgctxt "option value"
 msgid "Top"
 msgstr "Le haut"
 
-#: lib/config-gettext-extract.php:102
+#: lib/config-gettext-extract.php:104
 msgctxt "option value"
 msgid "Tuesday"
 msgstr "Mardi"
 
-#: lib/config-gettext-extract.php:103
+#: lib/config-gettext-extract.php:105
 msgctxt "option value"
 msgid "Twitter Business @username"
 msgstr "Le @nom d'affaires Twitter"
 
-#: lib/config-gettext-extract.php:104
+#: lib/config-gettext-extract.php:106
 msgctxt "option value"
 msgid "Used"
 msgstr "Usagé"
 
-#: lib/config-gettext-extract.php:105
+#: lib/config-gettext-extract.php:107
 msgctxt "lib file description"
 msgid "User Profile Contact Methods"
 msgstr "Méthodes de Contact du Profil Utilisateur"
 
-#: lib/config-gettext-extract.php:106
+#: lib/config-gettext-extract.php:108
 msgctxt "option label"
 msgid "Video Embed HTML Custom Field"
 msgstr "Champ pers. HTML vidéo intégrée"
 
-#: lib/config-gettext-extract.php:107
+#: lib/config-gettext-extract.php:109
 msgctxt "option label"
 msgid "Video URL Custom Field"
 msgstr "Champ personnalisé URL de vidéo"
 
-#: lib/config-gettext-extract.php:108
+#: lib/config-gettext-extract.php:110
 msgctxt "lib file description"
 msgid "Website Social Pages and Accounts"
 msgstr "Pages et Comptes Sociaux du Site Web"
 
-#: lib/config-gettext-extract.php:109
+#: lib/config-gettext-extract.php:111
 msgctxt "option value"
 msgid "Wednesday"
 msgstr "Mercredi"
 
-#: lib/config-gettext-extract.php:110
+#: lib/config-gettext-extract.php:112
 msgctxt "option value"
 msgid "Widget"
 msgstr "Widget"
 
-#: lib/config-gettext-extract.php:111
+#: lib/config-gettext-extract.php:113
 msgctxt "option value"
 msgid "Yes"
 msgstr "Oui"
 
-#: lib/config-gettext-extract.php:112
+#: lib/config-gettext-extract.php:114
 msgctxt "option value"
 msgid "YOURLS"
 msgstr "YOURLS"
 
-#: lib/config-gettext-extract.php:113
+#: lib/config-gettext-extract.php:115
 msgctxt "lib file description"
 msgid "Your Social Settings"
 msgstr "Vos Réglages Sociaux"
@@ -1197,11 +1207,11 @@ msgstr "Expiration cache balisage d'entête"
 #: lib/gpl/admin/advanced.php:259 lib/gpl/admin/advanced.php:265
 #: lib/gpl/admin/advanced.php:272 lib/gpl/admin/advanced.php:279
 #: lib/gpl/admin/advanced.php:286 lib/gpl/admin/advanced.php:293
-#: lib/gpl/admin/sharing.php:43 lib/gpl/admin/sharing.php:49
+#: lib/gpl/admin/sharing.php:49 lib/gpl/admin/sharing.php:55
 #: lib/pro/admin/advanced.php:257 lib/pro/admin/advanced.php:263
 #: lib/pro/admin/advanced.php:270 lib/pro/admin/advanced.php:277
 #: lib/pro/admin/advanced.php:284 lib/pro/admin/advanced.php:291
-#: lib/pro/admin/sharing.php:55 lib/pro/admin/sharing.php:61
+#: lib/pro/admin/sharing.php:60 lib/pro/admin/sharing.php:66
 msgctxt "option comment"
 msgid "seconds (0 to disable)"
 msgstr "secondes (0 pour désactiver)"
@@ -1472,8 +1482,8 @@ msgid "Schema Description"
 msgstr "Description Schéma"
 
 # Ignore the post type to avoid gender issues in the French translation.
-#: lib/gpl/admin/meta.php:95 lib/gpl/admin/sharing.php:98
-#: lib/pro/admin/meta.php:118 lib/pro/admin/sharing.php:107
+#: lib/gpl/admin/meta.php:95 lib/gpl/admin/sharing.php:124
+#: lib/pro/admin/meta.php:118 lib/pro/admin/sharing.php:130
 msgid "Save a draft version or publish the %s to display these options."
 msgstr "Enregistrer un brouillon ou publier pour activer ces options."
 
@@ -1586,70 +1596,75 @@ msgstr "et devise"
 msgid "Save a draft version or publish the %s to update this value."
 msgstr "Enregistrer un brouillon ou publiez pour mettre à jour cette valeur."
 
-#: lib/gpl/admin/sharing.php:40 lib/pro/admin/sharing.php:52
+#: lib/gpl/admin/sharing.php:46 lib/pro/admin/sharing.php:57
 msgctxt "option label"
 msgid "Sharing Buttons Cache Expiry"
 msgstr "Expiration cache boutons de partage"
 
-#: lib/gpl/admin/sharing.php:46 lib/pro/admin/sharing.php:58
+#: lib/gpl/admin/sharing.php:52 lib/pro/admin/sharing.php:63
 msgctxt "option label"
 msgid "Social File Cache Expiry"
 msgstr "Expiration cache des fichiers social"
 
-#: lib/gpl/admin/sharing.php:62 lib/pro/admin/sharing.php:73
+#: lib/gpl/admin/sharing.php:70 lib/pro/admin/sharing.php:79
 msgctxt "option label"
 msgid "Include on Post Types"
 msgstr "Inclure sur les articles de type"
 
-#: lib/gpl/admin/sharing.php:84 lib/pro/admin/sharing.php:93
+#: lib/gpl/admin/sharing.php:94 lib/pro/admin/sharing.php:100
 msgctxt "option label"
 msgid "%s Preset"
 msgstr "Préréglage '%s'"
 
-#: lib/gpl/admin/sharing.php:118 lib/pro/admin/sharing.php:123
+#: lib/gpl/admin/sharing.php:108 lib/pro/admin/sharing.php:114
+msgctxt "option label"
+msgid "Force Protocol for Shared URLs"
+msgstr "Forcer protocole pour URLs partagées"
+
+#: lib/gpl/admin/sharing.php:144 lib/pro/admin/sharing.php:146
 msgctxt "option label"
 msgid "Email Subject"
 msgstr "Sujet du couriel"
 
-#: lib/gpl/admin/sharing.php:123 lib/pro/admin/sharing.php:129
+#: lib/gpl/admin/sharing.php:149 lib/pro/admin/sharing.php:152
 msgctxt "option label"
 msgid "Email Message"
 msgstr "Message du courriel"
 
-#: lib/gpl/admin/sharing.php:136 lib/pro/admin/sharing.php:143
+#: lib/gpl/admin/sharing.php:162 lib/pro/admin/sharing.php:166
 msgctxt "option label"
 msgid "Tweet Text"
 msgstr "Texte du Tweet"
 
-#: lib/gpl/admin/sharing.php:161 lib/pro/admin/sharing.php:169
+#: lib/gpl/admin/sharing.php:187 lib/pro/admin/sharing.php:192
 msgctxt "option label"
 msgid "Pinterest Caption Text"
 msgstr "Texte légende Pinterest"
 
-#: lib/gpl/admin/sharing.php:188 lib/pro/admin/sharing.php:197
+#: lib/gpl/admin/sharing.php:214 lib/pro/admin/sharing.php:220
 msgctxt "option label"
 msgid "Tumblr Image Caption"
 msgstr "Légende d'image Tumblr"
 
-#: lib/gpl/admin/sharing.php:191 lib/pro/admin/sharing.php:201
+#: lib/gpl/admin/sharing.php:217 lib/pro/admin/sharing.php:224
 msgid "Caption disabled - no suitable image found for the %s button"
 msgstr "Légende désactivé - aucune image appropriée trouvé pour le bouton %s"
 
-#: lib/gpl/admin/sharing.php:199 lib/pro/admin/sharing.php:209
+#: lib/gpl/admin/sharing.php:225 lib/pro/admin/sharing.php:232
 msgctxt "option label"
 msgid "Tumblr Video Caption"
 msgstr "Légende vidéo Tumblr"
 
-#: lib/gpl/admin/sharing.php:201 lib/pro/admin/sharing.php:213
+#: lib/gpl/admin/sharing.php:227 lib/pro/admin/sharing.php:236
 msgid "Caption disabled - no suitable video found for the %s button"
 msgstr "Légende désactivé - aucun vidéo appropriée trouvé pour le bouton %s"
 
-#: lib/gpl/admin/sharing.php:209 lib/pro/admin/sharing.php:224
+#: lib/gpl/admin/sharing.php:235 lib/pro/admin/sharing.php:247
 msgctxt "option label"
 msgid "Disable Sharing Buttons"
 msgstr "Désactiver les boutons"
 
-#: lib/gpl/admin/sharing.php:243 lib/pro/admin/sharing.php:258
+#: lib/gpl/admin/sharing.php:274 lib/pro/admin/sharing.php:286
 msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr "JavaScript de la barre latérale"
@@ -1664,23 +1679,23 @@ msgctxt "option label"
 msgid "Position in bbPress Single"
 msgstr "Position dans le texte bbPress Single"
 
-#: lib/media.php:312
+#: lib/media.php:313
 msgid "The NextGEN Gallery integration module provided by %1$s is required to read information for image ID %2$s."
 msgstr "Le module d'intégration de NextGEN Gallery fourni par %1$s est requis pour lire les informations sur l'image d'ID %2$s."
 
-#: lib/media.php:693
+#: lib/media.php:694
 msgid "Content"
 msgstr "Contenu"
 
-#: lib/media.php:941 lib/pro/util/checkimgdims.php:68
+#: lib/media.php:942 lib/pro/util/checkimgdims.php:68
 msgid "Media Library"
 msgstr "la Bibliothèque de Médias"
 
-#: lib/media.php:997
+#: lib/media.php:998
 msgid "%1$s image %2$s ignored &mdash; the resulting image of %3$s has an <strong>aspect ratio equal to/or greater than %4$d:1 allowed by the %5$s standard</strong>."
 msgstr "L'image %2$s de %1$s a été ignoré &mdash; l'image résultante de %3$s a une <strong>proportion égale ou supérieur a %4$d:1 permise par la norme %5$s</strong>."
 
-#: lib/media.php:1016
+#: lib/media.php:1017
 msgid "%1$s image %2$s ignored &mdash; the resulting image of %3$s is <strong>smaller than the minimum of %4$s allowed by the %5$s standard</strong>."
 msgstr "L'image %2$s de %1$s a été ignoré &mdash; l'image résultante de %3$s est <strong>plus petite que le minimum %4$s permise par la norme %5$s</strong>."
 
@@ -2078,7 +2093,7 @@ msgstr "Créer automatiquement les images manquantes ou incorrectes dans la bibl
 
 #: lib/messages.php:579 lib/messages.php:587 lib/messages.php:595
 #: lib/messages.php:603 lib/messages.php:611 lib/messages.php:619
-#: lib/sharing.php:1122 lib/sharing.php:1129
+#: lib/sharing.php:1143 lib/sharing.php:1150
 msgctxt "option comment"
 msgid "disabled"
 msgstr "désactivé"
@@ -2089,7 +2104,7 @@ msgstr "Les balises méta et balisage de Schéma de l'entête sont enregistrés 
 
 #: lib/messages.php:581 lib/messages.php:589 lib/messages.php:597
 #: lib/messages.php:605 lib/messages.php:613 lib/messages.php:621
-#: lib/sharing.php:1124 lib/sharing.php:1130
+#: lib/sharing.php:1145 lib/sharing.php:1151
 msgid "The suggested cache expiration value is %1$s seconds (%2$s)."
 msgstr "La valeur d'expiration de cache suggérée est de %1$s secondes (%2$s)."
 
@@ -2986,118 +3001,126 @@ msgctxt "metabox title"
 msgid "Social Pages and Accounts"
 msgstr "Pages et Comptes Sociaux"
 
-#: lib/sharing.php:182
+#: lib/sharing.php:184
 msgid "Failed to open the %s file for reading."
 msgstr "Impossible d'ouvrir le fichier %s pour la lecture."
 
-#: lib/sharing.php:282
+#: lib/sharing.php:285
 msgctxt "metabox tab"
 msgid "Sharing Buttons"
 msgstr "Boutons de Partage"
 
-#: lib/sharing.php:340
+#: lib/sharing.php:343
 msgid "All sharing styles have been reloaded with their default value and saved."
 msgstr "Tous les styles de partage ont été rechargé avec leur valeur par défaut et sauvegardé."
 
-#: lib/sharing.php:364
+#: lib/sharing.php:367
 msgid "The %s file is not readable."
 msgstr "Le fichier %s n'est pas lisible."
 
-#: lib/sharing.php:405
+#: lib/sharing.php:408
 msgid "Failed writing to the % file."
 msgstr "Echec d'écriture dans le fichier%."
 
-#: lib/sharing.php:411
+#: lib/sharing.php:414
 msgid "Updated the <a href=\"%1$s\">%2$s</a> stylesheet (%3$d bytes written)."
 msgstr "La feuille de style <a href=\"%1$s\">%2$s</a> a été mise à jour (%3$d octets écrits)."
 
-#: lib/sharing.php:423
+#: lib/sharing.php:426
 msgid "The %s folder is not writable."
 msgstr "Le dossier %s n'est pas accessible en écriture."
 
-#: lib/sharing.php:431
+#: lib/sharing.php:434
 msgid "Failed to open file %s for writing."
 msgstr "Impossible d'ouvrir le fichier %s pour l'écriture."
 
-#: lib/sharing.php:441
+#: lib/sharing.php:444
 msgid "Error removing the minimized stylesheet &mdash; does the web server have sufficient privileges?"
 msgstr "Erreur en retirant la feuille de style minimisé &mdash; le serveur Web a t'il les privilèges nécessaires?"
 
-#: lib/sharing.php:464
+#: lib/sharing.php:467
 msgctxt "metabox title"
 msgid "Sharing Buttons"
 msgstr "Boutons de Partage Social"
 
-#: lib/sharing.php:525
+#: lib/sharing.php:529
 msgid "%s must be published<br/>before it can be shared."
 msgstr "%s doit être publié<br/>avant d'être partagé."
 
-#: lib/sharing.php:1088
+#: lib/sharing.php:1103
 msgid "Social sharing buttons can be added to the top, bottom, or both. Each sharing button must also be enabled below (see the <em>%s</em> options)."
 msgstr "Les boutons de partage social peuvent être ajoutés en haut, en bas, ou les deux. Chaque bouton de partage doit aussi être activé ci-dessous (voir les options <em>%s</em>)."
 
-#: lib/sharing.php:1088
+#: lib/sharing.php:1103
 msgctxt "option label"
 msgid "Show Button in"
 msgstr "Afficher le bouton"
 
-#: lib/sharing.php:1091
+#: lib/sharing.php:1106
 msgid "Add the social sharing buttons to each entry of an index webpage (blog front page, category, archive, etc.). Social sharing buttons are not included on index webpages by default."
 msgstr "Ajouter les boutons de partage social à chaque item d'une page d'index (page blog d'avant, catégorie, archives, etc.). Les boutons de partage social ne sont pas inclus dans les pages Web d'index par défaut."
 
-#: lib/sharing.php:1094
+#: lib/sharing.php:1109
 msgid "If a static Post or Page has been selected for the front page, you can add the social sharing buttons to that static front page as well (default is unchecked)."
 msgstr "Si un Article ou une Page statique a été sélectionnée pour la page d'avant, les boutons de partage social peuvent être ajouter sur la page statique d'avant aussi (valeur par défaut est décochée)."
 
-#: lib/sharing.php:1097
+#: lib/sharing.php:1112
 msgid "Enabled social sharing buttons are added to the Post, Page, Media, and Product webpages by default. If your theme (or another plugin) supports additional custom post types, and you would like to include social sharing buttons on these webpages, check the appropriate option(s) here."
 msgstr "Les boutons de partage social activés sont ajoutés par défaut au pages Web d'Articles, Pages, Médias, et Produits. Si votre thème (ou une autre extension) supporte des articles de types personnalisé supplémentaires, et que vous souhaitez ajouter des boutons de partage social sur ces pages Web, cochez les options appropriées ici."
 
-#: lib/sharing.php:1100
+#: lib/sharing.php:1115
+msgid "Select a pre-defined set of option values for sharing buttons in this location."
+msgstr "Sélectionnez un ensemble prédéfinie de valeurs d'options pour les boutons de partage dans cet emplacement."
+
+#: lib/sharing.php:1118
+msgid "Modify URLs shared by the sharing buttons to use a specific protocol. This option can be useful to retain the share count of HTTP URLs after moving your site to HTTPS."
+msgstr "Modifiez les URL partagées par les boutons de partage pour utiliser un protocole spécifique. Cette option peut être utile pour conserver le nombre de partage des URL HTTP après avoir déplacé votre site vers HTTPS."
+
+#: lib/sharing.php:1121
 msgid "Add the CSS of all <em>%1$s</em> to webpages (default is checked). The CSS will be <strong>minimized</strong>, and saved to a single stylesheet with a URL of <a href=\"%2$s\">%3$s</a>. The minimized stylesheet can be enqueued or added directly to the webpage HTML."
 msgstr "Ajouter le CSS de tous les <em>%1$s</em> au pages Web (cochée par défaut). Le CSS sera <strong>minimisé</strong> et sauvegardé dans une seule feuille de style avec l'URL <a href=\"%2$s\">%3$s</a>. La feuille de style peut être mis en queue ou ajouté directement au HTML des pages Web."
 
-#: lib/sharing.php:1103
+#: lib/sharing.php:1124
 msgid "Have WordPress enqueue the social stylesheet instead of adding the CSS to in the webpage HTML (default is unchecked). Enqueueing the stylesheet may be desirable if you use a plugin to concatenate all enqueued styles into a single stylesheet URL."
 msgstr "Demander a WordPress de mettre la feuille de style en queue au lieu d'ajouter le CSS au HTML des pages Web (décochée par défaut). Mettre la feuille de style en queue peut être souhaitable si vous utilisez une extension pour assembler tous le contenu des feuilles de styles dans un seul URL."
 
-#: lib/sharing.php:1106
+#: lib/sharing.php:1127
 msgid "JavaScript added to webpages for the social sharing sidebar."
 msgstr "JavaScript ajouté au pages Web pour la barre latérale de partage sociale."
 
-#: lib/sharing.php:1109
+#: lib/sharing.php:1130
 msgid "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</a> in the %3$s settings page). The %1$s will be displayed and recommended after the webpage is shared."
 msgstr "Ajouter le %1$s au Tweet (voir <a href=\"%2$s\">l'onglet d'options Twitter</a> sur la page de réglages %3$s). Le %1$s sera affichés et recommandé après que la page Web est été partagée."
 
-#: lib/sharing.php:1109 lib/sharing.php:1112 lib/submenu/essential.php:143
+#: lib/sharing.php:1130 lib/sharing.php:1133 lib/submenu/essential.php:143
 #: lib/submenu/general.php:384
 msgctxt "option label"
 msgid "Twitter Business @username"
 msgstr "Le @nom d'affaires Twitter"
 
-#: lib/sharing.php:1109
+#: lib/sharing.php:1130
 msgctxt "lib file description"
 msgid "General"
 msgstr "Général"
 
-#: lib/sharing.php:1112
+#: lib/sharing.php:1133
 msgid "Recommend following the author's Twitter @username after sharing a webpage. If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr "Conseiller de suivre le @nom Twitter de l'auteur après avoir partagé une page Web. Si l'option %1$s (ci-dessus) est également cochée, le %2$s sera recommandé en premier."
 
-#: lib/sharing.php:1112 lib/website/buffer.php:82 lib/website/twitter.php:70
+#: lib/sharing.php:1133 lib/website/buffer.php:82 lib/website/twitter.php:70
 msgctxt "option label (short)"
 msgid "Add via @username"
 msgstr "Ajouter via @nom"
 
-#: lib/sharing.php:1123
+#: lib/sharing.php:1144
 msgid "The rendered HTML for social sharing buttons is saved to the WordPress transient cache to optimize performance."
 msgstr "Le code HTML des boutons de partage social est enregistré dans le cache transitoire de WordPress pour optimiser la performance."
 
-#: lib/sharing.php:1130
+#: lib/sharing.php:1151
 msgid "The JavaScript of most social sharing buttons can be saved locally to cache folder in order to provide cached URLs instead of the originals."
 msgstr "Le JavaScript des boutons de partage social peut être enregistré localement afin de fournir des URLs du cache au lieu des originaux."
 
-#: lib/sharing.php:1130
+#: lib/sharing.php:1151
 msgid "If your hosting infrastructure performs reasonably well, this option can improve page load times significantly."
 msgstr "Si votre infrastructure d'hébergement fonctionne raisonnablement bien, cette option peut améliorer le temp de chargement des pages Web considérablement."
 
@@ -3201,22 +3224,27 @@ msgctxt "metabox tab"
 msgid "Buttons Presets"
 msgstr "Préréglages des Boutons"
 
-#: lib/submenu/buttons.php:146
+#: lib/submenu/buttons.php:112
+msgctxt "metabox tab"
+msgid "Advanced"
+msgstr "Avancé"
+
+#: lib/submenu/buttons.php:147
 msgctxt "option label"
 msgid "Include on Archive Webpages"
 msgstr "Inclure sur les pages d'archive"
 
-#: lib/submenu/buttons.php:150
+#: lib/submenu/buttons.php:151
 msgctxt "option label"
 msgid "Include on Static Front Page"
 msgstr "Inclure sur la page statique d'avant"
 
-#: lib/submenu/buttons.php:158
+#: lib/submenu/buttons.php:159
 msgctxt "option label"
 msgid "Position in Content Text"
 msgstr "Position dans le texte de contenu"
 
-#: lib/submenu/buttons.php:163
+#: lib/submenu/buttons.php:164
 msgctxt "option label"
 msgid "Position in Excerpt Text"
 msgstr "Position dans le texte d'extrait"
