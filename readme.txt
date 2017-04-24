@@ -371,7 +371,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.41.1-dev.1 (TBD)**
+**Version 8.41.1-dev.1 (2017/04/24)**
 
 * *New Features*
 	* None
@@ -380,7 +380,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Renamed the $is_avail array to $avail.
+	* Replaced NGFB_VARY_USER_AGENT_DISABLE constant checks by $avail['*']['vary_ua'].
 
 **Version 8.41.0 (2017/04/22)**
 
@@ -397,7 +398,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Moved the validate button informational text from the NgfbMeta class to the NgfbMessages class.
 	* Renamed all Pinterest option key prefixes from 'rp' to 'p' to reflect the Pinterest meta tag prefix value.
 	* Renamed the SucomUtil crawler_name() method to get_crawler_name().
-	* Added a new optional WPSSO_VARY_USER_AGENT_DISABLE constant.
+	* Added a new optional NGFB_VARY_USER_AGENT_DISABLE constant.
 
 **Version 8.40.13 (2017/04/16)**
 
