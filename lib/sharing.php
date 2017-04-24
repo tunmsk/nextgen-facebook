@@ -51,6 +51,8 @@ if ( ! class_exists( 'NgfbSharing' ) ) {
 					'buttons_preset_sidebar' => 'large_share_vertical',
 					'buttons_preset_shortcode' => '',
 					'buttons_preset_widget' => '',
+					// Advanced Tab
+					'buttons_force_prot' => '',
 					/*
 					 * Sharing Styles
 					 */
@@ -232,6 +234,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 					return 'pos_int';
 					break;
 				// text strings that can be blank
+				case 'buttons_force_prot':
 				case 'gp_expandto':
 				case 'pin_desc':
 				case 'tumblr_img_desc':
@@ -491,10 +494,11 @@ jQuery("#ngfb-sidebar-header").click( function(){
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
+
 			$lca = $this->p->cf['lca'];
-			$js = trim( preg_replace( '/\/\*.*\*\//', '', 
-				$this->p->options['buttons_js_sidebar'] ) );
+			$js = trim( preg_replace( '/\/\*.*\*\//', '', $this->p->options['buttons_js_sidebar'] ) );
 			$text = $this->get_buttons( '', 'sidebar', false );	// $use_post = false
+
 			if ( ! empty( $text ) ) {
 				echo '<div id="'.$lca.'-sidebar">';
 				echo '<div id="'.$lca.'-sidebar-header"></div>';
@@ -660,8 +664,9 @@ jQuery("#ngfb-sidebar-header").click( function(){
 				$atts['use_post'] = $mod['use_post'];
 				$atts['css_id'] = $css_type_name = $type.'-buttons';
 
-				if ( ! empty( $this->p->options['buttons_preset_'.$type] ) )
+				if ( ! empty( $this->p->options['buttons_preset_'.$type] ) ) {
 					$atts['preset_id'] = $this->p->options['buttons_preset_'.$type];
+				}
 
 				// returns html or an empty string
 				$buttons_array[$buttons_index] = $this->get_html( $sorted_ids, $atts, $mod );
@@ -712,8 +717,7 @@ $buttons_array[$buttons_index].
 			return 'locale:'.SucomUtil::get_locale( 'current' ).
 				'_type:'.( empty( $type ) ? 'none' : $type ).
 				'_https:'.( SucomUtil::is_https() ? 'true' : 'false' ).
-				( SucomUtil::get_const( 'NGFB_VARY_USER_AGENT_DISABLE' ) ?
-					'' : '_mobile:'.( SucomUtil::is_mobile() ? 'true' : 'false' ) ).
+				( $this->p->avail['*']['vary_ua'] ? '_mobile:'.( SucomUtil::is_mobile() ? 'true' : 'false' ) : '' ).
 				( $atts !== false ? '_atts:'.http_build_query( $atts, '', '_' ) : '' ).
 				( $ids !== false ? '_ids:'.http_build_query( $ids, '', '_' ) : '' );
 		}
@@ -778,10 +782,21 @@ $buttons_array[$buttons_index].
 						if ( $this->allow_for_platform( $id ) ) {
 
 							$atts['src_id'] = SucomUtil::get_atts_src_id( $atts, $id );	// uses 'css_id' and 'use_post'
+
 							$atts['url'] = empty( $atts['url'] ) ? 				// used by get_inline_vals()
-								$this->p->util->get_sharing_url( $mod, $atts['add_page'], $atts['src_id'] ) : 
-								apply_filters( $lca.'_sharing_url', $atts['url'], $mod, $atts['add_page'], $atts['src_id'] );
+								$this->p->util->get_sharing_url( $mod,
+									$atts['add_page'], $atts['src_id'] ) : 
+								apply_filters( $lca.'_sharing_url', $atts['url'],
+									$mod, $atts['add_page'], $atts['src_id'] );
+
+							if ( ! empty( $this->p->options['buttons_force_prot'] ) ) {
+								$atts['url'] = preg_replace( '/^.*:\/\//',
+									$this->p->options['buttons_force_prot'].'://',
+										$atts['url'] );
+							}
+
 							$buttons_html .= $this->website[$id]->get_html( $atts, $custom_opts, $mod )."\n";
+
 							$atts = $saved_atts;	// restore the common $atts array
 
 						} elseif ( $this->p->debug->enabled )
@@ -953,8 +968,8 @@ $buttons_array[$buttons_index].
 
 		public function allow_for_platform( $id ) {
 
-			// always return allow if the content does not vary by user agent
-			if ( SucomUtil::get_const( 'NGFB_VARY_USER_AGENT_DISABLE' ) ) {
+			// always allow if the content does not vary by user agent
+			if ( ! $this->p->avail['*']['vary_ua'] ) {
 				return true;
 			}
 
@@ -1095,6 +1110,12 @@ $buttons_array[$buttons_index].
 					break;
 				case 'tooltip-buttons_add_to':
 					$text = __( 'Enabled social sharing buttons are added to the Post, Page, Media, and Product webpages by default. If your theme (or another plugin) supports additional custom post types, and you would like to include social sharing buttons on these webpages, check the appropriate option(s) here.', 'nextgen-facebook' );
+					break;
+				case 'tooltip-buttons_preset':
+					$text = __( 'Select a pre-defined set of option values for sharing buttons in this location.', 'nextgen-facebook' );
+					break;
+				case 'tooltip-buttons_force_prot':
+					$text = __( 'Modify URLs shared by the sharing buttons to use a specific protocol. This option can be useful to retain the share count of HTTP URLs after moving your site to HTTPS.', 'nextgen-facebook' );
 					break;
 				case 'tooltip-buttons_use_social_style':
 					$text = sprintf( __( 'Add the CSS of all <em>%1$s</em> to webpages (default is checked). The CSS will be <strong>minimized</strong>, and saved to a single stylesheet with a URL of <a href="%2$s">%3$s</a>. The minimized stylesheet can be enqueued or added directly to the webpage HTML.', 'nextgen-facebook' ), _x( 'Sharing Styles', 'lib file description', 'nextgen-facebook' ), NgfbSharing::$sharing_css_url, NgfbSharing::$sharing_css_url );

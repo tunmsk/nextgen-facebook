@@ -44,6 +44,8 @@ _x( 'General Settings', 'lib file description', 'nextgen-facebook' );
 _x( 'Google+ Business Page URL', 'option value', 'nextgen-facebook' );
 _x( 'Google', 'option value', 'nextgen-facebook' );
 _x( 'Header', 'option value', 'nextgen-facebook' );
+_x( 'HTTP', 'option value', 'nextgen-facebook' );
+_x( 'HTTPS', 'option value', 'nextgen-facebook' );
 _x( 'If value is empty', 'option value', 'nextgen-facebook' );
 _x( 'Image URL Custom Field', 'option label', 'nextgen-facebook' );
 _x( 'Instagram Business URL', 'option value', 'nextgen-facebook' );

@@ -30,7 +30,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteLinkedin' ) ) {
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
 			'<td>'.$form->get_select( 'linkedin_order', range( 1, count( $submenu->website ) ) ).'</td>';
 
-			if ( ! SucomUtil::get_const( 'NGFB_VARY_USER_AGENT_DISABLE' ) ) {
+			if ( $this->p->avail['*']['vary_ua'] ) {
 				$table_rows[] = '<tr class="hide_in_basic">'.
 				$form->get_th_html( _x( 'Allow for Platform',
 					'option label (short)', 'nextgen-facebook' ), 'short' ).

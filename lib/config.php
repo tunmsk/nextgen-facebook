@@ -22,8 +22,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.41.0',		// plugin version
-					'opt_version' => '515',		// increment when changing default options
+					'version' => '8.42.0-dev.1',		// plugin version
+					'opt_version' => '516',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -1389,7 +1389,11 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 									'roofing.contractor' => 'https://schema.org/RoofingContractor',
 								),
 								'internet.cafe' => 'https://schema.org/InternetCafe',
-								'legal.service' => 'https://schema.org/LegalService',
+								'legal.service' => array(
+									'attorney' => 'https://schema.org/Attorney',
+									'legal.service' => 'https://schema.org/LegalService',
+									'notary' => 'https://schema.org/Notary',
+								),
 								'library' => 'https://schema.org/Library',
 								'local.business' => 'https://schema.org/LocalBusiness',
 								'lodging.business' => array(
@@ -1479,6 +1483,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'excerpt' => 'Excerpt',
 					'sidebar' => 'CSS Sidebar',
 					'admin_edit' => 'Admin Edit',
+				),
+				'force_prot' => array( 
+					'http' => 'HTTP',
+					'https' => 'HTTPS',
 				),
 				'styles' => array(
 					'sharing' => 'All Buttons',

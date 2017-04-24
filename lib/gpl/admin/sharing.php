@@ -15,12 +15,16 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			if ( $this->p->debug->enabled )
+
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
+
 			$this->p->util->add_plugin_filters( $this, array(
 				'plugin_cache_rows' => 3,		// $table_rows, $form, $network
 				'buttons_include_rows' => 2,		// $table_rows, $form
-				'buttons_preset_rows' => 2,		// $table_rows, $form, $network
+				'buttons_preset_rows' => 2,		// $table_rows, $form
+				'buttons_advanced_rows' => 2,		// $table_rows, $form
 				'post_buttons_rows' => 4,		// $table_rows, $form, $head, $mod
 				'styles_sharing_rows' => 2,		// $table_rows, $form
 				'styles_content_rows' => 2,		// $table_rows, $form
@@ -33,8 +37,10 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 		}
 
 		public function filter_plugin_cache_rows( $table_rows, $form, $network = false ) {
-			if ( $this->p->debug->enabled )
+
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
 			SucomUtil::add_before_key( $table_rows, 'plugin_show_purge_count', array(
 				'plugin_sharing_buttons_cache_exp' => $form->get_th_html( _x( 'Sharing Buttons Cache Expiry',
@@ -54,8 +60,10 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 		}
 
 		public function filter_buttons_include_rows( $table_rows, $form ) {
-			if ( $this->p->debug->enabled )
+
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
 			$table_rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg' ).'</td>';
 
@@ -67,8 +75,10 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 		}
 
 		public function filter_buttons_preset_rows( $table_rows, $form ) {
-			if ( $this->p->debug->enabled )
+
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
 			$presets = array( 'shortcode' => 'Shortcode', 'widget' => 'Widget' );
 			$show_on = apply_filters( $this->p->cf['lca'].'_buttons_show_on',
@@ -89,9 +99,25 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 			return $table_rows;
 		}
 
-		public function filter_post_buttons_rows( $table_rows, $form, $head, $mod ) {
-			if ( $this->p->debug->enabled )
+		public function filter_buttons_advanced_rows( $table_rows, $form ) {
+
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
+
+			$table_rows[] = $form->get_th_html( _x( 'Force Protocol for Shared URLs',
+				'option label', 'nextgen-facebook' ), '', 'buttons_force_prot' ).
+			'<td class="blank">'.$form->get_no_select( 'buttons_force_prot', 
+				array_merge( array( '' => 'none' ), $this->p->cf['sharing']['force_prot'] ) ).'</td>';
+
+			return $table_rows;
+		}
+
+		public function filter_post_buttons_rows( $table_rows, $form, $head, $mod ) {
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
 
 			if ( empty( $mod['post_status'] ) || $mod['post_status'] === 'auto-draft' ) {
 				$table_rows['save_a_draft'] = '<td><blockquote class="status-info"><p class="centered">'.
@@ -215,26 +241,31 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 		}
 
 		public function filter_styles_sharing_rows( $table_rows, $form ) {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 			return $this->get_styles_common_rows( $table_rows, $form, 'sharing' );
 		}
 
 		public function filter_styles_content_rows( $table_rows, $form ) {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 			return $this->get_styles_common_rows( $table_rows, $form, 'content' );
 		}
 
 		public function filter_styles_excerpt_rows( $table_rows, $form ) {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 			return $this->get_styles_common_rows( $table_rows, $form, 'excerpt' );
 		}
 
 		public function filter_styles_sidebar_rows( $table_rows, $form ) {
-			if ( $this->p->debug->enabled )
+
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
 			$table_rows = array_merge( $table_rows,
 				$this->get_styles_common_rows( $table_rows, $form, 'sidebar' ) );
@@ -249,20 +280,23 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 		}
 
 		public function filter_styles_shortcode_rows( $table_rows, $form ) {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 			return $this->get_styles_common_rows( $table_rows, $form, 'shortcode' );
 		}
 
 		public function filter_styles_widget_rows( $table_rows, $form ) {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 			return $this->get_styles_common_rows( $table_rows, $form, 'widget' );
 		}
 
 		public function filter_styles_admin_edit_rows( $table_rows, $form ) {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 			return $this->get_styles_common_rows( $table_rows, $form, 'admin_edit' );
 		}
 

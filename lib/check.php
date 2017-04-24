@@ -30,14 +30,11 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 			$ret = array();
 			$is_admin = is_admin();
 
-			$ret['post_thumbnail'] = function_exists( 'has_post_thumbnail' ) ? true : false;
-			$ret['amp_endpoint'] = function_exists( 'is_amp_endpoint' ) ? true : false;
-
-			foreach ( array( 'aop', 'head', 'ssb' ) as $key ) {
-				$ret[$key] = $this->get_avail_check( $key );
+			foreach ( array( 'featured', 'amp', 'p_dir', 'head_html', 'rich_pin', 'ssb', 'vary_ua' ) as $key ) {
+				$ret['*'][$key] = $this->get_avail_check( $key );
 			}
 
-			$ret['p_ext']['ssb'] =& $ret['ssb'];	// defined for extra compatibility
+			$ret['p_ext']['ssb'] =& $ret['*']['ssb'];	// required for compatibility
 
 			foreach ( SucomUtil::array_merge_recursive_distinct( $this->p->cf['*']['lib']['pro'],
 				self::$extend_lib_checks ) as $sub => $lib ) {
@@ -154,7 +151,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 							}
 							break;
 						case 'admin-sharing':
-							if ( $is_admin && $ret['ssb'] ) {
+							if ( $is_admin && $ret['*']['ssb'] ) {
 								$ret[$sub]['*'] = $ret[$sub][$id] = true;
 							}
 							break;
@@ -205,17 +202,31 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 		}
 
 		private function get_avail_check( $key ) {
+			$ret = false;
 			switch ( $key ) {
-				case 'aop':
+				case 'featured':
+					$ret = function_exists( 'has_post_thumbnail' ) ?
+						true : false;
+					break;
+				case 'amp':
+					$ret = function_exists( 'is_amp_endpoint' ) ?
+						true : false;
+					break;
+				case 'p_dir':
 					$ret = ! SucomUtil::get_const( 'NGFB_PRO_MODULE_DISABLE' ) &&
 						is_dir( NGFB_PLUGINDIR.'lib/pro/' ) ?
 							true : false;
 					break;
-				case 'head':
+				case 'head_html':
 					$ret = ! SucomUtil::get_const( 'NGFB_HEAD_HTML_DISABLE' ) &&
 						empty( $_SERVER['NGFB_HEAD_HTML_DISABLE'] ) &&
 							empty( $_GET['NGFB_HEAD_HTML_DISABLE'] ) ?
 								true : false;
+					break;
+				case 'rich_pin':
+					$ret = ! SucomUtil::get_const( 'NGFB_RICH_PIN_DISABLE' ) &&
+						! SucomUtil::get_const( 'NGFB_VARY_USER_AGENT_DISABLE' ) ?
+							true : false;
 					break;
 				case 'ssb':
 					$ret = ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
@@ -223,16 +234,16 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 							class_exists( $this->p->cf['lca'].'sharing' ) ?
 								true : false;
 					break;
-				default:
-					$ret = false;	// just in case
+				case 'vary_ua':
+					$ret = ! SucomUtil::get_const( 'NGFB_VARY_USER_AGENT_DISABLE' ) ?
+						true : false;
 					break;
 			}
 			return $ret;
 		}
 
 		public function is_aop( $lca = '' ) {
-			return $this->aop( $lca, true,
-				$this->get_avail_check( 'aop' ) );
+			return $this->aop( $lca, true, $this->get_avail_check( 'p_dir' ) );
 		}
 
 		public function aop( $lca = '', $lic = true, $rv = true ) {
@@ -268,7 +279,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 					continue;
 				$ins = $this->aop( $ext, false );
 				$ext_list[] = $info['short'].( $ins ? ' Pro' : '' ).' '.$info['version'].'/'.
-					( $this->aop( $ext, true, $this->p->is_avail['aop'] ) ? 'L' :
+					( $this->aop( $ext, true, $this->p->avail['*']['p_dir'] ) ? 'L' :
 						( $ins ? 'U' : 'G' ) );
 			}
 			return $ext_list;

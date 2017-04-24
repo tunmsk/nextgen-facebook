@@ -94,7 +94,7 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 			if ( ! empty( $this->website ) ) {
 				foreach ( range( 1, $this->max_cols ) as $col ) {
 					// ids must use underscores instead of hyphens to order metaboxes
-					echo '<div id="website_col_'.$col.'" class="max-cols-'.$this->max_cols.' website_col">';
+					echo '<div id="website_col_'.$col.'" class="max_cols_'.$this->max_cols.' website_col">';
 					do_meta_boxes( $pagehook, 'website_col_'.$col, null );
 					echo '</div><!-- #website_col_'.$col.' -->'."\n";
 				}
@@ -109,6 +109,7 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 				'include' => _x( 'Include Buttons', 'metabox tab', 'nextgen-facebook' ),
 				'position' => _x( 'Buttons Position', 'metabox tab', 'nextgen-facebook' ),
 				'preset' => _x( 'Buttons Presets', 'metabox tab', 'nextgen-facebook' ),
+				'advanced' => _x( 'Advanced', 'metabox tab', 'nextgen-facebook' ),
 			) );
 			$table_rows = array();
 			foreach ( $tabs as $key => $title ) {
@@ -176,7 +177,7 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 			$max = 2;
 			$html = '<table>';
 			$lca = $this->p->cf['lca'];
-			$aop = $this->p->check->aop( 'ngfb', true, $this->p->is_avail['aop'] );
+			$aop = $this->p->check->aop( 'ngfb', true, $this->p->avail['*']['p_dir'] );
 			$show_on = apply_filters( $lca.'_buttons_show_on',
 				$this->p->cf['sharing']['show_on'], $opt_prefix );
 
