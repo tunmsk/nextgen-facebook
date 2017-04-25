@@ -382,7 +382,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Code refactoring to rename the $is_avail array to $avail.
 	* Replaced NGFB_VARY_USER_AGENT_DISABLE constant checks by $avail array checks.
-	* Removed the deprecated NgfbOpenGraph get_the_media_info() method.
 
 **Version 8.41.0 (2017/04/22)**
 
