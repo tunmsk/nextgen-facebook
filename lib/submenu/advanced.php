@@ -46,7 +46,7 @@ if ( ! class_exists( 'NgfbSubmenuAdvanced' ) && class_exists( 'NgfbAdmin' ) ) {
 			$tabs = apply_filters( $this->p->cf['lca'].'_advanced_'.$metabox.'_tabs', array(
 				'settings' => _x( 'Plugin Settings', 'metabox tab', 'nextgen-facebook' ),
 				'content' => _x( 'Content and Filters', 'metabox tab', 'nextgen-facebook' ),
-				'integration' => _x( 'WP / Theme Integration', 'metabox tab', 'nextgen-facebook' ),
+				'integration' => _x( 'Integration', 'metabox tab', 'nextgen-facebook' ),
 				'social' => _x( 'Custom Meta', 'metabox tab', 'nextgen-facebook' ),
 				'cache' => _x( 'Cache Settings', 'metabox tab', 'nextgen-facebook' ),
 				'apikeys' => _x( 'Service APIs', 'metabox tab', 'nextgen-facebook' ),

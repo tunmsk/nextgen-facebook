@@ -1112,8 +1112,9 @@ $buttons_array[$buttons_index].
 		}
 
 		public function filter_messages_tooltip( $text, $idx ) {
-			if ( strpos( $idx, 'tooltip-buttons_' ) !== 0 )
+			if ( strpos( $idx, 'tooltip-buttons_' ) !== 0 ) {
 				return $text;
+			}
 			switch ( $idx ) {
 				case ( strpos( $idx, 'tooltip-buttons_pos_' ) === false ? false : true ):
 					$text = sprintf( __( 'Social sharing buttons can be added to the top, bottom, or both. Each sharing button must also be enabled below (see the <em>%s</em> options).', 'nextgen-facebook' ), _x( 'Show Button in', 'option label', 'nextgen-facebook' ) );
@@ -1247,17 +1248,17 @@ $buttons_array[$buttons_index].
 					min-width:100%;
 					max-width:100%;
 				}
-				.max_cols_2.dashboard_col {
+				.max_cols_2.website_col {
 					width:50%;
 					min-width:50%;
 					max-width:50%;
 				}
-				.max_cols_3.dashboard_col {
+				.max_cols_3.website_col {
 					width:33.3333%;
 					min-width:33.3333%;
 					max-width:33.3333%;
 				}
-				.max_cols_4.dashboard_col {
+				.max_cols_4.website_col {
 					width:25%;
 					min-width:25%;
 					max-width:25%;
