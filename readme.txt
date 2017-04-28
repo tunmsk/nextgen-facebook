@@ -371,7 +371,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.42.0-dev.2 (2017/04/27)**
+**Version 8.42.0-dev.3 (2017/04/28)**
 
 * *New Features*
 	* Added a new "Force Protocol for Shared URLs" option in the Sharing Buttons settings page (Pro version).
@@ -384,6 +384,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Code refactoring to rename the $is_avail array to $avail.
 	* Replaced NGFB_VARY_USER_AGENT_DISABLE constant checks by $avail array checks.
 	* Added a Schema type inheritance feature when adding markup for single Schema elements.
+	* Added a new filter:
+		* 'ngfb_sharing_buttons_html' ( $type, $mod, $location, $atts );
 
 **Version 8.41.0 (2017/04/22)**
 
@@ -640,9 +642,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.42.0-dev.2 =
+= 8.42.0-dev.3 =
 
-(2017/04/27) Added a new "Force Protocol for Shared URLs" option in the Sharing Buttons settings page (Pro version). Fixed inheritance of Schema sub-types when adding Organization markup. Code refactoring to rename the $is_avail array and replace NGFB_VARY_USER_AGENT_DISABLE constant checks.
+(2017/04/28) Added a new "Force Protocol for Shared URLs" option in the Sharing Buttons settings page (Pro version). Fixed inheritance of Schema sub-types when adding Organization markup. Code refactoring to rename the $is_avail array and replace NGFB_VARY_USER_AGENT_DISABLE constant checks.
 
 = 8.41.0 =
 

@@ -119,7 +119,8 @@
 'ngfb_schema_type_id' ( $type_id, $mod, $is_md_type );
 'ngfb_schema_types' ( (array) $schema_types );
 'ngfb_search_url' ( $url, $mod, $add_page, $src_id );
-'ngfb_sharing_shortcode_ngfb' ( $atts, $content );
+'ngfb_sharing_buttons_html' ( $type, $mod, $location, $atts );
+'ngfb_sharing_shortcode_atts' ( $atts, $content );
 'ngfb_sharing_show_on' ( $show_on, $prefix );
 'ngfb_sharing_styles_tabs' ( $tabs );
 'ngfb_sharing_url' ( $url, $mod, $add_page, $src_id );
