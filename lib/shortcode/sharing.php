@@ -73,10 +73,11 @@ if ( ! class_exists( 'NgfbShortcodeSharing' ) ) {
 			}
 
 			$lca = $this->p->cf['lca'];
-			$atts = (array) apply_filters( $lca.'_sharing_shortcode_'.NGFB_SHARING_SHORTCODE_NAME, $atts, $content );
+			$atts = (array) apply_filters( $lca.'_sharing_shortcode_atts', $atts, $content );
 
-			if ( empty( $atts['buttons'] ) )	// nothing to do
+			if ( empty( $atts['buttons'] ) ) {	// nothing to do
 				return '<!-- '.$lca.' sharing shortcode: no buttons defined -->'."\n\n";
+			}
 
 			$atts['use_post'] = SucomUtil::sanitize_use_post( $atts, true );	// $default = true
 			$atts['css_class'] = empty( $atts['css_class'] ) ? '' : $atts['css_class'];
