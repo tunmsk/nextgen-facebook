@@ -371,7 +371,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.42.0-dev.4 (2017/04/28)**
+**Version 8.42.0-b.1 (2017/04/29)**
 
 * *New Features*
 	* Added a new "Force Protocol for Shared URLs" option in the Sharing Buttons settings page (Pro version).
@@ -643,9 +643,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.42.0-dev.4 =
+= 8.42.0-b.1 =
 
-(2017/04/28) Added a new "Force Protocol for Shared URLs" option in the Sharing Buttons settings page (Pro version). Fixed inheritance of Schema sub-types when adding Organization markup. Code refactoring to rename the $is_avail array and replace NGFB_VARY_USER_AGENT_DISABLE constant checks.
+(2017/04/29) Added a new "Force Protocol for Shared URLs" option in the Sharing Buttons settings page (Pro version). Fixed inheritance of Schema sub-types when adding Organization markup. Code refactoring to rename the $is_avail array and replace NGFB_VARY_USER_AGENT_DISABLE constant checks.
 
 = 8.41.0 =
 
