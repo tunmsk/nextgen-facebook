@@ -273,7 +273,7 @@
 <h4>Install and Uninstall</h4>
 
 <ul>
-<li><a href="https://surniaulula.com/docs/plugins/nextgen-facebook/installation-to/install-the-plugin/">Install the Plugin</a></li>
+<li><a href="https://surniaulula.com/docs/plugins/nextgen-facebook/installation/install-the-plugin/">Install the Plugin</a></li>
 <li><a href="https://surniaulula.com/docs/plugins/nextgen-facebook/installation/integration/">Integration Notes</a>
 
 <ul>

@@ -245,7 +245,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Install and Uninstall =
 
-* [Install the Plugin](https://surniaulula.com/docs/plugins/nextgen-facebook/installation-to/install-the-plugin/)
+* [Install the Plugin](https://surniaulula.com/docs/plugins/nextgen-facebook/installation/install-the-plugin/)
 * [Integration Notes](https://surniaulula.com/docs/plugins/nextgen-facebook/installation/integration/)
 	* [BuddyPress Integration](https://surniaulula.com/docs/plugins/nextgen-facebook/installation/integration/buddypress-integration/)
 * [Uninstall the Plugin](https://surniaulula.com/docs/plugins/nextgen-facebook/installation/uninstall-the-plugin/)
