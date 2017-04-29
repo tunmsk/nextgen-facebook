@@ -64,7 +64,7 @@ if ( ! class_exists( 'NgfbGplSocialBuddypress' ) ) {
 			}
 			switch ( $idx ) {
 				case 'tooltip-plugin_bp_bio_field':
-					$text = __( 'The BuddyPress member profile page does not include the WordPress Biographical Info text from the WordPress user profile. If you\'ve created an additional BuddyPress Profile Field for members to enter their profile description, enter the field name here (example: Biographical Info, About Me, etc.).', 'nextgen-facebook' );
+					$text = __( 'The BuddyPress member profile page does not include the WordPress <em>Biographical Info</em> text from the WordPress user profile. If you\'ve created an additional BuddyPress Profile Field for members to enter their profile description, enter the field name here (example: Biographical Info, About Me, etc.).', 'nextgen-facebook' );
 					break;
 			}
 			return $text;
