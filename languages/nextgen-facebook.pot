@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.42.0-b.1\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.42.0-rc.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -1743,11 +1743,11 @@ msgstr ""
 
 #: lib/gpl/social/buddypress.php:67 lib/pro/social/buddypress.php:108
 msgid ""
-"The BuddyPress member profile page does not include the WordPress "
-"<em>Biographical Info</em> text from the WordPress user profile. If you've "
-"created an additional BuddyPress Profile Field for members to enter their "
-"profile description, enter the field name here (example: Biographical Info, "
-"About Me, etc.)."
+"The BuddyPress member profile page does not include the <em>Biographical "
+"Info</em> text from the WordPress user profile. If you've created an "
+"additional BuddyPress Profile Field for members to enter their profile "
+"description, enter the field name here (example: Biographical Info, About "
+"Me, etc.)."
 msgstr ""
 
 #: lib/media.php:313
