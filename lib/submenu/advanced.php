@@ -67,10 +67,11 @@ if ( ! class_exists( 'NgfbSubmenuAdvanced' ) && class_exists( 'NgfbAdmin' ) ) {
 				'builtin' => _x( 'Built-In Contacts', 'metabox tab', 'nextgen-facebook' ),
 			) );
 			$table_rows = array();
-			foreach ( $tabs as $key => $title )
+			foreach ( $tabs as $key => $title ) {
 				$table_rows[$key] = array_merge( $this->get_table_rows( $metabox, $key ),
 					apply_filters( $this->p->cf['lca'].'_'.$metabox.'_'.$key.'_rows',
 						array(), $this->form, false ) );	// $network = false
+			}
 			$this->p->util->do_table_rows( array( '<td>'.$this->p->msgs->get( 'info-'.$metabox ).'</td>' ),
 				'metabox-'.$metabox.'-info' );
 			$this->p->util->do_metabox_tabs( $metabox, $tabs, $table_rows );
@@ -79,16 +80,18 @@ if ( ! class_exists( 'NgfbSubmenuAdvanced' ) && class_exists( 'NgfbAdmin' ) ) {
 		public function show_metabox_taglist() {
 			$metabox = 'taglist';
 			$tabs = apply_filters( $this->p->cf['lca'].'_advanced_'.$metabox.'_tabs', array(
+				'fb' => _x( 'Facebook', 'metabox tab', 'nextgen-facebook' ),
 				'og' => _x( 'Open Graph', 'metabox tab', 'nextgen-facebook' ),
-				'schema' => _x( 'Schema', 'metabox tab', 'nextgen-facebook' ),
 				'twitter' => _x( 'Twitter', 'metabox tab', 'nextgen-facebook' ),
+				'schema' => _x( 'Schema', 'metabox tab', 'nextgen-facebook' ),
 				'other' => _x( 'SEO / Other', 'metabox tab', 'nextgen-facebook' ),
 			) );
 			$table_rows = array();
-			foreach ( $tabs as $key => $title )
+			foreach ( $tabs as $key => $title ) {
 				$table_rows[$key] = array_merge( $this->get_table_rows( $metabox, $key ),
 					apply_filters( $this->p->cf['lca'].'_'.$metabox.'_'.$key.'_rows',
 						array(), $this->form, false ) );	// $network = false
+			}
 			$this->p->util->do_table_rows( array( '<td>'.$this->p->msgs->get( 'info-'.$metabox ).'</td>' ),
 				'metabox-'.$metabox.'-info' );
 			$this->p->util->do_metabox_tabs( $metabox, $tabs, $table_rows );

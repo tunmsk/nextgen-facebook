@@ -22,8 +22,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.42.0',		// plugin version
-					'opt_version' => '518',		// increment when changing default options
+					'version' => '8.42.1-dev.1',		// plugin version
+					'opt_version' => '520',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -349,6 +349,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					// facebook
 					'add_meta_property_fb:admins' => 1,
 					'add_meta_property_fb:app_id' => 1,
+					// facebook applink
+					'add_meta_property_al:ios:app_name' => 1,
+					'add_meta_property_al:ios:app_store_id' => 1,
+					'add_meta_property_al:ios:url' => 1,
+					'add_meta_property_al:android:app_name' => 1,
+					'add_meta_property_al:android:package' => 1,
+					'add_meta_property_al:android:url' => 1,
+					'add_meta_property_al:web:url' => 1,
+					'add_meta_property_al:web:should_fallback' => 1,
 					// open graph
 					'add_meta_property_og:altitude' => 1,
 					'add_meta_property_og:description' => 1,
@@ -449,6 +458,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_name_twitter:player:stream:content_type' => 1,
 					'add_meta_name_twitter:player:width' => 1,
 					'add_meta_name_twitter:player:height' => 1,
+					'add_meta_name_twitter:app:name:iphone' => 1,
+					'add_meta_name_twitter:app:id:iphone' => 1,
+					'add_meta_name_twitter:app:url:iphone' => 1,
+					'add_meta_name_twitter:app:name:ipad' => 1,
+					'add_meta_name_twitter:app:id:ipad' => 1,
+					'add_meta_name_twitter:app:url:ipad' => 1,
+					'add_meta_name_twitter:app:name:googleplay' => 1,
+					'add_meta_name_twitter:app:id:googleplay' => 1,
+					'add_meta_name_twitter:app:url:googleplay' => 1,
 					// schema
 					'add_meta_itemprop_url' => 1,
 					'add_meta_itemprop_name' => 1,
