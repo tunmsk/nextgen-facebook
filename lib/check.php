@@ -66,6 +66,9 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 						case 'event-tribe_events':
 							$chk['plugin'] = 'the-events-calendar/the-events-calendar.php';
 							break;
+						case 'form-gravity-view':
+							$chk['class'] = 'GravityView_Plugin';
+							break;
 						case 'forum-bbpress':
 							$chk['plugin'] = 'bbpress/bbpress.php';
 							break;

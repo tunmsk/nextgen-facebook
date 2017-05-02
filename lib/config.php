@@ -147,6 +147,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'event' => array(
 								'tribe_events' => '(plugin) The Events Calendar',
 							),
+							'form' => array(
+								'gravity-view' => '(plugin) Gravity View',
+							),
 							'forum' => array(
 								'bbpress' => '(plugin) bbPress',
 							),
