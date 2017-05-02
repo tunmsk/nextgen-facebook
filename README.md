@@ -126,7 +126,7 @@
 <li>Fully renders content (including shortcodes) for accurate description texts.</li>
 <li>Support for embedded videos in content text (iframe and object HTML markup).</li>
 <li>Additional Facebook / Open Graph / Rich Pin meta tags for videos and e-commerce products.</li>
-<li>Twitter <a href="https://dev.twitter.com/cards/types/player">Player Card</a> meta tags for embedded videos from Facebook, Slideshare, Vimeo, Wistia, and/or Youtube.</li>
+<li>Twitter <a href="https://dev.twitter.com/cards/types/player">Player Card</a> meta tags for embedded videos from Facebook, Slideshare, Vimeo, Wistia, and/or YouTube.</li>
 <li>Include or exclude individual Google / SEO, Open Graph, Twitter Card, and Schema meta tags in the webpage head section.</li>
 <li>Validation of minimum / maximum image dimensions and aspect ratios.</li>
 <li>Configurable user profile contact field names and labels.</li>
@@ -241,7 +241,7 @@
 
 <p><strong>Images and Videos</strong></p>
 
-<p>NextGEN Facebook (NGFB) detects and uses all images - associated or included in your content - including the WordPress image gallery and <a href="https://wordpress.org/plugins/nextgen-gallery/">NextGEN Gallery</a> shortcodes. WordPress Media Library images (and NextGEN Gallery in the Pro version) are resized according to their intended consumer (Facebook, Twitter, Pinterest, etc). The Pro version detects embedded videos from Facebook, Slideshare, Vimeo, Wistia, and Youtube (including preview image, video title, and video description). NGFB (Pro version) also includes support for <a href="https://wordpress.org/plugins/nextgen-gallery/">NextGEN Gallery</a> albums, galleries and images (shortcodes, image tags, album / gallery preview images, etc.).</p>
+<p>NextGEN Facebook (NGFB) detects and uses all images - associated or included in your content - including the WordPress image gallery and <a href="https://wordpress.org/plugins/nextgen-gallery/">NextGEN Gallery</a> shortcodes. WordPress Media Library images (and NextGEN Gallery in the Pro version) are resized according to their intended consumer (Facebook, Twitter, Pinterest, etc). The Pro version detects embedded videos from Facebook, Slideshare, Vimeo, Wistia, and YouTube (including preview image, video title, and video description). NGFB (Pro version) also includes support for <a href="https://wordpress.org/plugins/nextgen-gallery/">NextGEN Gallery</a> albums, galleries and images (shortcodes, image tags, album / gallery preview images, etc.).</p>
 
 <p><strong>Enhanced SEO</strong></p>
 
@@ -349,7 +349,7 @@
 <ul>
 <li><a href="https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/author-gravatar/">Author Gravatar</a></li>
 <li><a href="https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/easy-digital-downloads/">Easy Digital Downloads</a></li>
-<li><a href="https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/facebook-slideshare-vimeo-wistia-youtube-video-apis/">Facebook, Slideshare, Vimeo, Wistia, Youtube Video APIs</a></li>
+<li><a href="https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/facebook-slideshare-vimeo-wistia-youtube-video-apis/">Facebook, Slideshare, Vimeo, Wistia, YouTube Video APIs</a></li>
 <li><a href="https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/headspace2-seo/">HeadSpace2 SEO</a></li>
 <li><a href="https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/woocommerce/">WooCommerce</a></li>
 <li><a href="https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/wordpress-rest-api-v2/">WordPress REST API version 2</a></li>

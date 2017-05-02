@@ -114,7 +114,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 * Fully renders content (including shortcodes) for accurate description texts.
 * Support for embedded videos in content text (iframe and object HTML markup).
 * Additional Facebook / Open Graph / Rich Pin meta tags for videos and e-commerce products.
-* Twitter [Player Card](https://dev.twitter.com/cards/types/player) meta tags for embedded videos from Facebook, Slideshare, Vimeo, Wistia, and/or Youtube.
+* Twitter [Player Card](https://dev.twitter.com/cards/types/player) meta tags for embedded videos from Facebook, Slideshare, Vimeo, Wistia, and/or YouTube.
 * Include or exclude individual Google / SEO, Open Graph, Twitter Card, and Schema meta tags in the webpage head section.
 * Validation of minimum / maximum image dimensions and aspect ratios.
 * Configurable user profile contact field names and labels.
@@ -215,7 +215,7 @@ NextGEN Facebook (NGFB) adds Facebook / Open Graph, Pinterest Rich Pins, Twitter
 
 **Images and Videos**
 
-NextGEN Facebook (NGFB) detects and uses all images - associated or included in your content - including the WordPress image gallery and [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/) shortcodes. WordPress Media Library images (and NextGEN Gallery in the Pro version) are resized according to their intended consumer (Facebook, Twitter, Pinterest, etc). The Pro version detects embedded videos from Facebook, Slideshare, Vimeo, Wistia, and Youtube (including preview image, video title, and video description). NGFB (Pro version) also includes support for [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/) albums, galleries and images (shortcodes, image tags, album / gallery preview images, etc.).
+NextGEN Facebook (NGFB) detects and uses all images - associated or included in your content - including the WordPress image gallery and [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/) shortcodes. WordPress Media Library images (and NextGEN Gallery in the Pro version) are resized according to their intended consumer (Facebook, Twitter, Pinterest, etc). The Pro version detects embedded videos from Facebook, Slideshare, Vimeo, Wistia, and YouTube (including preview image, video title, and video description). NGFB (Pro version) also includes support for [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/) albums, galleries and images (shortcodes, image tags, album / gallery preview images, etc.).
 
 **Enhanced SEO**
 
@@ -304,7 +304,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 * [About NGFB Pro Integration Modules](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/)
 	* [Author Gravatar](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/author-gravatar/)
 	* [Easy Digital Downloads](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/easy-digital-downloads/)
-	* [Facebook, Slideshare, Vimeo, Wistia, Youtube Video APIs](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/facebook-slideshare-vimeo-wistia-youtube-video-apis/)
+	* [Facebook, Slideshare, Vimeo, Wistia, YouTube Video APIs](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/facebook-slideshare-vimeo-wistia-youtube-video-apis/)
 	* [HeadSpace2 SEO](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/headspace2-seo/)
 	* [WooCommerce](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/woocommerce/)
 	* [WordPress REST API version 2](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/wordpress-rest-api-v2/)
@@ -376,7 +376,25 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added Facebook AppLink meta tags for YouTube and Vimeo videos:
+		* al:ios:app_name
+		* al:ios:app_store_id
+		* al:ios:url
+		* al:android:app_name
+		* al:android:package
+		* al:android:url
+		* al:web:url
+		* al:web:should_fallback
+	* Added Twitter card meta tags for YouTube and Vimeo videos:
+		* twitter:app:name:iphone
+		* twitter:app:id:iphone
+		* twitter:app:url:iphone
+		* twitter:app:name:ipad
+		* twitter:app:id:ipad
+		* twitter:app:url:ipad
+		* twitter:app:name:googleplay
+		* twitter:app:id:googleplay
+		* twitter:app:url:googleplay
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -653,6 +671,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Renamed and moved the SucomException class from lib/com/exception.php to NgfbException in lib/exception.php.
 
 == Upgrade Notice ==
+
+= 8.42.1-dev.1 =
+
+(2017/05/02) Added new Facebook AppLink and Twitter card meta tags for YouTube and Vimeo videos.
 
 = 8.42.0 =
 
