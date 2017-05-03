@@ -3344,6 +3344,11 @@ msgstr ""
 msgid "\"%s\" is  an unknown Schema product item condition."
 msgstr ""
 
+#: lib/pro/form/gravityview.php:83
+msgctxt "metabox title"
+msgid "GravityView Integration"
+msgstr ""
+
 #: lib/pro/forum/bbpress.php:96 lib/pro/forum/bbpress.php:157
 msgctxt "bbpress single user description"
 msgid "%s's Profile"

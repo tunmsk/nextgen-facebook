@@ -449,7 +449,7 @@ jQuery("#ngfb-sidebar-header").click( function(){
 		}
 
 		public function add_post_buttons_metabox() {
-			if ( ! is_admin() ) {
+			if ( ! is_admin() ) {	// just in case
 				return;
 			}
 
