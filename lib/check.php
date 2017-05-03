@@ -66,7 +66,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 						case 'event-tribe_events':
 							$chk['plugin'] = 'the-events-calendar/the-events-calendar.php';
 							break;
-						case 'form-gravity-view':
+						case 'form-gravityview':
 							$chk['class'] = 'GravityView_Plugin';
 							break;
 						case 'forum-bbpress':
@@ -107,8 +107,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 							$chk['plugin'] = 'squirrly-seo/squirrly.php';
 							break;
 						case 'seo-wpseo':
-							$chk['function'] = 'wpseo_init';	// just in case
-							$chk['plugin'] = 'wordpress-seo/wp-seo.php';
+							$chk['function'] = 'wpseo_init';	// includes wpseo premium
 							break;
 						case 'social-buddypress':
 							$chk['plugin'] = 'buddypress/bp-loader.php';
