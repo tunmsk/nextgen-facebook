@@ -3344,9 +3344,24 @@ msgstr ""
 msgid "\"%s\" is  an unknown Schema product item condition."
 msgstr ""
 
-#: lib/pro/form/gravityview.php:83
+#: lib/pro/form/gravityview.php:76
 msgctxt "metabox title"
-msgid "GravityView Integration"
+msgid "Gravity View Integration"
+msgstr ""
+
+#: lib/pro/form/gravityview.php:90
+msgctxt "option label"
+msgid "Title Field ID"
+msgstr ""
+
+#: lib/pro/form/gravityview.php:94
+msgctxt "option label"
+msgid "Description Field ID"
+msgstr ""
+
+#: lib/pro/form/gravityview.php:98
+msgctxt "option label"
+msgid "Image URL Field ID"
 msgstr ""
 
 #: lib/pro/forum/bbpress.php:96 lib/pro/forum/bbpress.php:157
