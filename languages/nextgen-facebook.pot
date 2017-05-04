@@ -3254,7 +3254,7 @@ msgctxt "submit button"
 msgid "Validate AMP Markup"
 msgstr ""
 
-#: lib/meta.php:571
+#: lib/meta.php:576
 msgid "Nonce token validation failed for the submitted form (update ignored)."
 msgstr ""
 
@@ -3349,17 +3349,17 @@ msgctxt "metabox title"
 msgid "Gravity View Integration"
 msgstr ""
 
-#: lib/pro/form/gravityview.php:91
+#: lib/pro/form/gravityview.php:92
 msgctxt "option label"
 msgid "Title Field ID"
 msgstr ""
 
-#: lib/pro/form/gravityview.php:95
+#: lib/pro/form/gravityview.php:96
 msgctxt "option label"
 msgid "Description Field ID"
 msgstr ""
 
-#: lib/pro/form/gravityview.php:99
+#: lib/pro/form/gravityview.php:100
 msgctxt "option label"
 msgid "Image URL Field ID"
 msgstr ""

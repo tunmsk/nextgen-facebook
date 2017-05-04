@@ -497,6 +497,9 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 					'product_condition' => 'none',
 					'product_price' => '0.00',
 					'product_currency' => NGFB_PROD_CURRENCY,
+					'gv_id_title' => 0,
+					'gv_id_desc' => 0,
+					'gv_id_img_url' => 0,
 				);
 
 				$md_defs = apply_filters( $this->p->cf['lca'].'_get_md_defaults', $md_defs, $this->get_mod( $mod_id ) );
@@ -520,7 +523,9 @@ if ( ! class_exists( 'NgfbMeta' ) ) {
 				} else {
 					return null;
 				}
-			} else return $md_defs;
+			} else {
+				return $md_defs;
+			}
 		}
 
 		public function save_options( $mod_id, $rel_id = false ) {
