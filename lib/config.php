@@ -22,7 +22,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.42.1-dev.2',		// plugin version
+					'version' => '8.43.0-b.1',		// plugin version
 					'opt_version' => '520',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -148,7 +148,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'tribe_events' => '(plugin) The Events Calendar',
 							),
 							'form' => array(
-								'gravityview' => '(plugin) Gravity View',
+								'gravityview' => '(plugin) GravityView',
 							),
 							'forum' => array(
 								'bbpress' => '(plugin) bbPress',
