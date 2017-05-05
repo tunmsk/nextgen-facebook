@@ -372,7 +372,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.43.0-b.2 (2017/05/05)**
+**Version 8.43.0-b.3 (2017/05/05)**
 
 * *New Features*
 	* Added a GravityView integration module with support for Single Entry view URL, title, description, and post image (Pro version).
@@ -396,6 +396,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* twitter:app:name:googleplay
 		* twitter:app:id:googleplay
 		* twitter:app:url:googleplay
+	* Added out of stock variations for WooCommerce products in the Schema Product markup (Pro version)
 * *Bugfixes*
 	* Replaced checks for the Yoast SEO plugin slug by a function name check (to include Yoast SEO Premium).
 * *Developer Notes*
@@ -673,7 +674,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.43.0-b.2 =
+= 8.43.0-b.3 =
 
 (2017/05/05) Added new Facebook AppLink and Twitter card meta tags for YouTube and Vimeo videos.
 
