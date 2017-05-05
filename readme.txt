@@ -131,16 +131,17 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 		* BuddyPress (including Group Forum Topics)
 		* Co-Authors Plus (including Guest Authors)
 		* Easy Digital Downloads
+		* Gravity Forms + GravityView
 		* HeadSpace2 SEO
-		* NextGEN Gallery
 		* MarketPress - WordPress eCommerce
+		* NextGEN Gallery
 		* Polylang
 		* rtMedia for WordPress, BuddyPress and bbPress
 		* The Events Calendar
 		* The SEO Framework
 		* WooCommerce (version 1, 2, and 3)
-		* WP eCommerce
 		* WordPress REST API (version 2)
+		* WP eCommerce
 		* Yoast SEO (aka WordPress SEO)
 		* Yotpo Social Reviews for WooCommerce
 	* **NGFB Pro Integrated Service APIs**
