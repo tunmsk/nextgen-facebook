@@ -372,10 +372,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.43.0-rc.1 (2017/05/06)**
+**Version 8.43.0 (2017/05/07)**
 
 * *New Features*
-	* Added a GravityView integration module with support for Single Entry view URL, title, description, and post image (Pro version).
+	* Added a Gravity Forms + GravityView integration module with support for Single Entry view URL, title, description, and post image (Pro version).
 * *Improvements*
 	* Added Facebook AppLink meta tags for YouTube and Vimeo videos:
 		* al:ios:app_name
@@ -674,9 +674,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.43.0-rc.1 =
+= 8.43.0 =
 
-(2017/05/06) Added a GravityView integration module with support for Single Entry view URL, title, description, and post image (Pro version). Added new Facebook AppLink and Twitter card meta tags for YouTube and Vimeo videos.
+(2017/05/07) Added a Gravity Forms + GravityView integration module with support for Single Entry view URL, title, description, and post image (Pro version). Added new Facebook AppLink and Twitter card meta tags for YouTube and Vimeo videos.
 
 = 8.42.0 =
 
