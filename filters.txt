@@ -6,7 +6,7 @@
 'sucom_is_user_page' ( $ret );
 'sucom_strip_shortcodes' ( $preg_array );
 'ngfb_add_head_html' ( $bool, $mod );
-'ngfb_add_meta_name_canonical' ( $bool );
+'ngfb_add_link_rel_canonical' ( $bool );
 'ngfb_add_meta_name_description' ( $bool );
 'ngfb_add_meta_name_ngfb:mark' ( $bool );
 'ngfb_add_metabox_post' ( $bool, $post_id, $post_type );
