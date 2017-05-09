@@ -347,6 +347,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'tc_lrg_img_crop_y' => 'center',
 					// enable/disable head html tags
 					'add_link_rel_author' => 1,
+					'add_link_rel_canonical' => 1,
 					'add_link_rel_publisher' => 1,
 					'add_link_rel_shortlink' => 1,
 					// facebook
@@ -438,7 +439,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_property_video:series' => 1,
 					// seo
 					'add_meta_name_author' => 1,
-					'add_meta_name_canonical' => 0,
 					'add_meta_name_description' => 1,
 					'add_meta_name_generator' => 1,
 					// pinterest
