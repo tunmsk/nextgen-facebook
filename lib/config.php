@@ -22,7 +22,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.43.0',		// plugin version
+					'version' => '8.43.1-dev.1',		// plugin version
 					'opt_version' => '520',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
