@@ -372,6 +372,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 8.43.1-dev.1 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added removal of HTML tags from the author / user description value in the Schema Person markup.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.43.0 (2017/05/07)**
 
 * *New Features*
