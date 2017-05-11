@@ -69,17 +69,20 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 * Configurable website / business social accounts for Schema markup:
 	* Facebook Business Page URL
 	* Google+ Business Page URL
-	* Pinterest Company Page URL
-	* Twitter Business @username
 	* Instagram Business URL
 	* LinkedIn Company Page URL
-	* MySpace Business (Brand) URL
+	* Myspace Business Page URL
+	* Pinterest Company Page URL
+	* SoundCloud Business URL
+	* Tumblr Business Page URL
+	* Twitter Business @username
+	* YouTube Business Channel URL
 * User profile contact fields for Open Graph, Twitter Card, and Schema markup:
 	* Facebook URL
 	* Google+ URL
 	* Instagram URL
 	* LinkedIn URL
-	* MySpace URL
+	* Myspace URL
 	* Pinterest URL
 	* Skype Username
 	* Tumblr URL
@@ -198,7 +201,7 @@ NextGEN Facebook (NGFB) Pro allows you to customize the field names, label, and 
 * Google+ URL
 * Instagram URL
 * LinkedIn URL
-* MySpace URL
+* Myspace URL
 * Pinterest URL
 * Skype Username
 * Tumblr URL
@@ -378,6 +381,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Improvements*
 	* Added removal of HTML tags from the author / user description value in the Schema Person markup.
+	* Added new social business account URLs for Google's Knowledge Graph:
+		* SoundCloud Business URL
+		* Tumblr Business Page URL
+		* YouTube Business Channel URL
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -451,7 +458,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 8.43.1 =
 
-(2017/05/11) Added removal of HTML tags from the author / user description value in the Schema Person markup.
+(2017/05/11) Added removal of HTML tags from the author / user description value in the Schema Person markup. Added new social business account URLs for Google's Knowledge Graph.
 
 = 8.43.0 =
 
