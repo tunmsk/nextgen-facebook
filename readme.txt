@@ -372,7 +372,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.43.1-dev.1 (TBD)**
+**Version 8.43.1 (2017/05/11)**
 
 * *New Features*
 	* None
@@ -684,6 +684,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Renamed and moved the SucomException class from lib/com/exception.php to NgfbException in lib/exception.php.
 
 == Upgrade Notice ==
+
+= 8.43.1 =
+
+(2017/05/11) Added removal of HTML tags from the author / user description value in the Schema Person markup.
 
 = 8.43.0 =
 
