@@ -14,15 +14,15 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 	class NgfbConfig {
 
 		public static $cf = array(
-			'lca' => 'ngfb',		// lowercase acronym
+			'lca' => 'ngfb',			// lowercase acronym
 			'readme_cache_exp' => DAY_IN_SECONDS,	// 1 day
 			'setup_cache_exp' => DAY_IN_SECONDS,	// 1 day
-			'install_hosts' => array(	// allow extensions to be installed from these hosts
+			'install_hosts' => array(		// allow extensions to be installed from these hosts
 				'https://surniaulula.com/extend/plugins/',
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.43.1-dev.1',		// plugin version
+					'version' => '8.43.1',		// plugin version
 					'opt_version' => '520',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
