@@ -846,7 +846,7 @@ msgstr ""
 
 #: lib/config-gettext-extract.php:59
 msgctxt "option value"
-msgid "MySpace Business Page URL"
+msgid "Myspace Business Page URL"
 msgstr ""
 
 #: lib/config-gettext-extract.php:60
@@ -1013,102 +1013,117 @@ msgstr ""
 
 #: lib/config-gettext-extract.php:96
 msgctxt "option value"
-msgid "Stable / Production"
+msgid "SoundCloud Business URL"
 msgstr ""
 
 #: lib/config-gettext-extract.php:97
 msgctxt "option value"
-msgid "Sunday"
+msgid "Stable / Production"
 msgstr ""
 
 #: lib/config-gettext-extract.php:98
 msgctxt "option value"
-msgid "Thursday"
+msgid "Sunday"
 msgstr ""
 
 #: lib/config-gettext-extract.php:99
 msgctxt "option value"
-msgid "TinyURL"
+msgid "Thursday"
 msgstr ""
 
 #: lib/config-gettext-extract.php:100
 msgctxt "option value"
-msgid "Title and Excerpt"
+msgid "TinyURL"
 msgstr ""
 
 #: lib/config-gettext-extract.php:101
 msgctxt "option value"
-msgid "Title Only"
+msgid "Title and Excerpt"
 msgstr ""
 
 #: lib/config-gettext-extract.php:102
 msgctxt "option value"
-msgid "Top and Bottom"
+msgid "Title Only"
 msgstr ""
 
 #: lib/config-gettext-extract.php:103
 msgctxt "option value"
-msgid "Top"
+msgid "Top and Bottom"
 msgstr ""
 
 #: lib/config-gettext-extract.php:104
 msgctxt "option value"
-msgid "Tuesday"
+msgid "Top"
 msgstr ""
 
 #: lib/config-gettext-extract.php:105
 msgctxt "option value"
-msgid "Twitter Business @username"
+msgid "Tuesday"
 msgstr ""
 
 #: lib/config-gettext-extract.php:106
 msgctxt "option value"
-msgid "Used"
+msgid "Tumblr Business Page URL"
 msgstr ""
 
 #: lib/config-gettext-extract.php:107
+msgctxt "option value"
+msgid "Twitter Business @username"
+msgstr ""
+
+#: lib/config-gettext-extract.php:108
+msgctxt "option value"
+msgid "Used"
+msgstr ""
+
+#: lib/config-gettext-extract.php:109
 msgctxt "lib file description"
 msgid "User Profile Contact Methods"
 msgstr ""
 
-#: lib/config-gettext-extract.php:108
+#: lib/config-gettext-extract.php:110
 msgctxt "option label"
 msgid "Video Embed HTML Custom Field"
 msgstr ""
 
-#: lib/config-gettext-extract.php:109
+#: lib/config-gettext-extract.php:111
 msgctxt "option label"
 msgid "Video URL Custom Field"
 msgstr ""
 
-#: lib/config-gettext-extract.php:110
+#: lib/config-gettext-extract.php:112
 msgctxt "lib file description"
 msgid "Website Social Pages and Accounts"
 msgstr ""
 
-#: lib/config-gettext-extract.php:111
+#: lib/config-gettext-extract.php:113
 msgctxt "option value"
 msgid "Wednesday"
 msgstr ""
 
-#: lib/config-gettext-extract.php:112
+#: lib/config-gettext-extract.php:114
 msgctxt "option value"
 msgid "Widget"
 msgstr ""
 
-#: lib/config-gettext-extract.php:113
+#: lib/config-gettext-extract.php:115
 msgctxt "option value"
 msgid "Yes"
 msgstr ""
 
-#: lib/config-gettext-extract.php:114
+#: lib/config-gettext-extract.php:116
 msgctxt "option value"
 msgid "YOURLS"
 msgstr ""
 
-#: lib/config-gettext-extract.php:115
+#: lib/config-gettext-extract.php:117
 msgctxt "lib file description"
 msgid "Your Social Settings"
+msgstr ""
+
+#: lib/config-gettext-extract.php:118
+msgctxt "option value"
+msgid "YouTube Business Channel URL"
 msgstr ""
 
 #: lib/gpl/admin/advanced.php:46 lib/pro/admin/advanced.php:52
