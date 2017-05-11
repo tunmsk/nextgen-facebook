@@ -4263,21 +4263,6 @@ msgctxt "option label"
 msgid "<em>Large Image</em> Card Img Dimensions"
 msgstr ""
 
-#: lib/submenu/general.php:416
-msgctxt "option label"
-msgid "Instagram Business URL"
-msgstr ""
-
-#: lib/submenu/general.php:421
-msgctxt "option label"
-msgid "LinkedIn Company Page URL"
-msgstr ""
-
-#: lib/submenu/general.php:426
-msgctxt "option label"
-msgid "MySpace Business Page URL"
-msgstr ""
-
 #: lib/submenu/setup.php:38
 msgctxt "metabox title"
 msgid "Setup Guide"

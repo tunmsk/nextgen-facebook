@@ -57,6 +57,7 @@ if ( ! class_exists( 'NgfbSettingSocialAccounts' ) && class_exists( 'NgfbAdmin' 
 
 					$social_accounts = apply_filters( $this->p->cf['lca'].'_social_accounts',
 						$this->p->cf['form']['social_accounts'] );
+
 					asort( $social_accounts );	// sort by label and maintain key association
 
 					foreach ( $social_accounts as $key => $label ) {

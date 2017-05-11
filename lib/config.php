@@ -627,7 +627,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_cm_linkedin_label' => 'LinkedIn URL',
 					'plugin_cm_linkedin_enabled' => 1,
 					'plugin_cm_myspace_name' => 'myspace',
-					'plugin_cm_myspace_label' => 'MySpace URL',
+					'plugin_cm_myspace_label' => 'Myspace URL',
 					'plugin_cm_myspace_enabled' => 1,
 					'plugin_cm_pin_name' => 'pinterest',
 					'plugin_cm_pin_label' => 'Pinterest URL',
