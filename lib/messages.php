@@ -235,11 +235,11 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 							break;
 
 						case 'tooltip-og_def_img_id':
-							$text = __( 'An image ID and media library selection for your default / fallback website image.', 'nextgen-facebook' ).' '.__( 'The default image ID is used for index / archive pages, and as a fallback for Posts / Pages that do not have a suitable image featured, attached, or in their content.', 'nextgen-facebook' );
+							$text = __( 'An image ID and media library selection for your default / fallback website image.', 'nextgen-facebook' ).' '.__( 'The default image is used for index / archive pages, and as a fallback for Posts and Pages that do not have a suitable image featured, attached, or in their content.', 'nextgen-facebook' );
 							break;
 
 						case 'tooltip-og_def_img_url':
-							$text = __( 'You can enter a default image URL (including the http:// prefix) instead of choosing an image ID &mdash; if a default image ID is specified, the image URL option is disabled.', 'nextgen-facebook' ).' '.__( '<strong>The image URL option allows you to use an image outside of a managed collection (WordPress Media Library or NextGEN Gallery), and/or a smaller logo style image</strong>.', 'nextgen-facebook' ).' '.sprintf( __( 'The image should be at least %s or more in width and height.', 'nextgen-facebook' ), $this->p->cf['head']['limit_min']['og_img_width'].'x'.$this->p->cf['head']['limit_min']['og_img_height'] ).' '.__( 'The default image ID or URL is used for index / archive pages, and as a fallback for Posts and Pages that do not have a suitable image featured, attached, or in their content.', 'nextgen-facebook' );
+							$text = __( 'You can enter a default image URL (including the http:// prefix) instead of choosing an image ID &mdash; if a default image ID is specified, the image URL option is disabled.', 'nextgen-facebook' ).' <strong>'.__( 'The image URL option allows you to use an image outside of a managed collection (WordPress Media Library or NextGEN Gallery), and/or a smaller logo style image.', 'nextgen-facebook' ).'</strong> '.sprintf( __( 'The image should be at least %s or more in width and height.', 'nextgen-facebook' ), $this->p->cf['head']['limit_min']['og_img_width'].'x'.$this->p->cf['head']['limit_min']['og_img_height'] ).' '.__( 'The default image is used for index / archive pages, and as a fallback for Posts and Pages that do not have a suitable image featured, attached, or in their content.', 'nextgen-facebook' );
 							break;
 
 						case 'tooltip-og_def_img_on_index':
