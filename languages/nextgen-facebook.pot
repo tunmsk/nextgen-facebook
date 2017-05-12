@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.43.2-dev.1\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.43.2-dev.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -1747,7 +1747,7 @@ msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr ""
 
-#: lib/gpl/ecom/woocommerce.php:120 lib/pro/ecom/woocommerce.php:629
+#: lib/gpl/ecom/woocommerce.php:120 lib/pro/ecom/woocommerce.php:648
 msgctxt "option label"
 msgid "Position in Woo Short Text"
 msgstr ""
@@ -3413,7 +3413,7 @@ msgid ""
 "Activate the %s extension for additional Schema markup features and options."
 msgstr ""
 
-#: lib/pro/ecom/woocommerce.php:484
+#: lib/pro/ecom/woocommerce.php:503
 msgid "\"%s\" is  an unknown Schema product item condition."
 msgstr ""
 
