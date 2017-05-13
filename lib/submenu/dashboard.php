@@ -44,7 +44,7 @@ if ( ! class_exists( 'NgfbSubmenuDashboard' ) && class_exists( 'NgfbAdmin' ) ) {
 				'help_support' => _x( 'Help and Support', 'metabox title', 'nextgen-facebook' ),
 				'rate_review' => _x( 'Ratings are Awesome!', 'metabox title', 'nextgen-facebook' ),
 				'version_info' => _x( 'Version Information', 'metabox title', 'nextgen-facebook' ), 
-				'status_gpl' => _x( 'Free / Basic Features', 'metabox title', 'nextgen-facebook' ),
+				'status_gpl' => _x( 'Free / Core Features', 'metabox title', 'nextgen-facebook' ),
 				'status_pro' => _x( 'Pro Version Features', 'metabox title', 'nextgen-facebook' ),
 			);
 
