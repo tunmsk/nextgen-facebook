@@ -375,7 +375,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.43.2-dev.2 (2017/05/12)**
+**Version 8.43.2-dev.3 (2017/05/13)**
 
 * *New Features*
 	* None
@@ -384,7 +384,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Updated the image selection functions to support numeric multi-option names.
+	* Updated the SucomForm image selection / upload methods to support numeric multi-option names.
 	* Added an extra check for a non-variation product type when reading product variations for WooCommerce (Pro version).
 
 **Version 8.43.1 (2017/05/11)**
@@ -468,9 +468,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.43.2-dev.2 =
+= 8.43.2-dev.3 =
 
-(2017/05/12) Updated the image selection functions to support numeric multi-option names. Added an extra check for a non-variation product type when reading product variations for WooCommerce (Pro version).
+(2017/05/13) Updated the SucomForm image selection / upload methods to support numeric multi-option names. Added an extra check for a non-variation product type when reading product variations for WooCommerce (Pro version).
 
 = 8.43.1 =
 
