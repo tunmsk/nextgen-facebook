@@ -49,7 +49,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 = Quick List of Features =
 
-**NextGEN Facebook (NGFB) Free / Basic Features**
+**NextGEN Facebook (NGFB) Free / Core Features**
 
 * Adds Open Graph meta tags for Facebook, Google+, Pinterest, LinkedIn, etc.
 * Adds Pinterest Rich Pin meta tags + [Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) Schema markup for Google.
