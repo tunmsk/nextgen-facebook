@@ -11,7 +11,7 @@ _x( 'Beta and Up', 'option value', 'nextgen-facebook' );
 _x( 'Bitly (suggested)', 'option value', 'nextgen-facebook' );
 _x( 'Bottom', 'option value', 'nextgen-facebook' );
 _x( 'Center', 'option value', 'nextgen-facebook' );
-_x( '<color>Plugin Setup Guide and Notes</color>', 'lib file description', 'nextgen-facebook' );
+_x( '<color>Plugin Setup Guide and Other Notes</color>', 'lib file description', 'nextgen-facebook' );
 _x( 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!', 'plugin description', 'nextgen-facebook' );
 _x( 'Content', 'option value', 'nextgen-facebook' );
 _x( 'CSS Sidebar', 'option value', 'nextgen-facebook' );

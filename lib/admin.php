@@ -562,7 +562,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 							_x( 'Clear All Cache on Save Settings', 'option label', 'nextgen-facebook' ) ) ).'</em>' );
 			}
 
-			if ( empty( $opts['plugin_filter_content'] ) ) {
+			if ( self::$pkg[$lca]['aop'] && empty( $opts['plugin_filter_content'] ) ) {
 				$this->p->notice->warn( $this->p->msgs->get( 'notice-content-filters-disabled' ),
 					true, 'notice-content-filters-disabled', true );	// can be dismissed
 			}

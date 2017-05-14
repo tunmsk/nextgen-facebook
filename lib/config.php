@@ -22,7 +22,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.43.2-dev.3',		// plugin version
+					'version' => '8.43.2',		// plugin version
 					'opt_version' => '520',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
@@ -70,19 +70,19 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'contact-fields' => 'User Profile Contact Methods',
 						),
 						'submenu' => array (	// lib file descriptions will be translated
-							'dashboard' => 'Plugin Dashboard',
 							'essential' => 'Essential Settings',
 							'general' => 'General Settings',
 							'advanced' => 'Advanced Settings',
 							'buttons' => 'Sharing Buttons',
 							'styles' => 'Sharing Styles',
+							'setup' => '<color>Plugin Setup Guide and Other Notes</color>',
 							'licenses' => 'Extension Plugins and Pro Licenses',
-							'setup' => '<color>Plugin Setup Guide and Notes</color>',
+							'dashboard' => 'Plugin Dashboard',
 						),
 						'sitesubmenu' => array(	// lib file descriptions will be translated
 							'siteadvanced' => 'Advanced Settings',
+							'sitesetup' => '<color>Plugin Setup Guide and Other Notes</color>',
 							'sitelicenses' => 'Extension Plugins and Pro Licenses',
-							'sitesetup' => '<color>Plugin Setup Guide and Notes</color>',
 						),
 						'website' => array(
 							'email' => 'Email',
