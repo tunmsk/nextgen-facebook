@@ -375,6 +375,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 8.43.3 (2017/05/15)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed an incorrect variable name in the WooCommerce integration module (Pro version).
+* *Developer Notes*
+	* None
+
 **Version 8.43.2 (2017/05/14)**
 
 * *New Features*
@@ -467,6 +478,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new optional NGFB_VARY_USER_AGENT_DISABLE constant.
 
 == Upgrade Notice ==
+
+= 8.43.3 =
+
+(2017/05/15) Fixed an incorrect variable name in the WooCommerce integration module (Pro version).
 
 = 8.43.2 =
 
