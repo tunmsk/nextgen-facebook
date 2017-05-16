@@ -31,7 +31,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 <blockquote>
 <p><strong>Don't need the included social share buttons?</strong></p>
 
-<p>The <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin is a fork / child of NextGEN Facebook (NGFB) &mdash; they have the same author, the same solid core features and code-base, but WPSSO is distributed without the social share buttons and their related features. Additional Free extension plugins are also available for WPSSO, including two different types of sharing button extensions:</p>
+<p>The <a href="https://wordpress.org/plugins/wpsso/">WPSSO (WordPress Social Sharing Optimization)</a> plugin is a fork / child of NextGEN Facebook (NGFB) &mdash; they have the same author, the same solid core features and code-base, but WPSSO is distributed without the social share buttons and their related features. Additional Free extension plugins are also available for WPSSO, including two different types of sharing button extensions:</p>
 
 <ul>
 <li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO Mobile App Meta</a></li>
