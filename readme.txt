@@ -380,7 +380,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* The Pinterest custom image in the Social Settings has been moved to the Structured Data / Schema Markup / Pinterest custom image.
 * *Bugfixes*
 	* None
 * *Developer Notes*
