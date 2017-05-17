@@ -84,7 +84,7 @@ if ( ! class_exists( 'NgfbGplAdminPost' ) ) {
 				'product_price' => null,	// placeholder
 				'subsection_schema' => array(
 					'td_class' => 'subsection', 'header' => 'h4',
-					'label' => _x( 'Google Structured Data / Schema Markup', 'metabox title', 'nextgen-facebook' )
+					'label' => _x( 'Structured Data / Schema Markup', 'metabox title', 'nextgen-facebook' )
 				),
 				'schema_desc' => array(
 					'label' => _x( 'Schema Description', 'option label', 'nextgen-facebook' ),

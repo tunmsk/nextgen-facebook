@@ -221,6 +221,16 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 					'rp_img_crop_y' => 'p_img_crop_y',
 					'rp_dom_verify' => 'p_dom_verify',
 				),
+				525 => array(
+					'add_meta_itemprop_url' => 'add_link_itemprop_url',
+					'add_meta_itemprop_image' => 'add_link_itemprop_image',
+					'add_meta_itemprop_image.url' => 'add_link_itemprop_image.url',
+					'add_meta_itemprop_author.url' => 'add_link_itemprop_author.url',
+					'add_meta_itemprop_author.image' => 'add_link_itemprop_author.image',
+					'add_meta_itemprop_contributor.url' => 'add_link_itemprop_contributor.url',
+					'add_meta_itemprop_contributor.image' => 'add_link_itemprop_contributor.image',
+					'add_meta_itemprop_menu' => 'add_link_itemprop_menu',
+				),
 			),
 		);
 

@@ -22,8 +22,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.43.3',		// plugin version
-					'opt_version' => '520',		// increment when changing default options
+					'version' => '8.44.0-dev.1',		// plugin version
+					'opt_version' => '526',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -323,12 +323,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'og_desc_hashtags' => 3,
 					'p_publisher_url' => '',		// (localized)
 					'p_author_name' => 'display_name',	// rich-pin specific article:author
-					'p_img_width' => 800,
-					'p_img_height' => 1600,
-					'p_img_crop' => 0,
-					'p_img_crop_x' => 'center',
-					'p_img_crop_y' => 'center',
 					'p_dom_verify' => '',
+					'p_add_img_html' => 1,
 					'tc_site' => '',			// Twitter Business @username (localized)
 					'tc_desc_len' => 200,			// Maximum Description Length (hard limit)
 					'tc_type_post' => 'summary_large_image',
@@ -470,8 +466,16 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_name_twitter:app:name:googleplay' => 1,
 					'add_meta_name_twitter:app:id:googleplay' => 1,
 					'add_meta_name_twitter:app:url:googleplay' => 1,
-					// schema
-					'add_meta_itemprop_url' => 1,
+					// schema link
+					'add_link_itemprop_url' => 1,
+					'add_link_itemprop_image' => 1,
+					'add_link_itemprop_image.url' => 1,
+					'add_link_itemprop_author.url' => 1,
+					'add_link_itemprop_author.image' => 1,
+					'add_link_itemprop_contributor.url' => 1,
+					'add_link_itemprop_contributor.image' => 1,
+					'add_link_itemprop_menu' => 1,
+					// schema meta
 					'add_meta_itemprop_name' => 1,
 					'add_meta_itemprop_alternatename' => 1,
 					'add_meta_itemprop_description' => 1,
@@ -480,19 +484,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_itemprop_address' => 1,
 					'add_meta_itemprop_datepublished' => 1,
 					'add_meta_itemprop_datemodified' => 1,
-					'add_meta_itemprop_image' => 1,
-					'add_meta_itemprop_image.url' => 1,
 					'add_meta_itemprop_image.width' => 1,
 					'add_meta_itemprop_image.height' => 1,
 					'add_meta_itemprop_publisher.name' => 1,
-					'add_meta_itemprop_author.url' => 1,
 					'add_meta_itemprop_author.name' => 1,
 					'add_meta_itemprop_author.description' => 1,
-					'add_meta_itemprop_author.image' => 1,
-					'add_meta_itemprop_contributor.url' => 1,
 					'add_meta_itemprop_contributor.name' => 1,
 					'add_meta_itemprop_contributor.description' => 1,
-					'add_meta_itemprop_contributor.image' => 1,
 					'add_meta_itemprop_openinghoursspecification.dayofweek' => 1,
 					'add_meta_itemprop_openinghoursspecification.opens' => 1,
 					'add_meta_itemprop_openinghoursspecification.closes' => 1,
@@ -501,7 +499,6 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_meta_itemprop_currenciesaccepted' => 1,
 					'add_meta_itemprop_paymentaccepted' => 1,
 					'add_meta_itemprop_pricerange' => 1,
-					'add_meta_itemprop_menu' => 1,
 					'add_meta_itemprop_acceptsreservations' => 1,
 					'add_meta_itemprop_aggregaterating.ratingvalue' => 1,
 					'add_meta_itemprop_aggregaterating.ratingcount' => 1,

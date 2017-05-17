@@ -30,7 +30,7 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 			$ret = array();
 			$is_admin = is_admin();
 
-			foreach ( array( 'featured', 'amp', 'p_dir', 'head_html', 'rich_pin', 'ssb', 'vary_ua' ) as $key ) {
+			foreach ( array( 'featured', 'amp', 'p_dir', 'head_html', 'ssb', 'vary_ua' ) as $key ) {
 				$ret['*'][$key] = $this->get_avail_check( $key );
 			}
 
@@ -227,11 +227,6 @@ if ( ! class_exists( 'NgfbCheck' ) ) {
 						empty( $_SERVER['NGFB_HEAD_HTML_DISABLE'] ) &&
 							empty( $_GET['NGFB_HEAD_HTML_DISABLE'] ) ?
 								true : false;
-					break;
-				case 'rich_pin':
-					$ret = ! SucomUtil::get_const( 'NGFB_RICH_PIN_DISABLE' ) &&
-						! SucomUtil::get_const( 'NGFB_VARY_USER_AGENT_DISABLE' ) ?
-							true : false;
 					break;
 				case 'ssb':
 					$ret = ! SucomUtil::get_const( 'NGFB_SOCIAL_SHARING_DISABLE' ) &&
