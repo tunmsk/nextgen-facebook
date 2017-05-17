@@ -375,7 +375,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.44.0-dev.1 (TBD)**
+**Version 8.44.0-dev.1 (2017/05/17)**
 
 * *New Features*
 	* None
@@ -384,7 +384,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Added extra sanity checks to make that "meta itemprop content" tags with URL values are added as "link itemprop href" instead.
 
 **Version 8.43.3 (2017/05/15)**
 
@@ -489,6 +489,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new optional NGFB_VARY_USER_AGENT_DISABLE constant.
 
 == Upgrade Notice ==
+
+= 8.44.0-dev.1 =
+
+(2017/05/17) The Pinterest custom image in the Social Settings has been moved to the Structured Data / Schema Markup / Pinterest custom image.
 
 = 8.43.3 =
 
