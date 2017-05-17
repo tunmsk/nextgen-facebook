@@ -57,6 +57,5 @@ NGFB_IMAGE_UPSCALE_ALL		= (not defined)
 NGFB_IMAGE_UPSCALE_TEST		= (not defined)
 NGFB_SOCIAL_SHARING_DISABLE	= (not defined)
 NGFB_HEAD_HTML_DISABLE		= (not defined)
-NGFB_RICH_PIN_DISABLE		= (not defined)
 NGFB_META_GENERATOR_DISABLE	= (not defined)	// note that generator meta tags are required for plugin support
 NGFB_VARY_USER_AGENT_DISABLE	= (not defined)
