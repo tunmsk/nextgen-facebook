@@ -22,8 +22,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.44.0-dev.1',		// plugin version
-					'opt_version' => '526',		// increment when changing default options
+					'version' => '8.44.0-dev.2',		// plugin version
+					'opt_version' => '528',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook (NGFB)',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -325,6 +325,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'p_author_name' => 'display_name',	// rich-pin specific article:author
 					'p_dom_verify' => '',
 					'p_add_img_html' => 1,
+					'p_add_nopin_media_img_tag' => 1,
+					'p_add_nopin_header_img_tag' => 1,
 					'tc_site' => '',			// Twitter Business @username (localized)
 					'tc_desc_len' => 200,			// Maximum Description Length (hard limit)
 					'tc_type_post' => 'summary_large_image',

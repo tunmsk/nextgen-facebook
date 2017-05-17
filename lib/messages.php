@@ -898,7 +898,15 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 							break;
 
 						case 'tooltip-p_add_img_html':
-							$text = __( 'Add the Google / Schema image to the content for the Pinterest Pin It browser button (uses a 0x0px &lt;img/&gt; HTML tag).', 'nextgen-facebook' );
+							$text = __( 'Add the Google / Schema image to the content (in a hidden container) for the Pinterest Pin It browser button.', 'nextgen-facebook' );
+							break;
+
+						case 'tooltip-p_add_nopin_media_img_tag':
+							$text = __( 'Add a "nopin" attribute to images from the WordPress Media Library to prevent the Pin It button from suggesting those images.', 'nextgen-facebook' );
+							break;
+
+						case 'tooltip-p_add_nopin_header_img_tag':
+							$text = __( 'Add a "nopin" attribute to the header image (since WP v4.4) to prevent the Pin It button from suggesting that image.', 'nextgen-facebook' );
 							break;
 
 						default:
