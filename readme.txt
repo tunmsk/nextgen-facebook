@@ -378,7 +378,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 8.44.0-dev.1 (2017/05/17)**
 
 * *New Features*
-	* None
+	* Added a new "Add Image to Content for Pin It" option for Pinterest in the General settings page.
 * *Improvements*
 	* The Pinterest custom image in the Social Settings has been moved to the Structured Data / Schema Markup / Pinterest custom image.
 * *Bugfixes*
@@ -492,7 +492,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 8.44.0-dev.1 =
 
-(2017/05/17) The Pinterest custom image in the Social Settings has been moved to the Structured Data / Schema Markup / Pinterest custom image.
+(2017/05/17) Added a new "Add Image to Content for Pin It" option for Pinterest in the General settings page. The Pinterest custom image in the Social Settings has been moved to the Structured Data / Schema Markup / Pinterest custom image.
 
 = 8.43.3 =
 
