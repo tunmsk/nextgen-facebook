@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook (NGFB) 8.44.0-dev.2\n"
+"Project-Id-Version: NextGEN Facebook (NGFB) 8.44.0-a.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -4270,12 +4270,12 @@ msgstr ""
 
 #: lib/submenu/general.php:371
 msgctxt "option label"
-msgid "Add \"nopin\" to Media Lib Images"
+msgid "Add \"nopin\" to Header Image Tag"
 msgstr ""
 
 #: lib/submenu/general.php:375
 msgctxt "option label"
-msgid "Add \"nopin\" to Header Image Tag"
+msgid "Add \"nopin\" to Media Lib Images"
 msgstr ""
 
 #: lib/submenu/general.php:384
