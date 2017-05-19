@@ -1255,21 +1255,29 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 			 */
 			} elseif ( strpos( $idx, 'column-' ) === 0 ) {
 				switch ( $idx ) {
-					case 'column-about-free':
-						$essential_menu_html = $this->p->util->get_admin_url( 'essential',
-							_x( 'Essential Settings', 'lib file description', 'nextgen-facebook' ) );
-						$text = '<p>'.sprintf( __( '<strong>The Free version of %1$s generates complete and accurate meta tags + Schema markup from your <em>existing</em> content <em>automatically</em></strong> &mdash; there\'s no need to manually update or keep track of meta tag values.', 'nextgen-facebook' ), $info['short'] ).'</p>';
-						$text .= '<p>'.__( 'The Pro version offers additional customization features, along with integration modules for 3rd party plugins and services.', 'nextgen-facebook' ).'</p>';
-						break;
-
 					case 'column-purchase-pro':
-						$text = '';
+						$text = '<p>'.sprintf( __( '<strong>%s provides</strong>:',
+							'nextgen-facebook' ), $info['short_pro'] ).'</p>';
+
+						$text .= '<ul>';
+						$text .= '<li>'.__( 'Custom Post, Term, and User Social Settings.',
+							'nextgen-facebook' ).'</li>';
+						$text .= '<li>'.__( 'Advanced features (image dimension checks, image upscaling, etc) and settings page.',
+							'nextgen-facebook' ).'</li>';
+						$text .= '<li>'.__( 'Integration modules for 3rd party plugins (Yoast SEO, WooCommerce, etc).',
+							'nextgen-facebook' ).'</li>';
+						$text .= '<li>'.__( 'Integration modules for API services (Bitly, Facebook, YouTube, etc).',
+							'nextgen-facebook' ).'</li>';
+						$text .= '</ul>';
+
 						if ( $this->p->avail['*']['p_dir'] ) {
-							$text .= '<p>'.sprintf( __( '<strong>Purchase %s quick &amp; easy with PayPal</strong> and license the Pro version immediately after your purchase!', 'nextgen-facebook' ), $info['short_pro'] ).'</p>';
+							$text .= '<p>'.sprintf( __( '<strong>Purchase %s easily with PayPal</strong> &mdash; and license the Pro version immediately after your purchase!', 'nextgen-facebook' ), $info['short_pro'] ).'</p>';
 						} else {
-							$text .= '<p>'.sprintf( __( '<strong>Purchase %s quick &amp; easy with PayPal</strong> and update the Free plugin immediately after your purchase!', 'nextgen-facebook' ), $info['short_pro'] ).'</p>';
+							$text .= '<p>'.sprintf( __( '<strong>Purchase %s easily with PayPal</strong> &mdash; and update the Free plugin immediately after your purchase!', 'nextgen-facebook' ), $info['short_pro'] ).'</p>';
 						}
-						$text .= '<p>'.__( '<strong>Pro licenses never expire</strong> &mdash; there are no yearly fees for support and updates.', 'nextgen-facebook' ).' '.__( 'How great is that?', 'nextgen-facebook' ).' :-)</p>';
+
+						$text .= '<p>'.__( '<strong>Pro licenses never expire</strong> &mdash; there are no yearly fees for support and updates.',
+							'nextgen-facebook' ).' '.__( 'How great is that?', 'nextgen-facebook' ).' :-)</p>';
 						break;
 
 					case 'column-install-pro':
@@ -1279,11 +1287,16 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 						$plugins_html = '<a href="'.get_admin_url( null, 'plugins.php' ).'">'.
 							__( 'WordPress Plugins', 'nextgen-facebook' ).'</a>';
 
-						$text .= '<p>'.__( '<strong>Updating to Pro is easy as 123</strong> &mdash; after your purchase, you\'ll receive an email with all the installation details.', 'nextgen-facebook' ).' '.__( 'Here\'s a quick summary to give you an idea.', 'nextgen-facebook' ).' :-)</p>';
+						$text .= '<p>'.__( '<strong>Updating to Pro is quick and easy</strong>.', 'nextgen-facebook' ).' '.
+							__( 'After your purchase, you\'ll receive an email with all the installation details &mdash; it\'s easy as 1-2-3:',
+								'nextgen-facebook' ).'</p>';
 						$text .= '<ol>';
-						$text .= '<li>'.sprintf( __( '<strong>Install and activate</strong> the %1$s extension from the %2$s page.', 'nextgen-facebook' ), $um_info['short'], $ext_menu_html ).'</li>';
-						$text .= '<li>'.sprintf( __( '<strong>Enter the Authentication ID</strong> you received by email in the %1$s page.', 'nextgen-facebook' ), $ext_menu_html ).'</li>';
-						$text .= '<li>'.sprintf( __( '<strong>Update to %1$s</strong> by installing the Pro update from the %2$s page.', 'nextgen-facebook' ), $info['short_pro'], $plugins_html ).'</li>';
+						$text .= '<li>'.sprintf( __( '<strong>Install and activate</strong> the %1$s extension from the %2$s page.',
+							'nextgen-facebook' ), $um_info['short'], $ext_menu_html ).'</li>';
+						$text .= '<li>'.sprintf( __( '<strong>Enter the Authentication ID</strong> you received by email in the %1$s page.',
+							'nextgen-facebook' ), $ext_menu_html ).'</li>';
+						$text .= '<li>'.sprintf( __( '<strong>Update to %1$s</strong> by installing the Pro update from the %2$s page.',
+							'nextgen-facebook' ), $info['short_pro'], $plugins_html ).'</li>';
 						$text .= '</ol>';
 						break;
 
