@@ -19,7 +19,7 @@
 
 <p><strong>NGFB creates <em>complete</em> and <em>accurate</em> meta tags + Schema markup</strong> &mdash; including hashtags, video seo, e-commerce products, author profile / authorship, co-authors, publisher information, ratings, event details, recipe information, and much more &mdash; all from your <em>existing</em> content.</p>
 
-<p><strong>NGFB provides special optimization features for Pinterest</strong> &mdash; offering customized Pinterest image sizes and preventing conflicts between incompatible Pinterest and Facebook / Open Graph meta tag values.</p>
+<p><strong>NGFB offers special optimization features for Pinterest</strong> &mdash; providing an image for the Pin It button, excluding non-relevant images, and preventing conflicts between incompatible Pinterest and Facebook meta tag values.</p>
 
 <p><strong>NGFB includes advanced <em>quality control</em> features and options</strong> &mdash; checking minimum / maximum image dimensions and aspect ratios, verifying the webpage for duplicate meta tags, showing notices for missing and required images, along with theme header template validation.</p>
 
@@ -60,7 +60,7 @@
 <li><a href="https://dev.twitter.com/cards/types/summary">Summary Card</a></li>
 <li><a href="https://dev.twitter.com/cards/types/player">Player Card</a> is available in the Pro version (requires video discovery modules, provided with the Pro version).</li>
 </ul></li>
-<li>Customizable image dimensions for Facebook / Open Graph, Pinterest, Schema and all Twitter Card types.</li>
+<li>Customizable image dimensions for Facebook / Open Graph, Google / Schema / Pinterest and all Twitter Card types.</li>
 <li>Support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</li>
 <li>Support for featured, attached, gallery shortcode, and/or image HTML tags in content.</li>
 <li>Optional fallback to a default image and video for index and search webpages.</li>

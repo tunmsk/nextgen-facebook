@@ -22,7 +22,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 <p><strong>NGFB creates <em>complete</em> and <em>accurate</em> meta tags + Schema markup</strong> &mdash; including hashtags, video seo, e-commerce products, author profile / authorship, co-authors, publisher information, ratings, event details, recipe information, and much more &mdash; all from your <em>existing</em> content.</p>
 
-<p><strong>NGFB provides special optimization features for Pinterest</strong> &mdash; offering customized Pinterest image sizes and preventing conflicts between incompatible Pinterest and Facebook / Open Graph meta tag values.</p>
+<p><strong>NGFB offers special optimization features for Pinterest</strong> &mdash; providing an image for the Pin It button, excluding non-relevant images, and preventing conflicts between incompatible Pinterest and Facebook meta tag values.</p>
 
 <p><strong>NGFB includes advanced <em>quality control</em> features and options</strong> &mdash; checking minimum / maximum image dimensions and aspect ratios, verifying the webpage for duplicate meta tags, showing notices for missing and required images, along with theme header template validation.</p>
 
@@ -59,7 +59,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 	* [Summary Card with Large Image](https://dev.twitter.com/cards/types/summary-large-image)
 	* [Summary Card](https://dev.twitter.com/cards/types/summary)
 	* [Player Card](https://dev.twitter.com/cards/types/player) is available in the Pro version (requires video discovery modules, provided with the Pro version).
-* Customizable image dimensions for Facebook / Open Graph, Pinterest, Schema and all Twitter Card types.
+* Customizable image dimensions for Facebook / Open Graph, Google / Schema / Pinterest and all Twitter Card types.
 * Support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 * Support for featured, attached, gallery shortcode, and/or image HTML tags in content.
 * Optional fallback to a default image and video for index and search webpages.
@@ -375,7 +375,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.44.0-rc.1 (2017/05/18)**
+**Version 8.44.0 (2017/05/19)**
 
 * *New Features*
 	* Added three new options for Pinterest in the General settings page:
@@ -493,9 +493,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.44.0-rc.1 =
+= 8.44.0 =
 
-(2017/05/18) Added three new options for Pinterest in the General settings page. The Pinterest custom image in the Social Settings has been moved to the Structured Data / Schema Markup / Pinterest custom image.
+(2017/05/19) Added three new options for Pinterest in the General settings page. The Pinterest custom image in the Social Settings has been moved to the Structured Data / Schema Markup / Pinterest custom image.
 
 = 8.43.3 =
 
