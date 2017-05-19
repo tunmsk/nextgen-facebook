@@ -1246,7 +1246,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			echo $this->p->msgs->get( 'column-purchase-pro' );
 			echo '</div>';
 			echo '<div class="column-metabox-buttons">';
-			echo $this->form->get_button( _x( 'Purchase Pro Version', 'plugin action link', 'nextgen-facebook' ),
+			echo $this->form->get_button( _x( 'Purchase Pro Version', 'submit button', 'nextgen-facebook' ),
 				'button-primary', 'column-purchase-pro', $purchase_url, true );
 			echo '</div>';
 			echo '</td></tr></table>';
