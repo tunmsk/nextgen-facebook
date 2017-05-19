@@ -1256,7 +1256,7 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 			} elseif ( strpos( $idx, 'column-' ) === 0 ) {
 				switch ( $idx ) {
 					case 'column-purchase-pro':
-						$text = '<p>'.sprintf( __( '<strong>%s provides</strong>:',
+						$text = '<p>'.sprintf( __( '<strong>%s provides:</strong>',
 							'nextgen-facebook' ), $info['short_pro'] ).'</p>';
 
 						$text .= '<ul>';
