@@ -723,9 +723,11 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$lca = $this->p->cf['lca'];
 			if ( ! self::$pkg[$lca]['aop'] ) {
 
+				/*
 				add_meta_box( $this->pagehook.'_about_free',
 					_x( 'About the Free Version', 'metabox title', 'nextgen-facebook' ),
 						array( &$this, 'show_metabox_about_free' ), $this->pagehook, 'side_top' );
+				*/
 
 				add_meta_box( $this->pagehook.'_purchase_pro',
 					_x( 'Pro Version Available', 'metabox title', 'nextgen-facebook' ),
@@ -1224,6 +1226,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			else return $feature;
 		}
 
+		/*
 		public function show_metabox_about_free() {
 			$lca = $this->p->cf['lca'];
 			echo '<table class="sucom-settings '.$lca.' column-metabox"><tr><td>';
@@ -1235,6 +1238,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			echo '</div>';
 			echo '</td></tr></table>';
 		}
+		*/
 
 		public function show_metabox_purchase_pro() {
 			$lca = $this->p->cf['lca'];
@@ -1242,6 +1246,9 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 			$purchase_url = empty( $info['url']['purchase'] ) ?
 				'' : add_query_arg( 'utm_source', 'column-purchase-pro', $info['url']['purchase'] );
 			echo '<table class="sucom-settings '.$lca.' column-metabox"><tr><td>';
+			echo '<div class="column-metabox-icon">';
+			echo $this->get_ext_img_icon( $lca );
+			echo '</div>';
 			echo '<div class="column-metabox-content has-buttons">';
 			echo $this->p->msgs->get( 'column-purchase-pro' );
 			echo '</div>';
