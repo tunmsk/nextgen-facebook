@@ -1262,12 +1262,15 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 						$text .= '<ul>';
 						$text .= '<li>'.__( 'Custom Post, Term, and User Social Settings.',
 							'nextgen-facebook' ).'</li>';
-						$text .= '<li>'.__( 'Advanced features (image dimension checks, image upscaling, etc) and settings page.',
-							'nextgen-facebook' ).'</li>';
-						$text .= '<li>'.__( 'Integration modules for 3rd party plugins (Yoast SEO, WooCommerce, etc).',
-							'nextgen-facebook' ).'</li>';
-						$text .= '<li>'.__( 'Integration modules for API services (Bitly, Facebook, YouTube, etc).',
-							'nextgen-facebook' ).'</li>';
+						$text .= '<li>'.sprintf( __( 'Advanced settings page and features (%s).',
+							'nextgen-facebook' ), __( 'image dimension check, image upscaling, etc',
+								'nextgen-facebook' ) ).'</li>';
+						$text .= '<li>'.sprintf( __( 'Integration modules for 3rd party plugins (%s).',
+							'nextgen-facebook' ), __( 'WooCommerce, Yoast SEO, etc',
+								'nextgen-facebook' ) ).'</li>';
+						$text .= '<li>'.sprintf( __( 'Integration modules for API services (%s).',
+							'nextgen-facebook' ), __( 'URL shortening, embedded videos, etc',
+								'nextgen-facebook' ) ).'</li>';
 						$text .= '</ul>';
 
 						if ( $this->p->avail['*']['p_dir'] ) {
