@@ -47,6 +47,12 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 		}
 
 		public function get_pinterest_img_html( $content = '' ) {
+
+			// applying the content filter to create the description text
+			if ( ! empty( $GLOBALS['ngfb_doing_the_content'] ) ) {
+				return $content;
+			}
+				
 			static $added_to_mod = array();
 
 			$mod = $this->p->util->get_page_mod( true );	// $use_post = true

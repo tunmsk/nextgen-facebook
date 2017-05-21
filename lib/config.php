@@ -77,7 +77,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'styles' => 'Sharing Styles',
 							'setup' => '<color>Plugin Setup Guide and Other Notes</color>',
 							'licenses' => 'Extension Plugins and Pro Licenses',
-							'dashboard' => 'Plugin Dashboard',
+							'dashboard' => 'Plugin Dashboard and Features Status',
 						),
 						'sitesubmenu' => array(	// lib file descriptions will be translated
 							'siteadvanced' => 'Advanced Settings',

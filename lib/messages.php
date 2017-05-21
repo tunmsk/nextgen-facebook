@@ -1256,21 +1256,16 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 			} elseif ( strpos( $idx, 'column-' ) === 0 ) {
 				switch ( $idx ) {
 					case 'column-purchase-pro':
-						$text = '<p>'.sprintf( __( '<strong>%s provides:</strong>',
+						$text = '<p>'.sprintf( __( '<strong>%s includes:</strong>',
 							'nextgen-facebook' ), $info['short_pro'] ).'</p>';
 
 						$text .= '<ul>';
-						$text .= '<li>'.__( 'Custom Post, Term, and User Social Settings.',
+						$text .= '<li>'.__( 'Custom Social Settings for posts, terms, and users.',
 							'nextgen-facebook' ).'</li>';
-						$text .= '<li>'.sprintf( __( 'Advanced settings page and features (%s).',
-							'nextgen-facebook' ), __( 'image dimension check, image upscaling, etc',
-								'nextgen-facebook' ) ).'</li>';
-						$text .= '<li>'.sprintf( __( 'Integration modules for 3rd party plugins (%s).',
-							'nextgen-facebook' ), __( 'WooCommerce, Yoast SEO, etc',
-								'nextgen-facebook' ) ).'</li>';
-						$text .= '<li>'.sprintf( __( 'Integration modules for API services (%s).',
-							'nextgen-facebook' ), __( 'URL shortening, embedded videos, etc',
-								'nextgen-facebook' ) ).'</li>';
+						$text .= '<li>'.__( 'Integration with 3rd party plugins and service APIs.',
+							'nextgen-facebook' ).'</li>';
+						$text .= '<li>'.__( 'Advanced settings page and features.',
+							'nextgen-facebook' ).'</li>';
 						$text .= '</ul>';
 
 						if ( $this->p->avail['*']['p_dir'] ) {
@@ -1281,26 +1276,6 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 
 						$text .= '<p>'.__( '<strong>Pro licenses never expire</strong> &mdash; there are no yearly fees for support and updates.',
 							'nextgen-facebook' ).' '.__( 'How great is that?', 'nextgen-facebook' ).' :-)</p>';
-						break;
-
-					case 'column-install-pro':
-						$um_info = $this->p->cf['plugin']['ngfbum'];
-						$ext_menu_html = $this->p->util->get_admin_url( 'licenses',
-							_x( 'Extension Plugins', 'lib file description', 'nextgen-facebook' ) );	// use shorter version of menu label
-						$plugins_html = '<a href="'.get_admin_url( null, 'plugins.php' ).'">'.
-							__( 'WordPress Plugins', 'nextgen-facebook' ).'</a>';
-
-						$text .= '<p>'.__( '<strong>Updating to Pro is quick and easy</strong>.', 'nextgen-facebook' ).' '.
-							__( 'After your purchase, you\'ll receive an email with all the installation details &mdash; it\'s easy as 1-2-3:',
-								'nextgen-facebook' ).'</p>';
-						$text .= '<ol>';
-						$text .= '<li>'.sprintf( __( '<strong>Install and activate</strong> the %1$s extension from the %2$s page.',
-							'nextgen-facebook' ), $um_info['short'], $ext_menu_html ).'</li>';
-						$text .= '<li>'.sprintf( __( '<strong>Enter the Authentication ID</strong> you received by email in the %1$s page.',
-							'nextgen-facebook' ), $ext_menu_html ).'</li>';
-						$text .= '<li>'.sprintf( __( '<strong>Update to %1$s</strong> by installing the Pro update from the %2$s page.',
-							'nextgen-facebook' ), $info['short_pro'], $plugins_html ).'</li>';
-						$text .= '</ol>';
 						break;
 
 					case 'column-help-support':

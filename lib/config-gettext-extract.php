@@ -74,7 +74,7 @@ _x( '(option disabled)', 'option value', 'nextgen-facebook' );
 _x( 'Out of Stock', 'option value', 'nextgen-facebook' );
 _x( 'Ow.ly', 'option value', 'nextgen-facebook' );
 _x( 'Pinterest Company Page URL', 'option value', 'nextgen-facebook' );
-_x( 'Plugin Dashboard', 'lib file description', 'nextgen-facebook' );
+_x( 'Plugin Dashboard and Features Status', 'lib file description', 'nextgen-facebook' );
 _x( 'Pre-Order', 'option value', 'nextgen-facebook' );
 _x( 'Product Availability Custom Field', 'option label', 'nextgen-facebook' );
 _x( 'Product Condition Custom Field', 'option label', 'nextgen-facebook' );

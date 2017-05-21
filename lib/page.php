@@ -439,8 +439,7 @@ if ( ! class_exists( 'NgfbPage' ) ) {
 
 						if ( ! empty( $this->p->options['plugin_filter_excerpt'] ) ) {
 
-							$filter_modified = apply_filters( $lca.'_text_filter_begin',
-								false, 'get_the_excerpt' );
+							$filter_modified = apply_filters( $lca.'_text_filter_begin', false, 'get_the_excerpt' );
 
 							if ( $this->p->debug->enabled ) {
 								$this->p->debug->log( 'applying the WordPress get_the_excerpt filters' );
@@ -449,8 +448,7 @@ if ( ! class_exists( 'NgfbPage' ) ) {
 							$desc = apply_filters( 'get_the_excerpt', $desc );
 
 							if ( $filter_modified ) {
-								apply_filters( $lca.'_text_filter_end',
-									false, 'get_the_excerpt' );
+								apply_filters( $lca.'_text_filter_end', false, 'get_the_excerpt' );
 							}
 
 						} elseif ( $this->p->debug->enabled ) {
@@ -655,8 +653,7 @@ if ( ! class_exists( 'NgfbPage' ) ) {
 			}
 
 			if ( $filter_content ) {
-				$filter_modified = apply_filters( $lca.'_text_filter_begin',
-					false, 'the_content' );
+				$filter_modified = apply_filters( $lca.'_text_filter_begin', false, 'the_content' );
 
 				// remove all of our shortcodes
 				if ( isset( $this->p->cf['*']['lib']['shortcode'] ) &&
@@ -673,7 +670,7 @@ if ( ! class_exists( 'NgfbPage' ) ) {
 				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'saving the original $post object' );
 				}
-				$post_saved = $post;	// save the original GLOBAL post object
+				$post_saved = $post;	// save the original global post object
 
 				// WordPress oEmbed needs a $post ID, so make sure we have one
 				// see shortcode() in WP_Embed class (wp-includes/class-wp-embed.php)
@@ -689,11 +686,16 @@ if ( ! class_exists( 'NgfbPage' ) ) {
 					$this->p->debug->log( 'applying wordpress the_content filters' );
 				}
 
+				$GLOBALS['ngfb_doing_the_content'] = true;
+
 				$content_text = apply_filters( 'the_content', $content_text );
+
+				unset( $GLOBALS['ngfb_doing_the_content'] );
 
 				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'restoring the original post object' );
 				}
+
 				$post = $post_saved;	// restore the original GLOBAL post object
 
 				// cleanup for NGG pre-v2 album shortcode
@@ -701,8 +703,7 @@ if ( ! class_exists( 'NgfbPage' ) ) {
 				unset ( $GLOBALS['nggShowGallery'] );
 
 				if ( $filter_modified ) {
-					apply_filters( $lca.'_text_filter_end',
-						false, 'the_content' );
+					apply_filters( $lca.'_text_filter_end', false, 'the_content' );
 				}
 
 				// add our shortcodes back
