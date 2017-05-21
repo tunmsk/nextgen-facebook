@@ -347,7 +347,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'add_link_rel_author' => 1,
 					'add_link_rel_canonical' => 0,
 					'add_link_rel_publisher' => 1,
-					'add_link_rel_shortlink' => 1,
+					'add_link_rel_shortlink' => 0,
 					// facebook
 					'add_meta_property_fb:admins' => 1,
 					'add_meta_property_fb:app_id' => 1,
