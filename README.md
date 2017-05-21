@@ -263,7 +263,7 @@
 
 <h4>Proven Performance</h4>
 
-<p>NextGEN Facebook (NGFB) is <em>fast and coded for performance</em>, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NGFB loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features. NGFB requires PHP v5.2.0 or better, and is fully compatible with PHP v7.</p>
+<p>NextGEN Facebook (NGFB) is <em>fast and coded for performance</em>, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NGFB loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features. NGFB requires PHP v5.3 or better, and is fully compatible with PHP v7.</p>
 
 <h4>Professional Support</h4>
 

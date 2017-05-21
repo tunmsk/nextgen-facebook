@@ -237,7 +237,7 @@ NextGEN Facebook (NGFB) Pro supports [bbPress](https://wordpress.org/plugins/bbp
 
 = Proven Performance =
 
-NextGEN Facebook (NGFB) is *fast and coded for performance*, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NGFB loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features. NGFB requires PHP v5.2.0 or better, and is fully compatible with PHP v7.
+NextGEN Facebook (NGFB) is *fast and coded for performance*, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NGFB loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features. NGFB requires PHP v5.3 or better, and is fully compatible with PHP v7.
 
 = Professional Support =
 
