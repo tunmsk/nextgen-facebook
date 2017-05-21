@@ -686,11 +686,16 @@ if ( ! class_exists( 'NgfbPage' ) ) {
 					$this->p->debug->log( 'applying wordpress the_content filters' );
 				}
 
-				$GLOBALS['ngfb_doing_the_content'] = true;
+				/*
+				 * Signal to other methods that the content filter is being applied to 
+				 * create a description text. This avoids the addition of unnecessary 
+				 * HTML which will be removed anyway.
+				 */
+				$GLOBALS[$lca.'_doing_the_content'] = true;
 
 				$content_text = apply_filters( 'the_content', $content_text );
 
-				unset( $GLOBALS['ngfb_doing_the_content'] );
+				unset( $GLOBALS[$lca.'_doing_the_content'] );
 
 				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'restoring the original post object' );

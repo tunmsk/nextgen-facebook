@@ -48,17 +48,19 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 
 		public function get_pinterest_img_html( $content = '' ) {
 
-			// applying the content filter to create the description text
-			if ( ! empty( $GLOBALS['ngfb_doing_the_content'] ) ) {
+			$lca = $this->p->cf['lca'];
+
+			// check if the content filter is being applied to create a description text
+			if ( ! empty( $GLOBALS[$lca.'_doing_the_content'] ) ) {
 				return $content;
 			}
 				
-			static $added_to_mod = array();
+			static $added_to_mod = array();			// prevent recursion
 
 			$mod = $this->p->util->get_page_mod( true );	// $use_post = true
 			$mod_salt = SucomUtil::get_mod_salt( $mod );
 
-			if ( ! empty( $added_to_mod[$mod_salt] ) ) {	// prevent recursion when getting images
+			if ( ! empty( $added_to_mod[$mod_salt] ) ) {	// check for recursion
 				return $content;
 			} else {
 				$added_to_mod[$mod_salt] = true;
