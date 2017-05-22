@@ -111,7 +111,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 = Quick List of Features (Continued) =
 
-**NextGEN Facebook Pro / Power-User Features**
+**NextGEN Facebook Pro / Additional Features**
 
 * Includes a Social Settings metabox for post, page, custom post type, user profile, and term / taxonomy (category and tag) editing pages &mdash; the Social Settings metbox allows you to customize the article topic, the shared title, the Open Graph / Facebook / Rich Pin, Google Search, and Twitter Card descriptions, along with the shared image and/or video.
 * Fully renders content (including shortcodes) for accurate description texts.
