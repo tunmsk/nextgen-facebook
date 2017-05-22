@@ -1,5 +1,5 @@
 === NextGEN Facebook - Complete Meta Tags for Facebook, Google, Pinterest, Twitter & More ===
-Plugin Name: NextGEN Facebook (NGFB)
+Plugin Name: NextGEN Facebook
 Plugin Slug: nextgen-facebook
 Text Domain: nextgen-facebook
 Domain Path: /languages
@@ -18,20 +18,20 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 <img class="readme-icon" src="https://surniaulula.github.io/nextgen-facebook/assets/icon-256x256.png">
 
-<p><strong>NGFB uses your <em>existing</em> content to create meta tags + Schema markup</strong> &mdash; there's no need to manually enter / configure any additional settings or values, <em>but if you want to</em>, you can customize just about anything and everything. ;-)</p>
+<p><strong>NextGEN Facebook uses your <em>existing</em> content to create meta tags + Schema markup</strong> &mdash; there's no need to manually enter / configure any additional settings or values, <em>but if you want to</em>, you can customize just about anything and everything. ;-)</p>
 
-<p><strong>NGFB creates <em>complete</em> and <em>accurate</em> meta tags + Schema markup</strong> &mdash; including hashtags, video seo, e-commerce products, author profile / authorship, co-authors, publisher information, ratings, event details, recipe information, and much more &mdash; all from your <em>existing</em> content.</p>
+<p><strong>NextGEN Facebook creates <em>complete</em> and <em>accurate</em> meta tags + Schema markup</strong> &mdash; including hashtags, video seo, e-commerce products, author profile / authorship, co-authors, publisher information, ratings, event details, recipe information, and much more &mdash; all from your <em>existing</em> content.</p>
 
-<p><strong>NGFB offers special optimization features for Pinterest</strong> &mdash; providing an image for the Pin It button, excluding non-relevant images, and preventing conflicts between incompatible Pinterest and Facebook meta tag values.</p>
+<p><strong>NextGEN Facebook offers special optimization features for Pinterest</strong> &mdash; providing an image for the Pin It button, excluding non-relevant images, and preventing conflicts between incompatible Pinterest and Facebook meta tag values.</p>
 
-<p><strong>NGFB includes advanced <em>quality control</em> features and options</strong> &mdash; checking minimum / maximum image dimensions and aspect ratios, verifying the webpage for duplicate meta tags, showing notices for missing and required images, along with theme header template validation.</p>
+<p><strong>NextGEN Facebook includes advanced <em>quality control</em> features and options</strong> &mdash; checking minimum / maximum image dimensions and aspect ratios, verifying the webpage for duplicate meta tags, showing notices for missing and required images, along with theme header template validation.</p>
 
-<p><strong>NGFB can enhance and integrate with your favorite SEO plugin!</strong> &mdash; NGFB specializes in providing all the meta tags + Schema markup social sites and search engines need, and you can still continue to use your favorite SEO content / keyword analysis tools!</p>
+<p><strong>NextGEN Facebook can enhance and integrate with your favorite SEO plugin!</strong> &mdash; NextGEN Facebook specializes in providing all the meta tags + Schema markup social sites and search engines need, and you can still continue to use your favorite SEO content / keyword analysis tools!</p>
 
 <blockquote>
 <p><strong>Don't need the included social share buttons?</strong></p>
 
-<p>The <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin is a fork / child of NextGEN Facebook (NGFB) &mdash; they have the same author, the same solid core features and code-base, but WPSSO is distributed without the social share buttons and their related features. Additional Free extension plugins are also available for WPSSO, including two different types of sharing button extensions:</p>
+<p>The <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin is a fork / child of NextGEN Facebook &mdash; they have the same author, the same solid core features and code-base, but WPSSO is distributed without the social share buttons and their related features. Additional Free extension plugins are also available for WPSSO, including two different types of sharing button extensions:</p>
 
 <ul>
 <li><a href="https://wordpress.org/plugins/wpsso-am/">WPSSO Mobile App Meta</a></li>
@@ -49,7 +49,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 = Quick List of Features =
 
-**NextGEN Facebook (NGFB) Free / Core Features**
+**NextGEN Facebook Free / Core Features**
 
 * Adds Open Graph meta tags for Facebook, Google+, Pinterest, LinkedIn, etc.
 * Adds Pinterest Rich Pin meta tags + [Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) Schema markup for Google.
@@ -111,7 +111,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 = Quick List of Features (Continued) =
 
-**NextGEN Facebook (NGFB) Pro / Power-User Features**
+**NextGEN Facebook Pro / Power-User Features**
 
 * Includes a Social Settings metabox for post, page, custom post type, user profile, and term / taxonomy (category and tag) editing pages &mdash; the Social Settings metbox allows you to customize the article topic, the shared title, the Open Graph / Facebook / Rich Pin, Google Search, and Twitter Card descriptions, along with the shared image and/or video.
 * Fully renders content (including shortcodes) for accurate description texts.
@@ -128,7 +128,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 * Selection of preset button options by location (content, excerpt, shortcode, widget, etc.).
 * Ability to include / exclude social share buttons by post type.
 * Integrates with 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version, and are automatically loaded if/when the supported plugins and/or services are required.
-	* **NGFB Pro Integrated 3rd Party Plugins**
+	* **NextGEN Facebook Pro Integrated 3rd Party Plugins**
 		* All in One SEO Pack
 		* bbPress
 		* BuddyPress (including Group Forum Topics)
@@ -147,7 +147,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 		* WP eCommerce
 		* Yoast SEO (aka WordPress SEO)
 		* Yotpo Social Reviews for WooCommerce
-	* **NGFB Pro Integrated Service APIs**
+	* **NextGEN Facebook Pro Integrated Service APIs**
 		* Bitly
 		* Facebook Embedded Videos
 		* Google URL Shortener
@@ -168,7 +168,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 = Social Sharing Buttons =
 
-NextGEN Facebook (NGFB) comes with several social share buttons, that you can optionally include on post / page editing pages, above / below your content or excerpt, [bbPress](https://wordpress.org/plugins/bbpress/) single pages, [BuddyPress](https://wordpress.org/plugins/buddypress/) activity entries, CSS sidebar, widget, shortcode, and even call a function from your theme template(s). Each of the following social share buttons can be enabled, configured, and styled individually:
+NextGEN Facebook comes with several social share buttons, that you can optionally include on post / page editing pages, above / below your content or excerpt, [bbPress](https://wordpress.org/plugins/bbpress/) single pages, [BuddyPress](https://wordpress.org/plugins/buddypress/) activity entries, CSS sidebar, widget, shortcode, and even call a function from your theme template(s). Each of the following social share buttons can be enabled, configured, and styled individually:
 
 * **Email**
 * **Buffer**
@@ -183,17 +183,17 @@ NextGEN Facebook (NGFB) comes with several social share buttons, that you can op
 * **Twitter**
 * **WhatsApp** (for Mobile Devices)
 
-The Facebook, Google+ and Twitter social share buttons support *multiple languages*. A default language can be chosen in the NGFB settings, and the [Pro version](https://surniaulula.com/extend/plugins/nextgen-facebook/) switches the social share button language with the webpage language / WordPress locale. NGFB can also include hashtags from WordPress and NextGEN Gallery tag names in the Facebook / Open Graph / Pinterest Rich Pin descriptions, Tweet text, and other social captions.
+The Facebook, Google+ and Twitter social share buttons support *multiple languages*. A default language can be chosen in the NextGEN Facebook settings, and the [Pro version](https://surniaulula.com/extend/plugins/nextgen-facebook/) switches the social share button language with the webpage language / WordPress locale. NextGEN Facebook can also include hashtags from WordPress and NextGEN Gallery tag names in the Facebook / Open Graph / Pinterest Rich Pin descriptions, Tweet text, and other social captions.
 
 <img class="readme-example landscape" src="https://surniaulula.github.io/nextgen-facebook/images/social/google-social-profiles-search-results.png">
 
 = Social Profiles for Google Search =
 
-NextGEN Facebook (NGFB) includes support for <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite site name</a> in Schema JSON-LD format for Google Search and their <em>Knowledge Graph</em>.
+NextGEN Facebook includes support for <a href="https://developers.google.com/structured-data/customize/social-profiles">author (Person) and publisher (Organization) social profiles</a>, <a href="https://developers.google.com/structured-data/customize/logos">publisher (Organization) logo</a>, and <a href="https://developers.google.com/structured-data/site-name">WebSite site name</a> in Schema JSON-LD format for Google Search and their <em>Knowledge Graph</em>.
 
 = User Profile Social Contacts =
 
-NextGEN Facebook (NGFB) Pro allows you to customize the field names, label, and add / remove the following contacts on user profile pages and [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) guest author profiles:
+NextGEN Facebook Pro allows you to customize the field names, label, and add / remove the following contacts on user profile pages and [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) guest author profiles:
 
 * AIM
 * Facebook URL
@@ -213,35 +213,35 @@ NextGEN Facebook (NGFB) Pro allows you to customize the field names, label, and 
 
 = Complete Social Meta Tags =
 
-NextGEN Facebook (NGFB) adds Facebook / Open Graph, Pinterest Rich Pins, Twitter Cards, and Search Engine Optimization (SEO) meta tags to the head section of webpages. These meta tags are used by Google Search and all social websites to describe and display your content correctly (title, description, hashtags, images, videos, e-commerce product details, author profile / authorship, publisher, etc.). NGFB uses *existing* content to generate meta tags + Schema markup &mdash; there's no need to manually enter / configure any additional settings or values.
+NextGEN Facebook adds Facebook / Open Graph, Pinterest Rich Pins, Twitter Cards, and Search Engine Optimization (SEO) meta tags to the head section of webpages. These meta tags are used by Google Search and all social websites to describe and display your content correctly (title, description, hashtags, images, videos, e-commerce product details, author profile / authorship, publisher, etc.). NextGEN Facebook uses *existing* content to generate meta tags + Schema markup &mdash; there's no need to manually enter / configure any additional settings or values.
 
 = 3rd Party Integration (Pro version) =
 
 **Images and Videos**
 
-NextGEN Facebook (NGFB) detects and uses all images - associated or included in your content - including the WordPress image gallery and [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/) shortcodes. WordPress Media Library images (and NextGEN Gallery in the Pro version) are resized according to their intended consumer (Facebook, Twitter, Pinterest, etc). The Pro version detects embedded videos from Facebook, Slideshare, Vimeo, Wistia, and YouTube (including preview image, video title, and video description). NGFB (Pro version) also includes support for [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/) albums, galleries and images (shortcodes, image tags, album / gallery preview images, etc.).
+NextGEN Facebook detects and uses all images - associated or included in your content - including the WordPress image gallery and [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/) shortcodes. WordPress Media Library images (and NextGEN Gallery in the Pro version) are resized according to their intended consumer (Facebook, Twitter, Pinterest, etc). The Pro version detects embedded videos from Facebook, Slideshare, Vimeo, Wistia, and YouTube (including preview image, video title, and video description). NextGEN Facebook (Pro version) also includes support for [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/) albums, galleries and images (shortcodes, image tags, album / gallery preview images, etc.).
 
 **Enhanced SEO**
 
-NextGEN Facebook (NGFB) Pro integrates with [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/), [HeadSpace2 SEO](https://wordpress.org/plugins/headspace2/), [The SEO Framework](https://wordpress.org/plugins/autodescription/), and [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) (aka WordPress SEO) &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, Schema Structured Data, and Twitter Card meta tags.
+NextGEN Facebook Pro integrates with [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/), [HeadSpace2 SEO](https://wordpress.org/plugins/headspace2/), [The SEO Framework](https://wordpress.org/plugins/autodescription/), and [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) (aka WordPress SEO) &mdash; making sure your custom SEO settings are reflected in the Open Graph, Rich Pin, Schema Structured Data, and Twitter Card meta tags.
 
 <img class="readme-example" src="https://surniaulula.github.io/nextgen-facebook/images/social/pinterest-pin-ngfb-zoomed.png">
 
 **eCommerce Products**
 
-NextGEN Facebook (NGFB) Pro also supports [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/), [MarketPress - WordPress eCommerce](https://wordpress.org/plugins/wordpress-ecommerce/), [WooCommerce](https://wordpress.org/plugins/woocommerce/), and [WP e-Commerce](https://wordpress.org/plugins/wp-e-commerce/) product pages, creating appropriate meta tags for [Facebook Products](https://developers.facebook.com/docs/payments/product/, and [Pinterest Rich Pins](http://developers.pinterest.com/rich_pins/), including variations and additional / custom images.
+NextGEN Facebook Pro also supports [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/), [MarketPress - WordPress eCommerce](https://wordpress.org/plugins/wordpress-ecommerce/), [WooCommerce](https://wordpress.org/plugins/woocommerce/), and [WP e-Commerce](https://wordpress.org/plugins/wp-e-commerce/) product pages, creating appropriate meta tags for [Facebook Products](https://developers.facebook.com/docs/payments/product/, and [Pinterest Rich Pins](http://developers.pinterest.com/rich_pins/), including variations and additional / custom images.
 
 **Forums and Social**
 
-NextGEN Facebook (NGFB) Pro supports [bbPress](https://wordpress.org/plugins/bbpress/), [BuddyPress](https://wordpress.org/plugins/buddypress/) (see the [BuddyPress Integration Notes](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/buddypress-integration/)), and [rtMedia for WordPress, BuddyPress and bbPress](https://wordpress.org/plugins/buddypress-media/), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, author information, etc. Social share buttons can also be added to [bbPress](https://wordpress.org/plugins/bbpress/) single template pages and [BuddyPress](https://wordpress.org/plugins/buddypress/) activities.
+NextGEN Facebook Pro supports [bbPress](https://wordpress.org/plugins/bbpress/), [BuddyPress](https://wordpress.org/plugins/buddypress/) (see the [BuddyPress Integration Notes](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/buddypress-integration/)), and [rtMedia for WordPress, BuddyPress and bbPress](https://wordpress.org/plugins/buddypress-media/), making sure your meta tags reflect the page content, including appropriate titles, descriptions, images, author information, etc. Social share buttons can also be added to [bbPress](https://wordpress.org/plugins/bbpress/) single template pages and [BuddyPress](https://wordpress.org/plugins/buddypress/) activities.
 
 = Proven Performance =
 
-NextGEN Facebook (NGFB) is *fast and coded for performance*, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NGFB loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features. NGFB requires PHP v5.3 or better, and is fully compatible with PHP v7.
+NextGEN Facebook is *fast and coded for performance*, making full use of all available caching techniques (persistent / non-persistent object and disk caching). NextGEN Facebook loads only the library files and object classes it needs, keeping it small, fast, and yet still able to support a wide range of 3rd party integration features. NextGEN Facebook requires PHP v5.3 or better, and is fully compatible with PHP v7.
 
 = Professional Support =
 
-NextGEN Facebook (NGFB) support and development is on-going. You can review the [FAQ](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/) and [Notes](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/) pages for additional setup information. If you have any suggestions or comments, post them to the [WordPress support forum](https://wordpress.org/support/plugin/nextgen-facebook) or the [Pro version support website](http://nextgen-facebook.support.surniaulula.com/).
+NextGEN Facebook support and development is on-going. You can review the [FAQ](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/) and [Notes](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/) pages for additional setup information. If you have any suggestions or comments, post them to the [WordPress support forum](https://wordpress.org/support/plugin/nextgen-facebook) or the [Pro version support website](http://nextgen-facebook.support.surniaulula.com/).
 
 Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=author), [Facebook](https://www.facebook.com/SurniaUlulaCom), [Twitter](https://twitter.com/surniaululacom), and [YouTube](http://www.youtube.com/user/SurniaUlulaCom).
 
@@ -259,7 +259,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Plugin Setup =
 
-* [A Setup Guide for NGFB](https://surniaulula.com/docs/plugins/nextgen-facebook/installation/a-setup-guide/)
+* [A Setup Guide for NextGEN Facebook](https://surniaulula.com/docs/plugins/nextgen-facebook/installation/a-setup-guide/)
 
 == Frequently Asked Questions ==
 
@@ -276,9 +276,9 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 * [How can I share a single NextGEN Gallery image?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/how-can-i-share-a-single-nextgen-gallery-image/)
 * [How do I attach an image without showing it on the webpage?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/how-do-i-attach-an-image-without-showing-it-on-the-webpage/)
 * [How do I fix my theme's front page pagination?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/how-do-i-fix-my-themes-front-page-pagination/)
-* [How do I install the NGFB Pro version?](https://wpsso.com/docs/plugins/wpsso/faqs/how-do-i-install-the-ngfb-pro-version/)
+* [How do I install the NextGEN Facebook Pro version?](https://wpsso.com/docs/plugins/wpsso/faqs/how-do-i-install-the-ngfb-pro-version/)
 * [How do I remove duplicate meta tags?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/how-do-i-remove-duplicate-meta-tags/)
-* [How does NGFB find / detect / select images?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/how-does-ngfb-find-detect-select-images/)
+* [How does NextGEN Facebook find / detect / select images?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/how-does-ngfb-find-detect-select-images/)
 * [Social Sharing Buttons](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/social-sharing-buttons/)
 	* [Can I share a single image on a webpage?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/social-sharing-buttons/can-i-share-a-single-image-on-a-webpage/)
 	* [Can I use other social sharing buttons?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/social-sharing-buttons/can-i-use-other-social-sharing-buttons/)
@@ -290,7 +290,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 * [W3C says "there is no attribute 'property'"](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/w3c-says-there-is-no-attribute-property/)
 * [What about Google Search and Google Plus?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/what-about-google-search-and-google-plus/)
 * [What features of NextGEN Gallery are supported?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/what-features-of-nextgen-gallery-are-supported/)
-* [What is the difference between NGFB and WPSSO?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/what-is-the-difference-between-ngfb-and-wpsso/)
+* [What is the difference between NextGEN Facebook and WPSSO?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/what-is-the-difference-between-ngfb-and-wpsso/)
 * [What is the difference between the Free and Pro versions?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/what-is-the-difference-between-the-free-and-pro-versions/)
 * [Why aren't Pins from my website posting Rich?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/why-arent-pins-from-my-website-posting-rich/)
 * [Why does Facebook play videos instead of linking them?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/why-does-facebook-play-videos-instead-of-linking-them/)
@@ -305,7 +305,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 
 = Additional Documentation =
 
-* [About NGFB Pro Integration Modules](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/)
+* [About NextGEN Facebook Pro Integration Modules](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/)
 	* [Author Gravatar](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/author-gravatar/)
 	* [Easy Digital Downloads](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/easy-digital-downloads/)
 	* [Facebook, Slideshare, Vimeo, Wistia, YouTube Video APIs](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/modules/facebook-slideshare-vimeo-wistia-youtube-video-apis/)
@@ -336,20 +336,20 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 	* [The $mod Variable](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/developer/the-mod-variable/)
 * [Inline Variables](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/inline-variables/)
 * [Multisite / Network Support](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/multisite-network-support/)
-* [NGFB Shortcode for Sharing Buttons](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/ngfb-shortcode/)
+* [NextGEN Facebook Shortcode for Sharing Buttons](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/ngfb-shortcode/)
 * [Styling Social Buttons](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/styling-social-buttons/)
 * [Working with Image Attachments](https://surniaulula.com/docs/plugins/nextgen-facebook/notes/working-with-image-attachments/)
 
 == Screenshots ==
 
-01. NGFB can check the front-end webpage for duplicate meta tags, and includes a handy social preview feature.
-02. NGFB also includes a detailed list of the generated meta tags, for the more advanced or curious users.
-03. NGFB adds optional Schema type and social preview columns to the post, page, and custom post type lists (can be hidden/shown globally or per user).
-04. NGFB provides an Essential settings page for a quick and easy setup, along with more detailed and advanced settings pages.
-05. NGFB includes Author and Publisher social profile markup in your home page for Google Search and their Knowledge Graph.
-06. NGFB detects embedded videos in your content and creates video meta tags for Twitter, Facebook, and Google (Pro version required).
-07. NGFB integrates with several e-Commerce plugins to provide product details for Pinterest, Google, and others (Pro version required).
-08. NGFB offers social share buttons for the content, excerpt, in a widget, as a shortcode, floating sidebar, and/or PHP function.
+01. NextGEN Facebook can check the front-end webpage for duplicate meta tags, and includes a handy social preview feature.
+02. NextGEN Facebook also includes a detailed list of the generated meta tags, for the more advanced or curious users.
+03. NextGEN Facebook adds optional Schema type and social preview columns to the post, page, and custom post type lists (can be hidden/shown globally or per user).
+04. NextGEN Facebook provides an Essential settings page for a quick and easy setup, along with more detailed and advanced settings pages.
+05. NextGEN Facebook includes Author and Publisher social profile markup in your home page for Google Search and their Knowledge Graph.
+06. NextGEN Facebook detects embedded videos in your content and creates video meta tags for Twitter, Facebook, and Google (Pro version required).
+07. NextGEN Facebook integrates with several e-Commerce plugins to provide product details for Pinterest, Google, and others (Pro version required).
+08. NextGEN Facebook offers social share buttons for the content, excerpt, in a widget, as a shortcode, floating sidebar, and/or PHP function.
 
 == Changelog ==
 
