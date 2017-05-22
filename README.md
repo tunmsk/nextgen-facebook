@@ -46,7 +46,7 @@
 
 <h4>Quick List of Features</h4>
 
-<p><strong>NextGEN Facebook Free / Core Features</strong></p>
+<p><strong>NextGEN Facebook Free / Standard Features</strong></p>
 
 <ul>
 <li>Adds Open Graph meta tags for Facebook, Google+, Pinterest, LinkedIn, etc.</li>

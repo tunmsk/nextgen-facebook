@@ -49,7 +49,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 
 = Quick List of Features =
 
-**NextGEN Facebook Free / Core Features**
+**NextGEN Facebook Free / Standard Features**
 
 * Adds Open Graph meta tags for Facebook, Google+, Pinterest, LinkedIn, etc.
 * Adds Pinterest Rich Pin meta tags + [Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) Schema markup for Google.
@@ -359,7 +359,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 <p>See <a href="https://en.wikipedia.org/wiki/Release_early,_release_often">release early, release often (RERO) software development philosophy</a> on Wikipedia for more information on the benefits of smaller / more frequent releases.</p>
 </blockquote>
 
-= Free / Basic Version Repository =
+= Free / Standard Version Repository =
 
 * [GitHub](https://surniaulula.github.io/nextgen-facebook/)
 * [WordPress.org](https://wordpress.org/plugins/nextgen-facebook/developers/)
