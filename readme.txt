@@ -384,6 +384,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Add "nopin" to Media Lib Images
 * *Improvements*
 	* The Pinterest custom image in the Social Settings has been moved to the Structured Data / Schema Markup / Pinterest custom image.
+	* Added a warning if retrieving the HTML document for the duplicate meta tag check feature takes longer than 3 seconds.
 * *Bugfixes*
 	* None
 * *Developer Notes*
