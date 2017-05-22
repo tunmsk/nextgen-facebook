@@ -25,7 +25,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'version' => '8.44.0',		// plugin version
 					'opt_version' => '528',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
-					'name' => 'NextGEN Facebook (NGFB)',
+					'name' => 'NextGEN Facebook',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
 					'slug' => 'nextgen-facebook',
 					'base' => 'nextgen-facebook/nextgen-facebook.php',
@@ -192,8 +192,8 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 				),
 				'ngfbum' => array(
 					'short' => 'NGFB UM',
-					'name' => 'NextGEN Facebook Update Manager (NGFB UM)',
-					'desc' => 'NGFB extension to provide updates for the NextGEN Facebook (NGFB) Pro plugin and its Pro extensions.',
+					'name' => 'NextGEN Facebook Update Manager',
+					'desc' => 'NextGEN Facebook extension to provide updates for the NextGEN Facebook Pro plugin and its Pro extensions.',
 					'slug' => 'nextgen-facebook-um',
 					'base' => 'nextgen-facebook-um/nextgen-facebook-um.php',
 					'update_auth' => '',

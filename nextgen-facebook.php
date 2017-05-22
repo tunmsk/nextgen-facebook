@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: NextGEN Facebook (NGFB)
+ * Plugin Name: NextGEN Facebook
  * Plugin Slug: nextgen-facebook
  * Text Domain: nextgen-facebook
  * Domain Path: /languages
