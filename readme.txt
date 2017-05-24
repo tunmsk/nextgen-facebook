@@ -128,7 +128,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 * Selection of preset button options by location (content, excerpt, shortcode, widget, etc.).
 * Ability to include / exclude social share buttons by post type.
 * Integrates with 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version, and are automatically loaded if/when the supported plugins and/or services are required.
-	* **NextGEN Facebook Pro Integrated 3rd Party Plugins**
+	* **Integration with 3rd Party Plugins**
 		* All in One SEO Pack
 		* bbPress
 		* BuddyPress (including Group Forum Topics)
@@ -147,7 +147,7 @@ Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Tw
 		* WP eCommerce
 		* Yoast SEO (aka WordPress SEO)
 		* Yotpo Social Reviews for WooCommerce
-	* **NextGEN Facebook Pro Integrated Service APIs**
+	* **Integration with Service APIs**
 		* Bitly
 		* Facebook Embedded Videos
 		* Google URL Shortener
