@@ -139,7 +139,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					_x( 'Pro', 'package type', 'nextgen-facebook' ) :
 					_x( 'Free', 'package type', 'nextgen-facebook' );
 				self::$pkg[$ext]['short'] = $info['short'].' '.self::$pkg[$ext]['type'];
-				self::$pkg[$ext]['name'] = $info['name'].' '.self::$pkg[$ext]['type'];
+				self::$pkg[$ext]['name'] = SucomUtil::get_pkg_name( $info['name'], self::$pkg[$ext]['type'] );
 			}
 
 			foreach ( $menu_libs as $menu_lib ) {
