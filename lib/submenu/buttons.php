@@ -109,7 +109,7 @@ if ( ! class_exists( 'NgfbSubmenuButtons' ) && class_exists( 'NgfbAdmin' ) ) {
 				'include' => _x( 'Include Buttons', 'metabox tab', 'nextgen-facebook' ),
 				'position' => _x( 'Buttons Position', 'metabox tab', 'nextgen-facebook' ),
 				'preset' => _x( 'Buttons Presets', 'metabox tab', 'nextgen-facebook' ),
-				'advanced' => _x( 'Advanced', 'metabox tab', 'nextgen-facebook' ),
+				'advanced' => _x( 'Advanced Settings', 'metabox tab', 'nextgen-facebook' ),
 			) );
 			$table_rows = array();
 			foreach ( $tabs as $key => $title ) {

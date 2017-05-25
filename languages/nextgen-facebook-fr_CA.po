@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NextGEN Facebook 8.44.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2017-05-24 22:36-0400\n"
-"PO-Revision-Date: 2017-05-24 22:45-0400\n"
+"POT-Creation-Date: 2017-05-25 10:13-0400\n"
+"PO-Revision-Date: 2017-05-25 10:13-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -1229,10 +1229,12 @@ msgstr "Expiration cache balisage d'entête"
 #: lib/gpl/admin/advanced.php:263 lib/gpl/admin/advanced.php:270
 #: lib/gpl/admin/advanced.php:277 lib/gpl/admin/advanced.php:284
 #: lib/gpl/admin/sharing.php:49 lib/gpl/admin/sharing.php:55
+#: lib/gpl/admin/sharing.php:116 lib/gpl/admin/sharing.php:121
 #: lib/pro/admin/advanced.php:244 lib/pro/admin/advanced.php:250
 #: lib/pro/admin/advanced.php:257 lib/pro/admin/advanced.php:264
 #: lib/pro/admin/advanced.php:271 lib/pro/admin/advanced.php:278
 #: lib/pro/admin/sharing.php:58 lib/pro/admin/sharing.php:64
+#: lib/pro/admin/sharing.php:120 lib/pro/admin/sharing.php:125
 msgctxt "option comment"
 msgid "seconds (0 to disable)"
 msgstr "secondes (0 pour désactiver)"
@@ -1502,8 +1504,8 @@ msgid "Schema Description"
 msgstr "Description Schéma"
 
 # Ignore the post type to avoid gender issues in the French translation.
-#: lib/gpl/admin/meta.php:95 lib/gpl/admin/sharing.php:124
-#: lib/pro/admin/meta.php:116 lib/pro/admin/sharing.php:128
+#: lib/gpl/admin/meta.php:95 lib/gpl/admin/sharing.php:134
+#: lib/pro/admin/meta.php:116 lib/pro/admin/sharing.php:138
 msgid "Save a draft version or publish the %s to display these options."
 msgstr "Enregistrer un brouillon ou publier pour activer ces options."
 
@@ -1613,12 +1615,14 @@ msgstr "et devise"
 msgid "Save a draft version or publish the %s to update this value."
 msgstr "Enregistrer un brouillon ou publiez pour mettre à jour cette valeur."
 
-#: lib/gpl/admin/sharing.php:46 lib/pro/admin/sharing.php:55
+#: lib/gpl/admin/sharing.php:46 lib/gpl/admin/sharing.php:113
+#: lib/pro/admin/sharing.php:55 lib/pro/admin/sharing.php:117
 msgctxt "option label"
 msgid "Sharing Buttons Cache Expiry"
 msgstr "Expiration cache boutons de partage"
 
-#: lib/gpl/admin/sharing.php:52 lib/pro/admin/sharing.php:61
+#: lib/gpl/admin/sharing.php:52 lib/gpl/admin/sharing.php:118
+#: lib/pro/admin/sharing.php:61 lib/pro/admin/sharing.php:122
 msgctxt "option label"
 msgid "Social File Cache Expiry"
 msgstr "Expiration cache des fichiers social"
@@ -1638,50 +1642,50 @@ msgctxt "option label"
 msgid "Force Protocol for Shared URLs"
 msgstr "Forcer protocole pour URLs partagées"
 
-#: lib/gpl/admin/sharing.php:144 lib/pro/admin/sharing.php:144
+#: lib/gpl/admin/sharing.php:154 lib/pro/admin/sharing.php:154
 msgctxt "option label"
 msgid "Email Subject"
 msgstr "Sujet du couriel"
 
-#: lib/gpl/admin/sharing.php:149 lib/pro/admin/sharing.php:150
+#: lib/gpl/admin/sharing.php:159 lib/pro/admin/sharing.php:160
 msgctxt "option label"
 msgid "Email Message"
 msgstr "Message du courriel"
 
-#: lib/gpl/admin/sharing.php:162 lib/pro/admin/sharing.php:164
+#: lib/gpl/admin/sharing.php:172 lib/pro/admin/sharing.php:174
 msgctxt "option label"
 msgid "Tweet Text"
 msgstr "Texte du Tweet"
 
-#: lib/gpl/admin/sharing.php:187 lib/pro/admin/sharing.php:190
+#: lib/gpl/admin/sharing.php:197 lib/pro/admin/sharing.php:200
 msgctxt "option label"
 msgid "Pinterest Caption Text"
 msgstr "Texte légende Pinterest"
 
-#: lib/gpl/admin/sharing.php:214 lib/pro/admin/sharing.php:218
+#: lib/gpl/admin/sharing.php:224 lib/pro/admin/sharing.php:228
 msgctxt "option label"
 msgid "Tumblr Image Caption"
 msgstr "Légende d'image Tumblr"
 
-#: lib/gpl/admin/sharing.php:217 lib/pro/admin/sharing.php:222
+#: lib/gpl/admin/sharing.php:227 lib/pro/admin/sharing.php:232
 msgid "Caption disabled - no suitable image found for the %s button"
 msgstr "Légende désactivé - aucune image appropriée trouvé pour le bouton %s"
 
-#: lib/gpl/admin/sharing.php:225 lib/pro/admin/sharing.php:230
+#: lib/gpl/admin/sharing.php:235 lib/pro/admin/sharing.php:240
 msgctxt "option label"
 msgid "Tumblr Video Caption"
 msgstr "Légende vidéo Tumblr"
 
-#: lib/gpl/admin/sharing.php:227 lib/pro/admin/sharing.php:234
+#: lib/gpl/admin/sharing.php:237 lib/pro/admin/sharing.php:244
 msgid "Caption disabled - no suitable video found for the %s button"
 msgstr "Légende désactivé - aucun vidéo appropriée trouvé pour le bouton %s"
 
-#: lib/gpl/admin/sharing.php:235 lib/pro/admin/sharing.php:245
+#: lib/gpl/admin/sharing.php:245 lib/pro/admin/sharing.php:255
 msgctxt "option label"
 msgid "Disable Sharing Buttons"
 msgstr "Désactiver les boutons"
 
-#: lib/gpl/admin/sharing.php:274 lib/pro/admin/sharing.php:284
+#: lib/gpl/admin/sharing.php:284 lib/pro/admin/sharing.php:294
 msgctxt "option label"
 msgid "Sidebar Javascript"
 msgstr "JavaScript de la barre latérale"
@@ -3322,8 +3326,8 @@ msgstr "Préréglages des Boutons"
 
 #: lib/submenu/buttons.php:112
 msgctxt "metabox tab"
-msgid "Advanced"
-msgstr "Avancé"
+msgid "Advanced Settings"
+msgstr "Réglages Avancés"
 
 #: lib/submenu/buttons.php:147
 msgctxt "option label"
@@ -3890,7 +3894,7 @@ msgstr "<em>Bouton de partage</em> Buffer"
 #: lib/website/facebook.php:36 lib/website/gplus.php:25
 #: lib/website/linkedin.php:25 lib/website/managewp.php:25
 #: lib/website/pinterest.php:39 lib/website/reddit.php:25
-#: lib/website/stumbleupon.php:69 lib/website/tumblr.php:39
+#: lib/website/stumbleupon.php:73 lib/website/tumblr.php:39
 #: lib/website/twitter.php:25 lib/website/whatsapp.php:25
 msgctxt "option label (short)"
 msgid "Show Button in"
@@ -3900,7 +3904,7 @@ msgstr "Afficher le bouton"
 #: lib/website/facebook.php:40 lib/website/gplus.php:29
 #: lib/website/linkedin.php:29 lib/website/managewp.php:29
 #: lib/website/pinterest.php:43 lib/website/reddit.php:29
-#: lib/website/stumbleupon.php:73 lib/website/tumblr.php:43
+#: lib/website/stumbleupon.php:77 lib/website/tumblr.php:43
 #: lib/website/twitter.php:29 lib/website/whatsapp.php:29
 msgctxt "option label (short)"
 msgid "Preferred Order"
@@ -3910,7 +3914,7 @@ msgstr "Ordre de préférence"
 #: lib/website/facebook.php:46 lib/website/gplus.php:35
 #: lib/website/linkedin.php:35 lib/website/managewp.php:35
 #: lib/website/pinterest.php:49 lib/website/reddit.php:35
-#: lib/website/stumbleupon.php:79 lib/website/tumblr.php:49
+#: lib/website/stumbleupon.php:83 lib/website/tumblr.php:49
 #: lib/website/twitter.php:35 lib/website/whatsapp.php:35
 msgctxt "option label (short)"
 msgid "Allow for Platform"
@@ -3918,7 +3922,7 @@ msgstr "Pour Plateforme"
 
 #: lib/website/buffer.php:55 lib/website/facebook.php:52
 #: lib/website/gplus.php:41 lib/website/linkedin.php:41
-#: lib/website/pinterest.php:55 lib/website/stumbleupon.php:85
+#: lib/website/pinterest.php:55 lib/website/stumbleupon.php:89
 #: lib/website/tumblr.php:55 lib/website/twitter.php:41
 msgctxt "option label (short)"
 msgid "JavaScript in"
@@ -4094,7 +4098,11 @@ msgctxt "image size label"
 msgid "Pinterest Sharing Button"
 msgstr "Bouton de partage Pinterest"
 
-#: lib/website/stumbleupon.php:89
+#: lib/website/stumbleupon.php:70
+msgid "Please note that StumbleUpon does not currently provide<br/>an HTTPS compatible share button."
+msgstr "S'il vous plaît noter que StumbleUpon ne fournit pas<br/>actuellement un bouton de partage compatible HTTPS."
+
+#: lib/website/stumbleupon.php:93
 msgctxt "option label (short)"
 msgid "Button Style"
 msgstr "Style du bouton"
@@ -4184,3 +4192,7 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://surniaulula.com/"
 msgstr "https://surniaulula.com/"
+
+#~ msgctxt "metabox tab"
+#~ msgid "Advanced"
+#~ msgstr "Avancé"

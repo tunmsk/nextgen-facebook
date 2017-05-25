@@ -3900,7 +3900,7 @@ msgstr ""
 
 #: lib/submenu/buttons.php:112
 msgctxt "metabox tab"
-msgid "Advanced"
+msgid "Advanced Settings"
 msgstr ""
 
 #: lib/submenu/buttons.php:147
