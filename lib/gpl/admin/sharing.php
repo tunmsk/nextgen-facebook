@@ -105,10 +105,20 @@ if ( ! class_exists( 'NgfbGplAdminSharing' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$table_rows[] = $form->get_th_html( _x( 'Force Protocol for Shared URLs',
+			$table_rows['buttons_force_prot'] = $form->get_th_html( _x( 'Force Protocol for Shared URLs',
 				'option label', 'nextgen-facebook' ), '', 'buttons_force_prot' ).
 			'<td class="blank">'.$form->get_no_select( 'buttons_force_prot', 
 				array_merge( array( '' => 'none' ), $this->p->cf['sharing']['force_prot'] ) ).'</td>';
+
+			$table_rows['plugin_sharing_buttons_cache_exp'] = $form->get_th_html( _x( 'Sharing Buttons Cache Expiry',
+				'option label', 'nextgen-facebook' ), null, 'plugin_sharing_buttons_cache_exp' ).
+			'<td nowrap class="blank">'.$this->p->options['plugin_sharing_buttons_cache_exp'].' '.
+				_x( 'seconds (0 to disable)', 'option comment', 'nextgen-facebook' ).'</td>';
+
+			$table_rows['plugin_social_file_cache_exp'] = $form->get_th_html( _x( 'Social File Cache Expiry',
+				'option label', 'nextgen-facebook' ), null, 'plugin_social_file_cache_exp' ).
+			'<td nowrap class="blank">'.$this->p->options['plugin_social_file_cache_exp'].' '.
+				_x( 'seconds (0 to disable)', 'option comment', 'nextgen-facebook' ).'</td>';
 
 			return $table_rows;
 		}

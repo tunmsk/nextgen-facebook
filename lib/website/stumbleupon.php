@@ -28,7 +28,7 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteStumbleupon' ) ) {
 						display:block;
 						background: url("'.
 							$this->p->sharing->get_social_file_cache_url( SucomUtil::get_prot().
-								'://b9.sustatic.com/7ca234_0mUVfxHFR0NAk1g' ).'") no-repeat transparent;
+								'://b9.sustatic.com/7ca234_0mUVfxHFR0NAk1g', '.png' ).'") no-repeat transparent;
 						min-width:100px;
 						margin:5px 0 5px 0;
 					}
@@ -65,6 +65,10 @@ if ( ! class_exists( 'NgfbSubmenuWebsiteStumbleupon' ) ) {
 				$badge_html .= '</div>';
 			}
 			$badge_html .= '</div>';
+
+			$table_rows[] = '<td colspan="2"><strong><center>'.
+				__( 'Please note that StumbleUpon does not currently provide<br/>an HTTPS compatible share button.',
+					'wpsso-ssb' ).'</center></strong></td>';
 
 			$table_rows[] = $form->get_th_html( _x( 'Show Button in',
 				'option label (short)', 'nextgen-facebook' ), 'short' ).
@@ -106,7 +110,7 @@ if ( ! class_exists( 'NgfbWebsiteStumbleupon' ) ) {
 					'stumble_on_content' => 0,
 					'stumble_on_excerpt' => 0,
 					'stumble_on_sidebar' => 0,
-					'stumble_on_admin_edit' => 1,
+					'stumble_on_admin_edit' => 0,
 					'stumble_platform' => 'any',
 					'stumble_script_loc' => 'footer',	// header or footer
 					'stumble_badge' => 1,
