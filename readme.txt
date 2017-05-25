@@ -375,6 +375,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 8.44.1 (2017/05/25)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Fixed HTML detection when passed as an argument to parse head meta tags for the duplicate meta tag check.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.44.0 (2017/05/19)**
 
 * *New Features*
@@ -493,6 +504,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new optional NGFB_VARY_USER_AGENT_DISABLE constant.
 
 == Upgrade Notice ==
+
+= 8.44.1 =
+
+(2017/05/25) Fixed HTML detection when passed as an argument to parse head meta tags for the duplicate meta tag check.
 
 = 8.44.0 =
 
