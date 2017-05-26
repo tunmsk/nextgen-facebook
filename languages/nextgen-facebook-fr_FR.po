@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook 8.44.0\n"
+"Project-Id-Version: NextGEN Facebook 8.44.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
-"POT-Creation-Date: 2017-05-26 15:13-0400\n"
-"PO-Revision-Date: 2017-05-26 15:14-0400\n"
+"POT-Creation-Date: 2017-05-26 15:18-0400\n"
+"PO-Revision-Date: 2017-05-26 15:19-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -275,12 +275,19 @@ msgid "%s Authentication ID"
 msgstr "ID d'authentification %s"
 
 #: lib/admin.php:1437
+msgctxt "option label"
 msgid "Support and Updates Expire"
 msgstr "Support et mises à jour expire"
 
 #: lib/admin.php:1438
+msgctxt "option label"
 msgid "Site Licenses Assigned"
 msgstr "Licences de site assignées"
+
+#: lib/admin.php:1444
+msgctxt "option value"
+msgid "Never"
+msgstr "Jamais"
 
 #: lib/admin.php:1494
 msgid "Plugin conflict detected"
@@ -4200,7 +4207,3 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://surniaulula.com/"
 msgstr "https://surniaulula.com/"
-
-#~ msgctxt "metabox tab"
-#~ msgid "Advanced"
-#~ msgstr "Avancé"
