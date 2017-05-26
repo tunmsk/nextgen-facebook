@@ -1434,7 +1434,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 						} elseif ( class_exists( 'SucomUpdate' ) ) {
 
 							foreach ( array(
-								'exp_date' => __( 'Updates and Support Expires', 'nextgen-facebook' ),
+								'exp_date' => __( 'Support and Updates Expire', 'nextgen-facebook' ),
 								'qty_used' => __( 'Site Licenses Assigned', 'nextgen-facebook' ),
 							) as $key => $label ) {
 								if ( $val = SucomUpdate::get_option( $ext, $key ) ) {

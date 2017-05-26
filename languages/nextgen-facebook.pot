@@ -280,7 +280,7 @@ msgid "%s Authentication ID"
 msgstr ""
 
 #: lib/admin.php:1437
-msgid "Updates and Support Expires"
+msgid "Support and Updates Expire"
 msgstr ""
 
 #: lib/admin.php:1438
