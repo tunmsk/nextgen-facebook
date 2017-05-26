@@ -1441,7 +1441,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 									switch ( $key ) {
 										case 'exp_date':
 											if ( $val === '0000-00-00 00:00:00' ) {
-												$val = 'Never';
+												$val = __( 'Never', 'nextgen-facebook' );
 											}
 											break;
 									}
