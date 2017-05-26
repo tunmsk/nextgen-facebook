@@ -375,6 +375,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 8.44.2-dev.1 (2017/05/26)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added license information bellow the Authentication ID on the Pro Licenses settings page (Pro version).
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.44.1 (2017/05/25)**
 
 * *New Features*
@@ -504,6 +515,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new optional NGFB_VARY_USER_AGENT_DISABLE constant.
 
 == Upgrade Notice ==
+
+= 8.44.2-dev.1 =
+
+(2017/05/26) Added license information bellow the Authentication ID on the Pro Licenses settings page (Pro version).
 
 = 8.44.1 =
 
