@@ -375,13 +375,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.44.2-dev.2 (2017/05/26)**
+**Version 8.44.2-dev.3 (2017/05/27)**
 
 * *New Features*
 	* None
 * *Improvements*
 	* Added license information bellow the Authentication ID on the Pro Licenses settings page (Pro version).
-	* Added a notice message to rate the plugin after one week.
+	* Added a dismissable notice message to politely ask for a plugin rating on wordpress.org after one week.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -517,9 +517,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.44.2-dev.2 =
+= 8.44.2-dev.3 =
 
-(2017/05/26) Added license information bellow the Authentication ID on the Pro Licenses settings page (Pro version).
+(2017/05/27) Added license information bellow the Authentication ID on the Pro Licenses settings page (Pro version).
 
 = 8.44.1 =
 
