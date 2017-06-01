@@ -223,9 +223,19 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			$this->avail = $this->check->get_avail();	// uses $this->options in checks
 
 			// configure the debug class
-			$html_debug = ! empty( $this->options['plugin_debug'] ) || 
-				( defined( 'NGFB_HTML_DEBUG' ) && NGFB_HTML_DEBUG ) ? true : false;
-			$wp_debug = defined( 'NGFB_WP_DEBUG' ) && NGFB_WP_DEBUG ? true : false;
+			if ( ! empty( $this->options['plugin_debug'] ) || ( defined( 'NGFB_HTML_DEBUG' ) && NGFB_HTML_DEBUG ) ) {
+				$html_debug = true;
+			} else {
+				$html_debug = false;
+			}
+
+			if ( defined( 'NGFB_WP_DEBUG' ) && NGFB_WP_DEBUG ) {
+				$wp_debug = true;
+			} elseif ( is_admin() && defined( 'NGFB_ADMIN_WP_DEBUG' ) && NGFB_ADMIN_WP_DEBUG ) {
+				$wp_debug = true;
+			} else {
+				$wp_debug = false;
+			}
 
 			if ( ( $html_debug || $wp_debug ) &&	// only load debug class if debug options are enabled
 				( $classname = NgfbConfig::load_lib( false, 'com/debug', 'SucomDebug' ) ) ) {
@@ -315,6 +325,9 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			if ( $this->debug->enabled ) {
 				$info = $this->cf['plugin']['ngfb'];
 				if ( $this->debug->is_enabled( 'wp' ) ) {
+					if ( ! isset( $_SESSION ) ) {
+						session_start();
+					}
 					$this->debug->log( 'WP debug log mode is active' );
 					$this->notice->warn( __( 'WP debug log mode is active &mdash; debug messages are being sent to the WordPress debug log.',
 						'nextgen-facebook' ).' '.sprintf( __( 'Debug mode disables some %s caching features, which degrades performance slightly.',

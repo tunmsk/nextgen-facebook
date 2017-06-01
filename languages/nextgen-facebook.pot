@@ -4833,23 +4833,23 @@ msgctxt "option label"
 msgid "Widget Title (leave blank for no title)"
 msgstr ""
 
-#: nextgen-facebook.php:319
+#: nextgen-facebook.php:332
 msgid ""
 "WP debug log mode is active &mdash; debug messages are being sent to the "
 "WordPress debug log."
 msgstr ""
 
-#: nextgen-facebook.php:320 nextgen-facebook.php:326
+#: nextgen-facebook.php:333 nextgen-facebook.php:339
 msgid ""
 "Debug mode disables some %s caching features, which degrades performance "
 "slightly."
 msgstr ""
 
-#: nextgen-facebook.php:321 nextgen-facebook.php:327
+#: nextgen-facebook.php:334 nextgen-facebook.php:340
 msgid "Please disable debug mode when debugging is complete."
 msgstr ""
 
-#: nextgen-facebook.php:325
+#: nextgen-facebook.php:338
 msgid ""
 "HTML debug mode is active &mdash; debug messages are being added to webpages "
 "as hidden HTML comments."
