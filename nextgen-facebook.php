@@ -13,7 +13,7 @@
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
  * Requires At Least: 3.7
  * Tested Up To: 4.7.5
- * Version: 8.44.2
+ * Version: 8.44.3-dev.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -316,11 +316,11 @@ if ( ! class_exists( 'Ngfb' ) ) {
 				if ( $this->debug->is_enabled( 'wp' ) ) {
 					$this->debug->log( 'WP debug log mode is active' );
 					$this->notice->warn( __( 'WP debug log mode is active &mdash; debug messages are being sent to the WordPress debug log.',
-						'nextgen-facebook' ) );
+						'nextgen-facebook' ).' '.__( 'Please disable debug mode when debugging operations are finished.', 'nextgen-facebook' ) );
 				} elseif ( $this->debug->is_enabled( 'html' ) ) {
 					$this->debug->log( 'HTML debug mode is active' );
 					$this->notice->warn( __( 'HTML debug mode is active &mdash; debug messages are being added to webpages as hidden HTML comments.',
-						'nextgen-facebook' ) );
+						'nextgen-facebook' ).' '.__( 'Please disable debug mode when debugging operations are finished.', 'nextgen-facebook' ) );
 				}
 				$this->util->add_plugin_filters( $this, array( 
 					'cache_expire_head_array' => '__return_zero',
