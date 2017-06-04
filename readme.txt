@@ -375,7 +375,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.44.3-b.1 (2017/06/03)**
+**Version 8.44.3-rc.1 (2017/06/03)**
 
 * *New Features*
 	* None
@@ -384,6 +384,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* Added a (now optional) second argument to get_term() for WP versions older than 4.4. 
 	* Replaced strpos() by filter_var() when checking for URLs in Schema property values to avoid false positives.
+	* Added a default value when PHP_INT_MIN is not defined (available since PHP v7).
 * *Developer Notes*
 	* None
 
@@ -529,7 +530,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.44.3-b.1 =
+= 8.44.3-rc.1 =
 
 (2017/06/03) Added a (now optional) second argument to get_term() for WP versions older than 4.4. Replaced strpos() by filter_var() when checking for URLs in Schema property values to avoid false positives.
 
