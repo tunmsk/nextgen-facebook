@@ -10,7 +10,7 @@ Tags: facebook, sharing buttons, social share, open graph, twitter, pinterest, g
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7.5
-Stable Tag: 8.44.2
+Stable Tag: 8.44.3
 
 Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how URLs are shared or re-shared!
 
@@ -375,7 +375,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.44.3-rc.1 (2017/06/03)**
+**Version 8.44.3 (2017/06/06)**
 
 * *New Features*
 	* None
@@ -530,9 +530,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.44.3-rc.1 =
+= 8.44.3 =
 
-(2017/06/03) Added a (now optional) second argument to get_term() for WP versions older than 4.4. Replaced strpos() by filter_var() when checking for URLs in Schema property values to avoid false positives.
+(2017/06/06) Added a (now optional) second argument to get_term() for WP versions older than 4.4. Replaced strpos() by filter_var() when checking for URLs in Schema property values to avoid false positives.
 
 = 8.44.2 =
 

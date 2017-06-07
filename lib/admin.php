@@ -1742,7 +1742,7 @@ if ( ! class_exists( 'NgfbAdmin' ) ) {
 					
 				$notice_msg .= '<p style="font-size:0.9em;">'.
 					( empty( $support_url ) ? '' : '<a href="'.$support_url.'" target="_blank" class="dismiss-on-click">' ).
-					sprintf( __( 'No thanks &mdash; I don\'t feel that %s is worth a 5 star rating, and would like to offer a suggestion instead.',
+					sprintf( __( 'No thanks &mdash; I don\'t feel that %s is worth a 5 star rating, and would like to offer a suggestion or report a problem.',
 						'nextgen-facebook' ), $info['short'] ).
 					( empty( $support_url ) ? '' : '</a>' ).
 					'</p>';
