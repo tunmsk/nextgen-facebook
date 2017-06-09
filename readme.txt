@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/nextgen-facebook/assets/
 Tags: facebook, sharing buttons, social share, open graph, twitter, pinterest, google, linkedin, youtube, nextgen gallery, bbpress, buddypress
 Contributors: jsmoriss
 Requires At Least: 3.7
-Tested Up To: 4.7.5
+Tested Up To: 4.8
 Stable Tag: 8.44.3
 
 Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how URLs are shared or re-shared!
@@ -375,6 +375,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 8.44.4 (2017/06/08)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Added a check to exclude non-numeric width, height, length, and weight values for WooCommerce products (Pro version).
+* *Developer Notes*
+	* None
+
 **Version 8.44.3 (2017/06/06)**
 
 * *New Features*
@@ -529,6 +540,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new optional NGFB_VARY_USER_AGENT_DISABLE constant.
 
 == Upgrade Notice ==
+
+= 8.44.4 =
+
+(2017/06/08) Added a check to exclude non-numeric width, height, length, and weight values for WooCommerce products (Pro version).
 
 = 8.44.3 =
 
