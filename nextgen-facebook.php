@@ -12,8 +12,8 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
  * Requires At Least: 3.7
- * Tested Up To: 4.7.5
- * Version: 8.44.3
+ * Tested Up To: 4.8
+ * Version: 8.44.4
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
