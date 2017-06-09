@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the NextGEN Facebook (NGFB) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook 8.44.3\n"
+"Project-Id-Version: NextGEN Facebook 8.44.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2017-06-06 17:58-0600\n"
-"PO-Revision-Date: 2017-06-06 18:00-0600\n"
+"PO-Revision-Date: 2017-06-08 20:45-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -247,7 +247,7 @@ msgstr "Version gratuite"
 
 #: lib/admin.php:1303
 msgid "Rate the %1$s plugin 5 stars."
-msgstr "Notez l'extension %2$s 5 étoiles."
+msgstr "Notez l'extension %1$s 5 étoiles."
 
 #: lib/admin.php:1388
 msgctxt "plugin action link"
