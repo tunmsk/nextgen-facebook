@@ -375,6 +375,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 8.44.5-dev.1 (2017/06/11)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added mode debugging messages in the Schema Local Business filter.
+
 **Version 8.44.4 (2017/06/08)**
 
 * *New Features*
@@ -540,6 +551,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new optional NGFB_VARY_USER_AGENT_DISABLE constant.
 
 == Upgrade Notice ==
+
+= 8.44.5-dev.1 =
+
+(2017/06/11) Added mode debugging messages in the Schema Local Business filter.
 
 = 8.44.4 =
 
