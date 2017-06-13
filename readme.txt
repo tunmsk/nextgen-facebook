@@ -385,7 +385,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Developer Notes*
 	* Added more debugging messages in the Schema Local Business filter.
-	* Added a check for a Local Business type when adding an origanization property.
+	* Added a check for a Local Business type when adding an organization property.
 
 **Version 8.44.4 (2017/06/08)**
 
@@ -555,7 +555,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 8.44.5-dev.4 =
 
-(2017/06/13) Added more debugging messages in the Schema Local Business filter. Added a check for a Local Business type when adding an origanization property.
+(2017/06/13) Added more debugging messages in the Schema Local Business filter. Added a check for a Local Business type when adding an organization property.
 
 = 8.44.4 =
 
