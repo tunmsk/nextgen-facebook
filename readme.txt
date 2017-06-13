@@ -375,7 +375,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.44.5-dev.3 (2017/06/12)**
+**Version 8.44.5-dev.4 (2017/06/13)**
 
 * *New Features*
 	* None
@@ -553,9 +553,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.44.5-dev.3 =
+= 8.44.5-dev.4 =
 
-(2017/06/12) Added more debugging messages in the Schema Local Business filter. Added a check for a Local Business type when adding an origanization property.
+(2017/06/13) Added more debugging messages in the Schema Local Business filter. Added a check for a Local Business type when adding an origanization property.
 
 = 8.44.4 =
 
