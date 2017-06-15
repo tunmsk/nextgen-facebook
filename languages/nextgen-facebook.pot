@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the NextGEN Facebook package.
 msgid ""
 msgstr ""
-"Project-Id-Version: NextGEN Facebook 8.44.5-rc.1\n"
+"Project-Id-Version: NextGEN Facebook 8.44.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nextgen-facebook\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
