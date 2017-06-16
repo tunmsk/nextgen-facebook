@@ -375,6 +375,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 8.45.0-dev.1 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Localized the "Organization Logo URL" and "Organization Banner URL" option values.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.44.5 (2017/06/15)**
 
 * *New Features*
