@@ -1205,10 +1205,10 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 
 						switch ( $logo_key ) {
 							case 'org_logo_url':
-								$ngfb->notice->err( sprintf( __( 'The "%1$s" Organization Logo Image is missing and required for the Schema %2$s markup.', 'nextgen-facebook' ), $ret['name'], $org_type_url ) );
+								$ngfb->notice->err( sprintf( __( 'The "%1$s" Organization Logo image is missing and required for the Schema %2$s markup.', 'nextgen-facebook' ), $ret['name'], $org_type_url ) );
 								break;
 							case 'org_banner_url':
-								$ngfb->notice->err( sprintf( __( 'The "%1$s" Organization Banner (600x60) is missing and required for the Schema %2$s markup.', 'nextgen-facebook' ), $ret['name'], $org_type_url ) );
+								$ngfb->notice->err( sprintf( __( 'The "%1$s" Organization Banner (600x60px) image is missing and required for the Schema %2$s markup.', 'nextgen-facebook' ), $ret['name'], $org_type_url ) );
 								break;
 						}
 					}
