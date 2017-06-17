@@ -375,7 +375,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.45.0-dev.1 (TBD)**
+**Version 8.45.0-dev.1 (2017/06/17)**
 
 * *New Features*
 	* None
@@ -563,6 +563,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new optional NGFB_VARY_USER_AGENT_DISABLE constant.
 
 == Upgrade Notice ==
+
+= 8.45.0-dev.1 =
+
+(2017/06/17) Localized the "Organization Logo URL" and "Organization Banner URL" option values.
 
 = 8.44.5 =
 
