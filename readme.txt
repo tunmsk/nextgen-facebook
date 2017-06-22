@@ -375,7 +375,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.45.0-rc.1 (2017/06/19)**
+**Version 8.45.0 (2017/06/19)**
 
 * *New Features*
 	* None
@@ -564,7 +564,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.45.0-rc.1 =
+= 8.45.0 =
 
 (2017/06/19) Localized the "Organization Logo URL" and "Organization Banner URL" option values.
 
