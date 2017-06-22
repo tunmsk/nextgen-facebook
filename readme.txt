@@ -10,7 +10,7 @@ Tags: facebook, sharing buttons, social share, open graph, twitter, pinterest, g
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.8
-Stable Tag: 8.44.5
+Stable Tag: 8.45.0
 
 Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how URLs are shared or re-shared!
 
@@ -375,7 +375,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.45.0 (2017/06/19)**
+**Version 8.45.0 (2017/06/21)**
 
 * *New Features*
 	* None
@@ -566,7 +566,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 8.45.0 =
 
-(2017/06/19) Localized the "Organization Logo URL" and "Organization Banner URL" option values.
+(2017/06/21) Localized the "Organization Logo URL" and "Organization Banner URL" option values.
 
 = 8.44.5 =
 
