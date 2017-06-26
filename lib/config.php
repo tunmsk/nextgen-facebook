@@ -22,7 +22,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.45.1-dev.1',		// plugin version
+					'version' => '8.45.1-dev.2',		// plugin version
 					'opt_version' => '528',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook',
@@ -1258,6 +1258,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'movie' => 'https://schema.org/Movie',
 							'painting' => 'https://schema.org/Painting',
 							'photograph' => 'https://schema.org/Photograph',
+							'question' => 'https://schema.org/Question',
 							'recipe' => 'https://schema.org/Recipe',
 							'review' => array(
 								'review' => 'https://schema.org/Review',
