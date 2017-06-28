@@ -22,7 +22,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.45.1-dev.2',		// plugin version
+					'version' => '8.45.1-dev.3',		// plugin version
 					'opt_version' => '528',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook',
@@ -1426,6 +1426,33 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 								'lodging.business' => array(
 									'campground' => 'https://schema.org/Campground',
 									'lodging.business' => 'https://schema.org/LodgingBusiness',
+								),
+								'medical.business' => array(
+									'community.health.business' => 'https://health-lifesci.schema.org/CommunityHealth',
+									'dentist.business' => 'https://health-lifesci.schema.org/Dentist',
+									'dermatology.business' => 'https://health-lifesci.schema.org/Dermatology',
+									'diet.nutrition.business' => 'https://health-lifesci.schema.org/DietNutrition',
+									'emergency.business' => 'https://health-lifesci.schema.org/Emergency',
+									'geriatric.business' => 'https://health-lifesci.schema.org/Geriatric',
+									'gynecologic.business' => 'https://health-lifesci.schema.org/Gynecologic',
+									'medical.business' => 'https://health-lifesci.schema.org/MedicalBusiness',
+									'medical.clinic.business' => 'https://health-lifesci.schema.org/MedicalClinic',
+									'midwifery.business' => 'https://health-lifesci.schema.org/Midwifery',
+									'nursing.business' => 'https://health-lifesci.schema.org/Nursing',
+									'obstetric.business' => 'https://health-lifesci.schema.org/Obstetric',
+									'oncologic.business' => 'https://health-lifesci.schema.org/Oncologic',
+									'optician.business' => 'https://health-lifesci.schema.org/Optician',
+									'optometric.business' => 'https://health-lifesci.schema.org/Optometric',
+									'otolaryngologic.business' => 'https://health-lifesci.schema.org/Otolaryngologic',
+									'pediatric.business' => 'https://health-lifesci.schema.org/Pediatric',
+									'pharmacy.business' => 'https://health-lifesci.schema.org/Pharmacy',
+									'physician.business' => 'https://health-lifesci.schema.org/Physician',
+									'physiotherapy.business' => 'https://health-lifesci.schema.org/Physiotherapy',
+									'plasticSurgery.business' => 'https://health-lifesci.schema.org/PlasticSurgery',
+									'podiatric.business' => 'https://health-lifesci.schema.org/Podiatric',
+									'primaryCare.business' => 'https://health-lifesci.schema.org/PrimaryCare',
+									'psychiatric.business' => 'https://health-lifesci.schema.org/Psychiatric',
+									'publicHealth.business' => 'https://health-lifesci.schema.org/PublicHealth',
 								),
 								'professional.service' => 'https://schema.org/ProfessionalService',
 								'radio.station' => 'https://schema.org/RadioStation',
