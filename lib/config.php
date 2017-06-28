@@ -23,7 +23,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.45.1-dev.3',		// plugin version
-					'opt_version' => '528',		// increment when changing default options
+					'opt_version' => '529',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -265,13 +265,13 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'schema_type_for_book' => 'book',
 					'schema_type_for_blog' => 'blog',
 					'schema_type_for_business' => 'local.business',
-					'schema_type_for_download' => 'product',
+					'schema_type_for_download' => 'individual.product',
 					'schema_type_for_event' => 'event',
 					'schema_type_for_organization' => 'organization',
 					'schema_type_for_other' => 'other',
 					'schema_type_for_person' => 'person',
 					'schema_type_for_place' => 'place',
-					'schema_type_for_product' => 'product',
+					'schema_type_for_product' => 'individual.product',
 					'schema_type_for_recipe' => 'recipe',
 					'schema_type_for_review' => 'review',
 					'schema_type_for_tribe_events' => 'event',
@@ -1507,7 +1507,10 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 							'tourist.attraction' => 'https://schema.org/TouristAttraction',
 						),
 						'product' => array(
+							'individual.product' => 'https://schema.org/IndividualProduct',
 							'product' => 'https://schema.org/Product',
+							'product.model' => 'https://schema.org/ProductModel',
+							'some.products' => 'https://schema.org/SomeProducts',
 							'vehicle' => array(
 								'bus.or.coach' => 'https://auto.schema.org/BusOrCoach',
 								'car' => 'https://auto.schema.org/Car',

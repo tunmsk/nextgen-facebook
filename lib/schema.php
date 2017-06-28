@@ -1836,7 +1836,8 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 							$json_data[$itemprop_name] = $assoc[$key_name];
 						}
 						if ( $ngfb->debug->enabled ) {
-							$ngfb->debug->log( 'added itemprop '.$itemprop_name.' = '.$json_data[$itemprop_name] );
+							// itemprop value may be an array, so use print_r()
+							$ngfb->debug->log( 'added itemprop '.$itemprop_name.' = '.print_r( $json_data[$itemprop_name], true ) );
 						}
 						$itemprop_added++;
 					}

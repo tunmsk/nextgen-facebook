@@ -300,6 +300,12 @@ if ( ! class_exists( 'NgfbOptionsUpgrade' ) && class_exists( 'NgfbOptions' ) ) {
 					$opts['add_meta_property_og:video:secure_url'] = 1;
 				}
 
+				if ( $prev_version > 0 && $prev_version <= 528 ) {
+					if ( isset( $opts['schema_type_for_product'] ) && $opts['schema_type_for_product'] === 'product' ) {
+						$opts['schema_type_for_product'] = 'individual.product';
+					}
+				}
+
 			} elseif ( $options_name === constant( 'NGFB_SITE_OPTIONS_NAME' ) ) {
 				$this->p->util->rename_opts_by_ext( $opts,
 					apply_filters( $lca.'_rename_site_options_keys',
