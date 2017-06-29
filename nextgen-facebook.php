@@ -13,7 +13,7 @@
  * Description: Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!
  * Requires At Least: 3.7
  * Tested Up To: 4.8
- * Version: 8.45.1-dev.6
+ * Version: 8.45.1-dev.7
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -54,7 +54,6 @@ if ( ! class_exists( 'Ngfb' ) ) {
 		public $style;			// NgfbStyle (admin styles)
 		public $tc;			// NgfbTwitterCard
 		public $util;			// NgfbUtil (extends SucomUtil)
-		public $webpage;		// deprecated on 2017/03/31 (retain for backwards compatibility)
 		public $weibo;			// NgfbWeibo
 
 		/*
@@ -267,7 +266,6 @@ if ( ! class_exists( 'Ngfb' ) ) {
 			$this->style = new NgfbStyle( $this );			// admin styles
 			$this->script = new NgfbScript( $this );		// admin jquery tooltips
 			$this->page = new NgfbPage( $this );			// page title, desc, etc.
-			$this->webpage =& $this->page;				// deprecated on 2017/03/31 (retain for backwards compatibility)
 			$this->media = new NgfbMedia( $this );			// images, videos, etc.
 			$this->filters = new NgfbFilters( $this );		// integration filters
 			$this->head = new NgfbHead( $this );

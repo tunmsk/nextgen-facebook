@@ -207,9 +207,9 @@ $ngfb->sharing->get_script( 'sharing-buttons-footer', $ids ).
 	}
 }
 
-// deprecated
 if ( ! function_exists( 'ngfb_get_social_buttons' ) ) {
 	function ngfb_get_social_buttons( $ids = array(), $atts = array() ) {
+		_deprecated_function( __FUNCTION__, '7.1.1', 'ngfb_get_sharing_buttons()' );
 		return ngfb_get_sharing_buttons( $ids, $atts );
 	}
 }
