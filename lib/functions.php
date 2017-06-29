@@ -142,8 +142,9 @@ if ( ! function_exists( 'ngfb_get_sharing_buttons' ) ) {
 		}
 
 		if ( $error_msg !== false ) {
-			if ( $ngfb->debug->enabled )
+			if ( $ngfb->debug->enabled ) {
 				$ngfb->debug->log( 'exiting early: '.$error_msg );
+			}
 			return '<!-- '.__FUNCTION__.' exiting early: '.$error_msg.' -->'."\n";
 		}
 
