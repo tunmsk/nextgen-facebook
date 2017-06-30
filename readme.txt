@@ -375,12 +375,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.45.1-dev.9 (2017/06/30)**
+**Version 8.45.1-dev.10 (2017/06/30)**
 
 * *New Features*
 	* None
 * *Improvements*
 	* Updated Polylang plugin check from using the slug to the class name.
+	* Added the Open Graph image width as a parameter to the Wistia video API URL.
 	* Added the following types to the list of available Schema types.
 		* https://schema.org/ClaimReview
 		* https://schema.org/IndividualProduct
@@ -611,7 +612,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.45.1-dev.9 =
+= 8.45.1-dev.10 =
 
 (2017/06/30) Added new types to the list of available Schema types. Fixed a missing Open Graph type filter for WP e-Commerce product pages. Fixed parsing of the HTML returned by the Wistia video API.
 
