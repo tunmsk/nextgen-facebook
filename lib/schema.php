@@ -1351,6 +1351,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 
 			$ngfb =& Ngfb::get_instance();
 			$size_name = $ngfb->cf['lca'].'-schema';
+			$sharing_url = $ngfb->util->get_sharing_url( $mod );
 
 			if ( $ngfb->debug->enabled ) {
 				$ngfb->debug->log( 'adding single place data for '.$place_id );
@@ -1380,6 +1381,11 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			}
 
 			$ret = self::get_schema_type_context( $place_type_url );
+
+			// set reference values for admin notices
+			if ( is_admin() ) {
+				$ngfb->notice->set_ref( $sharing_url, $mod, $place_type_url );
+			}
 
 			// add schema properties from the place options
 			self::add_data_itemprop_from_assoc( $ret, $place_opts, array(
@@ -1494,6 +1500,11 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			}
 
 			$ret = apply_filters( $ngfb->cf['lca'].'_json_data_single_place', $ret, $mod, $place_id );
+
+			// restore previous reference values for admin notices
+			if ( is_admin() ) {
+				$ngfb->notice->unset_ref( $sharing_url );
+			}
 
 			if ( empty( $list_element ) ) {
 				$json_data = $ret;
@@ -1633,6 +1644,8 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 			}
 
 			$ngfb =& Ngfb::get_instance();
+			$size_name = $ngfb->cf['lca'].'-schema';
+
 			if ( $ngfb->debug->enabled ) {
 				$ngfb->debug->log( 'adding single person data for '.$user_id );
 			}
@@ -1687,7 +1700,7 @@ if ( ! class_exists( 'NgfbSchema' ) ) {
 					'person_url' => $user_mod['obj']->get_author_website( $user_id, 'url' ),
 					'person_name' => $user_mod['obj']->get_author_meta( $user_id, $ngfb->options['schema_author_name'] ),
 					'person_desc' => $user_desc,
-					'person_og_image' => $user_mod['obj']->get_og_image( 1, $ngfb->cf['lca'].'-schema', $user_id, false ),
+					'person_og_image' => $user_mod['obj']->get_og_image( 1, $size_name, $user_id, false ),
 					'person_sameas' => $user_sameas,
 				);
 			}
