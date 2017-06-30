@@ -375,7 +375,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.45.1-dev.8 (2017/06/30)**
+**Version 8.45.1-dev.9 (2017/06/30)**
 
 * *New Features*
 	* None
@@ -413,7 +413,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* https://schema.org/ProductModel
 		* https://schema.org/SomeProducts
 * *Bugfixes*
-	* Added a missing Open Graph type filter for WP e-Commerce product pages.
+	* Fixed a missing Open Graph type filter for WP e-Commerce product pages.
+	* Fixed parsing of the HTML returned by the Wistia video API.
 * *Developer Notes*
 	* Renamed the following filters:
 		* 'ngfb_json_add_https_schema_org_collectionpage_parts' to 'ngfb_json_add_https_schema_org_collectionpage_mentions'
@@ -610,9 +611,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.45.1-dev.8 =
+= 8.45.1-dev.9 =
 
-(2017/06/30) Added new types to the list of available Schema types. Added a missing Open Graph type filter for WP e-Commerce product pages.
+(2017/06/30) Added new types to the list of available Schema types. Fixed a missing Open Graph type filter for WP e-Commerce product pages. Fixed parsing of the HTML returned by the Wistia video API.
 
 = 8.45.0 =
 
