@@ -375,7 +375,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.45.1-dev.10 (2017/06/30)**
+**Version 8.45.1-b.1 (2017/06/30)**
 
 * *New Features*
 	* None
@@ -422,6 +422,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* 'ngfb_json_add_https_schema_org_searchresultspage_parts' to 'ngfb_json_add_https_schema_org_searchresultspage_mentions'
 		* 'ngfb_json_add_https_schema_org_profilepage_parts' to 'ngfb_json_add_https_schema_org_profilepage_mentions'
 		* 'ngfb_json_add_https_schema_org_blog_parts' to 'ngfb_json_add_https_schema_org_blog_blogpost'
+	* Added https://health-lifesci.schema.org/MedicalSpecialty sub-types to the NgfbConfig::$cf['head']['schema_type'] array for future use.
 
 **Version 8.45.0 (2017/06/21)**
 
@@ -612,9 +613,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 8.45.1-dev.10 =
+= 8.45.1-b.1 =
 
-(2017/06/30) Added new types to the list of available Schema types. Fixed a missing Open Graph type filter for WP e-Commerce product pages. Fixed parsing of the HTML returned by the Wistia video API.
+(2017/06/30) Added several new types to the list of available Schema types. Fixed a missing Open Graph type filter for WP e-Commerce product pages. Fixed parsing of the HTML returned by the Wistia video API. Added the Open Graph image width as a parameter to the Wistia video API URL.
 
 = 8.45.0 =
 
