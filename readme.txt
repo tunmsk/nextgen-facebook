@@ -279,6 +279,7 @@ Follow Surnia Ulula on [Google+](https://plus.google.com/+SurniaUlula/?rel=autho
 * [How do I install the NextGEN Facebook Pro version?](https://wpsso.com/docs/plugins/wpsso/faqs/how-do-i-install-the-ngfb-pro-version/)
 * [How do I remove duplicate meta tags?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/how-do-i-remove-duplicate-meta-tags/)
 * [How does NextGEN Facebook find / detect / select images?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/how-does-ngfb-find-detect-select-images/)
+* [How does NextGEN Facebook find / detect / select videos?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/how-does-ngfb-find-detect-select-videos/)
 * [Social Sharing Buttons](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/social-sharing-buttons/)
 	* [Can I share a single image on a webpage?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/social-sharing-buttons/can-i-share-a-single-image-on-a-webpage/)
 	* [Can I use other social sharing buttons?](https://surniaulula.com/docs/plugins/nextgen-facebook/faqs/social-sharing-buttons/can-i-use-other-social-sharing-buttons/)
