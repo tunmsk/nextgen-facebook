@@ -22,7 +22,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.45.1-rc.1',		// plugin version
+					'version' => '8.45.1',		// plugin version
 					'opt_version' => '529',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook',
@@ -338,9 +338,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'tc_sum_img_crop_x' => 'center',
 					'tc_sum_img_crop_y' => 'center',
 					// large image summary card
-					'tc_lrg_img_width' => 800,		// Large Image Card Img Dimensions
-					'tc_lrg_img_height' => 1600,
-					'tc_lrg_img_crop' => 0,
+					'tc_lrg_img_width' => 600,		// Large Image Card Img Dimensions
+					'tc_lrg_img_height' => 315,
+					'tc_lrg_img_crop' => 1,
 					'tc_lrg_img_crop_x' => 'center',
 					'tc_lrg_img_crop_y' => 'center',
 					// enable/disable head html tags
