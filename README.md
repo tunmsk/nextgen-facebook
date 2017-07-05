@@ -3,7 +3,7 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>NextGEN Facebook</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Accurate meta tags for awesome looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how URLs are shared or re-shared!</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>8.45.1</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>8.45.2</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.7</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.8</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
