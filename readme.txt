@@ -376,6 +376,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 8.45.2 (2017/07/05)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Removed pass-by-reference from NgfbSchema::get_schema_types_array() to avoid corrupting the schema array cache.
+* *Developer Notes*
+	* None
+
 **Version 8.45.1 (2017/07/03)**
 
 * *New Features*
@@ -614,6 +625,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new optional NGFB_VARY_USER_AGENT_DISABLE constant.
 
 == Upgrade Notice ==
+
+= 8.45.2 =
+
+(2017/07/05) Removed pass-by-reference from NgfbSchema get_schema_types_array() to avoid corrupting the schema array cache.
 
 = 8.45.1 =
 
