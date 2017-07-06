@@ -376,6 +376,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 8.45.3 (2017/07/06)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Cleaned-up some development / debugging error log messages.
+
 **Version 8.45.2 (2017/07/05)**
 
 * *New Features*
@@ -625,6 +636,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new optional NGFB_VARY_USER_AGENT_DISABLE constant.
 
 == Upgrade Notice ==
+
+= 8.45.3 =
+
+(2017/07/06) Cleaned-up some development / debugging error log messages.
 
 = 8.45.2 =
 
