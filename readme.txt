@@ -376,6 +376,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 8.45.4-dev.1 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 8.45.3 (2017/07/06)**
 
 * *New Features*
