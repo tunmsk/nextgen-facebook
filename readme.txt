@@ -376,7 +376,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 8.45.4-dev.1 (TBD)**
+**Version 8.45.4-dev.1 (2017/07/18)**
 
 * *New Features*
 	* None
@@ -647,6 +647,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new optional NGFB_VARY_USER_AGENT_DISABLE constant.
 
 == Upgrade Notice ==
+
+= 8.45.4-dev.1 =
+
+(2017/07/18) Added more checks and debug info for possible image metadata inconsistencies from the WordPress Media Library.
 
 = 8.45.3 =
 
