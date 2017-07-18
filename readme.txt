@@ -385,7 +385,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Added more checks and debug info for possible image metadata inconsistencies from the WordPress Media Library.
 
 **Version 8.45.3 (2017/07/06)**
 
