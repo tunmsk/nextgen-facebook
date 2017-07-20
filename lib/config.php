@@ -23,7 +23,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			'plugin' => array(
 				'ngfb' => array(
 					'version' => '8.45.4-dev.1',		// plugin version
-					'opt_version' => '529',		// increment when changing default options
+					'opt_version' => '531',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook',
 					'desc' => 'Complete meta tags for the best looking shares on Facebook, Google, Pinterest, Twitter, etc - no matter how your webpage is shared!',
@@ -603,8 +603,9 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 					'plugin_shortlink' => 1,			// Use Shortnened URL for WP Shortlink
 					'plugin_min_shorten' => 23,
 					'plugin_bitly_login' => '',
-					'plugin_bitly_token' => '',
 					'plugin_bitly_api_key' => '',
+					'plugin_bitly_access_token' => '',
+					'plugin_bitly_domain' => '',
 					'plugin_google_api_key' => '',
 					'plugin_google_shorten' => 0,
 					'plugin_owly_api_key' => '',
