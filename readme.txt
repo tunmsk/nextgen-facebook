@@ -386,6 +386,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Developer Notes*
 	* Added more checks and debug info for possible image metadata inconsistencies from the WordPress Media Library.
+	* Added more debug messages to the NgfbSharing::get_buttons() method.
 
 **Version 8.45.3 (2017/07/06)**
 
