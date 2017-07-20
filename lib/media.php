@@ -368,19 +368,19 @@ if ( ! class_exists( 'NgfbMedia' ) ) {
 						$img_meta['width'].'x'.$img_meta['height'] );
 				}
 			} elseif ( $this->p->debug->enabled ) {
-				if ( $this->p->debug->enabled ) {
-					$this->p->debug->log( 'full size image '.$img_meta['file'].' dimensions missing from image metadata' );
-				}
 				if ( isset( $img_meta['file'] ) ) {
+					if ( $this->p->debug->enabled ) {
+						$this->p->debug->log( 'full size image '.$img_meta['file'].' dimensions missing from image metadata' );
+					}
 					if ( $this->p->notice->is_admin_pre_notices() ) {	// skip if notices already shown
-						$this->p->notice->err( sprintf( __( 'Possible Media Library corruption detected - the full size image dimensions for image ID %1$s are missing from the image metadata returned by the WordPress wp_get_attachment_metadata() function.', 'nextgen-facebook' ), $pid ) );
+						$this->p->notice->err( sprintf( __( 'Possible Media Library corruption detected &mdash; the full size image dimensions for image ID %1$s are missing from the image metadata returned by the WordPress wp_get_attachment_metadata() function.', 'nextgen-facebook' ), $pid ) );
 					}
 				} else {
 					if ( $this->p->debug->enabled ) {
 						$this->p->debug->log( 'full size image file path meta for '.$pid.' missing from image metadata' );
 					}
 					if ( $this->p->notice->is_admin_pre_notices() ) {	// skip if notices already shown
-						$this->p->notice->err( sprintf( __( 'Possible Media Library corruption detected - the full size image file path for image ID %1$s is missing from the image metadata returned by the WordPress wp_get_attachment_metadata() function.', 'nextgen-facebook' ), $pid ) );
+						$this->p->notice->err( sprintf( __( 'Possible Media Library corruption detected &mdash; the full size image file path for image ID %1$s is missing from the image metadata returned by the WordPress wp_get_attachment_metadata() function.', 'nextgen-facebook' ), $pid ) );
 					}
 				}
 			}
