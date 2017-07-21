@@ -22,7 +22,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			),
 			'plugin' => array(
 				'ngfb' => array(
-					'version' => '8.45.4-dev.6',		// plugin version
+					'version' => '8.45.4-b.1',		// plugin version
 					'opt_version' => '535',		// increment when changing default options
 					'short' => 'NGFB',		// short plugin name
 					'name' => 'NextGEN Facebook',
@@ -1847,6 +1847,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			$var_const['NGFB_JSON_PRETTY_PRINT'] = true;		// output pretty / human readable json
 			$var_const['NGFB_PROD_CURRENCY'] = 'USD';		// default for 'product_currency'
 			$var_const['NGFB_UNDEF_INT'] = -1;			// undefined width / height value
+			$var_const['NGFB_CONTENT_FILTERS_MAX_TIME'] = 1.00;
 
 			/*
 			 * NGFB option and meta array names
@@ -1885,9 +1886,7 @@ if ( ! class_exists( 'NgfbConfig' ) ) {
 			/*
 			 * NGFB cURL settings
 			 */
-			if ( defined( 'NGFB_PLUGINDIR' ) ) {
-				$var_const['NGFB_PHP_CURL_CAINFO'] = ABSPATH.WPINC.'/certificates/ca-bundle.crt';
-			}
+			$var_const['NGFB_PHP_CURL_CAINFO'] = ABSPATH.WPINC.'/certificates/ca-bundle.crt';
 			$var_const['NGFB_PHP_CURL_USERAGENT'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0';
 
 			foreach ( $var_const as $name => $value ) {
