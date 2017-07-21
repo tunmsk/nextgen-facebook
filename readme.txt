@@ -386,8 +386,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Added more checks and debug info for possible image metadata inconsistencies from the WordPress Media Library.
 	* Added more debug messages to the NgfbSharing::get_buttons() method.
+	* Added more checks and debug info for possible image metadata inconsistencies from the WordPress Media Library.
+	* Added a new NGFB_CONTENT_FILTERS_MAX_TIME constant (default is 1.00 seconds).
+	* Renamed the NGFB_FILTER_SINGLE_TAGS constant to NGFB_APPLY_FILTERS_SINGLE_MT.
 
 **Version 8.45.3 (2017/07/06)**
 
