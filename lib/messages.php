@@ -365,7 +365,7 @@ if ( ! class_exists( 'NgfbMessages' ) ) {
 							break;
 
 						case 'tooltip-plugin_debug':	// Add Hidden Debug Messages
-							$text = __( 'Add debugging messages, as hidden HTML comments, to back-end and front-end webpages (default is unchecked).', 'nextgen-facebook' );
+							$text = __( 'Add debugging messages as hidden HTML comments to back-end and front-end webpages (default is unchecked).', 'nextgen-facebook' );
 							break;
 
 						case 'tooltip-plugin_hide_pro':	// Hide All Pro Settings
